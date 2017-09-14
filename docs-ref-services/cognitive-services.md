@@ -1,0 +1,64 @@
+---
+title: "Node.js용 Azure Cognitive Services 모듈"
+description: "Node.js용 Azure Cognitive Services 모듈에 대한 참조"
+keywords: Azure, SDK, API, Cognitive Services, Node.js
+author: tomarcher
+ms.author: tarcher
+manager: douge
+ms.date: 07/18/2017
+ms.topic: article
+ms.prod: azure
+ms.technology: azure
+ms.devlang: nodejs
+ms.service: Cognitive Services
+ms.openlocfilehash: fba98930fccaf4fa40dd1d0224031276f5fb7f84
+ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/17/2017
+---
+# <a name="azure-cognitive-services-modules-for-nodejs"></a><span data-ttu-id="3427d-104">Node.js용 Azure Cognitive Services 모듈</span><span class="sxs-lookup"><span data-stu-id="3427d-104">Azure Cognitive Services modules for Node.js</span></span>
+
+## <a name="overview"></a><span data-ttu-id="3427d-105">개요</span><span class="sxs-lookup"><span data-stu-id="3427d-105">Overview</span></span>
+
+<span data-ttu-id="3427d-106">Microsoft Cognitive Services는 개발자가 자신의 응용 프로그램을 더 지능적이고 매력적이며 검색 가능하게 만드는 데 사용할 수 있는 API, SDK 및 서비스 집합입니다.</span><span class="sxs-lookup"><span data-stu-id="3427d-106">Azure Cognitive Services is a set of APIs, SDKs, and services available to developers to make their applications more intelligent, engaging and discoverable.</span></span> <span data-ttu-id="3427d-107">Microsoft Cognitive Services는 진화하는 기계 학습 API 포트폴리오를 확장하고, 개발자가 응용 프로그램에 지능형 기능, 즉 감정 및 비디오 검색, 얼굴, 음성 및 영상 인식, 음성 및 언어 이해 등을 쉽게 추가할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="3427d-107">Microsoft Cognitive Services expands on Microsoft’s evolving portfolio of machine learning APIs and enables developers to easily add intelligent features – such as emotion and video detection; facial, speech and vision recognition; and speech and language understanding – into their applications.</span></span> <span data-ttu-id="3427d-108">점점 더 많이 보고, 듣고, 말하고, 이해하고, 심지어 추론도 시작할 수 있도록 시스템에서 더욱 개인적인 컴퓨팅 환경과 향상된 생산성을 지원하는 것이 Microsoft의 비전입니다.</span><span class="sxs-lookup"><span data-stu-id="3427d-108">Our vision is for more personal computing experiences and enhanced productivity aided by systems that increasingly can see, hear, speak, understand and even begin to reason.</span></span>
+
+## <a name="management-package"></a><span data-ttu-id="3427d-109">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="3427d-109">Management Package</span></span>
+
+### <a name="install-the-npm-module"></a><span data-ttu-id="3427d-110">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="3427d-110">Install the npm module</span></span>
+
+<span data-ttu-id="3427d-111">Azure Cognitive Services npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="3427d-111">Install the Azure Cognitive Services npm module</span></span>
+
+```bash
+npm install azure-arm-cognitiveservices
+```
+
+### <a name="example"></a><span data-ttu-id="3427d-112">예제</span><span class="sxs-lookup"><span data-stu-id="3427d-112">Example</span></span>
+
+<span data-ttu-id="3427d-113">이 예제에서는 모든 Cognitive Services 계정을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="3427d-113">This example lists all cognitive service accounts.</span></span>
+
+```javascript
+const msRestAzure = require('ms-rest-azure');
+const cognitiveServicesManagementClient = require('azure-arm-cognitiveservices');
+
+const subscriptionId = 'your-subscription-id';
+
+msRestAzure
+  .interactiveLogin()
+  .then(credentials => {
+    const cognitiveServicesClient = new cognitiveServicesManagementClient(
+      credentials,
+      subscriptionId
+    );
+    return cognitiveServicesClient.cognitiveServicesAccounts.list();
+  })
+  .then(cognitiveServicesAccounts => {
+    console.log('List of accounts:');
+    console.dir(cognitiveServicesAccounts, { depth: null, colors: true });    
+  });
+
+```
+
+## <a name="samples"></a><span data-ttu-id="3427d-114">샘플</span><span class="sxs-lookup"><span data-stu-id="3427d-114">Samples</span></span>
+
+<span data-ttu-id="3427d-115">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="3427d-115">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>

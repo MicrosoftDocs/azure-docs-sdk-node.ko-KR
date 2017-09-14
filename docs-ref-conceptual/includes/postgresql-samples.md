@@ -1,0 +1,3 @@
+| | |
+|--|--|
+| [<span data-ttu-id="df58a-101">PostgreSQL을 사용하는 Node.js 코드 조각(영문)</span><span class="sxs-lookup"><span data-stu-id="df58a-101">Node.js code snippets using PostgreSQL</span></span>](https://www.npmjs.com/package/pg) | <span data-ttu-id="df58a-102">풀을 만들고, 쿼리를 실행하고, 전용 클라이언트를 가져오는 방법에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="df58a-102">Learn how to create a pool, execute a query, obtain an exclusive client, and more.</span></span>
