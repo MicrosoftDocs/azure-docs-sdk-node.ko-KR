@@ -1,40 +1,38 @@
 ---
 title: "Node.js용 Azure Data Lake Store 모듈"
 description: "Node.js용 Azure Data Lake Store 모듈에 대한 참조"
-keywords: Azure, SDK, API, Data Lake Store, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Data Lake Store
-ms.openlocfilehash: 5885bf8f073e4f4f1ac2be88b8691b092e8a21d3
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: a108cc6d184b72d2d4227f9e60da6b7a535f92ae
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
-# <a name="azure-data-lake-store-modules-for-nodejs"></a><span data-ttu-id="aa9cf-104">Node.js용 Azure Data Lake Store 모듈</span><span class="sxs-lookup"><span data-stu-id="aa9cf-104">Azure Data Lake Store modules for Node.js</span></span>
+# <a name="azure-data-lake-store-modules-for-nodejs"></a><span data-ttu-id="6e141-103">Node.js용 Azure Data Lake Store 모듈</span><span class="sxs-lookup"><span data-stu-id="6e141-103">Azure Data Lake Store modules for Node.js</span></span>
 
-## <a name="overview"></a><span data-ttu-id="aa9cf-105">개요</span><span class="sxs-lookup"><span data-stu-id="aa9cf-105">Overview</span></span>
-<span data-ttu-id="aa9cf-106">Azure 데이터 레이크 저장소는 빅 데이터 분석 작업을 위한 엔터프라이즈 수준 하이퍼 스케일 리포지토리입니다.</span><span class="sxs-lookup"><span data-stu-id="aa9cf-106">Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads.</span></span> <span data-ttu-id="aa9cf-107">Azure 데이터 레이크를 사용하면 작동 및 예비 분석에 대해 한 곳에서 모든 크기, 형식 및 수집 속도의 데이터를 캡처할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa9cf-107">Azure Data Lake enables you to capture data of any size, type, and ingestion speed in one single place for operational and exploratory analytics.</span></span>
+<span data-ttu-id="6e141-104">Azure 데이터 레이크 저장소는 빅 데이터 분석 작업을 위한 엔터프라이즈 수준 하이퍼 스케일 리포지토리입니다.</span><span class="sxs-lookup"><span data-stu-id="6e141-104">Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads.</span></span> <span data-ttu-id="6e141-105">Azure 데이터 레이크를 사용하면 작동 및 예비 분석에 대해 한 곳에서 모든 크기, 형식 및 수집 속도의 데이터를 캡처할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6e141-105">Azure Data Lake enables you to capture data of any size, type, and ingestion speed in one single place for operational and exploratory analytics.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="aa9cf-108">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="aa9cf-108">Management Package</span></span>
+## <a name="management-package"></a><span data-ttu-id="6e141-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="6e141-106">Management Package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="aa9cf-109">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="aa9cf-109">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="6e141-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="6e141-107">Install the npm module</span></span>
 
-<span data-ttu-id="aa9cf-110">npm을 사용하여 Node.js용 Azure Data Lake Store 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="aa9cf-110">Use npm to install the Azure Data Lake Store modules for Node.js</span></span>
+<span data-ttu-id="6e141-108">npm을 사용하여 Node.js용 Azure Data Lake Store 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="6e141-108">Use npm to install the Azure Data Lake Store modules for Node.js</span></span>
 
 ```bash
 npm install azure-arm-datalake-store
 ```
 
-### <a name="example"></a><span data-ttu-id="aa9cf-111">예제</span><span class="sxs-lookup"><span data-stu-id="aa9cf-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="6e141-109">예</span><span class="sxs-lookup"><span data-stu-id="6e141-109">Example</span></span>
 
-<span data-ttu-id="aa9cf-112">이 예제에서는 지정된 Azure 구독 내의 모든 Data Lake Store 계정을 나열합니다</span><span class="sxs-lookup"><span data-stu-id="aa9cf-112">This example lists all Data Lake Store accounts within a given Azure subscription</span></span>
+<span data-ttu-id="6e141-110">이 예제에서는 지정된 Azure 구독 내의 모든 Data Lake Store 계정을 나열합니다</span><span class="sxs-lookup"><span data-stu-id="6e141-110">This example lists all Data Lake Store accounts within a given Azure subscription</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -53,6 +51,6 @@ msRestAzure.interactiveLogin().then(credentials => {
 });
 ```
 
-## <a name="samples"></a><span data-ttu-id="aa9cf-113">샘플</span><span class="sxs-lookup"><span data-stu-id="aa9cf-113">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="6e141-111">샘플</span><span class="sxs-lookup"><span data-stu-id="6e141-111">Samples</span></span>
 
-<span data-ttu-id="aa9cf-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="aa9cf-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="6e141-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="6e141-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
