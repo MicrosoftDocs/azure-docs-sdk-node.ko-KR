@@ -1,21 +1,20 @@
 ---
 title: "Node.js용 Azure 청구 모듈"
 description: "Node.js용 Azure 청구 모듈에 대한 참조"
-keywords: "Azure, SDK, API, 청구, Node.js"
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Billing
-ms.openlocfilehash: fa861aebbd5cbced6477ceeb67dbb5acc7eb233e
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 58eed8996f543e845a53a741f8684d9e7f6cc1e4
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-billing-modules-for-nodejs"></a>Node.js용 Azure 청구 모듈
 
@@ -31,7 +30,7 @@ Azure 청구 npm 모듈을 설치합니다.
 ```bash
 npm install azure-arm-billing
 ```
-### <a name="example"></a>예제 
+### <a name="example"></a>예 
  
 이 예제에서는 과거의 모든 송장 목록을 인쇄합니다.
  

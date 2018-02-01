@@ -1,27 +1,26 @@
 ---
 title: "Node.js용 Azure CDN 모듈"
 description: "Node.js용 Azure CDN 모듈에 대한 참조"
-keywords: Azure, SDK, API, CDN, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: CDN
-ms.openlocfilehash: ae44606510037fa3ba3d5b95196a40f8eeef3afe
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 05e77072f551d425ba3ca5225111d0470d14fe68
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-cdn-modules-for-nodejs"></a>Node.js용 Azure CDN 모듈
 
 ## <a name="overview"></a>개요
 
-Azure CDN(Content Delivery Network)은 Azure 또는 다른 위치에서 호스팅되는 고대역폭 콘텐츠를 개발자에게 제공하는 글로벌 솔루션을 제공합니다. CDN을 사용하여 Azure Blob Storage, 웹 응용 프로그램, 가상 컴퓨터, 응용 프로그램 폴더 또는 기타 HTTP/HTTPS 위치에서 로드된 공개적으로 사용 가능한 개체를 캐시할 수 있습니다. 전략적 위치에 CDN 캐시를 보유하여 사용자에게 콘텐츠를 배달하기 위해 최대 대역폭을 제공할 수 있습니다. CDN은 일반적으로 이미지, 스타일 시트, 문서, 파일, 클라이언트쪽 스크립트 및 HTML 페이지와 같은 정적 콘텐츠를 제공하기 위해 사용됩니다.
+Azure CDN(Content Delivery Network)은 Azure 또는 다른 위치에서 호스팅되는 고대역폭 콘텐츠를 개발자에게 제공하는 글로벌 솔루션을 제공합니다. CDN을 사용하여 Azure Blob Storage, 웹 응용 프로그램, 가상 머신, 응용 프로그램 폴더 또는 기타 HTTP/HTTPS 위치에서 로드된 공개적으로 사용 가능한 개체를 캐시할 수 있습니다. 전략적 위치에 CDN 캐시를 보유하여 사용자에게 콘텐츠를 배달하기 위해 최대 대역폭을 제공할 수 있습니다. CDN은 일반적으로 이미지, 스타일 시트, 문서, 파일, 클라이언트쪽 스크립트 및 HTML 페이지와 같은 정적 콘텐츠를 제공하기 위해 사용됩니다.
 
 ## <a name="management-package"></a>관리 패키지
 
@@ -33,7 +32,7 @@ Azure CDN npm 모듈을 설치합니다.
 npm install azure-arm-cdn
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 모든 CDN 프로필을 나열합니다.
 

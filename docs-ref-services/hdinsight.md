@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure HDInsight 모듈"
 description: "Node.js용 Azure HDInsight 모듈에 대한 참조"
-keywords: Azure, SDK, API, HDInsight, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: HDInsight
-ms.openlocfilehash: 1df988e98def42dcf33e90b4c3debece8cbe85e3
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 897ef2e3d2316a1f6f5637027ac2a2211c556f7a
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-hdinsight-modules-for-nodejs"></a>Node.js용 Azure HDInsight 모듈
-
-## <a name="overview"></a>개요
 
 Azure HDInsight는 HDP(Hortonworks Data Platform)의 Hadoop 구성 요소를 클라우드에 배포한 것입니다. Apache Hadoop은 컴퓨터의 클러스터에서 빅 데이터 집합을 분산 처리하고 분석하기 위한 원래의 오픈 소스 프레임워크였습니다.
 
@@ -47,7 +44,7 @@ npm install azure-arm-hdinsight
 azure-arm-hdinsight-jobs
 ```
 
-### <a name="example"></a>예제 
+### <a name="example"></a>예 
 
 이 예제에서는 HDInsight 클라이언트를 만든 다음 사용 가능한 모든 클러스터를 나열합니다. 
 

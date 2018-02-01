@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Storage 모듈"
 description: "Node.js용 Azure Storage 모듈에 대한 참조"
-keywords: Azure, Node, SDK, API, Storage, NodeJS, JavaScript
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: storage
-ms.openlocfilehash: 61d3f3bb49d10e63a353c474067a155223bb6c76
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: b94c6fbb50e656e0dcc542236afe791c7ddc9be4
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-storage-modules-for-nodejs"></a>Node.js용 Azure Storage 모듈
-
-## <a name="overview"></a>개요
 
 Azure Storage 클라이언트 모듈을 사용하여 다음을 수행할 수 있습니다.
 
@@ -39,7 +36,7 @@ Azure 저장소 클라이언트 npm 모듈을 설치합니다
 npm install azure-storage
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 저장소 컨테이너를 만들고 `data.txt` 로컬 파일을 업로드합니다.
 
@@ -75,7 +72,7 @@ Azure 저장소 관리 npm 모듈을 설치합니다.
 npm install azure-arm-storage
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 저장소 계정을 나열합니다.
 

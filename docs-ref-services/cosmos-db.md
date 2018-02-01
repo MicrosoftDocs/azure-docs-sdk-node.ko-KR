@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Cosmos DB 모듈"
 description: "Node.js용 Azure Cosmos DB 모듈에 대한 참조"
-keywords: Azure, SDK, API, Cosmos DB, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Cosmos DB
-ms.openlocfilehash: 1f545f89b5304b611dbe1ed9cb86052c112f13c1
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 575c276ec755dabe8e7b9ed76ba98ef8073c4f1b
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-cosmos-db-modules-for-nodejs"></a>Node.js용 Azure Cosmos DB 모듈
-
-## <a name="overview"></a>개요
 
 Azure Cosmos DB는 전 세계에 배포된 Microsoft의 멀티모델 데이터베이스입니다. Azure Cosmos DB를 사용하면 Azure의 여러 지리적 영역에서 처리량 및 저장소를 탄력적이고 독립적으로 크기 조정할 수 있습니다. 포괄적인 SLA(서비스 수준 계약)를 통해 처리량, 대기 시간, 가용성 및 일관성을 보장하며, 다른 데이터베이스 서비스에서 제공할 수 없는 기능을 제공합니다.
 
@@ -35,7 +32,7 @@ Azure Cosmos DB npm 모듈을 설치합니다.
 npm install azure-arm-documentdb
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 모든 Cosmos DB 계정을 나열합니다.
 

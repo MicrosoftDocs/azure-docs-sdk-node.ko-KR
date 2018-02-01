@@ -1,21 +1,20 @@
 ---
 title: "Node.js용 Azure Active Directory 모듈"
 description: "Node.js용 Azure Active Directory 모듈에 대한 참조"
-keywords: Azure, Node, SDK, API, Storage, NodeJS, JavaScript
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: active-directory
-ms.openlocfilehash: d0084faa78986bd5518526c6eb84b9c13fdb10bf
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 59ef5321db6e5e7f3ad0e3b63aaa6a107207d3c2
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-active-directory-modules-for-nodejs"></a>Node.js용 Azure Active Directory 모듈
 
@@ -33,7 +32,7 @@ npm을 사용하여 Azure 저장소 클라이언트 또는 관리 모듈을 설�
 npm install adal-node
 ```   
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 [클라이언트 자격 증명 샘플](https://github.com/MSOpenTech/azure-activedirectory-library-for-nodejs/blob/master/sample/client-credentials-sample.js)의 이 예제에서는 클라이언트 자격 증명을 통한 서버 간 인증을 보여 줍니다.
 

@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure IoT Hub 모듈"
 description: "Node.js용 Azure IoT Hub 모듈에 대한 참조"
-keywords: Azure, SDK, API, IoT Hub, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: IoT Hub
-ms.openlocfilehash: 44d01ceb833d2acbef6f9f22b32d4ad66b1fd5ec
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 66a0cad731d8e8dfd5cea64bdc910189a23fc6f0
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-iot-hub-modules-for-nodejs"></a>Node.js용 Azure IoT Hub 모듈
-
-## <a name="overview"></a>개요
 
 Azure IoT Hub는 수백만의 IoT 장치와 솔루션 백 엔드 간에서 안정적이고 안전한 양방향 통신이 가능하도록 완전히 관리되는 서비스입니다. Azure IoT Hub
 - 단방향 메시징, 파일 전송 및 요청-회신 메서드를 포함하여 여러 장치-클라우드 및 클라우드-장치 간 통신 옵션을 제공합니다.
@@ -41,7 +38,7 @@ Azure IoT Hub npm 모듈을 설치합니다.
 npm install azure-arm-iothub
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 IoT Hub를 만들고 이름을 지정합니다.
 

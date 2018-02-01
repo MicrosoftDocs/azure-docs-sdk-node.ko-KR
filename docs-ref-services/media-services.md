@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Media Services 모듈"
 description: "Node.js용 Azure Media Services 모듈에 대한 참조"
-keywords: Azure, SDK, API, Media Services, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Media Services
-ms.openlocfilehash: 9b304ceb0c2d0580534ae1bee5a44d01fd4d8b33
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 77a6716d4ef0d566690325a86e85d66c5ac234d6
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-media-services-modules-for-nodejs"></a>Node.js용 Azure Media Services 모듈
-
-## <a name="overview"></a>개요
 
 Azure Media Services는 개발자가 확장 가능한 미디어 관리 및 배달 응용 프로그램을 빌드할 수 있는 확장 가능한 클라우드 기반 플랫폼입니다. Media Services는 다양한 클라이언트(예: TV, PC 및 모바일 장치)로의 주문형 및 라이브 스트리밍 배달을 위해 비디오 또는 오디오 콘텐츠를 안전하게 업로드, 저장, 인코딩 및 패키지할 수 있는 REST API를 기반으로 합니다.
 
@@ -38,7 +35,7 @@ Azure Media Services npm 모듈을 설치합니다.
 npm install azure-arm-mediaservices
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 리소스 그룹에 대한 모든 Media Services를 나열합니다.
 

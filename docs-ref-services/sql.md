@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure SQL 모듈"
 description: "Node.js용 Azure SQL 모듈에 대한 참조"
-keywords: Azure, Node, SDK, API, NodeJS, JavaScript, SQL
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: sql-database
-ms.openlocfilehash: 65ee90b4e6ca248b9d19a3685163211ca547cad4
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 8ebcfbcbf39def1774a702c9f18a4e3f5ab86931
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-sql-modules-for-nodejs"></a>Node.js용 Azure SQL 모듈
-
-## <a name="overview"></a>개요
 
 Node.js에서 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)에 저장된 데이터를 사용하여 작업합니다.
 관리 라이브러리는 Microsoft Azure SQL 데이터베이스를 쉽게 관리할 수 있는 인터페이스를 제공합니다.
@@ -34,7 +31,7 @@ SQL Server 클라이언트 npm 모듈을 설치합니다.
 npm install tedious
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 SQL Server 데이터베이스에 연결하고 간단한 쿼리를 수행합니다.
 
@@ -81,7 +78,7 @@ Azure SQL Server 관리 npm 모듈을 설치합니다.
 npm install azure-arm-sql
 ```   
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 인증하고, 클라이언트를 만들고, 모든 서버를 나열합니다.
 

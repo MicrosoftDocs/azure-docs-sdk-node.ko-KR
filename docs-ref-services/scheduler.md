@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Scheduler 모듈"
 description: "Node.js용 Azure Scheduler 모듈에 대한 참조"
-keywords: Azure, SDK, API, Scheduler, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Scheduler
-ms.openlocfilehash: 3070612721dc434b8c3d7c3200f0666755fd4ce8
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 539337abd2fff3830cb022a49aff374e877a08ee
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-scheduler-modules-for-nodejs"></a>Node.js용 Azure Scheduler 모듈
-
-## <a name="overview"></a>개요
 
 Azure Scheduler는 HTTP, HTTPS, 저장소 큐 또는 [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview)를 통해 예약된 작업을 생성, 유지 관리 및 호출합니다.
 
@@ -37,7 +34,7 @@ Azure Scheduler npm 모듈을 설치합니다.
 npm install azure-arm-scheduler
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 현재 스케줄러를 나열합니다.
 

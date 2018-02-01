@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure 서비스 맵 모듈"
 description: "Node.js용 Azure 서비스 맵 모듈에 대한 참조"
-keywords: "Azure, SDK, API, 서비스 맵, Node.js"
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Service Map
-ms.openlocfilehash: 330cbceb07ba8bea65c1059a1edb3cd9c69653bc
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 3f858e52f7a97ff77959825a1be993ef52f96e57
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-service-map-modules-for-nodejs"></a>Node.js용 Azure 서비스 맵 모듈
-
-## <a name="overview"></a>개요
 
 서비스 맵은 Windows 및 Linux 시스템에서 응용 프로그램 구성 요소를 자동으로 검색하고 서비스 간 통신을 매핑합니다. 서비스 맵은 서버, 프로세스 및 에이전트 설치 이외에 구성이 필요 없는 TCP 연결 아키텍처의 포트 간 연결을 보여 줍니다.
 
@@ -35,7 +32,7 @@ Azure 서비스 맵 npm 모듈을 설치합니다.
 npm install azure-arm-servicemap
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 지정된 리소스 그룹 및 작업 영역에 대한 모든 서비스 맵을 나열합니다.
 

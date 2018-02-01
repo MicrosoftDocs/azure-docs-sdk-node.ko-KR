@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Redis Cache 모듈"
 description: "Node.js용 Azure Redis Cache 모듈에 대한 참조"
-keywords: Azure, SDK, API, Redis Cache, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Redis Cache
-ms.openlocfilehash: 8a10e522e39461697b740750b63fc82a6cc320ec
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 5d3a410fefcf6840181701763346fbfe08fe023b
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-redis-cache-modules-for-nodejs"></a>Node.js용 Azure Redis Cache 모듈
-
-## <a name="overview"></a>개요
 
 Azure Redis Cache는 인기 있는 Redis 프로젝트 오픈 소스를 기반으로 합니다. Microsoft에서 관리하고 Azure 앱에서 액세스할 수 있는 안전한 전용 Redis 인스턴스에 대한 액세스를 제공합니다.
 
@@ -37,7 +34,7 @@ npm을 사용하여 Node.js용 Redis 모듈을 설치합니다.
 npm install redis
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 Azure Redis Cache 인스턴스에 연결하고, 키/값 쌍을 저장한 다음, 해당 키로 저장된 값을 읽습니다.
 
@@ -68,7 +65,7 @@ npm을 사용하여 Node.js용 Azure Redis Cache 모듈을 설치합니다.
 npm install azure-arm-rediscache
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 Azure로 인증하고 지정된 리소스 그룹의 모든 Redis Cache 인스턴스를 나열합니다.
 

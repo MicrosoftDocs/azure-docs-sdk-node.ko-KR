@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 다른 Azure 모듈"
 description: "Node.js용 다른 Azure 모듈에 대한 참조"
-keywords: "Azure, SDK, API, 기타, Node.js"
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Other
-ms.openlocfilehash: deab8c06c7dbd88fee62de2366b7e6d85324f8cf
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 29a89faa57d295a3e157732efd612008b604fcdc
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-other-modules-for-nodejs"></a>Node.js용 다른 Azure 모듈
-
-## <a name="overview"></a>개요
 
 이 모듈은 모든 개별 Azure Node.js 모듈을 단일 위치에 포함합니다.
 
@@ -33,7 +30,7 @@ npm을 사용하여 Node.js용 Azure 모듈을 설치합니다.
 npm install azure
 ```
 
-##<a name="example"></a>예제
+##<a name="example"></a>예
 
 ##<a name="samples"></a>샘플
 

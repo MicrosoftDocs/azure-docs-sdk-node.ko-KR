@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure MySQL 모듈"
 description: "Node.js용 Azure MySQL 모듈에 대한 참조"
-keywords: "Azure, Node, SDK, API, NodeJS, JavaScript, 데이터베이스, MySQL"
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: mysql
-ms.openlocfilehash: 3efc0fcccb7cb01711ad1ce98e9ff9a2d87b77fe
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: c78f61d0f76b6a40ad85ae0e7d9101349666eb0b
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-mysql-modules-for-nodejs"></a>Node.js용 Azure MySQL 모듈
-
-## <a name="overview"></a>개요
 
 Azure Database for MySQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 [Azure Database for MySQL용 Node.js 연결 라이브러리(영문)](https://github.com/sidorares/node-mysql2) 오픈 소스입니다. 
 
@@ -35,7 +32,7 @@ npm을 사용하여 MySQL 클라이언트 모듈을 설치합니다.
 npm install mysql2
 ```   
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 MySQL 데이터베이스에 연결하고 간단한 쿼리를 수행하여 모든 고객을 검색합니다.
 

@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Resource Manager 모듈"
 description: "Node.js용 Azure Resource Manager 모듈에 대한 참조"
-keywords: "Azure, SDK, API, 리소스, Node.js"
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Resources
-ms.openlocfilehash: 9ccb49ff6de18afbd8409311364d42937c3a8651
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 219dae56dd42719d3e4d3584697d0157cb8d7458
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-resource-modules-for-nodejs"></a>Node.js용 Azure 리소스 모듈
-
-## <a name="overview"></a>개요
 
 Azure Resource Manager를 사용하면 Azure 솔루션 인프라를 배포하고 관리할 수 있습니다. 리소스 그룹의 관련 리소스를 구성하고 JSON 템플릿을 사용하여 리소스를 배포합니다.
 
@@ -35,7 +32,7 @@ npm을 사용하여 Node.js용 Azure Resource Manager 모듈을 설치합니다.
 npm install azure-arm-resource
 ```
 
-##<a name="example"></a>예제
+##<a name="example"></a>예
 
 ##<a name="samples"></a>샘플
 

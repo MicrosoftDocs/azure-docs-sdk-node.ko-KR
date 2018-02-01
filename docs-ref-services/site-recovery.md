@@ -1,27 +1,24 @@
 ---
 title: "Node.js용 Azure Site Recovery 모듈"
 description: "Node.js용 Azure Site Recovery 모듈에 대한 참조"
-keywords: Azure, SDK, API, Site Recovery, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Site Recovery
-ms.openlocfilehash: 3537503118a6fbe181c8cc4b26da545a4bdbd764
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: a1f3e1c18be68dd7e68f38e353e0c2ba224fbaa1
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-site-recovery-modules-for-nodejs"></a>Node.js용 Azure Site Recovery 모듈
 
-## <a name="overview"></a>개요
-
-Site Recovery를 사용하면 지역, 온-프레미스 가상 컴퓨터 및 물리적 서버 사이의 Azure VM을 Azure로 복제하거나 온-프레미스 컴퓨터를 보조 데이터 센터로 복제하도록 자동화할 수 있습니다.
+Site Recovery를 사용하면 지역, 온-프레미스 가상 머신 및 물리적 서버 사이의 Azure VM을 Azure로 복제하거나 온-프레미스 컴퓨터를 보조 데이터 센터로 복제하도록 자동화할 수 있습니다.
 
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)에 대해 자세히 알아보세요.
 
@@ -35,7 +32,7 @@ Azure Site Recovery 서비스 npm 모듈을 설치합니다.
 npm install azure-arm-recoveryservices
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 리소스 그룹에 대한 Site Recovery 서비스를 나열합니다.
 

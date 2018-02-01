@@ -1,20 +1,19 @@
 ---
 title: "Node.js용 Azure 모듈"
 description: "Node.js용 Azure 관리 및 서비스 모듈에 대한 개요입니다."
-keywords: "Azure, Node.js, SDK, API, 관리, 클라이언트, 서비스"
-author: TomArcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
-ms.openlocfilehash: 56dc4f4f36d4e0e9a2d40b38ff8f0b1f9690818c
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 6041303dcb8734cc17052756d291efa6b4c2269e
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-modules-for-nodejs"></a>Node.js용 Azure 모듈
 
@@ -102,8 +101,8 @@ blobService.listBlobsSegmented('testcontainer', null, function(error, result, re
 
 다음 샘플에서는 Azure 관리 모듈을 사용하여 일반적인 작업을 처리하며, 사용자 고유의 앱에서 사용할 준비가 된 코드를 갖추고 있습니다.
 
-- [가상 컴퓨터](node-samples-services-compute.md)
+- [가상 머신](node-samples-services-compute.md)
 - [웹앱](node-samples-services-web-and-mobile.md)
-- [SQL 데이터베이스](node-samples-services-database.md)
+- [SQL Database](node-samples-services-database.md)
    
-[참조](https://docs.microsoft.com/nodejs/api)는 서비스 및 관리 모듈의 모든 모듈에서 사용할 수 있습니다. 새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](https://github.com/Azure/azure-sdk-for-node/releases)에서 사용할 수 있습니다.
+[참조](https://docs.microsoft.com/javascript/api)는 서비스 및 관리 모듈의 모든 모듈에서 사용할 수 있습니다. 새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](https://github.com/Azure/azure-sdk-for-node/releases)에서 사용할 수 있습니다.

@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Notification Hubs 모듈"
 description: "Node.js용 Azure Notification Hubs 모듈에 대한 참조"
-keywords: Azure, SDK, API, Notification Hubs, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Notification Hubs
-ms.openlocfilehash: 0141760cb93c77faed4a04893fe1376e4e75c361
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: c353bdc0fff7784881b5cd4f1d3b4dda5268f1ea
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-notification-hubs-modules-for-nodejs"></a>Node.js용 Azure Notification Hubs 모듈
-
-## <a name="overview"></a>개요
 
 Azure Notification Hubs는 사용하기 쉬운 다중 플랫폼의 확장된 푸시 엔진을 제공합니다. 단일 플랫폼 간 API 호출을 통해 클라우드 또는 온-프레미스 백 엔드에서 모든 모바일 플랫폼으로 개인 설정된 대상 푸시 알림을 쉽게 보낼 수 있습니다.
 
@@ -41,7 +38,7 @@ Azure Notification Hubs 모듈을 설치합니다.
 npm install azure-arm-notificationhubs
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 모든 알림 허브를 나열합니다.
 

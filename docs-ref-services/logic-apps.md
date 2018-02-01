@@ -1,25 +1,23 @@
 ---
 title: "Node.js용 Azure Logic Apps 모듈"
 description: "Node.js용 Azure Logic Apps 모듈에 대한 참조"
-keywords: Azure, SDK, API, Logic Apps, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Logic Apps
-ms.openlocfilehash: 70380dbf1fd199ba4909975b05ade72efaa4e0ec
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 37e485bea316ebd7fb4a064e1919da5501d96eac
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-logic-apps-modules-for-nodejs"></a>Node.js용 Azure Logic Apps 모듈
 
-## <a name="overview"></a>개요
 Logic Apps는 클라우드에서 확장 가능한 통합 및 워크플로를 단순화하고 구현하는 방법을 제공합니다. 모델에 비주얼 디자이너를 제공하고 프로세스를 워크플로로 알려진 일련의 단계로 자동화합니다. 서비스 및 프로토콜에 걸쳐 신속하게 통합하기 위해 클라우드 및 온-프레미스에 많은 커넥터가 있습니다. 'Dynamics CRM에 계정을 추가하는 경우'와 같이 논리 앱은 트리거로 시작하고, 실행 후에 작업, 변환 및 조건 논리의 다양한 조합을 시작할 수 있습니다.
 
 Logic Apps를 사용하는 이점은 다음과 같습니다.
@@ -42,7 +40,7 @@ Node.js용 Azure 논리 모듈을 설치합니다.
 npm install azure-arm-logic
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');

@@ -1,25 +1,22 @@
 ---
 title: "Node.js용 Azure Search 모듈"
 description: "Node.js용 Azure Search 모듈에 대한 참조"
-keywords: Azure, SDK, API, Search, Node.js
-author: tomarcher
-ms.author: tarcher
-manager: douge
+author: craigshoemaker
+ms.author: cshoe
+manager: routlaw
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Search
-ms.openlocfilehash: dc9d4c5128c99a9518bd059e191bb11e4de4b78f
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: bf99013b4479548d07531358bc5103b4e6ac7977
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="azure-search-modules-for-nodejs"></a>Node.js용 Azure Search 모듈
-
-## <a name="overview"></a>개요
 
 Azure Search는 서버 및 인프라 관리를 Microsoft에 위임하는 클라우드 SaaS(Search-as-a-Service) 솔루션이며, 즉시 사용 가능한 서비스를 제공하여 데이터로 채운 다음 응용 프로그램에 검색을 추가하는 데 사용할 수 있습니다.
 
@@ -35,7 +32,7 @@ Azure Search npm 모듈을 설치합니다.
 npm install azure-arm-search
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 Azure에 새 Search 서비스를 만들고 리소스 그룹에 리소스를 나열합니다.
 
