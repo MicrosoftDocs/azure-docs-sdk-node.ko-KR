@@ -1,21 +1,20 @@
 ---
 title: "Node.js 웹앱 샘플용 Azure 관리 모듈"
-description: "Node.js용 Azure 관리 모듈을 사용하여 App Service에서 호스팅되는 Azure 웹앱을 만들고 업데이트하기 위한 샘플 코드를 얻습니다."
-keywords: Azure, Node, SDK, API, Web Apps, App Service
-author: tomarcher
-manager: douge
-ms.author: tarcher
+description: "Azure App Service 관리 모듈의 Node.js 샘플 코드"
+author: craigshoemaker
+manager: routlaw
+ms.author: cshoe
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
-ms.openlocfilehash: 6fb01ecef079530bacd551bd7bbc73aba61f9466
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 1e67b03d352b6877c5090d80571c6c396f334a53
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
-# <a name="azure-management-modules-for-nodejs-samples-for-web-apps"></a><span data-ttu-id="937b9-104">Node.js 웹앱 샘플용 Azure 관리 모듈</span><span class="sxs-lookup"><span data-stu-id="937b9-104">Azure management modules for Node.js samples for web apps</span></span>
+# <a name="nodejs-code-samples-for-azure-app-service-management-modules"></a><span data-ttu-id="67f38-103">Azure App Service 관리 모듈의 Node.js 샘플 코드</span><span class="sxs-lookup"><span data-stu-id="67f38-103">Node.js Code samples for Azure App Service management modules</span></span>
 
 [!INCLUDE [node-appservice-samples](../docs-ref-conceptual/includes/appservice-samples.md)]
