@@ -1,20 +1,19 @@
 ---
 title: "Node.js용 Azure 모듈 시작"
-description: "Azure 구독을 사용하여 Node.js용 Azure 모듈의 기본적인 사용을 시작합니다."
-keywords: "Azure, Node, SDK, API, 시작, Node.js"
-author: tomarcher
-manager: douge
-ms.author: tarcher
+description: "Node.js용 Azure 모듈을 사용하여 인증 및 리소스 관리 시작"
+author: craigshoemaker
+manager: routlaw
+ms.author: cshoe
 ms.date: 06/17/2017
 ms.topic: get-started-article
 ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
-ms.openlocfilehash: ec83d58585014cca05885af4de55473637c410e8
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.openlocfilehash: 4c001fce93ef4b83f9e790b4b9374690c3ac04ef
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="get-started-with-the-azure-modules-for-nodejs"></a>Node.js용 Azure 모듈 시작
 
@@ -23,7 +22,7 @@ ms.lasthandoff: 08/17/2017
 ## <a name="prerequisites"></a>필수 조건
 
 - Azure 계정. 계정이 없으면 [체험 계정을 얻습니다](https://azure.microsoft.com/free/).
-- [Node.JS](https://nodejs.org)
+- [Node.js](https://nodejs.org)
 - [Azure Cloud Shell](https://docs.microsoft.coms/azure/cloud-shell/quickstart) 또는 [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2)
 
 [!INCLUDE [azure-cloud-shell](../docs-ref-conceptual/includes/cloud-shell-try-it.md)]
@@ -86,7 +85,7 @@ az account show
 export AZURE_SUB 306943934-0323-4ae4d-a42b-f6613d1664ac
 ```
 
-## <a name="create-a-linux-virtual-machine"></a>Linux 가상 컴퓨터 만들기
+## <a name="create-a-linux-virtual-machine"></a>Linux 가상 머신 만들기
 
 다음 코드를 사용하여 현재 디렉터리에 *createVM.js* 파일을 새로 만듭니다. `adminPass`의 값을 유효한 암호로 업데이트합니다.
 
@@ -185,7 +184,7 @@ MsRest.loginWithServicePrincipalSecret(
 node createVM.js
 ```
 
-코드가 완료되면 새 가상 컴퓨터의 IP를 가져오고 코드에서 `adminPass` 값을 사용하여 SSH로 로그인합니다.
+코드가 완료되면 새 가상 머신의 IP를 가져오고 코드에서 `adminPass` 값을 사용하여 SSH로 로그인합니다.
 
 ```azurecli-interactive
 az vm list-ip-addresses --name newLinuxVM
@@ -262,9 +261,9 @@ az group delete --name myResourceGroup
 
 앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.
 
-## <a name="reference"></a>참조 
+## <a name="reference"></a>참고 자료 
 
-[참조](/nodejs/api/overview/azure/?view=azure-node-2.0.0)는 모든 패키지에서 사용할 수 있습니다.
+[참조](/javascript/api/overview/azure/)는 모든 패키지에서 사용할 수 있습니다.
 
 ## <a name="get-help-and-give-feedback"></a>도움말 가져오기 및 피드백 제공
 

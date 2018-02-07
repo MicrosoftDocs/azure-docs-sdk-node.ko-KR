@@ -1,18 +1,18 @@
 ---
-title: "Node.js를 통해 Azure 메시지 및 IoT를 사용하는 샘플 코드"
-description: "Node.js를 통해 Azure 메시지 및 IoT를 사용하는 샘플 코드입니다."
-author: tomarcher
-manager: douge
+title: "Node.js를 통한 Azure 메시지 및 IoT 샘플 코드"
+description: "Node.js를 통해 Azure 메시지 및 IoT를 사용하는 방법을 보여주는 샘플 코드"
+author: craigshoemaker
+manager: routlaw
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
-ms.author: tarcher
-ms.openlocfilehash: 5d7fc46edde0df844f8e4933bef672e619bd06fc
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.author: cshoe
+ms.openlocfilehash: 45aad90670a8ac8c0f32f9deab2eb32043c52d96
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="sample-code-for-using-azure-messaging-and-iot-with-nodejs"></a>Node.js를 통해 Azure 메시지 및 IoT를 사용하는 샘플 코드
 

@@ -1,22 +1,22 @@
 ---
-title: "Node.js를 통해 Azure 저장소를 사용하는 샘플 코드"
-description: "Node.js를 통해 Azure 저장소를 사용하는 샘플 코드입니다."
-author: tomarcher
-manager: douge
+title: "Node.js를 통한 Azure Storage 샘플 코드"
+description: "Node.js를 통해 Azure Storage를 사용하는 방법을 보여주는 샘플 코드입니다."
+author: craigshoemaker
+manager: routlaw
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
-ms.author: tarcher
-ms.openlocfilehash: b8bb35016f229b12326ad0667ebdbba63614cb4e
-ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
+ms.author: cshoe
+ms.openlocfilehash: 70a30d92dba7c18b7f85127ba7359d94711b570a
+ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 01/26/2018
 ---
-# <a name="sample-code-for-using-azure-storage-with-nodejs"></a>Node.js를 통해 Azure 저장소를 사용하는 샘플 코드
+# <a name="azure-storage-with-nodejs-code-samples"></a>Node.js를 통한 Azure Storage 샘플 코드
 
-다음 샘플 코드에서는 Node.js를 통해 Azure 저장소를 사용합니다.
+다음 샘플 코드는 Node.js를 통해 Azure Storage를 사용하는 방법을 보여줍니다.
 
 다른 작업에 대한 코드가 필요하면 [Azure Node.js 샘플 ](https://azure.microsoft.com/resources/samples/?term=nodejs)의 전체 목록을 찾아볼 수 있습니다.
 
