@@ -10,31 +10,34 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: active-directory
-ms.openlocfilehash: 59ef5321db6e5e7f3ad0e3b63aaa6a107207d3c2
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.openlocfilehash: c91b8396dbfeb766887b650541044f7ce2e7bde6
+ms.sourcegitcommit: 79213a25192d8913bf8ec16c19fbec6a8eb691f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="azure-active-directory-modules-for-nodejs"></a><span data-ttu-id="b2098-103">Node.js용 Azure Active Directory 모듈</span><span class="sxs-lookup"><span data-stu-id="b2098-103">Azure Active Directory modules for Node.js</span></span>
+# <a name="azure-active-directory-modules-for-nodejs"></a><span data-ttu-id="551bc-103">Node.js용 Azure Active Directory 모듈</span><span class="sxs-lookup"><span data-stu-id="551bc-103">Azure Active Directory modules for Node.js</span></span>
 
-## <a name="overview"></a><span data-ttu-id="b2098-104">개요</span><span class="sxs-lookup"><span data-stu-id="b2098-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="551bc-104">개요</span><span class="sxs-lookup"><span data-stu-id="551bc-104">Overview</span></span>
 
-<span data-ttu-id="b2098-105">[Node.js용 Azure ADAL(Active Directory Authentication Library)(영문)](https://www.npmjs.com/package/adal-node)을 사용하면 Node.js 응용 프로그램에서 AAD에 인증하여 AAD 보호된 웹 리소스에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b2098-105">The [Azure Active Directory Authentication Library (ADAL) for Node.js](https://www.npmjs.com/package/adal-node) enables Node.js applications to authenticate to AAD in order to access AAD protected web resources.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="551bc-105">Azure Active Directory 리소스에 액세스하려면 Azure AD Graph API 대신 [Microsoft Graph](https://graph.microsoft.io/)를 사용하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="551bc-105">We strongly recommend that you use [Microsoft Graph](https://graph.microsoft.io/) instead of Azure AD Graph API to access Azure Active Directory resources.</span></span> <span data-ttu-id="551bc-106">이제 Microsoft는 Azure AD Graph API를 더 이상 개선하지 않을 것이며 Microsoft Graph에 주력하고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="551bc-106">Our development efforts are now concentrated on Microsoft Graph and no further enhancements are planned for Azure AD Graph API.</span></span> <span data-ttu-id="551bc-107">Azure AD Graph API가 적절할 수 있는 시나리오는 매우 제한적입니다. 자세한 내용은 Office 개발자 센터에서 [Microsoft Graph 또는 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 블로그 게시물을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="551bc-107">There are a very limited number of scenarios for which Azure AD Graph API might still be appropriate; for more information, see the [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post in the Office Dev Center.</span></span>
 
-## <a name="client-package"></a><span data-ttu-id="b2098-106">클라이언트 패키지</span><span class="sxs-lookup"><span data-stu-id="b2098-106">Client package</span></span>
+<span data-ttu-id="551bc-108">[Node.js용 Azure ADAL(Active Directory Authentication Library)(영문)](https://www.npmjs.com/package/adal-node)을 사용하면 Node.js 응용 프로그램에서 AAD에 인증하여 AAD 보호된 웹 리소스에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="551bc-108">The [Azure Active Directory Authentication Library (ADAL) for Node.js](https://www.npmjs.com/package/adal-node) enables Node.js applications to authenticate to AAD in order to access AAD protected web resources.</span></span>
 
-### <a name="install-the-npm-modules"></a><span data-ttu-id="b2098-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="b2098-107">Install the npm modules</span></span>
+## <a name="client-package"></a><span data-ttu-id="551bc-109">클라이언트 패키지</span><span class="sxs-lookup"><span data-stu-id="551bc-109">Client package</span></span>
 
-<span data-ttu-id="b2098-108">npm을 사용하여 Azure 저장소 클라이언트 또는 관리 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="b2098-108">Use npm to install the Azure storage client or management modules.</span></span>
+### <a name="install-the-npm-modules"></a><span data-ttu-id="551bc-110">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="551bc-110">Install the npm modules</span></span>
+
+<span data-ttu-id="551bc-111">npm을 사용하여 Azure 저장소 클라이언트 또는 관리 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="551bc-111">Use npm to install the Azure storage client or management modules.</span></span>
 
 ```bash
 npm install adal-node
 ```   
 
-### <a name="example"></a><span data-ttu-id="b2098-109">예</span><span class="sxs-lookup"><span data-stu-id="b2098-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="551bc-112">예</span><span class="sxs-lookup"><span data-stu-id="551bc-112">Example</span></span>
 
-<span data-ttu-id="b2098-110">[클라이언트 자격 증명 샘플](https://github.com/MSOpenTech/azure-activedirectory-library-for-nodejs/blob/master/sample/client-credentials-sample.js)의 이 예제에서는 클라이언트 자격 증명을 통한 서버 간 인증을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="b2098-110">This example from the [client credentials sample](https://github.com/MSOpenTech/azure-activedirectory-library-for-nodejs/blob/master/sample/client-credentials-sample.js) illustrates server-to-server authentication via client credentials.</span></span>
+<span data-ttu-id="551bc-113">[클라이언트 자격 증명 샘플](https://github.com/MSOpenTech/azure-activedirectory-library-for-nodejs/blob/master/sample/client-credentials-sample.js)의 이 예제에서는 클라이언트 자격 증명을 통한 서버 간 인증을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="551bc-113">This example from the [client credentials sample](https://github.com/MSOpenTech/azure-activedirectory-library-for-nodejs/blob/master/sample/client-credentials-sample.js) illustrates server-to-server authentication via client credentials.</span></span>
 
 ```javascript
 const adal = require('adal-node').AuthenticationContext;
@@ -62,8 +65,8 @@ context.acquireTokenWithClientCredentials(
 );
 ```
 
-## <a name="samples"></a><span data-ttu-id="b2098-111">샘플</span><span class="sxs-lookup"><span data-stu-id="b2098-111">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="551bc-114">샘플</span><span class="sxs-lookup"><span data-stu-id="551bc-114">Samples</span></span>
 
 [!INCLUDE [node-activedirectory-samples](../docs-ref-conceptual/includes/activedirectory-samples.md)]
 
-<span data-ttu-id="b2098-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="b2098-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="551bc-115">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="551bc-115">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
