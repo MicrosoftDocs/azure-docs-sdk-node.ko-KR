@@ -1,6 +1,6 @@
 ---
-title: "Node.js용 다른 Azure 모듈"
-description: "Node.js용 다른 Azure 모듈에 대한 참조"
+title: Node.js용 다른 Azure 모듈
+description: Node.js용 다른 Azure 모듈에 대한 참조
 author: craigshoemaker
 ms.author: cshoe
 manager: routlaw
@@ -10,13 +10,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Other
-ms.openlocfilehash: 29a89faa57d295a3e157732efd612008b604fcdc
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.openlocfilehash: c3947dfa957596876f1b7a900867e43a497c0609
+ms.sourcegitcommit: c130d1e69ff1f4a7a857c0067e953309548b3dba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="azure-other-modules-for-nodejs"></a>Node.js용 다른 Azure 모듈
+# <a name="other-modules-for-azure-nodejs"></a>Azure Node.js용 다른 모듈
 
 이 모듈은 모든 개별 Azure Node.js 모듈을 단일 위치에 포함합니다.
 
