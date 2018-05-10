@@ -1,6 +1,6 @@
 ---
-title: "Node.js용 Azure MySQL 모듈"
-description: "Node.js용 Azure MySQL 모듈에 대한 참조"
+title: Node.js용 Azure MySQL 모듈
+description: Node.js용 Azure MySQL 모듈에 대한 참조
 author: craigshoemaker
 ms.author: cshoe
 manager: routlaw
@@ -10,11 +10,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: mysql
-ms.openlocfilehash: c78f61d0f76b6a40ad85ae0e7d9101349666eb0b
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.openlocfilehash: 21b98aeba1e21ec1d9f7da4a115110fffe05b2b8
+ms.sourcegitcommit: b4cf45cb23da56718b482cf7fc240c592e15206b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="azure-mysql-modules-for-nodejs"></a>Node.js용 Azure MySQL 모듈
 
@@ -59,6 +59,6 @@ connection.end();
 
 ## <a name="samples"></a>샘플
 
-[!INCLUDE [node-storage-samples](../docs-ref-conceptual/includes/mysql-samples.md)]
+[!INCLUDE [node-mysql-samples](../docs-ref-conceptual/includes/mysql-samples.md)]
 
 앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.
