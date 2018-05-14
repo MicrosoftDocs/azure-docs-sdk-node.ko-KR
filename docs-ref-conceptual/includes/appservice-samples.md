@@ -1,4 +1,4 @@
-- [<span data-ttu-id="d6237-101">Node.js 백 엔드용 App Service Mobile Apps 빠른 시작 완성(영문)</span><span class="sxs-lookup"><span data-stu-id="d6237-101">App Service Mobile completed quickstart for Node.js backend</span></span>](https://azure.microsoft.com/resources/samples/app-service-mobile-nodejs-backend-quickstart/)
-- [<span data-ttu-id="d6237-102">Node.js를 사용하여 Azure 웹 사이트 관리(영문)</span><span class="sxs-lookup"><span data-stu-id="d6237-102">Manage Azure websites with Node.js</span></span>](https://azure.microsoft.com/resources/samples/app-service-web-nodejs-manage/)
-- [<span data-ttu-id="d6237-103">Azure App Service용 MEAN.js 샘플(영문)</span><span class="sxs-lookup"><span data-stu-id="d6237-103">MEAN.js sample for Azure App Service</span></span>](https://azure.microsoft.com/resources/samples/meanjs/)
-- [<span data-ttu-id="d6237-104">FoodTrucks - Azure App Service용 Node API 앱(영문)</span><span class="sxs-lookup"><span data-stu-id="d6237-104">FoodTrucks - Node API App for Azure App Service</span></span>](https://azure.microsoft.com/resources/samples/app-service-api-node-food-trucks/)
+- [Node.js 백 엔드용 App Service Mobile Apps 빠른 시작 완성(영문)](https://azure.microsoft.com/resources/samples/app-service-mobile-nodejs-backend-quickstart/)
+- [Node.js를 사용하여 Azure 웹 사이트 관리(영문)](https://azure.microsoft.com/resources/samples/app-service-web-nodejs-manage/)
+- [Azure App Service용 MEAN.js 샘플(영문)](https://azure.microsoft.com/resources/samples/meanjs/)
+- [FoodTrucks - Azure App Service용 Node API 앱(영문)](https://azure.microsoft.com/resources/samples/app-service-api-node-food-trucks/)

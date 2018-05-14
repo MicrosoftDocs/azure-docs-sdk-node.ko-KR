@@ -1,4 +1,4 @@
 | | |
 |---|---|
-| <span data-ttu-id="a53b8-101">**가상 머신 관리**</span><span class="sxs-lookup"><span data-stu-id="a53b8-101">**Virtual machine management**</span></span> ||
-| [<span data-ttu-id="a53b8-102">Node.js를 사용하는 Azure 가상 머신 관리 샘플(영문)</span><span class="sxs-lookup"><span data-stu-id="a53b8-102">Azure virtual machines management sample with Node.js</span></span>](https://github.com/Azure-Samples/compute-node-manage-vm) | <span data-ttu-id="a53b8-103">가상 머신을 생성, 나열, 다시 시작 및 삭제하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="a53b8-103">Demonstrates how to create, list, restart, and delete virtual machines.</span></span> |
+| **가상 머신 관리** ||
+| [Node.js를 사용하는 Azure 가상 머신 관리 샘플(영문)](https://github.com/Azure-Samples/compute-node-manage-vm) | 가상 머신을 생성, 나열, 다시 시작 및 삭제하는 방법을 보여 줍니다. |

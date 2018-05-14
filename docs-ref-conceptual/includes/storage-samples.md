@@ -1,5 +1,5 @@
 
-* [<span data-ttu-id="50518-101">Node.js에서 Azure Blob Service 시작(영문)</span><span class="sxs-lookup"><span data-stu-id="50518-101">Getting Started with Azure Blob Service in Node.js</span></span>](https://azure.microsoft.com/resources/samples/storage-blob-node-getting-started/)
-* [<span data-ttu-id="50518-102">Node.js에서 Azure File Service 시작(영문)</span><span class="sxs-lookup"><span data-stu-id="50518-102">Getting Started with Azure File Service in Node.js</span></span>](https://azure.microsoft.com/resources/samples/storage-file-node-getting-started/)
-* [<span data-ttu-id="50518-103">Node.js에서 Azure Queue Service 시작(영문)</span><span class="sxs-lookup"><span data-stu-id="50518-103">Getting Started with Azure Queue Service in Node.js</span></span>](https://azure.microsoft.com/resources/samples/storage-queue-node-getting-started/)
-* [<span data-ttu-id="50518-104">Node.js에서 Azure Table Service 시작(영문)</span><span class="sxs-lookup"><span data-stu-id="50518-104">Getting Started with Azure Table Service in Node.js</span></span>](https://azure.microsoft.com/resources/samples/storage-table-node-getting-started/)
+* [Node.js에서 Azure Blob Service 시작(영문)](https://azure.microsoft.com/resources/samples/storage-blob-node-getting-started/)
+* [Node.js에서 Azure File Service 시작(영문)](https://azure.microsoft.com/resources/samples/storage-file-node-getting-started/)
+* [Node.js에서 Azure Queue Service 시작(영문)](https://azure.microsoft.com/resources/samples/storage-queue-node-getting-started/)
+* [Node.js에서 Azure Table Service 시작(영문)](https://azure.microsoft.com/resources/samples/storage-table-node-getting-started/)
