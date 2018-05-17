@@ -1,19 +1,19 @@
 ---
-title: "Node.js용 Azure 관리 모듈을 사용하여 인증"
-description: "서비스 사용자를 통해 Node.js용 Azure 관리 모듈에 인증합니다."
-author: craigshoemaker
+title: Node.js용 Azure 관리 모듈을 사용하여 인증
+description: 서비스 사용자를 통해 Node.js용 Azure 관리 모듈에 인증합니다.
+author: rloutlaw
 manager: routlaw
-ms.author: cshoe
+ms.author: routlaw
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
-ms.openlocfilehash: c93e5205c43c78d1c9e94d59a362cda336cd8310
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.openlocfilehash: b665c537bf17d08c44357009552054d6b2e609d2
+ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="authenticate-with-the-azure-modules-for-nodejs"></a>Node.js용 Azure 모듈을 사용하여 인증 
 

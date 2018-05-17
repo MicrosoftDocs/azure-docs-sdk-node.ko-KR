@@ -1,18 +1,18 @@
 ---
-title: "Node.js를 통한 Azure Storage 자습서"
-description: "Node.js를 통해 Azure 저장소를 연결하고 사용하는 방법을 보여 주는 자습서입니다."
-author: craigshoemaker
+title: Node.js를 통한 Azure Storage 자습서
+description: Node.js를 통해 Azure 저장소를 연결하고 사용하는 방법을 보여 주는 자습서입니다.
+author: rloutlaw
 manager: routlaw
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
-ms.author: cshoe
-ms.openlocfilehash: 797b1f2a1c4a5206e6b0c7234642e26f14f5a5d6
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.author: routlaw
+ms.openlocfilehash: 8d0b5caa8e1b8cb03d7abfec8851bb0d1037ba74
+ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="azure-storage-with-nodejs-tutorials"></a>Node.js를 통한 Azure Storage 자습서
 
