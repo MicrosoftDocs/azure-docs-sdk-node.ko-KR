@@ -1,1 +1,1 @@
-- [Azure SQL Database: Node.js를 사용하여 데이터 연결 및 쿼리](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-nodejs)
+- [<span data-ttu-id="e5bff-101">Azure SQL Database: Node.js를 사용하여 데이터 연결 및 쿼리</span><span class="sxs-lookup"><span data-stu-id="e5bff-101">Azure SQL Database: Use Node.js to connect and query data</span></span>](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-nodejs)
