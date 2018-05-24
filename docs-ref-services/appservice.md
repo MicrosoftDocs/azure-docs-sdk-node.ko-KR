@@ -1,20 +1,20 @@
 ---
-title: "Node.js용 Azure App Service 모듈"
-description: "Node.js용 Azure App Service 모듈에 대한 참조"
-author: craigshoemaker
-ms.author: cshoe
-manager: routlaw
+title: Node.js용 Azure App Service 모듈
+description: Node.js용 Azure App Service 모듈에 대한 참조
+author: SyntaxC4
+ms.author: cfowler
+manager: jhubbard
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: appservice
-ms.openlocfilehash: b722344f056a52785aef6d853a797231dcafc699
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.openlocfilehash: d9cb33e9aead2878fc9571b1ccb3a34b8990af74
+ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="azure-app-service-modules-for-nodejs"></a>Node.js용 Azure App Service 모듈
 

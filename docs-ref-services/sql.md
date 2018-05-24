@@ -1,20 +1,20 @@
 ---
-title: "Node.js용 Azure SQL 모듈"
-description: "Node.js용 Azure SQL 모듈에 대한 참조"
-author: craigshoemaker
-ms.author: cshoe
-manager: routlaw
+title: Node.js용 Azure SQL 모듈
+description: Node.js용 Azure SQL 모듈에 대한 참조
+author: CarlRabeler
+ms.author: carlrab
+manager: craigg
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: sql-database
-ms.openlocfilehash: 8ebcfbcbf39def1774a702c9f18a4e3f5ab86931
-ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
+ms.openlocfilehash: 095a54a0919b237891ea89f4c826be0fc3060bbe
+ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="azure-sql-modules-for-nodejs"></a>Node.js용 Azure SQL 모듈
 
