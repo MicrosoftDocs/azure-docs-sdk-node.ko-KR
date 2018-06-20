@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34260406"
 ---
 # <a name="azure-authorization-modules-for-nodejs"></a><span data-ttu-id="e771a-103">Node.js용 Azure 권한 부여 모듈</span><span class="sxs-lookup"><span data-stu-id="e771a-103">Azure Authorization modules for Node.js</span></span>
 

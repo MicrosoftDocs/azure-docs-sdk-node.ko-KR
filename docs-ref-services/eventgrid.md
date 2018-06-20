@@ -13,8 +13,10 @@ ms.service: event-grid
 ms.custom: devcenter
 ms.openlocfilehash: 165845f0c94b4e6fd0f385f2262903e44845d09a
 ms.sourcegitcommit: b4cf45cb23da56718b482cf7fc240c592e15206b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33849956"
 ---
 # <a name="azure-event-grid-libraries-for-nodejs"></a><span data-ttu-id="f0d3c-103">Node.js용 Azure Event Grid 라이브러리</span><span class="sxs-lookup"><span data-stu-id="f0d3c-103">Azure Event Grid libraries for Node.js</span></span>
 

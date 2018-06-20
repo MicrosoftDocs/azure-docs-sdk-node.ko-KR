@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34261652"
 ---
 # <a name="azure-resource-modules-for-nodejs"></a><span data-ttu-id="d2c2c-103">Node.js용 Azure 리소스 모듈</span><span class="sxs-lookup"><span data-stu-id="d2c2c-103">Azure Resource modules for Node.js</span></span>
 

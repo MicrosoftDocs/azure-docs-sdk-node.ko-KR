@@ -14,6 +14,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220545"
 ---
 # <a name="create-an-azure-service-principal-with-nodejs"></a><span data-ttu-id="4382e-103">Node.js를 사용하여 Azure 서비스 사용자 만들기</span><span class="sxs-lookup"><span data-stu-id="4382e-103">Create an Azure service principal with Node.js</span></span> 
 

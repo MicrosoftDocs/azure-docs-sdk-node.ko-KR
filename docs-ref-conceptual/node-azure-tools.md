@@ -15,6 +15,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220735"
 ---
 # <a name="azure-tools-for-nodejs-developers"></a><span data-ttu-id="ce079-103">Node.js 개발자용 Azure 도구</span><span class="sxs-lookup"><span data-stu-id="ce079-103">Azure tools for Node.js developers</span></span>
 <span data-ttu-id="ce079-104">Node.js를 통해 Azure를 사용하는 개발에서는 다음과 같은 도구를 사용하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="ce079-104">The following tools are recommended for developing with Azure on Node.js.</span></span>

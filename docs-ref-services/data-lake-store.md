@@ -1,6 +1,6 @@
 ---
-title: "Node.js용 Azure Data Lake Store 모듈"
-description: "Node.js용 Azure Data Lake Store 모듈에 대한 참조"
+title: Node.js용 Azure Data Lake Store 모듈
+description: Node.js용 Azure Data Lake Store 모듈에 대한 참조
 author: craigshoemaker
 ms.author: cshoe
 manager: routlaw
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 78001187db408d21909e949c8a592f76626c2c3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/26/2018
+ms.locfileid: "28117128"
 ---
 # <a name="azure-data-lake-store-modules-for-nodejs"></a><span data-ttu-id="6e141-103">Node.js용 Azure Data Lake Store 모듈</span><span class="sxs-lookup"><span data-stu-id="6e141-103">Azure Data Lake Store modules for Node.js</span></span>
 

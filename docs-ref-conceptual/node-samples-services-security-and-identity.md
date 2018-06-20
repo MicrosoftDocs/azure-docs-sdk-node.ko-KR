@@ -13,6 +13,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220525"
 ---
 # <a name="azure-security-and-identity-with-nodejs-code-samples"></a><span data-ttu-id="350c8-103">Node.js를 통한 Azure 보안 및 ID 샘플 코드</span><span class="sxs-lookup"><span data-stu-id="350c8-103">Azure security and identity with Node.js code samples</span></span>
 

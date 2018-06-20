@@ -1,6 +1,6 @@
 ---
-title: "Node.js용 Azure Billing 샘플 코드"
-description: "Node.js를 사용하여 Azure Billing 기능을 추가하는 방법을 보여주는 샘플 코드입니다."
+title: Node.js용 Azure Billing 샘플 코드
+description: Node.js를 사용하여 Azure Billing 기능을 추가하는 방법을 보여주는 샘플 코드입니다.
 author: ityer
 manager: limorl
 ms.devlang: nodejs
@@ -13,6 +13,7 @@ ms.sourcegitcommit: 37edf026ed6d21abd1cf45a65b3b0329a8bdf18d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29781779"
 ---
 # <a name="azure-billing-with-nodejs-code-samples"></a><span data-ttu-id="9ddd9-103">Node.js를 통한 Azure Billing 샘플 코드</span><span class="sxs-lookup"><span data-stu-id="9ddd9-103">Azure Billing with Node.js code samples</span></span>
 

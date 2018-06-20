@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266628"
 ---
 # <a name="azure-cdn-modules-for-nodejs"></a><span data-ttu-id="a82ee-103">Node.js용 Azure CDN 모듈</span><span class="sxs-lookup"><span data-stu-id="a82ee-103">Azure CDN modules for Node.js</span></span>
 

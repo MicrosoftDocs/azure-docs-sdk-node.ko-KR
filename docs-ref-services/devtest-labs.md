@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34260749"
 ---
 # <a name="azure-devtest-labs-modules-for-nodejs"></a><span data-ttu-id="3ab0a-103">Node.js용 Azure DevTest Labs 모듈</span><span class="sxs-lookup"><span data-stu-id="3ab0a-103">Azure DevTest Labs modules for Node.js</span></span>
 

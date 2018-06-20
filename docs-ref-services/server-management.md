@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34260426"
 ---
 # <a name="azure-server-management-modules-for-nodejs"></a><span data-ttu-id="c91d3-103">Node.js용 Azure 서버 관리 모듈</span><span class="sxs-lookup"><span data-stu-id="c91d3-103">Azure Server Management modules for Node.js</span></span>
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34259942"
 ---
 # <a name="azure-container-registry-modules-for-nodejs"></a><span data-ttu-id="a91bd-103">Node.js용 Azure Container Registry 모듈</span><span class="sxs-lookup"><span data-stu-id="a91bd-103">Azure Container Registry modules for Node.js</span></span>
 

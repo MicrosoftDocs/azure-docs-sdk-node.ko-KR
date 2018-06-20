@@ -13,6 +13,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220755"
 ---
 # <a name="azure-messaging-and-internet-of-things-iot-with-nodejs-tutorials"></a><span data-ttu-id="22af5-103">Node.js를 통한 Azure 메시지 및 IoT(사물 인터넷) 자습서</span><span class="sxs-lookup"><span data-stu-id="22af5-103">Azure messaging and Internet of Things (IoT) with Node.js tutorials</span></span>
 

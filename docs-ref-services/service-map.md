@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265984"
 ---
 # <a name="azure-service-map-modules-for-nodejs"></a><span data-ttu-id="b373c-103">Node.js용 Azure 서비스 맵 모듈</span><span class="sxs-lookup"><span data-stu-id="b373c-103">Azure Service Map modules for Node.js</span></span>
 

@@ -14,6 +14,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220515"
 ---
 # <a name="authenticate-with-the-azure-modules-for-nodejs"></a><span data-ttu-id="0fc15-103">Node.js용 Azure 모듈을 사용하여 인증</span><span class="sxs-lookup"><span data-stu-id="0fc15-103">Authenticate with the Azure modules for Node.js</span></span> 
 

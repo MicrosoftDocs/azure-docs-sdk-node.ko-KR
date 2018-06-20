@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34261882"
 ---
 # <a name="azure-service-fabric-modules-for-nodejs"></a><span data-ttu-id="7436b-103">Node.js용 Azure Service Fabric 모듈</span><span class="sxs-lookup"><span data-stu-id="7436b-103">Azure Service Fabric modules for Node.js</span></span>
 

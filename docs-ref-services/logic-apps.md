@@ -15,6 +15,7 @@ ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34261554"
 ---
 # <a name="azure-logic-apps-modules-for-nodejs"></a><span data-ttu-id="fa4b7-103">Node.js용 Azure Logic Apps 모듈</span><span class="sxs-lookup"><span data-stu-id="fa4b7-103">Azure Logic Apps modules for Node.js</span></span>
 

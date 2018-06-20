@@ -1,6 +1,6 @@
 ---
-title: "Visual Studio Code 및 Azure를 사용하여 Node.js 개발"
-description: "Azure에 Node.js 앱을 만들고, Docker화하고, 배포하는 방법을 보여 주는 완벽한 종단 간 자습서입니다."
+title: Visual Studio Code 및 Azure를 사용하여 Node.js 개발
+description: Azure에 Node.js 앱을 만들고, Docker화하고, 배포하는 방법을 보여 주는 완벽한 종단 간 자습서입니다.
 services: multiple
 author: tomarcher
 manager: douge
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 9974b43899e98df10253738dab5b09b484ac1bf5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/17/2017
+ms.locfileid: "20908143"
 ---
 # <a name="nodejs-development-with-visual-studio-code-and-azure"></a><span data-ttu-id="0f74e-103">Visual Studio Code 및 Azure를 사용하여 Node.js 개발</span><span class="sxs-lookup"><span data-stu-id="0f74e-103">Node.js development with Visual Studio Code and Azure</span></span>
 
@@ -71,7 +72,7 @@ ms.lasthandoff: 08/17/2017
 
 1. <span data-ttu-id="0f74e-135">Visual Studio Code 내에서 통합된 Git 탭(Git 로고가 있는 탭)으로 전환합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-135">Within Visual Studio Code, switch to the integrated Git tab (the tab with the Git logo).</span></span>
 
-1. <span data-ttu-id="0f74e-136">**메시지** 상자에서 커밋 메시지를 입력하고 **&lt;Ctrl>&lt;Enter>**를 누릅니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-136">In the **Message** box, enter a commit message, and press **&lt;Ctrl>&lt;Enter>**.</span></span> 
+1. <span data-ttu-id="0f74e-136">**메시지** 상자에서 커밋 메시지를 입력하고 **&lt;Ctrl>&lt;Enter>** 를 누릅니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-136">In the **Message** box, enter a commit message, and press **&lt;Ctrl>&lt;Enter>**.</span></span> 
 
     ![Git에 yarn.lock 파일 추가](./media/node-howto-e2e/git.png)
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 08/17/2017
 
 1. <span data-ttu-id="0f74e-141">`.js`를 입력하여 프로젝트의 모든 JavaScript/JSON 파일을 각 파일의 부모 디렉터리와 함께 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-141">Enter `.js` to display all the JavaScript/JSON files in the project along with each file's parent directory</span></span> 
 
-    ![모든 .js* 파일 표시](./media/node-howto-e2e/git-output.png)
+    ![모든 .js\* 파일 표시](./media/node-howto-e2e/git-output.png)
 
 1. <span data-ttu-id="0f74e-143">앱에 대한 시작 스크립트인 `server.js`를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-143">Select `server.js`, which is the startup script for the app.</span></span> 
 
@@ -162,7 +163,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 ![Visual Studio Code 내 중단점 설정](./media/node-howto-e2e/breakpoint.png)
 
 > [!NOTE]
-> <span data-ttu-id="0f74e-191">Visual Studio Code는 표준 중단점 외에도 앱에서 실행을 일시 중단해야 하는 시점을 사용자 지정할 수 있는 조건부 중단점을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-191">In addition to standard breakpoints, Visual Studio Code supports conditional breakpoints that allow you to customize when the app should suspend execution.</span></span> <span data-ttu-id="0f74e-192">조건부 중단점을 설정하려면 마우스 오른쪽 단추로 실행을 일시 중지하려는 줄의 왼쪽 영역을 클릭하고, **조건부 중단점 추가...**를 선택한 다음, JavaScript 식(예: `foo = "bar"` ) 또는 실행을 일시 중지하려는 조건을 정의하는 실행 횟수를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-192">To set a conditional breakpoint, right-click the area to the left of the line on which you wish to pause execution, select **Add Conditional Breakpoint...**, and specify either a JavaScript expression (e.g. `foo = "bar"`) or execution count that defines the condition under which you want to pause execution.</span></span>
+> <span data-ttu-id="0f74e-191">Visual Studio Code는 표준 중단점 외에도 앱에서 실행을 일시 중단해야 하는 시점을 사용자 지정할 수 있는 조건부 중단점을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-191">In addition to standard breakpoints, Visual Studio Code supports conditional breakpoints that allow you to customize when the app should suspend execution.</span></span> <span data-ttu-id="0f74e-192">조건부 중단점을 설정하려면 마우스 오른쪽 단추로 실행을 일시 중지하려는 줄의 왼쪽 영역을 클릭하고, **조건부 중단점 추가...** 를 선택한 다음, JavaScript 식(예: `foo = "bar"` ) 또는 실행을 일시 중지하려는 조건을 정의하는 실행 횟수를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-192">To set a conditional breakpoint, right-click the area to the left of the line on which you wish to pause execution, select **Add Conditional Breakpoint...**, and specify either a JavaScript expression (e.g. `foo = "bar"`) or execution count that defines the condition under which you want to pause execution.</span></span>
 > 
 > 
 
@@ -309,7 +310,7 @@ FROM node:latest
 FROM mhart
 ```
 
-<span data-ttu-id="0f74e-253">`mhart`의 `t` 뒤에 커서를 배치한 다음 **&lt;Ctrl>&lt;스페이스>**를 눌러 `mhart`에서 DockerHub에 게시한 모든 이미지 리포지토리를 봅니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-253">With your cursor positioned after the `t` in `mhart`, press **&lt;Ctrl>&lt;Space>** to view all the image repositories that `mhart` has published on DockerHub.</span></span>
+<span data-ttu-id="0f74e-253">`mhart`의 `t` 뒤에 커서를 배치한 다음 **&lt;Ctrl>&lt;스페이스>** 를 눌러 `mhart`에서 DockerHub에 게시한 모든 이미지 리포지토리를 봅니다.</span><span class="sxs-lookup"><span data-stu-id="0f74e-253">With your cursor positioned after the `t` in `mhart`, press **&lt;Ctrl>&lt;Space>** to view all the image repositories that `mhart` has published on DockerHub.</span></span>
 
 ![Docker 확장의 자동 완성](./media/node-howto-e2e/docker-completion.png)
 
