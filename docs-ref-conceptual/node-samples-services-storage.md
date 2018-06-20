@@ -13,6 +13,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220615"
 ---
 # <a name="azure-storage-with-nodejs-code-samples"></a>Node.js를 통한 Azure Storage 샘플 코드
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220735"
 ---
 # <a name="azure-tools-for-nodejs-developers"></a>Node.js 개발자용 Azure 도구
 Node.js를 통해 Azure를 사용하는 개발에서는 다음과 같은 도구를 사용하는 것이 좋습니다.
