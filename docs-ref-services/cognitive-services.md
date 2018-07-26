@@ -10,12 +10,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Cognitive Services
-ms.openlocfilehash: fd0870f4b38928c23145a50d4c71456b4c94c3e9
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: 7941d3850ef6c3518ff0ab13fe1b1ea239ab1828
+ms.sourcegitcommit: 99a36d08455760a0436fb6a8fffb542518e3cb2f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34259972"
+ms.lasthandoff: 07/21/2018
+ms.locfileid: "39188999"
 ---
 # <a name="javascript-azure-cognitive-services-modules"></a>JavaScript Azure Cognitive Services 모듈
 
@@ -29,7 +29,7 @@ ms.locfileid: "34259972"
 - 성인 콘텐츠를 자동으로 제한할 수 있도록 성인/외설 설정을 적용합니다.
 - 사진의 이미지 형식과 색 구성표를 파악합니다.
 
-브라우저에서 무료로 [Computer Vision을 사용](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/)해 보세요.
+브라우저에서 무료로 [Computer Vision을 사용](https://azure.microsoft.com/services/cognitive-services/computer-vision/)해 보세요.
 
 [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)을 사용하여 JavaScript 모듈을 받습니다.
 
@@ -55,7 +55,7 @@ Content Moderator 서비스에 대해 [자세히 알아보세요](/azure/cogniti
 
 사진에서 얼굴을 감지, 식별, 분석, 구성하고 태그를 지정합니다. 
 
-브라우저에서 [Face API를 사용](https://azure.microsoft.com/en-us/services/cognitive-services/face/)해 보세요.
+브라우저에서 [Face API를 사용](https://azure.microsoft.com/services/cognitive-services/face/)해 보세요.
 
 [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)을 사용하여 JavaScript 모듈을 받습니다.
 
@@ -71,7 +71,7 @@ Face API에 대해 [자세히 알아보고](/azure/cognitive-services/face/overv
 
 Bing Web Search API로 인덱싱된 웹 문서를 검색하고 결과 형식, 최신성 등을 기준으로 결과의 범위를 축소해 보세요. 
 
-브라우저에서 [Web Search API를 사용](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)해 보세요.
+브라우저에서 [Web Search API를 사용](https://azure.microsoft.com/services/cognitive-services/bing-web-search-api/)해 보세요.
 
 [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)을 사용하여 JavaScript 모듈을 받습니다.
 
@@ -85,7 +85,7 @@ Bing Web Search API에 대해 [자세히 알아보고](/azure/cognitive-services
 
 이미지를 검색하고 결과에 썸네일, 전체 이미지 URL, 이미지 메타데이터 등을 가져오세요.
 
-브라우저에서 [Image Search API를 사용](https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/)해 보세요.
+브라우저에서 [Image Search API를 사용](https://azure.microsoft.com/services/cognitive-services/bing-image-search-api/)해 보세요.
 
 [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)을 사용하여 JavaScript 모듈을 받습니다.
 
@@ -162,7 +162,7 @@ Bing News Search 서비스에 대해 [자세히 알아보고](/azure/cognitive-s
 - 핵심 문구 추출
 - 언어 검색
 
-브라우저에서 [텍스트 분석 API를 사용](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/)해 보세요.
+브라우저에서 [텍스트 분석 API를 사용](https://azure.microsoft.com/services/cognitive-services/text-analytics/)해 보세요.
 
 [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)을 사용하여 JavaScript 모듈을 받습니다.
 
@@ -177,7 +177,7 @@ npm install azure-cognitiveservices-textanalytics
 
 Bing Spell Check API를 사용하여 상황별 문법 및 맞춤법 검사를 수행하세요.
 
-브라우저에서 [Spell Check API를 사용](https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/)해 보세요.
+브라우저에서 [Spell Check API를 사용](https://azure.microsoft.com/services/cognitive-services/spell-check/)해 보세요.
 
 [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)을 사용하여 JavaScript 모듈을 받습니다.
 
