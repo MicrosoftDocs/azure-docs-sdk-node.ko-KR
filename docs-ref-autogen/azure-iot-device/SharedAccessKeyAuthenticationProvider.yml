@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 6890ca673f5547d4d21b68536ffd65b95c31c606
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40068568"
+items:
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+  name: SharedAccessKeyAuthenticationProvider
+  fullName: SharedAccessKeyAuthenticationProvider
+  children:
+  - azure-iot-device.SharedAccessKeyAuthenticationProvider.fromConnectionString
+  - azure-iot-device.SharedAccessKeyAuthenticationProvider.getDeviceCredentials
+  - azure-iot-device.SharedAccessKeyAuthenticationProvider.stop
+  - azure-iot-device.SharedAccessKeyAuthenticationProvider.type
+  langs:
+  - typeScript
+  type: class
+  summary: >
+    <span data-ttu-id="66b2c-101">제공 된 `AuthenticationProvider` 연결 문자열을 사용 하 여 간단히 만들 수 있으며 다음 되는 장치 클라이언트 및 전송 하 여 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-101">Provides an `AuthenticationProvider` object that can be created simply with a connection string and is then used by the device client and transports to authenticate with the Azure IoT hub instance.</span></span>
+
+    <span data-ttu-id="66b2c-102">합니다 `SharedAccessKeyAuthenticationProvider` 개체 일반 주기로 공유 액세스 서명 토큰을 만드는 담당 하 고 내보냅니다는 `newTokenAvailable` Azure IoT hub 인스턴스를 사용 하 여 자격 증명을 갱신 하 고 연결을 유지할에 전송에 대 한 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-102">The `SharedAccessKeyAuthenticationProvider` object takes care of creating shared access signature tokens on a regular cadence and emits the `newTokenAvailable` event for the transports to renew their credentials with the Azure IoT hub instance and stay connected.</span></span>
+  extends:
+    name: EventEmitter
+  package: azure-iot-device
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.fromConnectionString
+  name: fromConnectionString
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="66b2c-103">새 `SharedAccessKeyAuthenticationProvider` 연결 문자열에서</span><span class="sxs-lookup"><span data-stu-id="66b2c-103">Creates a new `SharedAccessKeyAuthenticationProvider` from a connection string</span></span>
+  syntax:
+    content: 'static function fromConnectionString(connectionString: string, tokenValidTimeInSeconds?: number, tokenRenewalMarginInSeconds?: number)'
+    parameters:
+    - id: connectionString
+      type:
+      - string
+      description: <span data-ttu-id="66b2c-104">IoT hub 사용 하 여 인증에 대 한 필수 매개 변수를 포함 하는 장치 연결 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-104">A device connection string containing the required parameters for authentication with the IoT hub.</span></span>
+    - id: tokenValidTimeInSeconds
+      type:
+      - number
+      description: <span data-ttu-id="66b2c-105">토큰 유효 해야 하는 시간 (초) 수입니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-105">The number of seconds for which a token is supposed to be valid.</span></span>
+      optional: true
+    - id: tokenRenewalMarginInSeconds
+      type:
+      - number
+      description: >
+        <span data-ttu-id="66b2c-106">유효 기간이 종료 되기 전에 시간 (초) 수는 `SharedAccessKeyAuthenticationProvider` 토큰을 갱신 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-106">The number of seconds before the end of the validity period during which the `SharedAccessKeyAuthenticationProvider` should renew the token.</span></span>
+      optional: true
+    return:
+      type:
+      - azure-iot-device.SharedAccessKeyAuthenticationProvider
+  package: azure-iot-device
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.getDeviceCredentials
+  name: getDeviceCredentials
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="66b2c-107">가져옵니다 형식의 자격 증명을 최신 장치에 전송 하 여이 메서드는 사용을 `TransportConfig` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-107">This method is used by the transports to gets the most current device credentials in the form of a `TransportConfig` object.</span></span>
+  syntax:
+    content: 'function getDeviceCredentials(callback: (err: Error, credentials?: TransportConfig) => void)'
+    parameters:
+    - id: callback
+      type:
+      - '(err: Error, credentials?: TransportConfig) => void'
+      description: >
+        <span data-ttu-id="66b2c-108">오류 또는 IoT hub를 사용 하 여 인증을 사용할 수 있는 장치 자격 증명 집합을 사용 하 여 호출 되는 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-108">function that will be called with either an error or a set of device credentials that can be used to authenticate with the IoT hub.</span></span>
+  package: azure-iot-device
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.stop
+  name: stop
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="66b2c-109">SAS 토큰을 갱신 하는 데 타이머를 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="66b2c-109">Stops the timer used to renew to SAS token.</span></span>
+  syntax:
+    content: function stop()
+    parameters: []
+  package: azure-iot-device
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.type
+  name: type
+  fullName: type
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'type: AuthenticationType'
+    return:
+      type:
+      - AuthenticationType
+  package: azure-iot-device
+references:
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+  spec.typeScript:
+  - name: SharedAccessKeyAuthenticationProvider
+    fullName: SharedAccessKeyAuthenticationProvider
+    uid: azure-iot-device.SharedAccessKeyAuthenticationProvider

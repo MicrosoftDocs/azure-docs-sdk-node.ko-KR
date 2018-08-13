@@ -1,0 +1,1409 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 946261e163ffded64f9e6467ab5f4c864f1e0f77
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40071250"
+items:
+- uid: azure-arm-dns.RecordSets
+  name: RecordSets
+  fullName: RecordSets
+  children:
+  - azure-arm-dns.RecordSets.createOrUpdate
+  - azure-arm-dns.RecordSets.createOrUpdate_1
+  - azure-arm-dns.RecordSets.createOrUpdate_2
+  - azure-arm-dns.RecordSets.createOrUpdateWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.deleteMethod
+  - azure-arm-dns.RecordSets.deleteMethod_2
+  - azure-arm-dns.RecordSets.deleteMethod_1
+  - azure-arm-dns.RecordSets.deleteMethodWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.get
+  - azure-arm-dns.RecordSets.get_1
+  - azure-arm-dns.RecordSets.get_2
+  - azure-arm-dns.RecordSets.getWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.listAllByDnsZone_1
+  - azure-arm-dns.RecordSets.listAllByDnsZone_2
+  - azure-arm-dns.RecordSets.listAllByDnsZone
+  - azure-arm-dns.RecordSets.listAllByDnsZoneNext
+  - azure-arm-dns.RecordSets.listAllByDnsZoneNext_1
+  - azure-arm-dns.RecordSets.listAllByDnsZoneNext_2
+  - azure-arm-dns.RecordSets.listAllByDnsZoneNextWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.listAllByDnsZoneWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.listByDnsZone
+  - azure-arm-dns.RecordSets.listByDnsZone_1
+  - azure-arm-dns.RecordSets.listByDnsZone_2
+  - azure-arm-dns.RecordSets.listByDnsZoneNext
+  - azure-arm-dns.RecordSets.listByDnsZoneNext_2
+  - azure-arm-dns.RecordSets.listByDnsZoneNext_1
+  - azure-arm-dns.RecordSets.listByDnsZoneNextWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.listByDnsZoneWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.listByType
+  - azure-arm-dns.RecordSets.listByType_1
+  - azure-arm-dns.RecordSets.listByType_2
+  - azure-arm-dns.RecordSets.listByTypeNext
+  - azure-arm-dns.RecordSets.listByTypeNext_1
+  - azure-arm-dns.RecordSets.listByTypeNext_2
+  - azure-arm-dns.RecordSets.listByTypeNextWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.listByTypeWithHttpOperationResponse
+  - azure-arm-dns.RecordSets.update
+  - azure-arm-dns.RecordSets.update_1
+  - azure-arm-dns.RecordSets.update_2
+  - azure-arm-dns.RecordSets.updateWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.createOrUpdate
+  name: createOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-101">만들거나 레코드 DNS 영역 내에서 집합을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-101">Creates or updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-102">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-102">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-103">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-103">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-104">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-104">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-105">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-105">The type of DNS record in this record set.</span></span> <span data-ttu-id="ba014-106">레코드 집합 형식이 SOA 업데이트할 수 있지만 만들어지지 (만들어진 DNS 영역을 만들 때).</span><span class="sxs-lookup"><span data-stu-id="ba014-106">Record sets of type SOA can be updated but not created (they are created when the DNS zone is created).</span></span> <span data-ttu-id="ba014-107">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-107">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: >
+        <span data-ttu-id="ba014-108">CreateOrUpdate 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-108">Parameters supplied to the CreateOrUpdate operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.createOrUpdate_1
+  name: createOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-109">만들거나 레코드 DNS 영역 내에서 집합을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-109">Creates or updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, callback: ServiceCallback<RecordSet>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSet>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.createOrUpdate_2
+  name: createOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-110">만들거나 레코드 DNS 영역 내에서 집합을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-110">Creates or updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, options: function, callback: ServiceCallback<RecordSet>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSet>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.createOrUpdateWithHttpOperationResponse
+  name: createOrUpdateWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-111">만들거나 레코드 DNS 영역 내에서 집합을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-111">Creates or updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-112">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-112">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-113">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-113">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-114">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-114">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-115">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-115">The type of DNS record in this record set.</span></span> <span data-ttu-id="ba014-116">레코드 집합 형식이 SOA 업데이트할 수 있지만 만들어지지 (만들어진 DNS 영역을 만들 때).</span><span class="sxs-lookup"><span data-stu-id="ba014-116">Record sets of type SOA can be updated but not created (they are created when the DNS zone is created).</span></span> <span data-ttu-id="ba014-117">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-117">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: >
+        <span data-ttu-id="ba014-118">CreateOrUpdate 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-118">Parameters supplied to the CreateOrUpdate operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSet>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.deleteMethod
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-119">레코드 집합에서 DNS 영역을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-119">Deletes a record set from a DNS zone.</span></span> <span data-ttu-id="ba014-120">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-120">This operation cannot be undone.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-121">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-121">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-122">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-122">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-123">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-123">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-124">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-124">The type of DNS record in this record set.</span></span> <span data-ttu-id="ba014-125">레코드 집합 형식이 SOA를 삭제할 수 없습니다 (삭제 됩니다 DNS 영역 삭제 될 때).</span><span class="sxs-lookup"><span data-stu-id="ba014-125">Record sets of type SOA cannot be deleted (they are deleted when the DNS zone is deleted).</span></span> <span data-ttu-id="ba014-126">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-126">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.deleteMethod_2
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-127">레코드 집합에서 DNS 영역을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-127">Deletes a record set from a DNS zone.</span></span> <span data-ttu-id="ba014-128">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-128">This operation cannot be undone.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, options: function, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.deleteMethod_1
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-129">레코드 집합에서 DNS 영역을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-129">Deletes a record set from a DNS zone.</span></span> <span data-ttu-id="ba014-130">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-130">This operation cannot be undone.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.deleteMethodWithHttpOperationResponse
+  name: deleteMethodWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-131">레코드 집합에서 DNS 영역을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-131">Deletes a record set from a DNS zone.</span></span> <span data-ttu-id="ba014-132">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-132">This operation cannot be undone.</span></span>
+  syntax:
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-133">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-133">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-134">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-134">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-135">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-135">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-136">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-136">The type of DNS record in this record set.</span></span> <span data-ttu-id="ba014-137">레코드 집합 형식이 SOA를 삭제할 수 없습니다 (삭제 됩니다 DNS 영역 삭제 될 때).</span><span class="sxs-lookup"><span data-stu-id="ba014-137">Record sets of type SOA cannot be deleted (they are deleted when the DNS zone is deleted).</span></span> <span data-ttu-id="ba014-138">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-138">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.get
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-139">레코드 집합을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-139">Gets a record set.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-140">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-140">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-141">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-141">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-142">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-142">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-143">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-143">The type of DNS record in this record set.</span></span>
+
+        <span data-ttu-id="ba014-144">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-144">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.get_1
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-145">레코드 집합을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-145">Gets a record set.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, callback: ServiceCallback<RecordSet>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSet>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.get_2
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-146">레코드 집합을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-146">Gets a record set.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, options: function, callback: ServiceCallback<RecordSet>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSet>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-147">레코드 집합을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-147">Gets a record set.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-148">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-148">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-149">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-149">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-150">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-150">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-151">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-151">The type of DNS record in this record set.</span></span>
+
+        <span data-ttu-id="ba014-152">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-152">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSet>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZone_1
+  name: listAllByDnsZone
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-153">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-153">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZone(resourceGroupName: string, zoneName: string, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZone_2
+  name: listAllByDnsZone
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-154">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-154">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZone(resourceGroupName: string, zoneName: string, options: function, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZone
+  name: listAllByDnsZone
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-155">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-155">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZone(resourceGroupName: string, zoneName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-156">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-156">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-157">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-157">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZoneNext
+  name: listAllByDnsZoneNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-158">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-158">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZoneNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-159">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-159">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZoneNext_1
+  name: listAllByDnsZoneNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-160">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-160">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZoneNext(nextPageLink: string, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZoneNext_2
+  name: listAllByDnsZoneNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-161">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-161">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZoneNext(nextPageLink: string, options: function, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZoneNextWithHttpOperationResponse
+  name: listAllByDnsZoneNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-162">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-162">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZoneNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-163">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-163">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listAllByDnsZoneWithHttpOperationResponse
+  name: listAllByDnsZoneWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-164">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-164">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listAllByDnsZoneWithHttpOperationResponse(resourceGroupName: string, zoneName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-165">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-165">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-166">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-166">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZone
+  name: listByDnsZone
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-167">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-167">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZone(resourceGroupName: string, zoneName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-168">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-168">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-169">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-169">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZone_1
+  name: listByDnsZone
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-170">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-170">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZone(resourceGroupName: string, zoneName: string, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZone_2
+  name: listByDnsZone
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-171">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-171">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZone(resourceGroupName: string, zoneName: string, options: function, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZoneNext
+  name: listByDnsZoneNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-172">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-172">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZoneNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-173">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-173">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZoneNext_2
+  name: listByDnsZoneNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-174">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-174">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZoneNext(nextPageLink: string, options: function, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZoneNext_1
+  name: listByDnsZoneNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-175">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-175">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZoneNext(nextPageLink: string, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZoneNextWithHttpOperationResponse
+  name: listByDnsZoneNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-176">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-176">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZoneNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-177">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-177">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByDnsZoneWithHttpOperationResponse
+  name: listByDnsZoneWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-178">DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-178">Lists all record sets in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByDnsZoneWithHttpOperationResponse(resourceGroupName: string, zoneName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-179">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-179">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-180">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-180">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByType
+  name: listByType
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-181">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-181">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByType(resourceGroupName: string, zoneName: string, recordType: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-182">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-182">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-183">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-183">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-184">열거를 레코드 집합의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-184">The type of record sets to enumerate.</span></span> <span data-ttu-id="ba014-185">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-185">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByType_1
+  name: listByType
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-186">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-186">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByType(resourceGroupName: string, zoneName: string, recordType: string, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByType_2
+  name: listByType
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-187">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-187">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByType(resourceGroupName: string, zoneName: string, recordType: string, options: function, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByTypeNext
+  name: listByTypeNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-188">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-188">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByTypeNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-189">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-189">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByTypeNext_1
+  name: listByTypeNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-190">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-190">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByTypeNext(nextPageLink: string, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByTypeNext_2
+  name: listByTypeNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-191">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-191">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByTypeNext(nextPageLink: string, options: function, callback: ServiceCallback<RecordSetListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSetListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSetListResult>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByTypeNextWithHttpOperationResponse
+  name: listByTypeNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-192">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-192">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByTypeNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-193">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-193">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.listByTypeWithHttpOperationResponse
+  name: listByTypeWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-194">DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-194">Lists the record sets of a specified type in a DNS zone.</span></span>
+  syntax:
+    content: 'function listByTypeWithHttpOperationResponse(resourceGroupName: string, zoneName: string, recordType: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-195">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-195">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-196">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-196">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-197">열거를 레코드 집합의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-197">The type of record sets to enumerate.</span></span> <span data-ttu-id="ba014-198">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-198">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.update
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-199">DNS 영역 내에서 설정 하는 레코드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-199">Updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function update(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-200">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-200">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-201">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-201">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-202">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-202">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-203">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-203">The type of DNS record in this record set.</span></span>
+
+        <span data-ttu-id="ba014-204">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-204">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: >
+        <span data-ttu-id="ba014-205">업데이트 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-205">Parameters supplied to the Update operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.update_1
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-206">DNS 영역 내에서 설정 하는 레코드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-206">Updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function update(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, callback: ServiceCallback<RecordSet>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSet>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.update_2
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-207">DNS 영역 내에서 설정 하는 레코드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-207">Updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function update(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, options: function, callback: ServiceCallback<RecordSet>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: zoneName
+      type:
+      - string
+      description: ''
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: ''
+    - id: recordType
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-dns.RecordSet>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-dns.RecordSet>
+  package: azure-arm-dns
+- uid: azure-arm-dns.RecordSets.updateWithHttpOperationResponse
+  name: updateWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="ba014-208">DNS 영역 내에서 설정 하는 레코드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-208">Updates a record set within a DNS zone.</span></span>
+  syntax:
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, zoneName: string, relativeRecordSetName: string, recordType: string, parameters: RecordSet, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-209">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="ba014-209">The name of the resource group.</span></span>
+    - id: zoneName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-210">(종료 점) 없이 DNS 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-210">The name of the DNS zone (without a terminating dot).</span></span>
+    - id: relativeRecordSetName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-211">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-211">The name of the record set, relative to the name of the zone.</span></span>
+    - id: recordType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="ba014-212">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-212">The type of DNS record in this record set.</span></span>
+
+        <span data-ttu-id="ba014-213">가능한 값: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'N', 'PTR', 'SOA', 'SRV', 'TXT'</span><span class="sxs-lookup"><span data-stu-id="ba014-213">Possible values include: 'A', 'AAAA', 'CAA', 'CNAME', 'MX', 'NS', 'PTR', 'SOA', 'SRV', 'TXT'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-dns.RecordSet
+      description: >
+        <span data-ttu-id="ba014-214">업데이트 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="ba014-214">Parameters supplied to the Update operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-dns.RecordSet>>
+  package: azure-arm-dns
+references:
+- uid: azure-arm-dns.RecordSet
+  spec.typeScript:
+  - name: RecordSet
+    fullName: RecordSet
+    uid: azure-arm-dns.RecordSet
+- uid: Promise<azure-arm-dns.RecordSet>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RecordSet
+    fullName: RecordSet
+    uid: azure-arm-dns.RecordSet
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-dns.RecordSet>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: RecordSet
+    fullName: RecordSet
+    uid: azure-arm-dns.RecordSet
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-dns.RecordSet>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: RecordSet
+    fullName: RecordSet
+    uid: azure-arm-dns.RecordSet
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-dns.RecordSetListResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RecordSetListResult
+    fullName: RecordSetListResult
+    uid: azure-arm-dns.RecordSetListResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-dns.RecordSetListResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: RecordSetListResult
+    fullName: RecordSetListResult
+    uid: azure-arm-dns.RecordSetListResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-dns.RecordSetListResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: RecordSetListResult
+    fullName: RecordSetListResult
+    uid: azure-arm-dns.RecordSetListResult
+  - name: '>>'
+    fullName: '>>'

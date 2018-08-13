@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: a973deb25b3fc4ed450d5ffef2aeb261e1b97bb4
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40070908"
+items:
+- uid: azure-iothub.Query
+  name: Query
+  fullName: Query
+  children:
+  - azure-iothub.Query.continuationToken
+  - azure-iothub.Query.hasMoreResults
+  - azure-iothub.Query.next
+  - azure-iothub.Query.nextAsTwin
+  langs:
+  - typeScript
+  type: class
+  summary: >-
+    <span data-ttu-id="bd11d-101">장치 쿼리 실행을 시작 하려면 Api를 제공 하는 쿼리 개체를 생성 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd11d-101">Constructs a Query object that provides APIs to trigger the execution of a device query.</span></span>
+
+    <span data-ttu-id="bd11d-102">SDK 사용자 쿼리를 사용 하 여 만들어야 합니다.는 <xref:azure-iothub.JobClient.createQuery> 및 <xref:azure-iothub.Registry.createQuery> Api 및이 클래스를 직접 인스턴스화하고 하지 않아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd11d-102">SDK users should create queries using the <xref:azure-iothub.JobClient.createQuery> and <xref:azure-iothub.Registry.createQuery> APIs and should not try to instantiate this class directly.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Query.continuationToken
+  name: continuationToken
+  fullName: continuationToken
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="bd11d-103">여러 페이지 결과를 반복 하는 데 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="bd11d-103">Token used to iterate over multiple pages of results.</span></span>
+  syntax:
+    content: 'continuationToken: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Query.hasMoreResults
+  name: hasMoreResults
+  fullName: hasMoreResults
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="bd11d-104">더 많은 결과 페이지가 있는지 여부를 나타내는 부울입니다.</span><span class="sxs-lookup"><span data-stu-id="bd11d-104">Boolean indicating whether there are more results pages.</span></span>
+  syntax:
+    content: 'hasMoreResults: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-iothub
+- uid: azure-iothub.Query.next
+  name: next
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="bd11d-105">이 쿼리에 대 한 결과의 다음 페이지를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd11d-105">Gets the next page of results for this query.</span></span>
+  syntax:
+    content: 'function next(continuationTokenOrCallback: string | Callback<any>, done?: Callback<any>)'
+    parameters:
+    - id: continuationTokenOrCallback
+      type:
+      - string | Callback<any>
+      description: ''
+    - id: done
+      type:
+      - Callback<any>
+      description: >
+        <span data-ttu-id="bd11d-106">Error 개체 또는 쿼리 결과 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="bd11d-106">The callback that will be called with either an Error object or the results of the query.</span></span>
+      optional: true
+  package: azure-iothub
+- uid: azure-iothub.Query.nextAsTwin
+  name: nextAsTwin
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="bd11d-107">이 쿼리에 대 한 결과의 다음 페이지를 가져오고 쌍으로 캐스팅 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd11d-107">Gets the next page of results for this query and cast them as Twins.</span></span>
+  syntax:
+    content: 'function nextAsTwin(continuationToken: string | Callback<Twin[]>, done?: Callback<Twin[]>)'
+    parameters:
+    - id: continuationToken
+      type:
+      - string | Callback<azure-iothub.Twin[]>
+      description: <span data-ttu-id="bd11d-108">(선택 사항) 결과 통해 페이징에 사용 되는 연속 토큰</span><span class="sxs-lookup"><span data-stu-id="bd11d-108">Continuation Token used for paging through results (optional)</span></span>
+    - id: done
+      type:
+      - Callback<azure-iothub.Twin[]>
+      description: >
+        <span data-ttu-id="bd11d-109">Error 개체 또는 쿼리 결과 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="bd11d-109">The callback that will be called with either an Error object or the results of the query.</span></span>
+      optional: true
+  package: azure-iothub
+references:
+- uid: string | Callback<azure-iothub.Twin[]>
+  spec.typeScript:
+  - name: string | Callback<
+    fullName: string | Callback<
+  - name: Twin
+    fullName: Twin
+    uid: azure-iothub.Twin
+  - name: '[]>'
+    fullName: '[]>'
+- uid: Callback<azure-iothub.Twin[]>
+  spec.typeScript:
+  - name: Callback<
+    fullName: Callback<
+  - name: Twin
+    fullName: Twin
+    uid: azure-iothub.Twin
+  - name: '[]>'
+    fullName: '[]>'
