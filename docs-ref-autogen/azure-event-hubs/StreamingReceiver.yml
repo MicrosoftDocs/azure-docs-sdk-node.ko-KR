@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 060bf605d953922f4686bdd94e52bd1e3b0a9059
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40069597"
+items:
+- uid: azure-event-hubs.StreamingReceiver
+  name: StreamingReceiver
+  fullName: StreamingReceiver
+  children:
+  - azure-event-hubs.StreamingReceiver.create
+  - azure-event-hubs.StreamingReceiver.receive
+  - azure-event-hubs.StreamingReceiver.constructor
+  langs:
+  - typeScript
+  type: class
+  summary: 사용자 처리기 함수를 제공 하 여 메시지를 받을 수 있는 스트리밍 수신기를 설명 합니다.
+  extends:
+    name: azure-event-hubs.EventHubReceiver
+  package: azure-event-hubs
+- uid: azure-event-hubs.StreamingReceiver.create
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 스트리밍 수신기를 만듭니다.
+  syntax:
+    content: 'static function create(context: ConnectionContext, partitionId: string | number, options?: ReceiveOptions)'
+    parameters:
+    - id: context
+      type:
+      - azure-event-hubs.ConnectionContext
+      description: 연결 컨텍스트입니다.
+    - id: partitionId
+      type:
+      - string | number
+      description: 이벤트를 수신할 partitionId입니다.
+    - id: options
+      type:
+      - azure-event-hubs.ReceiveOptions
+      description: ''
+      optional: true
+    return:
+      type:
+      - azure-event-hubs.StreamingReceiver
+  package: azure-event-hubs
+- uid: azure-event-hubs.StreamingReceiver.receive
+  name: receive
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 세션에서 AMQP 세션 및 AMQP 수신자가 링크를 설정 하 여 수신기를 시작 합니다.
+  syntax:
+    content: 'function receive(onMessage: OnMessage, onError: OnError)'
+    parameters:
+    - id: onMessage
+      type:
+      - azure-event-hubs.OnMessage
+      description: 이벤트 데이터 개체를 받을 메시지 처리기입니다.
+    - id: onError
+      type:
+      - azure-event-hubs.OnError
+      description: >
+        오류 처리기 receivin 메시지 하는 동안 발생 된 오류입니다.
+  package: azure-event-hubs
+- uid: azure-event-hubs.StreamingReceiver.constructor
+  name: StreamingReceiver
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: AMQP에서 새 수신기를 인스턴스화하고 `Receiver`합니다. 사용한 `EventHubClient`합니다.
+  syntax:
+    content: 'new StreamingReceiver(context: ConnectionContext, partitionId: string | number, options?: ReceiveOptions)'
+    parameters:
+    - id: context
+      type:
+      - azure-event-hubs.ConnectionContext
+      description: ''
+    - id: partitionId
+      type:
+      - string | number
+      description: 수신 하는 파티션 ID입니다.
+    - id: options
+      type:
+      - azure-event-hubs.ReceiveOptions
+      description: ''
+      optional: true
+  package: azure-event-hubs
+references:
+- uid: azure-event-hubs.EventHubReceiver
+  spec.typeScript:
+  - name: EventHubReceiver
+    fullName: EventHubReceiver
+    uid: azure-event-hubs.EventHubReceiver
+- uid: azure-event-hubs.ConnectionContext
+  spec.typeScript:
+  - name: ConnectionContext
+    fullName: ConnectionContext
+    uid: azure-event-hubs.ConnectionContext
+- uid: azure-event-hubs.ReceiveOptions
+  spec.typeScript:
+  - name: ReceiveOptions
+    fullName: ReceiveOptions
+    uid: azure-event-hubs.ReceiveOptions
+- uid: azure-event-hubs.OnMessage
+  spec.typeScript:
+  - name: OnMessage
+    fullName: OnMessage
+    uid: azure-event-hubs.OnMessage
+- uid: azure-event-hubs.OnError
+  spec.typeScript:
+  - name: OnError
+    fullName: OnError
+    uid: azure-event-hubs.OnError
+- uid: azure-event-hubs.StreamingReceiver
+  spec.typeScript:
+  - name: StreamingReceiver
+    fullName: StreamingReceiver
+    uid: azure-event-hubs.StreamingReceiver

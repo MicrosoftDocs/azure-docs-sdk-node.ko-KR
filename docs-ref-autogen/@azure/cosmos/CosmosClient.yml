@@ -1,0 +1,175 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: c42f476b7b2548bfccf1b3212b5a267458f632a2
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40069288"
+items:
+- uid: '@azure/cosmos.CosmosClient'
+  name: CosmosClient
+  fullName: CosmosClient
+  children:
+  - '@azure/cosmos.CosmosClient.constructor'
+  - '@azure/cosmos.CosmosClient.database'
+  - '@azure/cosmos.CosmosClient.databases'
+  - '@azure/cosmos.CosmosClient.getDatabaseAccount'
+  - '@azure/cosmos.CosmosClient.offer'
+  - '@azure/cosmos.CosmosClient.offers'
+  langs:
+  - typeScript
+  type: class
+  summary: >-
+    Azure Cosmos DB 데이터베이스 계정의 클라이언트 쪽 논리적 표현을 제공 합니다.
+
+    이 클라이언트 구성 및 Azure Cosmos DB 데이터베이스 서비스에서 요청을 실행 됩니다.
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.constructor'
+  name: CosmosClient
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: 새 <xref:CosmosClient> 개체입니다. 참조 <xref:CosmosClientOptions> 수 있는 옵션에 대 한 자세한 내용은 사용 수 있습니다.
+  syntax:
+    content: 'new CosmosClient(options: CosmosClientOptions)'
+    parameters:
+    - id: options
+      type:
+      - '@azure/cosmos.CosmosClientOptions'
+      description: >
+        옵션의 모음-이상이 필요 끝점 및 인증 구성
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.database'
+  name: database
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >
+    읽기, 업데이트 또는 id 별로 기존 데이터베이스를 삭제 또는 해당 데이터베이스에 속하는 컨테이너 액세스에 사용 합니다.
+
+    이 네트워크 호출을 만들지 않습니다. 사용 하 여 `.read` 받은 후 데이터베이스에 대 한 정보를 가져오려는 합니다 <xref:Database> 개체입니다.
+  syntax:
+    content: 'function database(id: string)'
+    parameters:
+    - id: id
+      type:
+      - string
+      description: 데이터베이스의 id입니다.
+    return:
+      type:
+      - '@azure/cosmos.Database'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.databases'
+  name: databases
+  fullName: databases
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >
+    새 데이터베이스 만들기 또는 모든 데이터베이스 쿼리/읽기에 사용 합니다.
+
+    사용 하 여 `.database(id)` 읽기, 바꾸기 또는 id 별로 특정 한 기존 데이터베이스를 삭제 합니다.
+  syntax:
+    content: 'databases: Databases'
+    return:
+      type:
+      - '@azure/cosmos.Databases'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.getDatabaseAccount'
+  name: getDatabaseAccount
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 현재 정보를 가져올 <xref:DatabaseAccount> (지역을 지원 되는 경우 등을 포함 합니다.)
+  syntax:
+    content: function getDatabaseAccount()
+    parameters: []
+    return:
+      type:
+      - Promise<@azure/cosmos.CosmosResponse<@azure/cosmos.DatabaseAccount, @azure/cosmos.CosmosClient>>
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.offer'
+  name: offer
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 읽기, 또는 id 별로 기존 제품 업데이트에 사용 합니다.
+  syntax:
+    content: 'function offer(id: string)'
+    parameters:
+    - id: id
+      type:
+      - string
+      description: >
+        제품의 id입니다.
+    return:
+      type:
+      - '@azure/cosmos.Offer'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.offers'
+  name: offers
+  fullName: offers
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >
+    쿼리 및 모든 제품을 읽고 사용 합니다.
+
+    사용 하 여 `.offer(id)` 읽거나 기존 제품을 대체 합니다.
+  syntax:
+    content: 'offers: Offers'
+    return:
+      type:
+      - '@azure/cosmos.Offers'
+  package: '@azure/cosmos'
+references:
+- uid: '@azure/cosmos.CosmosClientOptions'
+  spec.typeScript:
+  - name: CosmosClientOptions
+    fullName: CosmosClientOptions
+    uid: '@azure/cosmos.CosmosClientOptions'
+- uid: '@azure/cosmos.Databases'
+  spec.typeScript:
+  - name: Databases
+    fullName: Databases
+    uid: '@azure/cosmos.Databases'
+- uid: '@azure/cosmos.Offers'
+  spec.typeScript:
+  - name: Offers
+    fullName: Offers
+    uid: '@azure/cosmos.Offers'
+- uid: '@azure/cosmos.Database'
+  spec.typeScript:
+  - name: Database
+    fullName: Database
+    uid: '@azure/cosmos.Database'
+- uid: Promise<@azure/cosmos.CosmosResponse<@azure/cosmos.DatabaseAccount, @azure/cosmos.CosmosClient>>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CosmosResponse
+    fullName: CosmosResponse
+    uid: '@azure/cosmos.CosmosResponse'
+  - name: <
+    fullName: <
+  - name: DatabaseAccount
+    fullName: DatabaseAccount
+    uid: '@azure/cosmos.DatabaseAccount'
+  - name: ', '
+    fullName: ', '
+  - name: CosmosClient
+    fullName: CosmosClient
+    uid: '@azure/cosmos.CosmosClient'
+  - name: '>>'
+    fullName: '>>'
+- uid: '@azure/cosmos.Offer'
+  spec.typeScript:
+  - name: Offer
+    fullName: Offer
+    uid: '@azure/cosmos.Offer'
