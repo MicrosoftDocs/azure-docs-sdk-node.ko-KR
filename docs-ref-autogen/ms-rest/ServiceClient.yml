@@ -1,0 +1,403 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 93c9390372163dce12b8539afbad4c7434f676d1
+ms.sourcegitcommit: f774f8ce6b26593f73a5893bfa47f9c510fc51a7
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "40065080"
+items:
+- uid: ms-rest.ServiceClient
+  id: ms-rest.ServiceClient
+  name: ServiceClient
+  summary: <span data-ttu-id="287cf-101">ServiceClient 클래스의 새 인스턴스를 초기화합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-101">Initializes a new instance of the ServiceClient class.</span></span>
+  fullName: ms-rest.ServiceClient
+  type: Class
+  children:
+  - ms-rest.ServiceClient.#ctor
+  - ms-rest.ServiceClient#addFilter
+  - ms-rest.ServiceClient#sendRequest
+  - ms-rest.ServiceClient#sendRequestWithHttpOperationResponse
+  - ms-rest.ServiceClient#addUserAgentInfo
+  - ms-rest.ServiceClient#getPackageJsonInfo
+  langs:
+  - js
+- id: ms-rest.ServiceClient.#ctor
+  uid: ms-rest.ServiceClient.#ctor
+  parent: ms-rest.ServiceClient
+  name: ServiceClient(credentials, options)
+  fullName: ms-rest.ServiceClient.ServiceClient(credentials, options)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: credentials
+      type:
+      - object
+      description: <span data-ttu-id="287cf-102">인증에 사용 되는 BasicAuthenticationCredentials 또는 TokenCredentials 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-102">BasicAuthenticationCredentials or TokenCredentials object used for authentication.</span></span>
+      optional: true
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="287cf-103">매개 변수 옵션</span><span class="sxs-lookup"><span data-stu-id="287cf-103">The parameter options</span></span>
+      optional: true
+    - id: options.filters
+      type:
+      - Array
+      description: <span data-ttu-id="287cf-104">요청 파이프라인에 추가 될 필터</span><span class="sxs-lookup"><span data-stu-id="287cf-104">Filters to be added to the request pipeline</span></span>
+      optional: true
+    - id: options.requestOptions
+      type:
+      - object
+      description: <span data-ttu-id="287cf-105">요청 개체에 대 한 옵션 [옵션 문서](https://github.com/request/request#requestoptions-callback)</span><span class="sxs-lookup"><span data-stu-id="287cf-105">Options for the request object [Options doc](https://github.com/request/request#requestoptions-callback)</span></span>
+      optional: true
+    - id: options.noRetryPolicy
+      type:
+      - undefinedbool
+      description: <span data-ttu-id="287cf-106">경우 true로 기본 재시도 정책을 해제 설정</span><span class="sxs-lookup"><span data-stu-id="287cf-106">If set to true, turn off default retry policy</span></span>
+      optional: true
+    - id: options.rpRegistrationRetryTimeout
+      type:
+      - number
+      description: <span data-ttu-id="287cf-107">AutomaticRPRegistration (초) 다시 시도 제한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-107">The retry timeout in seconds for AutomaticRPRegistration.</span></span> <span data-ttu-id="287cf-108">기본값은 30입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-108">Default value is 30.</span></span>
+      optional: true
+    content: new ServiceClient(credentials, options)
+  langs:
+  - js
+- uid: ms-rest.ServiceClient#addFilter
+  id: ms-rest.ServiceClient#addFilter
+  parent: ms-rest.ServiceClient
+  name: addFilter(filter)
+  summary: >-
+    <span data-ttu-id="287cf-109">이 ServiceClient 필터링 작업을 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-109">Associate a filtering operation with this ServiceClient.</span></span> <span data-ttu-id="287cf-110">필터링 작업은 로깅, 자동 재시도 등을 포함할 수 있습니다. 필터 작업은 함수 서명:</span><span class="sxs-lookup"><span data-stu-id="287cf-110">Filtering operations can include logging, automatically retrying, etc. Filter operations are functions the signature:</span></span>
+
+        "function (requestOptions, next, callback)".
+
+    <span data-ttu-id="287cf-111">요청 옵션에 대 한 전처리를 수행한 후 메서드는 현재 옵션 및 다음 서명 사용 하 여 콜백을 전달 "다음"을 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-111">After doing its preprocessing on the request options, the method needs to call "next" passing the current options and a callback with the following signature:</span></span>
+
+        "function (error, result, response, body)"
+
+    <span data-ttu-id="287cf-112">이 처리 한 후 결과 또는 응답 콜백 다른 필터를 계속 처리 콜백에서 전달 된 원래 호출 하 고 서비스 호출을 마무리 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-112">In this callback, and after processing the result or response, the callback needs invoke the original passed in callback to continue processing other filters and finish up the service invocation.</span></span>
+  fullName: ms-rest.ServiceClient.addFilter(filter)
+  type: Function
+  syntax:
+    parameters:
+    - id: filter
+      type:
+      - function
+      description: <span data-ttu-id="287cf-113">새 필터 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-113">The new filter object.</span></span>
+    return:
+      type:
+      - ms-rest.QueueService
+      description: <span data-ttu-id="287cf-114">적용 된 필터를 사용 하 여 새 서비스 클라이언트입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-114">A new service client with the filter applied.</span></span>
+    content: function addFilter(filter)
+  langs:
+  - js
+- uid: ms-rest.ServiceClient#sendRequest
+  id: ms-rest.ServiceClient#sendRequest
+  parent: ms-rest.ServiceClient
+  name: sendRequest(options, optionalCallback)
+  summary: <span data-ttu-id="287cf-115">요청을 보내고 응답을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-115">Sends the request and returns the response.</span></span>
+  fullName: ms-rest.ServiceClient.sendRequest(options, optionalCallback)
+  tags:
+  - originalTitle: resolve
+    title: resolve
+    text: '{result} - The parsed (JSON.parse()) responseBody.'
+    value: '{result} - The parsed (JSON.parse()) responseBody.'
+  - originalTitle: reject
+    title: reject
+    text: '{Error}  - The error object.'
+    value: '{Error}  - The error object.'
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      - ms-rest.WebResource
+      description: <span data-ttu-id="287cf-116">성공적으로 요청을 보내기 위해 제공 해야 하는 요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-116">The request options that should be provided to send a request successfully.</span></span> <span data-ttu-id="287cf-117">옵션 개체 (간단한 json 개체) 또는 웹 리소스의 개체와 모든 요청에 필수 속성을 설정 하거나 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-117">It can either be an options object (a simple json object) or the WebResource object with all the required properties set to make a request.</span></span>
+    - id: options.method
+      type:
+      - string
+      description: <span data-ttu-id="287cf-118">HTTP 요청 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-118">The HTTP request method.</span></span> <span data-ttu-id="287cf-119">유효한 값에는 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'POST', 'c H'는 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-119">Valid values are 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'POST', 'PATCH'.</span></span>
+    - id: options.url
+      type:
+      - string
+      description: <span data-ttu-id="287cf-120">요청 url입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-120">The request url.</span></span> <span data-ttu-id="287cf-121">그렇지에 쿼리 매개 변수가 없을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-121">It may or may not have query parameters in it.</span></span> <span data-ttu-id="287cf-122">'Url'를 제공 하거나 'pathTemplate' 옵션 개체에서를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-122">Either provide the 'url' or provide the 'pathTemplate' in the options object.</span></span> <span data-ttu-id="287cf-123">두 옵션은 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-123">Both the options are mutually exclusive.</span></span>
+      optional: true
+    - id: options.queryParameters
+      type:
+      - object
+      description: "<span data-ttu-id=\"287cf-124\">'키'를 ' 쿼리 매개 변수 이름 ' 및 'value'가 url에 추가할 쿼리 매개 변수 사전이 되는 ' 쿼리 매개 변수 값 '.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-124\">A dictionary of query parameters to be appended to the url, where the 'key' is the 'query-parameter-name' and the 'value' is the 'query-parameter-value'.</span></span> <span data-ttu-id=\"287cf-125\">' 쿼리 매개 변수 값 ' string' 형식의' 이거나 'object' 형식의 수 있습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-125\">The 'query-parameter-value' can be of type 'string' or it can be of type 'object'.</span></span> <span data-ttu-id=\"287cf-126\">'Object' 형식으로 url 인코딩을 건너 뛰 려는 경우 사용할 해야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-126\">The 'object' format should be used when you want to skip url encoding.</span></span> <span data-ttu-id=\"287cf-127\">개체 형식을 사용 하는 동안 개체에는 ' 쿼리 매개 변수 값 '을 제공 하는 값을 라는 속성이 있어야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-127\">While using the object format, the object must have a property named value which provides the 'query-parameter-value'.</span></span>\n<span data-ttu-id=\"287cf-128\">예제:</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-128\">Example:</span></span> \n   - <span data-ttu-id=\"287cf-129\">쿼리-매개 변수 값 'object' 형식에서: {0} ' 쿼리 매개 변수 이름 ': {값: ' 쿼리-매개 변수-value', skipUrlEncoding: true}}</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-129\">query-parameter-value in 'object' format: { 'query-parameter-name': { value: 'query-parameter-value', skipUrlEncoding: true } }</span></span>\n   - <span data-ttu-id=\"287cf-130\">쿼리-매개 변수 값 'string' 형식에서: {0} ' 쿼리 매개 변수 이름 ': ' 쿼리 매개 변수 값 '을 (를).</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-130\">query-parameter-value in 'string' format: { 'query-parameter-name': 'query-parameter-value'}.</span></span>\n<span data-ttu-id=\"287cf-131\">참고: ' options.url 일부 쿼리 매개 변수를 이미 있으면 options.queryParameters에 제공 된 값을 url에 추가 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-131\">Note: 'If options.url already has some query parameters, then the value provided in options.queryParameters will be appended to the url.</span></span>"
+      optional: true
+    - id: options.pathTemplate
+      type:
+      - string
+      description: >-
+        <span data-ttu-id="287cf-132">경로 템플릿을 요청의 url입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-132">The path template of the request url.</span></span> <span data-ttu-id="287cf-133">'Url'를 제공 하거나 'pathTemplate' 옵션 개체에서를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-133">Either provide the 'url' or provide the 'pathTemplate' in the options object.</span></span> <span data-ttu-id="287cf-134">두 옵션은 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-134">Both the options are mutually exclusive.</span></span>
+
+        <span data-ttu-id="287cf-135">예: ' / subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}'</span><span class="sxs-lookup"><span data-stu-id="287cf-135">Example: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}'</span></span>
+      optional: true
+    - id: options.baseUrl
+      type:
+      - string
+      description: "<span data-ttu-id=\"287cf-136\">요청의 기본 url입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-136\">The base url of the request.</span></span> <span data-ttu-id=\"287cf-137\">기본값은: 'https://management.azure.com'.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-137\">Default value is: 'https://management.azure.com'.</span></span> <span data-ttu-id=\"287cf-138\">Options.pathTemplate에만 적용 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-138\">This is applicable only with options.pathTemplate.</span></span> <span data-ttu-id=\"287cf-139\">전체 url을 제공 하는 것으로 예상 하는 다음 options.url 제공 하려면.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-139\">If you are providing options.url then it is expected that you provide the complete url.</span></span>"
+      optional: true
+    - id: options.pathParameters
+      type:
+      - object
+      description: "<span data-ttu-id=\"287cf-140\">pathTemplate에서 실제 값으로 대체 해야 하는 경로 매개 변수의 사전입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-140\">A dictionary of path parameters that need to be replaced with actual values in the pathTemplate.</span></span>\n<span data-ttu-id=\"287cf-141\">여기 키를 ' 경로 매개 변수 이름 ' 이며 값은 ' 경로 매개 변수 값 '.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-141\">Here the key is the 'path-parameter-name' and the value is the 'path-parameter-value'.</span></span> <span data-ttu-id=\"287cf-142\">' 경로 매개 변수 값 ' string' 형식의' 이거나 'object' 형식의 수 있습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-142\">The 'path-parameter-value' can be of type 'string'  or it can be of type 'object'.</span></span>\n<span data-ttu-id=\"287cf-143\">'Object' 형식으로 url 인코딩을 건너 뛰 려는 경우 사용할 해야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-143\">The 'object' format should be used when you want to skip url encoding.</span></span> <span data-ttu-id=\"287cf-144\">개체 형식을 사용 하는 동안 개체에는 ' 경로 매개 변수 값 '을 제공 하는 값을 라는 속성이 있어야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-144\">While using the object format, the object must have a property named value which provides the 'path-parameter-value'.</span></span>\n<span data-ttu-id=\"287cf-145\">예제:</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-145\">Example:</span></span> \n   - <span data-ttu-id=\"287cf-146\">경로-매개 변수 값 'object' 형식에서: {0} ' 경로 매개 변수 이름 ': {값: ' 경로-매개 변수-value', skipUrlEncoding: true}}</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-146\">path-parameter-value in 'object' format: { 'path-parameter-name': { value: 'path-parameter-value', skipUrlEncoding: true } }</span></span>\n   - <span data-ttu-id=\"287cf-147\">경로-매개 변수 값 'string' 형식에서: {0} ' 경로 매개 변수 이름 ': ' 경로 매개 변수 값 '을 (를).</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-147\">path-parameter-value in 'string' format: { 'path-parameter-name': 'path-parameter-value' }.</span></span>"
+      optional: true
+    - id: options.formData
+      type:
+      - object
+      description: >-
+        <span data-ttu-id="287cf-148">FormData 개체에 대 한 키-값 쌍의 사전입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-148">A dictionary of key-value pairs for the formData object.</span></span>
+
+        <span data-ttu-id="287cf-149">이면 예상된 ' Content-type ' 설정 ' application/x-www-형식-urlencoded' 하세요 설정한 options.headers 개체 else ' Content-type ' 헤더 ' 다중 파트/폼 데이터 '로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-149">If the expected 'Content-Type' to be set is 'application/x-www-form-urlencoded' then please set it in the options.headers object else the 'Content-Type' header will be set to 'multipart/form-data'.</span></span>
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: >-
+        <span data-ttu-id="287cf-150">요청에 적용 해야 하는 요청 헤더의 사전입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-150">A dictionary of request headers that need to be applied to the request.</span></span>
+
+        <span data-ttu-id="287cf-151">여기에서 키 ' 헤더-이름 ' 이며 값은 ' 헤더 값 '.</span><span class="sxs-lookup"><span data-stu-id="287cf-151">Here the key is the 'header-name' and the value is the 'header-value'.</span></span> <span data-ttu-id="287cf-152">헤더 값을 문자열 형식 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-152">The header-value MUST be of type string.</span></span>
+         - <span data-ttu-id="287cf-153">ContentType ' Content-type '으로 키 이름으로 제공 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-153">ContentType must be provided with the key name as 'Content-Type'.</span></span> <span data-ttu-id="287cf-154">기본값은 ' application/json; charset = u t f-8'입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-154">Default value 'application/json; charset=utf-8'.</span></span>
+         - <span data-ttu-id="287cf-155">' Transfer-encoding '로 되어 기본적으로 ' 청크 분할' 'options.bodyIsStream'로 설정 된 경우 true입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-155">'Transfer-Encoding' is set to 'chunked' by default if 'options.bodyIsStream' is set to true.</span></span>
+         - <span data-ttu-id="287cf-156">' Content-type '는 ' 응용 프로그램/옥텟 스트림 '을 기본적으로 'options.bodyIsStream' 설정 되어 있으면 설정을 true로 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-156">'Content-Type' is set to 'application/octet-stream' by default if 'options.bodyIsStream' is set to true.</span></span>
+         - <span data-ttu-id="287cf-157">' 허용-언어 ' 기본적으로 ' EN-US '로 설정 되어</span><span class="sxs-lookup"><span data-stu-id="287cf-157">'accept-language' by default is set to 'en-US'</span></span>
+         - <span data-ttu-id="287cf-158">' x-ms-클라이언트 요청 id' 기본적으로 새 Guid로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-158">'x-ms-client-request-id' by default is set to a new Guid.</span></span> <span data-ttu-id="287cf-159">요청에 대 한 guid를 생성 하지 않도록, 하세요 options.disableClientRequestId true로 설정</span><span class="sxs-lookup"><span data-stu-id="287cf-159">To not generate a guid for the request, please set options.disableClientRequestId to true</span></span>
+      optional: true
+    - id: options.disableClientRequestId
+      type:
+      - boolean
+      description: <span data-ttu-id="287cf-160">True로 새 Guid()에 ' x-ms-클라이언트 요청 id' 헤더를 설정 하지 않아도 클라이언트 지시 설정 하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-160">When set to true, instructs the client to not set 'x-ms-client-request-id' header to a new Guid().</span></span>
+      optional: true
+    - id: options.body
+      type:
+      - object
+      - string
+      - boolean
+      - array
+      - number
+      - ms-rest.null
+      - undefined
+      description: <span data-ttu-id="287cf-161">요청 본문.</span><span class="sxs-lookup"><span data-stu-id="287cf-161">The request body.</span></span> <span data-ttu-id="287cf-162">모든 형식의 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-162">It can be of any type.</span></span> <span data-ttu-id="287cf-163">이 메서드는 요청 본문 json.stringify ()를 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-163">This method will JSON.stringify() the request body.</span></span>
+      optional: true
+    - id: options.serializationMapper
+      type:
+      - object
+      description: <span data-ttu-id="287cf-164">요청 본문을 serialize 하는 방법에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-164">Provides information on how to serialize the request body.</span></span>
+      optional: true
+    - id: options.deserializationMapper
+      type:
+      - object
+      description: <span data-ttu-id="287cf-165">응답 본문을 역직렬화 하는 방법에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-165">Provides information on how to deserialize the response body.</span></span>
+      optional: true
+    - id: options.disableJsonStringifyOnBody
+      type:
+      - boolean
+      description: '<span data-ttu-id="287cf-166">이 메서드가 true로 설정 하면 적용 되지 것입니다 `JSON.stringify()` 요청 본문에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-166">When set to true, this method will not apply `JSON.stringify()` to the request body.</span></span> <span data-ttu-id="287cf-167">기본값: false.</span><span class="sxs-lookup"><span data-stu-id="287cf-167">Default value: false.</span></span>'
+      optional: true
+    - id: options.bodyIsStream
+      type:
+      - boolean
+      description: <span data-ttu-id="287cf-168">요청 본문은 스트림 (파일 업로드 시나리오에 유용) 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-168">Indicates whether the request body is a stream (useful for file upload scenarios).</span></span>
+      optional: true
+    - id: optionalCallback
+      type:
+      - function
+      description: <span data-ttu-id="287cf-169">선택적 콜백입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-169">The optional callback.</span></span>
+      optional: true
+    return:
+      type:
+      - function
+      - Promise
+      description: >-
+        <span data-ttu-id="287cf-170">콜백을 마지막 매개 변수로 전달 된 프라미스를 반환 하는 다른 콜백이 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-170">If a callback was passed as the last parameter then it returns the callback else returns a Promise.</span></span>
+
+            {function} optionalCallback(err, result, request, response)
+
+                         {Error}  err      - The Error object if an error occurred, null otherwise.
+
+                         {object} result   - The parsed (JSON.parse()) responseBody
+
+                         {object} request  - The HTTP Request object.
+
+                         {stream} response - The raw HTTP Response stream.
+
+            {Promise} A promise is returned.
+    content: function sendRequest(options, optionalCallback)
+  langs:
+  - js
+- uid: ms-rest.ServiceClient#sendRequestWithHttpOperationResponse
+  id: ms-rest.ServiceClient#sendRequestWithHttpOperationResponse
+  parent: ms-rest.ServiceClient
+  name: sendRequestWithHttpOperationResponse(options, optionalCallback)
+  summary: <span data-ttu-id="287cf-171">요청을 보내고 응답을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-171">Sends the request and returns the response.</span></span>
+  fullName: ms-rest.ServiceClient.sendRequestWithHttpOperationResponse(options, optionalCallback)
+  tags:
+  - originalTitle: resolve
+    title: resolve
+    text: '{HttpOperationResponse<T>} - The HttpOperationResponse which contains the raw request, response and the parsed (JSON.parse) response body'
+    value: '{HttpOperationResponse<T>} - The HttpOperationResponse which contains the raw request, response and the parsed (JSON.parse) response body'
+  - originalTitle: reject
+    title: reject
+    text: '{Error}  - The error object.'
+    value: '{Error}  - The error object.'
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      - ms-rest.WebResource
+      description: <span data-ttu-id="287cf-172">성공적으로 요청을 보내기 위해 제공 해야 하는 요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-172">The request options that should be provided to send a request successfully.</span></span> <span data-ttu-id="287cf-173">옵션 개체 (간단한 json 개체) 또는 웹 리소스의 개체와 모든 요청에 필수 속성을 설정 하거나 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-173">It can either be an options object (a simple json object) or the WebResource object with all the required properties set to make a request.</span></span>
+    - id: options.method
+      type:
+      - string
+      description: <span data-ttu-id="287cf-174">HTTP 요청 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-174">The HTTP request method.</span></span> <span data-ttu-id="287cf-175">유효한 값에는 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'POST', 'c H'는 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-175">Valid values are 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'POST', 'PATCH'.</span></span>
+    - id: options.url
+      type:
+      - string
+      description: <span data-ttu-id="287cf-176">요청 url입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-176">The request url.</span></span> <span data-ttu-id="287cf-177">그렇지에 쿼리 매개 변수가 없을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-177">It may or may not have query parameters in it.</span></span> <span data-ttu-id="287cf-178">'Url'를 제공 하거나 'pathTemplate' 옵션 개체에서를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-178">Either provide the 'url' or provide the 'pathTemplate' in the options object.</span></span> <span data-ttu-id="287cf-179">두 옵션은 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-179">Both the options are mutually exclusive.</span></span>
+      optional: true
+    - id: options.queryParameters
+      type:
+      - object
+      description: "<span data-ttu-id=\"287cf-180\">'키'를 ' 쿼리 매개 변수 이름 ' 및 'value'가 url에 추가할 쿼리 매개 변수 사전이 되는 ' 쿼리 매개 변수 값 '.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-180\">A dictionary of query parameters to be appended to the url, where the 'key' is the 'query-parameter-name' and the 'value' is the 'query-parameter-value'.</span></span> <span data-ttu-id=\"287cf-181\">' 쿼리 매개 변수 값 ' string' 형식의' 이거나 'object' 형식의 수 있습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-181\">The 'query-parameter-value' can be of type 'string' or it can be of type 'object'.</span></span> <span data-ttu-id=\"287cf-182\">'Object' 형식으로 url 인코딩을 건너 뛰 려는 경우 사용할 해야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-182\">The 'object' format should be used when you want to skip url encoding.</span></span> <span data-ttu-id=\"287cf-183\">개체 형식을 사용 하는 동안 개체에는 ' 쿼리 매개 변수 값 '을 제공 하는 값을 라는 속성이 있어야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-183\">While using the object format, the object must have a property named value which provides the 'query-parameter-value'.</span></span>\n<span data-ttu-id=\"287cf-184\">예제:</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-184\">Example:</span></span> \n   - <span data-ttu-id=\"287cf-185\">쿼리-매개 변수 값 'object' 형식에서: {0} ' 쿼리 매개 변수 이름 ': {값: ' 쿼리-매개 변수-value', skipUrlEncoding: true}}</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-185\">query-parameter-value in 'object' format: { 'query-parameter-name': { value: 'query-parameter-value', skipUrlEncoding: true } }</span></span>\n   - <span data-ttu-id=\"287cf-186\">쿼리-매개 변수 값 'string' 형식에서: {0} ' 쿼리 매개 변수 이름 ': ' 쿼리 매개 변수 값 '을 (를).</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-186\">query-parameter-value in 'string' format: { 'query-parameter-name': 'query-parameter-value'}.</span></span>\n<span data-ttu-id=\"287cf-187\">참고: ' options.url 일부 쿼리 매개 변수를 이미 있으면 options.queryParameters에 제공 된 값을 url에 추가 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-187\">Note: 'If options.url already has some query parameters, then the value provided in options.queryParameters will be appended to the url.</span></span>"
+      optional: true
+    - id: options.pathTemplate
+      type:
+      - string
+      description: >-
+        <span data-ttu-id="287cf-188">경로 템플릿을 요청의 url입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-188">The path template of the request url.</span></span> <span data-ttu-id="287cf-189">'Url'를 제공 하거나 'pathTemplate' 옵션 개체에서를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-189">Either provide the 'url' or provide the 'pathTemplate' in the options object.</span></span> <span data-ttu-id="287cf-190">두 옵션은 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-190">Both the options are mutually exclusive.</span></span>
+
+        <span data-ttu-id="287cf-191">예: ' / subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}'</span><span class="sxs-lookup"><span data-stu-id="287cf-191">Example: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}'</span></span>
+      optional: true
+    - id: options.baseUrl
+      type:
+      - string
+      description: "<span data-ttu-id=\"287cf-192\">요청의 기본 url입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-192\">The base url of the request.</span></span> <span data-ttu-id=\"287cf-193\">기본값은: 'https://management.azure.com'.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-193\">Default value is: 'https://management.azure.com'.</span></span> <span data-ttu-id=\"287cf-194\">Options.pathTemplate에만 적용 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-194\">This is applicable only with options.pathTemplate.</span></span> <span data-ttu-id=\"287cf-195\">전체 url을 제공 하는 것으로 예상 하는 다음 options.url 제공 하려면.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-195\">If you are providing options.url then it is expected that you provide the complete url.</span></span>"
+      optional: true
+    - id: options.pathParameters
+      type:
+      - object
+      description: "<span data-ttu-id=\"287cf-196\">pathTemplate에서 실제 값으로 대체 해야 하는 경로 매개 변수의 사전입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-196\">A dictionary of path parameters that need to be replaced with actual values in the pathTemplate.</span></span>\n<span data-ttu-id=\"287cf-197\">여기 키를 ' 경로 매개 변수 이름 ' 이며 값은 ' 경로 매개 변수 값 '.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-197\">Here the key is the 'path-parameter-name' and the value is the 'path-parameter-value'.</span></span> <span data-ttu-id=\"287cf-198\">' 경로 매개 변수 값 ' string' 형식의' 이거나 'object' 형식의 수 있습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-198\">The 'path-parameter-value' can be of type 'string'  or it can be of type 'object'.</span></span>\n<span data-ttu-id=\"287cf-199\">'Object' 형식으로 url 인코딩을 건너 뛰 려는 경우 사용할 해야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-199\">The 'object' format should be used when you want to skip url encoding.</span></span> <span data-ttu-id=\"287cf-200\">개체 형식을 사용 하는 동안 개체에는 ' 경로 매개 변수 값 '을 제공 하는 값을 라는 속성이 있어야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-200\">While using the object format, the object must have a property named value which provides the 'path-parameter-value'.</span></span>\n<span data-ttu-id=\"287cf-201\">예제:</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-201\">Example:</span></span> \n   - <span data-ttu-id=\"287cf-202\">경로-매개 변수 값 'object' 형식에서: {0} ' 경로 매개 변수 이름 ': {값: ' 경로-매개 변수-value', skipUrlEncoding: true}}</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-202\">path-parameter-value in 'object' format: { 'path-parameter-name': { value: 'path-parameter-value', skipUrlEncoding: true } }</span></span>\n   - <span data-ttu-id=\"287cf-203\">경로-매개 변수 값 'string' 형식에서: {0} ' 경로 매개 변수 이름 ': ' 경로 매개 변수 값 '을 (를).</span><span class=\"sxs-lookup\"><span data-stu-id=\"287cf-203\">path-parameter-value in 'string' format: { 'path-parameter-name': 'path-parameter-value' }.</span></span>"
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: >-
+        <span data-ttu-id="287cf-204">요청에 적용 해야 하는 요청 헤더의 사전입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-204">A dictionary of request headers that need to be applied to the request.</span></span>
+
+        <span data-ttu-id="287cf-205">여기에서 키 ' 헤더-이름 ' 이며 값은 ' 헤더 값 '.</span><span class="sxs-lookup"><span data-stu-id="287cf-205">Here the key is the 'header-name' and the value is the 'header-value'.</span></span> <span data-ttu-id="287cf-206">헤더 값을 문자열 형식 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-206">The header-value MUST be of type string.</span></span>
+         - <span data-ttu-id="287cf-207">ContentType ' Content-type '으로 키 이름으로 제공 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-207">ContentType must be provided with the key name as 'Content-Type'.</span></span> <span data-ttu-id="287cf-208">기본값은 ' application/json; charset = u t f-8'입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-208">Default value 'application/json; charset=utf-8'.</span></span>
+         - <span data-ttu-id="287cf-209">' Transfer-encoding '로 되어 기본적으로 ' 청크 분할' 'options.bodyIsStream'로 설정 된 경우 true입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-209">'Transfer-Encoding' is set to 'chunked' by default if 'options.bodyIsStream' is set to true.</span></span>
+         - <span data-ttu-id="287cf-210">' Content-type '는 ' 응용 프로그램/옥텟 스트림 '을 기본적으로 'options.bodyIsStream' 설정 되어 있으면 설정을 true로 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-210">'Content-Type' is set to 'application/octet-stream' by default if 'options.bodyIsStream' is set to true.</span></span>
+         - <span data-ttu-id="287cf-211">' 허용-언어 ' 기본적으로 ' EN-US '로 설정 되어</span><span class="sxs-lookup"><span data-stu-id="287cf-211">'accept-language' by default is set to 'en-US'</span></span>
+         - <span data-ttu-id="287cf-212">' x-ms-클라이언트 요청 id' 기본적으로 새 Guid로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-212">'x-ms-client-request-id' by default is set to a new Guid.</span></span> <span data-ttu-id="287cf-213">요청에 대 한 guid를 생성 하지 않도록, 하세요 options.disableClientRequestId true로 설정</span><span class="sxs-lookup"><span data-stu-id="287cf-213">To not generate a guid for the request, please set options.disableClientRequestId to true</span></span>
+      optional: true
+    - id: options.disableClientRequestId
+      type:
+      - boolean
+      description: <span data-ttu-id="287cf-214">True로 새 Guid()에 ' x-ms-클라이언트 요청 id' 헤더를 설정 하지 않아도 클라이언트 지시 설정 하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-214">When set to true, instructs the client to not set 'x-ms-client-request-id' header to a new Guid().</span></span>
+      optional: true
+    - id: options.body
+      type:
+      - object
+      - string
+      - boolean
+      - array
+      - number
+      - ms-rest.null
+      - undefined
+      description: <span data-ttu-id="287cf-215">요청 본문.</span><span class="sxs-lookup"><span data-stu-id="287cf-215">The request body.</span></span> <span data-ttu-id="287cf-216">모든 형식의 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-216">It can be of any type.</span></span> <span data-ttu-id="287cf-217">이 메서드는 요청 본문 json.stringify ()를 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-217">This method will JSON.stringify() the request body.</span></span>
+      optional: true
+    - id: options.body
+      type:
+      - object
+      - string
+      - boolean
+      - array
+      - number
+      - ms-rest.null
+      - undefined
+      description: <span data-ttu-id="287cf-218">요청 본문.</span><span class="sxs-lookup"><span data-stu-id="287cf-218">The request body.</span></span> <span data-ttu-id="287cf-219">모든 형식의 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-219">It can be of any type.</span></span> <span data-ttu-id="287cf-220">이 메서드는 요청 본문 json.stringify ()를 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-220">This method will JSON.stringify() the request body.</span></span>
+      optional: true
+    - id: options.serializationMapper
+      type:
+      - object
+      description: <span data-ttu-id="287cf-221">요청 본문을 serialize 하는 방법에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-221">Provides information on how to serialize the request body.</span></span>
+      optional: true
+    - id: options.deserializationMapper
+      type:
+      - object
+      description: <span data-ttu-id="287cf-222">응답 본문을 역직렬화 하는 방법에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-222">Provides information on how to deserialize the response body.</span></span>
+      optional: true
+    - id: options.disableJsonStringifyOnBody
+      type:
+      - boolean
+      description: '<span data-ttu-id="287cf-223">이 메서드가 true로 설정 하면 적용 되지 것입니다 `JSON.stringify()` 요청 본문에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-223">When set to true, this method will not apply `JSON.stringify()` to the request body.</span></span> <span data-ttu-id="287cf-224">기본값: false.</span><span class="sxs-lookup"><span data-stu-id="287cf-224">Default value: false.</span></span>'
+      optional: true
+    - id: options.bodyIsStream
+      type:
+      - boolean
+      description: <span data-ttu-id="287cf-225">요청 본문은 스트림 (파일 업로드 시나리오에 유용) 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-225">Indicates whether the request body is a stream (useful for file upload scenarios).</span></span>
+      optional: true
+    - id: optionalCallback
+      type:
+      - function
+      description: <span data-ttu-id="287cf-226">선택적 콜백입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-226">The optional callback.</span></span>
+      optional: true
+    return:
+      type:
+      - Promise
+      description: <span data-ttu-id="287cf-227">Promise가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-227">A promise is returned.</span></span>
+    content: function sendRequestWithHttpOperationResponse(options, optionalCallback)
+  langs:
+  - js
+- uid: ms-rest.ServiceClient#addUserAgentInfo
+  id: ms-rest.ServiceClient#addUserAgentInfo
+  parent: ms-rest.ServiceClient
+  name: addUserAgentInfo(additionalUserAgentInfo)
+  summary: <span data-ttu-id="287cf-228">사용자 에이전트 헤더에 사용자 지정 정보 추가</span><span class="sxs-lookup"><span data-stu-id="287cf-228">Adds custom information to user agent header</span></span>
+  fullName: ms-rest.ServiceClient.addUserAgentInfo(additionalUserAgentInfo)
+  type: Function
+  syntax:
+    parameters:
+    - id: additionalUserAgentInfo
+      type:
+      - ms-rest.any
+      description: <span data-ttu-id="287cf-229">사용자 에이전트 헤더 문자열에 추가할 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-229">information to be added to user agent header, as string.</span></span>
+    content: function addUserAgentInfo(additionalUserAgentInfo)
+  langs:
+  - js
+- uid: ms-rest.ServiceClient#getPackageJsonInfo
+  id: ms-rest.ServiceClient#getPackageJsonInfo
+  parent: ms-rest.ServiceClient
+  name: getPackageJsonInfo(managementClientDir)
+  summary: >-
+    <span data-ttu-id="287cf-230">지정 된 azure nodejs 패키지용 package.json을 찾으려고 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-230">Attempts to find package.json for the given azure nodejs package.</span></span>
+
+    <span data-ttu-id="287cf-231">하는 경우 발견, 이름 및 버전을 반환 합니다. 참조 하 여 패키지의 package.json package.json 없으면 기본값을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-231">If found, returns the name and version of the package by reading the package.json If package.json is not found, returns a default value.</span></span>
+  fullName: ms-rest.ServiceClient.getPackageJsonInfo(managementClientDir)
+  type: Function
+  syntax:
+    parameters:
+    - id: managementClientDir
+      type:
+      - string
+      description: <span data-ttu-id="287cf-232">특정 azure management 클라이언트의 디렉터리를 전달 합니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-232">pass the directory of the specific azure management client.</span></span>
+    return:
+      type:
+      - object
+      description: <span data-ttu-id="287cf-233">packageJsonInfo-"name" 및 "version" 원하는 패키지 있습니다.</span><span class="sxs-lookup"><span data-stu-id="287cf-233">packageJsonInfo - "name" and "version" of the desired package.</span></span>
+    content: function getPackageJsonInfo(managementClientDir)
+  langs:
+  - js
+references:
+- uid: ms-rest.WebResource
+  name: WebResource
+  fullName: ms-rest.WebResource
+  isExternal: false

@@ -1,0 +1,812 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 6fa2e2901b7265c9426541584abde0d99339d194
+ms.sourcegitcommit: f774f8ce6b26593f73a5893bfa47f9c510fc51a7
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "40065081"
+items:
+- uid: azure-scheduler.JobOperations~JobOperations
+  id: azure-scheduler.JobOperations~JobOperations
+  name: JobOperations
+  summary: >-
+    <span data-ttu-id="c90ce-101">__참고__:이 클래스의 인스턴스는 인스턴스의 [SchedulerClient]에 대 한 자동으로 만들어집니다 <xref:azure-scheduler.SchedulerClient~SchedulerClient>합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-101">__NOTE__: An instance of this class is automatically created for an instance of the [SchedulerClient] <xref:azure-scheduler.SchedulerClient~SchedulerClient>.</span></span>
+
+    <span data-ttu-id="c90ce-102">[작업]를 참조 하세요. <xref:azure-scheduler.SchedulerClient~SchedulerClient%23jobs>합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-102">See [jobs] <xref:azure-scheduler.SchedulerClient~SchedulerClient%23jobs>.</span></span>
+
+    <span data-ttu-id="c90ce-103">JobOperations 클래스의 새 인스턴스를 초기화합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-103">Initializes a new instance of the JobOperations class.</span></span>
+  fullName: azure-scheduler.JobOperations
+  type: Class
+  children:
+  - azure-scheduler.JobOperations~JobOperations.#ctor
+  - azure-scheduler.JobOperations~JobOperations#create
+  - azure-scheduler.JobOperations~JobOperations#createOrUpdate
+  - azure-scheduler.JobOperations~JobOperations#deleteMethod
+  - azure-scheduler.JobOperations~JobOperations#get
+  - azure-scheduler.JobOperations~JobOperations#getHistory
+  - azure-scheduler.JobOperations~JobOperations#getHistoryWithFilter
+  - azure-scheduler.JobOperations~JobOperations#list
+  - azure-scheduler.JobOperations~JobOperations#listWithFilter
+  - azure-scheduler.JobOperations~JobOperations#updateJobCollectionState
+  - azure-scheduler.JobOperations~JobOperations#updateState
+  langs:
+  - js
+- id: azure-scheduler.JobOperations~JobOperations.#ctor
+  uid: azure-scheduler.JobOperations~JobOperations.#ctor
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: JobOperations(client)
+  fullName: azure-scheduler.JobOperations.JobOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedSchedulerClient
+      description: <span data-ttu-id="c90ce-104">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-104">Reference to the service client.</span></span>
+    content: new JobOperations(client)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#create
+  id: azure-scheduler.JobOperations~JobOperations#create
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: create(parameters, callback)
+  summary: <span data-ttu-id="c90ce-105">서비스는 작업 id를 생성 합니다. 새 작업을 만듭니다. 사용자가 선택한 작업 id가 필요한 경우 CreateOrUpdate를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-105">Creates a new Job, allowing the service to generate a job id. Use CreateOrUpdate if a user-chosen job id is required.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.create(parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: parameters
+      type:
+      - azure-scheduler.JobCreateParameters
+      description: <span data-ttu-id="c90ce-106">작업 만들기 작업에 대 한 작업 정의 지정 하는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-106">Parameters specifying the job definition for a Create Job operation.</span></span>
+    - id: parameters.startTime
+      type:
+      - date
+      description: <span data-ttu-id="c90ce-107">시작 작업에 대 한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-107">Start time for the job.</span></span>  <span data-ttu-id="c90ce-108">ISO-8601으로 정의 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-108">Defined as ISO-8601.</span></span>
+      optional: true
+    - id: parameters.action
+      type:
+      - azure-scheduler.JobAction
+      description: <span data-ttu-id="c90ce-109">작업에 대해 호출할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-109">Action to invoke for the job.</span></span>
+    - id: parameters.action.type
+      type:
+      - azure-scheduler.JobActionType
+      description: <span data-ttu-id="c90ce-110">작업 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-110">Type of action.</span></span> <span data-ttu-id="c90ce-111">Http, https, storageQueue 중 하나일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-111">Can be one of http, https, storageQueue.</span></span>
+    - id: parameters.action.retryPolicy
+      type:
+      - azure-scheduler.RetryPolicy
+      description: <span data-ttu-id="c90ce-112">작업에 대 한 재시도 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-112">Retry Policy for the job action.</span></span>
+      optional: true
+    - id: parameters.action.retryPolicy.retryType
+      type:
+      - azure-scheduler.RetryType
+      description: <span data-ttu-id="c90ce-113">재시도 형식 재시도 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-113">The Retry Type of the Retry Policy.</span></span> <span data-ttu-id="c90ce-114">'Fixed' 또는 '없음'이 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-114">Can be either 'fixed' or 'none'.</span></span>
+      optional: true
+    - id: parameters.action.retryPolicy.retryInterval
+      type:
+      - azure-scheduler.TimeSpan
+      description: <span data-ttu-id="c90ce-115">재시도 사이의 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-115">The interval between retries.</span></span>
+      optional: true
+    - id: parameters.action.retryPolicy.retryCount
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-116">재시도 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-116">Number of times a retry should be attempted.</span></span>
+      optional: true
+    - id: parameters.action.errorAction
+      type:
+      - azure-scheduler.JobErrorAction
+      description: <span data-ttu-id="c90ce-117">작업에 대 한 오류 동작입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-117">Error Action for the job.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.type
+      type:
+      - azure-scheduler.JobActionType
+      description: <span data-ttu-id="c90ce-118">작업 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-118">Type of action.</span></span> <span data-ttu-id="c90ce-119">Http, https, storageQueue 중 하나일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-119">Can be one of http, https, storageQueue.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request
+      type:
+      - azure-scheduler.JobHttpRequest
+      description: <span data-ttu-id="c90ce-120">Http 또는 https 작업 형식에 대 한 요청입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-120">Request for a http or https action type.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.uri
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-121">호출 하는 끝점의 Uri를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-121">Gets or sets Uri of the endpoint to invoke.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.method
+      type:
+      - string
+      description: '<span data-ttu-id="c90ce-122">Http 메서드 예: GET, PUT, POST, DELETE를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-122">Gets or sets Http method e.g. GET, PUT, POST, DELETE.</span></span>'
+      optional: true
+    - id: parameters.action.errorAction.request.headers
+      type:
+      - object
+      description: <span data-ttu-id="c90ce-123">Http/https 작업을 사용 하 여 제공 헤더 이름/값 쌍을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-123">Gets or sets Header name value pairs to supply with the http/https action.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.body
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-124">요청 본문을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-124">Gets or sets the request body.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.authentication
+      type:
+      - azure-scheduler.HttpAuthentication
+      description: <span data-ttu-id="c90ce-125">요청 인증을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-125">Gets or sets the request authentication.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.authentication.type
+      type:
+      - azure-scheduler.HttpAuthenticationType
+      description: <span data-ttu-id="c90ce-126">인증 유형을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-126">Specifies the authentication type</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage
+      type:
+      - azure-scheduler.JobQueueMessage
+      description: <span data-ttu-id="c90ce-127">큐 및 큐 메시지 동작에 대 한 콘텐츠 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-127">Queue and content for a queue message action type.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.storageAccountName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-128">큐에 대 한 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-128">Name of the storage account for the queue.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.queueName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-129">보내기 큐의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-129">Name of the queue to send to.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.sasToken
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-130">큐에 메시지를 보낼 저장소 계정에 대 한 SAS 키입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-130">SAS key for the storage account to send message to the queue.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.message
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-131">큐로 송신할 메시지의 콘텐츠입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-131">Content of the message to send to the queue.</span></span>
+      optional: true
+    - id: parameters.action.request
+      type:
+      - azure-scheduler.JobHttpRequest
+      description: <span data-ttu-id="c90ce-132">Http 또는 https 작업 형식에 대 한 요청입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-132">Request for a http or https action type.</span></span>
+      optional: true
+    - id: parameters.action.request.uri
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-133">호출 하는 끝점의 Uri를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-133">Gets or sets Uri of the endpoint to invoke.</span></span>
+      optional: true
+    - id: parameters.action.request.method
+      type:
+      - string
+      description: '<span data-ttu-id="c90ce-134">Http 메서드 예: GET, PUT, POST, DELETE를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-134">Gets or sets Http method e.g. GET, PUT, POST, DELETE.</span></span>'
+      optional: true
+    - id: parameters.action.request.headers
+      type:
+      - object
+      description: <span data-ttu-id="c90ce-135">Http/https 작업을 사용 하 여 제공 헤더 이름/값 쌍을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-135">Gets or sets Header name value pairs to supply with the http/https action.</span></span>
+      optional: true
+    - id: parameters.action.request.body
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-136">요청 본문을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-136">Gets or sets the request body.</span></span>
+      optional: true
+    - id: parameters.action.request.authentication
+      type:
+      - azure-scheduler.HttpAuthentication
+      description: <span data-ttu-id="c90ce-137">요청 인증을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-137">Gets or sets the request authentication.</span></span>
+      optional: true
+    - id: parameters.action.request.authentication.type
+      type:
+      - azure-scheduler.HttpAuthenticationType
+      description: <span data-ttu-id="c90ce-138">인증 유형을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-138">Specifies the authentication type</span></span>
+      optional: true
+    - id: parameters.action.queueMessage
+      type:
+      - azure-scheduler.JobQueueMessage
+      description: <span data-ttu-id="c90ce-139">큐 및 큐 메시지 동작에 대 한 콘텐츠 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-139">Queue and content for a queue message action type.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.storageAccountName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-140">큐에 대 한 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-140">Name of the storage account for the queue.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.queueName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-141">보내기 큐의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-141">Name of the queue to send to.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.sasToken
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-142">큐에 메시지를 보낼 저장소 계정에 대 한 SAS 키입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-142">SAS key for the storage account to send message to the queue.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.message
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-143">큐로 송신할 메시지의 콘텐츠입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-143">Content of the message to send to the queue.</span></span>
+      optional: true
+    - id: parameters.recurrence
+      type:
+      - azure-scheduler.JobRecurrence
+      description: <span data-ttu-id="c90ce-144">작업에 대 한 되풀이 일정입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-144">Recurrence schedule for the job.</span></span>
+      optional: true
+    - id: parameters.recurrence.frequency
+      type:
+      - azure-scheduler.JobRecurrenceFrequency
+      description: <span data-ttu-id="c90ce-145">되풀이 빈도가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-145">The frequency of recurrence.</span></span>
+      optional: true
+    - id: parameters.recurrence.interval
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-146">지정 된 빈도로 되풀이 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-146">Interval of the recurrence at the given frequency.</span></span>
+      optional: true
+    - id: parameters.recurrence.count
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-147">실행 하는 항목의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-147">Count of occurrences that will execute.</span></span> <span data-ttu-id="c90ce-148">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-148">Optional.</span></span> <span data-ttu-id="c90ce-149">기본 무한 반복 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-149">Default will recur infinitely</span></span>
+      optional: true
+    - id: parameters.recurrence.endTime
+      type:
+      - date
+      description: <span data-ttu-id="c90ce-150">자세한 나타나지 실행될지는 ISO-8601 형식의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-150">Time in ISO-8601 format after which no more occurrences will execute.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule
+      type:
+      - azure-scheduler.JobRecurrenceSchedule
+      description: <span data-ttu-id="c90ce-151">작업에 대 한 되풀이 일정입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-151">Recurrence schedule for the job.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.minutes
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-152">작업에서 실행 해야 하는 시간의 분입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-152">Minutes of the hour that the job should execute at.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.hours
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-153">작업에서 실행 해야 하는 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-153">Hours of the day that the job should execute at.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.days
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-154">주 작업에서 실행 해야 하는 일입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-154">Days of the week that the job should execute on.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.months
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-155">작업에서 실행 해야 하는 달입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-155">Months that the job should execute in.</span></span>  <span data-ttu-id="c90ce-156">1에서 12 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-156">Must be between 1 and 12.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.monthDays
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-157">작업에서 실행 해야 하는 월의 일입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-157">Days of the month that the job should execute on.</span></span>  <span data-ttu-id="c90ce-158">1에서 31 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-158">Must be between 1 and 31.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.monthlyOccurrences
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-159">한 달 내에 있는 일의 발생 수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-159">Occurrences of days within a month.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-160">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-160">The response stream.</span></span>
+    content: function create(parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#createOrUpdate
+  id: azure-scheduler.JobOperations~JobOperations#createOrUpdate
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: createOrUpdate(jobId, parameters, callback)
+  summary: <span data-ttu-id="c90ce-161">사용자가 제공한 작업 id를 사용 하 여 새 작업을 만들거나 기존 작업을 해당 정의 지정 하는 대체를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-161">Creates a new Job with a user-provided job id, or updates an existing job, replacing its definition with that specified.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.createOrUpdate(jobId, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-162">만들기 또는 업데이트 작업의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-162">Id of the job to create or update.</span></span>
+    - id: parameters
+      type:
+      - azure-scheduler.JobCreateOrUpdateParameters
+      description: <span data-ttu-id="c90ce-163">CreateOrUpdate 작업에 대 한 작업 정의 지정 하는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-163">Parameters specifying the job definition for a CreateOrUpdate Job operation.</span></span>
+    - id: parameters.startTime
+      type:
+      - date
+      description: <span data-ttu-id="c90ce-164">시작 작업에 대 한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-164">Start time for the job.</span></span> <span data-ttu-id="c90ce-165">ISO-8601으로 정의 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-165">Defined as ISO-8601.</span></span>
+      optional: true
+    - id: parameters.action
+      type:
+      - azure-scheduler.JobAction
+      description: <span data-ttu-id="c90ce-166">작업에 대해 호출할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-166">Action to invoke for the job.</span></span>
+    - id: parameters.action.type
+      type:
+      - azure-scheduler.JobActionType
+      description: <span data-ttu-id="c90ce-167">작업 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-167">Type of action.</span></span> <span data-ttu-id="c90ce-168">Http, https, storageQueue 중 하나일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-168">Can be one of http, https, storageQueue.</span></span>
+    - id: parameters.action.retryPolicy
+      type:
+      - azure-scheduler.RetryPolicy
+      description: <span data-ttu-id="c90ce-169">작업에 대 한 재시도 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-169">Retry Policy for the job action.</span></span>
+      optional: true
+    - id: parameters.action.retryPolicy.retryType
+      type:
+      - azure-scheduler.RetryType
+      description: <span data-ttu-id="c90ce-170">재시도 형식 재시도 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-170">The Retry Type of the Retry Policy.</span></span> <span data-ttu-id="c90ce-171">'Fixed' 또는 '없음'이 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-171">Can be either 'fixed' or 'none'.</span></span>
+      optional: true
+    - id: parameters.action.retryPolicy.retryInterval
+      type:
+      - azure-scheduler.TimeSpan
+      description: <span data-ttu-id="c90ce-172">재시도 사이의 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-172">The interval between retries.</span></span>
+      optional: true
+    - id: parameters.action.retryPolicy.retryCount
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-173">재시도 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-173">Number of times a retry should be attempted.</span></span>
+      optional: true
+    - id: parameters.action.errorAction
+      type:
+      - azure-scheduler.JobErrorAction
+      description: <span data-ttu-id="c90ce-174">작업에 대 한 오류 동작입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-174">Error Action for the job.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.type
+      type:
+      - azure-scheduler.JobActionType
+      description: <span data-ttu-id="c90ce-175">작업 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-175">Type of action.</span></span> <span data-ttu-id="c90ce-176">Http, https, storageQueue 중 하나일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-176">Can be one of http, https, storageQueue.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request
+      type:
+      - azure-scheduler.JobHttpRequest
+      description: <span data-ttu-id="c90ce-177">Http 또는 https 작업 형식에 대 한 요청입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-177">Request for a http or https action type.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.uri
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-178">호출 하는 끝점의 Uri를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-178">Gets or sets Uri of the endpoint to invoke.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.method
+      type:
+      - string
+      description: '<span data-ttu-id="c90ce-179">Http 메서드 예: GET, PUT, POST, DELETE를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-179">Gets or sets Http method e.g. GET, PUT, POST, DELETE.</span></span>'
+      optional: true
+    - id: parameters.action.errorAction.request.headers
+      type:
+      - object
+      description: <span data-ttu-id="c90ce-180">Http/https 작업을 사용 하 여 제공 헤더 이름/값 쌍을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-180">Gets or sets Header name value pairs to supply with the http/https action.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.body
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-181">요청 본문을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-181">Gets or sets the request body.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.authentication
+      type:
+      - azure-scheduler.HttpAuthentication
+      description: <span data-ttu-id="c90ce-182">요청 인증을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-182">Gets or sets the request authentication.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.request.authentication.type
+      type:
+      - azure-scheduler.HttpAuthenticationType
+      description: <span data-ttu-id="c90ce-183">인증 유형을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-183">Specifies the authentication type</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage
+      type:
+      - azure-scheduler.JobQueueMessage
+      description: <span data-ttu-id="c90ce-184">큐 및 큐 메시지 동작에 대 한 콘텐츠 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-184">Queue and content for a queue message action type.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.storageAccountName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-185">큐에 대 한 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-185">Name of the storage account for the queue.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.queueName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-186">보내기 큐의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-186">Name of the queue to send to.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.sasToken
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-187">큐에 메시지를 보낼 저장소 계정에 대 한 SAS 키입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-187">SAS key for the storage account to send message to the queue.</span></span>
+      optional: true
+    - id: parameters.action.errorAction.queueMessage.message
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-188">큐로 송신할 메시지의 콘텐츠입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-188">Content of the message to send to the queue.</span></span>
+      optional: true
+    - id: parameters.action.request
+      type:
+      - azure-scheduler.JobHttpRequest
+      description: <span data-ttu-id="c90ce-189">Http 또는 https 작업 형식에 대 한 요청입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-189">Request for a http or https action type.</span></span>
+      optional: true
+    - id: parameters.action.request.uri
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-190">호출 하는 끝점의 Uri를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-190">Gets or sets Uri of the endpoint to invoke.</span></span>
+      optional: true
+    - id: parameters.action.request.method
+      type:
+      - string
+      description: '<span data-ttu-id="c90ce-191">Http 메서드 예: GET, PUT, POST, DELETE를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-191">Gets or sets Http method e.g. GET, PUT, POST, DELETE.</span></span>'
+      optional: true
+    - id: parameters.action.request.headers
+      type:
+      - object
+      description: <span data-ttu-id="c90ce-192">Http/https 작업을 사용 하 여 제공 헤더 이름/값 쌍을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-192">Gets or sets Header name value pairs to supply with the http/https action.</span></span>
+      optional: true
+    - id: parameters.action.request.body
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-193">요청 본문을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-193">Gets or sets the request body.</span></span>
+      optional: true
+    - id: parameters.action.request.authentication
+      type:
+      - azure-scheduler.HttpAuthentication
+      description: <span data-ttu-id="c90ce-194">요청 인증을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-194">Gets or sets the request authentication.</span></span>
+      optional: true
+    - id: parameters.action.request.authentication.type
+      type:
+      - azure-scheduler.HttpAuthenticationType
+      description: <span data-ttu-id="c90ce-195">인증 유형을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-195">Specifies the authentication type</span></span>
+      optional: true
+    - id: parameters.action.queueMessage
+      type:
+      - azure-scheduler.JobQueueMessage
+      description: <span data-ttu-id="c90ce-196">큐 및 큐 메시지 동작에 대 한 콘텐츠 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-196">Queue and content for a queue message action type.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.storageAccountName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-197">큐에 대 한 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-197">Name of the storage account for the queue.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.queueName
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-198">보내기 큐의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-198">Name of the queue to send to.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.sasToken
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-199">큐에 메시지를 보낼 저장소 계정에 대 한 SAS 키입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-199">SAS key for the storage account to send message to the queue.</span></span>
+      optional: true
+    - id: parameters.action.queueMessage.message
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-200">큐로 송신할 메시지의 콘텐츠입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-200">Content of the message to send to the queue.</span></span>
+      optional: true
+    - id: parameters.recurrence
+      type:
+      - azure-scheduler.JobRecurrence
+      description: <span data-ttu-id="c90ce-201">작업에 대 한 되풀이 일정입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-201">Recurrence schedule for the job.</span></span>
+      optional: true
+    - id: parameters.recurrence.frequency
+      type:
+      - azure-scheduler.JobRecurrenceFrequency
+      description: <span data-ttu-id="c90ce-202">되풀이 빈도가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-202">The frequency of recurrence.</span></span>
+      optional: true
+    - id: parameters.recurrence.interval
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-203">지정 된 빈도로 되풀이 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-203">Interval of the recurrence at the given frequency.</span></span>
+      optional: true
+    - id: parameters.recurrence.count
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-204">실행 하는 항목의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-204">Count of occurrences that will execute.</span></span> <span data-ttu-id="c90ce-205">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-205">Optional.</span></span> <span data-ttu-id="c90ce-206">기본 무한 반복 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-206">Default will recur infinitely</span></span>
+      optional: true
+    - id: parameters.recurrence.endTime
+      type:
+      - date
+      description: <span data-ttu-id="c90ce-207">자세한 나타나지 실행될지는 ISO-8601 형식의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-207">Time in ISO-8601 format after which no more occurrences will execute.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule
+      type:
+      - azure-scheduler.JobRecurrenceSchedule
+      description: <span data-ttu-id="c90ce-208">작업에 대 한 되풀이 일정입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-208">Recurrence schedule for the job.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.minutes
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-209">작업에서 실행 해야 하는 시간의 분입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-209">Minutes of the hour that the job should execute at.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.hours
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-210">작업에서 실행 해야 하는 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-210">Hours of the day that the job should execute at.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.days
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-211">주 작업에서 실행 해야 하는 일입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-211">Days of the week that the job should execute on.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.months
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-212">작업에서 실행 해야 하는 달입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-212">Months that the job should execute in.</span></span>  <span data-ttu-id="c90ce-213">1에서 12 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-213">Must be between 1 and 12.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.monthDays
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-214">작업에서 실행 해야 하는 월의 일입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-214">Days of the month that the job should execute on.</span></span>  <span data-ttu-id="c90ce-215">1에서 31 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-215">Must be between 1 and 31.</span></span>
+      optional: true
+    - id: parameters.recurrence.schedule.monthlyOccurrences
+      type:
+      - array
+      description: <span data-ttu-id="c90ce-216">한 달 내에 있는 일의 발생 수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-216">Occurrences of days within a month.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-217">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-217">The response stream.</span></span>
+    content: function createOrUpdate(jobId, parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#deleteMethod
+  id: azure-scheduler.JobOperations~JobOperations#deleteMethod
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: deleteMethod(jobId, callback)
+  summary: <span data-ttu-id="c90ce-218">작업을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-218">Deletes a job.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.deleteMethod(jobId, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-219">삭제 작업의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-219">Id of the job to delete.</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-220">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-220">The response stream.</span></span>
+    content: function deleteMethod(jobId, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#get
+  id: azure-scheduler.JobOperations~JobOperations#get
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: get(jobId, callback)
+  summary: <span data-ttu-id="c90ce-221">정 및 작업의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-221">Get the definition and status of a job.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.get(jobId, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-222">가져오기 작업의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-222">Id of the job to get.</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-223">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-223">The response stream.</span></span>
+    content: function get(jobId, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#getHistory
+  id: azure-scheduler.JobOperations~JobOperations#getHistory
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: getHistory(jobId, parameters, callback)
+  summary: <span data-ttu-id="c90ce-224">작업의 실행 기록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-224">Get the execution history of a Job.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.getHistory(jobId, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-225">기록 가져오기 작업의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-225">Id of the job to get the history of.</span></span>
+    - id: parameters
+      type:
+      - azure-scheduler.JobGetHistoryParameters
+      description: <span data-ttu-id="c90ce-226">작업 기록 가져오기 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-226">Parameters supplied to the Get Job History operation.</span></span>
+    - id: parameters.skip
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-227">기록 목록에서 항목을 요청을 시작 하는 인덱스 (0부터 시작)를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-227">Specify the (0-based) index of the history list from which to begin requesting entries.</span></span>
+      optional: true
+    - id: parameters.top
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-228">요청에서 기록 항목 수를 지정 된 범위 [1.. 100은].</span><span class="sxs-lookup"><span data-stu-id="c90ce-228">Specify the number of history entries to request, in the of range [1..100].</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-229">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-229">The response stream.</span></span>
+    content: function getHistory(jobId, parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#getHistoryWithFilter
+  id: azure-scheduler.JobOperations~JobOperations#getHistoryWithFilter
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: getHistoryWithFilter(jobId, parameters, callback)
+  summary: <span data-ttu-id="c90ce-230">작업 상태에 대 한 필터를 사용 하 여 작업의 실행 기록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-230">Get the execution history of a Job with a filter on the job Status.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.getHistoryWithFilter(jobId, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-231">기록 가져오기 작업의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-231">Id of the job to get the history of.</span></span>
+    - id: parameters
+      type:
+      - azure-scheduler.JobGetHistoryWithFilterParameters
+      description: <span data-ttu-id="c90ce-232">필터 사용 하 여 작업 기록 가져오기 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-232">Parameters supplied to the Get Job History With Filter operation.</span></span>
+    - id: parameters.status
+      type:
+      - azure-scheduler.JobHistoryStatus
+      description: <span data-ttu-id="c90ce-233">작업 기록을 필터링 하 여 반환 작업 실행 시도가 있는 특정 상태를 '완료 됨' 또는 '실패'만 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-233">Filter the job history to have it only return job execution attempts having a particular Status, 'completed' or 'failed'.</span></span>
+    - id: parameters.skip
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-234">기록 목록에서 항목을 요청을 시작 하는 인덱스 (0부터 시작)를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-234">Specify the (0-based) index of the history list from which to begin requesting entries.</span></span>
+      optional: true
+    - id: parameters.top
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-235">요청에서 기록 항목 수를 지정 된 범위 [1.. 100은].</span><span class="sxs-lookup"><span data-stu-id="c90ce-235">Specify the number of history entries to request, in the of range [1..100].</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-236">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-236">The response stream.</span></span>
+    content: function getHistoryWithFilter(jobId, parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#list
+  id: azure-scheduler.JobOperations~JobOperations#list
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: list(parameters, callback)
+  summary: <span data-ttu-id="c90ce-237">작업 컬렉션의 모든 작업의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-237">Get the list of all jobs in a job collection.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.list(parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: parameters
+      type:
+      - azure-scheduler.JobListParameters
+      description: <span data-ttu-id="c90ce-238">작업 나열 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-238">Parameters supplied to the List Jobs operation.</span></span>
+    - id: parameters.skip
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-239">작업 목록 항목을 요청을 시작 하는 인덱스 (0부터 시작)를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-239">Specify the (0-based) index of the job list from which to begin requesting entries.</span></span>
+      optional: true
+    - id: parameters.top
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-240">요청에 작업의 수를 지정 된 범위 [1.. 100은].</span><span class="sxs-lookup"><span data-stu-id="c90ce-240">Specify the number of jobs to request, in the of range [1..100].</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-241">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-241">The response stream.</span></span>
+    content: function list(parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#listWithFilter
+  id: azure-scheduler.JobOperations~JobOperations#listWithFilter
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: listWithFilter(parameters, callback)
+  summary: <span data-ttu-id="c90ce-242">작업 상태에 대 한 필터와 일치 하는 작업 컬렉션의 작업 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-242">Get the list of jobs in a job collection matching a filter on job state.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.listWithFilter(parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: parameters
+      type:
+      - azure-scheduler.JobListWithFilterParameters
+      description: <span data-ttu-id="c90ce-243">필터 작업을 사용 하 여 목록 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-243">Parameters supplied to the List Jobs with filter operation.</span></span>
+    - id: parameters.state
+      type:
+      - azure-scheduler.JobState
+      description: <span data-ttu-id="c90ce-244">작업 기록만 반환 작업 실행 시도 특정 상태, 활성화, 비활성화, 실패 또는 완료를 필터링 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-244">Filter the job history to have it only return job execution attempts having a particular State, enabled, disabled, faulted, or completed.</span></span>
+    - id: parameters.skip
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-245">작업 목록 항목을 요청을 시작 하는 인덱스 (0부터 시작)를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-245">Specify the (0-based) index of the job list from which to begin requesting entries.</span></span>
+      optional: true
+    - id: parameters.top
+      type:
+      - number
+      description: <span data-ttu-id="c90ce-246">요청에 작업의 수를 지정 된 범위 [1.. 100은].</span><span class="sxs-lookup"><span data-stu-id="c90ce-246">Specify the number of jobs to request, in the of range [1..100].</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-247">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-247">The response stream.</span></span>
+    content: function listWithFilter(parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#updateJobCollectionState
+  id: azure-scheduler.JobOperations~JobOperations#updateJobCollectionState
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: updateJobCollectionState(parameters, callback)
+  summary: <span data-ttu-id="c90ce-248">작업 컬렉션에 있는 모든 작업의 상태를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-248">Update the state of all jobs in a job collections.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.updateJobCollectionState(parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: parameters
+      type:
+      - azure-scheduler.JobCollectionJobsUpdateStateParameters
+      description: <span data-ttu-id="c90ce-249">업데이트 작업 상태 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-249">Parameters supplied to the Update Jobs State operation.</span></span>
+    - id: parameters.state
+      type:
+      - azure-scheduler.JobState
+      description: "<span data-ttu-id=\"c90ce-250\">업데이트 하려면 새 상태: 'enabled' 또는 'disabled'.</span><span class=\"sxs-lookup\"><span data-stu-id=\"c90ce-250\">New state to update to: 'enabled' or 'disabled'.</span></span>"
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-251">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-251">The response stream.</span></span>
+    content: function updateJobCollectionState(parameters, callback)
+  langs:
+  - js
+- uid: azure-scheduler.JobOperations~JobOperations#updateState
+  id: azure-scheduler.JobOperations~JobOperations#updateState
+  parent: azure-scheduler.JobOperations~JobOperations
+  name: updateState(jobId, parameters, callback)
+  summary: <span data-ttu-id="c90ce-252">작업의 상태를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-252">Update the state of a job.</span></span>
+  fullName: azure-scheduler.JobOperations~JobOperations.updateState(jobId, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-253">업데이트 하는 작업의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-253">Id of the job to update.</span></span>
+    - id: parameters
+      type:
+      - azure-scheduler.JobUpdateStateParameters
+      description: <span data-ttu-id="c90ce-254">업데이트 작업 상태 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-254">Parameters supplied to the Update Job State operation.</span></span>
+    - id: parameters.state
+      type:
+      - azure-scheduler.JobState
+      description: "<span data-ttu-id=\"c90ce-255\">업데이트 하려면 새 상태: 'enabled' 또는 'disabled'.</span><span class=\"sxs-lookup\"><span data-stu-id=\"c90ce-255\">New state to update to: 'enabled' or 'disabled'.</span></span>"
+    - id: parameters.updateStateReason
+      type:
+      - string
+      description: <span data-ttu-id="c90ce-256">이 작업 상태 업데이트와 관련 된 상황의 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-256">A description of the circumstances associated with this job state update.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-scheduler.Stream
+      description: <span data-ttu-id="c90ce-257">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="c90ce-257">The response stream.</span></span>
+    content: function updateState(jobId, parameters, callback)
+  langs:
+  - js

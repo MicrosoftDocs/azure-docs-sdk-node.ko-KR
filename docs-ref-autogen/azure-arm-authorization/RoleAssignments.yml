@@ -1,0 +1,1621 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: aa765d9debb3b6e1173b56b8ef882a692332fc29
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40066044"
+items:
+- uid: azure-arm-authorization.RoleAssignments
+  name: RoleAssignments
+  fullName: RoleAssignments
+  children:
+  - azure-arm-authorization.RoleAssignments.create
+  - azure-arm-authorization.RoleAssignments.create_1
+  - azure-arm-authorization.RoleAssignments.create_2
+  - azure-arm-authorization.RoleAssignments.createById_1
+  - azure-arm-authorization.RoleAssignments.createById
+  - azure-arm-authorization.RoleAssignments.createById_2
+  - azure-arm-authorization.RoleAssignments.createByIdWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.createWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.deleteById
+  - azure-arm-authorization.RoleAssignments.deleteById_1
+  - azure-arm-authorization.RoleAssignments.deleteById_2
+  - azure-arm-authorization.RoleAssignments.deleteByIdWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.deleteMethod_1
+  - azure-arm-authorization.RoleAssignments.deleteMethod_2
+  - azure-arm-authorization.RoleAssignments.deleteMethod
+  - azure-arm-authorization.RoleAssignments.deleteMethodWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.get
+  - azure-arm-authorization.RoleAssignments.get_2
+  - azure-arm-authorization.RoleAssignments.get_1
+  - azure-arm-authorization.RoleAssignments.getById_1
+  - azure-arm-authorization.RoleAssignments.getById_2
+  - azure-arm-authorization.RoleAssignments.getById
+  - azure-arm-authorization.RoleAssignments.getByIdWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.getWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.list
+  - azure-arm-authorization.RoleAssignments.list_1
+  - azure-arm-authorization.RoleAssignments.list_2
+  - azure-arm-authorization.RoleAssignments.listForResource
+  - azure-arm-authorization.RoleAssignments.listForResource_1
+  - azure-arm-authorization.RoleAssignments.listForResource_2
+  - azure-arm-authorization.RoleAssignments.listForResourceGroup
+  - azure-arm-authorization.RoleAssignments.listForResourceGroup_1
+  - azure-arm-authorization.RoleAssignments.listForResourceGroup_2
+  - azure-arm-authorization.RoleAssignments.listForResourceGroupNext_1
+  - azure-arm-authorization.RoleAssignments.listForResourceGroupNext_2
+  - azure-arm-authorization.RoleAssignments.listForResourceGroupNext
+  - azure-arm-authorization.RoleAssignments.listForResourceGroupNextWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listForResourceGroupWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listForResourceNext
+  - azure-arm-authorization.RoleAssignments.listForResourceNext_1
+  - azure-arm-authorization.RoleAssignments.listForResourceNext_2
+  - azure-arm-authorization.RoleAssignments.listForResourceNextWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listForResourceWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listForScope
+  - azure-arm-authorization.RoleAssignments.listForScope_1
+  - azure-arm-authorization.RoleAssignments.listForScope_2
+  - azure-arm-authorization.RoleAssignments.listForScopeNext
+  - azure-arm-authorization.RoleAssignments.listForScopeNext_1
+  - azure-arm-authorization.RoleAssignments.listForScopeNext_2
+  - azure-arm-authorization.RoleAssignments.listForScopeNextWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listForScopeWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listNext
+  - azure-arm-authorization.RoleAssignments.listNext_1
+  - azure-arm-authorization.RoleAssignments.listNext_2
+  - azure-arm-authorization.RoleAssignments.listNextWithHttpOperationResponse
+  - azure-arm-authorization.RoleAssignments.listWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.create
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-101">역할 할당을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-101">Creates a role assignment.</span></span>
+  syntax:
+    content: 'function create(scope: string, roleAssignmentName: string, parameters: RoleAssignmentCreateParameters, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-102">만들려는 역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-102">The scope of the role assignment to create.</span></span> <span data-ttu-id="cd7d2-103">범위는 모든 REST 리소스 인스턴스가 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-103">The scope can be any REST resource instance.</span></span> <span data-ttu-id="cd7d2-104">사용 예를 들어, ' / {구독 id} /' '/ {구독 id} /resourceGroups/ {리소스 그룹 이름}' 리소스 그룹에 대 한 구독에 대 한 고 ' / {구독 id} /resourceGroups/ { resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' 리소스에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-104">For example, use '/subscriptions/{subscription-id}/' for a subscription, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for a resource group, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' for a resource.</span></span>
+    - id: roleAssignmentName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-105">만들려는 역할 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-105">The name of the role assignment to create.</span></span> <span data-ttu-id="cd7d2-106">모든 유효한 GUID 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-106">It can be any valid GUID.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: >
+        <span data-ttu-id="cd7d2-107">역할 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-107">Parameters for the role assignment.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.create_1
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-108">역할 할당을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-108">Creates a role assignment.</span></span>
+  syntax:
+    content: 'function create(scope: string, roleAssignmentName: string, parameters: RoleAssignmentCreateParameters, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: roleAssignmentName
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.create_2
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-109">역할 할당을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-109">Creates a role assignment.</span></span>
+  syntax:
+    content: 'function create(scope: string, roleAssignmentName: string, parameters: RoleAssignmentCreateParameters, options: function, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: roleAssignmentName
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.createById_1
+  name: createById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-110">역할 할당 id를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-110">Creates a role assignment by ID.</span></span>
+  syntax:
+    content: 'function createById(roleId: string, parameters: RoleAssignmentCreateParameters, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.createById
+  name: createById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-111">역할 할당 id를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-111">Creates a role assignment by ID.</span></span>
+  syntax:
+    content: 'function createById(roleId: string, parameters: RoleAssignmentCreateParameters, options?: function)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-112">만들 역할 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-112">The ID of the role assignment to create.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: >
+        <span data-ttu-id="cd7d2-113">역할 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-113">Parameters for the role assignment.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.createById_2
+  name: createById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-114">역할 할당 id를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-114">Creates a role assignment by ID.</span></span>
+  syntax:
+    content: 'function createById(roleId: string, parameters: RoleAssignmentCreateParameters, options: function, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.createByIdWithHttpOperationResponse
+  name: createByIdWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-115">역할 할당 id를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-115">Creates a role assignment by ID.</span></span>
+  syntax:
+    content: 'function createByIdWithHttpOperationResponse(roleId: string, parameters: RoleAssignmentCreateParameters, options?: function)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-116">만들 역할 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-116">The ID of the role assignment to create.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: >
+        <span data-ttu-id="cd7d2-117">역할 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-117">Parameters for the role assignment.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.createWithHttpOperationResponse
+  name: createWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-118">역할 할당을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-118">Creates a role assignment.</span></span>
+  syntax:
+    content: 'function createWithHttpOperationResponse(scope: string, roleAssignmentName: string, parameters: RoleAssignmentCreateParameters, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-119">만들려는 역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-119">The scope of the role assignment to create.</span></span> <span data-ttu-id="cd7d2-120">범위는 모든 REST 리소스 인스턴스가 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-120">The scope can be any REST resource instance.</span></span> <span data-ttu-id="cd7d2-121">사용 예를 들어, ' / {구독 id} /' '/ {구독 id} /resourceGroups/ {리소스 그룹 이름}' 리소스 그룹에 대 한 구독에 대 한 고 ' / {구독 id} /resourceGroups/ { resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' 리소스에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-121">For example, use '/subscriptions/{subscription-id}/' for a subscription, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for a resource group, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' for a resource.</span></span>
+    - id: roleAssignmentName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-122">만들려는 역할 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-122">The name of the role assignment to create.</span></span> <span data-ttu-id="cd7d2-123">모든 유효한 GUID 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-123">It can be any valid GUID.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-authorization.RoleAssignmentCreateParameters
+      description: >
+        <span data-ttu-id="cd7d2-124">역할 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-124">Parameters for the role assignment.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteById
+  name: deleteById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-125">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-125">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteById(roleId: string, options?: function)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-126">삭제할 역할 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-126">The ID of the role assignment to delete.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteById_1
+  name: deleteById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-127">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-127">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteById(roleId: string, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteById_2
+  name: deleteById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-128">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-128">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteById(roleId: string, options: function, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteByIdWithHttpOperationResponse
+  name: deleteByIdWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-129">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-129">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteByIdWithHttpOperationResponse(roleId: string, options?: function)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-130">삭제할 역할 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-130">The ID of the role assignment to delete.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteMethod_1
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-131">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-131">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteMethod(scope: string, roleAssignmentName: string, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: roleAssignmentName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteMethod_2
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-132">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-132">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteMethod(scope: string, roleAssignmentName: string, options: function, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: roleAssignmentName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteMethod
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-133">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-133">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteMethod(scope: string, roleAssignmentName: string, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-134">삭제 하려면 역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-134">The scope of the role assignment to delete.</span></span>
+    - id: roleAssignmentName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-135">삭제 하려면 역할 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-135">The name of the role assignment to delete.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.deleteMethodWithHttpOperationResponse
+  name: deleteMethodWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-136">역할 할당을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-136">Deletes a role assignment.</span></span>
+  syntax:
+    content: 'function deleteMethodWithHttpOperationResponse(scope: string, roleAssignmentName: string, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-137">삭제 하려면 역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-137">The scope of the role assignment to delete.</span></span>
+    - id: roleAssignmentName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-138">삭제 하려면 역할 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-138">The name of the role assignment to delete.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.get
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-139">지정 된 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-139">Get the specified role assignment.</span></span>
+  syntax:
+    content: 'function get(scope: string, roleAssignmentName: string, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-140">역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-140">The scope of the role assignment.</span></span>
+    - id: roleAssignmentName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-141">가져올 역할 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-141">The name of the role assignment to get.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.get_2
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-142">지정 된 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-142">Get the specified role assignment.</span></span>
+  syntax:
+    content: 'function get(scope: string, roleAssignmentName: string, options: function, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: roleAssignmentName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.get_1
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-143">지정 된 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-143">Get the specified role assignment.</span></span>
+  syntax:
+    content: 'function get(scope: string, roleAssignmentName: string, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: roleAssignmentName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.getById_1
+  name: getById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-144">역할 할당을 id를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-144">Gets a role assignment by ID.</span></span>
+  syntax:
+    content: 'function getById(roleId: string, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.getById_2
+  name: getById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-145">역할 할당을 id를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-145">Gets a role assignment by ID.</span></span>
+  syntax:
+    content: 'function getById(roleId: string, options: function, callback: ServiceCallback<RoleAssignment>)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignment>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.getById
+  name: getById
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-146">역할 할당을 id를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-146">Gets a role assignment by ID.</span></span>
+  syntax:
+    content: 'function getById(roleId: string, options?: function)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-147">가져올 역할 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-147">The ID of the role assignment to get.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignment>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.getByIdWithHttpOperationResponse
+  name: getByIdWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-148">역할 할당을 id를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-148">Gets a role assignment by ID.</span></span>
+  syntax:
+    content: 'function getByIdWithHttpOperationResponse(roleId: string, options?: function)'
+    parameters:
+    - id: roleId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-149">가져올 역할 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-149">The ID of the role assignment to get.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-150">지정 된 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-150">Get the specified role assignment.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(scope: string, roleAssignmentName: string, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-151">역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-151">The scope of the role assignment.</span></span>
+    - id: roleAssignmentName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-152">가져올 역할 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-152">The name of the role assignment to get.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.list
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-153">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-153">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function list(options?: function)'
+    parameters:
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.list_1
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-154">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-154">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function list(callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.list_2
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-155">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-155">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function list(options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResource
+  name: listForResource
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-156">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-156">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResource(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-157">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-157">The name of the resource group.</span></span>
+    - id: resourceProviderNamespace
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-158">리소스 공급자의 네임 스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-158">The namespace of the resource provider.</span></span>
+    - id: parentResourcePath
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-159">부모 리소스 id입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-159">The parent resource identity.</span></span>
+    - id: resourceType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-160">리소스의 리소스 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-160">The resource type of the resource.</span></span>
+    - id: resourceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-161">에 대 한 역할 할당을 가져올 리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-161">The name of the resource to get role assignments for.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResource_1
+  name: listForResource
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-162">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-162">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResource(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: resourceProviderNamespace
+      type:
+      - string
+      description: ''
+    - id: parentResourcePath
+      type:
+      - string
+      description: ''
+    - id: resourceType
+      type:
+      - string
+      description: ''
+    - id: resourceName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResource_2
+  name: listForResource
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-163">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-163">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResource(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: resourceProviderNamespace
+      type:
+      - string
+      description: ''
+    - id: parentResourcePath
+      type:
+      - string
+      description: ''
+    - id: resourceType
+      type:
+      - string
+      description: ''
+    - id: resourceName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroup
+  name: listForResourceGroup
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-164">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-164">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroup(resourceGroupName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-165">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-165">The name of the resource group.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroup_1
+  name: listForResourceGroup
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-166">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-166">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroup(resourceGroupName: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroup_2
+  name: listForResourceGroup
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-167">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-167">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroup(resourceGroupName: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroupNext_1
+  name: listForResourceGroupNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-168">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-168">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroupNext(nextPageLink: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroupNext_2
+  name: listForResourceGroupNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-169">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-169">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroupNext(nextPageLink: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroupNext
+  name: listForResourceGroupNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-170">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-170">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroupNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-171">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-171">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroupNextWithHttpOperationResponse
+  name: listForResourceGroupNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-172">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-172">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-173">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-173">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceGroupWithHttpOperationResponse
+  name: listForResourceGroupWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-174">리소스 그룹에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-174">Gets role assignments for a resource group.</span></span>
+  syntax:
+    content: 'function listForResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-175">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-175">The name of the resource group.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceNext
+  name: listForResourceNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-176">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-176">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResourceNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-177">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-177">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceNext_1
+  name: listForResourceNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-178">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-178">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResourceNext(nextPageLink: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceNext_2
+  name: listForResourceNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-179">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-179">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResourceNext(nextPageLink: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceNextWithHttpOperationResponse
+  name: listForResourceNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-180">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-180">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResourceNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-181">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-181">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForResourceWithHttpOperationResponse
+  name: listForResourceWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-182">리소스에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-182">Gets role assignments for a resource.</span></span>
+  syntax:
+    content: 'function listForResourceWithHttpOperationResponse(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-183">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-183">The name of the resource group.</span></span>
+    - id: resourceProviderNamespace
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-184">리소스 공급자의 네임 스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-184">The namespace of the resource provider.</span></span>
+    - id: parentResourcePath
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-185">부모 리소스 id입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-185">The parent resource identity.</span></span>
+    - id: resourceType
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-186">리소스의 리소스 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-186">The resource type of the resource.</span></span>
+    - id: resourceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-187">에 대 한 역할 할당을 가져올 리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-187">The name of the resource to get role assignments for.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScope
+  name: listForScope
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-188">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-188">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScope(scope: string, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-189">역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-189">The scope of the role assignments.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScope_1
+  name: listForScope
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-190">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-190">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScope(scope: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScope_2
+  name: listForScope
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-191">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-191">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScope(scope: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScopeNext
+  name: listForScopeNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-192">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-192">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScopeNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-193">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-193">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScopeNext_1
+  name: listForScopeNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-194">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-194">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScopeNext(nextPageLink: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScopeNext_2
+  name: listForScopeNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-195">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-195">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScopeNext(nextPageLink: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScopeNextWithHttpOperationResponse
+  name: listForScopeNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-196">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-196">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScopeNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-197">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-197">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listForScopeWithHttpOperationResponse
+  name: listForScopeWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-198">범위에 대 한 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-198">Gets role assignments for a scope.</span></span>
+  syntax:
+    content: 'function listForScopeWithHttpOperationResponse(scope: string, options?: function)'
+    parameters:
+    - id: scope
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-199">역할 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-199">The scope of the role assignments.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listNext
+  name: listNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-200">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-200">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-201">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-201">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listNext_1
+  name: listNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-202">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-202">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listNext_2
+  name: listNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-203">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-203">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options: function, callback: ServiceCallback<RoleAssignmentListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-authorization.RoleAssignmentListResult>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listNextWithHttpOperationResponse
+  name: listNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-204">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-204">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="cd7d2-205">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-205">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+- uid: azure-arm-authorization.RoleAssignments.listWithHttpOperationResponse
+  name: listWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="cd7d2-206">구독에 대 한 모든 역할 할당을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="cd7d2-206">Gets all role assignments for the subscription.</span></span>
+  syntax:
+    content: 'function listWithHttpOperationResponse(options?: function)'
+    parameters:
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  package: azure-arm-authorization
+references:
+- uid: azure-arm-authorization.RoleAssignmentCreateParameters
+  spec.typeScript:
+  - name: RoleAssignmentCreateParameters
+    fullName: RoleAssignmentCreateParameters
+    uid: azure-arm-authorization.RoleAssignmentCreateParameters
+- uid: Promise<azure-arm-authorization.RoleAssignment>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RoleAssignment
+    fullName: RoleAssignment
+    uid: azure-arm-authorization.RoleAssignment
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-authorization.RoleAssignment>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: RoleAssignment
+    fullName: RoleAssignment
+    uid: azure-arm-authorization.RoleAssignment
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignment>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: RoleAssignment
+    fullName: RoleAssignment
+    uid: azure-arm-authorization.RoleAssignment
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-authorization.RoleAssignmentListResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RoleAssignmentListResult
+    fullName: RoleAssignmentListResult
+    uid: azure-arm-authorization.RoleAssignmentListResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-authorization.RoleAssignmentListResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: RoleAssignmentListResult
+    fullName: RoleAssignmentListResult
+    uid: azure-arm-authorization.RoleAssignmentListResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-authorization.RoleAssignmentListResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: RoleAssignmentListResult
+    fullName: RoleAssignmentListResult
+    uid: azure-arm-authorization.RoleAssignmentListResult
+  - name: '>>'
+    fullName: '>>'

@@ -1,0 +1,1801 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: dee157670ced3f02a0442c5ba20b2fb092eaba6f
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40066133"
+items:
+- uid: azure-arm-machinelearning.WebServices
+  name: WebServices
+  fullName: WebServices
+  children:
+  - azure-arm-machinelearning.WebServices.beginCreateOrUpdate
+  - azure-arm-machinelearning.WebServices.beginCreateOrUpdate_1
+  - azure-arm-machinelearning.WebServices.beginCreateOrUpdate_2
+  - azure-arm-machinelearning.WebServices.beginCreateOrUpdateWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.beginCreateRegionalProperties
+  - azure-arm-machinelearning.WebServices.beginCreateRegionalProperties_1
+  - azure-arm-machinelearning.WebServices.beginCreateRegionalProperties_2
+  - azure-arm-machinelearning.WebServices.beginCreateRegionalPropertiesWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.beginPatch_1
+  - azure-arm-machinelearning.WebServices.beginPatch_2
+  - azure-arm-machinelearning.WebServices.beginPatch
+  - azure-arm-machinelearning.WebServices.beginPatchWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.beginRemove
+  - azure-arm-machinelearning.WebServices.beginRemove_1
+  - azure-arm-machinelearning.WebServices.beginRemove_2
+  - azure-arm-machinelearning.WebServices.beginRemoveWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.createOrUpdate_1
+  - azure-arm-machinelearning.WebServices.createOrUpdate
+  - azure-arm-machinelearning.WebServices.createOrUpdate_2
+  - azure-arm-machinelearning.WebServices.createOrUpdateWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.createRegionalProperties
+  - azure-arm-machinelearning.WebServices.createRegionalProperties_1
+  - azure-arm-machinelearning.WebServices.createRegionalProperties_2
+  - azure-arm-machinelearning.WebServices.createRegionalPropertiesWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.get
+  - azure-arm-machinelearning.WebServices.get_1
+  - azure-arm-machinelearning.WebServices.get_2
+  - azure-arm-machinelearning.WebServices.getWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.listByResourceGroup
+  - azure-arm-machinelearning.WebServices.listByResourceGroup_1
+  - azure-arm-machinelearning.WebServices.listByResourceGroup_2
+  - azure-arm-machinelearning.WebServices.listByResourceGroupNext
+  - azure-arm-machinelearning.WebServices.listByResourceGroupNext_1
+  - azure-arm-machinelearning.WebServices.listByResourceGroupNext_2
+  - azure-arm-machinelearning.WebServices.listByResourceGroupNextWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.listByResourceGroupWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.listBySubscriptionId
+  - azure-arm-machinelearning.WebServices.listBySubscriptionId_1
+  - azure-arm-machinelearning.WebServices.listBySubscriptionId_2
+  - azure-arm-machinelearning.WebServices.listBySubscriptionIdNext
+  - azure-arm-machinelearning.WebServices.listBySubscriptionIdNext_1
+  - azure-arm-machinelearning.WebServices.listBySubscriptionIdNext_2
+  - azure-arm-machinelearning.WebServices.listBySubscriptionIdNextWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.listBySubscriptionIdWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.listKeys
+  - azure-arm-machinelearning.WebServices.listKeys_2
+  - azure-arm-machinelearning.WebServices.listKeys_1
+  - azure-arm-machinelearning.WebServices.listKeysWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.patch
+  - azure-arm-machinelearning.WebServices.patch_1
+  - azure-arm-machinelearning.WebServices.patch_2
+  - azure-arm-machinelearning.WebServices.patchWithHttpOperationResponse
+  - azure-arm-machinelearning.WebServices.remove
+  - azure-arm-machinelearning.WebServices.remove_1
+  - azure-arm-machinelearning.WebServices.remove_2
+  - azure-arm-machinelearning.WebServices.removeWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateOrUpdate
+  name: beginCreateOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-101">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-101">Create or update a web service.</span></span> <span data-ttu-id="09804-102">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-102">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-103">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-103">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-104">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-104">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-105">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-105">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-106">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-106">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-107">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-107">The name of the web service.</span></span>
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-108">웹 서비스 만들기 또는 업데이트 하는 데 사용 되는 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-108">The payload that is used to create or update the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateOrUpdate_1
+  name: beginCreateOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-109">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-109">Create or update a web service.</span></span> <span data-ttu-id="09804-110">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-110">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-111">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-111">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-112">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-112">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-113">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-113">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateOrUpdate_2
+  name: beginCreateOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-114">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-114">Create or update a web service.</span></span> <span data-ttu-id="09804-115">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-115">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-116">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-116">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-117">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-117">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-118">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-118">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options: function, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateOrUpdateWithHttpOperationResponse
+  name: beginCreateOrUpdateWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-119">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-119">Create or update a web service.</span></span> <span data-ttu-id="09804-120">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-120">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-121">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-121">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-122">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-122">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-123">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-123">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-124">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-124">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-125">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-125">The name of the web service.</span></span>
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-126">웹 서비스 만들기 또는 업데이트 하는 데 사용 되는 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-126">The payload that is used to create or update the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.WebService>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateRegionalProperties
+  name: beginCreateRegionalProperties
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-127">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-127">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-128">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-128">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-129">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-129">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function beginCreateRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-130">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-130">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-131">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-131">The name of the web service.</span></span>
+    - id: region
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-132">암호화 된 자격 증명 매개 변수는 생성 하는 데는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-132">The region for which encrypted credential parameters are created.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateRegionalProperties_1
+  name: beginCreateRegionalProperties
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-133">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-133">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-134">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-134">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-135">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-135">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function beginCreateRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, callback: ServiceCallback<AsyncOperationStatus>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: region
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.AsyncOperationStatus>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateRegionalProperties_2
+  name: beginCreateRegionalProperties
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-136">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-136">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-137">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-137">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-138">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-138">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function beginCreateRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, options: function, callback: ServiceCallback<AsyncOperationStatus>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: region
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.AsyncOperationStatus>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginCreateRegionalPropertiesWithHttpOperationResponse
+  name: beginCreateRegionalPropertiesWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-139">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-139">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-140">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-140">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-141">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-141">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function beginCreateRegionalPropertiesWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, region: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-142">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-142">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-143">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-143">The name of the web service.</span></span>
+    - id: region
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-144">암호화 된 자격 증명 매개 변수는 생성 하는 데는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-144">The region for which encrypted credential parameters are created.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.AsyncOperationStatus>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginPatch_1
+  name: beginPatch
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-145">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-145">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-146">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-146">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-147">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-147">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function beginPatch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginPatch_2
+  name: beginPatch
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-148">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-148">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-149">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-149">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-150">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-150">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function beginPatch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options: function, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginPatch
+  name: beginPatch
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-151">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-151">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-152">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-152">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-153">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-153">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function beginPatch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-154">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-154">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-155">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-155">The name of the web service.</span></span>
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-156">웹 서비스를 패치 하는 데 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-156">The payload to use to patch the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginPatchWithHttpOperationResponse
+  name: beginPatchWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-157">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-157">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-158">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-158">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-159">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-159">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function beginPatchWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-160">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-160">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-161">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-161">The name of the web service.</span></span>
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-162">웹 서비스를 패치 하는 데 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-162">The payload to use to patch the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.WebService>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginRemove
+  name: beginRemove
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-163">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-163">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function beginRemove(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-164">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-164">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-165">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-165">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginRemove_1
+  name: beginRemove
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-166">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-166">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function beginRemove(resourceGroupName: string, webServiceName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginRemove_2
+  name: beginRemove
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-167">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-167">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function beginRemove(resourceGroupName: string, webServiceName: string, options: function, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.beginRemoveWithHttpOperationResponse
+  name: beginRemoveWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-168">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-168">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function beginRemoveWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-169">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-169">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-170">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-170">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createOrUpdate_1
+  name: createOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-171">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-171">Create or update a web service.</span></span> <span data-ttu-id="09804-172">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-172">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-173">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-173">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-174">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-174">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-175">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-175">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createOrUpdate
+  name: createOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-176">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-176">Create or update a web service.</span></span> <span data-ttu-id="09804-177">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-177">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-178">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-178">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-179">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-179">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-180">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-180">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-181">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-181">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-182">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-182">The name of the web service.</span></span>
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-183">웹 서비스 만들기 또는 업데이트 하는 데 사용 되는 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-183">The payload that is used to create or update the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createOrUpdate_2
+  name: createOrUpdate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-184">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-184">Create or update a web service.</span></span> <span data-ttu-id="09804-185">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-185">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-186">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-186">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-187">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-187">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-188">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-188">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options: function, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createOrUpdateWithHttpOperationResponse
+  name: createOrUpdateWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-189">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-189">Create or update a web service.</span></span> <span data-ttu-id="09804-190">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="09804-190">This call will overwrite an existing web service.</span></span> <span data-ttu-id="09804-191">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-191">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="09804-192">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-192">This is a nonrecoverable operation.</span></span> <span data-ttu-id="09804-193">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="09804-193">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>
+  syntax:
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-194">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-194">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-195">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-195">The name of the web service.</span></span>
+    - id: createOrUpdatePayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-196">웹 서비스 만들기 또는 업데이트 하는 데 사용 되는 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-196">The payload that is used to create or update the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.WebService>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createRegionalProperties
+  name: createRegionalProperties
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-197">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-197">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-198">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-198">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-199">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-199">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function createRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-200">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-200">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-201">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-201">The name of the web service.</span></span>
+    - id: region
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-202">암호화 된 자격 증명 매개 변수는 생성 하는 데는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-202">The region for which encrypted credential parameters are created.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createRegionalProperties_1
+  name: createRegionalProperties
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-203">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-203">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-204">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-204">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-205">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-205">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function createRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, callback: ServiceCallback<AsyncOperationStatus>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: region
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.AsyncOperationStatus>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createRegionalProperties_2
+  name: createRegionalProperties
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-206">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-206">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-207">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-207">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-208">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-208">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function createRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, options: function, callback: ServiceCallback<AsyncOperationStatus>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: region
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.AsyncOperationStatus>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.createRegionalPropertiesWithHttpOperationResponse
+  name: createRegionalPropertiesWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-209">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="09804-209">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="09804-210">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-210">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="09804-211">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-211">You only need to do this before the first time that you get the web service in the new region.</span></span>
+  syntax:
+    content: 'function createRegionalPropertiesWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, region: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-212">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-212">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-213">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-213">The name of the web service.</span></span>
+    - id: region
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-214">암호화 된 자격 증명 매개 변수는 생성 하는 데는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-214">The region for which encrypted credential parameters are created.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.AsyncOperationStatus>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.get
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-215">구독, 리소스 그룹 및 이름에 지정 된 대로 웹 서비스 정의 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-215">Gets the Web Service Definition as specified by a subscription, resource group, and name.</span></span> <span data-ttu-id="09804-216">저장소 자격 증명 및 웹 서비스 키를이 호출에서 반환 되지 않습니다는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-216">Note that the storage credentials and web service keys are not returned by this call.</span></span> <span data-ttu-id="09804-217">웹 서비스 액세스 키를 가져오려면 목록 키를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-217">To get the web service access keys, call List Keys.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-218">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-218">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-219">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-219">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.get_1
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-220">구독, 리소스 그룹 및 이름에 지정 된 대로 웹 서비스 정의 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-220">Gets the Web Service Definition as specified by a subscription, resource group, and name.</span></span> <span data-ttu-id="09804-221">저장소 자격 증명 및 웹 서비스 키를이 호출에서 반환 되지 않습니다는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-221">Note that the storage credentials and web service keys are not returned by this call.</span></span> <span data-ttu-id="09804-222">웹 서비스 액세스 키를 가져오려면 목록 키를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-222">To get the web service access keys, call List Keys.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, webServiceName: string, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.get_2
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-223">구독, 리소스 그룹 및 이름에 지정 된 대로 웹 서비스 정의 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-223">Gets the Web Service Definition as specified by a subscription, resource group, and name.</span></span> <span data-ttu-id="09804-224">저장소 자격 증명 및 웹 서비스 키를이 호출에서 반환 되지 않습니다는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-224">Note that the storage credentials and web service keys are not returned by this call.</span></span> <span data-ttu-id="09804-225">웹 서비스 액세스 키를 가져오려면 목록 키를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-225">To get the web service access keys, call List Keys.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, webServiceName: string, options: function, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-226">구독, 리소스 그룹 및 이름에 지정 된 대로 웹 서비스 정의 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-226">Gets the Web Service Definition as specified by a subscription, resource group, and name.</span></span> <span data-ttu-id="09804-227">저장소 자격 증명 및 웹 서비스 키를이 호출에서 반환 되지 않습니다는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-227">Note that the storage credentials and web service keys are not returned by this call.</span></span> <span data-ttu-id="09804-228">웹 서비스 액세스 키를 가져오려면 목록 키를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-228">To get the web service access keys, call List Keys.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-229">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-229">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-230">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-230">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.WebService>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroup
+  name: listByResourceGroup
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-231">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-231">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroup(resourceGroupName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-232">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-232">Name of the resource group in which the web service is located.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroup_1
+  name: listByResourceGroup
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-233">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-233">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroup_2
+  name: listByResourceGroup
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-234">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-234">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroup(resourceGroupName: string, options: function, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroupNext
+  name: listByResourceGroupNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-235">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-235">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-236">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-236">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroupNext_1
+  name: listByResourceGroupNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-237">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-237">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroupNext_2
+  name: listByResourceGroupNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-238">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-238">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNext(nextPageLink: string, options: function, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroupNextWithHttpOperationResponse
+  name: listByResourceGroupNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-239">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-239">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-240">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-240">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.PaginatedWebServicesList>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listByResourceGroupWithHttpOperationResponse
+  name: listByResourceGroupWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-241">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-241">Gets the web services in the specified resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-242">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-242">Name of the resource group in which the web service is located.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.PaginatedWebServicesList>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionId
+  name: listBySubscriptionId
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-243">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-243">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionId(options?: function)'
+    parameters:
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionId_1
+  name: listBySubscriptionId
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-244">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-244">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionId(callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionId_2
+  name: listBySubscriptionId
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-245">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-245">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionId(options: function, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionIdNext
+  name: listBySubscriptionIdNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-246">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-246">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionIdNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-247">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-247">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionIdNext_1
+  name: listBySubscriptionIdNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-248">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-248">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionIdNext(nextPageLink: string, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionIdNext_2
+  name: listBySubscriptionIdNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-249">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-249">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionIdNext(nextPageLink: string, options: function, callback: ServiceCallback<PaginatedWebServicesList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionIdNextWithHttpOperationResponse
+  name: listBySubscriptionIdNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-250">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-250">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionIdNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-251">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-251">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.PaginatedWebServicesList>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listBySubscriptionIdWithHttpOperationResponse
+  name: listBySubscriptionIdWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-252">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-252">Gets the web services in the specified subscription.</span></span>
+  syntax:
+    content: 'function listBySubscriptionIdWithHttpOperationResponse(options?: function)'
+    parameters:
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.PaginatedWebServicesList>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listKeys
+  name: listKeys
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-253">지정 된 웹 서비스에 대 한 액세스 키를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-253">Gets the access keys for the specified web service.</span></span>
+  syntax:
+    content: 'function listKeys(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-254">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-254">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-255">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-255">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebServiceKeys>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listKeys_2
+  name: listKeys
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-256">지정 된 웹 서비스에 대 한 액세스 키를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-256">Gets the access keys for the specified web service.</span></span>
+  syntax:
+    content: 'function listKeys(resourceGroupName: string, webServiceName: string, options: function, callback: ServiceCallback<WebServiceKeys>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebServiceKeys>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebServiceKeys>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listKeys_1
+  name: listKeys
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-257">지정 된 웹 서비스에 대 한 액세스 키를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-257">Gets the access keys for the specified web service.</span></span>
+  syntax:
+    content: 'function listKeys(resourceGroupName: string, webServiceName: string, callback: ServiceCallback<WebServiceKeys>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebServiceKeys>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebServiceKeys>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.listKeysWithHttpOperationResponse
+  name: listKeysWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-258">지정 된 웹 서비스에 대 한 액세스 키를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="09804-258">Gets the access keys for the specified web service.</span></span>
+  syntax:
+    content: 'function listKeysWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-259">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-259">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-260">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-260">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.WebServiceKeys>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.patch
+  name: patch
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-261">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-261">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-262">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-262">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-263">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-263">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function patch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-264">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-264">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-265">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-265">The name of the web service.</span></span>
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-266">웹 서비스를 패치 하는 데 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-266">The payload to use to patch the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.patch_1
+  name: patch
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-267">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-267">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-268">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-268">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-269">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-269">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function patch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.patch_2
+  name: patch
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-270">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-270">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-271">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-271">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-272">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-272">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function patch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options: function, callback: ServiceCallback<WebService>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-machinelearning.WebService>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-machinelearning.WebService>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.patchWithHttpOperationResponse
+  name: patchWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-273">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-273">Modifies an existing web service resource.</span></span> <span data-ttu-id="09804-274">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-274">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="09804-275">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-275">To determine whether it has completed successfully, you must perform a Get operation.</span></span>
+  syntax:
+    content: 'function patchWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-276">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-276">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-277">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-277">The name of the web service.</span></span>
+    - id: patchPayload
+      type:
+      - azure-arm-machinelearning.WebService
+      description: >
+        <span data-ttu-id="09804-278">웹 서비스를 패치 하는 데 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-278">The payload to use to patch the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-machinelearning.WebService>>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.remove
+  name: remove
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-279">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-279">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function remove(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-280">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-280">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-281">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-281">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.remove_1
+  name: remove
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-282">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-282">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function remove(resourceGroupName: string, webServiceName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.remove_2
+  name: remove
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-283">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-283">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function remove(resourceGroupName: string, webServiceName: string, options: function, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: webServiceName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-machinelearning
+- uid: azure-arm-machinelearning.WebServices.removeWithHttpOperationResponse
+  name: removeWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="09804-284">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="09804-284">Deletes the specified web service.</span></span>
+  syntax:
+    content: 'function removeWithHttpOperationResponse(resourceGroupName: string, webServiceName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-285">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-285">Name of the resource group in which the web service is located.</span></span>
+    - id: webServiceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="09804-286">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="09804-286">The name of the web service.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-machinelearning
+references:
+- uid: azure-arm-machinelearning.WebService
+  spec.typeScript:
+  - name: WebService
+    fullName: WebService
+    uid: azure-arm-machinelearning.WebService
+- uid: Promise<azure-arm-machinelearning.WebService>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: WebService
+    fullName: WebService
+    uid: azure-arm-machinelearning.WebService
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-machinelearning.WebService>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: WebService
+    fullName: WebService
+    uid: azure-arm-machinelearning.WebService
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-machinelearning.WebService>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: WebService
+    fullName: WebService
+    uid: azure-arm-machinelearning.WebService
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-machinelearning.AsyncOperationStatus>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: AsyncOperationStatus
+    fullName: AsyncOperationStatus
+    uid: azure-arm-machinelearning.AsyncOperationStatus
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-machinelearning.AsyncOperationStatus>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: AsyncOperationStatus
+    fullName: AsyncOperationStatus
+    uid: azure-arm-machinelearning.AsyncOperationStatus
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-machinelearning.AsyncOperationStatus>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: AsyncOperationStatus
+    fullName: AsyncOperationStatus
+    uid: azure-arm-machinelearning.AsyncOperationStatus
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-machinelearning.PaginatedWebServicesList>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: PaginatedWebServicesList
+    fullName: PaginatedWebServicesList
+    uid: azure-arm-machinelearning.PaginatedWebServicesList
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-machinelearning.PaginatedWebServicesList>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: PaginatedWebServicesList
+    fullName: PaginatedWebServicesList
+    uid: azure-arm-machinelearning.PaginatedWebServicesList
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-machinelearning.PaginatedWebServicesList>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: PaginatedWebServicesList
+    fullName: PaginatedWebServicesList
+    uid: azure-arm-machinelearning.PaginatedWebServicesList
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-machinelearning.WebServiceKeys>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: WebServiceKeys
+    fullName: WebServiceKeys
+    uid: azure-arm-machinelearning.WebServiceKeys
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-machinelearning.WebServiceKeys>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: WebServiceKeys
+    fullName: WebServiceKeys
+    uid: azure-arm-machinelearning.WebServiceKeys
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-machinelearning.WebServiceKeys>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: WebServiceKeys
+    fullName: WebServiceKeys
+    uid: azure-arm-machinelearning.WebServiceKeys
+  - name: '>>'
+    fullName: '>>'
