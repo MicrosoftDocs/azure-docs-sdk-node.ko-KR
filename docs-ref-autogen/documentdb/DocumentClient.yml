@@ -1,0 +1,2524 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 99d34b9f67f4793f59a448d80cf88796f9b44ae1
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064715"
+items:
+- uid: documentdb.DocumentClient
+  id: documentdb.DocumentClient
+  name: DocumentClient
+  summary: >-
+    Azure Cosmos DB 데이터베이스 계정의 클라이언트 쪽 논리적 표현을 제공 합니다.
+
+    이 클라이언트 구성 및 Azure Cosmos DB 데이터베이스 서비스에서 요청을 실행 됩니다.
+  fullName: documentdb.DocumentClient
+  type: Class
+  children:
+  - documentdb.DocumentClient.#ctor
+  - documentdb.DocumentClient#getWriteEndpoint
+  - documentdb.DocumentClient#getReadEndpoint
+  - documentdb.DocumentClient#createDatabase
+  - documentdb.DocumentClient#createCollection
+  - documentdb.DocumentClient#createDocument
+  - documentdb.DocumentClient#createAttachment
+  - documentdb.DocumentClient#createUser
+  - documentdb.DocumentClient#createPermission
+  - documentdb.DocumentClient#createTrigger
+  - documentdb.DocumentClient#createUserDefinedFunction
+  - documentdb.DocumentClient#createStoredProcedure
+  - documentdb.DocumentClient#createAttachmentAndUploadMedia
+  - documentdb.DocumentClient#readDatabase
+  - documentdb.DocumentClient#readCollection
+  - documentdb.DocumentClient#readDocument
+  - documentdb.DocumentClient#readAttachment
+  - documentdb.DocumentClient#readUser
+  - documentdb.DocumentClient#readPermission
+  - documentdb.DocumentClient#readTrigger
+  - documentdb.DocumentClient#readUserDefinedFunction
+  - documentdb.DocumentClient#readStoredProcedure
+  - documentdb.DocumentClient#readConflict
+  - documentdb.DocumentClient#readDatabases
+  - documentdb.DocumentClient#readCollections
+  - documentdb.DocumentClient#readDocuments
+  - documentdb.DocumentClient#readPartitionKeyRanges
+  - documentdb.DocumentClient#readAttachments
+  - documentdb.DocumentClient#readUsers
+  - documentdb.DocumentClient#readPermissions
+  - documentdb.DocumentClient#readTriggers
+  - documentdb.DocumentClient#readUserDefinedFunctions
+  - documentdb.DocumentClient#readStoredProcedures
+  - documentdb.DocumentClient#readConflicts
+  - documentdb.DocumentClient#queryDatabases
+  - documentdb.DocumentClient#queryCollections
+  - documentdb.DocumentClient#queryDocuments
+  - documentdb.DocumentClient#queryPartitionKeyRanges
+  - documentdb.DocumentClient#queryAttachments
+  - documentdb.DocumentClient#queryUsers
+  - documentdb.DocumentClient#queryPermissions
+  - documentdb.DocumentClient#queryTriggers
+  - documentdb.DocumentClient#queryUserDefinedFunctions
+  - documentdb.DocumentClient#queryStoredProcedures
+  - documentdb.DocumentClient#queryConflicts
+  - documentdb.DocumentClient#deleteDatabase
+  - documentdb.DocumentClient#deleteCollection
+  - documentdb.DocumentClient#deleteDocument
+  - documentdb.DocumentClient#deleteAttachment
+  - documentdb.DocumentClient#deleteUser
+  - documentdb.DocumentClient#deletePermission
+  - documentdb.DocumentClient#deleteTrigger
+  - documentdb.DocumentClient#deleteUserDefinedFunction
+  - documentdb.DocumentClient#deleteStoredProcedure
+  - documentdb.DocumentClient#deleteConflict
+  - documentdb.DocumentClient#replaceCollection
+  - documentdb.DocumentClient#replaceDocument
+  - documentdb.DocumentClient#replaceAttachment
+  - documentdb.DocumentClient#replaceUser
+  - documentdb.DocumentClient#replacePermission
+  - documentdb.DocumentClient#replaceTrigger
+  - documentdb.DocumentClient#replaceUserDefinedFunction
+  - documentdb.DocumentClient#replaceStoredProcedure
+  - documentdb.DocumentClient#upsertDocument
+  - documentdb.DocumentClient#upsertAttachment
+  - documentdb.DocumentClient#upsertUser
+  - documentdb.DocumentClient#upsertPermission
+  - documentdb.DocumentClient#upsertTrigger
+  - documentdb.DocumentClient#upsertUserDefinedFunction
+  - documentdb.DocumentClient#upsertStoredProcedure
+  - documentdb.DocumentClient#upsertAttachmentAndUploadMedia
+  - documentdb.DocumentClient#readMedia
+  - documentdb.DocumentClient#updateMedia
+  - documentdb.DocumentClient#executeStoredProcedure
+  - documentdb.DocumentClient#replaceOffer
+  - documentdb.DocumentClient#readOffer
+  - documentdb.DocumentClient#readOffers
+  - documentdb.DocumentClient#queryOffers
+  - documentdb.DocumentClient#getDatabaseAccount
+  - documentdb.DocumentClient#getSessionToken
+  langs:
+  - js
+- id: documentdb.DocumentClient.#ctor
+  uid: documentdb.DocumentClient.#ctor
+  parent: documentdb.DocumentClient
+  name: DocumentClient(urlConnection, auth, connectionPolicy, consistencyLevel)
+  fullName: documentdb.DocumentClient.DocumentClient(urlConnection, auth, connectionPolicy, consistencyLevel)
+  summary: >-
+    Azure Cosmos DB 데이터베이스 계정의 클라이언트 쪽 논리적 표현을 제공 합니다.
+
+    이 클라이언트 구성 및 Azure Cosmos DB 데이터베이스 서비스에서 요청을 실행 됩니다.
+  type: Constructor
+  syntax:
+    parameters:
+    - id: urlConnection
+      type:
+      - string
+      description: 사용 하는 클라이언트를 만드는 서비스 끝점입니다.
+    - id: auth
+      type:
+      - object
+      description: 요청 인증에 사용 되 고 해야 하는 개체 옵션 중 하나를 포함 합니다.
+    - id: auth.masterKey
+      type:
+      - string
+      description: 권한 부여 마스터 키를 사용 하 여 클라이언트를 만듭니다.
+      optional: true
+    - id: auth.resourceTokens
+      type:
+      - Object
+      description: 리소스 토큰을 포함 하는 개체입니다. 개체에 대 한 키는 리소스 Id 및 값은 리소스 토큰입니다.
+      optional: true
+    - id: auth.permissionFeed
+      type:
+      - Array
+      description: 배열을 <xref:Permission> 개체입니다.
+      optional: true
+    - id: connectionPolicy
+      type:
+      - object
+      description: 인스턴스의 <xref:ConnectionPolicy> 클래스입니다. 이 매개 변수가 선택 사항이 며 생략 하는 경우 기본 connectionPolicy에 사용 됩니다.
+      optional: true
+    - id: consistencyLevel
+      type:
+      - string
+      description: 일관성 수준을 나타내는 선택적 매개 변수입니다. 값을 가질 수 <xref:ConsistencyLevel>입니다.
+      optional: true
+    content: new DocumentClient(urlConnection, auth, connectionPolicy, consistencyLevel)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#getWriteEndpoint
+  id: documentdb.DocumentClient#getWriteEndpoint
+  parent: documentdb.DocumentClient
+  name: getWriteEndpoint(callback)
+  summary: 지역 복제 데이터베이스 계정의 현재 쓰기 끝점을 가져옵니다.
+  fullName: documentdb.DocumentClient.getWriteEndpoint(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: Endpoint(string) 인수로 사용 하는 콜백 함수입니다.
+    content: function getWriteEndpoint(callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#getReadEndpoint
+  id: documentdb.DocumentClient#getReadEndpoint
+  parent: documentdb.DocumentClient
+  name: getReadEndpoint(callback)
+  summary: 읽기 지역에서 복제 된 데이터베이스 계정에 대 한 끝점 curent를 가져옵니다.
+  fullName: documentdb.DocumentClient.getReadEndpoint(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: Endpoint(string) 인수로 사용 하는 콜백 함수입니다.
+    content: function getReadEndpoint(callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createDatabase
+  id: documentdb.DocumentClient#createDatabase
+  parent: documentdb.DocumentClient
+  name: createDatabase(body, options, callback)
+  summary: >-
+    데이터베이스를 만들기 위한 요청을 보냅니다.
+
+    <p>
+     데이터베이스는 사용자, 사용 권한 및 컬렉션 집합을 관리합니다.  <br>
+     각 Azure Cosmos DB 데이터베이스 계정은 여러 독립적인 명명 된 데이터에 대 한 논리적 컨테이너 되 고 있는 데이터베이스를 사용 하 여 데이터베이스를 지원할 수 있습니다. <br>
+     각 데이터베이스 하나 이상의 문서에 포함 하는 각각 하나 이상의 컬렉션으로 구성 됩니다. 데이터베이스 되므로 관리 리소스를 서비스 마스터 키에 액세스 하 고 사용자 Api를 사용 하 여 모든 작업을 완료 하기 위해 필요한 수 됩니다. <br>
+    </p>
+  fullName: documentdb.DocumentClient.createDatabase(body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: body
+      type:
+      - Object
+      description: 만들려는 데이터베이스를 나타내는 json 개체입니다.
+    - id: body.id
+      type:
+      - string
+      description: 데이터베이스의 id입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createDatabase(body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createCollection
+  id: documentdb.DocumentClient#createCollection
+  parent: documentdb.DocumentClient
+  name: createCollection(databaseLink, body, options, callback)
+  summary: >-
+    컬렉션을 만듭니다.
+
+    <p>
+
+    컬렉션은 문서에 대 한 명명 된 논리적 컨테이너입니다. <br>
+
+    데이터베이스 0 개 이상의 명명 된 컬렉션에 포함 될 수 있습니다 및 0 개 이상의 JSON 문서의 각 컬렉션을 구성 합니다. <br>
+
+    스키마가 없음에도, 컬렉션의 문서 필요가 없습니다 동일한 구조 또는 필드를 공유 합니다. <br>
+
+    컬렉션에 응용 프로그램 리소스 되므로 마스터 키 또는 리소스 키를 사용 하 여 승인을 받을 수 있습니다. <br>
+
+    </p>
+  fullName: documentdb.DocumentClient.createCollection(databaseLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: body
+      type:
+      - object
+      description: 컬렉션의 본문을 나타냅니다.
+    - id: body.id
+      type:
+      - string
+      description: 컬렉션의 id입니다.
+    - id: body.indexingPolicy
+      type:
+      - documentdb.IndexingPolicy
+      description: 컬렉션과 연결 된 인덱싱 정책입니다.
+    - id: body.defaultTtl
+      type:
+      - number
+      description: 컬렉션의 문서에 대 한 시간 (초)에 기본 시간입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createCollection(databaseLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createDocument
+  id: documentdb.DocumentClient#createDocument
+  parent: documentdb.DocumentClient
+  name: createDocument(documentsFeedOrDatabaseLink, body, options, callback)
+  summary: >-
+    문서를 만듭니다.
+
+    <p>
+
+    스키마가 없으므로 집합 JSON 문서에 대 한 합니다. 모든 사용자 지정 속성 수와 첨부 파일의 선택적 목록 포함 될 수 있습니다. <br>
+
+    문서는 응용 프로그램 리소스 및 마스터 키 또는 리소스 키를 사용 하 여 권한을 부여할 수 있습니다.
+
+    </p>
+  fullName: documentdb.DocumentClient.createDocument(documentsFeedOrDatabaseLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentsFeedOrDatabaseLink
+      type:
+      - string
+      description: 컬렉션 링크 또는 파티션 해결 프로그램을 사용 하는 경우 데이터베이스 연결
+    - id: body
+      type:
+      - object
+      description: 문서의 본문을 나타냅니다. 임의 개수의 사용자 정의 속성을 포함할 수 있습니다.
+    - id: body.id
+      type:
+      - string
+      description: 문서의 id는 각 문서에 대해 고유 해야 합니다.
+      optional: true
+    - id: body.ttl
+      type:
+      - number
+      description: 문서의 초에 live를 시간입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.disableAutomaticIdGeneration
+      type:
+      - boolean
+      description: 자동 id 생성을 사용 하지 않도록 설정 합니다. 본문에 id가 없습니다.이 옵션은 true를 하는 경우 오류가 반환 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createDocument(documentsFeedOrDatabaseLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createAttachment
+  id: documentdb.DocumentClient#createAttachment
+  parent: documentdb.DocumentClient
+  name: createAttachment(documentLink, body, options, callback)
+  summary: >-
+    문서 개체에 대 한 첨부 파일을 만듭니다.
+
+    <p>
+
+    각 문서는 0 개 이상의 첨부 파일을 포함할 수 있습니다. 모든 MIME 유형-텍스트, 이미지, 이진 데이터의 첨부 파일 수 있습니다. <br>
+
+    이러한 작업은 Azure Blob 저장소에서 외부적으로 저장 됩니다. 첨부 파일은 부모 문서 삭제 될 때 자동으로 삭제 됩니다.
+
+    </P>
+  fullName: documentdb.DocumentClient.createAttachment(documentLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: body
+      type:
+      - Object
+      description: 메타 데이터를 같은 contentType 미디어 첨부 파일 미디어를 정의 합니다. 다른 속성을 메타의 일부로 포함할 수 있습니다.
+    - id: body.contentType
+      type:
+      - string
+      description: 첨부 파일의 MIME contentType입니다.
+    - id: body.media
+      type:
+      - string
+      description: 첨부 파일 콘텐츠를 사용 하 여 연결 하는 미디어 링크입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createAttachment(documentLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createUser
+  id: documentdb.DocumentClient#createUser
+  parent: documentdb.DocumentClient
+  name: createUser(databaseLink, body, options, callback)
+  summary: 데이터베이스 사용자를 만듭니다.
+  fullName: documentdb.DocumentClient.createUser(databaseLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: body
+      type:
+      - object
+      description: 사용자의 본문을 나타냅니다.
+    - id: body.id
+      type:
+      - string
+      description: 사용자의 id입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createUser(databaseLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createPermission
+  id: documentdb.DocumentClient#createPermission
+  parent: documentdb.DocumentClient
+  name: createPermission(userLink, body, options, callback)
+  summary: >-
+    사용 권한을 만듭니다.
+
+    <p> 사용 권한을 사용자별 문서 또는 컬렉션과 예를 들어 특정 리소스에 액세스할 수 있는 권한을 나타냅니다.  </p>
+  fullName: documentdb.DocumentClient.createPermission(userLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: body
+      type:
+      - object
+      description: 사용 권한의 본문을 나타냅니다.
+    - id: body.id
+      type:
+      - string
+      description: 사용 권한의 id
+    - id: body.permissionMode
+      type:
+      - string
+      description: 권한의 모드의 값 이어야 합니다. <xref:documentdb.PermissionMode>
+    - id: body.resource
+      type:
+      - string
+      description: 사용 권한을 적용할 수 있는 리소스의 링크입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createPermission(userLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createTrigger
+  id: documentdb.DocumentClient#createTrigger
+  parent: documentdb.DocumentClient
+  name: createTrigger(collectionLink, trigger, options, callback)
+  summary: >-
+    트리거를 만듭니다.
+
+    <p>
+
+    Azure Cosmos DB는 사전 및 post 트리거 정의에서 실행 되어야 하는 JavaScript에서 만들고, 업데이트 및 삭제 합니다. <br>
+
+    자세한 내용은 서버 쪽 JavaScript API 설명서를 참조 하십시오.
+
+    </p>
+  fullName: documentdb.DocumentClient.createTrigger(collectionLink, trigger, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: trigger
+      type:
+      - object
+      description: 트리거 본문을 나타냅니다.
+    - id: trigger.id
+      type:
+      - string
+      description: 트리거의 id입니다.
+    - id: trigger.triggerType
+      type:
+      - string
+      description: 트리거를 형식의 값 중 하나 여야 합니다 <xref:documentdb.TriggerType>합니다.
+    - id: trigger.triggerOperation
+      type:
+      - string
+      description: 트리거 작업의 값 중 하나 여야 합니다 <xref:documentdb.TriggerOperation>합니다.
+    - id: trigger.serverScript
+      type:
+      - function
+      description: 트리거 본문에 전달 될 수 너무 화 하는 대로 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createTrigger(collectionLink, trigger, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createUserDefinedFunction
+  id: documentdb.DocumentClient#createUserDefinedFunction
+  parent: documentdb.DocumentClient
+  name: createUserDefinedFunction(collectionLink, udf, options, callback)
+  summary: >-
+    UserDefinedFunction를 만듭니다.
+
+    <p>
+
+    Azure Cosmos DB는 쿼리, 저장된 프로시저 및 트리거 내에서 사용할 수 있는 JavaScript Udf를 지원 합니다. <br>
+
+    자세한 내용은 서버 쪽 JavaScript API 설명서를 참조 하십시오.
+
+    </p>
+  fullName: documentdb.DocumentClient.createUserDefinedFunction(collectionLink, udf, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: udf
+      type:
+      - object
+      description: UserDefinedFunction의 본문을 나타냅니다.
+    - id: udf.id
+      type:
+      - string
+      description: Udf의 id입니다.
+    - id: udf.userDefinedFunctionType
+      type:
+      - string
+      description: Udf의 형식, 그 중 하나 여야 합니다 값 <xref:documentdb.UserDefinedFunctionType>
+    - id: udf.serverScript
+      type:
+      - function
+      description: 본문을 나타내는 udf 전달 될 수 너무 화 하는 대로 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createUserDefinedFunction(collectionLink, udf, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createStoredProcedure
+  id: documentdb.DocumentClient#createStoredProcedure
+  parent: documentdb.DocumentClient
+  name: createStoredProcedure(collectionLink, sproc, options, callback)
+  summary: >-
+    저장 프로시저를 만듭니다.
+
+    <p>
+
+    Azure Cosmos DB는 저장된 프로시저를 저장소 계층에 있는 문서 컬렉션에 대해 직접 실행할 수 있습니다. 스크립트 <br>
+
+    지정된 된 컬렉션의 기본 저장소 파티션에 ACID 트랜잭션에서 실행 됩니다. 자세한 내용은 <br>
+
+    서버 쪽 JavaScript API 설명서를 참조 하십시오.
+
+    </p>
+  fullName: documentdb.DocumentClient.createStoredProcedure(collectionLink, sproc, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: sproc
+      type:
+      - object
+      description: 저장된 프로시저의 본문을 나타냅니다.
+    - id: sproc.id
+      type:
+      - string
+      description: 저장된 프로시저의 id입니다.
+    - id: sproc.serverScript
+      type:
+      - function
+      description: 저장된 프로시저의 본문에 전달 될 수 너무 화 하는 대로 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createStoredProcedure(collectionLink, sproc, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#createAttachmentAndUploadMedia
+  id: documentdb.DocumentClient#createAttachmentAndUploadMedia
+  parent: documentdb.DocumentClient
+  name: createAttachmentAndUploadMedia(documentLink, readableStream, options, callback)
+  summary: 문서 개체에 대 한 첨부 파일을 만듭니다.
+  fullName: documentdb.DocumentClient.createAttachmentAndUploadMedia(documentLink, readableStream, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: readableStream
+      type:
+      - documentdb.stream.Readable
+      description: 업로드 해야 하는 자체 미디어를 나타내는 스트림.
+    - id: options
+      type:
+      - documentdb.MediaOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function createAttachmentAndUploadMedia(documentLink, readableStream, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readDatabase
+  id: documentdb.DocumentClient#readDatabase
+  parent: documentdb.DocumentClient
+  name: readDatabase(databaseLink, options, callback)
+  summary: 데이터베이스를 읽습니다.
+  fullName: documentdb.DocumentClient.readDatabase(databaseLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readDatabase(databaseLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readCollection
+  id: documentdb.DocumentClient#readCollection
+  parent: documentdb.DocumentClient
+  name: readCollection(collectionLink, options, callback)
+  summary: 컬렉션을 읽습니다.
+  fullName: documentdb.DocumentClient.readCollection(collectionLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readCollection(collectionLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readDocument
+  id: documentdb.DocumentClient#readDocument
+  parent: documentdb.DocumentClient
+  name: readDocument(documentLink, options, callback)
+  summary: 문서를 읽습니다.
+  fullName: documentdb.DocumentClient.readDocument(documentLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readDocument(documentLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readAttachment
+  id: documentdb.DocumentClient#readAttachment
+  parent: documentdb.DocumentClient
+  name: readAttachment(attachmentLink, options, callback)
+  summary: 첨부 파일 개체를 읽습니다.
+  fullName: documentdb.DocumentClient.readAttachment(attachmentLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: attachmentLink
+      type:
+      - string
+      description: 자체 링크 첨부 파일입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readAttachment(attachmentLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readUser
+  id: documentdb.DocumentClient#readUser
+  parent: documentdb.DocumentClient
+  name: readUser(userLink, options, callback)
+  summary: 사용자를 읽습니다.
+  fullName: documentdb.DocumentClient.readUser(userLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readUser(userLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readPermission
+  id: documentdb.DocumentClient#readPermission
+  parent: documentdb.DocumentClient
+  name: readPermission(permissionLink, options, callback)
+  summary: 사용 권한을 읽습니다.
+  fullName: documentdb.DocumentClient.readPermission(permissionLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: permissionLink
+      type:
+      - string
+      description: 자체 링크 권한입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readPermission(permissionLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readTrigger
+  id: documentdb.DocumentClient#readTrigger
+  parent: documentdb.DocumentClient
+  name: readTrigger(triggerLink, options, callback)
+  summary: 트리거 개체를 읽습니다.
+  fullName: documentdb.DocumentClient.readTrigger(triggerLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: triggerLink
+      type:
+      - string
+      description: 자체 링크 트리거입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readTrigger(triggerLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readUserDefinedFunction
+  id: documentdb.DocumentClient#readUserDefinedFunction
+  parent: documentdb.DocumentClient
+  name: readUserDefinedFunction(udfLink, options, callback)
+  summary: Udf를 읽습니다.
+  fullName: documentdb.DocumentClient.readUserDefinedFunction(udfLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: udfLink
+      type:
+      - string
+      description: 사용자의 자체 링크 함수를 정의 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readUserDefinedFunction(udfLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readStoredProcedure
+  id: documentdb.DocumentClient#readStoredProcedure
+  parent: documentdb.DocumentClient
+  name: readStoredProcedure(sprocLink, options, callback)
+  summary: StoredProcedure 개체를 읽습니다.
+  fullName: documentdb.DocumentClient.readStoredProcedure(sprocLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: sprocLink
+      type:
+      - string
+      description: 자체 링크 저장된 프로시저입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readStoredProcedure(sprocLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readConflict
+  id: documentdb.DocumentClient#readConflict
+  parent: documentdb.DocumentClient
+  name: readConflict(conflictLink, options, callback)
+  summary: 충돌을 읽습니다.
+  fullName: documentdb.DocumentClient.readConflict(conflictLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: conflictLink
+      type:
+      - string
+      description: 자체 링크 충돌 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readConflict(conflictLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readDatabases
+  id: documentdb.DocumentClient#readDatabases
+  parent: documentdb.DocumentClient
+  name: readDatabases(options)
+  summary: 모든 데이터베이스를 나열합니다.
+  fullName: documentdb.DocumentClient.readDatabases(options)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readDatabases(options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readCollections
+  id: documentdb.DocumentClient#readCollections
+  parent: documentdb.DocumentClient
+  name: readCollections(databaseLink, options)
+  summary: 이 데이터베이스의 모든 컬렉션을 가져옵니다.
+  fullName: documentdb.DocumentClient.readCollections(databaseLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readCollections(databaseLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readDocuments
+  id: documentdb.DocumentClient#readDocuments
+  parent: documentdb.DocumentClient
+  name: readDocuments(collectionLink, options)
+  summary: 이 컬렉션의 모든 문서를 가져옵니다.
+  fullName: documentdb.DocumentClient.readDocuments(collectionLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readDocuments(collectionLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readPartitionKeyRanges
+  id: documentdb.DocumentClient#readPartitionKeyRanges
+  parent: documentdb.DocumentClient
+  name: readPartitionKeyRanges(collectionLink, options)
+  summary: 모든 파티션 가져오기 범위를이 컬렉션의 키입니다.
+  fullName: documentdb.DocumentClient.readPartitionKeyRanges(collectionLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readPartitionKeyRanges(collectionLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readAttachments
+  id: documentdb.DocumentClient#readAttachments
+  parent: documentdb.DocumentClient
+  name: readAttachments(documentLink, options)
+  summary: 이 문서에 대 한 모든 첨부 파일을 가져옵니다.
+  fullName: documentdb.DocumentClient.readAttachments(documentLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readAttachments(documentLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readUsers
+  id: documentdb.DocumentClient#readUsers
+  parent: documentdb.DocumentClient
+  name: readUsers(databaseLink, feedOptions)
+  summary: 이 데이터베이스의 모든 사용자를 가져옵니다.
+  fullName: documentdb.DocumentClient.readUsers(databaseLink, feedOptions)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: feedOptions
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readUsers(databaseLink, feedOptions)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readPermissions
+  id: documentdb.DocumentClient#readPermissions
+  parent: documentdb.DocumentClient
+  name: readPermissions(userLink, feedOptions)
+  summary: 이 사용자에 대 한 모든 권한을 얻습니다.
+  fullName: documentdb.DocumentClient.readPermissions(userLink, feedOptions)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: feedOptions
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readPermissions(userLink, feedOptions)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readTriggers
+  id: documentdb.DocumentClient#readTriggers
+  parent: documentdb.DocumentClient
+  name: readTriggers(collectionLink, options)
+  summary: 이 컬렉션의 모든 트리거를 가져옵니다.
+  fullName: documentdb.DocumentClient.readTriggers(collectionLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readTriggers(collectionLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readUserDefinedFunctions
+  id: documentdb.DocumentClient#readUserDefinedFunctions
+  parent: documentdb.DocumentClient
+  name: readUserDefinedFunctions(collectionLink, options)
+  summary: 이 컬렉션의 모든 UserDefinedFunctions를 가져옵니다.
+  fullName: documentdb.DocumentClient.readUserDefinedFunctions(collectionLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readUserDefinedFunctions(collectionLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readStoredProcedures
+  id: documentdb.DocumentClient#readStoredProcedures
+  parent: documentdb.DocumentClient
+  name: readStoredProcedures(collectionLink, options)
+  summary: 이 컬렉션의 모든 StoredProcedures를 가져옵니다.
+  fullName: documentdb.DocumentClient.readStoredProcedures(collectionLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readStoredProcedures(collectionLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readConflicts
+  id: documentdb.DocumentClient#readConflicts
+  parent: documentdb.DocumentClient
+  name: readConflicts(collectionLink, options)
+  summary: 이 컬렉션의 모든 충돌 가져오기.
+  fullName: documentdb.DocumentClient.readConflicts(collectionLink, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 QueryIterator의 인스턴스입니다.'
+    content: function readConflicts(collectionLink, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryDatabases
+  id: documentdb.DocumentClient#queryDatabases
+  parent: documentdb.DocumentClient
+  name: queryDatabases(query, options)
+  summary: 쿼리를 충족 하는 모든 데이터베이스를 나열 합니다.
+  fullName: documentdb.DocumentClient.queryDatabases(query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 QueryIterator의 인스턴스입니다.'
+    content: function queryDatabases(query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryCollections
+  id: documentdb.DocumentClient#queryCollections
+  parent: documentdb.DocumentClient
+  name: queryCollections(databaseLink, query, options)
+  summary: 데이터베이스에 대 한 컬렉션을 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryCollections(databaseLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryCollections(databaseLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryDocuments
+  id: documentdb.DocumentClient#queryDocuments
+  parent: documentdb.DocumentClient
+  name: queryDocuments(documentsFeedOrDatabaseLink, query, options)
+  summary: 컬렉션에 대 한 문서를 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryDocuments(documentsFeedOrDatabaseLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentsFeedOrDatabaseLink
+      type:
+      - string
+      description: 컬렉션 링크 또는 파티션 해결 프로그램을 사용 하는 경우 데이터베이스 연결
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    - id: options.partitionKey
+      type:
+      - object
+      description: 파티션 확인자를 사용 하 여 사용할 선택적 파티션 키
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryDocuments(documentsFeedOrDatabaseLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryPartitionKeyRanges
+  id: documentdb.DocumentClient#queryPartitionKeyRanges
+  parent: documentdb.DocumentClient
+  name: queryPartitionKeyRanges(databaseLink, query, options)
+  summary: 파티션 키 범위를 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryPartitionKeyRanges(databaseLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryPartitionKeyRanges(databaseLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryAttachments
+  id: documentdb.DocumentClient#queryAttachments
+  parent: documentdb.DocumentClient
+  name: queryAttachments(documentLink, query, options)
+  summary: 문서에 대 한 첨부 파일을 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryAttachments(documentLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryAttachments(documentLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryUsers
+  id: documentdb.DocumentClient#queryUsers
+  parent: documentdb.DocumentClient
+  name: queryUsers(databaseLink, query, options)
+  summary: 데이터베이스에 대 한 사용자를 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryUsers(databaseLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryUsers(databaseLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryPermissions
+  id: documentdb.DocumentClient#queryPermissions
+  parent: documentdb.DocumentClient
+  name: queryPermissions(userLink, query, options)
+  summary: 사용자에 대 한 권한을 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryPermissions(userLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryPermissions(userLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryTriggers
+  id: documentdb.DocumentClient#queryTriggers
+  parent: documentdb.DocumentClient
+  name: queryTriggers(collectionLink, query, options)
+  summary: 컬렉션에 대 한 트리거를 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryTriggers(collectionLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryTriggers(collectionLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryUserDefinedFunctions
+  id: documentdb.DocumentClient#queryUserDefinedFunctions
+  parent: documentdb.DocumentClient
+  name: queryUserDefinedFunctions(collectionLink, query, options)
+  summary: 쿼리 사용자 컬렉션에 대 한 함수를 정의 합니다.
+  fullName: documentdb.DocumentClient.queryUserDefinedFunctions(collectionLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryUserDefinedFunctions(collectionLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryStoredProcedures
+  id: documentdb.DocumentClient#queryStoredProcedures
+  parent: documentdb.DocumentClient
+  name: queryStoredProcedures(collectionLink, query, options)
+  summary: 컬렉션에 대 한 storedProcedures를 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryStoredProcedures(collectionLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryStoredProcedures(collectionLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryConflicts
+  id: documentdb.DocumentClient#queryConflicts
+  parent: documentdb.DocumentClient
+  name: queryConflicts(collectionLink, query, options)
+  summary: 컬렉션에 대 한 충돌을 쿼리 합니다.
+  fullName: documentdb.DocumentClient.queryConflicts(collectionLink, query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션을 나타냅니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function queryConflicts(collectionLink, query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteDatabase
+  id: documentdb.DocumentClient#deleteDatabase
+  parent: documentdb.DocumentClient
+  name: deleteDatabase(databaseLink, options, callback)
+  summary: 데이터베이스 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteDatabase(databaseLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteDatabase(databaseLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteCollection
+  id: documentdb.DocumentClient#deleteCollection
+  parent: documentdb.DocumentClient
+  name: deleteCollection(collectionLink, options, callback)
+  summary: 컬렉션 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteCollection(collectionLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteCollection(collectionLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteDocument
+  id: documentdb.DocumentClient#deleteDocument
+  parent: documentdb.DocumentClient
+  name: deleteDocument(documentLink, options, callback)
+  summary: 문서 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteDocument(documentLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteDocument(documentLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteAttachment
+  id: documentdb.DocumentClient#deleteAttachment
+  parent: documentdb.DocumentClient
+  name: deleteAttachment(attachmentLink, options, callback)
+  summary: 첨부 파일 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteAttachment(attachmentLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: attachmentLink
+      type:
+      - string
+      description: 자체 링크 첨부 파일입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteAttachment(attachmentLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteUser
+  id: documentdb.DocumentClient#deleteUser
+  parent: documentdb.DocumentClient
+  name: deleteUser(userLink, options, callback)
+  summary: 사용자 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteUser(userLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteUser(userLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deletePermission
+  id: documentdb.DocumentClient#deletePermission
+  parent: documentdb.DocumentClient
+  name: deletePermission(permissionLink, options, callback)
+  summary: 사용 권한 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deletePermission(permissionLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: permissionLink
+      type:
+      - string
+      description: 자체 링크 권한입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deletePermission(permissionLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteTrigger
+  id: documentdb.DocumentClient#deleteTrigger
+  parent: documentdb.DocumentClient
+  name: deleteTrigger(triggerLink, options, callback)
+  summary: 트리거 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteTrigger(triggerLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: triggerLink
+      type:
+      - string
+      description: 자체 링크 트리거입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteTrigger(triggerLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteUserDefinedFunction
+  id: documentdb.DocumentClient#deleteUserDefinedFunction
+  parent: documentdb.DocumentClient
+  name: deleteUserDefinedFunction(udfLink, options, callback)
+  summary: UserDefinedFunction 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteUserDefinedFunction(udfLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: udfLink
+      type:
+      - string
+      description: 사용자의 자체 링크 함수를 정의 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteUserDefinedFunction(udfLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteStoredProcedure
+  id: documentdb.DocumentClient#deleteStoredProcedure
+  parent: documentdb.DocumentClient
+  name: deleteStoredProcedure(sprocLink, options, callback)
+  summary: StoredProcedure 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteStoredProcedure(sprocLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: sprocLink
+      type:
+      - string
+      description: 자체 링크 저장된 프로시저입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteStoredProcedure(sprocLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#deleteConflict
+  id: documentdb.DocumentClient#deleteConflict
+  parent: documentdb.DocumentClient
+  name: deleteConflict(conflictLink, options, callback)
+  summary: 충돌 개체를 삭제 합니다.
+  fullName: documentdb.DocumentClient.deleteConflict(conflictLink, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: conflictLink
+      type:
+      - string
+      description: 자체 링크 충돌 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function deleteConflict(conflictLink, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceCollection
+  id: documentdb.DocumentClient#replaceCollection
+  parent: documentdb.DocumentClient
+  name: replaceCollection(collectionLink, collection, options, callback)
+  summary: 문서 컬렉션을 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceCollection(collectionLink, collection, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 문서 컬렉션입니다.
+    - id: collection
+      type:
+      - object
+      description: 새 문서 컬렉션 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceCollection(collectionLink, collection, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceDocument
+  id: documentdb.DocumentClient#replaceDocument
+  parent: documentdb.DocumentClient
+  name: replaceDocument(documentLink, document, options, callback)
+  summary: 문서 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceDocument(documentLink, document, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: document
+      type:
+      - object
+      description: 새 문서 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceDocument(documentLink, document, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceAttachment
+  id: documentdb.DocumentClient#replaceAttachment
+  parent: documentdb.DocumentClient
+  name: replaceAttachment(attachmentLink, attachment, options, callback)
+  summary: 첨부 파일 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceAttachment(attachmentLink, attachment, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: attachmentLink
+      type:
+      - string
+      description: 자체 링크 첨부 파일입니다.
+    - id: attachment
+      type:
+      - object
+      description: 새 첨부 파일 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceAttachment(attachmentLink, attachment, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceUser
+  id: documentdb.DocumentClient#replaceUser
+  parent: documentdb.DocumentClient
+  name: replaceUser(userLink, user, options, callback)
+  summary: 사용자 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceUser(userLink, user, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: user
+      type:
+      - object
+      description: 새 사용자 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceUser(userLink, user, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replacePermission
+  id: documentdb.DocumentClient#replacePermission
+  parent: documentdb.DocumentClient
+  name: replacePermission(permissionLink, permission, options, callback)
+  summary: 사용 권한 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replacePermission(permissionLink, permission, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: permissionLink
+      type:
+      - string
+      description: 자체 링크 권한입니다.
+    - id: permission
+      type:
+      - object
+      description: 새 권한 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replacePermission(permissionLink, permission, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceTrigger
+  id: documentdb.DocumentClient#replaceTrigger
+  parent: documentdb.DocumentClient
+  name: replaceTrigger(triggerLink, trigger, options, callback)
+  summary: 트리거 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceTrigger(triggerLink, trigger, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: triggerLink
+      type:
+      - string
+      description: 자체 링크 트리거입니다.
+    - id: trigger
+      type:
+      - object
+      description: 새 트리거 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceTrigger(triggerLink, trigger, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceUserDefinedFunction
+  id: documentdb.DocumentClient#replaceUserDefinedFunction
+  parent: documentdb.DocumentClient
+  name: replaceUserDefinedFunction(udfLink, udf, options, callback)
+  summary: UserDefinedFunction 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceUserDefinedFunction(udfLink, udf, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: udfLink
+      type:
+      - string
+      description: 사용자의 자체 링크 함수를 정의 합니다.
+    - id: udf
+      type:
+      - object
+      description: 새 udf 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceUserDefinedFunction(udfLink, udf, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceStoredProcedure
+  id: documentdb.DocumentClient#replaceStoredProcedure
+  parent: documentdb.DocumentClient
+  name: replaceStoredProcedure(sprocLink, sproc, options, callback)
+  summary: StoredProcedure 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceStoredProcedure(sprocLink, sproc, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: sprocLink
+      type:
+      - string
+      description: 자체 링크 저장된 프로시저입니다.
+    - id: sproc
+      type:
+      - object
+      description: 새 저장 프로시저 본문을 나타냅니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceStoredProcedure(sprocLink, sproc, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertDocument
+  id: documentdb.DocumentClient#upsertDocument
+  parent: documentdb.DocumentClient
+  name: upsertDocument(documentsFeedOrDatabaseLink, body, options, callback)
+  summary: >-
+    문서 Upsert
+
+    <p>
+
+    스키마가 없으므로 집합 JSON 문서에 대 한 합니다. 모든 사용자 지정 속성 수와 첨부 파일의 선택적 목록 포함 될 수 있습니다. <br>
+
+    문서는 응용 프로그램 리소스 및 마스터 키 또는 리소스 키를 사용 하 여 권한을 부여할 수 있습니다.
+
+    </p>
+  fullName: documentdb.DocumentClient.upsertDocument(documentsFeedOrDatabaseLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentsFeedOrDatabaseLink
+      type:
+      - string
+      description: 컬렉션 링크 또는 파티션 해결 프로그램을 사용 하는 경우 데이터베이스 연결
+    - id: body
+      type:
+      - object
+      description: 문서의 본문을 나타냅니다. 임의 개수의 사용자 정의 속성을 포함할 수 있습니다.
+    - id: body.id
+      type:
+      - string
+      description: 문서의 id는 각 문서에 대해 고유 해야 합니다.
+      optional: true
+    - id: body.ttl
+      type:
+      - number
+      description: 문서의 초에 live를 시간입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.disableAutomaticIdGeneration
+      type:
+      - boolean
+      description: 자동 id 생성을 사용 하지 않도록 설정 합니다. 본문에 id가 없습니다.이 옵션은 true를 하는 경우 오류가 반환 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertDocument(documentsFeedOrDatabaseLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertAttachment
+  id: documentdb.DocumentClient#upsertAttachment
+  parent: documentdb.DocumentClient
+  name: upsertAttachment(documentLink, body, options, callback)
+  summary: >-
+    Upsert 문서 개체에 대 한 첨부 파일입니다.
+
+    <p>
+
+    각 문서는 0 개 이상의 첨부 파일을 포함할 수 있습니다. 모든 MIME 유형-텍스트, 이미지, 이진 데이터의 첨부 파일 수 있습니다. <br>
+
+    이러한 작업은 Azure Blob 저장소에서 외부적으로 저장 됩니다. 첨부 파일은 부모 문서 삭제 될 때 자동으로 삭제 됩니다.
+
+    </P>
+  fullName: documentdb.DocumentClient.upsertAttachment(documentLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: body
+      type:
+      - Object
+      description: 메타 데이터를 같은 contentType 미디어 첨부 파일 미디어를 정의 합니다. 다른 속성을 메타의 일부로 포함할 수 있습니다.
+    - id: body.contentType
+      type:
+      - string
+      description: 첨부 파일의 MIME contentType입니다.
+    - id: body.media
+      type:
+      - string
+      description: 첨부 파일 콘텐츠를 사용 하 여 연결 하는 미디어 링크입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertAttachment(documentLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertUser
+  id: documentdb.DocumentClient#upsertUser
+  parent: documentdb.DocumentClient
+  name: upsertUser(databaseLink, body, options, callback)
+  summary: Upsert 데이터베이스 사용자입니다.
+  fullName: documentdb.DocumentClient.upsertUser(databaseLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: databaseLink
+      type:
+      - string
+      description: 자체 링크 데이터베이스입니다.
+    - id: body
+      type:
+      - object
+      description: 사용자의 본문을 나타냅니다.
+    - id: body.id
+      type:
+      - string
+      description: 사용자의 id입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertUser(databaseLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertPermission
+  id: documentdb.DocumentClient#upsertPermission
+  parent: documentdb.DocumentClient
+  name: upsertPermission(userLink, body, options, callback)
+  summary: >-
+    Upsert는 사용 권한입니다.
+
+    <p> 사용 권한을 사용자별 문서 또는 컬렉션과 예를 들어 특정 리소스에 액세스할 수 있는 권한을 나타냅니다.  </p>
+  fullName: documentdb.DocumentClient.upsertPermission(userLink, body, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: userLink
+      type:
+      - string
+      description: 자체 링크 사용자입니다.
+    - id: body
+      type:
+      - object
+      description: 사용 권한의 본문을 나타냅니다.
+    - id: body.id
+      type:
+      - string
+      description: 사용 권한의 id
+    - id: body.permissionMode
+      type:
+      - string
+      description: 권한의 모드의 값 이어야 합니다. <xref:documentdb.PermissionMode>
+    - id: body.resource
+      type:
+      - string
+      description: 사용 권한을 적용할 수 있는 리소스의 링크입니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertPermission(userLink, body, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertTrigger
+  id: documentdb.DocumentClient#upsertTrigger
+  parent: documentdb.DocumentClient
+  name: upsertTrigger(collectionLink, trigger, options, callback)
+  summary: >-
+    Upsert 트리거입니다.
+
+    <p>
+
+    Azure Cosmos DB는 사전 및 post 트리거 정의에서 실행 되어야 하는 JavaScript에서 만들고, 업데이트 및 삭제 합니다. <br>
+
+    자세한 내용은 서버 쪽 JavaScript API 설명서를 참조 하십시오.
+
+    </p>
+  fullName: documentdb.DocumentClient.upsertTrigger(collectionLink, trigger, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: trigger
+      type:
+      - object
+      description: 트리거 본문을 나타냅니다.
+    - id: trigger.id
+      type:
+      - string
+      description: 트리거의 id입니다.
+    - id: trigger.triggerType
+      type:
+      - string
+      description: 트리거를 형식의 값 중 하나 여야 합니다 <xref:documentdb.TriggerType>합니다.
+    - id: trigger.triggerOperation
+      type:
+      - string
+      description: 트리거 작업의 값 중 하나 여야 합니다 <xref:documentdb.TriggerOperation>합니다.
+    - id: trigger.serverScript
+      type:
+      - function
+      description: 트리거 본문에 전달 될 수 너무 화 하는 대로 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertTrigger(collectionLink, trigger, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertUserDefinedFunction
+  id: documentdb.DocumentClient#upsertUserDefinedFunction
+  parent: documentdb.DocumentClient
+  name: upsertUserDefinedFunction(collectionLink, udf, options, callback)
+  summary: >-
+    UserDefinedFunction Upsert 합니다.
+
+    <p>
+
+    Azure Cosmos DB는 쿼리, 저장된 프로시저 및 트리거 내에서 사용할 수 있는 JavaScript Udf를 지원 합니다. <br>
+
+    자세한 내용은 서버 쪽 JavaScript API 설명서를 참조 하십시오.
+
+    </p>
+  fullName: documentdb.DocumentClient.upsertUserDefinedFunction(collectionLink, udf, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: udf
+      type:
+      - object
+      description: UserDefinedFunction의 본문을 나타냅니다.
+    - id: udf.id
+      type:
+      - string
+      description: Udf의 id입니다.
+    - id: udf.userDefinedFunctionType
+      type:
+      - string
+      description: Udf의 형식, 그 중 하나 여야 합니다 값 <xref:documentdb.UserDefinedFunctionType>
+    - id: udf.serverScript
+      type:
+      - function
+      description: 본문을 나타내는 udf 전달 될 수 너무 화 하는 대로 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertUserDefinedFunction(collectionLink, udf, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertStoredProcedure
+  id: documentdb.DocumentClient#upsertStoredProcedure
+  parent: documentdb.DocumentClient
+  name: upsertStoredProcedure(collectionLink, sproc, options, callback)
+  summary: >-
+    Upsert는 저장 프로시저입니다.
+
+    <p>
+
+    Azure Cosmos DB는 저장된 프로시저를 저장소 계층에 있는 문서 컬렉션에 대해 직접 실행할 수 있습니다. 스크립트 <br>
+
+    지정된 된 컬렉션의 기본 저장소 파티션에 ACID 트랜잭션에서 실행 됩니다. 자세한 내용은 <br>
+
+    서버 쪽 JavaScript API 설명서를 참조 하십시오.
+
+    </p>
+  fullName: documentdb.DocumentClient.upsertStoredProcedure(collectionLink, sproc, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      type:
+      - string
+      description: 자체 링크의 컬렉션입니다.
+    - id: sproc
+      type:
+      - object
+      description: 저장된 프로시저의 본문을 나타냅니다.
+    - id: sproc.id
+      type:
+      - string
+      description: 저장된 프로시저의 id입니다.
+    - id: sproc.serverScript
+      type:
+      - function
+      description: 저장된 프로시저의 본문에 전달 될 수 너무 화 하는 대로 합니다.
+    - id: options
+      type:
+      - documentdb.RequestOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertStoredProcedure(collectionLink, sproc, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#upsertAttachmentAndUploadMedia
+  id: documentdb.DocumentClient#upsertAttachmentAndUploadMedia
+  parent: documentdb.DocumentClient
+  name: upsertAttachmentAndUploadMedia(documentLink, readableStream, options, callback)
+  summary: Upsert 문서 개체에 대 한 첨부 파일입니다.
+  fullName: documentdb.DocumentClient.upsertAttachmentAndUploadMedia(documentLink, readableStream, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: documentLink
+      type:
+      - string
+      description: 자체 링크의 문서입니다.
+    - id: readableStream
+      type:
+      - documentdb.stream.Readable
+      description: 업로드 해야 하는 자체 미디어를 나타내는 스트림.
+    - id: options
+      type:
+      - documentdb.MediaOptions
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function upsertAttachmentAndUploadMedia(documentLink, readableStream, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readMedia
+  id: documentdb.DocumentClient#readMedia
+  parent: documentdb.DocumentClient
+  name: readMedia(mediaLink, callback)
+  summary: 첨부 파일 개체에 대 한 미디어를 읽습니다.
+  fullName: documentdb.DocumentClient.readMedia(mediaLink, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: mediaLink
+      type:
+      - string
+      description: 첨부 파일에 있는 미디어의 미디어 링크입니다.
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백 결과 매개 변수 버퍼 또는 수 값에 따라 스트림을 <xref:documentdb.MediaReadMode>합니다.
+    content: function readMedia(mediaLink, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#updateMedia
+  id: documentdb.DocumentClient#updateMedia
+  parent: documentdb.DocumentClient
+  name: updateMedia(mediaLink, readableStream, options, callback)
+  summary: 첨부 파일에 대 한 미디어를 업데이트 합니다.
+  fullName: documentdb.DocumentClient.updateMedia(mediaLink, readableStream, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: mediaLink
+      type:
+      - string
+      description: 첨부 파일에 있는 미디어의 미디어 링크입니다.
+    - id: readableStream
+      type:
+      - documentdb.stream.Readable
+      description: 업로드 해야 하는 자체 미디어를 나타내는 스트림.
+    - id: options
+      type:
+      - documentdb.MediaOptions
+      description: 미디어에 대 한 옵션
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function updateMedia(mediaLink, readableStream, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#executeStoredProcedure
+  id: documentdb.DocumentClient#executeStoredProcedure
+  parent: documentdb.DocumentClient
+  name: executeStoredProcedure(sprocLink, params, options, callback)
+  summary: 파티션 키를 사용 하 여 개체를 나타내는 저장 프로시저를 실행 합니다.
+  fullName: documentdb.DocumentClient.executeStoredProcedure(sprocLink, params, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: sprocLink
+      type:
+      - string
+      description: 자체 링크 저장된 프로시저입니다.
+    - id: params
+      type:
+      - Array
+      description: 저장된 프로시저의 매개 변수를 나타냅니다.
+      optional: true
+    - id: options
+      type:
+      - Object
+      description: 파티션 키
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function executeStoredProcedure(sprocLink, params, options, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#replaceOffer
+  id: documentdb.DocumentClient#replaceOffer
+  parent: documentdb.DocumentClient
+  name: replaceOffer(offerLink, offer, callback)
+  summary: 제안 개체를 대체 합니다.
+  fullName: documentdb.DocumentClient.replaceOffer(offerLink, offer, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: offerLink
+      type:
+      - string
+      description: 자체 링크를 제공 합니다.
+    - id: offer
+      type:
+      - object
+      description: 새 제품 본문을 나타냅니다.
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function replaceOffer(offerLink, offer, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readOffer
+  id: documentdb.DocumentClient#readOffer
+  parent: documentdb.DocumentClient
+  name: readOffer(offerLink, callback)
+  summary: 제품을 읽습니다.
+  fullName: documentdb.DocumentClient.readOffer(offerLink, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: offerLink
+      type:
+      - string
+      description: 자체 링크를 제공 합니다.
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다.
+    content: function readOffer(offerLink, callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#readOffers
+  id: documentdb.DocumentClient#readOffers
+  parent: documentdb.DocumentClient
+  name: readOffers(options)
+  summary: 모든 제품을 나열합니다.
+  fullName: documentdb.DocumentClient.readOffers(options)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 queryIterator의 인스턴스입니다.'
+    content: function readOffers(options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#queryOffers
+  id: documentdb.DocumentClient#queryOffers
+  parent: documentdb.DocumentClient
+  name: queryOffers(query, options)
+  summary: 쿼리를 충족 하는 모든 제품을 나열 합니다.
+  fullName: documentdb.DocumentClient.queryOffers(query, options)
+  type: Function
+  syntax:
+    parameters:
+    - id: query
+      type:
+      - documentdb.SqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - documentdb.FeedOptions
+      description: 피드 옵션입니다.
+      optional: true
+    return:
+      type:
+      - documentdb.QueryIterator
+      description: '- 읽기 피드를 처리할 QueryIterator의 인스턴스입니다.'
+    content: function queryOffers(query, options)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#getDatabaseAccount
+  id: documentdb.DocumentClient#getDatabaseAccount
+  parent: documentdb.DocumentClient
+  name: getDatabaseAccount(callback)
+  summary: 데이터베이스 계정 정보를 가져옵니다.
+  fullName: documentdb.DocumentClient.getDatabaseAccount(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: options.urlConnection
+      type:
+      - string
+      description: 데이터베이스 계정을 검색 해야 하는 끝점 url입니다. 그렇지 않은 경우 사용할 경우 현재 클라이언트의 url.
+      optional: true
+    - id: callback
+      type:
+      - documentdb.RequestCallback
+      description: 요청에 대 한 콜백입니다. 콜백 두 번째 매개 변수 형식이 됩니다 <xref:documentdb.DatabaseAccount>합니다.
+    content: function getDatabaseAccount(callback)
+  langs:
+  - js
+- uid: documentdb.DocumentClient#getSessionToken
+  id: documentdb.DocumentClient#getSessionToken
+  parent: documentdb.DocumentClient
+  name: getSessionToken(collectionLink)
+  summary: 지정 된 collectionLink는 SessionToken을 가져옵니다.
+  fullName: documentdb.DocumentClient.getSessionToken(collectionLink)
+  type: Function
+  syntax:
+    parameters:
+    - id: collectionLink
+      description: 에 세션 토큰을 필요한 컬렉션의 링크
+    content: function getSessionToken(collectionLink)
+  langs:
+  - js
+references:
+- uid: documentdb.QueryIterator
+  name: QueryIterator
+  fullName: documentdb.QueryIterator
+  isExternal: false

@@ -1,0 +1,989 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 2edf9f5bc2da7407d7a8e5e49124d9284317f648
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064391"
+items:
+- uid: azure-sb.MpnsService
+  id: azure-sb.MpnsService
+  name: MpnsService
+  summary: MpnsService 클래스를 사용 하 여 알림을 보내는 데 사용 되는 [Microsoft 푸시 알림 서비스](http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402558)합니다.
+  fullName: azure-sb.MpnsService
+  type: Class
+  children:
+  - azure-sb.MpnsService.#ctor
+  - azure-sb.MpnsService#createNativeRegistration
+  - azure-sb.MpnsService#createOrUpdateNativeRegistration
+  - azure-sb.MpnsService#createFlipTileRegistration
+  - azure-sb.MpnsService#createTileRegistration
+  - azure-sb.MpnsService#createToastRegistration
+  - azure-sb.MpnsService#createRawTemplateRegistration
+  - azure-sb.MpnsService#createOrUpdateRawTemplateRegistration
+  - azure-sb.MpnsService#updateFlipTileRegistration
+  - azure-sb.MpnsService#updateTileRegistration
+  - azure-sb.MpnsService#updatesToastRegistration
+  - azure-sb.MpnsService#updatesRawTemplateRegistration
+  - azure-sb.MpnsService#listRegistrationsByChannel
+  - azure-sb.MpnsService#sendFlipTile
+  - azure-sb.MpnsService#sendTile
+  - azure-sb.MpnsService#sendToast
+  - azure-sb.MpnsService#send
+  langs:
+  - js
+- id: azure-sb.MpnsService.#ctor
+  uid: azure-sb.MpnsService.#ctor
+  parent: azure-sb.MpnsService
+  name: MpnsService(notificationHubService)
+  fullName: azure-sb.MpnsService.MpnsService(notificationHubService)
+  summary: >-
+    새 MpnsService 개체를 만듭니다.
+
+
+    __참고__:이 개체의 인스턴스는 때 자동으로 생성 된 <xref:azure-sb.NotificationHubService> 개체가 만들어집니다. <xref:azure-sb.NotificationHubService%23gcm>을 참조하세요.
+  type: Constructor
+  syntax:
+    parameters:
+    - id: notificationHubService
+      type:
+      - undefinedNotificationHubService
+      description: 알림 허브 서비스입니다.
+    content: new MpnsService(notificationHubService)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createNativeRegistration
+  id: azure-sb.MpnsService#createNativeRegistration
+  parent: azure-sb.MpnsService
+  name: createNativeRegistration(channel, tags, options, callback)
+  summary: 기본 MPNS 등록을 만듭니다.
+  fullName: azure-sb.MpnsService.createNativeRegistration(channel, tags, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createNativeRegistration(channel, tags, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createOrUpdateNativeRegistration
+  id: azure-sb.MpnsService#createOrUpdateNativeRegistration
+  parent: azure-sb.MpnsService
+  name: createOrUpdateNativeRegistration(registrationId, channel, tags, options, callback)
+  summary: 기본 MPNS 등록을 만들거나 설정 합니다.
+  fullName: azure-sb.MpnsService.createOrUpdateNativeRegistration(registrationId, channel, tags, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createOrUpdateNativeRegistration(registrationId, channel, tags, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createFlipTileRegistration
+  id: azure-sb.MpnsService#createFlipTileRegistration
+  parent: azure-sb.MpnsService
+  name: createFlipTileRegistration(channel, tags, template, options, callback)
+  summary: (7.8 이상 버전 에서만 Windows Phone) FlipTile 템플릿을 사용 하 여 등록을 만듭니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj206971.aspx합니다.
+  fullName: azure-sb.MpnsService.createFlipTileRegistration(channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - object
+      description: 등록 템플릿입니다.
+    - id: template.backgroundImage
+      type:
+      - string
+      description: 타일 배경 이미지의 URI입니다.
+    - id: template.count
+      type:
+      - string
+      description: 타일에 표시 되는 수입니다.
+    - id: template.title
+      type:
+      - string
+      description: 타일의 제목 텍스트입니다.
+    - id: template.backBackgroundImage
+      type:
+      - string
+      description: 타일의 뒷면에 표시 되는 이미지의 URI입니다.
+    - id: template.backTitle
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 제목입니다.
+    - id: template.backContent
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 텍스트입니다.
+    - id: template.id
+      type:
+      - string
+      description: 관련된 보조 타일의 ID입니다.
+    - id: template.smallBackgroundImage
+      type:
+      - string
+      description: 작게 축소 된 경우 타일 배경 이미지에 대 한 URI입니다.
+    - id: template.wideBackgroundImage
+      type:
+      - string
+      description: 크게 확대 된 경우 타일 배경 이미지에 대 한 URI입니다.
+    - id: template.wideBackContent
+      type:
+      - string
+      description: 크게는 타일이 크게 확대 된 경우 뒷면 타일에 대 한 내용입니다.
+    - id: template.wideBackBackgroundImage
+      type:
+      - string
+      description: 타일을 크게 확장 되 면 타일의 뒷면에 있는 것으로 이미지에 대 한 URI입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createFlipTileRegistration(channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createTileRegistration
+  id: azure-sb.MpnsService#createTileRegistration
+  parent: azure-sb.MpnsService
+  name: createTileRegistration(channel, tags, template, options, callback)
+  summary: 타일 템플릿을 사용 하 여 등록을 만듭니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx합니다.
+  fullName: azure-sb.MpnsService.createTileRegistration(channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - object
+      description: 등록 템플릿입니다.
+    - id: template.backgroundImage
+      type:
+      - string
+      description: 타일 배경 이미지의 URI입니다.
+    - id: template.count
+      type:
+      - string
+      description: 타일에 표시 되는 수입니다.
+    - id: template.title
+      type:
+      - string
+      description: 타일의 제목 텍스트입니다.
+    - id: template.backBackgroundImage
+      type:
+      - string
+      description: 타일의 뒷면에 표시 되는 이미지의 URI입니다.
+    - id: template.backTitle
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 제목입니다.
+    - id: template.backContent
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 텍스트입니다.
+    - id: template.id
+      type:
+      - string
+      description: 관련된 보조 타일의 ID입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createTileRegistration(channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createToastRegistration
+  id: azure-sb.MpnsService#createToastRegistration
+  parent: azure-sb.MpnsService
+  name: createToastRegistration(channel, tags, template, options, callback)
+  summary: 자세한 내용은 알림 메시지 템플릿을 사용 하 여 등록을 만듭니다 http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx합니다.
+  fullName: azure-sb.MpnsService.createToastRegistration(channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - object
+      description: 등록 템플릿입니다.
+    - id: template.text1
+      type:
+      - string
+      description: Text1
+    - id: template.text2
+      type:
+      - string
+      description: Text2
+    - id: template.param
+      type:
+      - string
+      description: (선택 사항) (Windows Phone 7.5 이상 버전)에 해당
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createToastRegistration(channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createRawTemplateRegistration
+  id: azure-sb.MpnsService#createRawTemplateRegistration
+  parent: azure-sb.MpnsService
+  name: createRawTemplateRegistration(channel, tags, template, options, callback)
+  summary: 원시 템플릿 등록을 만듭니다.
+  fullName: azure-sb.MpnsService.createRawTemplateRegistration(channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - json
+      description: 등록에 대 한 템플릿입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: 포함할 mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createRawTemplateRegistration(channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#createOrUpdateRawTemplateRegistration
+  id: azure-sb.MpnsService#createOrUpdateRawTemplateRegistration
+  parent: azure-sb.MpnsService
+  name: createOrUpdateRawTemplateRegistration(registrationId, channel, tags, template, options, callback)
+  summary: 원시 템플릿 등록을 만듭니다.
+  fullName: azure-sb.MpnsService.createOrUpdateRawTemplateRegistration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - json
+      description: 등록에 대 한 템플릿입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: 포함할 mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createOrUpdateRawTemplateRegistration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#updateFlipTileRegistration
+  id: azure-sb.MpnsService#updateFlipTileRegistration
+  parent: azure-sb.MpnsService
+  name: updateFlipTileRegistration(registrationId, channel, tags, template, options, callback)
+  summary: (7.8 이상 버전 에서만 Windows Phone) FlipTile 템플릿을 사용 하 여 등록을 업데이트합니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj206971.aspx합니다.
+  fullName: azure-sb.MpnsService.updateFlipTileRegistration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - object
+      description: 등록 템플릿입니다.
+    - id: template.backgroundImage
+      type:
+      - string
+      description: 타일 배경 이미지의 URI입니다.
+    - id: template.count
+      type:
+      - string
+      description: 타일에 표시 되는 수입니다.
+    - id: template.title
+      type:
+      - string
+      description: 타일의 제목 텍스트입니다.
+    - id: template.backBackgroundImage
+      type:
+      - string
+      description: 타일의 뒷면에 표시 되는 이미지의 URI입니다.
+    - id: template.backTitle
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 제목입니다.
+    - id: template.backContent
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 텍스트입니다.
+    - id: template.id
+      type:
+      - string
+      description: 관련된 보조 타일의 ID입니다.
+    - id: template.smallBackgroundImage
+      type:
+      - string
+      description: 작게 축소 된 경우 타일 배경 이미지에 대 한 URI입니다.
+    - id: template.wideBackgroundImage
+      type:
+      - string
+      description: 크게 확대 된 경우 타일 배경 이미지에 대 한 URI입니다.
+    - id: template.wideBackContent
+      type:
+      - string
+      description: 크게는 타일이 크게 확대 된 경우 뒷면 타일에 대 한 내용입니다.
+    - id: template.wideBackBackgroundImage
+      type:
+      - string
+      description: 타일을 크게 확장 되 면 타일의 뒷면에 있는 것으로 이미지에 대 한 URI입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updateFlipTileRegistration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#updateTileRegistration
+  id: azure-sb.MpnsService#updateTileRegistration
+  parent: azure-sb.MpnsService
+  name: updateTileRegistration(registrationId, channel, tags, template, options, callback)
+  summary: 타일 템플릿을 사용 하 여 등록을 업데이트합니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx합니다.
+  fullName: azure-sb.MpnsService.updateTileRegistration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - object
+      description: 등록 템플릿입니다.
+    - id: template.backgroundImage
+      type:
+      - string
+      description: 타일 배경 이미지의 URI입니다.
+    - id: template.count
+      type:
+      - string
+      description: 타일에 표시 되는 수입니다.
+    - id: template.title
+      type:
+      - string
+      description: 타일의 제목 텍스트입니다.
+    - id: template.backBackgroundImage
+      type:
+      - string
+      description: 타일의 뒷면에 표시 되는 이미지의 URI입니다.
+    - id: template.backTitle
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 제목입니다.
+    - id: template.backContent
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 텍스트입니다.
+    - id: template.id
+      type:
+      - string
+      description: 관련된 보조 타일의 ID입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updateTileRegistration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#updatesToastRegistration
+  id: azure-sb.MpnsService#updatesToastRegistration
+  parent: azure-sb.MpnsService
+  name: updatesToastRegistration(registrationId, channel, tags, template, options, callback)
+  summary: 알림 템플릿을 사용 하 여 등록을 업데이트합니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx합니다.
+  fullName: azure-sb.MpnsService.updatesToastRegistration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - object
+      description: 등록 템플릿입니다.
+    - id: template.text1
+      type:
+      - string
+      description: Text1
+    - id: template.text2
+      type:
+      - string
+      description: Text2
+    - id: template.param
+      type:
+      - string
+      description: (선택 사항) (Windows Phone 7.5 이상 버전)에 해당
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updatesToastRegistration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#updatesRawTemplateRegistration
+  id: azure-sb.MpnsService#updatesRawTemplateRegistration
+  parent: azure-sb.MpnsService
+  name: updatesRawTemplateRegistration(registrationId, channel, tags, template, options, callback)
+  summary: 원시 템플릿 등록을 업데이트합니다.
+  fullName: azure-sb.MpnsService.updatesRawTemplateRegistration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그 (쉼표로 구분 된 목록, 공백 없음)입니다.
+    - id: template
+      type:
+      - json
+      description: 등록에 대 한 템플릿입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: 포함할 mpns 헤더입니다.
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: 포함할 etag입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updatesRawTemplateRegistration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#listRegistrationsByChannel
+  id: azure-sb.MpnsService#listRegistrationsByChannel
+  parent: azure-sb.MpnsService
+  name: listRegistrationsByChannel(channel, options, callback)
+  summary: 채널별 등록을 검색합니다.
+  fullName: azure-sb.MpnsService.listRegistrationsByChannel(channel, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: Channeluri가 있습니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: options.top
+      type:
+      - object
+      description: 등록 호출에서 가져올 최대 수를 지정 합니다.
+      optional: true
+    - id: options.skip
+      type:
+      - object
+      description: 호출에서 건너뛸 등록 수를 지정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listRegistrationsByChannel(channel, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#sendFlipTile
+  id: azure-sb.MpnsService#sendFlipTile
+  parent: azure-sb.MpnsService
+  name: sendFlipTile(tags, payload, options, callback)
+  summary: (7.8 이상 버전 에서만 Windows Phone) FlipTile 알림을 보냅니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj206971.aspx합니다.
+  fullName: azure-sb.MpnsService.sendFlipTile(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: 단일 태그 또는 태그 식입니다.
+    - id: payload
+      type:
+      - object
+      description: 메시지의 페이로드입니다.
+    - id: payload.backgroundImage
+      type:
+      - string
+      description: 타일 배경 이미지의 URI입니다.
+    - id: payload.count
+      type:
+      - string
+      description: 타일에 표시 되는 수입니다.
+    - id: payload.title
+      type:
+      - string
+      description: 타일의 제목 텍스트입니다.
+    - id: payload.backBackgroundImage
+      type:
+      - string
+      description: 타일의 뒷면에 표시 되는 이미지의 URI입니다.
+    - id: payload.backTitle
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 제목입니다.
+    - id: payload.backContent
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 텍스트입니다.
+    - id: payload.id
+      type:
+      - string
+      description: 관련된 보조 타일의 ID입니다.
+    - id: payload.smallBackgroundImage
+      type:
+      - string
+      description: 작게 축소 된 경우 타일 배경 이미지에 대 한 URI입니다.
+    - id: payload.wideBackgroundImage
+      type:
+      - string
+      description: 크게 확대 된 경우 타일 배경 이미지에 대 한 URI입니다.
+    - id: payload.wideBackContent
+      type:
+      - string
+      description: 크게는 타일이 크게 확대 된 경우 뒷면 타일에 대 한 내용입니다.
+    - id: payload.wideBackBackgroundImage
+      type:
+      - string
+      description: 타일을 크게 확장 되 면 타일의 뒷면에 있는 것으로 이미지에 대 한 URI입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendFlipTile(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#sendTile
+  id: azure-sb.MpnsService#sendTile
+  parent: azure-sb.MpnsService
+  name: sendTile(tags, payload, options, callback)
+  summary: 타일 알림을 보냅니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx합니다.
+  fullName: azure-sb.MpnsService.sendTile(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: 단일 태그 또는 태그 식입니다.
+    - id: payload
+      type:
+      - object
+      description: 메시지의 페이로드입니다.
+    - id: payload.backgroundImage
+      type:
+      - string
+      description: 타일 배경 이미지의 URI입니다.
+    - id: payload.count
+      type:
+      - string
+      description: 타일에 표시 되는 수입니다.
+    - id: payload.title
+      type:
+      - string
+      description: 타일의 제목 텍스트입니다.
+    - id: payload.backBackgroundImage
+      type:
+      - string
+      description: 타일의 뒷면에 표시 되는 이미지의 URI입니다.
+    - id: payload.backTitle
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 제목입니다.
+    - id: payload.backContent
+      type:
+      - string
+      description: 타일의 뒷면에 대 한 텍스트입니다.
+    - id: payload.id
+      type:
+      - string
+      description: 관련된 보조 타일의 ID입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendTile(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#sendToast
+  id: azure-sb.MpnsService#sendToast
+  parent: azure-sb.MpnsService
+  name: sendToast(tags, payload, options, callback)
+  summary: 알림을 메시지를 보냅니다. 자세한 내용은 참조 하세요. http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx합니다.
+  fullName: azure-sb.MpnsService.sendToast(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: 단일 태그 또는 태그 식입니다.
+    - id: payload
+      type:
+      - object
+      description: 메시지의 페이로드입니다.
+    - id: payload.text1
+      type:
+      - string
+      description: Text1
+    - id: payload.text2
+      type:
+      - string
+      description: Text2
+    - id: payload.param
+      type:
+      - string
+      description: (선택 사항) (Windows Phone 7.5 이상 버전)에 해당
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendToast(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.MpnsService#send
+  id: azure-sb.MpnsService#send
+  parent: azure-sb.MpnsService
+  name: send(tags, payload, targetName, notificationClass, options, callback)
+  summary: 사용자 지정 MPNS 알림을 보냅니다. 페이로드에 대 한 모든 권한을 하려는 경우이 메서드를 사용 합니다.
+  fullName: azure-sb.MpnsService.send(tags, payload, targetName, notificationClass, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: 단일 태그 또는 태그 식입니다.
+    - id: payload
+      type:
+      - string
+      description: 메시지의 XML 페이로드입니다.
+    - id: targetName
+      type:
+      - string
+      description: 대상 이름입니다.
+    - id: notificationClass
+      type:
+      - string
+      description: 알림 클래스입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Mpns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function send(tags, payload, targetName, notificationClass, options, callback)
+  langs:
+  - js

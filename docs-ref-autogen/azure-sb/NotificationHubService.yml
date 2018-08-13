@@ -1,0 +1,508 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 0e839634bf45a6ca21fbdf7120bdb9d631febf5b
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064382"
+items:
+- uid: azure-sb.NotificationHubService
+  id: azure-sb.NotificationHubService
+  name: NotificationHubService
+  summary: >-
+    NotificationHubService을 사용 하면 iOS, Android 및 Windows 스토어에 푸시 알림을 보낼 수 있습니다 장치입니다.
+
+
+    Notification Hubs에 대 한 자세한 내용은 작업에서 Node.js 응용 프로그램으로 포커스가 있는 정보를 볼 [사용 하 여 Service Bus Notification Hubs 방법](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-notification-hubs/)합니다.
+  fullName: azure-sb.NotificationHubService
+  type: Class
+  children:
+  - azure-sb.NotificationHubService.#ctor
+  - azure-sb.NotificationHubService#wns
+  - azure-sb.NotificationHubService#apns
+  - azure-sb.NotificationHubService#gcm
+  - azure-sb.NotificationHubService#mpns
+  - azure-sb.NotificationHubService#send
+  - azure-sb.NotificationHubService#createRegistrationId
+  - azure-sb.NotificationHubService#getRegistration
+  - azure-sb.NotificationHubService#deleteRegistration
+  - azure-sb.NotificationHubService#updateRegistration
+  - azure-sb.NotificationHubService#createOrUpdateRegistration
+  - azure-sb.NotificationHubService#listRegistrations
+  - azure-sb.NotificationHubService#listRegistrationsByTag
+  - azure-sb.NotificationHubService#createOrUpdateInstallation
+  - azure-sb.NotificationHubService#patchInstallation
+  - azure-sb.NotificationHubService#deleteInstallation
+  - azure-sb.NotificationHubService#getInstallation
+  langs:
+  - js
+- id: azure-sb.NotificationHubService.#ctor
+  uid: azure-sb.NotificationHubService.#ctor
+  parent: azure-sb.NotificationHubService
+  name: NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
+  fullName: azure-sb.NotificationHubService.NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
+  summary: 새 NotificationHubService 개체를 만듭니다.
+  type: Constructor
+  syntax:
+    parameters:
+    - id: hubName
+      type:
+      - string
+      description: 알림 허브 이름입니다.
+    - id: endpointOrConnectionString
+      type:
+      - string
+      description: Service bus 끝점 또는 연결 문자열입니다.
+      optional: true
+    - id: sharedAccessKeyName
+      type:
+      - string
+      description: 알림 허브 공유 액세스 키 이름입니다.
+      optional: true
+    - id: sharedAccessKeyValue
+      type:
+      - string
+      description: 알림 허브 공유 액세스 키 값입니다.
+      optional: true
+    content: new NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#wns
+  id: azure-sb.NotificationHubService#wns
+  parent: azure-sb.NotificationHubService
+  name: wns
+  summary: (Windows 스토어 앱)에 대 한 WNS 알림 보내기 및 Windows 스토어 앱에 대 한 등록 만들기/업데이트 방법에 대 한 액세스를 제공 합니다.
+  fullName: azure-sb.NotificationHubService.wns
+  type: Member
+  syntax:
+    return:
+      type:
+      - WnsService
+    content: wns
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#apns
+  id: azure-sb.NotificationHubService#apns
+  parent: azure-sb.NotificationHubService
+  name: apns
+  summary: (IOS 앱)에 대 한 apns 알림을 보내는 iOS 앱에 대 한 등록 만들기/업데이트 하는 메서드에 대 한 액세스를 제공 합니다.
+  fullName: azure-sb.NotificationHubService.apns
+  type: Member
+  syntax:
+    return:
+      type:
+      - ApnsService
+    content: apns
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#gcm
+  id: azure-sb.NotificationHubService#gcm
+  parent: azure-sb.NotificationHubService
+  name: gcm
+  summary: (Android 앱)에 대 한 GCM 알림 보내기 및 Android 앱에 대 한 등록 만들기/업데이트 방법에 대 한 액세스를 제공 합니다.
+  fullName: azure-sb.NotificationHubService.gcm
+  type: Member
+  syntax:
+    return:
+      type:
+      - GcmService
+    content: gcm
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#mpns
+  id: azure-sb.NotificationHubService#mpns
+  parent: azure-sb.NotificationHubService
+  name: mpns
+  summary: (Windows Phone 앱)에 대 한 MPNS에 알림을 보낼 Windows Phone 앱에 대 한 등록 만들기/업데이트 하는 방법에 대 한 액세스를 제공 합니다.
+  fullName: azure-sb.NotificationHubService.mpns
+  type: Member
+  syntax:
+    return:
+      type:
+      - MpnsService
+    content: mpns
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#send
+  id: azure-sb.NotificationHubService#send
+  parent: azure-sb.NotificationHubService
+  name: send(tags, payload, options, callback)
+  summary: 템플릿 메시지를 보냅니다.
+  fullName: azure-sb.NotificationHubService.send(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: >-
+        단일 태그 또는 태그 식입니다.
+
+        이 허브의 모든 등록에 브로드캐스트 됩니다 null 인 경우
+    - id: payload
+      type:
+      - object
+      - string
+      description: 메시지의 페이로드입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - string
+      description: 추가 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function send(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#createRegistrationId
+  id: azure-sb.NotificationHubService#createRegistrationId
+  parent: azure-sb.NotificationHubService
+  name: createRegistrationId(callback)
+  summary: 등록 식별자를 만듭니다.
+  fullName: azure-sb.NotificationHubService.createRegistrationId(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function createRegistrationId(callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#getRegistration
+  id: azure-sb.NotificationHubService#getRegistration
+  parent: azure-sb.NotificationHubService
+  name: getRegistration(registrationId, options, callback)
+  summary: 등록을 검색합니다.
+  fullName: azure-sb.NotificationHubService.getRegistration(registrationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function getRegistration(registrationId, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#deleteRegistration
+  id: azure-sb.NotificationHubService#deleteRegistration
+  parent: azure-sb.NotificationHubService
+  name: deleteRegistration(registrationId, options, callback)
+  summary: 등록을 삭제합니다.
+  fullName: azure-sb.NotificationHubService.deleteRegistration(registrationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: Etag입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function deleteRegistration(registrationId, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#updateRegistration
+  id: azure-sb.NotificationHubService#updateRegistration
+  parent: azure-sb.NotificationHubService
+  name: updateRegistration(registration, options, callback)
+  summary: 등록을 업데이트합니다.
+  fullName: azure-sb.NotificationHubService.updateRegistration(registration, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registration
+      type:
+      - object
+      description: 등록 업데이트입니다.
+    - id: registration.RegistrationId
+      type:
+      - object
+      description: 업데이트할 등록 id
+    - id: registration._.ContentRootElement
+      type:
+      - object
+      description: '등록의 형식입니다. 허용 되는 형식: WindowsRegistrationDescription WindowsTemplateRegistrationDescription, AppleRegistrationDescription, AppleTemplateRegistrationDescription, GcmRegistrationDescription, GcmTemplateRegistrationDescription, MpnsRegistrationDescription, MpnsTemplateRegistrationDescription 합니다.'
+    - id: registration.ChannelUri
+      type:
+      - object
+      description: 경우에만 Windows 또는 Mpns 등록
+    - id: registration.DeviceToken
+      type:
+      - object
+      description: 경우에만 Apple 등록
+    - id: registration.GcmRegistrationId
+      type:
+      - object
+      description: 경우에만 Gcm 등록
+    - id: registration.Tags
+      type:
+      - object
+      description: 쉼표로 구분 된 태그 목록을 (공백 없음)
+    - id: registration.BodyTemplate
+      type:
+      - object
+      description: 경우에만 템플릿 등록
+    - id: registration.WnsHeaders
+      type:
+      - object
+      description: 경우에만 Windows 템플릿 등록
+    - id: registration.MpnsHeaders
+      type:
+      - object
+      description: 경우에만 Mpns 템플릿 등록
+    - id: registration.Expiry
+      type:
+      - object
+      description: 경우에만 Apple 템플릿 등록
+    - id: registration.ApnsHeaders
+      type:
+      - object
+      description: 경우에만 Apple 템플릿 등록
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: Etag입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function updateRegistration(registration, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#createOrUpdateRegistration
+  id: azure-sb.NotificationHubService#createOrUpdateRegistration
+  parent: azure-sb.NotificationHubService
+  name: createOrUpdateRegistration(registration, options, callback)
+  summary: 만들거나 등록을 업데이트 합니다.
+  fullName: azure-sb.NotificationHubService.createOrUpdateRegistration(registration, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registration
+      type:
+      - string
+      description: 등록 업데이트입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: Etag입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function createOrUpdateRegistration(registration, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#listRegistrations
+  id: azure-sb.NotificationHubService#listRegistrations
+  parent: azure-sb.NotificationHubService
+  name: listRegistrations(options, callback)
+  summary: 등록을 나열 합니다.
+  fullName: azure-sb.NotificationHubService.listRegistrations(options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: options.top
+      type:
+      - object
+      description: 등록 호출에서 가져올 최대 수를 지정 합니다.
+      optional: true
+    - id: options.skip
+      type:
+      - object
+      description: 호출에서 건너뛸 등록 수를 지정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function listRegistrations(options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#listRegistrationsByTag
+  id: azure-sb.NotificationHubService#listRegistrationsByTag
+  parent: azure-sb.NotificationHubService
+  name: listRegistrationsByTag(tag, options, callback)
+  summary: 태그로 등록을 검색합니다.
+  fullName: azure-sb.NotificationHubService.listRegistrationsByTag(tag, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tag
+      type:
+      - string
+      description: 등록 태그입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: options.top
+      type:
+      - object
+      description: 등록 호출에서 가져올 최대 수를 지정 합니다.
+      optional: true
+    - id: options.skip
+      type:
+      - object
+      description: 호출에서 건너뛸 등록 수를 지정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function listRegistrationsByTag(tag, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#createOrUpdateInstallation
+  id: azure-sb.NotificationHubService#createOrUpdateInstallation
+  parent: azure-sb.NotificationHubService
+  name: createOrUpdateInstallation(installation, options, callback)
+  summary: 만들거나 업데이트를 설치 합니다.
+  fullName: azure-sb.NotificationHubService.createOrUpdateInstallation(installation, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installation
+      type:
+      - string
+      description: 만들기/업데이트를 설치 합니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function createOrUpdateInstallation(installation, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#patchInstallation
+  id: azure-sb.NotificationHubService#patchInstallation
+  parent: azure-sb.NotificationHubService
+  name: patchInstallation(installationId, partialUpdateOperations, options, callback)
+  summary: 기존 설치를 패치합니다.
+  fullName: azure-sb.NotificationHubService.patchInstallation(installationId, partialUpdateOperations, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installationId
+      type:
+      - string
+      description: 설치 Id
+    - id: partialUpdateOperations
+      type:
+      - array
+      description: 기존 설치를 패치 하는 일부 작업이의 목록
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function patchInstallation(installationId, partialUpdateOperations, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#deleteInstallation
+  id: azure-sb.NotificationHubService#deleteInstallation
+  parent: azure-sb.NotificationHubService
+  name: deleteInstallation(installationId, options, callback)
+  summary: 기존 설치를 삭제합니다.
+  fullName: azure-sb.NotificationHubService.deleteInstallation(installationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installationId
+      type:
+      - string
+      description: 설치 Id
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function deleteInstallation(installationId, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#getInstallation
+  id: azure-sb.NotificationHubService#getInstallation
+  parent: azure-sb.NotificationHubService
+  name: getInstallation(installationId, options, callback)
+  summary: 설치 Id 별로 가져옵니다
+  fullName: azure-sb.NotificationHubService.getInstallation(installationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installationId
+      type:
+      - string
+      description: 설치 Id
+    - id: options
+      type:
+      - object
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: '`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.'
+    content: function getInstallation(installationId, options, callback)
+  langs:
+  - js

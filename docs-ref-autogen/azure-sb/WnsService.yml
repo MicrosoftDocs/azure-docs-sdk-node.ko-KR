@@ -1,0 +1,820 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 58107b458c3ade33556cab3851a672621000f8a8
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064400"
+items:
+- uid: azure-sb.WnsService
+  id: azure-sb.WnsService
+  name: WnsService
+  summary: 새 WnsService 개체를 만듭니다.
+  fullName: azure-sb.WnsService
+  type: Class
+  children:
+  - azure-sb.WnsService.#ctor
+  - azure-sb.WnsService#sendBadge
+  - azure-sb.WnsService#sendTile*
+  - azure-sb.WnsService#sendToast*
+  - azure-sb.WnsService#sendRaw
+  - azure-sb.WnsService#send
+  - azure-sb.WnsService#createNativeRegistration
+  - azure-sb.WnsService#createOrUpdateNativeRegistration
+  - azure-sb.WnsService#createTile*Registration
+  - azure-sb.WnsService#createToast*Registration
+  - azure-sb.WnsService#createRawTemplateRegistration
+  - azure-sb.WnsService#createOrUpdateRawTemplateRegistration
+  - azure-sb.WnsService#updateTile*Registration
+  - azure-sb.WnsService#updateToast*Registration
+  - azure-sb.WnsService#updatesRawTemplateRegistration
+  - azure-sb.WnsService#listRegistrationsByChannel
+  langs:
+  - js
+- id: azure-sb.WnsService.#ctor
+  uid: azure-sb.WnsService.#ctor
+  parent: azure-sb.WnsService
+  name: WnsService(notificationHubService)
+  fullName: azure-sb.WnsService.WnsService(notificationHubService)
+  summary: 새 WnsService 개체를 만듭니다.
+  type: Constructor
+  syntax:
+    parameters:
+    - id: notificationHubService
+      type:
+      - undefinedNotificationHubService
+      description: 알림 허브 서비스입니다.
+    content: new WnsService(notificationHubService)
+  langs:
+  - js
+- uid: azure-sb.WnsService#sendBadge
+  id: azure-sb.WnsService#sendBadge
+  parent: azure-sb.WnsService
+  name: sendBadge(tags, value, optionsOrCallback, callback)
+  summary: Wns/badge WNS 알림을 보냅니다.
+  fullName: azure-sb.WnsService.sendBadge(tags, value, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - array
+      - string
+      description: 쉼표로 구분 된 목록 또는 태그 식별자의 배열입니다.
+    - id: value
+      type:
+      - object
+      - string
+      description: >-
+        숫자 값 또는 미리 정의 된 배지 문자를 지정 하는 문자열 값입니다. 번호로이 값은 임의의 유효한 정수를 수락할 수 있습니다. 값이 0 99 +로 배지, 1-99 표시 이면 지정 된 값 및 표시 99 보다 큰 값을 지웁니다.
+
+        참조 http://msdn.microsoft.com/en-us/library/windowsazure/br212849.aspx 대 한 자세한 내용은 합니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: optionsOrCallback.headers
+      type:
+      - object
+      - function
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendBadge(tags, value, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#sendTile*
+  id: azure-sb.WnsService#sendTile*
+  parent: azure-sb.WnsService
+  name: sendTile*(tags, payload, options, callback)
+  summary: '타일 알림을 보냅니다. 참조의 각 타일 템플릿에 대 한 방법이 http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx (예: sendTileSquarePeekImageAndText01).'
+  fullName: azure-sb.WnsService.sendTile*(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: 단일 태그 또는 태그 식입니다.
+    - id: payload
+      type:
+      - object
+      description: 메시지의 페이로드입니다. 여러 페이로드 매개 변수를 전달할 수 있습니다.
+    - id: payload.text{1..n}
+      type:
+      - string
+      description: '지정 된 id (예: text1)를 사용 하 여 텍스트 요소의 값입니다. 텍스트 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: payload.image{1..n}src
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 src 특성의 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: payload.image{1..n}alt
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 alt 특성 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: payload.lang
+      type:
+      - string
+      description: 바인딩 요소의 언어의 값입니다.
+    - id: payload.type
+      type:
+      - string
+      description: 일반 sendTile 메서드에 사용 합니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendTile*(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#sendToast*
+  id: azure-sb.WnsService#sendToast*
+  parent: azure-sb.WnsService
+  name: sendToast*(tags, payload, options, callback)
+  summary: '알림을 메시지를 보냅니다. 참조의 각 타일 템플릿에 대 한 방법이 http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx (예: sendToastText01).'
+  fullName: azure-sb.WnsService.sendToast*(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: 단일 태그 또는 태그 식입니다.
+    - id: payload
+      type:
+      - object
+      description: 메시지의 페이로드입니다.
+    - id: payload.text{1..n}
+      type:
+      - string
+      description: '지정 된 id (예: text1)를 사용 하 여 텍스트 요소의 값입니다. 텍스트 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: payload.image{1..n}src
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 src 특성의 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: payload.image{1..n}alt
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 alt 특성 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: payload.lang
+      type:
+      - string
+      description: 바인딩 요소의 언어의 값입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendToast*(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#sendRaw
+  id: azure-sb.WnsService#sendRaw
+  parent: azure-sb.WnsService
+  name: sendRaw(tags, payload, optionsOrCallback, callback)
+  summary: Wns/raw WNS 알림을 보냅니다.
+  fullName: azure-sb.WnsService.sendRaw(tags, payload, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - array
+      - string
+      description: 쉼표로 구분 된 목록 또는 태그 식별자의 배열입니다.
+    - id: payload
+      type:
+      - object
+      - string
+      description: 원시 페이로드입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: optionsOrCallback.headers
+      type:
+      - object
+      - function
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendRaw(tags, payload, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#send
+  id: azure-sb.WnsService#send
+  parent: azure-sb.WnsService
+  name: send(tags, payload, type, optionsOrCallback, callback)
+  summary: 사용자 지정 WNS 알림을 보냅니다. 페이로드에 대 한 모든 권한을 하려는 경우이 메서드를 사용 합니다.
+  fullName: azure-sb.WnsService.send(tags, payload, type, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - array
+      - string
+      description: 쉼표로 구분 된 목록 또는 태그 식별자의 배열입니다.
+    - id: payload
+      type:
+      - string
+      description: 메시지의 XML 페이로드입니다.
+    - id: type
+      type:
+      - string
+      description: '메시지 형식입니다. X-WNS-유형 헤더에 해당 (옵션: wns/raw, wns/타일 및 wns/알림).'
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: optionsOrCallback.headers
+      type:
+      - object
+      - function
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function send(tags, payload, type, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#createNativeRegistration
+  id: azure-sb.WnsService#createNativeRegistration
+  parent: azure-sb.WnsService
+  name: createNativeRegistration(channel, tags, optionsOrCallback, callback)
+  summary: 기본 WNS 등록을 만듭니다.
+  fullName: azure-sb.WnsService.createNativeRegistration(channel, tags, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createNativeRegistration(channel, tags, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#createOrUpdateNativeRegistration
+  id: azure-sb.WnsService#createOrUpdateNativeRegistration
+  parent: azure-sb.WnsService
+  name: createOrUpdateNativeRegistration(registrationId, channel, tags, optionsOrCallback, callback)
+  summary: 만들거나 기본 WNS 등록을 업데이트 합니다.
+  fullName: azure-sb.WnsService.createOrUpdateNativeRegistration(registrationId, channel, tags, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createOrUpdateNativeRegistration(registrationId, channel, tags, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#createTile*Registration
+  id: azure-sb.WnsService#createTile*Registration
+  parent: azure-sb.WnsService
+  name: createTile*Registration(channel, tags, template, options, callback)
+  summary: '타일 템플릿을 사용 하 여 새 등록을 만듭니다. 참조의 각 타일 템플릿에 대 한 방법이 http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx (예: createTileSquarePeekImageAndText01Registration).'
+  fullName: azure-sb.WnsService.createTile*Registration(channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - object
+      description: 등록의 본문 템플릿입니다.
+    - id: template.text{1..n}
+      type:
+      - string
+      description: '지정 된 id (예: text1)를 사용 하 여 텍스트 요소의 값입니다. 텍스트 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}src
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 src 특성의 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}alt
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 alt 특성 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.lang
+      type:
+      - string
+      description: 바인딩 요소의 언어의 값입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createTile*Registration(channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#createToast*Registration
+  id: azure-sb.WnsService#createToast*Registration
+  parent: azure-sb.WnsService
+  name: createToast*Registration(channel, tags, template, options, callback)
+  summary: '알림 템플릿을 사용 하 여 새 등록을 만듭니다. 참조의 각 타일 템플릿에 대 한 방법이 http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx (예: createToastText01Registration).'
+  fullName: azure-sb.WnsService.createToast*Registration(channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - object
+      description: 등록의 본문 템플릿입니다.
+    - id: template.text{1..n}
+      type:
+      - string
+      description: '지정 된 id (예: text1)를 사용 하 여 텍스트 요소의 값입니다. 텍스트 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}src
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 src 특성의 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}alt
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 alt 특성 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.lang
+      type:
+      - string
+      description: 바인딩 요소의 언어의 값입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createToast*Registration(channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#createRawTemplateRegistration
+  id: azure-sb.WnsService#createRawTemplateRegistration
+  parent: azure-sb.WnsService
+  name: createRawTemplateRegistration(channel, tags, template, optionsOrCallback, callback)
+  summary: '사용자 지정 템플릿 등록을 만듭니다. 이 메서드를 사용 하 여 템플릿 형식에 대 한 모든 권한이 있어야 합니다. X-WNS-유형 헤더를 지정 해야 기억 (가능한 값: wns/알림, wns/바둑판식 배열, wns/badge, wns/raw)입니다.'
+  fullName: azure-sb.WnsService.createRawTemplateRegistration(channel, tags, template, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - string
+      description: 등록에 대 한 템플릿입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: optionsOrCallback.pnsCredentialName
+      type:
+      - object
+      - function
+      description: Pns 자격 증명을 사용 합니다.
+      optional: true
+    - id: optionsOrCallback.headers
+      type:
+      - object
+      - function
+      description: 포함할 wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createRawTemplateRegistration(channel, tags, template, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#createOrUpdateRawTemplateRegistration
+  id: azure-sb.WnsService#createOrUpdateRawTemplateRegistration
+  parent: azure-sb.WnsService
+  name: createOrUpdateRawTemplateRegistration(registrationId, channel, tags, template, optionsOrCallback, callback)
+  summary: '사용자 지정 템플릿 등록을 만듭니다. 이 메서드를 사용 하 여 템플릿 형식에 대 한 모든 권한이 있어야 합니다. X-WNS-유형 헤더를 지정 해야 기억 (가능한 값: wns/알림, wns/바둑판식 배열, wns/badge, wns/raw)입니다.'
+  fullName: azure-sb.WnsService.createOrUpdateRawTemplateRegistration(registrationId, channel, tags, template, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - string
+      description: 등록에 대 한 템플릿입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: optionsOrCallback.pnsCredentialName
+      type:
+      - object
+      - function
+      description: Pns 자격 증명을 사용 합니다.
+      optional: true
+    - id: optionsOrCallback.headers
+      type:
+      - object
+      - function
+      description: 포함할 wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createOrUpdateRawTemplateRegistration(registrationId, channel, tags, template, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#updateTile*Registration
+  id: azure-sb.WnsService#updateTile*Registration
+  parent: azure-sb.WnsService
+  name: updateTile*Registration(registrationId, channel, tags, template, options, callback)
+  summary: '타일 템플릿을 사용 하 여 새 등록을 업데이트합니다. 참조의 각 타일 템플릿에 대 한 방법이 http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx (예: createTileSquarePeekImageAndText01Registration).'
+  fullName: azure-sb.WnsService.updateTile*Registration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - object
+      description: 등록의 본문 템플릿입니다.
+    - id: template.text{1..n}
+      type:
+      - string
+      description: '지정 된 id (예: text1)를 사용 하 여 텍스트 요소의 값입니다. 텍스트 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}src
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 src 특성의 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}alt
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 alt 특성 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.lang
+      type:
+      - string
+      description: 바인딩 요소의 언어의 값입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updateTile*Registration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#updateToast*Registration
+  id: azure-sb.WnsService#updateToast*Registration
+  parent: azure-sb.WnsService
+  name: updateToast*Registration(registrationId, channel, tags, template, options, callback)
+  summary: '알림 템플릿을 사용 하 여 새 등록을 업데이트합니다. 참조의 각 타일 템플릿에 대 한 방법이 http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx (예: updateToastText01Registration).'
+  fullName: azure-sb.WnsService.updateToast*Registration(registrationId, channel, tags, template, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - object
+      description: 등록의 본문 템플릿입니다.
+    - id: template.text{1..n}
+      type:
+      - string
+      description: '지정 된 id (예: text1)를 사용 하 여 텍스트 요소의 값입니다. 텍스트 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}src
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 src 특성의 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.image{1..n}alt
+      type:
+      - string
+      description: '지정 된 id (예: image1)를 사용 하 여 이미지 요소의 alt 특성 값입니다. 이미지 속성 개수는 타일 유형에 따라 달라 집니다.'
+    - id: template.lang
+      type:
+      - string
+      description: 바인딩 요소의 언어의 값입니다.
+    - id: options
+      type:
+      - object
+      description: 요청 옵션입니다.
+      optional: true
+    - id: options.headers
+      type:
+      - object
+      description: Wns 헤더입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updateToast*Registration(registrationId, channel, tags, template, options, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#updatesRawTemplateRegistration
+  id: azure-sb.WnsService#updatesRawTemplateRegistration
+  parent: azure-sb.WnsService
+  name: updatesRawTemplateRegistration(registrationId, channel, tags, template, optionsOrCallback, callback)
+  summary: 원시 템플릿 등록을 업데이트합니다.
+  fullName: azure-sb.WnsService.updatesRawTemplateRegistration(registrationId, channel, tags, template, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: channel
+      type:
+      - string
+      description: 장치 채널 uri입니다.
+    - id: tags
+      type:
+      - string
+      - array
+      description: 태그입니다.
+    - id: template
+      type:
+      - string
+      description: 등록에 대 한 템플릿입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다.
+      optional: true
+    - id: optionsOrCallback.pnsCredentialName
+      type:
+      - object
+      - function
+      description: Pns 자격 증명을 사용 합니다.
+      optional: true
+    - id: optionsOrCallback.headers
+      type:
+      - object
+      - function
+      description: 포함할 wns 헤더입니다.
+      optional: true
+    - id: optionsOrCallback.etag
+      type:
+      - object
+      - function
+      description: 포함할 etag입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function updatesRawTemplateRegistration(registrationId, channel, tags, template, optionsOrCallback, callback)
+  langs:
+  - js
+- uid: azure-sb.WnsService#listRegistrationsByChannel
+  id: azure-sb.WnsService#listRegistrationsByChannel
+  parent: azure-sb.WnsService
+  name: listRegistrationsByChannel(channel, optionsOrCallback, callback)
+  summary: 채널별 등록을 검색합니다.
+  fullName: azure-sb.WnsService.listRegistrationsByChannel(channel, optionsOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: channel
+      type:
+      - string
+      description: 등록 식별자입니다.
+    - id: optionsOrCallback
+      type:
+      - object
+      - function
+      description: 요청 옵션 또는 콜백 함수입니다. 추가 속성이 헤더로 전달 됩니다.
+      optional: true
+    - id: optionsOrCallback.top
+      type:
+      - object
+      - function
+      description: 등록 호출에서 가져올 최대 수를 지정 합니다.
+      optional: true
+    - id: optionsOrCallback.skip
+      type:
+      - object
+      - function
+      description: 호출에서 건너뛸 등록 수를 지정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: 콜백 함수입니다.
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listRegistrationsByChannel(channel, optionsOrCallback, callback)
+  langs:
+  - js

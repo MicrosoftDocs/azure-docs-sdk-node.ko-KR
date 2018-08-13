@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: b03b07d10aee18b8151433a563ad0dfbdff1f115
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064340"
+items:
+- uid: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations
+  id: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations
+  name: MetricDefinitionOperations
+  summary: >-
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [MetricsClient]에 대 한 자동으로 만들어집니다 <xref:azure-monitoring.MetricsClient~MetricsClient>합니다.
+
+    [MetricDefinitions]를 참조 하세요. {@link MetricsClient ~ MetricsClient #metricDefinitions}.
+
+    MetricDefinitionOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-monitoring.MetricDefinitionOperations
+  type: Class
+  children:
+  - azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.#ctor
+  - azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#list
+  langs:
+  - js
+- id: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.#ctor
+  uid: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.#ctor
+  parent: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations
+  name: MetricDefinitionOperations(client)
+  fullName: azure-monitoring.MetricDefinitionOperations.MetricDefinitionOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedMetricsClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new MetricDefinitionOperations(client)
+  langs:
+  - js
+- uid: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#list
+  id: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#list
+  parent: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations
+  name: list(resourceId, metricNames, metricNamespace, callback)
+  summary: 메트릭 정의 나열 작업은 리소스에 대 한 메트릭 정의 나열 합니다.
+  fullName: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.list(resourceId, metricNames, metricNamespace, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: resourceId
+      type:
+      - string
+      description: 리소스의 id입니다. 유틸리티에서 리소스 id 작성기 클래스를 사용 하 여 리소스 id는 빌드할 수 있습니다.
+    - id: metricNames
+      type:
+      - Array
+      description: 메트릭의 이름입니다.
+      optional: true
+    - id: metricNamespace
+      type:
+      - string
+      description: 메트릭의 네임 스페이스입니다. 값이 null 이거나 WindowsAzure.Availability.WindowsAzure.Availability 반환 메트릭을 모니터링 하는 끝점에 대 한 메트릭 정의
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-monitoring.Stream
+      description: 응답 스트림입니다.
+    content: function list(resourceId, metricNames, metricNamespace, callback)
+  langs:
+  - js

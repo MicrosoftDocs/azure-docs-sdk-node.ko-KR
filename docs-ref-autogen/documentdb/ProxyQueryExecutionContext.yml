@@ -1,0 +1,103 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 0de96b9cfcb6a06de36df8c2df8311725add22d0
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064868"
+items:
+- uid: documentdb.ProxyQueryExecutionContext
+  id: documentdb.ProxyQueryExecutionContext
+  name: ProxyQueryExecutionContext
+  summary: ProxyQueryExecutionContext 개체를 나타냅니다. 쿼리는 분할 된 쿼리를 병렬 처리할 수 있는 경우 실행 컨텍스트를 전환 합니다.
+  fullName: documentdb.ProxyQueryExecutionContext
+  type: Class
+  children:
+  - documentdb.ProxyQueryExecutionContext.#ctor
+  - documentdb.ProxyQueryExecutionContext#nextItem
+  - documentdb.ProxyQueryExecutionContext#current
+  - documentdb.ProxyQueryExecutionContext#hasMoreResults
+  langs:
+  - js
+- id: documentdb.ProxyQueryExecutionContext.#ctor
+  uid: documentdb.ProxyQueryExecutionContext.#ctor
+  parent: documentdb.ProxyQueryExecutionContext
+  name: ProxyQueryExecutionContext(documentclient, query, options, fetchFunctions, resourceLink)
+  fullName: documentdb.ProxyQueryExecutionContext.ProxyQueryExecutionContext(documentclient, query, options, fetchFunctions, resourceLink)
+  summary: ProxyQueryExecutionContext 개체를 나타냅니다. 쿼리는 분할 된 쿼리를 병렬 처리할 수 있는 경우 실행 컨텍스트를 전환 합니다.
+  type: Constructor
+  syntax:
+    parameters:
+    - id: documentclient
+      type:
+      - object
+      description: Documentclient 개체입니다.
+    - id: query
+      type:
+      - undefinedSqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - undefinedFeedOptions
+      description: 피드 옵션을 나타냅니다.
+    - id: fetchFunctions
+      type:
+      - undefinedcallback
+      - undefinedArray.<callback>
+      description: 각 데이터 페이지를 검색 하는 함수입니다. 함수의 배열은 둘 이상의 파티션 쿼리를 사용할 수 있습니다.
+    - id: resourceLink
+      type:
+      - string
+      description: 병렬된 쿼리 실행에 대 한 collectionLink 합니다.
+      optional: true
+    content: new ProxyQueryExecutionContext(documentclient, query, options, fetchFunctions, resourceLink)
+  langs:
+  - js
+- uid: documentdb.ProxyQueryExecutionContext#nextItem
+  id: documentdb.ProxyQueryExecutionContext#nextItem
+  parent: documentdb.ProxyQueryExecutionContext
+  name: nextItem(callback)
+  summary: 다음 요소는 ProxyQueryExecutionContext에 대해 제공 된 함수를 실행 합니다.
+  fullName: documentdb.ProxyQueryExecutionContext.nextItem(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - documentdb.callback
+      description: 각 요소에 대해 실행할 함수입니다. 함수는 두 개의 매개 변수 오류, 요소입니다.
+    content: function nextItem(callback)
+  langs:
+  - js
+- uid: documentdb.ProxyQueryExecutionContext#current
+  id: documentdb.ProxyQueryExecutionContext#current
+  parent: documentdb.ProxyQueryExecutionContext
+  name: current(callback)
+  summary: 현재는 ProxyQueryExecutionContext 요소를 검색 합니다.
+  fullName: documentdb.ProxyQueryExecutionContext.current(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - documentdb.callback
+      description: 현재 요소에 대해 실행 될 함수입니다. 함수는 두 개의 매개 변수 오류, 요소입니다.
+    content: function current(callback)
+  langs:
+  - js
+- uid: documentdb.ProxyQueryExecutionContext#hasMoreResults
+  id: documentdb.ProxyQueryExecutionContext#hasMoreResults
+  parent: documentdb.ProxyQueryExecutionContext
+  name: hasMoreResults()
+  summary: 경우 남아 있는 처리 리소스를 결정 합니다.
+  fullName: documentdb.ProxyQueryExecutionContext.hasMoreResults()
+  type: Function
+  syntax:
+    return:
+      type:
+      - Boolean
+      description: 다른 요소는 ProxyQueryExecutionContext에 처리할 수 있으면 true입니다.
+    content: function hasMoreResults()
+  langs:
+  - js

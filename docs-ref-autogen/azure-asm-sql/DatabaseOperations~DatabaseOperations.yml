@@ -1,0 +1,286 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 10ec832091f323e528abe455cf35dd220c726912
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064196"
+items:
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: DatabaseOperations
+  summary: >-
+    Azure SQL Database에서 작동 하는 것에 대 한 모든 작업을 나타냅니다.
+
+    작업을 포함: 만들기, 검색, 업데이트 및 데이터베이스를 삭제 및 데이터베이스에 대 한 이벤트 로그를 가져올 수 있습니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [SqlManagementClient]에 대 한 자동으로 생성 됩니다 {@link SqlManagementClient ~ SqlManagementClient}.
+
+    [데이터베이스]를 참조 하세요. <xref:azure-asm-sql.SqlManagementClient~SqlManagementClient%23databases>합니다.
+
+    DatabaseOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-sql.DatabaseOperations
+  type: Class
+  children:
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations.#ctor
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations#create
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations#deleteMethod
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations#get
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations#getEventLogs
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations#list
+  - azure-asm-sql.DatabaseOperations~DatabaseOperations#update
+  langs:
+  - js
+- id: azure-asm-sql.DatabaseOperations~DatabaseOperations.#ctor
+  uid: azure-asm-sql.DatabaseOperations~DatabaseOperations.#ctor
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: DatabaseOperations(client)
+  fullName: azure-asm-sql.DatabaseOperations.DatabaseOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedSqlManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new DatabaseOperations(client)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations#create
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations#create
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: create(serverName, parameters, callback)
+  summary: Azure SQL Database 서버에 데이터베이스를 만듭니다.
+  fullName: azure-asm-sql.DatabaseOperations~DatabaseOperations.create(serverName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 데이터베이스를 만들 위치를 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-sql.DatabaseCreateParameters
+      description: Create database 작업에 대 한 매개 변수입니다.
+    - id: parameters.name
+      type:
+      - string
+      description: 새 데이터베이스의 이름을 가져오거나 설정 합니다.
+    - id: parameters.edition
+      type:
+      - string
+      description: 새 데이터베이스에 대 한 버전을 가져오거나 설정 합니다.  DatabaseEditions 열거형이이 속성에 대 한 유효한 값을 포함 합니다.
+      optional: true
+    - id: parameters.maximumDatabaseSizeInGB
+      type:
+      - number
+      description: 기가바이트 단위로이 데이터베이스의 최대 크기를 가져오거나 설정 합니다.  MaximumDatabaseSizeInBytes와 함께에서 사용 하는 경우 동의 해야 합니다.
+      optional: true
+    - id: parameters.collationName
+      type:
+      - string
+      description: 새 데이터베이스의 데이터 정렬 이름을 가져오거나 설정 합니다.
+      optional: true
+    - id: parameters.maximumDatabaseSizeInBytes
+      type:
+      - number
+      description: 바이트 단위로 표시 하는이 데이터베이스의 최대 크기를 가져오거나 설정 합니다.  MaximumDatabaseSizeInGB와 함께에서 사용 하는 경우 동의 해야 합니다.
+      optional: true
+    - id: parameters.serviceObjectiveId
+      type:
+      - string
+      description: 데이터베이스에 적용할 서비스 목표 ID를 가져오거나 설정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function create(serverName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations#deleteMethod
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations#deleteMethod
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: deleteMethod(serverName, databaseName, callback)
+  summary: Azure SQL Database 서버에서 데이터베이스를 삭제합니다.
+  fullName: azure-asm-sql.DatabaseOperations~DatabaseOperations.deleteMethod(serverName, databaseName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 데이터베이스가 호스트 되는 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 삭제할 Azure SQL Database의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(serverName, databaseName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations#get
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations#get
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: get(serverName, databaseName, callback)
+  summary: Azure SQL Database에 대 한 정보를 반환합니다.
+  fullName: azure-asm-sql.DatabaseOperations~DatabaseOperations.get(serverName, databaseName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 데이터베이스가 호스트 되는 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 검색할 Azure SQL Database의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function get(serverName, databaseName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations#getEventLogs
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations#getEventLogs
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: getEventLogs(serverName, databaseName, parameters, callback)
+  summary: Azure SQL Database 이벤트 로그에 대 한 정보를 반환합니다.
+  fullName: azure-asm-sql.DatabaseOperations~DatabaseOperations.getEventLogs(serverName, databaseName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 데이터베이스가 호스트 되는 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 검색할 Azure SQL Database의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-sql.DatabaseGetEventLogsParameters
+      description: Get Database Event Logs 작업에 대 한 매개 변수입니다.
+    - id: parameters.startDate
+      type:
+      - date
+      description: 이벤트 로그에 대 한 시작 날짜를 가져오거나 설정 합니다.
+    - id: parameters.intervalSizeInMinutes
+      type:
+      - number
+      description: 분 단위로 간격 크기를 가져오거나 설정 합니다.
+    - id: parameters.eventTypes
+      type:
+      - string
+      description: 검색할 이벤트 유형을 가져오거나 설정 합니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function getEventLogs(serverName, databaseName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations#list
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations#list
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: list(serverName, callback)
+  summary: Azure SQL Database의 컬렉션을 반환 합니다.
+  fullName: azure-asm-sql.DatabaseOperations~DatabaseOperations.list(serverName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: Azure SQL Database 서버를 검색할 데이터베이스의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function list(serverName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseOperations~DatabaseOperations#update
+  id: azure-asm-sql.DatabaseOperations~DatabaseOperations#update
+  parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
+  name: update(serverName, databaseName, parameters, callback)
+  summary: Azure SQL Database의 속성을 업데이트합니다.
+  fullName: azure-asm-sql.DatabaseOperations~DatabaseOperations.update(serverName, databaseName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 데이터베이스가 호스팅되는 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 업데이트할 Azure SQL Database의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-sql.DatabaseUpdateParameters
+      description: 데이터베이스 업데이트 작업에 대 한 매개 변수입니다.
+    - id: parameters.name
+      type:
+      - string
+      description: 데이터베이스의 새 이름을 가져오거나 설정 합니다.
+      optional: true
+    - id: parameters.edition
+      type:
+      - string
+      description: 데이터베이스에 대 한 새 버전을 가져오거나 설정 합니다.
+    - id: parameters.maximumDatabaseSizeInGB
+      type:
+      - number
+      description: 기가바이트 단위로이 데이터베이스의 최대 크기를 가져오거나 설정 합니다.  MaximumDatabaseSizeInBytes를 사용 하 여 사용 하는 경우 동의 해야 합니다.
+      optional: true
+    - id: parameters.maximumDatabaseSizeInBytes
+      type:
+      - number
+      description: 바이트 단위로 표시 하는이 데이터베이스의 최대 크기를 가져오거나 설정 합니다.  MaximumDatabaseSizeInGB를 사용 하 여 사용 하는 경우 동의 해야 합니다.
+      optional: true
+    - id: parameters.serviceObjectiveId
+      type:
+      - string
+      description: 데이터베이스에 적용할 서비스 목표에 대 한 고유 식별자를 가져오거나 설정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function update(serverName, databaseName, parameters, callback)
+  langs:
+  - js

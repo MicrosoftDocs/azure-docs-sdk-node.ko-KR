@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 8caf02800c3a451e62ccd5bda0087a4579f9d078
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064601"
+items:
+- uid: documentdb.PipelinedQueryExecutionContext
+  id: documentdb.PipelinedQueryExecutionContext
+  name: PipelinedQueryExecutionContext
+  summary: PipelinedQueryExecutionContext를 제공합니다. 해당 piplelines 위쪽과 orderby 실행 컨텍스트에 필요한 경우
+  fullName: documentdb.PipelinedQueryExecutionContext
+  type: Class
+  children:
+  - documentdb.PipelinedQueryExecutionContext.#ctor
+  langs:
+  - js
+- id: documentdb.PipelinedQueryExecutionContext.#ctor
+  uid: documentdb.PipelinedQueryExecutionContext.#ctor
+  parent: documentdb.PipelinedQueryExecutionContext
+  name: PipelinedQueryExecutionContext(documentclient, query, options, fetchFunctions, resourceLink)
+  fullName: documentdb.PipelinedQueryExecutionContext.PipelinedQueryExecutionContext(documentclient, query, options, fetchFunctions, resourceLink)
+  summary: PipelinedQueryExecutionContext를 제공합니다. 해당 piplelines 위쪽과 orderby 실행 컨텍스트에 필요한 경우
+  type: Constructor
+  syntax:
+    parameters:
+    - id: documentclient
+      type:
+      - object
+      description: Documentclient 개체입니다.
+    - id: query
+      type:
+      - undefinedSqlQuerySpec
+      - string
+      description: SQL 쿼리입니다.
+    - id: options
+      type:
+      - undefinedFeedOptions
+      description: 피드 옵션을 나타냅니다.
+    - id: fetchFunctions
+      type:
+      - undefinedcallback
+      - undefinedArray.<callback>
+      description: 각 데이터 페이지를 검색 하는 함수입니다. 함수의 배열은 둘 이상의 파티션 쿼리를 사용할 수 있습니다.
+    - id: resourceLink
+      type:
+      - string
+      description: 병렬된 쿼리 실행에 대 한 collectionLink 합니다.
+      optional: true
+    content: new PipelinedQueryExecutionContext(documentclient, query, options, fetchFunctions, resourceLink)
+  langs:
+  - js

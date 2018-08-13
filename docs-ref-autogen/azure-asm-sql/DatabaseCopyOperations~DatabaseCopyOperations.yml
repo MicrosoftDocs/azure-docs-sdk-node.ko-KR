@@ -1,0 +1,228 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 69cd8be33fc74bdf792e221b491c62d90f8c69d5
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064181"
+items:
+- uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: DatabaseCopyOperations
+  summary: >-
+    SQL Database 관리 API를 나타내는 SQL Server 데이터베이스 복사본에 대 한 구독을 관리 하기 위한 작업이 포함 됩니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [SqlManagementClient]에 대 한 자동으로 생성 됩니다 {@link SqlManagementClient ~ SqlManagementClient}.
+
+    [DatabaseCopies]를 참조 하세요. {@link SqlManagementClient ~ SqlManagementClient #databaseCopies}.
+
+    DatabaseCopyOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-sql.DatabaseCopyOperations
+  type: Class
+  children:
+  - azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.#ctor
+  - azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#create
+  - azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#deleteMethod
+  - azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#get
+  - azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#list
+  - azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#update
+  langs:
+  - js
+- id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.#ctor
+  uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.#ctor
+  parent: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: DatabaseCopyOperations(client)
+  fullName: azure-asm-sql.DatabaseCopyOperations.DatabaseCopyOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedSqlManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new DatabaseCopyOperations(client)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#create
+  id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#create
+  parent: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: create(serverName, databaseName, parameters, callback)
+  summary: SQL Server 데이터베이스 복사본을 시작합니다.
+  fullName: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.create(serverName, databaseName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 원본 데이터베이스가 있는 SQL 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 원본 데이터베이스의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-sql.DatabaseCopyCreateParameters
+      description: 데이터베이스 만들기에 대 한 추가 매개 변수는 작업을 복사합니다.
+    - id: parameters.partnerServer
+      type:
+      - string
+      description: 복사 대상 서버의 이름을 가져옵니다.
+    - id: parameters.partnerDatabase
+      type:
+      - string
+      description: 복사 대상 데이터베이스의 이름을 가져옵니다.
+    - id: parameters.isContinuous
+      type:
+      - boolean
+      description: 복사를 연속 해야 하는지 여부를 나타내는 값을 가져옵니다.
+    - id: parameters.isOfflineSecondary
+      type:
+      - boolean
+      description: 오프 라인 보조 복사본 인지 여부를 나타내는 값을 가져옵니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function create(serverName, databaseName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#deleteMethod
+  id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#deleteMethod
+  parent: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: deleteMethod(serverName, databaseName, databaseCopyName, callback)
+  summary: SQL Server 데이터베이스 복사본을 중지합니다.
+  fullName: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.deleteMethod(serverName, databaseName, databaseCopyName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 원본 또는 대상 SQL Server 인스턴스의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 데이터베이스의 이름입니다.
+    - id: databaseCopyName
+      type:
+      - azure-asm-sql.Guid
+      description: 중지 하려면 데이터베이스 복사본에 대 한 고유 식별자입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(serverName, databaseName, databaseCopyName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#get
+  id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#get
+  parent: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: get(serverName, databaseName, databaseCopyName, callback)
+  summary: SQL Server 데이터베이스 복사본에 대 한 정보를 검색합니다.
+  fullName: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.get(serverName, databaseName, databaseCopyName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 원본 또는 대상 SQL Server 인스턴스의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 데이터베이스의 이름입니다.
+    - id: databaseCopyName
+      type:
+      - string
+      description: 검색할 데이터베이스 복사본에 대 한 고유 식별자입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function get(serverName, databaseName, databaseCopyName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#list
+  id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#list
+  parent: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: list(serverName, databaseName, callback)
+  summary: 데이터베이스에 대 한 SQL Server 데이터베이스 복사본의 목록을 검색 합니다.
+  fullName: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.list(serverName, databaseName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 쿼리할 데이터베이스 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 쿼리할 데이터베이스의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function list(serverName, databaseName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#update
+  id: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations#update
+  parent: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations
+  name: update(serverName, databaseName, databaseCopyName, parameters, callback)
+  summary: SQL Server 데이터베이스 복사본을 업데이트합니다.
+  fullName: azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations.update(serverName, databaseName, databaseCopyName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 원본 또는 대상 SQL Server 인스턴스의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 데이터베이스의 이름입니다.
+    - id: databaseCopyName
+      type:
+      - azure-asm-sql.Guid
+      description: 업데이트 데이터베이스 복사본에 대 한 고유 식별자입니다.
+    - id: parameters
+      type:
+      - azure-asm-sql.DatabaseCopyUpdateParameters
+      description: 업데이트 데이터베이스 복사 작업에 대 한 추가 매개 변수입니다.
+    - id: parameters.isForcedTerminate
+      type:
+      - boolean
+      description: 데이터베이스 삭제 작업을 강제 또는 친숙 한 종료 하면 여부를 나타내는 값을 가져오거나 설정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function update(serverName, databaseName, databaseCopyName, parameters, callback)
+  langs:
+  - js

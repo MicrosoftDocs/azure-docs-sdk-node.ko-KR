@@ -1,0 +1,199 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 3c868c101ab224a55ed617f58210295e61ce49c7
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064187"
+items:
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: ProfileOperations
+  summary: >-
+    Traffic Manager API에는 Traffic Manager 프로필을 관리 하기 위한 작업이 포함 됩니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [TrafficManagerManagementClient]에 대 한 자동으로 생성 됩니다 {@link TrafficManagerManagementClient ~ TrafficManagerManagementClient}.
+
+    [프로필]를 참조 하세요. {@link TrafficManagerManagementClient ~ TrafficManagerManagementClient #profiles}.
+
+    ProfileOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-trafficmanager.ProfileOperations
+  type: Class
+  children:
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations.#ctor
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations#checkDnsPrefixAvailability
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations#create
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations#deleteMethod
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations#get
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations#list
+  - azure-asm-trafficmanager.ProfileOperations~ProfileOperations#update
+  langs:
+  - js
+- id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.#ctor
+  uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.#ctor
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: ProfileOperations(client)
+  fullName: azure-asm-trafficmanager.ProfileOperations.ProfileOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedTrafficManagerManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new ProfileOperations(client)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#checkDnsPrefixAvailability
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#checkDnsPrefixAvailability
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: checkDnsPrefixAvailability(dnsName, callback)
+  summary: 사용 하려는 DNS 이름입니다. 포함 해야 합니다. trafficmanager.net 이름에 있습니다.  (참조 http://msdn.microsoft.com/en-us/library/dn510368.aspx 자세한)
+  fullName: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.checkDnsPrefixAvailability(dnsName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: dnsName
+      type:
+      - string
+      description: 사용 하려는 DNS 이름
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: 응답 스트림입니다.
+    content: function checkDnsPrefixAvailability(dnsName, callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#create
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#create
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: create(name, domainName, callback)
+  summary: 지정 된 구독이 소유 하 고 도메인 이름에 대 한 새 프로필을 만듭니다.  (참조 http://msdn.microsoft.com/en-us/library/hh758254.aspx 자세한)
+  fullName: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.create(name, domainName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: name
+      type:
+      - string
+      description: 프로필의 이름입니다.
+    - id: domainName
+      type:
+      - string
+      description: 만들어지는 프로필에 대 한 도메인의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: 응답 스트림입니다.
+    content: function create(name, domainName, callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#deleteMethod
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#deleteMethod
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: deleteMethod(profileName, callback)
+  summary: 프로필 및 해당 정의 모두 삭제합니다. 이 작업을 되돌릴 수 없습니다.  (참조 http://msdn.microsoft.com/en-us/library/hh758256.aspx 자세한)
+  fullName: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.deleteMethod(profileName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: profileName
+      type:
+      - string
+      description: 프로필의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(profileName, callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#get
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#get
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: get(profileName, callback)
+  summary: 프로필 모든 정의 버전 및 해당 상태를 포함 하 여 세부 정보를 반환 합니다.  (참조 http://msdn.microsoft.com/en-us/library/hh758248.aspx 자세한)
+  fullName: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.get(profileName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: profileName
+      type:
+      - string
+      description: 프로필의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: 응답 스트림입니다.
+    content: function get(profileName, callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#list
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#list
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: list(callback)
+  summary: 구독을 소유 하는 모든 프로필을 반환 합니다.  (참조 http://msdn.microsoft.com/en-us/library/hh758249.aspx 자세한)
+  fullName: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.list(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: 응답 스트림입니다.
+    content: function list(callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#update
+  id: azure-asm-trafficmanager.ProfileOperations~ProfileOperations#update
+  parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
+  name: update(profileName, profileStatus, definitionVersionNumber, callback)
+  summary: 사용 하거나 프로필을 사용 하지 않도록 설정 합니다.  (참조 http://msdn.microsoft.com/en-us/library/hh758250.aspx 자세한)
+  fullName: azure-asm-trafficmanager.ProfileOperations~ProfileOperations.update(profileName, profileStatus, definitionVersionNumber, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: profileName
+      type:
+      - string
+      description: 프로필의 이름입니다.
+    - id: profileStatus
+      type:
+      - azure-asm-trafficmanager.ProfileDefinitionStatus
+      description: 프로필을 사용 하도록 설정 또는 해제 여부를 지정 합니다.
+    - id: definitionVersionNumber
+      type:
+      - Number
+      description: 프로필과 연결 된 정의의 버전
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: 응답 스트림입니다.
+    content: function update(profileName, profileStatus, definitionVersionNumber, callback)
+  langs:
+  - js

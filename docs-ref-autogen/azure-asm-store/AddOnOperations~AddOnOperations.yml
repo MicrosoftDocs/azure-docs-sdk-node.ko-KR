@@ -1,0 +1,265 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 4aa36e85e5813f72e46523bfff4befffc8ec2bc6
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064190"
+items:
+- uid: azure-asm-store.AddOnOperations~AddOnOperations
+  id: azure-asm-store.AddOnOperations~AddOnOperations
+  name: AddOnOperations
+  summary: >-
+    Windows Azure 저장소 서비스에서 저장소 추가 기능을 사용 하기 위한 REST 작업을 제공 합니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [StoreManagementClient]에 대 한 자동으로 생성 됩니다 {@link StoreManagementClient ~ StoreManagementClient}.
+
+    [추가 기능]를 참조 하세요. <xref:azure-asm-store.StoreManagementClient~StoreManagementClient%23addOns>합니다.
+
+    AddOnOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-store.AddOnOperations
+  type: Class
+  children:
+  - azure-asm-store.AddOnOperations~AddOnOperations.#ctor
+  - azure-asm-store.AddOnOperations~AddOnOperations#beginCreating
+  - azure-asm-store.AddOnOperations~AddOnOperations#beginDeleting
+  - azure-asm-store.AddOnOperations~AddOnOperations#create
+  - azure-asm-store.AddOnOperations~AddOnOperations#deleteMethod
+  - azure-asm-store.AddOnOperations~AddOnOperations#update
+  langs:
+  - js
+- id: azure-asm-store.AddOnOperations~AddOnOperations.#ctor
+  uid: azure-asm-store.AddOnOperations~AddOnOperations.#ctor
+  parent: azure-asm-store.AddOnOperations~AddOnOperations
+  name: AddOnOperations(client)
+  fullName: azure-asm-store.AddOnOperations.AddOnOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedStoreManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new AddOnOperations(client)
+  langs:
+  - js
+- uid: azure-asm-store.AddOnOperations~AddOnOperations#beginCreating
+  id: azure-asm-store.AddOnOperations~AddOnOperations#beginCreating
+  parent: azure-asm-store.AddOnOperations~AddOnOperations
+  name: beginCreating(cloudServiceName, resourceName, addOnName, parameters, callback)
+  summary: 저장소 항목 만들기 작업을 Windows Azure 구독에서 Windows Azure 저장소 항목을 만듭니다.
+  fullName: azure-asm-store.AddOnOperations~AddOnOperations.beginCreating(cloudServiceName, resourceName, addOnName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: cloudServiceName
+      type:
+      - string
+      description: 이 저장소 항목을 할당할 클라우드 서비스의 이름입니다.
+    - id: resourceName
+      type:
+      - string
+      description: 이 리소스의 이름입니다.
+    - id: addOnName
+      type:
+      - string
+      description: 이름에 추가 합니다.
+    - id: parameters
+      type:
+      - azure-asm-store.AddOnCreateParameters
+      description: Create procedure 작동 하는 방법을 지정 하는 데 사용 하는 매개 변수입니다.
+    - id: parameters.type
+      type:
+      - string
+      description: 만들려는 저장소 항목의 형식입니다.
+    - id: parameters.plan
+      type:
+      - string
+      description: 이 저장소 추가 기능에 대해 선택한 계획입니다.
+    - id: parameters.promotionCode
+      type:
+      - string
+      description: 이 저장소 추가 기능에 대 한 프로 모션 코드입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-store.Stream
+      description: 응답 스트림입니다.
+    content: function beginCreating(cloudServiceName, resourceName, addOnName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-store.AddOnOperations~AddOnOperations#beginDeleting
+  id: azure-asm-store.AddOnOperations~AddOnOperations#beginDeleting
+  parent: azure-asm-store.AddOnOperations~AddOnOperations
+  name: beginDeleting(cloudServiceName, resourceProviderNamespace, resourceProviderType, resourceProviderName, callback)
+  summary: 저장소 항목 삭제 작업에 대 한 구독 다시 프로 비전 하는 Windows Azure 저장소 항목을 삭제 합니다.
+  fullName: azure-asm-store.AddOnOperations~AddOnOperations.beginDeleting(cloudServiceName, resourceProviderNamespace, resourceProviderType, resourceProviderName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: cloudServiceName
+      type:
+      - string
+      description: 이 저장소 항목을 할당할 클라우드 서비스의 이름입니다.
+    - id: resourceProviderNamespace
+      type:
+      - string
+      description: 이 저장소 항목 상주 하는 네임 스페이스입니다.
+    - id: resourceProviderType
+      type:
+      - string
+      description: 삭제 될 저장소 항목의 형식입니다.
+    - id: resourceProviderName
+      type:
+      - string
+      description: 이 리소스 공급자의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-store.Stream
+      description: 응답 스트림입니다.
+    content: function beginDeleting(cloudServiceName, resourceProviderNamespace, resourceProviderType, resourceProviderName, callback)
+  langs:
+  - js
+- uid: azure-asm-store.AddOnOperations~AddOnOperations#create
+  id: azure-asm-store.AddOnOperations~AddOnOperations#create
+  parent: azure-asm-store.AddOnOperations~AddOnOperations
+  name: create(cloudServiceName, resourceName, addOnName, parameters, callback)
+  summary: 저장소 항목 만들기 작업을 Windows Azure 구독에서 Windows Azure 저장소 항목을 만듭니다.
+  fullName: azure-asm-store.AddOnOperations~AddOnOperations.create(cloudServiceName, resourceName, addOnName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: cloudServiceName
+      type:
+      - string
+      description: 이 저장소 항목을 할당할 클라우드 서비스의 이름입니다.
+    - id: resourceName
+      type:
+      - string
+      description: 이 리소스의 이름입니다.
+    - id: addOnName
+      type:
+      - string
+      description: 이름에 추가 합니다.
+    - id: parameters
+      type:
+      - azure-asm-store.AddOnCreateParameters
+      description: Create procedure 작동 하는 방법을 지정 하는 데 사용 하는 매개 변수입니다.
+    - id: parameters.type
+      type:
+      - string
+      description: 만들려는 저장소 항목의 형식입니다.
+    - id: parameters.plan
+      type:
+      - string
+      description: 이 저장소 추가 기능에 대해 선택한 계획입니다.
+    - id: parameters.promotionCode
+      type:
+      - string
+      description: 이 저장소 추가 기능에 대 한 프로 모션 코드입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-store.Stream
+      description: 응답 스트림입니다.
+    content: function create(cloudServiceName, resourceName, addOnName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-store.AddOnOperations~AddOnOperations#deleteMethod
+  id: azure-asm-store.AddOnOperations~AddOnOperations#deleteMethod
+  parent: azure-asm-store.AddOnOperations~AddOnOperations
+  name: deleteMethod(cloudServiceName, resourceProviderNamespace, resourceProviderType, resourceProviderName, callback)
+  summary: 저장소 항목 삭제 작업에 대 한 구독 프로 비전 되는 Windows Azure Storeentries를 삭제 합니다.
+  fullName: azure-asm-store.AddOnOperations~AddOnOperations.deleteMethod(cloudServiceName, resourceProviderNamespace, resourceProviderType, resourceProviderName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: cloudServiceName
+      type:
+      - string
+      description: 이 저장소 항목을 할당할 클라우드 서비스의 이름입니다.
+    - id: resourceProviderNamespace
+      type:
+      - string
+      description: 이 저장소 항목 상주 하는 네임 스페이스입니다.
+    - id: resourceProviderType
+      type:
+      - string
+      description: 삭제 될 저장소 항목의 형식입니다.
+    - id: resourceProviderName
+      type:
+      - string
+      description: 이 리소스 공급자의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-store.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(cloudServiceName, resourceProviderNamespace, resourceProviderType, resourceProviderName, callback)
+  langs:
+  - js
+- uid: azure-asm-store.AddOnOperations~AddOnOperations#update
+  id: azure-asm-store.AddOnOperations~AddOnOperations#update
+  parent: azure-asm-store.AddOnOperations~AddOnOperations
+  name: update(cloudServiceName, resourceName, addOnName, parameters, callback)
+  summary: 저장소 항목 업데이트 작업을 Windows Azure 구독에서 Windows Azure 저장소 항목을 만듭니다.
+  fullName: azure-asm-store.AddOnOperations~AddOnOperations.update(cloudServiceName, resourceName, addOnName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: cloudServiceName
+      type:
+      - string
+      description: 이 저장소 항목을 할당할 클라우드 서비스의 이름입니다.
+    - id: resourceName
+      type:
+      - string
+      description: 이 리소스의 이름입니다.
+    - id: addOnName
+      type:
+      - string
+      description: 추가 기능 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-store.AddOnUpdateParameters
+      description: Create procedure 작동 하는 방법을 지정 하는 데 사용 하는 매개 변수입니다.
+    - id: parameters.type
+      type:
+      - string
+      description: 만들려는 저장소 항목의 형식입니다.
+    - id: parameters.plan
+      type:
+      - string
+      description: 이 저장소 추가 기능에 대해 선택한 계획입니다.
+    - id: parameters.promotionCode
+      type:
+      - string
+      description: 이 저장소 추가 기능에 대 한 프로 모션 코드입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-store.Stream
+      description: 응답 스트림입니다.
+    content: function update(cloudServiceName, resourceName, addOnName, parameters, callback)
+  langs:
+  - js
