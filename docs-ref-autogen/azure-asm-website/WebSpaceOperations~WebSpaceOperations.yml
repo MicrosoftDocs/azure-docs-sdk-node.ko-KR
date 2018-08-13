@@ -1,0 +1,234 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: c9ef60fc879ec8841b7d37c89fb7a2d449893d74
+ms.sourcegitcommit: f774f8ce6b26593f73a5893bfa47f9c510fc51a7
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "40065132"
+items:
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: WebSpaceOperations
+  summary: >-
+    구독에서 웹 공간을 관리 하기 위한 작업입니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [WebSiteManagementClient]에 대 한 자동으로 생성 됩니다 {@link WebSiteManagementClient ~ WebSiteManagementClient}.
+
+    [웹 공간]를 참조 하세요. {@link WebSiteManagementClient ~ WebSiteManagementClient #webSpaces}.
+
+    WebSpaceOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-website.WebSpaceOperations
+  type: Class
+  children:
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#createPublishingUser
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#get
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#getDnsSuffix
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#list
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#listGeoRegions
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#listPublishingUsers
+  - azure-asm-website.WebSpaceOperations~WebSpaceOperations#listWebSites
+  langs:
+  - js
+- id: azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor
+  uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: WebSpaceOperations(client)
+  fullName: azure-asm-website.WebSpaceOperations.WebSpaceOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedWebSiteManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new WebSpaceOperations(client)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#createPublishingUser
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#createPublishingUser
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: createPublishingUser(username, password, parametersOrCallback, callback)
+  summary: 이 웹 공간에 게시할 수 있는 권한이 있는 원본 제어 사용자를 만듭니다.
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.createPublishingUser(username, password, parametersOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: username
+      type:
+      - string
+      description: 사용자 이름입니다.
+    - id: password
+      type:
+      - string
+      description: 사용자 암호입니다.
+    - id: parametersOrCallback
+      type:
+      - azure-asm-website.WebSpacesCreatePublishingUserParameters
+      description: 게시 사용자 만들기 작업에 제공 되는 매개 변수입니다.
+      optional: true
+    - id: parametersOrCallback.name
+      type:
+      - string
+      description: 게시 사용자 이름입니다.
+      optional: true
+    - id: parametersOrCallback.publishingPassword
+      type:
+      - string
+      description: 게시 사용자 암호입니다.
+      optional: true
+    - id: parametersOrCallback.publishingUserName
+      type:
+      - string
+      description: 게시 사용자 사용자 이름입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function createPublishingUser(username, password, parametersOrCallback, callback)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#get
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#get
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: get(webSpaceName, callback)
+  summary: HTTP GET 요청을 실행 하 여 지정 된 웹 공간 이름에 대 한 세부 정보를 검색할 수 있습니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/dn167017.aspx 자세한)
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.get(webSpaceName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: webSpaceName
+      type:
+      - string
+      description: 웹 공간의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function get(webSpaceName, callback)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#getDnsSuffix
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#getDnsSuffix
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: getDnsSuffix(callback)
+  summary: 이 구독에 대 한 DNS 접미사를 가져옵니다.
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.getDnsSuffix(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function getDnsSuffix(callback)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#list
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#list
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: list(callback)
+  summary: GET 요청을 실행 하 여 현재 구독에서 웹 공간을 나열할 수 있습니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/dn166961.aspx 자세한)
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.list(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function list(callback)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#listGeoRegions
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#listGeoRegions
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: listGeoRegions(callback)
+  summary: 이 웹 공간에 대 한 사용 가능한 지리적 영역을 가져옵니다.
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.listGeoRegions(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function listGeoRegions(callback)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#listPublishingUsers
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#listPublishingUsers
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: listPublishingUsers(callback)
+  summary: 소스 제어 사용자가이 웹 공간에 게시할 수를 가져옵니다.
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.listPublishingUsers(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function listPublishingUsers(callback)
+  langs:
+  - js
+- uid: azure-asm-website.WebSpaceOperations~WebSpaceOperations#listWebSites
+  id: azure-asm-website.WebSpaceOperations~WebSpaceOperations#listWebSites
+  parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
+  name: listWebSites(webSpaceName, parametersOrCallback, callback)
+  summary: HTTP GET 요청을 실행 하 여 웹 공간에서 모든 웹 사이트의 목록을 검색할 수 있습니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/dn236429.aspx 자세한)
+  fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.listWebSites(webSpaceName, parametersOrCallback, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: webSpaceName
+      type:
+      - string
+      description: 웹 공간의 이름입니다.
+    - id: parametersOrCallback
+      type:
+      - azure-asm-website.WebSiteListParameters
+      description: 추가 매개 변수입니다.
+      optional: true
+    - id: parametersOrCallback.propertiesToInclude
+      type:
+      - array
+      description: 반환할 추가 매개 변수 이름의 목록을 지정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-website.Stream
+      description: 응답 스트림입니다.
+    content: function listWebSites(webSpaceName, parametersOrCallback, callback)
+  langs:
+  - js

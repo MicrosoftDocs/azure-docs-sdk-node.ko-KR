@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: fc9b23253ca4ce2e6ab56c856509d5e5dd75f750
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40067482"
+items:
+- uid: azure-event-hubs.retry
+  name: retry
+  children: []
+  type: function
+  langs:
+  - typeScript
+  summary: 선형으로 지정 된 작업을 다시 시도 하려고 횟수 각 재시도 사이의 지연 시간을 지정 합니다. 다시 시도 재시도 가능한 오류인 경우에 실행 됩니다.
+  syntax:
+    content: 'function retry<T>(operation: () => Promise<T>, times?: number, delayInSeconds?: number)'
+    parameters:
+    - id: operation
+      type:
+      - () => Promise<T>
+      description: 다시 시도해 야 하는 작업입니다.
+    - id: times
+      type:
+      - number
+      description: ''
+      optional: true
+    - id: delayInSeconds
+      type:
+      - number
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<T>
+  package: azure-event-hubs

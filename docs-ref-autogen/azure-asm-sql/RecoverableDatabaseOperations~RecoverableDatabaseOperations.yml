@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: bf6aedf3528cf423db94b2360bafd8ed15b181d3
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064154"
+items:
+- uid: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
+  id: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
+  name: RecoverableDatabaseOperations
+  summary: >-
+    복구할 수 있는 Azure SQL Database를 시작 하는 것에 대 한 작업을 포함 합니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [SqlManagementClient]에 대 한 자동으로 생성 됩니다 {@link SqlManagementClient ~ SqlManagementClient}.
+
+    [RecoverableDatabases]를 참조 하세요. {@link SqlManagementClient ~ SqlManagementClient #recoverableDatabases}.
+
+    RecoverableDatabaseOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-sql.RecoverableDatabaseOperations
+  type: Class
+  children:
+  - azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.#ctor
+  - azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#get
+  - azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#list
+  langs:
+  - js
+- id: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.#ctor
+  uid: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.#ctor
+  parent: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
+  name: RecoverableDatabaseOperations(client)
+  fullName: azure-asm-sql.RecoverableDatabaseOperations.RecoverableDatabaseOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedSqlManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new RecoverableDatabaseOperations(client)
+  langs:
+  - js
+- uid: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#get
+  id: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#get
+  parent: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
+  name: get(serverName, databaseName, callback)
+  summary: 복구할 수 있는 Azure SQL Database에 대 한 정보를 반환합니다.
+  fullName: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.get(serverName, databaseName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 데이터베이스를 호스팅하는 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: databaseName
+      type:
+      - string
+      description: 가져올 복구할 수 있는 Azure SQL Database의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function get(serverName, databaseName, callback)
+  langs:
+  - js
+- uid: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#list
+  id: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#list
+  parent: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
+  name: list(serverName, callback)
+  summary: 지정된 된 서버에서 복구할 수 있는 데이터베이스의 컬렉션을 반환 합니다.
+  fullName: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.list(serverName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serverName
+      type:
+      - string
+      description: 호스트 된 데이터베이스를 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function list(serverName, callback)
+  langs:
+  - js

@@ -1,0 +1,482 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: b4e03fb52861a9bc6680bace6ed9e9af650863db
+ms.sourcegitcommit: f774f8ce6b26593f73a5893bfa47f9c510fc51a7
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "40065073"
+items:
+- uid: ms-rest
+  name: ms-rest
+  langs:
+  - js
+  type: package
+  summary: ''
+  children:
+  - ms-rest.WebResource
+  - ms-rest.ServiceClient
+  - ms-rest.HttpOperationResponse
+  - ms-rest.SystemErrorRetryPolicyFilter
+  - ms-rest.ExponentialRetryPolicyFilter
+  - ms-rest.TokenCredentials
+  - ms-rest.BasicAuthenticationCredentials
+  - ms-rest.ApiKeyCredentials
+  - ms-rest.create
+  - ms-rest.setAgent
+  - ms-rest.checkRPNotRegisteredError
+  - ms-rest.extractSubscriptionUrl
+  - ms-rest.registerRP
+  - ms-rest.getRegistrationStatus
+  - ms-rest.createWithSink
+  - ms-rest.createCompositeFilter
+  - ms-rest.interimStream
+  - ms-rest.serializeObject
+  - ms-rest.serialize
+  - ms-rest.deserialize
+  - ms-rest.urlIsHTTPS
+  - ms-rest.objectIsNull
+  - ms-rest.encodeUri
+  - ms-rest.stripResponse
+  - ms-rest.stripRequest
+  - ms-rest.isValidUuid
+  - ms-rest.objectValues
+  - ms-rest.generateUuid
+  - ms-rest.homeDir
+- uid: ms-rest.create
+  id: ms-rest.create
+  name: create()
+  summary: formDataFilter-이 필터는 resposnsible 경우 Content-type 헤더 ' application/x-www-형식-urlencoded' 요청 개체 폼 속성 설정
+  fullName: ms-rest.create()
+  type: Function
+  syntax:
+    content: function create()
+  langs:
+  - js
+- uid: ms-rest.setAgent
+  id: ms-rest.setAgent
+  name: setAgent(resouce, proxy)
+  summary: 요청 결과 대해 사용 하도록 에이전트에 따라 달라 집니다 프록시 설정 및 프로토콜
+  fullName: ms-rest.setAgent(resouce, proxy)
+  type: Function
+  syntax:
+    parameters:
+    - id: resouce
+      type:
+      - object
+      description: 요청에 대 한 요청 옵션입니다.
+    - id: proxy
+      type:
+      - object
+      description: 프록시에 대 한 구문 분석 된 url입니다.
+    content: function setAgent(resouce, proxy)
+  langs:
+  - js
+- uid: ms-rest.checkRPNotRegisteredError
+  id: ms-rest.checkRPNotRegisteredError
+  name: checkRPNotRegisteredError(body)
+  summary: 오류 코드 및 응답 상태 코드 409 연관 된 메시지의 유효성을 검사 합니다. 등록 되지 않은 RP의 일치 하는 경우 정의 되지 않은 반환 다른 RP의 이름을 반환 합니다.
+  fullName: ms-rest.checkRPNotRegisteredError(body)
+  type: Function
+  syntax:
+    parameters:
+    - id: body
+      type:
+      - string
+      description: 원래 요청을 수행한 후 받은 응답 본문입니다.
+    return:
+      type:
+      - string
+      description: 다른 조건을 충족 하면 RP의 결과 이름이 정의 되지 않았습니다.
+    content: function checkRPNotRegisteredError(body)
+  langs:
+  - js
+- uid: ms-rest.extractSubscriptionUrl
+  id: ms-rest.extractSubscriptionUrl
+  name: extractSubscriptionUrl(url)
+  summary: 구독 직후 URL의 첫 번째 부분을 추출합니다. https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/
+  fullName: ms-rest.extractSubscriptionUrl(url)
+  type: Function
+  syntax:
+    parameters:
+    - id: url
+      type:
+      - string
+      description: 원래 요청 url
+    return:
+      type:
+      - string
+      description: urlPrefix 위에서 설명한 것 처럼 url 접두사입니다.
+    content: function extractSubscriptionUrl(url)
+  langs:
+  - js
+- uid: ms-rest.registerRP
+  id: ms-rest.registerRP
+  name: registerRP(urlPrefix, provider, originalRequest, callback)
+  summary: 지정된 된 공급자를 등록합니다.
+  fullName: ms-rest.registerRP(urlPrefix, provider, originalRequest, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: urlPrefix
+      type:
+      - string
+      description: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/
+    - id: provider
+      type:
+      - string
+      description: 등록할 공급자 이름입니다.
+    - id: originalRequest
+      type:
+      - object
+      description: 공급자 등록 되어 있지 않은지 메시지와 함께 409 응답을 반환 하는 사용자가 전송 된 원래 요청 합니다.
+    - id: callback
+      type:
+      - ms-rest.registrationCallback
+      description: RP 등록을 처리 하는 콜백
+    content: function registerRP(urlPrefix, provider, originalRequest, callback)
+  langs:
+  - js
+- uid: ms-rest.getRegistrationStatus
+  id: ms-rest.getRegistrationStatus
+  name: getRegistrationStatus(url, originalRequest, callback)
+  summary: >-
+    등록 된 공급자의 등록 상태를 폴링합니다. 폴링 30 초 간격으로 발생합니다.
+
+    응답 본문의 registrationState 속성을 '등록'까지 폴링 현상이 발생 합니다.
+  fullName: ms-rest.getRegistrationStatus(url, originalRequest, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: url
+      type:
+      - string
+      description: 요청 폴링에 대 한 url
+    - id: originalRequest
+      type:
+      - object
+      description: 공급자 등록 되어 있지 않은지 메시지와 함께 409 응답을 반환 하는 사용자가 전송 된 원래 요청 합니다.
+    - id: callback
+      type:
+      - ms-rest.registrationCallback
+      description: RP 등록을 처리 하는 콜백.
+    content: function getRegistrationStatus(url, originalRequest, callback)
+  langs:
+  - js
+- uid: ms-rest.createWithSink
+  id: ms-rest.createWithSink
+  name: createWithSink()
+  summary: 지정 된 싱크 함수를 사용 하 여 http 요청을 실제로 요청 라이브러리에 대 한 호출으로 끝나는 새 http 클라이언트 파이프라인을 만듭니다.
+  fullName: ms-rest.createWithSink()
+  type: Function
+  syntax:
+    return:
+      description: 함수 (요청, 콜백)-요청을 작동 합니다.
+    content: function createWithSink()
+  langs:
+  - js
+- uid: ms-rest.createCompositeFilter
+  id: ms-rest.createCompositeFilter
+  name: createCompositeFilter(filters)
+  summary: 인수 목록에 지정 된 모든 필터의 결합 된 새 필터를 만듭니다.
+  fullName: ms-rest.createCompositeFilter(filters)
+  type: Function
+  syntax:
+    parameters:
+    - id: filters
+      type:
+      - ms-rest.varargs
+      description: '실행 합니다. 목록의 첫 번째 필터는 싱크에 가장 가까운 응답에서 실행 하려면 먼저 요청을 하기 전에 실행을 마지막으로 따라서: 똑같이 pipeline.add 호출 또는 목록 pipeline.create 전달할 처럼 합니다.'
+    return:
+      description: 새 필터입니다.
+    content: function createCompositeFilter(filters)
+  langs:
+  - js
+- uid: ms-rest.interimStream
+  id: ms-rest.interimStream
+  name: interimStream(setPipe)
+  summary: 비동기 작업 계속 연결할 수 스트리밍 출력을 나중에 있도록 호출자에 게 동기적으로 반환 될 수 있는 중간 스트림을 만듭니다. 필터 파이프라인의 나머지를 호출 하기 전에 비동기 작업을 수행 해야 할 때 사용 됩니다.
+  fullName: ms-rest.interimStream(setPipe)
+  type: Function
+  syntax:
+    parameters:
+    - id: setPipe
+      description: >-
+        함수 (입력, 출력)이이 함수는 두 개의 기본 스트림을 전달할 동기적으로 호출 됩니다. 입력에 다음 필터의 결과를 파이프 합니다. 다음의 결과 파이프를 출력 합니다.
+
+        것 실제로 후크 할 실제 stream을 반환 하기 전에 데이터 손실을 방지 하기 위해 입력된 스트림을 일시 중지할에 공통적으로 적용 합니다.
+    return:
+      description: 입력 스트림에 쓰고 출력 스트림에서 데이터를 생성 하는 이중 스트림.
+    content: function interimStream(setPipe)
+  langs:
+  - js
+- uid: ms-rest.serializeObject
+  id: ms-rest.serializeObject
+  name: serializeObject(toSerialize)
+  summary: JSON 개체를 serialize합니다. 버퍼 개체를 'base64'로 인코딩된 문자열 및 문자열로 ISO8601 형식을 준수 하는 날짜 개체를 serialize합니다.
+  fullName: ms-rest.serializeObject(toSerialize)
+  type: Function
+  syntax:
+    parameters:
+    - id: toSerialize
+      type:
+      - Object
+      description: ''
+    return:
+      type:
+      - Object
+      description: serializedObject
+    content: function serializeObject(toSerialize)
+  langs:
+  - js
+- uid: ms-rest.serialize
+  id: ms-rest.serialize
+  name: serialize(mapper, object, objectName)
+  summary: 맵 편집기에 정의 된 해당 메타 데이터에 따라 지정된 된 개체를 serialize 합니다.
+  fullName: ms-rest.serialize(mapper, object, objectName)
+  type: Function
+  syntax:
+    parameters:
+    - id: mapper
+      type:
+      - object
+      description: 직렬화 가능 개체의 메타 데이터를 정의 하는 맵 편집기
+    - id: object
+      type:
+      - object
+      - string
+      - Array
+      - number
+      - boolean
+      - Date
+      - ms-rest.stream
+      description: Serialize 할 수 있는 올바른 Javascript 개체
+    - id: objectName
+      type:
+      - string
+      description: Serialize 된 개체의 이름
+    return:
+      type:
+      - object
+      - string
+      - Array
+      - number
+      - boolean
+      - Date
+      - ms-rest.stream
+      description: 유효한 serialize 된 Javascript 개체
+    content: function serialize(mapper, object, objectName)
+  langs:
+  - js
+- uid: ms-rest.deserialize
+  id: ms-rest.deserialize
+  name: deserialize(mapper, responseBody, objectName)
+  summary: 맵 편집기에 정의 된 해당 메타 데이터에 따라 지정된 된 개체를 deserialize 합니다.
+  fullName: ms-rest.deserialize(mapper, responseBody, objectName)
+  type: Function
+  syntax:
+    parameters:
+    - id: mapper
+      type:
+      - object
+      description: 직렬화 가능 개체의 메타 데이터를 정의 하는 맵 편집기
+    - id: responseBody
+      type:
+      - object
+      - string
+      - Array
+      - number
+      - boolean
+      - Date
+      - ms-rest.stream
+      description: Deserialize 할 유효한 Javascript 엔터티
+    - id: objectName
+      type:
+      - string
+      description: Deserialize 된 개체의 이름
+    return:
+      type:
+      - object
+      - string
+      - Array
+      - number
+      - boolean
+      - Date
+      - ms-rest.stream
+      description: 유효한 deserialize 된 Javascript 개체
+    content: function deserialize(mapper, responseBody, objectName)
+  langs:
+  - js
+- uid: ms-rest.urlIsHTTPS
+  id: ms-rest.urlIsHTTPS
+  name: urlIsHTTPS(urlToCheck)
+  summary: 구문 분석 된 URL을 HTTPS 인지 확인
+  fullName: ms-rest.urlIsHTTPS(urlToCheck)
+  type: Function
+  syntax:
+    parameters:
+    - id: urlToCheck
+      type:
+      - object
+      description: Url 확인
+    return:
+      type:
+      - ms-rest.bool
+      description: URL은 HTTPS 경우 true입니다. false이 고, 그렇지 합니다.
+    content: function urlIsHTTPS(urlToCheck)
+  langs:
+  - js
+- uid: ms-rest.objectIsNull
+  id: ms-rest.objectIsNull
+  name: objectIsNull(value)
+  summary: 값이 null 이거나 정의 되지 않은 경우를 확인 합니다.
+  fullName: ms-rest.objectIsNull(value)
+  type: Function
+  syntax:
+    parameters:
+    - id: value
+      type:
+      - object
+      description: Null 이거나 정의 되지 않은 확인 값입니다.
+    return:
+      type:
+      - ms-rest.bool
+      description: 그렇지 않으면 값이 null 또는 정의 되지 않은, false 이면 true입니다.
+    content: function objectIsNull(value)
+  langs:
+  - js
+- uid: ms-rest.encodeUri
+  id: ms-rest.encodeUri
+  name: encodeUri(uri)
+  summary: URI를 인코딩합니다.
+  fullName: ms-rest.encodeUri(uri)
+  type: Function
+  syntax:
+    parameters:
+    - id: uri
+      type:
+      - string
+      description: 인코딩할 URI입니다.
+    return:
+      type:
+      - string
+      description: 인코딩된 URI입니다.
+    content: function encodeUri(uri)
+  langs:
+  - js
+- uid: ms-rest.stripResponse
+  id: ms-rest.stripResponse
+  name: stripResponse(response)
+  summary: 본문, 헤더 및 statusCode만 포함 하는 Http 응답의 제거 된 버전을 반환 합니다.
+  fullName: ms-rest.stripResponse(response)
+  type: Function
+  syntax:
+    parameters:
+    - id: response
+      type:
+      - ms-rest.stream
+      description: Http 응답
+    return:
+      type:
+      - object
+      description: strippedResponse-Http 응답의 제거 된 버전입니다.
+    content: function stripResponse(response)
+  langs:
+  - js
+- uid: ms-rest.stripRequest
+  id: ms-rest.stripRequest
+  name: stripRequest(request)
+  summary: 권한 부여 헤더를 포함 하지 않는 Http 요청의 제거 된 버전을 반환 합니다.
+  fullName: ms-rest.stripRequest(request)
+  type: Function
+  syntax:
+    parameters:
+    - id: request
+      type:
+      - object
+      description: Http 요청 개체
+    return:
+      type:
+      - object
+      description: strippedRequest-Http 요청의 제거 된 버전입니다.
+    content: function stripRequest(request)
+  langs:
+  - js
+- uid: ms-rest.isValidUuid
+  id: ms-rest.isValidUuid
+  name: isValidUuid(uuid)
+  summary: 문자열로 지정 된 uuid를 유효성을 검사합니다
+  fullName: ms-rest.isValidUuid(uuid)
+  type: Function
+  syntax:
+    parameters:
+    - id: uuid
+      type:
+      - string
+      description: 유효성을 검사 해야 하는 문자열로 uuid
+    return:
+      type:
+      - boolean
+      description: -True 경우 발생할 uuid 잘못 되었습니다. false이 고, 그렇지 합니다.
+    content: function isValidUuid(uuid)
+  langs:
+  - js
+- uid: ms-rest.objectValues
+  id: ms-rest.objectValues
+  name: objectValues(obj)
+  summary: "개체의 값의 배열을 제공합니다. 지정된 된 개체에 대 한 예를 들어 {'a': 'foo', 'b': 'bar'}, ['foo', 'bar'] 메서드 반환 합니다."
+  fullName: ms-rest.objectValues(obj)
+  type: Function
+  syntax:
+    parameters:
+    - id: obj
+      type:
+      - object
+      description: 속성의 값을 배열로 제공할 수 있도록 열거할 필요가 개체
+    return:
+      type:
+      - array
+      description: 결과-지정된 된 개체의 값의 배열입니다.
+    content: function objectValues(obj)
+  langs:
+  - js
+- uid: ms-rest.generateUuid
+  id: ms-rest.generateUuid
+  name: generateUuid()
+  summary: 생성 된 UUID
+  fullName: ms-rest.generateUuid()
+  type: Function
+  syntax:
+    return:
+      type:
+      - string
+      description: RFC4122 v4 UUID입니다.
+    content: function generateUuid()
+  langs:
+  - js
+- uid: ms-rest.homeDir
+  id: ms-rest.homeDir
+  name: homeDir()
+  summary: 홈 디렉터리에 대 한 경로 제공합니다.
+  fullName: ms-rest.homeDir()
+  type: Function
+  syntax:
+    content: function homeDir()
+  langs:
+  - js
+references:
+- uid: ms-rest.WebResource
+  name: WebResource
+- uid: ms-rest.ServiceClient
+  name: ServiceClient
+- uid: ms-rest.HttpOperationResponse
+  name: HttpOperationResponse
+- uid: ms-rest.SystemErrorRetryPolicyFilter
+  name: SystemErrorRetryPolicyFilter
+- uid: ms-rest.ExponentialRetryPolicyFilter
+  name: ExponentialRetryPolicyFilter
+- uid: ms-rest.TokenCredentials
+  name: TokenCredentials
+- uid: ms-rest.BasicAuthenticationCredentials
+  name: BasicAuthenticationCredentials
+- uid: ms-rest.ApiKeyCredentials
+  name: ApiKeyCredentials

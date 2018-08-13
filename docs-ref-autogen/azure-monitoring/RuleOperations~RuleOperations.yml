@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 59656223c5a7cd2be8183dba49eeedd41c8bab1b
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064358"
+items:
+- uid: azure-monitoring.RuleOperations~RuleOperations
+  id: azure-monitoring.RuleOperations~RuleOperations
+  name: RuleOperations
+  summary: >-
+    경고 규칙을 관리 하기 위한 작업입니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [AlertsClient]에 대 한 자동으로 만들어집니다 <xref:azure-monitoring.AlertsClient~AlertsClient>합니다.
+
+    [규칙] <xref:azure-monitoring.AlertsClient~AlertsClient%23rules>합니다.
+
+    RuleOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-monitoring.RuleOperations
+  type: Class
+  children:
+  - azure-monitoring.RuleOperations~RuleOperations.#ctor
+  - azure-monitoring.RuleOperations~RuleOperations#createOrUpdate
+  - azure-monitoring.RuleOperations~RuleOperations#deleteMethod
+  - azure-monitoring.RuleOperations~RuleOperations#get
+  - azure-monitoring.RuleOperations~RuleOperations#list
+  langs:
+  - js
+- id: azure-monitoring.RuleOperations~RuleOperations.#ctor
+  uid: azure-monitoring.RuleOperations~RuleOperations.#ctor
+  parent: azure-monitoring.RuleOperations~RuleOperations
+  name: RuleOperations(client)
+  fullName: azure-monitoring.RuleOperations.RuleOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedAlertsClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new RuleOperations(client)
+  langs:
+  - js
+- uid: azure-monitoring.RuleOperations~RuleOperations#createOrUpdate
+  id: azure-monitoring.RuleOperations~RuleOperations#createOrUpdate
+  parent: azure-monitoring.RuleOperations~RuleOperations
+  name: createOrUpdate(parameters, callback)
+  summary: ''
+  fullName: azure-monitoring.RuleOperations~RuleOperations.createOrUpdate(parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: parameters
+      type:
+      - azure-monitoring.RuleCreateOrUpdateParameters
+      description: 규칙 만들기 또는 업데이트입니다.
+    - id: parameters.rule
+      type:
+      - azure-monitoring.Rule
+      description: 규칙 만들기 또는 업데이트입니다.
+      optional: true
+    - id: parameters.rule.id
+      type:
+      - string
+      description: 규칙 식별자입니다.
+      optional: true
+    - id: parameters.rule.name
+      type:
+      - string
+      description: 규칙 이름입니다.
+      optional: true
+    - id: parameters.rule.description
+      type:
+      - string
+      description: 규칙 설명입니다.
+      optional: true
+    - id: parameters.rule.isEnabled
+      type:
+      - boolean
+      description: 규칙 사용 되는지 여부를 결정 하는 플래그입니다.
+      optional: true
+    - id: parameters.rule.condition
+      type:
+      - azure-monitoring.RuleCondition
+      description: 규칙 조건입니다.
+      optional: true
+    - id: parameters.rule.actions
+      type:
+      - array
+      description: 규칙 동작입니다.
+      optional: true
+    - id: parameters.rule.lastUpdatedTime
+      type:
+      - date
+      description: 마지막으로 규칙 시간을 업데이트 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-monitoring.Stream
+      description: 응답 스트림입니다.
+    content: function createOrUpdate(parameters, callback)
+  langs:
+  - js
+- uid: azure-monitoring.RuleOperations~RuleOperations#deleteMethod
+  id: azure-monitoring.RuleOperations~RuleOperations#deleteMethod
+  parent: azure-monitoring.RuleOperations~RuleOperations
+  name: deleteMethod(ruleId, callback)
+  summary: ''
+  fullName: azure-monitoring.RuleOperations~RuleOperations.deleteMethod(ruleId, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: ruleId
+      type:
+      - string
+      description: 삭제 하는 규칙의 id입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-monitoring.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(ruleId, callback)
+  langs:
+  - js
+- uid: azure-monitoring.RuleOperations~RuleOperations#get
+  id: azure-monitoring.RuleOperations~RuleOperations#get
+  parent: azure-monitoring.RuleOperations~RuleOperations
+  name: get(ruleId, callback)
+  summary: ''
+  fullName: azure-monitoring.RuleOperations~RuleOperations.get(ruleId, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: ruleId
+      type:
+      - string
+      description: 검색 규칙의 id입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-monitoring.Stream
+      description: 응답 스트림입니다.
+    content: function get(ruleId, callback)
+  langs:
+  - js
+- uid: azure-monitoring.RuleOperations~RuleOperations#list
+  id: azure-monitoring.RuleOperations~RuleOperations#list
+  parent: azure-monitoring.RuleOperations~RuleOperations
+  name: list(callback)
+  summary: 구독 내에서 경고 규칙을 나열 합니다.
+  fullName: azure-monitoring.RuleOperations~RuleOperations.list(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-monitoring.Stream
+      description: 응답 스트림입니다.
+    content: function list(callback)
+  langs:
+  - js
