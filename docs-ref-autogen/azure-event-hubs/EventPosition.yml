@@ -1,0 +1,294 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 2bb39336cac3fe404366a95799522d14d6109f14
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40067227"
+items:
+- uid: azure-event-hubs.EventPosition
+  name: EventPosition
+  fullName: EventPosition
+  children:
+  - azure-event-hubs.EventPosition.customFilter
+  - azure-event-hubs.EventPosition.endOfStream
+  - azure-event-hubs.EventPosition.enqueuedTime
+  - azure-event-hubs.EventPosition.constructor
+  - azure-event-hubs.EventPosition.fromEnd
+  - azure-event-hubs.EventPosition.fromEnqueuedTime
+  - azure-event-hubs.EventPosition.fromOffset
+  - azure-event-hubs.EventPosition.fromSequenceNumber
+  - azure-event-hubs.EventPosition.fromStart
+  - azure-event-hubs.EventPosition.getExpression
+  - azure-event-hubs.EventPosition.isInclusive
+  - azure-event-hubs.EventPosition.offset
+  - azure-event-hubs.EventPosition.sequenceNumber
+  - azure-event-hubs.EventPosition.startOfStream
+  - azure-event-hubs.EventPosition.withCustomFilter
+  langs:
+  - typeScript
+  type: class
+  summary: >-
+    <span data-ttu-id="4fa73-101">이벤트 허브 수신기를 만드는 동안 나타내는 옵션을 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-101">Represents options can be set during the creation of a event hub receiver.</span></span>
+
+    <span data-ttu-id="4fa73-102">위치를 정의 하는 @link~ EventData는 이벤트 허브 파티션에 합니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-102">Defines a position of an @link~EventData in the event hub partition.</span></span>
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.customFilter
+  name: customFilter
+  fullName: customFilter
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  optional: true
+  syntax:
+    content: 'customFilter?: string'
+    return:
+      type:
+      - string
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.endOfStream
+  name: endOfStream
+  fullName: endOfStream
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'static endOfStream: string'
+    return:
+      type:
+      - string
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.enqueuedTime
+  name: enqueuedTime
+  fullName: enqueuedTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  optional: true
+  syntax:
+    content: 'enqueuedTime?: Date | number'
+    return:
+      type:
+      - Date | number
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.constructor
+  name: EventPosition
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: ''
+  syntax:
+    content: 'new EventPosition(options?: EventPositionOptions)'
+    parameters:
+    - id: options
+      type:
+      - azure-event-hubs.EventPositionOptions
+      description: ''
+      optional: true
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.fromEnd
+  name: fromEnd
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-103">스트림의 끝에 대 한 위치를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-103">Returns the position for the end of a stream.</span></span> <span data-ttu-id="4fa73-104">수신기가 만들어진 후 파티션에 사용할 수 있는 다음 이벤트의 수신을 시작 하도록 수신기 만들기의이 위치를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-104">Provide this position in receiver creation to start receiving from the next available event in the partition after the receiver is created.</span></span>
+  syntax:
+    content: static function fromEnd()
+    parameters: []
+    return:
+      type:
+      - azure-event-hubs.EventPosition
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.fromEnqueuedTime
+  name: fromEnqueuedTime
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-105">지정 된 큐에 넣은 시간과에 위치를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-105">Creates a position at the given enqueued time.</span></span>
+  syntax:
+    content: 'static function fromEnqueuedTime(enqueuedTime: Date | number)'
+    parameters:
+    - id: enqueuedTime
+      type:
+      - Date | number
+      description: <span data-ttu-id="4fa73-106">큐에 넣기 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-106">The enqueue time.</span></span> <span data-ttu-id="4fa73-107">이 값 큐 메시지의 실제 시간을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-107">This value represents the actual time of enqueuing the message.</span></span>
+    return:
+      type:
+      - azure-event-hubs.EventPosition
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.fromOffset
+  name: fromOffset
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-108">지정 된 오프셋 위치를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-108">Creates a position at the given offset.</span></span>
+  syntax:
+    content: 'static function fromOffset(offset: string, isInclusive?: boolean)'
+    parameters:
+    - id: offset
+      type:
+      - string
+      description: >-
+        <span data-ttu-id="4fa73-109">Event Hub 파티션 스트림을 기준으로 데이터의 오프셋</span><span class="sxs-lookup"><span data-stu-id="4fa73-109">The offset of the data relative to the Event Hub partition stream.</span></span>
+
+        <span data-ttu-id="4fa73-110">오프셋은 Event Hubs 스트림 내의 이벤트에 대한 표식 또는 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-110">The offset is a marker or identifier for an event within the Event Hubs stream.</span></span>
+
+        <span data-ttu-id="4fa73-111">식별자는 Event Hubs 스트림의 파티션 내에서 고유합니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-111">The identifier is unique within a partition of the Event Hubs stream.</span></span>
+    - id: isInclusive
+      type:
+      - boolean
+      description: '<span data-ttu-id="4fa73-112">True, 지정된 된 이벤트 포함 됩니다. 그렇지 않은 경우 다음 이벤트가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-112">If true, the specified event is included; otherwise the next event is returned.</span></span> <span data-ttu-id="4fa73-113">기본값: false입니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-113">Default: false.</span></span>'
+      optional: true
+    return:
+      type:
+      - azure-event-hubs.EventPosition
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.fromSequenceNumber
+  name: fromSequenceNumber
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-114">지정 된 시퀀스 번호에서 위치를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-114">Creates a position at the given sequence number.</span></span>
+  syntax:
+    content: 'static function fromSequenceNumber(sequenceNumber: number, isInclusive?: boolean)'
+    parameters:
+    - id: sequenceNumber
+      type:
+      - number
+      description: <span data-ttu-id="4fa73-115">이벤트 허브의 파티션 스트림 내에서 이벤트의 논리적 시퀀스 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-115">The logical sequence number of the event within the partition stream of the Event Hub.</span></span>
+    - id: isInclusive
+      type:
+      - boolean
+      description: '<span data-ttu-id="4fa73-116">True, 지정된 된 이벤트 포함 됩니다. 그렇지 않은 경우 다음 이벤트가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-116">If true, the specified event is included; otherwise the next event is returned.</span></span> <span data-ttu-id="4fa73-117">기본값: false입니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-117">Default false.</span></span>'
+      optional: true
+    return:
+      type:
+      - azure-event-hubs.EventPosition
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.fromStart
+  name: fromStart
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-118">스트림의 시작 위치를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-118">Returns the position for the start of a stream.</span></span> <span data-ttu-id="4fa73-119">파티션에 사용 가능한 첫 번째 이벤트의 수신을 시작 하도록 수신기 만들기의이 위치를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-119">Provide this position in receiver creation to start receiving from the first available event in the partition.</span></span>
+  syntax:
+    content: static function fromStart()
+    parameters: []
+    return:
+      type:
+      - azure-event-hubs.EventPosition
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.getExpression
+  name: getExpression
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-120">원본에 설정 해야 하는 식을 (필터 절)을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-120">Gets the expression (filter clause) that needs to be set on the source.</span></span>
+  syntax:
+    content: function getExpression()
+    parameters: []
+    return:
+      type:
+      - string
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.isInclusive
+  name: isInclusive
+  fullName: isInclusive
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'isInclusive: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.offset
+  name: offset
+  fullName: offset
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  optional: true
+  syntax:
+    content: 'offset?: string'
+    return:
+      type:
+      - string
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.sequenceNumber
+  name: sequenceNumber
+  fullName: sequenceNumber
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  optional: true
+  syntax:
+    content: 'sequenceNumber?: number'
+    return:
+      type:
+      - number
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.startOfStream
+  name: startOfStream
+  fullName: startOfStream
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'static startOfStream: string'
+    return:
+      type:
+      - string
+  package: azure-event-hubs
+- uid: azure-event-hubs.EventPosition.withCustomFilter
+  name: withCustomFilter
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4fa73-121">지정 된 사용자 지정 필터를 기준으로 하는 위치를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-121">Creates a position based on the given custom filter.</span></span>
+  syntax:
+    content: 'static function withCustomFilter(customFilter: string)'
+    parameters:
+    - id: customFilter
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4fa73-122">수신기에서 적용 해야 하는 사용자 지정 필터 식입니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-122">The cutom filter expression that needs to be applied on the receiver.</span></span> <span data-ttu-id="4fa73-123">경우에 사용 해야 다른 메서드의 `fromOffset()`, `fromSequenceNumber()`, `fromEnqueuedTime()` 시나리오에 적용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4fa73-123">This should be used only when one of the other methods `fromOffset()`, `fromSequenceNumber()`, `fromEnqueuedTime()` is not applicable for your scenario.</span></span>
+    return:
+      type:
+      - azure-event-hubs.EventPosition
+  package: azure-event-hubs
+references:
+- uid: azure-event-hubs.EventPositionOptions
+  spec.typeScript:
+  - name: EventPositionOptions
+    fullName: EventPositionOptions
+    uid: azure-event-hubs.EventPositionOptions
+- uid: azure-event-hubs.EventPosition
+  spec.typeScript:
+  - name: EventPosition
+    fullName: EventPosition
+    uid: azure-event-hubs.EventPosition

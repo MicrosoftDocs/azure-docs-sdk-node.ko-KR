@@ -1,0 +1,945 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: c702e67d64be4873078bac93c0c0de9d4873f99f
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40069483"
+items:
+- uid: azure-iothub.Registry
+  name: Registry
+  fullName: Registry
+  children:
+  - azure-iothub.Registry.addConfiguration
+  - azure-iothub.Registry.addDevices
+  - azure-iothub.Registry.addModule
+  - azure-iothub.Registry.applyConfigurationContentOnDevice
+  - azure-iothub.Registry.BulkDeviceIdentityCallback
+  - azure-iothub.Registry.BulkRegistryOperationType
+  - azure-iothub.Registry.cancelJob
+  - azure-iothub.Registry.create
+  - azure-iothub.Registry.createQuery
+  - azure-iothub.Registry.delete
+  - azure-iothub.Registry.DeviceCallback
+  - azure-iothub.Registry.exportDevicesToBlob
+  - azure-iothub.Registry.fromConnectionString
+  - azure-iothub.Registry.fromSharedAccessSignature
+  - azure-iothub.Registry.get
+  - azure-iothub.Registry.getConfiguration
+  - azure-iothub.Registry.getConfigurations
+  - azure-iothub.Registry.getJob
+  - azure-iothub.Registry.getModule
+  - azure-iothub.Registry.getModulesOnDevice
+  - azure-iothub.Registry.getModuleTwin
+  - azure-iothub.Registry.getRegistryStatistics
+  - azure-iothub.Registry.getTwin
+  - azure-iothub.Registry.importDevicesFromBlob
+  - azure-iothub.Registry.JobCallback
+  - azure-iothub.Registry.JobStatus
+  - azure-iothub.Registry.list
+  - azure-iothub.Registry.listJobs
+  - azure-iothub.Registry.removeConfiguration
+  - azure-iothub.Registry.removeDevices
+  - azure-iothub.Registry.removeModule
+  - azure-iothub.Registry.removeModule_1
+  - azure-iothub.Registry.ResponseCallback
+  - azure-iothub.Registry.update
+  - azure-iothub.Registry.updateConfiguration
+  - azure-iothub.Registry.updateConfiguration_1
+  - azure-iothub.Registry.updateDevices
+  - azure-iothub.Registry.updateModule
+  - azure-iothub.Registry.updateModule_1
+  - azure-iothub.Registry.updateModuleTwin
+  - azure-iothub.Registry.updateTwin
+  langs:
+  - typeScript
+  type: class
+  summary: >
+    <span data-ttu-id="396f3-101">레지스트리 클래스는 IoT Hub 장치 id 서비스에 대 한 액세스를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-101">The Registry class provides access to the IoT Hub device identity service.</span></span>
+
+    <span data-ttu-id="396f3-102">사용자는 SDK의 팩터리 메서드 중 하나를 사용 하 여이 클래스를 인스턴스화해야 합니다. [fromConnectionString](xref:azure-iothub.Registry.fromConnectionString) 하거나 [fromSharedAccessSignature](xref:azure-iothub.Registry.fromSharedAccessSignature)합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-102">Users of the SDK should instantiate this class with one of the factory methods: [fromConnectionString](xref:azure-iothub.Registry.fromConnectionString) or [fromSharedAccessSignature](xref:azure-iothub.Registry.fromSharedAccessSignature).</span></span>
+
+    <span data-ttu-id="396f3-103">장치 id 레지스트리 작업에 사용 된 프로토콜은 HTTPS입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-103">The protocol used for device identity registry operations is HTTPS.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.addConfiguration
+  name: addConfiguration
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-104">IoT hub에 구성을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-104">Add a configuration to an IoT hub.</span></span>
+  syntax:
+    content: 'function addConfiguration(configuration: Configuration, done: Registry.ResponseCallback)'
+    parameters:
+    - id: configuration
+      type:
+      - azure-iothub.Configuration
+      description: '<span data-ttu-id="396f3-105">형식 모듈: azure의 개체-iot hub. 허브에 추가할 구성</span><span class="sxs-lookup"><span data-stu-id="396f3-105">An object of type module:azure-iothub.Configuration to add to the hub</span></span>'
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-106">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-106">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-107">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-107">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.addDevices
+  name: addDevices
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-108">장치 배열을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-108">Adds an array of devices.</span></span>
+  syntax:
+    content: 'function addDevices(devices: DeviceDescription[], done: Registry.BulkDeviceIdentityCallback)'
+    parameters:
+    - id: devices
+      type:
+      - azure-iothub.Registry.DeviceDescription[]
+      description: <span data-ttu-id="396f3-109">포함 해야 하는 개체의 배열을 `deviceId` 속성 값을 유효한 장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-109">An array of objects which must include a `deviceId` property whose value is a valid device identifier.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.BulkDeviceIdentityCallback
+      description: >
+        <span data-ttu-id="396f3-110">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-110">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-111">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체는 BulkRegistryOperationResult 및 전송 관련 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-111">`done` will be called with three arguments: an Error object (can be null), a BulkRegistryOperationResult and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.addModule
+  name: addModule
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-112">레지스트리에 지정 된 모듈을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-112">Add the given module to the registry.</span></span>
+  syntax:
+    content: 'function addModule(module: Module, done: Registry.ResponseCallback)'
+    parameters:
+    - id: module
+      type:
+      - azure-iothub.Module
+      description: <span data-ttu-id="396f3-113">레지스트리에 추가할 모듈 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-113">Module object to add to the registry.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-114">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-114">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-115">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-115">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.applyConfigurationContentOnDevice
+  name: applyConfigurationContentOnDevice
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-116">IoT Hub에서 장치에 지정된 된 구성 적용</span><span class="sxs-lookup"><span data-stu-id="396f3-116">Apply the given configuration to a device on an IoT Hub</span></span>
+  syntax:
+    content: 'function applyConfigurationContentOnDevice(deviceId: string, content: ConfigurationContent, done: Registry.ResponseCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-117">구성을 적용 하는 장치 ID</span><span class="sxs-lookup"><span data-stu-id="396f3-117">ID of the device to apply the configuration to</span></span>
+    - id: content
+      type:
+      - azure-iothub.ConfigurationContent
+      description: <span data-ttu-id="396f3-118">적용할 구성</span><span class="sxs-lookup"><span data-stu-id="396f3-118">The Configuration to apply</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-119">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-119">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-120">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-120">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.BulkDeviceIdentityCallback
+  name: BulkDeviceIdentityCallback
+  fullName: BulkDeviceIdentityCallback
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n"
+  package: azure-iothub
+- uid: azure-iothub.Registry.BulkRegistryOperationType
+  name: BulkRegistryOperationType
+  fullName: BulkRegistryOperationType
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n<span data-ttu-id=\"396f3-121\">\"BulkRegistryOperationType\" 형식 별칭입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"396f3-121\">\"BulkRegistryOperationType\" is a type alias.</span></span> <span data-ttu-id=\"396f3-122\">\"만들기\", \"업데이트\", \"UpdateIfMatchETag\", \"Delete\" 및 \"DeleteIfMatchETag\" 가리킵니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"396f3-122\">It refers to \"create\", \"Update\", \"UpdateIfMatchETag\", \"Delete\" and \"DeleteIfMatchETag\".</span></span>"
+  package: azure-iothub
+- uid: azure-iothub.Registry.cancelJob
+  name: cancelJob
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-123">대량 가져오기/내보내기 작업을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-123">Cancel a bulk import/export job.</span></span>
+  syntax:
+    content: 'function cancelJob(jobId: string, done: Registry.JobCallback)'
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-124">사용자가 상태 정보를 가져올 작업의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-124">The identifier of the job for which the user wants to get status information.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.JobCallback
+      description: >
+        <span data-ttu-id="396f3-125">두 개의 인수를 사용 하 여 호출할 함수입니다: 오류가 발생 한 경우 오류 개체 (그렇지 않으면 null) 및 식별자를 인수로 전달 된 작업 (취소) 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-125">The function to call with two arguments: an error object if an error happened, (null otherwise) and the (cancelled) status of the job whose identifier was passed as an argument.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.create
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-126">IoT hub에 새 장치 id를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-126">Creates a new device identity on an IoT hub.</span></span>
+  syntax:
+    content: 'function create(deviceInfo: DeviceDescription, done: Registry.DeviceCallback)'
+    parameters:
+    - id: deviceInfo
+      type:
+      - azure-iothub.Registry.DeviceDescription
+      description: <span data-ttu-id="396f3-127">개체에 포함 되어야는 `deviceId` 올바른 장치 식별자를 가진 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-127">The object must include a `deviceId` property with a valid device identifier.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.DeviceCallback
+      description: >
+        <span data-ttu-id="396f3-128">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-128">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-129">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수)는 오류 개체를 [장치](xref:azure-iothub.Device) 만든된 장치 id를 나타내는 개체와 전송별 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-129">`done` will be called with three arguments: an Error object (can be null), a [Device](xref:azure-iothub.Device) object representing the created device identity, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.createQuery
+  name: createQuery
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-130">장치 또는 작업에 대 한 정보를 IoT Hub 인스턴스에서 실행할 수 있는 쿼리를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-130">Creates a query that can be run on the IoT Hub instance to find information about devices or jobs.</span></span>
+  syntax:
+    content: 'function createQuery(sqlQuery: string, pageSize?: number)'
+    parameters:
+    - id: sqlQuery
+      type:
+      - string
+      description: <span data-ttu-id="396f3-131">SQL 문자열을 작성 하는 쿼리.</span><span class="sxs-lookup"><span data-stu-id="396f3-131">The query written as an SQL string.</span></span>
+    - id: pageSize
+      type:
+      - number
+      description: >
+        <span data-ttu-id="396f3-132">원하는 (선택 사항 페이지당 결과 수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-132">The desired number of results per page (optional.</span></span> <span data-ttu-id="396f3-133">기본값: 1000, 최대: 10000).</span><span class="sxs-lookup"><span data-stu-id="396f3-133">default: 1000, max: 10000).</span></span>
+      optional: true
+    return:
+      type:
+      - azure-iothub.Query
+  package: azure-iothub
+- uid: azure-iothub.Registry.delete
+  name: delete
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-134">IoT hub에서 기존 장치 id를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-134">Removes an existing device identity from an IoT hub.</span></span>
+  syntax:
+    content: 'function delete(deviceId: string, done: Registry.ResponseCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-135">기존 장치 id의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-135">The identifier of an existing device identity.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-136">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-136">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-137">`done` 세 개의 인수를 사용 하 여 호출 됩니다: 오류 개체 (null 일 수), (일관성을 위해 다른 메서드를 사용 하 여), 항상 null 인수 및 전송 관련 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-137">`done` will be called with three arguments: an Error object (can be null), an always-null argument (for consistency with the other methods), and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.DeviceCallback
+  name: DeviceCallback
+  fullName: DeviceCallback
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n"
+  package: azure-iothub
+- uid: azure-iothub.Registry.exportDevicesToBlob
+  name: exportDevicesToBlob
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-138">장치 대량 작업에서 blob으로 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-138">Export devices to a blob in a bulk job.</span></span>
+  syntax:
+    content: 'function exportDevicesToBlob(outputBlobContainerUri: string, excludeKeys: boolean, done: Registry.JobCallback)'
+    parameters:
+    - id: outputBlobContainerUri
+      type:
+      - string
+      description: <span data-ttu-id="396f3-139">내보내기 프로세스의 로그를 사용 하 여 blob을 만들 컨테이너 URI입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-139">The URI to a container where a blob will be created with logs of the export process.</span></span>
+    - id: excludeKeys
+      type:
+      - boolean
+      description: <span data-ttu-id="396f3-140">보안 키 내보낸된 데이터에서 제외 되어야 하는지 여부를 나타내는 부울입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-140">Boolean indicating whether security keys should be excluded from the exported data.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.JobCallback
+      description: >
+        <span data-ttu-id="396f3-141">작업을 만든 경우, 두 개의 인수를 사용 하 여 호출할 함수입니다: 오류가 발생 하는 경우 개체는 오류가 발생 했습니다 (그렇지 않으면 null) 및 내보내기 작업 상태 장치의 진행 상황을 추적할 수 있는 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-141">The function to call when the job has been created, with two arguments: an error object if an an error happened, (null otherwise) and the job status that can be used to track progress of the devices export.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.fromConnectionString
+  name: fromConnectionString
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-142">지정 된 연결 문자열에서 레지스트리 개체를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-142">Constructs a Registry object from the given connection string.</span></span>
+  syntax:
+    content: 'static function fromConnectionString(value: string)'
+    parameters:
+    - id: value
+      type:
+      - string
+      description: <span data-ttu-id="396f3-143">(읽기 및 쓰기) 적절 한 캡슐화 하는 연결 문자열을 레지스트리 사용 권한.</span><span class="sxs-lookup"><span data-stu-id="396f3-143">A connection string which encapsulates the appropriate (read and/or write) Registry permissions.</span></span>
+    return:
+      type:
+      - azure-iothub.Registry
+  package: azure-iothub
+- uid: azure-iothub.Registry.fromSharedAccessSignature
+  name: fromSharedAccessSignature
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-144">지정 된 공유 액세스 서명에서 레지스트리 개체를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-144">Constructs a Registry object from the given shared access signature.</span></span>
+  syntax:
+    content: 'static function fromSharedAccessSignature(value: string)'
+    parameters:
+    - id: value
+      type:
+      - string
+      description: <span data-ttu-id="396f3-145">공유 액세스 서명 (읽기 및 쓰기) 적절 한 캡슐화 하는 레지스트리 사용 권한.</span><span class="sxs-lookup"><span data-stu-id="396f3-145">A shared access signature which encapsulates the appropriate (read and/or write) Registry permissions.</span></span>
+    return:
+      type:
+      - azure-iothub.Registry
+  package: azure-iothub
+- uid: azure-iothub.Registry.get
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-146">IoT 허브에서 기존 장치 id에 대 한 정보를 요청 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-146">Requests information about an existing device identity on an IoT hub.</span></span>
+  syntax:
+    content: 'function get(deviceId: string, done: Registry.DeviceCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-147">기존 장치 id의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-147">The identifier of an existing device identity.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.DeviceCallback
+      description: >
+        <span data-ttu-id="396f3-148">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-148">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-149">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수)는 오류 개체를 [장치](xref:azure-iothub.Device) 만든된 장치 id를 나타내는 개체와 전송별 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-149">`done` will be called with three arguments: an Error object (can be null), a [Device](xref:azure-iothub.Device) object representing the created device identity, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getConfiguration
+  name: getConfiguration
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-150">IoT Hub에서 단일 구성을 가져오려면</span><span class="sxs-lookup"><span data-stu-id="396f3-150">Get a single configuration from an IoT Hub</span></span>
+  syntax:
+    content: 'function getConfiguration(configurationId: string, done: (err: Error, configuration?: Configuration, response?: any) => void)'
+    parameters:
+    - id: configurationId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-151">구성의 ID를 검색 하려면</span><span class="sxs-lookup"><span data-stu-id="396f3-151">The ID of the configuration you with to retrieve</span></span>
+    - id: done
+      type:
+      - '(err: Error, configuration?: Configuration, response?: any) => void'
+      description: >
+        <span data-ttu-id="396f3-152">Error 개체 또는 모듈: azure를 사용 하 여 호출할 수는 있는 콜백-iot hub. 구성 세부 정보를 사용 하 여 구성 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-152">The callback which will be called with either an Error object or a module:azure-iothub.Configuration object with the configuration details.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getConfigurations
+  name: getConfigurations
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-153">IoT 허브에서 모든 구성 가져오기</span><span class="sxs-lookup"><span data-stu-id="396f3-153">Get all configurations on an IoT Hub</span></span>
+  syntax:
+    content: 'function getConfigurations(done: (err: Error, configurations?: Configuration[], response?: any) => void)'
+    parameters:
+    - id: done
+      type:
+      - '(err: Error, configurations?: Configuration[], response?: any) => void'
+      description: >
+        <span data-ttu-id="396f3-154">Error 개체 또는 배열을 모듈: azure를 사용 하 여 호출할 수는 있는 콜백-iot hub. 모든 구성에 대 한 구성 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-154">The callback which will be called with either an Error object or an array of module:azure-iothub.Configuration objects for all the configurations.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getJob
+  name: getJob
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-155">대량 가져오기/내보내기 작업의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-155">Get the status of a bulk import/export job.</span></span>
+  syntax:
+    content: 'function getJob(jobId: string, done: Registry.JobCallback)'
+    parameters:
+    - id: jobId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-156">사용자가 상태 정보를 가져올 작업의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-156">The identifier of the job for which the user wants to get status information.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.JobCallback
+      description: >
+        <span data-ttu-id="396f3-157">두 개의 인수를 사용 하 여 호출할 함수입니다: 오류가 발생 한 경우 오류 개체 (그렇지 않으면 null) 및 식별자를 인수로 전달 된 작업의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-157">The function to call with two arguments: an error object if an error happened, (null otherwise) and the status of the job whose identifier was passed as an argument.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getModule
+  name: getModule
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-158">IoT Hub에 장치에서 단일 모듈 가져오기</span><span class="sxs-lookup"><span data-stu-id="396f3-158">Get a single module from a device on an IoT Hub</span></span>
+  syntax:
+    content: 'function getModule(deviceId: string, moduleId: string, done: (err: Error, module?: Module, response?: any) => void)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-159">모듈을 소유 하는 장치 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-159">Device ID that owns the module.</span></span>
+    - id: moduleId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-160">검색할 모듈 ID</span><span class="sxs-lookup"><span data-stu-id="396f3-160">Module ID to retrieve</span></span>
+    - id: done
+      type:
+      - '(err: Error, module?: Module, response?: any) => void'
+      description: >
+        <span data-ttu-id="396f3-161">Error 개체 또는 모듈: azure를 사용 하 여 호출할 수는 있는 콜백-iot hub. 요청된 된 모듈에 대 한 모듈 개체</span><span class="sxs-lookup"><span data-stu-id="396f3-161">The callback which will be called with either an Error object or the module:azure-iothub.Module object for the requested module</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getModulesOnDevice
+  name: getModulesOnDevice
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-162">IoT Hub 장치에서 모든 모듈의 목록을 가져오려면</span><span class="sxs-lookup"><span data-stu-id="396f3-162">Get a list of all modules on an IoT Hub device</span></span>
+  syntax:
+    content: 'function getModulesOnDevice(deviceId: string, done: (err: Error, modules?: Module[], response?: any) => void)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-163">모듈에 대 한 진행 중 장치의 ID</span><span class="sxs-lookup"><span data-stu-id="396f3-163">ID of the device we're getting modules for</span></span>
+    - id: done
+      type:
+      - '(err: Error, modules?: Module[], response?: any) => void'
+      description: >
+        <span data-ttu-id="396f3-164">Error 개체 또는 배열을 모듈: azure를 사용 하 여 호출할 수는 있는 콜백-iot hub. 모든 모듈에 대 한 모듈 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-164">The callback which will be called with either an Error object or an array of module:azure-iothub.Module objects for all the modules.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getModuleTwin
+  name: getModuleTwin
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-165">지정 된 모듈 식별자를 사용 하 여 모듈의 모듈 쌍을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-165">Gets the Module Twin of the module with the specified module identifier.</span></span>
+  syntax:
+    content: 'function getModuleTwin(deviceId: string, moduleId: string, done: (err: Error, twin?: Twin, response?: any) => void)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-166">장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-166">The device identifier.</span></span>
+    - id: moduleId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-167">모듈 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-167">The module identifier.</span></span>
+    - id: done
+      type:
+      - '(err: Error, twin?: Twin, response?: any) => void'
+      description: <span data-ttu-id="396f3-168">Error 개체 또는 모듈 쌍 인스턴스 중 하나를 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="396f3-168">The callback that will be called with either an Error object or the module twin instance.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getRegistryStatistics
+  name: getRegistryStatistics
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-169">장치 id 레지스트리에 장치에 대 한 통계를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-169">Gets statistics about the devices in the device identity registry.</span></span>
+  syntax:
+    content: 'function getRegistryStatistics(done: Callback<RegistryStatistics>)'
+    parameters:
+    - id: done
+      type:
+      - Callback<azure-iothub.Registry.RegistryStatistics>
+      description: >
+        <span data-ttu-id="396f3-170">Error 개체 또는 장치 레지스트리 통계를 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="396f3-170">The callback that will be called with either an Error object or the device registry statistics.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.getTwin
+  name: getTwin
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-171">지정 된 장치 식별자를 사용 하 여 장치의 장치 쌍을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-171">Gets the Device Twin of the device with the specified device identifier.</span></span>
+  syntax:
+    content: 'function getTwin(deviceId: string, done: Registry.ResponseCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-172">장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-172">The device identifier.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-173">Error 개체 또는 장치 쌍 인스턴스 중 하나를 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="396f3-173">The callback that will be called with either an Error object or the device twin instance.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.importDevicesFromBlob
+  name: importDevicesFromBlob
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-174">대량 작업에서 blob에서 장치를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-174">Imports devices from a blob in bulk job.</span></span>
+  syntax:
+    content: 'function importDevicesFromBlob(inputBlobContainerUri: string, outputBlobContainerUri: string, done: Registry.JobCallback)'
+    parameters:
+    - id: inputBlobContainerUri
+      type:
+      - string
+      description: <span data-ttu-id="396f3-175">Blob 컨테이너 URI를 'devices.txt' 가져올 장치 목록이 포함 된 이름이입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-175">The URI to a container with a blob named 'devices.txt' containing a list of devices to import.</span></span>
+    - id: outputBlobContainerUri
+      type:
+      - string
+      description: <span data-ttu-id="396f3-176">URI 가져오기 프로세스의 로그를 사용 하 여 blob을 만들 컨테이너입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-176">The URI to a container where a blob will be created with logs of the import process.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.JobCallback
+      description: >
+        <span data-ttu-id="396f3-177">작업을 만든 경우, 두 개의 인수를 사용 하 여 호출할 함수입니다: 오류가 발생 하는 경우 개체는 오류가 발생 했습니다 (그렇지 않으면 null) 가져오기 작업 상태가 진행 상황을 장치에 사용할 수 있는 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-177">The function to call when the job has been created, with two arguments: an error object if an an error happened, (null otherwise) and the job status that can be used to track progress of the devices import.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.JobCallback
+  name: JobCallback
+  fullName: JobCallback
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n"
+  package: azure-iothub
+- uid: azure-iothub.Registry.JobStatus
+  name: JobStatus
+  fullName: JobStatus
+  children: []
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-iothub
+- uid: azure-iothub.Registry.list
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-178">IoT hub에서 첫 번째 1000 장치 id에 대 한 정보를 요청 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-178">Requests information about the first 1000 device identities on an IoT hub.</span></span>
+  syntax:
+    content: 'function list(done: Callback<Device[]>)'
+    parameters:
+    - id: done
+      type:
+      - Callback<azure-iothub.Device[]>
+      description: >
+        <span data-ttu-id="396f3-179">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-179">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-180">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 배열 [장치](xref:azure-iothub.Device) 나열 된 장치 id를 나타내는 개체 및 전송 관련 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-180">`done` will be called with three arguments: an Error object (can be null), an array of [Device](xref:azure-iothub.Device) objects representing the listed device identities, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.listJobs
+  name: listJobs
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-181">(있는 경우 활성 것 포함)는 마지막 import/export 작업을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-181">List the last import/export jobs (including the active one, if any).</span></span>
+  syntax:
+    content: 'function listJobs(done: Callback<any>)'
+    parameters:
+    - id: done
+      type:
+      - Callback<any>
+      description: >
+        <span data-ttu-id="396f3-182">두 개의 인수를 사용 하 여 호출할 함수입니다: 오류가 발생 한 경우 오류 개체 (그렇지 않으면 null) 및 인수로 과거 작업의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-182">The function to call with two arguments: an error object if an error happened, (null otherwise) and the list of past jobs as an argument.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.removeConfiguration
+  name: removeConfiguration
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-183">IoT Hub에서 지정된 된 ID 사용 하 여 구성을 제거합니다</span><span class="sxs-lookup"><span data-stu-id="396f3-183">Remove a configuration with the given ID from an IoT Hub</span></span>
+  syntax:
+    content: 'function removeConfiguration(configurationId: string, done: Registry.ResponseCallback)'
+    parameters:
+    - id: configurationId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-184">제거할 구성의 ID</span><span class="sxs-lookup"><span data-stu-id="396f3-184">ID of the configuration to remove</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-185">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-185">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-186">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-186">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.removeDevices
+  name: removeDevices
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-187">장치 배열을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-187">Updates an array of devices.</span></span>
+  syntax:
+    content: 'function removeDevices(devices: DeviceDescription[], forceRemove: boolean, done: Registry.BulkDeviceIdentityCallback)'
+    parameters:
+    - id: devices
+      type:
+      - azure-iothub.Registry.DeviceDescription[]
+      description: <span data-ttu-id="396f3-188">포함 해야 하는 개체의 배열을 `deviceId` 속성 값을 유효한 장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-188">An array of objects which must include a `deviceId` property whose value is a valid device identifier.</span></span>
+    - id: forceRemove
+      type:
+      - boolean
+      description: <span data-ttu-id="396f3-189">경우 `forceRemove` etag에 관계 없이 장치를 제거할 때 이면 true입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-189">if `forceRemove` is true then the device will be removed regardless of an etag.</span></span>  <span data-ttu-id="396f3-190">그렇지 않은 경우 etag가 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-190">Otherwise the etags must match.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.BulkDeviceIdentityCallback
+      description: >
+        <span data-ttu-id="396f3-191">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-191">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-192">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체는 BulkRegistryOperationResult 및 전송 관련 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-192">`done` will be called with three arguments: an Error object (can be null), a BulkRegistryOperationResult and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.removeModule
+  name: removeModule
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-193">레지스트리에서 지정 된 모듈을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-193">Remove the given module from the registry</span></span>
+  syntax:
+    content: 'function removeModule(module: Module, done: Registry.ResponseCallback)'
+    parameters:
+    - id: module
+      type:
+      - azure-iothub.Module
+      description: ''
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-194">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-194">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-195">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-195">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.removeModule_1
+  name: removeModule
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-196">레지스트리에서 지정 된 모듈을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-196">Remove the given module from the registry</span></span>
+  syntax:
+    content: 'function removeModule(deviceId: string, moduleId: string, done: Registry.ResponseCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: ''
+    - id: moduleId
+      type:
+      - string
+      description: ''
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: ''
+  package: azure-iothub
+- uid: azure-iothub.Registry.ResponseCallback
+  name: ResponseCallback
+  fullName: ResponseCallback
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n"
+  package: azure-iothub
+- uid: azure-iothub.Registry.update
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-197">지정 된 장치 정보를 사용 하 여 IoT hub에서 기존 장치 id를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-197">Updates an existing device identity on an IoT hub with the given device information.</span></span>
+  syntax:
+    content: 'function update(deviceInfo: DeviceDescription, done: Registry.DeviceCallback)'
+    parameters:
+    - id: deviceInfo
+      type:
+      - azure-iothub.Registry.DeviceDescription
+      description: <span data-ttu-id="396f3-198">포함 해야 하는 개체는 `deviceId` 속성 값을 유효한 장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-198">An object which must include a `deviceId` property whose value is a valid device identifier.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.DeviceCallback
+      description: >
+        <span data-ttu-id="396f3-199">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-199">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-200">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수)는 오류 개체를 [장치](xref:azure-iothub.Device) 업데이트 된 장치 id를 나타내는 개체와 전송별 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-200">`done` will be called with three arguments: an Error object (can be null), a [Device](xref:azure-iothub.Device) object representing the updated device identity, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateConfiguration
+  name: updateConfiguration
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-201">IoT hub의 구성을 업데이트합니다</span><span class="sxs-lookup"><span data-stu-id="396f3-201">Update a configuration in an IoT hub</span></span>
+  syntax:
+    content: 'function updateConfiguration(configuration: Configuration, done: Registry.ResponseCallback)'
+    parameters:
+    - id: configuration
+      type:
+      - azure-iothub.Configuration
+      description: '<span data-ttu-id="396f3-202">형식 모듈: azure의 개체-iot hub. 허브에 추가할 구성</span><span class="sxs-lookup"><span data-stu-id="396f3-202">An object of type module:azure-iothub.Configuration to add to the hub</span></span>'
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-203">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-203">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-204">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-204">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateConfiguration_1
+  name: updateConfiguration
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-205">IoT hub의 구성을 업데이트합니다</span><span class="sxs-lookup"><span data-stu-id="396f3-205">Update a configuration in an IoT hub</span></span>
+  syntax:
+    content: 'function updateConfiguration(configuration: Configuration, forceUpdate: boolean, done: Registry.ResponseCallback)'
+    parameters:
+    - id: configuration
+      type:
+      - azure-iothub.Configuration
+      description: ''
+    - id: forceUpdate
+      type:
+      - boolean
+      description: ''
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: ''
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateDevices
+  name: updateDevices
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-206">장치 배열을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-206">Updates an array of devices.</span></span>
+  syntax:
+    content: 'function updateDevices(devices: DeviceDescription[], forceUpdate: boolean, done?: Registry.BulkDeviceIdentityCallback)'
+    parameters:
+    - id: devices
+      type:
+      - azure-iothub.Registry.DeviceDescription[]
+      description: <span data-ttu-id="396f3-207">포함 해야 하는 개체의 배열을 `deviceId` 속성 값을 유효한 장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-207">An array of objects which must include a `deviceId` property whose value is a valid device identifier.</span></span>
+    - id: forceUpdate
+      type:
+      - boolean
+      description: <span data-ttu-id="396f3-208">경우 `forceUpdate` true 이면 etag에 관계 없이 장치를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-208">if `forceUpdate` is true then the device will be updated regardless of an etag.</span></span>  <span data-ttu-id="396f3-209">그렇지 않은 경우 etag가 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-209">Otherwise the etags must match.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.BulkDeviceIdentityCallback
+      description: >
+        <span data-ttu-id="396f3-210">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-210">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-211">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체는 BulkRegistryOperationResult 및 전송 관련 응답 개체 로깅 또는 디버깅에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-211">`done` will be called with three arguments: an Error object (can be null), a BulkRegistryOperationResult and a transport-specific response object useful for logging or debugging.</span></span>
+      optional: true
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateModule
+  name: updateModule
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-212">레지스트리에 지정 된 모듈 개체를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-212">Update the given module object in the registry</span></span>
+  syntax:
+    content: 'function updateModule(module: Module, done: Registry.ResponseCallback)'
+    parameters:
+    - id: module
+      type:
+      - azure-iothub.Module
+      description: <span data-ttu-id="396f3-213">모듈 개체 업데이트입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-213">Module object to update.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-214">작업이 완료 될 때 호출할 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-214">The function to call when the operation is complete.</span></span> <span data-ttu-id="396f3-215">`done` 세 개의 인수를 사용 하 여 호출 됩니다: (null 일 수) 오류 개체, 응답 및 로깅 또는 디버깅에 대 한 유용한 전송별 응답 개체의 본문입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-215">`done` will be called with three arguments: an Error object (can be null), the body of the response, and a transport-specific response object useful for logging or debugging.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateModule_1
+  name: updateModule
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-216">레지스트리에 지정 된 모듈 개체를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-216">Update the given module object in the registry</span></span>
+  syntax:
+    content: 'function updateModule(module: Module, forceUpdate: boolean, done: Registry.ResponseCallback)'
+    parameters:
+    - id: module
+      type:
+      - azure-iothub.Module
+      description: ''
+    - id: forceUpdate
+      type:
+      - boolean
+      description: ''
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: ''
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateModuleTwin
+  name: updateModuleTwin
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-217">지정 된 패치를 사용 하 여 특정 모듈의 쌍을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-217">Updates the Twin of a specific module with the given patch.</span></span>
+  syntax:
+    content: 'function updateModuleTwin(deviceId: string, moduleId: string, patch: any, etag: string, done: Registry.ResponseCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-218">장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-218">The device identifier.</span></span>
+    - id: moduleId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-219">모듈 식별자</span><span class="sxs-lookup"><span data-stu-id="396f3-219">The module identifier</span></span>
+    - id: patch
+      type:
+      - any
+      description: <span data-ttu-id="396f3-220">Desired 속성 및 태그를 사용 하 여 모듈 쌍을 패치 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-220">The desired properties and tags to patch the module twin with.</span></span>
+    - id: etag
+      type:
+      - string
+      description: <span data-ttu-id="396f3-221">이 모듈 쌍에 대 한 최신 etag 또는 ' \*' 모듈 쌍이 업데이트 된 etag를 가져온 경우에 업데이트를 적용 하려면.</span><span class="sxs-lookup"><span data-stu-id="396f3-221">The latest etag for this module twin or '\*' to force an update even if the module twin has been updated since the etag was obtained.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: <span data-ttu-id="396f3-222">Error 개체 또는 모듈 쌍 인스턴스 중 하나를 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="396f3-222">The callback that will be called with either an Error object or the module twin instance.</span></span>
+  package: azure-iothub
+- uid: azure-iothub.Registry.updateTwin
+  name: updateTwin
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="396f3-223">지정 된 패치를 사용 하 여 특정 장치의 장치 쌍을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-223">Updates the Device Twin of a specific device with the given patch.</span></span>
+  syntax:
+    content: 'function updateTwin(deviceId: string, patch: any, etag: string, done: Registry.ResponseCallback)'
+    parameters:
+    - id: deviceId
+      type:
+      - string
+      description: <span data-ttu-id="396f3-224">장치 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-224">The device identifier.</span></span>
+    - id: patch
+      type:
+      - any
+      description: <span data-ttu-id="396f3-225">Desired 속성 및 태그를 사용 하 여 장치 쌍을 패치 합니다.</span><span class="sxs-lookup"><span data-stu-id="396f3-225">The desired properties and tags to patch the device twin with.</span></span>
+    - id: etag
+      type:
+      - string
+      description: <span data-ttu-id="396f3-226">이 장치 쌍에 대 한 최신 etag 또는 ' \*' etag를 가져온 후 장치 쌍 업데이트 된 경우에 업데이트를 적용 하려면.</span><span class="sxs-lookup"><span data-stu-id="396f3-226">The latest etag for this device twin or '\*' to force an update even if the device twin has been updated since the etag was obtained.</span></span>
+    - id: done
+      type:
+      - azure-iothub.Registry.ResponseCallback
+      description: >
+        <span data-ttu-id="396f3-227">Error 개체 또는 장치 쌍 인스턴스 중 하나를 사용 하 여 호출 될 콜백.</span><span class="sxs-lookup"><span data-stu-id="396f3-227">The callback that will be called with either an Error object or the device twin instance.</span></span>
+  package: azure-iothub
+references:
+- uid: azure-iothub.Registry.DeviceRegistryOperationError[]
+  spec.typeScript:
+  - name: DeviceRegistryOperationError
+    fullName: DeviceRegistryOperationError
+    uid: azure-iothub.Registry.DeviceRegistryOperationError
+  - name: '[]'
+    fullName: '[]'
+- uid: azure-iothub.Device.Capabilities
+  spec.typeScript:
+  - name: Capabilities
+    fullName: Capabilities
+    uid: azure-iothub.Device.Capabilities
+- uid: azure-iothub.Configuration
+  spec.typeScript:
+  - name: Configuration
+    fullName: Configuration
+    uid: azure-iothub.Configuration
+- uid: azure-iothub.Registry.ResponseCallback
+  spec.typeScript:
+  - name: ResponseCallback
+    fullName: ResponseCallback
+    uid: azure-iothub.Registry.ResponseCallback
+- uid: azure-iothub.Registry.DeviceDescription[]
+  spec.typeScript:
+  - name: DeviceDescription
+    fullName: DeviceDescription
+    uid: azure-iothub.Registry.DeviceDescription
+  - name: '[]'
+    fullName: '[]'
+- uid: azure-iothub.Registry.BulkDeviceIdentityCallback
+  spec.typeScript:
+  - name: BulkDeviceIdentityCallback
+    fullName: BulkDeviceIdentityCallback
+    uid: azure-iothub.Registry.BulkDeviceIdentityCallback
+- uid: azure-iothub.Module
+  spec.typeScript:
+  - name: Module
+    fullName: Module
+    uid: azure-iothub.Module
+- uid: azure-iothub.ConfigurationContent
+  spec.typeScript:
+  - name: ConfigurationContent
+    fullName: ConfigurationContent
+    uid: azure-iothub.ConfigurationContent
+- uid: azure-iothub.Registry.JobCallback
+  spec.typeScript:
+  - name: JobCallback
+    fullName: JobCallback
+    uid: azure-iothub.Registry.JobCallback
+- uid: azure-iothub.Registry.DeviceDescription
+  spec.typeScript:
+  - name: DeviceDescription
+    fullName: DeviceDescription
+    uid: azure-iothub.Registry.DeviceDescription
+- uid: azure-iothub.Registry.DeviceCallback
+  spec.typeScript:
+  - name: DeviceCallback
+    fullName: DeviceCallback
+    uid: azure-iothub.Registry.DeviceCallback
+- uid: azure-iothub.Query
+  spec.typeScript:
+  - name: Query
+    fullName: Query
+    uid: azure-iothub.Query
+- uid: Callback<azure-iothub.Registry.RegistryStatistics>
+  spec.typeScript:
+  - name: Callback<
+    fullName: Callback<
+  - name: RegistryStatistics
+    fullName: RegistryStatistics
+    uid: azure-iothub.Registry.RegistryStatistics
+  - name: '>'
+    fullName: '>'
+- uid: Callback<azure-iothub.Device[]>
+  spec.typeScript:
+  - name: Callback<
+    fullName: Callback<
+  - name: Device
+    fullName: Device
+    uid: azure-iothub.Device
+  - name: '[]>'
+    fullName: '[]>'
+- uid: azure-iothub.Registry
+  spec.typeScript:
+  - name: Registry
+    fullName: Registry
+    uid: azure-iothub.Registry

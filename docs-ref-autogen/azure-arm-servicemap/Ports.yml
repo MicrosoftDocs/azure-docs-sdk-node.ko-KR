@@ -1,0 +1,942 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 0072104c4d902989f067af297e6e0dd3ed56c2c6
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40067206"
+items:
+- uid: azure-arm-servicemap.Ports
+  name: Ports
+  fullName: Ports
+  children:
+  - azure-arm-servicemap.Ports.get
+  - azure-arm-servicemap.Ports.get_1
+  - azure-arm-servicemap.Ports.get_2
+  - azure-arm-servicemap.Ports.getLiveness_1
+  - azure-arm-servicemap.Ports.getLiveness_2
+  - azure-arm-servicemap.Ports.getLiveness
+  - azure-arm-servicemap.Ports.getLivenessWithHttpOperationResponse
+  - azure-arm-servicemap.Ports.getWithHttpOperationResponse
+  - azure-arm-servicemap.Ports.listAcceptingProcesses
+  - azure-arm-servicemap.Ports.listAcceptingProcesses_1
+  - azure-arm-servicemap.Ports.listAcceptingProcesses_2
+  - azure-arm-servicemap.Ports.listAcceptingProcessesNext
+  - azure-arm-servicemap.Ports.listAcceptingProcessesNext_1
+  - azure-arm-servicemap.Ports.listAcceptingProcessesNext_2
+  - azure-arm-servicemap.Ports.listAcceptingProcessesNextWithHttpOperationResponse
+  - azure-arm-servicemap.Ports.listAcceptingProcessesWithHttpOperationResponse
+  - azure-arm-servicemap.Ports.listConnections
+  - azure-arm-servicemap.Ports.listConnections_1
+  - azure-arm-servicemap.Ports.listConnections_2
+  - azure-arm-servicemap.Ports.listConnectionsNext
+  - azure-arm-servicemap.Ports.listConnectionsNext_1
+  - azure-arm-servicemap.Ports.listConnectionsNext_2
+  - azure-arm-servicemap.Ports.listConnectionsNextWithHttpOperationResponse
+  - azure-arm-servicemap.Ports.listConnectionsWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.get
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-101">지정된 된 포트를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-101">Returns the specified port.</span></span> <span data-ttu-id="4b206-102">포트는 지정 된 시간 간격 동안 라이브 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-102">The port must be live during the specified time interval.</span></span> <span data-ttu-id="4b206-103">간격의 포트를 라이브 없으면 404 (찾을 수 없음) 상태가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-103">If the port is not live during the interval, status 404 (Not Found) is returned.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-104">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-104">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-105">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-105">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-106">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-106">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-107">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-107">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-servicemap.Port>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.get_1
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-108">지정된 된 포트를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-108">Returns the specified port.</span></span> <span data-ttu-id="4b206-109">포트는 지정 된 시간 간격 동안 라이브 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-109">The port must be live during the specified time interval.</span></span> <span data-ttu-id="4b206-110">간격의 포트를 라이브 없으면 404 (찾을 수 없음) 상태가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-110">If the port is not live during the interval, status 404 (Not Found) is returned.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, callback: ServiceCallback<Port>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.Port>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.Port>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.get_2
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-111">지정된 된 포트를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-111">Returns the specified port.</span></span> <span data-ttu-id="4b206-112">포트는 지정 된 시간 간격 동안 라이브 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-112">The port must be live during the specified time interval.</span></span> <span data-ttu-id="4b206-113">간격의 포트를 라이브 없으면 404 (찾을 수 없음) 상태가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-113">If the port is not live during the interval, status 404 (Not Found) is returned.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options: function, callback: ServiceCallback<Port>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.Port>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.Port>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.getLiveness_1
+  name: getLiveness
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-114">지정 된 시간 간격 동안 포트 선거의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-114">Obtains the liveness status of the port during the specified time interval.</span></span>
+  syntax:
+    content: 'function getLiveness(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, callback: ServiceCallback<Liveness>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.Liveness>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.Liveness>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.getLiveness_2
+  name: getLiveness
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-115">지정 된 시간 간격 동안 포트 선거의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-115">Obtains the liveness status of the port during the specified time interval.</span></span>
+  syntax:
+    content: 'function getLiveness(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options: function, callback: ServiceCallback<Liveness>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.Liveness>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.Liveness>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.getLiveness
+  name: getLiveness
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-116">지정 된 시간 간격 동안 포트 선거의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-116">Obtains the liveness status of the port during the specified time interval.</span></span>
+  syntax:
+    content: 'function getLiveness(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-117">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-117">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-118">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-118">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-119">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-119">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-120">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-120">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-servicemap.Liveness>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.getLivenessWithHttpOperationResponse
+  name: getLivenessWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-121">지정 된 시간 간격 동안 포트 선거의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-121">Obtains the liveness status of the port during the specified time interval.</span></span>
+  syntax:
+    content: 'function getLivenessWithHttpOperationResponse(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-122">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-122">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-123">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-123">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-124">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-124">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-125">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-125">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-servicemap.Liveness>>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-126">지정된 된 포트를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-126">Returns the specified port.</span></span> <span data-ttu-id="4b206-127">포트는 지정 된 시간 간격 동안 라이브 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-127">The port must be live during the specified time interval.</span></span> <span data-ttu-id="4b206-128">간격의 포트를 라이브 없으면 404 (찾을 수 없음) 상태가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-128">If the port is not live during the interval, status 404 (Not Found) is returned.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-129">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-129">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-130">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-130">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-131">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-131">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-132">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-132">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-servicemap.Port>>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcesses
+  name: listAcceptingProcesses
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-133">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-133">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcesses(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-134">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-134">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-135">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-135">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-136">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-136">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-137">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-137">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ProcessCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcesses_1
+  name: listAcceptingProcesses
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-138">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-138">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcesses(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, callback: ServiceCallback<ProcessCollection>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ProcessCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ProcessCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcesses_2
+  name: listAcceptingProcesses
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-139">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-139">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcesses(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options: function, callback: ServiceCallback<ProcessCollection>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ProcessCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ProcessCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcessesNext
+  name: listAcceptingProcessesNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-140">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-140">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcessesNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-141">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-141">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ProcessCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcessesNext_1
+  name: listAcceptingProcessesNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-142">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-142">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcessesNext(nextPageLink: string, callback: ServiceCallback<ProcessCollection>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ProcessCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ProcessCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcessesNext_2
+  name: listAcceptingProcessesNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-143">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-143">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcessesNext(nextPageLink: string, options: function, callback: ServiceCallback<ProcessCollection>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ProcessCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ProcessCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcessesNextWithHttpOperationResponse
+  name: listAcceptingProcessesNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-144">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-144">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcessesNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-145">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-145">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-servicemap.ProcessCollection>>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listAcceptingProcessesWithHttpOperationResponse
+  name: listAcceptingProcessesWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-146">지정된 된 포트에서 수락 하는 프로세스의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-146">Returns a collection of processes accepting on the specified port</span></span>
+  syntax:
+    content: 'function listAcceptingProcessesWithHttpOperationResponse(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-147">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-147">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-148">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-148">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-149">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-149">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-150">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-150">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-servicemap.ProcessCollection>>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnections
+  name: listConnections
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-151">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-151">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnections(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-152">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-152">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-153">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-153">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-154">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-154">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-155">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-155">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ConnectionCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnections_1
+  name: listConnections
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-156">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-156">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnections(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, callback: ServiceCallback<ConnectionCollection>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ConnectionCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ConnectionCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnections_2
+  name: listConnections
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-157">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-157">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnections(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options: function, callback: ServiceCallback<ConnectionCollection>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: workspaceName
+      type:
+      - string
+      description: ''
+    - id: machineName
+      type:
+      - string
+      description: ''
+    - id: portName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ConnectionCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ConnectionCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnectionsNext
+  name: listConnectionsNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-158">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-158">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnectionsNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-159">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-159">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ConnectionCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnectionsNext_1
+  name: listConnectionsNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-160">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-160">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnectionsNext(nextPageLink: string, callback: ServiceCallback<ConnectionCollection>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ConnectionCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ConnectionCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnectionsNext_2
+  name: listConnectionsNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-161">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-161">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnectionsNext(nextPageLink: string, options: function, callback: ServiceCallback<ConnectionCollection>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-servicemap.ConnectionCollection>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-servicemap.ConnectionCollection>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnectionsNextWithHttpOperationResponse
+  name: listConnectionsNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-162">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-162">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnectionsNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-163">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-163">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-servicemap.ConnectionCollection>>
+  package: azure-arm-servicemap
+- uid: azure-arm-servicemap.Ports.listConnectionsWithHttpOperationResponse
+  name: listConnectionsWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="4b206-164">지정된 된 포트를 통해 설정 된 연결의 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-164">Returns a collection of connections established via the specified port.</span></span>
+  syntax:
+    content: 'function listConnectionsWithHttpOperationResponse(resourceGroupName: string, workspaceName: string, machineName: string, portName: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-165">지정 된 구독 Id 내에서 리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-165">Resource group name within the specified subscriptionId.</span></span>
+    - id: workspaceName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-166">원하는 리소스를 포함 하는 OMS 작업 영역</span><span class="sxs-lookup"><span data-stu-id="4b206-166">OMS workspace containing the resources of interest.</span></span>
+    - id: machineName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-167">컴퓨터 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-167">Machine resource name.</span></span>
+    - id: portName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="4b206-168">포트 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4b206-168">Port resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-servicemap.ConnectionCollection>>
+  package: azure-arm-servicemap
+references:
+- uid: Promise<azure-arm-servicemap.Port>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: Port
+    fullName: Port
+    uid: azure-arm-servicemap.Port
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-servicemap.Port>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: Port
+    fullName: Port
+    uid: azure-arm-servicemap.Port
+  - name: '>'
+    fullName: '>'
+- uid: Promise<azure-arm-servicemap.Liveness>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: Liveness
+    fullName: Liveness
+    uid: azure-arm-servicemap.Liveness
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-servicemap.Liveness>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: Liveness
+    fullName: Liveness
+    uid: azure-arm-servicemap.Liveness
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-servicemap.Liveness>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: Liveness
+    fullName: Liveness
+    uid: azure-arm-servicemap.Liveness
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<HttpOperationResponse<azure-arm-servicemap.Port>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: Port
+    fullName: Port
+    uid: azure-arm-servicemap.Port
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-servicemap.ProcessCollection>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: ProcessCollection
+    fullName: ProcessCollection
+    uid: azure-arm-servicemap.ProcessCollection
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-servicemap.ProcessCollection>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: ProcessCollection
+    fullName: ProcessCollection
+    uid: azure-arm-servicemap.ProcessCollection
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-servicemap.ProcessCollection>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: ProcessCollection
+    fullName: ProcessCollection
+    uid: azure-arm-servicemap.ProcessCollection
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-servicemap.ConnectionCollection>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: ConnectionCollection
+    fullName: ConnectionCollection
+    uid: azure-arm-servicemap.ConnectionCollection
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-servicemap.ConnectionCollection>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: ConnectionCollection
+    fullName: ConnectionCollection
+    uid: azure-arm-servicemap.ConnectionCollection
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-servicemap.ConnectionCollection>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: ConnectionCollection
+    fullName: ConnectionCollection
+    uid: azure-arm-servicemap.ConnectionCollection
+  - name: '>>'
+    fullName: '>>'

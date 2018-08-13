@@ -1,0 +1,2572 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 44d58795beadda0d8c337a65a8d757bbf2a7d89a
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40070038"
+items:
+- uid: azure-arm-mobileengagement.Campaigns
+  name: Campaigns
+  fullName: Campaigns
+  children:
+  - azure-arm-mobileengagement.Campaigns.activate
+  - azure-arm-mobileengagement.Campaigns.activate_1
+  - azure-arm-mobileengagement.Campaigns.activate_2
+  - azure-arm-mobileengagement.Campaigns.activateWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.create
+  - azure-arm-mobileengagement.Campaigns.create_1
+  - azure-arm-mobileengagement.Campaigns.create_2
+  - azure-arm-mobileengagement.Campaigns.createWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.deleteMethod_1
+  - azure-arm-mobileengagement.Campaigns.deleteMethod_2
+  - azure-arm-mobileengagement.Campaigns.deleteMethod
+  - azure-arm-mobileengagement.Campaigns.deleteMethodWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.finish
+  - azure-arm-mobileengagement.Campaigns.finish_1
+  - azure-arm-mobileengagement.Campaigns.finish_2
+  - azure-arm-mobileengagement.Campaigns.finishWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.get_1
+  - azure-arm-mobileengagement.Campaigns.get
+  - azure-arm-mobileengagement.Campaigns.get_2
+  - azure-arm-mobileengagement.Campaigns.getByName_1
+  - azure-arm-mobileengagement.Campaigns.getByName_2
+  - azure-arm-mobileengagement.Campaigns.getByName
+  - azure-arm-mobileengagement.Campaigns.getByNameWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.getStatistics_1
+  - azure-arm-mobileengagement.Campaigns.getStatistics_2
+  - azure-arm-mobileengagement.Campaigns.getStatistics
+  - azure-arm-mobileengagement.Campaigns.getStatisticsWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.getWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.list
+  - azure-arm-mobileengagement.Campaigns.list_1
+  - azure-arm-mobileengagement.Campaigns.list_2
+  - azure-arm-mobileengagement.Campaigns.listNext
+  - azure-arm-mobileengagement.Campaigns.listNext_1
+  - azure-arm-mobileengagement.Campaigns.listNext_2
+  - azure-arm-mobileengagement.Campaigns.listNextWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.listWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.push
+  - azure-arm-mobileengagement.Campaigns.push_1
+  - azure-arm-mobileengagement.Campaigns.push_2
+  - azure-arm-mobileengagement.Campaigns.pushWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.suspend
+  - azure-arm-mobileengagement.Campaigns.suspend_1
+  - azure-arm-mobileengagement.Campaigns.suspend_2
+  - azure-arm-mobileengagement.Campaigns.suspendWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.testNew
+  - azure-arm-mobileengagement.Campaigns.testNew_2
+  - azure-arm-mobileengagement.Campaigns.testNew_1
+  - azure-arm-mobileengagement.Campaigns.testNewWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.testSaved
+  - azure-arm-mobileengagement.Campaigns.testSaved_1
+  - azure-arm-mobileengagement.Campaigns.testSaved_2
+  - azure-arm-mobileengagement.Campaigns.testSavedWithHttpOperationResponse
+  - azure-arm-mobileengagement.Campaigns.update
+  - azure-arm-mobileengagement.Campaigns.update_1
+  - azure-arm-mobileengagement.Campaigns.update_2
+  - azure-arm-mobileengagement.Campaigns.updateWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.activate
+  name: activate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-101">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 활성화 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-101">Activate a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function activate(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-102">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-102">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-103">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-103">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-104">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-104">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-105">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-105">Campaign kind.</span></span> <span data-ttu-id="fa490-106">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-106">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-107">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-107">Campaign identifier.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.activate_1
+  name: activate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-108">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 활성화 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-108">Activate a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function activate(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.activate_2
+  name: activate
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-109">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 활성화 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-109">Activate a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function activate(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options: function, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.activateWithHttpOperationResponse
+  name: activateWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-110">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 활성화 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-110">Activate a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function activateWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-111">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-111">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-112">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-112">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-113">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-113">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-114">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-114">Campaign kind.</span></span> <span data-ttu-id="fa490-115">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-115">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-116">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-116">Campaign identifier.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.create
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-117">푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-117">Create a push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function create(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: Campaign, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-118">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-118">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-119">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-119">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-120">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-120">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-121">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-121">Campaign kind.</span></span> <span data-ttu-id="fa490-122">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-122">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: >
+        <span data-ttu-id="fa490-123">업데이트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-123">Parameters supplied to the Update Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.create_1
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-124">푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-124">Create a push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function create(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: Campaign, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.create_2
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-125">푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-125">Create a push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function create(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: Campaign, options: function, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.createWithHttpOperationResponse
+  name: createWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-126">푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-126">Create a push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function createWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: Campaign, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-127">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-127">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-128">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-128">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-129">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-129">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-130">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-130">Campaign kind.</span></span> <span data-ttu-id="fa490-131">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-131">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: >
+        <span data-ttu-id="fa490-132">업데이트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-132">Parameters supplied to the Update Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.deleteMethod_1
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-133">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-133">Delete a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function deleteMethod(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.deleteMethod_2
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-134">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-134">Delete a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function deleteMethod(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options: function, callback: ServiceCallback<void>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.deleteMethod
+  name: deleteMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-135">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-135">Delete a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function deleteMethod(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-136">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-136">Campaign kind.</span></span> <span data-ttu-id="fa490-137">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-137">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-138">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-138">Campaign identifier.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-139">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-139">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-140">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-140">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-141">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-141">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.deleteMethodWithHttpOperationResponse
+  name: deleteMethodWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-142">캠페인 만들기를 호출 하 여 이전에 만든 캠페인을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-142">Delete a campaign previously created by a call to Create campaign.</span></span>
+  syntax:
+    content: 'function deleteMethodWithHttpOperationResponse(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-143">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-143">Campaign kind.</span></span> <span data-ttu-id="fa490-144">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-144">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-145">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-145">Campaign identifier.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-146">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-146">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-147">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-147">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-148">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-148">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.finish
+  name: finish
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-149">푸시 캠페인 활성화 캠페인에 대 한 호출을 통해 이전에 활성화를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-149">Finish a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function finish(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-150">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-150">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-151">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-151">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-152">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-152">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-153">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-153">Campaign kind.</span></span> <span data-ttu-id="fa490-154">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-154">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-155">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-155">Campaign identifier.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.finish_1
+  name: finish
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-156">푸시 캠페인 활성화 캠페인에 대 한 호출을 통해 이전에 활성화를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-156">Finish a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function finish(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.finish_2
+  name: finish
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-157">푸시 캠페인 활성화 캠페인에 대 한 호출을 통해 이전에 활성화를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-157">Finish a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function finish(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options: function, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.finishWithHttpOperationResponse
+  name: finishWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-158">푸시 캠페인 활성화 캠페인에 대 한 호출을 통해 이전에 활성화를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-158">Finish a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function finishWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-159">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-159">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-160">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-160">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-161">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-161">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-162">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-162">Campaign kind.</span></span> <span data-ttu-id="fa490-163">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-163">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-164">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-164">Campaign identifier.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.get_1
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-165">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-165">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function get(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, callback: ServiceCallback<CampaignResult>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.get
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-166">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-166">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function get(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-167">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-167">Campaign kind.</span></span> <span data-ttu-id="fa490-168">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-168">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-169">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-169">Campaign identifier.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-170">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-170">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-171">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-171">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-172">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-172">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.get_2
+  name: get
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-173">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-173">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function get(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options: function, callback: ServiceCallback<CampaignResult>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getByName_1
+  name: getByName
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-174">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-174">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function getByName(resourceGroupName: string, appCollection: string, appName: string, kind: string, name: string, callback: ServiceCallback<CampaignResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getByName_2
+  name: getByName
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-175">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-175">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function getByName(resourceGroupName: string, appCollection: string, appName: string, kind: string, name: string, options: function, callback: ServiceCallback<CampaignResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getByName
+  name: getByName
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-176">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-176">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function getByName(resourceGroupName: string, appCollection: string, appName: string, kind: string, name: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-177">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-177">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-178">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-178">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-179">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-179">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-180">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-180">Campaign kind.</span></span> <span data-ttu-id="fa490-181">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-181">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-182">캠페인의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-182">Campaign name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getByNameWithHttpOperationResponse
+  name: getByNameWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-183">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-183">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function getByNameWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, name: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-184">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-184">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-185">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-185">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-186">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-186">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-187">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-187">Campaign kind.</span></span> <span data-ttu-id="fa490-188">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-188">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-189">캠페인의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-189">Campaign name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getStatistics_1
+  name: getStatistics
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-190">캠페인 통계를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-190">Get all the campaign statistics.</span></span>
+  syntax:
+    content: 'function getStatistics(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, callback: ServiceCallback<CampaignStatisticsResult>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStatisticsResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStatisticsResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getStatistics_2
+  name: getStatistics
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-191">캠페인 통계를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-191">Get all the campaign statistics.</span></span>
+  syntax:
+    content: 'function getStatistics(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options: function, callback: ServiceCallback<CampaignStatisticsResult>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStatisticsResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStatisticsResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getStatistics
+  name: getStatistics
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-192">캠페인 통계를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-192">Get all the campaign statistics.</span></span>
+  syntax:
+    content: 'function getStatistics(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-193">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-193">Campaign kind.</span></span> <span data-ttu-id="fa490-194">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-194">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-195">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-195">Campaign identifier.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-196">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-196">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-197">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-197">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-198">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-198">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStatisticsResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getStatisticsWithHttpOperationResponse
+  name: getStatisticsWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-199">캠페인 통계를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-199">Get all the campaign statistics.</span></span>
+  syntax:
+    content: 'function getStatisticsWithHttpOperationResponse(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-200">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-200">Campaign kind.</span></span> <span data-ttu-id="fa490-201">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-201">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-202">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-202">Campaign identifier.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-203">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-203">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-204">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-204">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-205">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-205">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStatisticsResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-206">Get 캠페인 작업 이전에 만든된 캠페인에 대 한 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-206">The Get campaign operation retrieves information about a previously created campaign.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(kind: string, id: number, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-207">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-207">Campaign kind.</span></span> <span data-ttu-id="fa490-208">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-208">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-209">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-209">Campaign identifier.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-210">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-210">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-211">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-211">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-212">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-212">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.list
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-213">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-213">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function list(resourceGroupName: string, appCollection: string, appName: string, kind: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-214">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-214">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-215">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-215">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-216">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-216">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-217">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-217">Campaign kind.</span></span> <span data-ttu-id="fa490-218">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-218">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignsListResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.list_1
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-219">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-219">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function list(resourceGroupName: string, appCollection: string, appName: string, kind: string, callback: ServiceCallback<CampaignsListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignsListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignsListResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.list_2
+  name: list
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-220">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-220">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function list(resourceGroupName: string, appCollection: string, appName: string, kind: string, options: function, callback: ServiceCallback<CampaignsListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignsListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignsListResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.listNext
+  name: listNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-221">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-221">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-222">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-222">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignsListResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.listNext_1
+  name: listNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-223">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-223">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, callback: ServiceCallback<CampaignsListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignsListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignsListResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.listNext_2
+  name: listNext
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-224">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-224">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options: function, callback: ServiceCallback<CampaignsListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignsListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignsListResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.listNextWithHttpOperationResponse
+  name: listNextWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-225">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-225">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-226">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-226">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignsListResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.listWithHttpOperationResponse
+  name: listWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-227">캠페인의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-227">Get the list of campaigns.</span></span>
+  syntax:
+    content: 'function listWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-228">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-228">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-229">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-229">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-230">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-230">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-231">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-231">Campaign kind.</span></span> <span data-ttu-id="fa490-232">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-232">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignsListResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.push
+  name: push
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-233">일련의 장치 (만들기 캠페인을 사용 하 여 만든) 이전에 저장 된 캠페인을 푸시하십시오.</span><span class="sxs-lookup"><span data-stu-id="fa490-233">Push a previously saved campaign (created with Create campaign) to a set of devices.</span></span>
+  syntax:
+    content: 'function push(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignPushParameters, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-234">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-234">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-235">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-235">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-236">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-236">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-237">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-237">Campaign kind.</span></span> <span data-ttu-id="fa490-238">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-238">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-239">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-239">Campaign identifier.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignPushParameters
+      description: >
+        <span data-ttu-id="fa490-240">캠페인 푸시 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-240">Parameters supplied to the Push Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignPushResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.push_1
+  name: push
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-241">일련의 장치 (만들기 캠페인을 사용 하 여 만든) 이전에 저장 된 캠페인을 푸시하십시오.</span><span class="sxs-lookup"><span data-stu-id="fa490-241">Push a previously saved campaign (created with Create campaign) to a set of devices.</span></span>
+  syntax:
+    content: 'function push(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignPushParameters, callback: ServiceCallback<CampaignPushResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignPushParameters
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignPushResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignPushResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.push_2
+  name: push
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-242">일련의 장치 (만들기 캠페인을 사용 하 여 만든) 이전에 저장 된 캠페인을 푸시하십시오.</span><span class="sxs-lookup"><span data-stu-id="fa490-242">Push a previously saved campaign (created with Create campaign) to a set of devices.</span></span>
+  syntax:
+    content: 'function push(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignPushParameters, options: function, callback: ServiceCallback<CampaignPushResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignPushParameters
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignPushResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignPushResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.pushWithHttpOperationResponse
+  name: pushWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-243">일련의 장치 (만들기 캠페인을 사용 하 여 만든) 이전에 저장 된 캠페인을 푸시하십시오.</span><span class="sxs-lookup"><span data-stu-id="fa490-243">Push a previously saved campaign (created with Create campaign) to a set of devices.</span></span>
+  syntax:
+    content: 'function pushWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignPushParameters, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-244">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-244">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-245">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-245">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-246">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-246">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-247">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-247">Campaign kind.</span></span> <span data-ttu-id="fa490-248">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-248">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-249">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-249">Campaign identifier.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignPushParameters
+      description: >
+        <span data-ttu-id="fa490-250">캠페인 푸시 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-250">Parameters supplied to the Push Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignPushResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.suspend
+  name: suspend
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-251">이전에 활성화 활성화 캠페인을 호출 하 여 푸시 캠페인을 일시 중단 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-251">Suspend a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function suspend(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-252">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-252">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-253">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-253">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-254">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-254">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-255">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-255">Campaign kind.</span></span> <span data-ttu-id="fa490-256">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-256">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-257">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-257">Campaign identifier.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.suspend_1
+  name: suspend
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-258">이전에 활성화 활성화 캠페인을 호출 하 여 푸시 캠페인을 일시 중단 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-258">Suspend a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function suspend(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.suspend_2
+  name: suspend
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-259">이전에 활성화 활성화 캠페인을 호출 하 여 푸시 캠페인을 일시 중단 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-259">Suspend a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function suspend(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options: function, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.suspendWithHttpOperationResponse
+  name: suspendWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-260">이전에 활성화 활성화 캠페인을 호출 하 여 푸시 캠페인을 일시 중단 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-260">Suspend a push campaign previously activated by a call to Activate campaign.</span></span>
+  syntax:
+    content: 'function suspendWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-261">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-261">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-262">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-262">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-263">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-263">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-264">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-264">Campaign kind.</span></span> <span data-ttu-id="fa490-265">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-265">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-266">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-266">Campaign identifier.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testNew
+  name: testNew
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-267">장치 집합에서 새 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-267">Test a new campaign on a set of devices.</span></span>
+  syntax:
+    content: 'function testNew(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: CampaignTestNewParameters, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-268">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-268">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-269">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-269">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-270">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-270">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-271">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-271">Campaign kind.</span></span> <span data-ttu-id="fa490-272">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-272">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestNewParameters
+      description: >
+        <span data-ttu-id="fa490-273">테스트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-273">Parameters supplied to the Test Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignState>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testNew_2
+  name: testNew
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-274">장치 집합에서 새 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-274">Test a new campaign on a set of devices.</span></span>
+  syntax:
+    content: 'function testNew(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: CampaignTestNewParameters, options: function, callback: ServiceCallback<CampaignState>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestNewParameters
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignState>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignState>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testNew_1
+  name: testNew
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-275">장치 집합에서 새 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-275">Test a new campaign on a set of devices.</span></span>
+  syntax:
+    content: 'function testNew(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: CampaignTestNewParameters, callback: ServiceCallback<CampaignState>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestNewParameters
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignState>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignState>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testNewWithHttpOperationResponse
+  name: testNewWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-276">장치 집합에서 새 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-276">Test a new campaign on a set of devices.</span></span>
+  syntax:
+    content: 'function testNewWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, parameters: CampaignTestNewParameters, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-277">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-277">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-278">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-278">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-279">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-279">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-280">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-280">Campaign kind.</span></span> <span data-ttu-id="fa490-281">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-281">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestNewParameters
+      description: >
+        <span data-ttu-id="fa490-282">테스트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-282">Parameters supplied to the Test Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignState>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testSaved
+  name: testSaved
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-283">장치 집합에서 (만들기 캠페인을 사용 하 여 만든) 기존 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-283">Test an existing campaign (created with Create campaign) on a set of devices.</span></span>
+  syntax:
+    content: 'function testSaved(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignTestSavedParameters, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-284">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-284">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-285">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-285">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-286">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-286">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-287">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-287">Campaign kind.</span></span> <span data-ttu-id="fa490-288">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-288">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-289">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-289">Campaign identifier.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestSavedParameters
+      description: >
+        <span data-ttu-id="fa490-290">테스트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-290">Parameters supplied to the Test Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testSaved_1
+  name: testSaved
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-291">장치 집합에서 (만들기 캠페인을 사용 하 여 만든) 기존 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-291">Test an existing campaign (created with Create campaign) on a set of devices.</span></span>
+  syntax:
+    content: 'function testSaved(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignTestSavedParameters, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestSavedParameters
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testSaved_2
+  name: testSaved
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-292">장치 집합에서 (만들기 캠페인을 사용 하 여 만든) 기존 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-292">Test an existing campaign (created with Create campaign) on a set of devices.</span></span>
+  syntax:
+    content: 'function testSaved(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignTestSavedParameters, options: function, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestSavedParameters
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.testSavedWithHttpOperationResponse
+  name: testSavedWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-293">장치 집합에서 (만들기 캠페인을 사용 하 여 만든) 기존 캠페인을 테스트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-293">Test an existing campaign (created with Create campaign) on a set of devices.</span></span>
+  syntax:
+    content: 'function testSavedWithHttpOperationResponse(resourceGroupName: string, appCollection: string, appName: string, kind: string, id: number, parameters: CampaignTestSavedParameters, options?: function)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-294">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-294">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-295">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-295">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-296">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-296">Application resource name.</span></span>
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-297">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-297">Campaign kind.</span></span> <span data-ttu-id="fa490-298">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-298">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-299">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-299">Campaign identifier.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.CampaignTestSavedParameters
+      description: >
+        <span data-ttu-id="fa490-300">테스트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-300">Parameters supplied to the Test Campaign operation.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.update
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-301">기존 푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-301">Update an existing push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function update(kind: string, id: number, parameters: Campaign, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-302">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-302">Campaign kind.</span></span> <span data-ttu-id="fa490-303">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-303">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-304">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-304">Campaign identifier.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: >
+        <span data-ttu-id="fa490-305">업데이트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-305">Parameters supplied to the Update Campaign operation.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-306">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-306">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-307">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-307">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-308">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-308">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.update_1
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-309">기존 푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-309">Update an existing push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function update(kind: string, id: number, parameters: Campaign, resourceGroupName: string, appCollection: string, appName: string, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.update_2
+  name: update
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-310">기존 푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-310">Update an existing push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function update(kind: string, id: number, parameters: Campaign, resourceGroupName: string, appCollection: string, appName: string, options: function, callback: ServiceCallback<CampaignStateResult>)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: ''
+    - id: id
+      type:
+      - number
+      description: ''
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: appCollection
+      type:
+      - string
+      description: ''
+    - id: appName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - function
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-mobileengagement.CampaignStateResult>
+  package: azure-arm-mobileengagement
+- uid: azure-arm-mobileengagement.Campaigns.updateWithHttpOperationResponse
+  name: updateWithHttpOperationResponse
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="fa490-311">기존 푸시 캠페인 (알림, 설문 조사, 데이터 푸시 또는 네이티브 푸시)를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-311">Update an existing push campaign (announcement, poll, data push or native push).</span></span>
+  syntax:
+    content: 'function updateWithHttpOperationResponse(kind: string, id: number, parameters: Campaign, resourceGroupName: string, appCollection: string, appName: string, options?: function)'
+    parameters:
+    - id: kind
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-312">캠페인 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-312">Campaign kind.</span></span> <span data-ttu-id="fa490-313">가능한 값: '알림', '설문 조사', 'dataPushes', 'nativePushes'</span><span class="sxs-lookup"><span data-stu-id="fa490-313">Possible values include: 'announcements', 'polls', 'dataPushes', 'nativePushes'</span></span>
+    - id: id
+      type:
+      - number
+      description: >
+        <span data-ttu-id="fa490-314">캠페인 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-314">Campaign identifier.</span></span>
+    - id: parameters
+      type:
+      - azure-arm-mobileengagement.Campaign
+      description: >
+        <span data-ttu-id="fa490-315">업데이트 캠페인 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-315">Parameters supplied to the Update Campaign operation.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-316">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="fa490-316">The name of the resource group.</span></span>
+    - id: appCollection
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-317">응용 프로그램 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-317">Application collection.</span></span>
+    - id: appName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="fa490-318">응용 프로그램 리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="fa490-318">Application resource name.</span></span>
+    - id: options
+      type:
+      - function
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  package: azure-arm-mobileengagement
+references:
+- uid: Promise<azure-arm-mobileengagement.CampaignStateResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CampaignStateResult
+    fullName: CampaignStateResult
+    uid: azure-arm-mobileengagement.CampaignStateResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-mobileengagement.CampaignStateResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: CampaignStateResult
+    fullName: CampaignStateResult
+    uid: azure-arm-mobileengagement.CampaignStateResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStateResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: CampaignStateResult
+    fullName: CampaignStateResult
+    uid: azure-arm-mobileengagement.CampaignStateResult
+  - name: '>>'
+    fullName: '>>'
+- uid: azure-arm-mobileengagement.Campaign
+  spec.typeScript:
+  - name: Campaign
+    fullName: Campaign
+    uid: azure-arm-mobileengagement.Campaign
+- uid: Promise<azure-arm-mobileengagement.CampaignResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CampaignResult
+    fullName: CampaignResult
+    uid: azure-arm-mobileengagement.CampaignResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-mobileengagement.CampaignResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: CampaignResult
+    fullName: CampaignResult
+    uid: azure-arm-mobileengagement.CampaignResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: CampaignResult
+    fullName: CampaignResult
+    uid: azure-arm-mobileengagement.CampaignResult
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-mobileengagement.CampaignStatisticsResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CampaignStatisticsResult
+    fullName: CampaignStatisticsResult
+    uid: azure-arm-mobileengagement.CampaignStatisticsResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-mobileengagement.CampaignStatisticsResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: CampaignStatisticsResult
+    fullName: CampaignStatisticsResult
+    uid: azure-arm-mobileengagement.CampaignStatisticsResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignStatisticsResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: CampaignStatisticsResult
+    fullName: CampaignStatisticsResult
+    uid: azure-arm-mobileengagement.CampaignStatisticsResult
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-mobileengagement.CampaignsListResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CampaignsListResult
+    fullName: CampaignsListResult
+    uid: azure-arm-mobileengagement.CampaignsListResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-mobileengagement.CampaignsListResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: CampaignsListResult
+    fullName: CampaignsListResult
+    uid: azure-arm-mobileengagement.CampaignsListResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignsListResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: CampaignsListResult
+    fullName: CampaignsListResult
+    uid: azure-arm-mobileengagement.CampaignsListResult
+  - name: '>>'
+    fullName: '>>'
+- uid: azure-arm-mobileengagement.CampaignPushParameters
+  spec.typeScript:
+  - name: CampaignPushParameters
+    fullName: CampaignPushParameters
+    uid: azure-arm-mobileengagement.CampaignPushParameters
+- uid: Promise<azure-arm-mobileengagement.CampaignPushResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CampaignPushResult
+    fullName: CampaignPushResult
+    uid: azure-arm-mobileengagement.CampaignPushResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-mobileengagement.CampaignPushResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: CampaignPushResult
+    fullName: CampaignPushResult
+    uid: azure-arm-mobileengagement.CampaignPushResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignPushResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: CampaignPushResult
+    fullName: CampaignPushResult
+    uid: azure-arm-mobileengagement.CampaignPushResult
+  - name: '>>'
+    fullName: '>>'
+- uid: azure-arm-mobileengagement.CampaignTestNewParameters
+  spec.typeScript:
+  - name: CampaignTestNewParameters
+    fullName: CampaignTestNewParameters
+    uid: azure-arm-mobileengagement.CampaignTestNewParameters
+- uid: Promise<azure-arm-mobileengagement.CampaignState>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CampaignState
+    fullName: CampaignState
+    uid: azure-arm-mobileengagement.CampaignState
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-mobileengagement.CampaignState>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: CampaignState
+    fullName: CampaignState
+    uid: azure-arm-mobileengagement.CampaignState
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-mobileengagement.CampaignState>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: CampaignState
+    fullName: CampaignState
+    uid: azure-arm-mobileengagement.CampaignState
+  - name: '>>'
+    fullName: '>>'
+- uid: azure-arm-mobileengagement.CampaignTestSavedParameters
+  spec.typeScript:
+  - name: CampaignTestSavedParameters
+    fullName: CampaignTestSavedParameters
+    uid: azure-arm-mobileengagement.CampaignTestSavedParameters

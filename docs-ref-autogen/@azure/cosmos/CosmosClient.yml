@@ -1,0 +1,175 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: c42f476b7b2548bfccf1b3212b5a267458f632a2
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40069288"
+items:
+- uid: '@azure/cosmos.CosmosClient'
+  name: CosmosClient
+  fullName: CosmosClient
+  children:
+  - '@azure/cosmos.CosmosClient.constructor'
+  - '@azure/cosmos.CosmosClient.database'
+  - '@azure/cosmos.CosmosClient.databases'
+  - '@azure/cosmos.CosmosClient.getDatabaseAccount'
+  - '@azure/cosmos.CosmosClient.offer'
+  - '@azure/cosmos.CosmosClient.offers'
+  langs:
+  - typeScript
+  type: class
+  summary: >-
+    <span data-ttu-id="c5b1b-101">Azure Cosmos DB 데이터베이스 계정의 클라이언트 쪽 논리적 표현을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-101">Provides a client-side logical representation of the Azure Cosmos DB database account.</span></span>
+
+    <span data-ttu-id="c5b1b-102">이 클라이언트 구성 및 Azure Cosmos DB 데이터베이스 서비스에서 요청을 실행 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-102">This client is used to configure and execute requests in the Azure Cosmos DB database service.</span></span>
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.constructor'
+  name: CosmosClient
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c5b1b-103">새 <xref:CosmosClient> 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-103">Creates a new <xref:CosmosClient> object.</span></span> <span data-ttu-id="c5b1b-104">참조 <xref:CosmosClientOptions> 수 있는 옵션에 대 한 자세한 내용은 사용 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-104">See <xref:CosmosClientOptions> for more details on what options you can use.</span></span>
+  syntax:
+    content: 'new CosmosClient(options: CosmosClientOptions)'
+    parameters:
+    - id: options
+      type:
+      - '@azure/cosmos.CosmosClientOptions'
+      description: >
+        <span data-ttu-id="c5b1b-105">옵션의 모음-이상이 필요 끝점 및 인증 구성</span><span class="sxs-lookup"><span data-stu-id="c5b1b-105">bag of options - require at least endpoint and auth to be configured</span></span>
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.database'
+  name: database
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >
+    <span data-ttu-id="c5b1b-106">읽기, 업데이트 또는 id 별로 기존 데이터베이스를 삭제 또는 해당 데이터베이스에 속하는 컨테이너 액세스에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-106">Used for reading, updating, or deleting a existing database by id or accessing containers belonging to that database.</span></span>
+
+    <span data-ttu-id="c5b1b-107">이 네트워크 호출을 만들지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-107">This does not make a network call.</span></span> <span data-ttu-id="c5b1b-108">사용 하 여 `.read` 받은 후 데이터베이스에 대 한 정보를 가져오려는 합니다 <xref:Database> 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-108">Use `.read` to get info about the database after getting the <xref:Database> object.</span></span>
+  syntax:
+    content: 'function database(id: string)'
+    parameters:
+    - id: id
+      type:
+      - string
+      description: <span data-ttu-id="c5b1b-109">데이터베이스의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-109">The id of the database.</span></span>
+    return:
+      type:
+      - '@azure/cosmos.Database'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.databases'
+  name: databases
+  fullName: databases
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >
+    <span data-ttu-id="c5b1b-110">새 데이터베이스 만들기 또는 모든 데이터베이스 쿼리/읽기에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-110">Used for creating new databases, or querying/reading all databases.</span></span>
+
+    <span data-ttu-id="c5b1b-111">사용 하 여 `.database(id)` 읽기, 바꾸기 또는 id 별로 특정 한 기존 데이터베이스를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-111">Use `.database(id)` to read, replace, or delete a specific, existing database by id.</span></span>
+  syntax:
+    content: 'databases: Databases'
+    return:
+      type:
+      - '@azure/cosmos.Databases'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.getDatabaseAccount'
+  name: getDatabaseAccount
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c5b1b-112">현재 정보를 가져올 <xref:DatabaseAccount> (지역을 지원 되는 경우 등을 포함 합니다.)</span><span class="sxs-lookup"><span data-stu-id="c5b1b-112">Get information about the current <xref:DatabaseAccount> (including which regions are supported, etc.)</span></span>
+  syntax:
+    content: function getDatabaseAccount()
+    parameters: []
+    return:
+      type:
+      - Promise<@azure/cosmos.CosmosResponse<@azure/cosmos.DatabaseAccount, @azure/cosmos.CosmosClient>>
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.offer'
+  name: offer
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c5b1b-113">읽기, 또는 id 별로 기존 제품 업데이트에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-113">Used for reading, or updating a existing offer by id.</span></span>
+  syntax:
+    content: 'function offer(id: string)'
+    parameters:
+    - id: id
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c5b1b-114">제품의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-114">The id of the offer.</span></span>
+    return:
+      type:
+      - '@azure/cosmos.Offer'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.CosmosClient.offers'
+  name: offers
+  fullName: offers
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >
+    <span data-ttu-id="c5b1b-115">쿼리 및 모든 제품을 읽고 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-115">Used for querying & reading all offers.</span></span>
+
+    <span data-ttu-id="c5b1b-116">사용 하 여 `.offer(id)` 읽거나 기존 제품을 대체 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5b1b-116">Use `.offer(id)` to read, or replace existing offers.</span></span>
+  syntax:
+    content: 'offers: Offers'
+    return:
+      type:
+      - '@azure/cosmos.Offers'
+  package: '@azure/cosmos'
+references:
+- uid: '@azure/cosmos.CosmosClientOptions'
+  spec.typeScript:
+  - name: CosmosClientOptions
+    fullName: CosmosClientOptions
+    uid: '@azure/cosmos.CosmosClientOptions'
+- uid: '@azure/cosmos.Databases'
+  spec.typeScript:
+  - name: Databases
+    fullName: Databases
+    uid: '@azure/cosmos.Databases'
+- uid: '@azure/cosmos.Offers'
+  spec.typeScript:
+  - name: Offers
+    fullName: Offers
+    uid: '@azure/cosmos.Offers'
+- uid: '@azure/cosmos.Database'
+  spec.typeScript:
+  - name: Database
+    fullName: Database
+    uid: '@azure/cosmos.Database'
+- uid: Promise<@azure/cosmos.CosmosResponse<@azure/cosmos.DatabaseAccount, @azure/cosmos.CosmosClient>>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: CosmosResponse
+    fullName: CosmosResponse
+    uid: '@azure/cosmos.CosmosResponse'
+  - name: <
+    fullName: <
+  - name: DatabaseAccount
+    fullName: DatabaseAccount
+    uid: '@azure/cosmos.DatabaseAccount'
+  - name: ', '
+    fullName: ', '
+  - name: CosmosClient
+    fullName: CosmosClient
+    uid: '@azure/cosmos.CosmosClient'
+  - name: '>>'
+    fullName: '>>'
+- uid: '@azure/cosmos.Offer'
+  spec.typeScript:
+  - name: Offer
+    fullName: Offer
+    uid: '@azure/cosmos.Offer'
