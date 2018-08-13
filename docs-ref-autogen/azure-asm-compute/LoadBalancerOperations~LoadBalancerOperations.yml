@@ -1,0 +1,347 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: baf17532e911689324ff3b6a43fc6937bdf430d8
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40063890"
+items:
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: LoadBalancerOperations
+  summary: >-
+    <span data-ttu-id="d78d1-101">계산 관리 API에는 구독에 대 한 부하 분산 장치를 관리 하기 위한 작업이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-101">The Compute Management API includes operations for managing the load balancers for your subscription.</span></span>
+
+    <span data-ttu-id="d78d1-102">__참고__:이 클래스의 인스턴스는 인스턴스의 [ComputeManagementClient]에 대 한 자동으로 생성 됩니다 {@link ComputeManagementClient ~ ComputeManagementClient}.</span><span class="sxs-lookup"><span data-stu-id="d78d1-102">__NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}.</span></span>
+
+    <span data-ttu-id="d78d1-103">[부하 분산 장치]를 참조 하세요. {@link ComputeManagementClient ~ ComputeManagementClient #loadBalancers}.</span><span class="sxs-lookup"><span data-stu-id="d78d1-103">See [loadBalancers] {@link ComputeManagementClient~ComputeManagementClient#loadBalancers}.</span></span>
+
+    <span data-ttu-id="d78d1-104">LoadBalancerOperations 클래스의 새 인스턴스를 초기화합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-104">Initializes a new instance of the LoadBalancerOperations class.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations
+  type: Class
+  children:
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.#ctor
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginCreating
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginDeleting
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginUpdating
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#create
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#deleteMethod
+  - azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#update
+  langs:
+  - js
+- id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.#ctor
+  uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.#ctor
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: LoadBalancerOperations(client)
+  fullName: azure-asm-compute.LoadBalancerOperations.LoadBalancerOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedComputeManagementClient
+      description: <span data-ttu-id="d78d1-105">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-105">Reference to the service client.</span></span>
+    content: new LoadBalancerOperations(client)
+  langs:
+  - js
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginCreating
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginCreating
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: beginCreating(serviceName, deploymentName, parameters, callback)
+  summary: <span data-ttu-id="d78d1-106">추가 하는 내부 부하 분산 장치는 기존 배포 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-106">Add an internal load balancer to a an existing deployment.</span></span> <span data-ttu-id="d78d1-107">입력된 끝점에 사용 되는 경우 내부 부하 분산 장치는 부하 분산 역할이 배포에 사용할 수 있는 추가 개인 VIP를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-107">When used by an input endpoint, the internal load balancer will provide an additional private VIP that can be used for load balancing to the roles in this deployment.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.beginCreating(serviceName, deploymentName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-108">서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-108">The name of the service.</span></span>
+    - id: deploymentName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-109">배포의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-109">The name of the deployment.</span></span>
+    - id: parameters
+      type:
+      - azure-asm-compute.LoadBalancerCreateParameters
+      description: <span data-ttu-id="d78d1-110">부하 분산 장치 만들기 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-110">Parameters supplied to the Create Load Balancer operation.</span></span>
+    - id: parameters.name
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-111">부하 분산 장치의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-111">Name of the load balancer.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration
+      type:
+      - azure-asm-compute.FrontendIPConfiguration
+      description: <span data-ttu-id="d78d1-112">가상 IP 주소 (VIP)이 부하 분산 장치에 대 한 구성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-112">The configuration for the virtual IP address (VIP) this load balancer provides.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.type
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-113">이 부하 분산 장치에서 제공 하는 VIP의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-113">The type of the VIP provided by this load balancer.</span></span> <span data-ttu-id="d78d1-114">현재, 'Private'만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-114">Currently, only 'Private' is supported.</span></span> <span data-ttu-id="d78d1-115">이 부하 분산 서비스에서 개인 VIP 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-115">This will create load balancing services on a private VIP.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.subnetName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-116">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치에 대 한 가상 네트워크의 서브넷을 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-116">If the deployment exists inside a virtual network, a subnet of that virtual network must be specified for the load balancer.</span></span> <span data-ttu-id="d78d1-117">부하 분산 장치에서 관리 하는 VIP이 서브넷에서 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-117">The VIP managed by the load balancer will then be an IP address out of this subnet.</span></span> <span data-ttu-id="d78d1-118">가상 네트워크 외부에서 배포가 있는 경우 서브넷이 없으면를 지정할 수 있으며 개인 VIP 일반 개인 주소 풀에서 IP 주소는 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-118">If the deployment exists outside of a virtual network, no subnet can be specified and the private VIP will be an IP address from the general private address pool.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.staticVirtualNetworkIPAddress
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-119">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치 서브넷에서 특정 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-119">If the deployment exists inside a virtual network, a specific address from the load balancer subnet can be specified.</span></span> <span data-ttu-id="d78d1-120">부하 분산 장치의 VIP는이 특정 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-120">The VIP for the load balancer will then be this specific IP address.</span></span> <span data-ttu-id="d78d1-121">정적 가상 네트워크 IP 주소를 제공 하는 경우 부하 분산 장치의 SubnetName 요소 에서도 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-121">If a static virtual network IP address is provided, the SubnetName element of the load balancer must be specified as well.</span></span> <span data-ttu-id="d78d1-122">가상 네트워크 외부에서 배포가 있는 경우 정적 가상 네트워크 IP 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-122">If the deployment exists outside of a virtual network, no static virtual network IP address can be specified.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: <span data-ttu-id="d78d1-123">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-123">The response stream.</span></span>
+    content: function beginCreating(serviceName, deploymentName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginDeleting
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginDeleting
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: beginDeleting(serviceName, deploymentName, loadBalancerName, callback)
+  summary: <span data-ttu-id="d78d1-124">배포에서 내부 부하 분산 장치를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-124">Delete an internal load balancer from the deployment.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.beginDeleting(serviceName, deploymentName, loadBalancerName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-125">서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-125">The name of the service.</span></span>
+    - id: deploymentName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-126">배포의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-126">The name of the deployment.</span></span>
+    - id: loadBalancerName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-127">부하 분산 장치의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-127">The name of the load balancer.</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: <span data-ttu-id="d78d1-128">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-128">The response stream.</span></span>
+    content: function beginDeleting(serviceName, deploymentName, loadBalancerName, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginUpdating
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginUpdating
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: beginUpdating(serviceName, deploymentName, loadBalancerName, parameters, callback)
+  summary: <span data-ttu-id="d78d1-129">기존 배포와 관련 된 내부 부하 분산 장치를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-129">Updates an internal load balancer associated with an existing deployment.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.beginUpdating(serviceName, deploymentName, loadBalancerName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-130">서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-130">The name of the service.</span></span>
+    - id: deploymentName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-131">배포의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-131">The name of the deployment.</span></span>
+    - id: loadBalancerName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-132">LoadBalancer의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-132">The name of the loadBalancer.</span></span>
+    - id: parameters
+      type:
+      - azure-asm-compute.LoadBalancerUpdateParameters
+      description: <span data-ttu-id="d78d1-133">부하 분산 장치 업데이트 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-133">Parameters supplied to the Update Load Balancer operation.</span></span>
+    - id: parameters.name
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-134">부하 분산 장치의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-134">Name of the load balancer.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration
+      type:
+      - azure-asm-compute.FrontendIPConfiguration
+      description: <span data-ttu-id="d78d1-135">가상 IP 주소 (VIP)이 부하 분산 장치에 대 한 구성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-135">The configuration for the virtual IP address (VIP) this load balancer provides.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.type
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-136">이 부하 분산 장치에서 제공 하는 VIP의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-136">The type of the VIP provided by this load balancer.</span></span> <span data-ttu-id="d78d1-137">현재, 'Private'만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-137">Currently, only 'Private' is supported.</span></span> <span data-ttu-id="d78d1-138">이 부하 분산 서비스에서 개인 VIP 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-138">This will create load balancing services on a private VIP.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.subnetName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-139">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치에 대 한 가상 네트워크의 서브넷을 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-139">If the deployment exists inside a virtual network, a subnet of that virtual network must be specified for the load balancer.</span></span> <span data-ttu-id="d78d1-140">부하 분산 장치에서 관리 하는 VIP이 서브넷에서 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-140">The VIP managed by the load balancer will then be an IP address out of this subnet.</span></span> <span data-ttu-id="d78d1-141">가상 네트워크 외부에서 배포가 있는 경우 서브넷이 없으면를 지정할 수 있으며 개인 VIP 일반 개인 주소 풀에서 IP 주소는 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-141">If the deployment exists outside of a virtual network, no subnet can be specified and the private VIP will be an IP address from the general private address pool.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.staticVirtualNetworkIPAddress
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-142">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치 서브넷에서 특정 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-142">If the deployment exists inside a virtual network, a specific address from the load balancer subnet can be specified.</span></span> <span data-ttu-id="d78d1-143">부하 분산 장치의 VIP는이 특정 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-143">The VIP for the load balancer will then be this specific IP address.</span></span> <span data-ttu-id="d78d1-144">정적 가상 네트워크 IP 주소를 제공 하는 경우 부하 분산 장치의 SubnetName 요소 에서도 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-144">If a static virtual network IP address is provided, the SubnetName element of the load balancer must be specified as well.</span></span> <span data-ttu-id="d78d1-145">가상 네트워크 외부에서 배포가 있는 경우 정적 가상 네트워크 IP 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-145">If the deployment exists outside of a virtual network, no static virtual network IP address can be specified.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: <span data-ttu-id="d78d1-146">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-146">The response stream.</span></span>
+    content: function beginUpdating(serviceName, deploymentName, loadBalancerName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#create
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#create
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: create(serviceName, deploymentName, parameters, callback)
+  summary: <span data-ttu-id="d78d1-147">추가 하는 내부 부하 분산 장치는 기존 배포 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-147">Add an internal load balancer to a an existing deployment.</span></span> <span data-ttu-id="d78d1-148">입력된 끝점에 사용 되는 경우 내부 부하 분산 장치는 부하 분산 역할이 배포에 사용할 수 있는 추가 개인 VIP를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-148">When used by an input endpoint, the internal load balancer will provide an additional private VIP that can be used for load balancing to the roles in this deployment.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.create(serviceName, deploymentName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-149">서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-149">The name of the service.</span></span>
+    - id: deploymentName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-150">배포의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-150">The name of the deployment.</span></span>
+    - id: parameters
+      type:
+      - azure-asm-compute.LoadBalancerCreateParameters
+      description: <span data-ttu-id="d78d1-151">부하 분산 장치 만들기 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-151">Parameters supplied to the Create Load Balancer operation.</span></span>
+    - id: parameters.name
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-152">부하 분산 장치의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-152">Name of the load balancer.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration
+      type:
+      - azure-asm-compute.FrontendIPConfiguration
+      description: <span data-ttu-id="d78d1-153">가상 IP 주소 (VIP)이 부하 분산 장치에 대 한 구성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-153">The configuration for the virtual IP address (VIP) this load balancer provides.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.type
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-154">이 부하 분산 장치에서 제공 하는 VIP의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-154">The type of the VIP provided by this load balancer.</span></span> <span data-ttu-id="d78d1-155">현재, 'Private'만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-155">Currently, only 'Private' is supported.</span></span> <span data-ttu-id="d78d1-156">이 부하 분산 서비스에서 개인 VIP 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-156">This will create load balancing services on a private VIP.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.subnetName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-157">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치에 대 한 가상 네트워크의 서브넷을 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-157">If the deployment exists inside a virtual network, a subnet of that virtual network must be specified for the load balancer.</span></span> <span data-ttu-id="d78d1-158">부하 분산 장치에서 관리 하는 VIP이 서브넷에서 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-158">The VIP managed by the load balancer will then be an IP address out of this subnet.</span></span> <span data-ttu-id="d78d1-159">가상 네트워크 외부에서 배포가 있는 경우 서브넷이 없으면를 지정할 수 있으며 개인 VIP 일반 개인 주소 풀에서 IP 주소는 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-159">If the deployment exists outside of a virtual network, no subnet can be specified and the private VIP will be an IP address from the general private address pool.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.staticVirtualNetworkIPAddress
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-160">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치 서브넷에서 특정 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-160">If the deployment exists inside a virtual network, a specific address from the load balancer subnet can be specified.</span></span> <span data-ttu-id="d78d1-161">부하 분산 장치의 VIP는이 특정 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-161">The VIP for the load balancer will then be this specific IP address.</span></span> <span data-ttu-id="d78d1-162">정적 가상 네트워크 IP 주소를 제공 하는 경우 부하 분산 장치의 SubnetName 요소 에서도 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-162">If a static virtual network IP address is provided, the SubnetName element of the load balancer must be specified as well.</span></span> <span data-ttu-id="d78d1-163">가상 네트워크 외부에서 배포가 있는 경우 정적 가상 네트워크 IP 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-163">If the deployment exists outside of a virtual network, no static virtual network IP address can be specified.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: <span data-ttu-id="d78d1-164">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-164">The response stream.</span></span>
+    content: function create(serviceName, deploymentName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#deleteMethod
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#deleteMethod
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: deleteMethod(serviceName, deploymentName, loadBalancerName, callback)
+  summary: <span data-ttu-id="d78d1-165">배포에서 내부 부하 분산 장치를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-165">Delete an internal load balancer from the deployment.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.deleteMethod(serviceName, deploymentName, loadBalancerName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-166">서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-166">The name of the service.</span></span>
+    - id: deploymentName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-167">배포의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-167">The name of the deployment.</span></span>
+    - id: loadBalancerName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-168">부하 분산 장치의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-168">The name of the load balancer.</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: <span data-ttu-id="d78d1-169">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-169">The response stream.</span></span>
+    content: function deleteMethod(serviceName, deploymentName, loadBalancerName, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#update
+  id: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#update
+  parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
+  name: update(serviceName, deploymentName, loadBalancerName, parameters, callback)
+  summary: <span data-ttu-id="d78d1-170">기존 배포와 관련 된 내부 부하 분산 장치를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-170">Updates an internal load balancer associated with an existing deployment.</span></span>
+  fullName: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.update(serviceName, deploymentName, loadBalancerName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-171">서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-171">The name of the service.</span></span>
+    - id: deploymentName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-172">배포의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-172">The name of the deployment.</span></span>
+    - id: loadBalancerName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-173">LoadBalancer의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-173">The name of the loadBalancer.</span></span>
+    - id: parameters
+      type:
+      - azure-asm-compute.LoadBalancerUpdateParameters
+      description: <span data-ttu-id="d78d1-174">부하 분산 장치 업데이트 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-174">Parameters supplied to the Update Load Balancer operation.</span></span>
+    - id: parameters.name
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-175">부하 분산 장치의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-175">Name of the load balancer.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration
+      type:
+      - azure-asm-compute.FrontendIPConfiguration
+      description: <span data-ttu-id="d78d1-176">가상 IP 주소 (VIP)이 부하 분산 장치에 대 한 구성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-176">The configuration for the virtual IP address (VIP) this load balancer provides.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.type
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-177">이 부하 분산 장치에서 제공 하는 VIP의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-177">The type of the VIP provided by this load balancer.</span></span> <span data-ttu-id="d78d1-178">현재, 'Private'만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-178">Currently, only 'Private' is supported.</span></span> <span data-ttu-id="d78d1-179">이 부하 분산 서비스에서 개인 VIP 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-179">This will create load balancing services on a private VIP.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.subnetName
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-180">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치에 대 한 가상 네트워크의 서브넷을 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-180">If the deployment exists inside a virtual network, a subnet of that virtual network must be specified for the load balancer.</span></span> <span data-ttu-id="d78d1-181">부하 분산 장치에서 관리 하는 VIP이 서브넷에서 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-181">The VIP managed by the load balancer will then be an IP address out of this subnet.</span></span> <span data-ttu-id="d78d1-182">가상 네트워크 외부에서 배포가 있는 경우 서브넷이 없으면를 지정할 수 있으며 개인 VIP 일반 개인 주소 풀에서 IP 주소는 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-182">If the deployment exists outside of a virtual network, no subnet can be specified and the private VIP will be an IP address from the general private address pool.</span></span>
+      optional: true
+    - id: parameters.frontendIPConfiguration.staticVirtualNetworkIPAddress
+      type:
+      - string
+      description: <span data-ttu-id="d78d1-183">배포 하는 가상 네트워크 내에 있으면 부하 분산 장치 서브넷에서 특정 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-183">If the deployment exists inside a virtual network, a specific address from the load balancer subnet can be specified.</span></span> <span data-ttu-id="d78d1-184">부하 분산 장치의 VIP는이 특정 IP 주소 수 있게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-184">The VIP for the load balancer will then be this specific IP address.</span></span> <span data-ttu-id="d78d1-185">정적 가상 네트워크 IP 주소를 제공 하는 경우 부하 분산 장치의 SubnetName 요소 에서도 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-185">If a static virtual network IP address is provided, the SubnetName element of the load balancer must be specified as well.</span></span> <span data-ttu-id="d78d1-186">가상 네트워크 외부에서 배포가 있는 경우 정적 가상 네트워크 IP 주소를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-186">If the deployment exists outside of a virtual network, no static virtual network IP address can be specified.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: <span data-ttu-id="d78d1-187">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="d78d1-187">The response stream.</span></span>
+    content: function update(serviceName, deploymentName, loadBalancerName, parameters, callback)
+  langs:
+  - js
