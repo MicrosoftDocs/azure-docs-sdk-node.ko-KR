@@ -1,0 +1,197 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 4e858f4b2ca5615a468b64d2e2270f9d2cb1f94c
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40065304"
+items:
+- uid: azure-iot-device.Client
+  name: Client
+  fullName: Client
+  children:
+  - azure-iot-device.Client.constructor
+  - azure-iot-device.Client.close
+  - azure-iot-device.Client.fromAuthenticationProvider
+  - azure-iot-device.Client.fromConnectionString
+  - azure-iot-device.Client.fromSharedAccessSignature
+  - azure-iot-device.Client.onDeviceMethod
+  - azure-iot-device.Client.uploadToBlob
+  langs:
+  - typeScript
+  type: class
+  summary: >
+    IoT Hub 장치 클라이언트를 Azure IoT hub를 사용 하 여 장치를 연결 하는 데 사용 합니다.
+
+    사용자는 SDK의 팩터리 메서드 중 하나를 호출 해야 [fromConnectionString](xref:azure-iot-device.Client.fromConnectionString) 하거나 [fromSharedAccessSignature](xref:azure-iot-device.Client.fromSharedAccessSignature) IoT Hub 장치 클라이언트를 만드는 합니다.
+  extends:
+    name: InternalClient
+  package: azure-iot-device
+- uid: azure-iot-device.Client.constructor
+  name: Client
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: ''
+  syntax:
+    content: 'new Client(transport: DeviceTransport, connStr?: string, blobUploadClient?: BlobUploadClient)'
+    parameters:
+    - id: transport
+      type:
+      - azure-iot-device.DeviceTransport
+      description: 예를 들어 전송 개체의 예상 하는 인터페이스를 구현 하는 개체 [Http](xref:azure-iot-device-http.Http)합니다.
+    - id: connStr
+      type:
+      - string
+      description: '연결 문자열 (선택 사항: SharedAccessSignature 토큰을 직접 설정 하려면 updateSharedAccessSignature 제공 되지 않으면 호출 해야 합니다).'
+      optional: true
+    - id: blobUploadClient
+      type:
+      - BlobUploadClient
+      description: >
+        개체는 blob에 스트림을 업로드 수입니다.
+      optional: true
+  package: azure-iot-device
+- uid: azure-iot-device.Client.close
+  name: close
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >
+    전송 연결을 종료 하 고 클라이언트 리소스를 제거 합니다.
+
+    *참고:이 메서드는 클라이언트를 호출한 후 개체 재사용할 수 없습니다.*
+  syntax:
+    content: 'function close(closeCallback?: (err?: Error, result?: Disconnected) => void)'
+    parameters:
+    - id: closeCallback
+      type:
+      - '(err?: Error, result?: Disconnected) => void'
+      description: >
+        전송 연결이 끊어진 후 호출 함수 및 클라이언트 닫힙니다.
+      optional: true
+  package: azure-iot-device
+- uid: azure-iot-device.Client.fromAuthenticationProvider
+  name: fromAuthenticationProvider
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 지정 된 인증 방법 및 지정 된 전송 형식을 사용 하 여 IoT Hub 장치 클라이언트를 만듭니다.
+  syntax:
+    content: 'static function fromAuthenticationProvider(authenticationProvider: AuthenticationProvider, transportCtor: any)'
+    parameters:
+    - id: authenticationProvider
+      type:
+      - AuthenticationProvider
+      description: IoT hub에 대 한 인증 매개 변수를 가져오는 데 사용 하는 개체입니다.
+    - id: transportCtor
+      type:
+      - any
+      description: >
+        IoT hub에 연결 하는 데 사용 되는 프로토콜을 전송 합니다.
+    return:
+      type:
+      - any
+  package: azure-iot-device
+- uid: azure-iot-device.Client.fromConnectionString
+  name: fromConnectionString
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 지정 된 전송 형식을 사용 하 여 지정 된 연결 문자열에서 IoT Hub 장치 클라이언트를 만듭니다.
+  syntax:
+    content: 'static function fromConnectionString(connStr: string, transportCtor: any)'
+    parameters:
+    - id: connStr
+      type:
+      - string
+      description: IoT hub에 대 한 권한 "장치 연결"을 캡슐화 하는 연결 문자열입니다.
+    - id: transportCtor
+      type:
+      - any
+      description: >
+        전송 생성자입니다.
+    return:
+      type:
+      - any
+  package: azure-iot-device
+- uid: azure-iot-device.Client.fromSharedAccessSignature
+  name: fromSharedAccessSignature
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 지정 된 전송 형식을 사용 하 여 지정 된 공유 액세스 서명에서 IoT Hub 장치 클라이언트를 만듭니다.
+  syntax:
+    content: 'static function fromSharedAccessSignature(sharedAccessSignature: string, transportCtor: any)'
+    parameters:
+    - id: sharedAccessSignature
+      type:
+      - string
+      description: IoT hub에 대 한 권한 "장치 연결"을 캡슐화 하는 공유 액세스 서명입니다.
+    - id: transportCtor
+      type:
+      - any
+      description: ''
+    return:
+      type:
+      - any
+  package: azure-iot-device
+- uid: azure-iot-device.Client.onDeviceMethod
+  name: onDeviceMethod
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 명명 된 메서드에 대 한 콜백을 등록 `methodName`합니다.
+  syntax:
+    content: 'function onDeviceMethod(methodName: string, callback: (request: DeviceMethodRequest, response: DeviceMethodResponse) => void)'
+    parameters:
+    - id: methodName
+      type:
+      - string
+      description: 콜백에 의해 처리 됩니다 하는 메서드의 이름
+    - id: callback
+      type:
+      - '(request: DeviceMethodRequest, response: DeviceMethodResponse) => void'
+      description: >
+        메서드 요청 메서드를 호출할 때마다 호출 됩니다 하는 함수 `methodName` 수신 됩니다.
+  package: azure-iot-device
+- uid: azure-iot-device.Client.uploadToBlob
+  name: uploadToBlob
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: '`uploadToBlob` 메서드는 blob에 스트림을 업로드 합니다.'
+  syntax:
+    content: 'function uploadToBlob(blobName: string, stream: Stream, streamLength: number, done: (err?: Error) => void)'
+    parameters:
+    - id: blobName
+      type:
+      - string
+      description: 스트림의 콘텐츠를 사용 하 여 만들어지는 blob에 사용할 이름입니다.
+    - id: stream
+      type:
+      - Stream
+      description: 데이터를 해당 blob에 업로드 되어야 합니다.
+    - id: streamLength
+      type:
+      - number
+      description: 데이터 크기의 blob에 업로드 해야 합니다.
+    - id: done
+      type:
+      - '(err?: Error) => void'
+      description: >
+        업로드가 완료 될 때 호출할 콜백.
+  package: azure-iot-device
+references:
+- uid: azure-iot-device.DeviceTransport
+  spec.typeScript:
+  - name: DeviceTransport
+    fullName: DeviceTransport
+    uid: azure-iot-device.DeviceTransport
