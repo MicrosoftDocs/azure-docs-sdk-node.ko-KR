@@ -1,0 +1,287 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 63f6d420f14e145be93264194c93b21fbf5288eb
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40063896"
+items:
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: DNSServerOperations
+  summary: >-
+    계산 관리 API에는 구독에 대 한 dns 서버를 관리 하기 위한 작업이 포함 됩니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [ComputeManagementClient]에 대 한 자동으로 생성 됩니다 {@link ComputeManagementClient ~ ComputeManagementClient}.
+
+    [DnsServer]를 참조 하세요. {@link ComputeManagementClient ~ ComputeManagementClient #dnsServer}.
+
+    DNSServerOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-compute.DNSServerOperations
+  type: Class
+  children:
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations#addDNSServer
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations#beginAddingDNSServer
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations#beginDeletingDNSServer
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations#beginUpdatingDNSServer
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations#deleteDNSServer
+  - azure-asm-compute.DNSServerOperations~DNSServerOperations#updateDNSServer
+  langs:
+  - js
+- id: azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor
+  uid: azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: DNSServerOperations(client)
+  fullName: azure-asm-compute.DNSServerOperations.DNSServerOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedComputeManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new DNSServerOperations(client)
+  langs:
+  - js
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations#addDNSServer
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations#addDNSServer
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: addDNSServer(serviceName, deploymentName, parameters, callback)
+  summary: 기존 배포에 DNS 서버에 대 한 정의 추가 합니다. 이 배포에서 VM에 대 한 모든 DNS 확인이 DNS 서버를 사용 하도록 프로그래밍 됩니다.
+  fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.addDNSServer(serviceName, deploymentName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 배포의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-compute.DNSAddParameters
+      description: DNS 서버 추가 작업에 제공 되는 매개 변수입니다.
+    - id: parameters.name
+      type:
+      - string
+      description: DNS 서버의 이름입니다.
+      optional: true
+    - id: parameters.address
+      type:
+      - string
+      description: DNS 서버의 IP 주소
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: 응답 스트림입니다.
+    content: function addDNSServer(serviceName, deploymentName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations#beginAddingDNSServer
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations#beginAddingDNSServer
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: beginAddingDNSServer(serviceName, deploymentName, parameters, callback)
+  summary: 기존 배포에 DNS 서버에 대 한 정의 추가 합니다. 이 배포에서 VM에 대 한 모든 DNS 확인이 DNS 서버를 사용 하도록 프로그래밍 됩니다.
+  fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.beginAddingDNSServer(serviceName, deploymentName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 배포의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-compute.DNSAddParameters
+      description: DNS 서버 추가 작업에 제공 되는 매개 변수입니다.
+    - id: parameters.name
+      type:
+      - string
+      description: DNS 서버의 이름입니다.
+      optional: true
+    - id: parameters.address
+      type:
+      - string
+      description: DNS 서버의 IP 주소
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: 응답 스트림입니다.
+    content: function beginAddingDNSServer(serviceName, deploymentName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations#beginDeletingDNSServer
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations#beginDeletingDNSServer
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: beginDeletingDNSServer(serviceName, deploymentName, dnsServerName, callback)
+  summary: 배포에서 기존 DNS 서버에 대 한 정의 삭제합니다.
+  fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.beginDeletingDNSServer(serviceName, deploymentName, dnsServerName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 배포의 이름입니다.
+    - id: dnsServerName
+      type:
+      - string
+      description: Dns 서버의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: 응답 스트림입니다.
+    content: function beginDeletingDNSServer(serviceName, deploymentName, dnsServerName, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations#beginUpdatingDNSServer
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations#beginUpdatingDNSServer
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: beginUpdatingDNSServer(serviceName, deploymentName, dnsServerName, parameters, callback)
+  summary: 기존 DNS 서버에 대 한 정의 업데이트합니다. 주소에 대 한 업데이트는 허용 된 유일한 변경 내용입니다. DNS 서버 이름을 변경할 수 없습니다.
+  fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.beginUpdatingDNSServer(serviceName, deploymentName, dnsServerName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 배포의 이름입니다.
+    - id: dnsServerName
+      type:
+      - string
+      description: Dns 서버의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-compute.DNSUpdateParameters
+      description: DNS 서버 업데이트 작업에 제공 되는 매개 변수입니다.
+    - id: parameters.name
+      type:
+      - string
+      description: DNS 서버의 이름입니다.
+      optional: true
+    - id: parameters.address
+      type:
+      - string
+      description: DNS 서버의 IP 주소
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: 응답 스트림입니다.
+    content: function beginUpdatingDNSServer(serviceName, deploymentName, dnsServerName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations#deleteDNSServer
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations#deleteDNSServer
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: deleteDNSServer(serviceName, deploymentName, dnsServerName, callback)
+  summary: 배포에서 기존 DNS 서버에 대 한 정의 삭제합니다.
+  fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.deleteDNSServer(serviceName, deploymentName, dnsServerName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 배포의 이름입니다.
+    - id: dnsServerName
+      type:
+      - string
+      description: Dns 서버의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: 응답 스트림입니다.
+    content: function deleteDNSServer(serviceName, deploymentName, dnsServerName, callback)
+  langs:
+  - js
+- uid: azure-asm-compute.DNSServerOperations~DNSServerOperations#updateDNSServer
+  id: azure-asm-compute.DNSServerOperations~DNSServerOperations#updateDNSServer
+  parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
+  name: updateDNSServer(serviceName, deploymentName, dnsServerName, parameters, callback)
+  summary: 기존 DNS 서버에 대 한 정의 업데이트합니다. 주소에 대 한 업데이트는 허용 된 유일한 변경 내용입니다. DNS 서버 이름을 변경할 수 없습니다.
+  fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.updateDNSServer(serviceName, deploymentName, dnsServerName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 배포의 이름입니다.
+    - id: dnsServerName
+      type:
+      - string
+      description: Dns 서버의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-compute.DNSUpdateParameters
+      description: DNS 서버 업데이트 작업에 제공 되는 매개 변수입니다.
+    - id: parameters.name
+      type:
+      - string
+      description: DNS 서버의 이름입니다.
+      optional: true
+    - id: parameters.address
+      type:
+      - string
+      description: DNS 서버의 IP 주소
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-compute.Stream
+      description: 응답 스트림입니다.
+    content: function updateDNSServer(serviceName, deploymentName, dnsServerName, parameters, callback)
+  langs:
+  - js

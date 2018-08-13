@@ -1,0 +1,457 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 234c7d4787f94e746b51b21ae9c34f399226b55e
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40063914"
+items:
+- uid: azure-asm-sb.TopicOperations~TopicOperations
+  id: azure-asm-sb.TopicOperations~TopicOperations
+  name: TopicOperations
+  summary: >-
+    Service Bus 관리 API에는 네임 스페이스에 대 한 Service Bus 항목을 관리 하기 위한 작업이 포함 됩니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [ServiceBusManagementClient]에 대 한 자동으로 생성 됩니다 {@link ServiceBusManagementClient ~ ServiceBusManagementClient}.
+
+    [참조] {@link ServiceBusManagementClient ~ ServiceBusManagementClient #topics}.
+
+    TopicOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-sb.TopicOperations
+  type: Class
+  children:
+  - azure-asm-sb.TopicOperations~TopicOperations.#ctor
+  - azure-asm-sb.TopicOperations~TopicOperations#create
+  - azure-asm-sb.TopicOperations~TopicOperations#deleteMethod
+  - azure-asm-sb.TopicOperations~TopicOperations#get
+  - azure-asm-sb.TopicOperations~TopicOperations#getConnectionDetails
+  - azure-asm-sb.TopicOperations~TopicOperations#list
+  - azure-asm-sb.TopicOperations~TopicOperations#update
+  langs:
+  - js
+- id: azure-asm-sb.TopicOperations~TopicOperations.#ctor
+  uid: azure-asm-sb.TopicOperations~TopicOperations.#ctor
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: TopicOperations(client)
+  fullName: azure-asm-sb.TopicOperations.TopicOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedServiceBusManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new TopicOperations(client)
+  langs:
+  - js
+- uid: azure-asm-sb.TopicOperations~TopicOperations#create
+  id: azure-asm-sb.TopicOperations~TopicOperations#create
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: create(namespaceName, topic, callback)
+  summary: 새 항목을 만듭니다. 만들어지면이 토픽 리소스 매니페스트는 변경할 수 없습니다. 이 작업이 idempotent가 아닙니다. 동일한 이름 가진 항목을 성공적으로 만들어진 후 만들기 호출을 반복 409 충돌 오류 메시지가 표시 됩니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/hh780728.aspx 자세한)
+  fullName: azure-asm-sb.TopicOperations~TopicOperations.create(namespaceName, topic, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: namespaceName
+      type:
+      - string
+      description: 네임 스페이스 이름입니다.
+    - id: topic
+      type:
+      - azure-asm-sb.ServiceBusTopic
+      description: Service Bus 항목입니다.
+    - id: topic.name
+      type:
+      - string
+      description: 항목의 이름입니다.
+      optional: true
+    - id: topic.defaultMessageTimeToLive
+      type:
+      - string
+      description: >-
+        시간을 결정 합니다. 연결된 된 구독에 상주 합니다. 구독을 더 작은 TTL을 사용 하 여 명시적으로 만들지 않은 경우 항목에서 TTL을 상속 합니다.
+
+        배달 못한 편지 활성화 되어 있는지 여부에 따라 해당 TTL이 만료 된 메시지를 구독 연결 된 DeadLtterQueue로 이동 하거나 됩니다 또는 영구적으로 삭제 됩니다. 항목을 만들 때 다음 값을 설정할 수: * 범위: 1 초-TimeSpan.MaxValue* 기본: TimeSpan.MaxValue
+      optional: true
+    - id: topic.maxSizeInMegabytes
+      type:
+      - number
+      description: '최대 토픽 크기를 메가바이트 단위로 지정합니다. 항목을이 값을 초과 하면 메시지를 큐에 추가 하려는 모든 시도가 실패 합니다. 항목 또는이 값으로 해당 구독 수에 저장 된 모든 메시지입니다. 단일 메시지로 이상의 구독 수에 상주 하는 메시지의 여러 복사본입니다. 예를 들어 메시지 m 구독 s2 및 두 번 구독 s1에서 한 번만 있는 경우 m은 단일 메시지로 계산 됩니다. 다음 값을 사용 하 여 토픽을 만들 때에만이 매개 변수를 설정할 수 있습니다. * 범위: 1-5*1024MB* 기본: 1 * 1024'
+      optional: true
+    - id: topic.requiresDuplicateDetection
+      type:
+      - boolean
+      description: '사용 하도록 설정 하는 경우 항목에는 DuplicateDetectionHistoryTimeWindow 속성에 지정 된 기간 내에 중복 메시지 감지 합니다. 기본 항목 생성 시간에만 설정할 수 있는: false'
+      optional: true
+    - id: topic.duplicateDetectionHistoryTimeWindow
+      type:
+      - string
+      description: 'Service Bus는 메시지 duplication.* 범위를 감지 하는 데는 시간 범위를 지정 합니다. 1 초-7 일 * 기본값: 10 분'
+      optional: true
+    - id: topic.enableBatchedOperations
+      type:
+      - boolean
+      description: 사용 하거나 특정 큐에 대 한 작업을 수행할 때 동작을 일괄 처리 서비스 쪽을 사용 하지 않도록 설정 합니다. 사용 하도록 설정 하면 service bus는 수집/일괄 처리 보다 효율적인 연결 백 엔드에 여러 개의 작업입니다. 사용자 작업에 대 한 대기 시간을 단축 하려는 경우이 기능을 비활성화할 수 있습니다.
+      optional: true
+    - id: topic.sizeInBytes
+      type:
+      - number
+      description: '토픽의 메시지가 현재 차지 하는 항목 할당량에 포함 된 실제 바이트를 반영 합니다. (읽기 전용) * 범위: 0 MaxTopicSizeinMegaBytes'
+      optional: true
+    - id: topic.filteringMessagesBeforePublishing
+      type:
+      - boolean
+      description: 메시지를 게시 하기 전에 필터링 해야 하는지 여부를 나타내는 값을 가져오거나 설정 합니다.
+      optional: true
+    - id: topic.isAnonymousAccessible
+      type:
+      - boolean
+      description: 익명 액세스 허용 되는지 여부를 가져옵니다.
+      optional: true
+    - id: topic.authorizationRules
+      type:
+      - array
+      description: 에 대 한 설명에 대 한 권한 부여 규칙을 가져옵니다.
+      optional: true
+    - id: topic.status
+      type:
+      - string
+      description: (사용 또는 사용 하지 않도록 설정) 항목의 현재 상태를 가져오거나 설정 합니다. 항목을 사용 하지 않으면 해당 항목 보내거나 메시지를 받을 수 없습니다.
+      optional: true
+    - id: topic.createdAt
+      type:
+      - date
+      description: 큐를 만든 시간입니다.
+      optional: true
+    - id: topic.updatedAt
+      type:
+      - date
+      description: 큐를 마지막으로 수정한 시간입니다.
+      optional: true
+    - id: topic.accessedAt
+      type:
+      - date
+      description: 큐를 마지막으로 액세스 하는 시간입니다.
+      optional: true
+    - id: topic.supportOrdering
+      type:
+      - boolean
+      description: 항목을 정렬할 수 있는지 여부를 나타내는 값을 가져오거나 설정 합니다.
+      optional: true
+    - id: topic.countDetails
+      type:
+      - azure-asm-sb.CountDetails
+      description: 현재 큐 통계입니다.
+      optional: true
+    - id: topic.countDetails.activeMessageCount
+      type:
+      - number
+      description: 현재 활성 메시지 개수입니다.
+      optional: true
+    - id: topic.countDetails.deadLetterMessageCount
+      type:
+      - number
+      description: 배달 못 한 편지의 현재 수입니다.
+      optional: true
+    - id: topic.countDetails.scheduledMessageCount
+      type:
+      - number
+      description: 예약 된 메시지의 현재 수입니다.
+      optional: true
+    - id: topic.countDetails.transferDeadLetterMessageCount
+      type:
+      - number
+      description: 전송 배달 못 한 편지의 현재 수입니다.
+      optional: true
+    - id: topic.countDetails.transferMessageCount
+      type:
+      - number
+      description: 메시지 전송의 현재 수입니다.
+      optional: true
+    - id: topic.subscriptionCount
+      type:
+      - number
+      description: 현재 항목에 대 한 구독 수입니다.
+      optional: true
+    - id: topic.autoDeleteOnIdle
+      type:
+      - string
+      description: 구현 합니다.
+      optional: true
+    - id: topic.entityAvailabilityStatus
+      type:
+      - string
+      description: 항목의 현재 가용성 상태입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sb.Stream
+      description: 응답 스트림입니다.
+    content: function create(namespaceName, topic, callback)
+  langs:
+  - js
+- uid: azure-asm-sb.TopicOperations~TopicOperations#deleteMethod
+  id: azure-asm-sb.TopicOperations~TopicOperations#deleteMethod
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: deleteMethod(namespaceName, topicName, callback)
+  summary: 기존 항목을 삭제합니다. 이 작업에는 연결 된 구독을 포함 하 여 연결 된 모든 상태도 제거 됩니다.  (참조 http://msdn.microsoft.com/en-us/library/hh780721.aspx 자세한)
+  fullName: azure-asm-sb.TopicOperations~TopicOperations.deleteMethod(namespaceName, topicName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: namespaceName
+      type:
+      - string
+      description: 네임 스페이스 이름입니다.
+    - id: topicName
+      type:
+      - string
+      description: 항목입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sb.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(namespaceName, topicName, callback)
+  langs:
+  - js
+- uid: azure-asm-sb.TopicOperations~TopicOperations#get
+  id: azure-asm-sb.TopicOperations~TopicOperations#get
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: get(namespaceName, topicName, callback)
+  summary: 항목 설명은 항목에 대해 원하는 의미 체계를 정의 하는 AtomPub XML 문서입니다. 항목 설명에는 다음 속성이 포함 됩니다. 자세한 내용은 TopicDescription 속성 항목을 참조 하십시오.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/hh780749.aspx 자세한)
+  fullName: azure-asm-sb.TopicOperations~TopicOperations.get(namespaceName, topicName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: namespaceName
+      type:
+      - string
+      description: 네임 스페이스 이름입니다.
+    - id: topicName
+      type:
+      - string
+      description: 항목입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sb.Stream
+      description: 응답 스트림입니다.
+    content: function get(namespaceName, topicName, callback)
+  langs:
+  - js
+- uid: azure-asm-sb.TopicOperations~TopicOperations#getConnectionDetails
+  id: azure-asm-sb.TopicOperations~TopicOperations#getConnectionDetails
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: getConnectionDetails(namespaceName, topicName, callback)
+  summary: 항목에 대 한 연결 문자열의 집합을 가져옵니다.
+  fullName: azure-asm-sb.TopicOperations~TopicOperations.getConnectionDetails(namespaceName, topicName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: namespaceName
+      type:
+      - string
+      description: 네임 스페이스 이름입니다.
+    - id: topicName
+      type:
+      - string
+      description: 항목입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sb.Stream
+      description: 응답 스트림입니다.
+    content: function getConnectionDetails(namespaceName, topicName, callback)
+  langs:
+  - js
+- uid: azure-asm-sb.TopicOperations~TopicOperations#list
+  id: azure-asm-sb.TopicOperations~TopicOperations#list
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: list(namespaceName, callback)
+  summary: 서비스 네임 스페이스의 항목을 열거합니다. 서비스 네임 스페이스에 토픽이 없으면 빈 피드가 반환 됩니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/hh780744.aspx 자세한)
+  fullName: azure-asm-sb.TopicOperations~TopicOperations.list(namespaceName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: namespaceName
+      type:
+      - string
+      description: 네임 스페이스 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sb.Stream
+      description: 응답 스트림입니다.
+    content: function list(namespaceName, callback)
+  langs:
+  - js
+- uid: azure-asm-sb.TopicOperations~TopicOperations#update
+  id: azure-asm-sb.TopicOperations~TopicOperations#update
+  parent: azure-asm-sb.TopicOperations~TopicOperations
+  name: update(namespaceName, topic, callback)
+  summary: 항목을 업데이트합니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/jj839740.aspx 자세한)
+  fullName: azure-asm-sb.TopicOperations~TopicOperations.update(namespaceName, topic, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: namespaceName
+      type:
+      - string
+      description: 네임 스페이스 이름입니다.
+    - id: topic
+      type:
+      - azure-asm-sb.ServiceBusTopic
+      description: Service Bus 항목입니다.
+    - id: topic.name
+      type:
+      - string
+      description: 항목의 이름입니다.
+      optional: true
+    - id: topic.defaultMessageTimeToLive
+      type:
+      - string
+      description: >-
+        시간을 결정 합니다. 연결된 된 구독에 상주 합니다. 구독을 더 작은 TTL을 사용 하 여 명시적으로 만들지 않은 경우 항목에서 TTL을 상속 합니다.
+
+        배달 못한 편지 활성화 되어 있는지 여부에 따라 해당 TTL이 만료 된 메시지를 구독 연결 된 DeadLtterQueue로 이동 하거나 됩니다 또는 영구적으로 삭제 됩니다. 항목을 만들 때 다음 값을 설정할 수: * 범위: 1 초-TimeSpan.MaxValue* 기본: TimeSpan.MaxValue
+      optional: true
+    - id: topic.maxSizeInMegabytes
+      type:
+      - number
+      description: '최대 토픽 크기를 메가바이트 단위로 지정합니다. 항목을이 값을 초과 하면 메시지를 큐에 추가 하려는 모든 시도가 실패 합니다. 항목 또는이 값으로 해당 구독 수에 저장 된 모든 메시지입니다. 단일 메시지로 이상의 구독 수에 상주 하는 메시지의 여러 복사본입니다. 예를 들어 메시지 m 구독 s2 및 두 번 구독 s1에서 한 번만 있는 경우 m은 단일 메시지로 계산 됩니다. 다음 값을 사용 하 여 토픽을 만들 때에만이 매개 변수를 설정할 수 있습니다. * 범위: 1-5*1024MB* 기본: 1 * 1024'
+      optional: true
+    - id: topic.requiresDuplicateDetection
+      type:
+      - boolean
+      description: '사용 하도록 설정 하는 경우 항목에는 DuplicateDetectionHistoryTimeWindow 속성에 지정 된 기간 내에 중복 메시지 감지 합니다. 기본 항목 생성 시간에만 설정할 수 있는: false'
+      optional: true
+    - id: topic.duplicateDetectionHistoryTimeWindow
+      type:
+      - string
+      description: 'Service Bus는 메시지 duplication.* 범위를 감지 하는 데는 시간 범위를 지정 합니다. 1 초-7 일 * 기본값: 10 분'
+      optional: true
+    - id: topic.enableBatchedOperations
+      type:
+      - boolean
+      description: 사용 하거나 특정 큐에 대 한 작업을 수행할 때 동작을 일괄 처리 서비스 쪽을 사용 하지 않도록 설정 합니다. 사용 하도록 설정 하면 service bus는 수집/일괄 처리 보다 효율적인 연결 백 엔드에 여러 개의 작업입니다. 사용자 작업에 대 한 대기 시간을 단축 하려는 경우이 기능을 비활성화할 수 있습니다.
+      optional: true
+    - id: topic.sizeInBytes
+      type:
+      - number
+      description: '토픽의 메시지가 현재 차지 하는 항목 할당량에 포함 된 실제 바이트를 반영 합니다. (읽기 전용) * 범위: 0 MaxTopicSizeinMegaBytes'
+      optional: true
+    - id: topic.filteringMessagesBeforePublishing
+      type:
+      - boolean
+      description: 메시지를 게시 하기 전에 필터링 해야 하는지 여부를 나타내는 값을 가져오거나 설정 합니다.
+      optional: true
+    - id: topic.isAnonymousAccessible
+      type:
+      - boolean
+      description: 익명 액세스 허용 되는지 여부를 가져옵니다.
+      optional: true
+    - id: topic.authorizationRules
+      type:
+      - array
+      description: 에 대 한 설명에 대 한 권한 부여 규칙을 가져옵니다.
+      optional: true
+    - id: topic.status
+      type:
+      - string
+      description: (사용 또는 사용 하지 않도록 설정) 항목의 현재 상태를 가져오거나 설정 합니다. 항목을 사용 하지 않으면 해당 항목 보내거나 메시지를 받을 수 없습니다.
+      optional: true
+    - id: topic.createdAt
+      type:
+      - date
+      description: 큐를 만든 시간입니다.
+      optional: true
+    - id: topic.updatedAt
+      type:
+      - date
+      description: 큐를 마지막으로 수정한 시간입니다.
+      optional: true
+    - id: topic.accessedAt
+      type:
+      - date
+      description: 큐를 마지막으로 액세스 하는 시간입니다.
+      optional: true
+    - id: topic.supportOrdering
+      type:
+      - boolean
+      description: 항목을 정렬할 수 있는지 여부를 나타내는 값을 가져오거나 설정 합니다.
+      optional: true
+    - id: topic.countDetails
+      type:
+      - azure-asm-sb.CountDetails
+      description: 현재 큐 통계입니다.
+      optional: true
+    - id: topic.countDetails.activeMessageCount
+      type:
+      - number
+      description: 현재 활성 메시지 개수입니다.
+      optional: true
+    - id: topic.countDetails.deadLetterMessageCount
+      type:
+      - number
+      description: 배달 못 한 편지의 현재 수입니다.
+      optional: true
+    - id: topic.countDetails.scheduledMessageCount
+      type:
+      - number
+      description: 예약 된 메시지의 현재 수입니다.
+      optional: true
+    - id: topic.countDetails.transferDeadLetterMessageCount
+      type:
+      - number
+      description: 전송 배달 못 한 편지의 현재 수입니다.
+      optional: true
+    - id: topic.countDetails.transferMessageCount
+      type:
+      - number
+      description: 메시지 전송의 현재 수입니다.
+      optional: true
+    - id: topic.subscriptionCount
+      type:
+      - number
+      description: 현재 항목에 대 한 구독 수입니다.
+      optional: true
+    - id: topic.autoDeleteOnIdle
+      type:
+      - string
+      description: 구현 합니다.
+      optional: true
+    - id: topic.entityAvailabilityStatus
+      type:
+      - string
+      description: 항목의 현재 가용성 상태입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sb.Stream
+      description: 응답 스트림입니다.
+    content: function update(namespaceName, topic, callback)
+  langs:
+  - js

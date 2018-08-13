@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: b4a3fb9b551ea7ff8291a7c44c6d4958b18851cc
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064139"
+items:
+- uid: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations
+  id: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations
+  name: RestoreDatabaseOperations
+  summary: >-
+    Azure SQL Database에 대 한 복원 요청을 만드는 작업을 포함 합니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [SqlManagementClient]에 대 한 자동으로 생성 됩니다 {@link SqlManagementClient ~ SqlManagementClient}.
+
+    [RestoreDatabaseOperations]를 참조 하세요. {@link SqlManagementClient ~ SqlManagementClient #restoreDatabaseOperations}.
+
+    RestoreDatabaseOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-sql.RestoreDatabaseOperations
+  type: Class
+  children:
+  - azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.#ctor
+  - azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#create
+  langs:
+  - js
+- id: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.#ctor
+  uid: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.#ctor
+  parent: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations
+  name: RestoreDatabaseOperations(client)
+  fullName: azure-asm-sql.RestoreDatabaseOperations.RestoreDatabaseOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedSqlManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new RestoreDatabaseOperations(client)
+  langs:
+  - js
+- uid: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#create
+  id: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#create
+  parent: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations
+  name: create(sourceServerName, parameters, callback)
+  summary: Azure SQL Database에 대 한 복원 요청을 발급합니다.
+  fullName: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.create(sourceServerName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: sourceServerName
+      type:
+      - string
+      description: 원본 데이터베이스를 하거나 호스트에 있는 Azure SQL 데이터베이스 서버의 이름입니다.
+    - id: parameters
+      type:
+      - azure-asm-sql.RestoreDatabaseOperationCreateParameters
+      description: Restore Database 작업 만들기 요청에 대 한 추가 매개 변수입니다.
+    - id: parameters.sourceDatabaseName
+      type:
+      - string
+      description: 원본 Azure SQL Database의 이름을 가져오거나 설정 합니다.
+    - id: parameters.sourceDatabaseDeletionDate
+      type:
+      - date
+      description: 원본 Azure SQL Database의 삭제 날짜를 가져오거나 설정 합니다.
+      optional: true
+    - id: parameters.targetServerName
+      type:
+      - string
+      description: 대상 Azure SQL Database 서버 이름을 가져오거나 설정 합니다.
+      optional: true
+    - id: parameters.targetDatabaseName
+      type:
+      - string
+      description: 대상 Azure SQL Database의 이름을 가져오거나 설정 합니다.
+    - id: parameters.pointInTime
+      type:
+      - date
+      description: 복원할에서 시점을 가져오거나 설정 합니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-sql.Stream
+      description: 응답 스트림입니다.
+    content: function create(sourceServerName, parameters, callback)
+  langs:
+  - js

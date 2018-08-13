@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 6b8a50936268ca625ed3d0ccc06359f0bc9e3171
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40063434"
+items:
+- uid: azure-asm-storage
+  name: azure-asm-storage
+  langs:
+  - js
+  type: package
+  summary: ''
+  children:
+  - azure-asm-storage.StorageAccountOperations~StorageAccountOperations
+  - azure-asm-storage.StorageManagementClient~StorageManagementClient
+  - azure-asm-storage.createStorageManagementClient
+  - azure-asm-storage.createCertificateCloudCredentials
+- uid: azure-asm-storage.createStorageManagementClient
+  id: azure-asm-storage.createStorageManagementClient
+  name: createStorageManagementClient(baseUri, filters)
+  summary: >-
+    새 <xref:azure-asm-storage.StorageManagementClient> 개체입니다.
+
+
+    참고: 이러한 Api는 여전히 개발 및 사용 하지 않아야 합니다.
+  fullName: azure-asm-storage.createStorageManagementClient(baseUri, filters)
+  type: Function
+  syntax:
+    parameters:
+    - id: credentials.subscriptionId
+      type:
+      - string
+      description: 구독 식별자입니다.
+      optional: true
+    - id: credentials.cert
+      type:
+      - string
+      description: 인증서 값입니다.
+      optional: true
+    - id: credentials.key
+      type:
+      - string
+      description: 키 값입니다.
+      optional: true
+    - id: baseUri
+      type:
+      - string
+      description: 기본 uri입니다.
+      optional: true
+    - id: filters
+      type:
+      - array
+      description: 서비스 필터의 선택적 배열
+      optional: true
+    return:
+      type:
+      - azure-asm-storage.StorageManagementClient
+      description: 새 StorageManagementClient 개체입니다.
+    content: function createStorageManagementClient(baseUri, filters)
+  langs:
+  - js
+- uid: azure-asm-storage.createCertificateCloudCredentials
+  id: azure-asm-storage.createCertificateCloudCredentials
+  name: createCertificateCloudCredentials()
+  summary: >-
+    새 CertificateCloudCredentials 개체를 만듭니다.
+
+    두 쌍 인증서 / 키 값 pem 파일 위치 또는 수를 전달 해야 합니다.
+  fullName: azure-asm-storage.createCertificateCloudCredentials()
+  type: Function
+  syntax:
+    parameters:
+    - id: credentials.subscription
+      type:
+      - string
+      description: 구독 식별자입니다.
+    - id: credentials.cert
+      type:
+      - string
+      description: 인증서입니다.
+      optional: true
+    - id: credentials.key
+      type:
+      - string
+      description: 인증서 키입니다.
+      optional: true
+    - id: credentials.pem
+      type:
+      - string
+      description: PEM 파일 내용입니다.
+      optional: true
+    return:
+      type:
+      - azure-asm-storage.CertificateCloudCredentials
+      description: ''
+    content: function createCertificateCloudCredentials()
+  langs:
+  - js
+references:
+- uid: azure-asm-storage.StorageAccountOperations~StorageAccountOperations
+  name: StorageAccountOperations
+- uid: azure-asm-storage.StorageManagementClient~StorageManagementClient
+  name: StorageManagementClient

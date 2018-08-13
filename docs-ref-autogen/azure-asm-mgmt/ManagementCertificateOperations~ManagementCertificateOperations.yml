@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: ef1453429407ca3e3ebea6b93b11c0054bdc3c0b
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40063887"
+items:
+- uid: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  id: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  name: ManagementCertificateOperations
+  summary: >-
+    Azure 구독과 연결 된 리소스에 연결 하려고 하는 클라이언트를 인증 하는 구독 인증서 라고도 하는 관리 인증서를 사용할 수 있습니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/jj154124.aspx 자세한 내용은) __참고__:이 클래스의 인스턴스는 인스턴스의 [ManagementClient]에 대 한 자동으로 생성 됩니다 {@link ManagementClient ~ ManagementClient}.
+
+    [ManagementCertificates]를 참조 하세요. {@link ManagementClient ~ ManagementClient #managementCertificates}.
+
+    ManagementCertificateOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-mgmt.ManagementCertificateOperations
+  type: Class
+  children:
+  - azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.#ctor
+  - azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#create
+  - azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#deleteMethod
+  - azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#get
+  - azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#list
+  langs:
+  - js
+- id: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.#ctor
+  uid: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.#ctor
+  parent: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  name: ManagementCertificateOperations(client)
+  fullName: azure-asm-mgmt.ManagementCertificateOperations.ManagementCertificateOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new ManagementCertificateOperations(client)
+  langs:
+  - js
+- uid: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#create
+  id: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#create
+  parent: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  name: create(parameters, callback)
+  summary: 관리 인증서 만들기 작업의 관리 인증서 목록에 인증서를 추가 합니다. 구독 인증서 라고도 하는 관리 인증서를 Azure 구독과 연결 된 리소스에 연결 하려고 하는 클라이언트를 인증 합니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/jj154123.aspx 자세한)
+  fullName: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.create(parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: parameters
+      type:
+      - azure-asm-mgmt.ManagementCertificateCreateParameters
+      description: 관리 인증서 만들기 작업에 제공 되는 매개 변수입니다.
+    - id: parameters.publicKey
+      type:
+      - azure-asm-mgmt.buffer
+      description: Base-64-표현 관리 인증서 공개 키입니다.
+      optional: true
+    - id: parameters.thumbprint
+      type:
+      - string
+      description: 관리 인증서를 고유 하 게 식별 하는 지문입니다.
+      optional: true
+    - id: parameters.data
+      type:
+      - azure-asm-mgmt.buffer
+      description: Base-64 인코딩된 cer 형식의 인증서의 원시 데이터입니다.
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-mgmt.Stream
+      description: 응답 스트림입니다.
+    content: function create(parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#deleteMethod
+  id: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#deleteMethod
+  parent: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  name: deleteMethod(thumbprint, callback)
+  summary: 관리 인증서 삭제 작업의 관리 인증서 목록에서 인증서를 삭제합니다. 구독 인증서 라고도 하는 관리 인증서를 Azure 구독과 연결 된 리소스에 연결 하려고 하는 클라이언트를 인증 합니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/jj154127.aspx 자세한)
+  fullName: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.deleteMethod(thumbprint, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: thumbprint
+      type:
+      - string
+      description: 삭제할 인증서의 지문 값을 지정 합니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-mgmt.Stream
+      description: 응답 스트림입니다.
+    content: function deleteMethod(thumbprint, callback)
+  langs:
+  - js
+- uid: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#get
+  id: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#get
+  parent: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  name: get(thumbprint, callback)
+  summary: 관리 인증서 가져오기 작업은 지정 된 지문 사용 하 여 관리 인증서에 대 한 정보를 검색 합니다. 구독 인증서 라고도 하는 관리 인증서를 Azure 구독과 연결 된 리소스에 연결 하려고 하는 클라이언트를 인증 합니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/jj154131.aspx 자세한)
+  fullName: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.get(thumbprint, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: thumbprint
+      type:
+      - string
+      description: 에 대 한 정보를 검색할 인증서의 지문 값을 지정 합니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-mgmt.Stream
+      description: 응답 스트림입니다.
+    content: function get(thumbprint, callback)
+  langs:
+  - js
+- uid: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#list
+  id: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#list
+  parent: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations
+  name: list(callback)
+  summary: 관리 인증서 나열 작업을 나열 하 고 모든 지정 된 구독과 연결 된 관리 인증서에 대 한 기본 정보를 반환 합니다. 구독 인증서 라고도 하는 관리 인증서를 Azure 구독과 연결 된 리소스에 연결 하려고 하는 클라이언트를 인증 합니다.  (참조 http://msdn.microsoft.com/en-us/library/windowsazure/jj154105.aspx 자세한)
+  fullName: azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.list(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-mgmt.Stream
+      description: 응답 스트림입니다.
+    content: function list(callback)
+  langs:
+  - js

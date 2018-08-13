@@ -1,0 +1,173 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 088e1d1e32b374463e9f2358fb85f1697e47f644
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40063851"
+items:
+- uid: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  id: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  name: VirtualIPOperations
+  summary: >-
+    네트워크 관리 API 배포에 대 한 가상 Ip를 관리 하기 위한 작업이 포함 됩니다.
+
+    __참고__:이 클래스의 인스턴스는 인스턴스의 [NetworkManagementClient]에 대 한 자동으로 생성 됩니다 {@link NetworkManagementClient ~ NetworkManagementClient}.
+
+    [VirtualIPs]를 참조 하세요. {@link NetworkManagementClient ~ NetworkManagementClient #virtualIPs}.
+
+    VirtualIPOperations 클래스의 새 인스턴스를 초기화합니다.
+  fullName: azure-asm-network.VirtualIPOperations
+  type: Class
+  children:
+  - azure-asm-network.VirtualIPOperations~VirtualIPOperations.#ctor
+  - azure-asm-network.VirtualIPOperations~VirtualIPOperations#add
+  - azure-asm-network.VirtualIPOperations~VirtualIPOperations#beginAdding
+  - azure-asm-network.VirtualIPOperations~VirtualIPOperations#beginRemoving
+  - azure-asm-network.VirtualIPOperations~VirtualIPOperations#remove
+  langs:
+  - js
+- id: azure-asm-network.VirtualIPOperations~VirtualIPOperations.#ctor
+  uid: azure-asm-network.VirtualIPOperations~VirtualIPOperations.#ctor
+  parent: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  name: VirtualIPOperations(client)
+  fullName: azure-asm-network.VirtualIPOperations.VirtualIPOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedNetworkManagementClient
+      description: 서비스 클라이언트에 대 한 참조입니다.
+    content: new VirtualIPOperations(client)
+  langs:
+  - js
+- uid: azure-asm-network.VirtualIPOperations~VirtualIPOperations#add
+  id: azure-asm-network.VirtualIPOperations~VirtualIPOperations#add
+  parent: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  name: add(serviceName, deploymentName, virtualIPName, callback)
+  summary: 가상 IP 추가 작업을 배포 된 논리 가상 IP를 추가합니다.
+  fullName: azure-asm-network.VirtualIPOperations~VirtualIPOperations.add(serviceName, deploymentName, virtualIPName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 지정된 된 배포를 포함 하는 호스 티 드 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 추가할 논리 가상 IP 인 배포의 이름입니다.
+    - id: virtualIPName
+      type:
+      - string
+      description: 추가할 논리 가상 IP의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-network.Stream
+      description: 응답 스트림입니다.
+    content: function add(serviceName, deploymentName, virtualIPName, callback)
+  langs:
+  - js
+- uid: azure-asm-network.VirtualIPOperations~VirtualIPOperations#beginAdding
+  id: azure-asm-network.VirtualIPOperations~VirtualIPOperations#beginAdding
+  parent: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  name: beginAdding(serviceName, deploymentName, virtualIPName, callback)
+  summary: 가상 IP 추가 시작 작업이 배포 된 논리 가상 IP를 추가합니다.
+  fullName: azure-asm-network.VirtualIPOperations~VirtualIPOperations.beginAdding(serviceName, deploymentName, virtualIPName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 지정된 된 배포를 포함 하는 호스 티 드 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 추가할 논리 가상 IP 인 배포의 이름입니다.
+    - id: virtualIPName
+      type:
+      - string
+      description: 추가할 논리 가상 IP의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-network.Stream
+      description: 응답 스트림입니다.
+    content: function beginAdding(serviceName, deploymentName, virtualIPName, callback)
+  langs:
+  - js
+- uid: azure-asm-network.VirtualIPOperations~VirtualIPOperations#beginRemoving
+  id: azure-asm-network.VirtualIPOperations~VirtualIPOperations#beginRemoving
+  parent: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  name: beginRemoving(serviceName, deploymentName, virtualIPName, callback)
+  summary: 가상 IP 제거 시작 작업을 배포에서 논리적 가상 IP를 제거합니다.
+  fullName: azure-asm-network.VirtualIPOperations~VirtualIPOperations.beginRemoving(serviceName, deploymentName, virtualIPName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 지정된 된 배포를 포함 하는 호스 티 드 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 제거할 해당 논리 가상 IP는 배포의 이름입니다.
+    - id: virtualIPName
+      type:
+      - string
+      description: 추가할 논리 가상 IP의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-network.Stream
+      description: 응답 스트림입니다.
+    content: function beginRemoving(serviceName, deploymentName, virtualIPName, callback)
+  langs:
+  - js
+- uid: azure-asm-network.VirtualIPOperations~VirtualIPOperations#remove
+  id: azure-asm-network.VirtualIPOperations~VirtualIPOperations#remove
+  parent: azure-asm-network.VirtualIPOperations~VirtualIPOperations
+  name: remove(serviceName, deploymentName, virtualIPName, callback)
+  summary: 가상 IP 제거 작업을 배포에서 논리적 가상 IP를 제거합니다.
+  fullName: azure-asm-network.VirtualIPOperations~VirtualIPOperations.remove(serviceName, deploymentName, virtualIPName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: serviceName
+      type:
+      - string
+      description: 지정된 된 배포를 포함 하는 호스 티 드 서비스의 이름입니다.
+    - id: deploymentName
+      type:
+      - string
+      description: 제거할 해당 논리 가상 IP는 배포의 이름입니다.
+    - id: virtualIPName
+      type:
+      - string
+      description: 제거할 논리 가상 IP의 이름입니다.
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-network.Stream
+      description: 응답 스트림입니다.
+    content: function remove(serviceName, deploymentName, virtualIPName, callback)
+  langs:
+  - js
