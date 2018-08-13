@@ -1,0 +1,217 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 8782d0bb5cc1c9e037d86d2afa22bc3833db3f38
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40071361"
+items:
+- uid: '@azure/cosmos.Containers'
+  name: Containers
+  fullName: Containers
+  children:
+  - '@azure/cosmos.Containers.constructor'
+  - '@azure/cosmos.Containers.create'
+  - '@azure/cosmos.Containers.createIfNotExists'
+  - '@azure/cosmos.Containers.database'
+  - '@azure/cosmos.Containers.query'
+  - '@azure/cosmos.Containers.readAll'
+  langs:
+  - typeScript
+  type: class
+  summary: 새 컨테이너를 만들고 읽기/쿼리는 모든 컨테이너에 대 한 작업
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.Containers.constructor'
+  name: Containers
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: ''
+  syntax:
+    content: 'new Containers(database: Database)'
+    parameters:
+    - id: database
+      type:
+      - '@azure/cosmos.Database'
+      description: ''
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.Containers.create'
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >
+    컨테이너를 만듭니다.
+
+    컨테이너는 항목에 대 한 명명 된 논리적 컨테이너입니다.
+
+
+    데이터베이스 0 개 이상의 명명 된 컨테이너를 포함할 수 있습니다 및 각 컨테이너 0 개 이상의 JSON 항목으로 구성 됩니다.
+
+
+    스키마가 없음에도, 컨테이너의 항목 필요가 없습니다 동일한 구조 또는 필드를 공유 합니다.
+
+
+
+    컨테이너 응용 프로그램 리소스와 되므로 마스터 키 또는 리소스 키를 사용 하 여 승인을 받을 수 있습니다.
+  syntax:
+    content: 'function create(body: ContainerDefinition, options?: RequestOptions)'
+    parameters:
+    - id: body
+      type:
+      - '@azure/cosmos.ContainerDefinition'
+      description: 컨테이너의 본문을 나타냅니다.
+    - id: options
+      type:
+      - '@azure/cosmos.RequestOptions'
+      description: >
+        응답 페이지 크기, 연속 토큰 등과 같은 옵션을 설정 하려면이 옵션을 사용 합니다.
+      optional: true
+    return:
+      type:
+      - Promise<@azure/cosmos.ContainerResponse>
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.Containers.createIfNotExists'
+  name: createIfNotExists
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >
+    경우 컨테이너가 만들고, 그렇지 않은 경우이 확인 합니다.
+
+    이렇게 하면 읽기 작업의 id를 기준으로 `body`, 있으면 없는, 만들기 작업입니다.
+
+    출력에 기본이 아닌 속성 (예: 인덱싱 정책/etc)에서 전달 된 본문 일치 하는지 확인 해야 컨테이너는 항목에 대 한 명명 된 논리적 컨테이너입니다.
+
+
+    데이터베이스 0 개 이상의 명명 된 컨테이너를 포함할 수 있습니다 및 각 컨테이너 0 개 이상의 JSON 항목으로 구성 됩니다.
+
+
+    스키마가 없음에도, 컨테이너의 항목 필요가 없습니다 동일한 구조 또는 필드를 공유 합니다.
+
+
+
+    컨테이너 응용 프로그램 리소스와 되므로 마스터 키 또는 리소스 키를 사용 하 여 승인을 받을 수 있습니다.
+  syntax:
+    content: 'function createIfNotExists(body: ContainerDefinition, options?: RequestOptions)'
+    parameters:
+    - id: body
+      type:
+      - '@azure/cosmos.ContainerDefinition'
+      description: 컨테이너의 본문을 나타냅니다.
+    - id: options
+      type:
+      - '@azure/cosmos.RequestOptions'
+      description: >
+        응답 페이지 크기, 연속 토큰 등과 같은 옵션을 설정 하려면이 옵션을 사용 합니다.
+      optional: true
+    return:
+      type:
+      - Promise<@azure/cosmos.ContainerResponse>
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.Containers.database'
+  name: database
+  fullName: database
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'database: Database'
+    return:
+      type:
+      - '@azure/cosmos.Database'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.Containers.query'
+  name: query
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 모든 컨테이너를 쿼리합니다.
+  syntax:
+    content: 'function query(query: SqlQuerySpec, options?: FeedOptions)'
+    parameters:
+    - id: query
+      type:
+      - '@azure/cosmos.SqlQuerySpec'
+      description: 작업에 대 한 쿼리 구성 합니다. 참조 <xref:SqlQuerySpec> 쿼리를 구성 하는 방법에 대 한 자세한 내용은 합니다.
+    - id: options
+      type:
+      - '@azure/cosmos.FeedOptions'
+      description: 응답 페이지 크기, 연속 토큰 등과 같은 옵션을 설정 하려면이 옵션을 사용 합니다.
+      optional: true
+    return:
+      type:
+      - '@azure/cosmos.QueryIterator<@azure/cosmos.ContainerDefinition>'
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.Containers.readAll'
+  name: readAll
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 모든 컨테이너를 읽습니다.
+  syntax:
+    content: 'function readAll(options?: FeedOptions)'
+    parameters:
+    - id: options
+      type:
+      - '@azure/cosmos.FeedOptions'
+      description: 응답 페이지 크기, 연속 토큰 등과 같은 옵션을 설정 하려면이 옵션을 사용 합니다.
+      optional: true
+    return:
+      type:
+      - '@azure/cosmos.QueryIterator<@azure/cosmos.ContainerDefinition>'
+  package: '@azure/cosmos'
+references:
+- uid: '@azure/cosmos.Database'
+  spec.typeScript:
+  - name: Database
+    fullName: Database
+    uid: '@azure/cosmos.Database'
+- uid: '@azure/cosmos.ContainerDefinition'
+  spec.typeScript:
+  - name: ContainerDefinition
+    fullName: ContainerDefinition
+    uid: '@azure/cosmos.ContainerDefinition'
+- uid: '@azure/cosmos.RequestOptions'
+  spec.typeScript:
+  - name: RequestOptions
+    fullName: RequestOptions
+    uid: '@azure/cosmos.RequestOptions'
+- uid: Promise<@azure/cosmos.ContainerResponse>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: ContainerResponse
+    fullName: ContainerResponse
+    uid: '@azure/cosmos.ContainerResponse'
+  - name: '>'
+    fullName: '>'
+- uid: '@azure/cosmos.SqlQuerySpec'
+  spec.typeScript:
+  - name: SqlQuerySpec
+    fullName: SqlQuerySpec
+    uid: '@azure/cosmos.SqlQuerySpec'
+- uid: '@azure/cosmos.FeedOptions'
+  spec.typeScript:
+  - name: FeedOptions
+    fullName: FeedOptions
+    uid: '@azure/cosmos.FeedOptions'
+- uid: '@azure/cosmos.QueryIterator<@azure/cosmos.ContainerDefinition>'
+  spec.typeScript:
+  - name: QueryIterator
+    fullName: QueryIterator
+    uid: '@azure/cosmos.QueryIterator'
+  - name: <
+    fullName: <
+  - name: ContainerDefinition
+    fullName: ContainerDefinition
+    uid: '@azure/cosmos.ContainerDefinition'
+  - name: '>'
+    fullName: '>'

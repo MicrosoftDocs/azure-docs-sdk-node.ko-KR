@@ -1,0 +1,280 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 45e395057d348269fc6d7cab9409b08fccf3fc04
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/12/2018
+ms.locfileid: "40070821"
+items:
+- uid: azure-iothub.Device
+  name: Device
+  fullName: Device
+  children:
+  - azure-iothub.Device.authentication
+  - azure-iothub.Device.capabilities
+  - azure-iothub.Device.cloudToDeviceMessageCount
+  - azure-iothub.Device.ConnectionState
+  - azure-iothub.Device.connectionState
+  - azure-iothub.Device.connectionStateUpdatedTime
+  - azure-iothub.Device.constructor
+  - azure-iothub.Device.deviceId
+  - azure-iothub.Device.DeviceStatus
+  - azure-iothub.Device.etag
+  - azure-iothub.Device.generationId
+  - azure-iothub.Device.lastActivityTime
+  - azure-iothub.Device.status
+  - azure-iothub.Device.statusReason
+  - azure-iothub.Device.statusUpdatedTime
+  langs:
+  - typeScript
+  type: class
+  summary: >
+    장치 사용에 대 한 표현을 만듭니다는 [장치 id 레지스트리](xref:azure-iothub.Registry) Api.
+
+    **이 클래스는 사용 되지 않습니다** 때문에 [장치 id 레지스트리](xref:azure-iothub.Registry) 전체 개체가 반드시 장치 설명의 일부를 포함 하는 JSON 개체로 직접 작업할 수 있습니다. 처음에이 클래스와 함께 전달 오타로에 `symmetricKey` 속성 이름 (되었기 카멜식 대 대신 파스칼식). SDK는 기존 코드를 중단할 필요가 순서로 주위이 클래스를 유지 하는 주 버전 이후 업데이트에서 제거 될 예정이 있고 고객에 게 일반 JSON 개체를 대신 사용 해야 합니다.
+  package: azure-iothub
+  deprecated:
+    content: ''
+- uid: azure-iothub.Device.authentication
+  name: authentication
+  fullName: authentication
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 장치를 인증 하는 데 대칭 키를 포함 합니다.
+  optional: true
+  syntax:
+    content: 'authentication?: Authentication'
+    return:
+      type:
+      - azure-iothub.Device.Authentication
+  package: azure-iothub
+- uid: azure-iothub.Device.capabilities
+  name: capabilities
+  fullName: capabilities
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 장치의 기능을 포함합니다.
+  optional: true
+  syntax:
+    content: 'capabilities?: Capabilities'
+    return:
+      type:
+      - azure-iothub.Device.Capabilities
+  package: azure-iothub
+- uid: azure-iothub.Device.cloudToDeviceMessageCount
+  name: cloudToDeviceMessageCount
+  fullName: cloudToDeviceMessageCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 장치에 배달 하 여 대기 중인 c2d 메시지 수입니다.
+  optional: true
+  syntax:
+    content: 'cloudToDeviceMessageCount?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.ConnectionState
+  name: ConnectionState
+  fullName: ConnectionState
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n\"ConnectionState\" 형식 별칭입니다. \"연결\" 및 \"disconnected\" 가리킵니다."
+  package: azure-iothub
+- uid: azure-iothub.Device.connectionState
+  name: connectionState
+  fullName: connectionState
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    장치의 '연결' 또는 '연결이 끊어진' 여부 하지 장치가 연결 되어 있는지 확인 실제로 지금 하지만, 장치 연결 시간이 초과 후 IoT 허브를 검색 하지 못한 후 또는 장치에서 HTTPS 연결을 사용 하는 경우에이 속성을 사용 하는 것이 좋습니다.
+
+    사용 하는 권장 되는 방식으로 장치 연결을 모니터링 해야 하는 경우는 [작업 모니터링](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-operations-monitoring) hub의 기능입니다.
+  optional: true
+  syntax:
+    content: 'connectionState?: Device.ConnectionState'
+    return:
+      type:
+      - azure-iothub.Device.ConnectionState
+  package: azure-iothub
+- uid: azure-iothub.Device.connectionStateUpdatedTime
+  name: connectionStateUpdatedTime
+  fullName: connectionStateUpdatedTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 마지막 시간을 나타내는 타임 스탬프 `connectionState` 변경 합니다.
+  optional: true
+  syntax:
+    content: 'connectionStateUpdatedTime?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.constructor
+  name: Device
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: 새 <xref:azure-iothub.Device> 개체입니다.
+  syntax:
+    content: 'new Device(jsonData?: any)'
+    parameters:
+    - id: jsonData
+      type:
+      - any
+      description: >
+        장치 개체의 속성에 매핑되는 선택적 JSON 표현입니다. 없는 인수를 지정 하는 경우 장치 속성 기본값을 할당 됩니다.
+      optional: true
+  package: azure-iothub
+- uid: azure-iothub.Device.deviceId
+  name: deviceId
+  fullName: deviceId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 고유한 장치 식별자는 Azure IoT hub 장치 레지스트리에 있습니다.
+  syntax:
+    content: 'deviceId: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.DeviceStatus
+  name: DeviceStatus
+  fullName: DeviceStatus
+  children: []
+  langs:
+  - typeScript
+  type: class
+  summary: "\n\"DeviceStatus\" 형식 별칭입니다. \"사용\" 및 \"사용 안 함\"을 나타냅니다."
+  package: azure-iothub
+- uid: azure-iothub.Device.etag
+  name: etag
+  fullName: etag
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 장치 identity 설명에 할당 된 취약 한 엔터티 태그
+  optional: true
+  syntax:
+    content: 'etag?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.generationId
+  name: generationId
+  fullName: generationId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 동일한로 삭제/재생성 된 장치를 명확히 나타내는 데 사용 `deviceId`
+  optional: true
+  syntax:
+    content: 'generationId?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.lastActivityTime
+  name: lastActivityTime
+  fullName: lastActivityTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 장치 마지막 시간을 나타내는 타임 스탬프 인증 메시지를 보내거나 메시지를 받았습니다.
+  optional: true
+  syntax:
+    content: 'lastActivityTime?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.status
+  name: status
+  fullName: status
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "'enabled' (장치를 연결할 수 있는 권한이 있습니다 송신/수신 메시지) 또는 '사용 안 함'입니다."
+  optional: true
+  syntax:
+    content: 'status?: Device.DeviceStatus'
+    return:
+      type:
+      - azure-iothub.Device.DeviceStatus
+  package: azure-iothub
+- uid: azure-iothub.Device.statusReason
+  name: statusReason
+  fullName: statusReason
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 장치를 비활성화 하는 경우에 설정 하는 128 문자 문자열입니다.
+  optional: true
+  syntax:
+    content: 'statusReason?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+- uid: azure-iothub.Device.statusUpdatedTime
+  name: statusUpdatedTime
+  fullName: statusUpdatedTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 마지막 시간을 나타내는 타임 스탬프 `status` 변경 합니다.
+  optional: true
+  syntax:
+    content: 'statusUpdatedTime?: string'
+    return:
+      type:
+      - string
+  package: azure-iothub
+references:
+- uid: azure-iothub.Device.X509Thumbprints
+  spec.typeScript:
+  - name: X509Thumbprints
+    fullName: X509Thumbprints
+    uid: azure-iothub.Device.X509Thumbprints
+- uid: azure-iothub.Device.Authentication
+  spec.typeScript:
+  - name: Authentication
+    fullName: Authentication
+    uid: azure-iothub.Device.Authentication
+- uid: azure-iothub.Device.Capabilities
+  spec.typeScript:
+  - name: Capabilities
+    fullName: Capabilities
+    uid: azure-iothub.Device.Capabilities
+- uid: azure-iothub.Device.ConnectionState
+  spec.typeScript:
+  - name: ConnectionState
+    fullName: ConnectionState
+    uid: azure-iothub.Device.ConnectionState
+- uid: azure-iothub.Device.DeviceStatus
+  spec.typeScript:
+  - name: DeviceStatus
+    fullName: DeviceStatus
+    uid: azure-iothub.Device.DeviceStatus
