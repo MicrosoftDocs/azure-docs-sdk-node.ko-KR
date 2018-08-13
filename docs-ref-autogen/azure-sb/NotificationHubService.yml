@@ -1,0 +1,508 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 0e839634bf45a6ca21fbdf7120bdb9d631febf5b
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064382"
+items:
+- uid: azure-sb.NotificationHubService
+  id: azure-sb.NotificationHubService
+  name: NotificationHubService
+  summary: >-
+    <span data-ttu-id="f6656-101">NotificationHubService을 사용 하면 iOS, Android 및 Windows 스토어에 푸시 알림을 보낼 수 있습니다 장치입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-101">The NotificationHubService allows you to send push notifications to iOS, Android, and Windows Store devices.</span></span>
+
+
+    <span data-ttu-id="f6656-102">Notification Hubs에 대 한 자세한 내용은 작업에서 Node.js 응용 프로그램으로 포커스가 있는 정보를 볼 [사용 하 여 Service Bus Notification Hubs 방법](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-notification-hubs/)합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-102">For more information on Notification Hubs, as well as task focused information on using them from Node.js applications, see [How to Use Service Bus Notification Hubs](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-notification-hubs/).</span></span>
+  fullName: azure-sb.NotificationHubService
+  type: Class
+  children:
+  - azure-sb.NotificationHubService.#ctor
+  - azure-sb.NotificationHubService#wns
+  - azure-sb.NotificationHubService#apns
+  - azure-sb.NotificationHubService#gcm
+  - azure-sb.NotificationHubService#mpns
+  - azure-sb.NotificationHubService#send
+  - azure-sb.NotificationHubService#createRegistrationId
+  - azure-sb.NotificationHubService#getRegistration
+  - azure-sb.NotificationHubService#deleteRegistration
+  - azure-sb.NotificationHubService#updateRegistration
+  - azure-sb.NotificationHubService#createOrUpdateRegistration
+  - azure-sb.NotificationHubService#listRegistrations
+  - azure-sb.NotificationHubService#listRegistrationsByTag
+  - azure-sb.NotificationHubService#createOrUpdateInstallation
+  - azure-sb.NotificationHubService#patchInstallation
+  - azure-sb.NotificationHubService#deleteInstallation
+  - azure-sb.NotificationHubService#getInstallation
+  langs:
+  - js
+- id: azure-sb.NotificationHubService.#ctor
+  uid: azure-sb.NotificationHubService.#ctor
+  parent: azure-sb.NotificationHubService
+  name: NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
+  fullName: azure-sb.NotificationHubService.NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
+  summary: <span data-ttu-id="f6656-103">새 NotificationHubService 개체를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-103">Creates a new NotificationHubService object.</span></span>
+  type: Constructor
+  syntax:
+    parameters:
+    - id: hubName
+      type:
+      - string
+      description: <span data-ttu-id="f6656-104">알림 허브 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-104">The notification hub name.</span></span>
+    - id: endpointOrConnectionString
+      type:
+      - string
+      description: <span data-ttu-id="f6656-105">Service bus 끝점 또는 연결 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-105">The service bus endpoint or connection string.</span></span>
+      optional: true
+    - id: sharedAccessKeyName
+      type:
+      - string
+      description: <span data-ttu-id="f6656-106">알림 허브 공유 액세스 키 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-106">The notification hub shared access key name.</span></span>
+      optional: true
+    - id: sharedAccessKeyValue
+      type:
+      - string
+      description: <span data-ttu-id="f6656-107">알림 허브 공유 액세스 키 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-107">The notification hub shared access key value.</span></span>
+      optional: true
+    content: new NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#wns
+  id: azure-sb.NotificationHubService#wns
+  parent: azure-sb.NotificationHubService
+  name: wns
+  summary: <span data-ttu-id="f6656-108">(Windows 스토어 앱)에 대 한 WNS 알림 보내기 및 Windows 스토어 앱에 대 한 등록 만들기/업데이트 방법에 대 한 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-108">Provides access to methods to send notifications to WNS (for Windows Store apps) and create/update registrations for Windows Store apps.</span></span>
+  fullName: azure-sb.NotificationHubService.wns
+  type: Member
+  syntax:
+    return:
+      type:
+      - WnsService
+    content: wns
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#apns
+  id: azure-sb.NotificationHubService#apns
+  parent: azure-sb.NotificationHubService
+  name: apns
+  summary: <span data-ttu-id="f6656-109">(IOS 앱)에 대 한 apns 알림을 보내는 iOS 앱에 대 한 등록 만들기/업데이트 하는 메서드에 대 한 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-109">Provides access to methods to send notifications to APNs (for iOS apps) and create/update registrations for iOS apps.</span></span>
+  fullName: azure-sb.NotificationHubService.apns
+  type: Member
+  syntax:
+    return:
+      type:
+      - ApnsService
+    content: apns
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#gcm
+  id: azure-sb.NotificationHubService#gcm
+  parent: azure-sb.NotificationHubService
+  name: gcm
+  summary: <span data-ttu-id="f6656-110">(Android 앱)에 대 한 GCM 알림 보내기 및 Android 앱에 대 한 등록 만들기/업데이트 방법에 대 한 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-110">Provides access to methods to send notifications to GCM (for Android apps) and create/update registrations for Android apps.</span></span>
+  fullName: azure-sb.NotificationHubService.gcm
+  type: Member
+  syntax:
+    return:
+      type:
+      - GcmService
+    content: gcm
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#mpns
+  id: azure-sb.NotificationHubService#mpns
+  parent: azure-sb.NotificationHubService
+  name: mpns
+  summary: <span data-ttu-id="f6656-111">(Windows Phone 앱)에 대 한 MPNS에 알림을 보낼 Windows Phone 앱에 대 한 등록 만들기/업데이트 하는 방법에 대 한 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-111">Provides access to methods to send notifications to MPNS (for Windows Phone apps) and create/update registrations for Windows Phone apps.</span></span>
+  fullName: azure-sb.NotificationHubService.mpns
+  type: Member
+  syntax:
+    return:
+      type:
+      - MpnsService
+    content: mpns
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#send
+  id: azure-sb.NotificationHubService#send
+  parent: azure-sb.NotificationHubService
+  name: send(tags, payload, options, callback)
+  summary: <span data-ttu-id="f6656-112">템플릿 메시지를 보냅니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-112">Sends a template message.</span></span>
+  fullName: azure-sb.NotificationHubService.send(tags, payload, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tags
+      type:
+      - string
+      description: >-
+        <span data-ttu-id="f6656-113">단일 태그 또는 태그 식입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-113">A single tag or tag expression.</span></span>
+
+        <span data-ttu-id="f6656-114">이 허브의 모든 등록에 브로드캐스트 됩니다 null 인 경우</span><span class="sxs-lookup"><span data-stu-id="f6656-114">If null it will broadcast to all registrations in this hub</span></span>
+    - id: payload
+      type:
+      - object
+      - string
+      description: <span data-ttu-id="f6656-115">메시지의 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-115">The message's payload.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-116">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-116">The request options or callback function.</span></span>
+      optional: true
+    - id: options.headers
+      type:
+      - string
+      description: <span data-ttu-id="f6656-117">추가 헤더입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-117">Additional headers.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-118">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-118">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function send(tags, payload, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#createRegistrationId
+  id: azure-sb.NotificationHubService#createRegistrationId
+  parent: azure-sb.NotificationHubService
+  name: createRegistrationId(callback)
+  summary: <span data-ttu-id="f6656-119">등록 식별자를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-119">Creates a registration identifier.</span></span>
+  fullName: azure-sb.NotificationHubService.createRegistrationId(callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-120">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-120">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function createRegistrationId(callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#getRegistration
+  id: azure-sb.NotificationHubService#getRegistration
+  parent: azure-sb.NotificationHubService
+  name: getRegistration(registrationId, options, callback)
+  summary: <span data-ttu-id="f6656-121">등록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-121">Retrieves a registration.</span></span>
+  fullName: azure-sb.NotificationHubService.getRegistration(registrationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: <span data-ttu-id="f6656-122">등록 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-122">The registration identifier.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-123">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-123">The request options or callback function.</span></span> <span data-ttu-id="f6656-124">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-124">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-125">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-125">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function getRegistration(registrationId, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#deleteRegistration
+  id: azure-sb.NotificationHubService#deleteRegistration
+  parent: azure-sb.NotificationHubService
+  name: deleteRegistration(registrationId, options, callback)
+  summary: <span data-ttu-id="f6656-126">등록을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-126">Deletes a registration.</span></span>
+  fullName: azure-sb.NotificationHubService.deleteRegistration(registrationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registrationId
+      type:
+      - string
+      description: <span data-ttu-id="f6656-127">등록 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-127">The registration identifier.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-128">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-128">The request options or callback function.</span></span> <span data-ttu-id="f6656-129">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-129">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: <span data-ttu-id="f6656-130">Etag입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-130">The etag.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-131">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-131">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function deleteRegistration(registrationId, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#updateRegistration
+  id: azure-sb.NotificationHubService#updateRegistration
+  parent: azure-sb.NotificationHubService
+  name: updateRegistration(registration, options, callback)
+  summary: <span data-ttu-id="f6656-132">등록을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-132">Updates a registration.</span></span>
+  fullName: azure-sb.NotificationHubService.updateRegistration(registration, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registration
+      type:
+      - object
+      description: <span data-ttu-id="f6656-133">등록 업데이트입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-133">The registration to update.</span></span>
+    - id: registration.RegistrationId
+      type:
+      - object
+      description: <span data-ttu-id="f6656-134">업데이트할 등록 id</span><span class="sxs-lookup"><span data-stu-id="f6656-134">Registration id to update</span></span>
+    - id: registration._.ContentRootElement
+      type:
+      - object
+      description: '<span data-ttu-id="f6656-135">등록의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-135">Type of the registration.</span></span> <span data-ttu-id="f6656-136">허용 되는 형식: WindowsRegistrationDescription WindowsTemplateRegistrationDescription, AppleRegistrationDescription, AppleTemplateRegistrationDescription, GcmRegistrationDescription, GcmTemplateRegistrationDescription, MpnsRegistrationDescription, MpnsTemplateRegistrationDescription 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-136">Types allowed: WindowsRegistrationDescription, WindowsTemplateRegistrationDescription, AppleRegistrationDescription, AppleTemplateRegistrationDescription, GcmRegistrationDescription, GcmTemplateRegistrationDescription, MpnsRegistrationDescription, MpnsTemplateRegistrationDescription.</span></span>'
+    - id: registration.ChannelUri
+      type:
+      - object
+      description: <span data-ttu-id="f6656-137">경우에만 Windows 또는 Mpns 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-137">Only if Windows or Mpns registration</span></span>
+    - id: registration.DeviceToken
+      type:
+      - object
+      description: <span data-ttu-id="f6656-138">경우에만 Apple 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-138">Only if Apple registration</span></span>
+    - id: registration.GcmRegistrationId
+      type:
+      - object
+      description: <span data-ttu-id="f6656-139">경우에만 Gcm 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-139">Only if Gcm registration</span></span>
+    - id: registration.Tags
+      type:
+      - object
+      description: <span data-ttu-id="f6656-140">쉼표로 구분 된 태그 목록을 (공백 없음)</span><span class="sxs-lookup"><span data-stu-id="f6656-140">Comma-separated list of tags (no spaces)</span></span>
+    - id: registration.BodyTemplate
+      type:
+      - object
+      description: <span data-ttu-id="f6656-141">경우에만 템플릿 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-141">Only if template registration</span></span>
+    - id: registration.WnsHeaders
+      type:
+      - object
+      description: <span data-ttu-id="f6656-142">경우에만 Windows 템플릿 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-142">Only if Windows template registration</span></span>
+    - id: registration.MpnsHeaders
+      type:
+      - object
+      description: <span data-ttu-id="f6656-143">경우에만 Mpns 템플릿 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-143">Only if Mpns template registration</span></span>
+    - id: registration.Expiry
+      type:
+      - object
+      description: <span data-ttu-id="f6656-144">경우에만 Apple 템플릿 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-144">Only if Apple template registration</span></span>
+    - id: registration.ApnsHeaders
+      type:
+      - object
+      description: <span data-ttu-id="f6656-145">경우에만 Apple 템플릿 등록</span><span class="sxs-lookup"><span data-stu-id="f6656-145">Only if Apple template registration</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-146">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-146">The request options or callback function.</span></span> <span data-ttu-id="f6656-147">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-147">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: <span data-ttu-id="f6656-148">Etag입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-148">The etag.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-149">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-149">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function updateRegistration(registration, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#createOrUpdateRegistration
+  id: azure-sb.NotificationHubService#createOrUpdateRegistration
+  parent: azure-sb.NotificationHubService
+  name: createOrUpdateRegistration(registration, options, callback)
+  summary: <span data-ttu-id="f6656-150">만들거나 등록을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-150">Creates or updates a registration.</span></span>
+  fullName: azure-sb.NotificationHubService.createOrUpdateRegistration(registration, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: registration
+      type:
+      - string
+      description: <span data-ttu-id="f6656-151">등록 업데이트입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-151">The registration to update.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-152">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-152">The request options or callback function.</span></span> <span data-ttu-id="f6656-153">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-153">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: options.etag
+      type:
+      - object
+      description: <span data-ttu-id="f6656-154">Etag입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-154">The etag.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-155">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-155">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function createOrUpdateRegistration(registration, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#listRegistrations
+  id: azure-sb.NotificationHubService#listRegistrations
+  parent: azure-sb.NotificationHubService
+  name: listRegistrations(options, callback)
+  summary: <span data-ttu-id="f6656-156">등록을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-156">List registrations.</span></span>
+  fullName: azure-sb.NotificationHubService.listRegistrations(options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-157">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-157">The request options or callback function.</span></span> <span data-ttu-id="f6656-158">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-158">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - object
+      description: <span data-ttu-id="f6656-159">등록 호출에서 가져올 최대 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-159">Specifies the maximum number of registration to obtain from the call.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - object
+      description: <span data-ttu-id="f6656-160">호출에서 건너뛸 등록 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-160">Specifies the number of registrations to skip in the call.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-161">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-161">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function listRegistrations(options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#listRegistrationsByTag
+  id: azure-sb.NotificationHubService#listRegistrationsByTag
+  parent: azure-sb.NotificationHubService
+  name: listRegistrationsByTag(tag, options, callback)
+  summary: <span data-ttu-id="f6656-162">태그로 등록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-162">Retrieves a registration by tag.</span></span>
+  fullName: azure-sb.NotificationHubService.listRegistrationsByTag(tag, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: tag
+      type:
+      - string
+      description: <span data-ttu-id="f6656-163">등록 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-163">The registration tag.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-164">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-164">The request options or callback function.</span></span> <span data-ttu-id="f6656-165">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-165">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - object
+      description: <span data-ttu-id="f6656-166">등록 호출에서 가져올 최대 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-166">Specifies the maximum number of registration to obtain from the call.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - object
+      description: <span data-ttu-id="f6656-167">호출에서 건너뛸 등록 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-167">Specifies the number of registrations to skip in the call.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-168">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-168">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function listRegistrationsByTag(tag, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#createOrUpdateInstallation
+  id: azure-sb.NotificationHubService#createOrUpdateInstallation
+  parent: azure-sb.NotificationHubService
+  name: createOrUpdateInstallation(installation, options, callback)
+  summary: <span data-ttu-id="f6656-169">만들거나 업데이트를 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-169">Creates or updates a installation.</span></span>
+  fullName: azure-sb.NotificationHubService.createOrUpdateInstallation(installation, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installation
+      type:
+      - string
+      description: <span data-ttu-id="f6656-170">만들기/업데이트를 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-170">The installation to create/update.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-171">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-171">The request options or callback function.</span></span> <span data-ttu-id="f6656-172">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-172">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-173">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-173">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function createOrUpdateInstallation(installation, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#patchInstallation
+  id: azure-sb.NotificationHubService#patchInstallation
+  parent: azure-sb.NotificationHubService
+  name: patchInstallation(installationId, partialUpdateOperations, options, callback)
+  summary: <span data-ttu-id="f6656-174">기존 설치를 패치합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-174">Patches an existing installation.</span></span>
+  fullName: azure-sb.NotificationHubService.patchInstallation(installationId, partialUpdateOperations, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installationId
+      type:
+      - string
+      description: <span data-ttu-id="f6656-175">설치 Id</span><span class="sxs-lookup"><span data-stu-id="f6656-175">Installation Id</span></span>
+    - id: partialUpdateOperations
+      type:
+      - array
+      description: <span data-ttu-id="f6656-176">기존 설치를 패치 하는 일부 작업이의 목록</span><span class="sxs-lookup"><span data-stu-id="f6656-176">List of partial operations to patch an existing installation</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-177">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-177">The request options or callback function.</span></span> <span data-ttu-id="f6656-178">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-178">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-179">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-179">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function patchInstallation(installationId, partialUpdateOperations, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#deleteInstallation
+  id: azure-sb.NotificationHubService#deleteInstallation
+  parent: azure-sb.NotificationHubService
+  name: deleteInstallation(installationId, options, callback)
+  summary: <span data-ttu-id="f6656-180">기존 설치를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-180">Deletes an existing installation.</span></span>
+  fullName: azure-sb.NotificationHubService.deleteInstallation(installationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installationId
+      type:
+      - string
+      description: <span data-ttu-id="f6656-181">설치 Id</span><span class="sxs-lookup"><span data-stu-id="f6656-181">Installation Id</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-182">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-182">The request options or callback function.</span></span> <span data-ttu-id="f6656-183">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-183">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-184">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-184">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function deleteInstallation(installationId, options, callback)
+  langs:
+  - js
+- uid: azure-sb.NotificationHubService#getInstallation
+  id: azure-sb.NotificationHubService#getInstallation
+  parent: azure-sb.NotificationHubService
+  name: getInstallation(installationId, options, callback)
+  summary: <span data-ttu-id="f6656-185">설치 Id 별로 가져옵니다</span><span class="sxs-lookup"><span data-stu-id="f6656-185">Gets an installation by its Id</span></span>
+  fullName: azure-sb.NotificationHubService.getInstallation(installationId, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: installationId
+      type:
+      - string
+      description: <span data-ttu-id="f6656-186">설치 Id</span><span class="sxs-lookup"><span data-stu-id="f6656-186">Installation Id</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="f6656-187">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-187">The request options or callback function.</span></span> <span data-ttu-id="f6656-188">추가 속성이 헤더로 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-188">Additional properties will be passed as headers.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="f6656-189">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6656-189">`error` will contain information if an error occurs; otherwise, `response` will contain information related to this operation.</span></span>
+    content: function getInstallation(installationId, options, callback)
+  langs:
+  - js

@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 86f2c13f450de06aeba44565b7910b979954a7cc
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064175"
+items:
+- uid: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
+  id: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
+  name: DefinitionOperations
+  summary: >-
+    <span data-ttu-id="3a31a-101">Traffic Manager API에는 지정된 된 프로필에 대 한 정의 관리 하기 위한 작업이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-101">The Traffic Manager API includes operations for managing definitions for a specified profile.</span></span>
+
+    <span data-ttu-id="3a31a-102">__참고__:이 클래스의 인스턴스는 인스턴스의 [TrafficManagerManagementClient]에 대 한 자동으로 생성 됩니다 {@link TrafficManagerManagementClient ~ TrafficManagerManagementClient}.</span><span class="sxs-lookup"><span data-stu-id="3a31a-102">__NOTE__: An instance of this class is automatically created for an instance of the [TrafficManagerManagementClient] {@link TrafficManagerManagementClient~TrafficManagerManagementClient}.</span></span>
+
+    <span data-ttu-id="3a31a-103">[정의]를 참조 하세요. {@link TrafficManagerManagementClient ~ TrafficManagerManagementClient #definitions}.</span><span class="sxs-lookup"><span data-stu-id="3a31a-103">See [definitions] {@link TrafficManagerManagementClient~TrafficManagerManagementClient#definitions}.</span></span>
+
+    <span data-ttu-id="3a31a-104">DefinitionOperations 클래스의 새 인스턴스를 초기화합니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-104">Initializes a new instance of the DefinitionOperations class.</span></span>
+  fullName: azure-asm-trafficmanager.DefinitionOperations
+  type: Class
+  children:
+  - azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.#ctor
+  - azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#create
+  - azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#get
+  - azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#list
+  langs:
+  - js
+- id: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.#ctor
+  uid: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.#ctor
+  parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
+  name: DefinitionOperations(client)
+  fullName: azure-asm-trafficmanager.DefinitionOperations.DefinitionOperations(client)
+  summary: ''
+  type: Constructor
+  syntax:
+    parameters:
+    - id: client
+      type:
+      - undefinedTrafficManagerManagementClient
+      description: <span data-ttu-id="3a31a-105">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-105">Reference to the service client.</span></span>
+    content: new DefinitionOperations(client)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#create
+  id: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#create
+  parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
+  name: create(profileName, parameters, callback)
+  summary: <span data-ttu-id="3a31a-106">지정된 된 프로필에 대 한 새 정의 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-106">Creates a new definition for a specified profile.</span></span>  <span data-ttu-id="3a31a-107">(참조 http://msdn.microsoft.com/en-us/library/hh758257.aspx 자세한)</span><span class="sxs-lookup"><span data-stu-id="3a31a-107">(see http://msdn.microsoft.com/en-us/library/hh758257.aspx for more information)</span></span>
+  fullName: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.create(profileName, parameters, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: profileName
+      type:
+      - string
+      description: <span data-ttu-id="3a31a-108">에 대 한 새 정의 만들어 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-108">The name of the profile to create a new definition for.</span></span>
+    - id: parameters
+      type:
+      - azure-asm-trafficmanager.DefinitionCreateParameters
+      description: <span data-ttu-id="3a31a-109">정의 만들기 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-109">Parameters supplied to the Create Definition operation.</span></span>
+    - id: parameters.dnsOptions
+      type:
+      - azure-asm-trafficmanager.DefinitionDnsOptions
+      description: ''
+    - id: parameters.dnsOptions.timeToLiveInSeconds
+      type:
+      - number
+      description: <span data-ttu-id="3a31a-110">DNS-Time-to-live (TTL)은 로컬 DNS 확인 프로그램이 DNS 항목을 캐시 기간을 알려 주는 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-110">Specifies the DNS Time-to-Live (TTL) that informs the Local DNS resolvers how long to cache DNS entries.</span></span> <span data-ttu-id="3a31a-111">값은 30에서 999,999 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-111">The value is an integer from 30 through 999,999.</span></span>
+    - id: parameters.monitors
+      type:
+      - array
+      description: ''
+    - id: parameters.policy
+      type:
+      - azure-asm-trafficmanager.DefinitionPolicyCreateParameters
+      description: ''
+    - id: parameters.policy.loadBalancingMethod
+      type:
+      - azure-asm-trafficmanager.LoadBalancingMethod
+      description: <span data-ttu-id="3a31a-112">부하 분산 연결을 배포 하는 데 사용할 방법을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-112">Specifies the load balancing method to use to distribute connections.</span></span>
+    - id: parameters.policy.endpoints
+      type:
+      - array
+      description: <span data-ttu-id="3a31a-113">Windows Azure Traffic Manager 끝점의 목록을 캡슐화 합니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-113">Encapsulates the list of Windows Azure Traffic Manager endpoints.</span></span> <span data-ttu-id="3a31a-114">목록의 최대 100 개의 끝점을 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-114">You can define up to 100 endpoints in the list.</span></span> <span data-ttu-id="3a31a-115">장애 조치 부하 분산 방법 설정 되어 끝점으로 트래픽을 끝점 정의 되는 순서 대로 부하가 분산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-115">If the load balancing method is set to Failover, traffic to the endpoints is load balanced in the sequential order in which the endpoints are defined.</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: <span data-ttu-id="3a31a-116">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-116">The response stream.</span></span>
+    content: function create(profileName, parameters, callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#get
+  id: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#get
+  parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
+  name: get(profileName, callback)
+  summary: <span data-ttu-id="3a31a-117">기존 프로필 정의 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-117">Returns an existing profile definition.</span></span>  <span data-ttu-id="3a31a-118">(참조 http://msdn.microsoft.com/en-us/library/hh758248.aspx 자세한)</span><span class="sxs-lookup"><span data-stu-id="3a31a-118">(see http://msdn.microsoft.com/en-us/library/hh758248.aspx for more information)</span></span>
+  fullName: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.get(profileName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: profileName
+      type:
+      - string
+      description: <span data-ttu-id="3a31a-119">프로필에서 정의 가져오기의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-119">The name of the profile to get definition from.</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: <span data-ttu-id="3a31a-120">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-120">The response stream.</span></span>
+    content: function get(profileName, callback)
+  langs:
+  - js
+- uid: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#list
+  id: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#list
+  parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
+  name: list(profileName, callback)
+  summary: <span data-ttu-id="3a31a-121">프로필의 모든 정의 반환 합니다 (참조 http://msdn.microsoft.com/en-us/library/hh758252.aspx 자세한)</span><span class="sxs-lookup"><span data-stu-id="3a31a-121">Returns all definitions of a profile  (see http://msdn.microsoft.com/en-us/library/hh758252.aspx for more information)</span></span>
+  fullName: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.list(profileName, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: profileName
+      type:
+      - string
+      description: <span data-ttu-id="3a31a-122">모든 정의 반환할 프로필의 이름</span><span class="sxs-lookup"><span data-stu-id="3a31a-122">The name of the profile to return all definitions</span></span>
+    - id: callback
+      type:
+      - function
+      description: ''
+    return:
+      type:
+      - azure-asm-trafficmanager.Stream
+      description: <span data-ttu-id="3a31a-123">응답 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3a31a-123">The response stream.</span></span>
+    content: function list(profileName, callback)
+  langs:
+  - js

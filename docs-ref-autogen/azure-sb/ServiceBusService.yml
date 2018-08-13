@@ -1,0 +1,1384 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 710b634fa6d51baa927cf736564cb3b38a6c36d9
+ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40064397"
+items:
+- uid: azure-sb.ServiceBusService
+  id: azure-sb.ServiceBusService
+  name: ServiceBusService
+  summary: >-
+    <span data-ttu-id="9d724-101">ServiceBusServices를 사용 하면 Microsoft Azure Service Bus를 사용 하 여 작업할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-101">The ServiceBusServices allows you to work with Microsoft Azure Service Bus.</span></span>
+
+    <span data-ttu-id="9d724-102">Service Bus 메시지 뿐만 아니라 모바일 장치에 푸시 알림을 보내고에 대 한 두 큐를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-102">Service Bus provides both queues for sending and receiving messages, as well as push notifications for mobile devices.</span></span>
+
+
+    <span data-ttu-id="9d724-103">Service Bus 큐 모두 표준 메시지 큐 기능을 제공할 뿐만 아니라 functioanlity 게시/구독 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-103">Service Bus queues provide both standard message queue functionality as well as publish/subscribe functioanlity.</span></span>
+
+    <span data-ttu-id="9d724-104">Service Bus 큐에 대 한 자세한 내용은 작업에서 Node.js 응용 프로그램으로 포커스가 있는 정보를 볼 [Service Bus 큐를 사용 하는 방법](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-queues/) 고 [방법을를 사용 하 여 Service Bus 토픽/구독](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-topics/).</span><span class="sxs-lookup"><span data-stu-id="9d724-104">For more information on Service Bus queues, as well as task focused information on using them from Node.js applications, see [How to Use Service Bus Queues](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-queues/) and [How to Use Service Bus Topics/Subscriptions](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-topics/).</span></span>
+
+
+    <span data-ttu-id="9d724-105">Service Bus 알림 허브를 통해 푸시 알림을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-105">Service Bus provides push notifications through the Notification Hub.</span></span>
+
+    <span data-ttu-id="9d724-106">Notification Hubs를 관리 하는 ServiceBusService를 사용할 수 있지만 사용 해야 합니다는 <xref:azure-sb.NotificationHubService> 모바일 장치에 메시지를 보내도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-106">While the ServiceBusService can be used to manage Notification Hubs, you must use the <xref:azure-sb.NotificationHubService> to send messages to mobile devices.</span></span>
+  fullName: azure-sb.ServiceBusService
+  type: Class
+  children:
+  - azure-sb.ServiceBusService.#ctor
+  - azure-sb.ServiceBusService#receiveQueueMessage
+  - azure-sb.ServiceBusService#receiveSubscriptionMessage
+  - azure-sb.ServiceBusService#deleteMessage
+  - azure-sb.ServiceBusService#unlockMessage
+  - azure-sb.ServiceBusService#renewLockForMessage
+  - azure-sb.ServiceBusService#sendQueueMessage
+  - azure-sb.ServiceBusService#sendTopicMessage
+  - azure-sb.ServiceBusService#createQueue
+  - azure-sb.ServiceBusService#createQueueIfNotExists
+  - azure-sb.ServiceBusService#deleteQueue
+  - azure-sb.ServiceBusService#getQueue
+  - azure-sb.ServiceBusService#listQueues
+  - azure-sb.ServiceBusService#createTopic
+  - azure-sb.ServiceBusService#createTopicIfNotExists
+  - azure-sb.ServiceBusService#deleteTopic
+  - azure-sb.ServiceBusService#getTopic
+  - azure-sb.ServiceBusService#listTopics
+  - azure-sb.ServiceBusService#createSubscription
+  - azure-sb.ServiceBusService#deleteSubscription
+  - azure-sb.ServiceBusService#getSubscription
+  - azure-sb.ServiceBusService#listSubscriptions
+  - azure-sb.ServiceBusService#createRule
+  - azure-sb.ServiceBusService#deleteRule
+  - azure-sb.ServiceBusService#getRule
+  - azure-sb.ServiceBusService#listRules
+  - azure-sb.ServiceBusService#createNotificationHub
+  - azure-sb.ServiceBusService#getNotificationHub
+  - azure-sb.ServiceBusService#listNotificationHubs
+  - azure-sb.ServiceBusService#deleteNotificationHub
+  langs:
+  - js
+- id: azure-sb.ServiceBusService.#ctor
+  uid: azure-sb.ServiceBusService.#ctor
+  parent: azure-sb.ServiceBusService
+  name: ServiceBusService(configOrNamespaceOrConnectionString, accessKey, issuer, acsNamespace, host, authenticationProvider)
+  fullName: azure-sb.ServiceBusService.ServiceBusService(configOrNamespaceOrConnectionString, accessKey, issuer, acsNamespace, host, authenticationProvider)
+  summary: >-
+    <span data-ttu-id="9d724-107">새 ServiceBusService 개체를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-107">Creates a new ServiceBusService object.</span></span>
+
+
+    <span data-ttu-id="9d724-108">Azure 모듈에는 Microsoft Azure Service Bus에 연결 하는 데 필요한 정보에 대 한 환경 변수 AZURE_SERVICEBUS_NAMESPACE 및 AZURE_SERVICEBUS_ACCESS_KEY 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-108">The azure module will read the environment variables AZURE_SERVICEBUS_NAMESPACE and AZURE_SERVICEBUS_ACCESS_KEY for information required to connect to your Microsoft Azure Service Bus.</span></span>
+
+    <span data-ttu-id="9d724-109">이러한 환경 변수가 설정 되지 않은 경우의 개체를 만들 때 계정 정보를 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-109">If these environment variables are not set, you must specify the account information when creating a ServiceBusService object.</span></span>
+  type: Constructor
+  syntax:
+    parameters:
+    - id: configOrNamespaceOrConnectionString
+      type:
+      - string
+      description: <span data-ttu-id="9d724-110">Service bus 네임 스페이스 또는 연결 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-110">The service bus namespace or the connection string.</span></span>
+      optional: true
+    - id: accessKey
+      type:
+      - string
+      description: <span data-ttu-id="9d724-111">암호입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-111">The password.</span></span> <span data-ttu-id="9d724-112">연결 문자열을 전달 하는 경우에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-112">Only necessary if no connection string passed.</span></span>
+      optional: true
+    - id: issuer
+      type:
+      - string
+      description: <span data-ttu-id="9d724-113">발급자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-113">The issuer.</span></span>
+      optional: true
+    - id: acsNamespace
+      type:
+      - string
+      description: <span data-ttu-id="9d724-114">Acs 네임 스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-114">The acs namespace.</span></span> <span data-ttu-id="9d724-115">Sb 네임 스페이스를 일반적으로 동일 "-sb" 접미사가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-115">Usually the same as the sb namespace with "-sb" suffix.</span></span>
+      optional: true
+    - id: host
+      type:
+      - string
+      description: <span data-ttu-id="9d724-116">호스트 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-116">The host address.</span></span>
+      optional: true
+    - id: authenticationProvider
+      type:
+      - object
+      description: <span data-ttu-id="9d724-117">인증 공급자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-117">The authentication provider.</span></span>
+      optional: true
+    content: new ServiceBusService(configOrNamespaceOrConnectionString, accessKey, issuer, acsNamespace, host, authenticationProvider)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#receiveQueueMessage
+  id: azure-sb.ServiceBusService#receiveQueueMessage
+  parent: azure-sb.ServiceBusService
+  name: receiveQueueMessage(queuePath, options, callback)
+  summary: <span data-ttu-id="9d724-118">큐 메시지를 받습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-118">Receives a queue message.</span></span>
+  fullName: azure-sb.ServiceBusService.receiveQueueMessage(queuePath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: queuePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-119">메시지가 전송 큐의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-119">A string object that represents the name of the queue to which the message will be sent.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-120">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-120">The request options.</span></span>
+      optional: true
+    - id: options.isPeekLock
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-121">메시지를 미리 볼 또는 수신 해야 하는 경우를 나타내는 부울 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-121">Boolean value indicating if the message should be peeked or received.</span></span>
+      optional: true
+    - id: options.timeoutIntervalInS
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-122">요청에 사용할 초에서 제한 시간 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-122">The timeout interval, in seconds, to use for the request.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-123">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `receivequeuemessageresult` 메시지 결과 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-123">`error` will contain information if an error occurs; otherwise `receivequeuemessageresult` will contain the message result information.</span></span>
+                                                                                        <span data-ttu-id="9d724-124">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-124">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function receiveQueueMessage(queuePath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#receiveSubscriptionMessage
+  id: azure-sb.ServiceBusService#receiveSubscriptionMessage
+  parent: azure-sb.ServiceBusService
+  name: receiveSubscriptionMessage(topicPath, subscriptionPath, options, callback)
+  summary: <span data-ttu-id="9d724-125">구독 메시지를 받습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-125">Receives a subscription message.</span></span>
+  fullName: azure-sb.ServiceBusService.receiveSubscriptionMessage(topicPath, subscriptionPath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-126">수신 하는 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-126">A string object that represents the name of the topic to receive.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-127">메시지에서 구독의 이름을 나타내는 문자열 개체를 받게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-127">A string object that represents the name of the subscription from the message will be received.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-128">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-128">The request options.</span></span>
+      optional: true
+    - id: options.isPeekLock
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-129">메시지를 미리 볼 또는 수신 해야 하는 경우를 나타내는 부울 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-129">Boolean value indicating if the message should be peeked or received.</span></span>
+      optional: true
+    - id: options.timeoutIntervalInS
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-130">요청에 사용할 초에서 제한 시간 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-130">The timeout interval, in seconds, to use for the request.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-131">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `receivetopicmessageresult` 메시지 결과 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-131">`error` will contain information if an error occurs; otherwise `receivetopicmessageresult` will contain the message result information.</span></span>
+                                                                                        <span data-ttu-id="9d724-132">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-132">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function receiveSubscriptionMessage(topicPath, subscriptionPath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#deleteMessage
+  id: azure-sb.ServiceBusService#deleteMessage
+  parent: azure-sb.ServiceBusService
+  name: deleteMessage(message, callback)
+  summary: <span data-ttu-id="9d724-133">메시지를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-133">Deletes a message.</span></span>
+  fullName: azure-sb.ServiceBusService.deleteMessage(message, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: message
+      type:
+      - object
+      - string
+      description: <span data-ttu-id="9d724-134">메시지 개체 또는 메시지 위치를 사용 하 여 문자열.</span><span class="sxs-lookup"><span data-stu-id="9d724-134">The message object or a string with the message location.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-135">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-135">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function deleteMessage(message, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#unlockMessage
+  id: azure-sb.ServiceBusService#unlockMessage
+  parent: azure-sb.ServiceBusService
+  name: unlockMessage(message, callback)
+  summary: <span data-ttu-id="9d724-136">메시지의 잠금을 해제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-136">Unlocks a message.</span></span>
+  fullName: azure-sb.ServiceBusService.unlockMessage(message, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: message
+      type:
+      - object
+      - string
+      description: <span data-ttu-id="9d724-137">메시지 개체 또는 메시지 위치를 사용 하 여 문자열.</span><span class="sxs-lookup"><span data-stu-id="9d724-137">The message object or a string with the message location.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-138">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-138">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function unlockMessage(message, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#renewLockForMessage
+  id: azure-sb.ServiceBusService#renewLockForMessage
+  parent: azure-sb.ServiceBusService
+  name: renewLockForMessage(message, callback)
+  summary: <span data-ttu-id="9d724-139">갱신 잠금 메시지에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-139">Renew-lock for message.</span></span>
+  fullName: azure-sb.ServiceBusService.renewLockForMessage(message, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: message
+      type:
+      - object
+      - string
+      description: <span data-ttu-id="9d724-140">메시지 개체 또는 메시지 위치를 사용 하 여 문자열.</span><span class="sxs-lookup"><span data-stu-id="9d724-140">The message object or a string with the message location.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-141">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-141">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function renewLockForMessage(message, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#sendQueueMessage
+  id: azure-sb.ServiceBusService#sendQueueMessage
+  parent: azure-sb.ServiceBusService
+  name: sendQueueMessage(queuePath, message, callback)
+  summary: <span data-ttu-id="9d724-142">큐 메시지를 보냅니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-142">Sends a queue message.</span></span>
+  fullName: azure-sb.ServiceBusService.sendQueueMessage(queuePath, message, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: queuePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-143">메시지가 전송 큐의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-143">A string object that represents the name of the queue to which the message will be sent.</span></span>
+    - id: message
+      type:
+      - object
+      - string
+      description: <span data-ttu-id="9d724-144">보낼 메시지를 나타내는 메시지 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-144">A message object that represents the message to send.</span></span>
+    - id: message.body
+      type:
+      - string
+      description: <span data-ttu-id="9d724-145">메시지의 텍스트입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-145">The message's text.</span></span>
+      optional: true
+    - id: message.customProperties
+      type:
+      - object
+      description: <span data-ttu-id="9d724-146">메시지의 사용자 지정 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-146">The message's custom properties.</span></span>
+      optional: true
+    - id: message.brokerProperties.CorrelationId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-147">메시지의 상관 관계 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-147">The message's correlation identifier.</span></span>
+      optional: true
+    - id: message.brokerProperties.SessionId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-148">세션 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-148">The session identifier.</span></span>
+      optional: true
+    - id: message.brokerProperties.MessageId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-149">메시지의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-149">The message's identifier.</span></span>
+      optional: true
+    - id: message.brokerProperties.Label
+      type:
+      - string
+      description: <span data-ttu-id="9d724-150">메시지의 레이블입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-150">The message's lable.</span></span>
+      optional: true
+    - id: message.brokerProperties.ReplyTo
+      type:
+      - string
+      description: <span data-ttu-id="9d724-151">메시지의 회신을 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-151">The message's reply to.</span></span>
+      optional: true
+    - id: message.brokerProperties.TimeToLive
+      type:
+      - string
+      description: <span data-ttu-id="9d724-152">메시지의 시간 제한입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-152">The message's time to live.</span></span>
+      optional: true
+    - id: message.brokerProperties.To
+      type:
+      - string
+      description: <span data-ttu-id="9d724-153">메시지의입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-153">The message's to.</span></span>
+      optional: true
+    - id: message.brokerProperties.ScheduledEnqueueTimeUtc
+      type:
+      - string
+      description: <span data-ttu-id="9d724-154">메시지의 큐에 넣기 시간 (UTC)을 예약 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-154">The message's scheduled enqueue time in UTC.</span></span>
+      optional: true
+    - id: message.brokerProperties.ReplyToSessionId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-155">세션 식별자를 메시지의 회신입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-155">The message's reply to session identifier.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-156">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-156">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendQueueMessage(queuePath, message, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#sendTopicMessage
+  id: azure-sb.ServiceBusService#sendTopicMessage
+  parent: azure-sb.ServiceBusService
+  name: sendTopicMessage(topicPath, message, callback)
+  summary: <span data-ttu-id="9d724-157">항목 메시지를 보냅니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-157">Sends a topic message.</span></span>
+  fullName: azure-sb.ServiceBusService.sendTopicMessage(topicPath, message, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-158">메시지를 전송 하는 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-158">A string object that represents the name of the topic to which the message will be sent.</span></span>
+    - id: message
+      type:
+      - object
+      - string
+      description: <span data-ttu-id="9d724-159">보낼 메시지를 나타내는 메시지 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-159">A message object that represents the message to send.</span></span>
+    - id: message.body
+      type:
+      - string
+      description: <span data-ttu-id="9d724-160">메시지의 텍스트입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-160">The message's text.</span></span>
+      optional: true
+    - id: message.customProperties
+      type:
+      - object
+      description: <span data-ttu-id="9d724-161">메시지의 사용자 지정 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-161">The message's custom properties.</span></span>
+      optional: true
+    - id: message.brokerProperties.CorrelationId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-162">메시지의 상관 관계 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-162">The message's correlation identifier.</span></span>
+      optional: true
+    - id: message.brokerProperties.SessionId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-163">세션 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-163">The session identifier.</span></span>
+      optional: true
+    - id: message.brokerProperties.MessageId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-164">메시지의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-164">The message's identifier.</span></span>
+      optional: true
+    - id: message.brokerProperties.Label
+      type:
+      - string
+      description: <span data-ttu-id="9d724-165">메시지의 레이블입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-165">The message's lable.</span></span>
+      optional: true
+    - id: message.brokerProperties.ReplyTo
+      type:
+      - string
+      description: <span data-ttu-id="9d724-166">메시지의 회신을 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-166">The message's reply to.</span></span>
+      optional: true
+    - id: message.brokerProperties.TimeToLive
+      type:
+      - string
+      description: <span data-ttu-id="9d724-167">메시지의 시간 제한입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-167">The message's time to live.</span></span>
+      optional: true
+    - id: message.brokerProperties.To
+      type:
+      - string
+      description: <span data-ttu-id="9d724-168">메시지의입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-168">The message's to.</span></span>
+      optional: true
+    - id: message.brokerProperties.ScheduledEnqueueTimeUtc
+      type:
+      - string
+      description: <span data-ttu-id="9d724-169">메시지의 큐에 넣기 시간 (UTC)을 예약 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-169">The message's scheduled enqueue time in UTC.</span></span>
+      optional: true
+    - id: message.brokerProperties.ReplyToSessionId
+      type:
+      - string
+      description: <span data-ttu-id="9d724-170">세션 식별자를 메시지의 회신입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-170">The message's reply to session identifier.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-171">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `receivetopicmessageresult` 메시지 결과 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-171">`error` will contain information if an error occurs; otherwise `receivetopicmessageresult` will contain the message result information.</span></span>
+                                                                                          <span data-ttu-id="9d724-172">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-172">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function sendTopicMessage(topicPath, message, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createQueue
+  id: azure-sb.ServiceBusService#createQueue
+  parent: azure-sb.ServiceBusService
+  name: createQueue(queuePath, options, callback)
+  summary: <span data-ttu-id="9d724-173">큐를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-173">Creates a queue.</span></span>
+  fullName: azure-sb.ServiceBusService.createQueue(queuePath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: queuePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-174">만들 큐의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-174">A string object that represents the name of the queue to create.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-175">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-175">The request options.</span></span>
+      optional: true
+    - id: options.MaxSizeInMegaBytes
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-176">최대 큐 크기를 메가바이트 단위로 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-176">Specifies the maximum queue size in megabytes.</span></span> <span data-ttu-id="9d724-177">이 값을 초과 큐는 메시지를 큐에 넣기 하려고 하지 못합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-177">Any attempt to enqueue a message that will cause the queue to exceed this value will fail.</span></span>
+      optional: true
+    - id: options.DefaultMessageTimeToLive
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-178">배달 못 한 편지 사용 되는지 여부에 따라 메시지를 자동으로 DeadLetterQueue 이동할 되었거나 지정된 된 시간 보다 오랫동안 큐에 저장 된 경우 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-178">Depending on whether DeadLettering is enabled, a message is automatically moved to the DeadLetterQueue or deleted if it has been stored in the queue for longer than the specified time.</span></span> <span data-ttu-id="9d724-179">메시지 TTL이 큐에 설정 된 TTL 보다 작은 경우에 메시지에 지정 된 ttl이 값을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-179">This value is overwritten by a TTL specified on the message if and only if the message TTL is smaller than the TTL set on the queue.</span></span> <span data-ttu-id="9d724-180">큐를 만든 후에이 값은 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-180">This value is immutable after the Queue has been created.</span></span>
+      optional: true
+    - id: options.LockDuration
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-181">수신기가 처리에 대 한 메시지를 잠가야 하는 초 단위로 시간을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-181">Determines the amount of time in seconds in which a message should be locked for processing by a receiver.</span></span> <span data-ttu-id="9d724-182">이 기간 후 메시지 다음 수신자에 의해 잠기지 않은 및 사용할 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-182">After this period, the message is unlocked and available for consumption by the next receiver.</span></span> <span data-ttu-id="9d724-183">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-183">Settable only at queue creation time.</span></span>
+      optional: true
+    - id: options.RequiresSession
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-184">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-184">Settable only at queue creation time.</span></span> <span data-ttu-id="9d724-185">큐를 true로 설정 되 면 세션을 인식 하 고만 SessionReceiver 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-185">If set to true, the queue will be session-aware and only SessionReceiver will be supported.</span></span> <span data-ttu-id="9d724-186">세션 인식 큐는 REST를 통해 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-186">Session-aware queues are not supported through REST.</span></span>
+      optional: true
+    - id: options.RequiresDuplicateDetection
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-187">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-187">Settable only at queue creation time.</span></span>
+      optional: true
+    - id: options.DeadLetteringOnMessageExpiration
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-188">이 필드는 Service Bus는 해당 TTL이 만료 된 메시지를 처리 하는 방법을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-188">This field controls how the Service Bus handles a message whose TTL has expired.</span></span> <span data-ttu-id="9d724-189">사용 하는 메시지가 만료 될 경우 큐에서 메시지 큐의 배달 못 한 편지 하위 큐로 이동 Service Bus 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-189">If it is enabled and a message expires, the Service Bus moves the message from the queue into the queue’s dead-letter sub-queue.</span></span> <span data-ttu-id="9d724-190">사용 하지 않으면 큐에서 메시지를 영구적으로 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-190">If disabled, message will be permanently deleted from the queue.</span></span> <span data-ttu-id="9d724-191">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-191">Settable only at queue creation time.</span></span>
+      optional: true
+    - id: options.DuplicateDetectionHistoryTimeWindow
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-192">Service Bus는 메시지 중복을 검색 하는 시간 범위를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-192">Specifies the time span during which the Service Bus detects message duplication.</span></span>
+      optional: true
+    - id: options.EnablePartitioning
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-193">큐를 분할 해야 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-193">Specifies whether the queue should be partitioned.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-194">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `createqueueresult` 새 큐 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-194">`error` will contain information if an error occurs; otherwise `createqueueresult` will contain the new queue information.</span></span>
+                                                                                          <span data-ttu-id="9d724-195">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-195">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createQueue(queuePath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createQueueIfNotExists
+  id: azure-sb.ServiceBusService#createQueueIfNotExists
+  parent: azure-sb.ServiceBusService
+  name: createQueueIfNotExists(queuePath, options, callback)
+  summary: <span data-ttu-id="9d724-196">이미 존재 하지 않습니다 하는 경우 큐를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-196">Creates a queue if it doesn't already exists.</span></span>
+  fullName: azure-sb.ServiceBusService.createQueueIfNotExists(queuePath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: queuePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-197">삭제할 큐의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-197">A string object that represents the name of the queue to delete.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-198">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-198">The request options.</span></span>
+      optional: true
+    - id: options.MaxSizeInMegaBytes
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-199">최대 큐 크기를 메가바이트 단위로 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-199">Specifies the maximum queue size in megabytes.</span></span> <span data-ttu-id="9d724-200">이 값을 초과 큐는 메시지를 큐에 넣기 하려고 하지 못합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-200">Any attempt to enqueue a message that will cause the queue to exceed this value will fail.</span></span>
+      optional: true
+    - id: options.DefaultMessageTimeToLive
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-201">배달 못 한 편지 사용 되는지 여부에 따라 메시지를 자동으로 DeadLetterQueue 이동할 되었거나 지정된 된 시간 보다 오랫동안 큐에 저장 된 경우 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-201">Depending on whether DeadLettering is enabled, a message is automatically moved to the DeadLetterQueue or deleted if it has been stored in the queue for longer than the specified time.</span></span> <span data-ttu-id="9d724-202">메시지 TTL이 큐에 설정 된 TTL 보다 작은 경우에 메시지에 지정 된 ttl이 값을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-202">This value is overwritten by a TTL specified on the message if and only if the message TTL is smaller than the TTL set on the queue.</span></span> <span data-ttu-id="9d724-203">큐를 만든 후에이 값은 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-203">This value is immutable after the Queue has been created.</span></span>
+      optional: true
+    - id: options.LockDuration
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-204">수신기가 처리에 대 한 메시지를 잠가야 하는 초 단위로 시간을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-204">Determines the amount of time in seconds in which a message should be locked for processing by a receiver.</span></span> <span data-ttu-id="9d724-205">이 기간 후 메시지 다음 수신자에 의해 잠기지 않은 및 사용할 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-205">After this period, the message is unlocked and available for consumption by the next receiver.</span></span> <span data-ttu-id="9d724-206">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-206">Settable only at queue creation time.</span></span>
+      optional: true
+    - id: options.RequiresSession
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-207">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-207">Settable only at queue creation time.</span></span> <span data-ttu-id="9d724-208">큐를 true로 설정 되 면 세션을 인식 하 고만 SessionReceiver 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-208">If set to true, the queue will be session-aware and only SessionReceiver will be supported.</span></span> <span data-ttu-id="9d724-209">세션 인식 큐는 REST를 통해 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-209">Session-aware queues are not supported through REST.</span></span>
+      optional: true
+    - id: options.RequiresDuplicateDetection
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-210">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-210">Settable only at queue creation time.</span></span>
+      optional: true
+    - id: options.DeadLetteringOnMessageExpiration
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-211">이 필드는 Service Bus는 해당 TTL이 만료 된 메시지를 처리 하는 방법을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-211">This field controls how the Service Bus handles a message whose TTL has expired.</span></span> <span data-ttu-id="9d724-212">사용 하는 메시지가 만료 될 경우 큐에서 메시지 큐의 배달 못 한 편지 하위 큐로 이동 Service Bus 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-212">If it is enabled and a message expires, the Service Bus moves the message from the queue into the queue’s dead-letter sub-queue.</span></span> <span data-ttu-id="9d724-213">사용 하지 않으면 큐에서 메시지를 영구적으로 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-213">If disabled, message will be permanently deleted from the queue.</span></span> <span data-ttu-id="9d724-214">큐를 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-214">Settable only at queue creation time.</span></span>
+      optional: true
+    - id: options.DuplicateDetectionHistoryTimeWindow
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-215">Service Bus는 메시지 중복을 검색 하는 시간 범위를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-215">Specifies the time span during which the Service Bus detects message duplication.</span></span>
+      optional: true
+    - id: options.EnablePartitioning
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-216">큐를 분할 해야 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-216">Specifies whether the queue should be partitioned.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-217">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `queueCreated` 새 큐 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-217">`error` will contain information if an error occurs; otherwise `queueCreated` will contain the new queue information.</span></span>
+                                                                                          <span data-ttu-id="9d724-218">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-218">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createQueueIfNotExists(queuePath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#deleteQueue
+  id: azure-sb.ServiceBusService#deleteQueue
+  parent: azure-sb.ServiceBusService
+  name: deleteQueue(queuePath, callback)
+  summary: <span data-ttu-id="9d724-219">큐를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-219">Deletes a queue.</span></span>
+  fullName: azure-sb.ServiceBusService.deleteQueue(queuePath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: queuePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-220">삭제할 큐의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-220">A string object that represents the name of the queue to delete.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-221">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-221">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function deleteQueue(queuePath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#getQueue
+  id: azure-sb.ServiceBusService#getQueue
+  parent: azure-sb.ServiceBusService
+  name: getQueue(queuePath, callback)
+  summary: <span data-ttu-id="9d724-222">큐를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-222">Retrieves a queue.</span></span>
+  fullName: azure-sb.ServiceBusService.getQueue(queuePath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: queuePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-223">검색할 큐의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-223">A string object that represents the name of the queue to retrieve.</span></span>
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-224">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `queueresult` 큐 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-224">`error` will contain information if an error occurs; otherwise `queueresult` will contain the queue information.</span></span>
+                                                                                          <span data-ttu-id="9d724-225">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-225">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function getQueue(queuePath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#listQueues
+  id: azure-sb.ServiceBusService#listQueues
+  parent: azure-sb.ServiceBusService
+  name: listQueues(options, callback)
+  summary: <span data-ttu-id="9d724-226">큐의 목록을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-226">Returns a list of queues.</span></span>
+  fullName: azure-sb.ServiceBusService.listQueues(options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-227">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-227">The request options.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-228">큐 나열 하는 것에 대 한 top 절입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-228">The top clause for listing queues.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-229">큐 나열 하기 위한 skip 절입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-229">The skip clause for listing queues.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-230">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `listqueueresult` 큐의 목록이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-230">`error` will contain information if an error occurs; otherwise `listqueueresult` will contain the list of queues.</span></span>
+                                                                              <span data-ttu-id="9d724-231">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-231">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listQueues(options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createTopic
+  id: azure-sb.ServiceBusService#createTopic
+  parent: azure-sb.ServiceBusService
+  name: createTopic(topic, options, callback)
+  summary: <span data-ttu-id="9d724-232">토픽을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-232">Creates a topic.</span></span>
+  fullName: azure-sb.ServiceBusService.createTopic(topic, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topic
+      type:
+      - azure-sb.TopicInfo
+      description: <span data-ttu-id="9d724-233">만들려는 토픽을 나타내는 항목 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-233">A Topic object that represents the topic to create.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-234">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-234">The request options.</span></span>
+      optional: true
+    - id: options.MaxSizeInMegabytes
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-235">최대 토픽 크기를 메가바이트 단위로 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-235">Specifies the maximum topic size in megabytes.</span></span> <span data-ttu-id="9d724-236">항목을이 값을 초과 하면 메시지를 큐에 추가 하려는 모든 시도가 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-236">Any attempt to enqueue a message that will cause the topic to exceed this value will fail.</span></span> <span data-ttu-id="9d724-237">항목 또는이 값으로 해당 구독 수에 저장 된 모든 메시지입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-237">All messages that are stored in the topic or any of its subscriptions count towards this value.</span></span> <span data-ttu-id="9d724-238">단일 메시지로 이상의 구독 수에 상주 하는 메시지의 여러 복사본입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-238">Multiple copies of a message that reside in one or multiple subscriptions count as a single messages.</span></span> <span data-ttu-id="9d724-239">예를 들어 메시지 m 구독 s2 및 두 번 구독 s1에서 한 번만 있는 경우 m은 단일 메시지로 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-239">For example, if message m exists once in subscription s1 and twice in subscription s2, m is counted as a single message.</span></span>
+      optional: true
+    - id: options.DefaultMessageTimeToLive
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-240">시간을 결정 합니다. 연결된 된 구독에 상주 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-240">Determines how long a message lives in the associated subscriptions.</span></span> <span data-ttu-id="9d724-241">구독을 더 작은 TTL을 사용 하 여 명시적으로 만들지 않은 경우 항목에서 TTL을 상속 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-241">Subscriptions inherit the TTL from the topic unless they are created explicitly with a smaller TTL.</span></span> <span data-ttu-id="9d724-242">배달 못한 편지 활성화 되어 있는지 여부에 따라 해당 TTL이 만료 된 메시지를 구독 연결 된 DeadLtterQueue로 이동 하거나 됩니다 또는 영구적으로 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-242">Based on whether dead-lettering is enabled, a message whose TTL has expired will either be moved to the subscription’s associated DeadLtterQueue or will be permanently deleted.</span></span>
+      optional: true
+    - id: options.RequiresDuplicateDetection
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-243">사용 하도록 설정 하는 경우 항목에는 DuplicateDetectionHistoryTimeWindow 속성에 지정 된 기간 내에 중복 메시지 감지 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-243">If enabled, the topic will detect duplicate messages within the time span specified by the DuplicateDetectionHistoryTimeWindow property.</span></span> <span data-ttu-id="9d724-244">토픽을 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-244">Settable only at topic creation time.</span></span>
+      optional: true
+    - id: options.DuplicateDetectionHistoryTimeWindow
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-245">Service Bus 메시지 중복을 검색 하는 시간 범위를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-245">Specifies the time span during which the Service Bus will detect message duplication.</span></span>
+      optional: true
+    - id: options.EnableBatchedOperations
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-246">일괄 처리 작업을 허용 해야 하는 경우 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-246">Specifies if batched operations should be allowed.</span></span>
+      optional: true
+    - id: options.SizeInBytes
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-247">항목 크기를 바이트 단위로 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-247">Specifies the topic size in bytes.</span></span>
+      optional: true
+    - id: options.SupportOrdering
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-248">항목 메시지 순서 지정을 지원 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-248">Specifies whether the topic supports message ordering.</span></span>
+      optional: true
+    - id: options.EnablePartitioning
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-249">항목을 분할 해야 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-249">Specifies whether the topic should be partitioned</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-250">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `createtopicresult` 새 항목 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-250">`error` will contain information if an error occurs; otherwise `createtopicresult` will contain the new topic information.</span></span>
+                                                                                                <span data-ttu-id="9d724-251">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-251">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createTopic(topic, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createTopicIfNotExists
+  id: azure-sb.ServiceBusService#createTopicIfNotExists
+  parent: azure-sb.ServiceBusService
+  name: createTopicIfNotExists(topic, options, callback)
+  summary: <span data-ttu-id="9d724-252">존재 하지 않습니다 하는 경우 항목을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-252">Creates a topic if it doesn't exists.</span></span>
+  fullName: azure-sb.ServiceBusService.createTopicIfNotExists(topic, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topic
+      type:
+      - azure-sb.TopicInfo
+      description: <span data-ttu-id="9d724-253">만들려는 토픽을 나타내는 항목 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-253">A Topic object that represents the topic to create.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-254">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-254">The request options.</span></span>
+      optional: true
+    - id: options.MaxSizeInMegabytes
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-255">최대 토픽 크기를 메가바이트 단위로 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-255">Specifies the maximum topic size in megabytes.</span></span> <span data-ttu-id="9d724-256">항목을이 값을 초과 하면 메시지를 큐에 추가 하려는 모든 시도가 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-256">Any attempt to enqueue a message that will cause the topic to exceed this value will fail.</span></span> <span data-ttu-id="9d724-257">항목 또는이 값으로 해당 구독 수에 저장 된 모든 메시지입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-257">All messages that are stored in the topic or any of its subscriptions count towards this value.</span></span> <span data-ttu-id="9d724-258">단일 메시지로 이상의 구독 수에 상주 하는 메시지의 여러 복사본입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-258">Multiple copies of a message that reside in one or multiple subscriptions count as a single messages.</span></span> <span data-ttu-id="9d724-259">예를 들어 메시지 m 구독 s2 및 두 번 구독 s1에서 한 번만 있는 경우 m은 단일 메시지로 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-259">For example, if message m exists once in subscription s1 and twice in subscription s2, m is counted as a single message.</span></span>
+      optional: true
+    - id: options.DefaultMessageTimeToLive
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-260">시간을 결정 합니다. 연결된 된 구독에 상주 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-260">Determines how long a message lives in the associated subscriptions.</span></span> <span data-ttu-id="9d724-261">구독을 더 작은 TTL을 사용 하 여 명시적으로 만들지 않은 경우 항목에서 TTL을 상속 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-261">Subscriptions inherit the TTL from the topic unless they are created explicitly with a smaller TTL.</span></span> <span data-ttu-id="9d724-262">배달 못한 편지 활성화 되어 있는지 여부에 따라 해당 TTL이 만료 된 메시지를 구독 연결 된 DeadLtterQueue로 이동 하거나 됩니다 또는 영구적으로 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-262">Based on whether dead-lettering is enabled, a message whose TTL has expired will either be moved to the subscription’s associated DeadLtterQueue or will be permanently deleted.</span></span>
+      optional: true
+    - id: options.RequiresDuplicateDetection
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-263">사용 하도록 설정 하는 경우 항목에는 DuplicateDetectionHistoryTimeWindow 속성에 지정 된 기간 내에 중복 메시지 감지 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-263">If enabled, the topic will detect duplicate messages within the time span specified by the DuplicateDetectionHistoryTimeWindow property.</span></span> <span data-ttu-id="9d724-264">토픽을 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-264">Settable only at topic creation time.</span></span>
+      optional: true
+    - id: options.DuplicateDetectionHistoryTimeWindow
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-265">Service Bus 메시지 중복을 검색 하는 시간 범위를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-265">Specifies the time span during which the Service Bus will detect message duplication.</span></span>
+      optional: true
+    - id: options.MaxSubscriptionsPerTopic
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-266">항목과 연결할 수 있는 구독의 최대 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-266">Specifies the maximum number of subscriptions that can be associated with the topic.</span></span>
+      optional: true
+    - id: options.MaxSqlFiltersPerTopic
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-267">SQL 필터 식 (전체) 항목을 사용 하 여 연결 된 구독에 추가할 수 있는 최대 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-267">Specifies the maximum number of SQL filter expressions (in total) that can be added to the subscriptions associated with the topic.</span></span>
+      optional: true
+    - id: options.MaxCorrelationFiltersPerTopic
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-268">상관 관계 필터 식 (전체) 항목을 사용 하 여 연결 된 구독에 추가할 수 있는 최대 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-268">Specifies the maximum number of correlation filter expressions (in total) that can be added to the subscriptions associated with the topic.</span></span>
+      optional: true
+    - id: options.EnableDeadLetteringOnMessageExpiration
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-269">토픽을 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-269">Settable only at topic creation time.</span></span>
+      optional: true
+    - id: options.EnableDeadLetteringOnFilterEvaluationExceptions
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-270">토픽을 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-270">Settable only at topic creation time.</span></span>
+      optional: true
+    - id: options.SupportOrdering
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-271">항목 메시지 순서 지정을 지원 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-271">Specifies whether the topic supports message ordering.</span></span>
+      optional: true
+    - id: options.EnablePartitioning
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-272">항목을 분할 해야 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-272">Specifies whether the topic should be partitioned</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-273">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `topicCreated` 새 항목 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-273">`error` will contain information if an error occurs; otherwise `topicCreated` will contain the new topic information.</span></span>
+                                                                                                <span data-ttu-id="9d724-274">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-274">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createTopicIfNotExists(topic, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#deleteTopic
+  id: azure-sb.ServiceBusService#deleteTopic
+  parent: azure-sb.ServiceBusService
+  name: deleteTopic(topicPath, callback)
+  summary: <span data-ttu-id="9d724-275">항목을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-275">Deletes a topic.</span></span>
+  fullName: azure-sb.ServiceBusService.deleteTopic(topicPath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-276"><code>String</code> 삭제할 큐의 이름을 나타내는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-276">A <code>String</code> object that represents the name of the queue to delete.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-277">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-277">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function deleteTopic(topicPath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#getTopic
+  id: azure-sb.ServiceBusService#getTopic
+  parent: azure-sb.ServiceBusService
+  name: getTopic(topicPath, callback)
+  summary: <span data-ttu-id="9d724-278">항목을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-278">Retrieves a topic.</span></span>
+  fullName: azure-sb.ServiceBusService.getTopic(topicPath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-279"><code>String</code> 검색할 항목의 이름을 나타내는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-279">A <code>String</code> object that represents the name of the topic to retrieve.</span></span>
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-280">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `gettopicresult` 항목 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-280">`error` will contain information if an error occurs; otherwise `gettopicresult` will contain the topic information.</span></span>
+                                                                         <span data-ttu-id="9d724-281">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-281">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function getTopic(topicPath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#listTopics
+  id: azure-sb.ServiceBusService#listTopics
+  parent: azure-sb.ServiceBusService
+  name: listTopics(options, callback)
+  summary: <span data-ttu-id="9d724-282">항목의 목록을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-282">Returns a list of topics.</span></span>
+  fullName: azure-sb.ServiceBusService.listTopics(options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-283">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-283">The request options.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-284">가져올 항목의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-284">The number of topics to fetch.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-285">건너뛸 항목 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-285">The number of topics to skip.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-286">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `listtopicsresult` 항목 목록이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-286">`error` will contain information if an error occurs; otherwise `listtopicsresult` will contain the list of topics.</span></span>
+                                                                              <span data-ttu-id="9d724-287">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-287">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listTopics(options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createSubscription
+  id: azure-sb.ServiceBusService#createSubscription
+  parent: azure-sb.ServiceBusService
+  name: createSubscription(topicPath, subscriptionPath, options, callback)
+  summary: <span data-ttu-id="9d724-288">구독을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-288">Creates a subscription.</span></span>
+  fullName: azure-sb.ServiceBusService.createSubscription(topicPath, subscriptionPath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-289">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-289">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-290">구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-290">A string object that represents the name of the subscription.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-291">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-291">The request options.</span></span>
+      optional: true
+    - id: options.LockDuration
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-292">기본 잠금 기간이 잠금 기간을 정의 하지 않은 구독에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-292">The default lock duration is applied to subscriptions that do not define a lock duration.</span></span> <span data-ttu-id="9d724-293">구독 작성 시에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-293">Settable only at subscription creation time.</span></span>
+      optional: true
+    - id: options.RequiresSession
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-294">구독 작성 시에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-294">Settable only at subscription creation time.</span></span> <span data-ttu-id="9d724-295">구독을 true로 설정 되 면 세션을 인식 하 고만 SessionReceiver 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-295">If set to true, the subscription will be session-aware and only SessionReceiver will be supported.</span></span> <span data-ttu-id="9d724-296">세션 인식 구독 REST를 통해 지원 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-296">Session-aware subscription are not supported through REST.</span></span>
+      optional: true
+    - id: options.DefaultMessageTimeToLive
+      type:
+      - azure-sb.PTnHnMnS
+      description: <span data-ttu-id="9d724-297">시간을 결정 합니다. 구독에 상주 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-297">Determines how long a message lives in the subscription.</span></span> <span data-ttu-id="9d724-298">배달 못한 편지 활성화 되어 있는지 여부에 따라 해당 TTL이 만료 된 메시지를 구독에 연결 된 DeadLtterQueue로 이동 하거나 영구적으로 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-298">Based on whether dead-lettering is enabled, a message whose TTL has expired will either be moved to the subscription’s associated DeadLtterQueue or permanently deleted.</span></span>
+      optional: true
+    - id: options.EnableDeadLetteringOnMessageExpiration
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-299">이 필드는 Service Bus는 해당 TTL이 만료 된 메시지를 처리 하는 방법을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-299">This field controls how the Service Bus handles a message whose TTL has expired.</span></span> <span data-ttu-id="9d724-300">사용 하는 메시지가 만료 될 경우 큐에서 메시지가 구독의 배달 못 한 편지 하위 큐로 이동 Service Bus 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-300">If it is enabled and a message expires, the Service Bus moves the message from the queue into the subscription’s dead-letter sub-queue.</span></span> <span data-ttu-id="9d724-301">사용 하지 않으면 구독의 기본 큐에서 메시지를 영구적으로 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-301">If disabled, message will be permanently deleted from the subscription’s main queue.</span></span> <span data-ttu-id="9d724-302">구독 작성 시에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-302">Settable only at subscription creation time.</span></span>
+      optional: true
+    - id: options.EnableDeadLetteringOnFilterEvaluationExceptions
+      type:
+      - azure-sb.bool
+      description: <span data-ttu-id="9d724-303">Service Bus에서 구독의 필터 평가 중 예외가 발생 하는 메시지를 처리 하는 방법을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-303">Determines how the Service Bus handles a message that causes an exception during a subscription’s filter evaluation.</span></span> <span data-ttu-id="9d724-304">값 설정 된 경우 true 이면 예외를 발생 시킨 메시지를 이동할 구독의 배달 못 한 편지 큐입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-304">If the value is set to true, the message that caused the exception will be moved to the subscription’s dead-letter queue.</span></span> <span data-ttu-id="9d724-305">그렇지 않으면 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-305">Otherwise, it will be discarded.</span></span> <span data-ttu-id="9d724-306">기본적으로이 매개 변수 설정을 true로, 예외의 원인을 조사할 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-306">By default this parameter is set to true, allowing the user a chance to investigate the cause of the exception.</span></span> <span data-ttu-id="9d724-307">잘못 된 형식의 메시지 또는 메시지의 형식에 대 한 필터에 적용 하는 일부 잘못 된 가정을에서 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-307">It can occur from a malformed message or some incorrect assumptions being made in the filter about the form of the message.</span></span> <span data-ttu-id="9d724-308">토픽을 만들 때에만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-308">Settable only at topic creation time.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-309">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `createsubscriptionresult` 새 구독 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-309">`error` will contain information if an error occurs; otherwise `createsubscriptionresult` will contain the new subscription information.</span></span>
+                                                                                          <span data-ttu-id="9d724-310">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-310">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createSubscription(topicPath, subscriptionPath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#deleteSubscription
+  id: azure-sb.ServiceBusService#deleteSubscription
+  parent: azure-sb.ServiceBusService
+  name: deleteSubscription(topicPath, subscriptionPath, callback)
+  summary: <span data-ttu-id="9d724-311">구독을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-311">Deletes a subscription.</span></span>
+  fullName: azure-sb.ServiceBusService.deleteSubscription(topicPath, subscriptionPath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-312">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-312">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-313">삭제할 구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-313">A string object that represents the name of the subscription to delete.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-314">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-314">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function deleteSubscription(topicPath, subscriptionPath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#getSubscription
+  id: azure-sb.ServiceBusService#getSubscription
+  parent: azure-sb.ServiceBusService
+  name: getSubscription(topicPath, subscriptionPath, callback)
+  summary: <span data-ttu-id="9d724-315">구독을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-315">Retrieves a subscription.</span></span>
+  fullName: azure-sb.ServiceBusService.getSubscription(topicPath, subscriptionPath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-316">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-316">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-317">검색할 구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-317">A string object that represents the name of the subscription to retrieve.</span></span>
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-318">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `getsubscriptionresult` 구독 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-318">`error` will contain information if an error occurs; otherwise `getsubscriptionresult` will contain the subscription information.</span></span>
+                                                                                        <span data-ttu-id="9d724-319">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-319">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function getSubscription(topicPath, subscriptionPath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#listSubscriptions
+  id: azure-sb.ServiceBusService#listSubscriptions
+  parent: azure-sb.ServiceBusService
+  name: listSubscriptions(topicPath, options, callback)
+  summary: <span data-ttu-id="9d724-320">구독 목록을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-320">Returns a list of subscriptions.</span></span>
+  fullName: azure-sb.ServiceBusService.listSubscriptions(topicPath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-321">검색에 대 한 구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-321">A string object that represents the name of the topic for the subscriptions to retrieve.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-322">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-322">The request options.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-323">가져올 항목의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-323">The number of topics to fetch.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-324">건너뛸 항목 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-324">The number of topics to skip.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-325">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `listsubscriptionresult` 구독 목록에 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-325">`error` will contain information if an error occurs; otherwise `listsubscriptionresult` will contain the list of subscriptions.</span></span>
+                                                                              <span data-ttu-id="9d724-326">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-326">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listSubscriptions(topicPath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createRule
+  id: azure-sb.ServiceBusService#createRule
+  parent: azure-sb.ServiceBusService
+  name: createRule(topicPath, subscriptionPath, rulePath, options, callback)
+  summary: <span data-ttu-id="9d724-327">규칙을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-327">Creates a rule.</span></span>
+  fullName: azure-sb.ServiceBusService.createRule(topicPath, subscriptionPath, rulePath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-328">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-328">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-329">규칙은 만들 수 있는 구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-329">A string object that represents the name of the subscription for which the rule will be created.</span></span>
+    - id: rulePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-330">만들려는 규칙의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-330">A string object that represents the name of the rule to be created.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-331">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-331">The request options.</span></span>
+      optional: true
+    - id: options.trueFilter
+      type:
+      - string
+      description: <span data-ttu-id="9d724-332">True 필터로 규칙을 평가 하는 식을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-332">Defines the expression that the rule evaluates as a true filter.</span></span>
+      optional: true
+    - id: options.falseFilter
+      type:
+      - string
+      description: <span data-ttu-id="9d724-333">False 필터로 규칙을 평가 하는 식을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-333">Defines the expression that the rule evaluates as a false filter.</span></span>
+      optional: true
+    - id: options.sqlExpressionFilter
+      type:
+      - string
+      description: <span data-ttu-id="9d724-334">규칙을 평가 하는 식을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-334">Defines the expression that the rule evaluates.</span></span> <span data-ttu-id="9d724-335">식 문자열이 True 또는 False로 평가 되어야 하는 SQL92 식으로 해석 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-335">The expression string is interpreted as a SQL92 expression which must evaluate to True or False.</span></span> <span data-ttu-id="9d724-336">상관 관계 사이 sql 식이 하나만 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-336">Only one between a correlation and a sql expression can be defined.</span></span>
+      optional: true
+    - id: options.correlationIdFilter
+      type:
+      - string
+      description: <span data-ttu-id="9d724-337">규칙을 평가 하는 식을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-337">Defines the expression that the rule evaluates.</span></span> <span data-ttu-id="9d724-338">해당 상관 관계 Id 일치 필터 식에 설정 된 CorrelationId 메시지만 허용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-338">Only the messages whose CorrelationId match the CorrelationId set in the filter expression are allowed.</span></span> <span data-ttu-id="9d724-339">상관 관계 사이 sql 식이 하나만 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-339">Only one between a correlation and a sql expression can be defined.</span></span>
+      optional: true
+    - id: options.sqlRuleAction
+      type:
+      - string
+      description: <span data-ttu-id="9d724-340">규칙을 평가 하는 식을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-340">Defines the expression that the rule evaluates.</span></span> <span data-ttu-id="9d724-341">규칙 유형 SQL 인 경우 식 문자열을 True 또는 False로 평가 되어야 하는 SQL92 식으로 해석 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-341">If the rule is of type SQL, the expression string is interpreted as a SQL92 expression which must evaluate to True or False.</span></span> <span data-ttu-id="9d724-342">규칙의 경우 형식 CorrelationFilterExpression 인 CorrelationId 일치 필터 식에 설정 된 CorrelationId 메시지만 수 합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-342">If the rule is of type CorrelationFilterExpression then only the messages whose CorrelationId match the CorrelationId set in the filter expression are allowed.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-343">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `createruleresults` 새 규칙 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-343">`error` will contain information if an error occurs; otherwise `createruleresults` will contain the new rule information.</span></span>
+                                                                                    <span data-ttu-id="9d724-344">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-344">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createRule(topicPath, subscriptionPath, rulePath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#deleteRule
+  id: azure-sb.ServiceBusService#deleteRule
+  parent: azure-sb.ServiceBusService
+  name: deleteRule(topicPath, subscriptionPath, rulePath, callback)
+  summary: <span data-ttu-id="9d724-345">규칙을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-345">Deletes a rule.</span></span>
+  fullName: azure-sb.ServiceBusService.deleteRule(topicPath, subscriptionPath, rulePath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-346">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-346">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-347">규칙이 삭제 될 구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-347">A string object that represents the name of the subscription for which the rule will be deleted.</span></span>
+    - id: rulePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-348">삭제 하는 규칙의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-348">A string object that represents the name of the rule to delete.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-349">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-349">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function deleteRule(topicPath, subscriptionPath, rulePath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#getRule
+  id: azure-sb.ServiceBusService#getRule
+  parent: azure-sb.ServiceBusService
+  name: getRule(topicPath, subscriptionPath, rulePath, callback)
+  summary: <span data-ttu-id="9d724-350">규칙을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-350">Retrieves a rule.</span></span>
+  fullName: azure-sb.ServiceBusService.getRule(topicPath, subscriptionPath, rulePath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-351">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-351">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-352">규칙을 검색할 구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-352">A string object that represents the name of the subscription for which the rule will be retrieved.</span></span>
+    - id: rulePath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-353">검색 규칙의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-353">A string object that represents the name of the rule to retrieve.</span></span>
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-354">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `getruleresult` 규칙 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-354">`error` will contain information if an error occurs; otherwise `getruleresult` will contain the rule information.</span></span>
+                                                                                        <span data-ttu-id="9d724-355">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-355">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function getRule(topicPath, subscriptionPath, rulePath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#listRules
+  id: azure-sb.ServiceBusService#listRules
+  parent: azure-sb.ServiceBusService
+  name: listRules(topicPath, subscriptionPath, options, callback)
+  summary: <span data-ttu-id="9d724-356">규칙의 목록을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-356">Returns a list of rules.</span></span>
+  fullName: azure-sb.ServiceBusService.listRules(topicPath, subscriptionPath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: topicPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-357">구독에 대 한 항목의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-357">A string object that represents the name of the topic for the subscription.</span></span>
+    - id: subscriptionPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-358">해당 규칙을 검색 되는 구독의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-358">A string object that represents the name of the subscription whose rules are being retrieved.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-359">요청 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-359">The request options.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-360">가져올 항목의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-360">The number of topics to fetch.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-361">건너뛸 항목 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-361">The number of topics to skip.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-362">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `listrulesresult` 규칙 목록이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-362">`error` will contain information if an error occurs; otherwise `listrulesresult` will contain the list of rules.</span></span>
+                                                                              <span data-ttu-id="9d724-363">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-363">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listRules(topicPath, subscriptionPath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#createNotificationHub
+  id: azure-sb.ServiceBusService#createNotificationHub
+  parent: azure-sb.ServiceBusService
+  name: createNotificationHub(hubPath, options, callback)
+  summary: <span data-ttu-id="9d724-364">알림 허브를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-364">Creates a notification hub.</span></span>
+  fullName: azure-sb.ServiceBusService.createNotificationHub(hubPath, options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: hubPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-365">알림 허브의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-365">A string object that represents the name of the notification hub.</span></span>
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-366">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-366">The request options or callback function.</span></span>
+      optional: true
+    - id: options.wns
+      type:
+      - object
+      description: <span data-ttu-id="9d724-367">WNS 자격 증명에 대 한 키 값 쌍을 포함 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-367">An object with the key value pairs for the WNS credentials.</span></span>
+      optional: true
+    - id: options.apns
+      type:
+      - object
+      description: <span data-ttu-id="9d724-368">APNS 자격 증명에 대 한 키 값 쌍을 포함 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-368">An object with the key value pairs for the APNS credentials.</span></span>
+      optional: true
+    - id: options.gcm
+      type:
+      - object
+      description: <span data-ttu-id="9d724-369">GCM 자격 증명에 대 한 키 값 쌍을 포함 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-369">An object with the key value pairs for the GCM credentials.</span></span>
+      optional: true
+    - id: options.mpns
+      type:
+      - object
+      description: <span data-ttu-id="9d724-370">MPNS 자격 증명에 대 한 키 값 쌍을 포함 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-370">An object with the key value pairs for the MPNS credentials.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-371">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `result` 새 알림 허브 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-371">`error` will contain information if an error occurs; otherwise `result` will contain the new notification hub information.</span></span>
+                                                              <span data-ttu-id="9d724-372">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-372">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function createNotificationHub(hubPath, options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#getNotificationHub
+  id: azure-sb.ServiceBusService#getNotificationHub
+  parent: azure-sb.ServiceBusService
+  name: getNotificationHub(hubPath, callback)
+  summary: <span data-ttu-id="9d724-373">알림 허브를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-373">Gets a notification hub.</span></span>
+  fullName: azure-sb.ServiceBusService.getNotificationHub(hubPath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: hubPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-374">알림 허브의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-374">A string object that represents the name of the notification hub.</span></span>
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-375">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `result` 알림 허브 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-375">`error` will contain information if an error occurs; otherwise `result` will contain the notification hub information.</span></span>
+                                                                                    <span data-ttu-id="9d724-376">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-376">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function getNotificationHub(hubPath, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#listNotificationHubs
+  id: azure-sb.ServiceBusService#listNotificationHubs
+  parent: azure-sb.ServiceBusService
+  name: listNotificationHubs(options, callback)
+  summary: <span data-ttu-id="9d724-377">Notification hubs의 목록을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-377">Returns a list of notification hubs.</span></span>
+  fullName: azure-sb.ServiceBusService.listNotificationHubs(options, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: options
+      type:
+      - object
+      description: <span data-ttu-id="9d724-378">요청 옵션 또는 콜백 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-378">The request options or callback function.</span></span>
+      optional: true
+    - id: options.top
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-379">가져올 항목의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-379">The number of topics to fetch.</span></span>
+      optional: true
+    - id: options.skip
+      type:
+      - azure-sb.int
+      description: <span data-ttu-id="9d724-380">건너뛸 항목 수입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-380">The number of topics to skip.</span></span>
+      optional: true
+    - id: callback
+      type:
+      - function
+      description: >-
+        <span data-ttu-id="9d724-381">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `result` notification hubs의 목록이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-381">`error` will contain information if an error occurs; otherwise `result` will contain the list of notification hubs.</span></span>
+                                                              <span data-ttu-id="9d724-382">`response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-382">`response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function listNotificationHubs(options, callback)
+  langs:
+  - js
+- uid: azure-sb.ServiceBusService#deleteNotificationHub
+  id: azure-sb.ServiceBusService#deleteNotificationHub
+  parent: azure-sb.ServiceBusService
+  name: deleteNotificationHub(hubPath, callback)
+  summary: <span data-ttu-id="9d724-383">알림 허브를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-383">Deletes a notification hub.</span></span>
+  fullName: azure-sb.ServiceBusService.deleteNotificationHub(hubPath, callback)
+  type: Function
+  syntax:
+    parameters:
+    - id: hubPath
+      type:
+      - string
+      description: <span data-ttu-id="9d724-384">알림 허브의 이름을 나타내는 문자열 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-384">A string object that represents the name of the notification hub.</span></span>
+    - id: callback
+      type:
+      - function
+      description: <span data-ttu-id="9d724-385">`error` 오류가 발생 하는 경우 정보가 포함 됩니다. 그렇지 않으면 `response` 이 작업과 관련 된 정보가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9d724-385">`error` will contain information if an error occurs; otherwise `response` will contain information related to this operation.</span></span>
+    return:
+      type:
+      - undefined
+      description: ''
+    content: function deleteNotificationHub(hubPath, callback)
+  langs:
+  - js
