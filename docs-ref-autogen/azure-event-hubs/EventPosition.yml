@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 2bb39336cac3fe404366a95799522d14d6109f14
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 901fc90c47fe16e90f69b8410cc09468c127efb4
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40067227"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41690292"
 items:
 - uid: azure-event-hubs.EventPosition
   name: EventPosition
@@ -40,7 +40,7 @@ items:
   langs:
   - typeScript
   type: property
-  summary: ''
+  summary: '{문자열} [customFilter] 수신기에서 설정 해야 하는 사용자 지정 필터 식입니다.'
   optional: true
   syntax:
     content: 'customFilter?: string'
@@ -69,7 +69,7 @@ items:
   langs:
   - typeScript
   type: property
-  summary: ''
+  summary: '{0} 날짜 | 수} [enqueuedTime] 위치에 있는 이벤트의 큐에 넣은 시간입니다. 수 정의 된 위치는 시퀀스 번호 또는 오프셋에서 방금 만든 경우.'
   optional: true
   syntax:
     content: 'enqueuedTime?: Date | number'
@@ -89,7 +89,7 @@ items:
     parameters:
     - id: options
       type:
-      - azure-event-hubs.EventPositionOptions
+      - EventPositionOptions
       description: ''
       optional: true
   package: azure-event-hubs
@@ -211,7 +211,7 @@ items:
   langs:
   - typeScript
   type: property
-  summary: ''
+  summary: '{부울} isInclusive 나타냅니다 여부 지정된 된 오프셋에서 현재 이벤트를 포함 합니다. 오프셋은 설정 하는 경우에 적용 됩니다. 기본값: false.'
   syntax:
     content: 'isInclusive: boolean'
     return:
@@ -225,7 +225,7 @@ items:
   langs:
   - typeScript
   type: property
-  summary: ''
+  summary: '{문자열} [오프셋] 위치에 있는 이벤트의 오프셋입니다. 수 정의 된 위치는 시퀀스 번호 또는 큐에 넣은 시간에서 방금 만든 경우.'
   optional: true
   syntax:
     content: 'offset?: string'
@@ -240,7 +240,7 @@ items:
   langs:
   - typeScript
   type: property
-  summary: ''
+  summary: '{number} 개 [sequenceNumber] 위치에 있는 이벤트의 시퀀스 번호입니다. 수 정의 된 위치는는 큐에 넣은 시간과 또는 오프셋에서 방금 만든 경우.'
   optional: true
   syntax:
     content: 'sequenceNumber?: number'
@@ -282,11 +282,6 @@ items:
       - azure-event-hubs.EventPosition
   package: azure-event-hubs
 references:
-- uid: azure-event-hubs.EventPositionOptions
-  spec.typeScript:
-  - name: EventPositionOptions
-    fullName: EventPositionOptions
-    uid: azure-event-hubs.EventPositionOptions
 - uid: azure-event-hubs.EventPosition
   spec.typeScript:
   - name: EventPosition
