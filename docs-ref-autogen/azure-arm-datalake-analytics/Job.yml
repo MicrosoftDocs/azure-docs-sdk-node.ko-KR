@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 7a571812eb8398df9e0e1d1ccb8d40c447d7dafc
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 2b05cea84ac01928d519478a1e372a95a58d4c0f
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40067032"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41682502"
 items:
 - uid: azure-arm-datalake-analytics.Job
   name: Job
@@ -55,7 +55,7 @@ items:
   - typeScript
   summary: 작업 정확성 및 유효성 검사에 대 한 지정된 된 Data Lake Analytics 계정에서 (컴파일합니다) 지정된 된 작업을 작성합니다.
   syntax:
-    content: 'function build(accountName: string, parameters: BuildJobParameters, options?: function)'
+    content: 'function build(accountName: string, parameters: BuildJobParameters, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -69,7 +69,7 @@ items:
         작업을 작성 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -110,7 +110,7 @@ items:
   - typeScript
   summary: 작업 정확성 및 유효성 검사에 대 한 지정된 된 Data Lake Analytics 계정에서 (컴파일합니다) 지정된 된 작업을 작성합니다.
   syntax:
-    content: 'function build(accountName: string, parameters: BuildJobParameters, options: function, callback: ServiceCallback<JobInformation>)'
+    content: 'function build(accountName: string, parameters: BuildJobParameters, options: Object, callback: ServiceCallback<JobInformation>)'
     parameters:
     - id: accountName
       type:
@@ -122,7 +122,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -140,7 +140,7 @@ items:
   - typeScript
   summary: 작업 정확성 및 유효성 검사에 대 한 지정된 된 Data Lake Analytics 계정에서 (컴파일합니다) 지정된 된 작업을 작성합니다.
   syntax:
-    content: 'function buildWithHttpOperationResponse(accountName: string, parameters: BuildJobParameters, options?: function)'
+    content: 'function buildWithHttpOperationResponse(accountName: string, parameters: BuildJobParameters, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -154,7 +154,7 @@ items:
         작업을 작성 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -169,7 +169,7 @@ items:
   - typeScript
   summary: 작업 ID로 지정 된 실행 중인 작업 취소
   syntax:
-    content: 'function cancel(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function cancel(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -183,7 +183,7 @@ items:
         작업 식별자입니다. 서비스에 제출 하는 모든 작업에서 작업을 고유 하 게 식별 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -198,7 +198,7 @@ items:
   - typeScript
   summary: 작업 ID로 지정 된 실행 중인 작업 취소
   syntax:
-    content: 'function cancel(accountName: string, jobIdentity: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function cancel(accountName: string, jobIdentity: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: accountName
       type:
@@ -210,7 +210,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -254,7 +254,7 @@ items:
   - typeScript
   summary: 작업 ID로 지정 된 실행 중인 작업 취소
   syntax:
-    content: 'function cancelWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function cancelWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -268,7 +268,7 @@ items:
         작업 식별자입니다. 서비스에 제출 하는 모든 작업에서 작업을 고유 하 게 식별 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -313,7 +313,7 @@ items:
   - typeScript
   summary: 지정된 된 Data Lake Analytics 계정에 작업을 제출합니다.
   syntax:
-    content: 'function create(accountName: string, jobIdentity: string, parameters: CreateJobParameters, options?: function)'
+    content: 'function create(accountName: string, jobIdentity: string, parameters: CreateJobParameters, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -332,7 +332,7 @@ items:
         작업을 제출 하려면 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -347,7 +347,7 @@ items:
   - typeScript
   summary: 지정된 된 Data Lake Analytics 계정에 작업을 제출합니다.
   syntax:
-    content: 'function create(accountName: string, jobIdentity: string, parameters: CreateJobParameters, options: function, callback: ServiceCallback<JobInformation>)'
+    content: 'function create(accountName: string, jobIdentity: string, parameters: CreateJobParameters, options: Object, callback: ServiceCallback<JobInformation>)'
     parameters:
     - id: accountName
       type:
@@ -363,7 +363,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -381,7 +381,7 @@ items:
   - typeScript
   summary: 지정된 된 Data Lake Analytics 계정에 작업을 제출합니다.
   syntax:
-    content: 'function createWithHttpOperationResponse(accountName: string, jobIdentity: string, parameters: CreateJobParameters, options?: function)'
+    content: 'function createWithHttpOperationResponse(accountName: string, jobIdentity: string, parameters: CreateJobParameters, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -400,7 +400,7 @@ items:
         작업을 제출 하려면 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -415,7 +415,7 @@ items:
   - typeScript
   summary: 지정한 작업 ID에 대 한 작업 정보를 가져옵니다.
   syntax:
-    content: 'function get(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function get(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -429,7 +429,7 @@ items:
         JobInfo id입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -470,7 +470,7 @@ items:
   - typeScript
   summary: 지정한 작업 ID에 대 한 작업 정보를 가져옵니다.
   syntax:
-    content: 'function get(accountName: string, jobIdentity: string, options: function, callback: ServiceCallback<JobInformation>)'
+    content: 'function get(accountName: string, jobIdentity: string, options: Object, callback: ServiceCallback<JobInformation>)'
     parameters:
     - id: accountName
       type:
@@ -482,7 +482,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -500,7 +500,7 @@ items:
   - typeScript
   summary: 작업 ID에서 지정한 작업 디버그 데이터 정보를 가져옵니다.
   syntax:
-    content: 'function getDebugDataPath(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function getDebugDataPath(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -514,7 +514,7 @@ items:
         작업 식별자입니다. 서비스에 제출 하는 모든 작업에서 작업을 고유 하 게 식별 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -555,7 +555,7 @@ items:
   - typeScript
   summary: 작업 ID에서 지정한 작업 디버그 데이터 정보를 가져옵니다.
   syntax:
-    content: 'function getDebugDataPath(accountName: string, jobIdentity: string, options: function, callback: ServiceCallback<JobDataPath>)'
+    content: 'function getDebugDataPath(accountName: string, jobIdentity: string, options: Object, callback: ServiceCallback<JobDataPath>)'
     parameters:
     - id: accountName
       type:
@@ -567,7 +567,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -585,7 +585,7 @@ items:
   - typeScript
   summary: 작업 ID에서 지정한 작업 디버그 데이터 정보를 가져옵니다.
   syntax:
-    content: 'function getDebugDataPathWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function getDebugDataPathWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -599,7 +599,7 @@ items:
         작업 식별자입니다. 서비스에 제출 하는 모든 작업에서 작업을 고유 하 게 식별 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -640,7 +640,7 @@ items:
   - typeScript
   summary: 지정된 된 작업의 통계를 가져옵니다.
   syntax:
-    content: 'function getStatistics(accountName: string, jobIdentity: string, options: function, callback: ServiceCallback<JobStatistics>)'
+    content: 'function getStatistics(accountName: string, jobIdentity: string, options: Object, callback: ServiceCallback<JobStatistics>)'
     parameters:
     - id: accountName
       type:
@@ -652,7 +652,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -670,7 +670,7 @@ items:
   - typeScript
   summary: 지정된 된 작업의 통계를 가져옵니다.
   syntax:
-    content: 'function getStatistics(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function getStatistics(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -684,7 +684,7 @@ items:
         작업 정보 id입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -699,7 +699,7 @@ items:
   - typeScript
   summary: 지정된 된 작업의 통계를 가져옵니다.
   syntax:
-    content: 'function getStatisticsWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function getStatisticsWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -713,7 +713,7 @@ items:
         작업 정보 id입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -728,7 +728,7 @@ items:
   - typeScript
   summary: 지정한 작업 ID에 대 한 작업 정보를 가져옵니다.
   syntax:
-    content: 'function getWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: function)'
+    content: 'function getWithHttpOperationResponse(accountName: string, jobIdentity: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -742,7 +742,7 @@ items:
         JobInfo id입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -757,7 +757,7 @@ items:
   - typeScript
   summary: 지정한 Data Lake Analytics 계정과 사용 하 여 연결 하는 경우 작업을 나열 합니다. 모든 경우 결과의 다음 페이지에 대 한 링크를 포함 하는 응답 합니다.
   syntax:
-    content: 'function list(accountName: string, options?: function)'
+    content: 'function list(accountName: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -766,7 +766,7 @@ items:
         작업을 실행 하려면 Azure Data Lake Analytics 계정입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -803,7 +803,7 @@ items:
   - typeScript
   summary: 지정한 Data Lake Analytics 계정과 사용 하 여 연결 하는 경우 작업을 나열 합니다. 모든 경우 결과의 다음 페이지에 대 한 링크를 포함 하는 응답 합니다.
   syntax:
-    content: 'function list(accountName: string, options: function, callback: ServiceCallback<JobInfoListResult>)'
+    content: 'function list(accountName: string, options: Object, callback: ServiceCallback<JobInfoListResult>)'
     parameters:
     - id: accountName
       type:
@@ -811,7 +811,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -829,7 +829,7 @@ items:
   - typeScript
   summary: 지정한 Data Lake Analytics 계정과 사용 하 여 연결 하는 경우 작업을 나열 합니다. 모든 경우 결과의 다음 페이지에 대 한 링크를 포함 하는 응답 합니다.
   syntax:
-    content: 'function listNext(nextPageLink: string, options?: function)'
+    content: 'function listNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -838,7 +838,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -875,7 +875,7 @@ items:
   - typeScript
   summary: 지정한 Data Lake Analytics 계정과 사용 하 여 연결 하는 경우 작업을 나열 합니다. 모든 경우 결과의 다음 페이지에 대 한 링크를 포함 하는 응답 합니다.
   syntax:
-    content: 'function listNext(nextPageLink: string, options: function, callback: ServiceCallback<JobInfoListResult>)'
+    content: 'function listNext(nextPageLink: string, options: Object, callback: ServiceCallback<JobInfoListResult>)'
     parameters:
     - id: nextPageLink
       type:
@@ -883,7 +883,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -901,7 +901,7 @@ items:
   - typeScript
   summary: 지정한 Data Lake Analytics 계정과 사용 하 여 연결 하는 경우 작업을 나열 합니다. 모든 경우 결과의 다음 페이지에 대 한 링크를 포함 하는 응답 합니다.
   syntax:
-    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -910,7 +910,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -925,7 +925,7 @@ items:
   - typeScript
   summary: 지정한 Data Lake Analytics 계정과 사용 하 여 연결 하는 경우 작업을 나열 합니다. 모든 경우 결과의 다음 페이지에 대 한 링크를 포함 하는 응답 합니다.
   syntax:
-    content: 'function listWithHttpOperationResponse(accountName: string, options?: function)'
+    content: 'function listWithHttpOperationResponse(accountName: string, options?: Object)'
     parameters:
     - id: accountName
       type:
@@ -934,7 +934,7 @@ items:
         작업을 실행 하려면 Azure Data Lake Analytics 계정입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:

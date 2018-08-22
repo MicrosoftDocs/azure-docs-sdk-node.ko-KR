@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 14bc9587bd6fa91bbbc71437639eb29285ffd8eb
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 6539aa10712d67420d4bc4b040169b2725d11c66
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40069174"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41681062"
 items:
 - uid: '@azure/cosmos.RequestOptions'
   name: RequestOptions
@@ -43,10 +43,10 @@ items:
   summary: 요청과 관련 된 조건에 해당 합니다.
   optional: true
   syntax:
-    content: 'accessCondition?: function'
+    content: 'accessCondition?: Object'
     return:
       type:
-      - function
+      - Object
   package: '@azure/cosmos'
 - uid: '@azure/cosmos.RequestOptions.consistencyLevel'
   name: consistencyLevel
@@ -196,10 +196,10 @@ items:
   summary: Azure Cosmos DB 데이터베이스 서비스의 특정 경로 대 한 파티션 키 정의 지정합니다.
   optional: true
   syntax:
-    content: 'partitionKey?: PartitionKey'
+    content: 'partitionKey?: PartitionKey | PartitionKey[]'
     return:
       type:
-      - PartitionKey
+      - '@azure/cosmos.PartitionKey | @azure/cosmos.PartitionKey[]'
   package: '@azure/cosmos'
 - uid: '@azure/cosmos.RequestOptions.populateQuotaInfo'
   name: populateQuotaInfo
@@ -312,3 +312,15 @@ references:
   - name: IHeaders
     fullName: IHeaders
     uid: '@azure/cosmos.IHeaders'
+- uid: '@azure/cosmos.PartitionKey | @azure/cosmos.PartitionKey[]'
+  spec.typeScript:
+  - name: PartitionKey
+    fullName: PartitionKey
+    uid: '@azure/cosmos.PartitionKey'
+  - name: " | "
+    fullName: " | "
+  - name: PartitionKey
+    fullName: PartitionKey
+    uid: '@azure/cosmos.PartitionKey'
+  - name: '[]'
+    fullName: '[]'

@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 18705ea2d95a0a971cd40bc3925672b0c5898101
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 20a414766fb6371c5906a617b3e76e896a4d30cf
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40068274"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41681288"
 items:
 - uid: azure-arm-apimanagement.Api
   name: Api
@@ -59,7 +59,7 @@ items:
   - typeScript
   summary: 새로 만들거나 기존 지정 된 API를 API Management 서비스 인스턴스를 업데이트 합니다.
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiCreateOrUpdateParameter, options?: function)'
+    content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiCreateOrUpdateParameter, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -83,7 +83,7 @@ items:
         만들기 또는 매개 변수를 업데이트 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -132,7 +132,7 @@ items:
   - typeScript
   summary: 새로 만들거나 기존 지정 된 API를 API Management 서비스 인스턴스를 업데이트 합니다.
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiCreateOrUpdateParameter, options: function, callback: ServiceCallback<ApiContract>)'
+    content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiCreateOrUpdateParameter, options: Object, callback: ServiceCallback<ApiContract>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -152,7 +152,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -170,7 +170,7 @@ items:
   - typeScript
   summary: 새로 만들거나 기존 지정 된 API를 API Management 서비스 인스턴스를 업데이트 합니다.
   syntax:
-    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiCreateOrUpdateParameter, options?: function)'
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiCreateOrUpdateParameter, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -194,7 +194,7 @@ items:
         만들기 또는 매개 변수를 업데이트 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -209,7 +209,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 지정 된 API를 삭제합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, serviceName: string, apiId: string, ifMatch: string, options?: function)'
+    content: 'function deleteMethod(resourceGroupName: string, serviceName: string, apiId: string, ifMatch: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -233,7 +233,7 @@ items:
         엔터티의 ETag입니다. ETag에는 GET 요청의 헤더 응답에서 현재 엔터티 상태와 일치 해야 합니다 또는 해야 * 무조건 업데이트에 대 한 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -248,7 +248,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 지정 된 API를 삭제합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, serviceName: string, apiId: string, ifMatch: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteMethod(resourceGroupName: string, serviceName: string, apiId: string, ifMatch: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -268,7 +268,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -320,7 +320,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 지정 된 API를 삭제합니다.
   syntax:
-    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, ifMatch: string, options?: function)'
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, ifMatch: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -344,7 +344,7 @@ items:
         엔터티의 ETag입니다. ETag에는 GET 요청의 헤더 응답에서 현재 엔터티 상태와 일치 해야 합니다 또는 해야 * 무조건 업데이트에 대 한 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -389,7 +389,7 @@ items:
   - typeScript
   summary: 해당 id에서 지정한 API의 세부 정보를 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, serviceName: string, apiId: string, options?: function)'
+    content: 'function get(resourceGroupName: string, serviceName: string, apiId: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -408,7 +408,7 @@ items:
         API 수정 식별자입니다. 현재 API Management 서비스 인스턴스에서 고유 해야 합니다. 비-현재 수정에 rev 여기서 n은 수정 번호를 접미사로 = n입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -423,7 +423,7 @@ items:
   - typeScript
   summary: 해당 id에서 지정한 API의 세부 정보를 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, serviceName: string, apiId: string, options: function, callback: ServiceCallback<ApiContract>)'
+    content: 'function get(resourceGroupName: string, serviceName: string, apiId: string, options: Object, callback: ServiceCallback<ApiContract>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -439,7 +439,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -457,7 +457,7 @@ items:
   - typeScript
   summary: 해당 id에서 지정한 API의 엔터티 상태 (Etag) 버전을 가져옵니다.
   syntax:
-    content: 'function getEntityTag(resourceGroupName: string, serviceName: string, apiId: string, options?: function)'
+    content: 'function getEntityTag(resourceGroupName: string, serviceName: string, apiId: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -476,7 +476,7 @@ items:
         API 수정 식별자입니다. 현재 API Management 서비스 인스턴스에서 고유 해야 합니다. 비-현재 수정에 rev 여기서 n은 수정 번호를 접미사로 = n입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -521,7 +521,7 @@ items:
   - typeScript
   summary: 해당 id에서 지정한 API의 엔터티 상태 (Etag) 버전을 가져옵니다.
   syntax:
-    content: 'function getEntityTag(resourceGroupName: string, serviceName: string, apiId: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function getEntityTag(resourceGroupName: string, serviceName: string, apiId: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -537,7 +537,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -555,7 +555,7 @@ items:
   - typeScript
   summary: 해당 id에서 지정한 API의 엔터티 상태 (Etag) 버전을 가져옵니다.
   syntax:
-    content: 'function getEntityTagWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, options?: function)'
+    content: 'function getEntityTagWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -574,7 +574,7 @@ items:
         API 수정 식별자입니다. 현재 API Management 서비스 인스턴스에서 고유 해야 합니다. 비-현재 수정에 rev 여기서 n은 수정 번호를 접미사로 = n입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -589,7 +589,7 @@ items:
   - typeScript
   summary: 해당 id에서 지정한 API의 세부 정보를 가져옵니다.
   syntax:
-    content: 'function getWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, options?: function)'
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -608,7 +608,7 @@ items:
         API 수정 식별자입니다. 현재 API Management 서비스 인스턴스에서 고유 해야 합니다. 비-현재 수정에 rev 여기서 n은 수정 번호를 접미사로 = n입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -623,7 +623,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 모든 Api를 나열합니다.
   syntax:
-    content: 'function listByService(resourceGroupName: string, serviceName: string, options?: function)'
+    content: 'function listByService(resourceGroupName: string, serviceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -637,7 +637,7 @@ items:
         API Management 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -678,7 +678,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 모든 Api를 나열합니다.
   syntax:
-    content: 'function listByService(resourceGroupName: string, serviceName: string, options: function, callback: ServiceCallback<ApiCollection>)'
+    content: 'function listByService(resourceGroupName: string, serviceName: string, options: Object, callback: ServiceCallback<ApiCollection>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -690,7 +690,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -708,7 +708,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 모든 Api를 나열합니다.
   syntax:
-    content: 'function listByServiceNext(nextPageLink: string, options?: function)'
+    content: 'function listByServiceNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -717,7 +717,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -732,7 +732,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 모든 Api를 나열합니다.
   syntax:
-    content: 'function listByServiceNext(nextPageLink: string, options: function, callback: ServiceCallback<ApiCollection>)'
+    content: 'function listByServiceNext(nextPageLink: string, options: Object, callback: ServiceCallback<ApiCollection>)'
     parameters:
     - id: nextPageLink
       type:
@@ -740,7 +740,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -780,7 +780,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 모든 Api를 나열합니다.
   syntax:
-    content: 'function listByServiceNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listByServiceNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -789,7 +789,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -804,7 +804,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 모든 Api를 나열합니다.
   syntax:
-    content: 'function listByServiceWithHttpOperationResponse(resourceGroupName: string, serviceName: string, options?: function)'
+    content: 'function listByServiceWithHttpOperationResponse(resourceGroupName: string, serviceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -818,7 +818,7 @@ items:
         API Management 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -833,7 +833,7 @@ items:
   - typeScript
   summary: 태그와 연결 된 api의 컬렉션을 나열 합니다.
   syntax:
-    content: 'function listByTags(resourceGroupName: string, serviceName: string, options?: function)'
+    content: 'function listByTags(resourceGroupName: string, serviceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -847,7 +847,7 @@ items:
         API Management 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -888,7 +888,7 @@ items:
   - typeScript
   summary: 태그와 연결 된 api의 컬렉션을 나열 합니다.
   syntax:
-    content: 'function listByTags(resourceGroupName: string, serviceName: string, options: function, callback: ServiceCallback<TagResourceCollection>)'
+    content: 'function listByTags(resourceGroupName: string, serviceName: string, options: Object, callback: ServiceCallback<TagResourceCollection>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -900,7 +900,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -918,7 +918,7 @@ items:
   - typeScript
   summary: 태그와 연결 된 api의 컬렉션을 나열 합니다.
   syntax:
-    content: 'function listByTagsNext(nextPageLink: string, options?: function)'
+    content: 'function listByTagsNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -927,7 +927,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -964,7 +964,7 @@ items:
   - typeScript
   summary: 태그와 연결 된 api의 컬렉션을 나열 합니다.
   syntax:
-    content: 'function listByTagsNext(nextPageLink: string, options: function, callback: ServiceCallback<TagResourceCollection>)'
+    content: 'function listByTagsNext(nextPageLink: string, options: Object, callback: ServiceCallback<TagResourceCollection>)'
     parameters:
     - id: nextPageLink
       type:
@@ -972,7 +972,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -990,7 +990,7 @@ items:
   - typeScript
   summary: 태그와 연결 된 api의 컬렉션을 나열 합니다.
   syntax:
-    content: 'function listByTagsNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listByTagsNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -999,7 +999,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1014,7 +1014,7 @@ items:
   - typeScript
   summary: 태그와 연결 된 api의 컬렉션을 나열 합니다.
   syntax:
-    content: 'function listByTagsWithHttpOperationResponse(resourceGroupName: string, serviceName: string, options?: function)'
+    content: 'function listByTagsWithHttpOperationResponse(resourceGroupName: string, serviceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1028,7 +1028,7 @@ items:
         API Management 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1043,7 +1043,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 지정 된 API를 업데이트합니다.
   syntax:
-    content: 'function update(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiUpdateContract, ifMatch: string, options?: function)'
+    content: 'function update(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiUpdateContract, ifMatch: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1072,7 +1072,7 @@ items:
         엔터티의 ETag입니다. ETag에는 GET 요청의 헤더 응답에서 현재 엔터티 상태와 일치 해야 합니다 또는 해야 * 무조건 업데이트에 대 한 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1125,7 +1125,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 지정 된 API를 업데이트합니다.
   syntax:
-    content: 'function update(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiUpdateContract, ifMatch: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function update(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiUpdateContract, ifMatch: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1149,7 +1149,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1167,7 +1167,7 @@ items:
   - typeScript
   summary: API Management 서비스 인스턴스의 지정 된 API를 업데이트합니다.
   syntax:
-    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiUpdateContract, ifMatch: string, options?: function)'
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, serviceName: string, apiId: string, parameters: ApiUpdateContract, ifMatch: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1196,7 +1196,7 @@ items:
         엔터티의 ETag입니다. ETag에는 GET 요청의 헤더 응답에서 현재 엔터티 상태와 일치 해야 합니다 또는 해야 * 무조건 업데이트에 대 한 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
