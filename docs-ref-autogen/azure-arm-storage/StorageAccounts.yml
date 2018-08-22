@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 937d978c38f15492d7555089842122a22c9cc663
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: ba6569dcedff3dac3f3c12c2aee5a462e15389e8
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40070182"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41700592"
 items:
 - uid: azure-arm-storage.StorageAccounts
   name: StorageAccounts
@@ -86,7 +86,7 @@ items:
 
     계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
   syntax:
-    content: 'function beginCreate(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: function)'
+    content: 'function beginCreate(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -105,7 +105,7 @@ items:
         만든된 계정에 대해 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -156,7 +156,7 @@ items:
 
     계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
   syntax:
-    content: 'function beginCreate(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options: function, callback: ServiceCallback<StorageAccount>)'
+    content: 'function beginCreate(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options: Object, callback: ServiceCallback<StorageAccount>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -172,7 +172,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -193,7 +193,7 @@ items:
 
     계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
   syntax:
-    content: 'function beginCreateWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: function)'
+    content: 'function beginCreateWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -212,7 +212,7 @@ items:
         만든된 계정에 대해 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -227,7 +227,7 @@ items:
   - typeScript
   summary: 저장소 계정 이름이 유효 하지 않은 사용에서 확인 합니다.
   syntax:
-    content: 'function checkNameAvailability(name: string, options?: function)'
+    content: 'function checkNameAvailability(name: string, options?: Object)'
     parameters:
     - id: name
       type:
@@ -236,7 +236,7 @@ items:
         저장소 계정 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -273,7 +273,7 @@ items:
   - typeScript
   summary: 저장소 계정 이름이 유효 하지 않은 사용에서 확인 합니다.
   syntax:
-    content: 'function checkNameAvailability(name: string, options: function, callback: ServiceCallback<CheckNameAvailabilityResult>)'
+    content: 'function checkNameAvailability(name: string, options: Object, callback: ServiceCallback<CheckNameAvailabilityResult>)'
     parameters:
     - id: name
       type:
@@ -281,7 +281,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -299,7 +299,7 @@ items:
   - typeScript
   summary: 저장소 계정 이름이 유효 하지 않은 사용에서 확인 합니다.
   syntax:
-    content: 'function checkNameAvailabilityWithHttpOperationResponse(name: string, options?: function)'
+    content: 'function checkNameAvailabilityWithHttpOperationResponse(name: string, options?: Object)'
     parameters:
     - id: name
       type:
@@ -308,7 +308,7 @@ items:
         저장소 계정 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -359,7 +359,7 @@ items:
 
     계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
   syntax:
-    content: 'function create(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options: function, callback: ServiceCallback<StorageAccount>)'
+    content: 'function create(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options: Object, callback: ServiceCallback<StorageAccount>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -375,7 +375,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -396,7 +396,7 @@ items:
 
     계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
   syntax:
-    content: 'function create(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: function)'
+    content: 'function create(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -415,7 +415,7 @@ items:
         만든된 계정에 대해 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -456,7 +456,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 설정 합니다.
   syntax:
-    content: 'function createOrUpdateManagementPolicies(resourceGroupName: string, accountName: string, options: function, callback: ServiceCallback<StorageAccountManagementPolicies>)'
+    content: 'function createOrUpdateManagementPolicies(resourceGroupName: string, accountName: string, options: Object, callback: ServiceCallback<StorageAccountManagementPolicies>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -468,7 +468,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -486,7 +486,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 설정 합니다.
   syntax:
-    content: 'function createOrUpdateManagementPolicies(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function createOrUpdateManagementPolicies(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -500,7 +500,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -515,7 +515,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 설정 합니다.
   syntax:
-    content: 'function createOrUpdateManagementPoliciesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function createOrUpdateManagementPoliciesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -529,7 +529,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -547,7 +547,7 @@ items:
 
     계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
   syntax:
-    content: 'function createWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: function)'
+    content: 'function createWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -566,7 +566,7 @@ items:
         만든된 계정에 대해 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -607,7 +607,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 삭제 합니다.
   syntax:
-    content: 'function deleteManagementPolicies(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function deleteManagementPolicies(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -621,7 +621,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -636,7 +636,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 삭제 합니다.
   syntax:
-    content: 'function deleteManagementPolicies(resourceGroupName: string, accountName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteManagementPolicies(resourceGroupName: string, accountName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -648,7 +648,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -666,7 +666,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 삭제 합니다.
   syntax:
-    content: 'function deleteManagementPoliciesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function deleteManagementPoliciesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -680,7 +680,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -695,7 +695,7 @@ items:
   - typeScript
   summary: Microsoft Azure에서 저장소 계정을 삭제합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function deleteMethod(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -709,7 +709,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -750,7 +750,7 @@ items:
   - typeScript
   summary: Microsoft Azure에서 저장소 계정을 삭제합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, accountName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteMethod(resourceGroupName: string, accountName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -762,7 +762,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -780,7 +780,7 @@ items:
   - typeScript
   summary: Microsoft Azure에서 저장소 계정을 삭제합니다.
   syntax:
-    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -794,7 +794,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -809,7 +809,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 가져옵니다.
   syntax:
-    content: 'function getManagementPolicies(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function getManagementPolicies(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -823,7 +823,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -864,7 +864,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 가져옵니다.
   syntax:
-    content: 'function getManagementPolicies(resourceGroupName: string, accountName: string, options: function, callback: ServiceCallback<StorageAccountManagementPolicies>)'
+    content: 'function getManagementPolicies(resourceGroupName: string, accountName: string, options: Object, callback: ServiceCallback<StorageAccountManagementPolicies>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -876,7 +876,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -894,7 +894,7 @@ items:
   - typeScript
   summary: 지정 된 저장소 계정에 연결 된 데이터 정책 규칙을 가져옵니다.
   syntax:
-    content: 'function getManagementPoliciesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function getManagementPoliciesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -908,7 +908,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -923,7 +923,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정 이름, SKU 이름, 위치 및 계정 상태에 제한 되지 않음 포함에 대 한 속성을 반환 합니다. ListKeys 작업 저장소 키를 검색 하는 것 같습니다.
   syntax:
-    content: 'function getProperties(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function getProperties(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -937,7 +937,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -978,7 +978,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정 이름, SKU 이름, 위치 및 계정 상태에 제한 되지 않음 포함에 대 한 속성을 반환 합니다. ListKeys 작업 저장소 키를 검색 하는 것 같습니다.
   syntax:
-    content: 'function getProperties(resourceGroupName: string, accountName: string, options: function, callback: ServiceCallback<StorageAccount>)'
+    content: 'function getProperties(resourceGroupName: string, accountName: string, options: Object, callback: ServiceCallback<StorageAccount>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -990,7 +990,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1008,7 +1008,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정 이름, SKU 이름, 위치 및 계정 상태에 제한 되지 않음 포함에 대 한 속성을 반환 합니다. ListKeys 작업 저장소 키를 검색 하는 것 같습니다.
   syntax:
-    content: 'function getPropertiesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function getPropertiesWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1022,7 +1022,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1037,11 +1037,11 @@ items:
   - typeScript
   summary: 구독에서 사용 가능한 모든 저장소 계정을 나열합니다. 이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
   syntax:
-    content: 'function list(options?: function)'
+    content: 'function list(options?: Object)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1056,11 +1056,11 @@ items:
   - typeScript
   summary: 구독에서 사용 가능한 모든 저장소 계정을 나열합니다. 이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
   syntax:
-    content: 'function list(options: function, callback: ServiceCallback<StorageAccountListResult>)'
+    content: 'function list(options: Object, callback: ServiceCallback<StorageAccountListResult>)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1126,7 +1126,7 @@ items:
   - typeScript
   summary: 저장소 계정의 SAS 자격 증명을 나열 합니다.
   syntax:
-    content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options: function, callback: ServiceCallback<ListAccountSasResponse>)'
+    content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options: Object, callback: ServiceCallback<ListAccountSasResponse>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1142,7 +1142,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1160,7 +1160,7 @@ items:
   - typeScript
   summary: 저장소 계정의 SAS 자격 증명을 나열 합니다.
   syntax:
-    content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options?: function)'
+    content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1179,7 +1179,7 @@ items:
         저장소 계정에 대 한 목록 SAS 자격 증명을 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1194,7 +1194,7 @@ items:
   - typeScript
   summary: 저장소 계정의 SAS 자격 증명을 나열 합니다.
   syntax:
-    content: 'function listAccountSASWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options?: function)'
+    content: 'function listAccountSASWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1213,7 +1213,7 @@ items:
         저장소 계정에 대 한 목록 SAS 자격 증명을 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1231,7 +1231,7 @@ items:
 
     이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1240,7 +1240,7 @@ items:
         사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1283,7 +1283,7 @@ items:
 
     이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options: function, callback: ServiceCallback<StorageAccountListResult>)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options: Object, callback: ServiceCallback<StorageAccountListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1291,7 +1291,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1312,7 +1312,7 @@ items:
 
     이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
   syntax:
-    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1321,7 +1321,7 @@ items:
         사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1336,7 +1336,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정에 대 한 액세스 키를 나열합니다.
   syntax:
-    content: 'function listKeys(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function listKeys(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1350,7 +1350,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1391,7 +1391,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정에 대 한 액세스 키를 나열합니다.
   syntax:
-    content: 'function listKeys(resourceGroupName: string, accountName: string, options: function, callback: ServiceCallback<StorageAccountListKeysResult>)'
+    content: 'function listKeys(resourceGroupName: string, accountName: string, options: Object, callback: ServiceCallback<StorageAccountListKeysResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1403,7 +1403,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1421,7 +1421,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정에 대 한 액세스 키를 나열합니다.
   syntax:
-    content: 'function listKeysWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: function)'
+    content: 'function listKeysWithHttpOperationResponse(resourceGroupName: string, accountName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1435,7 +1435,7 @@ items:
         지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1480,7 +1480,7 @@ items:
   - typeScript
   summary: 특정 리소스의 서비스 SAS 자격 증명을 나열 합니다.
   syntax:
-    content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options: function, callback: ServiceCallback<ListServiceSasResponse>)'
+    content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options: Object, callback: ServiceCallback<ListServiceSasResponse>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1496,7 +1496,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1514,7 +1514,7 @@ items:
   - typeScript
   summary: 특정 리소스의 서비스 SAS 자격 증명을 나열 합니다.
   syntax:
-    content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options?: function)'
+    content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1533,7 +1533,7 @@ items:
         매개 변수를 목록 서비스 SAS 자격 증명을 제공 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1548,7 +1548,7 @@ items:
   - typeScript
   summary: 특정 리소스의 서비스 SAS 자격 증명을 나열 합니다.
   syntax:
-    content: 'function listServiceSASWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options?: function)'
+    content: 'function listServiceSASWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1567,7 +1567,7 @@ items:
         매개 변수를 목록 서비스 SAS 자격 증명을 제공 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1582,11 +1582,11 @@ items:
   - typeScript
   summary: 구독에서 사용 가능한 모든 저장소 계정을 나열합니다. 이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
   syntax:
-    content: 'function listWithHttpOperationResponse(options?: function)'
+    content: 'function listWithHttpOperationResponse(options?: Object)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1601,7 +1601,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정에 대 한 액세스 키 중 하나를 다시 생성합니다.
   syntax:
-    content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, options?: function)'
+    content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1620,7 +1620,7 @@ items:
         저장소 키 다시 생성, 가능한 vaules 되도록 원하는 이름을 (key1, key2 됩니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1665,7 +1665,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정에 대 한 액세스 키 중 하나를 다시 생성합니다.
   syntax:
-    content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, options: function, callback: ServiceCallback<StorageAccountListKeysResult>)'
+    content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, options: Object, callback: ServiceCallback<StorageAccountListKeysResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1681,7 +1681,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1699,7 +1699,7 @@ items:
   - typeScript
   summary: 지정된 된 저장소 계정에 대 한 액세스 키 중 하나를 다시 생성합니다.
   syntax:
-    content: 'function regenerateKeyWithHttpOperationResponse(resourceGroupName: string, accountName: string, keyName: string, options?: function)'
+    content: 'function regenerateKeyWithHttpOperationResponse(resourceGroupName: string, accountName: string, keyName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1718,7 +1718,7 @@ items:
         저장소 키 다시 생성, 가능한 vaules 되도록 원하는 이름을 (key1, key2 됩니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1733,7 +1733,7 @@ items:
   - typeScript
   summary: SKU, 암호화, 액세스 계층 또는 저장소 계정에 대 한 태그를 업데이트 하려면 업데이트 작업을 사용할 수 있습니다. 사용자 지정 도메인을 계정에 매핑할 데도 수 있습니다. 저장소 계정 당 하나의 사용자 지정 도메인만 지원 됩니다. 사용자 지정 도메인의 대체/변경이 지원 되지 않습니다. 이전 사용자 지정 도메인을 바꾸기 위해 이전 값 수 있어야 선택 취소 하 고 등록을 새 값을 설정할 수 있습니다. 여러 속성의 업데이트를 사용할 수 있습니다. 이 호출은 계정의 저장소 키를 변경 하지 않습니다. 저장소 계정 키를 변경 하려는 경우 작업을 다시 생성 키를 사용 합니다. 저장소 계정의 이름과 위치를 만든 후 변경할 수 없습니다.
   syntax:
-    content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options?: function)'
+    content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1752,7 +1752,7 @@ items:
         업데이트 된 계정에 대해 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1797,7 +1797,7 @@ items:
   - typeScript
   summary: SKU, 암호화, 액세스 계층 또는 저장소 계정에 대 한 태그를 업데이트 하려면 업데이트 작업을 사용할 수 있습니다. 사용자 지정 도메인을 계정에 매핑할 데도 수 있습니다. 저장소 계정 당 하나의 사용자 지정 도메인만 지원 됩니다. 사용자 지정 도메인의 대체/변경이 지원 되지 않습니다. 이전 사용자 지정 도메인을 바꾸기 위해 이전 값 수 있어야 선택 취소 하 고 등록을 새 값을 설정할 수 있습니다. 여러 속성의 업데이트를 사용할 수 있습니다. 이 호출은 계정의 저장소 키를 변경 하지 않습니다. 저장소 계정 키를 변경 하려는 경우 작업을 다시 생성 키를 사용 합니다. 저장소 계정의 이름과 위치를 만든 후 변경할 수 없습니다.
   syntax:
-    content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options: function, callback: ServiceCallback<StorageAccount>)'
+    content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options: Object, callback: ServiceCallback<StorageAccount>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1813,7 +1813,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1831,7 +1831,7 @@ items:
   - typeScript
   summary: SKU, 암호화, 액세스 계층 또는 저장소 계정에 대 한 태그를 업데이트 하려면 업데이트 작업을 사용할 수 있습니다. 사용자 지정 도메인을 계정에 매핑할 데도 수 있습니다. 저장소 계정 당 하나의 사용자 지정 도메인만 지원 됩니다. 사용자 지정 도메인의 대체/변경이 지원 되지 않습니다. 이전 사용자 지정 도메인을 바꾸기 위해 이전 값 수 있어야 선택 취소 하 고 등록을 새 값을 설정할 수 있습니다. 여러 속성의 업데이트를 사용할 수 있습니다. 이 호출은 계정의 저장소 키를 변경 하지 않습니다. 저장소 계정 키를 변경 하려는 경우 작업을 다시 생성 키를 사용 합니다. 저장소 계정의 이름과 위치를 만든 후 변경할 수 없습니다.
   syntax:
-    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options?: function)'
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1850,7 +1850,7 @@ items:
         업데이트 된 계정에 대해 제공 하는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
