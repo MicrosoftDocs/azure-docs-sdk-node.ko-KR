@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 ms.openlocfilehash: d211b2954028eefb5af72a00d9120acaf5901e27
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40069459"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41685514"
 items:
 - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
   name: SharedAccessSignatureAuthenticationProvider
@@ -19,9 +19,9 @@ items:
   - typeScript
   type: class
   summary: >
-    <span data-ttu-id="cb76b-101">제공 된 `AuthenticationProvider` 공유 액세스 서명을 사용 하 여 간단히 만들 수 있으며 다음 되는 장치 클라이언트 및 전송 하 여 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-101">Provides an `AuthenticationProvider` object that can be created simply with a shared access signature and is then used by the device client and transports to authenticate with the Azure IoT hub instance.</span></span>
+    <span data-ttu-id="28deb-101">제공 된 `AuthenticationProvider` 공유 액세스 서명을 사용 하 여 간단히 만들 수 있으며 다음 되는 장치 클라이언트 및 전송 하 여 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-101">Provides an `AuthenticationProvider` object that can be created simply with a shared access signature and is then used by the device client and transports to authenticate with the Azure IoT hub instance.</span></span>
 
-    <span data-ttu-id="cb76b-102">합니다 `SharedAccessSignatureAuthenticationProvider` 사용자가 사용 하 여 만료 되지 않은 공유 액세스 서명 토큰을 공급 해야 하므로 개체 공유 액세스 서명 토큰을 자동으로 갱신 하지 않으면는 `updateSharedAccessSignature` 메서드.</span><span class="sxs-lookup"><span data-stu-id="cb76b-102">The `SharedAccessSignatureAuthenticationProvider` object does not renew the shared access signature token automatically, so the user needs to feed non-expired shared access signature tokens to it using the `updateSharedAccessSignature` method.</span></span> <span data-ttu-id="cb76b-103">이 메서드를 호출할 때마다 합니다 `SharedAccessSignatureAuthenticationProvider` 내보냅니다는 `newTokenAvailable` 전송 하는 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 데 사용할 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-103">For each call to this method, the `SharedAccessSignatureAuthenticationProvider` will emit a `newTokenAvailable` event that transports will use to authenticate with the Azure IoT hub instance.</span></span>
+    <span data-ttu-id="28deb-102">합니다 `SharedAccessSignatureAuthenticationProvider` 사용자가 사용 하 여 만료 되지 않은 공유 액세스 서명 토큰을 공급 해야 하므로 개체 공유 액세스 서명 토큰을 자동으로 갱신 하지 않으면는 `updateSharedAccessSignature` 메서드.</span><span class="sxs-lookup"><span data-stu-id="28deb-102">The `SharedAccessSignatureAuthenticationProvider` object does not renew the shared access signature token automatically, so the user needs to feed non-expired shared access signature tokens to it using the `updateSharedAccessSignature` method.</span></span> <span data-ttu-id="28deb-103">이 메서드를 호출할 때마다 합니다 `SharedAccessSignatureAuthenticationProvider` 내보냅니다는 `newTokenAvailable` 전송 하는 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 데 사용할 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-103">For each call to this method, the `SharedAccessSignatureAuthenticationProvider` will emit a `newTokenAvailable` event that transports will use to authenticate with the Azure IoT hub instance.</span></span>
   extends:
     name: EventEmitter
   package: azure-iot-device
@@ -31,7 +31,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="cb76b-104">새 `SharedAccessSignatureAuthenticationProvider` 연결 문자열에서</span><span class="sxs-lookup"><span data-stu-id="cb76b-104">Creates a new `SharedAccessSignatureAuthenticationProvider` from a connection string</span></span>
+  summary: <span data-ttu-id="28deb-104">새 `SharedAccessSignatureAuthenticationProvider` 연결 문자열에서</span><span class="sxs-lookup"><span data-stu-id="28deb-104">Creates a new `SharedAccessSignatureAuthenticationProvider` from a connection string</span></span>
   syntax:
     content: 'static function fromSharedAccessSignature(sharedAccessSignature: string)'
     parameters:
@@ -39,7 +39,7 @@ items:
       type:
       - string
       description: >
-        <span data-ttu-id="cb76b-105">IoT hub 사용 하 여 인증에 대 한 필수 매개 변수를 포함 하는 공유 액세스 서명 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-105">A shared access signature string containing the required parameters for authentication with the IoT hub.</span></span>
+        <span data-ttu-id="28deb-105">IoT hub 사용 하 여 인증에 대 한 필수 매개 변수를 포함 하는 공유 액세스 서명 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-105">A shared access signature string containing the required parameters for authentication with the IoT hub.</span></span>
     return:
       type:
       - azure-iot-device.SharedAccessSignatureAuthenticationProvider
@@ -50,7 +50,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="cb76b-106">가져옵니다 형식의 자격 증명을 최신 장치에 전송 하 여이 메서드는 사용을 `TransportConfig` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-106">This method is used by the transports to gets the most current device credentials in the form of a `TransportConfig` object.</span></span>
+  summary: <span data-ttu-id="28deb-106">가져옵니다 형식의 자격 증명을 최신 장치에 전송 하 여이 메서드는 사용을 `TransportConfig` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-106">This method is used by the transports to gets the most current device credentials in the form of a `TransportConfig` object.</span></span>
   syntax:
     content: 'function getDeviceCredentials(callback: (err: Error, credentials?: TransportConfig) => void)'
     parameters:
@@ -58,7 +58,7 @@ items:
       type:
       - '(err: Error, credentials?: TransportConfig) => void'
       description: >
-        <span data-ttu-id="cb76b-107">오류 또는 IoT hub를 사용 하 여 인증을 사용할 수 있는 장치 자격 증명 집합을 사용 하 여 호출 되는 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-107">function that will be called with either an error or a set of device credentials that can be used to authenticate with the IoT hub.</span></span>
+        <span data-ttu-id="28deb-107">오류 또는 IoT hub를 사용 하 여 인증을 사용할 수 있는 장치 자격 증명 집합을 사용 하 여 호출 되는 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-107">function that will be called with either an error or a set of device credentials that can be used to authenticate with the IoT hub.</span></span>
   package: azure-iot-device
 - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.stop
   name: stop
@@ -66,7 +66,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="cb76b-108">없으며 반환-이 토큰 기반 인증 공급자 API의 일부 이지만 중지/free 여기에 대 한 리소스가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-108">does nothing and returns - this is part of the token-based authentication provider API but there are no resources to stop/free here.</span></span>
+  summary: <span data-ttu-id="28deb-108">없으며 반환-이 토큰 기반 인증 공급자 API의 일부 이지만 중지/free 여기에 대 한 리소스가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-108">does nothing and returns - this is part of the token-based authentication provider API but there are no resources to stop/free here.</span></span>
   syntax:
     content: function stop()
     parameters: []
@@ -91,7 +91,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="cb76b-109">전송 인증을 사용 해야 하는 공유 액세스 서명 토큰을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-109">Updates the shared access signature token that transports should use to authenticate.</span></span> <span data-ttu-id="cb76b-110">를 호출 하는 경우는 `SharedAccessSignatureAuthenticationProvider` 내보냅니다를 `newTokenAvailable` 전송 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 데 사용할 수 있는 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-110">When called, the `SharedAccessSignatureAuthenticationProvider` will emit a `newTokenAvailable` event that the transports can then use to authenticate with the Azure IoT hub instance.</span></span>
+  summary: <span data-ttu-id="28deb-109">전송 인증을 사용 해야 하는 공유 액세스 서명 토큰을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-109">Updates the shared access signature token that transports should use to authenticate.</span></span> <span data-ttu-id="28deb-110">를 호출 하는 경우는 `SharedAccessSignatureAuthenticationProvider` 내보냅니다를 `newTokenAvailable` 전송 Azure IoT hub 인스턴스를 사용 하 여 인증 하는 데 사용할 수 있는 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-110">When called, the `SharedAccessSignatureAuthenticationProvider` will emit a `newTokenAvailable` event that the transports can then use to authenticate with the Azure IoT hub instance.</span></span>
   syntax:
     content: 'function updateSharedAccessSignature(sharedAccessSignature: string)'
     parameters:
@@ -99,7 +99,7 @@ items:
       type:
       - string
       description: >
-        <span data-ttu-id="cb76b-111">IoT hub 사용 하 여 인증에 대 한 필수 매개 변수를 포함 하는 공유 액세스 서명 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="cb76b-111">A shared access signature string containing the required parameters for authentication with the IoT hub.</span></span>
+        <span data-ttu-id="28deb-111">IoT hub 사용 하 여 인증에 대 한 필수 매개 변수를 포함 하는 공유 액세스 서명 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="28deb-111">A shared access signature string containing the required parameters for authentication with the IoT hub.</span></span>
   package: azure-iot-device
 references:
 - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
