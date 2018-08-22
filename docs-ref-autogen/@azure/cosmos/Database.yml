@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 4beb3e4403ee3d2adac43843b0b8f717f13d012a
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: f65057c5254ef5765a4d0c94c31ba22cce8ecae5
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40066257"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41695702"
 items:
 - uid: '@azure/cosmos.Database'
   name: Database
@@ -23,7 +23,7 @@ items:
   langs:
   - typeScript
   type: class
-  summary: <span data-ttu-id="76295-101">읽기 또는 기존 데이터베이스를 삭제 하기 위한 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="76295-101">Operations for reading or deleting an existing database.</span></span>
+  summary: <span data-ttu-id="f0f1b-101">읽기 또는 기존 데이터베이스를 삭제 하기 위한 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-101">Operations for reading or deleting an existing database.</span></span>
   package: '@azure/cosmos'
 - uid: '@azure/cosmos.Database.client'
   name: client
@@ -46,7 +46,7 @@ items:
   langs:
   - typeScript
   summary: >
-    <span data-ttu-id="76295-102">읽기, 바꾸기 또는 특정을 삭제 하는 데 기존 <xref:Database> id 기준으로 합니다. 사용 하 여 `.containers` 새 컨테이너를 만들거나 쿼리를 읽고 모든 컨테이너입니다.</span><span class="sxs-lookup"><span data-stu-id="76295-102">Used to read, replace, or delete a specific, existing <xref:Database> by id. Use `.containers` creating new containers, or querying/reading all containers.</span></span>
+    <span data-ttu-id="f0f1b-102">읽기, 바꾸기 또는 특정을 삭제 하는 데 기존 <xref:Database> id 기준으로 합니다. 사용 하 여 `.containers` 새 컨테이너를 만들거나 쿼리를 읽고 모든 컨테이너입니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-102">Used to read, replace, or delete a specific, existing <xref:Database> by id. Use `.containers` creating new containers, or querying/reading all containers.</span></span>
   syntax:
     content: 'function container(id: string)'
     parameters:
@@ -66,9 +66,9 @@ items:
   - typeScript
   type: property
   summary: >
-    <span data-ttu-id="76295-103">새 컨테이너를 만들거나 쿼리를 읽고 모든 컨테이너에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-103">Used for creating new containers, or querying/reading all containers.</span></span>
+    <span data-ttu-id="f0f1b-103">새 컨테이너를 만들거나 쿼리를 읽고 모든 컨테이너에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-103">Used for creating new containers, or querying/reading all containers.</span></span>
 
-    <span data-ttu-id="76295-104">사용 하 여 `.container(id)` 읽기, 바꾸기 또는 특정을 삭제 하려면 기존 <xref:Database> id 기준으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-104">Use `.container(id)` to read, replace, or delete a specific, existing <xref:Database> by id.</span></span>
+    <span data-ttu-id="f0f1b-104">사용 하 여 `.container(id)` 읽기, 바꾸기 또는 특정을 삭제 하려면 기존 <xref:Database> id 기준으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-104">Use `.container(id)` to read, replace, or delete a specific, existing <xref:Database> by id.</span></span>
   syntax:
     content: 'containers: Containers'
     return:
@@ -82,11 +82,11 @@ items:
   langs:
   - typeScript
   summary: >
-    <span data-ttu-id="76295-105">반환 된 새 <xref:Database> 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="76295-105">Returns a new <xref:Database> instance.</span></span>
+    <span data-ttu-id="f0f1b-105">반환 된 새 <xref:Database> 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-105">Returns a new <xref:Database> instance.</span></span>
 
-    <span data-ttu-id="76295-106">참고: 의도에서이 개체를 가져오는 <xref:CosmosClient> 를 통해 `client.databsae(id)`를 인스턴스화하도록 필요가 직접.</span><span class="sxs-lookup"><span data-stu-id="76295-106">Note: the intention is to get this object from <xref:CosmosClient> via `client.databsae(id)`, not to instaniate it yourself.</span></span>
+    <span data-ttu-id="f0f1b-106">참고: 의도에서이 개체를 가져오는 <xref:CosmosClient> 를 통해 `client.databsae(id)`를 인스턴스화하도록 필요가 직접.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-106">Note: the intention is to get this object from <xref:CosmosClient> via `client.databsae(id)`, not to instaniate it yourself.</span></span>
   syntax:
-    content: 'new Database(client: CosmosClient, id: string)'
+    content: 'new Database(client: CosmosClient, id: string, clientContext: ClientContext)'
     parameters:
     - id: client
       type:
@@ -96,6 +96,10 @@ items:
       type:
       - string
       description: ''
+    - id: clientContext
+      type:
+      - ClientContext
+      description: ''
   package: '@azure/cosmos'
 - uid: '@azure/cosmos.Database.delete'
   name: delete
@@ -103,7 +107,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="76295-107">지정된 된 데이터베이스를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-107">Delete the given Database.</span></span>
+  summary: <span data-ttu-id="f0f1b-107">지정된 된 데이터베이스를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-107">Delete the given Database.</span></span>
   syntax:
     content: 'function delete(options?: RequestOptions)'
     parameters:
@@ -136,7 +140,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="76295-108">지정된 된 데이터베이스의 정의 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="76295-108">Read the definition of the given Database.</span></span>
+  summary: <span data-ttu-id="f0f1b-108">지정된 된 데이터베이스의 정의 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-108">Read the definition of the given Database.</span></span>
   syntax:
     content: 'function read(options?: RequestOptions)'
     parameters:
@@ -156,7 +160,7 @@ items:
   langs:
   - typeScript
   type: property
-  summary: <span data-ttu-id="76295-109">리소스 참조 URL을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-109">Returns a reference URL to the resource.</span></span> <span data-ttu-id="76295-110">사용 권한에서 연결에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-110">Used for linking in Permissions.</span></span>
+  summary: <span data-ttu-id="f0f1b-109">리소스 참조 URL을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-109">Returns a reference URL to the resource.</span></span> <span data-ttu-id="f0f1b-110">사용 권한에서 연결에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-110">Used for linking in Permissions.</span></span>
   syntax:
     content: 'url: string'
     return:
@@ -170,7 +174,7 @@ items:
   langs:
   - typeScript
   summary: >
-    <span data-ttu-id="76295-111">읽기, 바꾸기 또는 특정을 삭제 하는 데 기존 <xref:User> id 기준으로 합니다. 사용 하 여 `.users` 새 사용자 만들기, 또는 모든 사용자 쿼리/읽기에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-111">Used to read, replace, or delete a specific, existing <xref:User> by id. Use `.users` for creating new users, or querying/reading all users.</span></span>
+    <span data-ttu-id="f0f1b-111">읽기, 바꾸기 또는 특정을 삭제 하는 데 기존 <xref:User> id 기준으로 합니다. 사용 하 여 `.users` 새 사용자 만들기, 또는 모든 사용자 쿼리/읽기에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-111">Used to read, replace, or delete a specific, existing <xref:User> by id. Use `.users` for creating new users, or querying/reading all users.</span></span>
   syntax:
     content: 'function user(id: string)'
     parameters:
@@ -190,9 +194,9 @@ items:
   - typeScript
   type: property
   summary: >
-    <span data-ttu-id="76295-112">새 사용자 만들기, 또는 모든 사용자 쿼리/읽기에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-112">Used for creating new users, or querying/reading all users.</span></span>
+    <span data-ttu-id="f0f1b-112">새 사용자 만들기, 또는 모든 사용자 쿼리/읽기에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-112">Used for creating new users, or querying/reading all users.</span></span>
 
-    <span data-ttu-id="76295-113">사용 하 여 `.user(id)` 읽기, 바꾸기 또는 특정을 삭제 하려면 기존 <xref:User> id 기준으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="76295-113">Use `.user(id)` to read, replace, or delete a specific, existing <xref:User> by id.</span></span>
+    <span data-ttu-id="f0f1b-113">사용 하 여 `.user(id)` 읽기, 바꾸기 또는 특정을 삭제 하려면 기존 <xref:User> id 기준으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f1b-113">Use `.user(id)` to read, replace, or delete a specific, existing <xref:User> by id.</span></span>
   syntax:
     content: 'users: Users'
     return:
