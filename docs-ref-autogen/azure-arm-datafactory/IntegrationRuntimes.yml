@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 11653afe9c8c4a422ac1494551bebf01c8cbe3f9
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 2aa2f985e3acb65c13b9498c33083859100ddf81
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40068796"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41702371"
 items:
 - uid: azure-arm-datafactory.IntegrationRuntimes
   name: IntegrationRuntimes
@@ -58,10 +58,10 @@ items:
   - azure-arm-datafactory.IntegrationRuntimes.regenerateAuthKey_2
   - azure-arm-datafactory.IntegrationRuntimes.regenerateAuthKey
   - azure-arm-datafactory.IntegrationRuntimes.regenerateAuthKeyWithHttpOperationResponse
-  - azure-arm-datafactory.IntegrationRuntimes.removeNode
-  - azure-arm-datafactory.IntegrationRuntimes.removeNode_2
-  - azure-arm-datafactory.IntegrationRuntimes.removeNode_1
-  - azure-arm-datafactory.IntegrationRuntimes.removeNodeWithHttpOperationResponse
+  - azure-arm-datafactory.IntegrationRuntimes.removeLinks
+  - azure-arm-datafactory.IntegrationRuntimes.removeLinks_2
+  - azure-arm-datafactory.IntegrationRuntimes.removeLinks_1
+  - azure-arm-datafactory.IntegrationRuntimes.removeLinksWithHttpOperationResponse
   - azure-arm-datafactory.IntegrationRuntimes.start
   - azure-arm-datafactory.IntegrationRuntimes.start_1
   - azure-arm-datafactory.IntegrationRuntimes.start_2
@@ -93,28 +93,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-101">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-101">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-101">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-101">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function beginStart(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function beginStart(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-102">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-102">The resource group name.</span></span>
+        <span data-ttu-id="f8438-102">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-102">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-103">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-103">The factory name.</span></span>
+        <span data-ttu-id="f8438-103">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-103">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-104">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-104">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-104">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-104">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -127,7 +127,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-105">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-105">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-105">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-105">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
     content: 'function beginStart(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
     parameters:
@@ -157,9 +157,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-106">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-106">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-106">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-106">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function beginStart(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
+    content: 'function beginStart(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -175,7 +175,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -191,28 +191,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-107">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-107">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-107">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-107">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function beginStartWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function beginStartWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-108">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-108">The resource group name.</span></span>
+        <span data-ttu-id="f8438-108">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-108">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-109">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-109">The factory name.</span></span>
+        <span data-ttu-id="f8438-109">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-109">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-110">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-110">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-110">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-110">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -225,28 +225,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-111">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-111">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-111">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-111">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function beginStop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function beginStop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-112">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-112">The resource group name.</span></span>
+        <span data-ttu-id="f8438-112">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-112">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-113">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-113">The factory name.</span></span>
+        <span data-ttu-id="f8438-113">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-113">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-114">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-114">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-114">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-114">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -259,7 +259,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-115">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-115">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-115">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-115">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
     content: 'function beginStop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<void>)'
     parameters:
@@ -289,9 +289,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-116">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-116">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-116">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-116">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function beginStop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function beginStop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -307,7 +307,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -323,28 +323,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-117">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-117">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-117">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-117">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function beginStopWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function beginStopWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-118">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-118">The resource group name.</span></span>
+        <span data-ttu-id="f8438-118">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-118">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-119">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-119">The factory name.</span></span>
+        <span data-ttu-id="f8438-119">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-119">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-120">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-120">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-120">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-120">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -357,7 +357,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-121">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-121">Creates or updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-121">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-121">Creates or updates an integration runtime.</span></span>
   syntax:
     content: 'function createOrUpdate(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, callback: ServiceCallback<IntegrationRuntimeResource>)'
     parameters:
@@ -391,33 +391,33 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-122">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-122">Creates or updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-122">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-122">Creates or updates an integration runtime.</span></span>
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, options?: function)'
+    content: 'function createOrUpdate(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-123">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-123">The resource group name.</span></span>
+        <span data-ttu-id="f8438-123">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-123">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-124">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-124">The factory name.</span></span>
+        <span data-ttu-id="f8438-124">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-124">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-125">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-125">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-125">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-125">The integration runtime name.</span></span>
     - id: integrationRuntime
       type:
       - azure-arm-datafactory.IntegrationRuntimeResource
       description: >
-        <span data-ttu-id="bd782-126">통합 런타임 리소스 정의입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-126">Integration runtime resource definition.</span></span>
+        <span data-ttu-id="f8438-126">통합 런타임 리소스 정의입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-126">Integration runtime resource definition.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -430,9 +430,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-127">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-127">Creates or updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-127">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-127">Creates or updates an integration runtime.</span></span>
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, options: function, callback: ServiceCallback<IntegrationRuntimeResource>)'
+    content: 'function createOrUpdate(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, options: Object, callback: ServiceCallback<IntegrationRuntimeResource>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -452,7 +452,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -468,33 +468,33 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-128">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-128">Creates or updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-128">만들거나 integration runtime을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-128">Creates or updates an integration runtime.</span></span>
   syntax:
-    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, options?: function)'
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, integrationRuntime: IntegrationRuntimeResource, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-129">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-129">The resource group name.</span></span>
+        <span data-ttu-id="f8438-129">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-129">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-130">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-130">The factory name.</span></span>
+        <span data-ttu-id="f8438-130">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-130">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-131">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-131">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-131">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-131">The integration runtime name.</span></span>
     - id: integrationRuntime
       type:
       - azure-arm-datafactory.IntegrationRuntimeResource
       description: >
-        <span data-ttu-id="bd782-132">통합 런타임 리소스 정의입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-132">Integration runtime resource definition.</span></span>
+        <span data-ttu-id="f8438-132">통합 런타임 리소스 정의입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-132">Integration runtime resource definition.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -507,9 +507,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-133">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-133">Deletes an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-133">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-133">Deletes an integration runtime.</span></span>
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteMethod(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -525,7 +525,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -541,28 +541,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-134">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-134">Deletes an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-134">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-134">Deletes an integration runtime.</span></span>
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function deleteMethod(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-135">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-135">The resource group name.</span></span>
+        <span data-ttu-id="f8438-135">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-135">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-136">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-136">The factory name.</span></span>
+        <span data-ttu-id="f8438-136">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-136">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-137">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-137">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-137">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-137">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -575,7 +575,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-138">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-138">Deletes an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-138">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-138">Deletes an integration runtime.</span></span>
   syntax:
     content: 'function deleteMethod(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<void>)'
     parameters:
@@ -605,28 +605,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-139">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-139">Deletes an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-139">Integration runtime을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-139">Deletes an integration runtime.</span></span>
   syntax:
-    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-140">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-140">The resource group name.</span></span>
+        <span data-ttu-id="f8438-140">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-140">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-141">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-141">The factory name.</span></span>
+        <span data-ttu-id="f8438-141">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-141">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-142">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-142">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-142">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-142">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -639,7 +639,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-143">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-143">Gets an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-143">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-143">Gets an integration runtime.</span></span>
   syntax:
     content: 'function get(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeResource>)'
     parameters:
@@ -669,9 +669,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-144">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-144">Gets an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-144">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-144">Gets an integration runtime.</span></span>
   syntax:
-    content: 'function get(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeResource>)'
+    content: 'function get(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeResource>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -687,7 +687,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -703,28 +703,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-145">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-145">Gets an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-145">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-145">Gets an integration runtime.</span></span>
   syntax:
-    content: 'function get(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function get(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-146">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-146">The resource group name.</span></span>
+        <span data-ttu-id="f8438-146">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-146">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-147">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-147">The factory name.</span></span>
+        <span data-ttu-id="f8438-147">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-147">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-148">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-148">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-148">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-148">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -737,28 +737,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-149">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-149">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
+  summary: <span data-ttu-id="f8438-149">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-149">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
   syntax:
-    content: 'function getConnectionInfo(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getConnectionInfo(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-150">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-150">The resource group name.</span></span>
+        <span data-ttu-id="f8438-150">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-150">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-151">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-151">The factory name.</span></span>
+        <span data-ttu-id="f8438-151">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-151">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-152">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-152">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-152">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-152">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -771,9 +771,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-153">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-153">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
+  summary: <span data-ttu-id="f8438-153">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-153">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
   syntax:
-    content: 'function getConnectionInfo(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeConnectionInfo>)'
+    content: 'function getConnectionInfo(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeConnectionInfo>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -789,7 +789,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -805,7 +805,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-154">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-154">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
+  summary: <span data-ttu-id="f8438-154">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-154">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
   syntax:
     content: 'function getConnectionInfo(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeConnectionInfo>)'
     parameters:
@@ -835,28 +835,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-155">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-155">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
+  summary: <span data-ttu-id="f8438-155">온-프레미스 온-프레미스 데이터 원본 자격 증명을 암호화 하는 것에 대 한 통합 런타임 연결 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-155">Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials.</span></span>
   syntax:
-    content: 'function getConnectionInfoWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getConnectionInfoWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-156">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-156">The resource group name.</span></span>
+        <span data-ttu-id="f8438-156">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-156">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-157">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-157">The factory name.</span></span>
+        <span data-ttu-id="f8438-157">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-157">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-158">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-158">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-158">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-158">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -869,7 +869,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-159">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-159">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-159">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-159">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
   syntax:
     content: 'function getMonitoringData(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeMonitoringData>)'
     parameters:
@@ -899,28 +899,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-160">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-160">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-160">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-160">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
   syntax:
-    content: 'function getMonitoringData(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getMonitoringData(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-161">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-161">The resource group name.</span></span>
+        <span data-ttu-id="f8438-161">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-161">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-162">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-162">The factory name.</span></span>
+        <span data-ttu-id="f8438-162">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-162">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-163">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-163">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-163">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-163">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -933,9 +933,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-164">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-164">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-164">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-164">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
   syntax:
-    content: 'function getMonitoringData(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeMonitoringData>)'
+    content: 'function getMonitoringData(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeMonitoringData>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -951,7 +951,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -967,28 +967,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-165">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-165">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-165">통합 런타임을 모니터링이 integration runtime에서 모든 노드에 대 한 모니터링 데이터를 포함 하는 데이터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-165">Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime.</span></span>
   syntax:
-    content: 'function getMonitoringDataWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getMonitoringDataWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-166">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-166">The resource group name.</span></span>
+        <span data-ttu-id="f8438-166">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-166">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-167">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-167">The factory name.</span></span>
+        <span data-ttu-id="f8438-167">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-167">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-168">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-168">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-168">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-168">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1001,7 +1001,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-169">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-169">Gets detailed status information for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-169">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-169">Gets detailed status information for an integration runtime.</span></span>
   syntax:
     content: 'function getStatus(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
     parameters:
@@ -1031,9 +1031,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-170">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-170">Gets detailed status information for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-170">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-170">Gets detailed status information for an integration runtime.</span></span>
   syntax:
-    content: 'function getStatus(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
+    content: 'function getStatus(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1049,7 +1049,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1065,28 +1065,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-171">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-171">Gets detailed status information for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-171">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-171">Gets detailed status information for an integration runtime.</span></span>
   syntax:
-    content: 'function getStatus(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getStatus(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-172">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-172">The resource group name.</span></span>
+        <span data-ttu-id="f8438-172">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-172">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-173">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-173">The factory name.</span></span>
+        <span data-ttu-id="f8438-173">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-173">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-174">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-174">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-174">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-174">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1099,28 +1099,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-175">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-175">Gets detailed status information for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-175">Integration runtime에 대 한 자세한 상태 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-175">Gets detailed status information for an integration runtime.</span></span>
   syntax:
-    content: 'function getStatusWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getStatusWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-176">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-176">The resource group name.</span></span>
+        <span data-ttu-id="f8438-176">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-176">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-177">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-177">The factory name.</span></span>
+        <span data-ttu-id="f8438-177">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-177">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-178">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-178">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-178">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-178">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1133,28 +1133,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-179">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-179">Gets an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-179">Integration runtime을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-179">Gets an integration runtime.</span></span>
   syntax:
-    content: 'function getWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-180">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-180">The resource group name.</span></span>
+        <span data-ttu-id="f8438-180">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-180">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-181">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-181">The factory name.</span></span>
+        <span data-ttu-id="f8438-181">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-181">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-182">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-182">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-182">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-182">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1167,28 +1167,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-183">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-183">Retrieves the authentication keys for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-183">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-183">Retrieves the authentication keys for an integration runtime.</span></span>
   syntax:
-    content: 'function listAuthKeys(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function listAuthKeys(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-184">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-184">The resource group name.</span></span>
+        <span data-ttu-id="f8438-184">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-184">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-185">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-185">The factory name.</span></span>
+        <span data-ttu-id="f8438-185">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-185">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-186">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-186">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-186">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-186">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1201,7 +1201,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-187">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-187">Retrieves the authentication keys for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-187">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-187">Retrieves the authentication keys for an integration runtime.</span></span>
   syntax:
     content: 'function listAuthKeys(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeAuthKeys>)'
     parameters:
@@ -1231,9 +1231,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-188">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-188">Retrieves the authentication keys for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-188">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-188">Retrieves the authentication keys for an integration runtime.</span></span>
   syntax:
-    content: 'function listAuthKeys(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeAuthKeys>)'
+    content: 'function listAuthKeys(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeAuthKeys>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1249,7 +1249,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1265,28 +1265,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-189">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-189">Retrieves the authentication keys for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-189">Integration runtime에 대 한 인증 키를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-189">Retrieves the authentication keys for an integration runtime.</span></span>
   syntax:
-    content: 'function listAuthKeysWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function listAuthKeysWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-190">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-190">The resource group name.</span></span>
+        <span data-ttu-id="f8438-190">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-190">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-191">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-191">The factory name.</span></span>
+        <span data-ttu-id="f8438-191">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-191">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-192">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-192">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-192">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-192">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1299,23 +1299,23 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-193">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-193">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-193">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-193">Lists integration runtimes.</span></span>
   syntax:
-    content: 'function listByFactory(resourceGroupName: string, factoryName: string, options?: function)'
+    content: 'function listByFactory(resourceGroupName: string, factoryName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-194">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-194">The resource group name.</span></span>
+        <span data-ttu-id="f8438-194">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-194">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-195">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-195">The factory name.</span></span>
+        <span data-ttu-id="f8438-195">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-195">The factory name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1328,7 +1328,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-196">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-196">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-196">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-196">Lists integration runtimes.</span></span>
   syntax:
     content: 'function listByFactory(resourceGroupName: string, factoryName: string, callback: ServiceCallback<IntegrationRuntimeListResponse>)'
     parameters:
@@ -1354,9 +1354,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-197">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-197">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-197">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-197">Lists integration runtimes.</span></span>
   syntax:
-    content: 'function listByFactory(resourceGroupName: string, factoryName: string, options: function, callback: ServiceCallback<IntegrationRuntimeListResponse>)'
+    content: 'function listByFactory(resourceGroupName: string, factoryName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeListResponse>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1368,7 +1368,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1384,18 +1384,18 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-198">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-198">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-198">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-198">Lists integration runtimes.</span></span>
   syntax:
-    content: 'function listByFactoryNext(nextPageLink: string, options?: function)'
+    content: 'function listByFactoryNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-199">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-199">The NextLink from the previous successful call to List operation.</span></span>
+        <span data-ttu-id="f8438-199">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-199">The NextLink from the previous successful call to List operation.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1408,7 +1408,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-200">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-200">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-200">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-200">Lists integration runtimes.</span></span>
   syntax:
     content: 'function listByFactoryNext(nextPageLink: string, callback: ServiceCallback<IntegrationRuntimeListResponse>)'
     parameters:
@@ -1430,9 +1430,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-201">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-201">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-201">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-201">Lists integration runtimes.</span></span>
   syntax:
-    content: 'function listByFactoryNext(nextPageLink: string, options: function, callback: ServiceCallback<IntegrationRuntimeListResponse>)'
+    content: 'function listByFactoryNext(nextPageLink: string, options: Object, callback: ServiceCallback<IntegrationRuntimeListResponse>)'
     parameters:
     - id: nextPageLink
       type:
@@ -1440,7 +1440,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1456,18 +1456,18 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-202">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-202">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-202">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-202">Lists integration runtimes.</span></span>
   syntax:
-    content: 'function listByFactoryNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listByFactoryNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-203">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-203">The NextLink from the previous successful call to List operation.</span></span>
+        <span data-ttu-id="f8438-203">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-203">The NextLink from the previous successful call to List operation.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1480,23 +1480,23 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-204">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-204">Lists integration runtimes.</span></span>
+  summary: <span data-ttu-id="f8438-204">Integration runtime을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-204">Lists integration runtimes.</span></span>
   syntax:
-    content: 'function listByFactoryWithHttpOperationResponse(resourceGroupName: string, factoryName: string, options?: function)'
+    content: 'function listByFactoryWithHttpOperationResponse(resourceGroupName: string, factoryName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-205">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-205">The resource group name.</span></span>
+        <span data-ttu-id="f8438-205">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-205">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-206">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-206">The factory name.</span></span>
+        <span data-ttu-id="f8438-206">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-206">The factory name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1509,7 +1509,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-207">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-207">Regenerates the authentication key for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-207">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-207">Regenerates the authentication key for an integration runtime.</span></span>
   syntax:
     content: 'function regenerateAuthKey(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, callback: ServiceCallback<IntegrationRuntimeAuthKeys>)'
     parameters:
@@ -1543,9 +1543,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-208">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-208">Regenerates the authentication key for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-208">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-208">Regenerates the authentication key for an integration runtime.</span></span>
   syntax:
-    content: 'function regenerateAuthKey(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, options: function, callback: ServiceCallback<IntegrationRuntimeAuthKeys>)'
+    content: 'function regenerateAuthKey(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, options: Object, callback: ServiceCallback<IntegrationRuntimeAuthKeys>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1565,7 +1565,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1581,33 +1581,33 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-209">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-209">Regenerates the authentication key for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-209">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-209">Regenerates the authentication key for an integration runtime.</span></span>
   syntax:
-    content: 'function regenerateAuthKey(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, options?: function)'
+    content: 'function regenerateAuthKey(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-210">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-210">The resource group name.</span></span>
+        <span data-ttu-id="f8438-210">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-210">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-211">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-211">The factory name.</span></span>
+        <span data-ttu-id="f8438-211">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-211">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-212">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-212">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-212">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-212">The integration runtime name.</span></span>
     - id: regenerateKeyParameters
       type:
       - azure-arm-datafactory.IntegrationRuntimeRegenerateKeyParameters
       description: >
-        <span data-ttu-id="bd782-213">통합 런타임 인증 키를 다시 생성 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-213">The parameters for regenerating integration runtime authentication key.</span></span>
+        <span data-ttu-id="f8438-213">통합 런타임 인증 키를 다시 생성 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-213">The parameters for regenerating integration runtime authentication key.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1620,87 +1620,87 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-214">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-214">Regenerates the authentication key for an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-214">Integration runtime에 대 한 인증 키를 다시 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-214">Regenerates the authentication key for an integration runtime.</span></span>
   syntax:
-    content: 'function regenerateAuthKeyWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, options?: function)'
+    content: 'function regenerateAuthKeyWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, regenerateKeyParameters: IntegrationRuntimeRegenerateKeyParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-215">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-215">The resource group name.</span></span>
+        <span data-ttu-id="f8438-215">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-215">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-216">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-216">The factory name.</span></span>
+        <span data-ttu-id="f8438-216">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-216">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-217">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-217">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-217">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-217">The integration runtime name.</span></span>
     - id: regenerateKeyParameters
       type:
       - azure-arm-datafactory.IntegrationRuntimeRegenerateKeyParameters
       description: >
-        <span data-ttu-id="bd782-218">통합 런타임 인증 키를 다시 생성 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-218">The parameters for regenerating integration runtime authentication key.</span></span>
+        <span data-ttu-id="f8438-218">통합 런타임 인증 키를 다시 생성 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-218">The parameters for regenerating integration runtime authentication key.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
       type:
       - Promise<HttpOperationResponse<azure-arm-datafactory.IntegrationRuntimeAuthKeys>>
   package: azure-arm-datafactory
-- uid: azure-arm-datafactory.IntegrationRuntimes.removeNode
-  name: removeNode
+- uid: azure-arm-datafactory.IntegrationRuntimes.removeLinks
+  name: removeLinks
   children: []
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-219">Integration runtime에서 노드를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-219">Remove a node from integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-219">자체 호스팅된 integration runtime에서 모든 연결 된 통합 런타임을 특정 데이터 팩터리에서를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-219">Remove all linked integration runtimes under specific data factory in a self-hosted integration runtime.</span></span>
   syntax:
-    content: 'function removeNode(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, removeNodeParameters: IntegrationRuntimeRemoveNodeRequest, options?: function)'
+    content: 'function removeLinks(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, linkedIntegrationRuntimeRequest: LinkedIntegrationRuntimeRequest, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-220">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-220">The resource group name.</span></span>
+        <span data-ttu-id="f8438-220">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-220">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-221">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-221">The factory name.</span></span>
+        <span data-ttu-id="f8438-221">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-221">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-222">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-222">The integration runtime name.</span></span>
-    - id: removeNodeParameters
+        <span data-ttu-id="f8438-222">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-222">The integration runtime name.</span></span>
+    - id: linkedIntegrationRuntimeRequest
       type:
-      - azure-arm-datafactory.IntegrationRuntimeRemoveNodeRequest
+      - azure-arm-datafactory.LinkedIntegrationRuntimeRequest
       description: >
-        <span data-ttu-id="bd782-223">Integration runtime에서 제거할 노드의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-223">The name of the node to be removed from an integration runtime.</span></span>
+        <span data-ttu-id="f8438-223">연결 된 통합 런타임의 데이터 팩터리 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-223">The data factory name for the linked integration runtime.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
       type:
       - Promise<void>
   package: azure-arm-datafactory
-- uid: azure-arm-datafactory.IntegrationRuntimes.removeNode_2
-  name: removeNode
+- uid: azure-arm-datafactory.IntegrationRuntimes.removeLinks_2
+  name: removeLinks
   children: []
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-224">Integration runtime에서 노드를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-224">Remove a node from integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-224">자체 호스팅된 integration runtime에서 모든 연결 된 통합 런타임을 특정 데이터 팩터리에서를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-224">Remove all linked integration runtimes under specific data factory in a self-hosted integration runtime.</span></span>
   syntax:
-    content: 'function removeNode(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, removeNodeParameters: IntegrationRuntimeRemoveNodeRequest, options: function, callback: ServiceCallback<void>)'
+    content: 'function removeLinks(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, linkedIntegrationRuntimeRequest: LinkedIntegrationRuntimeRequest, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1714,13 +1714,13 @@ items:
       type:
       - string
       description: ''
-    - id: removeNodeParameters
+    - id: linkedIntegrationRuntimeRequest
       type:
-      - azure-arm-datafactory.IntegrationRuntimeRemoveNodeRequest
+      - azure-arm-datafactory.LinkedIntegrationRuntimeRequest
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1730,15 +1730,15 @@ items:
       type:
       - Promise<void>
   package: azure-arm-datafactory
-- uid: azure-arm-datafactory.IntegrationRuntimes.removeNode_1
-  name: removeNode
+- uid: azure-arm-datafactory.IntegrationRuntimes.removeLinks_1
+  name: removeLinks
   children: []
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-225">Integration runtime에서 노드를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-225">Remove a node from integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-225">자체 호스팅된 integration runtime에서 모든 연결 된 통합 런타임을 특정 데이터 팩터리에서를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-225">Remove all linked integration runtimes under specific data factory in a self-hosted integration runtime.</span></span>
   syntax:
-    content: 'function removeNode(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, removeNodeParameters: IntegrationRuntimeRemoveNodeRequest, callback: ServiceCallback<void>)'
+    content: 'function removeLinks(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, linkedIntegrationRuntimeRequest: LinkedIntegrationRuntimeRequest, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1752,9 +1752,9 @@ items:
       type:
       - string
       description: ''
-    - id: removeNodeParameters
+    - id: linkedIntegrationRuntimeRequest
       type:
-      - azure-arm-datafactory.IntegrationRuntimeRemoveNodeRequest
+      - azure-arm-datafactory.LinkedIntegrationRuntimeRequest
       description: ''
     - id: callback
       type:
@@ -1764,39 +1764,39 @@ items:
       type:
       - Promise<void>
   package: azure-arm-datafactory
-- uid: azure-arm-datafactory.IntegrationRuntimes.removeNodeWithHttpOperationResponse
-  name: removeNodeWithHttpOperationResponse
+- uid: azure-arm-datafactory.IntegrationRuntimes.removeLinksWithHttpOperationResponse
+  name: removeLinksWithHttpOperationResponse
   children: []
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-226">Integration runtime에서 노드를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-226">Remove a node from integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-226">자체 호스팅된 integration runtime에서 모든 연결 된 통합 런타임을 특정 데이터 팩터리에서를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-226">Remove all linked integration runtimes under specific data factory in a self-hosted integration runtime.</span></span>
   syntax:
-    content: 'function removeNodeWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, removeNodeParameters: IntegrationRuntimeRemoveNodeRequest, options?: function)'
+    content: 'function removeLinksWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, linkedIntegrationRuntimeRequest: LinkedIntegrationRuntimeRequest, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-227">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-227">The resource group name.</span></span>
+        <span data-ttu-id="f8438-227">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-227">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-228">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-228">The factory name.</span></span>
+        <span data-ttu-id="f8438-228">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-228">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-229">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-229">The integration runtime name.</span></span>
-    - id: removeNodeParameters
+        <span data-ttu-id="f8438-229">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-229">The integration runtime name.</span></span>
+    - id: linkedIntegrationRuntimeRequest
       type:
-      - azure-arm-datafactory.IntegrationRuntimeRemoveNodeRequest
+      - azure-arm-datafactory.LinkedIntegrationRuntimeRequest
       description: >
-        <span data-ttu-id="bd782-230">Integration runtime에서 제거할 노드의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-230">The name of the node to be removed from an integration runtime.</span></span>
+        <span data-ttu-id="f8438-230">연결 된 통합 런타임의 데이터 팩터리 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-230">The data factory name for the linked integration runtime.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1809,28 +1809,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-231">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-231">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-231">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-231">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function start(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function start(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-232">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-232">The resource group name.</span></span>
+        <span data-ttu-id="f8438-232">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-232">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-233">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-233">The factory name.</span></span>
+        <span data-ttu-id="f8438-233">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-233">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-234">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-234">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-234">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-234">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1843,7 +1843,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-235">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-235">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-235">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-235">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
     content: 'function start(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
     parameters:
@@ -1873,9 +1873,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-236">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-236">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-236">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-236">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function start(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
+    content: 'function start(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1891,7 +1891,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1907,28 +1907,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-237">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-237">Starts a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-237">ManagedReserved 형식 integration runtime을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-237">Starts a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function startWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function startWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-238">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-238">The resource group name.</span></span>
+        <span data-ttu-id="f8438-238">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-238">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-239">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-239">The factory name.</span></span>
+        <span data-ttu-id="f8438-239">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-239">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-240">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-240">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-240">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-240">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1941,28 +1941,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-241">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-241">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-241">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-241">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function stop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function stop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-242">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-242">The resource group name.</span></span>
+        <span data-ttu-id="f8438-242">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-242">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-243">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-243">The factory name.</span></span>
+        <span data-ttu-id="f8438-243">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-243">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-244">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-244">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-244">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-244">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1975,9 +1975,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-245">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-245">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-245">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-245">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function stop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function stop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1993,7 +1993,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -2009,7 +2009,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-246">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-246">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-246">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-246">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
     content: 'function stop(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<void>)'
     parameters:
@@ -2039,28 +2039,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-247">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-247">Stops a ManagedReserved type integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-247">ManagedReserved 형식 integration runtime을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-247">Stops a ManagedReserved type integration runtime.</span></span>
   syntax:
-    content: 'function stopWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function stopWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-248">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-248">The resource group name.</span></span>
+        <span data-ttu-id="f8438-248">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-248">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-249">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-249">The factory name.</span></span>
+        <span data-ttu-id="f8438-249">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-249">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-250">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-250">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-250">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-250">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -2073,28 +2073,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-251">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-251">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="bd782-252">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-252">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
+  summary: <span data-ttu-id="f8438-251">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-251">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="f8438-252">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-252">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
   syntax:
-    content: 'function syncCredentials(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function syncCredentials(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-253">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-253">The resource group name.</span></span>
+        <span data-ttu-id="f8438-253">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-253">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-254">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-254">The factory name.</span></span>
+        <span data-ttu-id="f8438-254">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-254">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-255">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-255">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-255">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-255">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -2107,7 +2107,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-256">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-256">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="bd782-257">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-257">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
+  summary: <span data-ttu-id="f8438-256">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-256">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="f8438-257">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-257">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
   syntax:
     content: 'function syncCredentials(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<void>)'
     parameters:
@@ -2137,9 +2137,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-258">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-258">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="bd782-259">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-259">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
+  summary: <span data-ttu-id="f8438-258">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-258">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="f8438-259">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-259">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
   syntax:
-    content: 'function syncCredentials(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function syncCredentials(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -2155,7 +2155,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -2171,28 +2171,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-260">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-260">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="bd782-261">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-261">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
+  summary: <span data-ttu-id="f8438-260">통합 런타임 노드 간에 자격 증명을 동기화 하려면 integration runtime을 강제 적용 하 고 디스패처 노드에 있는 모든 작업자 노드에서 자격 증명을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-260">Force the integration runtime to synchronize credentials across integration runtime nodes, and this will override the credentials across all worker nodes with those available on the dispatcher node.</span></span> <span data-ttu-id="f8438-261">최신 자격 증명 백업 파일에 이미 있는 경우 수동으로 가져와야 (기본 설정)이이 API를 직접 사용 하 여 보다 자체 호스팅된 통합 런타임 노드에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-261">If you already have the latest credential backup file, you should manually import it (preferred) on any self-hosted integration runtime node than using this API directly.</span></span>
   syntax:
-    content: 'function syncCredentialsWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function syncCredentialsWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-262">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-262">The resource group name.</span></span>
+        <span data-ttu-id="f8438-262">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-262">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-263">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-263">The factory name.</span></span>
+        <span data-ttu-id="f8438-263">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-263">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-264">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-264">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-264">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-264">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -2205,38 +2205,38 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-265">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-265">Updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-265">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-265">Updates an integration runtime.</span></span>
   syntax:
-    content: 'function update(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, options?: function)'
+    content: 'function update(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-266">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-266">The resource group name.</span></span>
+        <span data-ttu-id="f8438-266">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-266">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-267">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-267">The factory name.</span></span>
+        <span data-ttu-id="f8438-267">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-267">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-268">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-268">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-268">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-268">The integration runtime name.</span></span>
     - id: updateIntegrationRuntimeRequest
       type:
       - azure-arm-datafactory.UpdateIntegrationRuntimeRequest
       description: >
-        <span data-ttu-id="bd782-269">Integration runtime을 업데이트 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-269">The parameters for updating an integration runtime.</span></span>
+        <span data-ttu-id="f8438-269">Integration runtime을 업데이트 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-269">The parameters for updating an integration runtime.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
       type:
-      - Promise<azure-arm-datafactory.IntegrationRuntimeStatusResponse>
+      - Promise<azure-arm-datafactory.IntegrationRuntimeResource>
   package: azure-arm-datafactory
 - uid: azure-arm-datafactory.IntegrationRuntimes.update_1
   name: update
@@ -2244,9 +2244,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-270">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-270">Updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-270">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-270">Updates an integration runtime.</span></span>
   syntax:
-    content: 'function update(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
+    content: 'function update(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, callback: ServiceCallback<IntegrationRuntimeResource>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -2266,11 +2266,11 @@ items:
       description: ''
     - id: callback
       type:
-      - ServiceCallback<azure-arm-datafactory.IntegrationRuntimeStatusResponse>
+      - ServiceCallback<azure-arm-datafactory.IntegrationRuntimeResource>
       description: ''
     return:
       type:
-      - Promise<azure-arm-datafactory.IntegrationRuntimeStatusResponse>
+      - Promise<azure-arm-datafactory.IntegrationRuntimeResource>
   package: azure-arm-datafactory
 - uid: azure-arm-datafactory.IntegrationRuntimes.update_2
   name: update
@@ -2278,9 +2278,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-271">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-271">Updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-271">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-271">Updates an integration runtime.</span></span>
   syntax:
-    content: 'function update(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, options: function, callback: ServiceCallback<IntegrationRuntimeStatusResponse>)'
+    content: 'function update(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, options: Object, callback: ServiceCallback<IntegrationRuntimeResource>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -2300,15 +2300,15 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
-      - ServiceCallback<azure-arm-datafactory.IntegrationRuntimeStatusResponse>
+      - ServiceCallback<azure-arm-datafactory.IntegrationRuntimeResource>
       description: ''
     return:
       type:
-      - Promise<azure-arm-datafactory.IntegrationRuntimeStatusResponse>
+      - Promise<azure-arm-datafactory.IntegrationRuntimeResource>
   package: azure-arm-datafactory
 - uid: azure-arm-datafactory.IntegrationRuntimes.updateWithHttpOperationResponse
   name: updateWithHttpOperationResponse
@@ -2316,38 +2316,38 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-272">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-272">Updates an integration runtime.</span></span>
+  summary: <span data-ttu-id="f8438-272">Integration runtime을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-272">Updates an integration runtime.</span></span>
   syntax:
-    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, options?: function)'
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, updateIntegrationRuntimeRequest: UpdateIntegrationRuntimeRequest, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-273">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-273">The resource group name.</span></span>
+        <span data-ttu-id="f8438-273">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-273">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-274">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-274">The factory name.</span></span>
+        <span data-ttu-id="f8438-274">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-274">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-275">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-275">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-275">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-275">The integration runtime name.</span></span>
     - id: updateIntegrationRuntimeRequest
       type:
       - azure-arm-datafactory.UpdateIntegrationRuntimeRequest
       description: >
-        <span data-ttu-id="bd782-276">Integration runtime을 업데이트 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-276">The parameters for updating an integration runtime.</span></span>
+        <span data-ttu-id="f8438-276">Integration runtime을 업데이트 하는 것에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-276">The parameters for updating an integration runtime.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
       type:
-      - Promise<HttpOperationResponse<azure-arm-datafactory.IntegrationRuntimeStatusResponse>>
+      - Promise<HttpOperationResponse<azure-arm-datafactory.IntegrationRuntimeResource>>
   package: azure-arm-datafactory
 - uid: azure-arm-datafactory.IntegrationRuntimes.upgrade
   name: upgrade
@@ -2355,28 +2355,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-277">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-277">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
+  summary: <span data-ttu-id="f8438-277">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-277">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
   syntax:
-    content: 'function upgrade(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function upgrade(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-278">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-278">The resource group name.</span></span>
+        <span data-ttu-id="f8438-278">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-278">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-279">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-279">The factory name.</span></span>
+        <span data-ttu-id="f8438-279">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-279">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-280">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-280">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-280">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-280">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -2389,7 +2389,7 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-281">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-281">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
+  summary: <span data-ttu-id="f8438-281">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-281">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
   syntax:
     content: 'function upgrade(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, callback: ServiceCallback<void>)'
     parameters:
@@ -2419,9 +2419,9 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-282">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-282">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
+  summary: <span data-ttu-id="f8438-282">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-282">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
   syntax:
-    content: 'function upgrade(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function upgrade(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -2437,7 +2437,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -2453,28 +2453,28 @@ items:
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="bd782-283">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-283">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
+  summary: <span data-ttu-id="f8438-283">가용성 경우 자체 호스팅된 통합 런타임을 최신 버전으로 업그레이드 합니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-283">Upgrade self-hosted integration runtime to latest version if availably.</span></span>
   syntax:
-    content: 'function upgradeWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: function)'
+    content: 'function upgradeWithHttpOperationResponse(resourceGroupName: string, factoryName: string, integrationRuntimeName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-284">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-284">The resource group name.</span></span>
+        <span data-ttu-id="f8438-284">리소스 그룹 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-284">The resource group name.</span></span>
     - id: factoryName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-285">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-285">The factory name.</span></span>
+        <span data-ttu-id="f8438-285">팩터리의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-285">The factory name.</span></span>
     - id: integrationRuntimeName
       type:
       - string
       description: >
-        <span data-ttu-id="bd782-286">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="bd782-286">The integration runtime name.</span></span>
+        <span data-ttu-id="f8438-286">통합 런타임 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f8438-286">The integration runtime name.</span></span>
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -2654,11 +2654,11 @@ references:
   - name: IntegrationRuntimeRegenerateKeyParameters
     fullName: IntegrationRuntimeRegenerateKeyParameters
     uid: azure-arm-datafactory.IntegrationRuntimeRegenerateKeyParameters
-- uid: azure-arm-datafactory.IntegrationRuntimeRemoveNodeRequest
+- uid: azure-arm-datafactory.LinkedIntegrationRuntimeRequest
   spec.typeScript:
-  - name: IntegrationRuntimeRemoveNodeRequest
-    fullName: IntegrationRuntimeRemoveNodeRequest
-    uid: azure-arm-datafactory.IntegrationRuntimeRemoveNodeRequest
+  - name: LinkedIntegrationRuntimeRequest
+    fullName: LinkedIntegrationRuntimeRequest
+    uid: azure-arm-datafactory.LinkedIntegrationRuntimeRequest
 - uid: azure-arm-datafactory.UpdateIntegrationRuntimeRequest
   spec.typeScript:
   - name: UpdateIntegrationRuntimeRequest
