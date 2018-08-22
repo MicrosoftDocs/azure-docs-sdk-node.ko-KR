@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: f3536bd47d2ed09b6411c796c29449a7d7e491c0
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: bdd6c56e59d8dfe17de1ddc664d777b890561e57
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40068160"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41693270"
 items:
 - uid: azure-arm-storageimportexport.Jobs
   name: Jobs
@@ -63,7 +63,7 @@ items:
   - typeScript
   summary: 새 가져오기/내보내기 작업을 만들거나 지정된 된 구독에 기존 가져오기/내보내기 작업을 업데이트 합니다.
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, jobName: string, jobProperties: Job, options?: function)'
+    content: 'function createOrUpdate(resourceGroupName: string, jobName: string, jobProperties: Job, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -82,7 +82,7 @@ items:
         만드는 동안 지정 해야 하는 가져오기/내보내기 작업의 속성입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -127,7 +127,7 @@ items:
   - typeScript
   summary: 새 가져오기/내보내기 작업을 만들거나 지정된 된 구독에 기존 가져오기/내보내기 작업을 업데이트 합니다.
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, jobName: string, jobProperties: Job, options: function, callback: ServiceCallback<Job>)'
+    content: 'function createOrUpdate(resourceGroupName: string, jobName: string, jobProperties: Job, options: Object, callback: ServiceCallback<Job>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -143,7 +143,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -161,7 +161,7 @@ items:
   - typeScript
   summary: 새 가져오기/내보내기 작업을 만들거나 지정된 된 구독에 기존 가져오기/내보내기 작업을 업데이트 합니다.
   syntax:
-    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, jobName: string, jobProperties: Job, options?: function)'
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, jobName: string, jobProperties: Job, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -180,7 +180,7 @@ items:
         만드는 동안 지정 해야 하는 가져오기/내보내기 작업의 속성입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -195,7 +195,7 @@ items:
   - typeScript
   summary: 기존 가져오기/내보내기 작업을 삭제합니다. 만 가져오기/내보내기 작업 만들기에서 또는 완료 상태를 삭제할 수 있습니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, jobName: string, options?: function)'
+    content: 'function deleteMethod(resourceGroupName: string, jobName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -209,7 +209,7 @@ items:
         Import/export 작업의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -224,7 +224,7 @@ items:
   - typeScript
   summary: 기존 가져오기/내보내기 작업을 삭제합니다. 만 가져오기/내보내기 작업 만들기에서 또는 완료 상태를 삭제할 수 있습니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, jobName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteMethod(resourceGroupName: string, jobName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -236,7 +236,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -280,7 +280,7 @@ items:
   - typeScript
   summary: 기존 가져오기/내보내기 작업을 삭제합니다. 만 가져오기/내보내기 작업 만들기에서 또는 완료 상태를 삭제할 수 있습니다.
   syntax:
-    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, jobName: string, options?: function)'
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, jobName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -294,7 +294,7 @@ items:
         Import/export 작업의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -335,7 +335,7 @@ items:
   - typeScript
   summary: 기존 가져오기/내보내기 작업에 대 한 정보를 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, jobName: string, options: function, callback: ServiceCallback<Job>)'
+    content: 'function get(resourceGroupName: string, jobName: string, options: Object, callback: ServiceCallback<Job>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -347,7 +347,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -365,7 +365,7 @@ items:
   - typeScript
   summary: 기존 가져오기/내보내기 작업에 대 한 정보를 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, jobName: string, options?: function)'
+    content: 'function get(resourceGroupName: string, jobName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -379,7 +379,7 @@ items:
         Import/export 작업의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -394,7 +394,7 @@ items:
   - typeScript
   summary: 기존 가져오기/내보내기 작업에 대 한 정보를 가져옵니다.
   syntax:
-    content: 'function getWithHttpOperationResponse(resourceGroupName: string, jobName: string, options?: function)'
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, jobName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -408,7 +408,7 @@ items:
         Import/export 작업의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -441,11 +441,11 @@ items:
   - typeScript
   summary: 구독에서 모든 활성 및 완료 된 import/export 작업을 가져옵니다.
   syntax:
-    content: 'function list(options: function, callback: ServiceCallback<JobListResult>)'
+    content: 'function list(options: Object, callback: ServiceCallback<JobListResult>)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -463,11 +463,11 @@ items:
   - typeScript
   summary: 구독에서 모든 활성 및 완료 된 import/export 작업을 가져옵니다.
   syntax:
-    content: 'function list(options?: function)'
+    content: 'function list(options?: Object)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -482,7 +482,7 @@ items:
   - typeScript
   summary: 지정 된 가져오기/내보내기 작업에서 모든 드라이브에 대 한 BitLocker 키를 나열합니다.
   syntax:
-    content: 'function listBitLockerKeys(resourceGroupName: string, jobName: string, options?: function)'
+    content: 'function listBitLockerKeys(resourceGroupName: string, jobName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -496,7 +496,7 @@ items:
         Import/export 작업의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -537,7 +537,7 @@ items:
   - typeScript
   summary: 지정 된 가져오기/내보내기 작업에서 모든 드라이브에 대 한 BitLocker 키를 나열합니다.
   syntax:
-    content: 'function listBitLockerKeys(resourceGroupName: string, jobName: string, options: function, callback: ServiceCallback<BitLockerKeysListResult>)'
+    content: 'function listBitLockerKeys(resourceGroupName: string, jobName: string, options: Object, callback: ServiceCallback<BitLockerKeysListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -549,7 +549,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -567,7 +567,7 @@ items:
   - typeScript
   summary: 지정 된 가져오기/내보내기 작업에서 모든 드라이브에 대 한 BitLocker 키를 나열합니다.
   syntax:
-    content: 'function listBitLockerKeysWithHttpOperationResponse(resourceGroupName: string, jobName: string, options?: function)'
+    content: 'function listBitLockerKeysWithHttpOperationResponse(resourceGroupName: string, jobName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -581,7 +581,7 @@ items:
         Import/export 작업의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -596,7 +596,7 @@ items:
   - typeScript
   summary: 리소스 그룹의 모든 활성 및 완료 된 import/export 작업을 반환합니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -605,7 +605,7 @@ items:
         리소스 그룹 이름을 사용자 구독 내의 리소스 그룹을 고유 하 게 식별합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -642,7 +642,7 @@ items:
   - typeScript
   summary: 리소스 그룹의 모든 활성 및 완료 된 import/export 작업을 반환합니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options: function, callback: ServiceCallback<JobListResult>)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options: Object, callback: ServiceCallback<JobListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -650,7 +650,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -668,7 +668,7 @@ items:
   - typeScript
   summary: 리소스 그룹의 모든 활성 및 완료 된 import/export 작업을 반환합니다.
   syntax:
-    content: 'function listByResourceGroupNext(nextPageLink: string, options?: function)'
+    content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -677,7 +677,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -692,7 +692,7 @@ items:
   - typeScript
   summary: 리소스 그룹의 모든 활성 및 완료 된 import/export 작업을 반환합니다.
   syntax:
-    content: 'function listByResourceGroupNext(nextPageLink: string, options: function, callback: ServiceCallback<JobListResult>)'
+    content: 'function listByResourceGroupNext(nextPageLink: string, options: Object, callback: ServiceCallback<JobListResult>)'
     parameters:
     - id: nextPageLink
       type:
@@ -700,7 +700,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -740,7 +740,7 @@ items:
   - typeScript
   summary: 리소스 그룹의 모든 활성 및 완료 된 import/export 작업을 반환합니다.
   syntax:
-    content: 'function listByResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listByResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -749,7 +749,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -764,7 +764,7 @@ items:
   - typeScript
   summary: 리소스 그룹의 모든 활성 및 완료 된 import/export 작업을 반환합니다.
   syntax:
-    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -773,7 +773,7 @@ items:
         리소스 그룹 이름을 사용자 구독 내의 리소스 그룹을 고유 하 게 식별합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -788,7 +788,7 @@ items:
   - typeScript
   summary: 구독에서 모든 활성 및 완료 된 import/export 작업을 가져옵니다.
   syntax:
-    content: 'function listNext(nextPageLink: string, options?: function)'
+    content: 'function listNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -797,7 +797,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -834,7 +834,7 @@ items:
   - typeScript
   summary: 구독에서 모든 활성 및 완료 된 import/export 작업을 가져옵니다.
   syntax:
-    content: 'function listNext(nextPageLink: string, options: function, callback: ServiceCallback<JobListResult>)'
+    content: 'function listNext(nextPageLink: string, options: Object, callback: ServiceCallback<JobListResult>)'
     parameters:
     - id: nextPageLink
       type:
@@ -842,7 +842,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -860,7 +860,7 @@ items:
   - typeScript
   summary: 구독에서 모든 활성 및 완료 된 import/export 작업을 가져옵니다.
   syntax:
-    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -869,7 +869,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -884,11 +884,11 @@ items:
   - typeScript
   summary: 구독에서 모든 활성 및 완료 된 import/export 작업을 가져옵니다.
   syntax:
-    content: 'function listWithHttpOperationResponse(options?: function)'
+    content: 'function listWithHttpOperationResponse(options?: Object)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -903,7 +903,7 @@ items:
   - typeScript
   summary: 대상 리소스 그룹에 리소스 그룹에서 지정 된 import/export 작업을 이동합니다. 대상 리소스 그룹은 다른 구독에 있는 수 있습니다.
   syntax:
-    content: 'function move(resourceGroupName: string, moveJobsParameters: MoveJobParameters, options?: function)'
+    content: 'function move(resourceGroupName: string, moveJobsParameters: MoveJobParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -917,7 +917,7 @@ items:
         다른 리소스 그룹에서 작업을 이동 하 게 제공 되는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -958,7 +958,7 @@ items:
   - typeScript
   summary: 대상 리소스 그룹에 리소스 그룹에서 지정 된 import/export 작업을 이동합니다. 대상 리소스 그룹은 다른 구독에 있는 수 있습니다.
   syntax:
-    content: 'function move(resourceGroupName: string, moveJobsParameters: MoveJobParameters, options: function, callback: ServiceCallback<void>)'
+    content: 'function move(resourceGroupName: string, moveJobsParameters: MoveJobParameters, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -970,7 +970,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -988,7 +988,7 @@ items:
   - typeScript
   summary: 대상 리소스 그룹에 리소스 그룹에서 지정 된 import/export 작업을 이동합니다. 대상 리소스 그룹은 다른 구독에 있는 수 있습니다.
   syntax:
-    content: 'function moveWithHttpOperationResponse(resourceGroupName: string, moveJobsParameters: MoveJobParameters, options?: function)'
+    content: 'function moveWithHttpOperationResponse(resourceGroupName: string, moveJobsParameters: MoveJobParameters, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1002,7 +1002,7 @@ items:
         다른 리소스 그룹에서 작업을 이동 하 게 제공 되는 매개 변수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1017,7 +1017,7 @@ items:
   - typeScript
   summary: Import/export 작업의 특정 속성을 업데이트합니다. 가져오기 또는 내보내기 작업으로 구성 된 하드 드라이브가 Microsoft 데이터 센터로 반송는 Import/Export 서비스를 알리기 위해이 작업을 호출할 수 있습니다. 기존 작업을 취소 하려면 데도 수 있습니다.
   syntax:
-    content: 'function update(resourceGroupName: string, jobName: string, jobProperties: MutableJob, options?: function)'
+    content: 'function update(resourceGroupName: string, jobName: string, jobProperties: MutableJob, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1036,7 +1036,7 @@ items:
         Import/export 작업 속성 업데이트 수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1081,7 +1081,7 @@ items:
   - typeScript
   summary: Import/export 작업의 특정 속성을 업데이트합니다. 가져오기 또는 내보내기 작업으로 구성 된 하드 드라이브가 Microsoft 데이터 센터로 반송는 Import/Export 서비스를 알리기 위해이 작업을 호출할 수 있습니다. 기존 작업을 취소 하려면 데도 수 있습니다.
   syntax:
-    content: 'function update(resourceGroupName: string, jobName: string, jobProperties: MutableJob, options: function, callback: ServiceCallback<Job>)'
+    content: 'function update(resourceGroupName: string, jobName: string, jobProperties: MutableJob, options: Object, callback: ServiceCallback<Job>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1097,7 +1097,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1115,7 +1115,7 @@ items:
   - typeScript
   summary: Import/export 작업의 특정 속성을 업데이트합니다. 가져오기 또는 내보내기 작업으로 구성 된 하드 드라이브가 Microsoft 데이터 센터로 반송는 Import/Export 서비스를 알리기 위해이 작업을 호출할 수 있습니다. 기존 작업을 취소 하려면 데도 수 있습니다.
   syntax:
-    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, jobName: string, jobProperties: MutableJob, options?: function)'
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, jobName: string, jobProperties: MutableJob, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1134,7 +1134,7 @@ items:
         Import/export 작업 속성 업데이트 수입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:

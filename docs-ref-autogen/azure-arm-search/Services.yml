@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 890e7fe1421add5c5cf8b5726ae17f00d92c614d
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 47b05dca1d614e35aa0594f15d1edf33bf5a7ae3
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40070992"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41701638"
 items:
 - uid: azure-arm-search.Services
   name: Services
@@ -51,7 +51,7 @@ items:
   - typeScript
   summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
   syntax:
-    content: 'function beginCreateOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: function)'
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -70,7 +70,7 @@ items:
         검색 서비스 만들기 또는 업데이트를 정의 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -115,7 +115,7 @@ items:
   - typeScript
   summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
   syntax:
-    content: 'function beginCreateOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options: function, callback: ServiceCallback<SearchService>)'
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options: Object, callback: ServiceCallback<SearchService>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -131,7 +131,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -149,7 +149,7 @@ items:
   - typeScript
   summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
   syntax:
-    content: 'function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: function)'
+    content: 'function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -168,7 +168,7 @@ items:
         검색 서비스 만들기 또는 업데이트를 정의 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -186,7 +186,7 @@ items:
 
     서비스 URI의 일부 이므로 검색 서비스 이름은 전역적으로 고유 해야 (https://<name>. search.windows.net).
   syntax:
-    content: 'function checkNameAvailability(name: string, options?: function)'
+    content: 'function checkNameAvailability(name: string, options?: Object)'
     parameters:
     - id: name
       type:
@@ -195,7 +195,7 @@ items:
         유효성을 검사 하려면 검색 서비스 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -238,7 +238,7 @@ items:
 
     서비스 URI의 일부 이므로 검색 서비스 이름은 전역적으로 고유 해야 (https://<name>. search.windows.net).
   syntax:
-    content: 'function checkNameAvailability(name: string, options: function, callback: ServiceCallback<CheckNameAvailabilityOutput>)'
+    content: 'function checkNameAvailability(name: string, options: Object, callback: ServiceCallback<CheckNameAvailabilityOutput>)'
     parameters:
     - id: name
       type:
@@ -246,7 +246,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -267,7 +267,7 @@ items:
 
     서비스 URI의 일부 이므로 검색 서비스 이름은 전역적으로 고유 해야 (https://<name>. search.windows.net).
   syntax:
-    content: 'function checkNameAvailabilityWithHttpOperationResponse(name: string, options?: function)'
+    content: 'function checkNameAvailabilityWithHttpOperationResponse(name: string, options?: Object)'
     parameters:
     - id: name
       type:
@@ -276,7 +276,7 @@ items:
         유효성을 검사 하려면 검색 서비스 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -291,7 +291,7 @@ items:
   - typeScript
   summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: function)'
+    content: 'function createOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -310,7 +310,7 @@ items:
         검색 서비스 만들기 또는 업데이트를 정의 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -355,7 +355,7 @@ items:
   - typeScript
   summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
   syntax:
-    content: 'function createOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options: function, callback: ServiceCallback<SearchService>)'
+    content: 'function createOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options: Object, callback: ServiceCallback<SearchService>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -371,7 +371,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -389,7 +389,7 @@ items:
   - typeScript
   summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
   syntax:
-    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: function)'
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -408,7 +408,7 @@ items:
         검색 서비스 만들기 또는 업데이트를 정의 합니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -423,7 +423,7 @@ items:
   - typeScript
   summary: 연결된 된 리소스와 함께 지정 된 리소스 그룹에서 검색 서비스를 삭제합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, options?: function)'
+    content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -437,7 +437,7 @@ items:
         지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -478,7 +478,7 @@ items:
   - typeScript
   summary: 연결된 된 리소스와 함께 지정 된 리소스 그룹에서 검색 서비스를 삭제합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -490,7 +490,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -508,7 +508,7 @@ items:
   - typeScript
   summary: 연결된 된 리소스와 함께 지정 된 리소스 그룹에서 검색 서비스를 삭제합니다.
   syntax:
-    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, options?: function)'
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -522,7 +522,7 @@ items:
         지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -563,7 +563,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에 지정 된 이름을 사용 하 여 검색 서비스를 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, searchServiceName: string, options: function, callback: ServiceCallback<SearchService>)'
+    content: 'function get(resourceGroupName: string, searchServiceName: string, options: Object, callback: ServiceCallback<SearchService>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -575,7 +575,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -593,7 +593,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에 지정 된 이름을 사용 하 여 검색 서비스를 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, searchServiceName: string, options?: function)'
+    content: 'function get(resourceGroupName: string, searchServiceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -607,7 +607,7 @@ items:
         지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -622,7 +622,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에 지정 된 이름을 사용 하 여 검색 서비스를 가져옵니다.
   syntax:
-    content: 'function getWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, options?: function)'
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -636,7 +636,7 @@ items:
         지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -651,7 +651,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에서 모든 Search 서비스의 목록을 가져옵니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -660,7 +660,7 @@ items:
         현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -697,7 +697,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에서 모든 Search 서비스의 목록을 가져옵니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options: function, callback: ServiceCallback<SearchServiceListResult>)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options: Object, callback: ServiceCallback<SearchServiceListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -705,7 +705,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -723,7 +723,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에서 모든 Search 서비스의 목록을 가져옵니다.
   syntax:
-    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -732,7 +732,7 @@ items:
         현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -747,7 +747,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에서 기존 검색 서비스를 업데이트합니다.
   syntax:
-    content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: function)'
+    content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -766,7 +766,7 @@ items:
         정의 업데이트를 검색 서비스입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -811,7 +811,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에서 기존 검색 서비스를 업데이트합니다.
   syntax:
-    content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, options: function, callback: ServiceCallback<SearchService>)'
+    content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, options: Object, callback: ServiceCallback<SearchService>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -827,7 +827,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -845,7 +845,7 @@ items:
   - typeScript
   summary: 지정된 된 리소스 그룹에서 기존 검색 서비스를 업데이트합니다.
   syntax:
-    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: function)'
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -864,7 +864,7 @@ items:
         정의 업데이트를 검색 서비스입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
