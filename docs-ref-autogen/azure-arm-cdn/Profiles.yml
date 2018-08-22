@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 3db9285a26350d77ab0e320d0a76f9ca9c475673
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: a6bd42bdb75ef08822e4561c16a8963af9d03269
+ms.sourcegitcommit: 286f52ea38c9eff2ec9d4f8cabeb86f62fd9c406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2018
-ms.locfileid: "40066801"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41685041"
 items:
 - uid: azure-arm-cdn.Profiles
   name: Profiles
@@ -83,7 +83,7 @@ items:
   - typeScript
   summary: 지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.
   syntax:
-    content: 'function beginCreate(resourceGroupName: string, profileName: string, profile: Profile, options?: function)'
+    content: 'function beginCreate(resourceGroupName: string, profileName: string, profile: Profile, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -102,7 +102,7 @@ items:
         새 프로필을 만드는 데 필요한 프로필 속성입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -147,7 +147,7 @@ items:
   - typeScript
   summary: 지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.
   syntax:
-    content: 'function beginCreate(resourceGroupName: string, profileName: string, profile: Profile, options: function, callback: ServiceCallback<Profile>)'
+    content: 'function beginCreate(resourceGroupName: string, profileName: string, profile: Profile, options: Object, callback: ServiceCallback<Profile>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -163,7 +163,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -181,7 +181,7 @@ items:
   - typeScript
   summary: 지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.
   syntax:
-    content: 'function beginCreateWithHttpOperationResponse(resourceGroupName: string, profileName: string, profile: Profile, options?: function)'
+    content: 'function beginCreateWithHttpOperationResponse(resourceGroupName: string, profileName: string, profile: Profile, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -200,7 +200,7 @@ items:
         새 프로필을 만드는 데 필요한 프로필 속성입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -215,7 +215,7 @@ items:
   - typeScript
   summary: 지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다. 모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.
   syntax:
-    content: 'function beginDeleteMethod(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function beginDeleteMethod(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -229,7 +229,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -270,7 +270,7 @@ items:
   - typeScript
   summary: 지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다. 모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.
   syntax:
-    content: 'function beginDeleteMethod(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function beginDeleteMethod(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -282,7 +282,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -300,7 +300,7 @@ items:
   - typeScript
   summary: 지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다. 모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.
   syntax:
-    content: 'function beginDeleteMethodWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function beginDeleteMethodWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -314,7 +314,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -355,7 +355,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.
   syntax:
-    content: 'function beginUpdate(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<Profile>)'
+    content: 'function beginUpdate(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<Profile>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -367,7 +367,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -385,7 +385,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.
   syntax:
-    content: 'function beginUpdate(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function beginUpdate(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -399,7 +399,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -414,7 +414,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.
   syntax:
-    content: 'function beginUpdateWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function beginUpdateWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -428,7 +428,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -443,7 +443,7 @@ items:
   - typeScript
   summary: 지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.
   syntax:
-    content: 'function create(resourceGroupName: string, profileName: string, profile: Profile, options?: function)'
+    content: 'function create(resourceGroupName: string, profileName: string, profile: Profile, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -462,7 +462,7 @@ items:
         새 프로필을 만드는 데 필요한 프로필 속성입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -507,7 +507,7 @@ items:
   - typeScript
   summary: 지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.
   syntax:
-    content: 'function create(resourceGroupName: string, profileName: string, profile: Profile, options: function, callback: ServiceCallback<Profile>)'
+    content: 'function create(resourceGroupName: string, profileName: string, profile: Profile, options: Object, callback: ServiceCallback<Profile>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -523,7 +523,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -541,7 +541,7 @@ items:
   - typeScript
   summary: 지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.
   syntax:
-    content: 'function createWithHttpOperationResponse(resourceGroupName: string, profileName: string, profile: Profile, options?: function)'
+    content: 'function createWithHttpOperationResponse(resourceGroupName: string, profileName: string, profile: Profile, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -560,7 +560,7 @@ items:
         새 프로필을 만드는 데 필요한 프로필 속성입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -601,7 +601,7 @@ items:
   - typeScript
   summary: 지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다. 모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function deleteMethod(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -615,7 +615,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -630,7 +630,7 @@ items:
   - typeScript
   summary: 지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다. 모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.
   syntax:
-    content: 'function deleteMethod(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<void>)'
+    content: 'function deleteMethod(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<void>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -642,7 +642,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -660,7 +660,7 @@ items:
   - typeScript
   summary: 지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다. 모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.
   syntax:
-    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -674,7 +674,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -692,7 +692,7 @@ items:
 
     Supplemnetal 포털 아직 표준 프로필;의 코어 보고서와 같은 Azure portal에서 사용할 수 없는 고급 기능을 구성 하는 고급 HTTP 보고서 및 실시간 통계 및 premium 프로필에서 경고 규칙 엔진을 제공 합니다. SSO URI에는 약 10 분 마다 변경 됩니다.
   syntax:
-    content: 'function generateSsoUri(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function generateSsoUri(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -706,7 +706,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -753,7 +753,7 @@ items:
 
     Supplemnetal 포털 아직 표준 프로필;의 코어 보고서와 같은 Azure portal에서 사용할 수 없는 고급 기능을 구성 하는 고급 HTTP 보고서 및 실시간 통계 및 premium 프로필에서 경고 규칙 엔진을 제공 합니다. SSO URI에는 약 10 분 마다 변경 됩니다.
   syntax:
-    content: 'function generateSsoUri(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<SsoUri>)'
+    content: 'function generateSsoUri(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<SsoUri>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -765,7 +765,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -786,7 +786,7 @@ items:
 
     Supplemnetal 포털 아직 표준 프로필;의 코어 보고서와 같은 Azure portal에서 사용할 수 없는 고급 기능을 구성 하는 고급 HTTP 보고서 및 실시간 통계 및 premium 프로필에서 경고 규칙 엔진을 제공 합니다. SSO URI에는 약 10 분 마다 변경 됩니다.
   syntax:
-    content: 'function generateSsoUriWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function generateSsoUriWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -800,7 +800,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -815,7 +815,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름 지정 된 구독 및 리소스 그룹을 사용 하 여 CDN 프로필을 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function get(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -829,7 +829,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -870,7 +870,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름 지정 된 구독 및 리소스 그룹을 사용 하 여 CDN 프로필을 가져옵니다.
   syntax:
-    content: 'function get(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<Profile>)'
+    content: 'function get(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<Profile>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -882,7 +882,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -900,7 +900,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름 지정 된 구독 및 리소스 그룹을 사용 하 여 CDN 프로필을 가져옵니다.
   syntax:
-    content: 'function getWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -914,7 +914,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -929,11 +929,11 @@ items:
   - typeScript
   summary: Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function list(options?: function)'
+    content: 'function list(options?: Object)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -966,11 +966,11 @@ items:
   - typeScript
   summary: Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function list(options: function, callback: ServiceCallback<ProfileListResult>)'
+    content: 'function list(options: Object, callback: ServiceCallback<ProfileListResult>)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -988,7 +988,7 @@ items:
   - typeScript
   summary: 리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -997,7 +997,7 @@ items:
         Azure 구독 내의 리소스 그룹의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1034,7 +1034,7 @@ items:
   - typeScript
   summary: 리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listByResourceGroup(resourceGroupName: string, options: function, callback: ServiceCallback<ProfileListResult>)'
+    content: 'function listByResourceGroup(resourceGroupName: string, options: Object, callback: ServiceCallback<ProfileListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1042,7 +1042,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1082,7 +1082,7 @@ items:
   - typeScript
   summary: 리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listByResourceGroupNext(nextPageLink: string, options: function, callback: ServiceCallback<ProfileListResult>)'
+    content: 'function listByResourceGroupNext(nextPageLink: string, options: Object, callback: ServiceCallback<ProfileListResult>)'
     parameters:
     - id: nextPageLink
       type:
@@ -1090,7 +1090,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1108,7 +1108,7 @@ items:
   - typeScript
   summary: 리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listByResourceGroupNext(nextPageLink: string, options?: function)'
+    content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -1117,7 +1117,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1132,7 +1132,7 @@ items:
   - typeScript
   summary: 리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listByResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listByResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -1141,7 +1141,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1156,7 +1156,7 @@ items:
   - typeScript
   summary: 리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: function)'
+    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1165,7 +1165,7 @@ items:
         Azure 구독 내의 리소스 그룹의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1180,7 +1180,7 @@ items:
   - typeScript
   summary: Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listNext(nextPageLink: string, options?: function)'
+    content: 'function listNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -1189,7 +1189,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1226,7 +1226,7 @@ items:
   - typeScript
   summary: Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listNext(nextPageLink: string, options: function, callback: ServiceCallback<ProfileListResult>)'
+    content: 'function listNext(nextPageLink: string, options: Object, callback: ServiceCallback<ProfileListResult>)'
     parameters:
     - id: nextPageLink
       type:
@@ -1234,7 +1234,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1252,7 +1252,7 @@ items:
   - typeScript
   summary: Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -1261,7 +1261,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1276,7 +1276,7 @@ items:
   - typeScript
   summary: 할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.
   syntax:
-    content: 'function listResourceUsage(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function listResourceUsage(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1290,7 +1290,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1331,7 +1331,7 @@ items:
   - typeScript
   summary: 할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.
   syntax:
-    content: 'function listResourceUsage(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<ResourceUsageListResult>)'
+    content: 'function listResourceUsage(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<ResourceUsageListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1343,7 +1343,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1361,7 +1361,7 @@ items:
   - typeScript
   summary: 할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.
   syntax:
-    content: 'function listResourceUsageNext(nextPageLink: string, options?: function)'
+    content: 'function listResourceUsageNext(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -1370,7 +1370,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1385,7 +1385,7 @@ items:
   - typeScript
   summary: 할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.
   syntax:
-    content: 'function listResourceUsageNext(nextPageLink: string, options: function, callback: ServiceCallback<ResourceUsageListResult>)'
+    content: 'function listResourceUsageNext(nextPageLink: string, options: Object, callback: ServiceCallback<ResourceUsageListResult>)'
     parameters:
     - id: nextPageLink
       type:
@@ -1393,7 +1393,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1433,7 +1433,7 @@ items:
   - typeScript
   summary: 할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.
   syntax:
-    content: 'function listResourceUsageNextWithHttpOperationResponse(nextPageLink: string, options?: function)'
+    content: 'function listResourceUsageNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
     parameters:
     - id: nextPageLink
       type:
@@ -1442,7 +1442,7 @@ items:
         목록 작업에 성공적으로 이전 호출의 NextLink입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1457,7 +1457,7 @@ items:
   - typeScript
   summary: 할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.
   syntax:
-    content: 'function listResourceUsageWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function listResourceUsageWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1471,7 +1471,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1486,7 +1486,7 @@ items:
   - typeScript
   summary: 현재 프로필에 지원 되는 최적화 형식을 가져옵니다. 사용자는 나열된 된 값에서 최적화 형식을 사용 하 여 끝점을 만들 수 있습니다.
   syntax:
-    content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1500,7 +1500,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1541,7 +1541,7 @@ items:
   - typeScript
   summary: 현재 프로필에 지원 되는 최적화 형식을 가져옵니다. 사용자는 나열된 된 값에서 최적화 형식을 사용 하 여 끝점을 만들 수 있습니다.
   syntax:
-    content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<SupportedOptimizationTypesListResult>)'
+    content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<SupportedOptimizationTypesListResult>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1553,7 +1553,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1571,7 +1571,7 @@ items:
   - typeScript
   summary: 현재 프로필에 지원 되는 최적화 형식을 가져옵니다. 사용자는 나열된 된 값에서 최적화 형식을 사용 하 여 끝점을 만들 수 있습니다.
   syntax:
-    content: 'function listSupportedOptimizationTypesWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function listSupportedOptimizationTypesWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1585,7 +1585,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1600,11 +1600,11 @@ items:
   - typeScript
   summary: Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.
   syntax:
-    content: 'function listWithHttpOperationResponse(options?: function)'
+    content: 'function listWithHttpOperationResponse(options?: Object)'
     parameters:
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1619,7 +1619,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.
   syntax:
-    content: 'function update(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function update(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1633,7 +1633,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
@@ -1674,7 +1674,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.
   syntax:
-    content: 'function update(resourceGroupName: string, profileName: string, options: function, callback: ServiceCallback<Profile>)'
+    content: 'function update(resourceGroupName: string, profileName: string, options: Object, callback: ServiceCallback<Profile>)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1686,7 +1686,7 @@ items:
       description: ''
     - id: options
       type:
-      - function
+      - Object
       description: ''
     - id: callback
       type:
@@ -1704,7 +1704,7 @@ items:
   - typeScript
   summary: 지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.
   syntax:
-    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: function)'
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, profileName: string, options?: Object)'
     parameters:
     - id: resourceGroupName
       type:
@@ -1718,7 +1718,7 @@ items:
         리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.
     - id: options
       type:
-      - function
+      - Object
       description: ''
       optional: true
     return:
