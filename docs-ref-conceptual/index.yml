@@ -1,21 +1,20 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 3d6625cbda0ec2f44347fb1b08073404b4dda7ca
-ms.sourcegitcommit: 87f95d58ec8de16e115bc344efeb084afc346b74
+ms.openlocfilehash: 0339f131ecdfa5e21aeebca9ee94a1085829a83c
+ms.sourcegitcommit: 8f2555cd23e454ff79e27bd3ed0a6f65b08c1c9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "41547542"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48551871"
 documentType: LandingData
-title: Node.js 개발자용 Azure
+title: JavaScript 개발자용 Azure
 metadata:
-  document_id: d849f3b1-92db-460b-93c2-f1b8d0567b49
-  title: Node.js 개발자용 Azure - 자습서, API 참조
-  description: Node.js 개발자를 위한 훌륭한 빠른 시작, 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.
+  title: Node.js 개발자용 Azure - 자습서, 도구, SDK 참조
+  description: Node.js 개발자용으로 작성된 자습서, 모듈 및 도구를 사용하여 Azure로 앱 개발을 시작해보세요.
   keywords: Azure, Node.js, SDK, API, npm
-  author: tomarcher
-  ms.author: tarcher
+  author: rloutlaw
+  ms.author: routlaw
   manager: douge
-  ms.date: 07/14/2017
+  ms.date: 07/11/2018
   ms.topic: landing-page
   ms.prod: azure
   featureFlags:
@@ -24,104 +23,268 @@ metadata:
   ms.devlang: nodejs
   ms.service: multiple
 sections:
-- items:
-  - type: markdown
-    text: >
-      Node.js 개발자를 위한 훌륭한 빠른 시작, 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - href: https://docs.microsoft.com/azure/app-service/containers/quickstart-nodejs
-      html: <p>Azure에 첫 번째 Node.js 앱 배포</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: 시작
-    - href: https://azure.microsoft.com/resources/samples/?platform=nodejs
-      html: <p>Node.js를 사용하는 Azure 샘플 코드</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: 코드 샘플
-    - href: https://docs.microsoft.com/javascript/azure/node-azure-tools
-      html: <p>개발자 도구</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_download-install.svg
-      title: 도구
-    - href: https://docs.microsoft.com/javascript/api?view=azure-node-latest
-      html: <p>Azure 서비스에 대한 npm 패키지</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_api-reference.svg
-      title: API 참조
-- title: 5분 빠른 시작
+- title: 빠른 시작
   items:
-  - type: paragraph
-    text: Azure 서비스를 사용하여 Node.js 앱을 빌드하는 방법을 알아봅니다.
+  - type: paragragh
+    html: <p>Azure에서 Node.js로 간편하게 시작하는 방법 알아보기
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
-    - href: https://code.visualstudio.com/docs/nodejs/nodejs-deployment?utm_source=msdocs&utm_medium=node_hub
-      title: Visual Studio Code를 사용하여 앱 배포
+    - href: https://aka.ms/try-azure-node
+      html: <p>무료 샌드박스 환경에서 첫 번째 앱 배포</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+      title: 무료로 시작해보세요!
+- title: 호스트 응용 프로그램
+  items:
+  - type: paragragh
+    html: <p>Azure에서 Node.js 응용 프로그램을 빌드, 배포, 확장합니다.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://code.visualstudio.com/tutorials/static-website/getting-started
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_React.svg
+      title: 고정 사이트
+      html: <p>Azure Storage를 사용하여 Angular, React 및Vue 앱을 호스트해 보세요.</p>
+    - href: https://code.visualstudio.com/tutorials/app-service-extension/getting-started
+      html: <p>App Service를 사용하여 Express 앱 배포</p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
-    - href: http://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function
-      title: Node.js 서버를 사용하지 않는 함수 만들기
+      title: 전체 스택
+    - href: https://code.visualstudio.com/tutorials/docker-extension/getting-started
+      html: <p>Azure에서 Docker 컨테이너 및 마이크로 서비스를 빌드 및 배포해 보세요.</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
+      title: 컨테이너 앱
+    - href: https://code.visualstudio.com/tutorials/functions-extension/getting-started
+      html: <p>Azure Functions로 서버리스 환경으로 전환</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/azurefunctions.svg
-    - href: https://docs.microsoft.com/azure/cosmos-db/create-mongodb-nodejs
-      title: Cosmos DB로 MEAN 앱 빌드
-      image:
-        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-    - href: https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-nodejs?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-      title: Node.js를 통한 Azure DevOps
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
-    - href: https://docs.microsoft.com/azure/container-service/kubernetes/container-service-kubernetes-walkthrough
-      title: Linux 및 Kubernetes에 배포
-      image:
-        src: media/k8s_logo.svg
-- title: 커뮤니티
+      title: 서버를 사용하지 않는 앱 및 API
+- title: 데이터 저장
   items:
+  - type: paragragh
+    html: <p>파일 또는 데이터베이스에서 데이터 관리</p>
   - type: list
     style: cards
     className: cardsM
-    columns: 2
+    columns: 3
     items:
-    - href: https://www.youtube.com/watch?v=9t2GWFegnkQ&list=PLlrxD0HtieHgugDxYBujMFnvSveH4fgWN
-      html: <p>JavaScript, Node.js 및 웹 관련 쇼</p>
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/Storage.svg
+      title: File Storage
+      html: <p>클라우드 저장소에 파일을 안전하게 저장합니다.</p>
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-nodejs
+    - href: https://docs.microsoft.com/azure/cosmos-db/create-mongodb-nodejs
+      title: MongoDB
+      html: <p>노드 앱에서 MongoDB 및 CosmosDB를 사용하기</p>
       image:
-        src: media/5-things-logo.svg
-      title: 5가지
-- title: Pluralsight에서 Node.js 및 Azure 비디오 체험 교육
+        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/RedisCache.svg
+      title: Redis Cache
+      html: <p>Redis 메모리 내 데이터 저장소로 데이터를 읽고 쓰기</p>
+      href: https://docs.microsoft.com/azure/redis-cache/cache-nodejs-get-started
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/PostgreSQL.svg
+      title: PostgreSQL
+      html: <p>클라우드 Postgres 데이터베이스를 만들고 관리하기</p>
+      href: https://docs.microsoft.com/azure/postgresql/connect-nodejs
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/MySQL.SVG
+      title: MySQL
+      html: <p>클라우드 MySQL 데이터베이스를 만들고 관리하기</p>
+      href: https://docs.microsoft.com/azure/mysql/connect-nodejs
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/SQLDatabase.svg
+      title: Azure SQL Database
+      html: <p>클라우드 SQL 데이터베이스를 만들고 관리하기</p>
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-nodejs
+- title: 인증 및 보안
+  items:
+  - type: paragragh
+    html: <p>앱, 리소스를 보호하고 클라우드 암호와 키를 보호합니다.</p>
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devquickstarts-webapi-nodejs
+      html: <p>Passport 전략을 사용하여 사용자 인증</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg
+      title: Active Directory
+    - href: https://docs.microsoft.com/en-us/azure/key-vault/quick-create-cli
+      html: <p>앱에서 API 키 및 비밀을 안전하게 저장</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
+      title: Key Vault
+    - href: https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-devquickstarts-web-node
+      html: <p>Passport와 Azure AD를 사용하여 웹 앱에 Facebook, Twitter 또는 GitHub에 로그인 추가</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg
+      title: Active Directory B2C
+- title: 모니터링 및 로깅
+  items:
+  - type: paragragh
+    html: <p>리소스 상태를 모니터링하고 앱에서 문제를 감지합니다.</p>
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/en-us/azure/application-insights/app-insights-nodejs-quick-start
+      html: <p>요청을 모니터링하고 응용 프로그램에서 오류를 식별합니다.</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/ApplicationInsights.svg
+      title: Application Insights
+    - href: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitor-quick-resource-metric-alert-portal
+      html: <p>메트릭을 검토하고 Azure 리소스에 대한 경고를 설정</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/azure_event_grid.svg
+      title: Event Grid
+    - href: https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-linux-computer
+      html: <p>단일 위치에서 환경에 대한 데이터를 검토</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/operationsmanagementsuite.svg
+      title: Log Analytics
+    - href: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/
+      html: <p>자세한 성능 및 사용률 데이터 가져오기</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureMonitoring.svg
+      title: Azure Monitor
+- title: 디버깅 및 진단
+  items:
+  - type: paragragh
+    html: <p>최고의 도구를 사용하여 프로덕션 버그 찾기 및 수정</p>
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach
+      html: <p>다시 배포하지 않고 로그 문을 프로덕션 앱에 추가</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_tools.svg
+      title: 로그 포인트
+    - href: https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging
+      html: <p>테스트 또는 프로덕션 인스턴스에 디버거를 연결</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_debug.svg
+      title: 원격 디버깅
+    - href: https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+      html: <p>일반적인 Node.js 오류를 찾기 위한 가이드</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+      title: 앱 실패 문제 해결
+    - href: https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+      html: <p>실행 중인 노드 프로세스에 디버거를 자동으로 연결</p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+      title: VS Code에서 디버깅
+- title: 메시징
+  items:
+  - type: paragragh
+    html: <p>장치 및 앱을 관리하고 연결하기</p>
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
+      html: <p>HTTP 기반 이벤트 딜리버리를 통해 폴링 제거</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/azure_event_grid.svg
+      title: Event Grid
+    - href: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
+      html: <p>서비스 간 고도로 안정적인 메시징</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/IOT_edge_50.svg
+      title: Service Bus
+    - href: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
+      html: <p>간단한 확장 가능한 메시지 큐</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_sharepoint-list.svg
+      title: 큐 저장소
+- title: IoT
+  items:
+  - type: paragragh
+    html: <p>장치 및 앱을 관리하고 연결하기</p>
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
+      html: <p>IoT Hub를 사용하여 수천 대의 장치 관리</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/IOT_edge_50.svg
+      title: IoT 장치 연결 및 관리
+    - href: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
+      html: <p>이벤트 허브를 사용하여 수십억 개의 데이터 요소를 수집</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/EventHubs.svg
+      title: 빅 데이터 스트리밍
+- title: DevOps
+  items:
+  - type: paragragh
+    html: <p>앱 릴리스 빌드, 테스트 및 관리</p>
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://docs.microsoft.com/en-us/vsts/build-release/apps/cd/azure/azure-devops-project-nodejs?toc=%2Fvsts%2Fdeploy-azure%2Ftoc.json&bc=%2Fvsts%2Fdeploy-azure%2Fbreadcrumb%2Ftoc.json&view=vsts
+      html: <p>빌드를 관리하는 Jenkins, CircleCI, 또는 Travis 추가</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_scrum.svg
+      title: 연속 통합
+    - href: https://docs.microsoft.com/en-us/vsts/build-release/apps/cd/azure/azure-devops-project-nodejs?toc=%2Fvsts%2Fdeploy-azure%2Ftoc.json&bc=%2Fvsts%2Fdeploy-azure%2Fbreadcrumb%2Ftoc.json&view=vsts
+      html: <p>VSTS 팀에서 노드 앱 빌드 및 배포</p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+      title: VSTS
+- title: Node.js용 Azure SDK
   items:
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
-    - href: https://www.pluralsight.com/courses/developing-nodejs-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
+    - href: https://docs.microsoft.com/en-us/javascript/azure/node-sdk-azure-get-started
+      html: <p>로컬 개발 환경 설정 및 노드 SDK 시험 사용</p>
       image:
-        src: https://docs.microsoft.com/media/logos/logo_pluralsight.svg
-      title: Azure에서 Node.js 시작
-- title: 샘플
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: SDK 시작
+    - href: https://code.visualstudio.com/docs/azure/extensions
+      html: <p>Azure SDK에 대한 전체 참조 문서</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+      title: 참고 자료
+    - href: https://azure.microsoft.com/en-us/resources/samples/?sort=0&platform=nodejs
+      html: <p>Azure SDK에 대한 샘플 GitHub 리포지토리</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-samples.svg
+      title: SDK 샘플
+- title: 도구 및 확장
   items:
   - type: list
-    style: unordered
+    style: cards
+    className: cardsM
+    columns: 3
     items:
-    - html: <a href="https://azure.microsoft.com/resources/samples/meanjs/">Azure Cosmos DB를 사용하여 MEAN 앱 개발(영문)</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-graph-nodejs-getting-started/">Azure Cosmos DB를 사용하여 Gremlin 그래프 데이터가 있는 Node.js 앱 개발(영문)</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-node-getting-started/">Node.js 앱에서 Azure Blob 서비스 시작(영문)</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/active-directory-node-webapp-openidconnect/">Azure AD를 Node.js 앱에 통합(영문)</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/key-vault-node-getting-started">Azure를 사용하여 Key Vault 시작(영문)</a>
-- title: 단계별 자습서
-  items:
-  - type: paragraph
-    text: Node.js 앱에서 Azure 서비스 및 도구를 사용하는 방법에 대해 알아봅니다.
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-nodejs-mongodb-app">Azure에서 Node.js 및 MongoDB 앱 작성</a>
-    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-nodejs-api-app">Node.js RESTful API를 빌드하여 Azure의 API 앱에 배포</a>
+    - href: https://code.visualstudio.com/docs/azure/extensions
+      html: <p>확장을 통해 Visual Studio Code에서 직접 Azure 사용</p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+      title: Visual Studio Code
+    - href: https://docs.microsoft.com/cli/azure
+      html: <p><a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">명령줄에서 Azure 리소스 관리</a></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/azure_dev-7.svg
+      title: Azure CLI 2.0
