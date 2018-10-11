@@ -5,11 +5,11 @@ title: Node.js Dev Center | Microsoft Docs
 description: Azure 클라우드에서 Node.js 응용프로그램을 개발하고 배포하는 방법을 알아봅니다.
 ms.topic: hub-page
 ms.openlocfilehash: e2959c6ec20f07bc672cae05aebd7be039ca641e
-ms.sourcegitcommit: 8f2555cd23e454ff79e27bd3ed0a6f65b08c1c9e
+ms.sourcegitcommit: 0d439a88f38a085e2be0616c8bdb0ffcca2e54ad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48488552"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "48981777"
 ---
 <div id="main" class="v2">
     <div class="container">
