@@ -10,12 +10,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Authorization
-ms.openlocfilehash: 5be0e069d0acf72de65e891e6304ef1ca78e967a
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: 0b0ecd088d8b7728e56f352597e2db038678945f
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34260406"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49735068"
 ---
 # <a name="azure-authorization-modules-for-nodejs"></a>Node.js용 Azure 권한 부여 모듈
 

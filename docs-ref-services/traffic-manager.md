@@ -10,18 +10,18 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Traffic Manager
-ms.openlocfilehash: 904a6693f557b90f5a1eeeea2367b56f8dfe3ff1
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: 2a32eed460c6076011fdcf31d77200502ef61a3d
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262707"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49675758"
 ---
 # <a name="azure-traffic-manager-modules-for-nodejs"></a>Node.js용 Azure Traffic Manager 모듈
 
 ## <a name="overview"></a>개요
 
-Microsoft Azure Traffic Manager를 사용하면 다양한 데이터 센터에서 서비스 끝점에 대한 사용자 트래픽의 배포를 제어할 수 있습니다. Traffic Manager에서 지원되는 서비스 끝점은 Azure VM, Web Apps 및 클라우드 서비스를 포함합니다. 또한 외부, Azure가 아닌 끝점으로 Traffic Manager를 사용할 수 있습니다.
+Microsoft Azure Traffic Manager를 사용하면 다양한 데이터 센터에서 서비스 엔드포인트에 대한 사용자 트래픽의 배포를 제어할 수 있습니다. Traffic Manager에서 지원되는 서비스 엔드포인트는 Azure VM, Web Apps 및 클라우드 서비스를 포함합니다. 또한 외부, Azure가 아닌 엔드포인트로 Traffic Manager를 사용할 수 있습니다.
 
 [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)에 대해 자세히 알아보세요.
 

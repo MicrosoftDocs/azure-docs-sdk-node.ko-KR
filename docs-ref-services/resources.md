@@ -10,12 +10,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Resources
-ms.openlocfilehash: 9c5eb1c2f8241d50bd459cda25216b4ed12535ce
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: ac82356f0f9f566e29cb2c89181a0cedf2f62f87
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34261652"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49748258"
 ---
 # <a name="azure-resource-modules-for-nodejs"></a>Node.js용 Azure 리소스 모듈
 
@@ -33,8 +33,8 @@ npm을 사용하여 Node.js용 Azure Resource Manager 모듈을 설치합니다.
 npm install azure-arm-resource
 ```
 
-##<a name="example"></a>예
+## <a name="example"></a>예
 
-##<a name="samples"></a>샘플
+## <a name="samples"></a>샘플
 
 앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.

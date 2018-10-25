@@ -10,12 +10,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Commerce
-ms.openlocfilehash: 33e290343f9188a1f78e53f6b8ed89594e2d9b46
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: 87a0e8d689d8d782a705a4525fdbe9b681403c07
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34260446"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49757398"
 ---
 # <a name="azure-commerce-modules-for-nodejs"></a>Node.js용 Azure 상거래 모듈
 
