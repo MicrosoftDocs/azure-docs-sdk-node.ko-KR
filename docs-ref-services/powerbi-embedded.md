@@ -10,32 +10,32 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: PowerBI Embedded
-ms.openlocfilehash: 4d0a1ebf75591a9a3575172f325309ddbac7885c
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: 58251dd1cd3a672a5167193f74d311952d70e84e
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34260891"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49656260"
 ---
-# <a name="azure-powerbi-embedded-modules-for-nodejs"></a><span data-ttu-id="d2eef-103">Node.js용 Azure PowerBI Embedded 모듈</span><span class="sxs-lookup"><span data-stu-id="d2eef-103">Azure PowerBI Embedded modules for Node.js</span></span>
+# <a name="azure-powerbi-embedded-modules-for-nodejs"></a><span data-ttu-id="1b85a-103">Node.js용 Azure PowerBI Embedded 모듈</span><span class="sxs-lookup"><span data-stu-id="1b85a-103">Azure PowerBI Embedded modules for Node.js</span></span>
 
-<span data-ttu-id="d2eef-104">Azure Power BI Embedded 서비스를 사용하면 노드 응용 프로그램에 Power BI 보고서를 바로 통합하여 차트와 보고서를 만들거나 편집할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d2eef-104">With the Power BI Embedded Azure service, you can integrate Power BI reports right into your node application to create or edit charts and reports.</span></span>
+<span data-ttu-id="1b85a-104">Azure Power BI Embedded 서비스를 사용하면 노드 응용 프로그램에 Power BI 보고서를 바로 통합하여 차트와 보고서를 만들거나 편집할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1b85a-104">With the Power BI Embedded Azure service, you can integrate Power BI reports right into your node application to create or edit charts and reports.</span></span>
 
-<span data-ttu-id="d2eef-105">[Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding/)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="d2eef-105">Learn more about [Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding/).</span></span>
+<span data-ttu-id="1b85a-105">[Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding/)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="1b85a-105">Learn more about [Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding/).</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="d2eef-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="d2eef-106">Management Package</span></span>
+## <a name="management-package"></a><span data-ttu-id="1b85a-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="1b85a-106">Management Package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="d2eef-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="d2eef-107">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="1b85a-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="1b85a-107">Install the npm module</span></span>
 
-<span data-ttu-id="d2eef-108">Azure Power BI npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="d2eef-108">Install the Azure Power BI npm module</span></span>
+<span data-ttu-id="1b85a-108">Azure Power BI npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="1b85a-108">Install the Azure Power BI npm module</span></span>
 
 ```bash
 npm install azure-arm-powerbiembedded
 ```
 
-### <a name="example"></a><span data-ttu-id="d2eef-109">예</span><span class="sxs-lookup"><span data-stu-id="d2eef-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="1b85a-109">예</span><span class="sxs-lookup"><span data-stu-id="1b85a-109">Example</span></span>
 
-<span data-ttu-id="d2eef-110">이 예제에서는 기존 리소스 그룹에 작업 영역 컬렉션을 작성합니다.</span><span class="sxs-lookup"><span data-stu-id="d2eef-110">This example creates a workspace collection in an existing resource group.</span></span>
+<span data-ttu-id="1b85a-110">이 예제에서는 기존 리소스 그룹에 작업 영역 컬렉션을 작성합니다.</span><span class="sxs-lookup"><span data-stu-id="1b85a-110">This example creates a workspace collection in an existing resource group.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -74,6 +74,6 @@ msRestAzure
   .catch(err => console.log(err));
 ```
 
-## <a name="samples"></a><span data-ttu-id="d2eef-111">샘플</span><span class="sxs-lookup"><span data-stu-id="d2eef-111">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="1b85a-111">샘플</span><span class="sxs-lookup"><span data-stu-id="1b85a-111">Samples</span></span>
 
-<span data-ttu-id="d2eef-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="d2eef-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="1b85a-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="1b85a-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>

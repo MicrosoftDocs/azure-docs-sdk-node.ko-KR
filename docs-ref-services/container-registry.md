@@ -10,30 +10,30 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Container Registry
-ms.openlocfilehash: ca83b97e94312498f4f93c587cf0c90485136841
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: f24fa268f9c471925a1bdf0cbae8044d97bc7679
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34259942"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49728404"
 ---
-# <a name="azure-container-registry-modules-for-nodejs"></a><span data-ttu-id="a91bd-103">Node.js용 Azure Container Registry 모듈</span><span class="sxs-lookup"><span data-stu-id="a91bd-103">Azure Container Registry modules for Node.js</span></span>
+# <a name="azure-container-registry-modules-for-nodejs"></a><span data-ttu-id="c151b-103">Node.js용 Azure Container Registry 모듈</span><span class="sxs-lookup"><span data-stu-id="c151b-103">Azure Container Registry modules for Node.js</span></span>
 
-<span data-ttu-id="a91bd-104">Azure Container Registry는 Docker 레지스트리 2.0 오픈 소스에 기반한 관리되는 Docker 레지스트리 서비스입니다.</span><span class="sxs-lookup"><span data-stu-id="a91bd-104">Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0.</span></span> <span data-ttu-id="a91bd-105">Azure 컨테이너 레지스트리를 만들고 유지 관리하여 개인 Docker 컨테이너 이미지를 저장하고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="a91bd-105">Create and maintain Azure container registries to store and manage your private Docker container images.</span></span> <span data-ttu-id="a91bd-106">기존 컨테이너 배포 및 배포 파이프라인을 통해 Azure에서 컨테이너 레지스트리를 사용하고 Docker 커뮤니티 전문 기술 단체에 의지합니다.</span><span class="sxs-lookup"><span data-stu-id="a91bd-106">Use container registries in Azure with your existing container development and deployment pipelines, and draw on the body of Docker community expertise.</span></span>
+<span data-ttu-id="c151b-104">Azure Container Registry는 Docker 레지스트리 2.0 오픈 소스에 기반한 관리되는 Docker 레지스트리 서비스입니다.</span><span class="sxs-lookup"><span data-stu-id="c151b-104">Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0.</span></span> <span data-ttu-id="c151b-105">Azure 컨테이너 레지스트리를 만들고 유지 관리하여 개인 Docker 컨테이너 이미지를 저장하고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="c151b-105">Create and maintain Azure container registries to store and manage your private Docker container images.</span></span> <span data-ttu-id="c151b-106">기존 컨테이너 배포 및 배포 파이프라인을 통해 Azure에서 컨테이너 레지스트리를 사용하고 Docker 커뮤니티 전문 기술 단체에 의지합니다.</span><span class="sxs-lookup"><span data-stu-id="c151b-106">Use container registries in Azure with your existing container development and deployment pipelines, and draw on the body of Docker community expertise.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="a91bd-107">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="a91bd-107">Management Package</span></span>
+## <a name="management-package"></a><span data-ttu-id="c151b-107">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="c151b-107">Management Package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="a91bd-108">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="a91bd-108">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="c151b-108">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="c151b-108">Install the npm module</span></span>
 
-<span data-ttu-id="a91bd-109">Azure Container Registry npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="a91bd-109">Install the Azure container registry npm module</span></span>
+<span data-ttu-id="c151b-109">Azure Container Registry npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="c151b-109">Install the Azure container registry npm module</span></span>
 
 ```bash
 npm install azure-arm-containerregistry
 ```
 
-### <a name="example"></a><span data-ttu-id="a91bd-110">예</span><span class="sxs-lookup"><span data-stu-id="a91bd-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="c151b-110">예</span><span class="sxs-lookup"><span data-stu-id="c151b-110">Example</span></span>
 
-<span data-ttu-id="a91bd-111">이 예제에서는 사용 가능한 컨테이너 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a91bd-111">This example gets a list of the available containers.</span></span>
+<span data-ttu-id="c151b-111">이 예제에서는 사용 가능한 컨테이너 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c151b-111">This example gets a list of the available containers.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -56,6 +56,6 @@ msRestAzure
   });
 ```
 
-## <a name="samples"></a><span data-ttu-id="a91bd-112">샘플</span><span class="sxs-lookup"><span data-stu-id="a91bd-112">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="c151b-112">샘플</span><span class="sxs-lookup"><span data-stu-id="c151b-112">Samples</span></span>
 
-<span data-ttu-id="a91bd-113">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="a91bd-113">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="c151b-113">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="c151b-113">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>

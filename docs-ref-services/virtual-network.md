@@ -10,34 +10,34 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: nodejs
 ms.service: Virtual Network
-ms.openlocfilehash: 456839dbecb9ddd1ad0d4b3f8aa7570a04c100b1
-ms.sourcegitcommit: 75051fec38cc3be4cb7d7cb6fc695c162fc0e91b
+ms.openlocfilehash: 11341fdff5df3b7521319d841707493db1d07732
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34260702"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49670858"
 ---
-# <a name="azure-virtual-network-modules-for-nodejs"></a><span data-ttu-id="a1ebd-103">Node.js용 Azure Virtual Network 모듈</span><span class="sxs-lookup"><span data-stu-id="a1ebd-103">Azure Virtual Network modules for Node.js</span></span>
+# <a name="azure-virtual-network-modules-for-nodejs"></a><span data-ttu-id="1bf2c-103">Node.js용 Azure Virtual Network 모듈</span><span class="sxs-lookup"><span data-stu-id="1bf2c-103">Azure Virtual Network modules for Node.js</span></span>
 
-## <a name="overview"></a><span data-ttu-id="a1ebd-104">개요</span><span class="sxs-lookup"><span data-stu-id="a1ebd-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="1bf2c-104">개요</span><span class="sxs-lookup"><span data-stu-id="1bf2c-104">Overview</span></span>
 
-<span data-ttu-id="a1ebd-105">Azure Virtual Network 서비스를 사용하면 가상 네트워크(VNet)를 통해 Azure 리소스를 서로 안전하게 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-105">The Azure Virtual Network service enables you to securely connect Azure resources to each other with virtual networks (VNets).</span></span> <span data-ttu-id="a1ebd-106">VNet은 클라우드에 있는 사용자의 네트워크를 나타내며,</span><span class="sxs-lookup"><span data-stu-id="a1ebd-106">A VNet is a representation of your own network in the cloud.</span></span> <span data-ttu-id="a1ebd-107">구독 전용 Azure 클라우드를 논리적으로 격리한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-107">A VNet is a logical isolation of the Azure cloud dedicated to your subscription.</span></span> <span data-ttu-id="a1ebd-108">이 VNet을 온-프레미스 네트워크에 연결할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-108">You can also connect VNets to your on-premises network.</span></span>
+<span data-ttu-id="1bf2c-105">Azure Virtual Network 서비스를 사용하면 가상 네트워크(VNet)를 통해 Azure 리소스를 서로 안전하게 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-105">The Azure Virtual Network service enables you to securely connect Azure resources to each other with virtual networks (VNets).</span></span> <span data-ttu-id="1bf2c-106">VNet은 클라우드에 있는 사용자의 네트워크를 나타내며,</span><span class="sxs-lookup"><span data-stu-id="1bf2c-106">A VNet is a representation of your own network in the cloud.</span></span> <span data-ttu-id="1bf2c-107">구독 전용 Azure 클라우드를 논리적으로 격리한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-107">A VNet is a logical isolation of the Azure cloud dedicated to your subscription.</span></span> <span data-ttu-id="1bf2c-108">이 VNet을 온-프레미스 네트워크에 연결할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-108">You can also connect VNets to your on-premises network.</span></span>
 
-<span data-ttu-id="a1ebd-109">[Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-109">Learn more about [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).</span></span>
+<span data-ttu-id="1bf2c-109">[Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-109">Learn more about [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="a1ebd-110">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="a1ebd-110">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="1bf2c-110">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="1bf2c-110">Management package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="a1ebd-111">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="a1ebd-111">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="1bf2c-111">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="1bf2c-111">Install the npm module</span></span>
 
-<span data-ttu-id="a1ebd-112">Azure Virtual Network npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-112">Install the Azure Virtual Network npm module</span></span>
+<span data-ttu-id="1bf2c-112">Azure Virtual Network npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-112">Install the Azure Virtual Network npm module</span></span>
 
 ```bash
 npm install azure-arm-network
 ```
 
-### <a name="example"></a><span data-ttu-id="a1ebd-113">예</span><span class="sxs-lookup"><span data-stu-id="a1ebd-113">Example</span></span>
+### <a name="example"></a><span data-ttu-id="1bf2c-113">예</span><span class="sxs-lookup"><span data-stu-id="1bf2c-113">Example</span></span>
 
-<span data-ttu-id="a1ebd-114">이 예제에서는 가상 네트워크 목록을 가져오고 인쇄합니다.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-114">This example gets and prints the list of virtual networks</span></span>
+<span data-ttu-id="1bf2c-114">이 예제에서는 가상 네트워크 목록을 가져오고 인쇄합니다.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-114">This example gets and prints the list of virtual networks</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -56,9 +56,8 @@ msRestAzure
     console.log('List of virtual networks:');
     console.dir(networkList, { depth: null, colors: true });
   });
-
 ```
 
-## <a name="samples"></a><span data-ttu-id="a1ebd-115">샘플</span><span class="sxs-lookup"><span data-stu-id="a1ebd-115">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="1bf2c-115">샘플</span><span class="sxs-lookup"><span data-stu-id="1bf2c-115">Samples</span></span>
 
-<span data-ttu-id="a1ebd-116">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="a1ebd-116">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="1bf2c-116">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="1bf2c-116">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
