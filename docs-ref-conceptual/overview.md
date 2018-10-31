@@ -1,6 +1,6 @@
 ---
-title: Node.js용 Azure 모듈
-description: Node.js용 Azure 관리 및 서비스 모듈에 대한 개요입니다.
+title: JavaScript용 Azure 모듈
+description: JavaScript용 Azure 관리 및 서비스 모듈에 대한 개요입니다.
 author: rloutlaw
 ms.author: routlaw
 manager: routlaw
@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
-ms.openlocfilehash: 165e1580e408b71b6147e51c41e22bc8fe7277a1
-ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
+ms.openlocfilehash: 1d97df65f12c465cf6c790d1e3c016a9ff4aa5ba
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34220535"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49672998"
 ---
-# <a name="azure-modules-for-nodejs"></a>Node.js용 Azure 모듈
+# <a name="azure-modules-for-javascript"></a>JavaScript용 Azure 모듈
 
-Node.js용 Azure 모듈을 사용하여 Node.js 응용 프로그램에서 Azure 리소스를 관리하고 서비스에 연결합니다. 코드는 프로젝트에서 사용할 [npm 모듈](node-sdk-azure-install.md)로 제공됩니다. 
+JavaScript용 Azure 모듈을 사용하여 JavaScript 응용 프로그램에서 Azure 리소스를 관리하고 서비스에 연결합니다. 코드는 프로젝트에서 사용할 [npm 모듈](node-sdk-azure-install.md)로 제공됩니다. 
 
 ## <a name="manage-azure-resources"></a>Azure 리소스 관리
 
@@ -85,7 +85,7 @@ msRestAzure.loginWithServicePrincipalSecret(clientId, secret, domain, function (
 
 ## <a name="connect-to-azure-services"></a>Azure 서비스에 연결
 
-Azure 모듈을 사용하여 Azure 내에서 리소스를 만들고 관리하는 것 외에도 패키지를 사용하여 앱에서 Azure 클라우드 서비스를 연결하고 사용할 수 있습니다. 예를 들어 SQL Database 테이블을 업데이트하거나 Azure Storage에 파일을 업로드할 수 있습니다. [전체 목록](node-sdk-azure-install.md)에서 특정 서비스에 필요한 패키지를 선택하고, 자습서 및 샘플 코드에 대한 [Node.js 개발자 센터](https://azure.microsoft.com/develop/nodejs/)를 방문하여 앱에서 모듈을 사용하는 방법을 알아봅니다.
+Azure 모듈을 사용하여 Azure 내에서 리소스를 만들고 관리하는 것 외에도 패키지를 사용하여 앱에서 Azure 클라우드 서비스를 연결하고 사용할 수 있습니다. 예를 들어 SQL Database 테이블을 업데이트하거나 Azure Storage에 파일을 업로드할 수 있습니다. [전체 목록](node-sdk-azure-install.md)에서 특정 서비스에 필요한 패키지를 선택하고, 자습서 및 샘플 코드에 대한 [JavaScript 개발자 센터](https://azure.microsoft.com/develop/nodejs/)를 방문하여 앱에서 모듈을 사용하는 방법을 알아봅니다.
 
 예를 들어 Azure 저장소 컨테이너에 있는 모든 Blob의 내용을 출력하려면 다음과 같습니다.
 

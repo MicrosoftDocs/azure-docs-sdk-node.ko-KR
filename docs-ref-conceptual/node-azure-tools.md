@@ -1,6 +1,6 @@
 ---
-title: Azure의 Node.js 개발자용 도구 | Microsoft Docs
-description: Azure에 Node.js 개발을 위한 개별 도구를 설치합니다.
+title: Azure의 JavaScript 개발자용 도구 | Microsoft Docs
+description: Azure에 JavaScript 개발을 위한 개별 도구를 설치합니다.
 services: multiple
 author: rloutlaw
 manager: routlaw
@@ -10,15 +10,15 @@ ms.devlang: nodejs
 ms.topic: article
 ms.date: 11/07/2017
 ms.author: routlaw
-ms.openlocfilehash: 172cc3e1bff763cbf768dce5aa85065da0dd4927
-ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
+ms.openlocfilehash: 1c676b1f31fde7b14a16031b78f767a2c59edd5a
+ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34220735"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "49726668"
 ---
-# <a name="azure-tools-for-nodejs-developers"></a>Node.js 개발자용 Azure 도구
-Node.js를 통해 Azure를 사용하는 개발에서는 다음과 같은 도구를 사용하는 것이 좋습니다.
+# <a name="azure-tools-for-javascript-developers"></a>JavaScript 개발자용 Azure 도구
+Azure의 JavaScript 앱을 개발하는 데 다음과 같은 도구를 사용하는 것이 좋습니다.
 
 ## <a name="azure-cli"></a>Azure CLI
 Azure CLI는 명령줄에서 Azure 리소스를 관리하기 위해 최적화되어 있습니다.
@@ -29,7 +29,7 @@ Azure CLI는 명령줄에서 Azure 리소스를 관리하기 위해 최적화되
 > [Azure CLI 2.0 설치](https://docs.microsoft.com/cli/azure/install-az-cli2)
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
-모든 OS에서 Node.js 앱을 편집하고 디버그합니다.
+모든 OS에서 JavaScript 앱을 편집하고 디버그합니다.
 
 ![Visual Studio Code](media/node-azure-tools/vs-code.png)
 
@@ -42,7 +42,7 @@ Visual Studio Code에서 직접 Azure 서비스를 통해 인터페이스에 다
 | 도구 | 설명  |
 |:---------:|---------|
 | [Azure 기능](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) <br> [![Azure Functions 도구](media/node-azure-tools/icon-azure-functions.png)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) | 함수 만들기, 관리, 보기, 디버그 및 배포|
-| [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) <br> [![App Service 도구](media/node-azure-tools/icon-azure-app-service.png)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) | 사이트 및 Azure Portal 찾아보기, 새 사이트 만들기(Node.js의 Linux 전용) 및 슬롯에 배포 |
+| [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) <br> [![App Service 도구](media/node-azure-tools/icon-azure-app-service.png)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) | 사이트 및 Azure Portal 찾아보기, 새 사이트 만들기 및 슬롯에 배포 |
 | [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)  <br> [![Cosmos DB 도구](media/node-azure-tools/icon-cosmos-db.png)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)| Azure에서 전역적으로 분산된 다중 model 데이터베이스 만들기, 찾아보기 및 업데이트 |
 | [Docker](https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-explorer)   <br> [![Cosmos DB 도구](media/node-azure-tools/icon-docker.png)](https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-explorer)| Docker 컨테이너 및 이미지, Docker 허브 및 Azure Container Registry 관리 |
 
