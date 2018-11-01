@@ -11,30 +11,30 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: Analysis Services
 ms.openlocfilehash: 5214cd2f171074ba330bc639643dfba490540856
-ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
+ms.sourcegitcommit: 8c6935b6591175798b8e37ad0e511864fad3478e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "49702687"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50339981"
 ---
-# <a name="azure-analysis-services-modules-for-nodejs"></a><span data-ttu-id="d3157-103">Node.js용 Azure Analysis Services 모듈</span><span class="sxs-lookup"><span data-stu-id="d3157-103">Azure Analysis Services modules for Node.js</span></span>
+# <a name="azure-analysis-services-modules-for-nodejs"></a><span data-ttu-id="ef8c4-103">Node.js용 Azure Analysis Services 모듈</span><span class="sxs-lookup"><span data-stu-id="ef8c4-103">Azure Analysis Services modules for Node.js</span></span>
 
-## <a name="overview"></a><span data-ttu-id="d3157-104">개요</span><span class="sxs-lookup"><span data-stu-id="d3157-104">Overview</span></span>
-<span data-ttu-id="d3157-105">이 패키지는 Microsoft Azure Analysis Services를 쉽게 관리할 수 있게 하는 Node.js를 모듈을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d3157-105">This package provides a Node.js module that makes it easy to manage Microsoft Azure Analysis Services.</span></span>
+## <a name="overview"></a><span data-ttu-id="ef8c4-104">개요</span><span class="sxs-lookup"><span data-stu-id="ef8c4-104">Overview</span></span>
+<span data-ttu-id="ef8c4-105">이 패키지는 Microsoft Azure Analysis Services를 쉽게 관리할 수 있게 하는 Node.js를 모듈을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ef8c4-105">This package provides a Node.js module that makes it easy to manage Microsoft Azure Analysis Services.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="d3157-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="d3157-106">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="ef8c4-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="ef8c4-106">Management package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="d3157-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="d3157-107">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="ef8c4-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="ef8c4-107">Install the npm module</span></span>
 
-<span data-ttu-id="d3157-108">Azure Analysis Services npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="d3157-108">Install the Azure Analysis Services npm module</span></span>
+<span data-ttu-id="ef8c4-108">Azure Analysis Services npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="ef8c4-108">Install the Azure Analysis Services npm module</span></span>
 
 ```bash
 npm install azure-arm-analysisservices
 ```
 
-### <a name="example"></a><span data-ttu-id="d3157-109">예</span><span class="sxs-lookup"><span data-stu-id="d3157-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="ef8c4-109">예</span><span class="sxs-lookup"><span data-stu-id="ef8c4-109">Example</span></span>
 
-<span data-ttu-id="d3157-110">이 예제에서는 사용 가능한 모든 Analysis Services 서버를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="d3157-110">This example lists all available Analysis Service servers.</span></span>
+<span data-ttu-id="ef8c4-110">이 예제에서는 사용 가능한 모든 Analysis Services 서버를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="ef8c4-110">This example lists all available Analysis Service servers.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -52,6 +52,6 @@ msRestAzure.interactiveLogin().then(credentials => {
 });
 ```
 
-## <a name="samples"></a><span data-ttu-id="d3157-111">샘플</span><span class="sxs-lookup"><span data-stu-id="d3157-111">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="ef8c4-111">샘플</span><span class="sxs-lookup"><span data-stu-id="ef8c4-111">Samples</span></span>
 
-<span data-ttu-id="d3157-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="d3157-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="ef8c4-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="ef8c4-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>

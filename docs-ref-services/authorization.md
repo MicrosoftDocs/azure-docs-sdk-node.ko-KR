@@ -11,33 +11,33 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: Authorization
 ms.openlocfilehash: 0b0ecd088d8b7728e56f352597e2db038678945f
-ms.sourcegitcommit: 7cea63cdde5fcfb19271bf7a93b1eb0dabdddb31
+ms.sourcegitcommit: 8c6935b6591175798b8e37ad0e511864fad3478e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "49735068"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50340021"
 ---
-# <a name="azure-authorization-modules-for-nodejs"></a><span data-ttu-id="c1c3a-103">Node.js용 Azure 권한 부여 모듈</span><span class="sxs-lookup"><span data-stu-id="c1c3a-103">Azure Authorization modules for Node.js</span></span>
+# <a name="azure-authorization-modules-for-nodejs"></a><span data-ttu-id="664de-103">Node.js용 Azure 권한 부여 모듈</span><span class="sxs-lookup"><span data-stu-id="664de-103">Azure Authorization modules for Node.js</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c1c3a-104">개요</span><span class="sxs-lookup"><span data-stu-id="c1c3a-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="664de-104">개요</span><span class="sxs-lookup"><span data-stu-id="664de-104">Overview</span></span>
 
-<span data-ttu-id="c1c3a-105">Azure App Service 인증/권한 부여는 앱 백 엔드에서 코드를 변경할 필요가 없도록 사용자가 응용 프로그램에 로그인하는 방법을 제공하는 기능입니다.</span><span class="sxs-lookup"><span data-stu-id="c1c3a-105">Azure App Service Authentication / Authorization is a feature that provides a way for your application to sign in users so that code doesn't have to be changed on the app backend.</span></span> <span data-ttu-id="c1c3a-106">권한 부여는 응용 프로그램을 보호하고 사용자별 데이터로 작업하는 쉬운 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c1c3a-106">Authorization provides an easy way to protect your application and work with per-user data.</span></span>
+<span data-ttu-id="664de-105">Azure App Service 인증/권한 부여는 앱 백 엔드에서 코드를 변경할 필요가 없도록 사용자가 응용 프로그램에 로그인하는 방법을 제공하는 기능입니다.</span><span class="sxs-lookup"><span data-stu-id="664de-105">Azure App Service Authentication / Authorization is a feature that provides a way for your application to sign in users so that code doesn't have to be changed on the app backend.</span></span> <span data-ttu-id="664de-106">권한 부여는 응용 프로그램을 보호하고 사용자별 데이터로 작업하는 쉬운 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="664de-106">Authorization provides an easy way to protect your application and work with per-user data.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="c1c3a-107">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="c1c3a-107">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="664de-107">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="664de-107">Management package</span></span>
 
-<span data-ttu-id="c1c3a-108">npm을 사용하여 Node.js용 Azure 권한 부여 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="c1c3a-108">Use npm to install the Azure Authorization modules for Node.js</span></span>
+<span data-ttu-id="664de-108">npm을 사용하여 Node.js용 Azure 권한 부여 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="664de-108">Use npm to install the Azure Authorization modules for Node.js</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="c1c3a-109">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="c1c3a-109">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="664de-109">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="664de-109">Install the npm module</span></span>
 
-<span data-ttu-id="c1c3a-110">Azure 권한 부여 npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="c1c3a-110">Install the Azure authorization npm module</span></span>
+<span data-ttu-id="664de-110">Azure 권한 부여 npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="664de-110">Install the Azure authorization npm module</span></span>
 
 ```bash
 npm install azure-arm-authorization
 ```
 
-### <a name="example"></a><span data-ttu-id="c1c3a-111">예</span><span class="sxs-lookup"><span data-stu-id="c1c3a-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="664de-111">예</span><span class="sxs-lookup"><span data-stu-id="664de-111">Example</span></span>
 
-<span data-ttu-id="c1c3a-112">이 예제에서는 요청된 리소스 그룹에 대한 모든 역할 할당을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="c1c3a-112">This example lists all role assignments for the requested resource group.</span></span>
+<span data-ttu-id="664de-112">이 예제에서는 요청된 리소스 그룹에 대한 모든 역할 할당을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="664de-112">This example lists all role assignments for the requested resource group.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -54,6 +54,6 @@ msRestAzure.interactiveLogin().then(credentials => {
 });
 ```
 
-## <a name="samples"></a><span data-ttu-id="c1c3a-113">샘플</span><span class="sxs-lookup"><span data-stu-id="c1c3a-113">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="664de-113">샘플</span><span class="sxs-lookup"><span data-stu-id="664de-113">Samples</span></span>
 
-<span data-ttu-id="c1c3a-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="c1c3a-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="664de-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="664de-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
