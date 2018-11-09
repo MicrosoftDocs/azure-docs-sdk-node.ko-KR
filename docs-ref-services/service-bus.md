@@ -11,31 +11,31 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: Service Bus
 ms.openlocfilehash: 76d7c615cbe64fa38f9c28ea8dfc6d1c854bb0c9
-ms.sourcegitcommit: 8c6935b6591175798b8e37ad0e511864fad3478e
+ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50272196"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51053702"
 ---
-# <a name="azure-service-bus-modules-for-nodejs"></a><span data-ttu-id="6dca6-103">Node.js용 Azure Service Bus 모듈</span><span class="sxs-lookup"><span data-stu-id="6dca6-103">Azure Service Bus Modules for Node.js</span></span>
+# <a name="azure-service-bus-modules-for-nodejs"></a><span data-ttu-id="74eef-103">Node.js용 Azure Service Bus 모듈</span><span class="sxs-lookup"><span data-stu-id="74eef-103">Azure Service Bus Modules for Node.js</span></span>
 
-<span data-ttu-id="6dca6-104">Azure Service Bus는 분리된 시스템 간에 데이터를 보낼 수 있도록 하는 비동기 메시지 클라우드 플랫폼입니다.</span><span class="sxs-lookup"><span data-stu-id="6dca6-104">Azure Service Bus is an asynchronous messaging cloud platform that enables you to send data between decoupled systems.</span></span>
+<span data-ttu-id="74eef-104">Azure Service Bus는 분리된 시스템 간에 데이터를 보낼 수 있도록 하는 비동기 메시지 클라우드 플랫폼입니다.</span><span class="sxs-lookup"><span data-stu-id="74eef-104">Azure Service Bus is an asynchronous messaging cloud platform that enables you to send data between decoupled systems.</span></span>
 
-<span data-ttu-id="6dca6-105">[Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="6dca6-105">Learn more about [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview).</span></span>
+<span data-ttu-id="74eef-105">[Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="74eef-105">Learn more about [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview).</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="6dca6-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="6dca6-106">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="74eef-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="74eef-106">Management package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="6dca6-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="6dca6-107">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="74eef-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="74eef-107">Install the npm module</span></span>
 
-<span data-ttu-id="6dca6-108">npm을 사용하여 Node.js용 Azure Service Bus 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="6dca6-108">Use npm to install the Azure Service Bus module for Node.js</span></span>
+<span data-ttu-id="74eef-108">npm을 사용하여 Node.js용 Azure Service Bus 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="74eef-108">Use npm to install the Azure Service Bus module for Node.js</span></span>
 
 ```bash
 npm install azure-arm-sb
 ```
 
-### <a name="example"></a><span data-ttu-id="6dca6-109">예</span><span class="sxs-lookup"><span data-stu-id="6dca6-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="74eef-109">예</span><span class="sxs-lookup"><span data-stu-id="74eef-109">Example</span></span>
 
-<span data-ttu-id="6dca6-110">이 예제에서는 클라이언트를 만든 다음, 지정된 구독과 연결된 모든 Service Bus 네임스페이스를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="6dca6-110">This example creates a client and then lists all Service Bus namespaces associated with a given subscription.</span></span>
+<span data-ttu-id="74eef-110">이 예제에서는 클라이언트를 만든 다음, 지정된 구독과 연결된 모든 Service Bus 네임스페이스를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="74eef-110">This example creates a client and then lists all Service Bus namespaces associated with a given subscription.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -53,6 +53,6 @@ msRestAzure.interactiveLogin().then(credentials => {
 });
 ```
 
-## <a name="samples"></a><span data-ttu-id="6dca6-111">샘플</span><span class="sxs-lookup"><span data-stu-id="6dca6-111">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="74eef-111">샘플</span><span class="sxs-lookup"><span data-stu-id="74eef-111">Samples</span></span>
 
-<span data-ttu-id="6dca6-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="6dca6-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="74eef-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="74eef-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>

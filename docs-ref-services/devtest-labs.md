@@ -11,29 +11,29 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: DevTest Labs
 ms.openlocfilehash: 4528bf6a09bc86d23bfec982988added1aa3e257
-ms.sourcegitcommit: 8c6935b6591175798b8e37ad0e511864fad3478e
+ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50325010"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51192376"
 ---
-# <a name="azure-devtest-labs-modules-for-nodejs"></a><span data-ttu-id="29847-103">Node.js용 Azure DevTest Labs 모듈</span><span class="sxs-lookup"><span data-stu-id="29847-103">Azure DevTest Labs modules for Node.js</span></span>
+# <a name="azure-devtest-labs-modules-for-nodejs"></a><span data-ttu-id="a20b2-103">Node.js용 Azure DevTest Labs 모듈</span><span class="sxs-lookup"><span data-stu-id="a20b2-103">Azure DevTest Labs modules for Node.js</span></span>
 
-<span data-ttu-id="29847-104">Azure DevTest Lab은 개발자와 테스터가 낭비를 최소화하고 비용을 제어하면서 Azure에서 빠르게 환경을 만들 수 있도록 돕는 서비스입니다.</span><span class="sxs-lookup"><span data-stu-id="29847-104">Azure DevTest Labs is a service that helps developers and testers quickly create environments in Azure while minimizing waste and controlling cost.</span></span> <span data-ttu-id="29847-105">재사용이 가능한 템플릿과 아티팩트를 사용하여 Windows와 Linux 환경을 빠르게 프로비전함으로써 최신 버전의 응용 프로그램을 테스트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="29847-105">You can test the latest version of your application by quickly provisioning Windows and Linux environments using reusable templates and artifacts.</span></span> <span data-ttu-id="29847-106">배포 파이프라인과 DevTest Lab을 쉽게 통합하여 주문형 환경으로 프로비전할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="29847-106">Easily integrate your deployment pipeline with DevTest Labs to provision on-demand environments.</span></span> <span data-ttu-id="29847-107">여러 개의 테스트 에이전트를 프로비전하여 부하 테스트를 확장하고 교육 및 데모를 위해 미리 프로비전된 환경을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="29847-107">Scale up your load testing by provisioning multiple test agents, and create pre-provisioned environments for training and demos.</span></span>
+<span data-ttu-id="a20b2-104">Azure DevTest Lab은 개발자와 테스터가 낭비를 최소화하고 비용을 제어하면서 Azure에서 빠르게 환경을 만들 수 있도록 돕는 서비스입니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-104">Azure DevTest Labs is a service that helps developers and testers quickly create environments in Azure while minimizing waste and controlling cost.</span></span> <span data-ttu-id="a20b2-105">재사용이 가능한 템플릿과 아티팩트를 사용하여 Windows와 Linux 환경을 빠르게 프로비전함으로써 최신 버전의 응용 프로그램을 테스트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-105">You can test the latest version of your application by quickly provisioning Windows and Linux environments using reusable templates and artifacts.</span></span> <span data-ttu-id="a20b2-106">배포 파이프라인과 DevTest Lab을 쉽게 통합하여 주문형 환경으로 프로비전할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-106">Easily integrate your deployment pipeline with DevTest Labs to provision on-demand environments.</span></span> <span data-ttu-id="a20b2-107">여러 개의 테스트 에이전트를 프로비전하여 부하 테스트를 확장하고 교육 및 데모를 위해 미리 프로비전된 환경을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-107">Scale up your load testing by provisioning multiple test agents, and create pre-provisioned environments for training and demos.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="29847-108">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="29847-108">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="a20b2-108">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="a20b2-108">Management package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="29847-109">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="29847-109">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="a20b2-109">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="a20b2-109">Install the npm module</span></span>
 
-<span data-ttu-id="29847-110">Azure DevTest Labs npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="29847-110">Install the Azure DevTest Labs npm module</span></span>
+<span data-ttu-id="a20b2-110">Azure DevTest Labs npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-110">Install the Azure DevTest Labs npm module</span></span>
 
 ```bash
 npm install azure-arm-devtestlabs
 ```
 
-### <a name="example"></a><span data-ttu-id="29847-111">예</span><span class="sxs-lookup"><span data-stu-id="29847-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="a20b2-111">예</span><span class="sxs-lookup"><span data-stu-id="a20b2-111">Example</span></span>
 
-<span data-ttu-id="29847-112">이 예제에서는 랩의 세부 정보를 가져오고 인쇄합니다.</span><span class="sxs-lookup"><span data-stu-id="29847-112">This example gets and prints the details of a lab.</span></span>
+<span data-ttu-id="a20b2-112">이 예제에서는 랩의 세부 정보를 가져오고 인쇄합니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-112">This example gets and prints the details of a lab.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -55,6 +55,6 @@ msRestAzure
   });
 ```
 
-## <a name="samples"></a><span data-ttu-id="29847-113">샘플</span><span class="sxs-lookup"><span data-stu-id="29847-113">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="a20b2-113">샘플</span><span class="sxs-lookup"><span data-stu-id="a20b2-113">Samples</span></span>
 
-<span data-ttu-id="29847-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="29847-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="a20b2-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="a20b2-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
