@@ -11,11 +11,11 @@ ms.topic: article
 ms.date: 11/07/2017
 ms.author: routlaw
 ms.openlocfilehash: 1c676b1f31fde7b14a16031b78f767a2c59edd5a
-ms.sourcegitcommit: 8c6935b6591175798b8e37ad0e511864fad3478e
+ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50316990"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51191142"
 ---
 # <a name="azure-tools-for-javascript-developers"></a>JavaScript 개발자용 Azure 도구
 Azure의 JavaScript 앱을 개발하는 데 다음과 같은 도구를 사용하는 것이 좋습니다.

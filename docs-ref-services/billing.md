@@ -11,11 +11,11 @@ ms.service: billing
 ms.product: ''
 ms.technology: ''
 ms.openlocfilehash: 7be64d01c1bf8d247694735b8581f72678f55983
-ms.sourcegitcommit: 8c6935b6591175798b8e37ad0e511864fad3478e
+ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50294176"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51172972"
 ---
 # <a name="azure-billing-modules-for-nodejs"></a>Node.js용 Azure 청구 모듈
 
