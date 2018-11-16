@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: Automation
 ms.openlocfilehash: f364bb09c97c1262f640a4b48514c6abaee5f14a
-ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
+ms.sourcegitcommit: b1e29342a19524f43ed70f4bc961dcfdacffb14a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51148962"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51410397"
 ---
 # <a name="azure-automation-modules-for-nodejs"></a>Node.js용 Azure Automation 모듈
 
