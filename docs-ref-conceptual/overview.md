@@ -10,21 +10,21 @@ ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
 ms.openlocfilehash: 1d97df65f12c465cf6c790d1e3c016a9ff4aa5ba
-ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
+ms.sourcegitcommit: b1e29342a19524f43ed70f4bc961dcfdacffb14a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51173092"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51394917"
 ---
-# <a name="azure-modules-for-javascript"></a><span data-ttu-id="13891-103">JavaScript용 Azure 모듈</span><span class="sxs-lookup"><span data-stu-id="13891-103">Azure modules for JavaScript</span></span>
+# <a name="azure-modules-for-javascript"></a><span data-ttu-id="7c152-103">JavaScript용 Azure 모듈</span><span class="sxs-lookup"><span data-stu-id="7c152-103">Azure modules for JavaScript</span></span>
 
-<span data-ttu-id="13891-104">JavaScript용 Azure 모듈을 사용하여 JavaScript 응용 프로그램에서 Azure 리소스를 관리하고 서비스에 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="13891-104">Manage Azure resources and connect to services from your JavaScript applications with the Azure modules for JavaScript.</span></span> <span data-ttu-id="13891-105">코드는 프로젝트에서 사용할 [npm 모듈](node-sdk-azure-install.md)로 제공됩니다.</span><span class="sxs-lookup"><span data-stu-id="13891-105">The code is available as [npm modules](node-sdk-azure-install.md) for use in your projects.</span></span> 
+<span data-ttu-id="7c152-104">JavaScript용 Azure 모듈을 사용하여 JavaScript 응용 프로그램에서 Azure 리소스를 관리하고 서비스에 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-104">Manage Azure resources and connect to services from your JavaScript applications with the Azure modules for JavaScript.</span></span> <span data-ttu-id="7c152-105">코드는 프로젝트에서 사용할 [npm 모듈](node-sdk-azure-install.md)로 제공됩니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-105">The code is available as [npm modules](node-sdk-azure-install.md) for use in your projects.</span></span> 
 
-## <a name="manage-azure-resources"></a><span data-ttu-id="13891-106">Azure 리소스 관리</span><span class="sxs-lookup"><span data-stu-id="13891-106">Manage Azure resources</span></span>
+## <a name="manage-azure-resources"></a><span data-ttu-id="7c152-106">Azure 리소스 관리</span><span class="sxs-lookup"><span data-stu-id="7c152-106">Manage Azure resources</span></span>
 
-<span data-ttu-id="13891-107">관리 모듈을 사용하여 앱에서 리소스를 만들고 쿼리하거나 사용자 고유의 Azure 자동화 도구를 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="13891-107">Use management modules to create and query resources from your apps or to build your own Azure automation tools.</span></span> 
+<span data-ttu-id="7c152-107">관리 모듈을 사용하여 앱에서 리소스를 만들고 쿼리하거나 사용자 고유의 Azure 자동화 도구를 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-107">Use management modules to create and query resources from your apps or to build your own Azure automation tools.</span></span> 
 
-<span data-ttu-id="13891-108">예를 들어 기존 네트워크 인터페이스를 사용하여 Linux VM을 만들려면 다음 코드를 작성합니다.</span><span class="sxs-lookup"><span data-stu-id="13891-108">For example, to create a Linux VM using an existing network interface, you would write the following code:</span></span>
+<span data-ttu-id="7c152-108">예를 들어 기존 네트워크 인터페이스를 사용하여 Linux VM을 만들려면 다음 코드를 작성합니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-108">For example, to create a Linux VM using an existing network interface, you would write the following code:</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -81,13 +81,13 @@ msRestAzure.loginWithServicePrincipalSecret(clientId, secret, domain, function (
 });
 ```
 
-<span data-ttu-id="13891-109">모듈의 전체 목록에 대한 [설치 지침](node-sdk-azure-install.md)과 인증 설정 및 샘플 코드 실행에 대한 [시작 문서](node-sdk-azure-get-started.md)를 검토하여 자신의 Azure 구독에 대한 리소스를 만들고 업데이트합니다 .</span><span class="sxs-lookup"><span data-stu-id="13891-109">Review the [install instructions](node-sdk-azure-install.md) for a full list of the modules and the [get started article](node-sdk-azure-get-started.md) to set up authentication and run sample code to create and update resources against your own Azure subscription.</span></span> 
+<span data-ttu-id="7c152-109">모듈의 전체 목록에 대한 [설치 지침](node-sdk-azure-install.md)과 인증 설정 및 샘플 코드 실행에 대한 [시작 문서](node-sdk-azure-get-started.md)를 검토하여 자신의 Azure 구독에 대한 리소스를 만들고 업데이트합니다 .</span><span class="sxs-lookup"><span data-stu-id="7c152-109">Review the [install instructions](node-sdk-azure-install.md) for a full list of the modules and the [get started article](node-sdk-azure-get-started.md) to set up authentication and run sample code to create and update resources against your own Azure subscription.</span></span> 
 
-## <a name="connect-to-azure-services"></a><span data-ttu-id="13891-110">Azure 서비스에 연결</span><span class="sxs-lookup"><span data-stu-id="13891-110">Connect to Azure services</span></span>
+## <a name="connect-to-azure-services"></a><span data-ttu-id="7c152-110">Azure 서비스에 연결</span><span class="sxs-lookup"><span data-stu-id="7c152-110">Connect to Azure services</span></span>
 
-<span data-ttu-id="13891-111">Azure 모듈을 사용하여 Azure 내에서 리소스를 만들고 관리하는 것 외에도 패키지를 사용하여 앱에서 Azure 클라우드 서비스를 연결하고 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="13891-111">In addition to using the Azure modules to create and manage resources within Azure, you can also use packages to connect and use Azure cloud services in your apps.</span></span> <span data-ttu-id="13891-112">예를 들어 SQL Database 테이블을 업데이트하거나 Azure Storage에 파일을 업로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="13891-112">For example, you might update a table SQL Database or upload files to Azure Storage.</span></span> <span data-ttu-id="13891-113">[전체 목록](node-sdk-azure-install.md)에서 특정 서비스에 필요한 패키지를 선택하고, 자습서 및 샘플 코드에 대한 [JavaScript 개발자 센터](https://azure.microsoft.com/develop/nodejs/)를 방문하여 앱에서 모듈을 사용하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="13891-113">Select the package you need for a particular service from the [complete list](node-sdk-azure-install.md) and visit the [JavaScript developer center](https://azure.microsoft.com/develop/nodejs/) for tutorials and sample code to learn how to use the modules in your apps.</span></span>
+<span data-ttu-id="7c152-111">Azure 모듈을 사용하여 Azure 내에서 리소스를 만들고 관리하는 것 외에도 패키지를 사용하여 앱에서 Azure 클라우드 서비스를 연결하고 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-111">In addition to using the Azure modules to create and manage resources within Azure, you can also use packages to connect and use Azure cloud services in your apps.</span></span> <span data-ttu-id="7c152-112">예를 들어 SQL Database 테이블을 업데이트하거나 Azure Storage에 파일을 업로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-112">For example, you might update a table SQL Database or upload files to Azure Storage.</span></span> <span data-ttu-id="7c152-113">[전체 목록](node-sdk-azure-install.md)에서 특정 서비스에 필요한 패키지를 선택하고, 자습서 및 샘플 코드에 대한 [JavaScript 개발자 센터](https://azure.microsoft.com/develop/nodejs/)를 방문하여 앱에서 모듈을 사용하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-113">Select the package you need for a particular service from the [complete list](node-sdk-azure-install.md) and visit the [JavaScript developer center](https://azure.microsoft.com/develop/nodejs/) for tutorials and sample code to learn how to use the modules in your apps.</span></span>
 
-<span data-ttu-id="13891-114">예를 들어 Azure 저장소 컨테이너에 있는 모든 Blob의 내용을 출력하려면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="13891-114">For example, to print out the contents of every blob in an Azure storage container:</span></span>
+<span data-ttu-id="7c152-114">예를 들어 Azure 저장소 컨테이너에 있는 모든 Blob의 내용을 출력하려면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-114">For example, to print out the contents of every blob in an Azure storage container:</span></span>
 
 ```javascript
 var azure = require('azure-storage');
@@ -98,12 +98,12 @@ blobService.listBlobsSegmented('testcontainer', null, function(error, result, re
 });
 ```
 
-## <a name="sample-code-and-reference"></a><span data-ttu-id="13891-115">샘플 코드 및 참조</span><span class="sxs-lookup"><span data-stu-id="13891-115">Sample code and reference</span></span>
+## <a name="sample-code-and-reference"></a><span data-ttu-id="7c152-115">샘플 코드 및 참조</span><span class="sxs-lookup"><span data-stu-id="7c152-115">Sample code and reference</span></span>
 
-<span data-ttu-id="13891-116">다음 샘플에서는 Azure 관리 모듈을 사용하여 일반적인 작업을 처리하며, 사용자 고유의 앱에서 사용할 준비가 된 코드를 갖추고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="13891-116">The following samples cover common tasks with the Azure management modules and have code ready to use in your own apps:</span></span>
+<span data-ttu-id="7c152-116">다음 샘플에서는 Azure 관리 모듈을 사용하여 일반적인 작업을 처리하며, 사용자 고유의 앱에서 사용할 준비가 된 코드를 갖추고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-116">The following samples cover common tasks with the Azure management modules and have code ready to use in your own apps:</span></span>
 
-- [<span data-ttu-id="13891-117">가상 머신</span><span class="sxs-lookup"><span data-stu-id="13891-117">Virtual machines</span></span>](node-samples-services-compute.md)
-- [<span data-ttu-id="13891-118">웹앱</span><span class="sxs-lookup"><span data-stu-id="13891-118">Web apps</span></span>](node-samples-services-web-and-mobile.md)
-- [<span data-ttu-id="13891-119">SQL Database</span><span class="sxs-lookup"><span data-stu-id="13891-119">SQL Database</span></span>](node-samples-services-database.md)
+- [<span data-ttu-id="7c152-117">가상 머신</span><span class="sxs-lookup"><span data-stu-id="7c152-117">Virtual machines</span></span>](node-samples-services-compute.md)
+- [<span data-ttu-id="7c152-118">웹앱</span><span class="sxs-lookup"><span data-stu-id="7c152-118">Web apps</span></span>](node-samples-services-web-and-mobile.md)
+- [<span data-ttu-id="7c152-119">SQL Database</span><span class="sxs-lookup"><span data-stu-id="7c152-119">SQL Database</span></span>](node-samples-services-database.md)
    
-<span data-ttu-id="13891-120">[참조](https://docs.microsoft.com/javascript/api)는 서비스 및 관리 모듈의 모든 모듈에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="13891-120">A [reference](https://docs.microsoft.com/javascript/api) is available for all modules in both the service and management modules.</span></span> <span data-ttu-id="13891-121">새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](https://github.com/Azure/azure-sdk-for-node/releases)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="13891-121">New features, breaking changes, and migration instructions from previous versions are available in the [release notes](https://github.com/Azure/azure-sdk-for-node/releases).</span></span>
+<span data-ttu-id="7c152-120">[참조](https://docs.microsoft.com/javascript/api)는 서비스 및 관리 모듈의 모든 모듈에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-120">A [reference](https://docs.microsoft.com/javascript/api) is available for all modules in both the service and management modules.</span></span> <span data-ttu-id="7c152-121">새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](https://github.com/Azure/azure-sdk-for-node/releases)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7c152-121">New features, breaking changes, and migration instructions from previous versions are available in the [release notes](https://github.com/Azure/azure-sdk-for-node/releases).</span></span>

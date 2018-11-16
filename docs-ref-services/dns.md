@@ -11,29 +11,29 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: DNS
 ms.openlocfilehash: 93eec1890fc15d19c0545086a53b751d0886988a
-ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
+ms.sourcegitcommit: b1e29342a19524f43ed70f4bc961dcfdacffb14a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51062042"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51494867"
 ---
-# <a name="azure-dns-modules-for-nodejs"></a><span data-ttu-id="08af0-103">Node.js용 Azure DNS 모듈</span><span class="sxs-lookup"><span data-stu-id="08af0-103">Azure DNS modules for Node.js</span></span>
+# <a name="azure-dns-modules-for-nodejs"></a><span data-ttu-id="24ea1-103">Node.js용 Azure DNS 모듈</span><span class="sxs-lookup"><span data-stu-id="24ea1-103">Azure DNS modules for Node.js</span></span>
 
-<span data-ttu-id="08af0-104">Azure DNS을 사용하여 Azure에서 DNS(Domain Name System) 도메인을 호스팅합니다.</span><span class="sxs-lookup"><span data-stu-id="08af0-104">Use Azure DNS to host your Domain Name System (DNS) domains in Azure.</span></span> <span data-ttu-id="08af0-105">다른 Azure 서비스와 동일한 자격 증명, 청구 및 지원 계약을 사용하여 DNS 레코드를 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="08af0-105">Manage your DNS records using the same credentials and billing and support contract as your other Azure services.</span></span> <span data-ttu-id="08af0-106">Azure 기반 서비스를 해당 DNS 업데이트와 원활하게 통합하고 종단 간 배포 프로세스를 간소화합니다.</span><span class="sxs-lookup"><span data-stu-id="08af0-106">Seamlessly integrate Azure-based services with corresponding DNS updates and streamline your end-to-end deployment process.</span></span>
+<span data-ttu-id="24ea1-104">Azure DNS을 사용하여 Azure에서 DNS(Domain Name System) 도메인을 호스팅합니다.</span><span class="sxs-lookup"><span data-stu-id="24ea1-104">Use Azure DNS to host your Domain Name System (DNS) domains in Azure.</span></span> <span data-ttu-id="24ea1-105">다른 Azure 서비스와 동일한 자격 증명, 청구 및 지원 계약을 사용하여 DNS 레코드를 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="24ea1-105">Manage your DNS records using the same credentials and billing and support contract as your other Azure services.</span></span> <span data-ttu-id="24ea1-106">Azure 기반 서비스를 해당 DNS 업데이트와 원활하게 통합하고 종단 간 배포 프로세스를 간소화합니다.</span><span class="sxs-lookup"><span data-stu-id="24ea1-106">Seamlessly integrate Azure-based services with corresponding DNS updates and streamline your end-to-end deployment process.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="08af0-107">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="08af0-107">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="24ea1-107">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="24ea1-107">Management package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="08af0-108">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="08af0-108">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="24ea1-108">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="24ea1-108">Install the npm module</span></span>
 
-<span data-ttu-id="08af0-109">Azure DNS npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="08af0-109">Install the Azure DNS npm module</span></span>
+<span data-ttu-id="24ea1-109">Azure DNS npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="24ea1-109">Install the Azure DNS npm module</span></span>
 
 ```bash
 npm install azure-arm-dns
 ```
 
-### <a name="example"></a><span data-ttu-id="08af0-110">예</span><span class="sxs-lookup"><span data-stu-id="08af0-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="24ea1-110">예</span><span class="sxs-lookup"><span data-stu-id="24ea1-110">Example</span></span>
 
-<span data-ttu-id="08af0-111">이 예제에서는 DNS 관리 영역을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="08af0-111">This example lists the DNS Management zones.</span></span>
+<span data-ttu-id="24ea1-111">이 예제에서는 DNS 관리 영역을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="24ea1-111">This example lists the DNS Management zones.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -51,6 +51,6 @@ msRestAzure
   .catch(err => console.log(err));
 ```
 
-## <a name="samples"></a><span data-ttu-id="08af0-112">샘플</span><span class="sxs-lookup"><span data-stu-id="08af0-112">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="24ea1-112">샘플</span><span class="sxs-lookup"><span data-stu-id="24ea1-112">Samples</span></span>
 
-<span data-ttu-id="08af0-113">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="08af0-113">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="24ea1-113">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="24ea1-113">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>

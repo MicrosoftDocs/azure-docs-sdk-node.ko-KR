@@ -11,31 +11,31 @@ ms.technology: azure
 ms.devlang: nodejs
 ms.service: Site Recovery
 ms.openlocfilehash: f8cddf806b921d5445cd0757b64aeb0dc5df03cf
-ms.sourcegitcommit: a748445fdd0dd7ead43d45fd4ad45009cfc439a6
+ms.sourcegitcommit: b1e29342a19524f43ed70f4bc961dcfdacffb14a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51053712"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51373957"
 ---
-# <a name="azure-site-recovery-modules-for-nodejs"></a><span data-ttu-id="c013e-103">Node.js용 Azure Site Recovery 모듈</span><span class="sxs-lookup"><span data-stu-id="c013e-103">Azure Site Recovery modules for Node.js</span></span>
+# <a name="azure-site-recovery-modules-for-nodejs"></a><span data-ttu-id="8abe7-103">Node.js용 Azure Site Recovery 모듈</span><span class="sxs-lookup"><span data-stu-id="8abe7-103">Azure Site Recovery modules for Node.js</span></span>
 
-<span data-ttu-id="c013e-104">Site Recovery를 사용하면 지역, 온-프레미스 가상 머신 및 물리적 서버 사이의 Azure VM을 Azure로 복제하거나 온-프레미스 컴퓨터를 보조 데이터 센터로 복제하도록 자동화할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c013e-104">Site Recovery allows you to automate replication of Azure VMs between regions, on-premises virtual machines and physical servers to Azure, and on-premises machines to a secondary datacenter.</span></span>
+<span data-ttu-id="8abe7-104">Site Recovery를 사용하면 지역, 온-프레미스 가상 머신 및 물리적 서버 사이의 Azure VM을 Azure로 복제하거나 온-프레미스 컴퓨터를 보조 데이터 센터로 복제하도록 자동화할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8abe7-104">Site Recovery allows you to automate replication of Azure VMs between regions, on-premises virtual machines and physical servers to Azure, and on-premises machines to a secondary datacenter.</span></span>
 
-<span data-ttu-id="c013e-105">[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="c013e-105">Learn more about [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview).</span></span>
+<span data-ttu-id="8abe7-105">[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="8abe7-105">Learn more about [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview).</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="c013e-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="c013e-106">Management package</span></span>
+## <a name="management-package"></a><span data-ttu-id="8abe7-106">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="8abe7-106">Management package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="c013e-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="c013e-107">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="8abe7-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="8abe7-107">Install the npm module</span></span>
 
-<span data-ttu-id="c013e-108">Azure Site Recovery 서비스 npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="c013e-108">Install the Azure Site Recovery service npm module</span></span>
+<span data-ttu-id="8abe7-108">Azure Site Recovery 서비스 npm 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="8abe7-108">Install the Azure Site Recovery service npm module</span></span>
 
 ```bash
 npm install azure-arm-recoveryservices
 ```
 
-### <a name="example"></a><span data-ttu-id="c013e-109">예</span><span class="sxs-lookup"><span data-stu-id="c013e-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="8abe7-109">예</span><span class="sxs-lookup"><span data-stu-id="8abe7-109">Example</span></span>
 
-<span data-ttu-id="c013e-110">이 예제에서는 리소스 그룹에 대한 Site Recovery 서비스를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="c013e-110">This example lists the Site Recovery service for a resource group.</span></span>
+<span data-ttu-id="8abe7-110">이 예제에서는 리소스 그룹에 대한 Site Recovery 서비스를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="8abe7-110">This example lists the Site Recovery service for a resource group.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -56,6 +56,6 @@ msRestAzure
   });
 ```
 
-## <a name="samples"></a><span data-ttu-id="c013e-111">샘플</span><span class="sxs-lookup"><span data-stu-id="c013e-111">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="8abe7-111">샘플</span><span class="sxs-lookup"><span data-stu-id="8abe7-111">Samples</span></span>
 
-<span data-ttu-id="c013e-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="c013e-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="8abe7-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="8abe7-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
