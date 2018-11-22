@@ -8,31 +8,31 @@ ms.topic: article
 ms.devlang: nodejs
 ms.service: mysql
 ms.openlocfilehash: 557645774ecb0ea5e774f99d03251a303ad19660
-ms.sourcegitcommit: b1e29342a19524f43ed70f4bc961dcfdacffb14a
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51354147"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52080398"
 ---
-# <a name="azure-mysql-modules-for-nodejs"></a><span data-ttu-id="68ae1-103">Node.js용 Azure MySQL 모듈</span><span class="sxs-lookup"><span data-stu-id="68ae1-103">Azure MySQL modules for Node.js</span></span>
+# <a name="azure-mysql-modules-for-nodejs"></a><span data-ttu-id="678e3-103">Node.js용 Azure MySQL 모듈</span><span class="sxs-lookup"><span data-stu-id="678e3-103">Azure MySQL modules for Node.js</span></span>
 
-<span data-ttu-id="68ae1-104">Azure Database for MySQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 [Azure Database for MySQL용 Node.js 연결 라이브러리(영문)](https://github.com/sidorares/node-mysql2) 오픈 소스입니다.</span><span class="sxs-lookup"><span data-stu-id="68ae1-104">The recommended client library for accessing Azure Database for MySQL is the open-source [Node.js connection library for Azure Database for MySQL](https://github.com/sidorares/node-mysql2).</span></span> 
+<span data-ttu-id="678e3-104">Azure Database for MySQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 [Azure Database for MySQL용 Node.js 연결 라이브러리(영문)](https://github.com/sidorares/node-mysql2) 오픈 소스입니다.</span><span class="sxs-lookup"><span data-stu-id="678e3-104">The recommended client library for accessing Azure Database for MySQL is the open-source [Node.js connection library for Azure Database for MySQL](https://github.com/sidorares/node-mysql2).</span></span> 
 
-<span data-ttu-id="68ae1-105">[Azure Database for MySQL](https://docs.microsoft.com/azure/MySQL/)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="68ae1-105">Learn more about [Azure Database for MySQL](https://docs.microsoft.com/azure/MySQL/)</span></span>
+<span data-ttu-id="678e3-105">[Azure Database for MySQL](https://docs.microsoft.com/azure/MySQL/)에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="678e3-105">Learn more about [Azure Database for MySQL](https://docs.microsoft.com/azure/MySQL/)</span></span>
 
-## <a name="client-package"></a><span data-ttu-id="68ae1-106">클라이언트 패키지</span><span class="sxs-lookup"><span data-stu-id="68ae1-106">Client Package</span></span>
+## <a name="client-package"></a><span data-ttu-id="678e3-106">클라이언트 패키지</span><span class="sxs-lookup"><span data-stu-id="678e3-106">Client Package</span></span>
 
-### <a name="install-the-npm-module"></a><span data-ttu-id="68ae1-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="68ae1-107">Install the npm module</span></span>
+### <a name="install-the-npm-module"></a><span data-ttu-id="678e3-107">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="678e3-107">Install the npm module</span></span>
 
-<span data-ttu-id="68ae1-108">npm을 사용하여 MySQL 클라이언트 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="68ae1-108">Use npm to install the MySQL client module.</span></span>
+<span data-ttu-id="678e3-108">npm을 사용하여 MySQL 클라이언트 모듈을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="678e3-108">Use npm to install the MySQL client module.</span></span>
 
 ```bash
 npm install mysql2
 ```   
 
-### <a name="example"></a><span data-ttu-id="68ae1-109">예</span><span class="sxs-lookup"><span data-stu-id="68ae1-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="678e3-109">예</span><span class="sxs-lookup"><span data-stu-id="678e3-109">Example</span></span>
 
-<span data-ttu-id="68ae1-110">이 예제에서는 MySQL 데이터베이스에 연결하고 간단한 쿼리를 수행하여 모든 고객을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="68ae1-110">This example connects to a MySQL database and performs a simple query to retrieve all customers.</span></span>
+<span data-ttu-id="678e3-110">이 예제에서는 MySQL 데이터베이스에 연결하고 간단한 쿼리를 수행하여 모든 고객을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="678e3-110">This example connects to a MySQL database and performs a simple query to retrieve all customers.</span></span>
 
 ```javascript
 const mysql = require('mysql2');
@@ -55,8 +55,8 @@ connection.query(query, (err, res) =>
 connection.end();
 ```
 
-## <a name="samples"></a><span data-ttu-id="68ae1-111">샘플</span><span class="sxs-lookup"><span data-stu-id="68ae1-111">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="678e3-111">샘플</span><span class="sxs-lookup"><span data-stu-id="678e3-111">Samples</span></span>
 
 [!INCLUDE [node-mysql-samples](../docs-ref-conceptual/includes/mysql-samples.md)]
 
-<span data-ttu-id="68ae1-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="68ae1-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="678e3-112">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="678e3-112">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
