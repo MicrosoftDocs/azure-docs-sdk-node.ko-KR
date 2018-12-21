@@ -19,7 +19,7 @@ ms.locfileid: "52067078"
 ---
 # <a name="azure-service-map-modules-for-nodejs"></a>Node.js용 Azure 서비스 맵 모듈
 
-서비스 맵은 Windows 및 Linux 시스템에서 응용 프로그램 구성 요소를 자동으로 검색하고 서비스 간 통신을 매핑합니다. 서비스 맵은 서버, 프로세스 및 에이전트 설치 이외에 구성이 필요 없는 TCP 연결 아키텍처의 포트 간 연결을 보여 줍니다.
+서비스 맵은 Windows 및 Linux 시스템에서 애플리케이션 구성 요소를 자동으로 검색하고 서비스 간 통신을 매핑합니다. 서비스 맵은 서버, 프로세스 및 에이전트 설치 이외에 구성이 필요 없는 TCP 연결 아키텍처의 포트 간 연결을 보여 줍니다.
 
 [서비스 맵](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map)에 대해 자세히 알아보세요.
 
