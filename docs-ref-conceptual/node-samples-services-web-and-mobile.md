@@ -1,6 +1,6 @@
 ---
 title: Node.js를 통한 Azure 웹 및 모바일 앱 샘플 코드
-description: Node.js에서 Azure 웹 및 모바일 응용 프로그램 샘플 코드
+description: Node.js에서 Azure 웹 및 모바일 애플리케이션 샘플 코드
 author: rloutlaw
 manager: routlaw
 ms.devlang: nodejs
@@ -15,10 +15,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
 ms.locfileid: "34220635"
 ---
-# <a name="azure-web-and-mobile-apps-with-nodejs-code-samples"></a><span data-ttu-id="37085-103">Node.js를 통한 Azure 웹 및 모바일 앱 샘플 코드</span><span class="sxs-lookup"><span data-stu-id="37085-103">Azure web and mobile apps with Node.js code samples</span></span>
+# <a name="azure-web-and-mobile-apps-with-nodejs-code-samples"></a><span data-ttu-id="f3440-103">Node.js를 통한 Azure 웹 및 모바일 앱 샘플 코드</span><span class="sxs-lookup"><span data-stu-id="f3440-103">Azure web and mobile apps with Node.js code samples</span></span>
 
-<span data-ttu-id="37085-104">다음 샘플 코드에서는 Node.js를 통해 Azure 웹 및 모바일 앱을 빌드하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="37085-104">The following code samples demonstrate how to build Azure web and mobile apps with Node.js.</span></span>
+<span data-ttu-id="f3440-104">다음 샘플 코드에서는 Node.js를 통해 Azure 웹 및 모바일 앱을 빌드하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="f3440-104">The following code samples demonstrate how to build Azure web and mobile apps with Node.js.</span></span>
 
-<span data-ttu-id="37085-105">다른 작업에 대한 코드가 필요하면 [Azure Node.js 샘플 ](https://azure.microsoft.com/resources/samples/?term=nodejs)의 전체 목록을 찾아볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="37085-105">If you need code for other tasks, you can browse the full list of [Azure Node.js samples](https://azure.microsoft.com/resources/samples/?term=nodejs).</span></span>
+<span data-ttu-id="f3440-105">다른 작업에 대한 코드가 필요하면 [Azure Node.js 샘플 ](https://azure.microsoft.com/resources/samples/?term=nodejs)의 전체 목록을 찾아볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f3440-105">If you need code for other tasks, you can browse the full list of [Azure Node.js samples](https://azure.microsoft.com/resources/samples/?term=nodejs).</span></span>
 
 [!INCLUDE [node-appservice-samples](../docs-ref-conceptual/includes/appservice-samples.md)]
