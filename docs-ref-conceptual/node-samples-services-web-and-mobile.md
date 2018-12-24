@@ -1,6 +1,6 @@
 ---
 title: Node.js를 통한 Azure 웹 및 모바일 앱 샘플 코드
-description: Node.js에서 Azure 웹 및 모바일 응용 프로그램 샘플 코드
+description: Node.js에서 Azure 웹 및 모바일 애플리케이션 샘플 코드
 author: rloutlaw
 manager: routlaw
 ms.devlang: nodejs

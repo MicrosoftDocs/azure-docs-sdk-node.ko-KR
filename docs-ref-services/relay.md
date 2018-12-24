@@ -19,7 +19,7 @@ ms.locfileid: "52079359"
 ---
 # <a name="azure-relay-modules-for-nodejs"></a>Node.js용 Azure Relay 모듈
 
-Azure Relay 서비스는 방화벽 연결을 열거나 회사 네트워크 인프라를 주입식으로 변경하지 않고도 회사 엔터프라이즈 네트워크 내에 있는 서비스를 공용 클라우드에 안전하게 노출할 수 있게 함으로써 하이브리드 응용 프로그램을 만듭니다. 릴레이는 다양한 전송 프로토콜 및 웹 서비스 표준을 지원합니다.
+Azure Relay 서비스는 방화벽 연결을 열거나 회사 네트워크 인프라를 주입식으로 변경하지 않고도 회사 엔터프라이즈 네트워크 내에 있는 서비스를 공용 클라우드에 안전하게 노출할 수 있게 함으로써 하이브리드 애플리케이션을 만듭니다. 릴레이는 다양한 전송 프로토콜 및 웹 서비스 표준을 지원합니다.
 
 [Azure Relay](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it)에 대해 자세히 알아보세요.
 

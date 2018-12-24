@@ -24,7 +24,7 @@ ms.locfileid: "34220705"
 | | |
 |---|---|
 | **Cosmos DB** ||
-| [Azure Cosmos DB 및 Graph API 사용(영문)](https://azure.microsoft.com/resources/samples/azure-cosmos-db-graph-nodejs-getting-started/) | Azure Cosmos DB를 Graph API와 함께 사용하여 Node.js 응용 프로그램의 데이터를 저장하고 액세스하는 방법을 보여 줍니다. |
+| [Azure Cosmos DB 및 Graph API 사용(영문)](https://azure.microsoft.com/resources/samples/azure-cosmos-db-graph-nodejs-getting-started/) | Azure Cosmos DB를 Graph API와 함께 사용하여 Node.js 애플리케이션의 데이터를 저장하고 액세스하는 방법을 보여 줍니다. |
 | [Azure Cosmos DB SQL API 사용](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-nodejs-getting-started/) | Azure Cosmos DB를 SQL API와 함께 사용하여 Node.js 애플리케이션의 데이터를 저장하고 액세스하는 방법을 보여 줍니다. |
 | **MongoDB** ||
 | [Azure의 Node.js 및 MongoDB 웹앱(영문)](https://azure.microsoft.com/resources/samples/meanjs/) | [Azure에서 Node.js 및 MongoDB 웹앱 작성](http://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-nodejs-mongodb-app?toc=/azure/node/toc.json&bc=/azure/node/toc.json) 자습서와 함께 수행하는 데 사용할 수 있는 샘플 응용 프로그램입니다. |
