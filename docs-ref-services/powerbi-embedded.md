@@ -19,7 +19,7 @@ ms.locfileid: "52084874"
 ---
 # <a name="azure-powerbi-embedded-modules-for-nodejs"></a>Node.js용 Azure PowerBI Embedded 모듈
 
-Azure Power BI Embedded 서비스를 사용하면 노드 응용 프로그램에 Power BI 보고서를 바로 통합하여 차트와 보고서를 만들거나 편집할 수 있습니다.
+Azure Power BI Embedded 서비스를 사용하면 노드 애플리케이션에 Power BI 보고서를 바로 통합하여 차트와 보고서를 만들거나 편집할 수 있습니다.
 
 [Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding/)에 대해 자세히 알아보세요.
 

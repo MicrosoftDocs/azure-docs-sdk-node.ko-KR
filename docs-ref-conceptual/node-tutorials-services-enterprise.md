@@ -25,4 +25,4 @@ ms.locfileid: "34220725"
 |---|---|
 | **Service Bus** ||
 | [Service Bus 큐를 사용하는 방법](http://docs.microsoft.com/azure/service-bus-messaging/service-bus-nodejs-how-to-use-queues?toc=/azure/node/toc.json&bc=/azure/node/toc.json) | 큐를 만들고, 메시지를 보내고 받고, 큐를 삭제하는 방법을 보여 줍니다. |
-| [Service Bus 토픽 및 구독을 사용하는 방법](http://docs.microsoft.com/azure/service-bus-messaging/service-bus-nodejs-how-to-use-topics-subscriptions?toc=/azure/node/toc.json&bc=/azure/node/toc.json) | Node.js 응용 프로그램에서 Service Bus 토픽과 구독을 사용하는 방법을 보여 줍니다. |
+| [Service Bus 토픽 및 구독을 사용하는 방법](http://docs.microsoft.com/azure/service-bus-messaging/service-bus-nodejs-how-to-use-topics-subscriptions?toc=/azure/node/toc.json&bc=/azure/node/toc.json) | Node.js 애플리케이션에서 Service Bus 토픽과 구독을 사용하는 방법을 보여줍니다. |

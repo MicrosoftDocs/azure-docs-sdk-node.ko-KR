@@ -25,6 +25,6 @@ ms.locfileid: "34220525"
 |---|---|
 | **Azure Active Directory** ||
 | [Azure AD를 사용하여 Web API 보안(영문)](https://azure.microsoft.com/resources/samples/active-directory-node-webapi/) | Azure AD 및 OAuth 2.0 액세스 토큰을 사용하여 보안되는 NodeJS Web API입니다. |
-| [Azure AD를 NodeJS 웹 응용 프로그램에 통합(영문)](https://azure.microsoft.com/resources/samples/active-directory-node-webapp-openidconnect/) | Azure AD 사용자를 OpenID Connect를 통해 인증하는 NodeJS 웹 응용 프로그램입니다. |
+| [Azure AD를 NodeJS 웹 응용 프로그램에 통합(영문)](https://azure.microsoft.com/resources/samples/active-directory-node-webapp-openidconnect/) | Azure AD 사용자를 OpenID Connect를 통해 인증하는 NodeJS 웹 애플리케이션입니다. |
 | **Azure Key Vault** ||
 | [Node.js에서 Key Vault 시작](https://azure.microsoft.com/resources/samples/key-vault-node-getting-started/) | 키 자격 증명 모음을 생성, 관리 및 상호 작용하는 방법을 보여 줍니다. |

@@ -19,7 +19,7 @@ ms.locfileid: "52005907"
 ---
 # <a name="azure-search-modules-for-nodejs"></a>Node.js용 Azure Search 모듈
 
-Azure Search는 서버 및 인프라 관리를 Microsoft에 위임하는 클라우드 SaaS(Search-as-a-Service) 솔루션이며, 즉시 사용 가능한 서비스를 제공하여 데이터로 채운 다음 응용 프로그램에 검색을 추가하는 데 사용할 수 있습니다.
+Azure Search는 서버 및 인프라 관리를 Microsoft에 위임하는 클라우드 SaaS(Search-as-a-Service) 솔루션이며, 즉시 사용 가능한 서비스를 제공하여 데이터로 채운 다음, 애플리케이션에 검색을 추가하는 데 사용할 수 있습니다.
 
 [Azure Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search)에 대해 자세히 알아보세요.
 
