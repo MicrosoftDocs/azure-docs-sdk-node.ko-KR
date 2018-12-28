@@ -17,21 +17,21 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2018
 ms.locfileid: "52146540"
 ---
-# <a name="azure-monitor-modules-for-nodejs"></a><span data-ttu-id="5c07d-103">Node.js용 Azure Monitor 모듈</span><span class="sxs-lookup"><span data-stu-id="5c07d-103">Azure Monitor modules for Node.js</span></span>
+# <a name="azure-monitor-modules-for-nodejs"></a><span data-ttu-id="02dde-103">Node.js용 Azure Monitor 모듈</span><span class="sxs-lookup"><span data-stu-id="02dde-103">Azure Monitor modules for Node.js</span></span>
 
-<span data-ttu-id="5c07d-104">클라우드 응용 프로그램은 이동하는 부분이 많아 복잡합니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-104">Cloud applications are complex with many moving parts.</span></span> <span data-ttu-id="5c07d-105">모니터링은 응용 프로그램을 유지하고 정상 상태에서 실행할 수 있는 데이터를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-105">Monitoring provides data to ensure that your application stays up and running in a healthy state.</span></span> <span data-ttu-id="5c07d-106">또한 잠재적 문제를 방지하거나 지난 문제를 해결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-106">It also helps you to stave off potential problems or troubleshoot past ones.</span></span> <span data-ttu-id="5c07d-107">또한 응용 프로그램에 대해 깊이 이해하는 데 모니터링 데이터를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-107">In addition, you can use monitoring data to gain deep insights about your application.</span></span> <span data-ttu-id="5c07d-108">이러한 정보를 통해 응용 프로그램 성능이나 유지 관리를 개선하거나 그렇지 않으면 수동 개입이 필요한 작업을 자동화하는 데 도움이 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-108">That knowledge can help you to improve application performance or maintainability, or automate actions that would otherwise require manual intervention.</span></span>
+<span data-ttu-id="02dde-104">클라우드 응용 프로그램은 이동하는 부분이 많아 복잡합니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-104">Cloud applications are complex with many moving parts.</span></span> <span data-ttu-id="02dde-105">모니터링은 애플리케이션을 유지하고 정상 상태에서 실행할 수 있는 데이터를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-105">Monitoring provides data to ensure that your application stays up and running in a healthy state.</span></span> <span data-ttu-id="02dde-106">또한 잠재적 문제를 방지하거나 지난 문제를 해결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-106">It also helps you to stave off potential problems or troubleshoot past ones.</span></span> <span data-ttu-id="02dde-107">또한 애플리케이션에 대해 깊이 이해하는 데 모니터링 데이터를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-107">In addition, you can use monitoring data to gain deep insights about your application.</span></span> <span data-ttu-id="02dde-108">이러한 정보를 통해 애플리케이션 성능이나 유지 관리를 개선하거나 그렇지 않으면 수동 개입이 필요한 작업을 자동화하는 데 도움이 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-108">That knowledge can help you to improve application performance or maintainability, or automate actions that would otherwise require manual intervention.</span></span>
 
-## <a name="management-package"></a><span data-ttu-id="5c07d-109">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="5c07d-109">Management Package</span></span>
+## <a name="management-package"></a><span data-ttu-id="02dde-109">관리 패키지</span><span class="sxs-lookup"><span data-stu-id="02dde-109">Management Package</span></span>
 
-### <a name="install-npm-module"></a><span data-ttu-id="5c07d-110">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="5c07d-110">Install npm module</span></span>
+### <a name="install-npm-module"></a><span data-ttu-id="02dde-110">npm 모듈 설치</span><span class="sxs-lookup"><span data-stu-id="02dde-110">Install npm module</span></span>
 
 ```bash
 npm install azure-arm-monitor
 ```
 
-### <a name="example"></a><span data-ttu-id="5c07d-111">예</span><span class="sxs-lookup"><span data-stu-id="5c07d-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="02dde-111">예</span><span class="sxs-lookup"><span data-stu-id="02dde-111">Example</span></span>
 
-<span data-ttu-id="5c07d-112">이 코드 예제에서는 리소스 그룹과 연결된 모든 경고 규칙을 인쇄합니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-112">This code example prints all the alerting rules associated with a resource group.</span></span>
+<span data-ttu-id="02dde-112">이 코드 예제에서는 리소스 그룹과 연결된 모든 경고 규칙을 인쇄합니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-112">This code example prints all the alerting rules associated with a resource group.</span></span>
 
 ```javascript
 const msRestAzure = require('ms-rest-azure');
@@ -51,6 +51,6 @@ msRestAzure
   });
 ```
 
-### <a name="samples"></a><span data-ttu-id="5c07d-113">샘플</span><span class="sxs-lookup"><span data-stu-id="5c07d-113">Samples</span></span>
+### <a name="samples"></a><span data-ttu-id="02dde-113">샘플</span><span class="sxs-lookup"><span data-stu-id="02dde-113">Samples</span></span>
 
-<span data-ttu-id="5c07d-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="5c07d-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
+<span data-ttu-id="02dde-114">앱에서 사용할 수 있는 [Node.js 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=nodejs)를 추가로 탐색합니다.</span><span class="sxs-lookup"><span data-stu-id="02dde-114">Explore more [sample Node.js code](https://azure.microsoft.com/resources/samples/?platform=nodejs) you can use in your apps.</span></span>
