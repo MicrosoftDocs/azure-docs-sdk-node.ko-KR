@@ -22,7 +22,7 @@ ms.locfileid: "52015527"
 
 ## <a name="overview"></a>개요
 
-음성 지원 응용 프로그램의 개발을 간소화하기 위해 Microsoft는 Speech 서비스에서 사용할 [Speech SDK](https://aka.ms/csspeech)를 제공합니다.
+음성 지원 애플리케이션의 개발을 간소화하기 위해 Microsoft는 Speech 서비스에서 사용할 [Speech SDK](https://aka.ms/csspeech)를 제공합니다.
 Speech SDK는 일관된 네이티브 Speech to Text 및 Speech Translation API를 제공합니다.
 
 > [!NOTE]

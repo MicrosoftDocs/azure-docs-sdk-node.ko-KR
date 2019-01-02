@@ -18,7 +18,7 @@ ms.locfileid: "52064566"
 ---
 # <a name="azure-modules-for-javascript"></a>JavaScript용 Azure 모듈
 
-JavaScript용 Azure 모듈을 사용하여 JavaScript 응용 프로그램에서 Azure 리소스를 관리하고 서비스에 연결합니다. 코드는 프로젝트에서 사용할 [npm 모듈](node-sdk-azure-install.md)로 제공됩니다. 
+JavaScript용 Azure 모듈을 사용하여 JavaScript 애플리케이션에서 Azure 리소스를 관리하고 서비스에 연결합니다. 코드는 프로젝트에서 사용할 [npm 모듈](node-sdk-azure-install.md)로 제공됩니다. 
 
 ## <a name="manage-azure-resources"></a>Azure 리소스 관리
 
