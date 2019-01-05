@@ -1,0 +1,254 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 937af6d054d269b3f8cfc13740dfa0bd3037eac5
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53667507"
+items:
+- uid: azure-arm-network.LoadBalancingRule
+  name: LoadBalancingRule
+  fullName: LoadBalancingRule
+  children:
+  - azure-arm-network.LoadBalancingRule.backendAddressPool
+  - azure-arm-network.LoadBalancingRule.backendPort
+  - azure-arm-network.LoadBalancingRule.disableOutboundSnat
+  - azure-arm-network.LoadBalancingRule.enableFloatingIP
+  - azure-arm-network.LoadBalancingRule.enableTcpReset
+  - azure-arm-network.LoadBalancingRule.etag
+  - azure-arm-network.LoadBalancingRule.frontendIPConfiguration
+  - azure-arm-network.LoadBalancingRule.frontendPort
+  - azure-arm-network.LoadBalancingRule.idleTimeoutInMinutes
+  - azure-arm-network.LoadBalancingRule.loadDistribution
+  - azure-arm-network.LoadBalancingRule.name
+  - azure-arm-network.LoadBalancingRule.probe
+  - azure-arm-network.LoadBalancingRule.protocol
+  - azure-arm-network.LoadBalancingRule.provisioningState
+  langs:
+  - typeScript
+  type: interface
+  summary: 부하 분산 규칙을 부하 분산 장치에 대 한 합니다.
+  extends:
+    name: azure-arm-network.SubResource
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.backendAddressPool
+  name: backendAddressPool
+  fullName: backendAddressPool
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Dip의 풀에 대 한 참조입니다. 인바운드 트래픽을 임의로 백 엔드 Ip의에서 Ip 간에 부하가 분산 됩니다.
+  optional: true
+  syntax:
+    content: 'backendAddressPool?: SubResource'
+    return:
+      type:
+      - azure-arm-network.SubResource
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.backendPort
+  name: backendPort
+  fullName: backendPort
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    끝점에서 내부 연결에 사용 되는 포트입니다. 가능한 값은 0 및
+
+    65535. "Any 포트" 값이 0을 통해 수 있음을 참고
+  optional: true
+  syntax:
+    content: 'backendPort?: number'
+    return:
+      type:
+      - number
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.disableOutboundSnat
+  name: disableOutboundSnat
+  fullName: disableOutboundSnat
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 부하 분산 규칙의 프런트 엔드에 지정 된 publicIP 주소를 사용 하도록 백 엔드 풀에서 Vm에 대 한 SNAT를 구성 합니다.
+  optional: true
+  syntax:
+    content: 'disableOutboundSnat?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.enableFloatingIP
+  name: enableFloatingIP
+  fullName: enableFloatingIP
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: SQL AlwaysOn 가용성 그룹을 구성 하는 데 필요한 부동 IP 기능에 대 한 가상 머신의 끝점을 구성 합니다. SQL server에서 SQL AlwaysOn 가용성 그룹을 사용 하는 경우이 설정은 필수입니다. 끝점을 만든 후에이 설정을 변경할 수 없습니다.
+  optional: true
+  syntax:
+    content: 'enableFloatingIP?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.enableTcpReset
+  name: enableTcpReset
+  fullName: enableTcpReset
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    TCP 흐름 유휴 시간 제한 또는 예기치 않은 연결 종료에 양방향 TCP 재설정을 받습니다.
+
+    이 요소는 프로토콜이 TCP로 설정 된 경우에 사용 됩니다.
+  optional: true
+  syntax:
+    content: 'enableTcpReset?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.etag
+  name: etag
+  fullName: etag
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.
+  optional: true
+  syntax:
+    content: 'etag?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.frontendIPConfiguration
+  name: frontendIPConfiguration
+  fullName: frontendIPConfiguration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 프런트 엔드 IP 주소에 대 한 참조입니다.
+  optional: true
+  syntax:
+    content: 'frontendIPConfiguration?: SubResource'
+    return:
+      type:
+      - azure-arm-network.SubResource
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.frontendPort
+  name: frontendPort
+  fullName: frontendPort
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 외부 엔드포인트에 대한 포트입니다. 각 규칙에 대 한 포트 번호는 부하 분산 장치 내에서 고유 해야 합니다. 허용 되는 값 0과 65534 사이의 됩니다. "Any 포트" 값이 0을 통해 수 있음을 참고
+  syntax:
+    content: 'frontendPort: number'
+    return:
+      type:
+      - number
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.idleTimeoutInMinutes
+  name: idleTimeoutInMinutes
+  fullName: idleTimeoutInMinutes
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: TCP 유휴 연결에 대 한 제한 시간입니다. 값은 4 분에서 30 분 사이로 설정할 수 있습니다. 기본값은 4 분입니다. 이 요소는 프로토콜이 TCP로 설정 된 경우에 사용 됩니다.
+  optional: true
+  syntax:
+    content: 'idleTimeoutInMinutes?: number'
+    return:
+      type:
+      - number
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.loadDistribution
+  name: loadDistribution
+  fullName: loadDistribution
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 규칙에 대 한 부하 배포 정책입니다. 가능한 값은 'Default', 'SourceIP' 및 'sourceipprotocol 로'. 가능한 값은 다음과 같습니다. ' Default', 'SourceIP', 'sourceipprotocol 로'
+  optional: true
+  syntax:
+    content: 'loadDistribution?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.name
+  name: name
+  fullName: name
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 리소스 그룹 내에서 고유한 리소스의 이름입니다. 이 이름은 리소스에 액세스할 때 사용할 수 있습니다.
+  optional: true
+  syntax:
+    content: 'name?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.probe
+  name: probe
+  fullName: probe
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 부하 분산 규칙에서 사용 하는 부하 분산 장치 프로브에 대 한 참조입니다.
+  optional: true
+  syntax:
+    content: 'probe?: SubResource'
+    return:
+      type:
+      - azure-arm-network.SubResource
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.protocol
+  name: protocol
+  fullName: protocol
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 가능한 값은 다음과 같습니다. 'Udp', 'Tcp', '모두'
+  syntax:
+    content: 'protocol: string'
+    return:
+      type:
+      - string
+  package: azure-arm-network
+- uid: azure-arm-network.LoadBalancingRule.provisioningState
+  name: provisioningState
+  fullName: provisioningState
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: PublicIP 리소스의 프로 비전 상태를 가져옵니다. 가능한 값은 다음과 같습니다. '업데이트', '삭제' 및 '실패'입니다.
+  optional: true
+  syntax:
+    content: 'provisioningState?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-network
+references:
+- uid: azure-arm-network.SubResource
+  name: SubResource
+  spec.typeScript:
+  - name: SubResource
+    fullName: SubResource
+    uid: azure-arm-network.SubResource
