@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: d5c185fc785c5a7383cef8fe02daf63c21ba83f4
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52030977"
+items:
+- uid: azure-servicefabric.DeployedApplicationsHealthEvaluation
+  name: DeployedApplicationsHealthEvaluation
+  fullName: DeployedApplicationsHealthEvaluation
+  children:
+  - azure-servicefabric.DeployedApplicationsHealthEvaluation.maxPercentUnhealthyDeployedApplications
+  - azure-servicefabric.DeployedApplicationsHealthEvaluation.totalCount
+  - azure-servicefabric.DeployedApplicationsHealthEvaluation.unhealthyEvaluations
+  langs:
+  - typeScript
+  type: interface
+  summary: >-
+    <span data-ttu-id="f17a8-101">현재 집계 된 상태에 영향을 받는 각 비정상적인 배포 된 응용 프로그램에 대 한 상태 평가 포함 하는 배포 된 응용 프로그램에 대 한 상태 평가 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="f17a8-101">Represents health evaluation for deployed applications, containing health evaluations for each unhealthy deployed application that impacted current aggregated health state.</span></span>
+
+    <span data-ttu-id="f17a8-102">오류 또는 경고는 응용 프로그램 상태 및 집계 된 상태를 평가 하는 경우에 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f17a8-102">Can be returned when evaluating application health and the aggregated health state is either Error or Warning.</span></span>
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeployedApplicationsHealthEvaluation.maxPercentUnhealthyDeployedApplications
+  name: maxPercentUnhealthyDeployedApplications
+  fullName: maxPercentUnhealthyDeployedApplications
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="f17a8-103">최대 백분율 비정상을 ApplicationHealthPolicy에서 응용 프로그램을 배포 합니다.</span><span class="sxs-lookup"><span data-stu-id="f17a8-103">Maximum allowed percentage of unhealthy deployed applications from the ApplicationHealthPolicy.</span></span>
+  optional: true
+  syntax:
+    content: 'maxPercentUnhealthyDeployedApplications?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeployedApplicationsHealthEvaluation.totalCount
+  name: totalCount
+  fullName: totalCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="f17a8-104">Health 스토어에 응용 프로그램의 배포 된 응용 프로그램의 총 수입니다.</span><span class="sxs-lookup"><span data-stu-id="f17a8-104">Total number of deployed applications of the application in the health store.</span></span>
+  optional: true
+  syntax:
+    content: 'totalCount?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeployedApplicationsHealthEvaluation.unhealthyEvaluations
+  name: unhealthyEvaluations
+  fullName: unhealthyEvaluations
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="f17a8-105">집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="f17a8-105">List of unhealthy evaluations that led to the aggregated health state.</span></span> <span data-ttu-id="f17a8-106">집계 된 상태에 영향을 미친 모든 비정상 DeployedApplicationHealthEvaluation을 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f17a8-106">Includes all the unhealthy DeployedApplicationHealthEvaluation that impacted the aggregated health.</span></span>
+  optional: true
+  syntax:
+    content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+    return:
+      type:
+      - azure-servicefabric.HealthEvaluationWrapper[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvaluationWrapper[]
+  name: HealthEvaluationWrapper[]
+  spec.typeScript:
+  - name: HealthEvaluationWrapper
+    fullName: HealthEvaluationWrapper
+    uid: azure-servicefabric.HealthEvaluationWrapper
+  - name: '[]'
+    fullName: '[]'
