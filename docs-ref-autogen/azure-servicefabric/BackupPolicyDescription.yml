@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: bdf8b9d6f20bb58738823313a5ead68b8aca7d61
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53661457"
+items:
+- uid: azure-servicefabric.BackupPolicyDescription
+  name: BackupPolicyDescription
+  fullName: BackupPolicyDescription
+  children:
+  - azure-servicefabric.BackupPolicyDescription.autoRestoreOnDataLoss
+  - azure-servicefabric.BackupPolicyDescription.maxIncrementalBackups
+  - azure-servicefabric.BackupPolicyDescription.name
+  - azure-servicefabric.BackupPolicyDescription.retentionPolicy
+  - azure-servicefabric.BackupPolicyDescription.schedule
+  - azure-servicefabric.BackupPolicyDescription.storage
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="23425-101">정기 백업 구성에 대 한 백업 정책을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="23425-101">Describes a backup policy for configuring periodic backup.</span></span>
+  package: azure-servicefabric
+- uid: azure-servicefabric.BackupPolicyDescription.autoRestoreOnDataLoss
+  name: autoRestoreOnDataLoss
+  fullName: autoRestoreOnDataLoss
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="23425-102">파티션에 데이터 손실 이벤트가 발생할 경우 사용 가능한 최신 백업을 사용하여 복원을 자동으로 트리거할지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="23425-102">Specifies whether to trigger restore automatically using the latest available backup in case the partition experiences a data loss event.</span></span>
+  syntax:
+    content: 'autoRestoreOnDataLoss: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-servicefabric
+- uid: azure-servicefabric.BackupPolicyDescription.maxIncrementalBackups
+  name: maxIncrementalBackups
+  fullName: maxIncrementalBackups
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="23425-103">두 개의 전체 백업 간에 수행할 증분 백업의 최대 수를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="23425-103">Defines the maximum number of incremental backups to be taken between two full backups.</span></span> <span data-ttu-id="23425-104">이것이 바로 상한값입니다.</span><span class="sxs-lookup"><span data-stu-id="23425-104">This is just the upper limit.</span></span> <span data-ttu-id="23425-105">다음 중 한 가지 조건에서, 지정된 수의 증분 백업이 완료되기 전에 전체 백업이 수행될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="23425-105">A full backup may be taken before specified number of incremental backups are completed in one of the following conditions</span></span>
+
+    - <span data-ttu-id="23425-106">주 바뀌었기 때문 복제본에서 전체 백업을 아예 가져올에</span><span class="sxs-lookup"><span data-stu-id="23425-106">The replica has never taken a full backup since it has become primary,</span></span>
+
+    - <span data-ttu-id="23425-107">마지막 백업 잘린 후 이후 로그 레코드의 일부 또는</span><span class="sxs-lookup"><span data-stu-id="23425-107">Some of the log records since the last backup has been truncated, or</span></span>
+
+    - <span data-ttu-id="23425-108">복제본이 MaxAccumulatedBackupLogSizeInMB 제한을 통과했습니다.</span><span class="sxs-lookup"><span data-stu-id="23425-108">Replica passed the MaxAccumulatedBackupLogSizeInMB limit.</span></span>
+  syntax:
+    content: 'maxIncrementalBackups: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.BackupPolicyDescription.name
+  name: name
+  fullName: name
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="23425-109">이 백업 정책을 식별 고유 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="23425-109">The unique name identifying this backup policy.</span></span>
+  syntax:
+    content: 'name: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.BackupPolicyDescription.retentionPolicy
+  name: retentionPolicy
+  fullName: retentionPolicy
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="23425-110">저장소에 백업 보존 정책을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="23425-110">Describes the policy to retain backups in storage.</span></span>
+  optional: true
+  syntax:
+    content: 'retentionPolicy?: RetentionPolicyDescription'
+    return:
+      type:
+      - azure-servicefabric.RetentionPolicyDescription
+  package: azure-servicefabric
+- uid: azure-servicefabric.BackupPolicyDescription.schedule
+  name: schedule
+  fullName: schedule
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="23425-111">백업 일정 매개 변수를 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="23425-111">Describes the backup schedule parameters.</span></span>
+  syntax:
+    content: 'schedule: BackupScheduleDescription'
+    return:
+      type:
+      - azure-servicefabric.BackupScheduleDescription
+  package: azure-servicefabric
+- uid: azure-servicefabric.BackupPolicyDescription.storage
+  name: storage
+  fullName: storage
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="23425-112">백업 저장소의 세부 정보를 정기적으로 백업을 저장할 위치를 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="23425-112">Describes the details of backup storage where to store the periodic backups.</span></span>
+  syntax:
+    content: 'storage: BackupStorageDescription'
+    return:
+      type:
+      - azure-servicefabric.BackupStorageDescription
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.RetentionPolicyDescription
+  name: RetentionPolicyDescription
+  spec.typeScript:
+  - name: RetentionPolicyDescription
+    fullName: RetentionPolicyDescription
+    uid: azure-servicefabric.RetentionPolicyDescription
+- uid: azure-servicefabric.BackupScheduleDescription
+  name: BackupScheduleDescription
+  spec.typeScript:
+  - name: BackupScheduleDescription
+    fullName: BackupScheduleDescription
+    uid: azure-servicefabric.BackupScheduleDescription
+- uid: azure-servicefabric.BackupStorageDescription
+  name: BackupStorageDescription
+  spec.typeScript:
+  - name: BackupStorageDescription
+    fullName: BackupStorageDescription
+    uid: azure-servicefabric.BackupStorageDescription
