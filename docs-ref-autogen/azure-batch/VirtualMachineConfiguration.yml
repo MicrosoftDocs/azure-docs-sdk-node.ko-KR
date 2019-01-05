@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 63ee004180274b4619233edcade16560a27d89f3
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53672736"
+items:
+- uid: azure-batch.VirtualMachineConfiguration
+  name: VirtualMachineConfiguration
+  fullName: VirtualMachineConfiguration
+  children:
+  - azure-batch.VirtualMachineConfiguration.containerConfiguration
+  - azure-batch.VirtualMachineConfiguration.dataDisks
+  - azure-batch.VirtualMachineConfiguration.imageReference
+  - azure-batch.VirtualMachineConfiguration.licenseType
+  - azure-batch.VirtualMachineConfiguration.nodeAgentSKUId
+  - azure-batch.VirtualMachineConfiguration.windowsConfiguration
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-batch
+- uid: azure-batch.VirtualMachineConfiguration.containerConfiguration
+  name: containerConfiguration
+  fullName: containerConfiguration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 를 지정 하는 경우 설치는 컨테이너에서 실행 하는 작업을 허용 하도록 풀의 각 노드에서 수행 됩니다. 모든 일반 작업 및이 풀에서 실행 하는 작업 관리자 태스크 containerSettings 속성을 지정 해야 하 고 다른 모든 작업에서 지정할 수 있습니다.
+  optional: true
+  syntax:
+    content: 'containerConfiguration?: ContainerConfiguration'
+    return:
+      type:
+      - azure-batch.ContainerConfiguration
+  package: azure-batch
+- uid: azure-batch.VirtualMachineConfiguration.dataDisks
+  name: dataDisks
+  fullName: dataDisks
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    이 속성은 이어야 풀의 계산 노드에 빈 데이터 디스크가 연결 해야 하는 경우를 지정 합니다. 이 업데이트할 수 없습니다. 각 노드는 고유한 디스크를 (디스크는 파일 공유를이 아님)를 가져옵니다. 기존 디스크를 연결할 수 없습니다, 그리고 연결 된 각 디스크는 비어 있습니다.
+
+    노드 풀에서 제거 되 면 디스크와 연결 된 모든 데이터가 삭제 됩니다. 연결 형식이 디스크, 자세한 내용은 사용 하기 전에 포맷 되어야 합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/classic/attach-disk#initialize-a-new-data-disk-in-linux 고 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps#add-an-empty-data-disk-to-a-virtual-machine입니다.
+  optional: true
+  syntax:
+    content: 'dataDisks?: DataDisk[]'
+    return:
+      type:
+      - azure-batch.DataDisk[]
+  package: azure-batch
+- uid: azure-batch.VirtualMachineConfiguration.imageReference
+  name: imageReference
+  fullName: imageReference
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'imageReference: ImageReference'
+    return:
+      type:
+      - azure-batch.ImageReference
+  package: azure-batch
+- uid: azure-batch.VirtualMachineConfiguration.licenseType
+  name: licenseType
+  fullName: licenseType
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    이 Windows 운영 체제를 포함 하 고 배포 되는 노드에 대 한 유효한 온-프레미스 라이선스를 보유 하는 경우에 사용 해야 하는 이미지에만 적용 됩니다. 생략 하면 없는 온-프레미스 라이선스 할인이 적용 됩니다. 값은 다음과 같습니다.
+
+
+    Windows_Server-온-프레미스 라이선스 Windows Server입니다.
+
+    Windows_Client-온-프레미스 라이선스 Windows 클라이언트입니다.
+  optional: true
+  syntax:
+    content: 'licenseType?: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.VirtualMachineConfiguration.nodeAgentSKUId
+  name: nodeAgentSKUId
+  fullName: nodeAgentSKUId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    Batch 노드 에이전트는 풀의 각 노드에서 실행 되 고 노드와 Batch 서비스 간에 명령 및 컨트롤 인터페이스를 제공 하는 프로그램입니다. SKU라고 하는 노드 에이전트의 구현은 서로 다른 운영 체제에 대해 여러 가지가 있습니다.
+
+    노드 에이전트 SKU 선택한 이미지 참조가 일치 하는 지정 해야 합니다. 확인 된 이미지 참조 목록 함께 지원 되는 노드 에이전트 Sku 목록을 '목록 노드 에이전트 Sku를 지원 하는 데 사용' 작업을 참조 하세요.
+  syntax:
+    content: 'nodeAgentSKUId: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.VirtualMachineConfiguration.windowsConfiguration
+  name: windowsConfiguration
+  fullName: windowsConfiguration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 속성은 아니어야 imageReference 속성은 Linux OS 이미지를 지정 하는 경우를 지정 합니다.
+  optional: true
+  syntax:
+    content: 'windowsConfiguration?: WindowsConfiguration'
+    return:
+      type:
+      - azure-batch.WindowsConfiguration
+  package: azure-batch
+references:
+- uid: azure-batch.ContainerConfiguration
+  name: ContainerConfiguration
+  spec.typeScript:
+  - name: ContainerConfiguration
+    fullName: ContainerConfiguration
+    uid: azure-batch.ContainerConfiguration
+- uid: azure-batch.DataDisk[]
+  name: DataDisk[]
+  spec.typeScript:
+  - name: DataDisk
+    fullName: DataDisk
+    uid: azure-batch.DataDisk
+  - name: '[]'
+    fullName: '[]'
+- uid: azure-batch.ImageReference
+  name: ImageReference
+  spec.typeScript:
+  - name: ImageReference
+    fullName: ImageReference
+    uid: azure-batch.ImageReference
+- uid: azure-batch.WindowsConfiguration
+  name: WindowsConfiguration
+  spec.typeScript:
+  - name: WindowsConfiguration
+    fullName: WindowsConfiguration
+    uid: azure-batch.WindowsConfiguration
