@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 87f9b035a1047c3d6889528fc305e711aba1b96d
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52101704"
+items:
+- uid: azure-servicefabric.PartitionsHealthEvaluation
+  name: PartitionsHealthEvaluation
+  fullName: PartitionsHealthEvaluation
+  children:
+  - azure-servicefabric.PartitionsHealthEvaluation.maxPercentUnhealthyPartitionsPerService
+  - azure-servicefabric.PartitionsHealthEvaluation.totalCount
+  - azure-servicefabric.PartitionsHealthEvaluation.unhealthyEvaluations
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="73129-101">현재 집계 된 상태에 영향을 주는 비정상 각 파티션에 대 한 상태 평가 포함 하는 서비스의 파티션에 대 한 상태 평가 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="73129-101">Represents health evaluation for the partitions of a service, containing health evaluations for each unhealthy partition that impacts current aggregated health state.</span></span> <span data-ttu-id="73129-102">오류 또는 경고 중 하나는 서비스 상태 및 집계 된 상태를 평가 하는 경우에 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73129-102">Can be returned when evaluating service health and the aggregated health state is either Error or Warning.</span></span>
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.PartitionsHealthEvaluation.maxPercentUnhealthyPartitionsPerService
+  name: maxPercentUnhealthyPartitionsPerService
+  fullName: maxPercentUnhealthyPartitionsPerService
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="73129-103">서비스 당 비정상 파티션 비율을 ServiceTypeHealthPolicy에서 최대입니다.</span><span class="sxs-lookup"><span data-stu-id="73129-103">Maximum allowed percentage of unhealthy partitions per service from the ServiceTypeHealthPolicy.</span></span>
+  optional: true
+  syntax:
+    content: 'maxPercentUnhealthyPartitionsPerService?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.PartitionsHealthEvaluation.totalCount
+  name: totalCount
+  fullName: totalCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="73129-104">Health store에서 서비스 파티션의 총 수입니다.</span><span class="sxs-lookup"><span data-stu-id="73129-104">Total number of partitions of the service from the health store.</span></span>
+  optional: true
+  syntax:
+    content: 'totalCount?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.PartitionsHealthEvaluation.unhealthyEvaluations
+  name: unhealthyEvaluations
+  fullName: unhealthyEvaluations
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="73129-105">집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="73129-105">List of unhealthy evaluations that led to the aggregated health state.</span></span> <span data-ttu-id="73129-106">집계 된 상태에 영향을 미친 모든 비정상 PartitionHealthEvaluation을 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73129-106">Includes all the unhealthy PartitionHealthEvaluation that impacted the aggregated health.</span></span>
+  optional: true
+  syntax:
+    content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+    return:
+      type:
+      - azure-servicefabric.HealthEvaluationWrapper[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvaluationWrapper[]
+  name: HealthEvaluationWrapper[]
+  spec.typeScript:
+  - name: HealthEvaluationWrapper
+    fullName: HealthEvaluationWrapper
+    uid: azure-servicefabric.HealthEvaluationWrapper
+  - name: '[]'
+    fullName: '[]'
