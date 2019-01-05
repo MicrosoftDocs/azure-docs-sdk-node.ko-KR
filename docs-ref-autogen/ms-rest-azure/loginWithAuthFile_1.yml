@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 833d102244edea2c5d239f0079c34a88b32958e2
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52099408"
+items:
+- uid: ms-rest-azure.loginWithAuthFile_1
+  name: 'loginWithAuthFile((err: Error, credentials: ApplicationTokenCredentials, subscriptions: Array<LinkedSubscription>) => void)'
+  children: []
+  type: function
+  langs:
+  - typeScript
+  summary: >
+    이 메서드를 사용 하기 전에 az cli를 설치 하세요 https://github.com/Azure/azure-cli/releases합니다. 그런 다음 실행 `az ad sp create-for-rbac --sdk-auth > ${yourFilename.json}`합니다.
+
+    다른 클라우드/환경에 대 한 sp를 만들려는 경우 다음 실행 하세요.
+
+    1. az 클라우드 목록
+
+    2. az 클라우드 설정 – n <name of the environment>
+
+    3. az ad sp 만들기에 대 한 rbac-sdk 인증 > auth.json 서비스 주체를 이미 만든 경우 다음 로그인 서비스 주체 정보를 사용 하 여:
+
+    3. az 로그인-서비스 주체-u <clientId> -p <clientSecret> -t <tenantId>
+
+    4. az 계정 표시-sdk 인증 > auth.json
+
+
+    인증 파일에서 제공 하는 서비스 주체 정보를 사용 하 여 인증 합니다. 이 메서드는 options 매개 변수 또는 기본 'AZURE_SUBSCRIPTION_ID' 환경 변수를 제공 하는 사용자에 게 subscriptionId 인증 파일에서 설정 됩니다.
+  syntax:
+    content: 'function loginWithAuthFile(callback: (err: Error, credentials: ApplicationTokenCredentials, subscriptions: Array<LinkedSubscription>) => void)'
+    parameters:
+    - id: callback
+      type:
+      - '(err: Error, credentials: ApplicationTokenCredentials, subscriptions: Array<LinkedSubscription>) => void'
+      description: ''
+    return:
+      type:
+      - Promise<ms-rest-azure.ApplicationTokenCredentials>
+  package: ms-rest-azure
+references:
+- uid: Promise<ms-rest-azure.ApplicationTokenCredentials>
+  name: ApplicationTokenCredentials>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: ApplicationTokenCredentials
+    fullName: ApplicationTokenCredentials
+    uid: ms-rest-azure.ApplicationTokenCredentials
+  - name: '>'
+    fullName: '>'
