@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: b36a02de9e3b728340dd4350cec66428479ae8c7
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52035464"
+items:
+- uid: azure-servicefabric.ApplicationMetricDescription
+  name: ApplicationMetricDescription
+  fullName: ApplicationMetricDescription
+  children:
+  - azure-servicefabric.ApplicationMetricDescription.maximumCapacity
+  - azure-servicefabric.ApplicationMetricDescription.name
+  - azure-servicefabric.ApplicationMetricDescription.reservationCapacity
+  - azure-servicefabric.ApplicationMetricDescription.totalApplicationCapacity
+  langs:
+  - typeScript
+  type: interface
+  summary: 사용자 지정 리소스 메트릭의 부하 분산에 대 한 용량 정보를 설명 합니다. 이 사용할 수 있습니다이 메트릭의 전체 사용량을 제한 하 여이 응용 프로그램의 서비스.
+  package: azure-servicefabric
+- uid: azure-servicefabric.ApplicationMetricDescription.maximumCapacity
+  name: maximumCapacity
+  fullName: maximumCapacity
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    Service Fabric 응용 프로그램에 대 한 최대 노드 용량입니다.
+
+    단일 노드에서이 응용 프로그램 인스턴스에 대 한 최대 부하입니다. 이 값 보다 큰 노드 용량의 경우 Service Fabric이이 값을 각 노드에 응용 프로그램 내에서 서비스의 총 부하를 제한 합니다.
+
+    0으로 설정이 메트릭에 대 한 용량이 없으면 각 노드에서 제한 합니다.
+
+    새 응용 프로그램을 정의 하는 응용 프로그램 용량을 만들 때 보다 작거나 TotalApplicationCapacity MaximumNodes 및이 값의 곱을 항상 이어야 합니다.
+
+    응용 프로그램 용량을 사용 하 여 기존 응용 프로그램을 업데이트 하는 경우 보다 작거나 TotalApplicationCapacity MaximumNodes 및이 값의 곱을 항상 이어야 합니다.
+  optional: true
+  syntax:
+    content: 'maximumCapacity?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.ApplicationMetricDescription.name
+  name: name
+  fullName: name
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 메트릭의 이름입니다.
+  optional: true
+  syntax:
+    content: 'name?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.ApplicationMetricDescription.reservationCapacity
+  name: reservationCapacity
+  fullName: reservationCapacity
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    Service Fabric 응용 프로그램에 대 한 노드 예약 용량입니다.
+
+    이이 응용 프로그램의 인스턴스를 포함 하는 노드에서 예약 된 부하의 크기입니다.
+
+    MinimumNodes 지정 된 경우 이러한 값의 곱을 응용 프로그램에 대 한 클러스터에서 예약 된 용량 수 됩니다.
+
+    0으로 설정 하는 경우 없습니다 용량이이 메트릭에 대해 예약 됩니다.
+
+    응용 프로그램 용량을 설정 하거나 응용 프로그램 용량을 업데이트할 때 이 값 보다 작거나 MaximumCapacity 각 메트릭에 대해 여야 합니다.
+  optional: true
+  syntax:
+    content: 'reservationCapacity?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.ApplicationMetricDescription.totalApplicationCapacity
+  name: totalApplicationCapacity
+  fullName: totalApplicationCapacity
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    Service Fabric 응용 프로그램에 대 한 총 메트릭 용량입니다.
+
+    클러스터에서이 응용 프로그램에 대 한 총 메트릭 용량입니다. Service Fabric이이 값으로 응용 프로그램 내에서 서비스의 부하의 합계를 제한 하려고 합니다.
+
+    새 응용 프로그램을 정의 하는 응용 프로그램 용량을 만들 때이 값 보다 작거나 MaximumNodes 및 MaximumCapacity 제품 항상 이어야 합니다.
+  optional: true
+  syntax:
+    content: 'totalApplicationCapacity?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric

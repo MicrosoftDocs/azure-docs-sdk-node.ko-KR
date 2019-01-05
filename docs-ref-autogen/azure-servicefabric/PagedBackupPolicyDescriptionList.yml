@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 84df700acd973b01a0597a19f04e836706b2e41d
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52083988"
+items:
+- uid: azure-servicefabric.PagedBackupPolicyDescriptionList
+  name: PagedBackupPolicyDescriptionList
+  fullName: PagedBackupPolicyDescriptionList
+  children:
+  - azure-servicefabric.PagedBackupPolicyDescriptionList.continuationToken
+  - azure-servicefabric.PagedBackupPolicyDescriptionList.items
+  langs:
+  - typeScript
+  type: interface
+  summary: 클러스터에 구성 된 백업 정책 목록입니다. 목록 결과의 모든 단일 메시지에 들어갈 수 없는 경우 페이징 됩니다. 이 목록에 제공 하는 연속 토큰을 사용 하 여 동일한 쿼리를 실행 하 여 다음 결과 집합을 얻을 수 있습니다.
+  package: azure-servicefabric
+- uid: azure-servicefabric.PagedBackupPolicyDescriptionList.continuationToken
+  name: continuationToken
+  fullName: continuationToken
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    연속 토큰 매개 변수는 다음 결과 집합을 얻는 데 사용됩니다. 연속 토큰은 시스템의 결과가 단일 응답에 맞지 않는 경우 API의 응답에 포함 됩니다. 이 값이 다음 API 호출에 전달되면 API는 다음 결과 집합을 반환합니다.
+
+    결과가 더 이상 없으면 없으면 연속 토큰 응답에 포함 되지 않습니다.
+  optional: true
+  syntax:
+    content: 'continuationToken?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.PagedBackupPolicyDescriptionList.items
+  name: items
+  fullName: items
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 백업 정책 정보 목록입니다.
+  optional: true
+  syntax:
+    content: 'items?: BackupPolicyDescription[]'
+    return:
+      type:
+      - azure-servicefabric.BackupPolicyDescription[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.BackupPolicyDescription[]
+  name: BackupPolicyDescription[]
+  spec.typeScript:
+  - name: BackupPolicyDescription
+    fullName: BackupPolicyDescription
+    uid: azure-servicefabric.BackupPolicyDescription
+  - name: '[]'
+    fullName: '[]'
