@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 278108c8c81993cd2c128699e512e4b9a927152a
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52008957"
+items:
+- uid: azure-servicefabric.EventHealthEvaluation
+  name: EventHealthEvaluation
+  fullName: EventHealthEvaluation
+  children:
+  - azure-servicefabric.EventHealthEvaluation.considerWarningAsError
+  - azure-servicefabric.EventHealthEvaluation.unhealthyEvent
+  langs:
+  - typeScript
+  type: interface
+  summary: >-
+    <span data-ttu-id="81708-101">엔터티에 대해 보고 된 HealthEvent 상태 평가 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="81708-101">Represents health evaluation of a HealthEvent that was reported on the entity.</span></span>
+
+    <span data-ttu-id="81708-102">상태 평가는 오류 또는 경고로 인해 엔터티의 상태를 평가할 때 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="81708-102">The health evaluation is returned when evaluating health of an entity results in Error or Warning.</span></span>
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.EventHealthEvaluation.considerWarningAsError
+  name: considerWarningAsError
+  fullName: considerWarningAsError
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="81708-103">경고가 오류와 동일한 심각도로 처리되는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="81708-103">Indicates whether warnings are treated with the same severity as errors.</span></span> <span data-ttu-id="81708-104">필드는 엔터티를 평가 하는 데 상태 정책에 지정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="81708-104">The field is specified in the health policy used to evaluate the entity.</span></span>
+  optional: true
+  syntax:
+    content: 'considerWarningAsError?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-servicefabric
+- uid: azure-servicefabric.EventHealthEvaluation.unhealthyEvent
+  name: unhealthyEvent
+  fullName: unhealthyEvent
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="81708-105">상태 관리자가 추가 하는 추가 메타 데이터를 사용 하 여 클러스터, 응용 프로그램 또는 노드를 같은 상태 엔터티를 보고 하는 상태 정보를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="81708-105">Represents health information reported on a health entity, such as cluster, application or node, with additional metadata added by the Health Manager.</span></span>
+  optional: true
+  syntax:
+    content: 'unhealthyEvent?: HealthEvent'
+    return:
+      type:
+      - azure-servicefabric.HealthEvent
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvent
+  name: HealthEvent
+  spec.typeScript:
+  - name: HealthEvent
+    fullName: HealthEvent
+    uid: azure-servicefabric.HealthEvent

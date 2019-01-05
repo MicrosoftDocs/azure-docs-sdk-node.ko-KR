@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 556fabfe28b03a82f3deede451f79e2b82830e30
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52008227"
+items:
+- uid: azure-servicefabric.RepairTaskUpdateHealthPolicyDescription
+  name: RepairTaskUpdateHealthPolicyDescription
+  fullName: RepairTaskUpdateHealthPolicyDescription
+  children:
+  - azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.performPreparingHealthCheck
+  - azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.performRestoringHealthCheck
+  - azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.taskId
+  - azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.version
+  langs:
+  - typeScript
+  type: interface
+  summary: >
+    <span data-ttu-id="eeb7c-101">복구 작업의 상태 정책을 업데이트 하는 요청을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-101">Describes a request to update the health policy of a repair task.</span></span>
+
+    <span data-ttu-id="eeb7c-102">이 유형은 Service Fabric 플랫폼; 지원 코드에서 직접 사용할 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-102">This type supports the Service Fabric platform; it is not meant to be used directly from your code.</span></span>
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.performPreparingHealthCheck
+  name: performPreparingHealthCheck
+  fullName: performPreparingHealthCheck
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="eeb7c-103">복구 작업의 준비 단계에서 수행할 상태 확인 인지 여부를 나타내는 부울입니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-103">A boolean indicating if health check is to be performed in the Preparing stage of the repair task.</span></span> <span data-ttu-id="eeb7c-104">기존 지정 되지 않은 경우 값은 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-104">If not specified the existing value should not be altered.</span></span> <span data-ttu-id="eeb7c-105">그렇지 않으면 원하는 새 값을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-105">Otherwise, specify the desired new value.</span></span>
+  optional: true
+  syntax:
+    content: 'performPreparingHealthCheck?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.performRestoringHealthCheck
+  name: performRestoringHealthCheck
+  fullName: performRestoringHealthCheck
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="eeb7c-106">복구 작업의 복원 단계에서 수행할 상태 확인 인지 여부를 나타내는 부울입니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-106">A boolean indicating if health check is to be performed in the Restoring stage of the repair task.</span></span> <span data-ttu-id="eeb7c-107">기존 지정 되지 않은 경우 값은 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-107">If not specified the existing value should not be altered.</span></span> <span data-ttu-id="eeb7c-108">그렇지 않으면 원하는 새 값을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-108">Otherwise, specify the desired new value.</span></span>
+  optional: true
+  syntax:
+    content: 'performRestoringHealthCheck?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.taskId
+  name: taskId
+  fullName: taskId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="eeb7c-109">업데이트할 복구 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-109">The ID of the repair task to be updated.</span></span>
+  syntax:
+    content: 'taskId: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTaskUpdateHealthPolicyDescription.version
+  name: version
+  fullName: version
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="eeb7c-110">복구 작업의 현재 버전 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-110">The current version number of the repair task.</span></span> <span data-ttu-id="eeb7c-111">0이 아닌 경우 다음 요청이 경우에 성공이 값에는 복구 작업의 실제 현재 값과 일치 합니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-111">If non-zero, then the request will only succeed if this value matches the actual current value of the repair task.</span></span> <span data-ttu-id="eeb7c-112">0이면 버전 검사가 수행되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="eeb7c-112">If zero, then no version check is performed.</span></span>
+  optional: true
+  syntax:
+    content: 'version?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
