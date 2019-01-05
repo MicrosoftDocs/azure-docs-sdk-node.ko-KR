@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 2863767b51e05b4f83f88c017ce9104bf03a4a5b
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52035399"
+items:
+- uid: azure-servicefabric.ClusterHealthPolicies
+  name: ClusterHealthPolicies
+  fullName: ClusterHealthPolicies
+  children:
+  - azure-servicefabric.ClusterHealthPolicies.applicationHealthPolicyMap
+  - azure-servicefabric.ClusterHealthPolicies.clusterHealthPolicy
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="f642f-101">클러스터 상태 평가에 상태 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f642f-101">Health policies to evaluate cluster health.</span></span>
+  package: azure-servicefabric
+- uid: azure-servicefabric.ClusterHealthPolicies.applicationHealthPolicyMap
+  name: applicationHealthPolicyMap
+  fullName: applicationHealthPolicyMap
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="f642f-102">다른 응용 프로그램에 대 한 특정 응용 프로그램 상태 정책을 포함 하는 맵을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="f642f-102">Defines a map that contains specific application health policies for different applications.</span></span>
+
+    <span data-ttu-id="f642f-103">각 항목에는 응용 프로그램 상태를 평가 하는 데는 ApplicationHealthPolicy 값 뿐만 아니라 응용 프로그램 이름 키로 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f642f-103">Each entry specifies as key the application name and as value an ApplicationHealthPolicy used to evaluate the application health.</span></span>
+
+    <span data-ttu-id="f642f-104">응용 프로그램은 맵의 지정 하지 않으면 응용 프로그램 상태 평가 (상태 정책이 정의 되지 않은 매니페스트에서) 하는 경우 해당 응용 프로그램 매니페스트 또는 기본 응용 프로그램 상태 정책에서 찾은 ApplicationHealthPolicy를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f642f-104">If an application is not specified in the map, the application health evaluation uses the ApplicationHealthPolicy found in its application manifest or the default application health policy (if no health policy is defined in the manifest).</span></span>
+
+    <span data-ttu-id="f642f-105">맵은 기본적으로 비어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f642f-105">The map is empty by default.</span></span>
+  optional: true
+  syntax:
+    content: 'applicationHealthPolicyMap?: ApplicationHealthPolicyMapItem[]'
+    return:
+      type:
+      - azure-servicefabric.ApplicationHealthPolicyMapItem[]
+  package: azure-servicefabric
+- uid: azure-servicefabric.ClusterHealthPolicies.clusterHealthPolicy
+  name: clusterHealthPolicy
+  fullName: clusterHealthPolicy
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="f642f-106">클러스터 노드 또는 클러스터의 상태를 평가 하는 데 사용 되는 상태 정책을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="f642f-106">Defines a health policy used to evaluate the health of the cluster or of a cluster node.</span></span>
+  optional: true
+  syntax:
+    content: 'clusterHealthPolicy?: ClusterHealthPolicy'
+    return:
+      type:
+      - azure-servicefabric.ClusterHealthPolicy
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.ApplicationHealthPolicyMapItem[]
+  name: ApplicationHealthPolicyMapItem[]
+  spec.typeScript:
+  - name: ApplicationHealthPolicyMapItem
+    fullName: ApplicationHealthPolicyMapItem
+    uid: azure-servicefabric.ApplicationHealthPolicyMapItem
+  - name: '[]'
+    fullName: '[]'
+- uid: azure-servicefabric.ClusterHealthPolicy
+  name: ClusterHealthPolicy
+  spec.typeScript:
+  - name: ClusterHealthPolicy
+    fullName: ClusterHealthPolicy
+    uid: azure-servicefabric.ClusterHealthPolicy
