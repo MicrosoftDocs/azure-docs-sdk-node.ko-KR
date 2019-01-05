@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 6be3af94898fd3f29c1904568c5e9f7d20c64073
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52054137"
+items:
+- uid: '@azure/cosmos.ConflictResolutionPolicy'
+  name: ConflictResolutionPolicy
+  fullName: ConflictResolutionPolicy
+  children:
+  - '@azure/cosmos.ConflictResolutionPolicy.conflictResolutionPath'
+  - '@azure/cosmos.ConflictResolutionPolicy.conflictResolutionProcedure'
+  - '@azure/cosmos.ConflictResolutionPolicy.mode'
+  langs:
+  - typeScript
+  type: interface
+  summary: 쓰기를 서로 다른 지역에서 Azure Cosmos DB 서비스에서 컬렉션의 문서에서 충돌이 발생할 경우 충돌을 해결 하는 방법을 지정 하는 것에 대 한 충돌 해결 정책 구성을 나타냅니다.
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.ConflictResolutionPolicy.conflictResolutionPath'
+  name: conflictResolutionPath
+  fullName: conflictResolutionPath
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >+
+    마지막 기록기 wins 충돌 해결을 위해 Azure Cosmos DB 서비스에서 각 문서에 존재 하는 경로 가져오거나 설정 합니다.
+
+    이 경로 각 문서에 있어야 합니다 및는 정수 값 이어야 합니다.
+
+    문서에서 발생 하면 충돌이 발생할 경우 지정된 된 경로에 더 높은 정수 값을 사용 하 여 문서 선택 됩니다.
+
+    경로 지정 하지 않으면 하는 경우 기본적으로 타임 스탬프 경로가 됩니다.
+
+    사용 하는 경우이 값은 설정만 <xref:ConflictResolutionMode.LastWriterWins>합니다.
+
+
+    ```typescript
+
+    conflictResolutionPolicy.ConflictResolutionPath = "/name/first";
+
+    ```
+
+  optional: true
+  syntax:
+    content: 'conflictResolutionPath?: string'
+    return:
+      type:
+      - string
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.ConflictResolutionPolicy.conflictResolutionProcedure'
+  name: conflictResolutionProcedure
+  fullName: conflictResolutionProcedure
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >
+    가져오거나 설정 합니다 <xref:StoredProcedure> Azure Cosmos DB 서비스에서 충돌 해결에 사용 됩니다.
+
+    이 저장된 프로시저를 후 만들어질 수도 있습니다는 <xref:Container> 생성 되 고 변경할 수 있습니다 필요에 따라 합니다.
+
+    1. 사용 하는 경우이 값은 설정만 <xref:ConflictResolutionMode.Custom>합니다.
+
+    2. 경우 저장된 프로시저 실패 하거나 예외를 throw 합니다 충돌 해결 기본값은 충돌 피드 충돌이 등록입니다.
+
+
+    ```typescript
+
+    conflictResolutionPolicy.ConflictResolutionProcedure = "resolveConflict"
+
+    ```
+  optional: true
+  syntax:
+    content: 'conflictResolutionProcedure?: string'
+    return:
+      type:
+      - string
+  package: '@azure/cosmos'
+- uid: '@azure/cosmos.ConflictResolutionPolicy.mode'
+  name: mode
+  fullName: mode
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 가져오거나 설정 합니다 <see cref="ConflictResolutionMode"/> Azure Cosmos DB 서비스에서. 기본적으로 <xref:ConflictResolutionMode.LastWriterWins>입니다.
+  optional: true
+  syntax:
+    content: 'mode?: Object'
+    return:
+      type:
+      - Object
+  package: '@azure/cosmos'
