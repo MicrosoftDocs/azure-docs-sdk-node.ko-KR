@@ -1,0 +1,206 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 03fb8e5e95ef0b56ef5b2c6b220ba08a0489136a
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53669417"
+items:
+- uid: azure-batch.JobPreparationTaskExecutionInformation
+  name: JobPreparationTaskExecutionInformation
+  fullName: JobPreparationTaskExecutionInformation
+  children:
+  - azure-batch.JobPreparationTaskExecutionInformation.containerInfo
+  - azure-batch.JobPreparationTaskExecutionInformation.endTime
+  - azure-batch.JobPreparationTaskExecutionInformation.exitCode
+  - azure-batch.JobPreparationTaskExecutionInformation.failureInfo
+  - azure-batch.JobPreparationTaskExecutionInformation.lastRetryTime
+  - azure-batch.JobPreparationTaskExecutionInformation.result
+  - azure-batch.JobPreparationTaskExecutionInformation.retryCount
+  - azure-batch.JobPreparationTaskExecutionInformation.startTime
+  - azure-batch.JobPreparationTaskExecutionInformation.state
+  - azure-batch.JobPreparationTaskExecutionInformation.taskRootDirectory
+  - azure-batch.JobPreparationTaskExecutionInformation.taskRootDirectoryUrl
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.containerInfo
+  name: containerInfo
+  fullName: containerInfo
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 속성은 컨테이너 컨텍스트에서 작업을 실행 하는 경우에 설정 됩니다.
+  optional: true
+  syntax:
+    content: 'containerInfo?: TaskContainerExecutionInformation'
+    return:
+      type:
+      - azure-batch.TaskContainerExecutionInformation
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.endTime
+  name: endTime
+  fullName: endTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 속성은 작업 완료 상태에 있을 경우에 설정 됩니다.
+  optional: true
+  syntax:
+    content: 'endTime?: Date'
+    return:
+      type:
+      - Date
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.exitCode
+  name: exitCode
+  fullName: exitCode
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 매개 변수는 작업은 완료 상태인 경우에 반환 됩니다. 프로세스 종료 코드를 해당 프로세스에 대 한 응용 프로그램 개발자가 구현한 특정 규칙을 반영 합니다. 종료 코드 값을 사용 하 여 코드에서 결정을 내릴 수 하는 경우 응용 프로그램 프로세스에서 사용 하는 종료 코드 규칙을 알고 있다고 해야 합니다. 참고 종료 코드를 사용 하는 프로세스를 강제로 종료할 때와 같은 계산 노드의 운영 체제에서 생성 될 수도 있습니다.
+  optional: true
+  syntax:
+    content: 'exitCode?: number'
+    return:
+      type:
+      - number
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.failureInfo
+  name: failureInfo
+  fullName: failureInfo
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 속성 작업은 완료 상태인 경우에 설정 되어 있으며 오류가 발생 했습니다.
+  optional: true
+  syntax:
+    content: 'failureInfo?: TaskFailureInformation'
+    return:
+      type:
+      - azure-batch.TaskFailureInformation
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.lastRetryTime
+  name: lastRetryTime
+  fullName: lastRetryTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    작업이 시도한 경우에이 속성을 설정 (예: retryCount가 0이 아닌).
+
+    일반적으로 startTime, 동일 하지만 작업 재시도; 이외의 이유로 다시 시작 하는 경우에 다를 수 있습니다이 있는 경우 예를 들어, 계산 노드 다시 시도 하는 동안 다시 부팅 된 경우 다음 startTime 업데이트 되지만 lastRetryTime 아닙니다.
+  optional: true
+  syntax:
+    content: 'lastRetryTime?: Date'
+    return:
+      type:
+      - Date
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.result
+  name: result
+  fullName: result
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "값은 '실패 하는 경우 failureInfo 속성에는 실패의 세부 정보를 찾을 수 있습니다. 가능한 값: '성공', '실패'"
+  optional: true
+  syntax:
+    content: 'result?: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.retryCount
+  name: retryCount
+  fullName: retryCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 태스크 응용 프로그램 실패 (0이 아닌 종료 코드) 다시 시도 됩니다. 사전 (작업을 실행할 수 있습니다.) 오류를 처리 하 고 파일 업로드 오류 다시 시도 하지 않습니다. Batch 서비스에는 제약 조건에 의해 지정 된 제한까지 태스크 다시 시도 합니다.
+  syntax:
+    content: 'retryCount: number'
+    return:
+      type:
+      - number
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.startTime
+  name: startTime
+  fullName: startTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 태스크가 다시 시작되거나 다시 시도된 경우 이는 태스크가 실행을 시작한 가장 최근의 시간을 나타냅니다.
+  syntax:
+    content: 'startTime: Date'
+    return:
+      type:
+      - Date
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.state
+  name: state
+  fullName: state
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "가능한 값: '실행 중', '완료'"
+  syntax:
+    content: 'state: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.taskRootDirectory
+  name: taskRootDirectory
+  fullName: taskRootDirectory
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  optional: true
+  syntax:
+    content: 'taskRootDirectory?: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.JobPreparationTaskExecutionInformation.taskRootDirectoryUrl
+  name: taskRootDirectoryUrl
+  fullName: taskRootDirectoryUrl
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  optional: true
+  syntax:
+    content: 'taskRootDirectoryUrl?: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+references:
+- uid: azure-batch.TaskContainerExecutionInformation
+  name: TaskContainerExecutionInformation
+  spec.typeScript:
+  - name: TaskContainerExecutionInformation
+    fullName: TaskContainerExecutionInformation
+    uid: azure-batch.TaskContainerExecutionInformation
+- uid: azure-batch.TaskFailureInformation
+  name: TaskFailureInformation
+  spec.typeScript:
+  - name: TaskFailureInformation
+    fullName: TaskFailureInformation
+    uid: azure-batch.TaskFailureInformation

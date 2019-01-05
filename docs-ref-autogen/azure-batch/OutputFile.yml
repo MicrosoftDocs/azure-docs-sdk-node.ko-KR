@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 86f498fc9ddfd6d24d259dc7d6e9baa40c5017b5
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53667047"
+items:
+- uid: azure-batch.OutputFile
+  name: OutputFile
+  fullName: OutputFile
+  children:
+  - azure-batch.OutputFile.destination
+  - azure-batch.OutputFile.filePattern
+  - azure-batch.OutputFile.uploadOptions
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-batch
+- uid: azure-batch.OutputFile.destination
+  name: destination
+  fullName: destination
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'destination: OutputFileDestination'
+    return:
+      type:
+      - azure-batch.OutputFileDestination
+  package: azure-batch
+- uid: azure-batch.OutputFile.filePattern
+  name: filePattern
+  fullName: filePattern
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    상대 및 절대 경로가 지원 됩니다. 태스크 작업 디렉터리를 기준으로 상대 경로입니다. 다음 와일드 카드가 지원 됩니다. * 0 개 또는 더 많은 문자와 일치 (패턴 예제에 대 한 abc *는 일치 abc 또는 abcdef) * * 모든 디렉터리와 일치?
+
+    모든 단일 문자는 대괄호로 일치 한 문자 [abc] 및 [a-c] 일치 한 문자 범위에서 일치합니다. 대괄호에는 지정 되지 않은 모든 문자를 일치 시키려면 부정 포함 될 수 있습니다 (예를 들어 [! abc] a, b, 하지만 문자가 일치 또는 c). 파일 이름을 사용 하 여 시작 하는 경우 "."은 기본적으로 무시 되지만 명시적으로 지정 하 여 일치 시킬 수 있습니다 (예를 들어 *.gif는 일치 하지 않습니다. a.gif, 하지만.* 합니다. gif가 됩니다). 간단한 예제: **\*.txt 모든 파일에 시작 하지 않는 일치 '.' 태스크 작업 디렉터리 또는 하위 디렉터리에서.txt으로 끝납니다. 파일 이름에 와일드 카드 문자를 포함 하는 경우 해당 이스케이프 될 수 있습니다 대괄호를 사용 하 여 (예를 들어 abc [*] abc * 파일인 일치). 모두 \ 및 디렉터리 구분 기호, Windows에만 처리 됩니다 / Linux에 있습니다. 환경 변수 (Windows에서 %var%) 또는 Linux에서 $var 패턴 적용 하기 전에 확장 됩니다.
+  syntax:
+    content: 'filePattern: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.OutputFile.uploadOptions
+  name: uploadOptions
+  fullName: uploadOptions
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'uploadOptions: OutputFileUploadOptions'
+    return:
+      type:
+      - azure-batch.OutputFileUploadOptions
+  package: azure-batch
+references:
+- uid: azure-batch.OutputFileDestination
+  name: OutputFileDestination
+  spec.typeScript:
+  - name: OutputFileDestination
+    fullName: OutputFileDestination
+    uid: azure-batch.OutputFileDestination
+- uid: azure-batch.OutputFileUploadOptions
+  name: OutputFileUploadOptions
+  spec.typeScript:
+  - name: OutputFileUploadOptions
+    fullName: OutputFileUploadOptions
+    uid: azure-batch.OutputFileUploadOptions
