@@ -1,0 +1,120 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: a8288ef1986c8b87bcb4a299bd2c5696375436f1
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52090698"
+items:
+- uid: azure-servicefabric.DeltaNodesCheckHealthEvaluation
+  name: DeltaNodesCheckHealthEvaluation
+  fullName: DeltaNodesCheckHealthEvaluation
+  children:
+  - azure-servicefabric.DeltaNodesCheckHealthEvaluation.baselineErrorCount
+  - azure-servicefabric.DeltaNodesCheckHealthEvaluation.baselineTotalCount
+  - azure-servicefabric.DeltaNodesCheckHealthEvaluation.maxPercentDeltaUnhealthyNodes
+  - azure-servicefabric.DeltaNodesCheckHealthEvaluation.totalCount
+  - azure-servicefabric.DeltaNodesCheckHealthEvaluation.unhealthyEvaluations
+  langs:
+  - typeScript
+  type: interface
+  summary: >-
+    <span data-ttu-id="3acda-101">델타 노드를 현재 집계 된 상태에 영향을 받는 각 비정상 노드에 대 한 상태 평가 포함 하에 대 한 상태 평가 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-101">Represents health evaluation for delta nodes, containing health evaluations for each unhealthy node that impacted current aggregated health state.</span></span>
+
+    <span data-ttu-id="3acda-102">클러스터의 집계 된 상태를 경고 하는 경우 클러스터 업그레이드 또는 오류 시 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-102">Can be returned during cluster upgrade when the aggregated health state of the cluster is Warning or Error.</span></span>
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeltaNodesCheckHealthEvaluation.baselineErrorCount
+  name: baselineErrorCount
+  fullName: baselineErrorCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="3acda-103">클러스터 업그레이드 상태 집계 된 상태부터 health store에서 다음 오류를 사용 하 여 노드 수입니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-103">Number of nodes with aggregated heath state Error in the health store at the beginning of the cluster upgrade.</span></span>
+  optional: true
+  syntax:
+    content: 'baselineErrorCount?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeltaNodesCheckHealthEvaluation.baselineTotalCount
+  name: baselineTotalCount
+  fullName: baselineTotalCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="3acda-104">클러스터 업그레이드 시작 부분에 health 스토어에 있는 노드의 총 수입니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-104">Total number of nodes in the health store at the beginning of the cluster upgrade.</span></span>
+  optional: true
+  syntax:
+    content: 'baselineTotalCount?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeltaNodesCheckHealthEvaluation.maxPercentDeltaUnhealthyNodes
+  name: maxPercentDeltaUnhealthyNodes
+  fullName: maxPercentDeltaUnhealthyNodes
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="3acda-105">최대 허용치 델타 비정상 노드는 ClusterUpgradeHealthPolicy에서.</span><span class="sxs-lookup"><span data-stu-id="3acda-105">Maximum allowed percentage of delta unhealthy nodes from the ClusterUpgradeHealthPolicy.</span></span>
+  optional: true
+  syntax:
+    content: 'maxPercentDeltaUnhealthyNodes?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeltaNodesCheckHealthEvaluation.totalCount
+  name: totalCount
+  fullName: totalCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="3acda-106">Health 스토어에 있는 노드의 총 수입니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-106">Total number of nodes in the health store.</span></span>
+  optional: true
+  syntax:
+    content: 'totalCount?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.DeltaNodesCheckHealthEvaluation.unhealthyEvaluations
+  name: unhealthyEvaluations
+  fullName: unhealthyEvaluations
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="3acda-107">집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-107">List of unhealthy evaluations that led to the aggregated health state.</span></span>
+
+    <span data-ttu-id="3acda-108">집계 된 상태에 영향을 미친 모든 비정상 NodeHealthEvaluation을 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3acda-108">Includes all the unhealthy NodeHealthEvaluation that impacted the aggregated health.</span></span>
+  optional: true
+  syntax:
+    content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+    return:
+      type:
+      - azure-servicefabric.HealthEvaluationWrapper[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvaluationWrapper[]
+  name: HealthEvaluationWrapper[]
+  spec.typeScript:
+  - name: HealthEvaluationWrapper
+    fullName: HealthEvaluationWrapper
+    uid: azure-servicefabric.HealthEvaluationWrapper
+  - name: '[]'
+    fullName: '[]'
