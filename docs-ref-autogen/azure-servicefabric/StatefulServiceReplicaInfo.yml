@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 0a5e2f7b5e9b72b446f48324892a51789904c48e
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52101288"
+items:
+- uid: azure-servicefabric.StatefulServiceReplicaInfo
+  name: StatefulServiceReplicaInfo
+  fullName: StatefulServiceReplicaInfo
+  children:
+  - azure-servicefabric.StatefulServiceReplicaInfo.replicaId
+  - azure-servicefabric.StatefulServiceReplicaInfo.replicaRole
+  langs:
+  - typeScript
+  type: interface
+  summary: 상태 저장 서비스 복제본을 나타냅니다. Id, 역할, 상태, 상태, 노드 이름, 작동 시간 및 복제본에 대 한 기타 세부 정보에 대 한 정보가 포함 됩니다.
+  extends:
+    name: azure-servicefabric.ReplicaInfo
+  package: azure-servicefabric
+- uid: azure-servicefabric.StatefulServiceReplicaInfo.replicaId
+  name: replicaId
+  fullName: replicaId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 상태 저장 서비스 복제본의 id입니다. ReplicaId 파티션의 복제본을 고유 하 게 식별 하려면 Service Fabric에서 사용 됩니다. 파티션 내에서 고유 하며 복제본의 수명 동안 변경 되지 않습니다. 복제본을 삭제 하 고 다른 복제본을 동일한 파티션에 대 한 동일한 노드에서 만들었으면 가져옵니다 경우 id에 대해 다른 값을 연결을 받습니다 것입니다. 경우에 따라 상태 비저장 서비스 인스턴스의 id도 복제본 id 라고 합니다.
+  optional: true
+  syntax:
+    content: 'replicaId?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.StatefulServiceReplicaInfo.replicaRole
+  name: replicaRole
+  fullName: replicaRole
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 상태 저장 서비스 복제본의 역할입니다. 가능한 값은 다음과 같습니다. '알 수 없는', 'None', '기본', 'IdleSecondary', 'ActiveSecondary'
+  optional: true
+  syntax:
+    content: 'replicaRole?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.ReplicaInfo
+  name: ReplicaInfo
+  spec.typeScript:
+  - name: ReplicaInfo
+    fullName: ReplicaInfo
+    uid: azure-servicefabric.ReplicaInfo

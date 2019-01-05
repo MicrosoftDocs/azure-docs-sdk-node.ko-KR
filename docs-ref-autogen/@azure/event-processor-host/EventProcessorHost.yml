@@ -1,0 +1,630 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 6ba5ac3c693177f8af42e6a22afe2d7805016620
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52095628"
+items:
+- uid: '@azure/event-processor-host.EventProcessorHost'
+  name: EventProcessorHost
+  fullName: EventProcessorHost
+  children:
+  - '@azure/event-processor-host.EventProcessorHost.consumerGroup'
+  - '@azure/event-processor-host.EventProcessorHost.createFromAadTokenCredentials'
+  - '@azure/event-processor-host.EventProcessorHost.createFromAadTokenCredentialsWithCustomCheckpointAndLeaseManager'
+  - '@azure/event-processor-host.EventProcessorHost.createFromConnectionString'
+  - '@azure/event-processor-host.EventProcessorHost.createFromConnectionStringWithCustomCheckpointAndLeaseManager'
+  - '@azure/event-processor-host.EventProcessorHost.createFromIotHubConnectionString'
+  - '@azure/event-processor-host.EventProcessorHost.createFromIotHubConnectionStringWithCustomCheckpointAndLeaseManager'
+  - '@azure/event-processor-host.EventProcessorHost.createFromTokenProvider'
+  - '@azure/event-processor-host.EventProcessorHost.createFromTokenProviderWithCustomCheckpointAndLeaseManager'
+  - '@azure/event-processor-host.EventProcessorHost.createHostName'
+  - '@azure/event-processor-host.EventProcessorHost.constructor'
+  - '@azure/event-processor-host.EventProcessorHost.getHubRuntimeInformation'
+  - '@azure/event-processor-host.EventProcessorHost.getPartitionIds'
+  - '@azure/event-processor-host.EventProcessorHost.getPartitionInformation'
+  - '@azure/event-processor-host.EventProcessorHost.hostName'
+  - '@azure/event-processor-host.EventProcessorHost.receivingFromPartitions'
+  - '@azure/event-processor-host.EventProcessorHost.start'
+  - '@azure/event-processor-host.EventProcessorHost.stop'
+  langs:
+  - typeScript
+  type: class
+  summary: EventHub에서 이벤트를 처리 하는 이벤트 프로세서 호스트를 설명합니다.
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.consumerGroup'
+  name: consumerGroup
+  fullName: consumerGroup
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 소비자 그룹 이름을 이벤트 프로세서 호스트를 제공합니다.
+  syntax:
+    content: 'consumerGroup: string'
+    return:
+      type:
+      - string
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromAadTokenCredentials'
+  name: createFromAadTokenCredentials(string, string, string, string, string, ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, FromTokenProviderOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: AAD 토큰 자격 증명에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromAadTokenCredentials(hostName: string, storageConnectionString: string, storageContainerName: string, namespace: string, eventHubPath: string, credentials: ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, options?: FromTokenProviderOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: storageConnectionString
+      type:
+      - string
+      description: 임대 및 검사점에 사용 되는 Azure Storage 계정에 연결 문자열입니다. 예제 DefaultEndpointsProtocol = https; AccountName = < 계정 이름 >; AccountKey = < 계정 키 >; EndpointSuffix=core.windows.net
+    - id: storageContainerName
+      type:
+      - string
+      description: 기본 제공 임대 및 검사점 관리자 사용에 대 한 azure Storage 컨테이너 이름입니다.
+    - id: namespace
+      type:
+      - string
+      description: >-
+        Event Hubs에 대 한 정규화 된 도메인 이름입니다.
+
+        예: "{your-sb-namespace}. servicebus.windows.net"
+    - id: eventHubPath
+      type:
+      - string
+      description: EventHub의 이름입니다.
+    - id: credentials
+      type:
+      - ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials
+      description: AAD 토큰 자격 증명입니다. 다음 중 하나일 수 있습니다. ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials 합니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromTokenProviderOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - '@azure/event-processor-host.EventProcessorHost'
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromAadTokenCredentialsWithCustomCheckpointAndLeaseManager'
+  name: createFromAadTokenCredentialsWithCustomCheckpointAndLeaseManager(string, string, string, ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, CheckpointManager, LeaseManager, FromTokenProviderOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 지정 된 검사점 관리자 및 임대 관리자를 사용 하 여 AAD 토큰 자격 증명에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromAadTokenCredentialsWithCustomCheckpointAndLeaseManager(hostName: string, namespace: string, eventHubPath: string, credentials: ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, checkpointManager: CheckpointManager, leaseManager: LeaseManager, options?: FromTokenProviderOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: namespace
+      type:
+      - string
+      description: >-
+        Event Hubs에 대 한 정규화 된 도메인 이름입니다.
+
+        예: "{your-sb-namespace}. servicebus.windows.net"
+    - id: eventHubPath
+      type:
+      - string
+      description: EventHub의 이름입니다.
+    - id: credentials
+      type:
+      - ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials
+      description: AAD 토큰 자격 증명입니다. 다음 중 하나일 수 있습니다. ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials 합니다.
+    - id: checkpointManager
+      type:
+      - '@azure/event-processor-host.CheckpointManager'
+      description: 검사점을 관리 하는 관리자입니다.
+    - id: leaseManager
+      type:
+      - '@azure/event-processor-host.LeaseManager'
+      description: 임대를 관리 하는 관리자입니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromTokenProviderOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - '@azure/event-processor-host.EventProcessorHost'
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromConnectionString'
+  name: createFromConnectionString(string, string, string, string, FromConnectionStringOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: EventHub 연결 문자열에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromConnectionString(hostName: string, storageConnectionString: string, storageContainerName: string, eventHubConnectionString: string, options?: FromConnectionStringOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: storageConnectionString
+      type:
+      - string
+      description: 임대 및 검사점에 사용 되는 Azure Storage 계정에 연결 문자열입니다. 예제 DefaultEndpointsProtocol = https; AccountName = < 계정 이름 >; AccountKey = < 계정 키 >; EndpointSuffix=core.windows.net
+    - id: storageContainerName
+      type:
+      - string
+      description: 기본 제공 임대 및 검사점 관리자 사용에 대 한 azure Storage 컨테이너 이름입니다.
+    - id: eventHubConnectionString
+      type:
+      - string
+      description: >-
+        받기 위해 이벤트 허브에 대 한 연결 문자열입니다.
+
+        예제: ' Endpoint=sb://my-servicebus-namespace.servicebus.windows.net/; SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromConnectionStringOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - '@azure/event-processor-host.EventProcessorHost'
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromConnectionStringWithCustomCheckpointAndLeaseManager'
+  name: createFromConnectionStringWithCustomCheckpointAndLeaseManager(string, string, CheckpointManager, LeaseManager, FromConnectionStringOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 제공 된 검사점 관리자 및 임대 관리자를 사용 하 여 이벤트 허브 연결 문자열에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromConnectionStringWithCustomCheckpointAndLeaseManager(hostName: string, eventHubConnectionString: string, checkpointManager: CheckpointManager, leaseManager: LeaseManager, options?: FromConnectionStringOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: eventHubConnectionString
+      type:
+      - string
+      description: >-
+        받기 위해 이벤트 허브에 대 한 연결 문자열입니다.
+
+        예제: ' Endpoint=sb://my-servicebus-namespace.servicebus.windows.net/; SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='
+    - id: checkpointManager
+      type:
+      - '@azure/event-processor-host.CheckpointManager'
+      description: 검사점을 관리 하는 관리자입니다.
+    - id: leaseManager
+      type:
+      - '@azure/event-processor-host.LeaseManager'
+      description: 임대를 관리 하는 관리자입니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromConnectionStringOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - '@azure/event-processor-host.EventProcessorHost'
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromIotHubConnectionString'
+  name: createFromIotHubConnectionString(string, string, string, string, FromIotHubConnectionStringOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: Iot Hub 연결 문자열에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromIotHubConnectionString(hostName: string, storageConnectionString: string, storageContainerName: string, iotHubConnectionString: string, options?: FromIotHubConnectionStringOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: storageConnectionString
+      type:
+      - string
+      description: 임대 및 검사점에 사용 되는 Azure Storage 계정에 연결 문자열입니다. 예제 DefaultEndpointsProtocol = https; AccountName = < 계정 이름 >; AccountKey = < 계정 키 >; EndpointSuffix=core.windows.net
+    - id: storageContainerName
+      type:
+      - string
+      description: 기본 제공 임대 및 검사점 관리자 사용에 대 한 azure Storage 컨테이너 이름입니다.
+    - id: iotHubConnectionString
+      type:
+      - string
+      description: >-
+        Iot Hub에 대 한 연결 문자열입니다.
+
+        예제: ' 끝점 = iot-호스트 이름입니다. SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromIotHubConnectionStringOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<@azure/event-processor-host.EventProcessorHost>
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromIotHubConnectionStringWithCustomCheckpointAndLeaseManager'
+  name: createFromIotHubConnectionStringWithCustomCheckpointAndLeaseManager(string, string, CheckpointManager, LeaseManager, FromIotHubConnectionStringOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 지정 된 검사점 관리자 및 임대 관리자를 사용 하 여 iot Hub 연결 문자열에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromIotHubConnectionStringWithCustomCheckpointAndLeaseManager(hostName: string, iotHubConnectionString: string, checkpointManager: CheckpointManager, leaseManager: LeaseManager, options?: FromIotHubConnectionStringOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: iotHubConnectionString
+      type:
+      - string
+      description: >-
+        Iot Hub에 대 한 연결 문자열입니다.
+
+        예제: ' 끝점 = iot-호스트 이름입니다. SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='
+    - id: checkpointManager
+      type:
+      - '@azure/event-processor-host.CheckpointManager'
+      description: 검사점을 관리 하는 관리자입니다.
+    - id: leaseManager
+      type:
+      - '@azure/event-processor-host.LeaseManager'
+      description: 임대를 관리 하는 관리자입니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromIotHubConnectionStringOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<@azure/event-processor-host.EventProcessorHost>
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromTokenProvider'
+  name: createFromTokenProvider(string, string, string, string, string, TokenProvider, FromTokenProviderOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: TokenProvider를에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromTokenProvider(hostName: string, storageConnectionString: string, storageContainerName: string, namespace: string, eventHubPath: string, tokenProvider: TokenProvider, options?: FromTokenProviderOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: storageConnectionString
+      type:
+      - string
+      description: 임대 및 검사점에 사용 되는 Azure Storage 계정에 연결 문자열입니다. 예제 DefaultEndpointsProtocol = https; AccountName = < 계정 이름 >; AccountKey = < 계정 키 >; EndpointSuffix=core.windows.net
+    - id: storageContainerName
+      type:
+      - string
+      description: 기본 제공 임대 및 검사점 관리자 사용에 대 한 azure Storage 컨테이너 이름입니다.
+    - id: namespace
+      type:
+      - string
+      description: >-
+        Event Hubs에 대 한 정규화 된 도메인 이름입니다.
+
+        예: "{your-sb-namespace}. servicebus.windows.net"
+    - id: eventHubPath
+      type:
+      - string
+      description: EventHub의 이름입니다.
+    - id: tokenProvider
+      type:
+      - TokenProvider
+      description: TokenProvider 인터페이스를 구현 하 여 토큰 공급자입니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromTokenProviderOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - '@azure/event-processor-host.EventProcessorHost'
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createFromTokenProviderWithCustomCheckpointAndLeaseManager'
+  name: createFromTokenProviderWithCustomCheckpointAndLeaseManager(string, string, string, TokenProvider, CheckpointManager, LeaseManager, FromTokenProviderOptions)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 제공 된 검사점 관리자 및 임대 관리자를 사용 하 여 TokenProvider에서 EventProcessorHost 인스턴스를 만듭니다.
+  syntax:
+    content: 'static function createFromTokenProviderWithCustomCheckpointAndLeaseManager(hostName: string, namespace: string, eventHubPath: string, tokenProvider: TokenProvider, checkpointManager: CheckpointManager, leaseManager: LeaseManager, options?: FromTokenProviderOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: namespace
+      type:
+      - string
+      description: >-
+        Event Hubs에 대 한 정규화 된 도메인 이름입니다.
+
+        예: "{your-sb-namespace}. servicebus.windows.net"
+    - id: eventHubPath
+      type:
+      - string
+      description: EventHub의 이름입니다.
+    - id: tokenProvider
+      type:
+      - TokenProvider
+      description: TokenProvider 인터페이스를 구현 하 여 토큰 공급자입니다.
+    - id: checkpointManager
+      type:
+      - '@azure/event-processor-host.CheckpointManager'
+      description: 검사점을 관리 하는 관리자입니다.
+    - id: leaseManager
+      type:
+      - '@azure/event-processor-host.LeaseManager'
+      description: 임대를 관리 하는 관리자입니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.FromTokenProviderOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - '@azure/event-processor-host.EventProcessorHost'
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.createHostName'
+  name: createHostName(undefined | string)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 고유한 호스트 이름을 생성 하는 데 편리한 메서드입니다.
+  syntax:
+    content: 'static function createHostName(prefix?: undefined | string)'
+    parameters:
+    - id: prefix
+      type:
+      - undefined | string
+      description: ''
+      optional: true
+    return:
+      type:
+      - string
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.constructor'
+  name: EventProcessorHost(string, EventProcessorHostOptions)
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: 이벤트 허브에서 이벤트를 처리 하는 새 호스트를 만듭니다.
+  syntax:
+    content: 'new EventProcessorHost(hostName: string, options?: EventProcessorHostOptions)'
+    parameters:
+    - id: hostName
+      type:
+      - string
+      description: >-
+        프로세서 호스트의 이름입니다. 고유 해야 합니다.
+
+        고유 하 게 Guid 또는 guid 사용 하 여 접두사를 포함 하 여이 좋습니다. 사용할 수 있습니다 `EventProcessorHost.createHostName("your-prefix")`; 기본값: `js-host-${uuid()}`합니다.
+    - id: options
+      type:
+      - '@azure/event-processor-host.EventProcessorHostOptions'
+      description: ''
+      optional: true
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.getHubRuntimeInformation'
+  name: getHubRuntimeInformation()
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: Eventhub의 런타임 기능에 대해 설명합니다.
+  syntax:
+    content: function getHubRuntimeInformation()
+    parameters: []
+    return:
+      type:
+      - Promise<EventHubRuntimeInformation>
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.getPartitionIds'
+  name: getPartitionIds()
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: Partitionid 배열을 제공합니다.
+  syntax:
+    content: function getPartitionIds()
+    parameters: []
+    return:
+      type:
+      - Promise<string[]>
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.getPartitionInformation'
+  name: getPartitionInformation(string | number)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 지정된 된 파티션에 관한 정보를 제공 합니다.
+  syntax:
+    content: 'function getPartitionInformation(partitionId: string | number)'
+    parameters:
+    - id: partitionId
+      type:
+      - string | number
+      description: >
+        파티션 ID는 파티션에 대 한 정보가 필요 합니다.
+    return:
+      type:
+      - Promise<EventHubPartitionRuntimeInformation>
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.hostName'
+  name: hostName
+  fullName: hostName
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이벤트 프로세서 호스트에 대 한 호스트 이름을 제공합니다.
+  syntax:
+    content: 'hostName: string'
+    return:
+      type:
+      - string
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.receivingFromPartitions'
+  name: receivingFromPartitions
+  fullName: receivingFromPartitions
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >
+    EPH에서 메시지를 받고 현재 파티션의 목록을 제공 합니다.
+
+    EPH (구성된) 모든 임대 갱신 시간 (초) 후 발생 하는 각 검색 하는 동안 자세한 파티션에 대 한 임대를 시도 합니다. 이벤트 허브 내에 동일한 소비자 그룹에서 메시지를 받는 동시에 실행 되는 EPH 인스턴스에서 수가 EPH의이 인스턴스는 메시지를 수신 하 고 적극적으로 파티션 수를도 영향을 줍니다.
+  syntax:
+    content: 'receivingFromPartitions: string[]'
+    return:
+      type:
+      - string[]
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.start'
+  name: start(OnReceivedMessage, OnReceivedError)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 파티션 목록을 가져오는 중 이벤트 프로세서 호스트를 시작한 각 임대에 대 한 임대를 가져오는 동안, blob에서 세부 정보를 가져옵니다 하 고 중단 된 이전 시점 수신기를 시작 합니다.
+  syntax:
+    content: 'function start(onMessage: OnReceivedMessage, onError: OnReceivedError)'
+    parameters:
+    - id: onMessage
+      type:
+      - '@azure/event-processor-host.OnReceivedMessage'
+      description: ''
+    - id: onError
+      type:
+      - '@azure/event-processor-host.OnReceivedError'
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: '@azure/event-processor-host'
+- uid: '@azure/event-processor-host.EventProcessorHost.stop'
+  name: stop()
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 메시지 처리에서 EventProcessorHost를 중지 합니다.
+  syntax:
+    content: function stop()
+    parameters: []
+    return:
+      type:
+      - Promise<void>
+  package: '@azure/event-processor-host'
+references:
+- uid: '@azure/event-processor-host.EventProcessorHostOptions'
+  name: EventProcessorHostOptions
+  spec.typeScript:
+  - name: EventProcessorHostOptions
+    fullName: EventProcessorHostOptions
+    uid: '@azure/event-processor-host.EventProcessorHostOptions'
+- uid: '@azure/event-processor-host.OnReceivedMessage'
+  name: OnReceivedMessage
+  spec.typeScript:
+  - name: OnReceivedMessage
+    fullName: OnReceivedMessage
+    uid: '@azure/event-processor-host.OnReceivedMessage'
+- uid: '@azure/event-processor-host.OnReceivedError'
+  name: OnReceivedError
+  spec.typeScript:
+  - name: OnReceivedError
+    fullName: OnReceivedError
+    uid: '@azure/event-processor-host.OnReceivedError'
+- uid: '@azure/event-processor-host.FromTokenProviderOptions'
+  name: FromTokenProviderOptions
+  spec.typeScript:
+  - name: FromTokenProviderOptions
+    fullName: FromTokenProviderOptions
+    uid: '@azure/event-processor-host.FromTokenProviderOptions'
+- uid: '@azure/event-processor-host.EventProcessorHost'
+  name: EventProcessorHost
+  spec.typeScript:
+  - name: EventProcessorHost
+    fullName: EventProcessorHost
+    uid: '@azure/event-processor-host.EventProcessorHost'
+- uid: '@azure/event-processor-host.CheckpointManager'
+  name: CheckpointManager
+  spec.typeScript:
+  - name: CheckpointManager
+    fullName: CheckpointManager
+    uid: '@azure/event-processor-host.CheckpointManager'
+- uid: '@azure/event-processor-host.LeaseManager'
+  name: LeaseManager
+  spec.typeScript:
+  - name: LeaseManager
+    fullName: LeaseManager
+    uid: '@azure/event-processor-host.LeaseManager'
+- uid: '@azure/event-processor-host.FromConnectionStringOptions'
+  name: FromConnectionStringOptions
+  spec.typeScript:
+  - name: FromConnectionStringOptions
+    fullName: FromConnectionStringOptions
+    uid: '@azure/event-processor-host.FromConnectionStringOptions'
+- uid: '@azure/event-processor-host.FromIotHubConnectionStringOptions'
+  name: FromIotHubConnectionStringOptions
+  spec.typeScript:
+  - name: FromIotHubConnectionStringOptions
+    fullName: FromIotHubConnectionStringOptions
+    uid: '@azure/event-processor-host.FromIotHubConnectionStringOptions'
+- uid: Promise<@azure/event-processor-host.EventProcessorHost>
+  name: EventProcessorHost>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: EventProcessorHost
+    fullName: EventProcessorHost
+    uid: '@azure/event-processor-host.EventProcessorHost'
+  - name: '>'
+    fullName: '>'
