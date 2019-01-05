@@ -1,0 +1,293 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 446c9b90175cf1963ec14f6f23a4852439598867
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53659568"
+items:
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer
+  name: TranslationRecognizer
+  fullName: TranslationRecognizer
+  children:
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.authorizationToken
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.canceled
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.close
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.properties
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.recognized
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.recognizeOnceAsync
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.recognizing
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.speechRecognitionLanguage
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.startContinuousRecognitionAsync
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.stopContinuousRecognitionAsync
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.synthesizing
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.targetLanguages
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.constructor
+  - microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.voiceName
+  langs:
+  - typeScript
+  type: class
+  summary: 번역 인식기
+  extends:
+    name: microsoft-cognitiveservices-speech-sdk.Recognizer
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.authorizationToken
+  name: authorizationToken
+  fullName: authorizationToken
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 서비스와 통신 하는 데 사용 권한 부여 토큰을 설정 합니다.
+  syntax:
+    content: 'public authorizationToken: string'
+    return:
+      type:
+      - string
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.canceled
+  name: canceled
+  fullName: canceled
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이벤트가 취소 되었음을 인식 하는 동안 오류가 발생 했습니다.
+  syntax:
+    content: 'public canceled: (sender: TranslationRecognizer, event: TranslationRecognitionCanceledEventArgs) => void'
+    return:
+      type:
+      - '(sender: TranslationRecognizer, event: TranslationRecognitionCanceledEventArgs) => void'
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.close
+  name: close()
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 이 클래스의 인스턴스에서 보유 한 모든 외부 리소스를 닫습니다.
+  syntax:
+    content: function close()
+    parameters: []
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.properties
+  name: properties
+  fullName: properties
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 속성 및이 TranslationRecognizer에 대해 정의 된 값의 컬렉션입니다.
+  syntax:
+    content: 'public properties: PropertyCollection'
+    return:
+      type:
+      - microsoft-cognitiveservices-speech-sdk.PropertyCollection
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.recognized
+  name: recognized
+  fullName: recognized
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이벤트 신호 최종 인식 결과 받을 인식 합니다.
+  syntax:
+    content: 'public recognized: (sender: TranslationRecognizer, event: TranslationRecognitionEventArgs) => void'
+    return:
+      type:
+      - '(sender: TranslationRecognizer, event: TranslationRecognitionEventArgs) => void'
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.recognizeOnceAsync
+  name: 'recognizeOnceAsync((e: TranslationRecognitionResult) => void, (e: string) => void)'
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    인식 및 번역을 시작 하 고 첫 번째 utterance 인식 한 다음 중지 됩니다.
+
+    작업 결과로 변환 텍스트를 반환합니다.
+
+    참고: recognizeOnceAsync가 첫 번째 utterance 인식 된 때를 반환 합니다., 단일 샷된 인식 위한 suitableonly 이므로 같은 명령 또는 쿼리 합니다. 장기 실행 인식 startContinuousRecognitionAsync() 대신 사용 합니다.
+  syntax:
+    content: 'function recognizeOnceAsync(cb?: (e: TranslationRecognitionResult) => void, err?: (e: string) => void)'
+    parameters:
+    - id: cb
+      type:
+      - '(e: TranslationRecognitionResult) => void'
+      description: 변환 완료 되 면 결과 수신 하는 콜백.
+      optional: true
+    - id: err
+      type:
+      - '(e: string) => void'
+      description: >
+        오류가 발생할 경우 호출할 콜백입니다.
+      optional: true
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.recognizing
+  name: recognizing
+  fullName: recognizing
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 중간 인식 결과 받았는지 신호를 인식 하는 이벤트입니다.
+  syntax:
+    content: 'public recognizing: (sender: TranslationRecognizer, event: TranslationRecognitionEventArgs) => void'
+    return:
+      type:
+      - '(sender: TranslationRecognizer, event: TranslationRecognitionEventArgs) => void'
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.speechRecognitionLanguage
+  name: speechRecognitionLanguage
+  fullName: speechRecognitionLanguage
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 인식기를 만들 때 설정 된 언어 이름을 가져옵니다.
+  syntax:
+    content: 'public speechRecognitionLanguage: string'
+    return:
+      type:
+      - string
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.startContinuousRecognitionAsync
+  name: 'startContinuousRecognitionAsync(() => void, (e: string) => void)'
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    StopContinuousRecognitionAsync() 호출 될 때까지 인식 및 변환을 시작 합니다.
+
+    사용자는 변환 결과를 받는 이벤트를 구독 해야 합니다.
+  syntax:
+    content: 'function startContinuousRecognitionAsync(cb?: () => void, err?: (e: string) => void)'
+    parameters:
+    - id: cb
+      type:
+      - () => void
+      description: 번역을 수신 하는 콜백 시작 되었습니다.
+      optional: true
+    - id: err
+      type:
+      - '(e: string) => void'
+      description: >
+        오류가 발생할 경우 호출할 콜백입니다.
+      optional: true
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.stopContinuousRecognitionAsync
+  name: 'stopContinuousRecognitionAsync(() => void, (e: string) => void)'
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: 중지 연속 인식 및 변환 합니다.
+  syntax:
+    content: 'function stopContinuousRecognitionAsync(cb?: () => void, err?: (e: string) => void)'
+    parameters:
+    - id: cb
+      type:
+      - () => void
+      description: 번역을 수신 하는 콜백 중지 되었습니다.
+      optional: true
+    - id: err
+      type:
+      - '(e: string) => void'
+      description: >
+        오류가 발생할 경우 호출할 콜백입니다.
+      optional: true
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.synthesizing
+  name: synthesizing
+  fullName: synthesizing
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 번역 합성 결과 받을 신호를 통합 하는 이벤트입니다.
+  syntax:
+    content: 'public synthesizing: (sender: TranslationRecognizer, event: TranslationSynthesisEventArgs) => void'
+    return:
+      type:
+      - '(sender: TranslationRecognizer, event: TranslationSynthesisEventArgs) => void'
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.targetLanguages
+  name: targetLanguages
+  fullName: targetLanguages
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    인식기를 만들 때 설정 된 변환에 대 한 대상 언어를 가져옵니다.
+
+    언어는 BCP-47 형식으로 지정 됩니다. 변환에서는 각 언어에 대 한 번역 된 텍스트를 제공 합니다.
+  syntax:
+    content: 'public targetLanguages: string[]'
+    return:
+      type:
+      - string[]
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.constructor
+  name: TranslationRecognizer(SpeechTranslationConfig, AudioConfig)
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: TranslationRecognizer의 인스턴스를 초기화 합니다.
+  syntax:
+    content: 'new TranslationRecognizer(speechConfig: SpeechTranslationConfig, audioConfig?: AudioConfig)'
+    parameters:
+    - id: speechConfig
+      type:
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+      description: 이 인식기를 구성 하는 속성 집합입니다.
+    - id: audioConfig
+      type:
+      - microsoft-cognitiveservices-speech-sdk.AudioConfig
+      description: >
+        인식기를 사용 하 여 연결 하는 선택적 오디오 구성
+      optional: true
+  package: microsoft-cognitiveservices-speech-sdk
+- uid: microsoft-cognitiveservices-speech-sdk.TranslationRecognizer.voiceName
+  name: voiceName
+  fullName: voiceName
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 음성 출력의 이름을 가져옵니다.
+  syntax:
+    content: 'public voiceName: string'
+    return:
+      type:
+      - string
+  package: microsoft-cognitiveservices-speech-sdk
+references:
+- uid: microsoft-cognitiveservices-speech-sdk.Recognizer
+  name: Recognizer
+  spec.typeScript:
+  - name: Recognizer
+    fullName: Recognizer
+    uid: microsoft-cognitiveservices-speech-sdk.Recognizer
+- uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+  name: SpeechTranslationConfig
+  spec.typeScript:
+  - name: SpeechTranslationConfig
+    fullName: SpeechTranslationConfig
+    uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+- uid: microsoft-cognitiveservices-speech-sdk.AudioConfig
+  name: AudioConfig
+  spec.typeScript:
+  - name: AudioConfig
+    fullName: AudioConfig
+    uid: microsoft-cognitiveservices-speech-sdk.AudioConfig
+- uid: microsoft-cognitiveservices-speech-sdk.PropertyCollection
+  name: PropertyCollection
+  spec.typeScript:
+  - name: PropertyCollection
+    fullName: PropertyCollection
+    uid: microsoft-cognitiveservices-speech-sdk.PropertyCollection
