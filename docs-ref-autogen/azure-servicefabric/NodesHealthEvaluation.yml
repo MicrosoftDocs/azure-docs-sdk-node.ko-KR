@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 3ffbd2ec3adce5f29381ee5faa2bafb057f93845
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52141038"
+items:
+- uid: azure-servicefabric.NodesHealthEvaluation
+  name: NodesHealthEvaluation
+  fullName: NodesHealthEvaluation
+  children:
+  - azure-servicefabric.NodesHealthEvaluation.maxPercentUnhealthyNodes
+  - azure-servicefabric.NodesHealthEvaluation.totalCount
+  - azure-servicefabric.NodesHealthEvaluation.unhealthyEvaluations
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="1de38-101">현재 집계 된 상태에 영향을 받는 각 비정상 노드에 대 한 상태 평가 포함 하는 노드에 대 한 상태 평가 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1de38-101">Represents health evaluation for nodes, containing health evaluations for each unhealthy node that impacted current aggregated health state.</span></span> <span data-ttu-id="1de38-102">오류 또는 경고 중 하나는 클러스터 상태 및 집계 된 상태를 평가 하는 경우에 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1de38-102">Can be returned when evaluating cluster health and the aggregated health state is either Error or Warning.</span></span>
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.NodesHealthEvaluation.maxPercentUnhealthyNodes
+  name: maxPercentUnhealthyNodes
+  fullName: maxPercentUnhealthyNodes
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="1de38-103">ClusterHealthPolicy에서 허용 되는 최대 백분율 비정상 노드.</span><span class="sxs-lookup"><span data-stu-id="1de38-103">Maximum allowed percentage of unhealthy nodes from the ClusterHealthPolicy.</span></span>
+  optional: true
+  syntax:
+    content: 'maxPercentUnhealthyNodes?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.NodesHealthEvaluation.totalCount
+  name: totalCount
+  fullName: totalCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="1de38-104">Health 스토어에 있는 노드 총 수입니다.</span><span class="sxs-lookup"><span data-stu-id="1de38-104">Total number of nodes found in the health store.</span></span>
+  optional: true
+  syntax:
+    content: 'totalCount?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.NodesHealthEvaluation.unhealthyEvaluations
+  name: unhealthyEvaluations
+  fullName: unhealthyEvaluations
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="1de38-105">집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="1de38-105">List of unhealthy evaluations that led to the aggregated health state.</span></span> <span data-ttu-id="1de38-106">집계 된 상태에 영향을 미친 모든 비정상 NodeHealthEvaluation을 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1de38-106">Includes all the unhealthy NodeHealthEvaluation that impacted the aggregated health.</span></span>
+  optional: true
+  syntax:
+    content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+    return:
+      type:
+      - azure-servicefabric.HealthEvaluationWrapper[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvaluationWrapper[]
+  name: HealthEvaluationWrapper[]
+  spec.typeScript:
+  - name: HealthEvaluationWrapper
+    fullName: HealthEvaluationWrapper
+    uid: azure-servicefabric.HealthEvaluationWrapper
+  - name: '[]'
+    fullName: '[]'
