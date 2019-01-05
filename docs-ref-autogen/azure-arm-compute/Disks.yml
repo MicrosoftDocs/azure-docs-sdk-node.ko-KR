@@ -1,0 +1,1958 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 4c56db4d8d55793b5fdeec1aa055c26423b78250
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52048709"
+items:
+- uid: azure-arm-compute.Disks
+  name: Disks
+  fullName: Disks
+  children:
+  - azure-arm-compute.Disks.beginCreateOrUpdate
+  - azure-arm-compute.Disks.beginCreateOrUpdate_2
+  - azure-arm-compute.Disks.beginCreateOrUpdate_1
+  - azure-arm-compute.Disks.beginCreateOrUpdateWithHttpOperationResponse
+  - azure-arm-compute.Disks.beginDeleteMethod
+  - azure-arm-compute.Disks.beginDeleteMethod_2
+  - azure-arm-compute.Disks.beginDeleteMethod_1
+  - azure-arm-compute.Disks.beginDeleteMethodWithHttpOperationResponse
+  - azure-arm-compute.Disks.beginGrantAccess
+  - azure-arm-compute.Disks.beginGrantAccess_2
+  - azure-arm-compute.Disks.beginGrantAccess_1
+  - azure-arm-compute.Disks.beginGrantAccessWithHttpOperationResponse
+  - azure-arm-compute.Disks.beginRevokeAccess
+  - azure-arm-compute.Disks.beginRevokeAccess_2
+  - azure-arm-compute.Disks.beginRevokeAccess_1
+  - azure-arm-compute.Disks.beginRevokeAccessWithHttpOperationResponse
+  - azure-arm-compute.Disks.beginUpdate
+  - azure-arm-compute.Disks.beginUpdate_2
+  - azure-arm-compute.Disks.beginUpdate_1
+  - azure-arm-compute.Disks.beginUpdateWithHttpOperationResponse
+  - azure-arm-compute.Disks.createOrUpdate
+  - azure-arm-compute.Disks.createOrUpdate_2
+  - azure-arm-compute.Disks.createOrUpdate_1
+  - azure-arm-compute.Disks.createOrUpdateWithHttpOperationResponse
+  - azure-arm-compute.Disks.deleteMethod
+  - azure-arm-compute.Disks.deleteMethod_2
+  - azure-arm-compute.Disks.deleteMethod_1
+  - azure-arm-compute.Disks.deleteMethodWithHttpOperationResponse
+  - azure-arm-compute.Disks.get
+  - azure-arm-compute.Disks.get_2
+  - azure-arm-compute.Disks.get_1
+  - azure-arm-compute.Disks.getWithHttpOperationResponse
+  - azure-arm-compute.Disks.grantAccess
+  - azure-arm-compute.Disks.grantAccess_2
+  - azure-arm-compute.Disks.grantAccess_1
+  - azure-arm-compute.Disks.grantAccessWithHttpOperationResponse
+  - azure-arm-compute.Disks.list
+  - azure-arm-compute.Disks.list_2
+  - azure-arm-compute.Disks.list_1
+  - azure-arm-compute.Disks.listByResourceGroup
+  - azure-arm-compute.Disks.listByResourceGroup_2
+  - azure-arm-compute.Disks.listByResourceGroup_1
+  - azure-arm-compute.Disks.listByResourceGroupNext
+  - azure-arm-compute.Disks.listByResourceGroupNext_2
+  - azure-arm-compute.Disks.listByResourceGroupNext_1
+  - azure-arm-compute.Disks.listByResourceGroupNextWithHttpOperationResponse
+  - azure-arm-compute.Disks.listByResourceGroupWithHttpOperationResponse
+  - azure-arm-compute.Disks.listNext
+  - azure-arm-compute.Disks.listNext_2
+  - azure-arm-compute.Disks.listNext_1
+  - azure-arm-compute.Disks.listNextWithHttpOperationResponse
+  - azure-arm-compute.Disks.listWithHttpOperationResponse
+  - azure-arm-compute.Disks.revokeAccess
+  - azure-arm-compute.Disks.revokeAccess_2
+  - azure-arm-compute.Disks.revokeAccess_1
+  - azure-arm-compute.Disks.revokeAccessWithHttpOperationResponse
+  - azure-arm-compute.Disks.update
+  - azure-arm-compute.Disks.update_2
+  - azure-arm-compute.Disks.update_1
+  - azure-arm-compute.Disks.updateWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginCreateOrUpdate
+  name: beginCreateOrUpdate(string, string, Disk, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-101">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-101">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, diskName: string, disk: Disk, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-102">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-102">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-103">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-103">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-104">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-104">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-105">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-105">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-106">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-106">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: >
+        <span data-ttu-id="a78a9-107">Put 디스크 작업의 본문에 제공 된 디스크 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-107">Disk object supplied in the body of the Put disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginCreateOrUpdate_2
+  name: beginCreateOrUpdate(string, string, Disk, Object, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-108">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-108">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, diskName: string, disk: Disk, options: Object, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginCreateOrUpdate_1
+  name: beginCreateOrUpdate(string, string, Disk, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-109">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-109">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdate(resourceGroupName: string, diskName: string, disk: Disk, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginCreateOrUpdateWithHttpOperationResponse
+  name: beginCreateOrUpdateWithHttpOperationResponse(string, string, Disk, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-110">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-110">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName: string, diskName: string, disk: Disk, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-111">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-111">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-112">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-112">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-113">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-113">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-114">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-114">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-115">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-115">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: >
+        <span data-ttu-id="a78a9-116">Put 디스크 작업의 본문에 제공 된 디스크 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-116">Disk object supplied in the body of the Put disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginDeleteMethod
+  name: beginDeleteMethod(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-117">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-117">Deletes a disk.</span></span>
+  syntax:
+    content: 'function beginDeleteMethod(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-118">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-118">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-119">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-119">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-120">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-120">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-121">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-121">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-122">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-122">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginDeleteMethod_2
+  name: beginDeleteMethod(string, string, Object, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-123">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-123">Deletes a disk.</span></span>
+  syntax:
+    content: 'function beginDeleteMethod(resourceGroupName: string, diskName: string, options: Object, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginDeleteMethod_1
+  name: beginDeleteMethod(string, string, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-124">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-124">Deletes a disk.</span></span>
+  syntax:
+    content: 'function beginDeleteMethod(resourceGroupName: string, diskName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginDeleteMethodWithHttpOperationResponse
+  name: beginDeleteMethodWithHttpOperationResponse(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-125">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-125">Deletes a disk.</span></span>
+  syntax:
+    content: 'function beginDeleteMethodWithHttpOperationResponse(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-126">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-126">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-127">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-127">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-128">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-128">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-129">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-129">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-130">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-130">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginGrantAccess
+  name: beginGrantAccess(string, string, GrantAccessData, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-131">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-131">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function beginGrantAccess(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-132">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-132">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-133">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-133">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-134">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-134">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-135">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-135">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-136">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-136">The maximum name length is 80 characters.</span></span>
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: >
+        <span data-ttu-id="a78a9-137">Get 디스크 액세스 작업의 본문에 제공 된 데이터 개체를 액세스 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-137">Access data object supplied in the body of the get disk access operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.AccessUri>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginGrantAccess_2
+  name: beginGrantAccess(string, string, GrantAccessData, Object, ServiceCallback<AccessUri>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-138">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-138">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function beginGrantAccess(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, options: Object, callback: ServiceCallback<AccessUri>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.AccessUri>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.AccessUri>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginGrantAccess_1
+  name: beginGrantAccess(string, string, GrantAccessData, ServiceCallback<AccessUri>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-139">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-139">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function beginGrantAccess(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, callback: ServiceCallback<AccessUri>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.AccessUri>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.AccessUri>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginGrantAccessWithHttpOperationResponse
+  name: beginGrantAccessWithHttpOperationResponse(string, string, GrantAccessData, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-140">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-140">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function beginGrantAccessWithHttpOperationResponse(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-141">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-141">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-142">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-142">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-143">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-143">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-144">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-144">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-145">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-145">The maximum name length is 80 characters.</span></span>
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: >
+        <span data-ttu-id="a78a9-146">Get 디스크 액세스 작업의 본문에 제공 된 데이터 개체를 액세스 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-146">Access data object supplied in the body of the get disk access operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginRevokeAccess
+  name: beginRevokeAccess(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-147">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-147">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function beginRevokeAccess(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-148">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-148">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-149">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-149">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-150">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-150">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-151">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-151">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-152">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-152">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginRevokeAccess_2
+  name: beginRevokeAccess(string, string, Object, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-153">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-153">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function beginRevokeAccess(resourceGroupName: string, diskName: string, options: Object, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginRevokeAccess_1
+  name: beginRevokeAccess(string, string, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-154">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-154">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function beginRevokeAccess(resourceGroupName: string, diskName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginRevokeAccessWithHttpOperationResponse
+  name: beginRevokeAccessWithHttpOperationResponse(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-155">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-155">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function beginRevokeAccessWithHttpOperationResponse(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-156">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-156">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-157">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-157">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-158">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-158">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-159">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-159">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-160">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-160">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginUpdate
+  name: beginUpdate(string, string, DiskUpdate, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-161">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-161">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function beginUpdate(resourceGroupName: string, diskName: string, disk: DiskUpdate, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-162">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-162">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-163">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-163">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-164">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-164">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-165">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-165">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-166">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-166">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: >
+        <span data-ttu-id="a78a9-167">디스크 개체를 패치 디스크 작업의 본문에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-167">Disk object supplied in the body of the Patch disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginUpdate_2
+  name: beginUpdate(string, string, DiskUpdate, Object, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-168">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-168">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function beginUpdate(resourceGroupName: string, diskName: string, disk: DiskUpdate, options: Object, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginUpdate_1
+  name: beginUpdate(string, string, DiskUpdate, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-169">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-169">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function beginUpdate(resourceGroupName: string, diskName: string, disk: DiskUpdate, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.beginUpdateWithHttpOperationResponse
+  name: beginUpdateWithHttpOperationResponse(string, string, DiskUpdate, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-170">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-170">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function beginUpdateWithHttpOperationResponse(resourceGroupName: string, diskName: string, disk: DiskUpdate, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-171">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-171">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-172">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-172">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-173">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-173">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-174">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-174">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-175">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-175">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: >
+        <span data-ttu-id="a78a9-176">디스크 개체를 패치 디스크 작업의 본문에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-176">Disk object supplied in the body of the Patch disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.createOrUpdate
+  name: createOrUpdate(string, string, Disk, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-177">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-177">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, diskName: string, disk: Disk, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-178">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-178">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-179">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-179">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-180">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-180">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-181">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-181">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-182">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-182">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: >
+        <span data-ttu-id="a78a9-183">Put 디스크 작업의 본문에 제공 된 디스크 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-183">Disk object supplied in the body of the Put disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.createOrUpdate_2
+  name: createOrUpdate(string, string, Disk, Object, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-184">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-184">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, diskName: string, disk: Disk, options: Object, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.createOrUpdate_1
+  name: createOrUpdate(string, string, Disk, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-185">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-185">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function createOrUpdate(resourceGroupName: string, diskName: string, disk: Disk, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.createOrUpdateWithHttpOperationResponse
+  name: createOrUpdateWithHttpOperationResponse(string, string, Disk, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-186">만들거나 디스크를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-186">Creates or updates a disk.</span></span>
+  syntax:
+    content: 'function createOrUpdateWithHttpOperationResponse(resourceGroupName: string, diskName: string, disk: Disk, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-187">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-187">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-188">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-188">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-189">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-189">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-190">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-190">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-191">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-191">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.Disk
+      description: >
+        <span data-ttu-id="a78a9-192">Put 디스크 작업의 본문에 제공 된 디스크 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-192">Disk object supplied in the body of the Put disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.deleteMethod
+  name: deleteMethod(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-193">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-193">Deletes a disk.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-194">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-194">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-195">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-195">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-196">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-196">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-197">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-197">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-198">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-198">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.deleteMethod_2
+  name: deleteMethod(string, string, Object, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-199">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-199">Deletes a disk.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceGroupName: string, diskName: string, options: Object, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.deleteMethod_1
+  name: deleteMethod(string, string, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-200">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-200">Deletes a disk.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceGroupName: string, diskName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.deleteMethodWithHttpOperationResponse
+  name: deleteMethodWithHttpOperationResponse(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-201">디스크를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-201">Deletes a disk.</span></span>
+  syntax:
+    content: 'function deleteMethodWithHttpOperationResponse(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-202">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-202">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-203">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-203">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-204">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-204">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-205">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-205">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-206">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-206">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.get
+  name: get(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-207">디스크에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-207">Gets information about a disk.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-208">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-208">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-209">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-209">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-210">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-210">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-211">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-211">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-212">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-212">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.get_2
+  name: get(string, string, Object, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-213">디스크에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-213">Gets information about a disk.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, diskName: string, options: Object, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.get_1
+  name: get(string, string, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-214">디스크에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-214">Gets information about a disk.</span></span>
+  syntax:
+    content: 'function get(resourceGroupName: string, diskName: string, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-215">디스크에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-215">Gets information about a disk.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-216">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-216">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-217">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-217">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-218">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-218">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-219">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-219">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-220">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-220">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.grantAccess
+  name: grantAccess(string, string, GrantAccessData, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-221">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-221">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function grantAccess(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-222">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-222">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-223">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-223">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-224">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-224">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-225">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-225">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-226">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-226">The maximum name length is 80 characters.</span></span>
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: >
+        <span data-ttu-id="a78a9-227">Get 디스크 액세스 작업의 본문에 제공 된 데이터 개체를 액세스 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-227">Access data object supplied in the body of the get disk access operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.AccessUri>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.grantAccess_2
+  name: grantAccess(string, string, GrantAccessData, Object, ServiceCallback<AccessUri>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-228">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-228">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function grantAccess(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, options: Object, callback: ServiceCallback<AccessUri>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.AccessUri>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.AccessUri>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.grantAccess_1
+  name: grantAccess(string, string, GrantAccessData, ServiceCallback<AccessUri>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-229">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-229">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function grantAccess(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, callback: ServiceCallback<AccessUri>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.AccessUri>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.AccessUri>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.grantAccessWithHttpOperationResponse
+  name: grantAccessWithHttpOperationResponse(string, string, GrantAccessData, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-230">디스크에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-230">Grants access to a disk.</span></span>
+  syntax:
+    content: 'function grantAccessWithHttpOperationResponse(resourceGroupName: string, diskName: string, grantAccessData: GrantAccessData, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-231">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-231">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-232">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-232">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-233">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-233">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-234">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-234">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-235">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-235">The maximum name length is 80 characters.</span></span>
+    - id: grantAccessData
+      type:
+      - azure-arm-compute.GrantAccessData
+      description: >
+        <span data-ttu-id="a78a9-236">Get 디스크 액세스 작업의 본문에 제공 된 데이터 개체를 액세스 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-236">Access data object supplied in the body of the get disk access operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.list
+  name: list(Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-237">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-237">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function list(options?: Object)'
+    parameters:
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.list_2
+  name: list(Object, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-238">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-238">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function list(options: Object, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.list_1
+  name: list(ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-239">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-239">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function list(callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroup
+  name: listByResourceGroup(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-240">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-240">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroup(resourceGroupName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-241">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-241">The name of the resource group.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroup_2
+  name: listByResourceGroup(string, Object, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-242">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-242">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroup(resourceGroupName: string, options: Object, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroup_1
+  name: listByResourceGroup(string, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-243">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-243">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroupNext
+  name: listByResourceGroupNext(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-244">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-244">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-245">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-245">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroupNext_2
+  name: listByResourceGroupNext(string, Object, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-246">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-246">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNext(nextPageLink: string, options: Object, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroupNext_1
+  name: listByResourceGroupNext(string, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-247">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-247">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroupNextWithHttpOperationResponse
+  name: listByResourceGroupNextWithHttpOperationResponse(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-248">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-248">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-249">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-249">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listByResourceGroupWithHttpOperationResponse
+  name: listByResourceGroupWithHttpOperationResponse(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-250">리소스 그룹 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-250">Lists all the disks under a resource group.</span></span>
+  syntax:
+    content: 'function listByResourceGroupWithHttpOperationResponse(resourceGroupName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-251">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-251">The name of the resource group.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listNext
+  name: listNext(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-252">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-252">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-253">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-253">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listNext_2
+  name: listNext(string, Object, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-254">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-254">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options: Object, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listNext_1
+  name: listNext(string, ServiceCallback<DiskList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-255">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-255">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, callback: ServiceCallback<DiskList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.DiskList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.DiskList>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listNextWithHttpOperationResponse
+  name: listNextWithHttpOperationResponse(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-256">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-256">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-257">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-257">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.listWithHttpOperationResponse
+  name: listWithHttpOperationResponse(Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-258">구독 아래의 모든 디스크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-258">Lists all the disks under a subscription.</span></span>
+  syntax:
+    content: 'function listWithHttpOperationResponse(options?: Object)'
+    parameters:
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.revokeAccess
+  name: revokeAccess(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-259">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-259">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function revokeAccess(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-260">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-260">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-261">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-261">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-262">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-262">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-263">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-263">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-264">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-264">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.revokeAccess_2
+  name: revokeAccess(string, string, Object, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-265">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-265">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function revokeAccess(resourceGroupName: string, diskName: string, options: Object, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.revokeAccess_1
+  name: revokeAccess(string, string, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-266">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-266">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function revokeAccess(resourceGroupName: string, diskName: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.revokeAccessWithHttpOperationResponse
+  name: revokeAccessWithHttpOperationResponse(string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-267">디스크에 액세스 권한을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-267">Revokes access to a disk.</span></span>
+  syntax:
+    content: 'function revokeAccessWithHttpOperationResponse(resourceGroupName: string, diskName: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-268">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-268">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-269">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-269">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-270">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-270">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-271">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-271">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-272">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-272">The maximum name length is 80 characters.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.update
+  name: update(string, string, DiskUpdate, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-273">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-273">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function update(resourceGroupName: string, diskName: string, disk: DiskUpdate, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-274">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-274">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-275">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-275">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-276">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-276">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-277">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-277">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-278">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-278">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: >
+        <span data-ttu-id="a78a9-279">디스크 개체를 패치 디스크 작업의 본문에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-279">Disk object supplied in the body of the Patch disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.update_2
+  name: update(string, string, DiskUpdate, Object, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-280">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-280">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function update(resourceGroupName: string, diskName: string, disk: DiskUpdate, options: Object, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.update_1
+  name: update(string, string, DiskUpdate, ServiceCallback<Disk>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-281">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-281">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function update(resourceGroupName: string, diskName: string, disk: DiskUpdate, callback: ServiceCallback<Disk>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: diskName
+      type:
+      - string
+      description: ''
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-compute.Disk>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-compute.Disk>
+  package: azure-arm-compute
+- uid: azure-arm-compute.Disks.updateWithHttpOperationResponse
+  name: updateWithHttpOperationResponse(string, string, DiskUpdate, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="a78a9-282">업데이트 (패치) 디스크.</span><span class="sxs-lookup"><span data-stu-id="a78a9-282">Updates (patches) a disk.</span></span>
+  syntax:
+    content: 'function updateWithHttpOperationResponse(resourceGroupName: string, diskName: string, disk: DiskUpdate, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-283">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a78a9-283">The name of the resource group.</span></span>
+    - id: diskName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="a78a9-284">생성 되는 관리 디스크의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-284">The name of the managed disk that is being created.</span></span>
+
+        <span data-ttu-id="a78a9-285">디스크를 만든 후에 이름을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-285">The name can't be changed after the disk is created.</span></span> <span data-ttu-id="a78a9-286">이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-286">Supported characters for the name are a-z, A-Z, 0-9 and _.</span></span> <span data-ttu-id="a78a9-287">최대 이름 길이 80 자입니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-287">The maximum name length is 80 characters.</span></span>
+    - id: disk
+      type:
+      - azure-arm-compute.DiskUpdate
+      description: >
+        <span data-ttu-id="a78a9-288">디스크 개체를 패치 디스크 작업의 본문에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a78a9-288">Disk object supplied in the body of the Patch disk operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+  package: azure-arm-compute
+references:
+- uid: azure-arm-compute.Disk
+  name: Disk
+  spec.typeScript:
+  - name: Disk
+    fullName: Disk
+    uid: azure-arm-compute.Disk
+- uid: Promise<azure-arm-compute.Disk>
+  name: Disk>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: Disk
+    fullName: Disk
+    uid: azure-arm-compute.Disk
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-compute.Disk>
+  name: Disk>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: Disk
+    fullName: Disk
+    uid: azure-arm-compute.Disk
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+  name: Disk>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: Disk
+    fullName: Disk
+    uid: azure-arm-compute.Disk
+  - name: '>>'
+    fullName: '>>'
+- uid: azure-arm-compute.GrantAccessData
+  name: GrantAccessData
+  spec.typeScript:
+  - name: GrantAccessData
+    fullName: GrantAccessData
+    uid: azure-arm-compute.GrantAccessData
+- uid: Promise<azure-arm-compute.AccessUri>
+  name: AccessUri>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: AccessUri
+    fullName: AccessUri
+    uid: azure-arm-compute.AccessUri
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-compute.AccessUri>
+  name: AccessUri>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: AccessUri
+    fullName: AccessUri
+    uid: azure-arm-compute.AccessUri
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+  name: AccessUri>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: AccessUri
+    fullName: AccessUri
+    uid: azure-arm-compute.AccessUri
+  - name: '>>'
+    fullName: '>>'
+- uid: azure-arm-compute.DiskUpdate
+  name: DiskUpdate
+  spec.typeScript:
+  - name: DiskUpdate
+    fullName: DiskUpdate
+    uid: azure-arm-compute.DiskUpdate
+- uid: Promise<azure-arm-compute.DiskList>
+  name: DiskList>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: DiskList
+    fullName: DiskList
+    uid: azure-arm-compute.DiskList
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-compute.DiskList>
+  name: DiskList>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: DiskList
+    fullName: DiskList
+    uid: azure-arm-compute.DiskList
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+  name: DiskList>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: DiskList
+    fullName: DiskList
+    uid: azure-arm-compute.DiskList
+  - name: '>>'
+    fullName: '>>'

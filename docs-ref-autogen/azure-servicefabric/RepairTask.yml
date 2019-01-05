@@ -1,0 +1,358 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 5777e998a9726c2c811e04d5dc0efbc786c7eacd
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52141248"
+items:
+- uid: azure-servicefabric.RepairTask
+  name: RepairTask
+  fullName: RepairTask
+  children:
+  - azure-servicefabric.RepairTask.action
+  - azure-servicefabric.RepairTask.description
+  - azure-servicefabric.RepairTask.executor
+  - azure-servicefabric.RepairTask.executorData
+  - azure-servicefabric.RepairTask.flags
+  - azure-servicefabric.RepairTask.history
+  - azure-servicefabric.RepairTask.impact
+  - azure-servicefabric.RepairTask.performPreparingHealthCheck
+  - azure-servicefabric.RepairTask.performRestoringHealthCheck
+  - azure-servicefabric.RepairTask.preparingHealthCheckState
+  - azure-servicefabric.RepairTask.restoringHealthCheckState
+  - azure-servicefabric.RepairTask.resultCode
+  - azure-servicefabric.RepairTask.resultDetails
+  - azure-servicefabric.RepairTask.resultStatus
+  - azure-servicefabric.RepairTask.state
+  - azure-servicefabric.RepairTask.target
+  - azure-servicefabric.RepairTask.taskId
+  - azure-servicefabric.RepairTask.version
+  langs:
+  - typeScript
+  type: interface
+  summary: >
+    <span data-ttu-id="126a6-101">어떤 유형의 복구 요청한, 진행률 새로운 기능 및 해당 최종 결과 던에 대 한 정보를 포함 하는 복구 작업을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-101">Represents a repair task, which includes information about what kind of repair was requested, what its progress is, and what its final result was.</span></span>
+
+    <span data-ttu-id="126a6-102">이 유형은 Service Fabric 플랫폼; 지원 코드에서 직접 사용할 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-102">This type supports the Service Fabric platform; it is not meant to be used directly from your code.</span></span>
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.action
+  name: action
+  fullName: action
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="126a6-103">요청 된 복구 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-103">The requested repair action.</span></span> <span data-ttu-id="126a6-104">복구 작업을 만들면 하 고 변경할 수 없는 한 번 설정 된 경우 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-104">Must be specified when the repair task is created, and is immutable once set.</span></span>
+  syntax:
+    content: 'action: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.description
+  name: description
+  fullName: description
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-105">설명의 목적 복구 작업 또는 기타 정보 제공 용 이므로 세부 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-105">A description of the purpose of the repair task, or other informational details.</span></span>
+
+    <span data-ttu-id="126a6-106">설정할 수 있습니다 복구 작업을 만들고 변경할 수 없는 경우 한 번 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-106">May be set when the repair task is created, and is immutable once set.</span></span>
+  optional: true
+  syntax:
+    content: 'description?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.executor
+  name: executor
+  fullName: executor
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="126a6-107">복구 실행 기의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-107">The name of the repair executor.</span></span> <span data-ttu-id="126a6-108">요청 됨 및 최신 상태를 지정 해야 하며 변경할 수 없는 한 번 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-108">Must be specified in Claimed and later states, and is immutable once set.</span></span>
+  optional: true
+  syntax:
+    content: 'executor?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.executorData
+  name: executorData
+  fullName: executorData
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="126a6-109">복구 실행 기의 내부 상태를 저장 하는 데 사용할 수 있는 데이터 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-109">A data string that the repair executor can use to store its internal state.</span></span>
+  optional: true
+  syntax:
+    content: 'executorData?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.flags
+  name: flags
+  fullName: flags
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-110">비트 OR 복구 작업의 상태에 대 한 추가 세부 정보를 제공 하는 다음 값 중입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-110">A bitwise-OR of the following values, which gives additional details about the status of the repair task.</span></span>
+
+    - <span data-ttu-id="126a6-111">1-복구의 취소가 요청 되었는지</span><span class="sxs-lookup"><span data-stu-id="126a6-111">1 - Cancellation of the repair has been requested</span></span>
+
+    - <span data-ttu-id="126a6-112">2-중단 복구의 요청 했습니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-112">2 - Abort of the repair has been requested</span></span>
+
+    - <span data-ttu-id="126a6-113">4-복구의 승인 된 클라이언트 요청을 통해 강제 적용</span><span class="sxs-lookup"><span data-stu-id="126a6-113">4 - Approval of the repair was forced via client request</span></span>
+  optional: true
+  syntax:
+    content: 'flags?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.history
+  name: history
+  fullName: history
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-114">복구 작업의 상태 전환의 타임 스탬프를 포함 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-114">An object that contains timestamps of the repair task's state transitions.</span></span>
+
+    <span data-ttu-id="126a6-115">이러한 타임 스탬프 시스템에 의해 업데이트 되 고 직접 수정할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-115">These timestamps are updated by the system, and cannot be directly modified.</span></span>
+  optional: true
+  syntax:
+    content: 'history?: RepairTaskHistory'
+    return:
+      type:
+      - azure-servicefabric.RepairTaskHistory
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.impact
+  name: impact
+  fullName: impact
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-116">영향을 줄 개체 시스템은 복구의 실행을 승인 하기 전에 복구의 영향에 대 한 준비를 수행할 작업을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-116">The impact object determines what actions the system will take to prepare for the impact of the repair, prior to approving execution of the repair.</span></span>
+
+    <span data-ttu-id="126a6-117">영향을 준비 상태로 전환 될 때 복구 실행 자가 지정 해야 하 고 변경할 수 없는 한 번 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-117">Impact must be specified by the repair executor when transitioning to the Preparing state, and is immutable once set.</span></span>
+  optional: true
+  syntax:
+    content: 'impact?: RepairImpactDescriptionBase'
+    return:
+      type:
+      - azure-servicefabric.RepairImpactDescriptionBase
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.performPreparingHealthCheck
+  name: performPreparingHealthCheck
+  fullName: performPreparingHealthCheck
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="126a6-118">복구 작업은 준비 상태가 될 때 상태 검사를 수행 하는 경우를 결정 하는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-118">A value to determine if health checks will be performed when the repair task enters the Preparing state.</span></span>
+  optional: true
+  syntax:
+    content: 'performPreparingHealthCheck?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.performRestoringHealthCheck
+  name: performRestoringHealthCheck
+  fullName: performRestoringHealthCheck
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="126a6-119">복구 작업은 Restoring 상태가 될 때 상태 검사를 수행 하는 경우를 결정 하는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-119">A value to determine if health checks will be performed when the repair task enters the Restoring state.</span></span>
+  optional: true
+  syntax:
+    content: 'performRestoringHealthCheck?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.preparingHealthCheckState
+  name: preparingHealthCheckState
+  fullName: preparingHealthCheckState
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-120">복구 작업은 준비 상태인 경우 상태 검사의 워크플로 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-120">The workflow state of the health check when the repair task is in the Preparing state.</span></span>
+
+    <span data-ttu-id="126a6-121">가능한 값은 다음과 같습니다. 'NotStarted', 'InProgress', '성공', ' 생략 ', '초과'</span><span class="sxs-lookup"><span data-stu-id="126a6-121">Possible values include: 'NotStarted', 'InProgress', 'Succeeded', 'Skipped', 'TimedOut'</span></span>
+  optional: true
+  syntax:
+    content: 'preparingHealthCheckState?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.restoringHealthCheckState
+  name: restoringHealthCheckState
+  fullName: restoringHealthCheckState
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-122">복구 작업은 Restoring 상태에 있으면 상태 검사의 워크플로 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-122">The workflow state of the health check when the repair task is in the Restoring state.</span></span>
+
+    <span data-ttu-id="126a6-123">가능한 값은 다음과 같습니다. 'NotStarted', 'InProgress', '성공', ' 생략 ', '초과'</span><span class="sxs-lookup"><span data-stu-id="126a6-123">Possible values include: 'NotStarted', 'InProgress', 'Succeeded', 'Skipped', 'TimedOut'</span></span>
+  optional: true
+  syntax:
+    content: 'restoringHealthCheckState?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.resultCode
+  name: resultCode
+  fullName: resultCode
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-124">복구 작업 실행의 결과 대 한 추가 세부 정보를 제공 하는 숫자 값입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-124">A numeric value providing additional details about the result of the repair task execution.</span></span>
+
+    <span data-ttu-id="126a6-125">복원 및 이후 상태에 지정할 수 있으며 변경할 수 없는 한 번 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-125">May be specified in the Restoring and later states, and is immutable once set.</span></span>
+  optional: true
+  syntax:
+    content: 'resultCode?: number'
+    return:
+      type:
+      - number
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.resultDetails
+  name: resultDetails
+  fullName: resultDetails
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-126">복구 작업 실행의 결과 대 한 추가 정보를 제공 하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-126">A string providing additional details about the result of the repair task execution.</span></span>
+
+    <span data-ttu-id="126a6-127">복원 및 이후 상태에 지정할 수 있으며 변경할 수 없는 한 번 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-127">May be specified in the Restoring and later states, and is immutable once set.</span></span>
+  optional: true
+  syntax:
+    content: 'resultDetails?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.resultStatus
+  name: resultStatus
+  fullName: resultStatus
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "<span data-ttu-id=\"126a6-128\">복구 작업 실행의 전체 결과 설명 하는 값입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"126a6-128\">A value describing the overall result of the repair task execution.</span></span> <span data-ttu-id=\"126a6-129\">뒷부분에 나오는 상태를 확인 하 고 복원 중에 지정 해야 하며 변경할 수 없는 한 번 설정 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"126a6-129\">Must be specified in the Restoring and later states, and is immutable once set.</span></span> <span data-ttu-id=\"126a6-130\">가능한 값은 다음과 같습니다. 'Invalid', ' 성공 ', '취소', '중단', '실패', '보류 중'</span><span class=\"sxs-lookup\"><span data-stu-id=\"126a6-130\">Possible values include: 'Invalid', 'Succeeded', 'Cancelled', 'Interrupted', 'Failed', 'Pending'</span></span>"
+  optional: true
+  syntax:
+    content: 'resultStatus?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.state
+  name: state
+  fullName: state
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "<span data-ttu-id=\"126a6-131\">복구 작업의 워크플로 상태입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"126a6-131\">The workflow state of the repair task.</span></span> <span data-ttu-id=\"126a6-132\">유효한 초기 상태는 Created, 요청 됨, 준비 중입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"126a6-132\">Valid initial states are Created, Claimed, and Preparing.</span></span> <span data-ttu-id=\"126a6-133\">가능한 값은 다음과 같습니다. 'Invalid', '생성'을 '요청 된', '준비', ' 승인 된 ', '실행', '복원', '완료'</span><span class=\"sxs-lookup\"><span data-stu-id=\"126a6-133\">Possible values include: 'Invalid', 'Created', 'Claimed', 'Preparing', 'Approved', 'Executing', 'Restoring', 'Completed'</span></span>"
+  syntax:
+    content: 'state: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.target
+  name: target
+  fullName: target
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-134">대상 개체는 시스템은 복구의 실행을 승인 하기 전에 복구의 영향에 대 한 준비를 수행할 작업을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-134">The target object determines what actions the system will take to prepare for the impact of the repair, prior to approving execution of the repair.</span></span>
+
+    <span data-ttu-id="126a6-135">설정할 수 있습니다 복구 작업을 만들고 변경할 수 없는 경우 한 번 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-135">May be set when the repair task is created, and is immutable once set.</span></span>
+  optional: true
+  syntax:
+    content: 'target?: RepairTargetDescriptionBase'
+    return:
+      type:
+      - azure-servicefabric.RepairTargetDescriptionBase
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.taskId
+  name: taskId
+  fullName: taskId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="126a6-136">복구 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-136">The ID of the repair task.</span></span>
+  syntax:
+    content: 'taskId: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.RepairTask.version
+  name: version
+  fullName: version
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="126a6-137">복구 작업의 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-137">The version of the repair task.</span></span>
+
+    <span data-ttu-id="126a6-138">새 복구 작업을 만들 때 버전을 0으로 설정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-138">When creating a new repair task, the version must be set to zero.</span></span>  <span data-ttu-id="126a6-139">복구 작업을 업데이트할 때 버전 낙관적 동시성 검사에 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-139">When updating a repair task, the version is used for optimistic concurrency checks.</span></span>  <span data-ttu-id="126a6-140">버전은 0으로 설정 하는 경우 쓰기 충돌에 대 한 업데이트를 확인 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="126a6-140">If the version is set to zero, the update will not check for write conflicts.</span></span>  <span data-ttu-id="126a6-141">복구 작업의 실제 현재 버전과이 값과 일치 하는 경우에 업데이트가 성공한 다음 버전 0이 아닌 값으로 설정 된 경우</span><span class="sxs-lookup"><span data-stu-id="126a6-141">If the version is set to a non-zero value, then the update will only succeed if the actual current version of the repair task matches this value.</span></span>
+  optional: true
+  syntax:
+    content: 'version?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.RepairTaskHistory
+  name: RepairTaskHistory
+  spec.typeScript:
+  - name: RepairTaskHistory
+    fullName: RepairTaskHistory
+    uid: azure-servicefabric.RepairTaskHistory
+- uid: azure-servicefabric.RepairImpactDescriptionBase
+  name: RepairImpactDescriptionBase
+  spec.typeScript:
+  - name: RepairImpactDescriptionBase
+    fullName: RepairImpactDescriptionBase
+    uid: azure-servicefabric.RepairImpactDescriptionBase
+- uid: azure-servicefabric.RepairTargetDescriptionBase
+  name: RepairTargetDescriptionBase
+  spec.typeScript:
+  - name: RepairTargetDescriptionBase
+    fullName: RepairTargetDescriptionBase
+    uid: azure-servicefabric.RepairTargetDescriptionBase
