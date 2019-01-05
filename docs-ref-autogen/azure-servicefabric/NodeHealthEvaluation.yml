@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 9ced9d62e537275915679d3635b7c34c62261c4a
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52040060"
+items:
+- uid: azure-servicefabric.NodeHealthEvaluation
+  name: NodeHealthEvaluation
+  fullName: NodeHealthEvaluation
+  children:
+  - azure-servicefabric.NodeHealthEvaluation.nodeName
+  - azure-servicefabric.NodeHealthEvaluation.unhealthyEvaluations
+  langs:
+  - typeScript
+  type: interface
+  summary: 데이터 및 상태 저장소에서 상태 평가에 사용 된 알고리즘에 대 한 정보를 포함 하는 노드에 대 한 상태 평가 나타냅니다. 평가 집계 된 상태를 오류 또는 경고 인 경우에 반환 됩니다.
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.NodeHealthEvaluation.nodeName
+  name: nodeName
+  fullName: nodeName
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Service Fabric 노드의 이름입니다.
+  optional: true
+  syntax:
+    content: 'nodeName?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.NodeHealthEvaluation.unhealthyEvaluations
+  name: unhealthyEvaluations
+  fullName: unhealthyEvaluations
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 노드의 현재 집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다. 비정상 평가 유형의 EventHealthEvaluation 수 있습니다.
+  optional: true
+  syntax:
+    content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+    return:
+      type:
+      - azure-servicefabric.HealthEvaluationWrapper[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvaluationWrapper[]
+  name: HealthEvaluationWrapper[]
+  spec.typeScript:
+  - name: HealthEvaluationWrapper
+    fullName: HealthEvaluationWrapper
+    uid: azure-servicefabric.HealthEvaluationWrapper
+  - name: '[]'
+    fullName: '[]'
