@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 2c4f5428705a81cd27cecf6244be2a0f597f92fa
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52033218"
+items:
+- uid: azure-servicefabric.PartitionLoadInformation
+  name: PartitionLoadInformation
+  fullName: PartitionLoadInformation
+  children:
+  - azure-servicefabric.PartitionLoadInformation.partitionId
+  - azure-servicefabric.PartitionLoadInformation.primaryLoadMetricReports
+  - azure-servicefabric.PartitionLoadInformation.secondaryLoadMetricReports
+  langs:
+  - typeScript
+  type: interface
+  summary: >-
+    기본 및 보조 보고 된 부하 메트릭을 포함 하는 파티션에 대 한 정보를 로드 하는 나타냅니다.
+
+    보고 된 부하가 있으면 경우 PartitionLoadInformation 파티션의 서비스에 대 한 기본 부하가 포함 됩니다.
+
+    기본 로드 LoadMetricReport의 LastReportedUtc 0으로 설정 됩니다.
+  package: azure-servicefabric
+- uid: azure-servicefabric.PartitionLoadInformation.partitionId
+  name: partitionId
+  fullName: partitionId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 파티션의 id입니다.
+  optional: true
+  syntax:
+    content: 'partitionId?: string'
+    return:
+      type:
+      - string
+  package: azure-servicefabric
+- uid: azure-servicefabric.PartitionLoadInformation.primaryLoadMetricReports
+  name: primaryLoadMetricReports
+  fullName: primaryLoadMetricReports
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 파티션에 대 한 주 복제본에서 부하 보고서의 배열입니다.
+  optional: true
+  syntax:
+    content: 'primaryLoadMetricReports?: LoadMetricReport[]'
+    return:
+      type:
+      - azure-servicefabric.LoadMetricReport[]
+  package: azure-servicefabric
+- uid: azure-servicefabric.PartitionLoadInformation.secondaryLoadMetricReports
+  name: secondaryLoadMetricReports
+  fullName: secondaryLoadMetricReports
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    모든 보조 복제본이 파티션에 대 한 집계 부하 보고서의 배열입니다.
+
+    배열의 각 메트릭에 대 한 최신 보고 된 로드를만 포함 되어 있습니다.
+  optional: true
+  syntax:
+    content: 'secondaryLoadMetricReports?: LoadMetricReport[]'
+    return:
+      type:
+      - azure-servicefabric.LoadMetricReport[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.LoadMetricReport[]
+  name: LoadMetricReport[]
+  spec.typeScript:
+  - name: LoadMetricReport
+    fullName: LoadMetricReport
+    uid: azure-servicefabric.LoadMetricReport
+  - name: '[]'
+    fullName: '[]'
