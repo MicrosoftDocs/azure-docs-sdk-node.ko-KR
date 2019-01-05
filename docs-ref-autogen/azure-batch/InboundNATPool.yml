@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: ad5f129d81b3fc22469a4be353eb8d7b5c9024fc
+ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53681502"
+items:
+- uid: azure-batch.InboundNATPool
+  name: InboundNATPool
+  fullName: InboundNATPool
+  children:
+  - azure-batch.InboundNATPool.backendPort
+  - azure-batch.InboundNATPool.frontendPortRangeEnd
+  - azure-batch.InboundNATPool.frontendPortRangeStart
+  - azure-batch.InboundNATPool.name
+  - azure-batch.InboundNATPool.networkSecurityGroupRules
+  - azure-batch.InboundNATPool.protocol
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-batch
+- uid: azure-batch.InboundNATPool.backendPort
+  name: backendPort
+  fullName: backendPort
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Batch 풀 내에서 고유 해야 합니다. 허용 되는 값은 22, 3389, 29876 및 29877는 as에 대 한 예약 된 점을 제외 하면 1에서 65535 사이입니다. 예약 되어 있는 경우 요청은 HTTP 상태 코드 400으로 실패 값 제공 됩니다.
+  syntax:
+    content: 'backendPort: number'
+    return:
+      type:
+      - number
+  package: azure-batch
+- uid: azure-batch.InboundNATPool.frontendPortRangeEnd
+  name: frontendPortRangeEnd
+  fullName: frontendPortRangeEnd
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 허용 되는 값 1 및 포트는 50000에서 Batch 서비스에서 예약 되어 있는 55000 제외 하 고 65534 사이입니다. 풀 내의 모든 범위 고유 해야 하며 겹칠 수 없습니다. 각 범위는 최소한 40 포트를 포함 해야 합니다. 경우 예약 되거나 겹치는 값을 요청은 실패 하며 HTTP 상태 코드 400 제공 됩니다.
+  syntax:
+    content: 'frontendPortRangeEnd: number'
+    return:
+      type:
+      - number
+  package: azure-batch
+- uid: azure-batch.InboundNATPool.frontendPortRangeStart
+  name: frontendPortRangeStart
+  fullName: frontendPortRangeStart
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 허용 되는 값 1 및 포트는 50000에서 예약 되어 있는 55000 제외 하 고 65534 사이입니다. 풀 내의 모든 범위 고유 해야 하며 겹칠 수 없습니다. 각 범위는 최소한 40 포트를 포함 해야 합니다. 경우 예약 되거나 겹치는 값을 요청은 실패 하며 HTTP 상태 코드 400 제공 됩니다.
+  syntax:
+    content: 'frontendPortRangeStart: number'
+    return:
+      type:
+      - number
+  package: azure-batch
+- uid: azure-batch.InboundNATPool.name
+  name: name
+  fullName: name
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이름에는 Batch 풀 내에서 고유 해야, 문자, 숫자, 밑줄, 마침표 및 하이픈만 포함할 수 있습니다. 이름은 문자로 시작 해야 합니다 또는 번호, 문자, 숫자 또는 밑줄로 끝나야 하며 77 자를 초과할 수 없습니다.  경우는 요청은 실패 하며 HTTP 상태 코드 400 잘못 된 값 나와 있습니다.
+  syntax:
+    content: 'name: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+- uid: azure-batch.InboundNATPool.networkSecurityGroupRules
+  name: networkSecurityGroupRules
+  fullName: networkSecurityGroupRules
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Batch 풀에서 모든 끝점에 지정할 수 있는 규칙의 최대 수는 25입니다. 네트워크 보안 그룹 규칙이 없으므로 지정 된 경우 지정 된 backendPort에 대 한 인바운드 액세스를 허용 하도록 기본 규칙 생성 됩니다. 네트워크 보안 그룹 규칙의 최대 개수를 초과 하는 경우 요청은 HTTP 상태 코드 400으로 실패 합니다.
+  optional: true
+  syntax:
+    content: 'networkSecurityGroupRules?: NetworkSecurityGroupRule[]'
+    return:
+      type:
+      - azure-batch.NetworkSecurityGroupRule[]
+  package: azure-batch
+- uid: azure-batch.InboundNATPool.protocol
+  name: protocol
+  fullName: protocol
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "가능한 값: 'tcp', 'udp'"
+  syntax:
+    content: 'protocol: string'
+    return:
+      type:
+      - string
+  package: azure-batch
+references:
+- uid: azure-batch.NetworkSecurityGroupRule[]
+  name: NetworkSecurityGroupRule[]
+  spec.typeScript:
+  - name: NetworkSecurityGroupRule
+    fullName: NetworkSecurityGroupRule
+    uid: azure-batch.NetworkSecurityGroupRule
+  - name: '[]'
+    fullName: '[]'
