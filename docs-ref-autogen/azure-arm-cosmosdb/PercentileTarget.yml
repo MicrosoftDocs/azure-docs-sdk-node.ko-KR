@@ -1,0 +1,202 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 9286216368a72504979ab0b16497a202bb600b4a
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52130988"
+items:
+- uid: azure-arm-cosmosdb.PercentileTarget
+  name: PercentileTarget
+  fullName: PercentileTarget
+  children:
+  - azure-arm-cosmosdb.PercentileTarget.listMetrics
+  - azure-arm-cosmosdb.PercentileTarget.listMetrics_2
+  - azure-arm-cosmosdb.PercentileTarget.listMetrics_1
+  - azure-arm-cosmosdb.PercentileTarget.listMetricsWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-cosmosdb
+- uid: azure-arm-cosmosdb.PercentileTarget.listMetrics
+  name: listMetrics(string, string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c0be8-101">지정 된 계정 대상 지역에 대 한 지정 된 필터에 의해 결정 메트릭을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-101">Retrieves the metrics determined by the given filter for the given account target region.</span></span> <span data-ttu-id="c0be8-102">PBS 및 복제 대기 시간 데이터에 대해서만이 url은</span><span class="sxs-lookup"><span data-stu-id="c0be8-102">This url is only for PBS and Replication Latency data</span></span>
+  syntax:
+    content: 'function listMetrics(resourceGroupName: string, accountName: string, targetRegion: string, filter: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-103">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-103">Name of an Azure resource group.</span></span>
+    - id: accountName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-104">Cosmos DB 데이터베이스 계정 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-104">Cosmos DB database account name.</span></span>
+    - id: targetRegion
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-105">데이터가 기록 되는 대상 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-105">Target region to which data is written.</span></span> <span data-ttu-id="c0be8-106">단어 및 각 단어 사이 공백 사용 하 여 cosmos DB 지역 대문자로 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-106">Cosmos DB region, with spaces between words and each word capitalized.</span></span>
+    - id: filter
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-107">반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-107">An OData filter expression that describes a subset of metrics to return.</span></span> <span data-ttu-id="c0be8-108">필터링 할 수 있는 매개 변수는 name.value (메트릭 이름를 또는 여러 이름을 가질 수 있습니다), startTime, endTime 및 timeGrain입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-108">The parameters that can be filtered are name.value (name of the metric, can have an or of multiple names), startTime, endTime, and timeGrain.</span></span> <span data-ttu-id="c0be8-109">지원 되는 연산자가 게인에서</span><span class="sxs-lookup"><span data-stu-id="c0be8-109">The supported operator is eq.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-cosmosdb.PercentileMetricListResult>
+  package: azure-arm-cosmosdb
+- uid: azure-arm-cosmosdb.PercentileTarget.listMetrics_2
+  name: listMetrics(string, string, string, string, Object, ServiceCallback<PercentileMetricListResult>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c0be8-110">지정 된 계정 대상 지역에 대 한 지정 된 필터에 의해 결정 메트릭을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-110">Retrieves the metrics determined by the given filter for the given account target region.</span></span> <span data-ttu-id="c0be8-111">PBS 및 복제 대기 시간 데이터에 대해서만이 url은</span><span class="sxs-lookup"><span data-stu-id="c0be8-111">This url is only for PBS and Replication Latency data</span></span>
+  syntax:
+    content: 'function listMetrics(resourceGroupName: string, accountName: string, targetRegion: string, filter: string, options: Object, callback: ServiceCallback<PercentileMetricListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: accountName
+      type:
+      - string
+      description: ''
+    - id: targetRegion
+      type:
+      - string
+      description: ''
+    - id: filter
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-cosmosdb.PercentileMetricListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-cosmosdb.PercentileMetricListResult>
+  package: azure-arm-cosmosdb
+- uid: azure-arm-cosmosdb.PercentileTarget.listMetrics_1
+  name: listMetrics(string, string, string, string, ServiceCallback<PercentileMetricListResult>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c0be8-112">지정 된 계정 대상 지역에 대 한 지정 된 필터에 의해 결정 메트릭을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-112">Retrieves the metrics determined by the given filter for the given account target region.</span></span> <span data-ttu-id="c0be8-113">PBS 및 복제 대기 시간 데이터에 대해서만이 url은</span><span class="sxs-lookup"><span data-stu-id="c0be8-113">This url is only for PBS and Replication Latency data</span></span>
+  syntax:
+    content: 'function listMetrics(resourceGroupName: string, accountName: string, targetRegion: string, filter: string, callback: ServiceCallback<PercentileMetricListResult>)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: accountName
+      type:
+      - string
+      description: ''
+    - id: targetRegion
+      type:
+      - string
+      description: ''
+    - id: filter
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-cosmosdb.PercentileMetricListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-cosmosdb.PercentileMetricListResult>
+  package: azure-arm-cosmosdb
+- uid: azure-arm-cosmosdb.PercentileTarget.listMetricsWithHttpOperationResponse
+  name: listMetricsWithHttpOperationResponse(string, string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="c0be8-114">지정 된 계정 대상 지역에 대 한 지정 된 필터에 의해 결정 메트릭을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-114">Retrieves the metrics determined by the given filter for the given account target region.</span></span> <span data-ttu-id="c0be8-115">PBS 및 복제 대기 시간 데이터에 대해서만이 url은</span><span class="sxs-lookup"><span data-stu-id="c0be8-115">This url is only for PBS and Replication Latency data</span></span>
+  syntax:
+    content: 'function listMetricsWithHttpOperationResponse(resourceGroupName: string, accountName: string, targetRegion: string, filter: string, options?: Object)'
+    parameters:
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-116">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-116">Name of an Azure resource group.</span></span>
+    - id: accountName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-117">Cosmos DB 데이터베이스 계정 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-117">Cosmos DB database account name.</span></span>
+    - id: targetRegion
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-118">데이터가 기록 되는 대상 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-118">Target region to which data is written.</span></span> <span data-ttu-id="c0be8-119">단어 및 각 단어 사이 공백 사용 하 여 cosmos DB 지역 대문자로 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-119">Cosmos DB region, with spaces between words and each word capitalized.</span></span>
+    - id: filter
+      type:
+      - string
+      description: >
+        <span data-ttu-id="c0be8-120">반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-120">An OData filter expression that describes a subset of metrics to return.</span></span> <span data-ttu-id="c0be8-121">필터링 할 수 있는 매개 변수는 name.value (메트릭 이름를 또는 여러 이름을 가질 수 있습니다), startTime, endTime 및 timeGrain입니다.</span><span class="sxs-lookup"><span data-stu-id="c0be8-121">The parameters that can be filtered are name.value (name of the metric, can have an or of multiple names), startTime, endTime, and timeGrain.</span></span> <span data-ttu-id="c0be8-122">지원 되는 연산자가 게인에서</span><span class="sxs-lookup"><span data-stu-id="c0be8-122">The supported operator is eq.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-cosmosdb.PercentileMetricListResult>>
+  package: azure-arm-cosmosdb
+references:
+- uid: Promise<azure-arm-cosmosdb.PercentileMetricListResult>
+  name: PercentileMetricListResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: PercentileMetricListResult
+    fullName: PercentileMetricListResult
+    uid: azure-arm-cosmosdb.PercentileMetricListResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-cosmosdb.PercentileMetricListResult>
+  name: PercentileMetricListResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: PercentileMetricListResult
+    fullName: PercentileMetricListResult
+    uid: azure-arm-cosmosdb.PercentileMetricListResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-cosmosdb.PercentileMetricListResult>>
+  name: PercentileMetricListResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: PercentileMetricListResult
+    fullName: PercentileMetricListResult
+    uid: azure-arm-cosmosdb.PercentileMetricListResult
+  - name: '>>'
+    fullName: '>>'
