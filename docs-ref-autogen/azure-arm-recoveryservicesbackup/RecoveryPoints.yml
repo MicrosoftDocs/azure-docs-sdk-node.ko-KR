@@ -1,0 +1,552 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 85b21a5cd0814c6beb5763d500e827e179232953
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52128578"
+items:
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints
+  name: RecoveryPoints
+  fullName: RecoveryPoints
+  children:
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.get
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.get_2
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.get_1
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.getWithHttpOperationResponse
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.list
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.list_2
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.list_1
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.listNext
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.listNext_2
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.listNext_1
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.listNextWithHttpOperationResponse
+  - azure-arm-recoveryservicesbackup.RecoveryPoints.listWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.get
+  name: get(string, string, string, string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="590ff-101">RecoveryPointID를 사용 하 여 식별 된 백업된 데이터의 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-101">Provides the information of the backed up data identified using RecoveryPointID.</span></span> <span data-ttu-id="590ff-102">이 작업은 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-102">This is an asynchronous operation.</span></span>
+
+    <span data-ttu-id="590ff-103">작업의 상태를 알아야 GetProtectedItemOperationResult API를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-103">To know the status of the operation, call the GetProtectedItemOperationResult API.</span></span>
+  syntax:
+    content: 'function get(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, recoveryPointId: string, options?: Object)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-104">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-104">The name of the recovery services vault.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-105">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="590ff-105">The name of the resource group where the recovery services vault is present.</span></span>
+    - id: fabricName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-106">연관 된 패브릭 이름 항목을 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-106">Fabric name associated with backed up item.</span></span>
+    - id: containerName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-107">연관 컨테이너 이름 항목을 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-107">Container name associated with backed up item.</span></span>
+    - id: protectedItemName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-108">백업 데이터를 인출 해야 합니다. 항목 이름은 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-108">Backed up item name whose backup data needs to be fetched.</span></span>
+    - id: recoveryPointId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-109">RecoveryPointID 가져올 데이터를 백업 된 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-109">RecoveryPointID represents the backed up data to be fetched.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.get_2
+  name: get(string, string, string, string, string, string, Object, ServiceCallback<RecoveryPointResource>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="590ff-110">RecoveryPointID를 사용 하 여 식별 된 백업된 데이터의 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-110">Provides the information of the backed up data identified using RecoveryPointID.</span></span> <span data-ttu-id="590ff-111">이 작업은 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-111">This is an asynchronous operation.</span></span>
+
+    <span data-ttu-id="590ff-112">작업의 상태를 알아야 GetProtectedItemOperationResult API를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-112">To know the status of the operation, call the GetProtectedItemOperationResult API.</span></span>
+  syntax:
+    content: 'function get(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, recoveryPointId: string, options: Object, callback: ServiceCallback<RecoveryPointResource>)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: fabricName
+      type:
+      - string
+      description: ''
+    - id: containerName
+      type:
+      - string
+      description: ''
+    - id: protectedItemName
+      type:
+      - string
+      description: ''
+    - id: recoveryPointId
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.get_1
+  name: get(string, string, string, string, string, string, ServiceCallback<RecoveryPointResource>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="590ff-113">RecoveryPointID를 사용 하 여 식별 된 백업된 데이터의 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-113">Provides the information of the backed up data identified using RecoveryPointID.</span></span> <span data-ttu-id="590ff-114">이 작업은 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-114">This is an asynchronous operation.</span></span>
+
+    <span data-ttu-id="590ff-115">작업의 상태를 알아야 GetProtectedItemOperationResult API를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-115">To know the status of the operation, call the GetProtectedItemOperationResult API.</span></span>
+  syntax:
+    content: 'function get(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, recoveryPointId: string, callback: ServiceCallback<RecoveryPointResource>)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: fabricName
+      type:
+      - string
+      description: ''
+    - id: containerName
+      type:
+      - string
+      description: ''
+    - id: protectedItemName
+      type:
+      - string
+      description: ''
+    - id: recoveryPointId
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse(string, string, string, string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="590ff-116">RecoveryPointID를 사용 하 여 식별 된 백업된 데이터의 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-116">Provides the information of the backed up data identified using RecoveryPointID.</span></span> <span data-ttu-id="590ff-117">이 작업은 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-117">This is an asynchronous operation.</span></span>
+
+    <span data-ttu-id="590ff-118">작업의 상태를 알아야 GetProtectedItemOperationResult API를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-118">To know the status of the operation, call the GetProtectedItemOperationResult API.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, recoveryPointId: string, options?: Object)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-119">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-119">The name of the recovery services vault.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-120">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="590ff-120">The name of the resource group where the recovery services vault is present.</span></span>
+    - id: fabricName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-121">연관 된 패브릭 이름 항목을 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-121">Fabric name associated with backed up item.</span></span>
+    - id: containerName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-122">연관 컨테이너 이름 항목을 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-122">Container name associated with backed up item.</span></span>
+    - id: protectedItemName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-123">백업 데이터를 인출 해야 합니다. 항목 이름은 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-123">Backed up item name whose backup data needs to be fetched.</span></span>
+    - id: recoveryPointId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-124">RecoveryPointID 가져올 데이터를 백업 된 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-124">RecoveryPointID represents the backed up data to be fetched.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-recoveryservicesbackup.RecoveryPointResource>>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.list
+  name: list(string, string, string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-125">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-125">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function list(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, options?: Object)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-126">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-126">The name of the recovery services vault.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-127">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="590ff-127">The name of the resource group where the recovery services vault is present.</span></span>
+    - id: fabricName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-128">백업된 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-128">Fabric name associated with the backed up item.</span></span>
+    - id: containerName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-129">백업된 항목에 연결 된 컨테이너 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-129">Container name associated with the backed up item.</span></span>
+    - id: protectedItemName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-130">해당 백업 복사본을 가져와야 하는 항목을 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-130">Backed up item whose backup copies are to be fetched.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.list_2
+  name: list(string, string, string, string, string, Object, ServiceCallback<RecoveryPointResourceList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-131">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-131">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function list(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, options: Object, callback: ServiceCallback<RecoveryPointResourceList>)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: fabricName
+      type:
+      - string
+      description: ''
+    - id: containerName
+      type:
+      - string
+      description: ''
+    - id: protectedItemName
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.list_1
+  name: list(string, string, string, string, string, ServiceCallback<RecoveryPointResourceList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-132">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-132">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function list(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, callback: ServiceCallback<RecoveryPointResourceList>)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: ''
+    - id: resourceGroupName
+      type:
+      - string
+      description: ''
+    - id: fabricName
+      type:
+      - string
+      description: ''
+    - id: containerName
+      type:
+      - string
+      description: ''
+    - id: protectedItemName
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.listNext
+  name: listNext(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-133">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-133">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-134">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-134">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.listNext_2
+  name: listNext(string, Object, ServiceCallback<RecoveryPointResourceList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-135">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-135">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options: Object, callback: ServiceCallback<RecoveryPointResourceList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.listNext_1
+  name: listNext(string, ServiceCallback<RecoveryPointResourceList>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-136">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-136">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, callback: ServiceCallback<RecoveryPointResourceList>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.listNextWithHttpOperationResponse
+  name: listNextWithHttpOperationResponse(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-137">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-137">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-138">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-138">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>>
+  package: azure-arm-recoveryservicesbackup
+- uid: azure-arm-recoveryservicesbackup.RecoveryPoints.listWithHttpOperationResponse
+  name: listWithHttpOperationResponse(string, string, string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="590ff-139">백업된 항목에 대 한 백업 복사본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-139">Lists the backup copies for the backed up item.</span></span>
+  syntax:
+    content: 'function listWithHttpOperationResponse(vaultName: string, resourceGroupName: string, fabricName: string, containerName: string, protectedItemName: string, options?: Object)'
+    parameters:
+    - id: vaultName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-140">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-140">The name of the recovery services vault.</span></span>
+    - id: resourceGroupName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-141">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="590ff-141">The name of the resource group where the recovery services vault is present.</span></span>
+    - id: fabricName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-142">백업된 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-142">Fabric name associated with the backed up item.</span></span>
+    - id: containerName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-143">백업된 항목에 연결 된 컨테이너 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-143">Container name associated with the backed up item.</span></span>
+    - id: protectedItemName
+      type:
+      - string
+      description: >
+        <span data-ttu-id="590ff-144">해당 백업 복사본을 가져와야 하는 항목을 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="590ff-144">Backed up item whose backup copies are to be fetched.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>>
+  package: azure-arm-recoveryservicesbackup
+references:
+- uid: Promise<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+  name: RecoveryPointResource>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RecoveryPointResource
+    fullName: RecoveryPointResource
+    uid: azure-arm-recoveryservicesbackup.RecoveryPointResource
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResource>
+  name: RecoveryPointResource>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: RecoveryPointResource
+    fullName: RecoveryPointResource
+    uid: azure-arm-recoveryservicesbackup.RecoveryPointResource
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-recoveryservicesbackup.RecoveryPointResource>>
+  name: RecoveryPointResource>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: RecoveryPointResource
+    fullName: RecoveryPointResource
+    uid: azure-arm-recoveryservicesbackup.RecoveryPointResource
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  name: RecoveryPointResourceList>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RecoveryPointResourceList
+    fullName: RecoveryPointResourceList
+    uid: azure-arm-recoveryservicesbackup.RecoveryPointResourceList
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>
+  name: RecoveryPointResourceList>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: RecoveryPointResourceList
+    fullName: RecoveryPointResourceList
+    uid: azure-arm-recoveryservicesbackup.RecoveryPointResourceList
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-recoveryservicesbackup.RecoveryPointResourceList>>
+  name: RecoveryPointResourceList>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: RecoveryPointResourceList
+    fullName: RecoveryPointResourceList
+    uid: azure-arm-recoveryservicesbackup.RecoveryPointResourceList
+  - name: '>>'
+    fullName: '>>'

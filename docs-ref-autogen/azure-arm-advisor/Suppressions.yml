@@ -1,0 +1,716 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 87297b33a275779688549792502b52d896b873c4
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52050708"
+items:
+- uid: azure-arm-advisor.Suppressions
+  name: Suppressions
+  fullName: Suppressions
+  children:
+  - azure-arm-advisor.Suppressions.create
+  - azure-arm-advisor.Suppressions.create_2
+  - azure-arm-advisor.Suppressions.create_1
+  - azure-arm-advisor.Suppressions.createWithHttpOperationResponse
+  - azure-arm-advisor.Suppressions.deleteMethod
+  - azure-arm-advisor.Suppressions.deleteMethod_2
+  - azure-arm-advisor.Suppressions.deleteMethod_1
+  - azure-arm-advisor.Suppressions.deleteMethodWithHttpOperationResponse
+  - azure-arm-advisor.Suppressions.get
+  - azure-arm-advisor.Suppressions.get_2
+  - azure-arm-advisor.Suppressions.get_1
+  - azure-arm-advisor.Suppressions.getWithHttpOperationResponse
+  - azure-arm-advisor.Suppressions.list
+  - azure-arm-advisor.Suppressions.list_2
+  - azure-arm-advisor.Suppressions.list_1
+  - azure-arm-advisor.Suppressions.listNext
+  - azure-arm-advisor.Suppressions.listNext_2
+  - azure-arm-advisor.Suppressions.listNext_1
+  - azure-arm-advisor.Suppressions.listNextWithHttpOperationResponse
+  - azure-arm-advisor.Suppressions.listWithHttpOperationResponse
+  langs:
+  - typeScript
+  type: interface
+  summary: ''
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.create
+  name: create(string, string, string, SuppressionContract, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-101">권장 사항 연기 또는 해제 된 특성을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-101">Enables the snoozed or dismissed attribute of a recommendation.</span></span> <span data-ttu-id="1d13e-102">연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-102">The snoozed or dismissed attribute is referred to as a suppression.</span></span> <span data-ttu-id="1d13e-103">이 API를 사용 하 여 만들거나 권장 사항 연기 또는 해제 된 상태를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-103">Use this API to create or update the snoozed or dismissed status of a recommendation.</span></span>
+  syntax:
+    content: 'function create(resourceUri: string, recommendationId: string, name: string, suppressionContract: SuppressionContract, options?: Object)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-104">권장 사항을 적용 되는 리소스의 정규화 된 Azure Resource Manager 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-104">The fully qualified Azure Resource Manager identifier of the resource to which the recommendation applies.</span></span>
+    - id: recommendationId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-105">권장 사항 id입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-105">The recommendation ID.</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-106">억제의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-106">The name of the suppression.</span></span>
+    - id: suppressionContract
+      type:
+      - azure-arm-advisor.SuppressionContract
+      description: >
+        <span data-ttu-id="1d13e-107">연기 또는 해제 된 특성입니다. 예를 들어 다시 알림 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-107">The snoozed or dismissed attribute; for example, the snooze duration.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContract>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.create_2
+  name: create(string, string, string, SuppressionContract, Object, ServiceCallback<SuppressionContract>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-108">권장 사항 연기 또는 해제 된 특성을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-108">Enables the snoozed or dismissed attribute of a recommendation.</span></span> <span data-ttu-id="1d13e-109">연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-109">The snoozed or dismissed attribute is referred to as a suppression.</span></span> <span data-ttu-id="1d13e-110">이 API를 사용 하 여 만들거나 권장 사항 연기 또는 해제 된 상태를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-110">Use this API to create or update the snoozed or dismissed status of a recommendation.</span></span>
+  syntax:
+    content: 'function create(resourceUri: string, recommendationId: string, name: string, suppressionContract: SuppressionContract, options: Object, callback: ServiceCallback<SuppressionContract>)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: ''
+    - id: recommendationId
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: suppressionContract
+      type:
+      - azure-arm-advisor.SuppressionContract
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContract>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContract>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.create_1
+  name: create(string, string, string, SuppressionContract, ServiceCallback<SuppressionContract>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-111">권장 사항 연기 또는 해제 된 특성을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-111">Enables the snoozed or dismissed attribute of a recommendation.</span></span> <span data-ttu-id="1d13e-112">연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-112">The snoozed or dismissed attribute is referred to as a suppression.</span></span> <span data-ttu-id="1d13e-113">이 API를 사용 하 여 만들거나 권장 사항 연기 또는 해제 된 상태를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-113">Use this API to create or update the snoozed or dismissed status of a recommendation.</span></span>
+  syntax:
+    content: 'function create(resourceUri: string, recommendationId: string, name: string, suppressionContract: SuppressionContract, callback: ServiceCallback<SuppressionContract>)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: ''
+    - id: recommendationId
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: suppressionContract
+      type:
+      - azure-arm-advisor.SuppressionContract
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContract>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContract>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.createWithHttpOperationResponse
+  name: createWithHttpOperationResponse(string, string, string, SuppressionContract, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-114">권장 사항 연기 또는 해제 된 특성을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-114">Enables the snoozed or dismissed attribute of a recommendation.</span></span> <span data-ttu-id="1d13e-115">연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-115">The snoozed or dismissed attribute is referred to as a suppression.</span></span> <span data-ttu-id="1d13e-116">이 API를 사용 하 여 만들거나 권장 사항 연기 또는 해제 된 상태를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-116">Use this API to create or update the snoozed or dismissed status of a recommendation.</span></span>
+  syntax:
+    content: 'function createWithHttpOperationResponse(resourceUri: string, recommendationId: string, name: string, suppressionContract: SuppressionContract, options?: Object)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-117">권장 사항을 적용 되는 리소스의 정규화 된 Azure Resource Manager 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-117">The fully qualified Azure Resource Manager identifier of the resource to which the recommendation applies.</span></span>
+    - id: recommendationId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-118">권장 사항 id입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-118">The recommendation ID.</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-119">억제의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-119">The name of the suppression.</span></span>
+    - id: suppressionContract
+      type:
+      - azure-arm-advisor.SuppressionContract
+      description: >
+        <span data-ttu-id="1d13e-120">연기 또는 해제 된 특성입니다. 예를 들어 다시 알림 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-120">The snoozed or dismissed attribute; for example, the snooze duration.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-advisor.SuppressionContract>>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.deleteMethod
+  name: deleteMethod(string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-121">연기 또는 해제 된 권장 구성의 활성화를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-121">Enables the activation of a snoozed or dismissed recommendation.</span></span> <span data-ttu-id="1d13e-122">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-122">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceUri: string, recommendationId: string, name: string, options?: Object)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-123">권장 사항을 적용 되는 리소스의 정규화 된 Azure Resource Manager 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-123">The fully qualified Azure Resource Manager identifier of the resource to which the recommendation applies.</span></span>
+    - id: recommendationId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-124">권장 사항 id입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-124">The recommendation ID.</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-125">억제의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-125">The name of the suppression.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.deleteMethod_2
+  name: deleteMethod(string, string, string, Object, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-126">연기 또는 해제 된 권장 구성의 활성화를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-126">Enables the activation of a snoozed or dismissed recommendation.</span></span> <span data-ttu-id="1d13e-127">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-127">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceUri: string, recommendationId: string, name: string, options: Object, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: ''
+    - id: recommendationId
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.deleteMethod_1
+  name: deleteMethod(string, string, string, ServiceCallback<void>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-128">연기 또는 해제 된 권장 구성의 활성화를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-128">Enables the activation of a snoozed or dismissed recommendation.</span></span> <span data-ttu-id="1d13e-129">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-129">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function deleteMethod(resourceUri: string, recommendationId: string, name: string, callback: ServiceCallback<void>)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: ''
+    - id: recommendationId
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<void>
+      description: ''
+    return:
+      type:
+      - Promise<void>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.deleteMethodWithHttpOperationResponse
+  name: deleteMethodWithHttpOperationResponse(string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-130">연기 또는 해제 된 권장 구성의 활성화를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-130">Enables the activation of a snoozed or dismissed recommendation.</span></span> <span data-ttu-id="1d13e-131">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-131">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function deleteMethodWithHttpOperationResponse(resourceUri: string, recommendationId: string, name: string, options?: Object)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-132">권장 사항을 적용 되는 리소스의 정규화 된 Azure Resource Manager 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-132">The fully qualified Azure Resource Manager identifier of the resource to which the recommendation applies.</span></span>
+    - id: recommendationId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-133">권장 사항 id입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-133">The recommendation ID.</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-134">억제의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-134">The name of the suppression.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<void>>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.get
+  name: get(string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-135">비 표시 오류 세부 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-135">Obtains the details of a suppression.</span></span>
+  syntax:
+    content: 'function get(resourceUri: string, recommendationId: string, name: string, options?: Object)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-136">권장 사항을 적용 되는 리소스의 정규화 된 Azure Resource Manager 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-136">The fully qualified Azure Resource Manager identifier of the resource to which the recommendation applies.</span></span>
+    - id: recommendationId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-137">권장 사항 id입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-137">The recommendation ID.</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-138">억제의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-138">The name of the suppression.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContract>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.get_2
+  name: get(string, string, string, Object, ServiceCallback<SuppressionContract>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-139">비 표시 오류 세부 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-139">Obtains the details of a suppression.</span></span>
+  syntax:
+    content: 'function get(resourceUri: string, recommendationId: string, name: string, options: Object, callback: ServiceCallback<SuppressionContract>)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: ''
+    - id: recommendationId
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContract>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContract>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.get_1
+  name: get(string, string, string, ServiceCallback<SuppressionContract>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-140">비 표시 오류 세부 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-140">Obtains the details of a suppression.</span></span>
+  syntax:
+    content: 'function get(resourceUri: string, recommendationId: string, name: string, callback: ServiceCallback<SuppressionContract>)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: ''
+    - id: recommendationId
+      type:
+      - string
+      description: ''
+    - id: name
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContract>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContract>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.getWithHttpOperationResponse
+  name: getWithHttpOperationResponse(string, string, string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="1d13e-141">비 표시 오류 세부 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-141">Obtains the details of a suppression.</span></span>
+  syntax:
+    content: 'function getWithHttpOperationResponse(resourceUri: string, recommendationId: string, name: string, options?: Object)'
+    parameters:
+    - id: resourceUri
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-142">권장 사항을 적용 되는 리소스의 정규화 된 Azure Resource Manager 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-142">The fully qualified Azure Resource Manager identifier of the resource to which the recommendation applies.</span></span>
+    - id: recommendationId
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-143">권장 사항 id입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-143">The recommendation ID.</span></span>
+    - id: name
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-144">억제의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-144">The name of the suppression.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-advisor.SuppressionContract>>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.list
+  name: list(Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-145">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-145">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-146">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-146">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function list(options?: Object)'
+    parameters:
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContractListResult>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.list_2
+  name: list(Object, ServiceCallback<SuppressionContractListResult>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-147">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-147">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-148">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-148">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function list(options: Object, callback: ServiceCallback<SuppressionContractListResult>)'
+    parameters:
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContractListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContractListResult>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.list_1
+  name: list(ServiceCallback<SuppressionContractListResult>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-149">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-149">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-150">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-150">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function list(callback: ServiceCallback<SuppressionContractListResult>)'
+    parameters:
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContractListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContractListResult>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.listNext
+  name: listNext(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-151">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-151">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-152">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-152">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-153">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-153">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContractListResult>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.listNext_2
+  name: listNext(string, Object, ServiceCallback<SuppressionContractListResult>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-154">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-154">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-155">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-155">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, options: Object, callback: ServiceCallback<SuppressionContractListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: options
+      type:
+      - Object
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContractListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContractListResult>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.listNext_1
+  name: listNext(string, ServiceCallback<SuppressionContractListResult>)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-156">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-156">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-157">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-157">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function listNext(nextPageLink: string, callback: ServiceCallback<SuppressionContractListResult>)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: ''
+    - id: callback
+      type:
+      - ServiceCallback<azure-arm-advisor.SuppressionContractListResult>
+      description: ''
+    return:
+      type:
+      - Promise<azure-arm-advisor.SuppressionContractListResult>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.listNextWithHttpOperationResponse
+  name: listNextWithHttpOperationResponse(string, Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-158">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-158">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-159">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-159">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function listNextWithHttpOperationResponse(nextPageLink: string, options?: Object)'
+    parameters:
+    - id: nextPageLink
+      type:
+      - string
+      description: >
+        <span data-ttu-id="1d13e-160">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-160">The NextLink from the previous successful call to List operation.</span></span>
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-advisor.SuppressionContractListResult>>
+  package: azure-arm-advisor
+- uid: azure-arm-advisor.Suppressions.listWithHttpOperationResponse
+  name: listWithHttpOperationResponse(Object)
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: >-
+    <span data-ttu-id="1d13e-161">구독에 대 한 다시 알림 또는 해제 된 비 표시 오류 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-161">Retrieves the list of snoozed or dismissed suppressions for a subscription.</span></span>
+
+    <span data-ttu-id="1d13e-162">권장 사항 연기 또는 해제 된 특성을 비 표시 오류 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d13e-162">The snoozed or dismissed attribute of a recommendation is referred to as a suppression.</span></span>
+  syntax:
+    content: 'function listWithHttpOperationResponse(options?: Object)'
+    parameters:
+    - id: options
+      type:
+      - Object
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<HttpOperationResponse<azure-arm-advisor.SuppressionContractListResult>>
+  package: azure-arm-advisor
+references:
+- uid: azure-arm-advisor.SuppressionContract
+  name: SuppressionContract
+  spec.typeScript:
+  - name: SuppressionContract
+    fullName: SuppressionContract
+    uid: azure-arm-advisor.SuppressionContract
+- uid: Promise<azure-arm-advisor.SuppressionContract>
+  name: SuppressionContract>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: SuppressionContract
+    fullName: SuppressionContract
+    uid: azure-arm-advisor.SuppressionContract
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-advisor.SuppressionContract>
+  name: SuppressionContract>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: SuppressionContract
+    fullName: SuppressionContract
+    uid: azure-arm-advisor.SuppressionContract
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-advisor.SuppressionContract>>
+  name: SuppressionContract>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: SuppressionContract
+    fullName: SuppressionContract
+    uid: azure-arm-advisor.SuppressionContract
+  - name: '>>'
+    fullName: '>>'
+- uid: Promise<azure-arm-advisor.SuppressionContractListResult>
+  name: SuppressionContractListResult>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: SuppressionContractListResult
+    fullName: SuppressionContractListResult
+    uid: azure-arm-advisor.SuppressionContractListResult
+  - name: '>'
+    fullName: '>'
+- uid: ServiceCallback<azure-arm-advisor.SuppressionContractListResult>
+  name: SuppressionContractListResult>
+  spec.typeScript:
+  - name: ServiceCallback<
+    fullName: ServiceCallback<
+  - name: SuppressionContractListResult
+    fullName: SuppressionContractListResult
+    uid: azure-arm-advisor.SuppressionContractListResult
+  - name: '>'
+    fullName: '>'
+- uid: Promise<HttpOperationResponse<azure-arm-advisor.SuppressionContractListResult>>
+  name: SuppressionContractListResult>>
+  spec.typeScript:
+  - name: Promise<HttpOperationResponse<
+    fullName: Promise<HttpOperationResponse<
+  - name: SuppressionContractListResult
+    fullName: SuppressionContractListResult
+    uid: azure-arm-advisor.SuppressionContractListResult
+  - name: '>>'
+    fullName: '>>'
