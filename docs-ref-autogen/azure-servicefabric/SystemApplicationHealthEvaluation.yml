@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 68b77df2fd396cc9975fa4cd8fc187419d129481
+ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "52064878"
+items:
+- uid: azure-servicefabric.SystemApplicationHealthEvaluation
+  name: SystemApplicationHealthEvaluation
+  fullName: SystemApplicationHealthEvaluation
+  children:
+  - azure-servicefabric.SystemApplicationHealthEvaluation.unhealthyEvaluations
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="e9c93-101">패브릭에 대 한 상태 평가 나타냅니다. / 시스템 응용 프로그램, 데이터 및 알고리즘에 대 한 정보를 포함 하는 데 health 스토어에서 상태를 평가 합니다.</span><span class="sxs-lookup"><span data-stu-id="e9c93-101">Represents health evaluation for the fabric:/System application, containing information about the data and the algorithm used by health store to evaluate health.</span></span> <span data-ttu-id="e9c93-102">계산은 클러스터의 집계 된 상태를 오류 또는 경고 인 경우에 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e9c93-102">The evaluation is returned only when the aggregated health state of the cluster is either Error or Warning.</span></span>
+  extends:
+    name: azure-servicefabric.HealthEvaluation
+  package: azure-servicefabric
+- uid: azure-servicefabric.SystemApplicationHealthEvaluation.unhealthyEvaluations
+  name: unhealthyEvaluations
+  fullName: unhealthyEvaluations
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="e9c93-103">시스템 응용 프로그램의 현재 상태 집계 상태를 발생 시킨 비정상 평가의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="e9c93-103">List of unhealthy evaluations that led to the current aggregated health state of the system application.</span></span> <span data-ttu-id="e9c93-104">비정상 평가 유형의 DeployedApplicationsHealthEvaluation, ServicesHealthEvaluation 또는 EventHealthEvaluation 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e9c93-104">The types of the unhealthy evaluations can be DeployedApplicationsHealthEvaluation, ServicesHealthEvaluation or EventHealthEvaluation.</span></span>
+  optional: true
+  syntax:
+    content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+    return:
+      type:
+      - azure-servicefabric.HealthEvaluationWrapper[]
+  package: azure-servicefabric
+references:
+- uid: azure-servicefabric.HealthEvaluation
+  name: HealthEvaluation
+  spec.typeScript:
+  - name: HealthEvaluation
+    fullName: HealthEvaluation
+    uid: azure-servicefabric.HealthEvaluation
+- uid: azure-servicefabric.HealthEvaluationWrapper[]
+  name: HealthEvaluationWrapper[]
+  spec.typeScript:
+  - name: HealthEvaluationWrapper
+    fullName: HealthEvaluationWrapper
+    uid: azure-servicefabric.HealthEvaluationWrapper
+  - name: '[]'
+    fullName: '[]'
