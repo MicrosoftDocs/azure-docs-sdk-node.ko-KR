@@ -1,0 +1,236 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 3dbaad7d2e0bd581a2506686db9ee38ce2f858ad
+ms.sourcegitcommit: 8f2555cd23e454ff79e27bd3ed0a6f65b08c1c9e
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48477471"
+items:
+- uid: '@azure/event-hubs.RequestResponseLink'
+  name: RequestResponseLink
+  fullName: RequestResponseLink
+  children:
+  - '@azure/event-hubs.RequestResponseLink.close'
+  - '@azure/event-hubs.RequestResponseLink.connection'
+  - '@azure/event-hubs.RequestResponseLink.create'
+  - '@azure/event-hubs.RequestResponseLink.isOpen'
+  - '@azure/event-hubs.RequestResponseLink.receiver'
+  - '@azure/event-hubs.RequestResponseLink.constructor'
+  - '@azure/event-hubs.RequestResponseLink.sender'
+  - '@azure/event-hubs.RequestResponseLink.sendRequest'
+  - '@azure/event-hubs.RequestResponseLink.session'
+  langs:
+  - typeScript
+  type: class
+  summary: <span data-ttu-id="506de-101">Amqp 세션을 통해 만들어지는 amqp request(sender)-response(receiver) 링크를 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="506de-101">Describes an amqp request(sender)-response(receiver) link that is created over an amqp session.</span></span>
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.close'
+  name: close
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="506de-102">보낸 사람, 받는 사람 링크 및 기본 세션을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="506de-102">Closes the sender, receiver link and the underlying session.</span></span>
+  syntax:
+    content: function close()
+    parameters: []
+    return:
+      type:
+      - Promise<void>
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.connection'
+  name: connection
+  fullName: connection
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="506de-103">기본 amqp 연결 개체를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="506de-103">Provides the underlying amqp connection object.</span></span>
+  syntax:
+    content: 'connection: Connection'
+    return:
+      type:
+      - '@azure/event-hubs.Connection'
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.create'
+  name: create
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="506de-104">Amqp 요청/응답 링크를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="506de-104">Creates an amqp request/response link.</span></span>
+  syntax:
+    content: 'static function create(connection: Connection, senderOptions: SenderOptions, receiverOptions: ReceiverOptions)'
+    parameters:
+    - id: connection
+      type:
+      - '@azure/event-hubs.Connection'
+      description: <span data-ttu-id="506de-105">Amqp 연결입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-105">The amqp connection.</span></span>
+    - id: senderOptions
+      type:
+      - '@azure/event-hubs.SenderOptions'
+      description: <span data-ttu-id="506de-106">보낸 사람 링크를 만들려면 제공 해야 하는 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-106">Options that must be provided to create the sender link.</span></span>
+    - id: receiverOptions
+      type:
+      - '@azure/event-hubs.ReceiverOptions'
+      description: <span data-ttu-id="506de-107">받는 사람 링크를 만들려면 제공 해야 하는 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-107">Options that must be provided to create the receiver link.</span></span>
+    return:
+      type:
+      - Promise<@azure/event-hubs.RequestResponseLink>
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.isOpen'
+  name: isOpen
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: <span data-ttu-id="506de-108">세션 및 보낸 사람 및 받는 사람 링크를 모든 열거나 닫을지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="506de-108">Indicates whether the session and the sender and receiver links are all open or closed.</span></span>
+  syntax:
+    content: function isOpen()
+    parameters: []
+    return:
+      type:
+      - boolean
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.receiver'
+  name: receiver
+  fullName: receiver
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'receiver: Receiver'
+    return:
+      type:
+      - '@azure/event-hubs.Receiver'
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.constructor'
+  name: RequestResponseLink
+  children: []
+  type: constructor
+  langs:
+  - typeScript
+  summary: ''
+  syntax:
+    content: 'new RequestResponseLink(session: Session, sender: Sender, receiver: Receiver)'
+    parameters:
+    - id: session
+      type:
+      - '@azure/event-hubs.Session'
+      description: <span data-ttu-id="506de-109">Amqp 세션입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-109">The amqp session.</span></span>
+    - id: sender
+      type:
+      - '@azure/event-hubs.Sender'
+      description: <span data-ttu-id="506de-110">Amqp 보낸 사람 링크입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-110">The amqp sender link.</span></span>
+    - id: receiver
+      type:
+      - '@azure/event-hubs.Receiver'
+      description: >
+        <span data-ttu-id="506de-111">Amqp 수신기 링크입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-111">The amqp receiver link.</span></span>
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.sender'
+  name: sender
+  fullName: sender
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'sender: Sender'
+    return:
+      type:
+      - '@azure/event-hubs.Sender'
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.sendRequest'
+  name: sendRequest
+  children: []
+  type: method
+  langs:
+  - typeScript
+  summary: '<span data-ttu-id="506de-112">주어진된 요청 메시지를 보내고 받은 응답을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="506de-112">Sends the given request message and returns the received response.</span></span> <span data-ttu-id="506de-113">시간 (초)에서 작업을 제공 된 제한 시간에 완료 되지 않습니다 `default: 10`, 요청을 재시도할 선형적으로 제공 된 다시 시도 횟수에 대 한 다음 `default: 3` 는 제공 된 지연 (초) 사용 하 여 `default: 15` 각 시도 사이입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-113">If the operation is not completed in the provided timeout in seconds `default: 10`, then the request will be retried linearly for the provided number of times `default: 3` with the provided delay in seconds `default: 15` between each attempt.</span></span>'
+  syntax:
+    content: 'function sendRequest<T>(request: Message, options?: SendRequestOptions)'
+    parameters:
+    - id: request
+      type:
+      - Message
+      description: <span data-ttu-id="506de-114">AMQP 메시지입니다.</span><span class="sxs-lookup"><span data-stu-id="506de-114">The AMQP message.</span></span>
+    - id: options
+      type:
+      - '@azure/event-hubs.SendRequestOptions'
+      description: ''
+      optional: true
+    return:
+      type:
+      - Promise<T>
+  package: '@azure/event-hubs'
+- uid: '@azure/event-hubs.RequestResponseLink.session'
+  name: session
+  fullName: session
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: ''
+  syntax:
+    content: 'session: Session'
+    return:
+      type:
+      - '@azure/event-hubs.Session'
+  package: '@azure/event-hubs'
+references:
+- uid: '@azure/event-hubs.Session'
+  name: Session
+  spec.typeScript:
+  - name: Session
+    fullName: Session
+    uid: '@azure/event-hubs.Session'
+- uid: '@azure/event-hubs.Sender'
+  name: Sender
+  spec.typeScript:
+  - name: Sender
+    fullName: Sender
+    uid: '@azure/event-hubs.Sender'
+- uid: '@azure/event-hubs.Receiver'
+  name: Receiver
+  spec.typeScript:
+  - name: Receiver
+    fullName: Receiver
+    uid: '@azure/event-hubs.Receiver'
+- uid: '@azure/event-hubs.Connection'
+  name: Connection
+  spec.typeScript:
+  - name: Connection
+    fullName: Connection
+    uid: '@azure/event-hubs.Connection'
+- uid: '@azure/event-hubs.SendRequestOptions'
+  name: SendRequestOptions
+  spec.typeScript:
+  - name: SendRequestOptions
+    fullName: SendRequestOptions
+    uid: '@azure/event-hubs.SendRequestOptions'
+- uid: '@azure/event-hubs.SenderOptions'
+  name: SenderOptions
+  spec.typeScript:
+  - name: SenderOptions
+    fullName: SenderOptions
+    uid: '@azure/event-hubs.SenderOptions'
+- uid: '@azure/event-hubs.ReceiverOptions'
+  name: ReceiverOptions
+  spec.typeScript:
+  - name: ReceiverOptions
+    fullName: ReceiverOptions
+    uid: '@azure/event-hubs.ReceiverOptions'
+- uid: Promise<@azure/event-hubs.RequestResponseLink>
+  name: RequestResponseLink>
+  spec.typeScript:
+  - name: Promise<
+    fullName: Promise<
+  - name: RequestResponseLink
+    fullName: RequestResponseLink
+    uid: '@azure/event-hubs.RequestResponseLink'
+  - name: '>'
+    fullName: '>'
