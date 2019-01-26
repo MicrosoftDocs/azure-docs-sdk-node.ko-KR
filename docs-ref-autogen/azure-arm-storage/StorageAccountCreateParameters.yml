@@ -1,0 +1,240 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 5c45910c826927a2fff249643b8984b003b456e4
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55054564"
+items:
+- uid: azure-arm-storage.StorageAccountCreateParameters
+  name: StorageAccountCreateParameters
+  fullName: StorageAccountCreateParameters
+  children:
+  - azure-arm-storage.StorageAccountCreateParameters.accessTier
+  - azure-arm-storage.StorageAccountCreateParameters.customDomain
+  - azure-arm-storage.StorageAccountCreateParameters.enableAzureFilesAadIntegration
+  - azure-arm-storage.StorageAccountCreateParameters.enableHttpsTrafficOnly
+  - azure-arm-storage.StorageAccountCreateParameters.encryption
+  - azure-arm-storage.StorageAccountCreateParameters.identity
+  - azure-arm-storage.StorageAccountCreateParameters.isHnsEnabled
+  - azure-arm-storage.StorageAccountCreateParameters.kind
+  - azure-arm-storage.StorageAccountCreateParameters.location
+  - azure-arm-storage.StorageAccountCreateParameters.networkRuleSet
+  - azure-arm-storage.StorageAccountCreateParameters.sku
+  - azure-arm-storage.StorageAccountCreateParameters.tags
+  langs:
+  - typeScript
+  type: interface
+  summary: 저장소 계정을 만들 때 사용한 매개 변수입니다.
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.accessTier
+  name: accessTier
+  fullName: accessTier
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    저장소 계정 위치 종류에 필요한 =는 blob Storage입니다. 청구에 사용 되는 액세스 계층.
+
+    가능한 값은 다음과 같습니다. 'Hot', 'Cool'
+  optional: true
+  syntax:
+    content: 'accessTier?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.customDomain
+  name: customDomain
+  fullName: customDomain
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 저장소 계정에 할당 된 사용자 도메인입니다. 이름에 CNAME 소스입니다. 이 이번 저장소 계정당 하나의 사용자 지정 도메인만 지원 됩니다. 기존 사용자 지정 도메인을 취소 하려면 사용자 지정 도메인 이름 속성에 대해 빈 문자열을 사용 합니다.
+  optional: true
+  syntax:
+    content: 'customDomain?: CustomDomain'
+    return:
+      type:
+      - azure-arm-storage.CustomDomain
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.enableAzureFilesAadIntegration
+  name: enableAzureFilesAadIntegration
+  fullName: enableAzureFilesAadIntegration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 경우 SMB에 대 한 Azure 파일 AAD 통합을 사용 하도록 설정을 true로 설정 합니다.
+  optional: true
+  syntax:
+    content: 'enableAzureFilesAadIntegration?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.enableHttpsTrafficOnly
+  name: enableHttpsTrafficOnly
+  fullName: enableHttpsTrafficOnly
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 경우에 저장소 서비스에만 https 트래픽을 사용 하면 true로 설정 합니다.
+  optional: true
+  syntax:
+    content: 'enableHttpsTrafficOnly?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.encryption
+  name: encryption
+  fullName: encryption
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 계정에서 암호화 설정을 제공합니다. 계정 암호화 설정을 동일 하 게 지정 하지 않으면. 기본 설정은 암호화 되지 않습니다.
+  optional: true
+  syntax:
+    content: 'encryption?: Encryption'
+    return:
+      type:
+      - azure-arm-storage.Encryption
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.identity
+  name: identity
+  fullName: identity
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 리소스의 id입니다.
+  optional: true
+  syntax:
+    content: 'identity?: Identity'
+    return:
+      type:
+      - azure-arm-storage.Identity
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.isHnsEnabled
+  name: isHnsEnabled
+  fullName: isHnsEnabled
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 경우에 사용할 계정 HierarchicalNamespace을 true로 설정 합니다.
+  optional: true
+  syntax:
+    content: 'isHnsEnabled?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.kind
+  name: kind
+  fullName: kind
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 필수 사항입니다. 저장소 계정 유형을 나타냅니다. 가능한 값은 다음과 같습니다. 'Storage', 'StorageV2', 'BlobStorage', 'FileStorage', 'BlockBlobStorage'
+  syntax:
+    content: 'kind: string'
+    return:
+      type:
+      - string
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.location
+  name: location
+  fullName: location
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: '필수 사항입니다. 리소스의 위치를 가져오거나 설정 합니다. 이 지원 되는 중 하나가 됩니다 및 Azure 지역 (예: 미국 서 부, 미국 동부, 동남 아시아 등)을 등록 합니다. 만들어진 있지만 요청은 성공 하는 업데이트에는 동일한 지리적 영역을 지정 하는 경우에 리소스의 지리적 영역을 변경할 수 없습니다.'
+  syntax:
+    content: 'location: string'
+    return:
+      type:
+      - string
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.networkRuleSet
+  name: networkRuleSet
+  fullName: networkRuleSet
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 네트워크 규칙 집합
+  optional: true
+  syntax:
+    content: 'networkRuleSet?: NetworkRuleSet'
+    return:
+      type:
+      - azure-arm-storage.NetworkRuleSet
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.sku
+  name: sku
+  fullName: sku
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 필수 사항입니다. SKU 이름을 설정 하거나 가져옵니다.
+  syntax:
+    content: 'sku: Sku'
+    return:
+      type:
+      - azure-arm-storage.Sku
+  package: azure-arm-storage
+- uid: azure-arm-storage.StorageAccountCreateParameters.tags
+  name: tags
+  fullName: tags
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 리소스를 설명 하는 키 값 쌍의 목록을 가져오거나 설정 합니다. 이러한 태그 보기 (여러 리소스 그룹)이이 리소스를 그룹화에 사용할 수 있습니다. 리소스에 대 한 최대 15 개의 태그를 제공할 수 있습니다. 각 태그는 길이가 128 자 이하의 키와 값 길이가 256 자 보다 크지 않은 있어야 합니다.
+  optional: true
+  syntax:
+    content: 'tags?: [key: string]: string'
+    return:
+      type:
+      - '[key: string]: string'
+  package: azure-arm-storage
+references:
+- uid: azure-arm-storage.CustomDomain
+  name: CustomDomain
+  spec.typeScript:
+  - name: CustomDomain
+    fullName: CustomDomain
+    uid: azure-arm-storage.CustomDomain
+- uid: azure-arm-storage.Encryption
+  name: Encryption
+  spec.typeScript:
+  - name: Encryption
+    fullName: Encryption
+    uid: azure-arm-storage.Encryption
+- uid: azure-arm-storage.Identity
+  name: Identity
+  spec.typeScript:
+  - name: Identity
+    fullName: Identity
+    uid: azure-arm-storage.Identity
+- uid: azure-arm-storage.NetworkRuleSet
+  name: NetworkRuleSet
+  spec.typeScript:
+  - name: NetworkRuleSet
+    fullName: NetworkRuleSet
+    uid: azure-arm-storage.NetworkRuleSet
+- uid: azure-arm-storage.Sku
+  name: Sku
+  spec.typeScript:
+  - name: Sku
+    fullName: Sku
+    uid: azure-arm-storage.Sku
