@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 1e94bebc6b45853631b634d459eb76d0d1c29c36
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55058364"
+items:
+- uid: azure-arm-storage.BlobServiceProperties
+  name: BlobServiceProperties
+  fullName: BlobServiceProperties
+  children:
+  - azure-arm-storage.BlobServiceProperties.cors
+  - azure-arm-storage.BlobServiceProperties.defaultServiceVersion
+  - azure-arm-storage.BlobServiceProperties.deleteRetentionPolicy
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="aba49-101">저장소 계정의 Blob service의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-101">The properties of a storage account’s Blob service.</span></span>
+  extends:
+    name: azure-arm-storage.Resource
+  package: azure-arm-storage
+- uid: azure-arm-storage.BlobServiceProperties.cors
+  name: cors
+  fullName: cors
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="aba49-102">Blob service에 대 한 CORS 규칙을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-102">Specifies CORS rules for the Blob service.</span></span> <span data-ttu-id="aba49-103">요청에서 최대 5 개의 CorsRule 요소를 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-103">You can include up to five CorsRule elements in the request.</span></span> <span data-ttu-id="aba49-104">CorsRule 요소가 요청 본문에 포함 하는 경우 모든 CORS 규칙이 삭제 되 고 Blob service에 대해 CORS가 해제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-104">If no CorsRule elements are included in the request body, all CORS rules will be deleted, and CORS will be disabled for the Blob service.</span></span>
+  optional: true
+  syntax:
+    content: 'cors?: CorsRules'
+    return:
+      type:
+      - azure-arm-storage.CorsRules
+  package: azure-arm-storage
+- uid: azure-arm-storage.BlobServiceProperties.defaultServiceVersion
+  name: defaultServiceVersion
+  fullName: defaultServiceVersion
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="aba49-105">DefaultServiceVersion 수신 요청의 버전이 지정 되지 않은 경우 Blob service에 요청에 사용할 기본 버전을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-105">DefaultServiceVersion indicates the default version to use for requests to the Blob service if an incoming request’s version is not specified.</span></span> <span data-ttu-id="aba49-106">가능한 값에는 27-10-2008 버전 및 모든 최신 버전이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-106">Possible values include version 2008-10-27 and all more recent versions.</span></span>
+  optional: true
+  syntax:
+    content: 'defaultServiceVersion?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-storage
+- uid: azure-arm-storage.BlobServiceProperties.deleteRetentionPolicy
+  name: deleteRetentionPolicy
+  fullName: deleteRetentionPolicy
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="aba49-107">일시 삭제에 대 한 blob 서비스 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="aba49-107">The blob service properties for soft delete.</span></span>
+  optional: true
+  syntax:
+    content: 'deleteRetentionPolicy?: DeleteRetentionPolicy'
+    return:
+      type:
+      - azure-arm-storage.DeleteRetentionPolicy
+  package: azure-arm-storage
+references:
+- uid: azure-arm-storage.Resource
+  name: Resource
+  spec.typeScript:
+  - name: Resource
+    fullName: Resource
+    uid: azure-arm-storage.Resource
+- uid: azure-arm-storage.CorsRules
+  name: CorsRules
+  spec.typeScript:
+  - name: CorsRules
+    fullName: CorsRules
+    uid: azure-arm-storage.CorsRules
+- uid: azure-arm-storage.DeleteRetentionPolicy
+  name: DeleteRetentionPolicy
+  spec.typeScript:
+  - name: DeleteRetentionPolicy
+    fullName: DeleteRetentionPolicy
+    uid: azure-arm-storage.DeleteRetentionPolicy

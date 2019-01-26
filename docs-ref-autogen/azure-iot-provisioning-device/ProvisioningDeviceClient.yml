@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: e5b87b187860e4c6909a800c9d9d3c6264e861da
-ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.openlocfilehash: 2adf0926203f00d13978e76c648697c524f0208c
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "52145148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55059234"
 items:
 - uid: azure-iot-provisioning-device.ProvisioningDeviceClient
   name: ProvisioningDeviceClient
@@ -14,50 +14,50 @@ items:
   langs:
   - typeScript
   type: class
-  summary: <span data-ttu-id="735de-101">Azure IoT Hub Device Provisioning Service와 통신 하는 데 사용 되는 클라이언트 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="735de-101">Client object used to communicate with the Azure IoT Hub Device Provisioning Service.</span></span>
+  summary: <span data-ttu-id="3911d-101">Azure IoT Hub Device Provisioning Service와 통신 하는 데 사용 되는 클라이언트 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-101">Client object used to communicate with the Azure IoT Hub Device Provisioning Service.</span></span>
   package: azure-iot-provisioning-device
 - uid: azure-iot-provisioning-device.ProvisioningDeviceClient.create
-  name: create(string, string, X509ProvisioningTransport | TpmProvisioningTransport, X509SecurityClient | TpmSecurityClient)
+  name: create(string, string, X509ProvisioningTransport | TpmProvisioningTransport | SymmetricKeyProvisioningTransport, X509SecurityClient | TpmSecurityClient | SymmetricKeySecurityClient)
   children: []
   type: method
   langs:
   - typeScript
-  summary: <span data-ttu-id="735de-102">Azure Device Provisioning Service를 사용 하 여 통신에 사용할 수 있는 클라이언트 개체를 생성 합니다.</span><span class="sxs-lookup"><span data-stu-id="735de-102">Construct a client object which can be used to communicate with the Azure Device Provisioning Service.</span></span>
+  summary: <span data-ttu-id="3911d-102">Azure Device Provisioning Service를 사용 하 여 통신에 사용할 수 있는 클라이언트 개체를 생성 합니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-102">Construct a client object which can be used to communicate with the Azure Device Provisioning Service.</span></span>
   syntax:
-    content: 'static function create(provisioningHost: string, idScope: string, transport: X509ProvisioningTransport | TpmProvisioningTransport, securityClient: X509SecurityClient | TpmSecurityClient)'
+    content: 'static function create(provisioningHost: string, idScope: string, transport: X509ProvisioningTransport | TpmProvisioningTransport | SymmetricKeyProvisioningTransport, securityClient: X509SecurityClient | TpmSecurityClient | SymmetricKeySecurityClient)'
     parameters:
     - id: provisioningHost
       type:
       - string
-      description: <span data-ttu-id="735de-103">Device Provisioning Service를 실행 하는 호스트입니다.</span><span class="sxs-lookup"><span data-stu-id="735de-103">Host running the Device Provisioning Service.</span></span>  <span data-ttu-id="735de-104">문자열 '전역 장치 엔드포인트'으로 '개요' 탭 'Essentials' 섹션에서 Azure portal에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="735de-104">Can be found in the Azure portal in the 'Essentials' section of the 'Overview' tab as the string 'Global device endpoint'</span></span>
+      description: <span data-ttu-id="3911d-103">Device Provisioning Service를 실행 하는 호스트입니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-103">Host running the Device Provisioning Service.</span></span>  <span data-ttu-id="3911d-104">문자열 '전역 장치 엔드포인트'으로 '개요' 탭 'Essentials' 섹션에서 Azure portal에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-104">Can be found in the Azure portal in the 'Essentials' section of the 'Overview' tab as the string 'Global device endpoint'</span></span>
     - id: idScope
       type:
       - string
-      description: <span data-ttu-id="735de-105">Device Provisioning Service에 대 한 Id의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="735de-105">Scope of IDs for the Device Provisioning Service.</span></span>  <span data-ttu-id="735de-106">' ID 범위 ' 문자열 '개요' 탭 'Essentials' 섹션에서 Azure portal에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="735de-106">Can be found in the Azure portal in the 'Essentials' section of the 'Overview' tab as the string 'ID Scope'</span></span>
+      description: <span data-ttu-id="3911d-105">Device Provisioning Service에 대 한 Id의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-105">Scope of IDs for the Device Provisioning Service.</span></span>  <span data-ttu-id="3911d-106">' ID 범위 ' 문자열 '개요' 탭 'Essentials' 섹션에서 Azure portal에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-106">Can be found in the Azure portal in the 'Essentials' section of the 'Overview' tab as the string 'ID Scope'</span></span>
     - id: transport
       type:
-      - X509ProvisioningTransport | TpmProvisioningTransport
-      description: '<span data-ttu-id="735de-107">사용 하 여 전송 프로 비전에 대 한 생성자 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="735de-107">Constructor function for provisioning transport to use.</span></span>  <span data-ttu-id="735de-108">다음 중 하나일 수 있습니다: [azure iot-프로 비전-장치-http입니다. Http](xref:azure-iot-provisioning-device-http.Http) [azure-iot-프로 비전-장치-amqp입니다. Amqp](xref:azure-iot-provisioning-device-amqp.Amqp) [azure-iot-프로 비전-장치-amqp입니다. AmqpWs](xref:azure-iot-provisioning-device-amqp.AmqpWs) [azure-iot-프로 비전-장치-mqtt입니다. Mqtt](xref:azure-iot-provisioning-device-mqtt.Mqtt) [azure-iot-프로 비전-장치-mqtt입니다. MqttWs](xref:azure-iot-provisioning-device-mqtt.MqttWs)</span><span class="sxs-lookup"><span data-stu-id="735de-108">Can be one of the following: [azure-iot-provisioning-device-http.Http](xref:azure-iot-provisioning-device-http.Http) [azure-iot-provisioning-device-amqp.Amqp](xref:azure-iot-provisioning-device-amqp.Amqp) [azure-iot-provisioning-device-amqp.AmqpWs](xref:azure-iot-provisioning-device-amqp.AmqpWs) [azure-iot-provisioning-device-mqtt.Mqtt](xref:azure-iot-provisioning-device-mqtt.Mqtt) [azure-iot-provisioning-device-mqtt.MqttWs](xref:azure-iot-provisioning-device-mqtt.MqttWs)</span></span>'
+      - X509ProvisioningTransport | TpmProvisioningTransport | SymmetricKeyProvisioningTransport
+      description: '<span data-ttu-id="3911d-107">사용 하 여 전송 프로 비전에 대 한 생성자 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-107">Constructor function for provisioning transport to use.</span></span>  <span data-ttu-id="3911d-108">다음 중 하나일 수 있습니다: [azure iot-프로 비전-장치-http입니다. Http](xref:azure-iot-provisioning-device-http.Http) [azure-iot-프로 비전-장치-amqp입니다. Amqp](xref:azure-iot-provisioning-device-amqp.Amqp) [azure-iot-프로 비전-장치-amqp입니다. AmqpWs](xref:azure-iot-provisioning-device-amqp.AmqpWs) [azure-iot-프로 비전-장치-mqtt입니다. Mqtt](xref:azure-iot-provisioning-device-mqtt.Mqtt) [azure-iot-프로 비전-장치-mqtt입니다. MqttWs](xref:azure-iot-provisioning-device-mqtt.MqttWs)</span><span class="sxs-lookup"><span data-stu-id="3911d-108">Can be one of the following: [azure-iot-provisioning-device-http.Http](xref:azure-iot-provisioning-device-http.Http) [azure-iot-provisioning-device-amqp.Amqp](xref:azure-iot-provisioning-device-amqp.Amqp) [azure-iot-provisioning-device-amqp.AmqpWs](xref:azure-iot-provisioning-device-amqp.AmqpWs) [azure-iot-provisioning-device-mqtt.Mqtt](xref:azure-iot-provisioning-device-mqtt.Mqtt) [azure-iot-provisioning-device-mqtt.MqttWs](xref:azure-iot-provisioning-device-mqtt.MqttWs)</span></span>'
     - id: securityClient
       type:
-      - azure-iot-provisioning-device.X509SecurityClient | TpmSecurityClient
+      - azure-iot-provisioning-device.X509SecurityClient | TpmSecurityClient | SymmetricKeySecurityClient
       description: >
-        <span data-ttu-id="735de-109">중 하나를 구현 하는 보안 클라이언트 개체의 인스턴스를 [X509SecurityClient](xref:azure-iot-provisioning-device%3AX509SecurityClient) 또는 [TpmSecurityClient](xref:azure-iot-provisioning-device%3ATpmSecurityClient) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="735de-109">Instance of Scurity client object implementing either the [X509SecurityClient](xref:azure-iot-provisioning-device%3AX509SecurityClient) or the [TpmSecurityClient](xref:azure-iot-provisioning-device%3ATpmSecurityClient) interface.</span></span>
-
-        <span data-ttu-id="735de-110">이러한 인터페이스의 구현을 포함 제안 [X509Security](xref:azure-iot-security-x509.X509Security) 또는 [TpmSecurityClient](xref:azure-iot-security-tpm.TpmSecurityClient)</span><span class="sxs-lookup"><span data-stu-id="735de-110">Suggested implementations of these interfaces include [X509Security](xref:azure-iot-security-x509.X509Security) or [TpmSecurityClient](xref:azure-iot-security-tpm.TpmSecurityClient)</span></span>
+        <span data-ttu-id="3911d-109">중 하나를 구현 하는 보안 클라이언트 개체의 인스턴스를 [X509SecurityClient](xref:azure-iot-provisioning-device%3AX509SecurityClient) 또는 [TpmSecurityClient](xref:azure-iot-provisioning-device%3ATpmSecurityClient) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-109">Instance of Security client object implementing either the [X509SecurityClient](xref:azure-iot-provisioning-device%3AX509SecurityClient) or the [TpmSecurityClient](xref:azure-iot-provisioning-device%3ATpmSecurityClient) interface.</span></span>
+                                 <span data-ttu-id="3911d-110">[SymmetricKeySecurityClient](xref:azure-iot-provisioning-device%3ASymmetricKeySecurityClient) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="3911d-110">[SymmetricKeySecurityClient](xref:azure-iot-provisioning-device%3ASymmetricKeySecurityClient) interface.</span></span>
+        <span data-ttu-id="3911d-111">이러한 인터페이스의 구현을 포함 제안 [X509Security](xref:azure-iot-security-x509.X509Security) 하거나 [TpmSecurityClient](xref:azure-iot-security-tpm.TpmSecurityClient) [SymmetricKeySecurityClient](xref:azure-iot-security-symmetric-key.SymmetricKeySecurityClient)</span><span class="sxs-lookup"><span data-stu-id="3911d-111">Suggested implementations of these interfaces include [X509Security](xref:azure-iot-security-x509.X509Security) or [TpmSecurityClient](xref:azure-iot-security-tpm.TpmSecurityClient) [SymmetricKeySecurityClient](xref:azure-iot-security-symmetric-key.SymmetricKeySecurityClient)</span></span>
     return:
       type:
       - azure-iot-provisioning-device.RegistrationClient
   package: azure-iot-provisioning-device
 references:
-- uid: azure-iot-provisioning-device.X509SecurityClient | TpmSecurityClient
-  name: X509SecurityClient | TpmSecurityClient
+- uid: azure-iot-provisioning-device.X509SecurityClient | TpmSecurityClient | SymmetricKeySecurityClient
+  name: X509SecurityClient | TpmSecurityClient | SymmetricKeySecurityClient
   spec.typeScript:
   - name: X509SecurityClient
     fullName: X509SecurityClient
     uid: azure-iot-provisioning-device.X509SecurityClient
-  - name: " | TpmSecurityClient"
-    fullName: " | TpmSecurityClient"
+  - name: " | TpmSecurityClient | SymmetricKeySecurityClient"
+    fullName: " | TpmSecurityClient | SymmetricKeySecurityClient"
 - uid: azure-iot-provisioning-device.RegistrationClient
   name: RegistrationClient
   spec.typeScript:

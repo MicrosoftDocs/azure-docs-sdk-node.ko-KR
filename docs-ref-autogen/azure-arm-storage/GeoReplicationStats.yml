@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: a9e6865351ab5e14c5d0996c49c3c1f865450494
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55062435"
+items:
+- uid: azure-arm-storage.GeoReplicationStats
+  name: GeoReplicationStats
+  fullName: GeoReplicationStats
+  children:
+  - azure-arm-storage.GeoReplicationStats.canFailover
+  - azure-arm-storage.GeoReplicationStats.lastSyncTime
+  - azure-arm-storage.GeoReplicationStats.status
+  langs:
+  - typeScript
+  type: interface
+  summary: <span data-ttu-id="a7c77-101">서비스 저장소 계정의 Blob, 테이블, 큐 및 파일에 대 한 복제 관련 된 통계입니다.</span><span class="sxs-lookup"><span data-stu-id="a7c77-101">Statistics related to replication for storage account's Blob, Table, Queue and File services.</span></span> <span data-ttu-id="a7c77-102">저장소 계정의 지리적 중복 복제가 설정 된 경우에 제공 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a7c77-102">It is only available when geo-redundant replication is enabled for the storage account.</span></span>
+  package: azure-arm-storage
+- uid: azure-arm-storage.GeoReplicationStats.canFailover
+  name: canFailover
+  fullName: canFailover
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: <span data-ttu-id="a7c77-103">계정에 대 한 계정 장애 조치가 지원 여부를 나타내는 부울 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="a7c77-103">A boolean flag which indicates whether or not account failover is supported for the account.</span></span>
+  optional: true
+  syntax:
+    content: 'canFailover?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-storage
+- uid: azure-arm-storage.GeoReplicationStats.lastSyncTime
+  name: lastSyncTime
+  fullName: lastSyncTime
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    <span data-ttu-id="a7c77-104">이전의 모든 주 쓰기가 UTC 날짜/시간 값은 보장 읽기 작업에 대해 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a7c77-104">All primary writes preceding this UTC date/time value are guaranteed to be available for read operations.</span></span> <span data-ttu-id="a7c77-105">주 쓰기는이 지점으로에서 다음 되었거나 읽기에 대해 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a7c77-105">Primary writes following this point in time may or may not be available for reads.</span></span>
+
+    <span data-ttu-id="a7c77-106">요소가 LastSyncTime의 값이 없으면 기본값이 될 수 있습니다 사용할 수 있는 보조 하는 경우 발생할 수 있습니다이 오프 라인 상태 이거나를 부트스트랩 합니다.</span><span class="sxs-lookup"><span data-stu-id="a7c77-106">Element may be default value if value of LastSyncTime is not available, this can happen if secondary is offline or we are in bootstrap.</span></span>
+  optional: true
+  syntax:
+    content: 'lastSyncTime?: Date'
+    return:
+      type:
+      - Date
+  package: azure-arm-storage
+- uid: azure-arm-storage.GeoReplicationStats.status
+  name: status
+  fullName: status
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "<span data-ttu-id=\"a7c77-107\">보조 위치의 상태입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"a7c77-107\">The status of the secondary location.</span></span> <span data-ttu-id=\"a7c77-108\">가능한 값은: 라이브-: 보조 위치가 활성 및 작동 상태임을 나타냅니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"a7c77-108\">Possible values are: - Live: Indicates that the secondary location is active and operational.</span></span> <span data-ttu-id=\"a7c77-109\">부트스트랩 합니다. 보조 위치에 대 한 기본 위치에서의 초기 동기화의 진행을 나타냅니다. 이 문제는 일반적으로 복제가 처음 설정 하는 경우 발생 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"a7c77-109\">- Bootstrap: Indicates initial synchronization from the primary location to the secondary location is in progress.This typically occurs when replication is first enabled.</span></span> <span data-ttu-id=\"a7c77-110\">-사용할 수 없습니다. 보조 위치를 일시적으로 사용할 수 없다는 것을 나타냅니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"a7c77-110\">- Unavailable: Indicates that the secondary location is temporarily unavailable.</span></span> <span data-ttu-id=\"a7c77-111\">가능한 값은 다음과 같습니다. 'Live', 'Bootstrap', 'Unavailable'</span><span class=\"sxs-lookup\"><span data-stu-id=\"a7c77-111\">Possible values include: 'Live', 'Bootstrap', 'Unavailable'</span></span>"
+  optional: true
+  syntax:
+    content: 'status?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-storage
