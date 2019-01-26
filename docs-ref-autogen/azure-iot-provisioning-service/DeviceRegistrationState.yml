@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 078841eb8e2febb0ac9495cc45c334a4adb24739
-ms.sourcegitcommit: efa2d98deffe8a0d41a8d63f9f07aa720862e6ab
+ms.openlocfilehash: 518ad2370ba604fcf3a2de8469224f3f77fc9db3
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "52121348"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55056564"
 items:
 - uid: azure-iot-provisioning-service.DeviceRegistrationState
   name: DeviceRegistrationState
@@ -19,6 +19,7 @@ items:
   - azure-iot-provisioning-service.DeviceRegistrationState.lastUpdatedDateTimeUtc
   - azure-iot-provisioning-service.DeviceRegistrationState.registrationId
   - azure-iot-provisioning-service.DeviceRegistrationState.status
+  - azure-iot-provisioning-service.DeviceRegistrationState.substatus
   langs:
   - typeScript
   type: interface
@@ -146,12 +147,26 @@ items:
   langs:
   - typeScript
   type: property
-  summary: 이 특정 시점 장치의 프로 비전 상태는 무엇입니까.
+  summary: 요청 하는 시점에 장치 프로 비전 상태는 무엇입니까 합니다.
   syntax:
     content: 'status: RegistrationStatus'
     return:
       type:
       - azure-iot-provisioning-service.RegistrationStatus
+  package: azure-iot-provisioning-service
+- uid: azure-iot-provisioning-service.DeviceRegistrationState.substatus
+  name: substatus
+  fullName: substatus
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "'할당' 장치에 대 한 하위 상태입니다. 가능한 값은 다음과 같습니다.\n- 'initialAssignment': 처음으로 장치를 IoT hub에 할당 되었습니다.\n- 'deviceDataMigrated': 다른 IoT hub에 할당 된 장치 및 이전에 할당 된 IoT hub에서 장치 데이터 마이그레이션 했습니다. 장치 데이터는 이전에 할당 된 IoT hub에서 제거 되었습니다.\n- 'deviceDataReset':  다른 IoT hub에 할당 된 장치 및 등록에 저장 된 초기 상태에서 해당 장치 데이터를 채운 합니다. 장치 데이터는 이전에 할당 된 IoT hub에서 제거 되었습니다."
+  syntax:
+    content: 'substatus: RegistrationSubstatus'
+    return:
+      type:
+      - azure-iot-provisioning-service.RegistrationSubstatus
   package: azure-iot-provisioning-service
 references:
 - uid: azure-iot-provisioning-service.RegistrationStatus
@@ -160,3 +175,9 @@ references:
   - name: RegistrationStatus
     fullName: RegistrationStatus
     uid: azure-iot-provisioning-service.RegistrationStatus
+- uid: azure-iot-provisioning-service.RegistrationSubstatus
+  name: RegistrationSubstatus
+  spec.typeScript:
+  - name: RegistrationSubstatus
+    fullName: RegistrationSubstatus
+    uid: azure-iot-provisioning-service.RegistrationSubstatus

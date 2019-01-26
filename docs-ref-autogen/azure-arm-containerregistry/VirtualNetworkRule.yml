@@ -1,31 +1,47 @@
 ### YamlMime:UniversalReference
-ms.openlocfilehash: 957ae383aa8f854cf740e8fcd8cf153fd857c84a
-ms.sourcegitcommit: ce76ec3eda83746ef9a765165173b5c00b5b7df6
+ms.openlocfilehash: 11b40ebc7b11b68f743bc3cba2f358d420edf02c
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53707262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55051654"
 items:
 - uid: azure-arm-containerregistry.VirtualNetworkRule
   name: VirtualNetworkRule
   fullName: VirtualNetworkRule
   children:
-  - azure-arm-containerregistry.VirtualNetworkRule.id
+  - azure-arm-containerregistry.VirtualNetworkRule.action
+  - azure-arm-containerregistry.VirtualNetworkRule.virtualNetworkResourceId
   langs:
   - typeScript
   type: interface
-  summary: 컨테이너 레지스트리에 대 한 가상 네트워크 규칙입니다.
+  summary: 가상 네트워크 규칙입니다.
   package: azure-arm-containerregistry
-- uid: azure-arm-containerregistry.VirtualNetworkRule.id
-  name: id
-  fullName: id
+- uid: azure-arm-containerregistry.VirtualNetworkRule.action
+  name: action
+  fullName: action
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 가상 네트워크 규칙의 동작입니다. 가능한 값은 다음과 같습니다. ' 허용 '
+  optional: true
+  syntax:
+    content: 'action?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-containerregistry
+- uid: azure-arm-containerregistry.VirtualNetworkRule.virtualNetworkResourceId
+  name: virtualNetworkResourceId
+  fullName: virtualNetworkResourceId
   children: []
   langs:
   - typeScript
   type: property
   summary: '예를 들어 서브넷의 리소스 ID: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}.'
   syntax:
-    content: 'id: string'
+    content: 'virtualNetworkResourceId: string'
     return:
       type:
       - string

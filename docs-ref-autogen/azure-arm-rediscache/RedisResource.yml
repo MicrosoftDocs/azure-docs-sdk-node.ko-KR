@@ -1,0 +1,301 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 9130dd223f35da4dc9177a9876b86cfac16806a7
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55051495"
+items:
+- uid: azure-arm-rediscache.RedisResource
+  name: RedisResource
+  fullName: RedisResource
+  children:
+  - azure-arm-rediscache.RedisResource.accessKeys
+  - azure-arm-rediscache.RedisResource.enableNonSslPort
+  - azure-arm-rediscache.RedisResource.hostName
+  - azure-arm-rediscache.RedisResource.linkedServers
+  - azure-arm-rediscache.RedisResource.minimumTlsVersion
+  - azure-arm-rediscache.RedisResource.port
+  - azure-arm-rediscache.RedisResource.provisioningState
+  - azure-arm-rediscache.RedisResource.redisConfiguration
+  - azure-arm-rediscache.RedisResource.redisVersion
+  - azure-arm-rediscache.RedisResource.shardCount
+  - azure-arm-rediscache.RedisResource.sku
+  - azure-arm-rediscache.RedisResource.sslPort
+  - azure-arm-rediscache.RedisResource.staticIP
+  - azure-arm-rediscache.RedisResource.subnetId
+  - azure-arm-rediscache.RedisResource.tenantSettings
+  - azure-arm-rediscache.RedisResource.zones
+  langs:
+  - typeScript
+  type: interface
+  summary: Redis의 단일 항목을 목록 또는 Get 작업입니다.
+  extends:
+    name: azure-arm-rediscache.TrackedResource
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.accessKeys
+  name: accessKeys
+  fullName: accessKeys
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Redis 캐시 만들기 또는 업데이트에 대 한 응답이 없으면이 개체를 설정 하지-Redis 캐시의 키
+  optional: true
+  syntax:
+    content: 'accessKeys?: RedisAccessKeys'
+    return:
+      type:
+      - azure-arm-rediscache.RedisAccessKeys
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.enableNonSslPort
+  name: enableNonSslPort
+  fullName: enableNonSslPort
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 지정 여부를 비-ssl Redis 서버 포트 (6379) 사용 하도록 설정 합니다.
+  optional: true
+  syntax:
+    content: 'enableNonSslPort?: boolean'
+    return:
+      type:
+      - boolean
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.hostName
+  name: hostName
+  fullName: hostName
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Redis 호스트 이름입니다.
+  optional: true
+  syntax:
+    content: 'hostName?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.linkedServers
+  name: linkedServers
+  fullName: linkedServers
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 캐시와 관련 된 연결 된 서버 목록
+  optional: true
+  syntax:
+    content: 'linkedServers?: RedisLinkedServer[]'
+    return:
+      type:
+      - azure-arm-rediscache.RedisLinkedServer[]
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.minimumTlsVersion
+  name: minimumTlsVersion
+  fullName: minimumTlsVersion
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: "선택 사항: 필요한 지정된 된 TLS 버전을 사용 하는 클라이언트 (또는 이상) 연결 (e, g, '1.0', '1.1', '1.2'). 가능한 값은 다음과 같습니다. '1.0', '1.1', '1.2'"
+  optional: true
+  syntax:
+    content: 'minimumTlsVersion?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.port
+  name: port
+  fullName: port
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 비 SSL 포트를 redis입니다.
+  optional: true
+  syntax:
+    content: 'port?: number'
+    return:
+      type:
+      - number
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.provisioningState
+  name: provisioningState
+  fullName: provisioningState
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Redis 인스턴스 상태를 프로 비전 합니다. 가능한 값은 다음과 같습니다. 'Creating', 'Deleting', 'Disabled', 'Failed', 'Linking', 'Provisioning', 'RecoveringScaleFailure', 'Scaling', 'Succeeded', 'Unlinking', 'Unprovisioning', 'Updating'
+  optional: true
+  syntax:
+    content: 'provisioningState?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.redisConfiguration
+  name: redisConfiguration
+  fullName: redisConfiguration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: '모든 Redis 설정 합니다. Few possible keys: rdb-backup-enabled,rdb-storage-connection-string,rdb-backup-frequency,maxmemory-delta,maxmemory-policy,notify-keyspace-events,maxmemory-samples,slowlog-log-slower-than,slowlog-max-len,list-max-ziplist-entries, list-max-ziplist-value,hash-max-ziplist-entries,hash-max-ziplist-value,set-max-intset-entries,zset-max-ziplist-entries,zset-max-ziplist-value 등'
+  optional: true
+  syntax:
+    content: 'redisConfiguration?: [key: string]: string'
+    return:
+      type:
+      - '[key: string]: string'
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.redisVersion
+  name: redisVersion
+  fullName: redisVersion
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Redis 버전입니다.
+  optional: true
+  syntax:
+    content: 'redisVersion?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.shardCount
+  name: shardCount
+  fullName: shardCount
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 프리미엄 클러스터 캐시에 만들 분할 된 데이터베이스의 수입니다.
+  optional: true
+  syntax:
+    content: 'shardCount?: number'
+    return:
+      type:
+      - number
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.sku
+  name: sku
+  fullName: sku
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 배포할 Redis cache의 SKU입니다.
+  syntax:
+    content: 'sku: Sku'
+    return:
+      type:
+      - azure-arm-rediscache.Sku
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.sslPort
+  name: sslPort
+  fullName: sslPort
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: Redis SSL 포트입니다.
+  optional: true
+  syntax:
+    content: 'sslPort?: number'
+    return:
+      type:
+      - number
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.staticIP
+  name: staticIP
+  fullName: staticIP
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 정적 IP 주소입니다. 기존 Azure Virtual Network 내에서 Redis cache를 배포 하는 경우 필요 합니다.
+  optional: true
+  syntax:
+    content: 'staticIP?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.subnetId
+  name: subnetId
+  fullName: subnetId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 'Redis cache를 배포 하려면 가상 네트워크에 서브넷의 전체 리소스 ID입니다. 형식 예: /subscriptions/ {subscriptionId} /resourceGroups/ {resourceGroupName} / Microsoft입니다. {0} 네트워크 | ClassicNetwork} / VirtualNetworks/vnet1 / / subnet1'
+  optional: true
+  syntax:
+    content: 'subnetId?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.tenantSettings
+  name: tenantSettings
+  fullName: tenantSettings
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 테 넌 트 설정의 사전
+  optional: true
+  syntax:
+    content: 'tenantSettings?: [key: string]: string'
+    return:
+      type:
+      - '[key: string]: string'
+  package: azure-arm-rediscache
+- uid: azure-arm-rediscache.RedisResource.zones
+  name: zones
+  fullName: zones
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 가용성의 목록을 나타내는 리소스에서 제공 해야 하는 영역입니다.
+  optional: true
+  syntax:
+    content: 'zones?: string[]'
+    return:
+      type:
+      - string[]
+  package: azure-arm-rediscache
+references:
+- uid: azure-arm-rediscache.TrackedResource
+  name: TrackedResource
+  spec.typeScript:
+  - name: TrackedResource
+    fullName: TrackedResource
+    uid: azure-arm-rediscache.TrackedResource
+- uid: azure-arm-rediscache.RedisAccessKeys
+  name: RedisAccessKeys
+  spec.typeScript:
+  - name: RedisAccessKeys
+    fullName: RedisAccessKeys
+    uid: azure-arm-rediscache.RedisAccessKeys
+- uid: azure-arm-rediscache.RedisLinkedServer[]
+  name: RedisLinkedServer[]
+  spec.typeScript:
+  - name: RedisLinkedServer
+    fullName: RedisLinkedServer
+    uid: azure-arm-rediscache.RedisLinkedServer
+  - name: '[]'
+    fullName: '[]'
+- uid: azure-arm-rediscache.Sku
+  name: Sku
+  spec.typeScript:
+  - name: Sku
+    fullName: Sku
+    uid: azure-arm-rediscache.Sku

@@ -1,0 +1,210 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: ba2ede701c53eb60f1d8f084aec187ac77a24e81
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55048298"
+items:
+- uid: '@azure/arm-network.InboundNatPool'
+  name: InboundNatPool
+  fullName: InboundNatPool
+  children:
+  - '@azure/arm-network.InboundNatPool.backendPort'
+  - '@azure/arm-network.InboundNatPool.enableFloatingIP'
+  - '@azure/arm-network.InboundNatPool.enableTcpReset'
+  - '@azure/arm-network.InboundNatPool.etag'
+  - '@azure/arm-network.InboundNatPool.frontendIPConfiguration'
+  - '@azure/arm-network.InboundNatPool.frontendPortRangeEnd'
+  - '@azure/arm-network.InboundNatPool.frontendPortRangeStart'
+  - '@azure/arm-network.InboundNatPool.idleTimeoutInMinutes'
+  - '@azure/arm-network.InboundNatPool.name'
+  - '@azure/arm-network.InboundNatPool.protocol'
+  - '@azure/arm-network.InboundNatPool.provisioningState'
+  langs:
+  - typeScript
+  type: interface
+  summary: 부하 분산 장치의 인바운드 NAT 풀입니다.
+  extends:
+    name: '@azure/arm-network.SubResource'
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.backendPort'
+  name: backendPort
+  fullName: backendPort
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    끝점에서 내부 연결에 사용 되는 포트입니다. 가능한 값은 1 및
+
+    65535.
+  syntax:
+    content: 'backendPort: number'
+    return:
+      type:
+      - number
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.enableFloatingIP'
+  name: enableFloatingIP
+  fullName: enableFloatingIP
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: SQL AlwaysOn 가용성 그룹을 구성 하는 데 필요한 부동 IP 기능에 대 한 가상 머신의 끝점을 구성 합니다. SQL server에서 SQL AlwaysOn 가용성 그룹을 사용 하는 경우이 설정은 필수입니다. 끝점을 만든 후에이 설정을 변경할 수 없습니다.
+  optional: true
+  syntax:
+    content: 'enableFloatingIP?: undefined | false | true'
+    return:
+      type:
+      - undefined | false | true
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.enableTcpReset'
+  name: enableTcpReset
+  fullName: enableTcpReset
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    TCP 흐름 유휴 시간 제한 또는 예기치 않은 연결 종료에 양방향 TCP 재설정을 받습니다.
+
+    이 요소는 프로토콜이 TCP로 설정 된 경우에 사용 됩니다.
+  optional: true
+  syntax:
+    content: 'enableTcpReset?: undefined | false | true'
+    return:
+      type:
+      - undefined | false | true
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.etag'
+  name: etag
+  fullName: etag
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.
+  optional: true
+  syntax:
+    content: 'etag?: undefined | string'
+    return:
+      type:
+      - undefined | string
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.frontendIPConfiguration'
+  name: frontendIPConfiguration
+  fullName: frontendIPConfiguration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 프런트 엔드 IP 주소에 대 한 참조입니다.
+  optional: true
+  syntax:
+    content: 'frontendIPConfiguration?: SubResource'
+    return:
+      type:
+      - '@azure/arm-network.SubResource'
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.frontendPortRangeEnd'
+  name: frontendPortRangeEnd
+  fullName: frontendPortRangeEnd
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 마지막 포트 번호 범위에서 부하 분산 장치를 사용 하 여 연결 된 Nic에 인바운드 Nat를 제공 하는 데 사용할 외부 포트입니다. 1에서 65535 사이의 범위를 허용 되는 값입니다.
+  syntax:
+    content: 'frontendPortRangeEnd: number'
+    return:
+      type:
+      - number
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.frontendPortRangeStart'
+  name: frontendPortRangeStart
+  fullName: frontendPortRangeStart
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 첫 번째 포트 번호 범위에서 부하 분산 장치를 사용 하 여 연결 된 Nic에 인바운드 Nat를 제공 하는 데 사용할 외부 포트입니다. 1에서 65534 사이의 범위를 허용 되는 값입니다.
+  syntax:
+    content: 'frontendPortRangeStart: number'
+    return:
+      type:
+      - number
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.idleTimeoutInMinutes'
+  name: idleTimeoutInMinutes
+  fullName: idleTimeoutInMinutes
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: TCP 유휴 연결에 대 한 제한 시간입니다. 값은 4 분에서 30 분 사이로 설정할 수 있습니다. 기본값은 4 분입니다. 이 요소는 프로토콜이 TCP로 설정 된 경우에 사용 됩니다.
+  optional: true
+  syntax:
+    content: 'idleTimeoutInMinutes?: undefined | number'
+    return:
+      type:
+      - undefined | number
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.name'
+  name: name
+  fullName: name
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 리소스 그룹 내에서 고유한 리소스의 이름입니다. 이 이름은 리소스에 액세스할 때 사용할 수 있습니다.
+  optional: true
+  syntax:
+    content: 'name?: undefined | string'
+    return:
+      type:
+      - undefined | string
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.protocol'
+  name: protocol
+  fullName: protocol
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 가능한 값은 다음과 같습니다. 'Udp', 'Tcp', '모두'
+  syntax:
+    content: 'protocol: TransportProtocol'
+    return:
+      type:
+      - '@azure/arm-network.TransportProtocol'
+  package: '@azure/arm-network'
+- uid: '@azure/arm-network.InboundNatPool.provisioningState'
+  name: provisioningState
+  fullName: provisioningState
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: PublicIP 리소스의 프로 비전 상태를 가져옵니다. 가능한 값은 다음과 같습니다. '업데이트', '삭제' 및 '실패'입니다.
+  optional: true
+  syntax:
+    content: 'provisioningState?: undefined | string'
+    return:
+      type:
+      - undefined | string
+  package: '@azure/arm-network'
+references:
+- uid: '@azure/arm-network.SubResource'
+  name: SubResource
+  spec.typeScript:
+  - name: SubResource
+    fullName: SubResource
+    uid: '@azure/arm-network.SubResource'
+- uid: '@azure/arm-network.TransportProtocol'
+  name: TransportProtocol
+  spec.typeScript:
+  - name: TransportProtocol
+    fullName: TransportProtocol
+    uid: '@azure/arm-network.TransportProtocol'

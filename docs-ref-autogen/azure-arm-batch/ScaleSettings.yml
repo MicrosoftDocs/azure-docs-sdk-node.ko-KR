@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: 0d49acd38179c5c4d5e45437193d85b567e15d76
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55058484"
+items:
+- uid: azure-arm-batch.ScaleSettings
+  name: ScaleSettings
+  fullName: ScaleSettings
+  children:
+  - azure-arm-batch.ScaleSettings.autoScale
+  - azure-arm-batch.ScaleSettings.fixedScale
+  langs:
+  - typeScript
+  type: interface
+  summary: 풀의 원하는 크기를 정의합니다. 이 요청 된 targetDedicatedNodes가 지정 된 경우 ' fixedScale' 또는 '자동 크기 조정'은 주기적으로 다시 평가 하는 수식을 정의 하는 중 수 있습니다. 이 속성은 지정 하지 않으면 풀 0 targetDedicatedNodes 사용 하 여 확장을 고정된 해야 합니다.
+  package: azure-arm-batch
+- uid: azure-arm-batch.ScaleSettings.autoScale
+  name: autoScale
+  fullName: autoScale
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 이 속성과 fixedScale은 상호 배타적 이므로 속성 중 하나를 지정 해야 합니다.
+  optional: true
+  syntax:
+    content: 'autoScale?: AutoScaleSettings'
+    return:
+      type:
+      - azure-arm-batch.AutoScaleSettings
+  package: azure-arm-batch
+- uid: azure-arm-batch.ScaleSettings.fixedScale
+  name: fixedScale
+  fullName: fixedScale
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 자동 크기 조정 하 고이 속성은 상호 배타적 이므로 속성 중 하나를 지정 해야 합니다.
+  optional: true
+  syntax:
+    content: 'fixedScale?: FixedScaleSettings'
+    return:
+      type:
+      - azure-arm-batch.FixedScaleSettings
+  package: azure-arm-batch
+references:
+- uid: azure-arm-batch.AutoScaleSettings
+  name: AutoScaleSettings
+  spec.typeScript:
+  - name: AutoScaleSettings
+    fullName: AutoScaleSettings
+    uid: azure-arm-batch.AutoScaleSettings
+- uid: azure-arm-batch.FixedScaleSettings
+  name: FixedScaleSettings
+  spec.typeScript:
+  - name: FixedScaleSettings
+    fullName: FixedScaleSettings
+    uid: azure-arm-batch.FixedScaleSettings

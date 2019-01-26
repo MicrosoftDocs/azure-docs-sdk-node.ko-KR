@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+ms.openlocfilehash: a9f71af819e984aff15e0a57f968ec78e2dc79d8
+ms.sourcegitcommit: 0e294f7c4dcdfae9df18ff3e82b6563680ef2519
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55054744"
+items:
+- uid: azure-arm-batch.NetworkConfiguration
+  name: NetworkConfiguration
+  fullName: NetworkConfiguration
+  children:
+  - azure-arm-batch.NetworkConfiguration.endpointConfiguration
+  - azure-arm-batch.NetworkConfiguration.subnetId
+  langs:
+  - typeScript
+  type: interface
+  summary: 풀에 대 한 네트워크 구성입니다.
+  package: azure-arm-batch
+- uid: azure-arm-batch.NetworkConfiguration.endpointConfiguration
+  name: endpointConfiguration
+  fullName: endpointConfiguration
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: 풀 끝점 구성은 virtualMachineConfiguration 속성이 있는 풀 에서만 지원 됩니다.
+  optional: true
+  syntax:
+    content: 'endpointConfiguration?: PoolEndpointConfiguration'
+    return:
+      type:
+      - azure-arm-batch.PoolEndpointConfiguration
+  package: azure-arm-batch
+- uid: azure-arm-batch.NetworkConfiguration.subnetId
+  name: subnetId
+  fullName: subnetId
+  children: []
+  langs:
+  - typeScript
+  type: property
+  summary: >-
+    가상 네트워크는 동일한 지역 및 Azure Batch 계정으로 구독에 있어야 합니다. 지정된 된 서브넷에 충분 한 사용 가능한 IP 주소 풀의 노드 수를 수용 하기에 있어야 합니다. 서브넷 충분 한 여유 ip가 없는 경우 풀에서 계산 노드를 할당할 부분적으로 및 크기 조정 오류가 발생 합니다. 'MicrosoftAzureBatch' 서비스 주체는 지정 된 VNet에 대 한 ' 클래식 Virtual Machine 참가자 ' 역할 기반 Access Control (RBAC) 역할을 있어야 합니다. 지정된 된 서브넷 계산 노드에서 작업을 예약할 수 있으려면 Azure Batch 서비스에서 통신을 허용 해야 합니다.
+
+    지정 된 VNet에 있는 경우 모든 연결 된 네트워크 보안 그룹 (NSG)을 확인 하 여이 확인할 수 있습니다. 지정된 된 서브넷의 계산 노드에 대 한 통신은 NSG에서 거부 되 면 Batch 서비스를 사용할 수 없는 계산 노드의 상태를 설정 됩니다. 일괄 처리 virtualMachineConfiguration을 통해 만든 풀에 대 한 VNet을 사용 하려면 poolAllocationMode userSubscription 계정에 게 있어야 합니다. 지정된 VNet에 연결된 NSG(네트워크 보안 그룹)가 있는 경우 인바운드 통신에 대해 몇 개의 예약된 시스템 포트를 사용할 수 있어야 합니다. 가상 컴퓨터 구성을 사용하여 만든 풀의 경우 포트 29876 및 29877을 사용하도록 설정하고 , Linux의 경우 포트 22, Windows의 경우 포트 3389를 사용하도록 설정합니다. 클라우드 서비스 구성을 사용하여 만든 풀의 경우 포트 10100, 20100 및 30100을 사용하도록 설정합니다. 또한 포트 443에서 Azure Storage에 대 한 아웃 바운드 연결을 사용 하도록 설정 합니다. 자세한 내용은 다음을 참조 하세요. https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
+  optional: true
+  syntax:
+    content: 'subnetId?: string'
+    return:
+      type:
+      - string
+  package: azure-arm-batch
+references:
+- uid: azure-arm-batch.PoolEndpointConfiguration
+  name: PoolEndpointConfiguration
+  spec.typeScript:
+  - name: PoolEndpointConfiguration
+    fullName: PoolEndpointConfiguration
+    uid: azure-arm-batch.PoolEndpointConfiguration
