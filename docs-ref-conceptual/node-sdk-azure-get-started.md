@@ -5,16 +5,16 @@ author: rloutlaw
 manager: routlaw
 ms.author: routlaw
 ms.date: 06/17/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: azure
 ms.devlang: nodejs
 ms.service: azure-nodejs
-ms.openlocfilehash: 072574c70b658806cd998dc0af8a81be3ea56bb4
-ms.sourcegitcommit: c332a32a1a850aa62405776bfe0e14251f722888
+ms.openlocfilehash: 73f115373c33423b7ad8895e73f5a2170b753f8f
+ms.sourcegitcommit: 8c9462a8538ea3d7d3fbb27454d26755abbad001
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34220585"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327374"
 ---
 # <a name="get-started-with-the-azure-modules-for-nodejs"></a>Node.js용 Azure 모듈 시작
 
@@ -23,7 +23,7 @@ ms.locfileid: "34220585"
 ## <a name="prerequisites"></a>필수 조건
 
 - Azure 계정. 계정이 없으면 [체험 계정을 얻습니다](https://azure.microsoft.com/free/).
-- [Node.js](https://nodejs.org)
+- [Node.JS](https://nodejs.org)
 - [Azure Cloud Shell](https://docs.microsoft.coms/azure/cloud-shell/quickstart) 또는 [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2)
 
 [!INCLUDE [azure-cloud-shell](../docs-ref-conceptual/includes/cloud-shell-try-it.md)]
