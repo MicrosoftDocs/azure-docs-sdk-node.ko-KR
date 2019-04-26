@@ -29,4 +29,4 @@ ms.locfileid: "34220705"
 | **MongoDB** ||
 | [Azure의 Node.js 및 MongoDB 웹앱(영문)](https://azure.microsoft.com/resources/samples/meanjs/) | [Azure에서 Node.js 및 MongoDB 웹앱 작성](http://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-nodejs-mongodb-app?toc=/azure/node/toc.json&bc=/azure/node/toc.json) 자습서와 함께 수행하는 데 사용할 수 있는 샘플 응용 프로그램입니다. |
 | **SQL Database** ||
-| [Azure SQL Database: Node.js를 사용하여 데이터 연결 및 쿼리](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-nodejs) | Node.js를 사용하여 Azure SQL Database에 연결한 다음, Transact-SQL 문을 사용하여 Windows, Ubuntu Linux 및 Mac 플랫폼에서 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제하는 방법을 보여 줍니다. |
+| [Azure SQL Database: Node.js를 사용하여 데이터 연결 및 쿼리](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-nodejs) | Node.js를 사용하여 Azure SQL 데이터베이스에 연결한 다음, Transact-SQL 문을 사용하여 Windows, Ubuntu Linux 및 Mac 플랫폼에서 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제하는 방법을 보여 줍니다. |
