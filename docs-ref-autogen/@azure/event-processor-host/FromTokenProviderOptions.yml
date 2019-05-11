@@ -1,0 +1,205 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions'
+    name: FromTokenProviderOptions
+    fullName: FromTokenProviderOptions
+    children:
+      - '@azure/event-processor-host.FromTokenProviderOptions.consumerGroup'
+      - '@azure/event-processor-host.FromTokenProviderOptions.dataTransformer'
+      - '@azure/event-processor-host.FromTokenProviderOptions.fastScanInterval'
+      - '@azure/event-processor-host.FromTokenProviderOptions.initialOffset'
+      - '@azure/event-processor-host.FromTokenProviderOptions.leaseDuration'
+      - '@azure/event-processor-host.FromTokenProviderOptions.leaseRenewInterval'
+      - '@azure/event-processor-host.FromTokenProviderOptions.onEphError'
+      - '@azure/event-processor-host.FromTokenProviderOptions.slowScanInterval'
+      - '@azure/event-processor-host.FromTokenProviderOptions.startupScanDelay'
+      - '@azure/event-processor-host.FromTokenProviderOptions.storageBlobPrefix'
+      - '@azure/event-processor-host.FromTokenProviderOptions.userAgent'
+    langs:
+      - typeScript
+    type: interface
+    summary: 지정된 된 토큰 공급자를 만드는 동안는 EventProcessorHost를 만들기 위한 제공 될 수 있는 선택적 매개 변수를 설명 합니다.
+    extends:
+      name: ClientOptionsBase
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.consumerGroup'
+    name: consumerGroup
+    fullName: consumerGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} [consumerGroup] 이벤트 허브 내에 소비자 그룹의 이름입니다. 기본값: ** `"$default"` **합니다.'
+    optional: true
+    syntax:
+      content: 'consumerGroup?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.dataTransformer'
+    name: dataTransformer
+    fullName: dataTransformer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{DataTransformer} [dataTransformer] 데이터 변환기를 인코딩 및 디코딩하는 보내거나 받은 메시지를 각각 사용할입니다. 그렇지 않은 경우 제공 된 다음 DefaultDataTransformer를 사용 합니다. 기본 변환기는 대부분의 처리 해야 합니다. 이 옵션은 특별 한 시나리오에만 사용 해야 합니다.'
+    optional: true
+    syntax:
+      content: 'dataTransformer?: DataTransformer'
+      return:
+        type:
+          - DataTransformer
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.fastScanInterval'
+    name: fastScanInterval
+    fullName: fastScanInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      {number} 개 [fastScanInterval] 사용 가능한 파티션, 고속 및 저속에 대 한 검사는 두 개의 가능한 간격 경우가 있습니다. Fast (short) 간격 ** `in seconds` ** 는 임대의 도용 발생, 빠른 리 밸 러 싱을 승격 하는 검사 후에 사용 됩니다.
+      기본값: ** `3` 초**합니다.
+    optional: true
+    syntax:
+      content: 'fastScanInterval?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.initialOffset'
+    name: initialOffset
+    fullName: initialOffset
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{EventPosition} initialOffset만 blob의 검사점 데이터가 없습니다 하 고 받는 사람을 처음 만들 때 사용 합니다. 유효 하 게 하려면이 옵션에 대해 이전에 사용 되지 않았던 새 호스트 이름을 제공 해야을 확인 하세요.'
+    optional: true
+    syntax:
+      content: 'initialOffset?: EventPosition'
+      return:
+        type:
+          - EventPosition
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.leaseDuration'
+    name: leaseDuration
+    fullName: leaseDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{number} 개 [leaseDuration] 기간을 임대 ** `in seconds` ** 갱신 하지 않으면 만료 되기 전에 합니다. 기본값: ** `30` 초**, 최소값: ** `15` 초**, 최대값: ** `60` 초**합니다.'
+    optional: true
+    syntax:
+      content: 'leaseDuration?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.leaseRenewInterval'
+    name: leaseRenewInterval
+    fullName: leaseRenewInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      {number} 개 [leaseRenewInterval] 대기 간격 ** `in seconds` ** 검사 합니다.
+      기본값: ** `10` 초**합니다.
+
+      얼마나 자주 임대를 검색 하 고 갱신할 PartitionManager을 지정 하는 임대 관리자 구현을 허용 합니다. 호스트 운영 중단 되 면 임대를 적시에 재배포 하려면 비교적 짧은 간격을 10 초 같은 것이 좋습니다. 물론 실수로 인 한 만료를 방지 하기 위해 임대 길이의 절반 미만 이어야 합니다.
+    optional: true
+    syntax:
+      content: 'leaseRenewInterval?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.onEphError'
+    name: onEphError
+    fullName: onEphError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      {OnEphError} [onEphError] 일반 오류에 대 한 알림에 수신 하도록 제공 될 수 있는 오류 처리기입니다.
+
+      특정 이벤트 허브 파티션에서 이벤트를 처리 하는 동안 발생 하는 오류에 배달 되는 `onError` 에 제공 된 처리기는 `start()` 메서드. 파티션 또는 파티션에 대해 임대를 관리 하는 동안 오류가 발생 하는 경우에 따라이 처리기가 호출 됩니다.
+    optional: true
+    syntax:
+      content: 'onEphError?: OnEphError'
+      return:
+        type:
+          - '@azure/event-processor-host.OnEphError'
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.slowScanInterval'
+    name: slowScanInterval
+    fullName: slowScanInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{number} 개 [slowScanInterval] 느린 (long) 간격 ** `in seconds` ** 는 임대의 도용 발생 하지 않은, 시스템이 안정적인 경우에 불필요 한 검색을 줄이기 위해 검색 후에 사용 됩니다. 기본값: ** `5` 초**합니다.'
+    optional: true
+    syntax:
+      content: 'slowScanInterval?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.startupScanDelay'
+    name: startupScanDelay
+    fullName: startupScanDelay
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{number} 개 [startupScanDelay] 지연 시간 ** `in seconds` ** 첫 번째 사용 가능한 파티션 검색 하 고 두 번째 사이입니다. 개별 호스트를 다른 호스트에 표시 되 고 있으므로 소유 해야 하는 파티션 수를 예측 하려고 시도 하기 전에 시스템에서 호스트의 수의 보다 정확한 개수를 가져올 수 있는 시작 최적화의 일부입니다. 기본값: ** `30` 초**합니다.'
+    optional: true
+    syntax:
+      content: 'startupScanDelay?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.storageBlobPrefix'
+    name: storageBlobPrefix
+    fullName: storageBlobPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} [storageBlobPrefix] 저장소 컨테이너 내의 blob 이름을 지정할 때 사용 되는 접두사입니다.'
+    optional: true
+    syntax:
+      content: 'storageBlobPrefix?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.FromTokenProviderOptions.userAgent'
+    name: userAgent
+    fullName: userAgent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} [userAgent] 기본 제공된 사용자에 게 추가 되어야 하는 사용자 에이전트 에이전트 문자열입니다.'
+    optional: true
+    syntax:
+      content: 'userAgent?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/event-processor-host'
+references:
+  - uid: '@azure/event-processor-host.OnEphError'
+    name: OnEphError
+    spec.typeScript:
+      - name: OnEphError
+        fullName: OnEphError
+        uid: '@azure/event-processor-host.OnEphError'
