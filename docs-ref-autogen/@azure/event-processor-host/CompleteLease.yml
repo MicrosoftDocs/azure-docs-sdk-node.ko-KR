@@ -1,0 +1,152 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/event-processor-host.CompleteLease'
+    name: CompleteLease
+    fullName: CompleteLease
+    children:
+      - '@azure/event-processor-host.CompleteLease.constructor'
+      - '@azure/event-processor-host.CompleteLease.epoch'
+      - '@azure/event-processor-host.CompleteLease.getInfo'
+      - '@azure/event-processor-host.CompleteLease.incrementEpoch'
+      - '@azure/event-processor-host.CompleteLease.isOwned'
+      - '@azure/event-processor-host.CompleteLease.isOwnedBy'
+      - '@azure/event-processor-host.CompleteLease.owner'
+      - '@azure/event-processor-host.CompleteLease.partitionId'
+    langs:
+      - typeScript
+    type: class
+    summary: 전체 임대를 설명합니다.
+    extends:
+      name: '@azure/event-processor-host.BaseLease'
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.constructor'
+    name: CompleteLease(CompleteLeaseInfo)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 임대의 인스턴스를 만듭니다.
+    syntax:
+      content: 'new CompleteLease(info: CompleteLeaseInfo)'
+      parameters:
+        - id: info
+          type:
+            - '@azure/event-processor-host.CompleteLeaseInfo'
+          description: |
+            임대 정보입니다.
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.epoch'
+    name: epoch
+    fullName: epoch
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{number 개} epoch epoch(time) 임대 값인 경쟁 노드 간에 파티션의 최신 소유자를 결정 하는 데 사용할 수 있습니다.'
+    syntax:
+      content: 'epoch: number'
+      return:
+        type:
+          - number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.getInfo'
+    name: getInfo()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 임대 정보를 가져옵니다.
+    syntax:
+      content: function getInfo()
+      parameters: []
+      return:
+        type:
+          - '@azure/event-processor-host.CompleteLeaseInfo'
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.incrementEpoch'
+    name: incrementEpoch()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Epoch의 값을 1 씩 증가 합니다.
+    syntax:
+      content: function incrementEpoch()
+      parameters: []
+      return:
+        type:
+          - number
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.isOwned'
+    name: isOwned
+    fullName: isOwned
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{부울} isOwned 나타냅니다 여부 임대를 소유 합니다. `true` 사용자가 소유 하는 경우 `false` 그렇지 않은 경우.'
+    syntax:
+      content: 'isOwned: boolean'
+      return:
+        type:
+          - boolean
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.isOwnedBy'
+    name: isOwnedBy(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: PossibleOwner this.owner에 대해 비교
+    syntax:
+      content: 'function isOwnedBy(possibleOwner: string)'
+      parameters:
+        - id: possibleOwner
+          type:
+            - string
+          description: 검사할 소유자 이름입니다.
+      return:
+        type:
+          - boolean
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.owner'
+    name: owner
+    fullName: owner
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} 소유자 파티션에 대 한 호스트 소유자입니다.'
+    syntax:
+      content: 'owner: string'
+      return:
+        type:
+          - string
+    package: '@azure/event-processor-host'
+  - uid: '@azure/event-processor-host.CompleteLease.partitionId'
+    name: partitionId
+    fullName: partitionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} partitionId 연결된 partitionId에 임대가 유지 됩니다.'
+    syntax:
+      content: 'partitionId: string'
+      return:
+        type:
+          - string
+    package: '@azure/event-processor-host'
+references:
+  - uid: '@azure/event-processor-host.BaseLease'
+    name: BaseLease
+    spec.typeScript:
+      - name: BaseLease
+        fullName: BaseLease
+        uid: '@azure/event-processor-host.BaseLease'
+  - uid: '@azure/event-processor-host.CompleteLeaseInfo'
+    name: CompleteLeaseInfo
+    spec.typeScript:
+      - name: CompleteLeaseInfo
+        fullName: CompleteLeaseInfo
+        uid: '@azure/event-processor-host.CompleteLeaseInfo'

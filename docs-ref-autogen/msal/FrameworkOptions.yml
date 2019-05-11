@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msal.FrameworkOptions
+    name: FrameworkOptions
+    fullName: FrameworkOptions
+    children: []
+    langs:
+      - typeScript
+    type: type alias
+    summary: |+
+      응용 프로그램/프레임 워크 특정 환경 지원 isAngular-플래그 Angular 프레임 워크 인지 확인으로 설정 합니다. 토큰을 브로드캐스트하는 데 사용 합니다. TODO:는 core에서이 종속성이 해결 하기 위해.
+      unprotectedResources-배열의 URI는 보호 되지 않는 리소스입니다. MSAL이이 URI는 나가는 요청 토큰을 연결 됩니다. 기본값은 'null'입니다.
+      protectedResourceMap-이 매핑하는 것에 MSAL에 의해 자동으로 웹 API 호출에서 액세스 토큰을 연결 하는 데 사용 되는 범위는 리소스입니다.
+      리소스에 대 한 단일 액세스 토큰을 가져옵니다. 사용자 특정 리소스 경로 다음과 같이 매핑할 수 있도록: {"https://graph.microsoft.com/v1.0/me", ["user.read"]}, 또는 리소스의 앱 URL: {"https://graph.microsoft.com/", ["user.read", "mail.send"]}.
+      CORS 호출에 대 한 필수입니다.
+
+    syntax:
+      content: 'type FrameworkOptions = { isAngular:boolean, protectedResourceMap:Map<string>, unprotectedResources:Array<string> }'
+    package: msal
