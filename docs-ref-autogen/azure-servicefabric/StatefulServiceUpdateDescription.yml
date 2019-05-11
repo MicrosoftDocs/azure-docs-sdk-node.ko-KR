@@ -1,0 +1,276 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription
+    name: StatefulServiceUpdateDescription
+    fullName: StatefulServiceUpdateDescription
+    children:
+      - azure-servicefabric.StatefulServiceUpdateDescription.correlationScheme
+      - azure-servicefabric.StatefulServiceUpdateDescription.defaultMoveCost
+      - azure-servicefabric.StatefulServiceUpdateDescription.flags
+      - azure-servicefabric.StatefulServiceUpdateDescription.loadMetrics
+      - azure-servicefabric.StatefulServiceUpdateDescription.minReplicaSetSize
+      - azure-servicefabric.StatefulServiceUpdateDescription.placementConstraints
+      - azure-servicefabric.StatefulServiceUpdateDescription.quorumLossWaitDurationSeconds
+      - azure-servicefabric.StatefulServiceUpdateDescription.replicaRestartWaitDurationSeconds
+      - azure-servicefabric.StatefulServiceUpdateDescription.scalingPolicies
+      - azure-servicefabric.StatefulServiceUpdateDescription.serviceKind
+      - azure-servicefabric.StatefulServiceUpdateDescription.servicePlacementPolicies
+      - azure-servicefabric.StatefulServiceUpdateDescription.standByReplicaKeepDurationSeconds
+      - azure-servicefabric.StatefulServiceUpdateDescription.targetReplicaSetSize
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="11cc8-101">상태 저장 서비스에 대 한 업데이트를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-101">Describes an update for a stateful service.</span></span>
+    extends:
+      name: azure-servicefabric.ServiceUpdateDescription
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.correlationScheme
+    name: correlationScheme
+    fullName: correlationScheme
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-102">상관 관계 구성표입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-102">The correlation scheme.</span></span>
+    optional: true
+    syntax:
+      content: 'correlationScheme?: ServiceCorrelationDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ServiceCorrelationDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.defaultMoveCost
+    name: defaultMoveCost
+    fullName: defaultMoveCost
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="11cc8-103">서비스 이동 비용입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-103">The move cost for the service.</span></span> <span data-ttu-id="11cc8-104">가능한 값은 다음과 같습니다. ''Zero'', ''Low'', ''Medium'', ''High''</span><span class="sxs-lookup"><span data-stu-id="11cc8-104">Possible values include: ''Zero'', ''Low'', ''Medium'', ''High''</span></span>'
+    optional: true
+    syntax:
+      content: 'defaultMoveCost?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.flags
+    name: flags
+    fullName: flags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="11cc8-105">다른 속성이 설정 되어 있는지 여부를 나타내는 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-105">Flags indicating whether other properties are set.</span></span> <span data-ttu-id="11cc8-106">각 연결 된 속성에 해당, 아래에 지정 된 플래그를 있는 경우 설정, 속성이 지정 되어 있음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-106">Each of the associated properties corresponds to a flag, specified below, which, if set, indicate that the property is specified.</span></span>
+      <span data-ttu-id="11cc8-107">이 속성에 비트 'OR' 연산자를 사용 하 여 얻은 해당 플래그의 조합일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-107">This property can be a combination of those flags obtained using bitwise 'OR' operator.</span></span>
+      <span data-ttu-id="11cc8-108">예를 들어 제공 된 값이 6의 ReplicaRestartWaitDuration (2) 및 (4)의 QuorumLossWaitDuration 플래그 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-108">For example, if the provided value is 6 then the flags for ReplicaRestartWaitDuration (2) and QuorumLossWaitDuration (4) are set.</span></span>
+      - <span data-ttu-id="11cc8-109">None-를 나타내지 않습니다 다른 속성이 설정 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-109">None - Does not indicate any other properties are set.</span></span> <span data-ttu-id="11cc8-110">값은 0입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-110">The value is zero.</span></span>
+      - <span data-ttu-id="11cc8-111">TargetReplicaSetSize/InstanceCount-의 TargetReplicaSetSize 속성 (상태 저장 서비스) 또는 InstanceCount 속성 (상태 비저장 서비스)에 대 한 설정 되었는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-111">TargetReplicaSetSize/InstanceCount - Indicates whether the TargetReplicaSetSize property (for Stateful services) or the InstanceCount property (for Stateless services) is set.</span></span> <span data-ttu-id="11cc8-112">값은 1입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-112">The value is 1.</span></span>
+      - <span data-ttu-id="11cc8-113">ReplicaRestartWaitDuration-속성의 ReplicaRestartWaitDuration를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-113">ReplicaRestartWaitDuration - Indicates the ReplicaRestartWaitDuration property is set.</span></span> <span data-ttu-id="11cc8-114">값은 2입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-114">The value is  2.</span></span>
+      - <span data-ttu-id="11cc8-115">QuorumLossWaitDuration-속성의 QuorumLossWaitDuration를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-115">QuorumLossWaitDuration - Indicates the QuorumLossWaitDuration property is set.</span></span> <span data-ttu-id="11cc8-116">값은</span><span class="sxs-lookup"><span data-stu-id="11cc8-116">The value is</span></span>
+      4.
+      - <span data-ttu-id="11cc8-117">StandByReplicaKeepDuration-의 StandByReplicaKeepDuration 속성을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-117">StandByReplicaKeepDuration - Indicates the StandByReplicaKeepDuration property is set.</span></span> <span data-ttu-id="11cc8-118">값은 8입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-118">The value is 8.</span></span>
+      - <span data-ttu-id="11cc8-119">MinReplicaSetSize-속성이 MinReplicaSetSize를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-119">MinReplicaSetSize - Indicates the MinReplicaSetSize property is set.</span></span> <span data-ttu-id="11cc8-120">값은 16입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-120">The value is 16.</span></span>
+      - <span data-ttu-id="11cc8-121">PlacementConstraints-속성의 PlacementConstraints를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-121">PlacementConstraints - Indicates the PlacementConstraints property is set.</span></span> <span data-ttu-id="11cc8-122">값은 32입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-122">The value is 32.</span></span>
+      - <span data-ttu-id="11cc8-123">PlacementPolicyList-속성이 ServicePlacementPolicies를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-123">PlacementPolicyList - Indicates the ServicePlacementPolicies property is set.</span></span> <span data-ttu-id="11cc8-124">값은</span><span class="sxs-lookup"><span data-stu-id="11cc8-124">The value is</span></span>
+      64.
+      - <span data-ttu-id="11cc8-125">상관 관계-속성이 CorrelationScheme를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-125">Correlation - Indicates the CorrelationScheme property is set.</span></span> <span data-ttu-id="11cc8-126">값은 128입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-126">The value is 128.</span></span>
+      - <span data-ttu-id="11cc8-127">메트릭-속성이 ServiceLoadMetrics를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-127">Metrics - Indicates the ServiceLoadMetrics property is set.</span></span> <span data-ttu-id="11cc8-128">값은 256입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-128">The value is 256.</span></span>
+      - <span data-ttu-id="11cc8-129">DefaultMoveCost-속성이 DefaultMoveCost를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-129">DefaultMoveCost - Indicates the DefaultMoveCost property is set.</span></span> <span data-ttu-id="11cc8-130">값은 512입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-130">The value is 512.</span></span>
+      - <span data-ttu-id="11cc8-131">ScalingPolicy-속성이 ScalingPolicies를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-131">ScalingPolicy - Indicates the ScalingPolicies property is set.</span></span> <span data-ttu-id="11cc8-132">값은 1024입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-132">The value is 1024.</span></span>
+    optional: true
+    syntax:
+      content: 'flags?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.loadMetrics
+    name: loadMetrics
+    fullName: loadMetrics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-133">서비스 부하 메트릭입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-133">The service load metrics.</span></span>
+    optional: true
+    syntax:
+      content: 'loadMetrics?: ServiceLoadMetricDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ServiceLoadMetricDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.minReplicaSetSize
+    name: minReplicaSetSize
+    fullName: minReplicaSetSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-134">숫자로 된 최소 복제본 세트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-134">The minimum replica set size as a number.</span></span>
+    optional: true
+    syntax:
+      content: 'minReplicaSetSize?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.placementConstraints
+    name: placementConstraints
+    fullName: placementConstraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="11cc8-135">문자열 형태의 배치 제약 조건입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-135">The placement constraints as a string.</span></span> <span data-ttu-id="11cc8-136">배치 제약 조건은 노드 속성에 대한 부울 식이며 서비스 요구 사항을 기반으로 특정 노드에 대한 서비스 제한을 허용합니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-136">Placement constraints are boolean expressions on node properties and allow for restricting a service to particular nodes based on the service requirements.</span></span> <span data-ttu-id="11cc8-137">예를 들어, 배치 NodeType이 파란색 인 노드에 서비스를 다음을 지정 합니다. "NodeColor == blue)"입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-137">For example, to place a service on nodes where NodeType is blue specify the following: "NodeColor == blue)".</span></span>'
+    optional: true
+    syntax:
+      content: 'placementConstraints?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.quorumLossWaitDurationSeconds
+    name: quorumLossWaitDurationSeconds
+    fullName: quorumLossWaitDurationSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="11cc8-138">파티션이 쿼럼 손실 상태가 될 수 있는 최대 지속 시간(초)입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-138">The maximum duration, in seconds, for which a partition is allowed to be in a state of quorum loss.</span></span>'
+    optional: true
+    syntax:
+      content: 'quorumLossWaitDurationSeconds?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.replicaRestartWaitDurationSeconds
+    name: replicaRestartWaitDurationSeconds
+    fullName: replicaRestartWaitDurationSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="11cc8-139">복제본이 다운된 시점과 새 복제본이 생성되는 시점 사이의 간격(초)입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-139">The duration, in seconds, between when a replica goes down and when a new replica is created.</span></span>'
+    optional: true
+    syntax:
+      content: 'replicaRestartWaitDurationSeconds?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.scalingPolicies
+    name: scalingPolicies
+    fullName: scalingPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-140">이 서비스에 대 한 크기 조정 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-140">Scaling policies for this service.</span></span>
+    optional: true
+    syntax:
+      content: 'scalingPolicies?: ScalingPolicyDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ScalingPolicyDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.serviceKind
+    name: serviceKind
+    fullName: serviceKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-141">다형 판별자</span><span class="sxs-lookup"><span data-stu-id="11cc8-141">Polymorphic Discriminator</span></span>
+    syntax:
+      content: 'serviceKind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.servicePlacementPolicies
+    name: servicePlacementPolicies
+    fullName: servicePlacementPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-142">서비스 배치 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-142">The service placement policies.</span></span>
+    optional: true
+    syntax:
+      content: 'servicePlacementPolicies?: ServicePlacementPolicyDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ServicePlacementPolicyDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.standByReplicaKeepDurationSeconds
+    name: standByReplicaKeepDurationSeconds
+    fullName: standByReplicaKeepDurationSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-143">StandBy 복제본을 제거 하기 전에 유지 해야 하는 기간에 대 한 정의입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-143">The definition on how long StandBy replicas should be maintained before being removed.</span></span>
+    optional: true
+    syntax:
+      content: 'standByReplicaKeepDurationSeconds?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceUpdateDescription.targetReplicaSetSize
+    name: targetReplicaSetSize
+    fullName: targetReplicaSetSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="11cc8-144">숫자로 된 대상 복제본 세트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="11cc8-144">The target replica set size as a number.</span></span>
+    optional: true
+    syntax:
+      content: 'targetReplicaSetSize?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.ServiceUpdateDescription
+    name: ServiceUpdateDescription
+    spec.typeScript:
+      - name: ServiceUpdateDescription
+        fullName: ServiceUpdateDescription
+        uid: azure-servicefabric.ServiceUpdateDescription
+  - uid: 'azure-servicefabric.ServiceCorrelationDescription[]'
+    name: 'ServiceCorrelationDescription[]'
+    spec.typeScript:
+      - name: ServiceCorrelationDescription
+        fullName: ServiceCorrelationDescription
+        uid: azure-servicefabric.ServiceCorrelationDescription
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-servicefabric.ServiceLoadMetricDescription[]'
+    name: 'ServiceLoadMetricDescription[]'
+    spec.typeScript:
+      - name: ServiceLoadMetricDescription
+        fullName: ServiceLoadMetricDescription
+        uid: azure-servicefabric.ServiceLoadMetricDescription
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-servicefabric.ScalingPolicyDescription[]'
+    name: 'ScalingPolicyDescription[]'
+    spec.typeScript:
+      - name: ScalingPolicyDescription
+        fullName: ScalingPolicyDescription
+        uid: azure-servicefabric.ScalingPolicyDescription
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-servicefabric.ServicePlacementPolicyDescription[]'
+    name: 'ServicePlacementPolicyDescription[]'
+    spec.typeScript:
+      - name: ServicePlacementPolicyDescription
+        fullName: ServicePlacementPolicyDescription
+        uid: azure-servicefabric.ServicePlacementPolicyDescription
+      - name: '[]'
+        fullName: '[]'
