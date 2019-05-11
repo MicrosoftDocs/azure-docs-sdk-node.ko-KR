@@ -1,0 +1,329 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-apimanagement.AuthorizationServerContract
+    name: AuthorizationServerContract
+    fullName: AuthorizationServerContract
+    children:
+      - azure-arm-apimanagement.AuthorizationServerContract.authorizationEndpoint
+      - azure-arm-apimanagement.AuthorizationServerContract.authorizationMethods
+      - azure-arm-apimanagement.AuthorizationServerContract.bearerTokenSendingMethods
+      - azure-arm-apimanagement.AuthorizationServerContract.clientAuthenticationMethod
+      - azure-arm-apimanagement.AuthorizationServerContract.clientId
+      - azure-arm-apimanagement.AuthorizationServerContract.clientRegistrationEndpoint
+      - azure-arm-apimanagement.AuthorizationServerContract.clientSecret
+      - azure-arm-apimanagement.AuthorizationServerContract.defaultScope
+      - azure-arm-apimanagement.AuthorizationServerContract.description
+      - azure-arm-apimanagement.AuthorizationServerContract.displayName
+      - azure-arm-apimanagement.AuthorizationServerContract.grantTypes
+      - azure-arm-apimanagement.AuthorizationServerContract.id
+      - azure-arm-apimanagement.AuthorizationServerContract.name
+      - azure-arm-apimanagement.AuthorizationServerContract.resourceOwnerPassword
+      - azure-arm-apimanagement.AuthorizationServerContract.resourceOwnerUsername
+      - azure-arm-apimanagement.AuthorizationServerContract.supportState
+      - azure-arm-apimanagement.AuthorizationServerContract.tokenBodyParameters
+      - azure-arm-apimanagement.AuthorizationServerContract.tokenEndpoint
+      - azure-arm-apimanagement.AuthorizationServerContract.type
+    langs:
+      - typeScript
+    type: interface
+    summary: 외부 OAuth 권한 부여 서버 설정입니다.
+    extends:
+      name: azure-arm-apimanagement.Resource
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.authorizationEndpoint
+    name: authorizationEndpoint
+    fullName: authorizationEndpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'OAuth 권한 부여 끝점입니다. http://tools.ietf.org/html/rfc6749#section-3.2을 참조하세요.'
+    syntax:
+      content: 'authorizationEndpoint: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.authorizationMethods
+    name: authorizationMethods
+    fullName: authorizationMethods
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 권한 부여 끝점에서 지 원하는 HTTP 동사입니다. GET 항상 있어야 합니다. 게시물은 선택 사항입니다.
+    optional: true
+    syntax:
+      content: 'authorizationMethods?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.bearerTokenSendingMethods
+    name: bearerTokenSendingMethods
+    fullName: bearerTokenSendingMethods
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 토큰은 API에 전달 하는 액세스 하 여 메커니즘을 지정 합니다.
+    optional: true
+    syntax:
+      content: 'bearerTokenSendingMethods?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.clientAuthenticationMethod
+    name: clientAuthenticationMethod
+    fullName: clientAuthenticationMethod
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      이 권한 부여 서버의 토큰 끝점에서 지 원하는 인증 방법입니다.
+      가능한 값에는 기본 및/또는 본문은입니다. 본문을 지정 하면 클라이언트 자격 증명 및 기타 매개 변수는 응용 프로그램/x-www-형식-urlencoded 형식의 요청 본문에 전달 됩니다.
+    optional: true
+    syntax:
+      content: 'clientAuthenticationMethod?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.clientId
+    name: clientId
+    fullName: clientId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 권한 부여 서버를 사용 하 여 등록 하는 클라이언트 또는 앱 id입니다.
+    syntax:
+      content: 'clientId: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.clientRegistrationEndpoint
+    name: clientRegistrationEndpoint
+    fullName: clientRegistrationEndpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 권한 부여 서버에 대 한 클라이언트 또는 앱 등록 수행 되는 페이지에 대 한 참조를 선택 사항입니다. 참조 되는 엔터티에 대 한 절대 URL을 포함 합니다.
+    syntax:
+      content: 'clientRegistrationEndpoint: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.clientSecret
+    name: clientSecret
+    fullName: clientSecret
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 권한 부여 서버를 사용 하 여 등록 하는 클라이언트 또는 앱 암호입니다.
+    optional: true
+    syntax:
+      content: 'clientSecret?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.defaultScope
+    name: defaultScope
+    fullName: defaultScope
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 액세스 토큰 범위는 기본적으로 요청 될 것입니다. API 수준에서 재정의할 수 있습니다. 공백으로 구분 된 값을 포함 하는 문자열의 형태로 제공 되어야 합니다.
+    optional: true
+    syntax:
+      content: 'defaultScope?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.description
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 권한 부여 서버의 설명입니다. HTML 서식 지정 태그를 포함할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'description?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.displayName
+    name: displayName
+    fullName: displayName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 친숙 한 권한 부여 서버 이름입니다.
+    syntax:
+      content: 'displayName: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.grantTypes
+    name: grantTypes
+    fullName: grantTypes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클라이언트에서 액세스 토큰을 요청 하는 데는 권한 부여를의 형식입니다.
+    syntax:
+      content: 'grantTypes: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 ID입니다.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 이름입니다.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.resourceOwnerPassword
+    name: resourceOwnerPassword
+    fullName: resourceOwnerPassword
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 지정할 수 있습니다 필요에 따라이 권한 부여 서버에서 리소스 소유자 암호 권한 유형이 지원 되는 경우. 기본 리소스 소유자 암호입니다.
+    optional: true
+    syntax:
+      content: 'resourceOwnerPassword?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.resourceOwnerUsername
+    name: resourceOwnerUsername
+    fullName: resourceOwnerUsername
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 지정할 수 있습니다 필요에 따라이 권한 부여 서버에서 리소스 소유자 암호 권한 유형이 지원 되는 경우. 기본 리소스 소유자 사용자 이름입니다.
+    optional: true
+    syntax:
+      content: 'resourceOwnerUsername?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.supportState
+    name: supportState
+    fullName: supportState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: True 인 경우 권한 부여 서버는 응답에 권한 부여 요청에서 상태 매개 변수를 포함 됩니다. 클라이언트는 프로토콜 보안을 강화 하려면 상태 매개 변수를 사용할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'supportState?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.tokenBodyParameters
+    name: tokenBodyParameters
+    fullName: tokenBodyParameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '즉, 이름 및 값 문자열 속성을 사용 하 여 개체의 JSON 배열을 나타내는이 권한 부여 서버의 토큰 끝점에 필요한 추가 매개 변수 {"name": "이름 값", "value": "value"}.'
+    optional: true
+    syntax:
+      content: 'tokenBodyParameters?: TokenBodyParameterContract[]'
+      return:
+        type:
+          - 'azure-arm-apimanagement.TokenBodyParameterContract[]'
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.tokenEndpoint
+    name: tokenEndpoint
+    fullName: tokenEndpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: OAuth 토큰 끝점입니다. 참조 되는 엔터티에 대 한 절대 URI를 포함 합니다.
+    optional: true
+    syntax:
+      content: 'tokenEndpoint?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+  - uid: azure-arm-apimanagement.AuthorizationServerContract.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: API Management 리소스에 대 한 리소스 종류입니다.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-apimanagement
+references:
+  - uid: azure-arm-apimanagement.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-apimanagement.Resource
+  - uid: 'azure-arm-apimanagement.TokenBodyParameterContract[]'
+    name: 'TokenBodyParameterContract[]'
+    spec.typeScript:
+      - name: TokenBodyParameterContract
+        fullName: TokenBodyParameterContract
+        uid: azure-arm-apimanagement.TokenBodyParameterContract
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,188 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.Probe
+    name: Probe
+    fullName: Probe
+    children:
+      - azure-arm-network.Probe.etag
+      - azure-arm-network.Probe.id
+      - azure-arm-network.Probe.intervalInSeconds
+      - azure-arm-network.Probe.loadBalancingRules
+      - azure-arm-network.Probe.name
+      - azure-arm-network.Probe.numberOfProbes
+      - azure-arm-network.Probe.port
+      - azure-arm-network.Probe.protocol
+      - azure-arm-network.Probe.provisioningState
+      - azure-arm-network.Probe.requestPath
+    langs:
+      - typeScript
+    type: interface
+    summary: 부하 분산 장치 프로브 합니다.
+    extends:
+      name: azure-arm-network.SubResource
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 ID입니다.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.intervalInSeconds
+    name: intervalInSeconds
+    fullName: intervalInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      상태에 대한 엔드포인트를 검색하는 빈도에 대한 간격(초)입니다.
+      일반적으로 간격은 인스턴스가 순환에서 제거되기 전에 전체 두 프로브를 허용하는 할당된 시간 제한 기간(초)의 절반보다 약간 더 짧습니다. 기본값은 15이며 최소값은 5입니다.
+    optional: true
+    syntax:
+      content: 'intervalInSeconds?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.loadBalancingRules
+    name: loadBalancingRules
+    fullName: loadBalancingRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 프로브를 사용 하는 부하 분산 장치 규칙입니다.
+    optional: true
+    syntax:
+      content: 'loadBalancingRules?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network.SubResource[]'
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 그룹 내에서 고유한 리소스의 이름을 가져옵니다. 이 이름은 리소스에 액세스할 때 사용할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.numberOfProbes
+    name: numberOfProbes
+    fullName: numberOfProbes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '응답 없음, 더 이상 트래픽을 끝점으로 전달 하지를 중지 하면 위치를 조사 하는 수 합니다. 이 값에는 끝점을 만들 수 있습니다 Azure에서 사용 되는 일반적인 시간 보다 빠르거나 느리게 순환에서 제거 합니다.'
+    optional: true
+    syntax:
+      content: 'numberOfProbes?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.port
+    name: port
+    fullName: port
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 프로브 통신을 위한 포트입니다. 가능한 값 범위는 1에서 65535 사이입니다.
+    syntax:
+      content: 'port: number'
+      return:
+        type:
+          - number
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.protocol
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '끝점의 프로토콜입니다. 가능한 값은 다음과 같습니다. ''Http'', ''Tcp'' 또는 ''h t t p. ''Tcp'' 지정 된 경우에 수신된 된 ACK가 프로브가 성공 하려면 필요 합니다. ''Http'' 또는 ''h''를 지정 하는 경우에서 200 정상 응답이 프로브가 성공 하려면에 대 한 필요한 URI를 지정 합니다. 가능한 값은 다음과 같습니다. '' Http'', ''Tcp'', ''h t t p'
+    syntax:
+      content: 'protocol: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '공용 IP 리소스의 프로 비전 상태를 가져옵니다. 가능한 값은 다음과 같습니다. ''업데이트'', ''삭제'' 및 ''실패''입니다.'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.Probe.requestPath
+    name: requestPath
+    fullName: requestPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: VM에서 상태를 요청하는 데 사용되는 URI입니다. 프로토콜이 http로 설정 된 경우 경로가 필요 합니다. 그렇지 않은 경우 허용되지 않습니다. 기본값은 없습니다.
+    optional: true
+    syntax:
+      content: 'requestPath?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+references:
+  - uid: azure-arm-network.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+      - name: '[]'
+        fullName: '[]'

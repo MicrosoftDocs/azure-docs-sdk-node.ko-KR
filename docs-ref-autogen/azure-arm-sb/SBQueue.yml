@@ -1,0 +1,410 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-sb.SBQueue
+    name: SBQueue
+    fullName: SBQueue
+    children:
+      - azure-arm-sb.SBQueue.accessedAt
+      - azure-arm-sb.SBQueue.autoDeleteOnIdle
+      - azure-arm-sb.SBQueue.countDetails
+      - azure-arm-sb.SBQueue.createdAt
+      - azure-arm-sb.SBQueue.deadLetteringOnMessageExpiration
+      - azure-arm-sb.SBQueue.defaultMessageTimeToLive
+      - azure-arm-sb.SBQueue.duplicateDetectionHistoryTimeWindow
+      - azure-arm-sb.SBQueue.enableBatchedOperations
+      - azure-arm-sb.SBQueue.enableExpress
+      - azure-arm-sb.SBQueue.enablePartitioning
+      - azure-arm-sb.SBQueue.forwardDeadLetteredMessagesTo
+      - azure-arm-sb.SBQueue.forwardTo
+      - azure-arm-sb.SBQueue.id
+      - azure-arm-sb.SBQueue.lockDuration
+      - azure-arm-sb.SBQueue.maxDeliveryCount
+      - azure-arm-sb.SBQueue.maxSizeInMegabytes
+      - azure-arm-sb.SBQueue.messageCount
+      - azure-arm-sb.SBQueue.name
+      - azure-arm-sb.SBQueue.requiresDuplicateDetection
+      - azure-arm-sb.SBQueue.requiresSession
+      - azure-arm-sb.SBQueue.sizeInBytes
+      - azure-arm-sb.SBQueue.status
+      - azure-arm-sb.SBQueue.type
+      - azure-arm-sb.SBQueue.updatedAt
+    langs:
+      - typeScript
+    type: interface
+    summary: 큐 리소스의 설명입니다.
+    extends:
+      name: azure-arm-sb.Resource
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.accessedAt
+    name: accessedAt
+    fullName: accessedAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 메시지가 전송 된 마지막 시간 또는 마지막으로이 큐에 수신 요청이 했습니다.
+    optional: true
+    syntax:
+      content: 'accessedAt?: Date'
+      return:
+        type:
+          - Date
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.autoDeleteOnIdle
+    name: autoDeleteOnIdle
+    fullName: autoDeleteOnIdle
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 큐 자동으로 삭제 하는 timeSpan 유휴 간격을 ISO 8061입니다. 최소 기간은 5분입니다.
+    optional: true
+    syntax:
+      content: 'autoDeleteOnIdle?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.countDetails
+    name: countDetails
+    fullName: countDetails
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 메시지 개수 세부 정보입니다.
+    optional: true
+    syntax:
+      content: 'countDetails?: MessageCountDetails'
+      return:
+        type:
+          - azure-arm-sb.MessageCountDetails
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.createdAt
+    name: createdAt
+    fullName: createdAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 메시지를 만든 정확한 시간
+    optional: true
+    syntax:
+      content: 'createdAt?: Date'
+      return:
+        type:
+          - Date
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.deadLetteringOnMessageExpiration
+    name: deadLetteringOnMessageExpiration
+    fullName: deadLetteringOnMessageExpiration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 큐는 메시지가 만료 되 면 배달 못 한 편지 지원에 있는지 여부를 나타내는 값입니다.
+    optional: true
+    syntax:
+      content: 'deadLetteringOnMessageExpiration?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.defaultMessageTimeToLive
+    name: defaultMessageTimeToLive
+    fullName: defaultMessageTimeToLive
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'ISO 8601 기본 메시지 시간 범위 제한 값입니다. 이 기간은 메시지가 만료 되는, Service Bus에 메시지를 보내면 시작 합니다. 이것이 TimeToLive 메시지 자체에 설정 하지 않은 경우 사용 된 기본값입니다.'
+    optional: true
+    syntax:
+      content: 'defaultMessageTimeToLive?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.duplicateDetectionHistoryTimeWindow
+    name: duplicateDetectionHistoryTimeWindow
+    fullName: duplicateDetectionHistoryTimeWindow
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 중복 검색 기록 기간을 정의 하는 ISO 8601 timeSpan 구조체입니다. 기본값은 10 분입니다.
+    optional: true
+    syntax:
+      content: 'duplicateDetectionHistoryTimeWindow?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.enableBatchedOperations
+    name: enableBatchedOperations
+    fullName: enableBatchedOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서버 쪽 일괄 처리 작업 사용 되는지 여부를 나타내는 값입니다.
+    optional: true
+    syntax:
+      content: 'enableBatchedOperations?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.enableExpress
+    name: enableExpress
+    fullName: enableExpress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Express 엔터티 사용 되는지 여부를 나타내는 값입니다. Express 큐를 일시적으로 영구 저장소에 쓰기 전에 메모리에 메시지를 보유 합니다.
+    optional: true
+    syntax:
+      content: 'enableExpress?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.enablePartitioning
+    name: enablePartitioning
+    fullName: enablePartitioning
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 큐 여러 메시지 브로커 간에 분할할 수 있는지 여부를 나타내는 값입니다.
+    optional: true
+    syntax:
+      content: 'enablePartitioning?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.forwardDeadLetteredMessagesTo
+    name: forwardDeadLetteredMessagesTo
+    fullName: forwardDeadLetteredMessagesTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 배달 못 한 편지 메시지를 전달할 큐/항목 이름
+    optional: true
+    syntax:
+      content: 'forwardDeadLetteredMessagesTo?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.forwardTo
+    name: forwardTo
+    fullName: forwardTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 메시지를 큐/항목 이름
+    optional: true
+    syntax:
+      content: 'forwardTo?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 ID
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.lockDuration
+    name: lockDuration
+    fullName: lockDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '보기-잠금; ISO 8601 시간 간격 기간 즉, 다른 수신기에 대해 메시지가 잠겨 있는 시간의 양입니다. LockDuration에 대 한 최대값은 5 분입니다. 기본값은 1 분입니다.'
+    optional: true
+    syntax:
+      content: 'lockDuration?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.maxDeliveryCount
+    name: maxDeliveryCount
+    fullName: maxDeliveryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 최대 배달 횟수입니다. 메시지는 배달이 지나면 자동으로 전달 실패. 기본값은 10입니다.
+    optional: true
+    syntax:
+      content: 'maxDeliveryCount?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.maxSizeInMegabytes
+    name: maxSizeInMegabytes
+    fullName: maxSizeInMegabytes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 큐에 할당 된 메모리의 크기 (메가바이트)는 큐의 최대 크기입니다. 기본값은 1024입니다.
+    optional: true
+    syntax:
+      content: 'maxSizeInMegabytes?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.messageCount
+    name: messageCount
+    fullName: messageCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 큐의 메시지 개수입니다.
+    optional: true
+    syntax:
+      content: 'messageCount?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 이름
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.requiresDuplicateDetection
+    name: requiresDuplicateDetection
+    fullName: requiresDuplicateDetection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 큐 중복 검색에 필요한 경우를 나타내는 값입니다.
+    optional: true
+    syntax:
+      content: 'requiresDuplicateDetection?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.requiresSession
+    name: requiresSession
+    fullName: requiresSession
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 큐의 세션 개념을 지원 하는지 여부를 나타내는 값입니다.
+    optional: true
+    syntax:
+      content: 'requiresSession?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.sizeInBytes
+    name: sizeInBytes
+    fullName: sizeInBytes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 크기 (바이트)에서 큐입니다.
+    optional: true
+    syntax:
+      content: 'sizeInBytes?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '메시징 엔터티의 상태에 대 한 값을 열거 합니다. 가능한 값은 다음과 같습니다. ''Active'', ''Disabled'', ''Restoring'', ''SendDisabled'', ''ReceiveDisabled'', ''Creating'', ''Deleting'', ''Renaming'', ''Unknown'''
+    optional: true
+    syntax:
+      content: 'status?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 종류
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-sb
+  - uid: azure-arm-sb.SBQueue.updatedAt
+    name: updatedAt
+    fullName: updatedAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 정확한 시간 메시지 업데이트 되었습니다.
+    optional: true
+    syntax:
+      content: 'updatedAt?: Date'
+      return:
+        type:
+          - Date
+    package: azure-arm-sb
+references:
+  - uid: azure-arm-sb.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-sb.Resource
+  - uid: azure-arm-sb.MessageCountDetails
+    name: MessageCountDetails
+    spec.typeScript:
+      - name: MessageCountDetails
+        fullName: MessageCountDetails
+        uid: azure-arm-sb.MessageCountDetails

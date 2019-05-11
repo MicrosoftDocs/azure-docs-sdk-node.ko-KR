@@ -1,0 +1,413 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.StatefulServiceDescription
+    name: StatefulServiceDescription
+    fullName: StatefulServiceDescription
+    children:
+      - azure-servicefabric.StatefulServiceDescription.applicationName
+      - azure-servicefabric.StatefulServiceDescription.correlationScheme
+      - azure-servicefabric.StatefulServiceDescription.defaultMoveCost
+      - azure-servicefabric.StatefulServiceDescription.flags
+      - azure-servicefabric.StatefulServiceDescription.hasPersistedState
+      - azure-servicefabric.StatefulServiceDescription.initializationData
+      - azure-servicefabric.StatefulServiceDescription.isDefaultMoveCostSpecified
+      - azure-servicefabric.StatefulServiceDescription.minReplicaSetSize
+      - azure-servicefabric.StatefulServiceDescription.partitionDescription
+      - azure-servicefabric.StatefulServiceDescription.placementConstraints
+      - azure-servicefabric.StatefulServiceDescription.quorumLossWaitDurationSeconds
+      - azure-servicefabric.StatefulServiceDescription.replicaRestartWaitDurationSeconds
+      - azure-servicefabric.StatefulServiceDescription.scalingPolicies
+      - azure-servicefabric.StatefulServiceDescription.serviceDnsName
+      - azure-servicefabric.StatefulServiceDescription.serviceKind
+      - azure-servicefabric.StatefulServiceDescription.serviceLoadMetrics
+      - azure-servicefabric.StatefulServiceDescription.serviceName
+      - azure-servicefabric.StatefulServiceDescription.servicePackageActivationMode
+      - azure-servicefabric.StatefulServiceDescription.servicePlacementPolicies
+      - azure-servicefabric.StatefulServiceDescription.serviceTypeName
+      - azure-servicefabric.StatefulServiceDescription.standByReplicaKeepDurationSeconds
+      - azure-servicefabric.StatefulServiceDescription.targetReplicaSetSize
+    langs:
+      - typeScript
+    type: interface
+    summary: 상태 저장 서비스를 설명합니다.
+    extends:
+      name: azure-servicefabric.ServiceDescription
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.applicationName
+    name: applicationName
+    fullName: applicationName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '응용 프로그램의 이름을 포함 하는 '' fabric:'' URI 구성표가 없는 애플리케이션의 전체 이름입니다.'
+    optional: true
+    syntax:
+      content: 'applicationName?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.correlationScheme
+    name: correlationScheme
+    fullName: correlationScheme
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 상관 관계 구성표입니다.
+    optional: true
+    syntax:
+      content: 'correlationScheme?: ServiceCorrelationDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ServiceCorrelationDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.defaultMoveCost
+    name: defaultMoveCost
+    fullName: defaultMoveCost
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스 이동 비용입니다. 가능한 값은 다음과 같습니다. ''Zero'', ''Low'', ''Medium'', ''High'''
+    optional: true
+    syntax:
+      content: 'defaultMoveCost?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.flags
+    name: flags
+    fullName: flags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      다른 속성이 설정 되어 있는지 여부를 나타내는 플래그입니다. 각 연결 된 속성에 해당, 아래에 지정 된 플래그를 있는 경우 설정, 속성이 지정 되어 있음을 나타냅니다.
+      이 속성에 비트 'OR' 연산자를 사용 하 여 얻은 해당 플래그의 조합일 수 있습니다.
+      예를 들어 제공 된 값이 6의 QuorumLossWaitDuration (2) 및 StandByReplicaKeepDuration(4) 플래그 설정 됩니다.
+      - None-를 나타내지 않습니다 다른 속성이 설정 되어 있습니다. 값은 0입니다.
+      - ReplicaRestartWaitDuration-속성의 ReplicaRestartWaitDuration를 나타냅니다. 값은 1입니다.
+      - QuorumLossWaitDuration-속성의 QuorumLossWaitDuration를 나타냅니다. 값은
+      2.
+      - StandByReplicaKeepDuration-의 StandByReplicaKeepDuration 속성을 나타냅니다. 값은 4입니다.
+    optional: true
+    syntax:
+      content: 'flags?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.hasPersistedState
+    name: hasPersistedState
+    fullName: hasPersistedState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      로컬 디스크의 상태를 저장 하는 영구 서비스 인지 여부를 나타내는 플래그입니다.
+      이 속성의 값이 true 이면 다음 되지 않은 경우 false입니다.
+    syntax:
+      content: 'hasPersistedState: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.initializationData
+    name: initializationData
+    fullName: initializationData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 바이트 배열로 초기화 데이터입니다. 초기화 데이터는 생성 될 때 서비스 인스턴스 또는 복제본에 전달 됩니다.
+    optional: true
+    syntax:
+      content: 'initializationData?: number[]'
+      return:
+        type:
+          - 'number[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.isDefaultMoveCostSpecified
+    name: isDefaultMoveCostSpecified
+    fullName: isDefaultMoveCostSpecified
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 해당 DefaultMoveCost 속성이 지정 된 경우를 나타냅니다.
+    optional: true
+    syntax:
+      content: 'isDefaultMoveCostSpecified?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.minReplicaSetSize
+    name: minReplicaSetSize
+    fullName: minReplicaSetSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 숫자로 된 최소 복제본 세트 크기입니다.
+    syntax:
+      content: 'minReplicaSetSize: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.partitionDescription
+    name: partitionDescription
+    fullName: partitionDescription
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 개체와 파티션 설명입니다.
+    syntax:
+      content: 'partitionDescription: PartitionSchemeDescription'
+      return:
+        type:
+          - azure-servicefabric.PartitionSchemeDescription
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.placementConstraints
+    name: placementConstraints
+    fullName: placementConstraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '문자열 형태의 배치 제약 조건입니다. 배치 제약 조건은 노드 속성에 대한 부울 식이며 서비스 요구 사항을 기반으로 특정 노드에 대한 서비스 제한을 허용합니다. 예를 들어, 배치 NodeType이 파란색 인 노드에 서비스를 다음을 지정 합니다. "NodeColor == blue)"입니다.'
+    optional: true
+    syntax:
+      content: 'placementConstraints?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.quorumLossWaitDurationSeconds
+    name: quorumLossWaitDurationSeconds
+    fullName: quorumLossWaitDurationSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 파티션이 쿼럼 손실 상태가 될 수 있는 최대 지속 시간(초)입니다.
+    optional: true
+    syntax:
+      content: 'quorumLossWaitDurationSeconds?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.replicaRestartWaitDurationSeconds
+    name: replicaRestartWaitDurationSeconds
+    fullName: replicaRestartWaitDurationSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복제본이 다운된 시점과 새 복제본이 생성되는 시점 사이의 간격(초)입니다.
+    optional: true
+    syntax:
+      content: 'replicaRestartWaitDurationSeconds?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.scalingPolicies
+    name: scalingPolicies
+    fullName: scalingPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 서비스에 대 한 크기 조정 정책입니다.
+    optional: true
+    syntax:
+      content: 'scalingPolicies?: ScalingPolicyDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ScalingPolicyDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.serviceDnsName
+    name: serviceDnsName
+    fullName: serviceDnsName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스의 DNS 이름입니다. DNS 시스템 서비스가 Service Fabric 클러스터에서 사용 하도록 설정 해야 합니다.
+    optional: true
+    syntax:
+      content: 'serviceDnsName?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.serviceKind
+    name: serviceKind
+    fullName: serviceKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'serviceKind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.serviceLoadMetrics
+    name: serviceLoadMetrics
+    fullName: serviceLoadMetrics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 부하 메트릭입니다.
+    optional: true
+    syntax:
+      content: 'serviceLoadMetrics?: ServiceLoadMetricDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ServiceLoadMetricDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.serviceName
+    name: serviceName
+    fullName: serviceName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스의 전체 이름 '' fabric:'' URI 구성표가 없는 애플리케이션의 전체 이름입니다.'
+    syntax:
+      content: 'serviceName: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.servicePackageActivationMode
+    name: servicePackageActivationMode
+    fullName: servicePackageActivationMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스에 사용 되는 서비스 패키지의 활성화 모드입니다. 가능한 값은 다음과 같습니다. ''SharedProcess'', ''ExclusiveProcess'''
+    optional: true
+    syntax:
+      content: 'servicePackageActivationMode?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.servicePlacementPolicies
+    name: servicePlacementPolicies
+    fullName: servicePlacementPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 배치 정책입니다.
+    optional: true
+    syntax:
+      content: 'servicePlacementPolicies?: ServicePlacementPolicyDescription[]'
+      return:
+        type:
+          - 'azure-servicefabric.ServicePlacementPolicyDescription[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.serviceTypeName
+    name: serviceTypeName
+    fullName: serviceTypeName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 매니페스트에 지정 된 대로 서비스 형식의 이름입니다.
+    syntax:
+      content: 'serviceTypeName: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.standByReplicaKeepDurationSeconds
+    name: standByReplicaKeepDurationSeconds
+    fullName: standByReplicaKeepDurationSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: StandBy 복제본을 제거 하기 전에 유지 해야 하는 기간에 대 한 정의입니다.
+    optional: true
+    syntax:
+      content: 'standByReplicaKeepDurationSeconds?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServiceDescription.targetReplicaSetSize
+    name: targetReplicaSetSize
+    fullName: targetReplicaSetSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 숫자로 된 대상 복제본 세트 크기입니다.
+    syntax:
+      content: 'targetReplicaSetSize: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.ServiceDescription
+    name: ServiceDescription
+    spec.typeScript:
+      - name: ServiceDescription
+        fullName: ServiceDescription
+        uid: azure-servicefabric.ServiceDescription
+  - uid: 'azure-servicefabric.ServiceCorrelationDescription[]'
+    name: 'ServiceCorrelationDescription[]'
+    spec.typeScript:
+      - name: ServiceCorrelationDescription
+        fullName: ServiceCorrelationDescription
+        uid: azure-servicefabric.ServiceCorrelationDescription
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-servicefabric.PartitionSchemeDescription
+    name: PartitionSchemeDescription
+    spec.typeScript:
+      - name: PartitionSchemeDescription
+        fullName: PartitionSchemeDescription
+        uid: azure-servicefabric.PartitionSchemeDescription
+  - uid: 'azure-servicefabric.ScalingPolicyDescription[]'
+    name: 'ScalingPolicyDescription[]'
+    spec.typeScript:
+      - name: ScalingPolicyDescription
+        fullName: ScalingPolicyDescription
+        uid: azure-servicefabric.ScalingPolicyDescription
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-servicefabric.ServiceLoadMetricDescription[]'
+    name: 'ServiceLoadMetricDescription[]'
+    spec.typeScript:
+      - name: ServiceLoadMetricDescription
+        fullName: ServiceLoadMetricDescription
+        uid: azure-servicefabric.ServiceLoadMetricDescription
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-servicefabric.ServicePlacementPolicyDescription[]'
+    name: 'ServicePlacementPolicyDescription[]'
+    spec.typeScript:
+      - name: ServicePlacementPolicyDescription
+        fullName: ServicePlacementPolicyDescription
+        uid: azure-servicefabric.ServicePlacementPolicyDescription
+      - name: '[]'
+        fullName: '[]'

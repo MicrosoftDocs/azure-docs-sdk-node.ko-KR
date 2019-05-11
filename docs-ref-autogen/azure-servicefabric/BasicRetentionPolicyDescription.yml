@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.BasicRetentionPolicyDescription
+    name: BasicRetentionPolicyDescription
+    fullName: BasicRetentionPolicyDescription
+    children:
+      - azure-servicefabric.BasicRetentionPolicyDescription.minimumNumberOfBackups
+      - azure-servicefabric.BasicRetentionPolicyDescription.retentionDuration
+      - azure-servicefabric.BasicRetentionPolicyDescription.retentionPolicyType
+    langs:
+      - typeScript
+    type: interface
+    summary: 기본 보존 정책을 설명합니다.
+    extends:
+      name: azure-servicefabric.RetentionPolicyDescription
+    package: azure-servicefabric
+  - uid: azure-servicefabric.BasicRetentionPolicyDescription.minimumNumberOfBackups
+    name: minimumNumberOfBackups
+    fullName: minimumNumberOfBackups
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 모든 시점에서 보존할 백업의 최소 수입니다. 에 지정 된 경우 비 값이 0 이면 백업 보존 기간이 지난 백업을 완료 하는 경우에 삭제 되지 않습니다 있고 백업 수가 적은 보다 작거나 되도록 합니다.
+    optional: true
+    syntax:
+      content: 'minimumNumberOfBackups?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.BasicRetentionPolicyDescription.retentionDuration
+    name: retentionDuration
+    fullName: retentionDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '백업, 저장소에 저장 된 상태로 남아 만들고 시간에 걸쳐 있는 후 삭제 될 수 없는 최소 기간 것입니다. ISO8601 형식으로 지정 해야 합니다.'
+    syntax:
+      content: 'retentionDuration: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-servicefabric
+  - uid: azure-servicefabric.BasicRetentionPolicyDescription.retentionPolicyType
+    name: retentionPolicyType
+    fullName: retentionPolicyType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'retentionPolicyType: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.RetentionPolicyDescription
+    name: RetentionPolicyDescription
+    spec.typeScript:
+      - name: RetentionPolicyDescription
+        fullName: RetentionPolicyDescription
+        uid: azure-servicefabric.RetentionPolicyDescription
