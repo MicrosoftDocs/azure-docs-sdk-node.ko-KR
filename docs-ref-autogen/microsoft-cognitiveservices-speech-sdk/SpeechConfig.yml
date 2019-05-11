@@ -1,0 +1,279 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    name: SpeechConfig
+    fullName: SpeechConfig
+    children:
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.authorizationToken
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.close
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.endpointId
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.fromAuthorizationToken
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.fromEndpoint
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.fromSubscription
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.getProperty
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.outputFormat
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.setProperty
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.setProxy
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.setProxy_1
+      - microsoft-cognitiveservices-speech-sdk.SpeechConfig.speechRecognitionLanguage
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="69591-101">음성 구성입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-101">Speech configuration.</span></span>
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.authorizationToken
+    name: authorizationToken
+    fullName: authorizationToken
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="69591-102">권한 부여 토큰을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-102">Gets/Sets the authorization token.</span></span>
+      <span data-ttu-id="69591-103">참고: 호출자에 게 권한 부여 토큰이 유효한 지 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-103">Note: The caller needs to ensure that the authorization token is valid.</span></span> <span data-ttu-id="69591-104">권한 부여 토큰이 만료 되기 전에 호출자에 게 유효한 새 토큰을 사용 하 여이 setter를 호출 하 여 새로 고침 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-104">Before the authorization token expires, the caller needs to refresh it by calling this setter with a new valid token.</span></span>
+    syntax:
+      content: 'public authorizationToken: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="69591-105">구성을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="69591-105">Closes the configuration.</span></span>
+    syntax:
+      content: function close()
+      parameters: []
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.endpointId
+    name: endpointId
+    fullName: endpointId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="69591-106">음성 인식에 사용 되는 사용자 지정된 음성 모델의 끝점 ID 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-106">Gets/Sets the endpoint ID of a customized speech model that is used for speech recognition.</span></span>
+    syntax:
+      content: 'public endpointId: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.fromAuthorizationToken
+    name: 'fromAuthorizationToken(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="69591-107">지정 된 초기 권한 부여 토큰 및 region을 사용 하 여 음성 팩터리의 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="69591-107">Creates an instance of the speech factory with specified initial authorization token and region.</span></span>
+      <span data-ttu-id="69591-108">참고: 호출자에 게 권한 부여 토큰이 유효한 지 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-108">Note: The caller needs to ensure that the authorization token is valid.</span></span> <span data-ttu-id="69591-109">권한 부여 토큰이 만료 되기 전에 호출자에 게 유효한 새 토큰을 사용 하 여이 setter를 호출 하 여 새로 고침 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-109">Before the authorization token expires, the caller needs to refresh it by calling this setter with a new valid token.</span></span>
+      <span data-ttu-id="69591-110">참고: 내재 된 인식기를 사용 하려는 경우 LanguageUnderstanding 구독 키에서 파생 된 토큰을 사용 하십시오.</span><span class="sxs-lookup"><span data-stu-id="69591-110">Note: Please use a token derived from your LanguageUnderstanding subscription key in case you want to use the Intent recognizer.</span></span> <span data-ttu-id="69591-111">새 인식기를 만들 때 구성 값이 복사 되는 대로 새 토큰 값을 이미 생성 된 인식기에 적용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="69591-111">As configuration values are copied when creating a new recognizer, the new token value will not apply to recognizers that have already been created.</span></span> <span data-ttu-id="69591-112">전에 생성 된 인식기에 대 한 토큰을 새로 고치려면 해당 인식기의 권한 부여 토큰을 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-112">For recognizers that have been created before, you need to set authorization token of the corresponding recognizer to refresh the token.</span></span> <span data-ttu-id="69591-113">그렇지 않으면 인식자 인식 하는 동안 오류가 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-113">Otherwise, the recognizers will encounter errors during recognition.</span></span>
+    syntax:
+      content: 'static function fromAuthorizationToken(authorizationToken: string, region: string)'
+      parameters:
+        - id: authorizationToken
+          type:
+            - string
+          description: <span data-ttu-id="69591-114">초기 권한 부여 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-114">The initial authorization token.</span></span>
+        - id: region
+          type:
+            - string
+          description: '<span data-ttu-id="69591-115">지역 이름 (참조를 <a href="https://aka.ms/csspeech/region">지역별</a>).</span><span class="sxs-lookup"><span data-stu-id="69591-115">The region name (see the <a href="https://aka.ms/csspeech/region">region page</a>).</span></span>'
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.fromEndpoint
+    name: 'fromEndpoint(URL, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="69591-116">지정 된 끝점 및 구독 키를 사용 하 여 음성 구성의 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="69591-116">Creates an instance of the speech config with specified endpoint and subscription key.</span></span>
+      <span data-ttu-id="69591-117">이 메서드는 비표준 서비스 끝점 또는 매개 변수를 사용 하는 사용자에 대해서만 것입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-117">This method is intended only for users who use a non-standard service endpoint or parameters.</span></span>
+      <span data-ttu-id="69591-118">참고: 내재 된 인식기를 사용 하려는 경우 LanguageUnderstanding 구독 키를 사용 하십시오.</span><span class="sxs-lookup"><span data-stu-id="69591-118">Note: Please use your LanguageUnderstanding subscription key in case you want to use the Intent recognizer.</span></span>
+      <span data-ttu-id="69591-119">참고: 끝점 URL에 지정 된 쿼리 매개 변수를 다른 Api가 설정 된 경우에 변경 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="69591-119">Note: The query parameters specified in the endpoint URL are not changed, even if they are set by any other APIs.</span></span>
+      <span data-ttu-id="69591-120">예를 들어, 언어 매개 변수를 쿼리 uri에 정의 된 경우 "언어 DE-DE =", SpeechConfig.speechRecognitionLanguage에 의해서도 및 "EN-US" = uri의 언어 설정이 우선 적용 되어 유효 언어가 "DE-DE"입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-120">For example, if language is defined in the uri as query parameter "language=de-DE", and also set by SpeechConfig.speechRecognitionLanguage = "en-US", the language setting in uri takes precedence, and the effective language is "de-DE".</span></span> <span data-ttu-id="69591-121">끝점에 지정 되지 않은 매개 변수만 다른 Api에서 URL은 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69591-121">Only the parameters that are not specified in the endpoint URL can be set by other APIs.</span></span>
+      <span data-ttu-id="69591-122">참고: FromEndpoint를 사용 하 여 권한 부여 토큰을 사용 하려면 fromEndpoint 메서드에서 subscriptionKey에 빈 문자열을 전달 하 고 설정한 다음 authorizationToken "토큰" 권한 부여 토큰을 사용 하도록 만든 SpeechConfig 인스턴스에서 =.</span><span class="sxs-lookup"><span data-stu-id="69591-122">Note: To use authorization token with fromEndpoint, pass an empty string to the subscriptionKey in the fromEndpoint method, and then set authorizationToken="token" on the created SpeechConfig instance to use the authorization token.</span></span>
+    syntax:
+      content: 'static function fromEndpoint(endpoint: URL, subscriptionKey: string)'
+      parameters:
+        - id: endpoint
+          type:
+            - URL
+          description: <span data-ttu-id="69591-123">연결할 서비스 끝점입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-123">The service endpoint to connect to.</span></span>
+        - id: subscriptionKey
+          type:
+            - string
+          description: <span data-ttu-id="69591-124">구독 키입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-124">The subscription key.</span></span>
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.fromSubscription
+    name: 'fromSubscription(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="69591-125">정적 인스턴스의 SpeechConfig subscriptionKey 및 서비스 영역을 전달 하 여 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-125">Static instance of SpeechConfig returned by passing subscriptionKey and service region.</span></span>
+      <span data-ttu-id="69591-126">참고: 내재 된 인식기를 사용 하려는 경우 LanguageUnderstanding 구독 키를 사용 하십시오.</span><span class="sxs-lookup"><span data-stu-id="69591-126">Note: Please use your LanguageUnderstanding subscription key in case you want to use the Intent recognizer.</span></span>
+    syntax:
+      content: 'static function fromSubscription(subscriptionKey: string, region: string)'
+      parameters:
+        - id: subscriptionKey
+          type:
+            - string
+          description: <span data-ttu-id="69591-127">구독 키입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-127">The subscription key.</span></span>
+        - id: region
+          type:
+            - string
+          description: '<span data-ttu-id="69591-128">지역 이름 (참조를 <a href="https://aka.ms/csspeech/region">지역별</a>).</span><span class="sxs-lookup"><span data-stu-id="69591-128">The region name (see the <a href="https://aka.ms/csspeech/region">region page</a>).</span></span>'
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.getProperty
+    name: 'getProperty(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="69591-129">임의의 속성의 현재 값을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-129">Returns the current value of an arbitrary property.</span></span>
+    syntax:
+      content: 'function getProperty(name: string, def?: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="69591-130">쿼리 속성의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-130">The name of the property to query.</span></span>
+        - id: def
+          type:
+            - string
+          description: <span data-ttu-id="69591-131">속성은 알 수 없는 경우 반환할 값입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-131">The value to return in case the property is not known.</span></span>
+          optional: true
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.outputFormat
+    name: outputFormat
+    fullName: outputFormat
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="69591-132">출력 형식을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-132">Gets/Sets the output format.</span></span>
+    syntax:
+      content: 'public outputFormat: OutputFormat'
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.OutputFormat
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.setProperty
+    name: 'setProperty(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="69591-133">임의의 속성을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-133">Sets an arbitrary property.</span></span>
+    syntax:
+      content: 'function setProperty(name: string, value: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="69591-134">설정할 속성의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-134">The name of the property to set.</span></span>
+        - id: value
+          type:
+            - string
+          description: |
+            <span data-ttu-id="69591-135">속성의 새 값입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-135">The new value of the property.</span></span>
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.setProxy
+    name: 'setProxy(string, number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="69591-136">프록시 구성을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-136">Sets the proxy configuration.</span></span>
+      <span data-ttu-id="69591-137">Node.js 환경에만 관련이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69591-137">Only relevant in Node.js environments.</span></span>
+      <span data-ttu-id="69591-138">버전 1.4.0에에서 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-138">Added in version 1.4.0.</span></span>
+    syntax:
+      content: 'function setProxy(proxyHostName: string, proxyPort: number)'
+      parameters:
+        - id: proxyHostName
+          type:
+            - string
+          description: <span data-ttu-id="69591-139">프록시 서버의 호스트 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-139">The host name of the proxy server.</span></span>
+        - id: proxyPort
+          type:
+            - number
+          description: |
+            <span data-ttu-id="69591-140">프록시 서버의 포트 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-140">The port number of the proxy server.</span></span>
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.setProxy_1
+    name: 'setProxy(string, number, string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="69591-141">프록시 구성을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-141">Sets the proxy configuration.</span></span>
+      <span data-ttu-id="69591-142">Node.js 환경에만 관련이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69591-142">Only relevant in Node.js environments.</span></span>
+      <span data-ttu-id="69591-143">버전 1.4.0에에서 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-143">Added in version 1.4.0.</span></span>
+    syntax:
+      content: 'function setProxy(proxyHostName: string, proxyPort: number, proxyUserName: string, proxyPassword: string)'
+      parameters:
+        - id: proxyHostName
+          type:
+            - string
+          description: '<span data-ttu-id="69591-144">프로토콜 체계 (http://) 없이 프록시 서버의 호스트 이름</span><span class="sxs-lookup"><span data-stu-id="69591-144">The host name of the proxy server, without the protocol scheme (http://)</span></span>'
+        - id: proxyPort
+          type:
+            - number
+          description: ''
+        - id: proxyUserName
+          type:
+            - string
+          description: <span data-ttu-id="69591-145">프록시 서버의 사용자 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-145">The user name of the proxy server.</span></span>
+        - id: proxyPassword
+          type:
+            - string
+          description: |
+            <span data-ttu-id="69591-146">프록시 서버의 암호입니다.</span><span class="sxs-lookup"><span data-stu-id="69591-146">The password of the proxy server.</span></span>
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig.speechRecognitionLanguage
+    name: speechRecognitionLanguage
+    fullName: speechRecognitionLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="69591-147">입력된 언어를 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="69591-147">Gets/Sets the input language.</span></span>
+    syntax:
+      content: 'public speechRecognitionLanguage: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+references:
+  - uid: microsoft-cognitiveservices-speech-sdk.OutputFormat
+    name: OutputFormat
+    spec.typeScript:
+      - name: OutputFormat
+        fullName: OutputFormat
+        uid: microsoft-cognitiveservices-speech-sdk.OutputFormat
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    name: SpeechConfig
+    spec.typeScript:
+      - name: SpeechConfig
+        fullName: SpeechConfig
+        uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig

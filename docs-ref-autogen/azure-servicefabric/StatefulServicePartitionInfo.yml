@@ -1,0 +1,159 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.StatefulServicePartitionInfo
+    name: StatefulServicePartitionInfo
+    fullName: StatefulServicePartitionInfo
+    children:
+      - azure-servicefabric.StatefulServicePartitionInfo.healthState
+      - azure-servicefabric.StatefulServicePartitionInfo.lastQuorumLossDuration
+      - azure-servicefabric.StatefulServicePartitionInfo.minReplicaSetSize
+      - azure-servicefabric.StatefulServicePartitionInfo.partitionInformation
+      - azure-servicefabric.StatefulServicePartitionInfo.partitionStatus
+      - azure-servicefabric.StatefulServicePartitionInfo.primaryEpoch
+      - azure-servicefabric.StatefulServicePartitionInfo.serviceKind
+      - azure-servicefabric.StatefulServicePartitionInfo.targetReplicaSetSize
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="5d0d3-101">상태 저장 서비스 패브릭 서비스의 파티션에 대 한 정보...</span><span class="sxs-lookup"><span data-stu-id="5d0d3-101">Information about a partition of a stateful Service Fabric service..</span></span>
+    extends:
+      name: azure-servicefabric.ServicePartitionInfo
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.healthState
+    name: healthState
+    fullName: healthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5d0d3-102">Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는''</span><span class="sxs-lookup"><span data-stu-id="5d0d3-102">The health state of a Service Fabric entity such as Cluster, Node, Application, Service, Partition, Replica etc. Possible values include: ''Invalid'', ''Ok'', ''Warning'', ''Error'', ''Unknown''</span></span>'
+    optional: true
+    syntax:
+      content: 'healthState?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.lastQuorumLossDuration
+    name: lastQuorumLossDuration
+    fullName: lastQuorumLossDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5d0d3-103">이 파티션을 쿼럼 손실에서 된 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-103">The duration for which this partition was in quorum loss.</span></span> <span data-ttu-id="5d0d3-104">파티션이 쿼럼 손실에서 되어 해당 상태가 된 이후 기간을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-104">If the partition is currently in quorum loss, it returns the duration since it has been in that state.</span></span> <span data-ttu-id="5d0d3-105">이 필드는 기간을 지정하기 위해 ISO8601 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-105">This field is using ISO8601 format for specifying the duration.</span></span>'
+    optional: true
+    syntax:
+      content: 'lastQuorumLossDuration?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.minReplicaSetSize
+    name: minReplicaSetSize
+    fullName: minReplicaSetSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5d0d3-106">숫자로 된 최소 복제본 세트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-106">The minimum replica set size as a number.</span></span>
+    optional: true
+    syntax:
+      content: 'minReplicaSetSize?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.partitionInformation
+    name: partitionInformation
+    fullName: partitionInformation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5d0d3-107">파티션 구성표에서 지원 되는 키, 파티션 id에 대 한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-107">Information about the partition identity, partitioning scheme and keys supported by it.</span></span>'
+    optional: true
+    syntax:
+      content: 'partitionInformation?: PartitionInformation'
+      return:
+        type:
+          - azure-servicefabric.PartitionInformation
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.partitionStatus
+    name: partitionStatus
+    fullName: partitionStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5d0d3-108">서비스 패브릭은 서비스 파티션의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-108">The status of the service fabric service partition.</span></span> <span data-ttu-id="5d0d3-109">가능한 값은 다음과 같습니다. ''Invalid'', ''Ready'', ''NotReady'', ''InQuorumLoss'', ''Reconfiguring'', ''Deleting''</span><span class="sxs-lookup"><span data-stu-id="5d0d3-109">Possible values include: ''Invalid'', ''Ready'', ''NotReady'', ''InQuorumLoss'', ''Reconfiguring'', ''Deleting''</span></span>'
+    optional: true
+    syntax:
+      content: 'partitionStatus?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.primaryEpoch
+    name: primaryEpoch
+    fullName: primaryEpoch
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5d0d3-110">Epoch 숫자인 구성 파티션에 대 한 전체적으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-110">An Epoch is a configuration number for the partition as a whole.</span></span> <span data-ttu-id="5d0d3-111">복제본의 구성이 설정 하면 예를 들어 이전 주 복제본에 의해 전송 된 위치에서 새 Epoch을 주 복제본 변경 내용을 새로운 주 복제본에서 복제 되는 작업 이라고 하는 경우 변경 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-111">When the configuration of the replica set changes, for example when the Primary replica changes, the operations that are replicated from the new Primary replica are said to be a new Epoch from the ones which were sent by the old Primary replica.</span></span>'
+    optional: true
+    syntax:
+      content: 'primaryEpoch?: Epoch'
+      return:
+        type:
+          - azure-servicefabric.Epoch
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.serviceKind
+    name: serviceKind
+    fullName: serviceKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5d0d3-112">다형 판별자</span><span class="sxs-lookup"><span data-stu-id="5d0d3-112">Polymorphic Discriminator</span></span>
+    syntax:
+      content: 'serviceKind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatefulServicePartitionInfo.targetReplicaSetSize
+    name: targetReplicaSetSize
+    fullName: targetReplicaSetSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5d0d3-113">숫자로 된 대상 복제본 세트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="5d0d3-113">The target replica set size as a number.</span></span>
+    optional: true
+    syntax:
+      content: 'targetReplicaSetSize?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.ServicePartitionInfo
+    name: ServicePartitionInfo
+    spec.typeScript:
+      - name: ServicePartitionInfo
+        fullName: ServicePartitionInfo
+        uid: azure-servicefabric.ServicePartitionInfo
+  - uid: azure-servicefabric.PartitionInformation
+    name: PartitionInformation
+    spec.typeScript:
+      - name: PartitionInformation
+        fullName: PartitionInformation
+        uid: azure-servicefabric.PartitionInformation
+  - uid: azure-servicefabric.Epoch
+    name: Epoch
+    spec.typeScript:
+      - name: Epoch
+        fullName: Epoch
+        uid: azure-servicefabric.Epoch
