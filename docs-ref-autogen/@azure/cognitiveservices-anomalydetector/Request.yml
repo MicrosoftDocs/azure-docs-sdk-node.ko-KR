@@ -1,0 +1,120 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-anomalydetector.Request'
+    name: Request
+    fullName: Request
+    children:
+      - '@azure/cognitiveservices-anomalydetector.Request.customInterval'
+      - '@azure/cognitiveservices-anomalydetector.Request.granularity'
+      - '@azure/cognitiveservices-anomalydetector.Request.maxAnomalyRatio'
+      - '@azure/cognitiveservices-anomalydetector.Request.period'
+      - '@azure/cognitiveservices-anomalydetector.Request.sensitivity'
+      - '@azure/cognitiveservices-anomalydetector.Request.series'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="7ab34-101">요청을 나타내는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-101">An interface representing Request.</span></span>
+    package: '@azure/cognitiveservices-anomalydetector'
+  - uid: '@azure/cognitiveservices-anomalydetector.Request.customInterval'
+    name: customInterval
+    fullName: customInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7ab34-102">사용자 지정 간격은 비표준 시간 간격을 설정 하는 데 사용 됩니다, 예를 들어, 시리즈 5 분 이면 요청 수 수로 {"세분성": "정도만", "customInterval". 5을 (를).</span><span class="sxs-lookup"><span data-stu-id="7ab34-102">Custom Interval is used to set non-standard time interval, for example, if the series is 5 minutes, request can be set as {"granularity":"minutely", "customInterval":5}.</span></span>'
+    optional: true
+    syntax:
+      content: 'customInterval?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/cognitiveservices-anomalydetector'
+  - uid: '@azure/cognitiveservices-anomalydetector.Request.granularity'
+    name: granularity
+    fullName: granularity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7ab34-103">만 중 하나일 수 있습니다 연도별, 월별, 주별, 매일, 매시간 또는 정도만 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-103">Can only be one of yearly, monthly, weekly, daily, hourly or minutely.</span></span> <span data-ttu-id="7ab34-104">에 대 한 세분성이 사용 될 입력된 계열 올바른지 여부를 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-104">Granularity is used for verify whether input series is valid.</span></span> <span data-ttu-id="7ab34-105">가능한 값: ''매년'', ''월'', '' 매주'', ''매일'', ''매시간'', ''정도만''</span><span class="sxs-lookup"><span data-stu-id="7ab34-105">Possible values include: ''yearly'', ''monthly'', ''weekly'', ''daily'', ''hourly'', ''minutely''</span></span>'
+    syntax:
+      content: 'granularity: Granularity'
+      return:
+        type:
+          - '@azure/cognitiveservices-anomalydetector.Granularity'
+    package: '@azure/cognitiveservices-anomalydetector'
+  - uid: '@azure/cognitiveservices-anomalydetector.Request.maxAnomalyRatio'
+    name: maxAnomalyRatio
+    fullName: maxAnomalyRatio
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7ab34-106">고급 모델 매개 변수를 최대 비정상 비율 시계열의 선택적 인수입니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-106">Optional argument, advanced model parameter, max anomaly ratio in a time series.</span></span>'
+    optional: true
+    syntax:
+      content: 'maxAnomalyRatio?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/cognitiveservices-anomalydetector'
+  - uid: '@azure/cognitiveservices-anomalydetector.Request.period'
+    name: period
+    fullName: period
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7ab34-107">선택적 인수를 정기적으로 시계열 값입니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-107">Optional argument, periodic value of a time series.</span></span> <span data-ttu-id="7ab34-108">값이 Null이거나 없는 경우 API가 자동으로 기간을 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-108">If the value is null or does not present, the API will determine the period automatically.</span></span>'
+    optional: true
+    syntax:
+      content: 'period?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/cognitiveservices-anomalydetector'
+  - uid: '@azure/cognitiveservices-anomalydetector.Request.sensitivity'
+    name: sensitivity
+    fullName: sensitivity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7ab34-109">선택적 인수를 고급 0 ~ 99 사이의 모델 매개 변수 값은 낮을 수록, 더 큰 여백 값 즉, 적은 이상을 수락 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-109">Optional argument, advanced model parameter, between 0-99, the lower the value is, the larger the margin value will be which means less anomalies will be accepted.</span></span>'
+    optional: true
+    syntax:
+      content: 'sensitivity?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/cognitiveservices-anomalydetector'
+  - uid: '@azure/cognitiveservices-anomalydetector.Request.series'
+    name: series
+    fullName: series
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7ab34-110">시계열 데이터 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-110">Time series data points.</span></span> <span data-ttu-id="7ab34-111">지점 타임 스탬프 변칙 검색 결과 맞게 오름차순에서으로 정렬 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-111">Points should be sorted by timestamp in ascending order to match the anomaly detection result.</span></span> <span data-ttu-id="7ab34-112">데이터가 올바르게 정렬 되지 않거나 중복 된 타임 스탬프, 경우에 API를 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-112">If the data is not sorted correctly or there is duplicated timestamp, the API will not work.</span></span> <span data-ttu-id="7ab34-113">이 경우 오류 메시지가 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7ab34-113">In such case, an error message will be returned.</span></span>'
+    syntax:
+      content: 'series: Point[]'
+      return:
+        type:
+          - '@azure/cognitiveservices-anomalydetector.Point[]'
+    package: '@azure/cognitiveservices-anomalydetector'
+references:
+  - uid: '@azure/cognitiveservices-anomalydetector.Granularity'
+    name: Granularity
+    spec.typeScript:
+      - name: Granularity
+        fullName: Granularity
+        uid: '@azure/cognitiveservices-anomalydetector.Granularity'
+  - uid: '@azure/cognitiveservices-anomalydetector.Point[]'
+    name: 'Point[]'
+    spec.typeScript:
+      - name: Point
+        fullName: Point
+        uid: '@azure/cognitiveservices-anomalydetector.Point'
+      - name: '[]'
+        fullName: '[]'

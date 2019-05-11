@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.AzureAsyncOperationResult
+    name: AzureAsyncOperationResult
+    fullName: AzureAsyncOperationResult
+    children:
+      - azure-arm-network.AzureAsyncOperationResult.error
+      - azure-arm-network.AzureAsyncOperationResult.status
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      <span data-ttu-id="966f9-101">응답 본문에는 성공 했는지, 진행 또는 실패 여부를 나타내는 지정된 된 비동기 작업의 상태가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-101">The response body contains the status of the specified asynchronous operation, indicating whether it has succeeded, is in progress, or has failed.</span></span> <span data-ttu-id="966f9-102">이 상태는 자체 작업 상태 가져오기 작업에 대 한 반환 된 HTTP 상태 코드를 구별 하는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-102">Note that this status is distinct from the HTTP status code returned for the Get Operation Status operation itself.</span></span> <span data-ttu-id="966f9-103">비동기 작업이 성공한 경우 응답 본문에 성공한 요청에 대 한 HTTP 상태 코드를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-103">If the asynchronous operation succeeded, the response body includes the HTTP status code for the successful request.</span></span>
+      <span data-ttu-id="966f9-104">비동기 작업에 실패 하면 응답 본문 실패와 관련 된 실패 한 요청 및 오류 정보에 대 한 HTTP 상태 코드를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-104">If the asynchronous operation failed, the response body includes the HTTP status code for the failed request and error information regarding the failure.</span></span>
+    package: azure-arm-network
+  - uid: azure-arm-network.AzureAsyncOperationResult.error
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="966f9-105">지정 된 비동기 작업 중 오류 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-105">Details of the error occurred during specified asynchronous operation.</span></span>
+    optional: true
+    syntax:
+      content: 'error?: ErrorModel'
+      return:
+        type:
+          - azure-arm-network.ErrorModel
+    package: azure-arm-network
+  - uid: azure-arm-network.AzureAsyncOperationResult.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="966f9-106">Azure 비동기 작업의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-106">Status of the Azure async operation.</span></span> <span data-ttu-id="966f9-107">가능한 값은 다음과 같습니다. '' InProgress'', ''성공''이 고 ''실패''입니다.</span><span class="sxs-lookup"><span data-stu-id="966f9-107">Possible values are: ''InProgress'', ''Succeeded'', and ''Failed''.</span></span> <span data-ttu-id="966f9-108">가능한 값은 다음과 같습니다. ''InProgress'', ''성공'', '' 실패 ''</span><span class="sxs-lookup"><span data-stu-id="966f9-108">Possible values include: ''InProgress'', ''Succeeded'', ''Failed''</span></span>'
+    optional: true
+    syntax:
+      content: 'status?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+references:
+  - uid: azure-arm-network.ErrorModel
+    name: ErrorModel
+    spec.typeScript:
+      - name: ErrorModel
+        fullName: ErrorModel
+        uid: azure-arm-network.ErrorModel
