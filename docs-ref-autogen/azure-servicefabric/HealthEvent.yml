@@ -1,0 +1,265 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.HealthEvent
+    name: HealthEvent
+    fullName: HealthEvent
+    children:
+      - azure-servicefabric.HealthEvent.description
+      - azure-servicefabric.HealthEvent.healthState
+      - azure-servicefabric.HealthEvent.isExpired
+      - azure-servicefabric.HealthEvent.lastErrorTransitionAt
+      - azure-servicefabric.HealthEvent.lastModifiedUtcTimestamp
+      - azure-servicefabric.HealthEvent.lastOkTransitionAt
+      - azure-servicefabric.HealthEvent.lastWarningTransitionAt
+      - azure-servicefabric.HealthEvent.property
+      - azure-servicefabric.HealthEvent.removeWhenExpired
+      - azure-servicefabric.HealthEvent.sequenceNumber
+      - azure-servicefabric.HealthEvent.sourceId
+      - azure-servicefabric.HealthEvent.sourceUtcTimestamp
+      - azure-servicefabric.HealthEvent.timeToLiveInMilliSeconds
+    langs:
+      - typeScript
+    type: interface
+    summary: '<span data-ttu-id="ea105-101">상태 관리자가 추가 하는 추가 메타 데이터를 사용 하 여 클러스터, 응용 프로그램 또는 노드를 같은 상태 엔터티를 보고 하는 상태 정보를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-101">Represents health information reported on a health entity, such as cluster, application or node, with additional metadata added by the Health Manager.</span></span>'
+    extends:
+      name: azure-servicefabric.HealthInformation
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.description
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="ea105-102">상태 정보의 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-102">The description of the health information.</span></span> <span data-ttu-id="ea105-103">보고서에 대한 사람이 읽을 수 있는 정보를 추가하는 데 사용되는 일반 텍스트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-103">It represents free text used to add human readable information about the report.</span></span>
+      <span data-ttu-id="ea105-104">설명의 최대 문자열 길이는 4096자입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-104">The maximum string length for the description is 4096 characters.</span></span>
+      <span data-ttu-id="ea105-105">제공된 문자열이 긴 경우 자동으로 잘립니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-105">If the provided string is longer, it will be automatically truncated.</span></span>
+      <span data-ttu-id="ea105-106">잘린 경우 설명의 마지막 문자는 "[잘림]" 표식을 포함하고, 총 문자열 크기는 4096자입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-106">When truncated, the last characters of the description contain a marker "[Truncated]", and total string size is 4096 characters.</span></span>
+      <span data-ttu-id="ea105-107">표식은 사용자에게 잘림이 발생했음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-107">The presence of the marker indicates to users that truncation occurred.</span></span>
+      <span data-ttu-id="ea105-108">잘린 경우 설명은 원래 문자열의 4096자보다 작은 문자를 갖습니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-108">Note that when truncated, the description has less than 4096 characters from the original string.</span></span>
+    optional: true
+    syntax:
+      content: 'description?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.healthState
+    name: healthState
+    fullName: healthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="ea105-109">Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는''</span><span class="sxs-lookup"><span data-stu-id="ea105-109">The health state of a Service Fabric entity such as Cluster, Node, Application, Service, Partition, Replica etc. Possible values include: ''Invalid'', ''Ok'', ''Warning'', ''Error'', ''Unknown''</span></span>'
+    syntax:
+      content: 'healthState: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.isExpired
+    name: isExpired
+    fullName: isExpired
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="ea105-110">상태 이벤트가 고, 그렇지 않으면 false 만료 된 경우 true를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-110">Returns true if the health event is expired, otherwise false.</span></span>'
+    optional: true
+    syntax:
+      content: 'isExpired?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.lastErrorTransitionAt
+    name: lastErrorTransitionAt
+    fullName: lastErrorTransitionAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="ea105-111">현재 상태를 'Error' 이면이 속성에 상태 보고서를 처음 보고 '오류'를 사용 하 여 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-111">If the current health state is 'Error', this property returns the time at which the health report was first reported with 'Error'.</span></span> <span data-ttu-id="ea105-112">하지만 주기적인 보고에 대 한 많은 보고서와 동일한 상태로 생성 되, 날짜 및 시간에 첫 번째 '오류' 상태 보고서를 받았습니다.이 속성을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-112">For periodic reporting, many reports with the same state may have been generated however, this property returns only the date and time at the first 'Error' health report was received.</span></span>
+      <span data-ttu-id="ea105-113">현재 상태를 '확인' 또는 '경고' 인 경우에 날짜 및 시간을 상태 '오류', 마지막으로 다른 상태로 전환 되기 전에 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-113">If the current health state is 'Ok' or 'Warning', returns the date and time at which the health state was last in 'Error', before transitioning to a different state.</span></span>
+
+      <span data-ttu-id="ea105-114">상태를 'Error' 되지 인 경우 값 0 날짜-시간 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-114">If the health state was never 'Error', the value will be zero date-time.</span></span>
+    optional: true
+    syntax:
+      content: 'lastErrorTransitionAt?: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.lastModifiedUtcTimestamp
+    name: lastModifiedUtcTimestamp
+    fullName: lastModifiedUtcTimestamp
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="ea105-115">날짜 및 상태 보고서를 health 스토어에 의해 마지막으로 수정 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-115">The date and time when the health report was last modified by the health store.</span></span>
+    optional: true
+    syntax:
+      content: 'lastModifiedUtcTimestamp?: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.lastOkTransitionAt
+    name: lastOkTransitionAt
+    fullName: lastOkTransitionAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="ea105-116">현재 상태를 '확인' 이면이 속성에 상태 보고서를 처음 보고 '확인'을 사용 하 여 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-116">If the current health state is 'Ok', this property returns the time at which the health report was first reported with 'Ok'.</span></span>
+      <span data-ttu-id="ea105-117">주기적인 보고를 동일한 상태를 사용 하 여 보고서가 많이 있습니다 생성 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-117">For periodic reporting, many reports with the same state may have been generated.</span></span>
+      <span data-ttu-id="ea105-118">이 속성의 첫 번째 '정상' 상태 보고서가 수신 하는 경우 시간과 날짜를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-118">This property returns the date and time when the first 'Ok' health report was received.</span></span>
+      <span data-ttu-id="ea105-119">현재 상태를 'Error' 또는 '경고' 인 경우에 날짜와 성능 상태가 다른 상태로 전환 하기 전에 '정상', 마지막 시간을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-119">If the current health state is 'Error' or 'Warning', returns the date and time at which the health state was last in 'Ok', before transitioning to a different state.</span></span>
+
+      <span data-ttu-id="ea105-120">상태를 '확인' 되지 경우 값 0 날짜-시간 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-120">If the health state was never 'Ok', the value will be zero date-time.</span></span>
+    optional: true
+    syntax:
+      content: 'lastOkTransitionAt?: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.lastWarningTransitionAt
+    name: lastWarningTransitionAt
+    fullName: lastWarningTransitionAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="ea105-121">현재 상태는 '경고' 하는 경우이 속성은 상태 보고서를 처음 보고 '경고'를 사용 하 여 시간을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-121">If the current health state is 'Warning', this property returns the time at which the health report was first reported with 'Warning'.</span></span> <span data-ttu-id="ea105-122">하지만 주기적인 보고에 대 한 많은 보고서와 동일한 상태로 생성 되,이 속성은 날짜 및 시간에 첫 번째 '경고' 상태 보고서를 받은 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-122">For periodic reporting, many reports with the same state may have been generated however, this property returns only the date and time at the first 'Warning' health report was received.</span></span>
+      <span data-ttu-id="ea105-123">현재 상태를 '확인' 또는 'Error' 인 경우에 날짜와 성능 상태가 다른 상태로 전환 하기 전에 '경고', 마지막 시간을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-123">If the current health state is 'Ok' or 'Error', returns the date and time at which the health state was last in 'Warning', before transitioning to a different state.</span></span>
+
+      <span data-ttu-id="ea105-124">상태를 되지 '경고', 값 0 날짜-시간 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-124">If the health state was never 'Warning', the value will be zero date-time.</span></span>
+    optional: true
+    syntax:
+      content: 'lastWarningTransitionAt?: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.property
+    name: property
+    fullName: property
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="ea105-125">상태 정보의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-125">The property of the health information.</span></span> <span data-ttu-id="ea105-126">엔터티는 서로 다른 속성에 대한 상태 보고서를 가질 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-126">An entity can have health reports for different properties.</span></span>
+      <span data-ttu-id="ea105-127">속성은 문자열이며 보고자 유연성에서 보고서를 트리거하는 상태 조건을 분류하도록 허용하는 고정된 열거형이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-127">The property is a string and not a fixed enumeration to allow the reporter flexibility to categorize the state condition that triggers the report.</span></span>
+      <span data-ttu-id="ea105-128">예를 들어 SourceId "LocalWatchdog"가 있는 보고자는 노드에서 사용 가능한 디스크의 상태를 모니터링할 수 있으므로 해당 노드에서 "AvailableDisk" 속성을 보고할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-128">For example, a reporter with SourceId "LocalWatchdog" can monitor the state of the available disk on a node, so it can report "AvailableDisk" property on that node.</span></span>
+      <span data-ttu-id="ea105-129">동일한 보고자는 노드 연결을 모니터링할 수 있으므로 동일한 노드에서 "Connectivity" 속성을 보고할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-129">The same reporter can monitor the node connectivity, so it can report a property "Connectivity" on the same node.</span></span>
+      <span data-ttu-id="ea105-130">Health 스토어에서 이러한 보고서는 지정된 노드에 대한 별도의 상태 이벤트로 처리됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-130">In the health store, these reports are treated as separate health events for the specified node.</span></span>
+      <span data-ttu-id="ea105-131">SourceId와 함께 속성은 상태 정보를 고유하게 식별합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-131">Together with the SourceId, the property uniquely identifies the health information.</span></span>
+    syntax:
+      content: 'property: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.removeWhenExpired
+    name: removeWhenExpired
+    fullName: removeWhenExpired
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="ea105-132">보고서가 만료될 때 Health 스토어에서 제거할지 여부를 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-132">Value that indicates whether the report is removed from health store when it expires.</span></span>
+      <span data-ttu-id="ea105-133">true로 설정된 경우 보고서는 만료된 후 Health 스토어에서 제거됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-133">If set to true, the report is removed from the health store after it expires.</span></span>
+      <span data-ttu-id="ea105-134">false로 설정된 경우 보고서는 만료될 때 오류로 처리됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-134">If set to false, the report is treated as an error when expired.</span></span> <span data-ttu-id="ea105-135">이 속성의 값은 기본적으로 false입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-135">The value of this property is false by default.</span></span>
+      <span data-ttu-id="ea105-136">클라이언트가 주기적으로 보고하는 경우 RemoveWhenExpired를 false(기본값)로 설정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-136">When clients report periodically, they should set RemoveWhenExpired false (default).</span></span>
+      <span data-ttu-id="ea105-137">이 이렇게 하면 보고자에 문제가 있음 (예: 교착 상태) 및 보고할 수 없습니다, 하는 경우 엔터티 오류로 평가 됩니다 상태 보고서가 만료 되 면 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-137">This way, if the reporter has issues (e.g. deadlock) and can't report, the entity is evaluated at error when the health report expires.</span></span>
+      <span data-ttu-id="ea105-138">엔터티를 오류 성능 상태에 있는 것으로 플래그 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-138">This flags the entity as being in Error health state.</span></span>
+    optional: true
+    syntax:
+      content: 'removeWhenExpired?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.sequenceNumber
+    name: sequenceNumber
+    fullName: sequenceNumber
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="ea105-139">숫자 문자열의 이 상태 보고서에 대한 일련 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-139">The sequence number for this health report as a numeric string.</span></span>
+      <span data-ttu-id="ea105-140">보고서 일련 번호는 Health 스토어에서 유효하지 않은 보고서를 검색하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-140">The report sequence number is used by the health store to detect stale reports.</span></span>
+      <span data-ttu-id="ea105-141">지정되지 않은 경우 일련 번호는 보고서가 추가될 때 상태 클라이언트에서 자동으로 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-141">If not specified, a sequence number is auto-generated by the health client when a report is added.</span></span>
+    optional: true
+    syntax:
+      content: 'sequenceNumber?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.sourceId
+    name: sourceId
+    fullName: sourceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="ea105-142">상태 정보를 생성한 클라이언트/watchdog/시스템 구성 요소를 식별하는 원본 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-142">The source name that identifies the client/watchdog/system component that generated the health information.</span></span>
+    syntax:
+      content: 'sourceId: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.sourceUtcTimestamp
+    name: sourceUtcTimestamp
+    fullName: sourceUtcTimestamp
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="ea105-143">날짜 및 상태 보고서를 원본에서 전송 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-143">The date and time when the health report was sent by the source.</span></span>
+    optional: true
+    syntax:
+      content: 'sourceUtcTimestamp?: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+  - uid: azure-servicefabric.HealthEvent.timeToLiveInMilliSeconds
+    name: timeToLiveInMilliSeconds
+    fullName: timeToLiveInMilliSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="ea105-144">이 상태 보고서가 유효한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-144">The duration for which this health report is valid.</span></span> <span data-ttu-id="ea105-145">이 필드는 기간을 지정하는 데 ISO8601 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-145">This field uses ISO8601 format for specifying the duration.</span></span>
+      <span data-ttu-id="ea105-146">클라이언트가 주기적으로 보고하는 경우 TTL(Time to Live)보다 높은 빈도로 보고서를 보내야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-146">When clients report periodically, they should send reports with higher frequency than time to live.</span></span>
+      <span data-ttu-id="ea105-147">클라이언트가 전환 시 보고하는 경우 TTL(Time to live)을 무한으로 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-147">If clients report on transition, they can set the time to live to infinite.</span></span>
+      <span data-ttu-id="ea105-148">TTL(Time to live)이 만료되면 상태 정보를 포함하는 상태 이벤트는 RemoveWhenExpired가 true인 경우 Health 스토어에서 제거되거나 RemoveWhenExpired가 false인 경우 오류로 평가됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-148">When time to live expires, the health event that contains the health information is either removed from health store, if RemoveWhenExpired is true, or evaluated at error, if RemoveWhenExpired false.</span></span>
+      <span data-ttu-id="ea105-149">지정되지 않은 경우 TTL(Time to live)은 무한 값으로 기본 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea105-149">If not specified, time to live defaults to infinite value.</span></span>
+    optional: true
+    syntax:
+      content: 'timeToLiveInMilliSeconds?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.HealthInformation
+    name: HealthInformation
+    spec.typeScript:
+      - name: HealthInformation
+        fullName: HealthInformation
+        uid: azure-servicefabric.HealthInformation

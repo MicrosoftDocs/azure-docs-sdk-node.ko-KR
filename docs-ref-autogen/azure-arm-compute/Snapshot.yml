@@ -1,0 +1,260 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.Snapshot
+    name: Snapshot
+    fullName: Snapshot
+    children:
+      - azure-arm-compute.Snapshot.creationData
+      - azure-arm-compute.Snapshot.diskSizeGB
+      - azure-arm-compute.Snapshot.encryptionSettingsCollection
+      - azure-arm-compute.Snapshot.hyperVGeneration
+      - azure-arm-compute.Snapshot.id
+      - azure-arm-compute.Snapshot.location
+      - azure-arm-compute.Snapshot.managedBy
+      - azure-arm-compute.Snapshot.name
+      - azure-arm-compute.Snapshot.osType
+      - azure-arm-compute.Snapshot.provisioningState
+      - azure-arm-compute.Snapshot.sku
+      - azure-arm-compute.Snapshot.tags
+      - azure-arm-compute.Snapshot.timeCreated
+      - azure-arm-compute.Snapshot.type
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="4a2d2-101">스냅숏된 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-101">Snapshot resource.</span></span>
+    extends:
+      name: azure-arm-compute.Resource
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.creationData
+    name: creationData
+    fullName: creationData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-102">디스크 원본 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-102">Disk source information.</span></span> <span data-ttu-id="4a2d2-103">디스크를 만든 후 CreationData 정보를 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-103">CreationData information cannot be changed after the disk has been created.</span></span>
+    syntax:
+      content: 'creationData: CreationData'
+      return:
+        type:
+          - azure-arm-compute.CreationData
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.diskSizeGB
+    name: diskSizeGB
+    fullName: diskSizeGB
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="4a2d2-104">CreationData.createOption 비어 있는 경우이 필드는 필수 이며 만들려면 VHD의 크기를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-104">If creationData.createOption is Empty, this field is mandatory and it indicates the size of the VHD to create.</span></span> <span data-ttu-id="4a2d2-105">다른 옵션을 사용 하 여 만들거나 업데이트에 대 한이 필드가 있으면 조정을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-105">If this field is present for updates or creation with other options, it indicates a resize.</span></span> <span data-ttu-id="4a2d2-106">크기 조정 디스크는 실행 중인 VM에 연결 되지 않은 디스크의 크기를 늘릴 수만 하는 경우에 허용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-106">Resizes are only allowed if the disk is not attached to a running VM, and can only increase the disk''s size.</span></span>'
+    optional: true
+    syntax:
+      content: 'diskSizeGB?: number'
+      return:
+        type:
+          - number
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.encryptionSettingsCollection
+    name: encryptionSettingsCollection
+    fullName: encryptionSettingsCollection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="4a2d2-107">암호화 설정 컬렉션 사용 될 Azure Disk Encryption 디스크 또는 스냅숏 당 여러 암호화 설정이 포함 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-107">Encryption settings collection used be Azure Disk Encryption, can contain multiple encryption settings per disk or snapshot.</span></span>'
+    optional: true
+    syntax:
+      content: 'encryptionSettingsCollection?: EncryptionSettingsCollection'
+      return:
+        type:
+          - azure-arm-compute.EncryptionSettingsCollection
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.hyperVGeneration
+    name: hyperVGeneration
+    fullName: hyperVGeneration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="4a2d2-108">가상 컴퓨터의 하이퍼바이저 세대입니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-108">The hypervisor generation of the Virtual Machine.</span></span> <span data-ttu-id="4a2d2-109">OS 디스크에만 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-109">Applicable to OS disks only.</span></span> <span data-ttu-id="4a2d2-110">가능한 값은 다음과 같습니다. '' V1'', ''V2''</span><span class="sxs-lookup"><span data-stu-id="4a2d2-110">Possible values include: ''V1'', ''V2''</span></span>'
+    optional: true
+    syntax:
+      content: 'hyperVGeneration?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-111">리소스 ID</span><span class="sxs-lookup"><span data-stu-id="4a2d2-111">Resource Id</span></span>
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-112">리소스 위치</span><span class="sxs-lookup"><span data-stu-id="4a2d2-112">Resource location</span></span>
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.managedBy
+    name: managedBy
+    fullName: managedBy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-113">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-113">Unused.</span></span> <span data-ttu-id="4a2d2-114">항상 Null입니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-114">Always Null.</span></span>
+    optional: true
+    syntax:
+      content: 'managedBy?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-115">리소스 이름</span><span class="sxs-lookup"><span data-stu-id="4a2d2-115">Resource name</span></span>
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.osType
+    name: osType
+    fullName: osType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="4a2d2-116">운영 체제 유형입니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-116">The Operating System type.</span></span> <span data-ttu-id="4a2d2-117">가능한 값은 다음과 같습니다. ''Windows'', ''Linux''</span><span class="sxs-lookup"><span data-stu-id="4a2d2-117">Possible values include: ''Windows'', ''Linux''</span></span>'
+    optional: true
+    syntax:
+      content: 'osType?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-118">디스크 상태를 프로 비전 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-118">The disk provisioning state.</span></span>
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'sku?: SnapshotSku'
+      return:
+        type:
+          - azure-arm-compute.SnapshotSku
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-119">리소스 태그</span><span class="sxs-lookup"><span data-stu-id="4a2d2-119">Resource tags</span></span>
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.timeCreated
+    name: timeCreated
+    fullName: timeCreated
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-120">디스크를 만들 때 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="4a2d2-120">The time when the disk was created.</span></span>
+    optional: true
+    syntax:
+      content: 'timeCreated?: Date'
+      return:
+        type:
+          - Date
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Snapshot.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="4a2d2-121">리소스 종류</span><span class="sxs-lookup"><span data-stu-id="4a2d2-121">Resource type</span></span>
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+references:
+  - uid: azure-arm-compute.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.CreationData
+    name: CreationData
+    spec.typeScript:
+      - name: CreationData
+        fullName: CreationData
+        uid: azure-arm-compute.CreationData
+  - uid: azure-arm-compute.EncryptionSettingsCollection
+    name: EncryptionSettingsCollection
+    spec.typeScript:
+      - name: EncryptionSettingsCollection
+        fullName: EncryptionSettingsCollection
+        uid: azure-arm-compute.EncryptionSettingsCollection
+  - uid: azure-arm-compute.SnapshotSku
+    name: SnapshotSku
+    spec.typeScript:
+      - name: SnapshotSku
+        fullName: SnapshotSku
+        uid: azure-arm-compute.SnapshotSku

@@ -1,0 +1,342 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-network.LoadBalancer'
+    name: LoadBalancer
+    fullName: LoadBalancer
+    children:
+      - '@azure/arm-network.LoadBalancer.backendAddressPools'
+      - '@azure/arm-network.LoadBalancer.etag'
+      - '@azure/arm-network.LoadBalancer.frontendIPConfigurations'
+      - '@azure/arm-network.LoadBalancer.id'
+      - '@azure/arm-network.LoadBalancer.inboundNatPools'
+      - '@azure/arm-network.LoadBalancer.inboundNatRules'
+      - '@azure/arm-network.LoadBalancer.loadBalancingRules'
+      - '@azure/arm-network.LoadBalancer.location'
+      - '@azure/arm-network.LoadBalancer.name'
+      - '@azure/arm-network.LoadBalancer.outboundRules'
+      - '@azure/arm-network.LoadBalancer.probes'
+      - '@azure/arm-network.LoadBalancer.provisioningState'
+      - '@azure/arm-network.LoadBalancer.resourceGuid'
+      - '@azure/arm-network.LoadBalancer.sku'
+      - '@azure/arm-network.LoadBalancer.tags'
+      - '@azure/arm-network.LoadBalancer.type'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="7d9f2-101">LoadBalancer 리소스</span><span class="sxs-lookup"><span data-stu-id="7d9f2-101">LoadBalancer resource</span></span>
+    extends:
+      name: '@azure/arm-network.Resource'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.backendAddressPools'
+    name: backendAddressPools
+    fullName: backendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-102">부하 분산 장치에서 사용 하는 백 엔드 주소 풀의 컬렉션</span><span class="sxs-lookup"><span data-stu-id="7d9f2-102">Collection of backend address pools used by a load balancer</span></span>
+    optional: true
+    syntax:
+      content: 'backendAddressPools?: BackendAddressPool[]'
+      return:
+        type:
+          - '@azure/arm-network.BackendAddressPool[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.etag'
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-103">고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-103">A unique read-only string that changes whenever the resource is updated.</span></span>
+    optional: true
+    syntax:
+      content: 'etag?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.frontendIPConfigurations'
+    name: frontendIPConfigurations
+    fullName: frontendIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-104">프런트 엔드 부하 분산 장치에 사용할 Ip를 나타내는 개체</span><span class="sxs-lookup"><span data-stu-id="7d9f2-104">Object representing the frontend IPs to be used for the load balancer</span></span>
+    optional: true
+    syntax:
+      content: 'frontendIPConfigurations?: FrontendIPConfiguration[]'
+      return:
+        type:
+          - '@azure/arm-network.FrontendIPConfiguration[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-105">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-105">Resource ID.</span></span>
+    optional: true
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.inboundNatPools'
+    name: inboundNatPools
+    fullName: inboundNatPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-106">단일 백 엔드 포트는 부하 분산 장치와 연결 된 Nic에 대 한 인바운드 NAT에 대 한 외부 포트 범위를 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-106">Defines an external port range for inbound NAT to a single backend port on NICs associated with a load balancer.</span></span> <span data-ttu-id="7d9f2-107">이 범위에서 외부 포트를 사용 하 여 부하 분산 장치와 연결 된 각 NIC에 대 한 인바운드 NAT 규칙을 자동으로 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-107">Inbound NAT rules are created automatically for each NIC associated with the Load Balancer using an external port from this range.</span></span> <span data-ttu-id="7d9f2-108">부하 분산 장치 인바운드 NAT 풀을 정의 하는 인바운드 Nat 규칙을 정의 하는 데 함께입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-108">Defining an Inbound NAT pool on your Load Balancer is mutually exclusive with defining inbound Nat rules.</span></span> <span data-ttu-id="7d9f2-109">인바운드 NAT 풀은 가상 머신 확장 집합에서 참조 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-109">Inbound NAT pools are referenced from virtual machine scale sets.</span></span> <span data-ttu-id="7d9f2-110">개별 가상 머신과 연결 된 Nic에는 인바운드 NAT 풀을 참조할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-110">NICs that are associated with individual virtual machines cannot reference an inbound NAT pool.</span></span> <span data-ttu-id="7d9f2-111">인바운드 NAT 규칙의 개별 참조 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-111">They have to reference individual inbound NAT rules.</span></span>
+    optional: true
+    syntax:
+      content: 'inboundNatPools?: InboundNatPool[]'
+      return:
+        type:
+          - '@azure/arm-network.InboundNatPool[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.inboundNatRules'
+    name: inboundNatRules
+    fullName: inboundNatRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-112">부하 분산 장치에서 사용 하는 인바운드 NAT 규칙의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-112">Collection of inbound NAT Rules used by a load balancer.</span></span> <span data-ttu-id="7d9f2-113">부하 분산 장치 인바운드 NAT 규칙을 정의 하는 인바운드 NAT 풀을 정의 하는 데 함께입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-113">Defining inbound NAT rules on your load balancer is mutually exclusive with defining an inbound NAT pool.</span></span> <span data-ttu-id="7d9f2-114">인바운드 NAT 풀은 가상 머신 확장 집합에서 참조 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-114">Inbound NAT pools are referenced from virtual machine scale sets.</span></span> <span data-ttu-id="7d9f2-115">개별 가상 머신과 연결 된 Nic에는 인바운드 NAT 풀을 참조할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-115">NICs that are associated with individual virtual machines cannot reference an Inbound NAT pool.</span></span> <span data-ttu-id="7d9f2-116">인바운드 NAT 규칙의 개별 참조 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-116">They have to reference individual inbound NAT rules.</span></span>
+    optional: true
+    syntax:
+      content: 'inboundNatRules?: InboundNatRule[]'
+      return:
+        type:
+          - '@azure/arm-network.InboundNatRule[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.loadBalancingRules'
+    name: loadBalancingRules
+    fullName: loadBalancingRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-117">부하 분산 규칙을 나타내는 개체 컬렉션을 가져옵니다 프로 비전</span><span class="sxs-lookup"><span data-stu-id="7d9f2-117">Object collection representing the load balancing rules Gets the provisioning</span></span>
+    optional: true
+    syntax:
+      content: 'loadBalancingRules?: LoadBalancingRule[]'
+      return:
+        type:
+          - '@azure/arm-network.LoadBalancingRule[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.location'
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-118">리소스 위치.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-118">Resource location.</span></span>
+    optional: true
+    syntax:
+      content: 'location?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="7d9f2-119">리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-119">Resource name.</span></span>
+      <span data-ttu-id="7d9f2-120">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="7d9f2-120">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.outboundRules'
+    name: outboundRules
+    fullName: outboundRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-121">아웃 바운드 규칙입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-121">The outbound rules.</span></span>
+    optional: true
+    syntax:
+      content: 'outboundRules?: OutboundRule[]'
+      return:
+        type:
+          - '@azure/arm-network.OutboundRule[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.probes'
+    name: probes
+    fullName: probes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-122">부하 분산 장치에 사용 되는 검색 개체의 컬렉션</span><span class="sxs-lookup"><span data-stu-id="7d9f2-122">Collection of probe objects used in the load balancer</span></span>
+    optional: true
+    syntax:
+      content: 'probes?: Probe[]'
+      return:
+        type:
+          - '@azure/arm-network.Probe[]'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.provisioningState'
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="7d9f2-123">PublicIP 리소스의 프로 비전 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-123">Gets the provisioning state of the PublicIP resource.</span></span> <span data-ttu-id="7d9f2-124">가능한 값은 다음과 같습니다. ''업데이트'', ''삭제'' 및 ''실패''입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-124">Possible values are: ''Updating'', ''Deleting'', and ''Failed''.</span></span>'
+    optional: true
+    syntax:
+      content: 'provisioningState?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.resourceGuid'
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-125">부하 분산 장치 리소스의 GUID 속성 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-125">The resource GUID property of the load balancer resource.</span></span>
+    optional: true
+    syntax:
+      content: 'resourceGuid?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.sku'
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-126">부하 분산 장치에 SKU입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-126">The load balancer SKU.</span></span>
+    optional: true
+    syntax:
+      content: 'sku?: LoadBalancerSku'
+      return:
+        type:
+          - '@azure/arm-network.LoadBalancerSku'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.tags'
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="7d9f2-127">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-127">Resource tags.</span></span>
+    optional: true
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        type:
+          - 'undefined | [key: string]: string'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.LoadBalancer.type'
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="7d9f2-128">리소스 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="7d9f2-128">Resource type.</span></span>
+      <span data-ttu-id="7d9f2-129">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="7d9f2-129">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+references:
+  - uid: '@azure/arm-network.Resource'
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: '@azure/arm-network.Resource'
+  - uid: '@azure/arm-network.BackendAddressPool[]'
+    name: 'BackendAddressPool[]'
+    spec.typeScript:
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: '@azure/arm-network.BackendAddressPool'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.FrontendIPConfiguration[]'
+    name: 'FrontendIPConfiguration[]'
+    spec.typeScript:
+      - name: FrontendIPConfiguration
+        fullName: FrontendIPConfiguration
+        uid: '@azure/arm-network.FrontendIPConfiguration'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.InboundNatPool[]'
+    name: 'InboundNatPool[]'
+    spec.typeScript:
+      - name: InboundNatPool
+        fullName: InboundNatPool
+        uid: '@azure/arm-network.InboundNatPool'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.InboundNatRule[]'
+    name: 'InboundNatRule[]'
+    spec.typeScript:
+      - name: InboundNatRule
+        fullName: InboundNatRule
+        uid: '@azure/arm-network.InboundNatRule'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.LoadBalancingRule[]'
+    name: 'LoadBalancingRule[]'
+    spec.typeScript:
+      - name: LoadBalancingRule
+        fullName: LoadBalancingRule
+        uid: '@azure/arm-network.LoadBalancingRule'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.OutboundRule[]'
+    name: 'OutboundRule[]'
+    spec.typeScript:
+      - name: OutboundRule
+        fullName: OutboundRule
+        uid: '@azure/arm-network.OutboundRule'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.Probe[]'
+    name: 'Probe[]'
+    spec.typeScript:
+      - name: Probe
+        fullName: Probe
+        uid: '@azure/arm-network.Probe'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-network.LoadBalancerSku'
+    name: LoadBalancerSku
+    spec.typeScript:
+      - name: LoadBalancerSku
+        fullName: LoadBalancerSku
+        uid: '@azure/arm-network.LoadBalancerSku'

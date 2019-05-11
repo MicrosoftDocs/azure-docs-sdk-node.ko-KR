@@ -1,0 +1,360 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn.Endpoint
+    name: Endpoint
+    fullName: Endpoint
+    children:
+      - azure-arm-cdn.Endpoint.contentTypesToCompress
+      - azure-arm-cdn.Endpoint.deliveryPolicy
+      - azure-arm-cdn.Endpoint.geoFilters
+      - azure-arm-cdn.Endpoint.hostName
+      - azure-arm-cdn.Endpoint.id
+      - azure-arm-cdn.Endpoint.isCompressionEnabled
+      - azure-arm-cdn.Endpoint.isHttpAllowed
+      - azure-arm-cdn.Endpoint.isHttpsAllowed
+      - azure-arm-cdn.Endpoint.location
+      - azure-arm-cdn.Endpoint.name
+      - azure-arm-cdn.Endpoint.optimizationType
+      - azure-arm-cdn.Endpoint.originHostHeader
+      - azure-arm-cdn.Endpoint.originPath
+      - azure-arm-cdn.Endpoint.origins
+      - azure-arm-cdn.Endpoint.probePath
+      - azure-arm-cdn.Endpoint.provisioningState
+      - azure-arm-cdn.Endpoint.queryStringCachingBehavior
+      - azure-arm-cdn.Endpoint.resourceState
+      - azure-arm-cdn.Endpoint.tags
+      - azure-arm-cdn.Endpoint.type
+    langs:
+      - typeScript
+    type: interface
+    summary: '<span data-ttu-id="5be96-101">CDN 끝점은 원본, 프로토콜, 콘텐츠 캐싱 및 배달 동작 구성 정보를 포함 하는 CDN 프로필 내에서 엔터티입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-101">CDN endpoint is the entity within a CDN profile containing configuration information such as origin, protocol, content caching and delivery behavior.</span></span> <span data-ttu-id="5be96-102">CDN 끝점 URL 형식을 사용 하 여 <endpointname>. azureedge.net 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-102">The CDN endpoint uses the URL format <endpointname>.azureedge.net.</span></span>'
+    extends:
+      name: azure-arm-cdn.TrackedResource
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.contentTypesToCompress
+    name: contentTypesToCompress
+    fullName: contentTypesToCompress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-103">압축 적용 되는 콘텐츠 형식의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-103">List of content types on which compression applies.</span></span> <span data-ttu-id="5be96-104">값은 유효한 MIME 형식 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-104">The value should be a valid MIME type.</span></span>
+    optional: true
+    syntax:
+      content: 'contentTypesToCompress?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.deliveryPolicy
+    name: deliveryPolicy
+    fullName: deliveryPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-105">끝점에 사용 되는 배달 규칙을 지정 하는 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-105">A policy that specifies the delivery rules to be used for an endpoint.</span></span>
+    optional: true
+    syntax:
+      content: 'deliveryPolicy?: EndpointPropertiesUpdateParametersDeliveryPolicy'
+      return:
+        type:
+          - azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.geoFilters
+    name: geoFilters
+    fullName: geoFilters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-106">CDN 끝점 내에서 사용자의 지역에서 액세스를 정의 하는 규칙의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-106">List of rules defining the user''s geo access within a CDN endpoint.</span></span> <span data-ttu-id="5be96-107">지정 된 경로 또는 경로 /pictures/ 블록 APAC 예: 콘텐츠 액세스 규칙을 정의 하는 각 지역 필터</span><span class="sxs-lookup"><span data-stu-id="5be96-107">Each geo filter defines an access rule to a specified path or content, e.g. block APAC for path /pictures/</span></span>'
+    optional: true
+    syntax:
+      content: 'geoFilters?: GeoFilter[]'
+      return:
+        type:
+          - 'azure-arm-cdn.GeoFilter[]'
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.hostName
+    name: hostName
+    fullName: hostName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-108">끝점 {endpointName}으로 구성의 호스트 이름입니다. {DNSZone} 예: contoso.azureedge.net</span><span class="sxs-lookup"><span data-stu-id="5be96-108">The host name of the endpoint structured as {endpointName}.{DNSZone}, e.g. contoso.azureedge.net</span></span>'
+    optional: true
+    syntax:
+      content: 'hostName?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-109">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-109">Resource ID.</span></span>
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.isCompressionEnabled
+    name: isCompressionEnabled
+    fullName: isCompressionEnabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-110">CDN에 콘텐츠 압축 사용 되는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-110">Indicates whether content compression is enabled on CDN.</span></span> <span data-ttu-id="5be96-111">기본값은 False입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-111">Default value is false.</span></span> <span data-ttu-id="5be96-112">압축을 사용 하면 콘텐츠 되 수 압축된 버전에 대 한 사용자 요청 하는 경우 압축 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-112">If compression is enabled, content will be served as compressed if user requests for a compressed version.</span></span> <span data-ttu-id="5be96-113">요청 된 콘텐츠가 1 바이트 보다 작거나 1MB 보다 큰 경우 CDN의 콘텐츠는 압축 되지 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-113">Content won''t be compressed on CDN when requested content is smaller than 1 byte or larger than 1 MB.</span></span>'
+    optional: true
+    syntax:
+      content: 'isCompressionEnabled?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.isHttpAllowed
+    name: isHttpAllowed
+    fullName: isHttpAllowed
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-114">끝점에서 HTTP 트래픽을 허용 되는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-114">Indicates whether HTTP traffic is allowed on the endpoint.</span></span> <span data-ttu-id="5be96-115">기본값은 true입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-115">Default value is true.</span></span> <span data-ttu-id="5be96-116">하나 이상의 프로토콜 (HTTP 또는 HTTPS) 허용 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-116">At least one protocol (HTTP or HTTPS) must be allowed.</span></span>
+    optional: true
+    syntax:
+      content: 'isHttpAllowed?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.isHttpsAllowed
+    name: isHttpsAllowed
+    fullName: isHttpsAllowed
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-117">끝점에서 HTTPS 트래픽이 허용 되는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-117">Indicates whether HTTPS traffic is allowed on the endpoint.</span></span> <span data-ttu-id="5be96-118">기본값은 true입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-118">Default value is true.</span></span> <span data-ttu-id="5be96-119">하나 이상의 프로토콜 (HTTP 또는 HTTPS) 허용 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-119">At least one protocol (HTTP or HTTPS) must be allowed.</span></span>
+    optional: true
+    syntax:
+      content: 'isHttpsAllowed?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-120">리소스 위치.</span><span class="sxs-lookup"><span data-stu-id="5be96-120">Resource location.</span></span>
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-121">리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-121">Resource name.</span></span>
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.optimizationType
+    name: optimizationType
+    fullName: optimizationType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-122">이 CDN 끝점에 대 한 최적화를 예를 들어 다운로드, Media services 시나리오 고객이 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-122">Specifies what scenario the customer wants this CDN endpoint to optimize for, e.g. Download, Media services.</span></span> <span data-ttu-id="5be96-123">이 정보를 사용 하 여 CDN 시나리오 기반 최적화를 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-123">With this information, CDN can apply scenario driven optimization.</span></span> <span data-ttu-id="5be96-124">가능한 값은 다음과 같습니다. ''GeneralWebDelivery'', ''GeneralMediaStreaming'', ''VideoOnDemandMediaStreaming'', ''LargeFileDownload'', ''DynamicSiteAcceleration''</span><span class="sxs-lookup"><span data-stu-id="5be96-124">Possible values include: ''GeneralWebDelivery'', ''GeneralMediaStreaming'', ''VideoOnDemandMediaStreaming'', ''LargeFileDownload'', ''DynamicSiteAcceleration''</span></span>'
+    optional: true
+    syntax:
+      content: 'optimizationType?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.originHostHeader
+    name: originHostHeader
+    fullName: originHostHeader
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-125">각 요청과 함께 원본으로 전송 하는 호스트 헤더 값입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-125">The host header value sent to the origin with each request.</span></span> <span data-ttu-id="5be96-126">이 비워 두면 요청 호스트 이름이이 값을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-126">If you leave this blank, the request hostname determines this value.</span></span> <span data-ttu-id="5be96-127">웹 앱, Blob Storage 및 Cloud Services와 같은 azure CDN 원본을 기본적으로 원본 호스트 이름과 일치 하도록 호스트 헤더 값이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-127">Azure CDN origins, such as Web Apps, Blob Storage, and Cloud Services require this host header value to match the origin hostname by default.</span></span>'
+    optional: true
+    syntax:
+      content: 'originHostHeader?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.originPath
+    name: originPath
+    fullName: originPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-128">CDN에서, 예: contoso.cloudapp.net/originpath 콘텐츠를 검색 하는 데 사용할 수 있는 출처에 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-128">A directory path on the origin that CDN can use to retrieve content from, e.g. contoso.cloudapp.net/originpath.</span></span>'
+    optional: true
+    syntax:
+      content: 'originPath?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.origins
+    name: origins
+    fullName: origins
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-129">원본 콘텐츠를 CDN을 통해 전송 되는입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-129">The source of the content being delivered via CDN.</span></span>
+    syntax:
+      content: 'origins: DeepCreatedOrigin[]'
+      return:
+        type:
+          - 'azure-arm-cdn.DeepCreatedOrigin[]'
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.probePath
+    name: probePath
+    fullName: probePath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-130">원본은 데 도움이 되는 동적 콘텐츠의 배달을 가속화 하 고 CDN에 대 한 최적의 경로 계산에서 호스트 되는 파일 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-130">Path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN.</span></span> <span data-ttu-id="5be96-131">이 원본 경로 상대적입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-131">This is relative to the origin path.</span></span>
+    optional: true
+    syntax:
+      content: 'probePath?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-132">끝점의 프로비저닝 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-132">Provisioning status of the endpoint.</span></span>
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.queryStringCachingBehavior
+    name: queryStringCachingBehavior
+    fullName: queryStringCachingBehavior
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-133">CDN 쿼리 문자열을 포함 하는 요청을 캐시 하는 방법을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-133">Defines how CDN caches requests that include query strings.</span></span> <span data-ttu-id="5be96-134">캐시 되 고 캐시에서 쿼리 문자열을 포함 하는 요청을 방지 하기 위해 캐싱을 우회 또는 고유한 URL 사용 하 여 모든 요청을 캐시 하는 경우 쿼리 문자열을 무시할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-134">You can ignore any query strings when caching, bypass caching to prevent requests that contain query strings from being cached, or cache every request with a unique URL.</span></span> <span data-ttu-id="5be96-135">가능한 값은 다음과 같습니다. ''IgnoreQueryString'', ''BypassCaching'', ''UseQueryString'', ''NotSet''</span><span class="sxs-lookup"><span data-stu-id="5be96-135">Possible values include: ''IgnoreQueryString'', ''BypassCaching'', ''UseQueryString'', ''NotSet''</span></span>'
+    optional: true
+    syntax:
+      content: 'queryStringCachingBehavior?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.resourceState
+    name: resourceState
+    fullName: resourceState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="5be96-136">끝점의 리소스 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-136">Resource status of the endpoint.</span></span> <span data-ttu-id="5be96-137">가능한 값은 다음과 같습니다. ''만들기'', ''삭제'', ''실행 중'', ''시작'', '' 중지 됨 '', ''Stopping''</span><span class="sxs-lookup"><span data-stu-id="5be96-137">Possible values include: ''Creating'', ''Deleting'', ''Running'', ''Starting'', ''Stopped'', ''Stopping''</span></span>'
+    optional: true
+    syntax:
+      content: 'resourceState?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-138">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-138">Resource tags.</span></span>
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.Endpoint.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5be96-139">리소스 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="5be96-139">Resource type.</span></span>
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-cdn
+references:
+  - uid: azure-arm-cdn.TrackedResource
+    name: TrackedResource
+    spec.typeScript:
+      - name: TrackedResource
+        fullName: TrackedResource
+        uid: azure-arm-cdn.TrackedResource
+  - uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+    name: EndpointPropertiesUpdateParametersDeliveryPolicy
+    spec.typeScript:
+      - name: EndpointPropertiesUpdateParametersDeliveryPolicy
+        fullName: EndpointPropertiesUpdateParametersDeliveryPolicy
+        uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+  - uid: 'azure-arm-cdn.GeoFilter[]'
+    name: 'GeoFilter[]'
+    spec.typeScript:
+      - name: GeoFilter
+        fullName: GeoFilter
+        uid: azure-arm-cdn.GeoFilter
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-cdn.DeepCreatedOrigin[]'
+    name: 'DeepCreatedOrigin[]'
+    spec.typeScript:
+      - name: DeepCreatedOrigin
+        fullName: DeepCreatedOrigin
+        uid: azure-arm-cdn.DeepCreatedOrigin
+      - name: '[]'
+        fullName: '[]'

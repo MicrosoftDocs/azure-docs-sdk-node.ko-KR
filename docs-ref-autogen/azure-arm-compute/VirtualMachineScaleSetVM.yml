@@ -1,0 +1,506 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM
+    name: VirtualMachineScaleSetVM
+    fullName: VirtualMachineScaleSetVM
+    children:
+      - azure-arm-compute.VirtualMachineScaleSetVM.additionalCapabilities
+      - azure-arm-compute.VirtualMachineScaleSetVM.availabilitySet
+      - azure-arm-compute.VirtualMachineScaleSetVM.diagnosticsProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.hardwareProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.id
+      - azure-arm-compute.VirtualMachineScaleSetVM.instanceId
+      - azure-arm-compute.VirtualMachineScaleSetVM.instanceView
+      - azure-arm-compute.VirtualMachineScaleSetVM.latestModelApplied
+      - azure-arm-compute.VirtualMachineScaleSetVM.licenseType
+      - azure-arm-compute.VirtualMachineScaleSetVM.location
+      - azure-arm-compute.VirtualMachineScaleSetVM.modelDefinitionApplied
+      - azure-arm-compute.VirtualMachineScaleSetVM.name
+      - azure-arm-compute.VirtualMachineScaleSetVM.networkProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.networkProfileConfiguration
+      - azure-arm-compute.VirtualMachineScaleSetVM.osProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.plan
+      - azure-arm-compute.VirtualMachineScaleSetVM.protectionPolicy
+      - azure-arm-compute.VirtualMachineScaleSetVM.provisioningState
+      - azure-arm-compute.VirtualMachineScaleSetVM.resources
+      - azure-arm-compute.VirtualMachineScaleSetVM.sku
+      - azure-arm-compute.VirtualMachineScaleSetVM.storageProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.tags
+      - azure-arm-compute.VirtualMachineScaleSetVM.type
+      - azure-arm-compute.VirtualMachineScaleSetVM.vmId
+      - azure-arm-compute.VirtualMachineScaleSetVM.zones
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="04e67-101">가상 머신 확장 집합 가상 컴퓨터에 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-101">Describes a virtual machine scale set virtual machine.</span></span>
+    extends:
+      name: azure-arm-compute.Resource
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.additionalCapabilities
+    name: additionalCapabilities
+    fullName: additionalCapabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="04e67-102">확장 집합의 가상 컴퓨터에서 활성화 또는 비활성화 하는 추가 기능을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-102">Specifies additional capabilities enabled or disabled on the virtual machine in the scale set.</span></span>
+      <span data-ttu-id="04e67-103">예를 들어: UltraSSD_LRS 저장소 계정 유형으로 데이터 디스크에 관리 되는 가상 컴퓨터의 연결을 지원 하는 기능에 있는지 여부입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-103">For instance: whether the virtual machine has the capability to support attaching managed data disks with UltraSSD_LRS storage account type.</span></span>
+    optional: true
+    syntax:
+      content: 'additionalCapabilities?: AdditionalCapabilities'
+      return:
+        type:
+          - azure-arm-compute.AdditionalCapabilities
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.availabilitySet
+    name: availabilitySet
+    fullName: availabilitySet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="04e67-104">가상 컴퓨터에 할당 되어야 하는 가용성 집합에 대 한 정보를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-104">Specifies information about the availability set that the virtual machine should be assigned to.</span></span> <span data-ttu-id="04e67-105">동일한 가용성 집합에 지정 된 가상 컴퓨터 가용성을 최대화 하기 위해 서로 다른 노드에 할당 됩니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-105">Virtual machines specified in the same availability set are allocated to different nodes to maximize availability.</span></span> <span data-ttu-id="04e67-106">가용성 집합에 대 한 자세한 내용은 참조 하세요. [가상 머신의 가용성 관리](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-manage-availability?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-106">For more information about availability sets, see [Manage the availability of virtual machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-manage-availability?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).</span></span>
+      <br><br> <span data-ttu-id="04e67-107">Azure 계획 된 유지 관리에 대 한 자세한 내용은 참조 하세요. [Azure에서 가상 머신에 대 한 유지 관리 계획](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-planned-maintenance?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="04e67-107">For more information on Azure planned maintenance, see [Planned maintenance for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-planned-maintenance?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)</span></span>
+      <br><br> <span data-ttu-id="04e67-108">현재 VM 가용성 집합을 만들 때에 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-108">Currently, a VM can only be added to availability set at creation time.</span></span> <span data-ttu-id="04e67-109">기존 VM은 가용성 집합에 추가할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-109">An existing VM cannot be added to an availability set.</span></span>
+    optional: true
+    syntax:
+      content: 'availabilitySet?: SubResource'
+      return:
+        type:
+          - azure-arm-compute.SubResource
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.diagnosticsProfile
+    name: diagnosticsProfile
+    fullName: diagnosticsProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="04e67-110">부팅 진단 설정 상태를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-110">Specifies the boot diagnostic settings state.</span></span> <br><br><span data-ttu-id="04e67-111">최소 api 버전: 2015-06-15.</span><span class="sxs-lookup"><span data-stu-id="04e67-111">Minimum api-version: 2015-06-15.</span></span>'
+    optional: true
+    syntax:
+      content: 'diagnosticsProfile?: DiagnosticsProfile'
+      return:
+        type:
+          - azure-arm-compute.DiagnosticsProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.hardwareProfile
+    name: hardwareProfile
+    fullName: hardwareProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-112">가상 머신에 대한 하드웨어 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-112">Specifies the hardware settings for the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'hardwareProfile?: HardwareProfile'
+      return:
+        type:
+          - azure-arm-compute.HardwareProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-113">리소스 ID</span><span class="sxs-lookup"><span data-stu-id="04e67-113">Resource Id</span></span>
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.instanceId
+    name: instanceId
+    fullName: instanceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-114">가상 머신 인스턴스 id입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-114">The virtual machine instance ID.</span></span>
+    optional: true
+    syntax:
+      content: 'instanceId?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.instanceView
+    name: instanceView
+    fullName: instanceView
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-115">가상 머신 인스턴스 뷰입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-115">The virtual machine instance view.</span></span>
+    optional: true
+    syntax:
+      content: 'instanceView?: VirtualMachineScaleSetVMInstanceView'
+      return:
+        type:
+          - azure-arm-compute.VirtualMachineScaleSetVMInstanceView
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.latestModelApplied
+    name: latestModelApplied
+    fullName: latestModelApplied
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-116">가상 컴퓨터에 최신 모델에 적용 되었는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-116">Specifies whether the latest model has been applied to the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'latestModelApplied?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.licenseType
+    name: licenseType
+    fullName: licenseType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="04e67-117">사용중인 이미지 또는 디스크가 온-프레미스에서 사용이 허가되었음을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-117">Specifies that the image or disk that is being used was licensed on-premises.</span></span> <span data-ttu-id="04e67-118">이 요소는 Windows Server 운영 체제를 포함 하는 이미지에만 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-118">This element is only used for images that contain the Windows Server operating system.</span></span> <br><br> <span data-ttu-id="04e67-119">가능한 값은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-119">Possible values are:</span></span> <br><br> <span data-ttu-id="04e67-120">Windows_Client</span><span class="sxs-lookup"><span data-stu-id="04e67-120">Windows_Client</span></span> <br><br> <span data-ttu-id="04e67-121">Windows_Server</span><span class="sxs-lookup"><span data-stu-id="04e67-121">Windows_Server</span></span> <br><br> <span data-ttu-id="04e67-122">이 요소는 업데이트에 대 한 요청이 포함 된 경우 값을 초기 값을 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-122">If this element is included in a request for an update, the value must match the initial value.</span></span> <span data-ttu-id="04e67-123">이 값을 업데이트할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-123">This value cannot be updated.</span></span> <br><br> <span data-ttu-id="04e67-124">자세한 내용은 참조 하세요. [Azure 하이브리드 사용 혜택에 대 한 Windows Server](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="04e67-124">For more information, see [Azure Hybrid Use Benefit for Windows Server](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)</span></span>
+      <br><br> <span data-ttu-id="04e67-125">최소 api 버전: 2015-06-15</span><span class="sxs-lookup"><span data-stu-id="04e67-125">Minimum api-version: 2015-06-15</span></span>
+    optional: true
+    syntax:
+      content: 'licenseType?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-126">리소스 위치</span><span class="sxs-lookup"><span data-stu-id="04e67-126">Resource location</span></span>
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.modelDefinitionApplied
+    name: modelDefinitionApplied
+    fullName: modelDefinitionApplied
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-127">가상 컴퓨터에 적용 하는 모델의 가상 머신 확장 집합 모델 또는 가상 컴퓨터에 대 한 사용자 지정된 모델 인지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-127">Specifies whether the model applied to the virtual machine is the model of the virtual machine scale set or the customized model for the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'modelDefinitionApplied?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-128">리소스 이름</span><span class="sxs-lookup"><span data-stu-id="04e67-128">Resource name</span></span>
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.networkProfile
+    name: networkProfile
+    fullName: networkProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-129">가상 머신의 네트워크 인터페이스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-129">Specifies the network interfaces of the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'networkProfile?: NetworkProfile'
+      return:
+        type:
+          - azure-arm-compute.NetworkProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.networkProfileConfiguration
+    name: networkProfileConfiguration
+    fullName: networkProfileConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-130">가상 컴퓨터의 네트워크 프로필 구성을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-130">Specifies the network profile configuration of the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'networkProfileConfiguration?: VirtualMachineScaleSetVMNetworkProfileConfiguration'
+      return:
+        type:
+          - azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.osProfile
+    name: osProfile
+    fullName: osProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-131">가상 머신에 대한 운영 체제 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-131">Specifies the operating system settings for the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'osProfile?: OSProfile'
+      return:
+        type:
+          - azure-arm-compute.OSProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.plan
+    name: plan
+    fullName: plan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="04e67-132">가상 컴퓨터를 만드는 데 사용 된 marketplace 이미지에 대 한 정보를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-132">Specifies information about the marketplace image used to create the virtual machine.</span></span> <span data-ttu-id="04e67-133">이 요소는 marketplace 이미지에만 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-133">This element is only used for marketplace images.</span></span> <span data-ttu-id="04e67-134">API에서 마켓플레이스 이미지를 사용 하려면 먼저 프로그래밍 방식으로 사용 하 여 이미지를 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-134">Before you can use a marketplace image from an API, you must enable the image for programmatic use.</span></span>  <span data-ttu-id="04e67-135">Azure portal에서 사용 하 고 클릭 하려는 marketplace 이미지를 찾습니다 **프로그래밍 방식으로 배포 하려면, 시작->** 합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-135">In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**.</span></span> <span data-ttu-id="04e67-136">필요한 모든 정보를 입력 한 다음 클릭 **저장할**합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-136">Enter any required information and then click **Save**.</span></span>'
+    optional: true
+    syntax:
+      content: 'plan?: Plan'
+      return:
+        type:
+          - azure-arm-compute.Plan
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.protectionPolicy
+    name: protectionPolicy
+    fullName: protectionPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-137">가상 컴퓨터의 보호 정책을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-137">Specifies the protection policy of the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'protectionPolicy?: VirtualMachineScaleSetVMProtectionPolicy'
+      return:
+        type:
+          - azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="04e67-138">응답에만 표시 되는 프로 비전 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-138">The provisioning state, which only appears in the response.</span></span>'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.resources
+    name: resources
+    fullName: resources
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-139">가상 머신 자식 확장 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-139">The virtual machine child extension resources.</span></span>
+    optional: true
+    syntax:
+      content: 'resources?: VirtualMachineExtension[]'
+      return:
+        type:
+          - 'azure-arm-compute.VirtualMachineExtension[]'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-140">가상 머신 SKU입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-140">The virtual machine SKU.</span></span>
+    optional: true
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        type:
+          - azure-arm-compute.Sku
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.storageProfile
+    name: storageProfile
+    fullName: storageProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-141">가상 머신 디스크에 대한 저장소 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-141">Specifies the storage settings for the virtual machine disks.</span></span>
+    optional: true
+    syntax:
+      content: 'storageProfile?: StorageProfile'
+      return:
+        type:
+          - azure-arm-compute.StorageProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-142">리소스 태그</span><span class="sxs-lookup"><span data-stu-id="04e67-142">Resource tags</span></span>
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-143">리소스 종류</span><span class="sxs-lookup"><span data-stu-id="04e67-143">Resource type</span></span>
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.vmId
+    name: vmId
+    fullName: vmId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-144">Azure VM 고유 id입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-144">Azure VM unique ID.</span></span>
+    optional: true
+    syntax:
+      content: 'vmId?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="04e67-145">가상 머신 영역입니다.</span><span class="sxs-lookup"><span data-stu-id="04e67-145">The virtual machine zones.</span></span>
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-compute
+references:
+  - uid: azure-arm-compute.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.AdditionalCapabilities
+    name: AdditionalCapabilities
+    spec.typeScript:
+      - name: AdditionalCapabilities
+        fullName: AdditionalCapabilities
+        uid: azure-arm-compute.AdditionalCapabilities
+  - uid: azure-arm-compute.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+  - uid: azure-arm-compute.DiagnosticsProfile
+    name: DiagnosticsProfile
+    spec.typeScript:
+      - name: DiagnosticsProfile
+        fullName: DiagnosticsProfile
+        uid: azure-arm-compute.DiagnosticsProfile
+  - uid: azure-arm-compute.HardwareProfile
+    name: HardwareProfile
+    spec.typeScript:
+      - name: HardwareProfile
+        fullName: HardwareProfile
+        uid: azure-arm-compute.HardwareProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView
+    name: VirtualMachineScaleSetVMInstanceView
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMInstanceView
+        fullName: VirtualMachineScaleSetVMInstanceView
+        uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView
+  - uid: azure-arm-compute.NetworkProfile
+    name: NetworkProfile
+    spec.typeScript:
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-compute.NetworkProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
+    name: VirtualMachineScaleSetVMNetworkProfileConfiguration
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMNetworkProfileConfiguration
+        fullName: VirtualMachineScaleSetVMNetworkProfileConfiguration
+        uid: azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
+  - uid: azure-arm-compute.OSProfile
+    name: OSProfile
+    spec.typeScript:
+      - name: OSProfile
+        fullName: OSProfile
+        uid: azure-arm-compute.OSProfile
+  - uid: azure-arm-compute.Plan
+    name: Plan
+    spec.typeScript:
+      - name: Plan
+        fullName: Plan
+        uid: azure-arm-compute.Plan
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
+    name: VirtualMachineScaleSetVMProtectionPolicy
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMProtectionPolicy
+        fullName: VirtualMachineScaleSetVMProtectionPolicy
+        uid: azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
+  - uid: 'azure-arm-compute.VirtualMachineExtension[]'
+    name: 'VirtualMachineExtension[]'
+    spec.typeScript:
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute.VirtualMachineExtension
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.Sku
+    name: Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute.Sku
+  - uid: azure-arm-compute.StorageProfile
+    name: StorageProfile
+    spec.typeScript:
+      - name: StorageProfile
+        fullName: StorageProfile
+        uid: azure-arm-compute.StorageProfile
