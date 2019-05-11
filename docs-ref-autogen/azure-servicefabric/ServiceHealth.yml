@@ -1,0 +1,149 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.ServiceHealth
+    name: ServiceHealth
+    fullName: ServiceHealth
+    children:
+      - azure-servicefabric.ServiceHealth.aggregatedHealthState
+      - azure-servicefabric.ServiceHealth.healthEvents
+      - azure-servicefabric.ServiceHealth.healthStatistics
+      - azure-servicefabric.ServiceHealth.name
+      - azure-servicefabric.ServiceHealth.partitionHealthStates
+      - azure-servicefabric.ServiceHealth.unhealthyEvaluations
+    langs:
+      - typeScript
+    type: interface
+    summary: Service Fabric 서비스의 상태에 대 한 정보입니다.
+    extends:
+      name: azure-servicefabric.EntityHealth
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceHealth.aggregatedHealthState
+    name: aggregatedHealthState
+    fullName: aggregatedHealthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      상태 관리자에 의해 계산 된 엔터티의 집계 된 상태를 나타내는 HealthState 합니다.
+      엔터티 상태 평가 엔터티 및 해당 자식 (있는 경우)에 보고 된 모든 이벤트를 반영 합니다.
+      집계 된 원하는 상태 정책을 적용 하 여 수행 됩니다. 가능한 값은 다음과 같습니다. 'Invalid', '확인', 'Warning', 'Error', '알 수 없는'
+    optional: true
+    syntax:
+      content: 'aggregatedHealthState?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceHealth.healthEvents
+    name: healthEvents
+    fullName: healthEvents
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 엔터티에 대해 보고 된 상태 이벤트의 목록입니다.
+    optional: true
+    syntax:
+      content: 'healthEvents?: HealthEvent[]'
+      return:
+        type:
+          - 'azure-servicefabric.HealthEvent[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceHealth.healthStatistics
+    name: healthStatistics
+    fullName: healthStatistics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 쿼리할 엔터티의 모든 자식 유형에 대 한 상태 통계를 보여 줍니다.
+    optional: true
+    syntax:
+      content: 'healthStatistics?: HealthStatistics'
+      return:
+        type:
+          - azure-servicefabric.HealthStatistics
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceHealth.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 해당 상태 정보는이 개체에 의해 설명 되는 서비스의 이름입니다.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceHealth.partitionHealthStates
+    name: partitionHealthStates
+    fullName: partitionHealthStates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 목록 서비스에 연결 된 파티션 성능 상태입니다.
+    optional: true
+    syntax:
+      content: 'partitionHealthStates?: PartitionHealthState[]'
+      return:
+        type:
+          - 'azure-servicefabric.PartitionHealthState[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceHealth.unhealthyEvaluations
+    name: unhealthyEvaluations
+    fullName: unhealthyEvaluations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 현재 상태를 집계 하는 이유를 보여 주는 비정상 평가 상태 관리자가 반환 되었습니다.
+    optional: true
+    syntax:
+      content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+      return:
+        type:
+          - 'azure-servicefabric.HealthEvaluationWrapper[]'
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.EntityHealth
+    name: EntityHealth
+    spec.typeScript:
+      - name: EntityHealth
+        fullName: EntityHealth
+        uid: azure-servicefabric.EntityHealth
+  - uid: 'azure-servicefabric.HealthEvent[]'
+    name: 'HealthEvent[]'
+    spec.typeScript:
+      - name: HealthEvent
+        fullName: HealthEvent
+        uid: azure-servicefabric.HealthEvent
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-servicefabric.HealthStatistics
+    name: HealthStatistics
+    spec.typeScript:
+      - name: HealthStatistics
+        fullName: HealthStatistics
+        uid: azure-servicefabric.HealthStatistics
+  - uid: 'azure-servicefabric.PartitionHealthState[]'
+    name: 'PartitionHealthState[]'
+    spec.typeScript:
+      - name: PartitionHealthState
+        fullName: PartitionHealthState
+        uid: azure-servicefabric.PartitionHealthState
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-servicefabric.HealthEvaluationWrapper[]'
+    name: 'HealthEvaluationWrapper[]'
+    spec.typeScript:
+      - name: HealthEvaluationWrapper
+        fullName: HealthEvaluationWrapper
+        uid: azure-servicefabric.HealthEvaluationWrapper
+      - name: '[]'
+        fullName: '[]'

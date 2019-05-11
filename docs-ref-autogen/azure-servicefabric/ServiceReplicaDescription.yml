@@ -1,0 +1,119 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.ServiceReplicaDescription
+    name: ServiceReplicaDescription
+    fullName: ServiceReplicaDescription
+    children:
+      - azure-servicefabric.ServiceReplicaDescription.codePackages
+      - azure-servicefabric.ServiceReplicaDescription.diagnostics
+      - azure-servicefabric.ServiceReplicaDescription.networkRefs
+      - azure-servicefabric.ServiceReplicaDescription.osType
+      - azure-servicefabric.ServiceReplicaDescription.replicaName
+    langs:
+      - typeScript
+    type: interface
+    summary: 서비스 리소스의 복제본을 설명합니다.
+    extends:
+      name: azure-servicefabric.ServiceReplicaProperties
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceReplicaDescription.codePackages
+    name: codePackages
+    fullName: codePackages
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스를 구성 하는 코드 패키지 집합을 설명 합니다. 코드 패키지에는 컨테이너 및 실행에 대 한 속성을 설명 합니다. 모든 코드 패키지가 동일한 호스트에 함께 시작 하 고 동일한 컨텍스트 (네트워크, 프로세스 등)를 공유 합니다.'
+    syntax:
+      content: 'codePackages: ContainerCodePackageProperties[]'
+      return:
+        type:
+          - 'azure-servicefabric.ContainerCodePackageProperties[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceReplicaDescription.diagnostics
+    name: diagnostics
+    fullName: diagnostics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: DiagnosticsDescription에서 싱크에 대 한 참조입니다.
+    optional: true
+    syntax:
+      content: 'diagnostics?: DiagnosticsRef'
+      return:
+        type:
+          - azure-servicefabric.DiagnosticsRef
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceReplicaDescription.networkRefs
+    name: networkRefs
+    fullName: networkRefs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 서비스의 일부가 되도록 해야 하는 개인 네트워크의 이름입니다.
+    optional: true
+    syntax:
+      content: 'networkRefs?: NetworkRef[]'
+      return:
+        type:
+          - 'azure-servicefabric.NetworkRef[]'
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceReplicaDescription.osType
+    name: osType
+    fullName: osType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스의 코드에 필요한 운영 체제입니다. 가능한 값은 다음과 같습니다. ''Linux'', ''Windows'''
+    syntax:
+      content: 'osType: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceReplicaDescription.replicaName
+    name: replicaName
+    fullName: replicaName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복제본의 이름입니다.
+    syntax:
+      content: 'replicaName: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.ServiceReplicaProperties
+    name: ServiceReplicaProperties
+    spec.typeScript:
+      - name: ServiceReplicaProperties
+        fullName: ServiceReplicaProperties
+        uid: azure-servicefabric.ServiceReplicaProperties
+  - uid: 'azure-servicefabric.ContainerCodePackageProperties[]'
+    name: 'ContainerCodePackageProperties[]'
+    spec.typeScript:
+      - name: ContainerCodePackageProperties
+        fullName: ContainerCodePackageProperties
+        uid: azure-servicefabric.ContainerCodePackageProperties
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-servicefabric.DiagnosticsRef
+    name: DiagnosticsRef
+    spec.typeScript:
+      - name: DiagnosticsRef
+        fullName: DiagnosticsRef
+        uid: azure-servicefabric.DiagnosticsRef
+  - uid: 'azure-servicefabric.NetworkRef[]'
+    name: 'NetworkRef[]'
+    spec.typeScript:
+      - name: NetworkRef
+        fullName: NetworkRef
+        uid: azure-servicefabric.NetworkRef
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation
+    name: ApplicationsHealthEvaluation
+    fullName: ApplicationsHealthEvaluation
+    children:
+      - azure-servicefabric.ApplicationsHealthEvaluation.aggregatedHealthState
+      - azure-servicefabric.ApplicationsHealthEvaluation.description
+      - azure-servicefabric.ApplicationsHealthEvaluation.kind
+      - azure-servicefabric.ApplicationsHealthEvaluation.maxPercentUnhealthyApplications
+      - azure-servicefabric.ApplicationsHealthEvaluation.totalCount
+      - azure-servicefabric.ApplicationsHealthEvaluation.unhealthyEvaluations
+    langs:
+      - typeScript
+    type: interface
+    summary: 현재 집계 된 상태에 영향을 미친 각 비정상 응용 프로그램에 대 한 상태 평가 포함 하는 응용 프로그램에 대 한 상태 평가 나타냅니다.
+    extends:
+      name: azure-servicefabric.HealthEvaluation
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation.aggregatedHealthState
+    name: aggregatedHealthState
+    fullName: aggregatedHealthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는'''
+    optional: true
+    syntax:
+      content: 'aggregatedHealthState?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation.description
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 평가 과정의 요약을 나타내는 상태 평가 대 한 설명입니다.
+    optional: true
+    syntax:
+      content: 'description?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation.kind
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation.maxPercentUnhealthyApplications
+    name: maxPercentUnhealthyApplications
+    fullName: maxPercentUnhealthyApplications
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 최대를 ClusterHealthPolicy에서 비정상 응용 프로그램의 비율입니다.
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyApplications?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation.totalCount
+    name: totalCount
+    fullName: totalCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Health 스토어에서 응용 프로그램의 총 수입니다.
+    optional: true
+    syntax:
+      content: 'totalCount?: number'
+      return:
+        type:
+          - number
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ApplicationsHealthEvaluation.unhealthyEvaluations
+    name: unhealthyEvaluations
+    fullName: unhealthyEvaluations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다. 집계 된 상태에 영향을 미친 모든 비정상 ApplicationHealthEvaluation을 포함 되어 있습니다.
+    optional: true
+    syntax:
+      content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+      return:
+        type:
+          - 'azure-servicefabric.HealthEvaluationWrapper[]'
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.HealthEvaluation
+    name: HealthEvaluation
+    spec.typeScript:
+      - name: HealthEvaluation
+        fullName: HealthEvaluation
+        uid: azure-servicefabric.HealthEvaluation
+  - uid: 'azure-servicefabric.HealthEvaluationWrapper[]'
+    name: 'HealthEvaluationWrapper[]'
+    spec.typeScript:
+      - name: HealthEvaluationWrapper
+        fullName: HealthEvaluationWrapper
+        uid: azure-servicefabric.HealthEvaluationWrapper
+      - name: '[]'
+        fullName: '[]'

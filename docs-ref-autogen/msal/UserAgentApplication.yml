@@ -1,0 +1,337 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msal.UserAgentApplication
+    name: UserAgentApplication
+    fullName: UserAgentApplication
+    children:
+      - msal.UserAgentApplication.acquireTokenPopup
+      - msal.UserAgentApplication.acquireTokenRedirect
+      - msal.UserAgentApplication.acquireTokenSilent
+      - msal.UserAgentApplication.authority
+      - msal.UserAgentApplication.getAccount
+      - msal.UserAgentApplication.getAllAccounts
+      - msal.UserAgentApplication.getAuthorityInstance
+      - msal.UserAgentApplication.getCurrentConfiguration
+      - msal.UserAgentApplication.getLoginInProgress
+      - msal.UserAgentApplication.getPostLogoutRedirectUri
+      - msal.UserAgentApplication.getRedirectUri
+      - msal.UserAgentApplication.handleRedirectCallback_1
+      - msal.UserAgentApplication.handleRedirectCallback
+      - msal.UserAgentApplication.loginPopup
+      - msal.UserAgentApplication.loginRedirect
+      - msal.UserAgentApplication.logout
+      - msal.UserAgentApplication.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: 'UserAgentApplication 클래스: <xref:UserAgentApplication> 개발자 loginXX를 확인 하는 데 사용할 수 있는 인스턴스를 개체 또는 acquireTokenXX 함수'
+    package: msal
+  - uid: msal.UserAgentApplication.acquireTokenPopup
+    name: acquireTokenPopup(AuthenticationParameters)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 사용자의 브라우저에서 팝업 창을 열지를 통해 API에 대 한 access_token을 가져오려는 경우에 사용
+    syntax:
+      content: 'function acquireTokenPopup(request: AuthenticationParameters)'
+      parameters:
+        - id: request
+          type:
+            - msal.AuthenticationParameters
+          description: ''
+      return:
+        type:
+          - Promise<msal.AuthResponse>
+    package: msal
+  - uid: msal.UserAgentApplication.acquireTokenRedirect
+    name: acquireTokenRedirect(AuthenticationParameters)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 사용자 권한 부여 끝점으로 리디렉션하여 API에 대 한 access_token을 가져올 하려고 할 때 사용 합니다.
+    syntax:
+      content: 'function acquireTokenRedirect(request: AuthenticationParameters)'
+      parameters:
+        - id: request
+          type:
+            - msal.AuthenticationParameters
+          description: ''
+    package: msal
+  - uid: msal.UserAgentApplication.acquireTokenSilent
+    name: acquireTokenSilent(AuthenticationParameters)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |
+      API에 대 한 모든 호출 전에 토큰을 가져오려면이 함수를 사용 / MSAL 반환 하는 리소스 공급자의 사용 가능한 경우 캐시 된 토큰 또는 전송 하는 숨겨진된 iframe를 사용 하 여 새 토큰을 가져오는 요청을 STS의 합니다.
+    syntax:
+      content: 'function acquireTokenSilent(request: AuthenticationParameters)'
+      parameters:
+        - id: request
+          type:
+            - msal.AuthenticationParameters
+          description: ''
+      return:
+        type:
+          - Promise<msal.AuthResponse>
+    package: msal
+  - uid: msal.UserAgentApplication.authority
+    name: authority
+    fullName: authority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      인증 기관 있는 반환 기관 MSAL이 토큰을 가져오는 데 사용할 수 있는 디렉터리를 나타내는 URL
+      - Azure AD에서이 특성은 MSAL 폼에는 토큰을 가져오는 데 사용 하는 Azure active directory를 나타내는 URL https://login.microsoftonline.com/&lt; Enter_the_Tenant_Info_Here&gt; 응용 프로그램을 지 원하는 경우 계정 하나 조직 디렉터리에 값을 바꿉니다 "Enter_the_Tenant_Info_Here" 테 넌 트 Id 또는 테 넌 트 이름 (예를 들어 contoso.microsoft.com) 하는 경우 응용 프로그램 모든 조직 디렉터리에 계정을, 응용 프로그램 계정이 모든 조직 디렉터리에 개인 Microsoft 계정에서 지 원하는 경우 조직과 "Enter_the_Tenant_Info_Here" 값을 대체, "Enter_the_Tenant_Info_ 대체 공통 된 값 "여기"입니다.
+      지원 제한 개인 Microsoft 계정 소비자와 "Enter_the_Tenant_Info_Here" 값만 대체 합니다.
+      - Azure B2C에서는의 https://&lt;인스턴스&gt;/tfp/&lt;테 넌 트&gt;/<policyName>/
+    syntax:
+      content: 'authority: string'
+      return:
+        type:
+          - string
+    package: msal
+  - uid: msal.UserAgentApplication.getAccount
+    name: getAccount()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 상태가 발견 되 면 계정 (로그인 시 만든 계정 개체에서 받은) 또는 null의 서명 된 반환
+    syntax:
+      content: function getAccount()
+      parameters: []
+      return:
+        type:
+          - msal.Account
+    package: msal
+  - uid: msal.UserAgentApplication.getAllAccounts
+    name: getAllAccounts()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 모든 캐시 된 항목을 필터링 하 고 homeAccountIdentifier에 따라 고유한 계정 목록을 반환 하는 데 사용 합니다.
+    syntax:
+      content: function getAllAccounts()
+      parameters: []
+      return:
+        type:
+          - Array<msal.Account>
+    package: msal
+  - uid: msal.UserAgentApplication.getAuthorityInstance
+    name: getAuthorityInstance()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기관 인스턴스를 반환합니다.
+    syntax:
+      content: function getAuthorityInstance()
+      parameters: []
+      return:
+        type:
+          - Authority
+    package: msal
+  - uid: msal.UserAgentApplication.getCurrentConfiguration
+    name: getCurrentConfiguration()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '현재를 사용 하 여 <xref:Configuration> MSAL의 개체'
+    syntax:
+      content: function getCurrentConfiguration()
+      parameters: []
+      return:
+        type:
+          - msal.Configuration
+    package: msal
+  - uid: msal.UserAgentApplication.getLoginInProgress
+    name: getLoginInProgress()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 개발자 로그인 진행 중인 경우에 게 알릴 수 있도록 부울 플래그를 반환 합니다.
+    syntax:
+      content: function getLoginInProgress()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: msal
+  - uid: msal.UserAgentApplication.getPostLogoutRedirectUri
+    name: getPostLogoutRedirectUri()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Null 또는 MSAL에 구성 된 후 로그 아웃 리디렉션 uri를 사용 하십시오.
+      평가 postLogoutredirectUri 함수 이면 그렇지 않은 경우 단순히 값을 반환 합니다.
+    syntax:
+      content: function getPostLogoutRedirectUri()
+      parameters: []
+      return:
+        type:
+          - string
+    package: msal
+  - uid: msal.UserAgentApplication.getRedirectUri
+    name: getRedirectUri()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Null 또는 MSAL에 구성 된 리디렉션 uri를 사용 하십시오.
+      평가 redirectUri 함수 이면 그렇지 않은 경우 단순히 값을 반환 합니다.
+    syntax:
+      content: function getRedirectUri()
+      parameters: []
+      return:
+        type:
+          - string
+    package: msal
+  - uid: msal.UserAgentApplication.handleRedirectCallback_1
+    name: handleRedirectCallback(authResponseCallback)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 성공 또는 오류 개체를 다시 보낼 리디렉션 흐름에 대 한 콜백 함수를 설정 합니다.
+    syntax:
+      content: 'function handleRedirectCallback(authCallback: authResponseCallback)'
+      parameters:
+        - id: authCallback
+          type:
+            - authResponseCallback
+          description: ''
+    package: msal
+  - uid: msal.UserAgentApplication.handleRedirectCallback
+    name: 'handleRedirectCallback(tokenReceivedCallback, errorReceivedCallback)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 성공 또는 오류 개체를 다시 보낼 리디렉션 흐름에 대 한 콜백 함수를 설정 합니다.
+    syntax:
+      content: 'function handleRedirectCallback(tokenReceivedCallback: tokenReceivedCallback, errorReceivedCallback: errorReceivedCallback)'
+      parameters:
+        - id: tokenReceivedCallback
+          type:
+            - tokenReceivedCallback
+          description: ''
+        - id: errorReceivedCallback
+          type:
+            - errorReceivedCallback
+          description: ''
+    package: msal
+  - uid: msal.UserAgentApplication.loginPopup
+    name: loginPopup(AuthenticationParameters)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 사용 하 여 사용자의 브라우저에서 팝업 창을 열지를 통해 로그인 프로세스를 시작 하는 중
+    syntax:
+      content: 'function loginPopup(request?: AuthenticationParameters)'
+      parameters:
+        - id: request
+          type:
+            - msal.AuthenticationParameters
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<msal.AuthResponse>
+    package: msal
+  - uid: msal.UserAgentApplication.loginRedirect
+    name: loginRedirect(AuthenticationParameters)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 권한 부여 끝점에 사용자의 브라우저를 리디렉션하여 로그인 프로세스를 시작 하는 경우 사용 합니다.
+    syntax:
+      content: 'function loginRedirect(request?: AuthenticationParameters)'
+      parameters:
+        - id: request
+          type:
+            - msal.AuthenticationParameters
+          description: ''
+          optional: true
+    package: msal
+  - uid: msal.UserAgentApplication.logout
+    name: logout()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      현재 사용자 로그 아웃 하 고 사용자는 postLogoutRedirectUri 리디렉션할 하는 데 사용 합니다.
+      기본값 동작을 사용자를 리디렉션하는 것이 `window.location.href`합니다.
+    syntax:
+      content: function logout()
+      parameters: []
+    package: msal
+  - uid: msal.UserAgentApplication.constructor
+    name: UserAgentApplication(Configuration)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: '에 대 한 생성자는 <xref:UserAgentApplication> 인스턴스화할 수 하는 것이 개체는 <xref:UserAgentApplication> 개체'
+    syntax:
+      content: 'new UserAgentApplication(configuration: Configuration)'
+      parameters:
+        - id: configuration
+          type:
+            - msal.Configuration
+          description: |
+            MSAL UserAgentApplication 인스턴스에 대 한 개체
+    package: msal
+references:
+  - uid: msal.Configuration
+    name: Configuration
+    spec.typeScript:
+      - name: Configuration
+        fullName: Configuration
+        uid: msal.Configuration
+  - uid: msal.AuthenticationParameters
+    name: AuthenticationParameters
+    spec.typeScript:
+      - name: AuthenticationParameters
+        fullName: AuthenticationParameters
+        uid: msal.AuthenticationParameters
+  - uid: Promise<msal.AuthResponse>
+    name: AuthResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AuthResponse
+        fullName: AuthResponse
+        uid: msal.AuthResponse
+      - name: '>'
+        fullName: '>'
+  - uid: msal.Account
+    name: Account
+    spec.typeScript:
+      - name: Account
+        fullName: Account
+        uid: msal.Account
+  - uid: Array<msal.Account>
+    name: Account>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Account
+        fullName: Account
+        uid: msal.Account
+      - name: '>'
+        fullName: '>'

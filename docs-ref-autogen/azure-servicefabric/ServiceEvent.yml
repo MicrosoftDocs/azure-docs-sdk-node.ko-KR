@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.ServiceEvent
+    name: ServiceEvent
+    fullName: ServiceEvent
+    children:
+      - azure-servicefabric.ServiceEvent.category
+      - azure-servicefabric.ServiceEvent.eventInstanceId
+      - azure-servicefabric.ServiceEvent.hasCorrelatedEvents
+      - azure-servicefabric.ServiceEvent.kind
+      - azure-servicefabric.ServiceEvent.serviceId
+      - azure-servicefabric.ServiceEvent.timeStamp
+    langs:
+      - typeScript
+    type: interface
+    summary: 모든 서비스 이벤트에 대 한 기본 클래스를 나타냅니다.
+    extends:
+      name: azure-servicefabric.FabricEvent
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceEvent.category
+    name: category
+    fullName: category
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이벤트의 범주입니다.
+    optional: true
+    syntax:
+      content: 'category?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceEvent.eventInstanceId
+    name: eventInstanceId
+    fullName: eventInstanceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: FabricEvent 인스턴스에 대 한 식별자입니다.
+    syntax:
+      content: 'eventInstanceId: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceEvent.hasCorrelatedEvents
+    name: hasCorrelatedEvents
+    fullName: hasCorrelatedEvents
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 기존 사용할 수 있는 관련된 이벤트를 보여 줍니다.
+    optional: true
+    syntax:
+      content: 'hasCorrelatedEvents?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceEvent.kind
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceEvent.serviceId
+    name: serviceId
+    fullName: serviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      서비스 id입니다. 이 ID는 서비스 이름의 인코딩된 표현입니다. 이 서비스 리소스를 식별 하는 REST Api에서 사용 됩니다.
+      버전 6.0부터 계층 이름은로 구분 되는 "\~" 문자입니다. 예를 들어 서비스 이름이 "fabric: / myapp/app1/svc1", 서비스 id는 것 "myapp ~ app1\~svc1" 6.0 이상에서는 "myapp/app1/svc1" 이전 버전에서입니다.
+    syntax:
+      content: 'serviceId: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.ServiceEvent.timeStamp
+    name: timeStamp
+    fullName: timeStamp
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 시간 이벤트가 기록 되었습니다.
+    syntax:
+      content: 'timeStamp: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.FabricEvent
+    name: FabricEvent
+    spec.typeScript:
+      - name: FabricEvent
+        fullName: FabricEvent
+        uid: azure-servicefabric.FabricEvent

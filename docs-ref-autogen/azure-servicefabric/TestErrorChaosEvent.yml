@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.TestErrorChaosEvent
+    name: TestErrorChaosEvent
+    fullName: TestErrorChaosEvent
+    children:
+      - azure-servicefabric.TestErrorChaosEvent.kind
+      - azure-servicefabric.TestErrorChaosEvent.reason
+      - azure-servicefabric.TestErrorChaosEvent.timeStampUtc
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      Chaos 엔진에서 예기치 않은 이벤트가 발생할 때 생성 되는 비정상 상황 이벤트를 설명 합니다.
+      예를 들어, 클러스터 스냅숏 엔터티의 오류가 발생 하는 동안 일관 되지 않은 것으로 인해 Chaos 찾을 엔터티가 이미 오류가 발생 했습니다-예기치 않은 이벤트는 것입니다.
+    extends:
+      name: azure-servicefabric.ChaosEvent
+    package: azure-servicefabric
+  - uid: azure-servicefabric.TestErrorChaosEvent.kind
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.TestErrorChaosEvent.reason
+    name: reason
+    fullName: reason
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'TestErrorChaosEvent 생성 된 이유를 설명 합니다. 예를 들어, 비정상 상황 오류를 파티션 하려고 했지만는 파티션을 내결함성을 갖추고, 더 이상 다음을 TestErrorEvent는 이유는 파티션 하지 않다는 내결함성이로 생성 찾은 표시 합니다.'
+    optional: true
+    syntax:
+      content: 'reason?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.TestErrorChaosEvent.timeStampUtc
+    name: timeStampUtc
+    fullName: timeStampUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: UTC 타임 스탬프가 비정상 상황 이벤트가 생성 된 경우.
+    syntax:
+      content: 'timeStampUtc: Date'
+      return:
+        type:
+          - Date
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.ChaosEvent
+    name: ChaosEvent
+    spec.typeScript:
+      - name: ChaosEvent
+        fullName: ChaosEvent
+        uid: azure-servicefabric.ChaosEvent
