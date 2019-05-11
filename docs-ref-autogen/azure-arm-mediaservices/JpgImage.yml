@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-mediaservices.JpgImage
+    name: JpgImage
+    fullName: JpgImage
+    children:
+      - azure-arm-mediaservices.JpgImage.keyFrameInterval
+      - azure-arm-mediaservices.JpgImage.label
+      - azure-arm-mediaservices.JpgImage.layers
+      - azure-arm-mediaservices.JpgImage.odatatype
+      - azure-arm-mediaservices.JpgImage.range
+      - azure-arm-mediaservices.JpgImage.start
+      - azure-arm-mediaservices.JpgImage.step
+      - azure-arm-mediaservices.JpgImage.stretchMode
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="953cd-101">일련의 입력된 비디오에서 JPEG 이미지를 생성 하기 위한 속성을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-101">Describes the properties for producing a series of JPEG images from the input video.</span></span>
+    extends:
+      name: azure-arm-mediaservices.Image
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.keyFrameInterval
+    name: keyFrameInterval
+    fullName: keyFrameInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="953cd-102">Group of pictures (GOP)을 정의 함으로써 두 가지 키 프레임 사이의 거리입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-102">The distance between two key frames, thereby defining a group of pictures (GOP).</span></span> <span data-ttu-id="953cd-103">값을 ISO 8601 형식에 지정 된 0이 아닌 정수 범위 [1, 30] (초)에서 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-103">The value should be a non-zero integer in the range [1, 30] seconds, specified in ISO 8601 format.</span></span> <span data-ttu-id="953cd-104">기본값은 2 초 (PT2S)입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-104">The default is 2 seconds (PT2S).</span></span>'
+    optional: true
+    syntax:
+      content: 'keyFrameInterval?: Duration'
+      return:
+        type:
+          - Duration
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.label
+    name: label
+    fullName: label
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="953cd-105">코덱의 레이블 선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-105">An optional label for the codec.</span></span> <span data-ttu-id="953cd-106">레이블을은 muxing 동작을 제어할 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-106">The label can be used to control muxing behavior.</span></span>
+    optional: true
+    syntax:
+      content: 'label?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.layers
+    name: layers
+    fullName: layers
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="953cd-107">인코더에서 생성 되도록 출력 JPEG 이미지 계층의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-107">A collection of output JPEG image layers to be produced by the encoder.</span></span>
+    optional: true
+    syntax:
+      content: 'layers?: JpgLayer[]'
+      return:
+        type:
+          - 'azure-arm-mediaservices.JpgLayer[]'
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.odatatype
+    name: odatatype
+    fullName: odatatype
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="953cd-108">다형 판별자</span><span class="sxs-lookup"><span data-stu-id="953cd-108">Polymorphic Discriminator</span></span>
+    syntax:
+      content: 'odatatype: string'
+      return:
+        type:
+          - string
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.range
+    name: range
+    fullName: range
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="953cd-109">입력 비디오 썸네일 생성 중지를 삽입할 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-109">The position in the input video at which to stop generating thumbnails.</span></span> <span data-ttu-id="953cd-110">값은 절대 타임 스탬프에 있을 수 있습니다 (ISO 8601, 예: 5 분 30 초에서 중지 PT5M30S), 프레임 수 (예를 들어 300 300th 프레임에서 중지 하려면) 또는 상대 값 (예: 100%).</span><span class="sxs-lookup"><span data-stu-id="953cd-110">The value can be in absolute timestamp (ISO 8601, e.g: PT5M30S to stop at 5 minutes and 30 seconds), or a frame count (For example, 300 to stop at the 300th frame), or a relative value (For example, 100%).</span></span>'
+    optional: true
+    syntax:
+      content: 'range?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.start
+    name: start
+    fullName: start
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="953cd-111">입력 비디오를 미리 보기 생성을 시작할 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-111">The position in the input video from where to start generating thumbnails.</span></span> <span data-ttu-id="953cd-112">값은 절대 타임 스탬프에 있을 수 있습니다 (ISO 8601, 예: PT05S) 프레임 수 (예를 들어, 10 일 프레임에 대 한) 또는 상대 값 (예: ''%1'').</span><span class="sxs-lookup"><span data-stu-id="953cd-112">The value can be in absolute timestamp (ISO 8601, e.g: PT05S), or a frame count (For example, 10 for the 10th frame), or a relative value (For example, 1%).</span></span> <span data-ttu-id="953cd-113">또한 인코더가 비디오의 처음 몇 초에서 최상의 축소판 그림을 선택 하도록 지시 하는 매크로 {Best}를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-113">Also supports a macro {Best}, which tells the encoder to select the best thumbnail from the first few seconds of the video.</span></span>'
+    syntax:
+      content: 'start: string'
+      return:
+        type:
+          - string
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.step
+    name: step
+    fullName: step
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="953cd-114">미리 보기 생성 되는 간격입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-114">The intervals at which thumbnails are generated.</span></span> <span data-ttu-id="953cd-115">값은 절대 타임 스탬프에 있을 수 있습니다 (ISO 8601, 예: 한 PT05S 이미지 5 초 마다), 프레임 수 (예를 들어 30 30 프레임 마다), 또는 상대 값 (예: ''%1'').</span><span class="sxs-lookup"><span data-stu-id="953cd-115">The value can be in absolute timestamp (ISO 8601, e.g: PT05S for one image every 5 seconds), or a frame count (For example, 30 for every 30 frames), or a relative value (For example, 1%).</span></span>'
+    optional: true
+    syntax:
+      content: 'step?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-mediaservices
+  - uid: azure-arm-mediaservices.JpgImage.stretchMode
+    name: stretchMode
+    fullName: stretchMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="953cd-116">크기 조정 모드-입력된 비디오 원하는 출력 해결에 맞게 조정 됩니다 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-116">The resizing mode - how the input video will be resized to fit the desired output resolution(s).</span></span> <span data-ttu-id="953cd-117">기본값은 자동 크기 조정입니다.</span><span class="sxs-lookup"><span data-stu-id="953cd-117">Default is AutoSize.</span></span> <span data-ttu-id="953cd-118">가능한 값은 다음과 같습니다. ''None'', ''자동 크기 조정'' ''자동 맞춤''</span><span class="sxs-lookup"><span data-stu-id="953cd-118">Possible values include: ''None'', ''AutoSize'', ''AutoFit''</span></span>'
+    optional: true
+    syntax:
+      content: 'stretchMode?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-mediaservices
+references:
+  - uid: azure-arm-mediaservices.Image
+    name: Image
+    spec.typeScript:
+      - name: Image
+        fullName: Image
+        uid: azure-arm-mediaservices.Image
+  - uid: 'azure-arm-mediaservices.JpgLayer[]'
+    name: 'JpgLayer[]'
+    spec.typeScript:
+      - name: JpgLayer
+        fullName: JpgLayer
+        uid: azure-arm-mediaservices.JpgLayer
+      - name: '[]'
+        fullName: '[]'
