@@ -1,0 +1,126 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider
+    name: IotEdgeAuthenticationProvider
+    fullName: IotEdgeAuthenticationProvider
+    children:
+      - azure-iot-device.IotEdgeAuthenticationProvider.fromConnectionString
+      - azure-iot-device.IotEdgeAuthenticationProvider.getDeviceCredentials_1
+      - azure-iot-device.IotEdgeAuthenticationProvider.getDeviceCredentials
+      - azure-iot-device.IotEdgeAuthenticationProvider.getTrustBundle
+      - azure-iot-device.IotEdgeAuthenticationProvider.stop
+      - azure-iot-device.IotEdgeAuthenticationProvider.type
+    langs:
+      - typeScript
+    type: class
+    summary: |
+      제공을 `AuthenticationProvider` 토큰 생성 iotedged에 위임 하는 구현 합니다. 이 구현은 Azure IoT Edge를 사용 하 여 모듈 클라이언트를 사용 하는 경우 사용할 것입니다.
+      이 형식에서 상속 `SharedAccessKeyAuthenticationProvider` 토큰 생성 부분을 구현 하 여 재정의 제외 하 고 해당 형식에 기능적으로 동일 하 고는 `_sign` 메서드.
+    extends:
+      name: azure-iot-device.SharedAccessKeyAuthenticationProvider
+    package: azure-iot-device
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider.fromConnectionString
+    name: 'fromConnectionString(string, number, number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 새 `SharedAccessKeyAuthenticationProvider` 연결 문자열에서
+    syntax:
+      content: 'static function fromConnectionString(connectionString: string, tokenValidTimeInSeconds?: number, tokenRenewalMarginInSeconds?: number)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: IoT hub 사용 하 여 인증에 대 한 필수 매개 변수를 포함 하는 장치 연결 문자열입니다.
+        - id: tokenValidTimeInSeconds
+          type:
+            - number
+          description: 토큰 유효 해야 하는 시간 (초) 수입니다.
+          optional: true
+        - id: tokenRenewalMarginInSeconds
+          type:
+            - number
+          description: |
+            유효 기간이 종료 되기 전에 시간 (초) 수는 `SharedAccessKeyAuthenticationProvider` 토큰을 갱신 해야 합니다.
+          optional: true
+      return:
+        type:
+          - azure-iot-device.SharedAccessKeyAuthenticationProvider
+    package: azure-iot-device
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider.getDeviceCredentials_1
+    name: getDeviceCredentials()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 가져옵니다 형식의 자격 증명을 최신 장치에 전송 하 여이 메서드는 사용을 `TransportConfig` 개체입니다.
+    syntax:
+      content: function getDeviceCredentials()
+      parameters: []
+      return:
+        type:
+          - Promise<TransportConfig>
+    package: azure-iot-device
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider.getDeviceCredentials
+    name: getDeviceCredentials(Callback<TransportConfig>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 가져옵니다 형식의 자격 증명을 최신 장치에 전송 하 여이 메서드는 사용을 `TransportConfig` 개체입니다.
+    syntax:
+      content: 'function getDeviceCredentials(callback: Callback<TransportConfig>)'
+      parameters:
+        - id: callback
+          type:
+            - Callback<TransportConfig>
+          description: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider.getTrustBundle
+    name: 'getTrustBundle((err?: Error, ca?: string) => void)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTrustBundle(callback: (err?: Error, ca?: string) => void)'
+      parameters:
+        - id: callback
+          type:
+            - '(err?: Error, ca?: string) => void'
+          description: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider.stop
+    name: stop()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: SAS 토큰을 갱신 하는 데 타이머를 중지 합니다.
+    syntax:
+      content: function stop()
+      parameters: []
+    package: azure-iot-device
+  - uid: azure-iot-device.IotEdgeAuthenticationProvider.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'type: AuthenticationType'
+      return:
+        type:
+          - AuthenticationType
+    package: azure-iot-device
+references:
+  - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+    name: SharedAccessKeyAuthenticationProvider
+    spec.typeScript:
+      - name: SharedAccessKeyAuthenticationProvider
+        fullName: SharedAccessKeyAuthenticationProvider
+        uid: azure-iot-device.SharedAccessKeyAuthenticationProvider

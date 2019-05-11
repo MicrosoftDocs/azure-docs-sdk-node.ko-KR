@@ -1,0 +1,332 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+    name: SpeechTranslationConfig
+    fullName: SpeechTranslationConfig
+    children:
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.addTargetLanguage
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.authorizationToken
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.close
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.endpointId
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.fromAuthorizationToken
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.fromEndpoint
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.fromSubscription
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.getProperty
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.outputFormat
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.setProperty
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.setProxy
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.setProxy_1
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.speechRecognitionLanguage
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.targetLanguages
+      - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.voiceName
+    langs:
+      - typeScript
+    type: class
+    summary: 음성 번역 구성입니다.
+    extends:
+      name: microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.addTargetLanguage
+    name: addTargetLanguage(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 변환할 대상 언어 (텍스트)를 추가 합니다.
+    syntax:
+      content: 'function addTargetLanguage(value: string)'
+      parameters:
+        - id: value
+          type:
+            - string
+          description: |
+            DE-DE 같은 언어
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.authorizationToken
+    name: authorizationToken
+    fullName: authorizationToken
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      권한 부여 토큰을 가져오거나 설정 합니다.
+      참고: 호출자에 게 권한 부여 토큰이 유효한 지 확인 해야 합니다. 권한 부여 토큰이 만료 되기 전에 호출자에 게 유효한 새 토큰을 사용 하 여이 setter를 호출 하 여 새로 고침 해야 합니다.
+    syntax:
+      content: 'public authorizationToken: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 연결 된 리소스를 삭제 합니다.
+    syntax:
+      content: function close()
+      parameters: []
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.endpointId
+    name: endpointId
+    fullName: endpointId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 음성 인식에 사용 되는 사용자 지정된 음성 모델의 끝점 ID 가져오거나 설정 합니다.
+    syntax:
+      content: 'public endpointId: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.fromAuthorizationToken
+    name: 'fromAuthorizationToken(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      권한 부여 토큰 및 서비스 영역을 전달 하 여 반환 된 SpeechTranslationConfig의 정적 인스턴스.
+      참고: 호출자에 게 권한 부여 토큰이 유효한 지 확인 해야 합니다. 권한 부여 토큰이 만료 되기 전에 호출자에 게 유효한 새 토큰을 사용 하 여 속성 authorizationToken를 설정 하 여 새로 고침 해야 합니다. 그렇지 않으면이 SpeechTranslationConfig 인스턴스에 의해 생성 된 모든 인식기 인식 하는 동안 오류가 발생 합니다.
+      새 인식기를 만들 때 구성 값이 복사 되는 대로 새 토큰 값을 이미 생성 된 인식기에 적용 되지 않습니다.
+      전에 생성 된 인식기에 대 한 토큰을 새로 고치려면 해당 인식기의 권한 부여 토큰을 설정 해야 합니다. 그렇지 않으면 인식자 인식 하는 동안 오류가 발생 합니다.
+    syntax:
+      content: 'static function fromAuthorizationToken(authorizationToken: string, region: string)'
+      parameters:
+        - id: authorizationToken
+          type:
+            - string
+          description: 권한 부여 토큰입니다.
+        - id: region
+          type:
+            - string
+          description: '지역 이름 (참조를 <a href="https://aka.ms/csspeech/region">지역별</a>).'
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.fromEndpoint
+    name: 'fromEndpoint(URL, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      지정 된 끝점 및 구독 키를 사용 하 여 음성 번역 구성의 인스턴스를 만듭니다.
+      이 메서드는 비표준 서비스 끝점 또는 매개 변수를 사용 하는 사용자에 대해서만 것입니다.
+      참고: 끝점 URL에서 지정한 쿼리 속성이 다른 Api가 설정 된 경우에 변경 되지 않습니다. 예를 들어, 언어 매개 변수를 쿼리 uri에 정의 된 경우 "언어 DE-DE =", uri의 언어 설정이 우선 하 고 효과적인 언어가 "DE-DE" speechRecognitionLanguage 속성으로 설정할 수도 있습니다.
+      끝점에 지정 되지 않은 속성에 대해서만 다른 Api에서 URL은 설정할 수 있습니다.
+      참고: FromEndpoint를 사용 하 여 권한 부여 토큰을 사용 하려면 fromEndpoint 메서드에서 subscriptionKey에 빈 문자열을 전달 하 고 설정한 다음 authorizationToken "토큰" 권한 부여 토큰을 사용 하도록 만든 SpeechConfig 인스턴스에서 =.
+    syntax:
+      content: 'static function fromEndpoint(endpoint: URL, subscriptionKey: string)'
+      parameters:
+        - id: endpoint
+          type:
+            - URL
+          description: 연결할 서비스 끝점입니다.
+        - id: subscriptionKey
+          type:
+            - string
+          description: 구독 키입니다.
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.fromSubscription
+    name: 'fromSubscription(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 구독 키를 전달 하 여 SpeechTranslationConfig의 정적 인스턴스를 반환 하 고 서비스 지역입니다.
+    syntax:
+      content: 'static function fromSubscription(subscriptionKey: string, region: string)'
+      parameters:
+        - id: subscriptionKey
+          type:
+            - string
+          description: 구독 키입니다.
+        - id: region
+          type:
+            - string
+          description: '지역 이름 (참조를 <a href="https://aka.ms/csspeech/region">지역별</a>).'
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.getProperty
+    name: 'getProperty(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 임의의 속성의 현재 값을 반환 합니다.
+    syntax:
+      content: 'function getProperty(name: string, def?: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: 쿼리 속성의 이름입니다.
+        - id: def
+          type:
+            - string
+          description: 속성은 알 수 없는 경우 반환할 값입니다.
+          optional: true
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.outputFormat
+    name: outputFormat
+    fullName: outputFormat
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 출력 형식을 가져오거나 설정 합니다.
+    syntax:
+      content: 'public outputFormat: OutputFormat'
+      return:
+        type:
+          - microsoft-cognitiveservices-speech-sdk.OutputFormat
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.setProperty
+    name: 'setProperty(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 명명된 된 속성 값으로 설정합니다.
+    syntax:
+      content: 'function setProperty(name: string, value: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: 속성의 이름입니다.
+        - id: value
+          type:
+            - string
+          description: |
+            값입니다.
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.setProxy
+    name: 'setProxy(string, number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      프록시 구성을 설정합니다.
+      Node.js 환경에만 관련이 있습니다.
+      버전 1.4.0에에서 추가 합니다.
+    syntax:
+      content: 'function setProxy(proxyHostName: string, proxyPort: number)'
+      parameters:
+        - id: proxyHostName
+          type:
+            - string
+          description: 프록시 서버의 호스트 이름입니다.
+        - id: proxyPort
+          type:
+            - number
+          description: |
+            프록시 서버의 포트 번호입니다.
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.setProxy_1
+    name: 'setProxy(string, number, string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      프록시 구성을 설정합니다.
+      Node.js 환경에만 관련이 있습니다.
+      버전 1.4.0에에서 추가 합니다.
+    syntax:
+      content: 'function setProxy(proxyHostName: string, proxyPort: number, proxyUserName: string, proxyPassword: string)'
+      parameters:
+        - id: proxyHostName
+          type:
+            - string
+          description: '프로토콜 체계 (http://) 없이 프록시 서버의 호스트 이름'
+        - id: proxyPort
+          type:
+            - number
+          description: ''
+        - id: proxyUserName
+          type:
+            - string
+          description: 프록시 서버의 사용자 이름입니다.
+        - id: proxyPassword
+          type:
+            - string
+          description: |
+            프록시 서버의 암호입니다.
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.speechRecognitionLanguage
+    name: speechRecognitionLanguage
+    fullName: speechRecognitionLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 음성 인식 언어를 가져오거나 설정 합니다.
+    syntax:
+      content: 'public speechRecognitionLanguage: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.targetLanguages
+    name: targetLanguages
+    fullName: targetLanguages
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 변환할 대상 언어 (텍스트)를 가져옵니다.
+    syntax:
+      content: 'public targetLanguages: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: microsoft-cognitiveservices-speech-sdk
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig.voiceName
+    name: voiceName
+    fullName: voiceName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 번역 된 언어를 가져오거나 음성 음성 합성 출력을 사용 하도록 설정 합니다.
+    syntax:
+      content: 'public voiceName: string'
+      return:
+        type:
+          - string
+    package: microsoft-cognitiveservices-speech-sdk
+references:
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig
+    name: SpeechConfig
+    spec.typeScript:
+      - name: SpeechConfig
+        fullName: SpeechConfig
+        uid: microsoft-cognitiveservices-speech-sdk.SpeechConfig
+  - uid: microsoft-cognitiveservices-speech-sdk.OutputFormat
+    name: OutputFormat
+    spec.typeScript:
+      - name: OutputFormat
+        fullName: OutputFormat
+        uid: microsoft-cognitiveservices-speech-sdk.OutputFormat
+  - uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
+    name: SpeechTranslationConfig
+    spec.typeScript:
+      - name: SpeechTranslationConfig
+        fullName: SpeechTranslationConfig
+        uid: microsoft-cognitiveservices-speech-sdk.SpeechTranslationConfig
