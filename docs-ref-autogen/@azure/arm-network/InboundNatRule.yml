@@ -1,0 +1,228 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-network.InboundNatRule'
+    name: InboundNatRule
+    fullName: InboundNatRule
+    children:
+      - '@azure/arm-network.InboundNatRule.backendIPConfiguration'
+      - '@azure/arm-network.InboundNatRule.backendPort'
+      - '@azure/arm-network.InboundNatRule.enableFloatingIP'
+      - '@azure/arm-network.InboundNatRule.enableTcpReset'
+      - '@azure/arm-network.InboundNatRule.etag'
+      - '@azure/arm-network.InboundNatRule.frontendIPConfiguration'
+      - '@azure/arm-network.InboundNatRule.frontendPort'
+      - '@azure/arm-network.InboundNatRule.id'
+      - '@azure/arm-network.InboundNatRule.idleTimeoutInMinutes'
+      - '@azure/arm-network.InboundNatRule.name'
+      - '@azure/arm-network.InboundNatRule.protocol'
+      - '@azure/arm-network.InboundNatRule.provisioningState'
+    langs:
+      - typeScript
+    type: interface
+    summary: 부하 분산 장치의 인바운드 NAT 규칙입니다.
+    extends:
+      name: '@azure/arm-network.SubResource'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.backendIPConfiguration'
+    name: backendIPConfiguration
+    fullName: backendIPConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      VM의 네트워크 인터페이스에 정의 된 개인 IP 주소에 대 한 참조입니다. 각 프런트 엔드 IP 구성의 프런트 엔드 포트에 전송 되는 트래픽은 백 엔드 IP에 전달 됩니다.
+      **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**
+    optional: true
+    syntax:
+      content: 'backendIPConfiguration?: NetworkInterfaceIPConfiguration'
+      return:
+        type:
+          - '@azure/arm-network.NetworkInterfaceIPConfiguration'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.backendPort'
+    name: backendPort
+    fullName: backendPort
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 내부 끝점에 사용 되는 포트입니다. 허용 되는 값 범위는 1에서 65535 사이입니다.
+    optional: true
+    syntax:
+      content: 'backendPort?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.enableFloatingIP'
+    name: enableFloatingIP
+    fullName: enableFloatingIP
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: SQL AlwaysOn 가용성 그룹을 구성 하는 데 필요한 부동 IP 기능에 대 한 가상 머신의 끝점을 구성 합니다. SQL server에서 SQL AlwaysOn 가용성 그룹을 사용 하는 경우이 설정은 필수입니다. 끝점을 만든 후에이 설정을 변경할 수 없습니다.
+    optional: true
+    syntax:
+      content: 'enableFloatingIP?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.enableTcpReset'
+    name: enableTcpReset
+    fullName: enableTcpReset
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      TCP 흐름 유휴 시간 제한 또는 예기치 않은 연결 종료에 양방향 TCP 재설정을 받습니다.
+      이 요소는 프로토콜이 TCP로 설정 된 경우에 사용 됩니다.
+    optional: true
+    syntax:
+      content: 'enableTcpReset?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.etag'
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.
+    optional: true
+    syntax:
+      content: 'etag?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.frontendIPConfiguration'
+    name: frontendIPConfiguration
+    fullName: frontendIPConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 프런트 엔드 IP 주소에 대 한 참조입니다.
+    optional: true
+    syntax:
+      content: 'frontendIPConfiguration?: SubResource'
+      return:
+        type:
+          - '@azure/arm-network.SubResource'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.frontendPort'
+    name: frontendPort
+    fullName: frontendPort
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 외부 엔드포인트에 대한 포트입니다. 각 규칙에 대 한 포트 번호는 부하 분산 장치 내에서 고유 해야 합니다. 허용 되는 값 범위는 1에서 65534 사이입니다.
+    optional: true
+    syntax:
+      content: 'frontendPort?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 ID입니다.
+    optional: true
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.idleTimeoutInMinutes'
+    name: idleTimeoutInMinutes
+    fullName: idleTimeoutInMinutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: TCP 유휴 연결에 대 한 제한 시간입니다. 값은 4 분에서 30 분 사이로 설정할 수 있습니다. 기본값은 4 분입니다. 이 요소는 프로토콜이 TCP로 설정 된 경우에 사용 됩니다.
+    optional: true
+    syntax:
+      content: 'idleTimeoutInMinutes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리소스 그룹 내에서 고유한 리소스의 이름을 가져옵니다. 이 이름은 리소스에 액세스할 때 사용할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.protocol'
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '부하 분산 규칙에 사용 되는 전송 프로토콜에 대 한 참조입니다. 가능한 값은 다음과 같습니다. ''Udp'', ''Tcp'', ''모두'''
+    optional: true
+    syntax:
+      content: 'protocol?: TransportProtocol'
+      return:
+        type:
+          - '@azure/arm-network.TransportProtocol'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.InboundNatRule.provisioningState'
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '공용 IP 리소스의 프로 비전 상태를 가져옵니다. 가능한 값은 다음과 같습니다. ''업데이트'', ''삭제'' 및 ''실패''입니다.'
+    optional: true
+    syntax:
+      content: 'provisioningState?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+references:
+  - uid: '@azure/arm-network.SubResource'
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: '@azure/arm-network.SubResource'
+  - uid: '@azure/arm-network.NetworkInterfaceIPConfiguration'
+    name: NetworkInterfaceIPConfiguration
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: '@azure/arm-network.NetworkInterfaceIPConfiguration'
+  - uid: '@azure/arm-network.TransportProtocol'
+    name: TransportProtocol
+    spec.typeScript:
+      - name: TransportProtocol
+        fullName: TransportProtocol
+        uid: '@azure/arm-network.TransportProtocol'

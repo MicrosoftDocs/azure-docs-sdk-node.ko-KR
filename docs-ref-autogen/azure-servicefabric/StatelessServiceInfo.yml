@@ -1,0 +1,149 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.StatelessServiceInfo
+    name: StatelessServiceInfo
+    fullName: StatelessServiceInfo
+    children:
+      - azure-servicefabric.StatelessServiceInfo.healthState
+      - azure-servicefabric.StatelessServiceInfo.id
+      - azure-servicefabric.StatelessServiceInfo.isServiceGroup
+      - azure-servicefabric.StatelessServiceInfo.manifestVersion
+      - azure-servicefabric.StatelessServiceInfo.name
+      - azure-servicefabric.StatelessServiceInfo.serviceKind
+      - azure-servicefabric.StatelessServiceInfo.serviceStatus
+      - azure-servicefabric.StatelessServiceInfo.typeName
+    langs:
+      - typeScript
+    type: interface
+    summary: Service Fabric 상태 비저장 서비스에 대 한 정보를 제공 합니다.
+    extends:
+      name: azure-servicefabric.ServiceInfo
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.healthState
+    name: healthState
+    fullName: healthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는'''
+    optional: true
+    syntax:
+      content: 'healthState?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      서비스 id입니다. 이 ID는 서비스 이름의 인코딩된 표현입니다. 이 서비스 리소스를 식별 하는 REST Api에서 사용 됩니다.
+      버전 6.0부터 계층 이름은로 구분 되는 "\~" 문자입니다. 예를 들어 서비스 이름이 "fabric: / myapp/app1/svc1", 서비스 id는 것 "myapp ~ app1\~svc1" 6.0 이상에서는 "myapp/app1/svc1" 이전 버전에서입니다.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.isServiceGroup
+    name: isServiceGroup
+    fullName: isServiceGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 그룹에 서비스 인지 여부입니다.
+    optional: true
+    syntax:
+      content: 'isServiceGroup?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.manifestVersion
+    name: manifestVersion
+    fullName: manifestVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 매니페스트의 버전입니다.
+    optional: true
+    syntax:
+      content: 'manifestVersion?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스의 전체 이름 '' fabric:'' URI 구성표가 없는 애플리케이션의 전체 이름입니다.'
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.serviceKind
+    name: serviceKind
+    fullName: serviceKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'serviceKind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.serviceStatus
+    name: serviceStatus
+    fullName: serviceStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '응용 프로그램의 상태입니다. 가능한 값은 다음과 같습니다. ''알 수 없는'', ''Active'', ''업그레이드'', ''삭제'', ''만들기'', '' 실패 '''
+    optional: true
+    syntax:
+      content: 'serviceStatus?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.StatelessServiceInfo.typeName
+    name: typeName
+    fullName: typeName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 매니페스트에 지정 된 대로 서비스 형식의 이름입니다.
+    optional: true
+    syntax:
+      content: 'typeName?: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.ServiceInfo
+    name: ServiceInfo
+    spec.typeScript:
+      - name: ServiceInfo
+        fullName: ServiceInfo
+        uid: azure-servicefabric.ServiceInfo
