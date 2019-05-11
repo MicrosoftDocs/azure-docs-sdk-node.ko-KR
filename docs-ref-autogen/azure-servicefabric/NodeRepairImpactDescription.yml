@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-servicefabric.NodeRepairImpactDescription
+    name: NodeRepairImpactDescription
+    fullName: NodeRepairImpactDescription
+    children:
+      - azure-servicefabric.NodeRepairImpactDescription.kind
+      - azure-servicefabric.NodeRepairImpactDescription.nodeImpactList
+    langs:
+      - typeScript
+    type: interface
+    summary: |
+      <span data-ttu-id="66d8d-101">노드 집합에 복구 예상 되는 영향을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="66d8d-101">Describes the expected impact of a repair on a set of nodes.</span></span>
+      <span data-ttu-id="66d8d-102">이 유형은 Service Fabric 플랫폼; 지원 코드에서 직접 사용할 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="66d8d-102">This type supports the Service Fabric platform; it is not meant to be used directly from your code.</span></span>
+    extends:
+      name: azure-servicefabric.RepairImpactDescriptionBase
+    package: azure-servicefabric
+  - uid: azure-servicefabric.NodeRepairImpactDescription.kind
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="66d8d-103">다형 판별자</span><span class="sxs-lookup"><span data-stu-id="66d8d-103">Polymorphic Discriminator</span></span>
+    syntax:
+      content: 'kind: string'
+      return:
+        type:
+          - string
+    package: azure-servicefabric
+  - uid: azure-servicefabric.NodeRepairImpactDescription.nodeImpactList
+    name: nodeImpactList
+    fullName: nodeImpactList
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="66d8d-104">복구 작업 및 해당 영향력 영향을 받는 노드 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="66d8d-104">The list of nodes impacted by a repair action and their respective expected impact.</span></span>
+    optional: true
+    syntax:
+      content: 'nodeImpactList?: NodeImpact[]'
+      return:
+        type:
+          - 'azure-servicefabric.NodeImpact[]'
+    package: azure-servicefabric
+references:
+  - uid: azure-servicefabric.RepairImpactDescriptionBase
+    name: RepairImpactDescriptionBase
+    spec.typeScript:
+      - name: RepairImpactDescriptionBase
+        fullName: RepairImpactDescriptionBase
+        uid: azure-servicefabric.RepairImpactDescriptionBase
+  - uid: 'azure-servicefabric.NodeImpact[]'
+    name: 'NodeImpact[]'
+    spec.typeScript:
+      - name: NodeImpact
+        fullName: NodeImpact
+        uid: azure-servicefabric.NodeImpact
+      - name: '[]'
+        fullName: '[]'
