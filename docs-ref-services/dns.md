@@ -19,7 +19,7 @@ ms.locfileid: "52106334"
 ---
 # <a name="azure-dns-modules-for-nodejs"></a>Node.js용 Azure DNS 모듈
 
-Azure DNS을 사용하여 Azure에서 DNS(Domain Name System) 도메인을 호스팅합니다. 다른 Azure 서비스와 동일한 자격 증명, 청구 및 지원 계약을 사용하여 DNS 레코드를 관리합니다. Azure 기반 서비스를 해당 DNS 업데이트와 원활하게 통합하고 종단 간 배포 프로세스를 간소화합니다.
+Azure DNS을 사용하여 Azure에서 DNS(Domain Name System) 도메인을 호스팅합니다. 다른 Azure 서비스와 동일한 자격 증명, 청구 및 지원 계약을 사용하여 DNS 레코드를 관리합니다. Azure 기반 서비스를 해당 DNS 업데이트와 원활하게 통합하고 엔드투엔드 배포 프로세스를 간소화합니다.
 
 ## <a name="management-package"></a>관리 패키지
 
