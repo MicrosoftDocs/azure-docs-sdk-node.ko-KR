@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.ImageOSDisk'
+    name: ImageOSDisk
+    fullName: ImageOSDisk
+    children:
+      - '@azure/arm-compute.ImageOSDisk.blobUri'
+      - '@azure/arm-compute.ImageOSDisk.caching'
+      - '@azure/arm-compute.ImageOSDisk.diskSizeGB'
+      - '@azure/arm-compute.ImageOSDisk.managedDisk'
+      - '@azure/arm-compute.ImageOSDisk.osState'
+      - '@azure/arm-compute.ImageOSDisk.osType'
+      - '@azure/arm-compute.ImageOSDisk.snapshot'
+      - '@azure/arm-compute.ImageOSDisk.storageAccountType'
+    langs:
+      - typeScript
+    type: interface
+    summary: 운영 체제 디스크를 설명합니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.blobUri'
+    name: blobUri
+    fullName: blobUri
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 가상 하드 디스크입니다.
+    optional: true
+    syntax:
+      content: 'blobUri?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.caching'
+    name: caching
+    fullName: caching
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      캐싱 요구 사항을 지정합니다. <br><br> 가능한 값은 다음과 같습니다. <br><br> **없음** <br><br>
+      **ReadOnly** <br><br> **ReadWrite** <br><br> Default: **표준 저장소에 대 한 none입니다. Premium storage에 대 한 읽기 전용**합니다. 가능한 값은 다음과 같습니다. 'None', 'ReadOnly', 'ReadWrite'
+    optional: true
+    syntax:
+      content: 'caching?: CachingTypes'
+      return:
+        type:
+          - '@azure/arm-compute.CachingTypes'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.diskSizeGB'
+    name: diskSizeGB
+    fullName: diskSizeGB
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 빈 데이터 디스크의 크기를 기가바이트 단위로 지정합니다. 가상 머신 이미지에서 디스크의 이름을 덮어쓰려면이 요소를 사용할 수 있습니다. <br><br> 이 값은 1023GB 보다 클 수 없습니다.
+    optional: true
+    syntax:
+      content: 'diskSizeGB?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.managedDisk'
+    name: managedDisk
+    fullName: managedDisk
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ManagedDisk 합니다.
+    optional: true
+    syntax:
+      content: 'managedDisk?: SubResource'
+      return:
+        type:
+          - '@azure/arm-compute.SubResource'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.osState'
+    name: osState
+    fullName: osState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'OS 상태입니다. 가능한 값은 다음과 같습니다. ''일반화'', '' 특수화 '''
+    syntax:
+      content: 'osState: OperatingSystemStateTypes'
+      return:
+        type:
+          - '@azure/arm-compute.OperatingSystemStateTypes'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.osType'
+    name: osType
+    fullName: osType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      이 속성을 사용 하면 사용자 지정 이미지에서 VM을 만들 경우 디스크에 포함 된 운영 체제의 종류를 지정할 수 있습니다. <br><br> 가능한 값은 다음과 같습니다. <br><br> **Windows** <br><br>
+      **Linux**. 가능한 값은 다음과 같습니다. 'Windows', 'Linux'
+    syntax:
+      content: 'osType: OperatingSystemTypes'
+      return:
+        type:
+          - '@azure/arm-compute.OperatingSystemTypes'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.snapshot'
+    name: snapshot
+    fullName: snapshot
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 스냅숏입니다.
+    optional: true
+    syntax:
+      content: 'snapshot?: SubResource'
+      return:
+        type:
+          - '@azure/arm-compute.SubResource'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.ImageOSDisk.storageAccountType'
+    name: storageAccountType
+    fullName: storageAccountType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '관리 디스크에 대 한 저장소 계정 유형을 지정합니다. UltraSSD_LRS OS 디스크를 사용 하 여 사용할 수 없습니다. 가능한 값은 다음과 같습니다. ''Standard_LRS'', ''Premium_LRS'', ''StandardSSD_LRS'', ''UltraSSD_LRS'''
+    optional: true
+    syntax:
+      content: 'storageAccountType?: StorageAccountTypes'
+      return:
+        type:
+          - '@azure/arm-compute.StorageAccountTypes'
+    package: '@azure/arm-compute'
+references:
+  - uid: '@azure/arm-compute.CachingTypes'
+    name: CachingTypes
+    spec.typeScript:
+      - name: CachingTypes
+        fullName: CachingTypes
+        uid: '@azure/arm-compute.CachingTypes'
+  - uid: '@azure/arm-compute.SubResource'
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: '@azure/arm-compute.SubResource'
+  - uid: '@azure/arm-compute.OperatingSystemStateTypes'
+    name: OperatingSystemStateTypes
+    spec.typeScript:
+      - name: OperatingSystemStateTypes
+        fullName: OperatingSystemStateTypes
+        uid: '@azure/arm-compute.OperatingSystemStateTypes'
+  - uid: '@azure/arm-compute.OperatingSystemTypes'
+    name: OperatingSystemTypes
+    spec.typeScript:
+      - name: OperatingSystemTypes
+        fullName: OperatingSystemTypes
+        uid: '@azure/arm-compute.OperatingSystemTypes'
+  - uid: '@azure/arm-compute.StorageAccountTypes'
+    name: StorageAccountTypes
+    spec.typeScript:
+      - name: StorageAccountTypes
+        fullName: StorageAccountTypes
+        uid: '@azure/arm-compute.StorageAccountTypes'
