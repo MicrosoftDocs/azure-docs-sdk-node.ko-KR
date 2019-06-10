@@ -1,0 +1,1011 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-apimanagement.ApiManagementService'
+    name: ApiManagementService
+    fullName: ApiManagementService
+    children:
+      - '@azure/arm-apimanagement.ApiManagementService.constructor'
+      - '@azure/arm-apimanagement.ApiManagementService.applyNetworkConfigurationUpdates'
+      - '@azure/arm-apimanagement.ApiManagementService.backup'
+      - '@azure/arm-apimanagement.ApiManagementService.beginApplyNetworkConfigurationUpdates'
+      - '@azure/arm-apimanagement.ApiManagementService.beginBackup'
+      - '@azure/arm-apimanagement.ApiManagementService.beginCreateOrUpdate'
+      - '@azure/arm-apimanagement.ApiManagementService.beginDeleteMethod'
+      - '@azure/arm-apimanagement.ApiManagementService.beginRestore'
+      - '@azure/arm-apimanagement.ApiManagementService.beginUpdate'
+      - '@azure/arm-apimanagement.ApiManagementService.checkNameAvailability'
+      - '@azure/arm-apimanagement.ApiManagementService.checkNameAvailability_2'
+      - '@azure/arm-apimanagement.ApiManagementService.checkNameAvailability_1'
+      - '@azure/arm-apimanagement.ApiManagementService.createOrUpdate'
+      - '@azure/arm-apimanagement.ApiManagementService.deleteMethod'
+      - '@azure/arm-apimanagement.ApiManagementService.get'
+      - '@azure/arm-apimanagement.ApiManagementService.get_2'
+      - '@azure/arm-apimanagement.ApiManagementService.get_1'
+      - '@azure/arm-apimanagement.ApiManagementService.getSsoToken'
+      - '@azure/arm-apimanagement.ApiManagementService.getSsoToken_2'
+      - '@azure/arm-apimanagement.ApiManagementService.getSsoToken_1'
+      - '@azure/arm-apimanagement.ApiManagementService.list'
+      - '@azure/arm-apimanagement.ApiManagementService.list_2'
+      - '@azure/arm-apimanagement.ApiManagementService.list_1'
+      - '@azure/arm-apimanagement.ApiManagementService.listByResourceGroup'
+      - '@azure/arm-apimanagement.ApiManagementService.listByResourceGroup_2'
+      - '@azure/arm-apimanagement.ApiManagementService.listByResourceGroup_1'
+      - '@azure/arm-apimanagement.ApiManagementService.listByResourceGroupNext'
+      - '@azure/arm-apimanagement.ApiManagementService.listByResourceGroupNext_2'
+      - '@azure/arm-apimanagement.ApiManagementService.listByResourceGroupNext_1'
+      - '@azure/arm-apimanagement.ApiManagementService.listNext'
+      - '@azure/arm-apimanagement.ApiManagementService.listNext_2'
+      - '@azure/arm-apimanagement.ApiManagementService.listNext_1'
+      - '@azure/arm-apimanagement.ApiManagementService.restore'
+      - '@azure/arm-apimanagement.ApiManagementService.update'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="24f99-101">ApiManagementService 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-101">Class representing a ApiManagementService.</span></span>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.constructor'
+    name: ApiManagementService(ApiManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-102">ApiManagementService를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-102">Create a ApiManagementService.</span></span>
+    syntax:
+      content: 'new ApiManagementService(client: ApiManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-apimanagement.ApiManagementClientContext'
+          description: |
+            <span data-ttu-id="24f99-103">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-103">Reference to the service client.</span></span>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.applyNetworkConfigurationUpdates'
+    name: 'applyNetworkConfigurationUpdates(string, string, Models.ApiManagementServiceApplyNetworkConfigurationUpdatesOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-104">업데이트 된 네트워크 설정을 선택 하려면 가상 네트워크에서 실행 되는 Microsoft.ApiManagement 리소스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-104">Updates the Microsoft.ApiManagement resource running in the Virtual network to pick the updated network settings.</span></span>
+    syntax:
+      content: 'function applyNetworkConfigurationUpdates(resourceGroupName: string, serviceName: string, options?: Models.ApiManagementServiceApplyNetworkConfigurationUpdatesOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-105">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-105">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-106">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-106">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - Models.ApiManagementServiceApplyNetworkConfigurationUpdatesOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceApplyNetworkConfigurationUpdatesResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.backup'
+    name: 'backup(string, string, ApiManagementServiceBackupRestoreParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-107">지정 된 Azure 저장소 계정에 API Management 서비스의 백업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-107">Creates a backup of the API Management service to the given Azure Storage Account.</span></span> <span data-ttu-id="24f99-108">이 긴 작업을 실행 하 고 완료 하는 데 몇 분 정도 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-108">This is long running operation and could take several minutes to complete.</span></span>
+    syntax:
+      content: 'function backup(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceBackupRestoreParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-109">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-109">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-110">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-110">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceBackupRestoreParameters'
+          description: <span data-ttu-id="24f99-111">ApiManagementService_Backup 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-111">Parameters supplied to the ApiManagementService_Backup operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceBackupResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.beginApplyNetworkConfigurationUpdates'
+    name: 'beginApplyNetworkConfigurationUpdates(string, string, Models.ApiManagementServiceBeginApplyNetworkConfigurationUpdatesOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-112">업데이트 된 네트워크 설정을 선택 하려면 가상 네트워크에서 실행 되는 Microsoft.ApiManagement 리소스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-112">Updates the Microsoft.ApiManagement resource running in the Virtual network to pick the updated network settings.</span></span>
+    syntax:
+      content: 'function beginApplyNetworkConfigurationUpdates(resourceGroupName: string, serviceName: string, options?: Models.ApiManagementServiceBeginApplyNetworkConfigurationUpdatesOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-113">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-113">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-114">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-114">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - Models.ApiManagementServiceBeginApplyNetworkConfigurationUpdatesOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.beginBackup'
+    name: 'beginBackup(string, string, ApiManagementServiceBackupRestoreParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-115">지정 된 Azure 저장소 계정에 API Management 서비스의 백업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-115">Creates a backup of the API Management service to the given Azure Storage Account.</span></span> <span data-ttu-id="24f99-116">이 긴 작업을 실행 하 고 완료 하는 데 몇 분 정도 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-116">This is long running operation and could take several minutes to complete.</span></span>
+    syntax:
+      content: 'function beginBackup(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceBackupRestoreParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-117">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-117">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-118">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-118">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceBackupRestoreParameters'
+          description: <span data-ttu-id="24f99-119">ApiManagementService_Backup 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-119">Parameters supplied to the ApiManagementService_Backup operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, ApiManagementServiceResource, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-120">API Management 서비스를 만들거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-120">Creates or updates an API Management service.</span></span> <span data-ttu-id="24f99-121">이 긴 작업을 실행 하 고 완료 하는 데 몇 분 정도 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-121">This is long running operation and could take several minutes to complete.</span></span>
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceResource, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-122">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-122">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-123">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-123">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceResource'
+          description: <span data-ttu-id="24f99-124">CreateOrUpdate API Management 서비스 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-124">Parameters supplied to the CreateOrUpdate API Management service operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-125">기존 API Management 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-125">Deletes an existing API Management service.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, serviceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-126">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-126">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-127">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-127">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.beginRestore'
+    name: 'beginRestore(string, string, ApiManagementServiceBackupRestoreParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-128">현재 서비스에 대 한 ApiManagementService_Backup 작업을 사용 하 여 만든 API Management 서비스의 백업을 복원 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-128">Restores a backup of an API Management service created using the ApiManagementService_Backup operation on the current service.</span></span> <span data-ttu-id="24f99-129">장기 실행 작업으로 완료 하려면 몇 분 정도 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-129">This is a long running operation and could take several minutes to complete.</span></span>
+    syntax:
+      content: 'function beginRestore(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceBackupRestoreParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-130">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-130">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-131">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-131">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceBackupRestoreParameters'
+          description: <span data-ttu-id="24f99-132">백업 작업에서 복원할 API Management 서비스에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-132">Parameters supplied to the Restore API Management service from backup operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.beginUpdate'
+    name: 'beginUpdate(string, string, ApiManagementServiceUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-133">기존 API Management 서비스를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-133">Updates an existing API Management service.</span></span>
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-134">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-134">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-135">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-135">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceUpdateParameters'
+          description: <span data-ttu-id="24f99-136">CreateOrUpdate API Management 서비스 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-136">Parameters supplied to the CreateOrUpdate API Management service operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.checkNameAvailability'
+    name: 'checkNameAvailability(ApiManagementServiceCheckNameAvailabilityParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-137">가용성 및 API Management 서비스에 대 한 이름의 정확성을 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-137">Checks availability and correctness of a name for an API Management service.</span></span>
+    syntax:
+      content: 'function checkNameAvailability(parameters: ApiManagementServiceCheckNameAvailabilityParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceCheckNameAvailabilityParameters'
+          description: <span data-ttu-id="24f99-138">CheckNameAvailability 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-138">Parameters supplied to the CheckNameAvailability operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceCheckNameAvailabilityResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.checkNameAvailability_2'
+    name: 'checkNameAvailability(ApiManagementServiceCheckNameAvailabilityParameters, RequestOptionsBase, ServiceCallback<ApiManagementServiceNameAvailabilityResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(parameters: ApiManagementServiceCheckNameAvailabilityParameters, options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceNameAvailabilityResult>)'
+      parameters:
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceCheckNameAvailabilityParameters'
+          description: <span data-ttu-id="24f99-139">CheckNameAvailability 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-139">Parameters supplied to the CheckNameAvailability operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-140">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-140">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceNameAvailabilityResult>
+          description: |
+            <span data-ttu-id="24f99-141">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-141">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceCheckNameAvailabilityResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.checkNameAvailability_1'
+    name: 'checkNameAvailability(ApiManagementServiceCheckNameAvailabilityParameters, ServiceCallback<ApiManagementServiceNameAvailabilityResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(parameters: ApiManagementServiceCheckNameAvailabilityParameters, callback: ServiceCallback<ApiManagementServiceNameAvailabilityResult>)'
+      parameters:
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceCheckNameAvailabilityParameters'
+          description: <span data-ttu-id="24f99-142">CheckNameAvailability 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-142">Parameters supplied to the CheckNameAvailability operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceNameAvailabilityResult>
+          description: |
+            <span data-ttu-id="24f99-143">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-143">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceCheckNameAvailabilityResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.createOrUpdate'
+    name: 'createOrUpdate(string, string, ApiManagementServiceResource, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-144">API Management 서비스를 만들거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-144">Creates or updates an API Management service.</span></span> <span data-ttu-id="24f99-145">이 긴 작업을 실행 하 고 완료 하는 데 몇 분 정도 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-145">This is long running operation and could take several minutes to complete.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceResource, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-146">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-146">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-147">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-147">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceResource'
+          description: <span data-ttu-id="24f99-148">CreateOrUpdate API Management 서비스 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-148">Parameters supplied to the CreateOrUpdate API Management service operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceCreateOrUpdateResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-149">기존 API Management 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-149">Deletes an existing API Management service.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serviceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-150">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-150">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-151">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-151">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceDeleteMethodResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-152">에 대 한 API Management 서비스 리소스 설명을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-152">Gets an API Management service resource description.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, serviceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-153">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-153">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-154">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-154">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceGetResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<ApiManagementServiceResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serviceName: string, options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceResource>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-155">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-155">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-156">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-156">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-157">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-157">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceResource>
+          description: |
+            <span data-ttu-id="24f99-158">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceGetResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.get_1'
+    name: 'get(string, string, ServiceCallback<ApiManagementServiceResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serviceName: string, callback: ServiceCallback<ApiManagementServiceResource>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-159">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-159">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-160">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-160">The name of the API Management service.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceResource>
+          description: |
+            <span data-ttu-id="24f99-161">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-161">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceGetResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.getSsoToken'
+    name: 'getSsoToken(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-162">5 분 동안 유효 하는 API Management 서비스에 대 한 Single Sign-on 토큰을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-162">Gets the Single-Sign-On token for the API Management Service which is valid for 5 Minutes.</span></span>
+    syntax:
+      content: 'function getSsoToken(resourceGroupName: string, serviceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-163">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-163">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-164">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-164">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceGetSsoTokenResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.getSsoToken_2'
+    name: 'getSsoToken(string, string, RequestOptionsBase, ServiceCallback<ApiManagementServiceGetSsoTokenResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getSsoToken(resourceGroupName: string, serviceName: string, options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceGetSsoTokenResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-165">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-165">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-166">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-166">The name of the API Management service.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-167">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-167">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceGetSsoTokenResult>
+          description: |
+            <span data-ttu-id="24f99-168">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-168">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceGetSsoTokenResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.getSsoToken_1'
+    name: 'getSsoToken(string, string, ServiceCallback<ApiManagementServiceGetSsoTokenResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getSsoToken(resourceGroupName: string, serviceName: string, callback: ServiceCallback<ApiManagementServiceGetSsoTokenResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-169">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-169">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-170">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-170">The name of the API Management service.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceGetSsoTokenResult>
+          description: |
+            <span data-ttu-id="24f99-171">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-171">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceGetSsoTokenResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.list'
+    name: list(msRest.RequestOptionsBase)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-172">Azure 구독 내에서 모든 API Management 서비스를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-172">Lists all API Management services within an Azure subscription.</span></span>
+    syntax:
+      content: 'function list(options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.list_2'
+    name: 'list(RequestOptionsBase, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-173">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-173">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-174">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-174">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.list_1'
+    name: list(ServiceCallback<ApiManagementServiceListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-175">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listByResourceGroup'
+    name: 'listByResourceGroup(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-176">리소스 그룹 내의 모든 API Management 서비스를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-176">List all API Management services within a resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-177">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-177">The name of the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListByResourceGroupResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, RequestOptionsBase, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-178">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-178">The name of the resource group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-179">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-179">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-180">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-180">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListByResourceGroupResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-181">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-181">The name of the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-182">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListByResourceGroupResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-183">리소스 그룹 내의 모든 API Management 서비스를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-183">List all API Management services within a resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="24f99-184">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-184">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListByResourceGroupNextResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="24f99-185">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-185">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-186">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-186">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-187">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-187">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListByResourceGroupNextResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="24f99-188">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-188">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-189">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-189">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListByResourceGroupNextResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-190">Azure 구독 내에서 모든 API Management 서비스를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-190">Lists all API Management services within an Azure subscription.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="24f99-191">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-191">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListNextResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="24f99-192">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-192">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="24f99-193">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="24f99-193">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-194">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-194">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListNextResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.listNext_1'
+    name: 'listNext(string, ServiceCallback<ApiManagementServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ApiManagementServiceListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="24f99-195">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-195">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+          description: |
+            <span data-ttu-id="24f99-196">콜백</span><span class="sxs-lookup"><span data-stu-id="24f99-196">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceListNextResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.restore'
+    name: 'restore(string, string, ApiManagementServiceBackupRestoreParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-197">현재 서비스에 대 한 ApiManagementService_Backup 작업을 사용 하 여 만든 API Management 서비스의 백업을 복원 합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-197">Restores a backup of an API Management service created using the ApiManagementService_Backup operation on the current service.</span></span> <span data-ttu-id="24f99-198">장기 실행 작업으로 완료 하려면 몇 분 정도 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-198">This is a long running operation and could take several minutes to complete.</span></span>
+    syntax:
+      content: 'function restore(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceBackupRestoreParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-199">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-199">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-200">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-200">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceBackupRestoreParameters'
+          description: <span data-ttu-id="24f99-201">백업 작업에서 복원할 API Management 서비스에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-201">Parameters supplied to the Restore API Management service from backup operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceRestoreResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.ApiManagementService.update'
+    name: 'update(string, string, ApiManagementServiceUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="24f99-202">기존 API Management 서비스를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-202">Updates an existing API Management service.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, serviceName: string, parameters: ApiManagementServiceUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-203">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="24f99-203">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="24f99-204">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-204">The name of the API Management service.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.ApiManagementServiceUpdateParameters'
+          description: <span data-ttu-id="24f99-205">CreateOrUpdate API Management 서비스 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="24f99-205">Parameters supplied to the CreateOrUpdate API Management service operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ApiManagementServiceUpdateResponse>
+    package: '@azure/arm-apimanagement'
+references:
+  - uid: '@azure/arm-apimanagement.ApiManagementClientContext'
+    name: ApiManagementClientContext
+    spec.typeScript:
+      - name: ApiManagementClientContext
+        fullName: ApiManagementClientContext
+        uid: '@azure/arm-apimanagement.ApiManagementClientContext'
+  - uid: '@azure/arm-apimanagement.ApiManagementServiceBackupRestoreParameters'
+    name: ApiManagementServiceBackupRestoreParameters
+    spec.typeScript:
+      - name: ApiManagementServiceBackupRestoreParameters
+        fullName: ApiManagementServiceBackupRestoreParameters
+        uid: '@azure/arm-apimanagement.ApiManagementServiceBackupRestoreParameters'
+  - uid: '@azure/arm-apimanagement.ApiManagementServiceResource'
+    name: ApiManagementServiceResource
+    spec.typeScript:
+      - name: ApiManagementServiceResource
+        fullName: ApiManagementServiceResource
+        uid: '@azure/arm-apimanagement.ApiManagementServiceResource'
+  - uid: '@azure/arm-apimanagement.ApiManagementServiceUpdateParameters'
+    name: ApiManagementServiceUpdateParameters
+    spec.typeScript:
+      - name: ApiManagementServiceUpdateParameters
+        fullName: ApiManagementServiceUpdateParameters
+        uid: '@azure/arm-apimanagement.ApiManagementServiceUpdateParameters'
+  - uid: '@azure/arm-apimanagement.ApiManagementServiceCheckNameAvailabilityParameters'
+    name: ApiManagementServiceCheckNameAvailabilityParameters
+    spec.typeScript:
+      - name: ApiManagementServiceCheckNameAvailabilityParameters
+        fullName: ApiManagementServiceCheckNameAvailabilityParameters
+        uid: '@azure/arm-apimanagement.ApiManagementServiceCheckNameAvailabilityParameters'
+  - uid: ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceNameAvailabilityResult>
+    name: ApiManagementServiceNameAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApiManagementServiceNameAvailabilityResult
+        fullName: ApiManagementServiceNameAvailabilityResult
+        uid: '@azure/arm-apimanagement.ApiManagementServiceNameAvailabilityResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceResource>
+    name: ApiManagementServiceResource>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApiManagementServiceResource
+        fullName: ApiManagementServiceResource
+        uid: '@azure/arm-apimanagement.ApiManagementServiceResource'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceGetSsoTokenResult>
+    name: ApiManagementServiceGetSsoTokenResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApiManagementServiceGetSsoTokenResult
+        fullName: ApiManagementServiceGetSsoTokenResult
+        uid: '@azure/arm-apimanagement.ApiManagementServiceGetSsoTokenResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-apimanagement.ApiManagementServiceListResult>
+    name: ApiManagementServiceListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApiManagementServiceListResult
+        fullName: ApiManagementServiceListResult
+        uid: '@azure/arm-apimanagement.ApiManagementServiceListResult'
+      - name: '>'
+        fullName: '>'
