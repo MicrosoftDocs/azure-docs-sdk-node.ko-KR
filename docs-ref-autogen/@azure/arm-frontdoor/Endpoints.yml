@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-frontdoor.Endpoints'
+    name: Endpoints
+    fullName: Endpoints
+    children:
+      - '@azure/arm-frontdoor.Endpoints.beginPurgeContent'
+      - '@azure/arm-frontdoor.Endpoints.constructor'
+      - '@azure/arm-frontdoor.Endpoints.purgeContent'
+    langs:
+      - typeScript
+    type: class
+    summary: 끝점을 나타내는 클래스입니다.
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.Endpoints.beginPurgeContent'
+    name: 'beginPurgeContent(string, string, PurgeParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 첫 번째 관문에서 콘텐츠를 제거합니다.
+    syntax:
+      content: 'function beginPurgeContent(resourceGroupName: string, frontDoorName: string, contentFilePaths: PurgeParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 구독 내의 리소스 그룹의 이름입니다.
+        - id: frontDoorName
+          type:
+            - string
+          description: 첫 번째 관문 전역적으로 고유한 이름입니다.
+        - id: contentFilePaths
+          type:
+            - '@azure/arm-frontdoor.PurgeParameters'
+          description: '경로를 제거 하도록 콘텐츠입니다. 경로 수는 전체 URL 예: '' / pictures/city.png'' 예: 단일 파일 또는 와일드 카드를 사용 하 여 디렉터리를 제거 '' / *'' 제거 하는 모든 폴더 및 파일 디렉터리에 있습니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.Endpoints.constructor'
+    name: Endpoints(FrontDoorManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 끝점을 만듭니다.
+    syntax:
+      content: 'new Endpoints(client: FrontDoorManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-frontdoor.FrontDoorManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.Endpoints.purgeContent'
+    name: 'purgeContent(string, string, PurgeParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 첫 번째 관문에서 콘텐츠를 제거합니다.
+    syntax:
+      content: 'function purgeContent(resourceGroupName: string, frontDoorName: string, contentFilePaths: PurgeParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 구독 내의 리소스 그룹의 이름입니다.
+        - id: frontDoorName
+          type:
+            - string
+          description: 첫 번째 관문 전역적으로 고유한 이름입니다.
+        - id: contentFilePaths
+          type:
+            - '@azure/arm-frontdoor.PurgeParameters'
+          description: '경로를 제거 하도록 콘텐츠입니다. 경로 수는 전체 URL 예: '' / pictures/city.png'' 예: 단일 파일 또는 와일드 카드를 사용 하 여 디렉터리를 제거 '' / *'' 제거 하는 모든 폴더 및 파일 디렉터리에 있습니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-frontdoor'
+references:
+  - uid: '@azure/arm-frontdoor.FrontDoorManagementClientContext'
+    name: FrontDoorManagementClientContext
+    spec.typeScript:
+      - name: FrontDoorManagementClientContext
+        fullName: FrontDoorManagementClientContext
+        uid: '@azure/arm-frontdoor.FrontDoorManagementClientContext'
+  - uid: '@azure/arm-frontdoor.PurgeParameters'
+    name: PurgeParameters
+    spec.typeScript:
+      - name: PurgeParameters
+        fullName: PurgeParameters
+        uid: '@azure/arm-frontdoor.PurgeParameters'
