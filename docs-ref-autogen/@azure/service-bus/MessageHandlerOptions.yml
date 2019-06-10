@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.MessageHandlerOptions'
+    name: MessageHandlerOptions
+    fullName: MessageHandlerOptions
+    children:
+      - '@azure/service-bus.MessageHandlerOptions.autoComplete'
+      - '@azure/service-bus.MessageHandlerOptions.maxConcurrentCalls'
+      - '@azure/service-bus.MessageHandlerOptions.maxMessageAutoRenewLockDurationInSeconds'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="e2910-101">에 전달 된 옵션에 설명 합니다 `registerMessageHandler` 메서드 세션이 설정 되지 않은 큐/구독에서 메시지를 수신 합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-101">Describes the options passed to `registerMessageHandler` method when receiving messages from a Queue/Subscription which does not have sessions enabled.</span></span>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.MessageHandlerOptions.autoComplete'
+    name: autoComplete
+    fullName: autoComplete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="e2910-102">나타냅니다 여부는 `complete()` 사용자가 제공한 onMessage 처리기가 실행 된 후 메서드가 메시지의 sdk에서 호출 되도록 자동으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-102">Indicates whether the `complete()` method on the message should automatically be called by the sdk after the user provided onMessage handler has been executed.</span></span>
+      <span data-ttu-id="e2910-103">호출 `complete()` 메시지 큐/구독에서 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-103">Calling `complete()` on a message removes it from the Queue/Subscription.</span></span>
+      - <span data-ttu-id="e2910-104">**기본**: `true`합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-104">**Default**: `true`.</span></span>
+    optional: true
+    syntax:
+      content: 'autoComplete?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.MessageHandlerOptions.maxConcurrentCalls'
+    name: maxConcurrentCalls
+    fullName: maxConcurrentCalls
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="e2910-105">Sdk는 사용자의 메시지 처리기를 만들 수 있는 동시 호출의 최대 수입니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-105">The maximum number of concurrent calls that the sdk can make to the user's message handler.</span></span> <span data-ttu-id="e2910-106">이 한도 도달 하면 추가 메시지가 수신 되지 않습니다 이상 사용자의 메시지 처리기에 대 한 호출 중 하나가 완료 될 때까지 합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-106">Once this limit has been reached, further messages will not be received until atleast one of the calls to the user's message handler has completed.</span></span>
+      - <span data-ttu-id="e2910-107">**기본**: `1`합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-107">**Default**: `1`.</span></span>
+    optional: true
+    syntax:
+      content: 'maxConcurrentCalls?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.MessageHandlerOptions.maxMessageAutoRenewLockDurationInSeconds'
+    name: maxMessageAutoRenewLockDurationInSeconds
+    fullName: maxMessageAutoRenewLockDurationInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="e2910-108">메시지에 대 한 잠금을 갱신 sdk에서 자동으로 하는 시간 (초). 최대 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-108">The maximum duration in seconds until which the lock on the message will be renewed by the sdk automatically.</span></span> <span data-ttu-id="e2910-109">메시지가 확인 되 면 또는 사용자가 제공한 onMessage 처리기 항목 실행이 완료 되 면이 자동 갱신을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-109">This auto renewal stops once the message is settled or once the user provided onMessage handler completes ite execution.</span></span>
+
+      - <span data-ttu-id="e2910-110">**기본**: `300` 초 (5 분)입니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-110">**Default**: `300` seconds (5 minutes).</span></span>
+      - <span data-ttu-id="e2910-111">**Autolock 갱신 하지 않으려면**, 설정 `0`합니다.</span><span class="sxs-lookup"><span data-stu-id="e2910-111">**To disable autolock renewal**, set this to `0`.</span></span>
+    optional: true
+    syntax:
+      content: 'maxMessageAutoRenewLockDurationInSeconds?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
