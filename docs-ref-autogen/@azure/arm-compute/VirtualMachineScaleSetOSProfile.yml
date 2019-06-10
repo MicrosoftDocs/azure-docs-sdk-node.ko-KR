@@ -1,0 +1,151 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile'
+    name: VirtualMachineScaleSetOSProfile
+    fullName: VirtualMachineScaleSetOSProfile
+    children:
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.adminPassword'
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.adminUsername'
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.computerNamePrefix'
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.customData'
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.linuxConfiguration'
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.secrets'
+      - '@azure/arm-compute.VirtualMachineScaleSetOSProfile.windowsConfiguration'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="8da30-101">가상 머신 확장 집합 OS 프로필을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-101">Describes a virtual machine scale set OS profile.</span></span>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.adminPassword'
+    name: adminPassword
+    fullName: adminPassword
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="8da30-102">관리자 계정의 암호를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-102">Specifies the password of the administrator account.</span></span> <br><br> <span data-ttu-id="8da30-103">**최소 길이 (Windows):** 8 자</span><span class="sxs-lookup"><span data-stu-id="8da30-103">**Minimum-length (Windows):** 8 characters</span></span> <br><br> <span data-ttu-id="8da30-104">**최소 길이 (Linux):** 6 자</span><span class="sxs-lookup"><span data-stu-id="8da30-104">**Minimum-length (Linux):** 6 characters</span></span> <br><br> <span data-ttu-id="8da30-105">**최대 길이 (Windows):** 123 자</span><span class="sxs-lookup"><span data-stu-id="8da30-105">**Max-length (Windows):** 123 characters</span></span> <br><br> <span data-ttu-id="8da30-106">**최대 길이 (Linux):** 72 자</span><span class="sxs-lookup"><span data-stu-id="8da30-106">**Max-length (Linux):** 72 characters</span></span> <br><br>
+      <span data-ttu-id="8da30-107">**복잡성 요구 사항:** 아래 3 개 4 조건을 충족 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-107">**Complexity requirements:** 3 out of 4 conditions below need to be fulfilled</span></span> <br> <span data-ttu-id="8da30-108">가 소문자</span><span class="sxs-lookup"><span data-stu-id="8da30-108">Has lower characters</span></span> <br><span data-ttu-id="8da30-109">가 대문자</span><span class="sxs-lookup"><span data-stu-id="8da30-109">Has upper characters</span></span> <br> <span data-ttu-id="8da30-110">숫자를가지고</span><span class="sxs-lookup"><span data-stu-id="8da30-110">Has a digit</span></span> <br> <span data-ttu-id="8da30-111">가 특수 문자 (정규식 일치 [\W_])</span><span class="sxs-lookup"><span data-stu-id="8da30-111">Has a special character (Regex match [\W_])</span></span> <br><br> <span data-ttu-id="8da30-112">**값을 사용할 수 없습니다:** "abc@123", "P@$$w0rd" "P@ssw0rd","P@ssword123"를 "Pa$ $word" 인 "pass@word1", "암호!", "Password1", "Password22", "iloveyou!"</span><span class="sxs-lookup"><span data-stu-id="8da30-112">**Disallowed values:** "abc@123", "P@$$w0rd", "P@ssw0rd", "P@ssword123", "Pa$$word", "pass@word1", "Password!", "Password1", "Password22", "iloveyou!"</span></span> <br><br> <span data-ttu-id="8da30-113">암호 다시 설정에 대 한 참조 [원격 데스크톱 서비스 또는 Windows VM에서 해당 로그인 암호를 재설정 하는 방법](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-reset-rdp?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="8da30-113">For resetting the password, see [How to reset the Remote Desktop service or its login password in a Windows VM](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-reset-rdp?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)</span></span>
+      <br><br> <span data-ttu-id="8da30-114">루트 암호 다시 설정에 대 한 참조 [사용자, SSH, 관리 및 확인 또는 VMAccess 확장을 사용 하 여 Azure Linux Vm에서 디스크를 복구 합니다.](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-vmaccess-extension?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json#reset-root-password)</span><span class="sxs-lookup"><span data-stu-id="8da30-114">For resetting root password, see [Manage users, SSH, and check or repair disks on Azure Linux VMs using the VMAccess Extension](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-vmaccess-extension?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json#reset-root-password)</span></span>
+    optional: true
+    syntax:
+      content: 'adminPassword?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.adminUsername'
+    name: adminUsername
+    fullName: adminUsername
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="8da30-115">관리자 계정의 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-115">Specifies the name of the administrator account.</span></span> <br><br> <span data-ttu-id="8da30-116">**Windows 전용 제한:** 끝날 수 없습니다 "."</span><span class="sxs-lookup"><span data-stu-id="8da30-116">**Windows-only restriction:** Cannot end in "."</span></span> <br><br> <span data-ttu-id="8da30-117">**값을 사용할 수 없습니다:** "administrator", "admin", "user", "user1", "test", "user2", "test1", "user3" 및 "admin1", "1", "123", "a", "actuser", "adm", "admin2", "aspnet", "백업", "콘솔", "david", "게스트", "john", "소유자", "루트", "server", " "sql", "지원", "support_388945a0", "sys", "test2", "test3", "user4", "user5"입니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-117">**Disallowed values:** "administrator", "admin", "user", "user1", "test", "user2", "test1", "user3", "admin1", "1", "123", "a", "actuser", "adm", "admin2", "aspnet", "backup", "console", "david", "guest", "john", "owner", "root", "server", "sql", "support", "support_388945a0", "sys", "test2", "test3", "user4", "user5".</span></span> <br><br> <span data-ttu-id="8da30-118">**최소 길이 (Linux):** 1 자</span><span class="sxs-lookup"><span data-stu-id="8da30-118">**Minimum-length (Linux):** 1  character</span></span> <br><br> <span data-ttu-id="8da30-119">**최대 길이 (Linux):** 64 자</span><span class="sxs-lookup"><span data-stu-id="8da30-119">**Max-length (Linux):** 64 characters</span></span> <br><br> <span data-ttu-id="8da30-120">**최대 길이 (Windows):** 20 자</span><span class="sxs-lookup"><span data-stu-id="8da30-120">**Max-length (Windows):** 20 characters</span></span>  <br><br><li> <span data-ttu-id="8da30-121">Linux VM에 대 한 루트 액세스를 참조 하세요. [Azure에서 Linux 가상 머신에서 루트 권한 사용](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="8da30-121">For root access to the Linux VM, see [Using root privileges on Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span></span><br><li>
+      <span data-ttu-id="8da30-122">이 필드에서는 사용할 수 없습니다는 Linux에서 기본 제공 시스템 사용자의 목록을 참조 하세요. [Azure의 Linux 용 사용자 이름 선택](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="8da30-122">For a list of built-in system users on Linux that should not be used in this field, see [Selecting User Names for Linux on Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span></span>
+    optional: true
+    syntax:
+      content: 'adminUsername?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.computerNamePrefix'
+    name: computerNamePrefix
+    fullName: computerNamePrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8da30-123">확장 집합의 모든 가상 컴퓨터에 대 한 컴퓨터 이름 접두사를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-123">Specifies the computer name prefix for all of the virtual machines in the scale set.</span></span> <span data-ttu-id="8da30-124">컴퓨터 이름 접두사는 1 ~ 15 자 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-124">Computer name prefixes must be 1 to 15 characters long.</span></span>
+    optional: true
+    syntax:
+      content: 'computerNamePrefix?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.customData'
+    name: customData
+    fullName: customData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="8da30-125">사용자 지정 데이터의 base-64로 인코딩된 문자열을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-125">Specifies a base-64 encoded string of custom data.</span></span> <span data-ttu-id="8da30-126">Base-64로 인코딩된 문자열은 가상 컴퓨터에 파일로 저장 된 이진 배열로 디코딩됩니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-126">The base-64 encoded string is decoded to a binary array that is saved as a file on the Virtual Machine.</span></span> <span data-ttu-id="8da30-127">이진 배열의 최대 길이 65535 바이트입니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-127">The maximum length of the binary array is 65535 bytes.</span></span> <br><br> <span data-ttu-id="8da30-128">Cloud-init를 사용 하 여 vm에 대해서 [cloud-init를 사용 하 여 생성 중인 Linux VM 사용자 지정](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="8da30-128">For using cloud-init for your VM, see [Using cloud-init to customize a Linux VM during creation](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span></span>'
+    optional: true
+    syntax:
+      content: 'customData?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.linuxConfiguration'
+    name: linuxConfiguration
+    fullName: linuxConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="8da30-129">가상 머신에서 Linux 운영 체제 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-129">Specifies the Linux operating system settings on the virtual machine.</span></span> <br><br><span data-ttu-id="8da30-130">지원 되는 Linux 배포의 목록을 참조 하세요. [인증 배포의 Linux](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-endorsed-distros?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="8da30-130">For a list of supported Linux distributions, see [Linux on Azure-Endorsed Distributions](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-endorsed-distros?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span></span>
+      <br><br> <span data-ttu-id="8da30-131">보증 되지 않는 배포를 실행 하는 경우, 참조 [보증 되지 않는 배포에 대 한 정보](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-create-upload-generic?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-131">For running non-endorsed distributions, see [Information for Non-Endorsed Distributions](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-create-upload-generic?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).</span></span>
+    optional: true
+    syntax:
+      content: 'linuxConfiguration?: LinuxConfiguration'
+      return:
+        type:
+          - '@azure/arm-compute.LinuxConfiguration'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.secrets'
+    name: secrets
+    fullName: secrets
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8da30-132">확장 집합의 가상 컴퓨터에 설치 해야 하는 인증서 집합을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-132">Specifies set of certificates that should be installed onto the virtual machines in the scale set.</span></span>
+    optional: true
+    syntax:
+      content: 'secrets?: VaultSecretGroup[]'
+      return:
+        type:
+          - '@azure/arm-compute.VaultSecretGroup[]'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.windowsConfiguration'
+    name: windowsConfiguration
+    fullName: windowsConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8da30-133">가상 머신의 Windows 운영 체제 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8da30-133">Specifies Windows operating system settings on the virtual machine.</span></span>
+    optional: true
+    syntax:
+      content: 'windowsConfiguration?: WindowsConfiguration'
+      return:
+        type:
+          - '@azure/arm-compute.WindowsConfiguration'
+    package: '@azure/arm-compute'
+references:
+  - uid: '@azure/arm-compute.LinuxConfiguration'
+    name: LinuxConfiguration
+    spec.typeScript:
+      - name: LinuxConfiguration
+        fullName: LinuxConfiguration
+        uid: '@azure/arm-compute.LinuxConfiguration'
+  - uid: '@azure/arm-compute.VaultSecretGroup[]'
+    name: 'VaultSecretGroup[]'
+    spec.typeScript:
+      - name: VaultSecretGroup
+        fullName: VaultSecretGroup
+        uid: '@azure/arm-compute.VaultSecretGroup'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-compute.WindowsConfiguration'
+    name: WindowsConfiguration
+    spec.typeScript:
+      - name: WindowsConfiguration
+        fullName: WindowsConfiguration
+        uid: '@azure/arm-compute.WindowsConfiguration'
