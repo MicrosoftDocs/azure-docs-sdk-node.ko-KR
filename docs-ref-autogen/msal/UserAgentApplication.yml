@@ -15,8 +15,6 @@ items:
       - msal.UserAgentApplication.getLoginInProgress
       - msal.UserAgentApplication.getPostLogoutRedirectUri
       - msal.UserAgentApplication.getRedirectUri
-      - msal.UserAgentApplication.handleRedirectCallback_1
-      - msal.UserAgentApplication.handleRedirectCallback
       - msal.UserAgentApplication.loginPopup
       - msal.UserAgentApplication.loginRedirect
       - msal.UserAgentApplication.logout
@@ -24,7 +22,8 @@ items:
     langs:
       - typeScript
     type: class
-    summary: 'UserAgentApplication 클래스: <xref:UserAgentApplication> 개발자 loginXX를 확인 하는 데 사용할 수 있는 인스턴스를 개체 또는 acquireTokenXX 함수'
+    summary: |
+      UserAgentApplication 클래스 개발자 loginXX 확인 하는 데 사용할 수 있는 개체 인스턴스 또는 acquireTokenXX 함수
     package: msal
   - uid: msal.UserAgentApplication.acquireTokenPopup
     name: acquireTokenPopup(AuthenticationParameters)
@@ -50,7 +49,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 사용자 권한 부여 끝점으로 리디렉션하여 API에 대 한 access_token을 가져올 하려고 할 때 사용 합니다.
+    summary: 사용자의 브라우저 창 권한 부여 끝점으로 리디렉션하여 API에 대 한 access_token을 가져올 하려는 경우 사용 합니다.
     syntax:
       content: 'function acquireTokenRedirect(request: AuthenticationParameters)'
       parameters:
@@ -85,11 +84,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: |-
-      인증 기관 있는 반환 기관 MSAL이 토큰을 가져오는 데 사용할 수 있는 디렉터리를 나타내는 URL
-      - Azure AD에서이 특성은 MSAL 폼에는 토큰을 가져오는 데 사용 하는 Azure active directory를 나타내는 URL https://login.microsoftonline.com/&lt; Enter_the_Tenant_Info_Here&gt; 응용 프로그램을 지 원하는 경우 계정 하나 조직 디렉터리에 값을 바꿉니다 "Enter_the_Tenant_Info_Here" 테 넌 트 Id 또는 테 넌 트 이름 (예를 들어 contoso.microsoft.com) 하는 경우 응용 프로그램 모든 조직 디렉터리에 계정을, 응용 프로그램 계정이 모든 조직 디렉터리에 개인 Microsoft 계정에서 지 원하는 경우 조직과 "Enter_the_Tenant_Info_Here" 값을 대체, "Enter_the_Tenant_Info_ 대체 공통 된 값 "여기"입니다.
-      지원 제한 개인 Microsoft 계정 소비자와 "Enter_the_Tenant_Info_Here" 값만 대체 합니다.
-      - Azure B2C에서는의 https://&lt;인스턴스&gt;/tfp/&lt;테 넌 트&gt;/<policyName>/
+    summary: 기관 URL을 관리 하는 메서드.
     syntax:
       content: 'authority: string'
       return:
@@ -102,7 +97,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 상태가 발견 되 면 계정 (로그인 시 만든 계정 개체에서 받은) 또는 null의 서명 된 반환
+    summary: 상태가 발견 되 면 계정 (계정 개체는 로그인 시) 또는 null의 서명 된 반환
     syntax:
       content: function getAccount()
       parameters: []
@@ -116,7 +111,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 모든 캐시 된 항목을 필터링 하 고 homeAccountIdentifier에 따라 고유한 계정 목록을 반환 하는 데 사용 합니다.
+    summary: 사용 하 여 MSAL 캐시 homeAccountIdentifier 기반에 고유 계정 목록을 가져오려면.
     syntax:
       content: function getAllAccounts()
       parameters: []
@@ -130,7 +125,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 기관 인스턴스를 반환합니다.
+    summary: MSAL 구성 개체에서 현재 기관 인스턴스를 가져옵니다.
     syntax:
       content: function getAuthorityInstance()
       parameters: []
@@ -198,40 +193,6 @@ items:
         type:
           - string
     package: msal
-  - uid: msal.UserAgentApplication.handleRedirectCallback_1
-    name: handleRedirectCallback(authResponseCallback)
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: 성공 또는 오류 개체를 다시 보낼 리디렉션 흐름에 대 한 콜백 함수를 설정 합니다.
-    syntax:
-      content: 'function handleRedirectCallback(authCallback: authResponseCallback)'
-      parameters:
-        - id: authCallback
-          type:
-            - authResponseCallback
-          description: ''
-    package: msal
-  - uid: msal.UserAgentApplication.handleRedirectCallback
-    name: 'handleRedirectCallback(tokenReceivedCallback, errorReceivedCallback)'
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: 성공 또는 오류 개체를 다시 보낼 리디렉션 흐름에 대 한 콜백 함수를 설정 합니다.
-    syntax:
-      content: 'function handleRedirectCallback(tokenReceivedCallback: tokenReceivedCallback, errorReceivedCallback: errorReceivedCallback)'
-      parameters:
-        - id: tokenReceivedCallback
-          type:
-            - tokenReceivedCallback
-          description: ''
-        - id: errorReceivedCallback
-          type:
-            - errorReceivedCallback
-          description: ''
-    package: msal
   - uid: msal.UserAgentApplication.loginPopup
     name: loginPopup(AuthenticationParameters)
     children: []
@@ -274,8 +235,8 @@ items:
     langs:
       - typeScript
     summary: |-
-      현재 사용자 로그 아웃 하 고 사용자는 postLogoutRedirectUri 리디렉션할 하는 데 사용 합니다.
-      기본값 동작을 사용자를 리디렉션하는 것이 `window.location.href`합니다.
+      현재 사용자 로그 아웃 하는 데 및 사용자를 postLogoutRedirectUri를 리디렉션하십시오.
+      기본 동작을 사용자를 리디렉션하는 것이 `window.location.href`합니다.
     syntax:
       content: function logout()
       parameters: []
@@ -286,7 +247,7 @@ items:
     type: constructor
     langs:
       - typeScript
-    summary: '에 대 한 생성자는 <xref:UserAgentApplication> 인스턴스화할 수 하는 것이 개체는 <xref:UserAgentApplication> 개체'
+    summary: ''
     syntax:
       content: 'new UserAgentApplication(configuration: Configuration)'
       parameters:
