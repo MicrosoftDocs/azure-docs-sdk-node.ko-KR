@@ -1,0 +1,226 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.ServiceBusClient'
+    name: ServiceBusClient
+    fullName: ServiceBusClient
+    children:
+      - '@azure/service-bus.ServiceBusClient.close'
+      - '@azure/service-bus.ServiceBusClient.createFromAadTokenCredentials'
+      - '@azure/service-bus.ServiceBusClient.createFromConnectionString'
+      - '@azure/service-bus.ServiceBusClient.createFromTokenProvider'
+      - '@azure/service-bus.ServiceBusClient.createQueueClient'
+      - '@azure/service-bus.ServiceBusClient.createSubscriptionClient'
+      - '@azure/service-bus.ServiceBusClient.createTopicClient'
+      - '@azure/service-bus.ServiceBusClient.name'
+    langs:
+      - typeScript
+    type: class
+    summary: |-
+      Service Bus 인스턴스와 상호 작용을 허용 하는 클라이언트를 설명 합니다.
+      Service Bus Namespace에 대 한 AMQP 연결을 보유 하 고 큐, 토픽 및 구독 사용에 대 한 진입점입니다.
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.close'
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      이 ServiceBusClient에서 만든 큐/토픽/구독 클라이언트가 만든 발신자/수신자에 대 한 AMQP 링크와 함께이 ServiceBusClient 만든 AMQP 연결을 닫습니다.
+      한 번 종료
+      - 이 ServiceBusClient 만들어 클라이언트에 메시지를 주고 받을 더 이상 사용할 수 없습니다.
+      - 이 ServiceBusClient 새 큐/토픽/구독 클라이언트를 만드는 데 사용할 수 없습니다.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<any>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.createFromAadTokenCredentials'
+    name: 'createFromAadTokenCredentials(string, ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, ServiceBusClientOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 사용 하 여 생성 TokenCredentials를 사용 하 여 지정된 된 호스트를 나타내는 서비스 버스 Namespace를 ServiceBusClient 만듭니다는 `@azure/ms-rest-nodeauth` 라이브러리입니다.
+    syntax:
+      content: 'static function createFromAadTokenCredentials(host: string, credentials: ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, options?: ServiceBusClientOptions)'
+      parameters:
+        - id: host
+          type:
+            - string
+          description: |-
+            Service Bus에 대 한 정규화 된 도메인 이름입니다.
+            가장 가능성이 높은 {yournamespace}. servicebus.windows.net
+        - id: credentials
+          type:
+            - ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials
+          description: |-
+            사용 하 여 생성 하는 토큰 자격 증명을 `@azure/ms-rest-nodeauth` 라이브러리입니다. 다음 중 하나일 수 있습니다.
+             - ApplicationTokenCredentials
+             - UserTokenCredentials
+             - DeviceTokenCredentials
+             - MSITokenCredentials.
+        - id: options
+          type:
+            - '@azure/service-bus.ServiceBusClientOptions'
+          description: Service Bus Namespace 상호 작용 하는 방법을 제어 하는 옵션입니다.
+          optional: true
+      return:
+        type:
+          - '@azure/service-bus.ServiceBusClient'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.createFromConnectionString'
+    name: 'createFromConnectionString(string, ServiceBusClientOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 연결 문자열에 표시 되는 Service Bus Namespace ServiceBusClient를 만듭니다.
+    syntax:
+      content: 'static function createFromConnectionString(connectionString: string, options?: ServiceBusClientOptions)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: '폼의 연결 문자열 '' Endpoint=sb://my-servicebus-namespace.servicebus.windows.net/; SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='''
+        - id: options
+          type:
+            - '@azure/service-bus.ServiceBusClientOptions'
+          description: ''
+          optional: true
+      return:
+        type:
+          - '@azure/service-bus.ServiceBusClient'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.createFromTokenProvider'
+    name: 'createFromTokenProvider(string, TokenProvider, ServiceBusClientOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 TokenProvider를 사용 하 여 지정된 된 호스트를 나타내는 서비스 버스 Namespace를 ServiceBusClient 만듭니다.
+    syntax:
+      content: 'static function createFromTokenProvider(host: string, tokenProvider: TokenProvider, options?: ServiceBusClientOptions)'
+      parameters:
+        - id: host
+          type:
+            - string
+          description: Service Bus에 대 한 정규화 된 도메인 이름입니다. 가장 가능성이 높은 `<yournamespace>.servicebus.windows.net`합니다.
+        - id: tokenProvider
+          type:
+            - TokenProvider
+          description: '사용자 지정 구현의 합니다 [토큰 공급자](https://github.com/Azure/amqp-common-js/blob/master/lib/auth/token.ts) 인터페이스입니다.'
+        - id: options
+          type:
+            - '@azure/service-bus.ServiceBusClientOptions'
+          description: Service Bus Namespace 상호 작용 하는 방법을 제어 하는 옵션입니다.
+          optional: true
+      return:
+        type:
+          - '@azure/service-bus.ServiceBusClient'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.createQueueClient'
+    name: createQueueClient(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 서비스 버스 큐는 QueueClient를 만듭니다.
+    syntax:
+      content: 'function createQueueClient(queueName: string)'
+      parameters:
+        - id: queueName
+          type:
+            - string
+          description: 큐 이름입니다.
+      return:
+        type:
+          - '@azure/service-bus.QueueClient'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.createSubscriptionClient'
+    name: 'createSubscriptionClient(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 Service Bus 구독을 SubscriptionClient를 만듭니다.
+    syntax:
+      content: 'function createSubscriptionClient(topicName: string, subscriptionName: string)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: 항목 이름입니다.
+        - id: subscriptionName
+          type:
+            - string
+          description: 구독 이름입니다.
+      return:
+        type:
+          - '@azure/service-bus.SubscriptionClient'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.createTopicClient'
+    name: createTopicClient(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 Service Bus 항목에 대 한는 TopicClient를 만듭니다.
+    syntax:
+      content: 'function createTopicClient(topicName: string)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: 항목 이름입니다.
+      return:
+        type:
+          - '@azure/service-bus.TopicClient'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusClient.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Service Bus Namespace의 이름입니다.
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.QueueClient'
+    name: QueueClient
+    spec.typeScript:
+      - name: QueueClient
+        fullName: QueueClient
+        uid: '@azure/service-bus.QueueClient'
+  - uid: '@azure/service-bus.SubscriptionClient'
+    name: SubscriptionClient
+    spec.typeScript:
+      - name: SubscriptionClient
+        fullName: SubscriptionClient
+        uid: '@azure/service-bus.SubscriptionClient'
+  - uid: '@azure/service-bus.TopicClient'
+    name: TopicClient
+    spec.typeScript:
+      - name: TopicClient
+        fullName: TopicClient
+        uid: '@azure/service-bus.TopicClient'
+  - uid: '@azure/service-bus.ServiceBusClientOptions'
+    name: ServiceBusClientOptions
+    spec.typeScript:
+      - name: ServiceBusClientOptions
+        fullName: ServiceBusClientOptions
+        uid: '@azure/service-bus.ServiceBusClientOptions'
+  - uid: '@azure/service-bus.ServiceBusClient'
+    name: ServiceBusClient
+    spec.typeScript:
+      - name: ServiceBusClient
+        fullName: ServiceBusClient
+        uid: '@azure/service-bus.ServiceBusClient'
