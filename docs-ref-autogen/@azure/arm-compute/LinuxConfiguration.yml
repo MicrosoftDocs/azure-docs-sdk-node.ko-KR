@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.LinuxConfiguration'
+    name: LinuxConfiguration
+    fullName: LinuxConfiguration
+    children:
+      - '@azure/arm-compute.LinuxConfiguration.disablePasswordAuthentication'
+      - '@azure/arm-compute.LinuxConfiguration.provisionVMAgent'
+      - '@azure/arm-compute.LinuxConfiguration.ssh'
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      <span data-ttu-id="b2c93-101">가상 머신에서 Linux 운영 체제 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-101">Specifies the Linux operating system settings on the virtual machine.</span></span> <br><br><span data-ttu-id="b2c93-102">지원 되는 Linux 배포의 목록을 참조 하세요. [인증 배포의 Linux](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-endorsed-distros?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span><span class="sxs-lookup"><span data-stu-id="b2c93-102">For a list of supported Linux distributions, see [Linux on Azure-Endorsed Distributions](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-endorsed-distros?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)</span></span>
+      <br><br> <span data-ttu-id="b2c93-103">보증 되지 않는 배포를 실행 하는 경우, 참조 [보증 되지 않는 배포에 대 한 정보](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-create-upload-generic?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)합니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-103">For running non-endorsed distributions, see [Information for Non-Endorsed Distributions](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-create-upload-generic?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).</span></span>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.LinuxConfiguration.disablePasswordAuthentication'
+    name: disablePasswordAuthentication
+    fullName: disablePasswordAuthentication
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="b2c93-104">암호 인증을 비활성화 해야 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-104">Specifies whether password authentication should be disabled.</span></span>
+    optional: true
+    syntax:
+      content: 'disablePasswordAuthentication?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.LinuxConfiguration.provisionVMAgent'
+    name: provisionVMAgent
+    fullName: provisionVMAgent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="b2c93-105">가상 머신에서 가상 머신 에이전트를 프로 비전 해야 하는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-105">Indicates whether virtual machine agent should be provisioned on the virtual machine.</span></span> <br><br>
+      <span data-ttu-id="b2c93-106">이 속성은 요청 본문에 지정 하지 않으면 기본 동작은 true로 설정 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-106">When this property is not specified in the request body, default behavior is to set it to true.</span></span>  <span data-ttu-id="b2c93-107">이렇게 하면 VM에 VM 에이전트가 설치 되었는지 확장 VM에 나중에 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-107">This will ensure that VM Agent is installed on the VM so that extensions can be added to the VM later.</span></span>
+    optional: true
+    syntax:
+      content: 'provisionVMAgent?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.LinuxConfiguration.ssh'
+    name: ssh
+    fullName: ssh
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="b2c93-108">Linux OS용 ssh 키 구성을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="b2c93-108">Specifies the ssh key configuration for a Linux OS.</span></span>
+    optional: true
+    syntax:
+      content: 'ssh?: SshConfiguration'
+      return:
+        type:
+          - '@azure/arm-compute.SshConfiguration'
+    package: '@azure/arm-compute'
+references:
+  - uid: '@azure/arm-compute.SshConfiguration'
+    name: SshConfiguration
+    spec.typeScript:
+      - name: SshConfiguration
+        fullName: SshConfiguration
+        uid: '@azure/arm-compute.SshConfiguration'

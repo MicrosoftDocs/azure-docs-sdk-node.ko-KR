@@ -1,0 +1,915 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-labservices.GlobalUsers'
+    name: GlobalUsers
+    fullName: GlobalUsers
+    children:
+      - '@azure/arm-labservices.GlobalUsers.beginResetPassword'
+      - '@azure/arm-labservices.GlobalUsers.beginStartEnvironment'
+      - '@azure/arm-labservices.GlobalUsers.beginStopEnvironment'
+      - '@azure/arm-labservices.GlobalUsers.getEnvironment_2'
+      - '@azure/arm-labservices.GlobalUsers.getEnvironment'
+      - '@azure/arm-labservices.GlobalUsers.getEnvironment_1'
+      - '@azure/arm-labservices.GlobalUsers.getOperationBatchStatus'
+      - '@azure/arm-labservices.GlobalUsers.getOperationBatchStatus_2'
+      - '@azure/arm-labservices.GlobalUsers.getOperationBatchStatus_1'
+      - '@azure/arm-labservices.GlobalUsers.getOperationStatus'
+      - '@azure/arm-labservices.GlobalUsers.getOperationStatus_2'
+      - '@azure/arm-labservices.GlobalUsers.getOperationStatus_1'
+      - '@azure/arm-labservices.GlobalUsers.getPersonalPreferences'
+      - '@azure/arm-labservices.GlobalUsers.getPersonalPreferences_2'
+      - '@azure/arm-labservices.GlobalUsers.getPersonalPreferences_1'
+      - '@azure/arm-labservices.GlobalUsers.constructor'
+      - '@azure/arm-labservices.GlobalUsers.listEnvironments'
+      - '@azure/arm-labservices.GlobalUsers.listEnvironments_2'
+      - '@azure/arm-labservices.GlobalUsers.listEnvironments_1'
+      - '@azure/arm-labservices.GlobalUsers.listLabs'
+      - '@azure/arm-labservices.GlobalUsers.listLabs_2'
+      - '@azure/arm-labservices.GlobalUsers.listLabs_1'
+      - '@azure/arm-labservices.GlobalUsers.register'
+      - '@azure/arm-labservices.GlobalUsers.register_2'
+      - '@azure/arm-labservices.GlobalUsers.register_1'
+      - '@azure/arm-labservices.GlobalUsers.resetPassword'
+      - '@azure/arm-labservices.GlobalUsers.startEnvironment'
+      - '@azure/arm-labservices.GlobalUsers.stopEnvironment'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="c20b4-101">GlobalUsers 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-101">Class representing a GlobalUsers.</span></span>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.beginResetPassword'
+    name: 'beginResetPassword(string, ResetPasswordPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-102">이 작업을 완료 하려면 시간이 걸릴 수 있습니다 하는 환경에서 사용자 암호를 다시 설정</span><span class="sxs-lookup"><span data-stu-id="c20b4-102">Resets the user password on an environment This operation can take a while to complete</span></span>
+    syntax:
+      content: 'function beginResetPassword(userName: string, resetPasswordPayload: ResetPasswordPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-103">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-103">The name of the user.</span></span>
+        - id: resetPasswordPayload
+          type:
+            - '@azure/arm-labservices.ResetPasswordPayload'
+          description: <span data-ttu-id="c20b4-104">암호 재설정에 대 한 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-104">Represents the payload for resetting passwords.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.beginStartEnvironment'
+    name: 'beginStartEnvironment(string, EnvironmentOperationsPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-105">환경 내의 모든 리소스를 시작하여 환경을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-105">Starts an environment by starting all resources inside the environment.</span></span> <span data-ttu-id="c20b4-106">이 작업을 완료 하려면 시간이 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-106">This operation can take a while to complete</span></span>
+    syntax:
+      content: 'function beginStartEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-107">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-107">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-108">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-108">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.beginStopEnvironment'
+    name: 'beginStopEnvironment(string, EnvironmentOperationsPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-109">이 작업을 완료 하려면 시간이 걸릴 수 있습니다 환경 내에서 모든 리소스를 중지 하 여 환경 중지</span><span class="sxs-lookup"><span data-stu-id="c20b4-109">Stops an environment by stopping all resources inside the environment This operation can take a while to complete</span></span>
+    syntax:
+      content: 'function beginStopEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-110">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-110">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-111">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-111">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getEnvironment_2'
+    name: 'getEnvironment(string, EnvironmentOperationsPayload, GlobalUsersGetEnvironmentOptionalParams, ServiceCallback<GetEnvironmentResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, options: GlobalUsersGetEnvironmentOptionalParams, callback: ServiceCallback<GetEnvironmentResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-112">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-112">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-113">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-113">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - '@azure/arm-labservices.GlobalUsersGetEnvironmentOptionalParams'
+          description: <span data-ttu-id="c20b4-114">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-114">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.GetEnvironmentResponse>
+          description: |
+            <span data-ttu-id="c20b4-115">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-115">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetEnvironmentResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getEnvironment'
+    name: 'getEnvironment(string, EnvironmentOperationsPayload, Models.GlobalUsersGetEnvironmentOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-116">가상 머신 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-116">Gets the virtual machine details</span></span>
+    syntax:
+      content: 'function getEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, options?: Models.GlobalUsersGetEnvironmentOptionalParams)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-117">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-117">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-118">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-118">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - Models.GlobalUsersGetEnvironmentOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetEnvironmentResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getEnvironment_1'
+    name: 'getEnvironment(string, EnvironmentOperationsPayload, ServiceCallback<GetEnvironmentResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, callback: ServiceCallback<GetEnvironmentResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-119">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-119">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-120">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-120">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.GetEnvironmentResponse>
+          description: |
+            <span data-ttu-id="c20b4-121">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-121">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetEnvironmentResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getOperationBatchStatus'
+    name: 'getOperationBatchStatus(string, OperationBatchStatusPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-122">배치 작업 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-122">Get batch operation status</span></span>
+    syntax:
+      content: 'function getOperationBatchStatus(userName: string, operationBatchStatusPayload: OperationBatchStatusPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-123">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-123">The name of the user.</span></span>
+        - id: operationBatchStatusPayload
+          type:
+            - '@azure/arm-labservices.OperationBatchStatusPayload'
+          description: <span data-ttu-id="c20b4-124">페이로드는 작업의 상태를 가져오려면</span><span class="sxs-lookup"><span data-stu-id="c20b4-124">Payload to get the status of an operation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetOperationBatchStatusResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getOperationBatchStatus_2'
+    name: 'getOperationBatchStatus(string, OperationBatchStatusPayload, RequestOptionsBase, ServiceCallback<OperationBatchStatusResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOperationBatchStatus(userName: string, operationBatchStatusPayload: OperationBatchStatusPayload, options: RequestOptionsBase, callback: ServiceCallback<OperationBatchStatusResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-125">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-125">The name of the user.</span></span>
+        - id: operationBatchStatusPayload
+          type:
+            - '@azure/arm-labservices.OperationBatchStatusPayload'
+          description: <span data-ttu-id="c20b4-126">페이로드는 작업의 상태를 가져오려면</span><span class="sxs-lookup"><span data-stu-id="c20b4-126">Payload to get the status of an operation</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c20b4-127">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-127">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.OperationBatchStatusResponse>
+          description: |
+            <span data-ttu-id="c20b4-128">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-128">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetOperationBatchStatusResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getOperationBatchStatus_1'
+    name: 'getOperationBatchStatus(string, OperationBatchStatusPayload, ServiceCallback<OperationBatchStatusResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOperationBatchStatus(userName: string, operationBatchStatusPayload: OperationBatchStatusPayload, callback: ServiceCallback<OperationBatchStatusResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-129">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-129">The name of the user.</span></span>
+        - id: operationBatchStatusPayload
+          type:
+            - '@azure/arm-labservices.OperationBatchStatusPayload'
+          description: <span data-ttu-id="c20b4-130">페이로드는 작업의 상태를 가져오려면</span><span class="sxs-lookup"><span data-stu-id="c20b4-130">Payload to get the status of an operation</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.OperationBatchStatusResponse>
+          description: |
+            <span data-ttu-id="c20b4-131">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-131">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetOperationBatchStatusResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getOperationStatus'
+    name: 'getOperationStatus(string, OperationStatusPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-132">장기 실행 작업의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-132">Gets the status of long running operation</span></span>
+    syntax:
+      content: 'function getOperationStatus(userName: string, operationStatusPayload: OperationStatusPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-133">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-133">The name of the user.</span></span>
+        - id: operationStatusPayload
+          type:
+            - '@azure/arm-labservices.OperationStatusPayload'
+          description: <span data-ttu-id="c20b4-134">페이로드는 작업의 상태를 가져오려면</span><span class="sxs-lookup"><span data-stu-id="c20b4-134">Payload to get the status of an operation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetOperationStatusResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getOperationStatus_2'
+    name: 'getOperationStatus(string, OperationStatusPayload, RequestOptionsBase, ServiceCallback<OperationStatusResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOperationStatus(userName: string, operationStatusPayload: OperationStatusPayload, options: RequestOptionsBase, callback: ServiceCallback<OperationStatusResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-135">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-135">The name of the user.</span></span>
+        - id: operationStatusPayload
+          type:
+            - '@azure/arm-labservices.OperationStatusPayload'
+          description: <span data-ttu-id="c20b4-136">페이로드는 작업의 상태를 가져오려면</span><span class="sxs-lookup"><span data-stu-id="c20b4-136">Payload to get the status of an operation</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c20b4-137">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-137">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.OperationStatusResponse>
+          description: |
+            <span data-ttu-id="c20b4-138">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-138">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetOperationStatusResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getOperationStatus_1'
+    name: 'getOperationStatus(string, OperationStatusPayload, ServiceCallback<OperationStatusResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOperationStatus(userName: string, operationStatusPayload: OperationStatusPayload, callback: ServiceCallback<OperationStatusResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-139">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-139">The name of the user.</span></span>
+        - id: operationStatusPayload
+          type:
+            - '@azure/arm-labservices.OperationStatusPayload'
+          description: <span data-ttu-id="c20b4-140">페이로드는 작업의 상태를 가져오려면</span><span class="sxs-lookup"><span data-stu-id="c20b4-140">Payload to get the status of an operation</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.OperationStatusResponse>
+          description: |
+            <span data-ttu-id="c20b4-141">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-141">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetOperationStatusResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getPersonalPreferences'
+    name: 'getPersonalPreferences(string, PersonalPreferencesOperationsPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-142">사용자의 개인 기본 설정 가져오기</span><span class="sxs-lookup"><span data-stu-id="c20b4-142">Get personal preferences for a user</span></span>
+    syntax:
+      content: 'function getPersonalPreferences(userName: string, personalPreferencesOperationsPayload: PersonalPreferencesOperationsPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-143">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-143">The name of the user.</span></span>
+        - id: personalPreferencesOperationsPayload
+          type:
+            - '@azure/arm-labservices.PersonalPreferencesOperationsPayload'
+          description: '<span data-ttu-id="c20b4-144">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-144">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetPersonalPreferencesResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getPersonalPreferences_2'
+    name: 'getPersonalPreferences(string, PersonalPreferencesOperationsPayload, RequestOptionsBase, ServiceCallback<GetPersonalPreferencesResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getPersonalPreferences(userName: string, personalPreferencesOperationsPayload: PersonalPreferencesOperationsPayload, options: RequestOptionsBase, callback: ServiceCallback<GetPersonalPreferencesResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-145">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-145">The name of the user.</span></span>
+        - id: personalPreferencesOperationsPayload
+          type:
+            - '@azure/arm-labservices.PersonalPreferencesOperationsPayload'
+          description: '<span data-ttu-id="c20b4-146">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-146">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c20b4-147">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-147">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.GetPersonalPreferencesResponse>
+          description: |
+            <span data-ttu-id="c20b4-148">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-148">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetPersonalPreferencesResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.getPersonalPreferences_1'
+    name: 'getPersonalPreferences(string, PersonalPreferencesOperationsPayload, ServiceCallback<GetPersonalPreferencesResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getPersonalPreferences(userName: string, personalPreferencesOperationsPayload: PersonalPreferencesOperationsPayload, callback: ServiceCallback<GetPersonalPreferencesResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-149">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-149">The name of the user.</span></span>
+        - id: personalPreferencesOperationsPayload
+          type:
+            - '@azure/arm-labservices.PersonalPreferencesOperationsPayload'
+          description: '<span data-ttu-id="c20b4-150">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-150">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.GetPersonalPreferencesResponse>
+          description: |
+            <span data-ttu-id="c20b4-151">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-151">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersGetPersonalPreferencesResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.constructor'
+    name: GlobalUsers(ManagedLabsClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-152">GlobalUsers를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-152">Create a GlobalUsers.</span></span>
+    syntax:
+      content: 'new GlobalUsers(client: ManagedLabsClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-labservices.ManagedLabsClientContext'
+          description: |
+            <span data-ttu-id="c20b4-153">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-153">Reference to the service client.</span></span>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.listEnvironments'
+    name: 'listEnvironments(string, ListEnvironmentsPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-154">사용자에 대한 환경을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-154">List Environments for the user</span></span>
+    syntax:
+      content: 'function listEnvironments(userName: string, listEnvironmentsPayload: ListEnvironmentsPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-155">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-155">The name of the user.</span></span>
+        - id: listEnvironmentsPayload
+          type:
+            - '@azure/arm-labservices.ListEnvironmentsPayload'
+          description: <span data-ttu-id="c20b4-156">사용자가 소유한 환경을 나열 하는 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-156">Represents the payload to list environments owned by a user</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GlobalUsersListEnvironmentsResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.listEnvironments_2'
+    name: 'listEnvironments(string, ListEnvironmentsPayload, RequestOptionsBase, ServiceCallback<ListEnvironmentsResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listEnvironments(userName: string, listEnvironmentsPayload: ListEnvironmentsPayload, options: RequestOptionsBase, callback: ServiceCallback<ListEnvironmentsResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-157">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-157">The name of the user.</span></span>
+        - id: listEnvironmentsPayload
+          type:
+            - '@azure/arm-labservices.ListEnvironmentsPayload'
+          description: <span data-ttu-id="c20b4-158">사용자가 소유한 환경을 나열 하는 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-158">Represents the payload to list environments owned by a user</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c20b4-159">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-159">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.ListEnvironmentsResponse>
+          description: |
+            <span data-ttu-id="c20b4-160">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-160">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersListEnvironmentsResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.listEnvironments_1'
+    name: 'listEnvironments(string, ListEnvironmentsPayload, ServiceCallback<ListEnvironmentsResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listEnvironments(userName: string, listEnvironmentsPayload: ListEnvironmentsPayload, callback: ServiceCallback<ListEnvironmentsResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-161">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-161">The name of the user.</span></span>
+        - id: listEnvironmentsPayload
+          type:
+            - '@azure/arm-labservices.ListEnvironmentsPayload'
+          description: <span data-ttu-id="c20b4-162">사용자가 소유한 환경을 나열 하는 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-162">Represents the payload to list environments owned by a user</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.ListEnvironmentsResponse>
+          description: |
+            <span data-ttu-id="c20b4-163">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-163">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersListEnvironmentsResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.listLabs'
+    name: 'listLabs(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-164">사용자에 대한 랩을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-164">List labs for the user.</span></span>
+    syntax:
+      content: 'function listLabs(userName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-165">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-165">The name of the user.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GlobalUsersListLabsResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.listLabs_2'
+    name: 'listLabs(string, RequestOptionsBase, ServiceCallback<ListLabsResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listLabs(userName: string, options: RequestOptionsBase, callback: ServiceCallback<ListLabsResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-166">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-166">The name of the user.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c20b4-167">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-167">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.ListLabsResponse>
+          description: |
+            <span data-ttu-id="c20b4-168">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-168">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersListLabsResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.listLabs_1'
+    name: 'listLabs(string, ServiceCallback<ListLabsResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listLabs(userName: string, callback: ServiceCallback<ListLabsResponse>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-169">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-169">The name of the user.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-labservices.ListLabsResponse>
+          description: |
+            <span data-ttu-id="c20b4-170">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-170">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.GlobalUsersListLabsResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.register'
+    name: 'register(string, RegisterPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-171">사용자를 관리되는 랩에 등록합니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-171">Register a user to a managed lab</span></span>
+    syntax:
+      content: 'function register(userName: string, registerPayload: RegisterPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-172">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-172">The name of the user.</span></span>
+        - id: registerPayload
+          type:
+            - '@azure/arm-labservices.RegisterPayload'
+          description: <span data-ttu-id="c20b4-173">등록 작업에 대 한 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-173">Represents payload for Register action.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.register_2'
+    name: 'register(string, RegisterPayload, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function register(userName: string, registerPayload: RegisterPayload, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-174">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-174">The name of the user.</span></span>
+        - id: registerPayload
+          type:
+            - '@azure/arm-labservices.RegisterPayload'
+          description: <span data-ttu-id="c20b4-175">등록 작업에 대 한 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-175">Represents payload for Register action.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c20b4-176">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c20b4-176">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="c20b4-177">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-177">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.register_1'
+    name: 'register(string, RegisterPayload, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function register(userName: string, registerPayload: RegisterPayload, callback: ServiceCallback<void>)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-178">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-178">The name of the user.</span></span>
+        - id: registerPayload
+          type:
+            - '@azure/arm-labservices.RegisterPayload'
+          description: <span data-ttu-id="c20b4-179">등록 작업에 대 한 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-179">Represents payload for Register action.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="c20b4-180">콜백</span><span class="sxs-lookup"><span data-stu-id="c20b4-180">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.resetPassword'
+    name: 'resetPassword(string, ResetPasswordPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-181">이 작업을 완료 하려면 시간이 걸릴 수 있습니다 하는 환경에서 사용자 암호를 다시 설정</span><span class="sxs-lookup"><span data-stu-id="c20b4-181">Resets the user password on an environment This operation can take a while to complete</span></span>
+    syntax:
+      content: 'function resetPassword(userName: string, resetPasswordPayload: ResetPasswordPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-182">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-182">The name of the user.</span></span>
+        - id: resetPasswordPayload
+          type:
+            - '@azure/arm-labservices.ResetPasswordPayload'
+          description: <span data-ttu-id="c20b4-183">암호 재설정에 대 한 페이로드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-183">Represents the payload for resetting passwords.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.startEnvironment'
+    name: 'startEnvironment(string, EnvironmentOperationsPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-184">환경 내의 모든 리소스를 시작하여 환경을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-184">Starts an environment by starting all resources inside the environment.</span></span> <span data-ttu-id="c20b4-185">이 작업을 완료 하려면 시간이 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-185">This operation can take a while to complete</span></span>
+    syntax:
+      content: 'function startEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-186">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-186">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-187">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-187">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-labservices'
+  - uid: '@azure/arm-labservices.GlobalUsers.stopEnvironment'
+    name: 'stopEnvironment(string, EnvironmentOperationsPayload, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c20b4-188">이 작업을 완료 하려면 시간이 걸릴 수 있습니다 환경 내에서 모든 리소스를 중지 하 여 환경 중지</span><span class="sxs-lookup"><span data-stu-id="c20b4-188">Stops an environment by stopping all resources inside the environment This operation can take a while to complete</span></span>
+    syntax:
+      content: 'function stopEnvironment(userName: string, environmentOperationsPayload: EnvironmentOperationsPayload, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="c20b4-189">사용자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c20b4-189">The name of the user.</span></span>
+        - id: environmentOperationsPayload
+          type:
+            - '@azure/arm-labservices.EnvironmentOperationsPayload'
+          description: '<span data-ttu-id="c20b4-190">환경 작업에 대 한 페이로드를 나타내는 같은 가져오기, 시작, 중지, 연결</span><span class="sxs-lookup"><span data-stu-id="c20b4-190">Represents payload for any Environment operations like get, start, stop, connect</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-labservices'
+references:
+  - uid: '@azure/arm-labservices.ManagedLabsClientContext'
+    name: ManagedLabsClientContext
+    spec.typeScript:
+      - name: ManagedLabsClientContext
+        fullName: ManagedLabsClientContext
+        uid: '@azure/arm-labservices.ManagedLabsClientContext'
+  - uid: '@azure/arm-labservices.ResetPasswordPayload'
+    name: ResetPasswordPayload
+    spec.typeScript:
+      - name: ResetPasswordPayload
+        fullName: ResetPasswordPayload
+        uid: '@azure/arm-labservices.ResetPasswordPayload'
+  - uid: '@azure/arm-labservices.EnvironmentOperationsPayload'
+    name: EnvironmentOperationsPayload
+    spec.typeScript:
+      - name: EnvironmentOperationsPayload
+        fullName: EnvironmentOperationsPayload
+        uid: '@azure/arm-labservices.EnvironmentOperationsPayload'
+  - uid: ServiceCallback<@azure/arm-labservices.GetEnvironmentResponse>
+    name: GetEnvironmentResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: GetEnvironmentResponse
+        fullName: GetEnvironmentResponse
+        uid: '@azure/arm-labservices.GetEnvironmentResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-labservices.GlobalUsersGetEnvironmentOptionalParams'
+    name: GlobalUsersGetEnvironmentOptionalParams
+    spec.typeScript:
+      - name: GlobalUsersGetEnvironmentOptionalParams
+        fullName: GlobalUsersGetEnvironmentOptionalParams
+        uid: '@azure/arm-labservices.GlobalUsersGetEnvironmentOptionalParams'
+  - uid: '@azure/arm-labservices.OperationBatchStatusPayload'
+    name: OperationBatchStatusPayload
+    spec.typeScript:
+      - name: OperationBatchStatusPayload
+        fullName: OperationBatchStatusPayload
+        uid: '@azure/arm-labservices.OperationBatchStatusPayload'
+  - uid: ServiceCallback<@azure/arm-labservices.OperationBatchStatusResponse>
+    name: OperationBatchStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationBatchStatusResponse
+        fullName: OperationBatchStatusResponse
+        uid: '@azure/arm-labservices.OperationBatchStatusResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-labservices.OperationStatusPayload'
+    name: OperationStatusPayload
+    spec.typeScript:
+      - name: OperationStatusPayload
+        fullName: OperationStatusPayload
+        uid: '@azure/arm-labservices.OperationStatusPayload'
+  - uid: ServiceCallback<@azure/arm-labservices.OperationStatusResponse>
+    name: OperationStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: '@azure/arm-labservices.OperationStatusResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-labservices.PersonalPreferencesOperationsPayload'
+    name: PersonalPreferencesOperationsPayload
+    spec.typeScript:
+      - name: PersonalPreferencesOperationsPayload
+        fullName: PersonalPreferencesOperationsPayload
+        uid: '@azure/arm-labservices.PersonalPreferencesOperationsPayload'
+  - uid: ServiceCallback<@azure/arm-labservices.GetPersonalPreferencesResponse>
+    name: GetPersonalPreferencesResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: GetPersonalPreferencesResponse
+        fullName: GetPersonalPreferencesResponse
+        uid: '@azure/arm-labservices.GetPersonalPreferencesResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-labservices.ListEnvironmentsPayload'
+    name: ListEnvironmentsPayload
+    spec.typeScript:
+      - name: ListEnvironmentsPayload
+        fullName: ListEnvironmentsPayload
+        uid: '@azure/arm-labservices.ListEnvironmentsPayload'
+  - uid: ServiceCallback<@azure/arm-labservices.ListEnvironmentsResponse>
+    name: ListEnvironmentsResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListEnvironmentsResponse
+        fullName: ListEnvironmentsResponse
+        uid: '@azure/arm-labservices.ListEnvironmentsResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-labservices.ListLabsResponse>
+    name: ListLabsResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListLabsResponse
+        fullName: ListLabsResponse
+        uid: '@azure/arm-labservices.ListLabsResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-labservices.RegisterPayload'
+    name: RegisterPayload
+    spec.typeScript:
+      - name: RegisterPayload
+        fullName: RegisterPayload
+        uid: '@azure/arm-labservices.RegisterPayload'
