@@ -1,0 +1,991 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-automation.JobOperations'
+    name: JobOperations
+    fullName: JobOperations
+    children:
+      - '@azure/arm-automation.JobOperations.create_2'
+      - '@azure/arm-automation.JobOperations.create'
+      - '@azure/arm-automation.JobOperations.create_1'
+      - '@azure/arm-automation.JobOperations.get_2'
+      - '@azure/arm-automation.JobOperations.get'
+      - '@azure/arm-automation.JobOperations.get_1'
+      - '@azure/arm-automation.JobOperations.getOutput_2'
+      - '@azure/arm-automation.JobOperations.getOutput'
+      - '@azure/arm-automation.JobOperations.getOutput_1'
+      - '@azure/arm-automation.JobOperations.getRunbookContent_2'
+      - '@azure/arm-automation.JobOperations.getRunbookContent'
+      - '@azure/arm-automation.JobOperations.getRunbookContent_1'
+      - '@azure/arm-automation.JobOperations.constructor'
+      - '@azure/arm-automation.JobOperations.listByAutomationAccount_2'
+      - '@azure/arm-automation.JobOperations.listByAutomationAccount'
+      - '@azure/arm-automation.JobOperations.listByAutomationAccount_1'
+      - '@azure/arm-automation.JobOperations.listByAutomationAccountNext_2'
+      - '@azure/arm-automation.JobOperations.listByAutomationAccountNext'
+      - '@azure/arm-automation.JobOperations.listByAutomationAccountNext_1'
+      - '@azure/arm-automation.JobOperations.resume_2'
+      - '@azure/arm-automation.JobOperations.resume'
+      - '@azure/arm-automation.JobOperations.resume_1'
+      - '@azure/arm-automation.JobOperations.stop_2'
+      - '@azure/arm-automation.JobOperations.stop'
+      - '@azure/arm-automation.JobOperations.stop_1'
+      - '@azure/arm-automation.JobOperations.suspend_2'
+      - '@azure/arm-automation.JobOperations.suspend'
+      - '@azure/arm-automation.JobOperations.suspend_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="448c7-101">JobOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-101">Class representing a JobOperations.</span></span>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.create_2'
+    name: 'create(string, string, string, JobCreateParameters, JobCreateOptionalParams, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(resourceGroupName: string, automationAccountName: string, jobName: string, parameters: JobCreateParameters, options: JobCreateOptionalParams, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-102">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-102">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-103">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-103">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-104">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-104">The job name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-automation.JobCreateParameters'
+          description: <span data-ttu-id="448c7-105">만들기 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-105">The parameters supplied to the create job operation.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobCreateOptionalParams'
+          description: <span data-ttu-id="448c7-106">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-106">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.Job>
+          description: |
+            <span data-ttu-id="448c7-107">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-107">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobCreateResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.create'
+    name: 'create(string, string, string, JobCreateParameters, Models.JobCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-108">Runbook의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-108">Create a job of the runbook.</span></span>
+    syntax:
+      content: 'function create(resourceGroupName: string, automationAccountName: string, jobName: string, parameters: JobCreateParameters, options?: Models.JobCreateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-109">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-109">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-110">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-110">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-111">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-111">The job name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-automation.JobCreateParameters'
+          description: <span data-ttu-id="448c7-112">만들기 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-112">The parameters supplied to the create job operation.</span></span>
+        - id: options
+          type:
+            - Models.JobCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobCreateResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.create_1'
+    name: 'create(string, string, string, JobCreateParameters, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(resourceGroupName: string, automationAccountName: string, jobName: string, parameters: JobCreateParameters, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-113">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-113">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-114">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-114">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-115">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-115">The job name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-automation.JobCreateParameters'
+          description: <span data-ttu-id="448c7-116">만들기 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-116">The parameters supplied to the create job operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.Job>
+          description: |
+            <span data-ttu-id="448c7-117">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-117">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobCreateResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.get_2'
+    name: 'get(string, string, string, JobGetOptionalParams, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, automationAccountName: string, jobName: string, options: JobGetOptionalParams, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-118">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-118">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-119">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-119">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-120">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-120">The job name.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobGetOptionalParams'
+          description: <span data-ttu-id="448c7-121">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-121">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.Job>
+          description: |
+            <span data-ttu-id="448c7-122">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-122">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobGetResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.get'
+    name: 'get(string, string, string, Models.JobGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-123">작업 이름으로 식별 되는 작업을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-123">Retrieve the job identified by job name.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, automationAccountName: string, jobName: string, options?: Models.JobGetOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-124">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-124">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-125">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-125">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-126">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-126">The job name.</span></span>
+        - id: options
+          type:
+            - Models.JobGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobGetResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.get_1'
+    name: 'get(string, string, string, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, automationAccountName: string, jobName: string, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-127">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-127">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-128">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-128">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-129">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-129">The job name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.Job>
+          description: |
+            <span data-ttu-id="448c7-130">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-130">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobGetResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.getOutput_2'
+    name: 'getOutput(string, string, string, JobGetOutputOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOutput(resourceGroupName: string, automationAccountName: string, jobName: string, options: JobGetOutputOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-131">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-131">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-132">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-132">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-133">만들려는 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-133">The name of the job to be created.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobGetOutputOptionalParams'
+          description: <span data-ttu-id="448c7-134">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-134">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-135">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-135">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobGetOutputResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.getOutput'
+    name: 'getOutput(string, string, string, Models.JobGetOutputOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-136">작업 이름으로 식별 되는 작업 출력을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-136">Retrieve the job output identified by job name.</span></span>
+    syntax:
+      content: 'function getOutput(resourceGroupName: string, automationAccountName: string, jobName: string, options?: Models.JobGetOutputOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-137">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-137">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-138">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-138">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-139">만들려는 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-139">The name of the job to be created.</span></span>
+        - id: options
+          type:
+            - Models.JobGetOutputOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobGetOutputResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.getOutput_1'
+    name: 'getOutput(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOutput(resourceGroupName: string, automationAccountName: string, jobName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-140">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-140">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-141">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-141">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-142">만들려는 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-142">The name of the job to be created.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-143">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-143">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobGetOutputResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.getRunbookContent_2'
+    name: 'getRunbookContent(string, string, string, JobGetRunbookContentOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getRunbookContent(resourceGroupName: string, automationAccountName: string, jobName: string, options: JobGetRunbookContentOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-144">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-144">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-145">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-145">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-146">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-146">The job name.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobGetRunbookContentOptionalParams'
+          description: <span data-ttu-id="448c7-147">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-147">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-148">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-148">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobGetRunbookContentResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.getRunbookContent'
+    name: 'getRunbookContent(string, string, string, Models.JobGetRunbookContentOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-149">작업 이름으로 식별 되는 작업의 runbook 콘텐츠를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-149">Retrieve the runbook content of the job identified by job name.</span></span>
+    syntax:
+      content: 'function getRunbookContent(resourceGroupName: string, automationAccountName: string, jobName: string, options?: Models.JobGetRunbookContentOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-150">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-150">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-151">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-151">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-152">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-152">The job name.</span></span>
+        - id: options
+          type:
+            - Models.JobGetRunbookContentOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobGetRunbookContentResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.getRunbookContent_1'
+    name: 'getRunbookContent(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getRunbookContent(resourceGroupName: string, automationAccountName: string, jobName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-153">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-153">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-154">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-154">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-155">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-155">The job name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-156">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-156">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobGetRunbookContentResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.constructor'
+    name: JobOperations(AutomationClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-157">JobOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-157">Create a JobOperations.</span></span>
+    syntax:
+      content: 'new JobOperations(client: AutomationClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-automation.AutomationClientContext'
+          description: |
+            <span data-ttu-id="448c7-158">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-158">Reference to the service client.</span></span>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.listByAutomationAccount_2'
+    name: 'listByAutomationAccount(string, string, JobListByAutomationAccountOptionalParams, ServiceCallback<JobListResultV2>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByAutomationAccount(resourceGroupName: string, automationAccountName: string, options: JobListByAutomationAccountOptionalParams, callback: ServiceCallback<JobListResultV2>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-159">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-159">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-160">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-160">The name of the automation account.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobListByAutomationAccountOptionalParams'
+          description: <span data-ttu-id="448c7-161">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-161">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.JobListResultV2>
+          description: |
+            <span data-ttu-id="448c7-162">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobListByAutomationAccountResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.listByAutomationAccount'
+    name: 'listByAutomationAccount(string, string, Models.JobListByAutomationAccountOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-163">작업의 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-163">Retrieve a list of jobs.</span></span>
+    syntax:
+      content: 'function listByAutomationAccount(resourceGroupName: string, automationAccountName: string, options?: Models.JobListByAutomationAccountOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-164">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-164">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-165">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-165">The name of the automation account.</span></span>
+        - id: options
+          type:
+            - Models.JobListByAutomationAccountOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobListByAutomationAccountResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.listByAutomationAccount_1'
+    name: 'listByAutomationAccount(string, string, ServiceCallback<JobListResultV2>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByAutomationAccount(resourceGroupName: string, automationAccountName: string, callback: ServiceCallback<JobListResultV2>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-166">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-166">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-167">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-167">The name of the automation account.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.JobListResultV2>
+          description: |
+            <span data-ttu-id="448c7-168">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-168">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobListByAutomationAccountResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.listByAutomationAccountNext_2'
+    name: 'listByAutomationAccountNext(string, JobListByAutomationAccountNextOptionalParams, ServiceCallback<JobListResultV2>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByAutomationAccountNext(nextPageLink: string, options: JobListByAutomationAccountNextOptionalParams, callback: ServiceCallback<JobListResultV2>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="448c7-169">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-169">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobListByAutomationAccountNextOptionalParams'
+          description: <span data-ttu-id="448c7-170">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-170">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.JobListResultV2>
+          description: |
+            <span data-ttu-id="448c7-171">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-171">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobListByAutomationAccountNextResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.listByAutomationAccountNext'
+    name: 'listByAutomationAccountNext(string, Models.JobListByAutomationAccountNextOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-172">작업의 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-172">Retrieve a list of jobs.</span></span>
+    syntax:
+      content: 'function listByAutomationAccountNext(nextPageLink: string, options?: Models.JobListByAutomationAccountNextOptionalParams)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="448c7-173">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-173">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - Models.JobListByAutomationAccountNextOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobListByAutomationAccountNextResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.listByAutomationAccountNext_1'
+    name: 'listByAutomationAccountNext(string, ServiceCallback<JobListResultV2>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByAutomationAccountNext(nextPageLink: string, callback: ServiceCallback<JobListResultV2>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="448c7-174">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-174">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-automation.JobListResultV2>
+          description: |
+            <span data-ttu-id="448c7-175">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobListByAutomationAccountNextResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.resume_2'
+    name: 'resume(string, string, string, JobResumeOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function resume(resourceGroupName: string, automationAccountName: string, jobName: string, options: JobResumeOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-176">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-176">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-177">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-177">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-178">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-178">The job name.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobResumeOptionalParams'
+          description: <span data-ttu-id="448c7-179">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-179">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-180">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-180">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.resume'
+    name: 'resume(string, string, string, Models.JobResumeOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-181">작업 이름으로 식별 되는 작업을 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-181">Resume the job identified by jobName.</span></span>
+    syntax:
+      content: 'function resume(resourceGroupName: string, automationAccountName: string, jobName: string, options?: Models.JobResumeOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-182">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-182">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-183">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-183">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-184">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-184">The job name.</span></span>
+        - id: options
+          type:
+            - Models.JobResumeOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.resume_1'
+    name: 'resume(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function resume(resourceGroupName: string, automationAccountName: string, jobName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-185">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-185">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-186">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-186">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-187">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-187">The job name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-188">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-188">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.stop_2'
+    name: 'stop(string, string, string, JobStopOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function stop(resourceGroupName: string, automationAccountName: string, jobName: string, options: JobStopOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-189">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-189">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-190">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-190">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-191">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-191">The job name.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobStopOptionalParams'
+          description: <span data-ttu-id="448c7-192">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-192">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-193">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-193">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.stop'
+    name: 'stop(string, string, string, Models.JobStopOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-194">작업 이름으로 식별 되는 작업을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-194">Stop the job identified by jobName.</span></span>
+    syntax:
+      content: 'function stop(resourceGroupName: string, automationAccountName: string, jobName: string, options?: Models.JobStopOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-195">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-195">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-196">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-196">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-197">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-197">The job name.</span></span>
+        - id: options
+          type:
+            - Models.JobStopOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.stop_1'
+    name: 'stop(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function stop(resourceGroupName: string, automationAccountName: string, jobName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-198">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-198">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-199">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-199">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-200">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-200">The job name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-201">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-201">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.suspend_2'
+    name: 'suspend(string, string, string, JobSuspendOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function suspend(resourceGroupName: string, automationAccountName: string, jobName: string, options: JobSuspendOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-202">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-202">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-203">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-203">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-204">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-204">The job name.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-automation.JobSuspendOptionalParams'
+          description: <span data-ttu-id="448c7-205">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="448c7-205">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-206">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-206">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.suspend'
+    name: 'suspend(string, string, string, Models.JobSuspendOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="448c7-207">작업 이름으로 식별 되는 작업을 일시 중단 합니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-207">Suspend the job identified by job name.</span></span>
+    syntax:
+      content: 'function suspend(resourceGroupName: string, automationAccountName: string, jobName: string, options?: Models.JobSuspendOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-208">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-208">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-209">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-209">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-210">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-210">The job name.</span></span>
+        - id: options
+          type:
+            - Models.JobSuspendOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+  - uid: '@azure/arm-automation.JobOperations.suspend_1'
+    name: 'suspend(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function suspend(resourceGroupName: string, automationAccountName: string, jobName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-211">Azure 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-211">Name of an Azure Resource group.</span></span>
+        - id: automationAccountName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-212">Automation 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-212">The name of the automation account.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="448c7-213">작업 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="448c7-213">The job name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="448c7-214">콜백</span><span class="sxs-lookup"><span data-stu-id="448c7-214">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-automation'
+references:
+  - uid: '@azure/arm-automation.AutomationClientContext'
+    name: AutomationClientContext
+    spec.typeScript:
+      - name: AutomationClientContext
+        fullName: AutomationClientContext
+        uid: '@azure/arm-automation.AutomationClientContext'
+  - uid: '@azure/arm-automation.JobCreateParameters'
+    name: JobCreateParameters
+    spec.typeScript:
+      - name: JobCreateParameters
+        fullName: JobCreateParameters
+        uid: '@azure/arm-automation.JobCreateParameters'
+  - uid: ServiceCallback<@azure/arm-automation.Job>
+    name: Job>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Job
+        fullName: Job
+        uid: '@azure/arm-automation.Job'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-automation.JobCreateOptionalParams'
+    name: JobCreateOptionalParams
+    spec.typeScript:
+      - name: JobCreateOptionalParams
+        fullName: JobCreateOptionalParams
+        uid: '@azure/arm-automation.JobCreateOptionalParams'
+  - uid: '@azure/arm-automation.JobGetOptionalParams'
+    name: JobGetOptionalParams
+    spec.typeScript:
+      - name: JobGetOptionalParams
+        fullName: JobGetOptionalParams
+        uid: '@azure/arm-automation.JobGetOptionalParams'
+  - uid: '@azure/arm-automation.JobGetOutputOptionalParams'
+    name: JobGetOutputOptionalParams
+    spec.typeScript:
+      - name: JobGetOutputOptionalParams
+        fullName: JobGetOutputOptionalParams
+        uid: '@azure/arm-automation.JobGetOutputOptionalParams'
+  - uid: '@azure/arm-automation.JobGetRunbookContentOptionalParams'
+    name: JobGetRunbookContentOptionalParams
+    spec.typeScript:
+      - name: JobGetRunbookContentOptionalParams
+        fullName: JobGetRunbookContentOptionalParams
+        uid: '@azure/arm-automation.JobGetRunbookContentOptionalParams'
+  - uid: ServiceCallback<@azure/arm-automation.JobListResultV2>
+    name: JobListResultV2>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobListResultV2
+        fullName: JobListResultV2
+        uid: '@azure/arm-automation.JobListResultV2'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-automation.JobListByAutomationAccountOptionalParams'
+    name: JobListByAutomationAccountOptionalParams
+    spec.typeScript:
+      - name: JobListByAutomationAccountOptionalParams
+        fullName: JobListByAutomationAccountOptionalParams
+        uid: '@azure/arm-automation.JobListByAutomationAccountOptionalParams'
+  - uid: '@azure/arm-automation.JobListByAutomationAccountNextOptionalParams'
+    name: JobListByAutomationAccountNextOptionalParams
+    spec.typeScript:
+      - name: JobListByAutomationAccountNextOptionalParams
+        fullName: JobListByAutomationAccountNextOptionalParams
+        uid: '@azure/arm-automation.JobListByAutomationAccountNextOptionalParams'
+  - uid: '@azure/arm-automation.JobResumeOptionalParams'
+    name: JobResumeOptionalParams
+    spec.typeScript:
+      - name: JobResumeOptionalParams
+        fullName: JobResumeOptionalParams
+        uid: '@azure/arm-automation.JobResumeOptionalParams'
+  - uid: '@azure/arm-automation.JobStopOptionalParams'
+    name: JobStopOptionalParams
+    spec.typeScript:
+      - name: JobStopOptionalParams
+        fullName: JobStopOptionalParams
+        uid: '@azure/arm-automation.JobStopOptionalParams'
+  - uid: '@azure/arm-automation.JobSuspendOptionalParams'
+    name: JobSuspendOptionalParams
+    spec.typeScript:
+      - name: JobSuspendOptionalParams
+        fullName: JobSuspendOptionalParams
+        uid: '@azure/arm-automation.JobSuspendOptionalParams'
