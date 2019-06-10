@@ -1,0 +1,400 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.SessionReceiver'
+    name: SessionReceiver
+    fullName: SessionReceiver
+    children:
+      - '@azure/service-bus.SessionReceiver.close'
+      - '@azure/service-bus.SessionReceiver.getMessageIterator'
+      - '@azure/service-bus.SessionReceiver.getState'
+      - '@azure/service-bus.SessionReceiver.isClosed'
+      - '@azure/service-bus.SessionReceiver.isReceivingMessages'
+      - '@azure/service-bus.SessionReceiver.peek'
+      - '@azure/service-bus.SessionReceiver.peekBySequenceNumber'
+      - '@azure/service-bus.SessionReceiver.receiveDeferredMessage'
+      - '@azure/service-bus.SessionReceiver.receiveDeferredMessages'
+      - '@azure/service-bus.SessionReceiver.receiveMessages'
+      - '@azure/service-bus.SessionReceiver.receiveMode'
+      - '@azure/service-bus.SessionReceiver.registerMessageHandler'
+      - '@azure/service-bus.SessionReceiver.renewSessionLock'
+      - '@azure/service-bus.SessionReceiver.sessionId'
+      - '@azure/service-bus.SessionReceiver.sessionLockedUntilUtc'
+      - '@azure/service-bus.SessionReceiver.setState'
+    langs:
+      - typeScript
+    type: class
+    summary: |-
+      <span data-ttu-id="e12ca-101">사용 하도록 설정 하는 세션에서 메시지를 받는 SessionReceiver 클래스를 사용할 수 있습니다 큐 또는 구독 또는 일괄 처리에서 처리기를 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-101">The SessionReceiver class can be used to receive messages from a session enabled Queue or Subscription in a batch or by registering handlers.</span></span>
+      <span data-ttu-id="e12ca-102">사용 된 `createReceiver` QueueClient 또는 SubscriptionClient SessionReceiver를 인스턴스화하는 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-102">Use the `createReceiver` function on the QueueClient or SubscriptionClient to instantiate a SessionReceiver.</span></span>
+      <span data-ttu-id="e12ca-103">SessionReceiver 클래스가 기본 AMQP 수신기 연결을 통해 추상화입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-103">The SessionReceiver class is an abstraction over the underlying AMQP receiver link.</span></span>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.close'
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="e12ca-104">기본 AMQP 수신자가 링크를 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-104">Closes the underlying AMQP receiver link.</span></span>
+      <span data-ttu-id="e12ca-105">종료 되 면 추가 작업에 대 한 수신기를 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-105">Once closed, the receiver cannot be used for any further operations.</span></span>
+      <span data-ttu-id="e12ca-106">사용 된 `createReceiver` QueueClient 또는 SubscriptionClient 새 수신기를 인스턴스화하는 함수</span><span class="sxs-lookup"><span data-stu-id="e12ca-106">Use the `createReceiver` function on the QueueClient or SubscriptionClient to instantiate a new Receiver</span></span>
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.getMessageIterator'
+    name: getMessageIterator()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |
+      <span data-ttu-id="e12ca-107">수신기에서 메시지를 통한 비동기 반복기를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-107">Gets an async iterator over messages from the receiver.</span></span>
+      <span data-ttu-id="e12ca-108">다른 수신 작업을 동일한 수신기에서 진행 중인 경우 오류를 throw 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-108">Throws an error if there is another receive operation in progress on the same receiver.</span></span> <span data-ttu-id="e12ca-109">확실 하지 않은 경우가 다른 작업 실행을 수신 하는지 여부를 확인 합니다 `isReceivingMessages` 수신기의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-109">If you are not sure whether there is another receive operation running, check the `isReceivingMessages` property on the receiver.</span></span>
+
+      <span data-ttu-id="e12ca-110">반복기는 분별로 새 메시지를 가져올 수 없는 경우 `undefined` 반환 됩니다</span><span class="sxs-lookup"><span data-stu-id="e12ca-110">If the iterator is not able to fetch a new message in over a minute, `undefined` will be returned</span></span>
+    syntax:
+      content: function getMessageIterator()
+      parameters: []
+      return:
+        type:
+          - AsyncIterableIterator<@azure/service-bus.ServiceBusMessage>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.getState'
+    name: getState()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="e12ca-111">세션의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-111">Gets the state of the Session.</span></span> <span data-ttu-id="e12ca-112">에 세션 상태에 대 한 자세한 참조 [세션 상태](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#message-session-state)</span><span class="sxs-lookup"><span data-stu-id="e12ca-112">For more on session states, see [Session State](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#message-session-state)</span></span>'
+    syntax:
+      content: function getState()
+      parameters: []
+      return:
+        type:
+          - Promise<any>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.isClosed'
+    name: isClosed
+    fullName: isClosed
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="e12ca-113">반환 `true` 수신기가 닫힌 경우.</span><span class="sxs-lookup"><span data-stu-id="e12ca-113">Returns `true` if the receiver is closed.</span></span> <span data-ttu-id="e12ca-114">하거나 생성 하는 클라이언트 또는 자체 수신기가 닫혀 있으므로 닫힌 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-114">This can happen either because the receiver itself has been closed or the client that created it has been closed.</span></span>
+    syntax:
+      content: 'isClosed: boolean'
+      return:
+        type:
+          - boolean
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.isReceivingMessages'
+    name: isReceivingMessages()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="e12ca-115">수신기가 있는지 여부를 메시지 수신 현재 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-115">Indicates whether the receiver is currently receiving messages or not.</span></span>
+      <span data-ttu-id="e12ca-116">반환 될 때이 true 이면 새 `registerMessageHandler()` 또는 `receiveMessages()` 호출할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-116">When this returns true, new `registerMessageHandler()` or `receiveMessages()` calls cannot be made.</span></span>
+    syntax:
+      content: function isReceivingMessages()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.peek'
+    name: peek(undefined | number)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="e12ca-117">활성 메시지의 다음 일괄 처리를 가져옵니다 (deadlettered 메시지가 없는 하지만 지연 등)은 현재 세션에서.</span><span class="sxs-lookup"><span data-stu-id="e12ca-117">Fetches the next batch of active messages (including deferred but not deadlettered messages) in the current session.</span></span>
+      - <span data-ttu-id="e12ca-118">첫 번째 호출은 `peek()` 첫 번째 활성화 메시지를 인출 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-118">The first call to `peek()` fetches the first active message.</span></span> <span data-ttu-id="e12ca-119">각 후속 호출에서 후속 메시지를 페치합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-119">Each subsequent call fetches the subsequent message.</span></span>
+      - <span data-ttu-id="e12ca-120">와 달리를 `received` 메시지를 `peeked` 메시지는 메시지의 읽기 전용 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-120">Unlike a `received` message, `peeked` message is a read-only version of the message.</span></span>
+      <span data-ttu-id="e12ca-121">`Completed/Abandoned/Deferred/Deadlettered`일 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-121">It cannot be `Completed/Abandoned/Deferred/Deadlettered`.</span></span> <span data-ttu-id="e12ca-122">이 대 한 잠금을 갱신할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-122">The lock on it cannot be renewed.</span></span>
+    syntax:
+      content: 'function peek(maxMessageCount?: undefined | number)'
+      parameters:
+        - id: maxMessageCount
+          type:
+            - undefined | number
+          description: <span data-ttu-id="e12ca-123">메시지의 최대 수입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-123">The maximum number of messages to peek.</span></span> <span data-ttu-id="e12ca-124">기본값은 `1`합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-124">Default value `1`.</span></span>
+          optional: true
+      return:
+        type:
+          - 'Promise<@azure/service-bus.ReceivedMessageInfo[]>'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.peekBySequenceNumber'
+    name: 'peekBySequenceNumber(Long, undefined | number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="e12ca-125">원하는 수의 활성 메시지를 관찰 합니다. (메시지를 전달 실패 하지 않도록 하지만 지연 등)에서 현재 세션에서 지정 된 시퀀스 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-125">Peeks the desired number of active messages (including deferred but not deadlettered messages) from the specified sequence number in the current session.</span></span>
+      - <span data-ttu-id="e12ca-126">와 달리를 `received` 메시지를 `peeked` 메시지는 메시지의 읽기 전용 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-126">Unlike a `received` message, `peeked` message is a read-only version of the message.</span></span>
+      <span data-ttu-id="e12ca-127">`Completed/Abandoned/Deferred/Deadlettered`일 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-127">It cannot be `Completed/Abandoned/Deferred/Deadlettered`.</span></span> <span data-ttu-id="e12ca-128">이 대 한 잠금을 갱신할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-128">The lock on it cannot be renewed.</span></span>
+    syntax:
+      content: 'function peekBySequenceNumber(fromSequenceNumber: Long, maxMessageCount?: undefined | number)'
+      parameters:
+        - id: fromSequenceNumber
+          type:
+            - Long
+          description: <span data-ttu-id="e12ca-129">메시지를 읽을 수 있는 위치에서 시퀀스 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-129">The sequence number from where to read the message.</span></span>
+        - id: maxMessageCount
+          type:
+            - undefined | number
+          description: ''
+          optional: true
+      return:
+        type:
+          - 'Promise<@azure/service-bus.ReceivedMessageInfo[]>'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.receiveDeferredMessage'
+    name: receiveDeferredMessage(Long)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e12ca-130">로 식별 되는 지연 된 메시지를 확인 하는 약속을 반환 합니다 지정 `sequenceNumber`합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-130">Returns a promise that resolves to a deferred message identified by the given `sequenceNumber`.</span></span>
+    syntax:
+      content: 'function receiveDeferredMessage(sequenceNumber: Long)'
+      parameters:
+        - id: sequenceNumber
+          type:
+            - Long
+          description: <span data-ttu-id="e12ca-131">수신 해야 하는 메시지의 시퀀스 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-131">The sequence number of the message that needs to be received.</span></span>
+      return:
+        type:
+          - Promise<@azure/service-bus.ServiceBusMessage | undefined>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.receiveDeferredMessages'
+    name: 'receiveDeferredMessages(Long[])'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e12ca-132">식별 하는 지연 된 메시지 배열에 확인 되는 프라미스를 반환 하 여 지정 된 `sequenceNumbers`합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-132">Returns a promise that resolves to an array of deferred messages identified by given `sequenceNumbers`.</span></span>
+    syntax:
+      content: 'function receiveDeferredMessages(sequenceNumbers: Long[])'
+      parameters:
+        - id: sequenceNumbers
+          type:
+            - 'Long[]'
+          description: <span data-ttu-id="e12ca-133">배열 수신 해야 하는 메시지 시퀀스 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-133">An array of sequence numbers for the messages that need to be received.</span></span>
+      return:
+        type:
+          - 'Promise<@azure/service-bus.ServiceBusMessage[]>'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.receiveMessages'
+    name: 'receiveMessages(number, undefined | number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |
+      <span data-ttu-id="e12ca-134">큐/구독에서 메시지의 배열을 확인 되는 약속을 기반으로 반환 수 및 시간 제한 지정 된 AMQP 수신기를 통해 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-134">Returns a promise that resolves to an array of messages based on given count and timeout over an AMQP receiver link from a Queue/Subscription.</span></span>
+      <span data-ttu-id="e12ca-135">다른 수신 작업을 동일한 수신기에서 진행 중인 경우 오류를 throw 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-135">Throws an error if there is another receive operation in progress on the same receiver.</span></span> <span data-ttu-id="e12ca-136">확실 하지 않은 경우가 다른 작업 실행을 수신 하는지 여부를 확인 합니다 `isReceivingMessages` 수신기의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-136">If you are not sure whether there is another receive operation running, check the `isReceivingMessages` property on the receiver.</span></span>
+    syntax:
+      content: 'function receiveMessages(maxMessageCount: number, maxWaitTimeInSeconds?: undefined | number)'
+      parameters:
+        - id: maxMessageCount
+          type:
+            - number
+          description: <span data-ttu-id="e12ca-137">큐/구독에서 수신 하는 메시지의 최대 수입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-137">The maximum number of messages to receive from Queue/Subscription.</span></span>
+        - id: maxWaitTimeInSeconds
+          type:
+            - undefined | number
+          description: |-
+            <span data-ttu-id="e12ca-138">최대 대기 시간 (초)는 첫 번째 메시지를 받는 수신기 기다려야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-138">The maximum wait time in seconds for which the Receiver should wait to receive the first message.</span></span> <span data-ttu-id="e12ca-139">이 시간을 기준으로 메시지가 수신 되 면 반환 된 프라미스를 빈 배열을 확인을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-139">If no message is received by this time, the returned promise gets resolved to an empty array.</span></span>
+            - <span data-ttu-id="e12ca-140">**기본**: `60` 시간 (초)입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-140">**Default**: `60` seconds.</span></span>
+          optional: true
+      return:
+        type:
+          - 'Promise<@azure/service-bus.ServiceBusMessage[]>'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.receiveMode'
+    name: receiveMode
+    fullName: receiveMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="e12ca-141">이 수신기의 receiveMode를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-141">Denotes receiveMode of this receiver.</span></span>
+    syntax:
+      content: 'receiveMode: ReceiveMode'
+      return:
+        type:
+          - '@azure/service-bus.ReceiveMode'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.registerMessageHandler'
+    name: 'registerMessageHandler(OnMessage, OnError, SessionMessageHandlerOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |
+      <span data-ttu-id="e12ca-142">큐/구독에서 AMQP 수신기 연결을 통해 들어오는 메시지 스트림을 처리 하는 처리기를 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-142">Registers handlers to deal with the incoming stream of messages over an AMQP receiver link from a Queue/Subscription.</span></span>
+      <span data-ttu-id="e12ca-143">메시지 수신을 중지 하려면 호출 `close()` 는 SessionReceiver에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-143">To stop receiving messages, call `close()` on the SessionReceiver.</span></span>
+      <span data-ttu-id="e12ca-144">다른 수신 작업을 동일한 수신기에서 진행 중인 경우 오류를 throw 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-144">Throws an error if there is another receive operation in progress on the same receiver.</span></span> <span data-ttu-id="e12ca-145">확실 하지 않은 경우가 다른 작업 실행을 수신 하는지 여부를 확인 합니다 `isReceivingMessages` 수신기의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-145">If you are not sure whether there is another receive operation running, check the `isReceivingMessages` property on the receiver.</span></span>
+    syntax:
+      content: 'function registerMessageHandler(onMessage: OnMessage, onError: OnError, options?: SessionMessageHandlerOptions)'
+      parameters:
+        - id: onMessage
+          type:
+            - '@azure/service-bus.OnMessage'
+          description: <span data-ttu-id="e12ca-146">들어오는 각 메시지를 처리 하는 것에 대 한 처리기입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-146">Handler for processing each incoming message.</span></span>
+        - id: onError
+          type:
+            - '@azure/service-bus.OnError'
+          description: <span data-ttu-id="e12ca-147">수신 하거나 메시지를 처리 하는 동안 발생 하는 모든 오류에 대 한 처리기입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-147">Handler for any error that occurs while receiving or processing messages.</span></span>
+        - id: options
+          type:
+            - '@azure/service-bus.SessionMessageHandlerOptions'
+          description: |
+            <span data-ttu-id="e12ca-148">여부 메시지 자동으로 완료 해야 또는 세션에 대 한 잠금을 자동으로 갱신 해야 하는 경우를 제어 하는 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-148">Options to control whether messages should be automatically completed or if the lock on the session should be automatically renewed.</span></span> <span data-ttu-id="e12ca-149">동시에 처리 되어야 하는 메시지의 최대 수를 제어할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-149">You can control the maximum number of messages that should be concurrently processed.</span></span> <span data-ttu-id="e12ca-150">새 메시지에 대 한 수신기를 닫기 전에 대기 하는 시간을 나타내는 시간 (초)의 제한 시간을 제공할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-150">You can also provide a timeout in seconds to denote the amount of time to wait for a new message before closing the receiver.</span></span>
+          optional: true
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.renewSessionLock'
+    name: renewSessionLock()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="e12ca-151">큐/구독을 만드는 동안 지정 된 기간 동안 세션에서 잠금을 갱신합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-151">Renews the lock on the session for the duration as specified during the Queue/Subscription creation.</span></span>
+      - <span data-ttu-id="e12ca-152">확인 된 `sessionLockedUntilUtc` 잠금이 만료 될 때 시간 SessionReceiver 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-152">Check the `sessionLockedUntilUtc` property on the SessionReceiver for the time when the lock expires.</span></span>
+      - <span data-ttu-id="e12ca-153">세션에서 잠금이 만료 되는 경우</span><span class="sxs-lookup"><span data-stu-id="e12ca-153">When the lock on the session expires</span></span>
+          - <span data-ttu-id="e12ca-154">이 수신기를 사용 하 여 메시지가 더 이상 받을 수</span><span class="sxs-lookup"><span data-stu-id="e12ca-154">No more messages can be received using this receiver</span></span>
+          - <span data-ttu-id="e12ca-155">메시지를 확인 하지는 경우 (중 하나를 사용 하 여 `complete()`, `defer()` 또는 `deadletter()`세션 전에 잠금이 만료 되 면 차례로 수신 작업을 다시 다음 큐/구독에서에서 메시지 땅 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-155">If a message is not settled (using either `complete()`, `defer()` or `deadletter()`, before the session lock expires, then the message lands back in the Queue/Subscription for the next receive operation.</span></span>
+    syntax:
+      content: function renewSessionLock()
+      parameters: []
+      return:
+        type:
+          - Promise<Date>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.sessionId'
+    name: sessionId
+    fullName: sessionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="e12ca-156">이 수신기는 메시지를 받을 세션의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-156">The id of the session from which this receiver will receive messages.</span></span>
+      <span data-ttu-id="e12ca-157">AMQP 수신자가 링크 된 성공적으로를 설정 해야 세션에 대해 정의 되지 않은 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-157">Will return undefined until a AMQP receiver link has been successfully set up for the session.</span></span>
+    syntax:
+      content: 'sessionId: string | undefined'
+      return:
+        type:
+          - string | undefined
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.sessionLockedUntilUtc'
+    name: sessionLockedUntilUtc
+    fullName: sessionLockedUntilUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="e12ca-158">세션이 잠깁니다 UTC 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-158">The time in UTC until which the session is locked.</span></span>
+      <span data-ttu-id="e12ca-159">때마다 `renewSessionLock()` 는 호출이 이번 업데이트 현재 시간 더하기 지정 된 잠금 기간에 큐/구독을 만드는 중입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-159">Everytime `renewSessionLock()` is called, this time gets updated to current time plus the lock duration as specified during the Queue/Subscription creation.</span></span>
+
+      <span data-ttu-id="e12ca-160">AMQP 수신자가 링크 된 성공적으로를 설정 해야 세션에 대해 정의 되지 않은 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-160">Will return undefined until a AMQP receiver link has been successfully set up for the session.</span></span>
+    syntax:
+      content: 'sessionLockedUntilUtc: Date | undefined'
+      return:
+        type:
+          - Date | undefined
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiver.setState'
+    name: setState(any)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="e12ca-161">세션의 상태를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-161">Sets the state on the Session.</span></span> <span data-ttu-id="e12ca-162">에 세션 상태에 대 한 자세한 참조 [세션 상태](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#message-session-state)</span><span class="sxs-lookup"><span data-stu-id="e12ca-162">For more on session states, see [Session State](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#message-session-state)</span></span>'
+    syntax:
+      content: 'function setState(state: any)'
+      parameters:
+        - id: state
+          type:
+            - any
+          description: |
+            <span data-ttu-id="e12ca-163">설정 해야 하는 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="e12ca-163">The state that needs to be set.</span></span>
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.ReceiveMode'
+    name: ReceiveMode
+    spec.typeScript:
+      - name: ReceiveMode
+        fullName: ReceiveMode
+        uid: '@azure/service-bus.ReceiveMode'
+  - uid: AsyncIterableIterator<@azure/service-bus.ServiceBusMessage>
+    name: ServiceBusMessage>
+    spec.typeScript:
+      - name: AsyncIterableIterator<
+        fullName: AsyncIterableIterator<
+      - name: ServiceBusMessage
+        fullName: ServiceBusMessage
+        uid: '@azure/service-bus.ServiceBusMessage'
+      - name: '>'
+        fullName: '>'
+  - uid: 'Promise<@azure/service-bus.ReceivedMessageInfo[]>'
+    name: 'ReceivedMessageInfo[]>'
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ReceivedMessageInfo
+        fullName: ReceivedMessageInfo
+        uid: '@azure/service-bus.ReceivedMessageInfo'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: Promise<@azure/service-bus.ServiceBusMessage | undefined>
+    name: ServiceBusMessage | undefined>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ServiceBusMessage
+        fullName: ServiceBusMessage
+        uid: '@azure/service-bus.ServiceBusMessage'
+      - name: ' | undefined>'
+        fullName: ' | undefined>'
+  - uid: 'Promise<@azure/service-bus.ServiceBusMessage[]>'
+    name: 'ServiceBusMessage[]>'
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ServiceBusMessage
+        fullName: ServiceBusMessage
+        uid: '@azure/service-bus.ServiceBusMessage'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/service-bus.OnMessage'
+    name: OnMessage
+    spec.typeScript:
+      - name: OnMessage
+        fullName: OnMessage
+        uid: '@azure/service-bus.OnMessage'
+  - uid: '@azure/service-bus.OnError'
+    name: OnError
+    spec.typeScript:
+      - name: OnError
+        fullName: OnError
+        uid: '@azure/service-bus.OnError'
+  - uid: '@azure/service-bus.SessionMessageHandlerOptions'
+    name: SessionMessageHandlerOptions
+    spec.typeScript:
+      - name: SessionMessageHandlerOptions
+        fullName: SessionMessageHandlerOptions
+        uid: '@azure/service-bus.SessionMessageHandlerOptions'
