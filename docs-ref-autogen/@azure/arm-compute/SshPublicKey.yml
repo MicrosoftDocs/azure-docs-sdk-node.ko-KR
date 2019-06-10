@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.SshPublicKey'
+    name: SshPublicKey
+    fullName: SshPublicKey
+    children:
+      - '@azure/arm-compute.SshPublicKey.keyData'
+      - '@azure/arm-compute.SshPublicKey.path'
+    langs:
+      - typeScript
+    type: interface
+    summary: Linux vm에서 공개 키를 배치할 경로 및 SSH 인증서 공개 키에 대 한 정보를 포함 합니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.SshPublicKey.keyData'
+    name: keyData
+    fullName: keyData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'SSH 공개 키 인증서 인증을 통해 VM으로 ssh 하는 데 사용 합니다. 키는 2048 비트 이상 및 ssh rsa 형식으로 있어야 합니다. <br><br> Ssh 키 만들기를 참조 하세요 [Azure에서 Linux Vm 용 Linux 및 Mac에서 만드는 SSH 키](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-mac-create-ssh-keys?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)합니다.'
+    optional: true
+    syntax:
+      content: 'keyData?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.SshPublicKey.path'
+    name: path
+    fullName: path
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Ssh 공개 키가 저장 되는 만든된 VM에 전체 경로 지정 합니다. 파일이 이미 있는 경우 지정된 된 키 파일에 추가 됩니다. 예제: /home/user/.ssh/authorized_keys'
+    optional: true
+    syntax:
+      content: 'path?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
