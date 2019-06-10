@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-iothub.RoutingProperties'
+    name: RoutingProperties
+    fullName: RoutingProperties
+    children:
+      - '@azure/arm-iothub.RoutingProperties.endpoints'
+      - '@azure/arm-iothub.RoutingProperties.enrichments'
+      - '@azure/arm-iothub.RoutingProperties.fallbackRoute'
+      - '@azure/arm-iothub.RoutingProperties.routes'
+    langs:
+      - typeScript
+    type: interface
+    summary: '<span data-ttu-id="8c1bf-101">IoT hub의 라우팅 관련된 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-101">The routing related properties of the IoT hub.</span></span> <span data-ttu-id="8c1bf-102">참고: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-messaging</span><span class="sxs-lookup"><span data-stu-id="8c1bf-102">See: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-messaging</span></span>'
+    package: '@azure/arm-iothub'
+  - uid: '@azure/arm-iothub.RoutingProperties.endpoints'
+    name: endpoints
+    fullName: endpoints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'endpoints?: RoutingEndpoints'
+      return:
+        type:
+          - '@azure/arm-iothub.RoutingEndpoints'
+    package: '@azure/arm-iothub'
+  - uid: '@azure/arm-iothub.RoutingProperties.enrichments'
+    name: enrichments
+    fullName: enrichments
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="8c1bf-103">IoT hub 기본 및 사용자 지정 끝점에 전달할 메시지에 적용 되는 사용자가 제공한 강화의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-103">The list of user-provided enrichments that the IoT hub applies to messages to be delivered to built-in and custom endpoints.</span></span> <span data-ttu-id="8c1bf-104">참고: https://aka.ms/iotmsgenrich</span><span class="sxs-lookup"><span data-stu-id="8c1bf-104">See: https://aka.ms/iotmsgenrich</span></span>'
+    optional: true
+    syntax:
+      content: 'enrichments?: EnrichmentProperties[]'
+      return:
+        type:
+          - '@azure/arm-iothub.EnrichmentProperties[]'
+    package: '@azure/arm-iothub'
+  - uid: '@azure/arm-iothub.RoutingProperties.fallbackRoute'
+    name: fallbackRoute
+    fullName: fallbackRoute
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="8c1bf-105">''경로'' 섹션에 지정 된 조건이 하나도 없는 경우 대체 경로로 사용 되는 경로 속성을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-105">The properties of the route that is used as a fall-back route when none of the conditions specified in the ''routes'' section are met.</span></span> <span data-ttu-id="8c1bf-106">선택적 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-106">This is an optional parameter.</span></span> <span data-ttu-id="8c1bf-107">이 속성은 설정 되지 않은 경우 메시지는 ''경로'' 섹션에 지정 된 조건 중 하나라도 충족 하지 않는 기본 제공 eventhub 끝점으로 라우팅됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-107">When this property is not set, the messages which do not meet any of the conditions specified in the ''routes'' section get routed to the built-in eventhub endpoint.</span></span>'
+    optional: true
+    syntax:
+      content: 'fallbackRoute?: FallbackRouteProperties'
+      return:
+        type:
+          - '@azure/arm-iothub.FallbackRouteProperties'
+    package: '@azure/arm-iothub'
+  - uid: '@azure/arm-iothub.RoutingProperties.routes'
+    name: routes
+    fullName: routes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8c1bf-108">IoT hub 기본 및 사용자 지정 끝점에 메시지를 라우트하는 사용자 제공 라우팅 규칙의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-108">The list of user-provided routing rules that the IoT hub uses to route messages to built-in and custom endpoints.</span></span> <span data-ttu-id="8c1bf-109">유료 허브에 대 한 최대 100 개의 라우팅 규칙의 수 및 최대 5 개의 라우팅 규칙을 무료로 hubs 허용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c1bf-109">A maximum of 100 routing rules are allowed for paid hubs and a maximum of 5 routing rules are allowed for free hubs.</span></span>
+    optional: true
+    syntax:
+      content: 'routes?: RouteProperties[]'
+      return:
+        type:
+          - '@azure/arm-iothub.RouteProperties[]'
+    package: '@azure/arm-iothub'
+references:
+  - uid: '@azure/arm-iothub.RoutingEndpoints'
+    name: RoutingEndpoints
+    spec.typeScript:
+      - name: RoutingEndpoints
+        fullName: RoutingEndpoints
+        uid: '@azure/arm-iothub.RoutingEndpoints'
+  - uid: '@azure/arm-iothub.EnrichmentProperties[]'
+    name: 'EnrichmentProperties[]'
+    spec.typeScript:
+      - name: EnrichmentProperties
+        fullName: EnrichmentProperties
+        uid: '@azure/arm-iothub.EnrichmentProperties'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-iothub.FallbackRouteProperties'
+    name: FallbackRouteProperties
+    spec.typeScript:
+      - name: FallbackRouteProperties
+        fullName: FallbackRouteProperties
+        uid: '@azure/arm-iothub.FallbackRouteProperties'
+  - uid: '@azure/arm-iothub.RouteProperties[]'
+    name: 'RouteProperties[]'
+    spec.typeScript:
+      - name: RouteProperties
+        fullName: RouteProperties
+        uid: '@azure/arm-iothub.RouteProperties'
+      - name: '[]'
+        fullName: '[]'
