@@ -1,0 +1,257 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/ms-rest-js.OperationSpec'
+    name: OperationSpec
+    fullName: OperationSpec
+    children:
+      - '@azure/ms-rest-js.OperationSpec.baseUrl'
+      - '@azure/ms-rest-js.OperationSpec.contentType'
+      - '@azure/ms-rest-js.OperationSpec.formDataParameters'
+      - '@azure/ms-rest-js.OperationSpec.headerParameters'
+      - '@azure/ms-rest-js.OperationSpec.httpMethod'
+      - '@azure/ms-rest-js.OperationSpec.isXML'
+      - '@azure/ms-rest-js.OperationSpec.path'
+      - '@azure/ms-rest-js.OperationSpec.queryParameters'
+      - '@azure/ms-rest-js.OperationSpec.requestBody'
+      - '@azure/ms-rest-js.OperationSpec.responses'
+      - '@azure/ms-rest-js.OperationSpec.serializer'
+      - '@azure/ms-rest-js.OperationSpec.urlParameters'
+    langs:
+      - typeScript
+    type: interface
+    summary: 작업 정의 하는 사양입니다.
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.baseUrl'
+    name: baseUrl
+    fullName: baseUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스의 사양에 제공 된 URL입니다. 이 아직 URL 템플릿 변수 모두에 있습니다. OperationSpec 만들어질 때에 제공 하지 않으면, 다음 채워집니다는 ServiceClient "baseUri" 속성으로.'
+    optional: true
+    syntax:
+      content: 'baseUrl?: string'
+      return:
+        type:
+          - string
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.contentType'
+    name: contentType
+    fullName: contentType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 요청 본문의 콘텐츠 형식입니다. 제공 되는 경우 "Content-type" 헤더로이 값은 사용 합니다.
+    optional: true
+    syntax:
+      content: 'contentType?: string'
+      return:
+        type:
+          - string
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.formDataParameters'
+    name: formDataParameters
+    fullName: formDataParameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업의 HTTP 요청에 대 한 formdata 본문을 만드는 데 사용할 작업 메서드에 매개 변수입니다.
+    optional: true
+    syntax:
+      content: 'formDataParameters?: ReadonlyArray<OperationParameter>'
+      return:
+        type:
+          - ReadonlyArray<@azure/ms-rest-js.OperationParameter>
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.headerParameters'
+    name: headerParameters
+    fullName: headerParameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업의 HTTP 요청에 헤더를 변환할 작업 메서드에 매개 변수입니다.
+    optional: true
+    syntax:
+      content: 'headerParameters?: ReadonlyArray<OperationParameter>'
+      return:
+        type:
+          - ReadonlyArray<@azure/ms-rest-js.OperationParameter>
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.httpMethod'
+    name: httpMethod
+    fullName: httpMethod
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 작업에 대 한 요청에서 사용 해야 하는 HTTP 메서드.
+    syntax:
+      content: 'httpMethod: HttpMethods'
+      return:
+        type:
+          - '@azure/ms-rest-js.HttpMethods'
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.isXML'
+    name: isXML
+    fullName: isXML
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 여부이 작업에서는 XML 요청 및 응답 본문을 사용 합니다.
+    optional: true
+    syntax:
+      content: 'isXML?: boolean'
+      return:
+        type:
+          - boolean
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.path'
+    name: path
+    fullName: path
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 작업의이 URL에 대 한 고정된 경로입니다. 이 아직 URL 템플릿 변수 모두에 있습니다.
+    optional: true
+    syntax:
+      content: 'path?: string'
+      return:
+        type:
+          - string
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.queryParameters'
+    name: queryParameters
+    fullName: queryParameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 생성 된 URL의 쿼리를 추가할 작업 메서드에 매개 변수입니다.
+    optional: true
+    syntax:
+      content: 'queryParameters?: ReadonlyArray<OperationQueryParameter>'
+      return:
+        type:
+          - ReadonlyArray<@azure/ms-rest-js.OperationQueryParameter>
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.requestBody'
+    name: requestBody
+    fullName: requestBody
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: HTTP 요청의 본문을 생성 하는 데 사용할 수 있는 매개 변수입니다.
+    optional: true
+    syntax:
+      content: 'requestBody?: OperationParameter'
+      return:
+        type:
+          - '@azure/ms-rest-js.OperationParameter'
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.responses'
+    name: responses
+    fullName: responses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 작업을 반환할 수 있는 응답 다양 한 유형의 어떤 상태 코드가 반환 됩니다 기반으로 합니다.
+    syntax:
+      content: 'responses: [key: string]: OperationResponse'
+      return:
+        type:
+          - '[key: string]: @azure/ms-rest-js.OperationResponse'
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.serializer'
+    name: serializer
+    fullName: serializer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 작업에 사용할 serializer입니다.
+    syntax:
+      content: 'serializer: Serializer'
+      return:
+        type:
+          - '@azure/ms-rest-js.Serializer'
+    package: '@azure/ms-rest-js'
+  - uid: '@azure/ms-rest-js.OperationSpec.urlParameters'
+    name: urlParameters
+    fullName: urlParameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 생성 된 URL로 대체 되는 작업 메서드에 매개 변수입니다.
+    optional: true
+    syntax:
+      content: 'urlParameters?: ReadonlyArray<OperationURLParameter>'
+      return:
+        type:
+          - ReadonlyArray<@azure/ms-rest-js.OperationURLParameter>
+    package: '@azure/ms-rest-js'
+references:
+  - uid: ReadonlyArray<@azure/ms-rest-js.OperationParameter>
+    name: OperationParameter>
+    spec.typeScript:
+      - name: ReadonlyArray<
+        fullName: ReadonlyArray<
+      - name: OperationParameter
+        fullName: OperationParameter
+        uid: '@azure/ms-rest-js.OperationParameter'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/ms-rest-js.HttpMethods'
+    name: HttpMethods
+    spec.typeScript:
+      - name: HttpMethods
+        fullName: HttpMethods
+        uid: '@azure/ms-rest-js.HttpMethods'
+  - uid: ReadonlyArray<@azure/ms-rest-js.OperationQueryParameter>
+    name: OperationQueryParameter>
+    spec.typeScript:
+      - name: ReadonlyArray<
+        fullName: ReadonlyArray<
+      - name: OperationQueryParameter
+        fullName: OperationQueryParameter
+        uid: '@azure/ms-rest-js.OperationQueryParameter'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/ms-rest-js.OperationParameter'
+    name: OperationParameter
+    spec.typeScript:
+      - name: OperationParameter
+        fullName: OperationParameter
+        uid: '@azure/ms-rest-js.OperationParameter'
+  - uid: '[key: string]: @azure/ms-rest-js.OperationResponse'
+    name: OperationResponse
+    spec.typeScript:
+      - name: '[key: string]: '
+        fullName: '[key: string]: '
+      - name: OperationResponse
+        fullName: OperationResponse
+        uid: '@azure/ms-rest-js.OperationResponse'
+  - uid: '@azure/ms-rest-js.Serializer'
+    name: Serializer
+    spec.typeScript:
+      - name: Serializer
+        fullName: Serializer
+        uid: '@azure/ms-rest-js.Serializer'
+  - uid: ReadonlyArray<@azure/ms-rest-js.OperationURLParameter>
+    name: OperationURLParameter>
+    spec.typeScript:
+      - name: ReadonlyArray<
+        fullName: ReadonlyArray<
+      - name: OperationURLParameter
+        fullName: OperationURLParameter
+        uid: '@azure/ms-rest-js.OperationURLParameter'
+      - name: '>'
+        fullName: '>'
