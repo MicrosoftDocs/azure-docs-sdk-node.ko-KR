@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-containerregistry.ImportImageParameters'
+    name: ImportImageParameters
+    fullName: ImportImageParameters
+    children:
+      - '@azure/arm-containerregistry.ImportImageParameters.mode'
+      - '@azure/arm-containerregistry.ImportImageParameters.source'
+      - '@azure/arm-containerregistry.ImportImageParameters.targetTags'
+      - '@azure/arm-containerregistry.ImportImageParameters.untaggedTargetRepositories'
+    langs:
+      - typeScript
+    type: interface
+    summary: ImportImageParameters 나타내는 인터페이스입니다.
+    package: '@azure/arm-containerregistry'
+  - uid: '@azure/arm-containerregistry.ImportImageParameters.mode'
+    name: mode
+    fullName: mode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '강제 적용 하면, 모든 기존 대상 태그를 덮어쓰게 됩니다. 경우 NoForce, 모든 기존 대상 태그 실패 작업을 복사 하기 전에 합니다. 가능한 값은 다음과 같습니다. ''NoForce'', ''Force''. 기본값: ''NoForce''.'
+    optional: true
+    syntax:
+      content: 'mode?: ImportMode'
+      return:
+        type:
+          - '@azure/arm-containerregistry.ImportMode'
+    package: '@azure/arm-containerregistry'
+  - uid: '@azure/arm-containerregistry.ImportImageParameters.source'
+    name: source
+    fullName: source
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이미지 원본입니다.
+    syntax:
+      content: 'source: ImportSource'
+      return:
+        type:
+          - '@azure/arm-containerregistry.ImportSource'
+    package: '@azure/arm-containerregistry'
+  - uid: '@azure/arm-containerregistry.ImportImageParameters.targetTags'
+    name: targetTags
+    fullName: targetTags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '문자열 형식 리포지토리의 목록이 [: 태그]. 태그를 생략 하면 원본에 사용 되는 (또는 소스 태그를 생략 하면 또한 '' 최신'') 됩니다.'
+    optional: true
+    syntax:
+      content: 'targetTags?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: '@azure/arm-containerregistry'
+  - uid: '@azure/arm-containerregistry.ImportImageParameters.untaggedTargetRepositories'
+    name: untaggedTargetRepositories
+    fullName: untaggedTargetRepositories
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 리포지토리 이름 매니페스트만 복사를 수행 하는 문자열 목록입니다. 태그가 생성 됩니다.
+    optional: true
+    syntax:
+      content: 'untaggedTargetRepositories?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: '@azure/arm-containerregistry'
+references:
+  - uid: '@azure/arm-containerregistry.ImportMode'
+    name: ImportMode
+    spec.typeScript:
+      - name: ImportMode
+        fullName: ImportMode
+        uid: '@azure/arm-containerregistry.ImportMode'
+  - uid: '@azure/arm-containerregistry.ImportSource'
+    name: ImportSource
+    spec.typeScript:
+      - name: ImportSource
+        fullName: ImportSource
+        uid: '@azure/arm-containerregistry.ImportSource'
