@@ -1,0 +1,993 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-batchai.Jobs'
+    name: Jobs
+    fullName: Jobs
+    children:
+      - '@azure/arm-batchai.Jobs.beginCreate'
+      - '@azure/arm-batchai.Jobs.beginDeleteMethod'
+      - '@azure/arm-batchai.Jobs.beginTerminate'
+      - '@azure/arm-batchai.Jobs.create'
+      - '@azure/arm-batchai.Jobs.deleteMethod'
+      - '@azure/arm-batchai.Jobs.get'
+      - '@azure/arm-batchai.Jobs.get_2'
+      - '@azure/arm-batchai.Jobs.get_1'
+      - '@azure/arm-batchai.Jobs.constructor'
+      - '@azure/arm-batchai.Jobs.listByExperiment_2'
+      - '@azure/arm-batchai.Jobs.listByExperiment'
+      - '@azure/arm-batchai.Jobs.listByExperiment_1'
+      - '@azure/arm-batchai.Jobs.listByExperimentNext'
+      - '@azure/arm-batchai.Jobs.listByExperimentNext_2'
+      - '@azure/arm-batchai.Jobs.listByExperimentNext_1'
+      - '@azure/arm-batchai.Jobs.listOutputFiles'
+      - '@azure/arm-batchai.Jobs.listOutputFiles_2'
+      - '@azure/arm-batchai.Jobs.listOutputFiles_1'
+      - '@azure/arm-batchai.Jobs.listOutputFilesNext'
+      - '@azure/arm-batchai.Jobs.listOutputFilesNext_2'
+      - '@azure/arm-batchai.Jobs.listOutputFilesNext_1'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformation'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformation_2'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformation_1'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_2'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_1'
+      - '@azure/arm-batchai.Jobs.terminate'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="03230-101">작업을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-101">Class representing a Jobs.</span></span>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.beginCreate'
+    name: 'beginCreate(string, string, string, string, JobCreateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-102">지정 된 실험에서 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="03230-102">Creates a Job in the given Experiment.</span></span>
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, parameters: JobCreateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-103">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-103">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-104">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-104">The name of the workspace.</span></span> <span data-ttu-id="03230-105">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-105">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-106">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-106">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-107">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-107">The name of the experiment.</span></span> <span data-ttu-id="03230-108">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-108">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-109">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-109">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-110">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-110">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-111">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-111">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-112">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-112">The name must be from 1 through 64 characters long.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batchai.JobCreateParameters'
+          description: <span data-ttu-id="03230-113">작업을 만들 수 있도록 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-113">The parameters to provide for job creation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-114">작업을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-114">Deletes a Job.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-115">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-115">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-116">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-116">The name of the workspace.</span></span> <span data-ttu-id="03230-117">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-117">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-118">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-118">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-119">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-119">The name of the experiment.</span></span> <span data-ttu-id="03230-120">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-120">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-121">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-121">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-122">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-122">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-123">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-123">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-124">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-124">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.beginTerminate'
+    name: 'beginTerminate(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-125">작업을 종료합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-125">Terminates a job.</span></span>
+    syntax:
+      content: 'function beginTerminate(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-126">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-126">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-127">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-127">The name of the workspace.</span></span> <span data-ttu-id="03230-128">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-128">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-129">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-129">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-130">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-130">The name of the experiment.</span></span> <span data-ttu-id="03230-131">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-131">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-132">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-132">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-133">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-133">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-134">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-134">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-135">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-135">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.create'
+    name: 'create(string, string, string, string, JobCreateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-136">지정 된 실험에서 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="03230-136">Creates a Job in the given Experiment.</span></span>
+    syntax:
+      content: 'function create(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, parameters: JobCreateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-137">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-137">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-138">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-138">The name of the workspace.</span></span> <span data-ttu-id="03230-139">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-139">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-140">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-140">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-141">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-141">The name of the experiment.</span></span> <span data-ttu-id="03230-142">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-142">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-143">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-143">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-144">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-144">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-145">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-145">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-146">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-146">The name must be from 1 through 64 characters long.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batchai.JobCreateParameters'
+          description: <span data-ttu-id="03230-147">작업을 만들 수 있도록 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-147">The parameters to provide for job creation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsCreateResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.deleteMethod'
+    name: 'deleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-148">작업을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-148">Deletes a Job.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-149">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-149">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-150">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-150">The name of the workspace.</span></span> <span data-ttu-id="03230-151">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-151">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-152">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-152">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-153">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-153">The name of the experiment.</span></span> <span data-ttu-id="03230-154">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-154">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-155">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-155">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-156">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-156">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-157">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-157">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-158">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-158">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.get'
+    name: 'get(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-159">작업에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="03230-159">Gets information about a Job.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-160">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-160">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-161">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-161">The name of the workspace.</span></span> <span data-ttu-id="03230-162">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-162">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-163">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-163">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-164">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-164">The name of the experiment.</span></span> <span data-ttu-id="03230-165">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-165">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-166">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-166">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-167">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-167">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-168">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-168">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-169">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-169">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.get_2'
+    name: 'get(string, string, string, string, RequestOptionsBase, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options: RequestOptionsBase, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-170">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-170">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-171">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-171">The name of the workspace.</span></span> <span data-ttu-id="03230-172">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-172">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-173">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-173">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-174">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-174">The name of the experiment.</span></span> <span data-ttu-id="03230-175">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-175">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-176">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-176">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-177">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-177">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-178">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-178">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-179">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-179">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="03230-180">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-180">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.Job>
+          description: |
+            <span data-ttu-id="03230-181">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-181">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-182">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-182">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-183">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-183">The name of the workspace.</span></span> <span data-ttu-id="03230-184">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-184">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-185">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-185">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-186">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-186">The name of the experiment.</span></span> <span data-ttu-id="03230-187">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-187">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-188">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-188">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-189">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-189">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-190">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-190">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-191">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-191">The name must be from 1 through 64 characters long.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.Job>
+          description: |
+            <span data-ttu-id="03230-192">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-192">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.constructor'
+    name: Jobs(BatchAIManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-193">작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="03230-193">Create a Jobs.</span></span>
+    syntax:
+      content: 'new Jobs(client: BatchAIManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-batchai.BatchAIManagementClientContext'
+          description: |
+            <span data-ttu-id="03230-194">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-194">Reference to the service client.</span></span>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperiment_2'
+    name: 'listByExperiment(string, string, string, JobsListByExperimentOptionalParams, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperiment(resourceGroupName: string, workspaceName: string, experimentName: string, options: JobsListByExperimentOptionalParams, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-195">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-195">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-196">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-196">The name of the workspace.</span></span> <span data-ttu-id="03230-197">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-197">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-198">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-198">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-199">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-199">The name of the experiment.</span></span> <span data-ttu-id="03230-200">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-200">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-201">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-201">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-batchai.JobsListByExperimentOptionalParams'
+          description: <span data-ttu-id="03230-202">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-202">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            <span data-ttu-id="03230-203">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-203">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperiment'
+    name: 'listByExperiment(string, string, string, Models.JobsListByExperimentOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-204">지정 된 실험 내에서 작업의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="03230-204">Gets a list of Jobs within the specified Experiment.</span></span>
+    syntax:
+      content: 'function listByExperiment(resourceGroupName: string, workspaceName: string, experimentName: string, options?: Models.JobsListByExperimentOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-205">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-205">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-206">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-206">The name of the workspace.</span></span> <span data-ttu-id="03230-207">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-207">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-208">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-208">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-209">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-209">The name of the experiment.</span></span> <span data-ttu-id="03230-210">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-210">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-211">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-211">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - Models.JobsListByExperimentOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperiment_1'
+    name: 'listByExperiment(string, string, string, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperiment(resourceGroupName: string, workspaceName: string, experimentName: string, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-212">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-212">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-213">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-213">The name of the workspace.</span></span> <span data-ttu-id="03230-214">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-214">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-215">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-215">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-216">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-216">The name of the experiment.</span></span> <span data-ttu-id="03230-217">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-217">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-218">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-218">The name must be from 1 through 64 characters long.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            <span data-ttu-id="03230-219">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-219">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperimentNext'
+    name: 'listByExperimentNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-220">지정 된 실험 내에서 작업의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="03230-220">Gets a list of Jobs within the specified Experiment.</span></span>
+    syntax:
+      content: 'function listByExperimentNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-221">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-221">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperimentNext_2'
+    name: 'listByExperimentNext(string, RequestOptionsBase, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperimentNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-222">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-222">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="03230-223">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-223">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            <span data-ttu-id="03230-224">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-224">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperimentNext_1'
+    name: 'listByExperimentNext(string, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperimentNext(nextPageLink: string, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-225">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-225">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            <span data-ttu-id="03230-226">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-226">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFiles'
+    name: 'listOutputFiles(string, string, string, string, JobsListOutputFilesOptions, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-227">(Azure 파일 공유 또는 Azure Storage 컨테이너의 출력 디렉터리 경우) 작업의 출력 디렉터리의 지정 된 디렉터리 내의 모든 파일과 디렉터리를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-227">List all directories and files inside the given directory of the Job's output directory (if the output directory is on Azure File Share or Azure Storage Container).</span></span>
+    syntax:
+      content: 'function listOutputFiles(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, jobsListOutputFilesOptions: JobsListOutputFilesOptions, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-228">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-228">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-229">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-229">The name of the workspace.</span></span> <span data-ttu-id="03230-230">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-230">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-231">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-231">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-232">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-232">The name of the experiment.</span></span> <span data-ttu-id="03230-233">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-233">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-234">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-234">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-235">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-235">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-236">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-236">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-237">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-237">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobsListOutputFilesOptions
+          type:
+            - '@azure/arm-batchai.JobsListOutputFilesOptions'
+          description: <span data-ttu-id="03230-238">작업에 대 한 추가 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-238">Additional parameters for the operation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFiles_2'
+    name: 'listOutputFiles(string, string, string, string, JobsListOutputFilesOptions, RequestOptionsBase, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFiles(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, jobsListOutputFilesOptions: JobsListOutputFilesOptions, options: RequestOptionsBase, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-239">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-239">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-240">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-240">The name of the workspace.</span></span> <span data-ttu-id="03230-241">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-241">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-242">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-242">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-243">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-243">The name of the experiment.</span></span> <span data-ttu-id="03230-244">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-244">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-245">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-245">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-246">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-246">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-247">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-247">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-248">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-248">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobsListOutputFilesOptions
+          type:
+            - '@azure/arm-batchai.JobsListOutputFilesOptions'
+          description: <span data-ttu-id="03230-249">작업에 대 한 추가 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-249">Additional parameters for the operation</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="03230-250">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-250">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            <span data-ttu-id="03230-251">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-251">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFiles_1'
+    name: 'listOutputFiles(string, string, string, string, JobsListOutputFilesOptions, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFiles(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, jobsListOutputFilesOptions: JobsListOutputFilesOptions, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-252">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-252">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-253">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-253">The name of the workspace.</span></span> <span data-ttu-id="03230-254">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-254">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-255">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-255">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-256">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-256">The name of the experiment.</span></span> <span data-ttu-id="03230-257">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-257">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-258">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-258">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-259">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-259">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-260">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-260">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-261">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-261">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobsListOutputFilesOptions
+          type:
+            - '@azure/arm-batchai.JobsListOutputFilesOptions'
+          description: <span data-ttu-id="03230-262">작업에 대 한 추가 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-262">Additional parameters for the operation</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            <span data-ttu-id="03230-263">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-263">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFilesNext'
+    name: 'listOutputFilesNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-264">(Azure 파일 공유 또는 Azure Storage 컨테이너의 출력 디렉터리 경우) 작업의 출력 디렉터리의 지정 된 디렉터리 내의 모든 파일과 디렉터리를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-264">List all directories and files inside the given directory of the Job's output directory (if the output directory is on Azure File Share or Azure Storage Container).</span></span>
+    syntax:
+      content: 'function listOutputFilesNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-265">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-265">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFilesNext_2'
+    name: 'listOutputFilesNext(string, RequestOptionsBase, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFilesNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-266">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-266">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="03230-267">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-267">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            <span data-ttu-id="03230-268">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-268">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFilesNext_1'
+    name: 'listOutputFilesNext(string, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFilesNext(nextPageLink: string, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-269">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-269">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            <span data-ttu-id="03230-270">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-270">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformation'
+    name: 'listRemoteLoginInformation(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="03230-271">현재 사용 중인 기존 목록을 가져옵니다 작업 실행에 사용 된 노드.</span><span class="sxs-lookup"><span data-stu-id="03230-271">Gets a list of currently existing nodes which were used for the Job execution.</span></span> <span data-ttu-id="03230-272">노드 ID를 포함 하는 반환 된 정보를 해당 공용 IP 및 SSH 포트입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-272">The returned information contains the node ID, its public IP and SSH port.</span></span>'
+    syntax:
+      content: 'function listRemoteLoginInformation(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-273">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-273">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-274">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-274">The name of the workspace.</span></span> <span data-ttu-id="03230-275">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-275">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-276">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-276">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-277">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-277">The name of the experiment.</span></span> <span data-ttu-id="03230-278">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-278">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-279">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-279">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-280">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-280">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-281">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-281">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-282">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-282">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformation_2'
+    name: 'listRemoteLoginInformation(string, string, string, string, RequestOptionsBase, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformation(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options: RequestOptionsBase, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-283">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-283">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-284">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-284">The name of the workspace.</span></span> <span data-ttu-id="03230-285">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-285">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-286">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-286">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-287">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-287">The name of the experiment.</span></span> <span data-ttu-id="03230-288">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-288">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-289">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-289">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-290">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-290">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-291">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-291">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-292">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-292">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="03230-293">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-293">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            <span data-ttu-id="03230-294">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-294">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformation_1'
+    name: 'listRemoteLoginInformation(string, string, string, string, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformation(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-295">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-295">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-296">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-296">The name of the workspace.</span></span> <span data-ttu-id="03230-297">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-297">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-298">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-298">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-299">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-299">The name of the experiment.</span></span> <span data-ttu-id="03230-300">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-300">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-301">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-301">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-302">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-302">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-303">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-303">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-304">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-304">The name must be from 1 through 64 characters long.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            <span data-ttu-id="03230-305">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-305">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext'
+    name: 'listRemoteLoginInformationNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="03230-306">현재 사용 중인 기존 목록을 가져옵니다 작업 실행에 사용 된 노드.</span><span class="sxs-lookup"><span data-stu-id="03230-306">Gets a list of currently existing nodes which were used for the Job execution.</span></span> <span data-ttu-id="03230-307">노드 ID를 포함 하는 반환 된 정보를 해당 공용 IP 및 SSH 포트입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-307">The returned information contains the node ID, its public IP and SSH port.</span></span>'
+    syntax:
+      content: 'function listRemoteLoginInformationNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-308">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-308">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_2'
+    name: 'listRemoteLoginInformationNext(string, RequestOptionsBase, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformationNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-309">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-309">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="03230-310">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="03230-310">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            <span data-ttu-id="03230-311">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-311">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_1'
+    name: 'listRemoteLoginInformationNext(string, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformationNext(nextPageLink: string, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="03230-312">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-312">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            <span data-ttu-id="03230-313">콜백</span><span class="sxs-lookup"><span data-stu-id="03230-313">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.terminate'
+    name: 'terminate(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="03230-314">작업을 종료합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-314">Terminates a job.</span></span>
+    syntax:
+      content: 'function terminate(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="03230-315">리소스가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-315">Name of the resource group to which the resource belongs.</span></span>
+        - id: workspaceName
+          type:
+            - string
+          description: <span data-ttu-id="03230-316">작업 영역의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-316">The name of the workspace.</span></span> <span data-ttu-id="03230-317">작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-317">Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-318">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-318">The name must be from 1 through 64 characters long.</span></span>
+        - id: experimentName
+          type:
+            - string
+          description: <span data-ttu-id="03230-319">실험의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-319">The name of the experiment.</span></span> <span data-ttu-id="03230-320">실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-320">Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-321">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-321">The name must be from 1 through 64 characters long.</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="03230-322">지정된 된 리소스 그룹 내에서 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="03230-322">The name of the job within the specified resource group.</span></span> <span data-ttu-id="03230-323">작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="03230-323">Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_).</span></span> <span data-ttu-id="03230-324">이름은 1에서 64 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="03230-324">The name must be from 1 through 64 characters long.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-batchai'
+references:
+  - uid: '@azure/arm-batchai.BatchAIManagementClientContext'
+    name: BatchAIManagementClientContext
+    spec.typeScript:
+      - name: BatchAIManagementClientContext
+        fullName: BatchAIManagementClientContext
+        uid: '@azure/arm-batchai.BatchAIManagementClientContext'
+  - uid: '@azure/arm-batchai.JobCreateParameters'
+    name: JobCreateParameters
+    spec.typeScript:
+      - name: JobCreateParameters
+        fullName: JobCreateParameters
+        uid: '@azure/arm-batchai.JobCreateParameters'
+  - uid: ServiceCallback<@azure/arm-batchai.Job>
+    name: Job>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Job
+        fullName: Job
+        uid: '@azure/arm-batchai.Job'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-batchai.JobListResult>
+    name: JobListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobListResult
+        fullName: JobListResult
+        uid: '@azure/arm-batchai.JobListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-batchai.JobsListByExperimentOptionalParams'
+    name: JobsListByExperimentOptionalParams
+    spec.typeScript:
+      - name: JobsListByExperimentOptionalParams
+        fullName: JobsListByExperimentOptionalParams
+        uid: '@azure/arm-batchai.JobsListByExperimentOptionalParams'
+  - uid: '@azure/arm-batchai.JobsListOutputFilesOptions'
+    name: JobsListOutputFilesOptions
+    spec.typeScript:
+      - name: JobsListOutputFilesOptions
+        fullName: JobsListOutputFilesOptions
+        uid: '@azure/arm-batchai.JobsListOutputFilesOptions'
+  - uid: ServiceCallback<@azure/arm-batchai.FileListResult>
+    name: FileListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FileListResult
+        fullName: FileListResult
+        uid: '@azure/arm-batchai.FileListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+    name: RemoteLoginInformationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RemoteLoginInformationListResult
+        fullName: RemoteLoginInformationListResult
+        uid: '@azure/arm-batchai.RemoteLoginInformationListResult'
+      - name: '>'
+        fullName: '>'
