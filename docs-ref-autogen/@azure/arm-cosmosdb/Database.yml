@@ -1,0 +1,383 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-cosmosdb.Database'
+    name: Database
+    fullName: Database
+    children:
+      - '@azure/arm-cosmosdb.Database.constructor'
+      - '@azure/arm-cosmosdb.Database.listMetricDefinitions'
+      - '@azure/arm-cosmosdb.Database.listMetricDefinitions_2'
+      - '@azure/arm-cosmosdb.Database.listMetricDefinitions_1'
+      - '@azure/arm-cosmosdb.Database.listMetrics'
+      - '@azure/arm-cosmosdb.Database.listMetrics_2'
+      - '@azure/arm-cosmosdb.Database.listMetrics_1'
+      - '@azure/arm-cosmosdb.Database.listUsages_2'
+      - '@azure/arm-cosmosdb.Database.listUsages'
+      - '@azure/arm-cosmosdb.Database.listUsages_1'
+    langs:
+      - typeScript
+    type: class
+    summary: 데이터베이스를 나타내는 클래스입니다.
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.constructor'
+    name: Database(CosmosDBManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 데이터베이스를 만듭니다.
+    syntax:
+      content: 'new Database(client: CosmosDBManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-cosmosdb.CosmosDBManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listMetricDefinitions'
+    name: 'listMetricDefinitions(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 데이터베이스에 대 한 메트릭 정의 검색합니다.
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, accountName: string, databaseRid: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabaseListMetricDefinitionsResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listMetricDefinitions_2'
+    name: 'listMetricDefinitions(string, string, string, RequestOptionsBase, ServiceCallback<MetricDefinitionsListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, accountName: string, databaseRid: string, options: RequestOptionsBase, callback: ServiceCallback<MetricDefinitionsListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cosmosdb.MetricDefinitionsListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabaseListMetricDefinitionsResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listMetricDefinitions_1'
+    name: 'listMetricDefinitions(string, string, string, ServiceCallback<MetricDefinitionsListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, accountName: string, databaseRid: string, callback: ServiceCallback<MetricDefinitionsListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cosmosdb.MetricDefinitionsListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabaseListMetricDefinitionsResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listMetrics'
+    name: 'listMetrics(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 데이터베이스 계정 및 데이터베이스에 대 한 지정 된 필터에 의해 결정 메트릭을 검색 합니다.
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, accountName: string, databaseRid: string, filter: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: filter
+          type:
+            - string
+          description: '반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다. 필터링 할 수 있는 매개 변수는 name.value (메트릭 이름를 또는 여러 이름을 가질 수 있습니다), startTime, endTime 및 timeGrain입니다. 지원 되는 연산자가 게인에서'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabaseListMetricsResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listMetrics_2'
+    name: 'listMetrics(string, string, string, string, RequestOptionsBase, ServiceCallback<MetricListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, accountName: string, databaseRid: string, filter: string, options: RequestOptionsBase, callback: ServiceCallback<MetricListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: filter
+          type:
+            - string
+          description: '반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다. 필터링 할 수 있는 매개 변수는 name.value (메트릭 이름를 또는 여러 이름을 가질 수 있습니다), startTime, endTime 및 timeGrain입니다. 지원 되는 연산자가 게인에서'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cosmosdb.MetricListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabaseListMetricsResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listMetrics_1'
+    name: 'listMetrics(string, string, string, string, ServiceCallback<MetricListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, accountName: string, databaseRid: string, filter: string, callback: ServiceCallback<MetricListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: filter
+          type:
+            - string
+          description: '반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다. 필터링 할 수 있는 매개 변수는 name.value (메트릭 이름를 또는 여러 이름을 가질 수 있습니다), startTime, endTime 및 timeGrain입니다. 지원 되는 연산자가 게인에서'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cosmosdb.MetricListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabaseListMetricsResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listUsages_2'
+    name: 'listUsages(string, string, string, DatabaseListUsagesOptionalParams, ServiceCallback<UsagesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listUsages(resourceGroupName: string, accountName: string, databaseRid: string, options: DatabaseListUsagesOptionalParams, callback: ServiceCallback<UsagesResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: options
+          type:
+            - '@azure/arm-cosmosdb.DatabaseListUsagesOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cosmosdb.UsagesResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabaseListUsagesResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listUsages'
+    name: 'listUsages(string, string, string, Models.DatabaseListUsagesOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 데이터베이스에 대 한 사용량 (가장 최근 데이터)을 검색합니다.
+    syntax:
+      content: 'function listUsages(resourceGroupName: string, accountName: string, databaseRid: string, options?: Models.DatabaseListUsagesOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: options
+          type:
+            - Models.DatabaseListUsagesOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabaseListUsagesResponse>
+    package: '@azure/arm-cosmosdb'
+  - uid: '@azure/arm-cosmosdb.Database.listUsages_1'
+    name: 'listUsages(string, string, string, ServiceCallback<UsagesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listUsages(resourceGroupName: string, accountName: string, databaseRid: string, callback: ServiceCallback<UsagesResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Azure 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Cosmos DB 데이터베이스 계정 이름입니다.
+        - id: databaseRid
+          type:
+            - string
+          description: Cosmos DB 데이터베이스를 제거 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cosmosdb.UsagesResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabaseListUsagesResponse>
+    package: '@azure/arm-cosmosdb'
+references:
+  - uid: '@azure/arm-cosmosdb.CosmosDBManagementClientContext'
+    name: CosmosDBManagementClientContext
+    spec.typeScript:
+      - name: CosmosDBManagementClientContext
+        fullName: CosmosDBManagementClientContext
+        uid: '@azure/arm-cosmosdb.CosmosDBManagementClientContext'
+  - uid: ServiceCallback<@azure/arm-cosmosdb.MetricDefinitionsListResult>
+    name: MetricDefinitionsListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: MetricDefinitionsListResult
+        fullName: MetricDefinitionsListResult
+        uid: '@azure/arm-cosmosdb.MetricDefinitionsListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cosmosdb.MetricListResult>
+    name: MetricListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: MetricListResult
+        fullName: MetricListResult
+        uid: '@azure/arm-cosmosdb.MetricListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cosmosdb.UsagesResult>
+    name: UsagesResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UsagesResult
+        fullName: UsagesResult
+        uid: '@azure/arm-cosmosdb.UsagesResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-cosmosdb.DatabaseListUsagesOptionalParams'
+    name: DatabaseListUsagesOptionalParams
+    spec.typeScript:
+      - name: DatabaseListUsagesOptionalParams
+        fullName: DatabaseListUsagesOptionalParams
+        uid: '@azure/arm-cosmosdb.DatabaseListUsagesOptionalParams'
