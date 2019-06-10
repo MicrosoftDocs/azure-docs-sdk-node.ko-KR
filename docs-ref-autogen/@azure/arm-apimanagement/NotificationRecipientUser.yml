@@ -1,0 +1,491 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser'
+    name: NotificationRecipientUser
+    fullName: NotificationRecipientUser
+    children:
+      - '@azure/arm-apimanagement.NotificationRecipientUser.checkEntityExists'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.checkEntityExists_2'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.checkEntityExists_1'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.createOrUpdate'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.createOrUpdate_2'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.createOrUpdate_1'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.deleteMethod'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.deleteMethod_2'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.deleteMethod_1'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.listByNotification'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.listByNotification_2'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.listByNotification_1'
+      - '@azure/arm-apimanagement.NotificationRecipientUser.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="7ea7f-101">NotificationRecipientUser 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-101">Class representing a NotificationRecipientUser.</span></span>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.checkEntityExists'
+    name: 'checkEntityExists(string, string, Models.NotificationName, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="7ea7f-102">알림 받는 사람 사용자가 알림을 구독할 경우를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-102">Determine if the Notification Recipient User is subscribed to the notification.</span></span>
+    syntax:
+      content: 'function checkEntityExists(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-103">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-103">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-104">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-104">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-105">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-105">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-106">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-106">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-107">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-107">User identifier.</span></span> <span data-ttu-id="7ea7f-108">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-108">Must be unique in the current API Management service instance.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserCheckEntityExistsResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.checkEntityExists_2'
+    name: 'checkEntityExists(string, string, Models.NotificationName, string, RequestOptionsBase, ServiceCallback<boolean>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkEntityExists(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, options: RequestOptionsBase, callback: ServiceCallback<boolean>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-109">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-109">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-110">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-110">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-111">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-111">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-112">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-112">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-113">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-113">User identifier.</span></span> <span data-ttu-id="7ea7f-114">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-114">Must be unique in the current API Management service instance.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="7ea7f-115">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="7ea7f-115">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<boolean>
+          description: |
+            <span data-ttu-id="7ea7f-116">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-116">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserCheckEntityExistsResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.checkEntityExists_1'
+    name: 'checkEntityExists(string, string, Models.NotificationName, string, ServiceCallback<boolean>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkEntityExists(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, callback: ServiceCallback<boolean>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-117">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-117">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-118">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-118">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-119">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-119">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-120">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-120">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-121">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-121">User identifier.</span></span> <span data-ttu-id="7ea7f-122">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-122">Must be unique in the current API Management service instance.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<boolean>
+          description: |
+            <span data-ttu-id="7ea7f-123">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-123">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserCheckEntityExistsResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.createOrUpdate'
+    name: 'createOrUpdate(string, string, Models.NotificationName, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="7ea7f-124">API 관리 사용자의 알림 받는 사람 목록에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-124">Adds the API Management User to the list of Recipients for the Notification.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-125">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-125">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-126">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-126">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-127">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-127">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-128">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-128">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-129">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-129">User identifier.</span></span> <span data-ttu-id="7ea7f-130">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-130">Must be unique in the current API Management service instance.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserCreateOrUpdateResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.createOrUpdate_2'
+    name: 'createOrUpdate(string, string, Models.NotificationName, string, RequestOptionsBase, ServiceCallback<RecipientUserContract>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, options: RequestOptionsBase, callback: ServiceCallback<RecipientUserContract>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-131">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-131">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-132">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-132">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-133">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-133">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-134">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-134">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-135">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-135">User identifier.</span></span> <span data-ttu-id="7ea7f-136">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-136">Must be unique in the current API Management service instance.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="7ea7f-137">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="7ea7f-137">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.RecipientUserContract>
+          description: |
+            <span data-ttu-id="7ea7f-138">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-138">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserCreateOrUpdateResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.createOrUpdate_1'
+    name: 'createOrUpdate(string, string, Models.NotificationName, string, ServiceCallback<RecipientUserContract>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, callback: ServiceCallback<RecipientUserContract>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-139">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-139">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-140">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-140">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-141">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-141">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-142">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-142">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-143">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-143">User identifier.</span></span> <span data-ttu-id="7ea7f-144">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-144">Must be unique in the current API Management service instance.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.RecipientUserContract>
+          description: |
+            <span data-ttu-id="7ea7f-145">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-145">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserCreateOrUpdateResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.deleteMethod'
+    name: 'deleteMethod(string, string, Models.NotificationName, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="7ea7f-146">알림 목록에서 API Management 사용자를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-146">Removes the API Management user from the list of Notification.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-147">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-147">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-148">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-148">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-149">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-149">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-150">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-150">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-151">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-151">User identifier.</span></span> <span data-ttu-id="7ea7f-152">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-152">Must be unique in the current API Management service instance.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.deleteMethod_2'
+    name: 'deleteMethod(string, string, Models.NotificationName, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-153">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-153">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-154">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-154">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-155">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-155">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-156">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-156">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-157">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-157">User identifier.</span></span> <span data-ttu-id="7ea7f-158">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-158">Must be unique in the current API Management service instance.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="7ea7f-159">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="7ea7f-159">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="7ea7f-160">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-160">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.deleteMethod_1'
+    name: 'deleteMethod(string, string, Models.NotificationName, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, userId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-161">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-161">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-162">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-162">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-163">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-163">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-164">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-164">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: userId
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-165">사용자 식별자</span><span class="sxs-lookup"><span data-stu-id="7ea7f-165">User identifier.</span></span> <span data-ttu-id="7ea7f-166">현재 API Management 서비스 인스턴스에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-166">Must be unique in the current API Management service instance.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="7ea7f-167">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-167">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.listByNotification'
+    name: 'listByNotification(string, string, Models.NotificationName, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="7ea7f-168">알림 구독 알림 받는 사람 사용자 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-168">Gets the list of the Notification Recipient User subscribed to the notification.</span></span>
+    syntax:
+      content: 'function listByNotification(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-169">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-169">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-170">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-170">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-171">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-171">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-172">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-172">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserListByNotificationResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.listByNotification_2'
+    name: 'listByNotification(string, string, Models.NotificationName, RequestOptionsBase, ServiceCallback<RecipientUserCollection>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByNotification(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, options: RequestOptionsBase, callback: ServiceCallback<RecipientUserCollection>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-173">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-173">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-174">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-174">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-175">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-175">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-176">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-176">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="7ea7f-177">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="7ea7f-177">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.RecipientUserCollection>
+          description: |
+            <span data-ttu-id="7ea7f-178">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-178">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserListByNotificationResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.listByNotification_1'
+    name: 'listByNotification(string, string, Models.NotificationName, ServiceCallback<RecipientUserCollection>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByNotification(resourceGroupName: string, serviceName: string, notificationName: Models.NotificationName, callback: ServiceCallback<RecipientUserCollection>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-179">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-179">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="7ea7f-180">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-180">The name of the API Management service.</span></span>
+        - id: notificationName
+          type:
+            - Models.NotificationName
+          description: '<span data-ttu-id="7ea7f-181">알림 이름 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-181">Notification Name Identifier.</span></span> <span data-ttu-id="7ea7f-182">가능한 값은 다음과 같습니다. ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''숨은 참조'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'' '' QuotaLimitApproachingPublisherNotificationMessage''</span><span class="sxs-lookup"><span data-stu-id="7ea7f-182">Possible values include: ''RequestPublisherNotificationMessage'', ''PurchasePublisherNotificationMessage'', ''NewApplicationNotificationMessage'', ''BCC'', ''NewIssuePublisherNotificationMessage'', ''AccountClosedPublisher'', ''QuotaLimitApproachingPublisherNotificationMessage''</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.RecipientUserCollection>
+          description: |
+            <span data-ttu-id="7ea7f-183">콜백</span><span class="sxs-lookup"><span data-stu-id="7ea7f-183">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.NotificationRecipientUserListByNotificationResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.NotificationRecipientUser.constructor'
+    name: NotificationRecipientUser(ApiManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="7ea7f-184">NotificationRecipientUser를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-184">Create a NotificationRecipientUser.</span></span>
+    syntax:
+      content: 'new NotificationRecipientUser(client: ApiManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-apimanagement.ApiManagementClientContext'
+          description: |
+            <span data-ttu-id="7ea7f-185">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="7ea7f-185">Reference to the service client.</span></span>
+    package: '@azure/arm-apimanagement'
+references:
+  - uid: '@azure/arm-apimanagement.ApiManagementClientContext'
+    name: ApiManagementClientContext
+    spec.typeScript:
+      - name: ApiManagementClientContext
+        fullName: ApiManagementClientContext
+        uid: '@azure/arm-apimanagement.ApiManagementClientContext'
+  - uid: ServiceCallback<@azure/arm-apimanagement.RecipientUserContract>
+    name: RecipientUserContract>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RecipientUserContract
+        fullName: RecipientUserContract
+        uid: '@azure/arm-apimanagement.RecipientUserContract'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-apimanagement.RecipientUserCollection>
+    name: RecipientUserCollection>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RecipientUserCollection
+        fullName: RecipientUserCollection
+        uid: '@azure/arm-apimanagement.RecipientUserCollection'
+      - name: '>'
+        fullName: '>'

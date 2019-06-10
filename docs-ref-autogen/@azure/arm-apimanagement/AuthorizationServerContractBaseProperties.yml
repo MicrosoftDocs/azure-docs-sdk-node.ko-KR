@@ -1,0 +1,222 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties'
+    name: AuthorizationServerContractBaseProperties
+    fullName: AuthorizationServerContractBaseProperties
+    children:
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.authorizationMethods'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.bearerTokenSendingMethods'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.clientAuthenticationMethod'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.clientSecret'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.defaultScope'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.description'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.resourceOwnerPassword'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.resourceOwnerUsername'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.supportState'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.tokenBodyParameters'
+      - '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.tokenEndpoint'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="8972a-101">외부 OAuth 권한 부여 서버 업데이트 설정 계약입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-101">External OAuth authorization server Update settings contract.</span></span>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.authorizationMethods'
+    name: authorizationMethods
+    fullName: authorizationMethods
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-102">권한 부여 끝점에서 지 원하는 HTTP 동사입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-102">HTTP verbs supported by the authorization endpoint.</span></span> <span data-ttu-id="8972a-103">GET 항상 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-103">GET must be always present.</span></span> <span data-ttu-id="8972a-104">게시물은 선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-104">POST is optional.</span></span>
+    optional: true
+    syntax:
+      content: 'authorizationMethods?: AuthorizationMethod[]'
+      return:
+        type:
+          - '@azure/arm-apimanagement.AuthorizationMethod[]'
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.bearerTokenSendingMethods'
+    name: bearerTokenSendingMethods
+    fullName: bearerTokenSendingMethods
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-105">토큰은 API에 전달 하는 액세스 하 여 메커니즘을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-105">Specifies the mechanism by which access token is passed to the API.</span></span>
+    optional: true
+    syntax:
+      content: 'bearerTokenSendingMethods?: BearerTokenSendingMethod[]'
+      return:
+        type:
+          - '@azure/arm-apimanagement.BearerTokenSendingMethod[]'
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.clientAuthenticationMethod'
+    name: clientAuthenticationMethod
+    fullName: clientAuthenticationMethod
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="8972a-106">이 권한 부여 서버의 토큰 끝점에서 지 원하는 인증 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-106">Method of authentication supported by the token endpoint of this authorization server.</span></span>
+      <span data-ttu-id="8972a-107">가능한 값에는 기본 및/또는 본문은입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-107">Possible values are Basic and/or Body.</span></span> <span data-ttu-id="8972a-108">본문을 지정 하면 클라이언트 자격 증명 및 기타 매개 변수는 응용 프로그램/x-www-형식-urlencoded 형식의 요청 본문에 전달 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-108">When Body is specified, client credentials and other parameters are passed within the request body in the application/x-www-form-urlencoded format.</span></span>
+    optional: true
+    syntax:
+      content: 'clientAuthenticationMethod?: ClientAuthenticationMethod[]'
+      return:
+        type:
+          - '@azure/arm-apimanagement.ClientAuthenticationMethod[]'
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.clientSecret'
+    name: clientSecret
+    fullName: clientSecret
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-109">이 권한 부여 서버를 사용 하 여 등록 하는 클라이언트 또는 앱 암호입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-109">Client or app secret registered with this authorization server.</span></span>
+    optional: true
+    syntax:
+      content: 'clientSecret?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.defaultScope'
+    name: defaultScope
+    fullName: defaultScope
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-110">액세스 토큰 범위는 기본적으로 요청 될 것입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-110">Access token scope that is going to be requested by default.</span></span> <span data-ttu-id="8972a-111">API 수준에서 재정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-111">Can be overridden at the API level.</span></span> <span data-ttu-id="8972a-112">공백으로 구분 된 값을 포함 하는 문자열의 형태로 제공 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-112">Should be provided in the form of a string containing space-delimited values.</span></span>
+    optional: true
+    syntax:
+      content: 'defaultScope?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.description'
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-113">권한 부여 서버의 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-113">Description of the authorization server.</span></span> <span data-ttu-id="8972a-114">HTML 서식 지정 태그를 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-114">Can contain HTML formatting tags.</span></span>
+    optional: true
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.resourceOwnerPassword'
+    name: resourceOwnerPassword
+    fullName: resourceOwnerPassword
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-115">지정할 수 있습니다 필요에 따라이 권한 부여 서버에서 리소스 소유자 암호 권한 유형이 지원 되는 경우.</span><span class="sxs-lookup"><span data-stu-id="8972a-115">Can be optionally specified when resource owner password grant type is supported by this authorization server.</span></span> <span data-ttu-id="8972a-116">기본 리소스 소유자 암호입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-116">Default resource owner password.</span></span>
+    optional: true
+    syntax:
+      content: 'resourceOwnerPassword?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.resourceOwnerUsername'
+    name: resourceOwnerUsername
+    fullName: resourceOwnerUsername
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-117">지정할 수 있습니다 필요에 따라이 권한 부여 서버에서 리소스 소유자 암호 권한 유형이 지원 되는 경우.</span><span class="sxs-lookup"><span data-stu-id="8972a-117">Can be optionally specified when resource owner password grant type is supported by this authorization server.</span></span> <span data-ttu-id="8972a-118">기본 리소스 소유자 사용자 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-118">Default resource owner username.</span></span>
+    optional: true
+    syntax:
+      content: 'resourceOwnerUsername?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.supportState'
+    name: supportState
+    fullName: supportState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="8972a-119">True 인 경우 권한 부여 서버는 응답에 권한 부여 요청에서 상태 매개 변수를 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-119">If true, authorization server will include state parameter from the authorization request to its response.</span></span> <span data-ttu-id="8972a-120">클라이언트는 프로토콜 보안을 강화 하려면 상태 매개 변수를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-120">Client may use state parameter to raise protocol security.</span></span>'
+    optional: true
+    syntax:
+      content: 'supportState?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.tokenBodyParameters'
+    name: tokenBodyParameters
+    fullName: tokenBodyParameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="8972a-121">즉, 이름 및 값 문자열 속성을 사용 하 여 개체의 JSON 배열을 나타내는이 권한 부여 서버의 토큰 끝점에 필요한 추가 매개 변수 {"name": "이름 값", "value": "value"}.</span><span class="sxs-lookup"><span data-stu-id="8972a-121">Additional parameters required by the token endpoint of this authorization server represented as an array of JSON objects with name and value string properties, i.e. {"name" : "name value", "value": "a value"}.</span></span>'
+    optional: true
+    syntax:
+      content: 'tokenBodyParameters?: TokenBodyParameterContract[]'
+      return:
+        type:
+          - '@azure/arm-apimanagement.TokenBodyParameterContract[]'
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.AuthorizationServerContractBaseProperties.tokenEndpoint'
+    name: tokenEndpoint
+    fullName: tokenEndpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8972a-122">OAuth 토큰 끝점입니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-122">OAuth token endpoint.</span></span> <span data-ttu-id="8972a-123">참조 되는 엔터티에 대 한 절대 URI를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="8972a-123">Contains absolute URI to entity being referenced.</span></span>
+    optional: true
+    syntax:
+      content: 'tokenEndpoint?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-apimanagement'
+references:
+  - uid: '@azure/arm-apimanagement.AuthorizationMethod[]'
+    name: 'AuthorizationMethod[]'
+    spec.typeScript:
+      - name: AuthorizationMethod
+        fullName: AuthorizationMethod
+        uid: '@azure/arm-apimanagement.AuthorizationMethod'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-apimanagement.BearerTokenSendingMethod[]'
+    name: 'BearerTokenSendingMethod[]'
+    spec.typeScript:
+      - name: BearerTokenSendingMethod
+        fullName: BearerTokenSendingMethod
+        uid: '@azure/arm-apimanagement.BearerTokenSendingMethod'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-apimanagement.ClientAuthenticationMethod[]'
+    name: 'ClientAuthenticationMethod[]'
+    spec.typeScript:
+      - name: ClientAuthenticationMethod
+        fullName: ClientAuthenticationMethod
+        uid: '@azure/arm-apimanagement.ClientAuthenticationMethod'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-apimanagement.TokenBodyParameterContract[]'
+    name: 'TokenBodyParameterContract[]'
+    spec.typeScript:
+      - name: TokenBodyParameterContract
+        fullName: TokenBodyParameterContract
+        uid: '@azure/arm-apimanagement.TokenBodyParameterContract'
+      - name: '[]'
+        fullName: '[]'
