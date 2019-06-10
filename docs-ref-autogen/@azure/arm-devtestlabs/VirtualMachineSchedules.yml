@@ -1,0 +1,799 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules'
+    name: VirtualMachineSchedules
+    fullName: VirtualMachineSchedules
+    children:
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.beginExecute'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.createOrUpdate'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.createOrUpdate_2'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.createOrUpdate_1'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.deleteMethod'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.deleteMethod_2'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.deleteMethod_1'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.execute'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.get'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.get_1'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.get_2'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.list'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.list_1'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.list_2'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.listNext'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.listNext_2'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.listNext_1'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.update'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.update_2'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.update_1'
+      - '@azure/arm-devtestlabs.VirtualMachineSchedules.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="57809-101">VirtualMachineSchedules 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-101">Class representing a VirtualMachineSchedules.</span></span>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.beginExecute'
+    name: 'beginExecute(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-102">일정을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-102">Execute a schedule.</span></span> <span data-ttu-id="57809-103">이 작업은 완료하는 데 시간이 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="57809-103">This operation can take a while to complete.</span></span>
+    syntax:
+      content: 'function beginExecute(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-104">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-104">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-105">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-105">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-106">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-106">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-107">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-107">The name of the schedule.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, string, Schedule, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-108">페이지를 만들거나 기존 일정을 대체 합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-108">Create or replace an existing schedule.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, schedule: Schedule, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-109">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-109">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-110">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-110">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-111">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-111">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-112">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-112">The name of the schedule.</span></span>
+        - id: schedule
+          type:
+            - '@azure/arm-devtestlabs.Schedule'
+          description: <span data-ttu-id="57809-113">일정입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-113">A schedule.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesCreateOrUpdateResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.createOrUpdate_2'
+    name: 'createOrUpdate(string, string, string, string, Schedule, RequestOptionsBase, ServiceCallback<Schedule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, schedule: Schedule, options: RequestOptionsBase, callback: ServiceCallback<Schedule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-114">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-114">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-115">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-115">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-116">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-116">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-117">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-117">The name of the schedule.</span></span>
+        - id: schedule
+          type:
+            - '@azure/arm-devtestlabs.Schedule'
+          description: <span data-ttu-id="57809-118">일정입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-118">A schedule.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="57809-119">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="57809-119">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.Schedule>
+          description: |
+            <span data-ttu-id="57809-120">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-120">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesCreateOrUpdateResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.createOrUpdate_1'
+    name: 'createOrUpdate(string, string, string, string, Schedule, ServiceCallback<Schedule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, schedule: Schedule, callback: ServiceCallback<Schedule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-121">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-121">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-122">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-122">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-123">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-123">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-124">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-124">The name of the schedule.</span></span>
+        - id: schedule
+          type:
+            - '@azure/arm-devtestlabs.Schedule'
+          description: <span data-ttu-id="57809-125">일정입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-125">A schedule.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.Schedule>
+          description: |
+            <span data-ttu-id="57809-126">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-126">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesCreateOrUpdateResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.deleteMethod'
+    name: 'deleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-127">일정을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-127">Delete schedule.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-128">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-128">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-129">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-129">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-130">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-130">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-131">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-131">The name of the schedule.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.deleteMethod_2'
+    name: 'deleteMethod(string, string, string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-132">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-132">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-133">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-133">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-134">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-134">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-135">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-135">The name of the schedule.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="57809-136">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="57809-136">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="57809-137">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-137">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.deleteMethod_1'
+    name: 'deleteMethod(string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-138">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-138">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-139">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-139">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-140">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-140">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-141">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-141">The name of the schedule.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="57809-142">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-142">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.execute'
+    name: 'execute(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-143">일정을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-143">Execute a schedule.</span></span> <span data-ttu-id="57809-144">이 작업은 완료하는 데 시간이 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="57809-144">This operation can take a while to complete.</span></span>
+    syntax:
+      content: 'function execute(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-145">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-145">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-146">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-146">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-147">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-147">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-148">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-148">The name of the schedule.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.get'
+    name: 'get(string, string, string, string, Models.VirtualMachineSchedulesGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-149">일정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="57809-149">Get schedule.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, options?: Models.VirtualMachineSchedulesGetOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-150">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-150">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-151">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-151">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-152">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-152">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-153">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-153">The name of the schedule.</span></span>
+        - id: options
+          type:
+            - Models.VirtualMachineSchedulesGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesGetResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<Schedule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, callback: ServiceCallback<Schedule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-154">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-154">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-155">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-155">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-156">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-156">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-157">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-157">The name of the schedule.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.Schedule>
+          description: |
+            <span data-ttu-id="57809-158">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesGetResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.get_2'
+    name: 'get(string, string, string, string, VirtualMachineSchedulesGetOptionalParams, ServiceCallback<Schedule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, options: VirtualMachineSchedulesGetOptionalParams, callback: ServiceCallback<Schedule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-159">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-159">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-160">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-160">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-161">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-161">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-162">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-162">The name of the schedule.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-devtestlabs.VirtualMachineSchedulesGetOptionalParams'
+          description: <span data-ttu-id="57809-163">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="57809-163">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.Schedule>
+          description: |
+            <span data-ttu-id="57809-164">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-164">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesGetResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.list'
+    name: 'list(string, string, string, Models.VirtualMachineSchedulesListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-165">지정된 된 가상 컴퓨터에 일정을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-165">List schedules in a given virtual machine.</span></span>
+    syntax:
+      content: 'function list(resourceGroupName: string, labName: string, virtualMachineName: string, options?: Models.VirtualMachineSchedulesListOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-166">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-166">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-167">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-167">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-168">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-168">The name of the virtual machine.</span></span>
+        - id: options
+          type:
+            - Models.VirtualMachineSchedulesListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesListResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.list_1'
+    name: 'list(string, string, string, ServiceCallback<ScheduleList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(resourceGroupName: string, labName: string, virtualMachineName: string, callback: ServiceCallback<ScheduleList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-169">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-169">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-170">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-170">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-171">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-171">The name of the virtual machine.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.ScheduleList>
+          description: |
+            <span data-ttu-id="57809-172">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-172">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesListResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.list_2'
+    name: 'list(string, string, string, VirtualMachineSchedulesListOptionalParams, ServiceCallback<ScheduleList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(resourceGroupName: string, labName: string, virtualMachineName: string, options: VirtualMachineSchedulesListOptionalParams, callback: ServiceCallback<ScheduleList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-173">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-173">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-174">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-174">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-175">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-175">The name of the virtual machine.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-devtestlabs.VirtualMachineSchedulesListOptionalParams'
+          description: <span data-ttu-id="57809-176">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="57809-176">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.ScheduleList>
+          description: |
+            <span data-ttu-id="57809-177">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-177">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesListResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-178">지정된 된 가상 컴퓨터에 일정을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-178">List schedules in a given virtual machine.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="57809-179">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-179">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesListNextResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ScheduleList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ScheduleList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="57809-180">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-180">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="57809-181">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="57809-181">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.ScheduleList>
+          description: |
+            <span data-ttu-id="57809-182">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesListNextResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.listNext_1'
+    name: 'listNext(string, ServiceCallback<ScheduleList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ScheduleList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="57809-183">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-183">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.ScheduleList>
+          description: |
+            <span data-ttu-id="57809-184">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-184">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesListNextResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.update'
+    name: 'update(string, string, string, string, ScheduleFragment, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-185">일정의 속성을 수정 합니다.</span><span class="sxs-lookup"><span data-stu-id="57809-185">Modify properties of schedules.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, schedule: ScheduleFragment, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-186">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-186">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-187">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-187">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-188">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-188">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-189">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-189">The name of the schedule.</span></span>
+        - id: schedule
+          type:
+            - '@azure/arm-devtestlabs.ScheduleFragment'
+          description: <span data-ttu-id="57809-190">일정입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-190">A schedule.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesUpdateResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.update_2'
+    name: 'update(string, string, string, string, ScheduleFragment, RequestOptionsBase, ServiceCallback<Schedule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, schedule: ScheduleFragment, options: RequestOptionsBase, callback: ServiceCallback<Schedule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-191">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-191">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-192">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-192">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-193">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-193">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-194">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-194">The name of the schedule.</span></span>
+        - id: schedule
+          type:
+            - '@azure/arm-devtestlabs.ScheduleFragment'
+          description: <span data-ttu-id="57809-195">일정입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-195">A schedule.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="57809-196">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="57809-196">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.Schedule>
+          description: |
+            <span data-ttu-id="57809-197">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-197">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesUpdateResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.update_1'
+    name: 'update(string, string, string, string, ScheduleFragment, ServiceCallback<Schedule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, labName: string, virtualMachineName: string, name: string, schedule: ScheduleFragment, callback: ServiceCallback<Schedule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="57809-198">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="57809-198">The name of the resource group.</span></span>
+        - id: labName
+          type:
+            - string
+          description: <span data-ttu-id="57809-199">랩의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-199">The name of the lab.</span></span>
+        - id: virtualMachineName
+          type:
+            - string
+          description: <span data-ttu-id="57809-200">가상 머신의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-200">The name of the virtual machine.</span></span>
+        - id: name
+          type:
+            - string
+          description: <span data-ttu-id="57809-201">일정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-201">The name of the schedule.</span></span>
+        - id: schedule
+          type:
+            - '@azure/arm-devtestlabs.ScheduleFragment'
+          description: <span data-ttu-id="57809-202">일정입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-202">A schedule.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-devtestlabs.Schedule>
+          description: |
+            <span data-ttu-id="57809-203">콜백</span><span class="sxs-lookup"><span data-stu-id="57809-203">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VirtualMachineSchedulesUpdateResponse>
+    package: '@azure/arm-devtestlabs'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.constructor'
+    name: VirtualMachineSchedules(DevTestLabsClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="57809-204">VirtualMachineSchedules를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="57809-204">Create a VirtualMachineSchedules.</span></span>
+    syntax:
+      content: 'new VirtualMachineSchedules(client: DevTestLabsClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-devtestlabs.DevTestLabsClientContext'
+          description: |
+            <span data-ttu-id="57809-205">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="57809-205">Reference to the service client.</span></span>
+    package: '@azure/arm-devtestlabs'
+references:
+  - uid: '@azure/arm-devtestlabs.DevTestLabsClientContext'
+    name: DevTestLabsClientContext
+    spec.typeScript:
+      - name: DevTestLabsClientContext
+        fullName: DevTestLabsClientContext
+        uid: '@azure/arm-devtestlabs.DevTestLabsClientContext'
+  - uid: '@azure/arm-devtestlabs.Schedule'
+    name: Schedule
+    spec.typeScript:
+      - name: Schedule
+        fullName: Schedule
+        uid: '@azure/arm-devtestlabs.Schedule'
+  - uid: ServiceCallback<@azure/arm-devtestlabs.Schedule>
+    name: Schedule>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Schedule
+        fullName: Schedule
+        uid: '@azure/arm-devtestlabs.Schedule'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedulesGetOptionalParams'
+    name: VirtualMachineSchedulesGetOptionalParams
+    spec.typeScript:
+      - name: VirtualMachineSchedulesGetOptionalParams
+        fullName: VirtualMachineSchedulesGetOptionalParams
+        uid: '@azure/arm-devtestlabs.VirtualMachineSchedulesGetOptionalParams'
+  - uid: ServiceCallback<@azure/arm-devtestlabs.ScheduleList>
+    name: ScheduleList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ScheduleList
+        fullName: ScheduleList
+        uid: '@azure/arm-devtestlabs.ScheduleList'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-devtestlabs.VirtualMachineSchedulesListOptionalParams'
+    name: VirtualMachineSchedulesListOptionalParams
+    spec.typeScript:
+      - name: VirtualMachineSchedulesListOptionalParams
+        fullName: VirtualMachineSchedulesListOptionalParams
+        uid: '@azure/arm-devtestlabs.VirtualMachineSchedulesListOptionalParams'
+  - uid: '@azure/arm-devtestlabs.ScheduleFragment'
+    name: ScheduleFragment
+    spec.typeScript:
+      - name: ScheduleFragment
+        fullName: ScheduleFragment
+        uid: '@azure/arm-devtestlabs.ScheduleFragment'

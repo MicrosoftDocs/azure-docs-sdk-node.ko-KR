@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.SessionReceiverOptions'
+    name: SessionReceiverOptions
+    fullName: SessionReceiverOptions
+    children:
+      - '@azure/service-bus.SessionReceiverOptions.maxSessionAutoRenewLockDurationInSeconds'
+      - '@azure/service-bus.SessionReceiverOptions.sessionId'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="dbfe7-101">에 전달 된 옵션에 설명 합니다 `createReceiver` 메서드를 사용 하도록 설정 하는 세션에 있는 큐/구독을 사용 하는 경우.</span><span class="sxs-lookup"><span data-stu-id="dbfe7-101">Describes the options passed to the `createReceiver` method when using a Queue/Subscription that has sessions enabled.</span></span>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiverOptions.maxSessionAutoRenewLockDurationInSeconds'
+    name: maxSessionAutoRenewLockDurationInSeconds
+    fullName: maxSessionAutoRenewLockDurationInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="dbfe7-102">최대 기간 (초)는 세션에 대 한 잠금을 sdk에서 자동으로 갱신 됩니다.</span><span class="sxs-lookup"><span data-stu-id="dbfe7-102">The maximum duration in seconds until which, the lock on the session will be renewed automatically by the sdk.</span></span>
+      - <span data-ttu-id="dbfe7-103">**기본**: `300` 초 (5 분)입니다.</span><span class="sxs-lookup"><span data-stu-id="dbfe7-103">**Default**: `300` seconds (5 minutes).</span></span>
+      - <span data-ttu-id="dbfe7-104">**Autolock 갱신 하지 않으려면**, 설정 `0`합니다.</span><span class="sxs-lookup"><span data-stu-id="dbfe7-104">**To disable autolock renewal**, set this to `0`.</span></span>
+    optional: true
+    syntax:
+      content: 'maxSessionAutoRenewLockDurationInSeconds?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionReceiverOptions.sessionId'
+    name: sessionId
+    fullName: sessionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="dbfe7-105">메시지 수신 해야 하는 세션의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="dbfe7-105">The id of the session from which messages need to be received.</span></span> <span data-ttu-id="dbfe7-106">Null 이거나 정의 되지 않은 제공 하는 경우 Service Bus는 사용 가능한 세션에서 임의 세션을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="dbfe7-106">If null or undefined is provided, Service Bus chooses a random session from available sessions.</span></span>'
+    syntax:
+      content: 'sessionId: string | undefined'
+      return:
+        type:
+          - string | undefined
+    package: '@azure/service-bus'
