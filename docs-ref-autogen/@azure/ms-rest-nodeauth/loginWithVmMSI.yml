@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/ms-rest-nodeauth.loginWithVmMSI'
+    name: loginWithVmMSI()
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: |
+      이 메서드를 사용 하기 전에 az cli를 설치 하세요 https://github.com/Azure/azure-cli/releases합니다.
+      Az cli를 사용 하 여 프로 비전 된 Azure 가상 머신에 있고 MSI가 사용 하도록 설정 하는 경우 VM에서 인증 토큰을 가져오려면 다음이 메서드를 사용할 수 있습니다.
+      새 VM을 만들려면 MSI를 사용 하도록 설정,이 명령을 실행 하세요: az vm 만들기-g < resource_group_name >-n < vm_name >-할당 id-이미지 < os_image_name > 참고: 위의 명령에서 50342는 기본 포트를 사용 하 여 호스트에 서비스 끝점을 사용 하도록 설정
+
+      이미 프로 비전 된 VM에서 MSI를 사용 하도록 설정 하려면 다음 명령을 실행 합니다: az vm identity assign-g < resource_group_name >-n < vm_name >-< custom_port_number > 포트
+
+      이 명령에 대 한 자세한 내용을 보려면를 실행 하세요: az vm identity assign-h
+
+      Azure 가상 머신에서 실행 되는 id 서비스를 사용 하 여 인증 합니다.
+      이 메서드는 VM에 호스팅된 인증 서비스에 요청을 수행 하 고 액세스 토큰을 가져옵니다.
+    syntax:
+      content: function loginWithVmMSI()
+      parameters: []
+      return:
+        type:
+          - Promise<@azure/ms-rest-nodeauth.MSIVmTokenCredentials>
+    package: '@azure/ms-rest-nodeauth'
+references:
+  - uid: Promise<@azure/ms-rest-nodeauth.MSIVmTokenCredentials>
+    name: MSIVmTokenCredentials>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: MSIVmTokenCredentials
+        fullName: MSIVmTokenCredentials
+        uid: '@azure/ms-rest-nodeauth.MSIVmTokenCredentials'
+      - name: '>'
+        fullName: '>'
