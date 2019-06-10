@@ -1,0 +1,993 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-batchai.Jobs'
+    name: Jobs
+    fullName: Jobs
+    children:
+      - '@azure/arm-batchai.Jobs.beginCreate'
+      - '@azure/arm-batchai.Jobs.beginDeleteMethod'
+      - '@azure/arm-batchai.Jobs.beginTerminate'
+      - '@azure/arm-batchai.Jobs.create'
+      - '@azure/arm-batchai.Jobs.deleteMethod'
+      - '@azure/arm-batchai.Jobs.get'
+      - '@azure/arm-batchai.Jobs.get_2'
+      - '@azure/arm-batchai.Jobs.get_1'
+      - '@azure/arm-batchai.Jobs.constructor'
+      - '@azure/arm-batchai.Jobs.listByExperiment_2'
+      - '@azure/arm-batchai.Jobs.listByExperiment'
+      - '@azure/arm-batchai.Jobs.listByExperiment_1'
+      - '@azure/arm-batchai.Jobs.listByExperimentNext'
+      - '@azure/arm-batchai.Jobs.listByExperimentNext_2'
+      - '@azure/arm-batchai.Jobs.listByExperimentNext_1'
+      - '@azure/arm-batchai.Jobs.listOutputFiles'
+      - '@azure/arm-batchai.Jobs.listOutputFiles_2'
+      - '@azure/arm-batchai.Jobs.listOutputFiles_1'
+      - '@azure/arm-batchai.Jobs.listOutputFilesNext'
+      - '@azure/arm-batchai.Jobs.listOutputFilesNext_2'
+      - '@azure/arm-batchai.Jobs.listOutputFilesNext_1'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformation'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformation_2'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformation_1'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_2'
+      - '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_1'
+      - '@azure/arm-batchai.Jobs.terminate'
+    langs:
+      - typeScript
+    type: class
+    summary: 작업을 나타내는 클래스입니다.
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.beginCreate'
+    name: 'beginCreate(string, string, string, string, JobCreateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 실험에서 작업을 만듭니다.
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, parameters: JobCreateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-batchai.JobCreateParameters'
+          description: 작업을 만들 수 있도록 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업을 삭제합니다.
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.beginTerminate'
+    name: 'beginTerminate(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업을 종료합니다.
+    syntax:
+      content: 'function beginTerminate(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.create'
+    name: 'create(string, string, string, string, JobCreateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 실험에서 작업을 만듭니다.
+    syntax:
+      content: 'function create(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, parameters: JobCreateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-batchai.JobCreateParameters'
+          description: 작업을 만들 수 있도록 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsCreateResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.deleteMethod'
+    name: 'deleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업을 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.get'
+    name: 'get(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업에 대 한 정보를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.get_2'
+    name: 'get(string, string, string, string, RequestOptionsBase, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options: RequestOptionsBase, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.Job>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.Job>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.constructor'
+    name: Jobs(BatchAIManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 작업을 만듭니다.
+    syntax:
+      content: 'new Jobs(client: BatchAIManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-batchai.BatchAIManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperiment_2'
+    name: 'listByExperiment(string, string, string, JobsListByExperimentOptionalParams, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperiment(resourceGroupName: string, workspaceName: string, experimentName: string, options: JobsListByExperimentOptionalParams, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - '@azure/arm-batchai.JobsListByExperimentOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperiment'
+    name: 'listByExperiment(string, string, string, Models.JobsListByExperimentOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 실험 내에서 작업의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByExperiment(resourceGroupName: string, workspaceName: string, experimentName: string, options?: Models.JobsListByExperimentOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - Models.JobsListByExperimentOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperiment_1'
+    name: 'listByExperiment(string, string, string, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperiment(resourceGroupName: string, workspaceName: string, experimentName: string, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperimentNext'
+    name: 'listByExperimentNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 실험 내에서 작업의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByExperimentNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperimentNext_2'
+    name: 'listByExperimentNext(string, RequestOptionsBase, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperimentNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listByExperimentNext_1'
+    name: 'listByExperimentNext(string, ServiceCallback<JobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByExperimentNext(nextPageLink: string, callback: ServiceCallback<JobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.JobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListByExperimentNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFiles'
+    name: 'listOutputFiles(string, string, string, string, JobsListOutputFilesOptions, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: (Azure 파일 공유 또는 Azure Storage 컨테이너의 출력 디렉터리 경우) 작업의 출력 디렉터리의 지정 된 디렉터리 내의 모든 파일과 디렉터리를 나열 합니다.
+    syntax:
+      content: 'function listOutputFiles(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, jobsListOutputFilesOptions: JobsListOutputFilesOptions, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobsListOutputFilesOptions
+          type:
+            - '@azure/arm-batchai.JobsListOutputFilesOptions'
+          description: 작업에 대 한 추가 매개 변수
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFiles_2'
+    name: 'listOutputFiles(string, string, string, string, JobsListOutputFilesOptions, RequestOptionsBase, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFiles(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, jobsListOutputFilesOptions: JobsListOutputFilesOptions, options: RequestOptionsBase, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobsListOutputFilesOptions
+          type:
+            - '@azure/arm-batchai.JobsListOutputFilesOptions'
+          description: 작업에 대 한 추가 매개 변수
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFiles_1'
+    name: 'listOutputFiles(string, string, string, string, JobsListOutputFilesOptions, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFiles(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, jobsListOutputFilesOptions: JobsListOutputFilesOptions, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobsListOutputFilesOptions
+          type:
+            - '@azure/arm-batchai.JobsListOutputFilesOptions'
+          description: 작업에 대 한 추가 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFilesNext'
+    name: 'listOutputFilesNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: (Azure 파일 공유 또는 Azure Storage 컨테이너의 출력 디렉터리 경우) 작업의 출력 디렉터리의 지정 된 디렉터리 내의 모든 파일과 디렉터리를 나열 합니다.
+    syntax:
+      content: 'function listOutputFilesNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFilesNext_2'
+    name: 'listOutputFilesNext(string, RequestOptionsBase, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFilesNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listOutputFilesNext_1'
+    name: 'listOutputFilesNext(string, ServiceCallback<FileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listOutputFilesNext(nextPageLink: string, callback: ServiceCallback<FileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.FileListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListOutputFilesNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformation'
+    name: 'listRemoteLoginInformation(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 현재 사용 중인 기존 목록을 가져옵니다 작업 실행에 사용 된 노드. 노드 ID를 포함 하는 반환 된 정보를 해당 공용 IP 및 SSH 포트입니다.
+    syntax:
+      content: 'function listRemoteLoginInformation(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformation_2'
+    name: 'listRemoteLoginInformation(string, string, string, string, RequestOptionsBase, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformation(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options: RequestOptionsBase, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformation_1'
+    name: 'listRemoteLoginInformation(string, string, string, string, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformation(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext'
+    name: 'listRemoteLoginInformationNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 현재 사용 중인 기존 목록을 가져옵니다 작업 실행에 사용 된 노드. 노드 ID를 포함 하는 반환 된 정보를 해당 공용 IP 및 SSH 포트입니다.
+    syntax:
+      content: 'function listRemoteLoginInformationNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_2'
+    name: 'listRemoteLoginInformationNext(string, RequestOptionsBase, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformationNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.listRemoteLoginInformationNext_1'
+    name: 'listRemoteLoginInformationNext(string, ServiceCallback<RemoteLoginInformationListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRemoteLoginInformationNext(nextPageLink: string, callback: ServiceCallback<RemoteLoginInformationListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobsListRemoteLoginInformationNextResponse>
+    package: '@azure/arm-batchai'
+  - uid: '@azure/arm-batchai.Jobs.terminate'
+    name: 'terminate(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업을 종료합니다.
+    syntax:
+      content: 'function terminate(resourceGroupName: string, workspaceName: string, experimentName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스가 속한 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: 작업 영역의 이름입니다. 작업 영역 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: experimentName
+          type:
+            - string
+          description: 실험의 이름입니다. 실험 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: jobName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 작업의 이름입니다. 작업 이름 대시 (-) 및 밑줄 (_)와 함께 영숫자 문자 조합을 포함할 수 있습니다. 이름은 1에서 64 자 사이 여야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-batchai'
+references:
+  - uid: '@azure/arm-batchai.BatchAIManagementClientContext'
+    name: BatchAIManagementClientContext
+    spec.typeScript:
+      - name: BatchAIManagementClientContext
+        fullName: BatchAIManagementClientContext
+        uid: '@azure/arm-batchai.BatchAIManagementClientContext'
+  - uid: '@azure/arm-batchai.JobCreateParameters'
+    name: JobCreateParameters
+    spec.typeScript:
+      - name: JobCreateParameters
+        fullName: JobCreateParameters
+        uid: '@azure/arm-batchai.JobCreateParameters'
+  - uid: ServiceCallback<@azure/arm-batchai.Job>
+    name: Job>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Job
+        fullName: Job
+        uid: '@azure/arm-batchai.Job'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-batchai.JobListResult>
+    name: JobListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobListResult
+        fullName: JobListResult
+        uid: '@azure/arm-batchai.JobListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-batchai.JobsListByExperimentOptionalParams'
+    name: JobsListByExperimentOptionalParams
+    spec.typeScript:
+      - name: JobsListByExperimentOptionalParams
+        fullName: JobsListByExperimentOptionalParams
+        uid: '@azure/arm-batchai.JobsListByExperimentOptionalParams'
+  - uid: '@azure/arm-batchai.JobsListOutputFilesOptions'
+    name: JobsListOutputFilesOptions
+    spec.typeScript:
+      - name: JobsListOutputFilesOptions
+        fullName: JobsListOutputFilesOptions
+        uid: '@azure/arm-batchai.JobsListOutputFilesOptions'
+  - uid: ServiceCallback<@azure/arm-batchai.FileListResult>
+    name: FileListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FileListResult
+        fullName: FileListResult
+        uid: '@azure/arm-batchai.FileListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-batchai.RemoteLoginInformationListResult>
+    name: RemoteLoginInformationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RemoteLoginInformationListResult
+        fullName: RemoteLoginInformationListResult
+        uid: '@azure/arm-batchai.RemoteLoginInformationListResult'
+      - name: '>'
+        fullName: '>'

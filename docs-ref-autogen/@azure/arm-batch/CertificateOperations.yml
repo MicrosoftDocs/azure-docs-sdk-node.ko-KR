@@ -1,0 +1,685 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-batch.CertificateOperations'
+    name: CertificateOperations
+    fullName: CertificateOperations
+    children:
+      - '@azure/arm-batch.CertificateOperations.beginCreate'
+      - '@azure/arm-batch.CertificateOperations.beginDeleteMethod'
+      - '@azure/arm-batch.CertificateOperations.cancelDeletion'
+      - '@azure/arm-batch.CertificateOperations.cancelDeletion_2'
+      - '@azure/arm-batch.CertificateOperations.cancelDeletion_1'
+      - '@azure/arm-batch.CertificateOperations.constructor'
+      - '@azure/arm-batch.CertificateOperations.create'
+      - '@azure/arm-batch.CertificateOperations.deleteMethod'
+      - '@azure/arm-batch.CertificateOperations.get'
+      - '@azure/arm-batch.CertificateOperations.get_2'
+      - '@azure/arm-batch.CertificateOperations.get_1'
+      - '@azure/arm-batch.CertificateOperations.listByBatchAccount_2'
+      - '@azure/arm-batch.CertificateOperations.listByBatchAccount'
+      - '@azure/arm-batch.CertificateOperations.listByBatchAccount_1'
+      - '@azure/arm-batch.CertificateOperations.listByBatchAccountNext'
+      - '@azure/arm-batch.CertificateOperations.listByBatchAccountNext_2'
+      - '@azure/arm-batch.CertificateOperations.listByBatchAccountNext_1'
+      - '@azure/arm-batch.CertificateOperations.update_2'
+      - '@azure/arm-batch.CertificateOperations.update'
+      - '@azure/arm-batch.CertificateOperations.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: CertificateOperations 나타내는 클래스입니다.
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.beginCreate'
+    name: 'beginCreate(string, string, string, CertificateCreateOrUpdateParameters, Models.CertificateBeginCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 계정 내에서 새 인증서를 만듭니다.
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, accountName: string, certificateName: string, parameters: CertificateCreateOrUpdateParameters, options?: Models.CertificateBeginCreateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: parameters
+          type:
+            - '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+          description: 인증서 생성에 대 한 추가 매개 변수입니다.
+        - id: options
+          type:
+            - Models.CertificateBeginCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 인증서를 삭제합니다.
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, accountName: string, certificateName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.cancelDeletion'
+    name: 'cancelDeletion(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 풀에서 사용 되는 인증서를 삭제 하거나 노드를 계산 하려는 경우 인증서의 상태가 deleteFailed로 변경 합니다. 인증서를 사용 하 여 계속 하려는 경우에 다시 active로 인증서의 상태를 설정 하려면이 작업을 사용할 수 있습니다. 인증서를 삭제 하려는 경우 삭제가 실패 한 후이 작업을 실행할 필요가 없습니다. 리소스에서 인증서를 사용 하지 않는 다음 다시 시도할 수 있습니다 인증서를 삭제 하 고 있는지 확인 해야 합니다.
+    syntax:
+      content: 'function cancelDeletion(resourceGroupName: string, accountName: string, certificateName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateCancelDeletionResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.cancelDeletion_2'
+    name: 'cancelDeletion(string, string, string, RequestOptionsBase, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function cancelDeletion(resourceGroupName: string, accountName: string, certificateName: string, options: RequestOptionsBase, callback: ServiceCallback<Certificate>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Certificate>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateCancelDeletionResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.cancelDeletion_1'
+    name: 'cancelDeletion(string, string, string, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function cancelDeletion(resourceGroupName: string, accountName: string, certificateName: string, callback: ServiceCallback<Certificate>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Certificate>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateCancelDeletionResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.constructor'
+    name: CertificateOperations(BatchManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: CertificateOperations를 만듭니다.
+    syntax:
+      content: 'new CertificateOperations(client: BatchManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-batch.BatchManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.create'
+    name: 'create(string, string, string, CertificateCreateOrUpdateParameters, Models.CertificateCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 계정 내에서 새 인증서를 만듭니다.
+    syntax:
+      content: 'function create(resourceGroupName: string, accountName: string, certificateName: string, parameters: CertificateCreateOrUpdateParameters, options?: Models.CertificateCreateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: parameters
+          type:
+            - '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+          description: 인증서 생성에 대 한 추가 매개 변수입니다.
+        - id: options
+          type:
+            - Models.CertificateCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateCreateResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 인증서를 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, accountName: string, certificateName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateDeleteResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 인증서에 대 한 정보를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, accountName: string, certificateName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateGetResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, accountName: string, certificateName: string, options: RequestOptionsBase, callback: ServiceCallback<Certificate>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Certificate>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateGetResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.get_1'
+    name: 'get(string, string, string, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, accountName: string, certificateName: string, callback: ServiceCallback<Certificate>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Certificate>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateGetResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.listByBatchAccount_2'
+    name: 'listByBatchAccount(string, string, CertificateListByBatchAccountOptionalParams, ServiceCallback<ListCertificatesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccount(resourceGroupName: string, accountName: string, options: CertificateListByBatchAccountOptionalParams, callback: ServiceCallback<ListCertificatesResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-batch.CertificateListByBatchAccountOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListCertificatesResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateListByBatchAccountResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.listByBatchAccount'
+    name: 'listByBatchAccount(string, string, Models.CertificateListByBatchAccountOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 모든 지정된 된 계정에서 인증서를 나열합니다.
+    syntax:
+      content: 'function listByBatchAccount(resourceGroupName: string, accountName: string, options?: Models.CertificateListByBatchAccountOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: options
+          type:
+            - Models.CertificateListByBatchAccountOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateListByBatchAccountResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.listByBatchAccount_1'
+    name: 'listByBatchAccount(string, string, ServiceCallback<ListCertificatesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccount(resourceGroupName: string, accountName: string, callback: ServiceCallback<ListCertificatesResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListCertificatesResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateListByBatchAccountResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.listByBatchAccountNext'
+    name: 'listByBatchAccountNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 모든 지정된 된 계정에서 인증서를 나열합니다.
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateListByBatchAccountNextResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.listByBatchAccountNext_2'
+    name: 'listByBatchAccountNext(string, RequestOptionsBase, ServiceCallback<ListCertificatesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ListCertificatesResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListCertificatesResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateListByBatchAccountNextResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.listByBatchAccountNext_1'
+    name: 'listByBatchAccountNext(string, ServiceCallback<ListCertificatesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, callback: ServiceCallback<ListCertificatesResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListCertificatesResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateListByBatchAccountNextResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.update_2'
+    name: 'update(string, string, string, CertificateCreateOrUpdateParameters, CertificateUpdateOptionalParams, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, certificateName: string, parameters: CertificateCreateOrUpdateParameters, options: CertificateUpdateOptionalParams, callback: ServiceCallback<Certificate>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: parameters
+          type:
+            - '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+          description: 업데이트할 엔터티의 인증서입니다.
+        - id: options
+          type:
+            - '@azure/arm-batch.CertificateUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Certificate>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateUpdateResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.update'
+    name: 'update(string, string, string, CertificateCreateOrUpdateParameters, Models.CertificateUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 인증서의 속성을 업데이트합니다.
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, certificateName: string, parameters: CertificateCreateOrUpdateParameters, options?: Models.CertificateUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: parameters
+          type:
+            - '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+          description: 업데이트할 엔터티의 인증서입니다.
+        - id: options
+          type:
+            - Models.CertificateUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.CertificateUpdateResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.CertificateOperations.update_1'
+    name: 'update(string, string, string, CertificateCreateOrUpdateParameters, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, certificateName: string, parameters: CertificateCreateOrUpdateParameters, callback: ServiceCallback<Certificate>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: Batch 계정을 포함 하는 리소스 그룹의 이름입니다.
+        - id: accountName
+          type:
+            - string
+          description: Batch 계정의 이름입니다.
+        - id: certificateName
+          type:
+            - string
+          description: '인증서에 대 한 식별자입니다. 이 알고리즘 및 지문을, 대시로 구분 된 구성 및 요청에 인증서 데이터와 일치 해야 합니다. 예를 들어 SHA1-a3d1c5 합니다.'
+        - id: parameters
+          type:
+            - '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+          description: 업데이트할 엔터티의 인증서입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Certificate>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.CertificateUpdateResponse>
+    package: '@azure/arm-batch'
+references:
+  - uid: '@azure/arm-batch.BatchManagementClientContext'
+    name: BatchManagementClientContext
+    spec.typeScript:
+      - name: BatchManagementClientContext
+        fullName: BatchManagementClientContext
+        uid: '@azure/arm-batch.BatchManagementClientContext'
+  - uid: '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+    name: CertificateCreateOrUpdateParameters
+    spec.typeScript:
+      - name: CertificateCreateOrUpdateParameters
+        fullName: CertificateCreateOrUpdateParameters
+        uid: '@azure/arm-batch.CertificateCreateOrUpdateParameters'
+  - uid: ServiceCallback<@azure/arm-batch.Certificate>
+    name: Certificate>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Certificate
+        fullName: Certificate
+        uid: '@azure/arm-batch.Certificate'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-batch.ListCertificatesResult>
+    name: ListCertificatesResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: '@azure/arm-batch.ListCertificatesResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-batch.CertificateListByBatchAccountOptionalParams'
+    name: CertificateListByBatchAccountOptionalParams
+    spec.typeScript:
+      - name: CertificateListByBatchAccountOptionalParams
+        fullName: CertificateListByBatchAccountOptionalParams
+        uid: '@azure/arm-batch.CertificateListByBatchAccountOptionalParams'
+  - uid: '@azure/arm-batch.CertificateUpdateOptionalParams'
+    name: CertificateUpdateOptionalParams
+    spec.typeScript:
+      - name: CertificateUpdateOptionalParams
+        fullName: CertificateUpdateOptionalParams
+        uid: '@azure/arm-batch.CertificateUpdateOptionalParams'
