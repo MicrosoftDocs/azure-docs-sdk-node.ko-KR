@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.SessionMessageHandlerOptions'
+    name: SessionMessageHandlerOptions
+    fullName: SessionMessageHandlerOptions
+    children:
+      - '@azure/service-bus.SessionMessageHandlerOptions.autoComplete'
+      - '@azure/service-bus.SessionMessageHandlerOptions.maxConcurrentCalls'
+    langs:
+      - typeScript
+    type: interface
+    summary: 에 전달 된 옵션에 설명 합니다 `registerMessageHandler` 메서드를 사용 하도록 설정 하는 세션에 있는 큐/구독에서 메시지를 수신할 때.
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionMessageHandlerOptions.autoComplete'
+    name: autoComplete
+    fullName: autoComplete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      나타냅니다 여부는 `complete()` 사용자가 제공한 onMessage 처리기가 실행 된 후 메서드가 메시지의 sdk에서 호출 되도록 자동으로 합니다.
+      호출 `complete()` 메시지 큐/구독에서 제거 합니다.
+      - **기본**: `true`합니다.
+    optional: true
+    syntax:
+      content: 'autoComplete?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.SessionMessageHandlerOptions.maxConcurrentCalls'
+    name: maxConcurrentCalls
+    fullName: maxConcurrentCalls
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      라이브러리는 사용자의 메시지 처리기를 만들 수 있는 동시 호출의 최대 수입니다. 이 한도 도달 하면 메시지가 더 이상 사용자의 메시지 처리기에 대 한 호출 중 하나가 완료 될 때까지 수신 되지 않습니다.
+      - **기본**: `1`합니다.
+    optional: true
+    syntax:
+      content: 'maxConcurrentCalls?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
