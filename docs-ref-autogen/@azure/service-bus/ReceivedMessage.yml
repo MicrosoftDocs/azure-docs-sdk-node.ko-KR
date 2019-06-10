@@ -1,0 +1,483 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.ReceivedMessage'
+    name: ReceivedMessage
+    fullName: ReceivedMessage
+    children:
+      - '@azure/service-bus.ReceivedMessage.abandon'
+      - '@azure/service-bus.ReceivedMessage.body'
+      - '@azure/service-bus.ReceivedMessage.complete'
+      - '@azure/service-bus.ReceivedMessage.contentType'
+      - '@azure/service-bus.ReceivedMessage.correlationId'
+      - '@azure/service-bus.ReceivedMessage.deadLetter'
+      - '@azure/service-bus.ReceivedMessage.deadLetterSource'
+      - '@azure/service-bus.ReceivedMessage.defer'
+      - '@azure/service-bus.ReceivedMessage.deliveryCount'
+      - '@azure/service-bus.ReceivedMessage.enqueuedSequenceNumber'
+      - '@azure/service-bus.ReceivedMessage.enqueuedTimeUtc'
+      - '@azure/service-bus.ReceivedMessage.expiresAtUtc'
+      - '@azure/service-bus.ReceivedMessage.label'
+      - '@azure/service-bus.ReceivedMessage.lockedUntilUtc'
+      - '@azure/service-bus.ReceivedMessage.lockToken'
+      - '@azure/service-bus.ReceivedMessage.messageId'
+      - '@azure/service-bus.ReceivedMessage.partitionKey'
+      - '@azure/service-bus.ReceivedMessage.replyTo'
+      - '@azure/service-bus.ReceivedMessage.replyToSessionId'
+      - '@azure/service-bus.ReceivedMessage.scheduledEnqueueTimeUtc'
+      - '@azure/service-bus.ReceivedMessage.sequenceNumber'
+      - '@azure/service-bus.ReceivedMessage.sessionId'
+      - '@azure/service-bus.ReceivedMessage.timeToLive'
+      - '@azure/service-bus.ReceivedMessage.to'
+      - '@azure/service-bus.ReceivedMessage.userProperties'
+      - '@azure/service-bus.ReceivedMessage.viaPartitionKey'
+    langs:
+      - typeScript
+    type: interface
+    summary: Service Bus에서 수신한 메시지를 설명 합니다.
+    extends:
+      name: '@azure/service-bus.ReceivedMessageInfo'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.abandon'
+    name: 'abandon(undefined | [key: string]: any)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 다른 수신 작업에 대 한 메시지를 Service Bus에서 다시 사용할 수 있도록 메시지의 수신자가 보유 한 잠금을 이동할 수 있습니다는.
+    syntax:
+      content: 'function abandon(propertiesToModify?: undefined | [key: string]: any)'
+      parameters:
+        - id: propertiesToModify
+          type:
+            - 'undefined | [key: string]: any'
+          description: |
+            메시지를 중단 하는 동안 수정 메시지의 속성입니다.
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.body'
+    name: body
+    fullName: body
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 전송 되어야 하거나 수신 하는 메시지 본문입니다.
+    syntax:
+      content: 'body: any'
+      return:
+        type:
+          - any
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.complete'
+    name: complete()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Service Bus에서 메시지를 제거합니다.
+    syntax:
+      content: function complete()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.contentType'
+    name: contentType
+    fullName: contentType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '메시지의 콘텐츠 형식입니다. 필요에 따라 RFC2045, 섹션 5, 예를 들어 "application/json"의 형식 설명자가 있는 메시지의 페이로드를 설명 합니다.'
+    optional: true
+    syntax:
+      content: 'contentType?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.correlationId'
+    name: correlationId
+    fullName: correlationId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      예를 들어 회신 되는 메시지의 MessageId를 반영 하는 상관 관계를 위해 메시지에 대 한 컨텍스트를 지정 하는 응용 프로그램을 허용 하는 상관 관계 식별자입니다.
+      참조 [메시지 라우팅 및 상관 관계](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation)합니다.
+    optional: true
+    syntax:
+      content: 'correlationId?: string | number | Buffer'
+      return:
+        type:
+          - string | number | Buffer
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.deadLetter'
+    name: deadLetter(DeadLetterOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 메시지를 배달 못 한 편지 하위 큐로 이동합니다. Deadletted 메시지를 수신 하는 새 QueueClient/SubscriptionClient 배달 못 한 편지 하위 큐에 대 한 경로 사용 하 여 만듭니다.
+    syntax:
+      content: 'function deadLetter(options?: DeadLetterOptions)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/service-bus.DeadLetterOptions'
+          description: |
+            메시지를 거부 하는 동안 제공 될 수 있는 배달 못 한 편지 옵션입니다.
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.deadLetterSource'
+    name: deadLetterSource
+    fullName: deadLetterSource
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} [deadLetterSource] 큐 또는 구독에이 메시지를 넣었습니다, deadlettered 되기 전의의 이름입니다. 배달 못 한 메시지로 처리되고 이후에 배달 못 한 메시지 큐에서 다른 엔터티로 자동 전달된 메시지에만 설정됩니다. 메시지가 배달 못 한 메시지로 처리된 엔터티를 나타냅니다.'
+    optional: true
+    syntax:
+      content: 'deadLetterSource?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.defer'
+    name: 'defer(undefined | [key: string]: any)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 메시지의 처리를 지연 합니다. 저장 된 `sequenceNumber` 나중에 사용 하 여 다시 메시지를 수신 하려면 메시지의는 `receiveDeferredMessage` 메서드.
+    syntax:
+      content: 'function defer(propertiesToModify?: undefined | [key: string]: any)'
+      parameters:
+        - id: propertiesToModify
+          type:
+            - 'undefined | [key: string]: any'
+          description: |
+            메시지를 연기 하는 동안 수정 하려면 메시지의 속성
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.deliveryCount'
+    name: deliveryCount
+    fullName: deliveryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 메시지에 대해 시도된 배달 횟수입니다. 메시지 잠금이 만료 되 면 때나 메시지를 사용 하 여 명시적으로 중단 횟수가 증가 합니다 `abandon()` 메시지 메서드.
+    optional: true
+    syntax:
+      content: 'deliveryCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.enqueuedSequenceNumber'
+    name: enqueuedSequenceNumber
+    fullName: enqueuedSequenceNumber
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '메시지의 원래 시퀀스 번호입니다. 자동 전달된 메시지의 경우, 이 속성은 원래 전송 지점에서 메시지에 처음 할당된 시퀀스 번호를 반영합니다.'
+    optional: true
+    syntax:
+      content: 'enqueuedSequenceNumber?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.enqueuedTimeUtc'
+    name: enqueuedTimeUtc
+    fullName: enqueuedTimeUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: UTC 인스턴트는 메시지를 수락 및 Service Bus에 저장 합니다.
+    optional: true
+    syntax:
+      content: 'enqueuedTimeUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.expiresAtUtc'
+    name: expiresAtUtc
+    fullName: expiresAtUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 메시지가 제거용으로 표시되고 만료로 인해 엔터티에서 더 이상 검색할 수 없는 UTC 인스턴트입니다. 이 속성은 메시지의 다른 속성을 2에서 계산 됩니다. `enqueuedTimeUtc`  +  `timeToLive`합니다.
+    optional: true
+    syntax:
+      content: 'expiresAtUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.label'
+    name: label
+    fullName: label
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 애플리케이션별 레이블입니다. 이 속성을 사용 하면 응용 프로그램을 표준화 된 방법에 받는 사람이 메시지의 용도 나타냅니다. 비슷하게 방식으로 전자 메일 제목 줄입니다. 매핑된 AMQP 속성이 "subject"입니다.
+    optional: true
+    syntax:
+      content: 'label?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.lockedUntilUtc'
+    name: lockedUntilUtc
+    fullName: lockedUntilUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      큐/구독에서 메시지는 때까지 보유 됩니다 UTC 인스턴트 잠겨 있습니다.
+      잠금이 만료 되는 `deliveryCount` 증가 및 메시지를 다시 검색할 수 없습니다.
+      - 메시지에 수신 될 때 해당 사항 없음 `ReceiveMode.receiveAndDelete` 모드입니다.
+    optional: true
+    syntax:
+      content: 'lockedUntilUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.lockToken'
+    name: lockToken
+    fullName: lockToken
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      잠금 토큰이에서 브로커가 보유 중인 잠금에 대 한 참조를 `ReceiveMode.PeekLock` 모드입니다. 잠금은 내부적으로 사용 됩니다에 설명 된 대로 메시지를 안정 된 [자세히 제품 설명서](https://docs.microsoft.com/azure/service-bus-messaging/message-transfers-locks-settlement)
+      - 메시지에 수신 될 때 해당 사항 없음 `ReceiveMode.receiveAndDelete` 모드입니다.
+    optional: true
+    syntax:
+      content: 'lockToken?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.messageId'
+    name: messageId
+    fullName: messageId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      메시지 식별자는 메시지 및 해당 페이로드를 고유하게 식별하는 애플리케이션 정의 값입니다.
+
+      참고: 전체 정수가 아닌 숫자는 허용 되지 않습니다.
+    optional: true
+    syntax:
+      content: 'messageId?: string | number | Buffer'
+      return:
+        type:
+          - string | number | Buffer
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.partitionKey'
+    name: partitionKey
+    fullName: partitionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      분할 된 엔터티는 메시지 보내기에 대 한 파티션 키입니다.
+      최대 길이 128 자입니다. [분할된 엔터티](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning)의 경우 이 값을 설정하면 관련 메시지가 동일한 내부 파티션에 할당되므로 전송 시퀀스 순서가 올바르게 기록됩니다. 파티션은 이 값에 대한 해시 함수에 의해 선택되며 직접 선택할 수 없습니다.
+      - 세션 인식 엔터티의 경우는 `sessionId` 속성이이 값을 재정의 합니다.
+      - 분할된 되지 않은 엔터티에 대 한 파티션 키가 무시 됩니다.
+    optional: true
+    syntax:
+      content: 'partitionKey?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.replyTo'
+    name: replyTo
+    fullName: replyTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '회신을 보내는 엔터티 주소입니다. 이 선택적인 애플리케이션 정의 값은 메시지의 수신자에 대한 회신 경로를 나타내는 표준 방법입니다. 보낸 사람이 회신을 기대할 경우 해당 값을 회신이 전송될 큐 또는 토픽의 절대 또는 상대 경로로 설정합니다. 참조 [메시지 라우팅 및 상관 관계](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation)합니다.'
+    optional: true
+    syntax:
+      content: 'replyTo?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.replyToSessionId'
+    name: replyToSessionId
+    fullName: replyToSessionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      세션 식별자 확대는 `replyTo` 주소입니다.
+      최대 길이 128 자입니다. 이 값의 ReplyTo 정보를 보강 하 고 회신 엔터티로 전송 될 때 회신에 대 한 세션 Id를 설정 해야를 지정 합니다.
+      참조 [메시지 라우팅 및 상관 관계](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation)합니다.
+    optional: true
+    syntax:
+      content: 'replyToSessionId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.scheduledEnqueueTimeUtc'
+    name: scheduledEnqueueTimeUtc
+    fullName: scheduledEnqueueTimeUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      날짜 및 시간 (UTC)는 메시지가 큐에 넣었습니다. 이 속성을 utc로; 시간을 반환합니다. 속성을 설정 하는 경우 제공된 된 날짜/시간 값을 utc로 수도 있어야 합니다. 이 값은 지연 된 메시지를 보내지입니다.
+      이 미래의 특정 시간에 보내는 메시지를 지연 하는 데 사용 됩니다. 메시지 큐 시간 동시에 메시지를 보낼 수는 아닙니다. 큐에 넣는 가져오게 됩니다 있지만 전송 실제 시간은 큐의 작업 및 해당 상태에 따라 달라 집니다.
+    optional: true
+    syntax:
+      content: 'scheduledEnqueueTimeUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.sequenceNumber'
+    name: sequenceNumber
+    fullName: sequenceNumber
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      Service Bus에서 메시지에 할당 된 고유 번호입니다.
+      시퀀스 번호는 Broker에서 수락하여 저장할 때 메시지에 할당되는 고유의 64비트 정수이며 실제 식별자로 작동합니다. 분할된 엔터티의 경우 최상위 16비트는 파티션 식별자를 나타냅니다. 시퀀스 번호 단조 증가 합니다.
+      48-64비트 범위가 고갈되면 다시 0에서 시작됩니다.
+
+      **최대 안전한 정수** Javascript 현재 지원은 `2^53 - 1`합니다. 시퀀스 번호는 AMQP는 `Long` 종류입니다. 64 비트 길이 최대 수입니다. 명명 된 라이브러리를 사용 하는 것을 나타내는 [long.js](https://github.com/dcodeIO/long.js)합니다. 고객이 사용 하 여 기대를 ** `Long` ** 이 라이브러리에서 내보낸 형식입니다.
+    optional: true
+    syntax:
+      content: 'sequenceNumber?: Long'
+      return:
+        type:
+          - Long
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.sessionId'
+    name: sessionId
+    fullName: sessionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      세션 인식 엔터티에 대 한 세션 식별자입니다. 최대 길이 128 자입니다. 세션 인식 엔터티의 경우 이 애플리케이션 정의 값은 메시지의 세션 정보를 지정합니다. 동일한 세션 식별자를 갖는 메시지는 요약 잠금이 적용되며 정확한 순차적 처리 및 역 멀티플렉싱이 지원됩니다. 세션 비인식 엔터티의 경우 이 값은 무시됩니다.
+      [메시지 세션](https://docs.microsoft.com/azure/service-bus-messaging/message-sessions)합니다.
+    optional: true
+    syntax:
+      content: 'sessionId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.timeToLive'
+    name: timeToLive
+    fullName: timeToLive
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '메시지의 시간 제한 값입니다. 이 값은 메시지가 만료 되기까지의 상대적 기간에서 시작 하는 인스턴트 메시지 수락 하는 broker에서 저장 된에서 캡처된 `enqueuedTimeUtc`합니다. 값에 해당 큐 또는 토픽에 대 한 DefaultTimeToLive은 설정 되지 않은 경우 명시적으로, 합니다. 메시지 수준 `timeToLive` 값 엔터티의 DefaultTimeToLive 설정 보다 길 수 없습니다 하 고 그렇지 않으면 자동으로 조정 됩니다. 참조 [만료](https://docs.microsoft.com/azure/service-bus-messaging/message-expiration)합니다.'
+    optional: true
+    syntax:
+      content: 'timeToLive?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.to'
+    name: to
+    fullName: to
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '"To" 주소입니다. 이 속성은 라우팅 시나리오에서 나중에 사용하기 위해 예약되어 있으며 현재 브로커 자체에서 무시됩니다. 응용 프로그램 규칙 기반에서이 값을 사용할 수 있습니다 [자동 전달 체인](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-auto-forwarding) 메시지의 의도 한 논리 대상을 나타내기 위해 시나리오입니다.'
+    optional: true
+    syntax:
+      content: 'to?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.userProperties'
+    name: userProperties
+    fullName: userProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 사용자 지정 메시지 메타 데이터에 대해 사용할 수 있는 응용 프로그램 특정 속성입니다.
+    optional: true
+    syntax:
+      content: 'userProperties?: undefined | [key: string]: any'
+      return:
+        type:
+          - 'undefined | [key: string]: any'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ReceivedMessage.viaPartitionKey'
+    name: viaPartitionKey
+    fullName: viaPartitionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      분할 된 전송 큐를 통해 엔터티로 메시지를 보내기 위한 파티션 키입니다. 최대 길이 128 자입니다. 메시지는 트랜잭션 범위에서 전송 큐를 통해 전달 되 면이 값은 전송 큐 파티션을 선택 합니다. 이 기능적으로 `partitionKey` 속성 고 전송 될 때 함께 및 순서 대로 메시지 보관 됩니다.
+      참조 [전송 및 Send Via](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions#transfers-and-send-via)합니다.
+    optional: true
+    syntax:
+      content: 'viaPartitionKey?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.ReceivedMessageInfo'
+    name: ReceivedMessageInfo
+    spec.typeScript:
+      - name: ReceivedMessageInfo
+        fullName: ReceivedMessageInfo
+        uid: '@azure/service-bus.ReceivedMessageInfo'
+  - uid: '@azure/service-bus.DeadLetterOptions'
+    name: DeadLetterOptions
+    spec.typeScript:
+      - name: DeadLetterOptions
+        fullName: DeadLetterOptions
+        uid: '@azure/service-bus.DeadLetterOptions'

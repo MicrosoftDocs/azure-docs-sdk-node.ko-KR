@@ -1,0 +1,727 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-dns.Zones'
+    name: Zones
+    fullName: Zones
+    children:
+      - '@azure/arm-dns.Zones.beginDeleteMethod'
+      - '@azure/arm-dns.Zones.createOrUpdate'
+      - '@azure/arm-dns.Zones.createOrUpdate_1'
+      - '@azure/arm-dns.Zones.createOrUpdate_2'
+      - '@azure/arm-dns.Zones.deleteMethod'
+      - '@azure/arm-dns.Zones.get'
+      - '@azure/arm-dns.Zones.get_2'
+      - '@azure/arm-dns.Zones.get_1'
+      - '@azure/arm-dns.Zones.list'
+      - '@azure/arm-dns.Zones.list_1'
+      - '@azure/arm-dns.Zones.list_2'
+      - '@azure/arm-dns.Zones.listByResourceGroup'
+      - '@azure/arm-dns.Zones.listByResourceGroup_1'
+      - '@azure/arm-dns.Zones.listByResourceGroup_2'
+      - '@azure/arm-dns.Zones.listByResourceGroupNext'
+      - '@azure/arm-dns.Zones.listByResourceGroupNext_2'
+      - '@azure/arm-dns.Zones.listByResourceGroupNext_1'
+      - '@azure/arm-dns.Zones.listNext'
+      - '@azure/arm-dns.Zones.listNext_2'
+      - '@azure/arm-dns.Zones.listNext_1'
+      - '@azure/arm-dns.Zones.update'
+      - '@azure/arm-dns.Zones.update_1'
+      - '@azure/arm-dns.Zones.update_2'
+      - '@azure/arm-dns.Zones.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: 영역을 나타내는 클래스입니다.
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, Models.ZonesBeginDeleteMethodOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'DNS 영역을 삭제합니다. 경고: 또한 영역에서 모든 DNS 레코드가 삭제 됩니다. 이 작업은 취소할 수 없습니다.'
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, zoneName: string, options?: Models.ZonesBeginDeleteMethodOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: options
+          type:
+            - Models.ZonesBeginDeleteMethodOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.createOrUpdate'
+    name: 'createOrUpdate(string, string, Zone, Models.ZonesCreateOrUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: DNS 영역을 만들거나 설정 합니다. 영역 내의 DNS 레코드를 수정 하지 않습니다.
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, zoneName: string, parameters: Zone, options?: Models.ZonesCreateOrUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-dns.Zone'
+          description: CreateOrUpdate 작업에 제공 되는 매개 변수입니다.
+        - id: options
+          type:
+            - Models.ZonesCreateOrUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesCreateOrUpdateResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.createOrUpdate_1'
+    name: 'createOrUpdate(string, string, Zone, ServiceCallback<Zone>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, zoneName: string, parameters: Zone, callback: ServiceCallback<Zone>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-dns.Zone'
+          description: CreateOrUpdate 작업에 제공 되는 매개 변수입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.Zone>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesCreateOrUpdateResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.createOrUpdate_2'
+    name: 'createOrUpdate(string, string, Zone, ZonesCreateOrUpdateOptionalParams, ServiceCallback<Zone>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, zoneName: string, parameters: Zone, options: ZonesCreateOrUpdateOptionalParams, callback: ServiceCallback<Zone>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-dns.Zone'
+          description: CreateOrUpdate 작업에 제공 되는 매개 변수입니다.
+        - id: options
+          type:
+            - '@azure/arm-dns.ZonesCreateOrUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.Zone>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesCreateOrUpdateResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.deleteMethod'
+    name: 'deleteMethod(string, string, Models.ZonesDeleteMethodOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'DNS 영역을 삭제합니다. 경고: 또한 영역에서 모든 DNS 레코드가 삭제 됩니다. 이 작업은 취소할 수 없습니다.'
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, zoneName: string, options?: Models.ZonesDeleteMethodOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: options
+          type:
+            - Models.ZonesDeleteMethodOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: DNS 영역을 가져옵니다. 영역 속성에는 있지만 하지 영역 내 레코드 집합을 검색합니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, zoneName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesGetResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<Zone>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, zoneName: string, options: RequestOptionsBase, callback: ServiceCallback<Zone>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.Zone>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesGetResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.get_1'
+    name: 'get(string, string, ServiceCallback<Zone>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, zoneName: string, callback: ServiceCallback<Zone>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.Zone>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesGetResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.list'
+    name: list(Models.ZonesListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 구독에서 모든 리소스 그룹에서 DNS 영역을 나열합니다.
+    syntax:
+      content: 'function list(options?: Models.ZonesListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.ZonesListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesListResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.list_1'
+    name: list(ServiceCallback<ZoneListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.list_2'
+    name: 'list(ZonesListOptionalParams, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: ZonesListOptionalParams, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-dns.ZonesListOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.ZonesListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 리소스 그룹 내 DNS 영역을 나열합니다.
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.ZonesListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: options
+          type:
+            - Models.ZonesListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesListByResourceGroupResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListByResourceGroupResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, ZonesListByResourceGroupOptionalParams, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: ZonesListByResourceGroupOptionalParams, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: options
+          type:
+            - '@azure/arm-dns.ZonesListByResourceGroupOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListByResourceGroupResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 리소스 그룹 내 DNS 영역을 나열합니다.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesListByResourceGroupNextResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListByResourceGroupNextResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListByResourceGroupNextResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 구독에서 모든 리소스 그룹에서 DNS 영역을 나열합니다.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesListNextResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListNextResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.listNext_1'
+    name: 'listNext(string, ServiceCallback<ZoneListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ZoneListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.ZoneListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesListNextResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.update'
+    name: 'update(string, string, ZoneUpdate, Models.ZonesUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: DNS 영역을 업데이트합니다. 영역 내의 DNS 레코드를 수정 하지 않습니다.
+    syntax:
+      content: 'function update(resourceGroupName: string, zoneName: string, parameters: ZoneUpdate, options?: Models.ZonesUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-dns.ZoneUpdate'
+          description: 업데이트 작업에 제공 된 매개 변수입니다.
+        - id: options
+          type:
+            - Models.ZonesUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ZonesUpdateResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.update_1'
+    name: 'update(string, string, ZoneUpdate, ServiceCallback<Zone>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, zoneName: string, parameters: ZoneUpdate, callback: ServiceCallback<Zone>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-dns.ZoneUpdate'
+          description: 업데이트 작업에 제공 된 매개 변수입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.Zone>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesUpdateResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.update_2'
+    name: 'update(string, string, ZoneUpdate, ZonesUpdateOptionalParams, ServiceCallback<Zone>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, zoneName: string, parameters: ZoneUpdate, options: ZonesUpdateOptionalParams, callback: ServiceCallback<Zone>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: zoneName
+          type:
+            - string
+          description: (종료 점) 없이 DNS 영역의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-dns.ZoneUpdate'
+          description: 업데이트 작업에 제공 된 매개 변수입니다.
+        - id: options
+          type:
+            - '@azure/arm-dns.ZonesUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-dns.Zone>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ZonesUpdateResponse>
+    package: '@azure/arm-dns'
+  - uid: '@azure/arm-dns.Zones.constructor'
+    name: Zones(DnsManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 영역을 만듭니다.
+    syntax:
+      content: 'new Zones(client: DnsManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-dns.DnsManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-dns'
+references:
+  - uid: '@azure/arm-dns.DnsManagementClientContext'
+    name: DnsManagementClientContext
+    spec.typeScript:
+      - name: DnsManagementClientContext
+        fullName: DnsManagementClientContext
+        uid: '@azure/arm-dns.DnsManagementClientContext'
+  - uid: '@azure/arm-dns.Zone'
+    name: Zone
+    spec.typeScript:
+      - name: Zone
+        fullName: Zone
+        uid: '@azure/arm-dns.Zone'
+  - uid: ServiceCallback<@azure/arm-dns.Zone>
+    name: Zone>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Zone
+        fullName: Zone
+        uid: '@azure/arm-dns.Zone'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-dns.ZonesCreateOrUpdateOptionalParams'
+    name: ZonesCreateOrUpdateOptionalParams
+    spec.typeScript:
+      - name: ZonesCreateOrUpdateOptionalParams
+        fullName: ZonesCreateOrUpdateOptionalParams
+        uid: '@azure/arm-dns.ZonesCreateOrUpdateOptionalParams'
+  - uid: ServiceCallback<@azure/arm-dns.ZoneListResult>
+    name: ZoneListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ZoneListResult
+        fullName: ZoneListResult
+        uid: '@azure/arm-dns.ZoneListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-dns.ZonesListOptionalParams'
+    name: ZonesListOptionalParams
+    spec.typeScript:
+      - name: ZonesListOptionalParams
+        fullName: ZonesListOptionalParams
+        uid: '@azure/arm-dns.ZonesListOptionalParams'
+  - uid: '@azure/arm-dns.ZonesListByResourceGroupOptionalParams'
+    name: ZonesListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: ZonesListByResourceGroupOptionalParams
+        fullName: ZonesListByResourceGroupOptionalParams
+        uid: '@azure/arm-dns.ZonesListByResourceGroupOptionalParams'
+  - uid: '@azure/arm-dns.ZoneUpdate'
+    name: ZoneUpdate
+    spec.typeScript:
+      - name: ZoneUpdate
+        fullName: ZoneUpdate
+        uid: '@azure/arm-dns.ZoneUpdate'
+  - uid: '@azure/arm-dns.ZonesUpdateOptionalParams'
+    name: ZonesUpdateOptionalParams
+    spec.typeScript:
+      - name: ZonesUpdateOptionalParams
+        fullName: ZonesUpdateOptionalParams
+        uid: '@azure/arm-dns.ZonesUpdateOptionalParams'
