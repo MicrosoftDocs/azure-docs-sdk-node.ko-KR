@@ -1,0 +1,202 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/ms-rest-azure-js.LROPoller'
+    name: LROPoller
+    fullName: LROPoller
+    children:
+      - '@azure/ms-rest-azure-js.LROPoller.getInitialResponse'
+      - '@azure/ms-rest-azure-js.LROPoller.getMostRecentResponse'
+      - '@azure/ms-rest-azure-js.LROPoller.getOperationResponse'
+      - '@azure/ms-rest-azure-js.LROPoller.getOperationStatus'
+      - '@azure/ms-rest-azure-js.LROPoller.getPollState'
+      - '@azure/ms-rest-azure-js.LROPoller.isFinalStatusAcceptable'
+      - '@azure/ms-rest-azure-js.LROPoller.isFinished'
+      - '@azure/ms-rest-azure-js.LROPoller.constructor'
+      - '@azure/ms-rest-azure-js.LROPoller.poll'
+      - '@azure/ms-rest-azure-js.LROPoller.pollUntilFinished'
+    langs:
+      - typeScript
+    type: class
+    summary: (장기 실행 작업) LROs를 사용 하 여 상호 작용 하기 위한 특수 메서드를 제공 하는 HTTP 작업 응답입니다.
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.getInitialResponse'
+    name: getInitialResponse()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 서비스는 LRO 시작한 경우에 다시 전송 하는 첫 번째 응답을 가져옵니다.
+    syntax:
+      content: function getInitialResponse()
+      parameters: []
+      return:
+        type:
+          - HttpOperationResponse
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.getMostRecentResponse'
+    name: getMostRecentResponse()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 이 LRO 중 다시 서비스에 전송한 최근 응답을 가져옵니다.
+    syntax:
+      content: function getMostRecentResponse()
+      parameters: []
+      return:
+        type:
+          - HttpOperationResponse
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.getOperationResponse'
+    name: getOperationResponse()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      LRO 완료 되 고 허용 가능한 상태는 HttpOperationResponse를 반환 합니다. LRO 완료 되 고 허용 가능한 상태에 없는 다음는 LRO 시킨 오류를 throw 합니다.
+      LRO 끝나지 않으면 정의 되지 않은 반환 합니다.
+    syntax:
+      content: function getOperationResponse()
+      parameters: []
+      return:
+        type:
+          - Promise<HttpOperationResponse | undefined>
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.getOperationStatus'
+    name: getOperationStatus()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: LRO의 현재 상태를 가져옵니다.
+    syntax:
+      content: function getOperationStatus()
+      parameters: []
+      return:
+        type:
+          - '@azure/ms-rest-azure-js.LongRunningOperationStates'
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.getPollState'
+    name: getPollState()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '각기 다른 컨텍스트에서이 LRO 폴링에 사용할 수 있는 LROPollState 개체 가져오기 (같은 다른 프로세스 또는 다른 컴퓨터에서). LRO LRO 폴링 전략을 생성할 수 없습니다, 경우에 다음이 반환 됩니다 정의 되지 않은.'
+    syntax:
+      content: function getPollState()
+      parameters: []
+      return:
+        type:
+          - '@azure/ms-rest-azure-js.LROPollState | undefined'
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.isFinalStatusAcceptable'
+    name: isFinalStatusAcceptable()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: LRO 완료 되 고 해당 최종 상태가 허용 되는 여부를 가져옵니다. LRO 아직 완료가 정의 되지 않은 되지 경우 반환 됩니다. 최종 상태는 "허용" 장기 실행 작업을 수행 하는 Azure 서비스는 LRO 전략으로 결정 됩니다.
+    syntax:
+      content: function isFinalStatusAcceptable()
+      parameters: []
+      return:
+        type:
+          - boolean | undefined
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.isFinished'
+    name: isFinished()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: LRO 완료 되는 여부를 가져옵니다.
+    syntax:
+      content: function isFinished()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.constructor'
+    name: 'LROPoller(LROPollStrategy | undefined, HttpOperationResponse)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 새 HttpLongRunningOperationResponse를 만듭니다.
+    syntax:
+      content: 'new LROPoller(_lroPollStrategy: LROPollStrategy | undefined, _initialResponse: HttpOperationResponse)'
+      parameters:
+        - id: _lroPollStrategy
+          type:
+            - '@azure/ms-rest-azure-js.LROPollStrategy | undefined'
+          description: |
+            이 HttpLongRunningOperationResponse가는 LRO 상호 작용 하는 데 사용할 LROPollStrategy 합니다.
+        - id: _initialResponse
+          type:
+            - HttpOperationResponse
+          description: ''
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.poll'
+    name: poll()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 단일 폴링 요청을 보내고 LRO의 상태를 반환 합니다.
+    syntax:
+      content: function poll()
+      parameters: []
+      return:
+        type:
+          - Promise<@azure/ms-rest-azure-js.LongRunningOperationStates>
+    package: '@azure/ms-rest-azure-js'
+  - uid: '@azure/ms-rest-azure-js.LROPoller.pollUntilFinished'
+    name: pollUntilFinished()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: LRO 완료 된 것으로 확인 될 때까지 LRO의 상태를 확인 하는 폴링 요청을 보냅니다.
+    syntax:
+      content: function pollUntilFinished()
+      parameters: []
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/ms-rest-azure-js'
+references:
+  - uid: '@azure/ms-rest-azure-js.LROPollStrategy | undefined'
+    name: LROPollStrategy | undefined
+    spec.typeScript:
+      - name: LROPollStrategy
+        fullName: LROPollStrategy
+        uid: '@azure/ms-rest-azure-js.LROPollStrategy'
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: '@azure/ms-rest-azure-js.LongRunningOperationStates'
+    name: LongRunningOperationStates
+    spec.typeScript:
+      - name: LongRunningOperationStates
+        fullName: LongRunningOperationStates
+        uid: '@azure/ms-rest-azure-js.LongRunningOperationStates'
+  - uid: '@azure/ms-rest-azure-js.LROPollState | undefined'
+    name: LROPollState | undefined
+    spec.typeScript:
+      - name: LROPollState
+        fullName: LROPollState
+        uid: '@azure/ms-rest-azure-js.LROPollState'
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: Promise<@azure/ms-rest-azure-js.LongRunningOperationStates>
+    name: LongRunningOperationStates>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LongRunningOperationStates
+        fullName: LongRunningOperationStates
+        uid: '@azure/ms-rest-azure-js.LongRunningOperationStates'
+      - name: '>'
+        fullName: '>'
