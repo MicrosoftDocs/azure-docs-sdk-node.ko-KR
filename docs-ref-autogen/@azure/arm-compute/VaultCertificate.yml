@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.VaultCertificate'
+    name: VaultCertificate
+    fullName: VaultCertificate
+    children:
+      - '@azure/arm-compute.VaultCertificate.certificateStore'
+      - '@azure/arm-compute.VaultCertificate.certificateUrl'
+    langs:
+      - typeScript
+    type: interface
+    summary: 키 자격 증명 모음에 대 한 단일 인증서 참조에 설명 합니다. VM에서 인증서 상주할 및 합니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VaultCertificate.certificateStore'
+    name: certificateStore
+    fullName: certificateStore
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Windows Vm에 대 한 인증서를 추가할 가상 컴퓨터에 인증서 저장소를 지정 합니다. 지정된 된 인증서 저장소는 LocalMachine 계정에 암시적으로. <br><br>Linux Vm에 대 한 인증서 파일 아래에 배치 됩니다 /var/lib/waagent 디렉터리에 파일 이름의 &lt;UppercaseThumbprint&gt;.crt는 x509 인증서 파일 및 &lt;UppercaseThumbprint&gt;.prv에 대 한 개인 키입니다. 이러한 파일 모두.pem 형식입니다.
+    optional: true
+    syntax:
+      content: 'certificateStore?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.VaultCertificate.certificateUrl'
+    name: certificateUrl
+    fullName: certificateUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      비밀을 Key Vault에 업로드 된 인증서의 URL입니다. Key Vault에 비밀을 추가, 참조 [키나 비밀을 key vault에 추가할](https://docs.microsoft.com/azure/key-vault/key-vault-get-started/#add)합니다. 이 경우 인증서 해야 하는 개체는 다음 JSON의 Base64 인코딩을 u t F-8이 인코딩됩니다. <br><br> {<br>  "data":"<Base64-encoded-certificate>",<br>
+      "dataType":"pfx",<br>  "password":"<pfx-file-password>"<br>}
+    optional: true
+    syntax:
+      content: 'certificateUrl?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'

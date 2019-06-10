@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.EncryptionSettingsElement'
+    name: EncryptionSettingsElement
+    fullName: EncryptionSettingsElement
+    children:
+      - '@azure/arm-compute.EncryptionSettingsElement.diskEncryptionKey'
+      - '@azure/arm-compute.EncryptionSettingsElement.keyEncryptionKey'
+    langs:
+      - typeScript
+    type: interface
+    summary: 한 디스크 볼륨에 대 한 암호화 설정입니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.EncryptionSettingsElement.diskEncryptionKey'
+    name: diskEncryptionKey
+    fullName: diskEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 디스크 암호화 키의 키 자격 증명 모음 비밀 Url 및 자격 증명 모음 id
+    optional: true
+    syntax:
+      content: 'diskEncryptionKey?: KeyVaultAndSecretReference'
+      return:
+        type:
+          - '@azure/arm-compute.KeyVaultAndSecretReference'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.EncryptionSettingsElement.keyEncryptionKey'
+    name: keyEncryptionKey
+    fullName: keyEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 주요 암호화 키의 키 자격 증명 모음 키 Url 및 자격 증명 모음 id입니다. KeyEncryptionKey 선택 사항인 시점과 디스크 암호화 키 래핑 해제를 제공 합니다.
+    optional: true
+    syntax:
+      content: 'keyEncryptionKey?: KeyVaultAndKeyReference'
+      return:
+        type:
+          - '@azure/arm-compute.KeyVaultAndKeyReference'
+    package: '@azure/arm-compute'
+references:
+  - uid: '@azure/arm-compute.KeyVaultAndSecretReference'
+    name: KeyVaultAndSecretReference
+    spec.typeScript:
+      - name: KeyVaultAndSecretReference
+        fullName: KeyVaultAndSecretReference
+        uid: '@azure/arm-compute.KeyVaultAndSecretReference'
+  - uid: '@azure/arm-compute.KeyVaultAndKeyReference'
+    name: KeyVaultAndKeyReference
+    spec.typeScript:
+      - name: KeyVaultAndKeyReference
+        fullName: KeyVaultAndKeyReference
+        uid: '@azure/arm-compute.KeyVaultAndKeyReference'
