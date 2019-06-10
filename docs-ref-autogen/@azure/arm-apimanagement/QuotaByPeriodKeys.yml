@@ -1,0 +1,287 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys'
+    name: QuotaByPeriodKeys
+    fullName: QuotaByPeriodKeys
+    children:
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.get'
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.get_2'
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.get_1'
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.constructor'
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.update'
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.update_2'
+      - '@azure/arm-apimanagement.QuotaByPeriodKeys.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="47ed1-101">QuotaByPeriodKeys 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-101">Class representing a QuotaByPeriodKeys.</span></span>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.get'
+    name: 'get(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="47ed1-102">서비스 인스턴스의 특정 기간에 대 한 정책에서 연대 키와 연결 된 할당량 카운터의 값을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-102">Gets the value of the quota counter associated with the counter-key in the policy for the specific period in service instance.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, serviceName: string, quotaCounterKey: string, quotaPeriodKey: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-103">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="47ed1-103">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-104">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-104">The name of the API Management service.</span></span>
+        - id: quotaCounterKey
+          type:
+            - string
+          description: '<span data-ttu-id="47ed1-105">할당량 카운터 키 식별자입니다. 이 키로 할당량 정책의 반대 키 특성에 정의 된 식의 결과입니다. 예를 들어, 카운터 키를 지정 하는 경우 = "boo" 정책에서 "boo" 카운터 키 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-105">Quota counter key identifier.This is the result of expression defined in counter-key attribute of the quota-by-key policy.For Example, if you specify counter-key="boo" in the policy, then it’s accessible by "boo" counter key.</span></span> <span data-ttu-id="47ed1-106">그러나 counter-key="@("b"+"a")로 정의 된 경우"가 "ba" 키에서 액세스할 수</span><span class="sxs-lookup"><span data-stu-id="47ed1-106">But if it’s defined as counter-key="@("b"+"a")" then it will be accessible by "ba" key</span></span>'
+        - id: quotaPeriodKey
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-107">할당량 기간 키 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-107">Quota period key identifier.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.QuotaByPeriodKeysGetResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.get_2'
+    name: 'get(string, string, string, string, RequestOptionsBase, ServiceCallback<QuotaCounterContract>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serviceName: string, quotaCounterKey: string, quotaPeriodKey: string, options: RequestOptionsBase, callback: ServiceCallback<QuotaCounterContract>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-108">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="47ed1-108">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-109">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-109">The name of the API Management service.</span></span>
+        - id: quotaCounterKey
+          type:
+            - string
+          description: '<span data-ttu-id="47ed1-110">할당량 카운터 키 식별자입니다. 이 키로 할당량 정책의 반대 키 특성에 정의 된 식의 결과입니다. 예를 들어, 카운터 키를 지정 하는 경우 = "boo" 정책에서 "boo" 카운터 키 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-110">Quota counter key identifier.This is the result of expression defined in counter-key attribute of the quota-by-key policy.For Example, if you specify counter-key="boo" in the policy, then it’s accessible by "boo" counter key.</span></span> <span data-ttu-id="47ed1-111">그러나 counter-key="@("b"+"a")로 정의 된 경우"가 "ba" 키에서 액세스할 수</span><span class="sxs-lookup"><span data-stu-id="47ed1-111">But if it’s defined as counter-key="@("b"+"a")" then it will be accessible by "ba" key</span></span>'
+        - id: quotaPeriodKey
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-112">할당량 기간 키 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-112">Quota period key identifier.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="47ed1-113">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="47ed1-113">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.QuotaCounterContract>
+          description: |
+            <span data-ttu-id="47ed1-114">콜백</span><span class="sxs-lookup"><span data-stu-id="47ed1-114">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.QuotaByPeriodKeysGetResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<QuotaCounterContract>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serviceName: string, quotaCounterKey: string, quotaPeriodKey: string, callback: ServiceCallback<QuotaCounterContract>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-115">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="47ed1-115">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-116">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-116">The name of the API Management service.</span></span>
+        - id: quotaCounterKey
+          type:
+            - string
+          description: '<span data-ttu-id="47ed1-117">할당량 카운터 키 식별자입니다. 이 키로 할당량 정책의 반대 키 특성에 정의 된 식의 결과입니다. 예를 들어, 카운터 키를 지정 하는 경우 = "boo" 정책에서 "boo" 카운터 키 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-117">Quota counter key identifier.This is the result of expression defined in counter-key attribute of the quota-by-key policy.For Example, if you specify counter-key="boo" in the policy, then it’s accessible by "boo" counter key.</span></span> <span data-ttu-id="47ed1-118">그러나 counter-key="@("b"+"a")로 정의 된 경우"가 "ba" 키에서 액세스할 수</span><span class="sxs-lookup"><span data-stu-id="47ed1-118">But if it’s defined as counter-key="@("b"+"a")" then it will be accessible by "ba" key</span></span>'
+        - id: quotaPeriodKey
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-119">할당량 기간 키 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-119">Quota period key identifier.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-apimanagement.QuotaCounterContract>
+          description: |
+            <span data-ttu-id="47ed1-120">콜백</span><span class="sxs-lookup"><span data-stu-id="47ed1-120">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.QuotaByPeriodKeysGetResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.constructor'
+    name: QuotaByPeriodKeys(ApiManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="47ed1-121">QuotaByPeriodKeys를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-121">Create a QuotaByPeriodKeys.</span></span>
+    syntax:
+      content: 'new QuotaByPeriodKeys(client: ApiManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-apimanagement.ApiManagementClientContext'
+          description: |
+            <span data-ttu-id="47ed1-122">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-122">Reference to the service client.</span></span>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.update'
+    name: 'update(string, string, string, string, QuotaCounterValueContractProperties, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="47ed1-123">지정 된 서비스 인스턴스의 기존 할당량 카운터 값을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-123">Updates an existing quota counter value in the specified service instance.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, serviceName: string, quotaCounterKey: string, quotaPeriodKey: string, parameters: QuotaCounterValueContractProperties, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-124">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="47ed1-124">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-125">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-125">The name of the API Management service.</span></span>
+        - id: quotaCounterKey
+          type:
+            - string
+          description: '<span data-ttu-id="47ed1-126">할당량 카운터 키 식별자입니다. 이 키로 할당량 정책의 반대 키 특성에 정의 된 식의 결과입니다. 예를 들어, 카운터 키를 지정 하는 경우 = "boo" 정책에서 "boo" 카운터 키 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-126">Quota counter key identifier.This is the result of expression defined in counter-key attribute of the quota-by-key policy.For Example, if you specify counter-key="boo" in the policy, then it’s accessible by "boo" counter key.</span></span> <span data-ttu-id="47ed1-127">그러나 counter-key="@("b"+"a")로 정의 된 경우"가 "ba" 키에서 액세스할 수</span><span class="sxs-lookup"><span data-stu-id="47ed1-127">But if it’s defined as counter-key="@("b"+"a")" then it will be accessible by "ba" key</span></span>'
+        - id: quotaPeriodKey
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-128">할당량 기간 키 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-128">Quota period key identifier.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.QuotaCounterValueContractProperties'
+          description: <span data-ttu-id="47ed1-129">지정 된 기간에 적용할 할당량 카운터의 값입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-129">The value of the Quota counter to be applied on the specified period.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.update_2'
+    name: 'update(string, string, string, string, QuotaCounterValueContractProperties, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, serviceName: string, quotaCounterKey: string, quotaPeriodKey: string, parameters: QuotaCounterValueContractProperties, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-130">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="47ed1-130">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-131">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-131">The name of the API Management service.</span></span>
+        - id: quotaCounterKey
+          type:
+            - string
+          description: '<span data-ttu-id="47ed1-132">할당량 카운터 키 식별자입니다. 이 키로 할당량 정책의 반대 키 특성에 정의 된 식의 결과입니다. 예를 들어, 카운터 키를 지정 하는 경우 = "boo" 정책에서 "boo" 카운터 키 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-132">Quota counter key identifier.This is the result of expression defined in counter-key attribute of the quota-by-key policy.For Example, if you specify counter-key="boo" in the policy, then it’s accessible by "boo" counter key.</span></span> <span data-ttu-id="47ed1-133">그러나 counter-key="@("b"+"a")로 정의 된 경우"가 "ba" 키에서 액세스할 수</span><span class="sxs-lookup"><span data-stu-id="47ed1-133">But if it’s defined as counter-key="@("b"+"a")" then it will be accessible by "ba" key</span></span>'
+        - id: quotaPeriodKey
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-134">할당량 기간 키 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-134">Quota period key identifier.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.QuotaCounterValueContractProperties'
+          description: <span data-ttu-id="47ed1-135">지정 된 기간에 적용할 할당량 카운터의 값입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-135">The value of the Quota counter to be applied on the specified period.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="47ed1-136">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="47ed1-136">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="47ed1-137">콜백</span><span class="sxs-lookup"><span data-stu-id="47ed1-137">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-apimanagement'
+  - uid: '@azure/arm-apimanagement.QuotaByPeriodKeys.update_1'
+    name: 'update(string, string, string, string, QuotaCounterValueContractProperties, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, serviceName: string, quotaCounterKey: string, quotaPeriodKey: string, parameters: QuotaCounterValueContractProperties, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-138">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="47ed1-138">The name of the resource group.</span></span>
+        - id: serviceName
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-139">API Management 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-139">The name of the API Management service.</span></span>
+        - id: quotaCounterKey
+          type:
+            - string
+          description: '<span data-ttu-id="47ed1-140">할당량 카운터 키 식별자입니다. 이 키로 할당량 정책의 반대 키 특성에 정의 된 식의 결과입니다. 예를 들어, 카운터 키를 지정 하는 경우 = "boo" 정책에서 "boo" 카운터 키 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-140">Quota counter key identifier.This is the result of expression defined in counter-key attribute of the quota-by-key policy.For Example, if you specify counter-key="boo" in the policy, then it’s accessible by "boo" counter key.</span></span> <span data-ttu-id="47ed1-141">그러나 counter-key="@("b"+"a")로 정의 된 경우"가 "ba" 키에서 액세스할 수</span><span class="sxs-lookup"><span data-stu-id="47ed1-141">But if it’s defined as counter-key="@("b"+"a")" then it will be accessible by "ba" key</span></span>'
+        - id: quotaPeriodKey
+          type:
+            - string
+          description: <span data-ttu-id="47ed1-142">할당량 기간 키 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-142">Quota period key identifier.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-apimanagement.QuotaCounterValueContractProperties'
+          description: <span data-ttu-id="47ed1-143">지정 된 기간에 적용할 할당량 카운터의 값입니다.</span><span class="sxs-lookup"><span data-stu-id="47ed1-143">The value of the Quota counter to be applied on the specified period.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="47ed1-144">콜백</span><span class="sxs-lookup"><span data-stu-id="47ed1-144">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-apimanagement'
+references:
+  - uid: '@azure/arm-apimanagement.ApiManagementClientContext'
+    name: ApiManagementClientContext
+    spec.typeScript:
+      - name: ApiManagementClientContext
+        fullName: ApiManagementClientContext
+        uid: '@azure/arm-apimanagement.ApiManagementClientContext'
+  - uid: ServiceCallback<@azure/arm-apimanagement.QuotaCounterContract>
+    name: QuotaCounterContract>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: QuotaCounterContract
+        fullName: QuotaCounterContract
+        uid: '@azure/arm-apimanagement.QuotaCounterContract'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-apimanagement.QuotaCounterValueContractProperties'
+    name: QuotaCounterValueContractProperties
+    spec.typeScript:
+      - name: QuotaCounterValueContractProperties
+        fullName: QuotaCounterValueContractProperties
+        uid: '@azure/arm-apimanagement.QuotaCounterValueContractProperties'
