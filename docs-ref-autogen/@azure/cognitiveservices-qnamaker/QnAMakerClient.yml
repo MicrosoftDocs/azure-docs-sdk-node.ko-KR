@@ -105,23 +105,23 @@ items:
           - '@azure/cognitiveservices-qnamaker.Operations'
     package: '@azure/cognitiveservices-qnamaker'
   - uid: '@azure/cognitiveservices-qnamaker.QnAMakerClient.constructor'
-    name: 'QnAMakerClient(string, ServiceClientCredentials, msRest.ServiceClientOptions)'
+    name: 'QnAMakerClient(ServiceClientCredentials, string, msRest.ServiceClientOptions)'
     children: []
     type: constructor
     langs:
       - typeScript
     summary: QnAMakerClient 클래스의 새 인스턴스를 초기화합니다.
     syntax:
-      content: 'new QnAMakerClient(endpoint: string, credentials: ServiceClientCredentials, options?: msRest.ServiceClientOptions)'
+      content: 'new QnAMakerClient(credentials: ServiceClientCredentials, endpoint: string, options?: msRest.ServiceClientOptions)'
       parameters:
-        - id: endpoint
-          type:
-            - string
-          description: '지원 되는 Cognitive Services 끝점 (프로토콜 및 호스트 이름, 예: https://westus.api.cognitive.microsoft.com)합니다.'
         - id: credentials
           type:
             - ServiceClientCredentials
           description: 클라이언트 구독을 고유 하 게 식별 하는 구독 자격 증명입니다.
+        - id: endpoint
+          type:
+            - string
+          description: '지원 되는 Cognitive Services 끝점 (프로토콜 및 호스트 이름, 예: https://westus.api.cognitive.microsoft.com)합니다.'
         - id: options
           type:
             - msRest.ServiceClientOptions
