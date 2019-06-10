@@ -1,0 +1,111 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.TopicClient'
+    name: TopicClient
+    fullName: TopicClient
+    children:
+      - '@azure/service-bus.TopicClient.close'
+      - '@azure/service-bus.TopicClient.createSender'
+      - '@azure/service-bus.TopicClient.entityPath'
+      - '@azure/service-bus.TopicClient.getDeadLetterTopicPath'
+      - '@azure/service-bus.TopicClient.id'
+    langs:
+      - typeScript
+    type: class
+    summary: |-
+      Service Bus 주제와 상호 작용을 허용 하는 클라이언트를 설명 합니다.
+      사용 된 `createTopicClient` ServiceBusClient 개체를 인스턴스화하는 TopicClient 함수
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.TopicClient.close'
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      이 클라이언트에서 만든 발신자에 대 한 AMQP 링크를 닫습니다.
+      닫히면 추가 작업에는 TopicClient 아니고 보낸을 사용할 수 있습니다.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.TopicClient.createSender'
+    name: createSender()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |
+      메시지 보내기, 나중에 전송 될 메시지를 예약 및 이러한 예약 된 메시지 취소에 사용할 보낸 사람을 만듭니다.
+      - 열기 발신자는이 TopicClient에 대해 이미 존재 하는 경우 오류를 throw 합니다.
+      항목 세션이 활성화 된 구독에 있으면 메시지가 전송 하지 않고는 `sessionId` 속성 이러한 구독의 배달 못 한 편지 큐로 이동 합니다.
+    syntax:
+      content: function createSender()
+      parameters: []
+      return:
+        type:
+          - '@azure/service-bus.Sender'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.TopicClient.entityPath'
+    name: entityPath
+    fullName: entityPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 클라이언트 만들어질 Service Bus 토픽에 대 한 경로입니다.
+    syntax:
+      content: 'entityPath: string'
+      return:
+        type:
+          - string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.TopicClient.getDeadLetterTopicPath'
+    name: 'getDeadLetterTopicPath(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      지정 된 항목 및 구독 이름에 대 한 해당 배달 못 한 편지 항목 이름을 반환합니다.
+      이 사용 하 여 합니다 `createSubscriptionClient` 함수는 `ServiceBusClient` 지정 된 배달 못 한 편지 큐에서 메시지를 수신 하는 인스턴스 구독 합니다.
+    syntax:
+      content: 'static function getDeadLetterTopicPath(topicName: string, subscriptionName: string)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: 해당 배달 못 한 편지 해당 사용자의 이름을 인출 하는 토픽의 이름
+        - id: subscriptionName
+          type:
+            - string
+          description: |
+            해당 배달 못 한 편지 해당 사용자의 이름을 인출 하는 구독 이름
+      return:
+        type:
+          - string
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.TopicClient.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 클라이언트에 대 한 고유 식별자입니다.
+    syntax:
+      content: 'id: string'
+      return:
+        type:
+          - string
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.Sender'
+    name: Sender
+    spec.typeScript:
+      - name: Sender
+        fullName: Sender
+        uid: '@azure/service-bus.Sender'
