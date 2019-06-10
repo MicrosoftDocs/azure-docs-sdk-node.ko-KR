@@ -1,0 +1,757 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.Snapshots'
+    name: Snapshots
+    fullName: Snapshots
+    children:
+      - '@azure/arm-compute.Snapshots.beginCreateOrUpdate'
+      - '@azure/arm-compute.Snapshots.beginDeleteMethod'
+      - '@azure/arm-compute.Snapshots.beginGrantAccess'
+      - '@azure/arm-compute.Snapshots.beginRevokeAccess'
+      - '@azure/arm-compute.Snapshots.beginUpdate'
+      - '@azure/arm-compute.Snapshots.createOrUpdate'
+      - '@azure/arm-compute.Snapshots.deleteMethod'
+      - '@azure/arm-compute.Snapshots.get'
+      - '@azure/arm-compute.Snapshots.get_2'
+      - '@azure/arm-compute.Snapshots.get_1'
+      - '@azure/arm-compute.Snapshots.grantAccess'
+      - '@azure/arm-compute.Snapshots.list'
+      - '@azure/arm-compute.Snapshots.list_2'
+      - '@azure/arm-compute.Snapshots.list_1'
+      - '@azure/arm-compute.Snapshots.listByResourceGroup'
+      - '@azure/arm-compute.Snapshots.listByResourceGroup_2'
+      - '@azure/arm-compute.Snapshots.listByResourceGroup_1'
+      - '@azure/arm-compute.Snapshots.listByResourceGroupNext'
+      - '@azure/arm-compute.Snapshots.listByResourceGroupNext_2'
+      - '@azure/arm-compute.Snapshots.listByResourceGroupNext_1'
+      - '@azure/arm-compute.Snapshots.listNext'
+      - '@azure/arm-compute.Snapshots.listNext_2'
+      - '@azure/arm-compute.Snapshots.listNext_1'
+      - '@azure/arm-compute.Snapshots.revokeAccess'
+      - '@azure/arm-compute.Snapshots.constructor'
+      - '@azure/arm-compute.Snapshots.update'
+    langs:
+      - typeScript
+    type: class
+    summary: 스냅숏을 나타내는 클래스입니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, Snapshot, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 만들거나 스냅숏으로 업데이트 합니다.
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, snapshotName: string, snapshot: Snapshot, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: snapshot
+          type:
+            - '@azure/arm-compute.Snapshot'
+          description: Put 디스크 작업의 본문에 제공 되는 스냅숏 개체입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏을 삭제합니다.
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, snapshotName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.beginGrantAccess'
+    name: 'beginGrantAccess(string, string, GrantAccessData, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏으로 액세스를 부여 합니다.
+    syntax:
+      content: 'function beginGrantAccess(resourceGroupName: string, snapshotName: string, grantAccessData: GrantAccessData, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: grantAccessData
+          type:
+            - '@azure/arm-compute.GrantAccessData'
+          description: Get 스냅숏 액세스 작업의 본문에 제공 된 데이터 개체를 액세스입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.beginRevokeAccess'
+    name: 'beginRevokeAccess(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏으로 액세스 권한을 취소 합니다.
+    syntax:
+      content: 'function beginRevokeAccess(resourceGroupName: string, snapshotName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.beginUpdate'
+    name: 'beginUpdate(string, string, SnapshotUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 업데이트 (패치)을 스냅숏 합니다.
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, snapshotName: string, snapshot: SnapshotUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: snapshot
+          type:
+            - '@azure/arm-compute.SnapshotUpdate'
+          description: 스냅숏된 개체를 패치 스냅숏 작업의 본문에 제공 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.createOrUpdate'
+    name: 'createOrUpdate(string, string, Snapshot, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 만들거나 스냅숏으로 업데이트 합니다.
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, snapshotName: string, snapshot: Snapshot, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: snapshot
+          type:
+            - '@azure/arm-compute.Snapshot'
+          description: Put 디스크 작업의 본문에 제공 되는 스냅숏 개체입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsCreateOrUpdateResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏을 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, snapshotName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏 정보를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, snapshotName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsGetResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<Snapshot>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, snapshotName: string, options: RequestOptionsBase, callback: ServiceCallback<Snapshot>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.Snapshot>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsGetResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.get_1'
+    name: 'get(string, string, ServiceCallback<Snapshot>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, snapshotName: string, callback: ServiceCallback<Snapshot>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.Snapshot>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsGetResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.grantAccess'
+    name: 'grantAccess(string, string, GrantAccessData, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏으로 액세스를 부여 합니다.
+    syntax:
+      content: 'function grantAccess(resourceGroupName: string, snapshotName: string, grantAccessData: GrantAccessData, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: grantAccessData
+          type:
+            - '@azure/arm-compute.GrantAccessData'
+          description: Get 스냅숏 액세스 작업의 본문에 제공 된 데이터 개체를 액세스입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsGrantAccessResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.list'
+    name: list(msRest.RequestOptionsBase)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 구독에서 스냅숏을 나열합니다.
+    syntax:
+      content: 'function list(options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsListResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.list_2'
+    name: 'list(RequestOptionsBase, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: RequestOptionsBase, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.list_1'
+    name: list(ServiceCallback<SnapshotList>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listByResourceGroup'
+    name: 'listByResourceGroup(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 리소스 그룹에서 스냅숏을 나열합니다.
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsListByResourceGroupResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, RequestOptionsBase, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: RequestOptionsBase, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListByResourceGroupResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListByResourceGroupResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 리소스 그룹에서 스냅숏을 나열합니다.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsListByResourceGroupNextResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListByResourceGroupNextResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListByResourceGroupNextResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 구독에서 스냅숏을 나열합니다.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsListNextResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListNextResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.listNext_1'
+    name: 'listNext(string, ServiceCallback<SnapshotList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<SnapshotList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-compute.SnapshotList>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.SnapshotsListNextResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.revokeAccess'
+    name: 'revokeAccess(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스냅숏으로 액세스 권한을 취소 합니다.
+    syntax:
+      content: 'function revokeAccess(resourceGroupName: string, snapshotName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.constructor'
+    name: Snapshots(ComputeManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 스냅숏을 만듭니다.
+    syntax:
+      content: 'new Snapshots(client: ComputeManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-compute.ComputeManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.Snapshots.update'
+    name: 'update(string, string, SnapshotUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 업데이트 (패치)을 스냅숏 합니다.
+    syntax:
+      content: 'function update(resourceGroupName: string, snapshotName: string, snapshot: SnapshotUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름.
+        - id: snapshotName
+          type:
+            - string
+          description: '생성 되는 스냅숏의 이름입니다. 스냅숏이 만들어진 후에 이름을 변경할 수 없습니다. 이름에 대해 지원 되는 문자: a-z, A-z, 0-9 및 _ 됩니다. 최대 이름 길이 80 자입니다.'
+        - id: snapshot
+          type:
+            - '@azure/arm-compute.SnapshotUpdate'
+          description: 스냅숏된 개체를 패치 스냅숏 작업의 본문에 제공 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotsUpdateResponse>
+    package: '@azure/arm-compute'
+references:
+  - uid: '@azure/arm-compute.ComputeManagementClientContext'
+    name: ComputeManagementClientContext
+    spec.typeScript:
+      - name: ComputeManagementClientContext
+        fullName: ComputeManagementClientContext
+        uid: '@azure/arm-compute.ComputeManagementClientContext'
+  - uid: '@azure/arm-compute.Snapshot'
+    name: Snapshot
+    spec.typeScript:
+      - name: Snapshot
+        fullName: Snapshot
+        uid: '@azure/arm-compute.Snapshot'
+  - uid: '@azure/arm-compute.GrantAccessData'
+    name: GrantAccessData
+    spec.typeScript:
+      - name: GrantAccessData
+        fullName: GrantAccessData
+        uid: '@azure/arm-compute.GrantAccessData'
+  - uid: '@azure/arm-compute.SnapshotUpdate'
+    name: SnapshotUpdate
+    spec.typeScript:
+      - name: SnapshotUpdate
+        fullName: SnapshotUpdate
+        uid: '@azure/arm-compute.SnapshotUpdate'
+  - uid: ServiceCallback<@azure/arm-compute.Snapshot>
+    name: Snapshot>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Snapshot
+        fullName: Snapshot
+        uid: '@azure/arm-compute.Snapshot'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-compute.SnapshotList>
+    name: SnapshotList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SnapshotList
+        fullName: SnapshotList
+        uid: '@azure/arm-compute.SnapshotList'
+      - name: '>'
+        fullName: '>'

@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.RollingUpgradePolicy'
+    name: RollingUpgradePolicy
+    fullName: RollingUpgradePolicy
+    children:
+      - '@azure/arm-compute.RollingUpgradePolicy.maxBatchInstancePercent'
+      - '@azure/arm-compute.RollingUpgradePolicy.maxUnhealthyInstancePercent'
+      - '@azure/arm-compute.RollingUpgradePolicy.maxUnhealthyUpgradedInstancePercent'
+      - '@azure/arm-compute.RollingUpgradePolicy.pauseTimeBetweenBatches'
+    langs:
+      - typeScript
+    type: interface
+    summary: 롤링 업그레이드를 수행 하는 동안 사용 되는 구성 매개 변수입니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.RollingUpgradePolicy.maxBatchInstancePercent'
+    name: maxBatchInstancePercent
+    fullName: maxBatchInstancePercent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 하나의 일괄 처리에서 롤링 업그레이드에서 동시에 업그레이드 될 총 가상 머신 인스턴스의 최대 백분율입니다. 최대 이므로 이전 또는 이후 일괄 처리의 비정상 인스턴스를 더 높은 안정성 보장을 줄이려면 일괄 처리 인스턴스의 백분율이 될 수 있습니다. 이 매개 변수의 기본값은 20%입니다.
+    optional: true
+    syntax:
+      content: 'maxBatchInstancePercent?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.RollingUpgradePolicy.maxUnhealthyInstancePercent'
+    name: maxUnhealthyInstancePercent
+    fullName: maxUnhealthyInstancePercent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 업그레이드 중의 결과로 또는 롤링 업그레이드를 중단 하기 전에 가상 컴퓨터 상태 검사에서 비정상 상태에 있는 정상 동시에 있을 수 있는 확장 집합의 총 가상 머신 인스턴스의 최대 비율입니다. 이 제약 조건은 모든 일괄 처리를 시작 하기 전에 검사 됩니다. 이 매개 변수의 기본값은 20%입니다.
+    optional: true
+    syntax:
+      content: 'maxUnhealthyInstancePercent?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.RollingUpgradePolicy.maxUnhealthyUpgradedInstancePercent'
+    name: maxUnhealthyUpgradedInstancePercent
+    fullName: maxUnhealthyUpgradedInstancePercent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 비정상 상태에서를 찾을 수 있는 업그레이드 된 가상 머신 인스턴스의 최대 비율입니다. 이 검사는 각 일괄 처리를 업그레이드 한 후에 발생 합니다. 이 비율을 초과 적이 경우 롤링 업데이트를 중단 합니다. 이 매개 변수의 기본값은 20%입니다.
+    optional: true
+    syntax:
+      content: 'maxUnhealthyUpgradedInstancePercent?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.RollingUpgradePolicy.pauseTimeBetweenBatches'
+    name: pauseTimeBetweenBatches
+    fullName: pauseTimeBetweenBatches
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 하나의 일괄 처리의 모든 virtual machines에 대 한 업데이트를 완료 하 고 다음 일괄 처리 시작 사이의 대기 시간입니다. ISO 8601 형식으로 기간을 지정 해야 합니다. 기본값은 0 초 (PT0S)입니다.
+    optional: true
+    syntax:
+      content: 'pauseTimeBetweenBatches?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-compute'
