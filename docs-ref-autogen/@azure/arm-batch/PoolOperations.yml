@@ -1,0 +1,785 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-batch.PoolOperations'
+    name: PoolOperations
+    fullName: PoolOperations
+    children:
+      - '@azure/arm-batch.PoolOperations.beginCreate'
+      - '@azure/arm-batch.PoolOperations.beginDeleteMethod'
+      - '@azure/arm-batch.PoolOperations.create'
+      - '@azure/arm-batch.PoolOperations.deleteMethod'
+      - '@azure/arm-batch.PoolOperations.disableAutoScale'
+      - '@azure/arm-batch.PoolOperations.disableAutoScale_2'
+      - '@azure/arm-batch.PoolOperations.disableAutoScale_1'
+      - '@azure/arm-batch.PoolOperations.get'
+      - '@azure/arm-batch.PoolOperations.get_2'
+      - '@azure/arm-batch.PoolOperations.get_1'
+      - '@azure/arm-batch.PoolOperations.listByBatchAccount'
+      - '@azure/arm-batch.PoolOperations.listByBatchAccount_2'
+      - '@azure/arm-batch.PoolOperations.listByBatchAccount_1'
+      - '@azure/arm-batch.PoolOperations.listByBatchAccountNext'
+      - '@azure/arm-batch.PoolOperations.listByBatchAccountNext_2'
+      - '@azure/arm-batch.PoolOperations.listByBatchAccountNext_1'
+      - '@azure/arm-batch.PoolOperations.constructor'
+      - '@azure/arm-batch.PoolOperations.stopResize'
+      - '@azure/arm-batch.PoolOperations.stopResize_2'
+      - '@azure/arm-batch.PoolOperations.stopResize_1'
+      - '@azure/arm-batch.PoolOperations.update'
+      - '@azure/arm-batch.PoolOperations.update_2'
+      - '@azure/arm-batch.PoolOperations.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="e6531-101">PoolOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-101">Class representing a PoolOperations.</span></span>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.beginCreate'
+    name: 'beginCreate(string, string, string, Pool, Models.PoolBeginCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-102">지정된 된 계정 내에서 새 풀을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-102">Creates a new pool inside the specified account.</span></span>
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, accountName: string, poolName: string, parameters: Pool, options?: Models.PoolBeginCreateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-103">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-103">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-104">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-104">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-105">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-105">The pool name.</span></span> <span data-ttu-id="e6531-106">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-106">This must be unique within the account.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batch.Pool'
+          description: <span data-ttu-id="e6531-107">풀을 만들기 위한 추가 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-107">Additional parameters for pool creation.</span></span>
+        - id: options
+          type:
+            - Models.PoolBeginCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-108">지정된 된 풀을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-108">Deletes the specified pool.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, accountName: string, poolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-109">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-109">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-110">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-110">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-111">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-111">The pool name.</span></span> <span data-ttu-id="e6531-112">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-112">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.create'
+    name: 'create(string, string, string, Pool, Models.PoolCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-113">지정된 된 계정 내에서 새 풀을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-113">Creates a new pool inside the specified account.</span></span>
+    syntax:
+      content: 'function create(resourceGroupName: string, accountName: string, poolName: string, parameters: Pool, options?: Models.PoolCreateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-114">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-114">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-115">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-115">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-116">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-116">The pool name.</span></span> <span data-ttu-id="e6531-117">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-117">This must be unique within the account.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batch.Pool'
+          description: <span data-ttu-id="e6531-118">풀을 만들기 위한 추가 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-118">Additional parameters for pool creation.</span></span>
+        - id: options
+          type:
+            - Models.PoolCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolCreateResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-119">지정된 된 풀을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-119">Deletes the specified pool.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, accountName: string, poolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-120">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-120">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-121">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-121">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-122">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-122">The pool name.</span></span> <span data-ttu-id="e6531-123">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-123">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolDeleteResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.disableAutoScale'
+    name: 'disableAutoScale(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-124">풀에 대 한 자동 크기 조정을 사용 하지 않도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-124">Disables automatic scaling for a pool.</span></span>
+    syntax:
+      content: 'function disableAutoScale(resourceGroupName: string, accountName: string, poolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-125">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-125">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-126">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-126">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-127">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-127">The pool name.</span></span> <span data-ttu-id="e6531-128">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-128">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolDisableAutoScaleResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.disableAutoScale_2'
+    name: 'disableAutoScale(string, string, string, RequestOptionsBase, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function disableAutoScale(resourceGroupName: string, accountName: string, poolName: string, options: RequestOptionsBase, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-129">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-129">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-130">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-130">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-131">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-131">The pool name.</span></span> <span data-ttu-id="e6531-132">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-132">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="e6531-133">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="e6531-133">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-134">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-134">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolDisableAutoScaleResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.disableAutoScale_1'
+    name: 'disableAutoScale(string, string, string, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function disableAutoScale(resourceGroupName: string, accountName: string, poolName: string, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-135">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-135">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-136">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-136">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-137">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-137">The pool name.</span></span> <span data-ttu-id="e6531-138">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-138">This must be unique within the account.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-139">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-139">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolDisableAutoScaleResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-140">지정된 된 풀에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-140">Gets information about the specified pool.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, accountName: string, poolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-141">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-141">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-142">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-142">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-143">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-143">The pool name.</span></span> <span data-ttu-id="e6531-144">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-144">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolGetResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, accountName: string, poolName: string, options: RequestOptionsBase, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-145">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-145">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-146">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-146">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-147">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-147">The pool name.</span></span> <span data-ttu-id="e6531-148">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-148">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="e6531-149">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="e6531-149">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-150">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-150">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolGetResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.get_1'
+    name: 'get(string, string, string, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, accountName: string, poolName: string, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-151">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-151">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-152">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-152">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-153">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-153">The pool name.</span></span> <span data-ttu-id="e6531-154">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-154">This must be unique within the account.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-155">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-155">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolGetResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.listByBatchAccount'
+    name: 'listByBatchAccount(string, string, Models.PoolListByBatchAccountOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-156">지정된 된 계정에 풀의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-156">Lists all of the pools in the specified account.</span></span>
+    syntax:
+      content: 'function listByBatchAccount(resourceGroupName: string, accountName: string, options?: Models.PoolListByBatchAccountOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-157">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-157">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-158">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-158">The name of the Batch account.</span></span>
+        - id: options
+          type:
+            - Models.PoolListByBatchAccountOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolListByBatchAccountResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.listByBatchAccount_2'
+    name: 'listByBatchAccount(string, string, PoolListByBatchAccountOptionalParams, ServiceCallback<ListPoolsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccount(resourceGroupName: string, accountName: string, options: PoolListByBatchAccountOptionalParams, callback: ServiceCallback<ListPoolsResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-159">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-159">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-160">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-160">The name of the Batch account.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-batch.PoolListByBatchAccountOptionalParams'
+          description: <span data-ttu-id="e6531-161">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="e6531-161">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListPoolsResult>
+          description: |
+            <span data-ttu-id="e6531-162">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolListByBatchAccountResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.listByBatchAccount_1'
+    name: 'listByBatchAccount(string, string, ServiceCallback<ListPoolsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccount(resourceGroupName: string, accountName: string, callback: ServiceCallback<ListPoolsResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-163">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-163">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-164">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-164">The name of the Batch account.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListPoolsResult>
+          description: |
+            <span data-ttu-id="e6531-165">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-165">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolListByBatchAccountResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.listByBatchAccountNext'
+    name: 'listByBatchAccountNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-166">지정된 된 계정에 풀의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-166">Lists all of the pools in the specified account.</span></span>
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="e6531-167">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-167">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolListByBatchAccountNextResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.listByBatchAccountNext_2'
+    name: 'listByBatchAccountNext(string, RequestOptionsBase, ServiceCallback<ListPoolsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ListPoolsResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="e6531-168">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-168">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="e6531-169">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="e6531-169">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListPoolsResult>
+          description: |
+            <span data-ttu-id="e6531-170">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-170">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolListByBatchAccountNextResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.listByBatchAccountNext_1'
+    name: 'listByBatchAccountNext(string, ServiceCallback<ListPoolsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, callback: ServiceCallback<ListPoolsResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="e6531-171">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-171">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.ListPoolsResult>
+          description: |
+            <span data-ttu-id="e6531-172">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-172">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolListByBatchAccountNextResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.constructor'
+    name: PoolOperations(BatchManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-173">PoolOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-173">Create a PoolOperations.</span></span>
+    syntax:
+      content: 'new PoolOperations(client: BatchManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-batch.BatchManagementClientContext'
+          description: |
+            <span data-ttu-id="e6531-174">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-174">Reference to the service client.</span></span>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.stopResize'
+    name: 'stopResize(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="e6531-175">크기 조정 작업 전에 이전 상태로 풀을 복원 하지 않습니다: 추가 변경 되 고, 중지 및 풀의 현재 상태를 유지 관리 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-175">This does not restore the pool to its previous state before the resize operation: it only stops any further changes being made, and the pool maintains its current state.</span></span> <span data-ttu-id="e6531-176">중지 후 풀 중지 작업이 완료 된 경우에 노드의 수에 안정화 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-176">After stopping, the pool stabilizes at the number of nodes it was at when the stop operation was done.</span></span> <span data-ttu-id="e6531-177">중지 작업 중 풀 할당 상태 먼저 변경 중지 하는 데 다음 계속 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-177">During the stop operation, the pool allocation state changes first to stopping and then to steady.</span></span> <span data-ttu-id="e6531-178">크기 조정 작업에는 명시적 크기 조정 풀 요청 아니어도 이 API는 만들어질 때 풀의 초기 크기를 중지 하려면 데도 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-178">A resize operation need not be an explicit resize pool request; this API can also be used to halt the initial sizing of the pool when it is created.</span></span>'
+    syntax:
+      content: 'function stopResize(resourceGroupName: string, accountName: string, poolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-179">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-179">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-180">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-180">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-181">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-181">The pool name.</span></span> <span data-ttu-id="e6531-182">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-182">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolStopResizeResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.stopResize_2'
+    name: 'stopResize(string, string, string, RequestOptionsBase, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function stopResize(resourceGroupName: string, accountName: string, poolName: string, options: RequestOptionsBase, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-183">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-183">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-184">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-184">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-185">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-185">The pool name.</span></span> <span data-ttu-id="e6531-186">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-186">This must be unique within the account.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="e6531-187">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="e6531-187">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-188">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-188">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolStopResizeResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.stopResize_1'
+    name: 'stopResize(string, string, string, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function stopResize(resourceGroupName: string, accountName: string, poolName: string, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-189">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-189">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-190">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-190">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-191">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-191">The pool name.</span></span> <span data-ttu-id="e6531-192">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-192">This must be unique within the account.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-193">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-193">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolStopResizeResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.update'
+    name: 'update(string, string, string, Pool, Models.PoolUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="e6531-194">기존 풀의 속성을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-194">Updates the properties of an existing pool.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, poolName: string, parameters: Pool, options?: Models.PoolUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-195">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-195">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-196">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-196">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-197">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-197">The pool name.</span></span> <span data-ttu-id="e6531-198">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-198">This must be unique within the account.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batch.Pool'
+          description: '<span data-ttu-id="e6531-199">업데이트 되어야 하는 풀의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-199">Pool properties that should be updated.</span></span> <span data-ttu-id="e6531-200">제공 되는 속성을 업데이트할 모든 속성을 제공 하지는 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-200">Properties that are supplied will be updated, any property not supplied will be unchanged.</span></span>'
+        - id: options
+          type:
+            - Models.PoolUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PoolUpdateResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.update_2'
+    name: 'update(string, string, string, Pool, PoolUpdateOptionalParams, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, poolName: string, parameters: Pool, options: PoolUpdateOptionalParams, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-201">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-201">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-202">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-202">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-203">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-203">The pool name.</span></span> <span data-ttu-id="e6531-204">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-204">This must be unique within the account.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batch.Pool'
+          description: '<span data-ttu-id="e6531-205">업데이트 되어야 하는 풀의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-205">Pool properties that should be updated.</span></span> <span data-ttu-id="e6531-206">제공 되는 속성을 업데이트할 모든 속성을 제공 하지는 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-206">Properties that are supplied will be updated, any property not supplied will be unchanged.</span></span>'
+        - id: options
+          type:
+            - '@azure/arm-batch.PoolUpdateOptionalParams'
+          description: <span data-ttu-id="e6531-207">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="e6531-207">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-208">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-208">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolUpdateResponse>
+    package: '@azure/arm-batch'
+  - uid: '@azure/arm-batch.PoolOperations.update_1'
+    name: 'update(string, string, string, Pool, ServiceCallback<Pool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, poolName: string, parameters: Pool, callback: ServiceCallback<Pool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-209">Batch 계정을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-209">The name of the resource group that contains the Batch account.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-210">Batch 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-210">The name of the Batch account.</span></span>
+        - id: poolName
+          type:
+            - string
+          description: <span data-ttu-id="e6531-211">풀 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-211">The pool name.</span></span> <span data-ttu-id="e6531-212">이 계정 내에서 고유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-212">This must be unique within the account.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-batch.Pool'
+          description: '<span data-ttu-id="e6531-213">업데이트 되어야 하는 풀의 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-213">Pool properties that should be updated.</span></span> <span data-ttu-id="e6531-214">제공 되는 속성을 업데이트할 모든 속성을 제공 하지는 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e6531-214">Properties that are supplied will be updated, any property not supplied will be unchanged.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-batch.Pool>
+          description: |
+            <span data-ttu-id="e6531-215">콜백</span><span class="sxs-lookup"><span data-stu-id="e6531-215">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PoolUpdateResponse>
+    package: '@azure/arm-batch'
+references:
+  - uid: '@azure/arm-batch.BatchManagementClientContext'
+    name: BatchManagementClientContext
+    spec.typeScript:
+      - name: BatchManagementClientContext
+        fullName: BatchManagementClientContext
+        uid: '@azure/arm-batch.BatchManagementClientContext'
+  - uid: '@azure/arm-batch.Pool'
+    name: Pool
+    spec.typeScript:
+      - name: Pool
+        fullName: Pool
+        uid: '@azure/arm-batch.Pool'
+  - uid: ServiceCallback<@azure/arm-batch.Pool>
+    name: Pool>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Pool
+        fullName: Pool
+        uid: '@azure/arm-batch.Pool'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-batch.ListPoolsResult>
+    name: ListPoolsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListPoolsResult
+        fullName: ListPoolsResult
+        uid: '@azure/arm-batch.ListPoolsResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-batch.PoolListByBatchAccountOptionalParams'
+    name: PoolListByBatchAccountOptionalParams
+    spec.typeScript:
+      - name: PoolListByBatchAccountOptionalParams
+        fullName: PoolListByBatchAccountOptionalParams
+        uid: '@azure/arm-batch.PoolListByBatchAccountOptionalParams'
+  - uid: '@azure/arm-batch.PoolUpdateOptionalParams'
+    name: PoolUpdateOptionalParams
+    spec.typeScript:
+      - name: PoolUpdateOptionalParams
+        fullName: PoolUpdateOptionalParams
+        uid: '@azure/arm-batch.PoolUpdateOptionalParams'

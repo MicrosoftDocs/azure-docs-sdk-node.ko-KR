@@ -1,0 +1,429 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-cdn.Origins'
+    name: Origins
+    fullName: Origins
+    children:
+      - '@azure/arm-cdn.Origins.beginUpdate'
+      - '@azure/arm-cdn.Origins.get'
+      - '@azure/arm-cdn.Origins.get_2'
+      - '@azure/arm-cdn.Origins.get_1'
+      - '@azure/arm-cdn.Origins.listByEndpoint'
+      - '@azure/arm-cdn.Origins.listByEndpoint_2'
+      - '@azure/arm-cdn.Origins.listByEndpoint_1'
+      - '@azure/arm-cdn.Origins.listByEndpointNext'
+      - '@azure/arm-cdn.Origins.listByEndpointNext_2'
+      - '@azure/arm-cdn.Origins.listByEndpointNext_1'
+      - '@azure/arm-cdn.Origins.constructor'
+      - '@azure/arm-cdn.Origins.update'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="3a9f9-101">원본을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-101">Class representing a Origins.</span></span>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.beginUpdate'
+    name: 'beginUpdate(string, string, string, string, OriginUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3a9f9-102">끝점 내에서 기존 origin을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-102">Updates an existing origin within an endpoint.</span></span>
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, profileName: string, endpointName: string, originName: string, originUpdateProperties: OriginUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-103">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-103">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-104">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-104">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-105">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-105">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: originName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-106">끝점 내에서 고유한 출처의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-106">Name of the origin which is unique within the endpoint.</span></span>
+        - id: originUpdateProperties
+          type:
+            - '@azure/arm-cdn.OriginUpdateParameters'
+          description: <span data-ttu-id="3a9f9-107">원본 속성</span><span class="sxs-lookup"><span data-stu-id="3a9f9-107">Origin properties</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.get'
+    name: 'get(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3a9f9-108">끝점 내에서 기존 origin을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-108">Gets an existing origin within an endpoint.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, endpointName: string, originName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-109">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-109">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-110">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-110">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-111">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-111">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: originName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-112">끝점 내에서 고유한 출처의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-112">Name of the origin which is unique within the endpoint.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.OriginsGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.get_2'
+    name: 'get(string, string, string, string, RequestOptionsBase, ServiceCallback<Origin>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, endpointName: string, originName: string, options: RequestOptionsBase, callback: ServiceCallback<Origin>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-113">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-113">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-114">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-114">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-115">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-115">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: originName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-116">끝점 내에서 고유한 출처의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-116">Name of the origin which is unique within the endpoint.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3a9f9-117">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3a9f9-117">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.Origin>
+          description: |
+            <span data-ttu-id="3a9f9-118">콜백</span><span class="sxs-lookup"><span data-stu-id="3a9f9-118">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.OriginsGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<Origin>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, endpointName: string, originName: string, callback: ServiceCallback<Origin>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-119">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-119">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-120">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-120">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-121">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-121">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: originName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-122">끝점 내에서 고유한 출처의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-122">Name of the origin which is unique within the endpoint.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.Origin>
+          description: |
+            <span data-ttu-id="3a9f9-123">콜백</span><span class="sxs-lookup"><span data-stu-id="3a9f9-123">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.OriginsGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.listByEndpoint'
+    name: 'listByEndpoint(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3a9f9-124">모든 끝점 내에서 기존 원본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-124">Lists all of the existing origins within an endpoint.</span></span>
+    syntax:
+      content: 'function listByEndpoint(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-125">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-125">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-126">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-126">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-127">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-127">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.OriginsListByEndpointResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.listByEndpoint_2'
+    name: 'listByEndpoint(string, string, string, RequestOptionsBase, ServiceCallback<OriginListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByEndpoint(resourceGroupName: string, profileName: string, endpointName: string, options: RequestOptionsBase, callback: ServiceCallback<OriginListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-128">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-128">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-129">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-129">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-130">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-130">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3a9f9-131">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3a9f9-131">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.OriginListResult>
+          description: |
+            <span data-ttu-id="3a9f9-132">콜백</span><span class="sxs-lookup"><span data-stu-id="3a9f9-132">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.OriginsListByEndpointResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.listByEndpoint_1'
+    name: 'listByEndpoint(string, string, string, ServiceCallback<OriginListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByEndpoint(resourceGroupName: string, profileName: string, endpointName: string, callback: ServiceCallback<OriginListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-133">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-133">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-134">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-134">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-135">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-135">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.OriginListResult>
+          description: |
+            <span data-ttu-id="3a9f9-136">콜백</span><span class="sxs-lookup"><span data-stu-id="3a9f9-136">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.OriginsListByEndpointResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.listByEndpointNext'
+    name: 'listByEndpointNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3a9f9-137">모든 끝점 내에서 기존 원본을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-137">Lists all of the existing origins within an endpoint.</span></span>
+    syntax:
+      content: 'function listByEndpointNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-138">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-138">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.OriginsListByEndpointNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.listByEndpointNext_2'
+    name: 'listByEndpointNext(string, RequestOptionsBase, ServiceCallback<OriginListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByEndpointNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<OriginListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-139">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-139">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3a9f9-140">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3a9f9-140">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.OriginListResult>
+          description: |
+            <span data-ttu-id="3a9f9-141">콜백</span><span class="sxs-lookup"><span data-stu-id="3a9f9-141">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.OriginsListByEndpointNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.listByEndpointNext_1'
+    name: 'listByEndpointNext(string, ServiceCallback<OriginListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByEndpointNext(nextPageLink: string, callback: ServiceCallback<OriginListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-142">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-142">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.OriginListResult>
+          description: |
+            <span data-ttu-id="3a9f9-143">콜백</span><span class="sxs-lookup"><span data-stu-id="3a9f9-143">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.OriginsListByEndpointNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.constructor'
+    name: Origins(CdnManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3a9f9-144">원본을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-144">Create a Origins.</span></span>
+    syntax:
+      content: 'new Origins(client: CdnManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-cdn.CdnManagementClientContext'
+          description: |
+            <span data-ttu-id="3a9f9-145">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-145">Reference to the service client.</span></span>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Origins.update'
+    name: 'update(string, string, string, string, OriginUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3a9f9-146">끝점 내에서 기존 origin을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-146">Updates an existing origin within an endpoint.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, profileName: string, endpointName: string, originName: string, originUpdateProperties: OriginUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-147">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-147">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-148">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-148">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-149">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-149">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: originName
+          type:
+            - string
+          description: <span data-ttu-id="3a9f9-150">끝점 내에서 고유한 출처의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3a9f9-150">Name of the origin which is unique within the endpoint.</span></span>
+        - id: originUpdateProperties
+          type:
+            - '@azure/arm-cdn.OriginUpdateParameters'
+          description: <span data-ttu-id="3a9f9-151">원본 속성</span><span class="sxs-lookup"><span data-stu-id="3a9f9-151">Origin properties</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.OriginsUpdateResponse>
+    package: '@azure/arm-cdn'
+references:
+  - uid: '@azure/arm-cdn.CdnManagementClientContext'
+    name: CdnManagementClientContext
+    spec.typeScript:
+      - name: CdnManagementClientContext
+        fullName: CdnManagementClientContext
+        uid: '@azure/arm-cdn.CdnManagementClientContext'
+  - uid: '@azure/arm-cdn.OriginUpdateParameters'
+    name: OriginUpdateParameters
+    spec.typeScript:
+      - name: OriginUpdateParameters
+        fullName: OriginUpdateParameters
+        uid: '@azure/arm-cdn.OriginUpdateParameters'
+  - uid: ServiceCallback<@azure/arm-cdn.Origin>
+    name: Origin>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Origin
+        fullName: Origin
+        uid: '@azure/arm-cdn.Origin'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.OriginListResult>
+    name: OriginListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OriginListResult
+        fullName: OriginListResult
+        uid: '@azure/arm-cdn.OriginListResult'
+      - name: '>'
+        fullName: '>'

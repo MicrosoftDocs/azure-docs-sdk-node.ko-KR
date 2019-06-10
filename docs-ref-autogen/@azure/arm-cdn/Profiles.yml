@@ -1,0 +1,987 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-cdn.Profiles'
+    name: Profiles
+    fullName: Profiles
+    children:
+      - '@azure/arm-cdn.Profiles.beginCreate'
+      - '@azure/arm-cdn.Profiles.beginDeleteMethod'
+      - '@azure/arm-cdn.Profiles.beginUpdate'
+      - '@azure/arm-cdn.Profiles.create'
+      - '@azure/arm-cdn.Profiles.deleteMethod'
+      - '@azure/arm-cdn.Profiles.generateSsoUri'
+      - '@azure/arm-cdn.Profiles.generateSsoUri_2'
+      - '@azure/arm-cdn.Profiles.generateSsoUri_1'
+      - '@azure/arm-cdn.Profiles.get'
+      - '@azure/arm-cdn.Profiles.get_2'
+      - '@azure/arm-cdn.Profiles.get_1'
+      - '@azure/arm-cdn.Profiles.list'
+      - '@azure/arm-cdn.Profiles.list_2'
+      - '@azure/arm-cdn.Profiles.list_1'
+      - '@azure/arm-cdn.Profiles.listByResourceGroup'
+      - '@azure/arm-cdn.Profiles.listByResourceGroup_2'
+      - '@azure/arm-cdn.Profiles.listByResourceGroup_1'
+      - '@azure/arm-cdn.Profiles.listByResourceGroupNext'
+      - '@azure/arm-cdn.Profiles.listByResourceGroupNext_2'
+      - '@azure/arm-cdn.Profiles.listByResourceGroupNext_1'
+      - '@azure/arm-cdn.Profiles.listNext'
+      - '@azure/arm-cdn.Profiles.listNext_2'
+      - '@azure/arm-cdn.Profiles.listNext_1'
+      - '@azure/arm-cdn.Profiles.listResourceUsage'
+      - '@azure/arm-cdn.Profiles.listResourceUsage_2'
+      - '@azure/arm-cdn.Profiles.listResourceUsage_1'
+      - '@azure/arm-cdn.Profiles.listResourceUsageNext'
+      - '@azure/arm-cdn.Profiles.listResourceUsageNext_2'
+      - '@azure/arm-cdn.Profiles.listResourceUsageNext_1'
+      - '@azure/arm-cdn.Profiles.listSupportedOptimizationTypes'
+      - '@azure/arm-cdn.Profiles.listSupportedOptimizationTypes_2'
+      - '@azure/arm-cdn.Profiles.listSupportedOptimizationTypes_1'
+      - '@azure/arm-cdn.Profiles.constructor'
+      - '@azure/arm-cdn.Profiles.update'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="01fb4-101">프로필을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-101">Class representing a Profiles.</span></span>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.beginCreate'
+    name: 'beginCreate(string, string, Profile, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-102">지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-102">Creates a new CDN profile with a profile name under the specified subscription and resource group.</span></span>
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, profileName: string, profile: Profile, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-103">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-103">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-104">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-104">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: profile
+          type:
+            - '@azure/arm-cdn.Profile'
+          description: <span data-ttu-id="01fb4-105">새 프로필을 만드는 데 필요한 프로필 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-105">Profile properties needed to create a new profile.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="01fb4-106">지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-106">Deletes an existing CDN profile with the specified parameters.</span></span> <span data-ttu-id="01fb4-107">모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-107">Deleting a profile will result in the deletion of all of the sub-resources including endpoints, origins and custom domains.</span></span>'
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-108">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-108">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-109">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-109">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.beginUpdate'
+    name: 'beginUpdate(string, string, Models.ProfilesBeginUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-110">지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-110">Updates an existing CDN profile with the specified profile name under the specified subscription and resource group.</span></span>
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, profileName: string, options?: Models.ProfilesBeginUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-111">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-111">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-112">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-112">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - Models.ProfilesBeginUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.create'
+    name: 'create(string, string, Profile, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-113">지정된 된 구독 및 리소스 그룹 아래에서 프로필 이름을 사용 하 여 새 CDN 프로필을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-113">Creates a new CDN profile with a profile name under the specified subscription and resource group.</span></span>
+    syntax:
+      content: 'function create(resourceGroupName: string, profileName: string, profile: Profile, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-114">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-114">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-115">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-115">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: profile
+          type:
+            - '@azure/arm-cdn.Profile'
+          description: <span data-ttu-id="01fb4-116">새 프로필을 만드는 데 필요한 프로필 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-116">Profile properties needed to create a new profile.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesCreateResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="01fb4-117">지정된 된 매개 변수를 사용 하 여 기존 CDN 프로필을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-117">Deletes an existing CDN profile with the specified parameters.</span></span> <span data-ttu-id="01fb4-118">모든 하위 리소스를 삭제 하면 프로필을 삭제 하면 끝점, 원본 및 사용자 지정 도메인을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-118">Deleting a profile will result in the deletion of all of the sub-resources including endpoints, origins and custom domains.</span></span>'
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-119">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-119">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-120">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-120">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.generateSsoUri'
+    name: 'generateSsoUri(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="01fb4-121">CDN 보조 포털에 로그인 할 때 사용한 SSO URI 동적을 생성 합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-121">Generates a dynamic SSO URI used to sign in to the CDN supplemental portal.</span></span> <span data-ttu-id="01fb4-122">보조 포털은 아직 표준 프로필;의 코어 보고서와 같은 Azure portal에서 사용할 수 없는 고급 기능을 구성 하는 데 사용 됩니다. 고급 HTTP 보고서 및 실시간 통계 및 premium 프로필에서 경고 규칙 엔진을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-122">Supplemental portal is used to configure advanced feature capabilities that are not yet available in the Azure portal, such as core reports in a standard profile; rules engine, advanced HTTP reports, and real-time stats and alerts in a premium profile.</span></span> <span data-ttu-id="01fb4-123">SSO URI에는 약 10 분 마다 변경 됩니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-123">The SSO URI changes approximately every 10 minutes.</span></span>'
+    syntax:
+      content: 'function generateSsoUri(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-124">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-124">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-125">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-125">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesGenerateSsoUriResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.generateSsoUri_2'
+    name: 'generateSsoUri(string, string, RequestOptionsBase, ServiceCallback<SsoUri>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function generateSsoUri(resourceGroupName: string, profileName: string, options: RequestOptionsBase, callback: ServiceCallback<SsoUri>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-126">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-126">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-127">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-127">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-128">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-128">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.SsoUri>
+          description: |
+            <span data-ttu-id="01fb4-129">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-129">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesGenerateSsoUriResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.generateSsoUri_1'
+    name: 'generateSsoUri(string, string, ServiceCallback<SsoUri>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function generateSsoUri(resourceGroupName: string, profileName: string, callback: ServiceCallback<SsoUri>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-130">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-130">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-131">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-131">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.SsoUri>
+          description: |
+            <span data-ttu-id="01fb4-132">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-132">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesGenerateSsoUriResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-133">지정 된 프로필 이름 지정 된 구독 및 리소스 그룹을 사용 하 여 CDN 프로필을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-133">Gets a CDN profile with the specified profile name under the specified subscription and resource group.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-134">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-134">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-135">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-135">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, options: RequestOptionsBase, callback: ServiceCallback<Profile>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-136">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-136">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-137">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-137">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-138">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-138">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.Profile>
+          description: |
+            <span data-ttu-id="01fb4-139">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-139">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.get_1'
+    name: 'get(string, string, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, callback: ServiceCallback<Profile>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-140">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-140">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-141">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-141">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.Profile>
+          description: |
+            <span data-ttu-id="01fb4-142">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-142">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.list'
+    name: list(msRest.RequestOptionsBase)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-143">Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-143">Lists all of the CDN profiles within an Azure subscription.</span></span>
+    syntax:
+      content: 'function list(options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.list_2'
+    name: 'list(RequestOptionsBase, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: RequestOptionsBase, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-144">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-144">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-145">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-145">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.list_1'
+    name: list(ServiceCallback<ProfileListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-146">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-146">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listByResourceGroup'
+    name: 'listByResourceGroup(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-147">리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-147">Lists all of the CDN profiles within a resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-148">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-148">Name of the Resource group within the Azure subscription.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListByResourceGroupResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, RequestOptionsBase, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: RequestOptionsBase, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-149">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-149">Name of the Resource group within the Azure subscription.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-150">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-150">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-151">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-151">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListByResourceGroupResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-152">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-152">Name of the Resource group within the Azure subscription.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-153">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-153">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListByResourceGroupResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-154">리소스 그룹 내에서 CDN 프로필의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-154">Lists all of the CDN profiles within a resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-155">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-155">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListByResourceGroupNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-156">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-156">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-157">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-157">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-158">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListByResourceGroupNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-159">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-159">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-160">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-160">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListByResourceGroupNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-161">Azure 구독 내에서 CDN 프로필의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-161">Lists all of the CDN profiles within an Azure subscription.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-162">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-162">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-163">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-163">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-164">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-164">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-165">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-165">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listNext_1'
+    name: 'listNext(string, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-166">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-166">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ProfileListResult>
+          description: |
+            <span data-ttu-id="01fb4-167">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-167">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listResourceUsage'
+    name: 'listResourceUsage(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-168">할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-168">Checks the quota and actual usage of endpoints under the given CDN profile.</span></span>
+    syntax:
+      content: 'function listResourceUsage(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-169">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-169">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-170">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-170">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListResourceUsageResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listResourceUsage_2'
+    name: 'listResourceUsage(string, string, RequestOptionsBase, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsage(resourceGroupName: string, profileName: string, options: RequestOptionsBase, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-171">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-171">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-172">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-172">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-173">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-173">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="01fb4-174">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-174">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListResourceUsageResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listResourceUsage_1'
+    name: 'listResourceUsage(string, string, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsage(resourceGroupName: string, profileName: string, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-175">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-175">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-176">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-176">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="01fb4-177">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-177">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListResourceUsageResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listResourceUsageNext'
+    name: 'listResourceUsageNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-178">할당량 및 지정된 된 CDN 프로필에서 끝점의 실제 사용량을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-178">Checks the quota and actual usage of endpoints under the given CDN profile.</span></span>
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-179">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-179">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListResourceUsageNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listResourceUsageNext_2'
+    name: 'listResourceUsageNext(string, RequestOptionsBase, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-180">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-180">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-181">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-181">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="01fb4-182">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListResourceUsageNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listResourceUsageNext_1'
+    name: 'listResourceUsageNext(string, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-183">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-183">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="01fb4-184">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-184">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListResourceUsageNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listSupportedOptimizationTypes'
+    name: 'listSupportedOptimizationTypes(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-185">현재 프로필에 지원 되는 최적화 형식을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-185">Gets the supported optimization types for the current profile.</span></span> <span data-ttu-id="01fb4-186">사용자는 나열된 된 값에서 최적화 형식을 사용 하 여 끝점을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-186">A user can create an endpoint with an optimization type from the listed values.</span></span>
+    syntax:
+      content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-187">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-187">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-188">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-188">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesListSupportedOptimizationTypesResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listSupportedOptimizationTypes_2'
+    name: 'listSupportedOptimizationTypes(string, string, RequestOptionsBase, ServiceCallback<SupportedOptimizationTypesListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, options: RequestOptionsBase, callback: ServiceCallback<SupportedOptimizationTypesListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-189">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-189">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-190">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-190">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="01fb4-191">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="01fb4-191">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.SupportedOptimizationTypesListResult>
+          description: |
+            <span data-ttu-id="01fb4-192">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-192">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListSupportedOptimizationTypesResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.listSupportedOptimizationTypes_1'
+    name: 'listSupportedOptimizationTypes(string, string, ServiceCallback<SupportedOptimizationTypesListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listSupportedOptimizationTypes(resourceGroupName: string, profileName: string, callback: ServiceCallback<SupportedOptimizationTypesListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-193">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-193">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-194">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-194">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.SupportedOptimizationTypesListResult>
+          description: |
+            <span data-ttu-id="01fb4-195">콜백</span><span class="sxs-lookup"><span data-stu-id="01fb4-195">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProfilesListSupportedOptimizationTypesResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.constructor'
+    name: Profiles(CdnManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-196">한 프로필을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-196">Create a Profiles.</span></span>
+    syntax:
+      content: 'new Profiles(client: CdnManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-cdn.CdnManagementClientContext'
+          description: |
+            <span data-ttu-id="01fb4-197">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-197">Reference to the service client.</span></span>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Profiles.update'
+    name: 'update(string, string, Models.ProfilesUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="01fb4-198">지정 된 프로필 이름을 지정 된 구독 및 리소스 그룹을 사용 하 여 기존 CDN 프로필을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-198">Updates an existing CDN profile with the specified profile name under the specified subscription and resource group.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, profileName: string, options?: Models.ProfilesUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-199">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-199">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="01fb4-200">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="01fb4-200">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - Models.ProfilesUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProfilesUpdateResponse>
+    package: '@azure/arm-cdn'
+references:
+  - uid: '@azure/arm-cdn.CdnManagementClientContext'
+    name: CdnManagementClientContext
+    spec.typeScript:
+      - name: CdnManagementClientContext
+        fullName: CdnManagementClientContext
+        uid: '@azure/arm-cdn.CdnManagementClientContext'
+  - uid: '@azure/arm-cdn.Profile'
+    name: Profile
+    spec.typeScript:
+      - name: Profile
+        fullName: Profile
+        uid: '@azure/arm-cdn.Profile'
+  - uid: ServiceCallback<@azure/arm-cdn.SsoUri>
+    name: SsoUri>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: '@azure/arm-cdn.SsoUri'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.Profile>
+    name: Profile>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Profile
+        fullName: Profile
+        uid: '@azure/arm-cdn.Profile'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.ProfileListResult>
+    name: ProfileListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: '@azure/arm-cdn.ProfileListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+    name: ResourceUsageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: '@azure/arm-cdn.ResourceUsageListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.SupportedOptimizationTypesListResult>
+    name: SupportedOptimizationTypesListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: '@azure/arm-cdn.SupportedOptimizationTypesListResult'
+      - name: '>'
+        fullName: '>'

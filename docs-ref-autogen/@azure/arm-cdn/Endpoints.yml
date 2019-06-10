@@ -1,0 +1,1119 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-cdn.Endpoints'
+    name: Endpoints
+    fullName: Endpoints
+    children:
+      - '@azure/arm-cdn.Endpoints.beginCreate'
+      - '@azure/arm-cdn.Endpoints.beginDeleteMethod'
+      - '@azure/arm-cdn.Endpoints.beginLoadContent'
+      - '@azure/arm-cdn.Endpoints.beginPurgeContent'
+      - '@azure/arm-cdn.Endpoints.beginStart'
+      - '@azure/arm-cdn.Endpoints.beginStop'
+      - '@azure/arm-cdn.Endpoints.beginUpdate'
+      - '@azure/arm-cdn.Endpoints.create'
+      - '@azure/arm-cdn.Endpoints.deleteMethod'
+      - '@azure/arm-cdn.Endpoints.constructor'
+      - '@azure/arm-cdn.Endpoints.get'
+      - '@azure/arm-cdn.Endpoints.get_2'
+      - '@azure/arm-cdn.Endpoints.get_1'
+      - '@azure/arm-cdn.Endpoints.listByProfile'
+      - '@azure/arm-cdn.Endpoints.listByProfile_2'
+      - '@azure/arm-cdn.Endpoints.listByProfile_1'
+      - '@azure/arm-cdn.Endpoints.listByProfileNext'
+      - '@azure/arm-cdn.Endpoints.listByProfileNext_2'
+      - '@azure/arm-cdn.Endpoints.listByProfileNext_1'
+      - '@azure/arm-cdn.Endpoints.listResourceUsage'
+      - '@azure/arm-cdn.Endpoints.listResourceUsage_2'
+      - '@azure/arm-cdn.Endpoints.listResourceUsage_1'
+      - '@azure/arm-cdn.Endpoints.listResourceUsageNext'
+      - '@azure/arm-cdn.Endpoints.listResourceUsageNext_2'
+      - '@azure/arm-cdn.Endpoints.listResourceUsageNext_1'
+      - '@azure/arm-cdn.Endpoints.loadContent'
+      - '@azure/arm-cdn.Endpoints.purgeContent'
+      - '@azure/arm-cdn.Endpoints.start'
+      - '@azure/arm-cdn.Endpoints.stop'
+      - '@azure/arm-cdn.Endpoints.update'
+      - '@azure/arm-cdn.Endpoints.validateCustomDomain'
+      - '@azure/arm-cdn.Endpoints.validateCustomDomain_2'
+      - '@azure/arm-cdn.Endpoints.validateCustomDomain_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="65100-101">끝점을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-101">Class representing a Endpoints.</span></span>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginCreate'
+    name: 'beginCreate(string, string, string, Endpoint, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-102">지정 된 구독, 리소스 그룹 및 프로필의 지정 된 끝점 이름을 사용 하 여 새 CDN 끝점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="65100-102">Creates a new CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span>'
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, profileName: string, endpointName: string, endpoint: Endpoint, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-103">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-103">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-104">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-104">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-105">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-105">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: endpoint
+          type:
+            - '@azure/arm-cdn.Endpoint'
+          description: <span data-ttu-id="65100-106">끝점 속성</span><span class="sxs-lookup"><span data-stu-id="65100-106">Endpoint properties</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-107">지정 된 구독, 리소스 그룹 및 프로필에서 지정 된 끝점 이름의 기존 CDN 끝점을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-107">Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span>'
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-108">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-108">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-109">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-109">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-110">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-110">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginLoadContent'
+    name: 'beginLoadContent(string, string, string, string[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-111">CDN에 콘텐츠를 미리 로드합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-111">Pre-loads a content to CDN.</span></span> <span data-ttu-id="65100-112">Verizon 프로필에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="65100-112">Available for Verizon Profiles.</span></span>
+    syntax:
+      content: 'function beginLoadContent(resourceGroupName: string, profileName: string, endpointName: string, contentPaths: string[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-113">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-113">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-114">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-114">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-115">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-115">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: contentPaths
+          type:
+            - 'string[]'
+          description: <span data-ttu-id="65100-116">로드할 콘텐츠 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-116">The path to the content to be loaded.</span></span> <span data-ttu-id="65100-117">경로 상대 파일 URL의 원점 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-117">Path should be a relative file URL of the origin.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginPurgeContent'
+    name: 'beginPurgeContent(string, string, string, string[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-118">CDN에서 콘텐츠를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-118">Removes a content from CDN.</span></span>
+    syntax:
+      content: 'function beginPurgeContent(resourceGroupName: string, profileName: string, endpointName: string, contentPaths: string[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-119">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-119">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-120">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-120">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-121">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-121">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: contentPaths
+          type:
+            - 'string[]'
+          description: <span data-ttu-id="65100-122">경로를 제거 하도록 콘텐츠입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-122">The path to the content to be purged.</span></span> <span data-ttu-id="65100-123">와일드 카드 디렉터리나 파일 경로 설명할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="65100-123">Can describe a file path or a wild card directory.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginStart'
+    name: 'beginStart(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-124">중지 된 상태에 있는 기존 CDN 끝점을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-124">Starts an existing CDN endpoint that is on a stopped state.</span></span>
+    syntax:
+      content: 'function beginStart(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-125">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-125">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-126">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-126">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-127">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-127">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginStop'
+    name: 'beginStop(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-128">실행 중인 기존 CDN 끝점을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-128">Stops an existing running CDN endpoint.</span></span>
+    syntax:
+      content: 'function beginStop(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-129">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-129">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-130">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-130">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-131">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-131">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.beginUpdate'
+    name: 'beginUpdate(string, string, string, EndpointUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-132">지정 된 구독, 리소스 그룹 및 프로필에서 지정 된 끝점 이름의 기존 CDN 끝점을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-132">Updates an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span> <span data-ttu-id="65100-133">끝점을 만든 후 태그 및 원본 호스트 헤더를 업데이트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="65100-133">Only tags and Origin HostHeader can be updated after creating an endpoint.</span></span> <span data-ttu-id="65100-134">원본을 업데이트 하려면 업데이트 원본 작업을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-134">To update origins, use the Update Origin operation.</span></span> <span data-ttu-id="65100-135">사용자 지정 도메인을 업데이트 하려면 사용자 지정 도메인 업데이트 작업을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-135">To update custom domains, use the Update Custom Domain operation.</span></span>'
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, profileName: string, endpointName: string, endpointUpdateProperties: EndpointUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-136">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-136">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-137">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-137">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-138">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-138">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: endpointUpdateProperties
+          type:
+            - '@azure/arm-cdn.EndpointUpdateParameters'
+          description: <span data-ttu-id="65100-139">끝점 업데이트 속성</span><span class="sxs-lookup"><span data-stu-id="65100-139">Endpoint update properties</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.create'
+    name: 'create(string, string, string, Endpoint, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-140">지정 된 구독, 리소스 그룹 및 프로필의 지정 된 끝점 이름을 사용 하 여 새 CDN 끝점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="65100-140">Creates a new CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span>'
+    syntax:
+      content: 'function create(resourceGroupName: string, profileName: string, endpointName: string, endpoint: Endpoint, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-141">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-141">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-142">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-142">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-143">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-143">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: endpoint
+          type:
+            - '@azure/arm-cdn.Endpoint'
+          description: <span data-ttu-id="65100-144">끝점 속성</span><span class="sxs-lookup"><span data-stu-id="65100-144">Endpoint properties</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsCreateResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-145">지정 된 구독, 리소스 그룹 및 프로필에서 지정 된 끝점 이름의 기존 CDN 끝점을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-145">Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span>'
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-146">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-146">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-147">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-147">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-148">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-148">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.constructor'
+    name: Endpoints(CdnManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-149">끝점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="65100-149">Create a Endpoints.</span></span>
+    syntax:
+      content: 'new Endpoints(client: CdnManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-cdn.CdnManagementClientContext'
+          description: |
+            <span data-ttu-id="65100-150">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-150">Reference to the service client.</span></span>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-151">지정 된 구독, 리소스 그룹 및 프로필에서 지정 된 끝점 이름의 기존 CDN 엔드포인트를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="65100-151">Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span>'
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-152">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-152">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-153">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-153">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-154">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-154">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<Endpoint>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, endpointName: string, options: RequestOptionsBase, callback: ServiceCallback<Endpoint>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-155">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-155">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-156">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-156">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-157">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-157">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="65100-158">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="65100-158">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.Endpoint>
+          description: |
+            <span data-ttu-id="65100-159">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-159">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.get_1'
+    name: 'get(string, string, string, ServiceCallback<Endpoint>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, profileName: string, endpointName: string, callback: ServiceCallback<Endpoint>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-160">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-160">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-161">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-161">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-162">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-162">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.Endpoint>
+          description: |
+            <span data-ttu-id="65100-163">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-163">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsGetResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listByProfile'
+    name: 'listByProfile(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-164">기존 CDN 끝점을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-164">Lists existing CDN endpoints.</span></span>
+    syntax:
+      content: 'function listByProfile(resourceGroupName: string, profileName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-165">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-165">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-166">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-166">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsListByProfileResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listByProfile_2'
+    name: 'listByProfile(string, string, RequestOptionsBase, ServiceCallback<EndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByProfile(resourceGroupName: string, profileName: string, options: RequestOptionsBase, callback: ServiceCallback<EndpointListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-167">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-167">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-168">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-168">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="65100-169">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="65100-169">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.EndpointListResult>
+          description: |
+            <span data-ttu-id="65100-170">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-170">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListByProfileResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listByProfile_1'
+    name: 'listByProfile(string, string, ServiceCallback<EndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByProfile(resourceGroupName: string, profileName: string, callback: ServiceCallback<EndpointListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-171">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-171">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-172">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-172">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.EndpointListResult>
+          description: |
+            <span data-ttu-id="65100-173">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-173">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListByProfileResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listByProfileNext'
+    name: 'listByProfileNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-174">기존 CDN 끝점을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-174">Lists existing CDN endpoints.</span></span>
+    syntax:
+      content: 'function listByProfileNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="65100-175">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-175">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsListByProfileNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listByProfileNext_2'
+    name: 'listByProfileNext(string, RequestOptionsBase, ServiceCallback<EndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByProfileNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<EndpointListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="65100-176">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-176">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="65100-177">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="65100-177">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.EndpointListResult>
+          description: |
+            <span data-ttu-id="65100-178">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-178">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListByProfileNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listByProfileNext_1'
+    name: 'listByProfileNext(string, ServiceCallback<EndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByProfileNext(nextPageLink: string, callback: ServiceCallback<EndpointListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="65100-179">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-179">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.EndpointListResult>
+          description: |
+            <span data-ttu-id="65100-180">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-180">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListByProfileNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listResourceUsage'
+    name: 'listResourceUsage(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-181">할당량 및 지역 필터 및 지정된 된 끝점에서 사용자 지정 도메인의 사용을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-181">Checks the quota and usage of geo filters and custom domains under the given endpoint.</span></span>
+    syntax:
+      content: 'function listResourceUsage(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-182">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-182">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-183">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-183">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-184">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-184">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsListResourceUsageResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listResourceUsage_2'
+    name: 'listResourceUsage(string, string, string, RequestOptionsBase, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsage(resourceGroupName: string, profileName: string, endpointName: string, options: RequestOptionsBase, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-185">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-185">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-186">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-186">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-187">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-187">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="65100-188">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="65100-188">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="65100-189">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-189">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListResourceUsageResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listResourceUsage_1'
+    name: 'listResourceUsage(string, string, string, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsage(resourceGroupName: string, profileName: string, endpointName: string, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-190">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-190">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-191">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-191">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-192">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-192">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="65100-193">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-193">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListResourceUsageResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listResourceUsageNext'
+    name: 'listResourceUsageNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-194">할당량 및 지역 필터 및 지정된 된 끝점에서 사용자 지정 도메인의 사용을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-194">Checks the quota and usage of geo filters and custom domains under the given endpoint.</span></span>
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="65100-195">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-195">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsListResourceUsageNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listResourceUsageNext_2'
+    name: 'listResourceUsageNext(string, RequestOptionsBase, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="65100-196">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-196">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="65100-197">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="65100-197">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="65100-198">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-198">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListResourceUsageNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.listResourceUsageNext_1'
+    name: 'listResourceUsageNext(string, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, callback: ServiceCallback<ResourceUsageListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="65100-199">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-199">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+          description: |
+            <span data-ttu-id="65100-200">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-200">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsListResourceUsageNextResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.loadContent'
+    name: 'loadContent(string, string, string, string[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-201">CDN에 콘텐츠를 미리 로드합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-201">Pre-loads a content to CDN.</span></span> <span data-ttu-id="65100-202">Verizon 프로필에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="65100-202">Available for Verizon Profiles.</span></span>
+    syntax:
+      content: 'function loadContent(resourceGroupName: string, profileName: string, endpointName: string, contentPaths: string[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-203">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-203">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-204">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-204">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-205">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-205">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: contentPaths
+          type:
+            - 'string[]'
+          description: <span data-ttu-id="65100-206">로드할 콘텐츠 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-206">The path to the content to be loaded.</span></span> <span data-ttu-id="65100-207">경로 상대 파일 URL의 원점 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-207">Path should be a relative file URL of the origin.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.purgeContent'
+    name: 'purgeContent(string, string, string, string[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-208">CDN에서 콘텐츠를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-208">Removes a content from CDN.</span></span>
+    syntax:
+      content: 'function purgeContent(resourceGroupName: string, profileName: string, endpointName: string, contentPaths: string[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-209">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-209">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-210">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-210">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-211">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-211">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: contentPaths
+          type:
+            - 'string[]'
+          description: <span data-ttu-id="65100-212">경로를 제거 하도록 콘텐츠입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-212">The path to the content to be purged.</span></span> <span data-ttu-id="65100-213">와일드 카드 디렉터리나 파일 경로 설명할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="65100-213">Can describe a file path or a wild card directory.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.start'
+    name: 'start(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-214">중지 된 상태에 있는 기존 CDN 끝점을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-214">Starts an existing CDN endpoint that is on a stopped state.</span></span>
+    syntax:
+      content: 'function start(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-215">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-215">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-216">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-216">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-217">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-217">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsStartResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.stop'
+    name: 'stop(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-218">실행 중인 기존 CDN 끝점을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-218">Stops an existing running CDN endpoint.</span></span>
+    syntax:
+      content: 'function stop(resourceGroupName: string, profileName: string, endpointName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-219">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-219">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-220">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-220">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-221">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-221">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsStopResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.update'
+    name: 'update(string, string, string, EndpointUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="65100-222">지정 된 구독, 리소스 그룹 및 프로필에서 지정 된 끝점 이름의 기존 CDN 끝점을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-222">Updates an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.</span></span> <span data-ttu-id="65100-223">끝점을 만든 후 태그 및 원본 호스트 헤더를 업데이트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="65100-223">Only tags and Origin HostHeader can be updated after creating an endpoint.</span></span> <span data-ttu-id="65100-224">원본을 업데이트 하려면 업데이트 원본 작업을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-224">To update origins, use the Update Origin operation.</span></span> <span data-ttu-id="65100-225">사용자 지정 도메인을 업데이트 하려면 사용자 지정 도메인 업데이트 작업을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-225">To update custom domains, use the Update Custom Domain operation.</span></span>'
+    syntax:
+      content: 'function update(resourceGroupName: string, profileName: string, endpointName: string, endpointUpdateProperties: EndpointUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-226">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-226">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-227">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-227">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-228">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-228">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: endpointUpdateProperties
+          type:
+            - '@azure/arm-cdn.EndpointUpdateParameters'
+          description: <span data-ttu-id="65100-229">끝점 업데이트 속성</span><span class="sxs-lookup"><span data-stu-id="65100-229">Endpoint update properties</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsUpdateResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.validateCustomDomain'
+    name: 'validateCustomDomain(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="65100-230">DNS에서 올바른 CDN 끝점에 매핑됩니다 되도록 사용자 지정 도메인 매핑을 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-230">Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS.</span></span>
+    syntax:
+      content: 'function validateCustomDomain(resourceGroupName: string, profileName: string, endpointName: string, hostName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-231">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-231">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-232">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-232">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-233">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-233">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: hostName
+          type:
+            - string
+          description: <span data-ttu-id="65100-234">사용자 지정 도메인의 호스트 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-234">The host name of the custom domain.</span></span> <span data-ttu-id="65100-235">도메인 이름이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-235">Must be a domain name.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.EndpointsValidateCustomDomainResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.validateCustomDomain_2'
+    name: 'validateCustomDomain(string, string, string, string, RequestOptionsBase, ServiceCallback<ValidateCustomDomainOutput>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function validateCustomDomain(resourceGroupName: string, profileName: string, endpointName: string, hostName: string, options: RequestOptionsBase, callback: ServiceCallback<ValidateCustomDomainOutput>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-236">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-236">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-237">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-237">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-238">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-238">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: hostName
+          type:
+            - string
+          description: <span data-ttu-id="65100-239">사용자 지정 도메인의 호스트 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-239">The host name of the custom domain.</span></span> <span data-ttu-id="65100-240">도메인 이름이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-240">Must be a domain name.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="65100-241">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="65100-241">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ValidateCustomDomainOutput>
+          description: |
+            <span data-ttu-id="65100-242">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-242">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsValidateCustomDomainResponse>
+    package: '@azure/arm-cdn'
+  - uid: '@azure/arm-cdn.Endpoints.validateCustomDomain_1'
+    name: 'validateCustomDomain(string, string, string, string, ServiceCallback<ValidateCustomDomainOutput>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function validateCustomDomain(resourceGroupName: string, profileName: string, endpointName: string, hostName: string, callback: ServiceCallback<ValidateCustomDomainOutput>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="65100-243">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-243">Name of the Resource group within the Azure subscription.</span></span>
+        - id: profileName
+          type:
+            - string
+          description: <span data-ttu-id="65100-244">리소스 그룹 내에서 고유한 CDN 프로필의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-244">Name of the CDN profile which is unique within the resource group.</span></span>
+        - id: endpointName
+          type:
+            - string
+          description: <span data-ttu-id="65100-245">전역적으로 고유 하 게 되는 프로필에서 끝점의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-245">Name of the endpoint under the profile which is unique globally.</span></span>
+        - id: hostName
+          type:
+            - string
+          description: <span data-ttu-id="65100-246">사용자 지정 도메인의 호스트 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="65100-246">The host name of the custom domain.</span></span> <span data-ttu-id="65100-247">도메인 이름이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="65100-247">Must be a domain name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-cdn.ValidateCustomDomainOutput>
+          description: |
+            <span data-ttu-id="65100-248">콜백</span><span class="sxs-lookup"><span data-stu-id="65100-248">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.EndpointsValidateCustomDomainResponse>
+    package: '@azure/arm-cdn'
+references:
+  - uid: '@azure/arm-cdn.CdnManagementClientContext'
+    name: CdnManagementClientContext
+    spec.typeScript:
+      - name: CdnManagementClientContext
+        fullName: CdnManagementClientContext
+        uid: '@azure/arm-cdn.CdnManagementClientContext'
+  - uid: '@azure/arm-cdn.Endpoint'
+    name: Endpoint
+    spec.typeScript:
+      - name: Endpoint
+        fullName: Endpoint
+        uid: '@azure/arm-cdn.Endpoint'
+  - uid: '@azure/arm-cdn.EndpointUpdateParameters'
+    name: EndpointUpdateParameters
+    spec.typeScript:
+      - name: EndpointUpdateParameters
+        fullName: EndpointUpdateParameters
+        uid: '@azure/arm-cdn.EndpointUpdateParameters'
+  - uid: ServiceCallback<@azure/arm-cdn.Endpoint>
+    name: Endpoint>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Endpoint
+        fullName: Endpoint
+        uid: '@azure/arm-cdn.Endpoint'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.EndpointListResult>
+    name: EndpointListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EndpointListResult
+        fullName: EndpointListResult
+        uid: '@azure/arm-cdn.EndpointListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.ResourceUsageListResult>
+    name: ResourceUsageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: '@azure/arm-cdn.ResourceUsageListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-cdn.ValidateCustomDomainOutput>
+    name: ValidateCustomDomainOutput>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ValidateCustomDomainOutput
+        fullName: ValidateCustomDomainOutput
+        uid: '@azure/arm-cdn.ValidateCustomDomainOutput'
+      - name: '>'
+        fullName: '>'
