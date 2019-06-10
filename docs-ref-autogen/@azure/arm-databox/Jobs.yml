@@ -1,0 +1,963 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-databox.Jobs'
+    name: Jobs
+    fullName: Jobs
+    children:
+      - '@azure/arm-databox.Jobs.beginCreate'
+      - '@azure/arm-databox.Jobs.beginDeleteMethod'
+      - '@azure/arm-databox.Jobs.beginUpdate'
+      - '@azure/arm-databox.Jobs.bookShipmentPickUp'
+      - '@azure/arm-databox.Jobs.bookShipmentPickUp_2'
+      - '@azure/arm-databox.Jobs.bookShipmentPickUp_1'
+      - '@azure/arm-databox.Jobs.cancel'
+      - '@azure/arm-databox.Jobs.cancel_2'
+      - '@azure/arm-databox.Jobs.cancel_1'
+      - '@azure/arm-databox.Jobs.create'
+      - '@azure/arm-databox.Jobs.deleteMethod'
+      - '@azure/arm-databox.Jobs.get_2'
+      - '@azure/arm-databox.Jobs.get'
+      - '@azure/arm-databox.Jobs.get_1'
+      - '@azure/arm-databox.Jobs.constructor'
+      - '@azure/arm-databox.Jobs.list_2'
+      - '@azure/arm-databox.Jobs.list'
+      - '@azure/arm-databox.Jobs.list_1'
+      - '@azure/arm-databox.Jobs.listByResourceGroup_2'
+      - '@azure/arm-databox.Jobs.listByResourceGroup'
+      - '@azure/arm-databox.Jobs.listByResourceGroup_1'
+      - '@azure/arm-databox.Jobs.listByResourceGroupNext'
+      - '@azure/arm-databox.Jobs.listByResourceGroupNext_2'
+      - '@azure/arm-databox.Jobs.listByResourceGroupNext_1'
+      - '@azure/arm-databox.Jobs.listCredentials'
+      - '@azure/arm-databox.Jobs.listCredentials_2'
+      - '@azure/arm-databox.Jobs.listCredentials_1'
+      - '@azure/arm-databox.Jobs.listNext'
+      - '@azure/arm-databox.Jobs.listNext_2'
+      - '@azure/arm-databox.Jobs.listNext_1'
+      - '@azure/arm-databox.Jobs.update'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="84296-101">작업을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-101">Class representing a Jobs.</span></span>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.beginCreate'
+    name: 'beginCreate(string, string, JobResource, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-102">지정된 된 매개 변수를 사용 하 여 새 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="84296-102">Creates a new job with the specified parameters.</span></span> <span data-ttu-id="84296-103">기존 작업에는이 API를 사용 하 여 업데이트할 수 없습니다 및 API 업데이트 작업 대신 업데이트 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-103">Existing job cannot be updated with this API and should instead be updated with the Update job API.</span></span>
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, jobName: string, jobResource: JobResource, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-104">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-104">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-105">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-105">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-106">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-106">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: jobResource
+          type:
+            - '@azure/arm-databox.JobResource'
+          description: <span data-ttu-id="84296-107">요청 본문에서 작업 세부 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-107">Job details from request body.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-108">작업을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-108">Deletes a job.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-109">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-109">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-110">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-110">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-111">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-111">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.beginUpdate'
+    name: 'beginUpdate(string, string, JobResourceUpdateParameter, Models.JobsBeginUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-112">기존 작업의 속성을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-112">Updates the properties of an existing job.</span></span>
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, jobName: string, jobResourceUpdateParameter: JobResourceUpdateParameter, options?: Models.JobsBeginUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-113">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-113">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-114">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-114">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-115">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-115">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: jobResourceUpdateParameter
+          type:
+            - '@azure/arm-databox.JobResourceUpdateParameter'
+          description: <span data-ttu-id="84296-116">작업 업데이트 요청 본문에서 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-116">Job update parameters from request body.</span></span>
+        - id: options
+          type:
+            - Models.JobsBeginUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.bookShipmentPickUp'
+    name: 'bookShipmentPickUp(string, string, ShipmentPickUpRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-117">배송 픽업 예약 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-117">Book shipment pick up.</span></span>
+    syntax:
+      content: 'function bookShipmentPickUp(resourceGroupName: string, jobName: string, shipmentPickUpRequest: ShipmentPickUpRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-118">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-118">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-119">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-119">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-120">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-120">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: shipmentPickUpRequest
+          type:
+            - '@azure/arm-databox.ShipmentPickUpRequest'
+          description: <span data-ttu-id="84296-121">배송 세부 정보 요청을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-121">Details of shipment pick up request.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsBookShipmentPickUpResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.bookShipmentPickUp_2'
+    name: 'bookShipmentPickUp(string, string, ShipmentPickUpRequest, RequestOptionsBase, ServiceCallback<ShipmentPickUpResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function bookShipmentPickUp(resourceGroupName: string, jobName: string, shipmentPickUpRequest: ShipmentPickUpRequest, options: RequestOptionsBase, callback: ServiceCallback<ShipmentPickUpResponse>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-122">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-122">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-123">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-123">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-124">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-124">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: shipmentPickUpRequest
+          type:
+            - '@azure/arm-databox.ShipmentPickUpRequest'
+          description: <span data-ttu-id="84296-125">배송 세부 정보 요청을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-125">Details of shipment pick up request.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="84296-126">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-126">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.ShipmentPickUpResponse>
+          description: |
+            <span data-ttu-id="84296-127">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-127">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsBookShipmentPickUpResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.bookShipmentPickUp_1'
+    name: 'bookShipmentPickUp(string, string, ShipmentPickUpRequest, ServiceCallback<ShipmentPickUpResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function bookShipmentPickUp(resourceGroupName: string, jobName: string, shipmentPickUpRequest: ShipmentPickUpRequest, callback: ServiceCallback<ShipmentPickUpResponse>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-128">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-128">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-129">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-129">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-130">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-130">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: shipmentPickUpRequest
+          type:
+            - '@azure/arm-databox.ShipmentPickUpRequest'
+          description: <span data-ttu-id="84296-131">배송 세부 정보 요청을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-131">Details of shipment pick up request.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.ShipmentPickUpResponse>
+          description: |
+            <span data-ttu-id="84296-132">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-132">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsBookShipmentPickUpResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.cancel'
+    name: 'cancel(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-133">CancelJob 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-133">CancelJob.</span></span>
+    syntax:
+      content: 'function cancel(resourceGroupName: string, jobName: string, reason: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-134">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-134">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-135">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-135">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-136">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-136">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: reason
+          type:
+            - string
+          description: <span data-ttu-id="84296-137">취소에 대 한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-137">Reason for cancellation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.cancel_2'
+    name: 'cancel(string, string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function cancel(resourceGroupName: string, jobName: string, reason: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-138">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-138">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-139">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-139">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-140">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-140">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: reason
+          type:
+            - string
+          description: <span data-ttu-id="84296-141">취소에 대 한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-141">Reason for cancellation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="84296-142">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-142">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="84296-143">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-143">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.cancel_1'
+    name: 'cancel(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function cancel(resourceGroupName: string, jobName: string, reason: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-144">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-144">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-145">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-145">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-146">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-146">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: reason
+          type:
+            - string
+          description: <span data-ttu-id="84296-147">취소에 대 한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-147">Reason for cancellation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="84296-148">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-148">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.create'
+    name: 'create(string, string, JobResource, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-149">지정된 된 매개 변수를 사용 하 여 새 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="84296-149">Creates a new job with the specified parameters.</span></span> <span data-ttu-id="84296-150">기존 작업에는이 API를 사용 하 여 업데이트할 수 없습니다 및 API 업데이트 작업 대신 업데이트 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-150">Existing job cannot be updated with this API and should instead be updated with the Update job API.</span></span>
+    syntax:
+      content: 'function create(resourceGroupName: string, jobName: string, jobResource: JobResource, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-151">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-151">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-152">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-152">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-153">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-153">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: jobResource
+          type:
+            - '@azure/arm-databox.JobResource'
+          description: <span data-ttu-id="84296-154">요청 본문에서 작업 세부 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-154">Job details from request body.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsCreateResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-155">작업을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-155">Deletes a job.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-156">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-156">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-157">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-157">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-158">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-158">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.get_2'
+    name: 'get(string, string, JobsGetOptionalParams, ServiceCallback<JobResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, options: JobsGetOptionalParams, callback: ServiceCallback<JobResource>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-159">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-159">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-160">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-160">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-161">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-161">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: options
+          type:
+            - '@azure/arm-databox.JobsGetOptionalParams'
+          description: <span data-ttu-id="84296-162">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-162">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResource>
+          description: |
+            <span data-ttu-id="84296-163">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-163">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.get'
+    name: 'get(string, string, Models.JobsGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-164">지정된 된 된 작업에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="84296-164">Gets information about the specified job.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, options?: Models.JobsGetOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-165">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-165">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-166">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-166">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-167">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-167">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: options
+          type:
+            - Models.JobsGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.get_1'
+    name: 'get(string, string, ServiceCallback<JobResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, callback: ServiceCallback<JobResource>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-168">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-168">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-169">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-169">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-170">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-170">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResource>
+          description: |
+            <span data-ttu-id="84296-171">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-171">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsGetResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.constructor'
+    name: Jobs(DataBoxManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-172">작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="84296-172">Create a Jobs.</span></span>
+    syntax:
+      content: 'new Jobs(client: DataBoxManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-databox.DataBoxManagementClientContext'
+          description: |
+            <span data-ttu-id="84296-173">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-173">Reference to the service client.</span></span>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.list_2'
+    name: 'list(JobsListOptionalParams, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: JobsListOptionalParams, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-databox.JobsListOptionalParams'
+          description: <span data-ttu-id="84296-174">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-174">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-175">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.list'
+    name: list(Models.JobsListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-176">구독에서 사용할 수 있는 모든 작업을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-176">Lists all the jobs available under the subscription.</span></span>
+    syntax:
+      content: 'function list(options?: Models.JobsListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.JobsListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.list_1'
+    name: list(ServiceCallback<JobResourceList>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-177">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-177">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, JobsListByResourceGroupOptionalParams, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: JobsListByResourceGroupOptionalParams, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-178">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-178">The Resource Group Name</span></span>
+        - id: options
+          type:
+            - '@azure/arm-databox.JobsListByResourceGroupOptionalParams'
+          description: <span data-ttu-id="84296-179">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-179">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-180">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-180">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByResourceGroupResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.JobsListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-181">지정된 된 리소스 그룹에서 사용 가능한 모든 작업을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-181">Lists all the jobs available under the given resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.JobsListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-182">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-182">The Resource Group Name</span></span>
+        - id: options
+          type:
+            - Models.JobsListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListByResourceGroupResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-183">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-183">The Resource Group Name</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-184">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-184">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByResourceGroupResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-185">지정된 된 리소스 그룹에서 사용 가능한 모든 작업을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-185">Lists all the jobs available under the given resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84296-186">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-186">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListByResourceGroupNextResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84296-187">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-187">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="84296-188">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-188">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-189">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-189">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByResourceGroupNextResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84296-190">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-190">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-191">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-191">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListByResourceGroupNextResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listCredentials'
+    name: 'listCredentials(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-192">이 메서드는 작업과 관련 된 암호화 되지 않은 암호를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="84296-192">This method gets the unencrypted secrets related to the job.</span></span>
+    syntax:
+      content: 'function listCredentials(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-193">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-193">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-194">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-194">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-195">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-195">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListCredentialsResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listCredentials_2'
+    name: 'listCredentials(string, string, RequestOptionsBase, ServiceCallback<UnencryptedCredentialsList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listCredentials(resourceGroupName: string, jobName: string, options: RequestOptionsBase, callback: ServiceCallback<UnencryptedCredentialsList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-196">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-196">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-197">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-197">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-198">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-198">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="84296-199">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-199">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.UnencryptedCredentialsList>
+          description: |
+            <span data-ttu-id="84296-200">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-200">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListCredentialsResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listCredentials_1'
+    name: 'listCredentials(string, string, ServiceCallback<UnencryptedCredentialsList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listCredentials(resourceGroupName: string, jobName: string, callback: ServiceCallback<UnencryptedCredentialsList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-201">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-201">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-202">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-202">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-203">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-203">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.UnencryptedCredentialsList>
+          description: |
+            <span data-ttu-id="84296-204">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-204">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListCredentialsResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-205">구독에서 사용할 수 있는 모든 작업을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-205">Lists all the jobs available under the subscription.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84296-206">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-206">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsListNextResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84296-207">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-207">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="84296-208">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84296-208">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-209">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-209">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListNextResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.listNext_1'
+    name: 'listNext(string, ServiceCallback<JobResourceList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<JobResourceList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84296-210">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-210">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-databox.JobResourceList>
+          description: |
+            <span data-ttu-id="84296-211">콜백</span><span class="sxs-lookup"><span data-stu-id="84296-211">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.JobsListNextResponse>
+    package: '@azure/arm-databox'
+  - uid: '@azure/arm-databox.Jobs.update'
+    name: 'update(string, string, JobResourceUpdateParameter, Models.JobsUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84296-212">기존 작업의 속성을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-212">Updates the properties of an existing job.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, jobName: string, jobResourceUpdateParameter: JobResourceUpdateParameter, options?: Models.JobsUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84296-213">리소스 그룹 이름</span><span class="sxs-lookup"><span data-stu-id="84296-213">The Resource Group Name</span></span>
+        - id: jobName
+          type:
+            - string
+          description: <span data-ttu-id="84296-214">지정된 된 리소스 그룹 내에서 리소스 작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-214">The name of the job Resource within the specified resource group.</span></span> <span data-ttu-id="84296-215">작업 이름 길이 및 사용 하 여 모든 영숫자 문자 및 밑줄로 3 자에서 24 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84296-215">job names must be between 3 and 24 characters in length and use any alphanumeric and underscore only</span></span>
+        - id: jobResourceUpdateParameter
+          type:
+            - '@azure/arm-databox.JobResourceUpdateParameter'
+          description: <span data-ttu-id="84296-216">작업 업데이트 요청 본문에서 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="84296-216">Job update parameters from request body.</span></span>
+        - id: options
+          type:
+            - Models.JobsUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobsUpdateResponse>
+    package: '@azure/arm-databox'
+references:
+  - uid: '@azure/arm-databox.DataBoxManagementClientContext'
+    name: DataBoxManagementClientContext
+    spec.typeScript:
+      - name: DataBoxManagementClientContext
+        fullName: DataBoxManagementClientContext
+        uid: '@azure/arm-databox.DataBoxManagementClientContext'
+  - uid: '@azure/arm-databox.JobResource'
+    name: JobResource
+    spec.typeScript:
+      - name: JobResource
+        fullName: JobResource
+        uid: '@azure/arm-databox.JobResource'
+  - uid: '@azure/arm-databox.JobResourceUpdateParameter'
+    name: JobResourceUpdateParameter
+    spec.typeScript:
+      - name: JobResourceUpdateParameter
+        fullName: JobResourceUpdateParameter
+        uid: '@azure/arm-databox.JobResourceUpdateParameter'
+  - uid: '@azure/arm-databox.ShipmentPickUpRequest'
+    name: ShipmentPickUpRequest
+    spec.typeScript:
+      - name: ShipmentPickUpRequest
+        fullName: ShipmentPickUpRequest
+        uid: '@azure/arm-databox.ShipmentPickUpRequest'
+  - uid: ServiceCallback<@azure/arm-databox.ShipmentPickUpResponse>
+    name: ShipmentPickUpResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ShipmentPickUpResponse
+        fullName: ShipmentPickUpResponse
+        uid: '@azure/arm-databox.ShipmentPickUpResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-databox.JobResource>
+    name: JobResource>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobResource
+        fullName: JobResource
+        uid: '@azure/arm-databox.JobResource'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-databox.JobsGetOptionalParams'
+    name: JobsGetOptionalParams
+    spec.typeScript:
+      - name: JobsGetOptionalParams
+        fullName: JobsGetOptionalParams
+        uid: '@azure/arm-databox.JobsGetOptionalParams'
+  - uid: ServiceCallback<@azure/arm-databox.JobResourceList>
+    name: JobResourceList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobResourceList
+        fullName: JobResourceList
+        uid: '@azure/arm-databox.JobResourceList'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-databox.JobsListOptionalParams'
+    name: JobsListOptionalParams
+    spec.typeScript:
+      - name: JobsListOptionalParams
+        fullName: JobsListOptionalParams
+        uid: '@azure/arm-databox.JobsListOptionalParams'
+  - uid: '@azure/arm-databox.JobsListByResourceGroupOptionalParams'
+    name: JobsListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: JobsListByResourceGroupOptionalParams
+        fullName: JobsListByResourceGroupOptionalParams
+        uid: '@azure/arm-databox.JobsListByResourceGroupOptionalParams'
+  - uid: ServiceCallback<@azure/arm-databox.UnencryptedCredentialsList>
+    name: UnencryptedCredentialsList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UnencryptedCredentialsList
+        fullName: UnencryptedCredentialsList
+        uid: '@azure/arm-databox.UnencryptedCredentialsList'
+      - name: '>'
+        fullName: '>'

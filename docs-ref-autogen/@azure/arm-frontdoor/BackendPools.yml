@@ -1,0 +1,461 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-frontdoor.BackendPools'
+    name: BackendPools
+    fullName: BackendPools
+    children:
+      - '@azure/arm-frontdoor.BackendPools.constructor'
+      - '@azure/arm-frontdoor.BackendPools.beginCreateOrUpdate'
+      - '@azure/arm-frontdoor.BackendPools.beginDeleteMethod'
+      - '@azure/arm-frontdoor.BackendPools.createOrUpdate'
+      - '@azure/arm-frontdoor.BackendPools.deleteMethod'
+      - '@azure/arm-frontdoor.BackendPools.get'
+      - '@azure/arm-frontdoor.BackendPools.get_2'
+      - '@azure/arm-frontdoor.BackendPools.get_1'
+      - '@azure/arm-frontdoor.BackendPools.listByFrontDoor'
+      - '@azure/arm-frontdoor.BackendPools.listByFrontDoor_2'
+      - '@azure/arm-frontdoor.BackendPools.listByFrontDoor_1'
+      - '@azure/arm-frontdoor.BackendPools.listByFrontDoorNext'
+      - '@azure/arm-frontdoor.BackendPools.listByFrontDoorNext_2'
+      - '@azure/arm-frontdoor.BackendPools.listByFrontDoorNext_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="22a36-101">BackendPools 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-101">Class representing a BackendPools.</span></span>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.constructor'
+    name: BackendPools(FrontDoorManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-102">BackendPools를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-102">Create a BackendPools.</span></span>
+    syntax:
+      content: 'new BackendPools(client: FrontDoorManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-frontdoor.FrontDoorManagementClientContext'
+          description: |
+            <span data-ttu-id="22a36-103">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-103">Reference to the service client.</span></span>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, string, BackendPool, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-104">지정 된 첫 번째 관문에서 지정 된 풀 이름을 가진 새 백 엔드 풀을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-104">Creates a new Backend Pool with the specified Pool name within the specified Front Door.</span></span>
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, frontDoorName: string, backendPoolName: string, backendPoolParameters: BackendPool, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-105">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-105">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-106">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-106">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-107">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-107">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: backendPoolParameters
+          type:
+            - '@azure/arm-frontdoor.BackendPool'
+          description: <span data-ttu-id="22a36-108">새 풀을 만드는 데 필요한 백 엔드 풀 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-108">Backend Pool properties needed to create a new Pool.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-109">지정된 된 매개 변수를 사용 하 여 기존 백 엔드 풀을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-109">Deletes an existing Backend Pool with the specified parameters.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, frontDoorName: string, backendPoolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-110">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-110">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-111">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-111">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-112">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-112">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, BackendPool, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-113">지정 된 첫 번째 관문에서 지정 된 풀 이름을 가진 새 백 엔드 풀을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-113">Creates a new Backend Pool with the specified Pool name within the specified Front Door.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, frontDoorName: string, backendPoolName: string, backendPoolParameters: BackendPool, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-114">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-114">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-115">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-115">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-116">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-116">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: backendPoolParameters
+          type:
+            - '@azure/arm-frontdoor.BackendPool'
+          description: <span data-ttu-id="22a36-117">새 풀을 만드는 데 필요한 백 엔드 풀 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-117">Backend Pool properties needed to create a new Pool.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.BackendPoolsCreateOrUpdateResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-118">지정된 된 매개 변수를 사용 하 여 기존 백 엔드 풀을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-118">Deletes an existing Backend Pool with the specified parameters.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, frontDoorName: string, backendPoolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-119">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-119">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-120">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-120">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-121">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-121">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-122">지정 된 첫 번째 관문에서 지정 된 풀 이름의 백 엔드 풀을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-122">Gets a Backend Pool with the specified Pool name within the specified Front Door.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, frontDoorName: string, backendPoolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-123">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-123">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-124">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-124">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-125">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-125">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.BackendPoolsGetResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<BackendPool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, frontDoorName: string, backendPoolName: string, options: RequestOptionsBase, callback: ServiceCallback<BackendPool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-126">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-126">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-127">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-127">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-128">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-128">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="22a36-129">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="22a36-129">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-frontdoor.BackendPool>
+          description: |
+            <span data-ttu-id="22a36-130">콜백</span><span class="sxs-lookup"><span data-stu-id="22a36-130">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BackendPoolsGetResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.get_1'
+    name: 'get(string, string, string, ServiceCallback<BackendPool>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, frontDoorName: string, backendPoolName: string, callback: ServiceCallback<BackendPool>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-131">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-131">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-132">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-132">Name of the Front Door which is globally unique.</span></span>
+        - id: backendPoolName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-133">내 첫 번째 관문에서 고유한 백 엔드 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-133">Name of the Backend Pool which is unique within the Front Door.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-frontdoor.BackendPool>
+          description: |
+            <span data-ttu-id="22a36-134">콜백</span><span class="sxs-lookup"><span data-stu-id="22a36-134">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BackendPoolsGetResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.listByFrontDoor'
+    name: 'listByFrontDoor(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-135">첫 번째 관문에서 백 엔드 풀의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-135">Lists all of the Backend Pools within a Front Door.</span></span>
+    syntax:
+      content: 'function listByFrontDoor(resourceGroupName: string, frontDoorName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-136">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-136">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-137">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-137">Name of the Front Door which is globally unique.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.BackendPoolsListByFrontDoorResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.listByFrontDoor_2'
+    name: 'listByFrontDoor(string, string, RequestOptionsBase, ServiceCallback<BackendPoolListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByFrontDoor(resourceGroupName: string, frontDoorName: string, options: RequestOptionsBase, callback: ServiceCallback<BackendPoolListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-138">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-138">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-139">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-139">Name of the Front Door which is globally unique.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="22a36-140">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="22a36-140">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-frontdoor.BackendPoolListResult>
+          description: |
+            <span data-ttu-id="22a36-141">콜백</span><span class="sxs-lookup"><span data-stu-id="22a36-141">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BackendPoolsListByFrontDoorResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.listByFrontDoor_1'
+    name: 'listByFrontDoor(string, string, ServiceCallback<BackendPoolListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByFrontDoor(resourceGroupName: string, frontDoorName: string, callback: ServiceCallback<BackendPoolListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-142">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-142">Name of the Resource group within the Azure subscription.</span></span>
+        - id: frontDoorName
+          type:
+            - string
+          description: <span data-ttu-id="22a36-143">첫 번째 관문 전역적으로 고유한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-143">Name of the Front Door which is globally unique.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-frontdoor.BackendPoolListResult>
+          description: |
+            <span data-ttu-id="22a36-144">콜백</span><span class="sxs-lookup"><span data-stu-id="22a36-144">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BackendPoolsListByFrontDoorResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.listByFrontDoorNext'
+    name: 'listByFrontDoorNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="22a36-145">첫 번째 관문에서 백 엔드 풀의 모든를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-145">Lists all of the Backend Pools within a Front Door.</span></span>
+    syntax:
+      content: 'function listByFrontDoorNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="22a36-146">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-146">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.BackendPoolsListByFrontDoorNextResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.listByFrontDoorNext_2'
+    name: 'listByFrontDoorNext(string, RequestOptionsBase, ServiceCallback<BackendPoolListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByFrontDoorNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<BackendPoolListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="22a36-147">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-147">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="22a36-148">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="22a36-148">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-frontdoor.BackendPoolListResult>
+          description: |
+            <span data-ttu-id="22a36-149">콜백</span><span class="sxs-lookup"><span data-stu-id="22a36-149">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BackendPoolsListByFrontDoorNextResponse>
+    package: '@azure/arm-frontdoor'
+  - uid: '@azure/arm-frontdoor.BackendPools.listByFrontDoorNext_1'
+    name: 'listByFrontDoorNext(string, ServiceCallback<BackendPoolListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByFrontDoorNext(nextPageLink: string, callback: ServiceCallback<BackendPoolListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="22a36-150">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="22a36-150">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-frontdoor.BackendPoolListResult>
+          description: |
+            <span data-ttu-id="22a36-151">콜백</span><span class="sxs-lookup"><span data-stu-id="22a36-151">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BackendPoolsListByFrontDoorNextResponse>
+    package: '@azure/arm-frontdoor'
+references:
+  - uid: '@azure/arm-frontdoor.FrontDoorManagementClientContext'
+    name: FrontDoorManagementClientContext
+    spec.typeScript:
+      - name: FrontDoorManagementClientContext
+        fullName: FrontDoorManagementClientContext
+        uid: '@azure/arm-frontdoor.FrontDoorManagementClientContext'
+  - uid: '@azure/arm-frontdoor.BackendPool'
+    name: BackendPool
+    spec.typeScript:
+      - name: BackendPool
+        fullName: BackendPool
+        uid: '@azure/arm-frontdoor.BackendPool'
+  - uid: ServiceCallback<@azure/arm-frontdoor.BackendPool>
+    name: BackendPool>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BackendPool
+        fullName: BackendPool
+        uid: '@azure/arm-frontdoor.BackendPool'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-frontdoor.BackendPoolListResult>
+    name: BackendPoolListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BackendPoolListResult
+        fullName: BackendPoolListResult
+        uid: '@azure/arm-frontdoor.BackendPoolListResult'
+      - name: '>'
+        fullName: '>'
