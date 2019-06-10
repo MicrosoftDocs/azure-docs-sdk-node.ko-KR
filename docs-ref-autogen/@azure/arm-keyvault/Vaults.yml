@@ -1,0 +1,1391 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-keyvault.Vaults'
+    name: Vaults
+    fullName: Vaults
+    children:
+      - '@azure/arm-keyvault.Vaults.beginCreateOrUpdate'
+      - '@azure/arm-keyvault.Vaults.beginPurgeDeleted'
+      - '@azure/arm-keyvault.Vaults.checkNameAvailability'
+      - '@azure/arm-keyvault.Vaults.checkNameAvailability_2'
+      - '@azure/arm-keyvault.Vaults.checkNameAvailability_1'
+      - '@azure/arm-keyvault.Vaults.createOrUpdate'
+      - '@azure/arm-keyvault.Vaults.deleteMethod'
+      - '@azure/arm-keyvault.Vaults.deleteMethod_2'
+      - '@azure/arm-keyvault.Vaults.deleteMethod_1'
+      - '@azure/arm-keyvault.Vaults.get'
+      - '@azure/arm-keyvault.Vaults.get_2'
+      - '@azure/arm-keyvault.Vaults.get_1'
+      - '@azure/arm-keyvault.Vaults.getDeleted'
+      - '@azure/arm-keyvault.Vaults.getDeleted_2'
+      - '@azure/arm-keyvault.Vaults.getDeleted_1'
+      - '@azure/arm-keyvault.Vaults.list'
+      - '@azure/arm-keyvault.Vaults.list_1'
+      - '@azure/arm-keyvault.Vaults.list_2'
+      - '@azure/arm-keyvault.Vaults.listByResourceGroup'
+      - '@azure/arm-keyvault.Vaults.listByResourceGroup_1'
+      - '@azure/arm-keyvault.Vaults.listByResourceGroup_2'
+      - '@azure/arm-keyvault.Vaults.listByResourceGroupNext'
+      - '@azure/arm-keyvault.Vaults.listByResourceGroupNext_2'
+      - '@azure/arm-keyvault.Vaults.listByResourceGroupNext_1'
+      - '@azure/arm-keyvault.Vaults.listBySubscription'
+      - '@azure/arm-keyvault.Vaults.listBySubscription_1'
+      - '@azure/arm-keyvault.Vaults.listBySubscription_2'
+      - '@azure/arm-keyvault.Vaults.listBySubscriptionNext'
+      - '@azure/arm-keyvault.Vaults.listBySubscriptionNext_2'
+      - '@azure/arm-keyvault.Vaults.listBySubscriptionNext_1'
+      - '@azure/arm-keyvault.Vaults.listDeleted'
+      - '@azure/arm-keyvault.Vaults.listDeleted_2'
+      - '@azure/arm-keyvault.Vaults.listDeleted_1'
+      - '@azure/arm-keyvault.Vaults.listDeletedNext'
+      - '@azure/arm-keyvault.Vaults.listDeletedNext_2'
+      - '@azure/arm-keyvault.Vaults.listDeletedNext_1'
+      - '@azure/arm-keyvault.Vaults.listNext'
+      - '@azure/arm-keyvault.Vaults.listNext_2'
+      - '@azure/arm-keyvault.Vaults.listNext_1'
+      - '@azure/arm-keyvault.Vaults.purgeDeleted'
+      - '@azure/arm-keyvault.Vaults.update'
+      - '@azure/arm-keyvault.Vaults.update_2'
+      - '@azure/arm-keyvault.Vaults.update_1'
+      - '@azure/arm-keyvault.Vaults.updateAccessPolicy'
+      - '@azure/arm-keyvault.Vaults.updateAccessPolicy_2'
+      - '@azure/arm-keyvault.Vaults.updateAccessPolicy_1'
+      - '@azure/arm-keyvault.Vaults.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="c2fe2-101">자격 증명 모음을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-101">Class representing a Vaults.</span></span>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, VaultCreateOrUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-102">만들거나 지정된 된 구독에 key vault를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-102">Create or update a key vault in the specified subscription.</span></span>
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, vaultName: string, parameters: VaultCreateOrUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-103">서버가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-103">The name of the Resource Group to which the server belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-104">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-104">Name of the vault</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultCreateOrUpdateParameters'
+          description: <span data-ttu-id="c2fe2-105">매개 변수를 만들거나 자격 증명 모음을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-105">Parameters to create or update the vault</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.beginPurgeDeleted'
+    name: 'beginPurgeDeleted(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="c2fe2-106">지정 된 자격 증명 모음을 영구적으로 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-106">Permanently deletes the specified vault.</span></span> <span data-ttu-id="c2fe2-107">즉, 삭제 된 Azure key vault를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-107">aka Purges the deleted Azure key vault.</span></span>'
+    syntax:
+      content: 'function beginPurgeDeleted(vaultName: string, location: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-108">일시 삭제 된 자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-108">The name of the soft-deleted vault.</span></span>
+        - id: location
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-109">일시 삭제 된 자격 증명 모음의 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-109">The location of the soft-deleted vault.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.checkNameAvailability'
+    name: 'checkNameAvailability(VaultCheckNameAvailabilityParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-110">자격 증명 모음 이름이 유효 하지 않은 사용에서 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-110">Checks that the vault name is valid and is not already in use.</span></span>
+    syntax:
+      content: 'function checkNameAvailability(vaultName: VaultCheckNameAvailabilityParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters'
+          description: <span data-ttu-id="c2fe2-111">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-111">The name of the vault.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsCheckNameAvailabilityResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.checkNameAvailability_2'
+    name: 'checkNameAvailability(VaultCheckNameAvailabilityParameters, RequestOptionsBase, ServiceCallback<CheckNameAvailabilityResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(vaultName: VaultCheckNameAvailabilityParameters, options: RequestOptionsBase, callback: ServiceCallback<CheckNameAvailabilityResult>)'
+      parameters:
+        - id: vaultName
+          type:
+            - '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters'
+          description: <span data-ttu-id="c2fe2-112">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-112">The name of the vault.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-113">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-113">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.CheckNameAvailabilityResult>
+          description: |
+            <span data-ttu-id="c2fe2-114">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-114">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsCheckNameAvailabilityResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.checkNameAvailability_1'
+    name: 'checkNameAvailability(VaultCheckNameAvailabilityParameters, ServiceCallback<CheckNameAvailabilityResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(vaultName: VaultCheckNameAvailabilityParameters, callback: ServiceCallback<CheckNameAvailabilityResult>)'
+      parameters:
+        - id: vaultName
+          type:
+            - '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters'
+          description: <span data-ttu-id="c2fe2-115">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-115">The name of the vault.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.CheckNameAvailabilityResult>
+          description: |
+            <span data-ttu-id="c2fe2-116">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-116">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsCheckNameAvailabilityResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.createOrUpdate'
+    name: 'createOrUpdate(string, string, VaultCreateOrUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-117">만들거나 지정된 된 구독에 key vault를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-117">Create or update a key vault in the specified subscription.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, vaultName: string, parameters: VaultCreateOrUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-118">서버가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-118">The name of the Resource Group to which the server belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-119">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-119">Name of the vault</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultCreateOrUpdateParameters'
+          description: <span data-ttu-id="c2fe2-120">매개 변수를 만들거나 자격 증명 모음을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-120">Parameters to create or update the vault</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsCreateOrUpdateResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-121">지정 된 Azure key vault를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-121">Deletes the specified Azure key vault.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, vaultName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-122">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-122">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-123">삭제할 자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-123">The name of the vault to delete</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.deleteMethod_2'
+    name: 'deleteMethod(string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, vaultName: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-124">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-124">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-125">삭제할 자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-125">The name of the vault to delete</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-126">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-126">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="c2fe2-127">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-127">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.deleteMethod_1'
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, vaultName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-128">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-128">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-129">삭제할 자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-129">The name of the vault to delete</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="c2fe2-130">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-130">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-131">지정 된 Azure key vault를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-131">Gets the specified Azure key vault.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, vaultName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-132">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-132">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-133">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-133">The name of the vault.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsGetResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<Vault>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, vaultName: string, options: RequestOptionsBase, callback: ServiceCallback<Vault>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-134">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-134">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-135">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-135">The name of the vault.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-136">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-136">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.Vault>
+          description: |
+            <span data-ttu-id="c2fe2-137">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-137">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsGetResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.get_1'
+    name: 'get(string, string, ServiceCallback<Vault>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, vaultName: string, callback: ServiceCallback<Vault>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-138">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-138">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-139">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-139">The name of the vault.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.Vault>
+          description: |
+            <span data-ttu-id="c2fe2-140">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-140">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsGetResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.getDeleted'
+    name: 'getDeleted(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-141">삭제 된 Azure key vault를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-141">Gets the deleted Azure key vault.</span></span>
+    syntax:
+      content: 'function getDeleted(vaultName: string, location: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-142">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-142">The name of the vault.</span></span>
+        - id: location
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-143">삭제 된 자격 증명 모음의 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-143">The location of the deleted vault.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsGetDeletedResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.getDeleted_2'
+    name: 'getDeleted(string, string, RequestOptionsBase, ServiceCallback<DeletedVault>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getDeleted(vaultName: string, location: string, options: RequestOptionsBase, callback: ServiceCallback<DeletedVault>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-144">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-144">The name of the vault.</span></span>
+        - id: location
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-145">삭제 된 자격 증명 모음의 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-145">The location of the deleted vault.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-146">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-146">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.DeletedVault>
+          description: |
+            <span data-ttu-id="c2fe2-147">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-147">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsGetDeletedResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.getDeleted_1'
+    name: 'getDeleted(string, string, ServiceCallback<DeletedVault>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getDeleted(vaultName: string, location: string, callback: ServiceCallback<DeletedVault>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-148">자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-148">The name of the vault.</span></span>
+        - id: location
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-149">삭제 된 자격 증명 모음의 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-149">The location of the deleted vault.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.DeletedVault>
+          description: |
+            <span data-ttu-id="c2fe2-150">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-150">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsGetDeletedResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.list'
+    name: list(Models.VaultsListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-151">목록 작업은 구독과 연결 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-151">The List operation gets information about the vaults associated with the subscription.</span></span>
+    syntax:
+      content: 'function list(options?: Models.VaultsListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.VaultsListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.list_1'
+    name: list(ServiceCallback<ResourceListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<ResourceListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.ResourceListResult>
+          description: |
+            <span data-ttu-id="c2fe2-152">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-152">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.list_2'
+    name: 'list(VaultsListOptionalParams, ServiceCallback<ResourceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: VaultsListOptionalParams, callback: ServiceCallback<ResourceListResult>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-keyvault.VaultsListOptionalParams'
+          description: <span data-ttu-id="c2fe2-153">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-153">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.ResourceListResult>
+          description: |
+            <span data-ttu-id="c2fe2-154">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-154">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.VaultsListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-155">목록 작업은 지정된 된 리소스 그룹 내에서 구독와 연결 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-155">The List operation gets information about the vaults associated with the subscription and within the specified resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.VaultsListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-156">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-156">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: options
+          type:
+            - Models.VaultsListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListByResourceGroupResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-157">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-157">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-158">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListByResourceGroupResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, VaultsListByResourceGroupOptionalParams, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: VaultsListByResourceGroupOptionalParams, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-159">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-159">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-keyvault.VaultsListByResourceGroupOptionalParams'
+          description: <span data-ttu-id="c2fe2-160">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-160">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-161">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-161">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListByResourceGroupResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-162">목록 작업은 지정된 된 리소스 그룹 내에서 구독와 연결 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-162">The List operation gets information about the vaults associated with the subscription and within the specified resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-163">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-163">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListByResourceGroupNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-164">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-164">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-165">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-165">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-166">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-166">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListByResourceGroupNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-167">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-167">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-168">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-168">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListByResourceGroupNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listBySubscription'
+    name: listBySubscription(Models.VaultsListBySubscriptionOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-169">목록 작업은 구독과 연결 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-169">The List operation gets information about the vaults associated with the subscription.</span></span>
+    syntax:
+      content: 'function listBySubscription(options?: Models.VaultsListBySubscriptionOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.VaultsListBySubscriptionOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListBySubscriptionResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listBySubscription_1'
+    name: listBySubscription(ServiceCallback<VaultListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscription(callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-170">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-170">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListBySubscriptionResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listBySubscription_2'
+    name: 'listBySubscription(VaultsListBySubscriptionOptionalParams, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscription(options: VaultsListBySubscriptionOptionalParams, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-keyvault.VaultsListBySubscriptionOptionalParams'
+          description: <span data-ttu-id="c2fe2-171">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-171">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-172">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-172">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListBySubscriptionResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listBySubscriptionNext'
+    name: 'listBySubscriptionNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-173">목록 작업은 구독과 연결 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-173">The List operation gets information about the vaults associated with the subscription.</span></span>
+    syntax:
+      content: 'function listBySubscriptionNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-174">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-174">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListBySubscriptionNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listBySubscriptionNext_2'
+    name: 'listBySubscriptionNext(string, RequestOptionsBase, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-175">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-175">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-176">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-176">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-177">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-177">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListBySubscriptionNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listBySubscriptionNext_1'
+    name: 'listBySubscriptionNext(string, ServiceCallback<VaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionNext(nextPageLink: string, callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-178">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-178">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-179">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-179">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListBySubscriptionNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listDeleted'
+    name: listDeleted(msRest.RequestOptionsBase)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-180">구독에서 삭제 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-180">Gets information about the deleted vaults in a subscription.</span></span>
+    syntax:
+      content: 'function listDeleted(options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListDeletedResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listDeleted_2'
+    name: 'listDeleted(RequestOptionsBase, ServiceCallback<DeletedVaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listDeleted(options: RequestOptionsBase, callback: ServiceCallback<DeletedVaultListResult>)'
+      parameters:
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-181">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-181">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.DeletedVaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-182">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListDeletedResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listDeleted_1'
+    name: listDeleted(ServiceCallback<DeletedVaultListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listDeleted(callback: ServiceCallback<DeletedVaultListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.DeletedVaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-183">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-183">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListDeletedResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listDeletedNext'
+    name: 'listDeletedNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-184">구독에서 삭제 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-184">Gets information about the deleted vaults in a subscription.</span></span>
+    syntax:
+      content: 'function listDeletedNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-185">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-185">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListDeletedNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listDeletedNext_2'
+    name: 'listDeletedNext(string, RequestOptionsBase, ServiceCallback<DeletedVaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listDeletedNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<DeletedVaultListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-186">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-186">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-187">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-187">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.DeletedVaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-188">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-188">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListDeletedNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listDeletedNext_1'
+    name: 'listDeletedNext(string, ServiceCallback<DeletedVaultListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listDeletedNext(nextPageLink: string, callback: ServiceCallback<DeletedVaultListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-189">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-189">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.DeletedVaultListResult>
+          description: |
+            <span data-ttu-id="c2fe2-190">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-190">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListDeletedNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-191">목록 작업은 구독과 연결 된 자격 증명 모음에 대 한 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-191">The List operation gets information about the vaults associated with the subscription.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-192">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-192">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsListNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ResourceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ResourceListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-193">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-193">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-194">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-194">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.ResourceListResult>
+          description: |
+            <span data-ttu-id="c2fe2-195">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-195">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.listNext_1'
+    name: 'listNext(string, ServiceCallback<ResourceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ResourceListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-196">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-196">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.ResourceListResult>
+          description: |
+            <span data-ttu-id="c2fe2-197">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-197">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsListNextResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.purgeDeleted'
+    name: 'purgeDeleted(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="c2fe2-198">지정 된 자격 증명 모음을 영구적으로 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-198">Permanently deletes the specified vault.</span></span> <span data-ttu-id="c2fe2-199">즉, 삭제 된 Azure key vault를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-199">aka Purges the deleted Azure key vault.</span></span>'
+    syntax:
+      content: 'function purgeDeleted(vaultName: string, location: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-200">일시 삭제 된 자격 증명 모음의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-200">The name of the soft-deleted vault.</span></span>
+        - id: location
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-201">일시 삭제 된 자격 증명 모음의 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-201">The location of the soft-deleted vault.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.update'
+    name: 'update(string, string, VaultPatchParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-202">지정된 된 구독에 key vault를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-202">Update a key vault in the specified subscription.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, vaultName: string, parameters: VaultPatchParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-203">서버가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-203">The name of the Resource Group to which the server belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-204">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-204">Name of the vault</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultPatchParameters'
+          description: <span data-ttu-id="c2fe2-205">자격 증명 모음을 패치 하는 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-205">Parameters to patch the vault</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsUpdateResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.update_2'
+    name: 'update(string, string, VaultPatchParameters, RequestOptionsBase, ServiceCallback<Vault>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, vaultName: string, parameters: VaultPatchParameters, options: RequestOptionsBase, callback: ServiceCallback<Vault>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-206">서버가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-206">The name of the Resource Group to which the server belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-207">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-207">Name of the vault</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultPatchParameters'
+          description: <span data-ttu-id="c2fe2-208">자격 증명 모음을 패치 하는 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-208">Parameters to patch the vault</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-209">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-209">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.Vault>
+          description: |
+            <span data-ttu-id="c2fe2-210">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-210">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsUpdateResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.update_1'
+    name: 'update(string, string, VaultPatchParameters, ServiceCallback<Vault>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, vaultName: string, parameters: VaultPatchParameters, callback: ServiceCallback<Vault>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-211">서버가 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-211">The name of the Resource Group to which the server belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-212">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-212">Name of the vault</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultPatchParameters'
+          description: <span data-ttu-id="c2fe2-213">자격 증명 모음을 패치 하는 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-213">Parameters to patch the vault</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.Vault>
+          description: |
+            <span data-ttu-id="c2fe2-214">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-214">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsUpdateResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.updateAccessPolicy'
+    name: 'updateAccessPolicy(string, string, Models.AccessPolicyUpdateKind, VaultAccessPolicyParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-215">지정된 된 구독에 key vault에서 액세스 정책을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-215">Update access policies in a key vault in the specified subscription.</span></span>
+    syntax:
+      content: 'function updateAccessPolicy(resourceGroupName: string, vaultName: string, operationKind: Models.AccessPolicyUpdateKind, parameters: VaultAccessPolicyParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-216">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-216">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-217">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-217">Name of the vault</span></span>
+        - id: operationKind
+          type:
+            - Models.AccessPolicyUpdateKind
+          description: '<span data-ttu-id="c2fe2-218">작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-218">Name of the operation.</span></span> <span data-ttu-id="c2fe2-219">가능한 값: ''add'', ''replace'', ''제거</span><span class="sxs-lookup"><span data-stu-id="c2fe2-219">Possible values include: ''add'', ''replace'', ''remove''</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultAccessPolicyParameters'
+          description: <span data-ttu-id="c2fe2-220">자격 증명 모음에 병합 하는 액세스 정책</span><span class="sxs-lookup"><span data-stu-id="c2fe2-220">Access policy to merge into the vault</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.VaultsUpdateAccessPolicyResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.updateAccessPolicy_2'
+    name: 'updateAccessPolicy(string, string, Models.AccessPolicyUpdateKind, VaultAccessPolicyParameters, RequestOptionsBase, ServiceCallback<VaultAccessPolicyParameters>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function updateAccessPolicy(resourceGroupName: string, vaultName: string, operationKind: Models.AccessPolicyUpdateKind, parameters: VaultAccessPolicyParameters, options: RequestOptionsBase, callback: ServiceCallback<VaultAccessPolicyParameters>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-221">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-221">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-222">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-222">Name of the vault</span></span>
+        - id: operationKind
+          type:
+            - Models.AccessPolicyUpdateKind
+          description: '<span data-ttu-id="c2fe2-223">작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-223">Name of the operation.</span></span> <span data-ttu-id="c2fe2-224">가능한 값: ''add'', ''replace'', ''제거</span><span class="sxs-lookup"><span data-stu-id="c2fe2-224">Possible values include: ''add'', ''replace'', ''remove''</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultAccessPolicyParameters'
+          description: <span data-ttu-id="c2fe2-225">자격 증명 모음에 병합 하는 액세스 정책</span><span class="sxs-lookup"><span data-stu-id="c2fe2-225">Access policy to merge into the vault</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c2fe2-226">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c2fe2-226">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultAccessPolicyParameters>
+          description: |
+            <span data-ttu-id="c2fe2-227">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-227">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsUpdateAccessPolicyResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.updateAccessPolicy_1'
+    name: 'updateAccessPolicy(string, string, Models.AccessPolicyUpdateKind, VaultAccessPolicyParameters, ServiceCallback<VaultAccessPolicyParameters>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function updateAccessPolicy(resourceGroupName: string, vaultName: string, operationKind: Models.AccessPolicyUpdateKind, parameters: VaultAccessPolicyParameters, callback: ServiceCallback<VaultAccessPolicyParameters>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-228">자격 증명 모음 속한 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-228">The name of the Resource Group to which the vault belongs.</span></span>
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="c2fe2-229">자격 증명 모음의 이름</span><span class="sxs-lookup"><span data-stu-id="c2fe2-229">Name of the vault</span></span>
+        - id: operationKind
+          type:
+            - Models.AccessPolicyUpdateKind
+          description: '<span data-ttu-id="c2fe2-230">작업의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-230">Name of the operation.</span></span> <span data-ttu-id="c2fe2-231">가능한 값: ''add'', ''replace'', ''제거</span><span class="sxs-lookup"><span data-stu-id="c2fe2-231">Possible values include: ''add'', ''replace'', ''remove''</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-keyvault.VaultAccessPolicyParameters'
+          description: <span data-ttu-id="c2fe2-232">자격 증명 모음에 병합 하는 액세스 정책</span><span class="sxs-lookup"><span data-stu-id="c2fe2-232">Access policy to merge into the vault</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-keyvault.VaultAccessPolicyParameters>
+          description: |
+            <span data-ttu-id="c2fe2-233">콜백</span><span class="sxs-lookup"><span data-stu-id="c2fe2-233">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.VaultsUpdateAccessPolicyResponse>
+    package: '@azure/arm-keyvault'
+  - uid: '@azure/arm-keyvault.Vaults.constructor'
+    name: Vaults(KeyVaultManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c2fe2-234">자격 증명 모음을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-234">Create a Vaults.</span></span>
+    syntax:
+      content: 'new Vaults(client: KeyVaultManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-keyvault.KeyVaultManagementClientContext'
+          description: |
+            <span data-ttu-id="c2fe2-235">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="c2fe2-235">Reference to the service client.</span></span>
+    package: '@azure/arm-keyvault'
+references:
+  - uid: '@azure/arm-keyvault.KeyVaultManagementClientContext'
+    name: KeyVaultManagementClientContext
+    spec.typeScript:
+      - name: KeyVaultManagementClientContext
+        fullName: KeyVaultManagementClientContext
+        uid: '@azure/arm-keyvault.KeyVaultManagementClientContext'
+  - uid: '@azure/arm-keyvault.VaultCreateOrUpdateParameters'
+    name: VaultCreateOrUpdateParameters
+    spec.typeScript:
+      - name: VaultCreateOrUpdateParameters
+        fullName: VaultCreateOrUpdateParameters
+        uid: '@azure/arm-keyvault.VaultCreateOrUpdateParameters'
+  - uid: '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters'
+    name: VaultCheckNameAvailabilityParameters
+    spec.typeScript:
+      - name: VaultCheckNameAvailabilityParameters
+        fullName: VaultCheckNameAvailabilityParameters
+        uid: '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters'
+  - uid: ServiceCallback<@azure/arm-keyvault.CheckNameAvailabilityResult>
+    name: CheckNameAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: '@azure/arm-keyvault.CheckNameAvailabilityResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-keyvault.Vault>
+    name: Vault>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Vault
+        fullName: Vault
+        uid: '@azure/arm-keyvault.Vault'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-keyvault.DeletedVault>
+    name: DeletedVault>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DeletedVault
+        fullName: DeletedVault
+        uid: '@azure/arm-keyvault.DeletedVault'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-keyvault.ResourceListResult>
+    name: ResourceListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceListResult
+        fullName: ResourceListResult
+        uid: '@azure/arm-keyvault.ResourceListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-keyvault.VaultsListOptionalParams'
+    name: VaultsListOptionalParams
+    spec.typeScript:
+      - name: VaultsListOptionalParams
+        fullName: VaultsListOptionalParams
+        uid: '@azure/arm-keyvault.VaultsListOptionalParams'
+  - uid: ServiceCallback<@azure/arm-keyvault.VaultListResult>
+    name: VaultListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VaultListResult
+        fullName: VaultListResult
+        uid: '@azure/arm-keyvault.VaultListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-keyvault.VaultsListByResourceGroupOptionalParams'
+    name: VaultsListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: VaultsListByResourceGroupOptionalParams
+        fullName: VaultsListByResourceGroupOptionalParams
+        uid: '@azure/arm-keyvault.VaultsListByResourceGroupOptionalParams'
+  - uid: '@azure/arm-keyvault.VaultsListBySubscriptionOptionalParams'
+    name: VaultsListBySubscriptionOptionalParams
+    spec.typeScript:
+      - name: VaultsListBySubscriptionOptionalParams
+        fullName: VaultsListBySubscriptionOptionalParams
+        uid: '@azure/arm-keyvault.VaultsListBySubscriptionOptionalParams'
+  - uid: ServiceCallback<@azure/arm-keyvault.DeletedVaultListResult>
+    name: DeletedVaultListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DeletedVaultListResult
+        fullName: DeletedVaultListResult
+        uid: '@azure/arm-keyvault.DeletedVaultListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-keyvault.VaultPatchParameters'
+    name: VaultPatchParameters
+    spec.typeScript:
+      - name: VaultPatchParameters
+        fullName: VaultPatchParameters
+        uid: '@azure/arm-keyvault.VaultPatchParameters'
+  - uid: '@azure/arm-keyvault.VaultAccessPolicyParameters'
+    name: VaultAccessPolicyParameters
+    spec.typeScript:
+      - name: VaultAccessPolicyParameters
+        fullName: VaultAccessPolicyParameters
+        uid: '@azure/arm-keyvault.VaultAccessPolicyParameters'
+  - uid: ServiceCallback<@azure/arm-keyvault.VaultAccessPolicyParameters>
+    name: VaultAccessPolicyParameters>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VaultAccessPolicyParameters
+        fullName: VaultAccessPolicyParameters
+        uid: '@azure/arm-keyvault.VaultAccessPolicyParameters'
+      - name: '>'
+        fullName: '>'

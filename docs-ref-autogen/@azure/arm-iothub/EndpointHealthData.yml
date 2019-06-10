@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-iothub.EndpointHealthData'
+    name: EndpointHealthData
+    fullName: EndpointHealthData
+    children:
+      - '@azure/arm-iothub.EndpointHealthData.endpointId'
+      - '@azure/arm-iothub.EndpointHealthData.healthStatus'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="c8377-101">끝점에 대 한 상태 데이터</span><span class="sxs-lookup"><span data-stu-id="c8377-101">The health data for an endpoint</span></span>
+    package: '@azure/arm-iothub'
+  - uid: '@azure/arm-iothub.EndpointHealthData.endpointId'
+    name: endpointId
+    fullName: endpointId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="c8377-102">끝점의 id</span><span class="sxs-lookup"><span data-stu-id="c8377-102">Id of the endpoint</span></span>
+    optional: true
+    syntax:
+      content: 'endpointId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-iothub'
+  - uid: '@azure/arm-iothub.EndpointHealthData.healthStatus'
+    name: healthStatus
+    fullName: healthStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="c8377-103">의미를 다음과 같은 있어야 하는 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-103">Health statuses have following meanings.</span></span> <span data-ttu-id="c8377-104">''정상'' 상태 끝점은 예상 대로 메시지를 받을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-104">The ''healthy'' status shows that the endpoint is accepting messages as expected.</span></span> <span data-ttu-id="c8377-105">''비정상'' 상태는 끝점에서 예상 대로 메시지를 수락 하지 않습니다 하 고이 끝점에 데이터를 보내도록 IoT Hub을 다시 시도 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-105">The ''unhealthy'' status shows that the endpoint is not accepting messages as expected and IoT Hub is retrying to send data to this endpoint.</span></span> <span data-ttu-id="c8377-106">IoT Hub 상태 최종적으로 일관 된 상태를 설정한 경우 비정상 끝점의 상태를 정상으로 업데이트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-106">The status of an unhealthy endpoint will be updated to healthy when IoT Hub has established an eventually consistent state of health.</span></span> <span data-ttu-id="c8377-107">''비활성'' 상태를 보여 줍니다 끝점 IoT Hub retrial 기간에 대 한 보내는 메시지를 다시 시도 후 메시지를 수락 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-107">The ''dead'' status shows that the endpoint is not accepting messages, after IoT Hub retried sending messages for the retrial period.</span></span> <span data-ttu-id="c8377-108">오류를 확인 하 고 끝점을 사용 하 여 문제를 모니터링 하는 IoT Hub 메트릭을 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="c8377-108">See IoT Hub metrics to identify errors and monitor issues with endpoints.</span></span> <span data-ttu-id="c8377-109">''알 수 없음'' 상태가 IoT Hub 끝점을 사용 하 여 연결을 설정 하지 않은 것입니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-109">The ''unknown'' status shows that the IoT Hub has not established a connection with the endpoint.</span></span> <span data-ttu-id="c8377-110">메시지가 배달 하거나이 끝점에서 거부 했습니다.</span><span class="sxs-lookup"><span data-stu-id="c8377-110">No messages have been delivered to or rejected from this endpoint.</span></span> <span data-ttu-id="c8377-111">가능한 값: ''알 수 없는'', ''정상'', ''비정상'', ''배달 못 한''</span><span class="sxs-lookup"><span data-stu-id="c8377-111">Possible values include: ''unknown'', ''healthy'', ''unhealthy'', ''dead''</span></span>'
+    optional: true
+    syntax:
+      content: 'healthStatus?: EndpointHealthStatus'
+      return:
+        type:
+          - '@azure/arm-iothub.EndpointHealthStatus'
+    package: '@azure/arm-iothub'
+references:
+  - uid: '@azure/arm-iothub.EndpointHealthStatus'
+    name: EndpointHealthStatus
+    spec.typeScript:
+      - name: EndpointHealthStatus
+        fullName: EndpointHealthStatus
+        uid: '@azure/arm-iothub.EndpointHealthStatus'
