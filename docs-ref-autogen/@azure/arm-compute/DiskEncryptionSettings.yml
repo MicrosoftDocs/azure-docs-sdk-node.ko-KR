@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-compute.DiskEncryptionSettings'
+    name: DiskEncryptionSettings
+    fullName: DiskEncryptionSettings
+    children:
+      - '@azure/arm-compute.DiskEncryptionSettings.diskEncryptionKey'
+      - '@azure/arm-compute.DiskEncryptionSettings.enabled'
+      - '@azure/arm-compute.DiskEncryptionSettings.keyEncryptionKey'
+    langs:
+      - typeScript
+    type: interface
+    summary: 암호화 설정을 디스크에 대해 설명합니다.
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.DiskEncryptionSettings.diskEncryptionKey'
+    name: diskEncryptionKey
+    fullName: diskEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 키 자격 증명 모음 암호는 디스크 암호화 키의 위치를 지정 합니다.
+    optional: true
+    syntax:
+      content: 'diskEncryptionKey?: KeyVaultSecretReference'
+      return:
+        type:
+          - '@azure/arm-compute.KeyVaultSecretReference'
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.DiskEncryptionSettings.enabled'
+    name: enabled
+    fullName: enabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 가상 머신에서 디스크 암호화를 사용 해야 하는지 여부를 지정 합니다.
+    optional: true
+    syntax:
+      content: 'enabled?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-compute'
+  - uid: '@azure/arm-compute.DiskEncryptionSettings.keyEncryptionKey'
+    name: keyEncryptionKey
+    fullName: keyEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Key Vault에 키 암호화 키의 위치를 지정합니다.
+    optional: true
+    syntax:
+      content: 'keyEncryptionKey?: KeyVaultKeyReference'
+      return:
+        type:
+          - '@azure/arm-compute.KeyVaultKeyReference'
+    package: '@azure/arm-compute'
+references:
+  - uid: '@azure/arm-compute.KeyVaultSecretReference'
+    name: KeyVaultSecretReference
+    spec.typeScript:
+      - name: KeyVaultSecretReference
+        fullName: KeyVaultSecretReference
+        uid: '@azure/arm-compute.KeyVaultSecretReference'
+  - uid: '@azure/arm-compute.KeyVaultKeyReference'
+    name: KeyVaultKeyReference
+    spec.typeScript:
+      - name: KeyVaultKeyReference
+        fullName: KeyVaultKeyReference
+        uid: '@azure/arm-compute.KeyVaultKeyReference'
