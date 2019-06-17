@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.PoolResizeParameter'
+    name: PoolResizeParameter
+    fullName: PoolResizeParameter
+    children:
+      - '@azure/batch.PoolResizeParameter.nodeDeallocationOption'
+      - '@azure/batch.PoolResizeParameter.resizeTimeout'
+      - '@azure/batch.PoolResizeParameter.targetDedicatedNodes'
+      - '@azure/batch.PoolResizeParameter.targetLowPriorityNodes'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="bc9c4-101">PoolResizeParameter 나타내는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-101">An interface representing PoolResizeParameter.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.nodeDeallocationOption'
+    name: nodeDeallocationOption
+    fullName: nodeDeallocationOption
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="bc9c4-102">풀 크기가 감소 하는 경우 노드 및 해당 실행 중인 작업을 사용 하 여 수행할 작업을 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-102">Determines what to do with a node and its running task(s) if the pool size is decreasing.</span></span> <span data-ttu-id="bc9c4-103">기본값은 requeue입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-103">The default value is requeue.</span></span> <span data-ttu-id="bc9c4-104">가능한 값: ''requeue'', ''terminate'', ''taskCompletion'', ''retainedData''</span><span class="sxs-lookup"><span data-stu-id="bc9c4-104">Possible values include: ''requeue'', ''terminate'', ''taskCompletion'', ''retainedData''</span></span>'
+    optional: true
+    syntax:
+      content: 'nodeDeallocationOption?: ComputeNodeDeallocationOption'
+      return:
+        type:
+          - '@azure/batch.ComputeNodeDeallocationOption'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.resizeTimeout'
+    name: resizeTimeout
+    fullName: resizeTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="bc9c4-105">계산 노드 풀에 할당 또는 계산 노드 풀에서 제거에 대 한 제한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-105">The timeout for allocation of compute nodes to the pool or removal of compute nodes from the pool.</span></span> <span data-ttu-id="bc9c4-106">기본값은 15 분입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-106">The default value is 15 minutes.</span></span> <span data-ttu-id="bc9c4-107">최소값은 5 분입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-107">The minimum value is 5 minutes.</span></span> <span data-ttu-id="bc9c4-108">5 분 보다 작은 값을 지정할 일괄 처리 서비스 오류를 반환 합니다. HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-108">If you specify a value less than 5 minutes, the Batch service returns an error; if you are calling the REST API directly, the HTTP status code is 400 (Bad Request).</span></span>'
+    optional: true
+    syntax:
+      content: 'resizeTimeout?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.targetDedicatedNodes'
+    name: targetDedicatedNodes
+    fullName: targetDedicatedNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="bc9c4-109">원하는 수의 전용 풀의 노드를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-109">The desired number of dedicated compute nodes in the pool.</span></span>
+    optional: true
+    syntax:
+      content: 'targetDedicatedNodes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.targetLowPriorityNodes'
+    name: targetLowPriorityNodes
+    fullName: targetLowPriorityNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="bc9c4-110">우선 순위가 낮은 계산 노드 풀에서 원하는 수입니다.</span><span class="sxs-lookup"><span data-stu-id="bc9c4-110">The desired number of low-priority compute nodes in the pool.</span></span>
+    optional: true
+    syntax:
+      content: 'targetLowPriorityNodes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.ComputeNodeDeallocationOption'
+    name: ComputeNodeDeallocationOption
+    spec.typeScript:
+      - name: ComputeNodeDeallocationOption
+        fullName: ComputeNodeDeallocationOption
+        uid: '@azure/batch.ComputeNodeDeallocationOption'
