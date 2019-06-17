@@ -1,0 +1,903 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-privatedns.RecordSets'
+    name: RecordSets
+    fullName: RecordSets
+    children:
+      - '@azure/arm-privatedns.RecordSets.createOrUpdate'
+      - '@azure/arm-privatedns.RecordSets.createOrUpdate_2'
+      - '@azure/arm-privatedns.RecordSets.createOrUpdate_1'
+      - '@azure/arm-privatedns.RecordSets.deleteMethod'
+      - '@azure/arm-privatedns.RecordSets.deleteMethod_2'
+      - '@azure/arm-privatedns.RecordSets.deleteMethod_1'
+      - '@azure/arm-privatedns.RecordSets.get'
+      - '@azure/arm-privatedns.RecordSets.get_2'
+      - '@azure/arm-privatedns.RecordSets.get_1'
+      - '@azure/arm-privatedns.RecordSets.list'
+      - '@azure/arm-privatedns.RecordSets.list_2'
+      - '@azure/arm-privatedns.RecordSets.list_1'
+      - '@azure/arm-privatedns.RecordSets.listByType'
+      - '@azure/arm-privatedns.RecordSets.listByType_2'
+      - '@azure/arm-privatedns.RecordSets.listByType_1'
+      - '@azure/arm-privatedns.RecordSets.listByTypeNext'
+      - '@azure/arm-privatedns.RecordSets.listByTypeNext_2'
+      - '@azure/arm-privatedns.RecordSets.listByTypeNext_1'
+      - '@azure/arm-privatedns.RecordSets.listNext'
+      - '@azure/arm-privatedns.RecordSets.listNext_2'
+      - '@azure/arm-privatedns.RecordSets.listNext_1'
+      - '@azure/arm-privatedns.RecordSets.constructor'
+      - '@azure/arm-privatedns.RecordSets.update'
+      - '@azure/arm-privatedns.RecordSets.update_2'
+      - '@azure/arm-privatedns.RecordSets.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="a8f7b-101">레코드 집합을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-101">Class representing a RecordSets.</span></span>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.createOrUpdate'
+    name: 'createOrUpdate(string, string, Models.RecordType, string, RecordSet, Models.RecordSetsCreateOrUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-102">만들거나 레코드 사설 DNS 영역 내에서 집합을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-102">Creates or updates a record set within a Private DNS zone.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, parameters: RecordSet, options?: Models.RecordSetsCreateOrUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-103">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-103">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-104">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-104">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-105">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-105">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-106">레코드 집합 형식이 SOA 업데이트할 수 있지만 만들어지지 (만들어진 사설 DNS 영역을 만들 때).</span><span class="sxs-lookup"><span data-stu-id="a8f7b-106">Record sets of type SOA can be updated but not created (they are created when the Private DNS zone is created).</span></span> <span data-ttu-id="a8f7b-107">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-107">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-108">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-108">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-privatedns.RecordSet'
+          description: <span data-ttu-id="a8f7b-109">CreateOrUpdate 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-109">Parameters supplied to the CreateOrUpdate operation.</span></span>
+        - id: options
+          type:
+            - Models.RecordSetsCreateOrUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsCreateOrUpdateResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.createOrUpdate_2'
+    name: 'createOrUpdate(string, string, Models.RecordType, string, RecordSet, RecordSetsCreateOrUpdateOptionalParams, ServiceCallback<RecordSet>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, parameters: RecordSet, options: RecordSetsCreateOrUpdateOptionalParams, callback: ServiceCallback<RecordSet>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-110">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-110">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-111">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-111">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-112">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-112">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-113">레코드 집합 형식이 SOA 업데이트할 수 있지만 만들어지지 (만들어진 사설 DNS 영역을 만들 때).</span><span class="sxs-lookup"><span data-stu-id="a8f7b-113">Record sets of type SOA can be updated but not created (they are created when the Private DNS zone is created).</span></span> <span data-ttu-id="a8f7b-114">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-114">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-115">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-115">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-privatedns.RecordSet'
+          description: <span data-ttu-id="a8f7b-116">CreateOrUpdate 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-116">Parameters supplied to the CreateOrUpdate operation.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-privatedns.RecordSetsCreateOrUpdateOptionalParams'
+          description: <span data-ttu-id="a8f7b-117">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-117">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSet>
+          description: |
+            <span data-ttu-id="a8f7b-118">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-118">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsCreateOrUpdateResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.createOrUpdate_1'
+    name: 'createOrUpdate(string, string, Models.RecordType, string, RecordSet, ServiceCallback<RecordSet>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, parameters: RecordSet, callback: ServiceCallback<RecordSet>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-119">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-119">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-120">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-120">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-121">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-121">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-122">레코드 집합 형식이 SOA 업데이트할 수 있지만 만들어지지 (만들어진 사설 DNS 영역을 만들 때).</span><span class="sxs-lookup"><span data-stu-id="a8f7b-122">Record sets of type SOA can be updated but not created (they are created when the Private DNS zone is created).</span></span> <span data-ttu-id="a8f7b-123">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-123">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-124">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-124">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-privatedns.RecordSet'
+          description: <span data-ttu-id="a8f7b-125">CreateOrUpdate 작업에 제공 되는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-125">Parameters supplied to the CreateOrUpdate operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSet>
+          description: |
+            <span data-ttu-id="a8f7b-126">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-126">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsCreateOrUpdateResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.deleteMethod'
+    name: 'deleteMethod(string, string, Models.RecordType, string, Models.RecordSetsDeleteMethodOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-127">사설 DNS 영역에서 설정 하는 레코드를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-127">Deletes a record set from a Private DNS zone.</span></span> <span data-ttu-id="a8f7b-128">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-128">This operation cannot be undone.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, options?: Models.RecordSetsDeleteMethodOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-129">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-129">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-130">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-130">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-131">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-131">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-132">레코드 집합 형식이 SOA를 삭제할 수 없습니다 (삭제 됩니다 사설 DNS 영역 삭제 될 때).</span><span class="sxs-lookup"><span data-stu-id="a8f7b-132">Record sets of type SOA cannot be deleted (they are deleted when the Private DNS zone is deleted).</span></span> <span data-ttu-id="a8f7b-133">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-133">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-134">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-134">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: options
+          type:
+            - Models.RecordSetsDeleteMethodOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.deleteMethod_2'
+    name: 'deleteMethod(string, string, Models.RecordType, string, RecordSetsDeleteMethodOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, options: RecordSetsDeleteMethodOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-135">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-135">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-136">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-136">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-137">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-137">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-138">레코드 집합 형식이 SOA를 삭제할 수 없습니다 (삭제 됩니다 사설 DNS 영역 삭제 될 때).</span><span class="sxs-lookup"><span data-stu-id="a8f7b-138">Record sets of type SOA cannot be deleted (they are deleted when the Private DNS zone is deleted).</span></span> <span data-ttu-id="a8f7b-139">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-139">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-140">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-140">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: options
+          type:
+            - '@azure/arm-privatedns.RecordSetsDeleteMethodOptionalParams'
+          description: <span data-ttu-id="a8f7b-141">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-141">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="a8f7b-142">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-142">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.deleteMethod_1'
+    name: 'deleteMethod(string, string, Models.RecordType, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-143">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-143">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-144">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-144">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-145">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-145">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-146">레코드 집합 형식이 SOA를 삭제할 수 없습니다 (삭제 됩니다 사설 DNS 영역 삭제 될 때).</span><span class="sxs-lookup"><span data-stu-id="a8f7b-146">Record sets of type SOA cannot be deleted (they are deleted when the Private DNS zone is deleted).</span></span> <span data-ttu-id="a8f7b-147">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-147">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-148">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-148">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="a8f7b-149">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-149">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.get'
+    name: 'get(string, string, Models.RecordType, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-150">레코드 집합을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-150">Gets a record set.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-151">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-151">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-152">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-152">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-153">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-153">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-154">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-154">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-155">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-155">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsGetResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.get_2'
+    name: 'get(string, string, Models.RecordType, string, RequestOptionsBase, ServiceCallback<RecordSet>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, options: RequestOptionsBase, callback: ServiceCallback<RecordSet>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-156">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-156">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-157">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-157">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-158">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-158">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-159">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-159">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-160">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-160">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="a8f7b-161">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-161">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSet>
+          description: |
+            <span data-ttu-id="a8f7b-162">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsGetResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.get_1'
+    name: 'get(string, string, Models.RecordType, string, ServiceCallback<RecordSet>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, callback: ServiceCallback<RecordSet>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-163">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-163">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-164">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-164">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-165">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-165">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-166">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-166">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-167">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-167">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSet>
+          description: |
+            <span data-ttu-id="a8f7b-168">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-168">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsGetResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.list'
+    name: 'list(string, string, Models.RecordSetsListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-169">사설 DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-169">Lists all record sets in a Private DNS zone.</span></span>
+    syntax:
+      content: 'function list(resourceGroupName: string, privateZoneName: string, options?: Models.RecordSetsListOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-170">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-170">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-171">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-171">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: options
+          type:
+            - Models.RecordSetsListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsListResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.list_2'
+    name: 'list(string, string, RecordSetsListOptionalParams, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(resourceGroupName: string, privateZoneName: string, options: RecordSetsListOptionalParams, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-172">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-172">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-173">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-173">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: options
+          type:
+            - '@azure/arm-privatedns.RecordSetsListOptionalParams'
+          description: <span data-ttu-id="a8f7b-174">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-174">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-175">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.list_1'
+    name: 'list(string, string, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(resourceGroupName: string, privateZoneName: string, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-176">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-176">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-177">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-177">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-178">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-178">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listByType'
+    name: 'listByType(string, string, Models.RecordType, Models.RecordSetsListByTypeOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-179">개인 DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-179">Lists the record sets of a specified type in a Private DNS zone.</span></span>
+    syntax:
+      content: 'function listByType(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, options?: Models.RecordSetsListByTypeOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-180">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-180">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-181">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-181">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-182">열거를 레코드 집합의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-182">The type of record sets to enumerate.</span></span> <span data-ttu-id="a8f7b-183">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-183">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: options
+          type:
+            - Models.RecordSetsListByTypeOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsListByTypeResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listByType_2'
+    name: 'listByType(string, string, Models.RecordType, RecordSetsListByTypeOptionalParams, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByType(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, options: RecordSetsListByTypeOptionalParams, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-184">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-184">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-185">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-185">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-186">열거를 레코드 집합의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-186">The type of record sets to enumerate.</span></span> <span data-ttu-id="a8f7b-187">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-187">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: options
+          type:
+            - '@azure/arm-privatedns.RecordSetsListByTypeOptionalParams'
+          description: <span data-ttu-id="a8f7b-188">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-188">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-189">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-189">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListByTypeResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listByType_1'
+    name: 'listByType(string, string, Models.RecordType, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByType(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-190">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-190">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-191">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-191">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-192">열거를 레코드 집합의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-192">The type of record sets to enumerate.</span></span> <span data-ttu-id="a8f7b-193">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-193">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-194">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-194">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListByTypeResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listByTypeNext'
+    name: 'listByTypeNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-195">개인 DNS 영역에 지정 된 형식의 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-195">Lists the record sets of a specified type in a Private DNS zone.</span></span>
+    syntax:
+      content: 'function listByTypeNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-196">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-196">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsListByTypeNextResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listByTypeNext_2'
+    name: 'listByTypeNext(string, RequestOptionsBase, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByTypeNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-197">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-197">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="a8f7b-198">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-198">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-199">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-199">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListByTypeNextResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listByTypeNext_1'
+    name: 'listByTypeNext(string, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByTypeNext(nextPageLink: string, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-200">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-200">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-201">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-201">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListByTypeNextResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-202">사설 DNS 영역에서 모든 레코드 집합을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-202">Lists all record sets in a Private DNS zone.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-203">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-203">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsListNextResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-204">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-204">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="a8f7b-205">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-205">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-206">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-206">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListNextResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.listNext_1'
+    name: 'listNext(string, ServiceCallback<RecordSetListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<RecordSetListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-207">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-207">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+          description: |
+            <span data-ttu-id="a8f7b-208">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-208">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsListNextResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.constructor'
+    name: RecordSets(PrivateDnsManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-209">레코드 집합을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-209">Create a RecordSets.</span></span>
+    syntax:
+      content: 'new RecordSets(client: PrivateDnsManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-privatedns.PrivateDnsManagementClientContext'
+          description: |
+            <span data-ttu-id="a8f7b-210">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-210">Reference to the service client.</span></span>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.update'
+    name: 'update(string, string, Models.RecordType, string, RecordSet, Models.RecordSetsUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="a8f7b-211">사설 DNS 영역 내에서 설정 하는 레코드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-211">Updates a record set within a Private DNS zone.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, parameters: RecordSet, options?: Models.RecordSetsUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-212">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-212">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-213">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-213">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-214">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-214">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-215">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-215">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-216">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-216">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-privatedns.RecordSet'
+          description: <span data-ttu-id="a8f7b-217">업데이트 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-217">Parameters supplied to the Update operation.</span></span>
+        - id: options
+          type:
+            - Models.RecordSetsUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RecordSetsUpdateResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.update_2'
+    name: 'update(string, string, Models.RecordType, string, RecordSet, RecordSetsUpdateOptionalParams, ServiceCallback<RecordSet>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, parameters: RecordSet, options: RecordSetsUpdateOptionalParams, callback: ServiceCallback<RecordSet>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-218">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-218">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-219">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-219">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-220">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-220">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-221">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-221">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-222">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-222">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-privatedns.RecordSet'
+          description: <span data-ttu-id="a8f7b-223">업데이트 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-223">Parameters supplied to the Update operation.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-privatedns.RecordSetsUpdateOptionalParams'
+          description: <span data-ttu-id="a8f7b-224">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8f7b-224">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSet>
+          description: |
+            <span data-ttu-id="a8f7b-225">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-225">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsUpdateResponse>
+    package: '@azure/arm-privatedns'
+  - uid: '@azure/arm-privatedns.RecordSets.update_1'
+    name: 'update(string, string, Models.RecordType, string, RecordSet, ServiceCallback<RecordSet>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, privateZoneName: string, recordType: Models.RecordType, relativeRecordSetName: string, parameters: RecordSet, callback: ServiceCallback<RecordSet>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-226">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-226">The name of the resource group.</span></span>
+        - id: privateZoneName
+          type:
+            - string
+          description: <span data-ttu-id="a8f7b-227">사설 DNS 영역 (하지 않고 종료 점)의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-227">The name of the Private DNS zone (without a terminating dot).</span></span>
+        - id: recordType
+          type:
+            - Models.RecordType
+          description: '<span data-ttu-id="a8f7b-228">이 레코드 집합에서 DNS 레코드의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-228">The type of DNS record in this record set.</span></span> <span data-ttu-id="a8f7b-229">가능한 값은 다음과 같습니다. ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span><span class="sxs-lookup"><span data-stu-id="a8f7b-229">Possible values include: ''A'', ''AAAA'', ''CNAME'', ''MX'', ''PTR'', ''SOA'', ''SRV'', ''TXT''</span></span>'
+        - id: relativeRecordSetName
+          type:
+            - string
+          description: '<span data-ttu-id="a8f7b-230">영역 이름을 기준으로 레코드의 이름이 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-230">The name of the record set, relative to the name of the zone.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-privatedns.RecordSet'
+          description: <span data-ttu-id="a8f7b-231">업데이트 작업에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="a8f7b-231">Parameters supplied to the Update operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-privatedns.RecordSet>
+          description: |
+            <span data-ttu-id="a8f7b-232">콜백</span><span class="sxs-lookup"><span data-stu-id="a8f7b-232">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RecordSetsUpdateResponse>
+    package: '@azure/arm-privatedns'
+references:
+  - uid: '@azure/arm-privatedns.PrivateDnsManagementClientContext'
+    name: PrivateDnsManagementClientContext
+    spec.typeScript:
+      - name: PrivateDnsManagementClientContext
+        fullName: PrivateDnsManagementClientContext
+        uid: '@azure/arm-privatedns.PrivateDnsManagementClientContext'
+  - uid: '@azure/arm-privatedns.RecordSet'
+    name: RecordSet
+    spec.typeScript:
+      - name: RecordSet
+        fullName: RecordSet
+        uid: '@azure/arm-privatedns.RecordSet'
+  - uid: ServiceCallback<@azure/arm-privatedns.RecordSet>
+    name: RecordSet>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RecordSet
+        fullName: RecordSet
+        uid: '@azure/arm-privatedns.RecordSet'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-privatedns.RecordSetsCreateOrUpdateOptionalParams'
+    name: RecordSetsCreateOrUpdateOptionalParams
+    spec.typeScript:
+      - name: RecordSetsCreateOrUpdateOptionalParams
+        fullName: RecordSetsCreateOrUpdateOptionalParams
+        uid: '@azure/arm-privatedns.RecordSetsCreateOrUpdateOptionalParams'
+  - uid: '@azure/arm-privatedns.RecordSetsDeleteMethodOptionalParams'
+    name: RecordSetsDeleteMethodOptionalParams
+    spec.typeScript:
+      - name: RecordSetsDeleteMethodOptionalParams
+        fullName: RecordSetsDeleteMethodOptionalParams
+        uid: '@azure/arm-privatedns.RecordSetsDeleteMethodOptionalParams'
+  - uid: ServiceCallback<@azure/arm-privatedns.RecordSetListResult>
+    name: RecordSetListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RecordSetListResult
+        fullName: RecordSetListResult
+        uid: '@azure/arm-privatedns.RecordSetListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-privatedns.RecordSetsListOptionalParams'
+    name: RecordSetsListOptionalParams
+    spec.typeScript:
+      - name: RecordSetsListOptionalParams
+        fullName: RecordSetsListOptionalParams
+        uid: '@azure/arm-privatedns.RecordSetsListOptionalParams'
+  - uid: '@azure/arm-privatedns.RecordSetsListByTypeOptionalParams'
+    name: RecordSetsListByTypeOptionalParams
+    spec.typeScript:
+      - name: RecordSetsListByTypeOptionalParams
+        fullName: RecordSetsListByTypeOptionalParams
+        uid: '@azure/arm-privatedns.RecordSetsListByTypeOptionalParams'
+  - uid: '@azure/arm-privatedns.RecordSetsUpdateOptionalParams'
+    name: RecordSetsUpdateOptionalParams
+    spec.typeScript:
+      - name: RecordSetsUpdateOptionalParams
+        fullName: RecordSetsUpdateOptionalParams
+        uid: '@azure/arm-privatedns.RecordSetsUpdateOptionalParams'

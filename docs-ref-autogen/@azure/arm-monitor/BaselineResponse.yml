@@ -1,0 +1,182 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-monitor.BaselineResponse'
+    name: BaselineResponse
+    fullName: BaselineResponse
+    children:
+      - '@azure/arm-monitor.BaselineResponse.aggregation'
+      - '@azure/arm-monitor.BaselineResponse.baseline'
+      - '@azure/arm-monitor.BaselineResponse.id'
+      - '@azure/arm-monitor.BaselineResponse.interval'
+      - '@azure/arm-monitor.BaselineResponse.metadata'
+      - '@azure/arm-monitor.BaselineResponse.name'
+      - '@azure/arm-monitor.BaselineResponse.timespan'
+      - '@azure/arm-monitor.BaselineResponse.timestamps'
+      - '@azure/arm-monitor.BaselineResponse.type'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="9ccb2-101">초기 쿼리에 응답 합니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-101">The response to a baseline query.</span></span>
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.aggregation'
+    name: aggregation
+    fullName: aggregation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9ccb2-102">메트릭 집계 유형입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-102">The aggregation type of the metric.</span></span>
+    optional: true
+    syntax:
+      content: 'aggregation?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.baseline'
+    name: baseline
+    fullName: baseline
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9ccb2-103">각 민감도 대 한 초기 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-103">the baseline values for each sensitivity.</span></span>
+    optional: true
+    syntax:
+      content: 'baseline?: Baseline[]'
+      return:
+        type:
+          - '@azure/arm-monitor.Baseline[]'
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9ccb2-104">메트릭 기준 id입니다. **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9ccb2-104">the metric baseline Id. **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.interval'
+    name: interval
+    fullName: interval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9ccb2-105">간격 (창 크기)에서 반환 된 메트릭 데이터입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-105">The interval (window size) for which the metric data was returned in.</span></span>  <span data-ttu-id="9ccb2-106">이 수 있습니다 나중에 조정 고 원래 요청 된 것에서 다시 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-106">This may be adjusted in the future and returned back from what was originally requested.</span></span>  <span data-ttu-id="9ccb2-107">이 메타 데이터를 요청 된 경우에 나타나지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-107">This is not present if a metadata request was made.</span></span>
+    optional: true
+    syntax:
+      content: 'interval?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.metadata'
+    name: metadata
+    fullName: metadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9ccb2-108">초기 메타 데이터 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-108">the baseline metadata values.</span></span>
+    optional: true
+    syntax:
+      content: 'metadata?: BaselineMetadataValue[]'
+      return:
+        type:
+          - '@azure/arm-monitor.BaselineMetadataValue[]'
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9ccb2-109">메트릭 표시 이름과 이름 지역화 가능한 문자열 즉 합니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-109">the name and the display name of the metric, i.e. it is localizable string.</span></span>
+      <span data-ttu-id="9ccb2-110">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9ccb2-110">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'name?: LocalizableString'
+      return:
+        type:
+          - '@azure/arm-monitor.LocalizableString'
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.timespan'
+    name: timespan
+    fullName: timespan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9ccb2-111">데이터를 검색 하는 timespan입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-111">The timespan for which the data was retrieved.</span></span> <span data-ttu-id="9ccb2-112">해당 값, 연결 된 두 날짜/시간 이루어져 구분 하 여 ''/''.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-112">Its value consists of two datetimes concatenated, separated by ''/''.</span></span>  <span data-ttu-id="9ccb2-113">이 수 있습니다 나중에 조정 고 원래 요청 된 것에서 다시 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-113">This may be adjusted in the future and returned back from what was originally requested.</span></span>'
+    optional: true
+    syntax:
+      content: 'timespan?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.timestamps'
+    name: timestamps
+    fullName: timestamps
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9ccb2-114">배열 기준의 타임 스탬프입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-114">the array of timestamps of the baselines.</span></span>
+    optional: true
+    syntax:
+      content: 'timestamps?: Date[] | string[]'
+      return:
+        type:
+          - 'Date[] | string[]'
+    package: '@azure/arm-monitor'
+  - uid: '@azure/arm-monitor.BaselineResponse.type'
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9ccb2-115">기본 리소스의 리소스 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="9ccb2-115">the resource type of the baseline resource.</span></span>
+      <span data-ttu-id="9ccb2-116">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9ccb2-116">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-monitor'
+references:
+  - uid: '@azure/arm-monitor.Baseline[]'
+    name: 'Baseline[]'
+    spec.typeScript:
+      - name: Baseline
+        fullName: Baseline
+        uid: '@azure/arm-monitor.Baseline'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-monitor.BaselineMetadataValue[]'
+    name: 'BaselineMetadataValue[]'
+    spec.typeScript:
+      - name: BaselineMetadataValue
+        fullName: BaselineMetadataValue
+        uid: '@azure/arm-monitor.BaselineMetadataValue'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-monitor.LocalizableString'
+    name: LocalizableString
+    spec.typeScript:
+      - name: LocalizableString
+        fullName: LocalizableString
+        uid: '@azure/arm-monitor.LocalizableString'
