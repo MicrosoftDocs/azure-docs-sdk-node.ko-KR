@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.TaskContainerSettings'
+    name: TaskContainerSettings
+    fullName: TaskContainerSettings
+    children:
+      - '@azure/batch.TaskContainerSettings.containerRunOptions'
+      - '@azure/batch.TaskContainerSettings.imageName'
+      - '@azure/batch.TaskContainerSettings.registry'
+    langs:
+      - typeScript
+    type: interface
+    summary: TaskContainerSettings 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskContainerSettings.containerRunOptions'
+    name: containerRunOptions
+    fullName: containerRunOptions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 컨테이너에 추가 옵션 명령을 만듭니다. 이러한 추가 옵션은 Batch 서비스에 의해 제어 되는 것 외에도 "docker 만들기" 명령에 대 한 인수로 제공 됩니다.
+    optional: true
+    syntax:
+      content: 'containerRunOptions?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskContainerSettings.imageName'
+    name: imageName
+    fullName: imageName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업을 실행할 수 있는 컨테이너를 만드는 데 사용할 이미지입니다. 이것이 "docker 풀"에 지정 될 전체 이미지 참조입니다. 태그가 없습니다. 이미지 이름, 태그의 일부로 제공 됩니다 하는 경우 ": 최신"을 기본값으로 사용 됩니다.'
+    syntax:
+      content: 'imageName: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskContainerSettings.registry'
+    name: registry
+    fullName: registry
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 컨테이너 이미지를 포함 하는 개인 레지스트리입니다. 풀 생성 시 이미 제공 된 경우에이 설정을 생략할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'registry?: ContainerRegistry'
+      return:
+        type:
+          - '@azure/batch.ContainerRegistry'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.ContainerRegistry'
+    name: ContainerRegistry
+    spec.typeScript:
+      - name: ContainerRegistry
+        fullName: ContainerRegistry
+        uid: '@azure/batch.ContainerRegistry'

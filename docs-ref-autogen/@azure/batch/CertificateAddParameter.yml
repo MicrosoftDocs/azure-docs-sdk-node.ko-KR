@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.CertificateAddParameter'
+    name: CertificateAddParameter
+    fullName: CertificateAddParameter
+    children:
+      - '@azure/batch.CertificateAddParameter.certificateFormat'
+      - '@azure/batch.CertificateAddParameter.data'
+      - '@azure/batch.CertificateAddParameter.password'
+      - '@azure/batch.CertificateAddParameter.thumbprint'
+      - '@azure/batch.CertificateAddParameter.thumbprintAlgorithm'
+    langs:
+      - typeScript
+    type: interface
+    summary: CertificateAddParameter 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.CertificateAddParameter.certificateFormat'
+    name: certificateFormat
+    fullName: certificateFormat
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '인증서 데이터의 형식입니다. 가능한 값: ''pfx'', ''cer'''
+    optional: true
+    syntax:
+      content: 'certificateFormat?: CertificateFormat'
+      return:
+        type:
+          - '@azure/batch.CertificateFormat'
+    package: '@azure/batch'
+  - uid: '@azure/batch.CertificateAddParameter.data'
+    name: data
+    fullName: data
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 인증서의 base64로 인코딩된 내용입니다. 최대 크기는 10KB입니다.
+    syntax:
+      content: 'data: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.CertificateAddParameter.password'
+    name: password
+    fullName: password
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 인증서의 개인 키를 액세스 하기 위한 암호입니다. Pfx 인증서 형식 경우 이것이 필요 합니다. 인증서 형식은 cer 경우 생략 해야 합니다.
+    optional: true
+    syntax:
+      content: 'password?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.CertificateAddParameter.thumbprint'
+    name: thumbprint
+    fullName: thumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 인증서의 X.509 지문입니다. 이 최대 40 개의 16 진수 숫자 시퀀스 (공백을 포함할 수 있지만 제거 하는).
+    syntax:
+      content: 'thumbprint: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.CertificateAddParameter.thumbprintAlgorithm'
+    name: thumbprintAlgorithm
+    fullName: thumbprintAlgorithm
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 지문을 파생 시키는 데 사용 된 알고리즘입니다. Sha1 이어야 합니다.
+    syntax:
+      content: 'thumbprintAlgorithm: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.CertificateFormat'
+    name: CertificateFormat
+    spec.typeScript:
+      - name: CertificateFormat
+        fullName: CertificateFormat
+        uid: '@azure/batch.CertificateFormat'
