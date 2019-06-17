@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-computervision.DetectedObject'
+    name: DetectedObject
+    fullName: DetectedObject
+    children:
+      - '@azure/cognitiveservices-computervision.DetectedObject.confidence'
+      - '@azure/cognitiveservices-computervision.DetectedObject.object'
+      - '@azure/cognitiveservices-computervision.DetectedObject.parent'
+      - '@azure/cognitiveservices-computervision.DetectedObject.rectangle'
+    langs:
+      - typeScript
+    type: interface
+    summary: 이미지에서 검색 하는 개체입니다.
+    package: '@azure/cognitiveservices-computervision'
+  - uid: '@azure/cognitiveservices-computervision.DetectedObject.confidence'
+    name: confidence
+    fullName: confidence
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 0에서 1 사이의 값으로 이미지에서 개체를 관찰 하지의 신뢰도 점수입니다.
+    optional: true
+    syntax:
+      content: 'confidence?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/cognitiveservices-computervision'
+  - uid: '@azure/cognitiveservices-computervision.DetectedObject.object'
+    name: object
+    fullName: object
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 개체에 대 한 레이블입니다.
+    optional: true
+    syntax:
+      content: 'object?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/cognitiveservices-computervision'
+  - uid: '@azure/cognitiveservices-computervision.DetectedObject.parent'
+    name: parent
+    fullName: parent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      분류 관점에서 부모 개체입니다.
+      부모 개체에는이 개체의 보다 일반적인 형태입니다.  예를 들어, 'bulldog' 부모 '개' 해야 합니다.
+    optional: true
+    syntax:
+      content: 'parent?: ObjectHierarchy'
+      return:
+        type:
+          - '@azure/cognitiveservices-computervision.ObjectHierarchy'
+    package: '@azure/cognitiveservices-computervision'
+  - uid: '@azure/cognitiveservices-computervision.DetectedObject.rectangle'
+    name: rectangle
+    fullName: rectangle
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      검색 된 개체의 대략적인 위치입니다.
+      **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**
+    optional: true
+    syntax:
+      content: 'rectangle?: BoundingRect'
+      return:
+        type:
+          - '@azure/cognitiveservices-computervision.BoundingRect'
+    package: '@azure/cognitiveservices-computervision'
+references:
+  - uid: '@azure/cognitiveservices-computervision.ObjectHierarchy'
+    name: ObjectHierarchy
+    spec.typeScript:
+      - name: ObjectHierarchy
+        fullName: ObjectHierarchy
+        uid: '@azure/cognitiveservices-computervision.ObjectHierarchy'
+  - uid: '@azure/cognitiveservices-computervision.BoundingRect'
+    name: BoundingRect
+    spec.typeScript:
+      - name: BoundingRect
+        fullName: BoundingRect
+        uid: '@azure/cognitiveservices-computervision.BoundingRect'

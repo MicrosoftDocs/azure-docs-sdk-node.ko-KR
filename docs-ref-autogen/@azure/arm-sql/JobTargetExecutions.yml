@@ -1,0 +1,627 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.JobTargetExecutions'
+    name: JobTargetExecutions
+    fullName: JobTargetExecutions
+    children:
+      - '@azure/arm-sql.JobTargetExecutions.get'
+      - '@azure/arm-sql.JobTargetExecutions.get_2'
+      - '@azure/arm-sql.JobTargetExecutions.get_1'
+      - '@azure/arm-sql.JobTargetExecutions.constructor'
+      - '@azure/arm-sql.JobTargetExecutions.listByJobExecution_2'
+      - '@azure/arm-sql.JobTargetExecutions.listByJobExecution'
+      - '@azure/arm-sql.JobTargetExecutions.listByJobExecution_1'
+      - '@azure/arm-sql.JobTargetExecutions.listByJobExecutionNext'
+      - '@azure/arm-sql.JobTargetExecutions.listByJobExecutionNext_2'
+      - '@azure/arm-sql.JobTargetExecutions.listByJobExecutionNext_1'
+      - '@azure/arm-sql.JobTargetExecutions.listByStep_2'
+      - '@azure/arm-sql.JobTargetExecutions.listByStep'
+      - '@azure/arm-sql.JobTargetExecutions.listByStep_1'
+      - '@azure/arm-sql.JobTargetExecutions.listByStepNext'
+      - '@azure/arm-sql.JobTargetExecutions.listByStepNext_2'
+      - '@azure/arm-sql.JobTargetExecutions.listByStepNext_1'
+    langs:
+      - typeScript
+    type: class
+    summary: JobTargetExecutions 나타내는 클래스입니다.
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.get'
+    name: 'get(string, string, string, string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 대상 실행을 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, stepName: string, targetId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행의 고유 id
+        - id: stepName
+          type:
+            - string
+          description: 단계의 이름입니다.
+        - id: targetId
+          type:
+            - string
+          description: 대상 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.get_2'
+    name: 'get(string, string, string, string, string, string, string, RequestOptionsBase, ServiceCallback<JobExecution>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, stepName: string, targetId: string, options: RequestOptionsBase, callback: ServiceCallback<JobExecution>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행의 고유 id
+        - id: stepName
+          type:
+            - string
+          description: 단계의 이름입니다.
+        - id: targetId
+          type:
+            - string
+          description: 대상 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecution>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.get_1'
+    name: 'get(string, string, string, string, string, string, string, ServiceCallback<JobExecution>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, stepName: string, targetId: string, callback: ServiceCallback<JobExecution>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행의 고유 id
+        - id: stepName
+          type:
+            - string
+          description: 단계의 이름입니다.
+        - id: targetId
+          type:
+            - string
+          description: 대상 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecution>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.constructor'
+    name: JobTargetExecutions(SqlManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: JobTargetExecutions를 만듭니다.
+    syntax:
+      content: 'new JobTargetExecutions(client: SqlManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-sql.SqlManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByJobExecution_2'
+    name: 'listByJobExecution(string, string, string, string, string, JobTargetExecutionsListByJobExecutionOptionalParams, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByJobExecution(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, options: JobTargetExecutionsListByJobExecutionOptionalParams, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행 id
+        - id: options
+          type:
+            - '@azure/arm-sql.JobTargetExecutionsListByJobExecutionOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByJobExecutionResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByJobExecution'
+    name: 'listByJobExecution(string, string, string, string, string, Models.JobTargetExecutionsListByJobExecutionOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 목록 작업 실행의 모든 단계에 대 한 실행 대상으로 합니다.
+    syntax:
+      content: 'function listByJobExecution(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, options?: Models.JobTargetExecutionsListByJobExecutionOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행 id
+        - id: options
+          type:
+            - Models.JobTargetExecutionsListByJobExecutionOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByJobExecutionResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByJobExecution_1'
+    name: 'listByJobExecution(string, string, string, string, string, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByJobExecution(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행 id
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByJobExecutionResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByJobExecutionNext'
+    name: 'listByJobExecutionNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 목록 작업 실행의 모든 단계에 대 한 실행 대상으로 합니다.
+    syntax:
+      content: 'function listByJobExecutionNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByJobExecutionNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByJobExecutionNext_2'
+    name: 'listByJobExecutionNext(string, RequestOptionsBase, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByJobExecutionNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByJobExecutionNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByJobExecutionNext_1'
+    name: 'listByJobExecutionNext(string, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByJobExecutionNext(nextPageLink: string, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByJobExecutionNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByStep_2'
+    name: 'listByStep(string, string, string, string, string, string, JobTargetExecutionsListByStepOptionalParams, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStep(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, stepName: string, options: JobTargetExecutionsListByStepOptionalParams, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행 id
+        - id: stepName
+          type:
+            - string
+          description: 단계의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-sql.JobTargetExecutionsListByStepOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByStepResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByStep'
+    name: 'listByStep(string, string, string, string, string, string, Models.JobTargetExecutionsListByStepOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업 단계 실행의 대상 실행을 나열합니다.
+    syntax:
+      content: 'function listByStep(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, stepName: string, options?: Models.JobTargetExecutionsListByStepOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행 id
+        - id: stepName
+          type:
+            - string
+          description: 단계의 이름입니다.
+        - id: options
+          type:
+            - Models.JobTargetExecutionsListByStepOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByStepResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByStep_1'
+    name: 'listByStep(string, string, string, string, string, string, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStep(resourceGroupName: string, serverName: string, jobAgentName: string, jobName: string, jobExecutionId: string, stepName: string, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: jobAgentName
+          type:
+            - string
+          description: 작업 에이전트의 이름입니다.
+        - id: jobName
+          type:
+            - string
+          description: 가져오기 작업의 이름입니다.
+        - id: jobExecutionId
+          type:
+            - string
+          description: 작업 실행 id
+        - id: stepName
+          type:
+            - string
+          description: 단계의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByStepResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByStepNext'
+    name: 'listByStepNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업 단계 실행의 대상 실행을 나열합니다.
+    syntax:
+      content: 'function listByStepNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByStepNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByStepNext_2'
+    name: 'listByStepNext(string, RequestOptionsBase, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStepNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByStepNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.JobTargetExecutions.listByStepNext_1'
+    name: 'listByStepNext(string, ServiceCallback<JobExecutionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStepNext(nextPageLink: string, callback: ServiceCallback<JobExecutionListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.JobTargetExecutionsListByStepNextResponse>
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.SqlManagementClientContext'
+    name: SqlManagementClientContext
+    spec.typeScript:
+      - name: SqlManagementClientContext
+        fullName: SqlManagementClientContext
+        uid: '@azure/arm-sql.SqlManagementClientContext'
+  - uid: ServiceCallback<@azure/arm-sql.JobExecution>
+    name: JobExecution>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobExecution
+        fullName: JobExecution
+        uid: '@azure/arm-sql.JobExecution'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.JobExecutionListResult>
+    name: JobExecutionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobExecutionListResult
+        fullName: JobExecutionListResult
+        uid: '@azure/arm-sql.JobExecutionListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-sql.JobTargetExecutionsListByJobExecutionOptionalParams'
+    name: JobTargetExecutionsListByJobExecutionOptionalParams
+    spec.typeScript:
+      - name: JobTargetExecutionsListByJobExecutionOptionalParams
+        fullName: JobTargetExecutionsListByJobExecutionOptionalParams
+        uid: '@azure/arm-sql.JobTargetExecutionsListByJobExecutionOptionalParams'
+  - uid: '@azure/arm-sql.JobTargetExecutionsListByStepOptionalParams'
+    name: JobTargetExecutionsListByStepOptionalParams
+    spec.typeScript:
+      - name: JobTargetExecutionsListByStepOptionalParams
+        fullName: JobTargetExecutionsListByStepOptionalParams
+        uid: '@azure/arm-sql.JobTargetExecutionsListByStepOptionalParams'
