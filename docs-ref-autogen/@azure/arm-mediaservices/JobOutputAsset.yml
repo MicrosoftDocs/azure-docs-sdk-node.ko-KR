@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-mediaservices.JobOutputAsset'
+    name: JobOutputAsset
+    fullName: JobOutputAsset
+    children:
+      - '@azure/arm-mediaservices.JobOutputAsset.assetName'
+      - '@azure/arm-mediaservices.JobOutputAsset.error'
+      - '@azure/arm-mediaservices.JobOutputAsset.label'
+      - '@azure/arm-mediaservices.JobOutputAsset.odatatype'
+      - '@azure/arm-mediaservices.JobOutputAsset.progress'
+      - '@azure/arm-mediaservices.JobOutputAsset.state'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="f94a1-101">JobOutput으로 사용할 자산을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-101">Represents an Asset used as a JobOutput.</span></span>
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.JobOutputAsset.assetName'
+    name: assetName
+    fullName: assetName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f94a1-102">출력의 이름을 자산입니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-102">The name of the output Asset.</span></span>
+    syntax:
+      content: 'assetName: string'
+      return:
+        type:
+          - string
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.JobOutputAsset.error'
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="f94a1-103">JobOutput 오류 상태에 있으면 오류 세부 정보를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-103">If the JobOutput is in the Error state, it contains the details of the error.</span></span>
+      <span data-ttu-id="f94a1-104">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f94a1-104">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'error?: JobError'
+      return:
+        type:
+          - '@azure/arm-mediaservices.JobError'
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.JobOutputAsset.label'
+    name: label
+    fullName: label
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f94a1-105">고유 하 게 식별할 수 있도록는 JobOutput에 할당 되는 레이블.</span><span class="sxs-lookup"><span data-stu-id="f94a1-105">A label that is assigned to a JobOutput in order to help uniquely identify it.</span></span> <span data-ttu-id="f94a1-106">에 변환에 둘 이상의 TransformOutput, 여기서 작업에 둘 이상의 JobOutput 하는 경우에 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-106">This is useful when your Transform has more than one TransformOutput, whereby your Job has more than one JobOutput.</span></span> <span data-ttu-id="f94a1-107">이러한 경우 작업을 제출할 때 두 개 이상의 JobOutputs TransformOutputs 변환에서와 동일한 순서로 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-107">In such cases, when you submit the Job, you will add two or more JobOutputs, in the same order as TransformOutputs in the Transform.</span></span> <span data-ttu-id="f94a1-108">이후에 작업 또는 이벤트를 통해 GET 요청을 검색 하는 경우는 JobOutput 쉽게 식별할 수 있도록 레이블을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-108">Subsequently, when you retrieve the Job, either through events or on a GET request, you can use the label to easily identify the JobOutput.</span></span> <span data-ttu-id="f94a1-109">레이블을 제공 하지 않으면 기본값은 ''{presetName} _ {outputIndex}'' 사용될지를 사전 설정된 이름을 해당 TransformOutput 출력 인덱스에는 사전 설정의 이름인 경우이의 상대 인덱스 JobOutput 작업 내에서.</span><span class="sxs-lookup"><span data-stu-id="f94a1-109">If a label is not provided, a default value of ''{presetName}_{outputIndex}'' will be used, where the preset name is the name of the preset in the corresponding TransformOutput and the output index is the relative index of the this JobOutput within the Job.</span></span> <span data-ttu-id="f94a1-110">참고가이 인덱스는 해당 변환 내에서 해당 TransformOutput의 상대 인덱스와 같습니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-110">Note that this index is the same as the relative index of the corresponding TransformOutput within its Transform.</span></span>'
+    optional: true
+    syntax:
+      content: 'label?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.JobOutputAsset.odatatype'
+    name: odatatype
+    fullName: odatatype
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f94a1-111">다형 판별자</span><span class="sxs-lookup"><span data-stu-id="f94a1-111">Polymorphic Discriminator</span></span>
+    syntax:
+      content: 'odatatype: "#Microsoft.Media.JobOutputAsset"'
+      return:
+        type:
+          - '"#Microsoft.Media.JobOutputAsset"'
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.JobOutputAsset.progress'
+    name: progress
+    fullName: progress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="f94a1-112">JobOutput 처리 상태에 있으면 작업 완료 비율을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-112">If the JobOutput is in a Processing state, this contains the Job completion percentage.</span></span> <span data-ttu-id="f94a1-113">값은 예상 값 이며 작업 완료 시간을 예측 하는 데 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-113">The value is an estimate and not intended to be used to predict Job completion times.</span></span> <span data-ttu-id="f94a1-114">JobOutput 전체 인지를 확인 하려면 State 속성을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-114">To determine if the JobOutput is complete, use the State property.</span></span>
+      <span data-ttu-id="f94a1-115">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f94a1-115">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'progress?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.JobOutputAsset.state'
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f94a1-116">JobOutput의 상태를 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="f94a1-116">Describes the state of the JobOutput.</span></span> <span data-ttu-id="f94a1-117">가능한 값은 다음과 같습니다. ''취소''를 ''취소''를 ''오류'', ''완료''와 ''처리''를 ''대기'', ''예약'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f94a1-117">Possible values include: ''Canceled'', ''Canceling'', ''Error'', ''Finished'', ''Processing'', ''Queued'', ''Scheduled'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'state?: JobState'
+      return:
+        type:
+          - '@azure/arm-mediaservices.JobState'
+    package: '@azure/arm-mediaservices'
+references:
+  - uid: '@azure/arm-mediaservices.JobError'
+    name: JobError
+    spec.typeScript:
+      - name: JobError
+        fullName: JobError
+        uid: '@azure/arm-mediaservices.JobError'
+  - uid: '@azure/arm-mediaservices.JobState'
+    name: JobState
+    spec.typeScript:
+      - name: JobState
+        fullName: JobState
+        uid: '@azure/arm-mediaservices.JobState'
