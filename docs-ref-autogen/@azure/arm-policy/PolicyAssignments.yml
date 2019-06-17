@@ -1,0 +1,1095 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-policy.PolicyAssignments'
+    name: PolicyAssignments
+    fullName: PolicyAssignments
+    children:
+      - '@azure/arm-policy.PolicyAssignments.create'
+      - '@azure/arm-policy.PolicyAssignments.create_2'
+      - '@azure/arm-policy.PolicyAssignments.create_1'
+      - '@azure/arm-policy.PolicyAssignments.createById'
+      - '@azure/arm-policy.PolicyAssignments.createById_2'
+      - '@azure/arm-policy.PolicyAssignments.createById_1'
+      - '@azure/arm-policy.PolicyAssignments.deleteById'
+      - '@azure/arm-policy.PolicyAssignments.deleteById_2'
+      - '@azure/arm-policy.PolicyAssignments.deleteById_1'
+      - '@azure/arm-policy.PolicyAssignments.deleteMethod'
+      - '@azure/arm-policy.PolicyAssignments.deleteMethod_2'
+      - '@azure/arm-policy.PolicyAssignments.deleteMethod_1'
+      - '@azure/arm-policy.PolicyAssignments.get'
+      - '@azure/arm-policy.PolicyAssignments.get_2'
+      - '@azure/arm-policy.PolicyAssignments.get_1'
+      - '@azure/arm-policy.PolicyAssignments.getById'
+      - '@azure/arm-policy.PolicyAssignments.getById_2'
+      - '@azure/arm-policy.PolicyAssignments.getById_1'
+      - '@azure/arm-policy.PolicyAssignments.list'
+      - '@azure/arm-policy.PolicyAssignments.list_2'
+      - '@azure/arm-policy.PolicyAssignments.list_1'
+      - '@azure/arm-policy.PolicyAssignments.listForResource'
+      - '@azure/arm-policy.PolicyAssignments.listForResource_2'
+      - '@azure/arm-policy.PolicyAssignments.listForResource_1'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceGroup'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceGroup_2'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceGroup_1'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceGroupNext'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceGroupNext_2'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceGroupNext_1'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceNext'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceNext_2'
+      - '@azure/arm-policy.PolicyAssignments.listForResourceNext_1'
+      - '@azure/arm-policy.PolicyAssignments.listNext'
+      - '@azure/arm-policy.PolicyAssignments.listNext_2'
+      - '@azure/arm-policy.PolicyAssignments.listNext_1'
+      - '@azure/arm-policy.PolicyAssignments.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="247a0-101">PolicyAssignments 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-101">Class representing a PolicyAssignments.</span></span>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.create'
+    name: 'create(string, string, PolicyAssignment, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-102">이 작업 만들거나 지정 된 범위 및 이름을 사용 하 여 정책 할당을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-102">This operation creates or updates a policy assignment with the given scope and name.</span></span> <span data-ttu-id="247a0-103">정책 할당의 범위 내에 포함 된 모든 리소스에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-103">Policy assignments apply to all resources contained within their scope.</span></span> <span data-ttu-id="247a0-104">예를 들어, 리소스 그룹 범위에서 정책에 할당 하면 해당 정책 그룹의 모든 리소스에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-104">For example, when you assign a policy at resource group scope, that policy applies to all resources in the group.</span></span>'
+    syntax:
+      content: 'function create(scope: string, policyAssignmentName: string, parameters: PolicyAssignment, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-105">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-105">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-106">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-106">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-107">정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-107">The name of the policy assignment.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-policy.PolicyAssignment'
+          description: <span data-ttu-id="247a0-108">정책 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-108">Parameters for the policy assignment.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsCreateResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.create_2'
+    name: 'create(string, string, PolicyAssignment, RequestOptionsBase, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(scope: string, policyAssignmentName: string, parameters: PolicyAssignment, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-109">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-109">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-110">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-110">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-111">정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-111">The name of the policy assignment.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-policy.PolicyAssignment'
+          description: <span data-ttu-id="247a0-112">정책 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-112">Parameters for the policy assignment.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-113">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-113">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-114">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-114">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsCreateResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.create_1'
+    name: 'create(string, string, PolicyAssignment, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(scope: string, policyAssignmentName: string, parameters: PolicyAssignment, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-115">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-115">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-116">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-116">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-117">정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-117">The name of the policy assignment.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-policy.PolicyAssignment'
+          description: <span data-ttu-id="247a0-118">정책 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-118">Parameters for the policy assignment.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-119">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-119">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsCreateResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.createById'
+    name: 'createById(string, PolicyAssignment, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-120">이 작업을 만들거나 지정된 된 ID를 사용 하 여 정책 할당 업데이트</span><span class="sxs-lookup"><span data-stu-id="247a0-120">This operation creates or updates the policy assignment with the given ID.</span></span> <span data-ttu-id="247a0-121">정책 할당 범위에 대 한 해당 범위에 포함 된 모든 리소스에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-121">Policy assignments made on a scope apply to all resources contained in that scope.</span></span> <span data-ttu-id="247a0-122">예를 들어 정책을 리소스 그룹에 할당할 경우 해당 정책을 적용할 그룹의 모든 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-122">For example, when you assign a policy to a resource group that policy applies to all resources in the group.</span></span> <span data-ttu-id="247a0-123">정책 할당 Id에이 형식: ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span><span class="sxs-lookup"><span data-stu-id="247a0-123">Policy assignment IDs have this format: ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span> <span data-ttu-id="247a0-124">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''.</span><span class="sxs-lookup"><span data-stu-id="247a0-124">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''.</span></span>'
+    syntax:
+      content: 'function createById(policyAssignmentId: string, parameters: PolicyAssignment, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-125">만들기 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-125">The ID of the policy assignment to create.</span></span> <span data-ttu-id="247a0-126">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-126">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-policy.PolicyAssignment'
+          description: <span data-ttu-id="247a0-127">정책 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-127">Parameters for policy assignment.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsCreateByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.createById_2'
+    name: 'createById(string, PolicyAssignment, RequestOptionsBase, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createById(policyAssignmentId: string, parameters: PolicyAssignment, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-128">만들기 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-128">The ID of the policy assignment to create.</span></span> <span data-ttu-id="247a0-129">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-129">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-policy.PolicyAssignment'
+          description: <span data-ttu-id="247a0-130">정책 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-130">Parameters for policy assignment.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-131">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-131">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-132">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-132">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsCreateByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.createById_1'
+    name: 'createById(string, PolicyAssignment, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createById(policyAssignmentId: string, parameters: PolicyAssignment, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-133">만들기 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-133">The ID of the policy assignment to create.</span></span> <span data-ttu-id="247a0-134">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-134">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: parameters
+          type:
+            - '@azure/arm-policy.PolicyAssignment'
+          description: <span data-ttu-id="247a0-135">정책 할당에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-135">Parameters for policy assignment.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-136">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-136">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsCreateByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.deleteById'
+    name: 'deleteById(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-137">이 작업에 지정된 된 ID 사용 하 여 정책을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-137">This operation deletes the policy with the given ID.</span></span> <span data-ttu-id="247a0-138">정책 할당 Id에이 형식: ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span><span class="sxs-lookup"><span data-stu-id="247a0-138">Policy assignment IDs have this format: ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span> <span data-ttu-id="247a0-139">{Scope}에 대 한 유효한 형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}'' (management group), '' / {subscriptionId}'' (구독), '' / {subscriptionId} /resourceGroups/ { resourceGroupName}'' (리소스 그룹) 또는 '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}'' (리소스).</span><span class="sxs-lookup"><span data-stu-id="247a0-139">Valid formats for {scope} are: ''/providers/Microsoft.Management/managementGroups/{managementGroup}'' (management group), ''/subscriptions/{subscriptionId}'' (subscription), ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'' (resource group), or ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}'' (resource).</span></span>'
+    syntax:
+      content: 'function deleteById(policyAssignmentId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-140">삭제 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-140">The ID of the policy assignment to delete.</span></span> <span data-ttu-id="247a0-141">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-141">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsDeleteByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.deleteById_2'
+    name: 'deleteById(string, RequestOptionsBase, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteById(policyAssignmentId: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-142">삭제 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-142">The ID of the policy assignment to delete.</span></span> <span data-ttu-id="247a0-143">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-143">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-144">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-144">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-145">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-145">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsDeleteByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.deleteById_1'
+    name: 'deleteById(string, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteById(policyAssignmentId: string, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-146">삭제 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-146">The ID of the policy assignment to delete.</span></span> <span data-ttu-id="247a0-147">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-147">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-148">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-148">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsDeleteByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-149">이 작업에 지정 된 이름과 범위에서 만든 정책 할당을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-149">This operation deletes a policy assignment, given its name and the scope it was created in.</span></span> <span data-ttu-id="247a0-150">정책 할당의 범위는 해당 ID 앞 부분 '' / providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span><span class="sxs-lookup"><span data-stu-id="247a0-150">The scope of a policy assignment is the part of its ID preceding ''/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+    syntax:
+      content: 'function deleteMethod(scope: string, policyAssignmentName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-151">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-151">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-152">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-152">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-153">삭제 정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-153">The name of the policy assignment to delete.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsDeleteMethodResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.deleteMethod_2'
+    name: 'deleteMethod(string, string, RequestOptionsBase, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(scope: string, policyAssignmentName: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-154">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-154">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-155">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-155">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-156">삭제 정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-156">The name of the policy assignment to delete.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-157">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-157">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-158">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsDeleteMethodResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.deleteMethod_1'
+    name: 'deleteMethod(string, string, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(scope: string, policyAssignmentName: string, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-159">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-159">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-160">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-160">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-161">삭제 정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-161">The name of the policy assignment to delete.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-162">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsDeleteMethodResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-163">이 작업에 지정 된 이름과 범위에서 만들어진 단일 정책 할당을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-163">This operation retrieves a single policy assignment, given its name and the scope it was created at.</span></span>'
+    syntax:
+      content: 'function get(scope: string, policyAssignmentName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-164">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-164">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-165">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-165">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-166">가져올 정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-166">The name of the policy assignment to get.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsGetResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(scope: string, policyAssignmentName: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-167">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-167">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-168">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-168">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-169">가져올 정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-169">The name of the policy assignment to get.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-170">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-170">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-171">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-171">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsGetResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.get_1'
+    name: 'get(string, string, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(scope: string, policyAssignmentName: string, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: scope
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-172">정책 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-172">The scope of the policy assignment.</span></span> <span data-ttu-id="247a0-173">유효한 범위는: 관리 그룹 (형식: '' / providers/Microsoft.Management/managementGroups/{managementGroup}''), 구독 (형식: '' / {subscriptionId}''), 리소스 그룹 (형식: '' / {subscriptionId} / resourceGroups / {resourceGroupName}'', 또는 리소스 (형식: '' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}''</span><span class="sxs-lookup"><span data-stu-id="247a0-173">Valid scopes are: management group (format: ''/providers/Microsoft.Management/managementGroups/{managementGroup}''), subscription (format: ''/subscriptions/{subscriptionId}''), resource group (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'', or resource (format: ''/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}''</span></span>'
+        - id: policyAssignmentName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-174">가져올 정책 할당의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-174">The name of the policy assignment to get.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-175">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsGetResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.getById'
+    name: 'getById(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="247a0-176">지정된 된 ID 사용 하 여 정책 할당을 검색 하는 작업</span><span class="sxs-lookup"><span data-stu-id="247a0-176">The operation retrieves the policy assignment with the given ID.</span></span> <span data-ttu-id="247a0-177">정책 할당 Id에이 형식: '{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'.</span><span class="sxs-lookup"><span data-stu-id="247a0-177">Policy assignment IDs have this format: '{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'.</span></span>
+      <span data-ttu-id="247a0-178">유효한 범위는: 관리 그룹 (형식: ' / providers/Microsoft.Management/managementGroups/{managementGroup}'), 구독 (형식: ' / {subscriptionId}'), 리소스 그룹 (형식: ' / {subscriptionId} / resourceGroups / {resourceGroupName}', 또는 리소스 (형식: ' / {subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {resourceProviderNamespace} / [{parentResourcePath} /] {resourceType} / {resourceName}'.</span><span class="sxs-lookup"><span data-stu-id="247a0-178">Valid scopes are: management group (format: '/providers/Microsoft.Management/managementGroups/{managementGroup}'), subscription (format: '/subscriptions/{subscriptionId}'), resource group (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}', or resource (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}'.</span></span>
+    syntax:
+      content: 'function getById(policyAssignmentId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-179">가져올 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-179">The ID of the policy assignment to get.</span></span> <span data-ttu-id="247a0-180">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-180">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsGetByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.getById_2'
+    name: 'getById(string, RequestOptionsBase, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getById(policyAssignmentId: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-181">가져올 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-181">The ID of the policy assignment to get.</span></span> <span data-ttu-id="247a0-182">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-182">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-183">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-183">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-184">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-184">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsGetByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.getById_1'
+    name: 'getById(string, ServiceCallback<PolicyAssignment>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getById(policyAssignmentId: string, callback: ServiceCallback<PolicyAssignment>)'
+      parameters:
+        - id: policyAssignmentId
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-185">가져올 정책 할당의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-185">The ID of the policy assignment to get.</span></span> <span data-ttu-id="247a0-186">''{Scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}'' 형식을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-186">Use the format ''{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}''.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignment>
+          description: |
+            <span data-ttu-id="247a0-187">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-187">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsGetByIdResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.list'
+    name: list(Models.PolicyAssignmentsListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-188">이 작업에는 모든 정책 할당의 지정 된 구독과 연결 된 선택적 $filter 지정 된 일치 하는 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-188">This operation retrieves the list of all policy assignments associated with the given subscription that match the optional given $filter.</span></span> <span data-ttu-id="247a0-189">$Filter에 대 한 유효한 값은: ''atscope ()'' 또는 '' policyDefinitionId eq '' {value} ''입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-189">Valid values for $filter are: ''atScope()'' or ''policyDefinitionId eq ''{value}''''.</span></span> <span data-ttu-id="247a0-190">직접 적용 되는 포함 하 여 구독과 연결 된 모든 정책 할당을 포함 하는 필터링 되지 않은 목록 또는에 포함 된 개체에 적용과로 지정된 된 구독을 포함 하는 관리 그룹에서 $filter 제공 되지 않은 경우 구독입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-190">If $filter is not provided, the unfiltered list includes all policy assignments associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription.</span></span> <span data-ttu-id="247a0-191">$Filter=atScope() 제공 된 경우 반환된 된 목록 필터링 되지 않은 목록의 구독 내에 포함 된 개체에 적용할 항목을 제외한 모든 문자는 구독에 적용 되는 모든 정책 할당을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-191">If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the subscription, which is everything in the unfiltered list except those applied to objects contained within the subscription.</span></span> <span data-ttu-id="247a0-192">경우 $filter = policyDefinitionId eq ''{value}가 제공 하는, 반환 된 목록에는 구독에 적용 하 고 id가 {value} 정책 정의 할당 하는 정책 할당만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-192">If $filter=policyDefinitionId eq ''{value}'' is provided, the returned list includes only policy assignments that apply to the subscription and assign the policy definition whose id is {value}.</span></span>'
+    syntax:
+      content: 'function list(options?: Models.PolicyAssignmentsListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.PolicyAssignmentsListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.list_2'
+    name: 'list(PolicyAssignmentsListOptionalParams, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: PolicyAssignmentsListOptionalParams, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-policy.PolicyAssignmentsListOptionalParams'
+          description: <span data-ttu-id="247a0-193">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-193">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-194">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-194">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.list_1'
+    name: list(ServiceCallback<PolicyAssignmentListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-195">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-195">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResource'
+    name: 'listForResource(string, string, string, string, string, Models.PolicyAssignmentsListForResourceOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="247a0-196">이 작업에는 모든 정책 할당의 지정 된 리소스 그룹 및 구독에 지정된 된 리소스와 연결 된 선택적 $filter 지정 된 일치 하는 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-196">This operation retrieves the list of all policy assignments associated with the specified resource in the given resource group and subscription that match the optional given $filter.</span></span>
+      <span data-ttu-id="247a0-197">$Filter에 대 한 유효한 값은: 'atscope ()' 또는 ' policyDefinitionId eq ' {value} '입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-197">Valid values for $filter are: 'atScope()' or 'policyDefinitionId eq '{value}''.</span></span> <span data-ttu-id="247a0-198">$Filter 제공 하지 않으면 리소스 내에 포함 된 리소스에도 마찬가지로 적용으로 모든 포함 하는 범위 또는 직접 적용 되는 포함 리소스와 연결 된 모든 정책 할당 필터링 되지 않은 목록에 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-198">If $filter is not provided, the unfiltered list includes all policy assignments associated with the resource, including those that apply directly or from all containing scopes, as well as any applied to resources contained within the resource.</span></span> <span data-ttu-id="247a0-199">$Filter=atScope() 제공 하는 경우 반환된 된 목록에 있는 리소스에 포함 된 리소스에 적용할 항목을 제외한 필터링 되지 않은 목록의 모든 항목의 리소스에 적용 되는 모든 정책 할당 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-199">If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the resource, which is everything in the unfiltered list except those applied to resources contained within the resource.</span></span> <span data-ttu-id="247a0-200">경우 $filter = policyDefinitionId eq '{value}가 제공 하는, 반환 된 목록에는 리소스에 적용 하 고 id가 {value} 정책 정의 할당 하는 정책 할당만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-200">If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes only policy assignments that apply to the resource and assign the policy definition whose id is {value}.</span></span>
+      <span data-ttu-id="247a0-201">리소스 이름과 세 개의 매개 변수는 특정 리소스를 식별 하는 데 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-201">Three parameters plus the resource name are used to identify a specific resource.</span></span> <span data-ttu-id="247a0-202">부모 리소스 경로 제공 하지 않은 리소스는 부모 리소스 (대부분의 경우)의 일부를 없는 경우 (또는으로 제공 된 ').</span><span class="sxs-lookup"><span data-stu-id="247a0-202">If the resource is not part of a parent resource (the more common case), the parent resource path should not be provided (or provided as '').</span></span> <span data-ttu-id="247a0-203">웹 앱으로 예를 들어 지정할 수 있습니다 ({resourceProviderNamespace} {parentResourcePath} ' Microsoft.Web' = = = = ', {resourceType} {resourceName} ' 사이트' = = 'MyWebApp' = =) 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-203">For example a web app could be specified as ({resourceProviderNamespace} == 'Microsoft.Web', {parentResourcePath} == '', {resourceType} == 'sites', {resourceName} == 'MyWebApp').</span></span> <span data-ttu-id="247a0-204">리소스 부모 리소스의 일부 이면 모든 매개 변수가 제공 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-204">If the resource is part of a parent resource, then all parameters should be provided.</span></span> <span data-ttu-id="247a0-205">가상 컴퓨터 DNS 이름으로 예를 들어 지정할 수 있습니다 ({resourceProviderNamespace} {parentResourcePath} ' Microsoft.Compute' = = ' virtualMachines/MyVirtualMachine ', {resourceType} = = {resourceName} ' domainNames' = = 'MyComputerName' = =) 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-205">For example a virtual machine DNS name could be specified as ({resourceProviderNamespace} == 'Microsoft.Compute', {parentResourcePath} == 'virtualMachines/MyVirtualMachine', {resourceType} == 'domainNames', {resourceName} == 'MyComputerName').</span></span> <span data-ttu-id="247a0-206">개별적으로 네임 스페이스 및 형식 이름을 제공 하는 편리한 대체 방법 모두 {resourceType} 매개 변수를 제공, 서식을 지정 하는 것: ({resourceProviderNamespace} = = ', {parentResourcePath} = = ', {resourceType} ' microsoft.web/sites', {= = resourceName} 'MyWebApp' = =) 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-206">A convenient alternative to providing the namespace and type name separately is to provide both in the {resourceType} parameter, format: ({resourceProviderNamespace} == '', {parentResourcePath} == '', {resourceType} == 'Microsoft.Web/sites', {resourceName} == 'MyWebApp').</span></span>
+    syntax:
+      content: 'function listForResource(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, options?: Models.PolicyAssignmentsListForResourceOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-207">리소스를 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-207">The name of the resource group containing the resource.</span></span>
+        - id: resourceProviderNamespace
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-208">리소스 공급자의 네임 스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-208">The namespace of the resource provider.</span></span> <span data-ttu-id="247a0-209">예를 들어 가상 컴퓨터의 네임 스페이스는 Microsoft.Compute (microsoft.compute/virtualmachines)에서</span><span class="sxs-lookup"><span data-stu-id="247a0-209">For example, the namespace of a virtual machine is Microsoft.Compute (from Microsoft.Compute/virtualMachines)</span></span>'
+        - id: parentResourcePath
+          type:
+            - string
+          description: <span data-ttu-id="247a0-210">부모 리소스 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-210">The parent resource path.</span></span> <span data-ttu-id="247a0-211">없는 경우 빈 문자열을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-211">Use empty string if there is none.</span></span>
+        - id: resourceType
+          type:
+            - string
+          description: <span data-ttu-id="247a0-212">리소스 형식 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-212">The resource type name.</span></span> <span data-ttu-id="247a0-213">예를 들어 웹 앱의 형식 이름 '사이트' microsoft.web/sites) (의 경우</span><span class="sxs-lookup"><span data-stu-id="247a0-213">For example the type name of a web app is 'sites' (from Microsoft.Web/sites).</span></span>
+        - id: resourceName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-214">리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-214">The name of the resource.</span></span>
+        - id: options
+          type:
+            - Models.PolicyAssignmentsListForResourceOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResource_2'
+    name: 'listForResource(string, string, string, string, string, PolicyAssignmentsListForResourceOptionalParams, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResource(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, options: PolicyAssignmentsListForResourceOptionalParams, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-215">리소스를 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-215">The name of the resource group containing the resource.</span></span>
+        - id: resourceProviderNamespace
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-216">리소스 공급자의 네임 스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-216">The namespace of the resource provider.</span></span> <span data-ttu-id="247a0-217">예를 들어 가상 컴퓨터의 네임 스페이스는 Microsoft.Compute (microsoft.compute/virtualmachines)에서</span><span class="sxs-lookup"><span data-stu-id="247a0-217">For example, the namespace of a virtual machine is Microsoft.Compute (from Microsoft.Compute/virtualMachines)</span></span>'
+        - id: parentResourcePath
+          type:
+            - string
+          description: <span data-ttu-id="247a0-218">부모 리소스 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-218">The parent resource path.</span></span> <span data-ttu-id="247a0-219">없는 경우 빈 문자열을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-219">Use empty string if there is none.</span></span>
+        - id: resourceType
+          type:
+            - string
+          description: <span data-ttu-id="247a0-220">리소스 형식 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-220">The resource type name.</span></span> <span data-ttu-id="247a0-221">예를 들어 웹 앱의 형식 이름 '사이트' microsoft.web/sites) (의 경우</span><span class="sxs-lookup"><span data-stu-id="247a0-221">For example the type name of a web app is 'sites' (from Microsoft.Web/sites).</span></span>
+        - id: resourceName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-222">리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-222">The name of the resource.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-policy.PolicyAssignmentsListForResourceOptionalParams'
+          description: <span data-ttu-id="247a0-223">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-223">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-224">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-224">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResource_1'
+    name: 'listForResource(string, string, string, string, string, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResource(resourceGroupName: string, resourceProviderNamespace: string, parentResourcePath: string, resourceType: string, resourceName: string, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-225">리소스를 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-225">The name of the resource group containing the resource.</span></span>
+        - id: resourceProviderNamespace
+          type:
+            - string
+          description: '<span data-ttu-id="247a0-226">리소스 공급자의 네임 스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-226">The namespace of the resource provider.</span></span> <span data-ttu-id="247a0-227">예를 들어 가상 컴퓨터의 네임 스페이스는 Microsoft.Compute (microsoft.compute/virtualmachines)에서</span><span class="sxs-lookup"><span data-stu-id="247a0-227">For example, the namespace of a virtual machine is Microsoft.Compute (from Microsoft.Compute/virtualMachines)</span></span>'
+        - id: parentResourcePath
+          type:
+            - string
+          description: <span data-ttu-id="247a0-228">부모 리소스 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-228">The parent resource path.</span></span> <span data-ttu-id="247a0-229">없는 경우 빈 문자열을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-229">Use empty string if there is none.</span></span>
+        - id: resourceType
+          type:
+            - string
+          description: <span data-ttu-id="247a0-230">리소스 형식 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-230">The resource type name.</span></span> <span data-ttu-id="247a0-231">예를 들어 웹 앱의 형식 이름 '사이트' microsoft.web/sites) (의 경우</span><span class="sxs-lookup"><span data-stu-id="247a0-231">For example the type name of a web app is 'sites' (from Microsoft.Web/sites).</span></span>
+        - id: resourceName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-232">리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-232">The name of the resource.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-233">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-233">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceGroup'
+    name: 'listForResourceGroup(string, Models.PolicyAssignmentsListForResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-234">이 작업에는 모든 정책 할당의 지정된 된 구독에서 지정 된 리소스 그룹과 연결 된 선택적 $filter 지정 된 일치 하는 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-234">This operation retrieves the list of all policy assignments associated with the given resource group in the given subscription that match the optional given $filter.</span></span> <span data-ttu-id="247a0-235">$Filter에 대 한 유효한 값은: ''atscope ()'' 또는 '' policyDefinitionId eq '' {value} ''입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-235">Valid values for $filter are: ''atScope()'' or ''policyDefinitionId eq ''{value}''''.</span></span> <span data-ttu-id="247a0-236">$Filter 제공 하지 않으면 필터링 되지 않은 목록에 직접 적용 하거나 포함 하는 리소스 그룹 내에 포함 된 리소스에도 마찬가지로 적용으로 범위에서 적용을 포함 하는 리소스 그룹과 관련 된 모든 정책 할당 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-236">If $filter is not provided, the unfiltered list includes all policy assignments associated with the resource group, including those that apply directly or apply from containing scopes, as well as any applied to resources contained within the resource group.</span></span> <span data-ttu-id="247a0-237">$Filter=atScope()를 제공 하는 경우 반환된 된 목록에는 리소스 그룹을 제외 하 고 리소스 그룹에 포함 된 리소스에 적용 된 필터링 되지 않은 목록의 모든 항목에 적용 되는 모든 정책 할당 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-237">If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the resource group, which is everything in the unfiltered list except those applied to resources contained within the resource group.</span></span> <span data-ttu-id="247a0-238">경우 $filter = policyDefinitionId eq ''{value}가 제공 하는, 반환 된 목록에 리소스 그룹에 적용 하 고 id가 {value} 정책 정의 할당 하는 정책 할당만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-238">If $filter=policyDefinitionId eq ''{value}'' is provided, the returned list includes only policy assignments that apply to the resource group and assign the policy definition whose id is {value}.</span></span>'
+    syntax:
+      content: 'function listForResourceGroup(resourceGroupName: string, options?: Models.PolicyAssignmentsListForResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-239">정책 할당을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-239">The name of the resource group that contains policy assignments.</span></span>
+        - id: options
+          type:
+            - Models.PolicyAssignmentsListForResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceGroupResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceGroup_2'
+    name: 'listForResourceGroup(string, PolicyAssignmentsListForResourceGroupOptionalParams, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResourceGroup(resourceGroupName: string, options: PolicyAssignmentsListForResourceGroupOptionalParams, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-240">정책 할당을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-240">The name of the resource group that contains policy assignments.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-policy.PolicyAssignmentsListForResourceGroupOptionalParams'
+          description: <span data-ttu-id="247a0-241">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-241">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-242">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-242">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceGroupResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceGroup_1'
+    name: 'listForResourceGroup(string, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResourceGroup(resourceGroupName: string, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="247a0-243">정책 할당을 포함 하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-243">The name of the resource group that contains policy assignments.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-244">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-244">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceGroupResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceGroupNext'
+    name: 'listForResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-245">이 작업에는 모든 정책 할당의 지정된 된 구독에서 지정 된 리소스 그룹과 연결 된 선택적 $filter 지정 된 일치 하는 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-245">This operation retrieves the list of all policy assignments associated with the given resource group in the given subscription that match the optional given $filter.</span></span> <span data-ttu-id="247a0-246">$Filter에 대 한 유효한 값은: ''atscope ()'' 또는 '' policyDefinitionId eq '' {value} ''입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-246">Valid values for $filter are: ''atScope()'' or ''policyDefinitionId eq ''{value}''''.</span></span> <span data-ttu-id="247a0-247">$Filter 제공 하지 않으면 필터링 되지 않은 목록에 직접 적용 하거나 포함 하는 리소스 그룹 내에 포함 된 리소스에도 마찬가지로 적용으로 범위에서 적용을 포함 하는 리소스 그룹과 관련 된 모든 정책 할당 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-247">If $filter is not provided, the unfiltered list includes all policy assignments associated with the resource group, including those that apply directly or apply from containing scopes, as well as any applied to resources contained within the resource group.</span></span> <span data-ttu-id="247a0-248">$Filter=atScope()를 제공 하는 경우 반환된 된 목록에는 리소스 그룹을 제외 하 고 리소스 그룹에 포함 된 리소스에 적용 된 필터링 되지 않은 목록의 모든 항목에 적용 되는 모든 정책 할당 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-248">If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the resource group, which is everything in the unfiltered list except those applied to resources contained within the resource group.</span></span> <span data-ttu-id="247a0-249">경우 $filter = policyDefinitionId eq ''{value}가 제공 하는, 반환 된 목록에 리소스 그룹에 적용 하 고 id가 {value} 정책 정의 할당 하는 정책 할당만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-249">If $filter=policyDefinitionId eq ''{value}'' is provided, the returned list includes only policy assignments that apply to the resource group and assign the policy definition whose id is {value}.</span></span>'
+    syntax:
+      content: 'function listForResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-250">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-250">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceGroupNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceGroupNext_2'
+    name: 'listForResourceGroupNext(string, RequestOptionsBase, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-251">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-251">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-252">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-252">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-253">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-253">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceGroupNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceGroupNext_1'
+    name: 'listForResourceGroupNext(string, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResourceGroupNext(nextPageLink: string, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-254">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-254">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-255">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-255">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceGroupNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceNext'
+    name: 'listForResourceNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="247a0-256">이 작업에는 모든 정책 할당의 지정 된 리소스 그룹 및 구독에 지정된 된 리소스와 연결 된 선택적 $filter 지정 된 일치 하는 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-256">This operation retrieves the list of all policy assignments associated with the specified resource in the given resource group and subscription that match the optional given $filter.</span></span>
+      <span data-ttu-id="247a0-257">$Filter에 대 한 유효한 값은: 'atscope ()' 또는 ' policyDefinitionId eq ' {value} '입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-257">Valid values for $filter are: 'atScope()' or 'policyDefinitionId eq '{value}''.</span></span> <span data-ttu-id="247a0-258">$Filter 제공 하지 않으면 리소스 내에 포함 된 리소스에도 마찬가지로 적용으로 모든 포함 하는 범위 또는 직접 적용 되는 포함 리소스와 연결 된 모든 정책 할당 필터링 되지 않은 목록에 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-258">If $filter is not provided, the unfiltered list includes all policy assignments associated with the resource, including those that apply directly or from all containing scopes, as well as any applied to resources contained within the resource.</span></span> <span data-ttu-id="247a0-259">$Filter=atScope() 제공 하는 경우 반환된 된 목록에 있는 리소스에 포함 된 리소스에 적용할 항목을 제외한 필터링 되지 않은 목록의 모든 항목의 리소스에 적용 되는 모든 정책 할당 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-259">If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the resource, which is everything in the unfiltered list except those applied to resources contained within the resource.</span></span> <span data-ttu-id="247a0-260">경우 $filter = policyDefinitionId eq '{value}가 제공 하는, 반환 된 목록에는 리소스에 적용 하 고 id가 {value} 정책 정의 할당 하는 정책 할당만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-260">If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes only policy assignments that apply to the resource and assign the policy definition whose id is {value}.</span></span>
+      <span data-ttu-id="247a0-261">리소스 이름과 세 개의 매개 변수는 특정 리소스를 식별 하는 데 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-261">Three parameters plus the resource name are used to identify a specific resource.</span></span> <span data-ttu-id="247a0-262">부모 리소스 경로 제공 하지 않은 리소스는 부모 리소스 (대부분의 경우)의 일부를 없는 경우 (또는으로 제공 된 ').</span><span class="sxs-lookup"><span data-stu-id="247a0-262">If the resource is not part of a parent resource (the more common case), the parent resource path should not be provided (or provided as '').</span></span> <span data-ttu-id="247a0-263">웹 앱으로 예를 들어 지정할 수 있습니다 ({resourceProviderNamespace} {parentResourcePath} ' Microsoft.Web' = = = = ', {resourceType} {resourceName} ' 사이트' = = 'MyWebApp' = =) 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-263">For example a web app could be specified as ({resourceProviderNamespace} == 'Microsoft.Web', {parentResourcePath} == '', {resourceType} == 'sites', {resourceName} == 'MyWebApp').</span></span> <span data-ttu-id="247a0-264">리소스 부모 리소스의 일부 이면 모든 매개 변수가 제공 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-264">If the resource is part of a parent resource, then all parameters should be provided.</span></span> <span data-ttu-id="247a0-265">가상 컴퓨터 DNS 이름으로 예를 들어 지정할 수 있습니다 ({resourceProviderNamespace} {parentResourcePath} ' Microsoft.Compute' = = ' virtualMachines/MyVirtualMachine ', {resourceType} = = {resourceName} ' domainNames' = = 'MyComputerName' = =) 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-265">For example a virtual machine DNS name could be specified as ({resourceProviderNamespace} == 'Microsoft.Compute', {parentResourcePath} == 'virtualMachines/MyVirtualMachine', {resourceType} == 'domainNames', {resourceName} == 'MyComputerName').</span></span> <span data-ttu-id="247a0-266">개별적으로 네임 스페이스 및 형식 이름을 제공 하는 편리한 대체 방법 모두 {resourceType} 매개 변수를 제공, 서식을 지정 하는 것: ({resourceProviderNamespace} = = ', {parentResourcePath} = = ', {resourceType} ' microsoft.web/sites', {= = resourceName} 'MyWebApp' = =) 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-266">A convenient alternative to providing the namespace and type name separately is to provide both in the {resourceType} parameter, format: ({resourceProviderNamespace} == '', {parentResourcePath} == '', {resourceType} == 'Microsoft.Web/sites', {resourceName} == 'MyWebApp').</span></span>
+    syntax:
+      content: 'function listForResourceNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-267">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-267">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceNext_2'
+    name: 'listForResourceNext(string, RequestOptionsBase, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResourceNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-268">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-268">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-269">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-269">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-270">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-270">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listForResourceNext_1'
+    name: 'listForResourceNext(string, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listForResourceNext(nextPageLink: string, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-271">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-271">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-272">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-272">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListForResourceNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="247a0-273">이 작업에는 모든 정책 할당의 지정 된 구독과 연결 된 선택적 $filter 지정 된 일치 하는 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-273">This operation retrieves the list of all policy assignments associated with the given subscription that match the optional given $filter.</span></span> <span data-ttu-id="247a0-274">$Filter에 대 한 유효한 값은: ''atscope ()'' 또는 '' policyDefinitionId eq '' {value} ''입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-274">Valid values for $filter are: ''atScope()'' or ''policyDefinitionId eq ''{value}''''.</span></span> <span data-ttu-id="247a0-275">직접 적용 되는 포함 하 여 구독과 연결 된 모든 정책 할당을 포함 하는 필터링 되지 않은 목록 또는에 포함 된 개체에 적용과로 지정된 된 구독을 포함 하는 관리 그룹에서 $filter 제공 되지 않은 경우 구독입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-275">If $filter is not provided, the unfiltered list includes all policy assignments associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription.</span></span> <span data-ttu-id="247a0-276">$Filter=atScope() 제공 된 경우 반환된 된 목록 필터링 되지 않은 목록의 구독 내에 포함 된 개체에 적용할 항목을 제외한 모든 문자는 구독에 적용 되는 모든 정책 할당을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-276">If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the subscription, which is everything in the unfiltered list except those applied to objects contained within the subscription.</span></span> <span data-ttu-id="247a0-277">경우 $filter = policyDefinitionId eq ''{value}가 제공 하는, 반환 된 목록에는 구독에 적용 하 고 id가 {value} 정책 정의 할당 하는 정책 할당만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-277">If $filter=policyDefinitionId eq ''{value}'' is provided, the returned list includes only policy assignments that apply to the subscription and assign the policy definition whose id is {value}.</span></span>'
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-278">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-278">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-279">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-279">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="247a0-280">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="247a0-280">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-281">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-281">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.listNext_1'
+    name: 'listNext(string, ServiceCallback<PolicyAssignmentListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<PolicyAssignmentListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="247a0-282">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-282">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+          description: |
+            <span data-ttu-id="247a0-283">콜백</span><span class="sxs-lookup"><span data-stu-id="247a0-283">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PolicyAssignmentsListNextResponse>
+    package: '@azure/arm-policy'
+  - uid: '@azure/arm-policy.PolicyAssignments.constructor'
+    name: PolicyAssignments(PolicyClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="247a0-284">PolicyAssignments를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-284">Create a PolicyAssignments.</span></span>
+    syntax:
+      content: 'new PolicyAssignments(client: PolicyClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-policy.PolicyClientContext'
+          description: |
+            <span data-ttu-id="247a0-285">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="247a0-285">Reference to the service client.</span></span>
+    package: '@azure/arm-policy'
+references:
+  - uid: '@azure/arm-policy.PolicyClientContext'
+    name: PolicyClientContext
+    spec.typeScript:
+      - name: PolicyClientContext
+        fullName: PolicyClientContext
+        uid: '@azure/arm-policy.PolicyClientContext'
+  - uid: '@azure/arm-policy.PolicyAssignment'
+    name: PolicyAssignment
+    spec.typeScript:
+      - name: PolicyAssignment
+        fullName: PolicyAssignment
+        uid: '@azure/arm-policy.PolicyAssignment'
+  - uid: ServiceCallback<@azure/arm-policy.PolicyAssignment>
+    name: PolicyAssignment>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PolicyAssignment
+        fullName: PolicyAssignment
+        uid: '@azure/arm-policy.PolicyAssignment'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-policy.PolicyAssignmentListResult>
+    name: PolicyAssignmentListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PolicyAssignmentListResult
+        fullName: PolicyAssignmentListResult
+        uid: '@azure/arm-policy.PolicyAssignmentListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-policy.PolicyAssignmentsListOptionalParams'
+    name: PolicyAssignmentsListOptionalParams
+    spec.typeScript:
+      - name: PolicyAssignmentsListOptionalParams
+        fullName: PolicyAssignmentsListOptionalParams
+        uid: '@azure/arm-policy.PolicyAssignmentsListOptionalParams'
+  - uid: '@azure/arm-policy.PolicyAssignmentsListForResourceOptionalParams'
+    name: PolicyAssignmentsListForResourceOptionalParams
+    spec.typeScript:
+      - name: PolicyAssignmentsListForResourceOptionalParams
+        fullName: PolicyAssignmentsListForResourceOptionalParams
+        uid: '@azure/arm-policy.PolicyAssignmentsListForResourceOptionalParams'
+  - uid: '@azure/arm-policy.PolicyAssignmentsListForResourceGroupOptionalParams'
+    name: PolicyAssignmentsListForResourceGroupOptionalParams
+    spec.typeScript:
+      - name: PolicyAssignmentsListForResourceGroupOptionalParams
+        fullName: PolicyAssignmentsListForResourceGroupOptionalParams
+        uid: '@azure/arm-policy.PolicyAssignmentsListForResourceGroupOptionalParams'
