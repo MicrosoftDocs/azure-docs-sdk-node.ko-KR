@@ -16,10 +16,11 @@ items:
       - '@azure/arm-network.AzureFirewall.tags'
       - '@azure/arm-network.AzureFirewall.threatIntelMode'
       - '@azure/arm-network.AzureFirewall.type'
+      - '@azure/arm-network.AzureFirewall.zones'
     langs:
       - typeScript
     type: interface
-    summary: Azure 방화벽 리소스
+    summary: Azure 방화벽 리소스입니다.
     extends:
       name: '@azure/arm-network.Resource'
     package: '@azure/arm-network'
@@ -208,6 +209,21 @@ items:
       return:
         type:
           - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.AzureFirewall.zones'
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 가용성의 목록을 나타내는 리소스에서 제공 해야 하는 영역입니다.
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
     package: '@azure/arm-network'
 references:
   - uid: '@azure/arm-network.Resource'
