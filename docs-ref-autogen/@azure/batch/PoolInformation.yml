@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.PoolInformation'
+    name: PoolInformation
+    fullName: PoolInformation
+    children:
+      - '@azure/batch.PoolInformation.autoPoolSpecification'
+      - '@azure/batch.PoolInformation.poolId'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="9a6b3-101">PoolInformation 나타내는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-101">An interface representing PoolInformation.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolInformation.autoPoolSpecification'
+    name: autoPoolSpecification
+    fullName: autoPoolSpecification
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9a6b3-102">임시 '자동 ' 풀에 대 한 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-102">Characteristics for a temporary 'auto pool'.</span></span> <span data-ttu-id="9a6b3-103">Batch 서비스는 작업이 제출 될 때 자동 풀이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-103">The Batch service will create this auto pool when the job is submitted.</span></span> <span data-ttu-id="9a6b3-104">자동 풀 만들기에 실패 하면 Batch 서비스는 작업 완료 된 상태로 이동 하 고 풀 만들기 오류 작업의 일정 오류 속성에 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-104">If auto pool creation fails, the Batch service moves the job to a completed state, and the pool creation error is set in the job's scheduling error property.</span></span>
+      <span data-ttu-id="9a6b3-105">Batch 서비스의 수명을 관리 (모두 생성 및 keepAlive를 지정 하지 않으면 삭제) 자동 풀의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-105">The Batch service manages the lifetime (both creation and, unless keepAlive is specified, deletion) of the auto pool.</span></span> <span data-ttu-id="9a6b3-106">작업이 활성 상태일 때 자동 풀의 수명에 영향을 주는 모든 사용자 동작 예기치 않은 동작이 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-106">Any user actions that affect the lifetime of the auto pool while the job is active will result in unexpected behavior.</span></span> <span data-ttu-id="9a6b3-107">풀 ID 또는 자동 풀 사양 중 하나만 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-107">You must specify either the pool ID or the auto pool specification, but not both.</span></span>
+    optional: true
+    syntax:
+      content: 'autoPoolSpecification?: AutoPoolSpecification'
+      return:
+        type:
+          - '@azure/batch.AutoPoolSpecification'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolInformation.poolId'
+    name: poolId
+    fullName: poolId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9a6b3-108">기존 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-108">The ID of an existing pool.</span></span> <span data-ttu-id="9a6b3-109">작업의 모든 작업은 지정된 된 풀에서 실행 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-109">All the tasks of the job will run on the specified pool.</span></span> <span data-ttu-id="9a6b3-110">이 속성에서 참조 하는 풀에 존재 하는지 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-110">You must ensure that the pool referenced by this property exists.</span></span> <span data-ttu-id="9a6b3-111">풀을 Batch 서비스에서 작업을 예약 하려고 시점에 없으면 해당 id를 사용 하 여 풀을 만들 때까지 작업에 대 한 작업이 실행 됩니다. 일괄 처리 서비스는 작업 요청을 거부 하지 참고 단순히 실행 되지 않습니다 작업 풀 생길 때까지 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-111">If the pool does not exist at the time the Batch service tries to schedule a job, no tasks for the job will run until you create a pool with that id. Note that the Batch service will not reject the job request; it will simply not run tasks until the pool exists.</span></span> <span data-ttu-id="9a6b3-112">풀 ID 또는 자동 풀 사양 중 하나만 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a6b3-112">You must specify either the pool ID or the auto pool specification, but not both.</span></span>'
+    optional: true
+    syntax:
+      content: 'poolId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.AutoPoolSpecification'
+    name: AutoPoolSpecification
+    spec.typeScript:
+      - name: AutoPoolSpecification
+        fullName: AutoPoolSpecification
+        uid: '@azure/batch.AutoPoolSpecification'
