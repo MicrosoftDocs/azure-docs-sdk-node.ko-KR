@@ -1,0 +1,805 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-webservices.WebServices'
+    name: WebServices
+    fullName: WebServices
+    children:
+      - '@azure/arm-webservices.WebServices.beginCreateOrUpdate'
+      - '@azure/arm-webservices.WebServices.beginCreateRegionalProperties'
+      - '@azure/arm-webservices.WebServices.beginPatch'
+      - '@azure/arm-webservices.WebServices.beginRemove'
+      - '@azure/arm-webservices.WebServices.createOrUpdate'
+      - '@azure/arm-webservices.WebServices.createRegionalProperties'
+      - '@azure/arm-webservices.WebServices.get'
+      - '@azure/arm-webservices.WebServices.get_1'
+      - '@azure/arm-webservices.WebServices.get_2'
+      - '@azure/arm-webservices.WebServices.listByResourceGroup'
+      - '@azure/arm-webservices.WebServices.listByResourceGroup_1'
+      - '@azure/arm-webservices.WebServices.listByResourceGroup_2'
+      - '@azure/arm-webservices.WebServices.listByResourceGroupNext'
+      - '@azure/arm-webservices.WebServices.listByResourceGroupNext_2'
+      - '@azure/arm-webservices.WebServices.listByResourceGroupNext_1'
+      - '@azure/arm-webservices.WebServices.listBySubscriptionId'
+      - '@azure/arm-webservices.WebServices.listBySubscriptionId_1'
+      - '@azure/arm-webservices.WebServices.listBySubscriptionId_2'
+      - '@azure/arm-webservices.WebServices.listBySubscriptionIdNext'
+      - '@azure/arm-webservices.WebServices.listBySubscriptionIdNext_2'
+      - '@azure/arm-webservices.WebServices.listBySubscriptionIdNext_1'
+      - '@azure/arm-webservices.WebServices.listKeys'
+      - '@azure/arm-webservices.WebServices.listKeys_2'
+      - '@azure/arm-webservices.WebServices.listKeys_1'
+      - '@azure/arm-webservices.WebServices.patch'
+      - '@azure/arm-webservices.WebServices.remove'
+      - '@azure/arm-webservices.WebServices.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="4a1ac-101">웹 서비스를 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-101">Class representing a WebServices.</span></span>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, WebService, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-102">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-102">Create or update a web service.</span></span> <span data-ttu-id="4a1ac-103">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-103">This call will overwrite an existing web service.</span></span> <span data-ttu-id="4a1ac-104">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-104">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="4a1ac-105">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-105">This is a nonrecoverable operation.</span></span> <span data-ttu-id="4a1ac-106">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-106">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>'
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-107">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-107">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-108">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-108">The name of the web service.</span></span>
+        - id: createOrUpdatePayload
+          type:
+            - '@azure/arm-webservices.WebService'
+          description: <span data-ttu-id="4a1ac-109">웹 서비스 만들기 또는 업데이트 하는 데 사용 되는 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-109">The payload that is used to create or update the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.beginCreateRegionalProperties'
+    name: 'beginCreateRegionalProperties(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-110">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-110">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="4a1ac-111">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-111">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="4a1ac-112">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-112">You only need to do this before the first time that you get the web service in the new region.</span></span>'
+    syntax:
+      content: 'function beginCreateRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-113">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-113">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-114">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-114">The name of the web service.</span></span>
+        - id: region
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-115">암호화 된 자격 증명 매개 변수는 생성 하는 데는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-115">The region for which encrypted credential parameters are created.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.beginPatch'
+    name: 'beginPatch(string, string, WebService, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-116">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-116">Modifies an existing web service resource.</span></span> <span data-ttu-id="4a1ac-117">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-117">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="4a1ac-118">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-118">To determine whether it has completed successfully, you must perform a Get operation.</span></span>'
+    syntax:
+      content: 'function beginPatch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-119">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-119">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-120">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-120">The name of the web service.</span></span>
+        - id: patchPayload
+          type:
+            - '@azure/arm-webservices.WebService'
+          description: <span data-ttu-id="4a1ac-121">웹 서비스를 패치 하는 데 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-121">The payload to use to patch the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.beginRemove'
+    name: 'beginRemove(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-122">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-122">Deletes the specified web service.</span></span>
+    syntax:
+      content: 'function beginRemove(resourceGroupName: string, webServiceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-123">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-123">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-124">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-124">The name of the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.createOrUpdate'
+    name: 'createOrUpdate(string, string, WebService, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-125">만들거나 웹 서비스를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-125">Create or update a web service.</span></span> <span data-ttu-id="4a1ac-126">이 호출은 기존 웹 서비스를 덮어쓰게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-126">This call will overwrite an existing web service.</span></span> <span data-ttu-id="4a1ac-127">확인 없거나 경고는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-127">Note that there is no warning or confirmation.</span></span> <span data-ttu-id="4a1ac-128">복구할 수 없는 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-128">This is a nonrecoverable operation.</span></span> <span data-ttu-id="4a1ac-129">새 웹 서비스를 만들고, 확인 하려면 먼저 Get 작업을 호출 하려면 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-129">If your intent is to create a new web service, call the Get operation first to verify that it does not exist.</span></span>'
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, webServiceName: string, createOrUpdatePayload: WebService, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-130">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-130">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-131">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-131">The name of the web service.</span></span>
+        - id: createOrUpdatePayload
+          type:
+            - '@azure/arm-webservices.WebService'
+          description: <span data-ttu-id="4a1ac-132">웹 서비스 만들기 또는 업데이트 하는 데 사용 되는 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-132">The payload that is used to create or update the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesCreateOrUpdateResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.createRegionalProperties'
+    name: 'createRegionalProperties(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-133">지정된 된 영역에 대 한 암호화 된 자격 증명 매개 변수 blob을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-133">Creates an encrypted credentials parameter blob for the specified region.</span></span> <span data-ttu-id="4a1ac-134">생성 된 있는 지역이 아닌 지역에서 웹 서비스를 가져오려면 먼저 해당 지역에서 암호화 된 자격 증명 매개 변수 blob의 복사본을 만들려면 국가별 웹 서비스 속성 만들기를 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-134">To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region.</span></span> <span data-ttu-id="4a1ac-135">새 지역에서 웹 서비스를 얻을 수 있는 첫 번째 시간 전에이 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-135">You only need to do this before the first time that you get the web service in the new region.</span></span>'
+    syntax:
+      content: 'function createRegionalProperties(resourceGroupName: string, webServiceName: string, region: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-136">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-136">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-137">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-137">The name of the web service.</span></span>
+        - id: region
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-138">암호화 된 자격 증명 매개 변수는 생성 하는 데는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-138">The region for which encrypted credential parameters are created.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesCreateRegionalPropertiesResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.get'
+    name: 'get(string, string, Models.WebServicesGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-139">구독, 리소스 그룹 및 이름에 지정 된 대로 웹 서비스 정의 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-139">Gets the Web Service Definition as specified by a subscription, resource group, and name.</span></span> <span data-ttu-id="4a1ac-140">저장소 자격 증명 및 웹 서비스 키를이 호출에서 반환 되지 않습니다는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-140">Note that the storage credentials and web service keys are not returned by this call.</span></span> <span data-ttu-id="4a1ac-141">웹 서비스 액세스 키를 가져오려면 목록 키를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-141">To get the web service access keys, call List Keys.</span></span>'
+    syntax:
+      content: 'function get(resourceGroupName: string, webServiceName: string, options?: Models.WebServicesGetOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-142">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-142">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-143">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-143">The name of the web service.</span></span>
+        - id: options
+          type:
+            - Models.WebServicesGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesGetResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.get_1'
+    name: 'get(string, string, ServiceCallback<WebService>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, webServiceName: string, callback: ServiceCallback<WebService>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-144">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-144">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-145">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-145">The name of the web service.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.WebService>
+          description: |
+            <span data-ttu-id="4a1ac-146">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-146">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesGetResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.get_2'
+    name: 'get(string, string, WebServicesGetOptionalParams, ServiceCallback<WebService>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, webServiceName: string, options: WebServicesGetOptionalParams, callback: ServiceCallback<WebService>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-147">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-147">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-148">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-148">The name of the web service.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-webservices.WebServicesGetOptionalParams'
+          description: <span data-ttu-id="4a1ac-149">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4a1ac-149">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.WebService>
+          description: |
+            <span data-ttu-id="4a1ac-150">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-150">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesGetResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.WebServicesListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-151">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-151">Gets the web services in the specified resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.WebServicesListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-152">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-152">Name of the resource group in which the web service is located.</span></span>
+        - id: options
+          type:
+            - Models.WebServicesListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesListByResourceGroupResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-153">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-153">Name of the resource group in which the web service is located.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-154">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-154">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListByResourceGroupResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, WebServicesListByResourceGroupOptionalParams, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: WebServicesListByResourceGroupOptionalParams, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-155">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-155">Name of the resource group in which the web service is located.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-webservices.WebServicesListByResourceGroupOptionalParams'
+          description: <span data-ttu-id="4a1ac-156">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4a1ac-156">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-157">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-157">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListByResourceGroupResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-158">지정된 된 리소스 그룹에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-158">Gets the web services in the specified resource group.</span></span>
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-159">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-159">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesListByResourceGroupNextResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-160">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-160">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="4a1ac-161">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4a1ac-161">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-162">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListByResourceGroupNextResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-163">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-163">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-164">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-164">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListByResourceGroupNextResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listBySubscriptionId'
+    name: listBySubscriptionId(Models.WebServicesListBySubscriptionIdOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-165">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-165">Gets the web services in the specified subscription.</span></span>
+    syntax:
+      content: 'function listBySubscriptionId(options?: Models.WebServicesListBySubscriptionIdOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.WebServicesListBySubscriptionIdOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesListBySubscriptionIdResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listBySubscriptionId_1'
+    name: listBySubscriptionId(ServiceCallback<PaginatedWebServicesList>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionId(callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-166">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-166">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListBySubscriptionIdResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listBySubscriptionId_2'
+    name: 'listBySubscriptionId(WebServicesListBySubscriptionIdOptionalParams, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionId(options: WebServicesListBySubscriptionIdOptionalParams, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-webservices.WebServicesListBySubscriptionIdOptionalParams'
+          description: <span data-ttu-id="4a1ac-167">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4a1ac-167">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-168">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-168">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListBySubscriptionIdResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listBySubscriptionIdNext'
+    name: 'listBySubscriptionIdNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-169">지정된 된 구독에서 웹 서비스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-169">Gets the web services in the specified subscription.</span></span>
+    syntax:
+      content: 'function listBySubscriptionIdNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-170">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-170">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesListBySubscriptionIdNextResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listBySubscriptionIdNext_2'
+    name: 'listBySubscriptionIdNext(string, RequestOptionsBase, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionIdNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-171">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-171">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="4a1ac-172">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4a1ac-172">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-173">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-173">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListBySubscriptionIdNextResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listBySubscriptionIdNext_1'
+    name: 'listBySubscriptionIdNext(string, ServiceCallback<PaginatedWebServicesList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionIdNext(nextPageLink: string, callback: ServiceCallback<PaginatedWebServicesList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-174">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-174">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+          description: |
+            <span data-ttu-id="4a1ac-175">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListBySubscriptionIdNextResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listKeys'
+    name: 'listKeys(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-176">지정 된 웹 서비스에 대 한 액세스 키를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-176">Gets the access keys for the specified web service.</span></span>
+    syntax:
+      content: 'function listKeys(resourceGroupName: string, webServiceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-177">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-177">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-178">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-178">The name of the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesListKeysResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listKeys_2'
+    name: 'listKeys(string, string, RequestOptionsBase, ServiceCallback<WebServiceKeys>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listKeys(resourceGroupName: string, webServiceName: string, options: RequestOptionsBase, callback: ServiceCallback<WebServiceKeys>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-179">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-179">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-180">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-180">The name of the web service.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="4a1ac-181">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4a1ac-181">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.WebServiceKeys>
+          description: |
+            <span data-ttu-id="4a1ac-182">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListKeysResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.listKeys_1'
+    name: 'listKeys(string, string, ServiceCallback<WebServiceKeys>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listKeys(resourceGroupName: string, webServiceName: string, callback: ServiceCallback<WebServiceKeys>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-183">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-183">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-184">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-184">The name of the web service.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-webservices.WebServiceKeys>
+          description: |
+            <span data-ttu-id="4a1ac-185">콜백</span><span class="sxs-lookup"><span data-stu-id="4a1ac-185">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.WebServicesListKeysResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.patch'
+    name: 'patch(string, string, WebService, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="4a1ac-186">기존 웹 서비스 리소스를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-186">Modifies an existing web service resource.</span></span> <span data-ttu-id="4a1ac-187">패치 API 호출을 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-187">The PATCH API call is an asynchronous operation.</span></span> <span data-ttu-id="4a1ac-188">성공적으로 완료 되었는지 여부를 확인, 가져오기 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-188">To determine whether it has completed successfully, you must perform a Get operation.</span></span>'
+    syntax:
+      content: 'function patch(resourceGroupName: string, webServiceName: string, patchPayload: WebService, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-189">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-189">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-190">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-190">The name of the web service.</span></span>
+        - id: patchPayload
+          type:
+            - '@azure/arm-webservices.WebService'
+          description: <span data-ttu-id="4a1ac-191">웹 서비스를 패치 하는 데 페이로드입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-191">The payload to use to patch the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.WebServicesPatchResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.remove'
+    name: 'remove(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-192">지정 된 웹 서비스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-192">Deletes the specified web service.</span></span>
+    syntax:
+      content: 'function remove(resourceGroupName: string, webServiceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-193">웹 서비스의 위치를 가리키는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-193">Name of the resource group in which the web service is located.</span></span>
+        - id: webServiceName
+          type:
+            - string
+          description: <span data-ttu-id="4a1ac-194">웹 서비스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-194">The name of the web service.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-webservices'
+  - uid: '@azure/arm-webservices.WebServices.constructor'
+    name: WebServices(AzureMLWebServicesManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="4a1ac-195">웹 서비스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-195">Create a WebServices.</span></span>
+    syntax:
+      content: 'new WebServices(client: AzureMLWebServicesManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-webservices.AzureMLWebServicesManagementClientContext'
+          description: |
+            <span data-ttu-id="4a1ac-196">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="4a1ac-196">Reference to the service client.</span></span>
+    package: '@azure/arm-webservices'
+references:
+  - uid: '@azure/arm-webservices.AzureMLWebServicesManagementClientContext'
+    name: AzureMLWebServicesManagementClientContext
+    spec.typeScript:
+      - name: AzureMLWebServicesManagementClientContext
+        fullName: AzureMLWebServicesManagementClientContext
+        uid: '@azure/arm-webservices.AzureMLWebServicesManagementClientContext'
+  - uid: '@azure/arm-webservices.WebService'
+    name: WebService
+    spec.typeScript:
+      - name: WebService
+        fullName: WebService
+        uid: '@azure/arm-webservices.WebService'
+  - uid: ServiceCallback<@azure/arm-webservices.WebService>
+    name: WebService>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: WebService
+        fullName: WebService
+        uid: '@azure/arm-webservices.WebService'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-webservices.WebServicesGetOptionalParams'
+    name: WebServicesGetOptionalParams
+    spec.typeScript:
+      - name: WebServicesGetOptionalParams
+        fullName: WebServicesGetOptionalParams
+        uid: '@azure/arm-webservices.WebServicesGetOptionalParams'
+  - uid: ServiceCallback<@azure/arm-webservices.PaginatedWebServicesList>
+    name: PaginatedWebServicesList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PaginatedWebServicesList
+        fullName: PaginatedWebServicesList
+        uid: '@azure/arm-webservices.PaginatedWebServicesList'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-webservices.WebServicesListByResourceGroupOptionalParams'
+    name: WebServicesListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: WebServicesListByResourceGroupOptionalParams
+        fullName: WebServicesListByResourceGroupOptionalParams
+        uid: '@azure/arm-webservices.WebServicesListByResourceGroupOptionalParams'
+  - uid: '@azure/arm-webservices.WebServicesListBySubscriptionIdOptionalParams'
+    name: WebServicesListBySubscriptionIdOptionalParams
+    spec.typeScript:
+      - name: WebServicesListBySubscriptionIdOptionalParams
+        fullName: WebServicesListBySubscriptionIdOptionalParams
+        uid: '@azure/arm-webservices.WebServicesListBySubscriptionIdOptionalParams'
+  - uid: ServiceCallback<@azure/arm-webservices.WebServiceKeys>
+    name: WebServiceKeys>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: WebServiceKeys
+        fullName: WebServiceKeys
+        uid: '@azure/arm-webservices.WebServiceKeys'
+      - name: '>'
+        fullName: '>'
