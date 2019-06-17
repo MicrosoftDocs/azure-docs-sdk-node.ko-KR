@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-mediaservices.EnvelopeEncryption'
+    name: EnvelopeEncryption
+    fullName: EnvelopeEncryption
+    children:
+      - '@azure/arm-mediaservices.EnvelopeEncryption.clearTracks'
+      - '@azure/arm-mediaservices.EnvelopeEncryption.contentKeys'
+      - '@azure/arm-mediaservices.EnvelopeEncryption.customKeyAcquisitionUrlTemplate'
+      - '@azure/arm-mediaservices.EnvelopeEncryption.enabledProtocols'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="8ef9f-101">EnvelopeEncryption 암호화 체계에 대 한 클래스</span><span class="sxs-lookup"><span data-stu-id="8ef9f-101">Class for EnvelopeEncryption encryption scheme</span></span>
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.EnvelopeEncryption.clearTracks'
+    name: clearTracks
+    fullName: clearTracks
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8ef9f-102">추적을 나타내는 해야 암호화 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="8ef9f-102">Representing which tracks should not be encrypted</span></span>
+    optional: true
+    syntax:
+      content: 'clearTracks?: TrackSelection[]'
+      return:
+        type:
+          - '@azure/arm-mediaservices.TrackSelection[]'
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.EnvelopeEncryption.contentKeys'
+    name: contentKeys
+    fullName: contentKeys
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8ef9f-103">각 암호화 체계에 대 한 기본 콘텐츠 키를 나타내며 특정 추적에 대 한 별도 콘텐츠 키</span><span class="sxs-lookup"><span data-stu-id="8ef9f-103">Representing default content key for each encryption scheme and separate content keys for specific tracks</span></span>
+    optional: true
+    syntax:
+      content: 'contentKeys?: StreamingPolicyContentKeys'
+      return:
+        type:
+          - '@azure/arm-mediaservices.StreamingPolicyContentKeys'
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.EnvelopeEncryption.customKeyAcquisitionUrlTemplate'
+    name: customKeyAcquisitionUrlTemplate
+    fullName: customKeyAcquisitionUrlTemplate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="8ef9f-104">최종 사용자 플레이어에 키를 제공 하는 사용자 지정 서비스의 URL에 대 한 템플릿.</span><span class="sxs-lookup"><span data-stu-id="8ef9f-104">Template for the URL of the custom service delivering keys to end user players.</span></span>  <span data-ttu-id="8ef9f-105">Azure Media Services 키를 발급 하는 데 사용 하는 경우 필요 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="8ef9f-105">Not required when using Azure Media Services for issuing keys.</span></span>  <span data-ttu-id="8ef9f-106">템플릿을은 대체할 수 있는 토큰 요청에 특정 값을 사용 하 여 런타임에 업데이트 하는 서비스를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="8ef9f-106">The template supports replaceable tokens that the service will update at runtime with the value specific to the request.</span></span>  <span data-ttu-id="8ef9f-107">현재 지원 되는 토큰 값은 {AlternativeMediaId}가 바뀌는 StreamingLocatorId.AlternativeMediaId, 및 {ContentKeyId}의 값을 사용 하 여 요청 된 키 식별자의 값으로 대체 됩니다입니다.</span><span class="sxs-lookup"><span data-stu-id="8ef9f-107">The currently supported token values are {AlternativeMediaId}, which is replaced with the value of StreamingLocatorId.AlternativeMediaId, and {ContentKeyId}, which is replaced with the value of identifier of the key being requested.</span></span>'
+    optional: true
+    syntax:
+      content: 'customKeyAcquisitionUrlTemplate?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-mediaservices'
+  - uid: '@azure/arm-mediaservices.EnvelopeEncryption.enabledProtocols'
+    name: enabledProtocols
+    fullName: enabledProtocols
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="8ef9f-108">지원 되는 프로토콜을 나타내는</span><span class="sxs-lookup"><span data-stu-id="8ef9f-108">Representing supported protocols</span></span>
+    optional: true
+    syntax:
+      content: 'enabledProtocols?: EnabledProtocols'
+      return:
+        type:
+          - '@azure/arm-mediaservices.EnabledProtocols'
+    package: '@azure/arm-mediaservices'
+references:
+  - uid: '@azure/arm-mediaservices.TrackSelection[]'
+    name: 'TrackSelection[]'
+    spec.typeScript:
+      - name: TrackSelection
+        fullName: TrackSelection
+        uid: '@azure/arm-mediaservices.TrackSelection'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-mediaservices.StreamingPolicyContentKeys'
+    name: StreamingPolicyContentKeys
+    spec.typeScript:
+      - name: StreamingPolicyContentKeys
+        fullName: StreamingPolicyContentKeys
+        uid: '@azure/arm-mediaservices.StreamingPolicyContentKeys'
+  - uid: '@azure/arm-mediaservices.EnabledProtocols'
+    name: EnabledProtocols
+    spec.typeScript:
+      - name: EnabledProtocols
+        fullName: EnabledProtocols
+        uid: '@azure/arm-mediaservices.EnabledProtocols'

@@ -1,0 +1,281 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate'
+    name: ManagedDatabaseUpdate
+    fullName: ManagedDatabaseUpdate
+    children:
+      - '@azure/arm-sql.ManagedDatabaseUpdate.catalogCollation'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.collation'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.createMode'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.creationDate'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.defaultSecondaryLocation'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.earliestRestorePoint'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.failoverGroupId'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.recoverableDatabaseId'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.restorableDroppedDatabaseId'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.restorePointInTime'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.sourceDatabaseId'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.status'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.storageContainerSasToken'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.storageContainerUri'
+      - '@azure/arm-sql.ManagedDatabaseUpdate.tags'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="d1dc4-101">관리 되는 데이터베이스 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-101">An managed database update.</span></span>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.catalogCollation'
+    name: catalogCollation
+    fullName: catalogCollation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d1dc4-102">메타 데이터 카탈로그의 데이터 정렬입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-102">Collation of the metadata catalog.</span></span> <span data-ttu-id="d1dc4-103">가능한 값은 다음과 같습니다. ''DATABASE_DEFAULT'', ''SQL_Latin1_General_CP1_CI_AS''</span><span class="sxs-lookup"><span data-stu-id="d1dc4-103">Possible values include: ''DATABASE_DEFAULT'', ''SQL_Latin1_General_CP1_CI_AS''</span></span>'
+    optional: true
+    syntax:
+      content: 'catalogCollation?: CatalogCollationType'
+      return:
+        type:
+          - '@azure/arm-sql.CatalogCollationType'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.collation'
+    name: collation
+    fullName: collation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d1dc4-104">관리 되는 데이터베이스의 데이터 정렬입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-104">Collation of the managed database.</span></span>
+    optional: true
+    syntax:
+      content: 'collation?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.createMode'
+    name: createMode
+    fullName: createMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="d1dc4-105">관리 되는 데이터베이스 모드를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-105">Managed database create mode.</span></span> <span data-ttu-id="d1dc4-106">PointInTimeRestore: 기존 데이터베이스의 지정 된 지정 시간 백업 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-106">PointInTimeRestore: Create a database by restoring a point in time backup of an existing database.</span></span> <span data-ttu-id="d1dc4-107">SourceDatabaseName, SourceManagedInstanceName 및 PointInTime 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-107">SourceDatabaseName, SourceManagedInstanceName and PointInTime must be specified.</span></span> <span data-ttu-id="d1dc4-108">RestoreExternalBackup: 외부 백업 파일에서 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-108">RestoreExternalBackup: Create a database by restoring from external backup files.</span></span> <span data-ttu-id="d1dc4-109">데이터 정렬, StorageContainerUri 및 StorageContainerSasToken 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-109">Collation, StorageContainerUri and StorageContainerSasToken must be specified.</span></span> <span data-ttu-id="d1dc4-110">복구: 지역에서 복제 된 백업을 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-110">Recovery: Creates a database by restoring a geo-replicated backup.</span></span>
+      <span data-ttu-id="d1dc4-111">RecoverableDatabaseId 복원 복구 가능한 데이터베이스 리소스 ID로 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-111">RecoverableDatabaseId must be specified as the recoverable database resource ID to restore.</span></span>
+      <span data-ttu-id="d1dc4-112">가능한 값은 다음과 같습니다. 'Default', 'RestoreExternalBackup', 'PointInTimeRestore', 'Recovery'</span><span class="sxs-lookup"><span data-stu-id="d1dc4-112">Possible values include: 'Default', 'RestoreExternalBackup', 'PointInTimeRestore', 'Recovery'</span></span>
+    optional: true
+    syntax:
+      content: 'createMode?: ManagedDatabaseCreateMode'
+      return:
+        type:
+          - '@azure/arm-sql.ManagedDatabaseCreateMode'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.creationDate'
+    name: creationDate
+    fullName: creationDate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="d1dc4-113">데이터베이스의 생성 날짜입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-113">Creation date of the database.</span></span>
+      <span data-ttu-id="d1dc4-114">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d1dc4-114">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'creationDate?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.defaultSecondaryLocation'
+    name: defaultSecondaryLocation
+    fullName: defaultSecondaryLocation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="d1dc4-115">지역 쌍을 이루는 지역입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-115">Geo paired region.</span></span>
+      <span data-ttu-id="d1dc4-116">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d1dc4-116">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'defaultSecondaryLocation?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.earliestRestorePoint'
+    name: earliestRestorePoint
+    fullName: earliestRestorePoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="d1dc4-117">가장 빠른 복원 지정 시간으로 특정 시점 복원에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-117">Earliest restore point in time for point in time restore.</span></span>
+      <span data-ttu-id="d1dc4-118">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d1dc4-118">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'earliestRestorePoint?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.failoverGroupId'
+    name: failoverGroupId
+    fullName: failoverGroupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="d1dc4-119">이 관리 되는 데이터베이스에 속하는 인스턴스 장애 조치 그룹 리소스 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-119">Instance Failover Group resource identifier that this managed database belongs to.</span></span>
+      <span data-ttu-id="d1dc4-120">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d1dc4-120">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'failoverGroupId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.recoverableDatabaseId'
+    name: recoverableDatabaseId
+    fullName: recoverableDatabaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d1dc4-121">연결 된 복구 가능한 데이터베이스의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-121">The resource identifier of the recoverable database associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'recoverableDatabaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.restorableDroppedDatabaseId'
+    name: restorableDroppedDatabaseId
+    fullName: restorableDroppedDatabaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d1dc4-122">이 데이터베이스를 만들 때 복원 가능한 삭제 된 데이터베이스 리소스 id입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-122">The restorable dropped database resource id to restore when creating this database.</span></span>
+    optional: true
+    syntax:
+      content: 'restorableDroppedDatabaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.restorePointInTime'
+    name: restorePointInTime
+    fullName: restorePointInTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d1dc4-123">조건부입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-123">Conditional.</span></span> <span data-ttu-id="d1dc4-124">CreateMode PointInTimeRestore 인 경우이 값이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-124">If createMode is PointInTimeRestore, this value is required.</span></span> <span data-ttu-id="d1dc4-125">새 데이터베이스를 만들려면 복원 될 원본 데이터베이스의 시간 (ISO8601 형식)에서 점을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-125">Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database.</span></span>'
+    optional: true
+    syntax:
+      content: 'restorePointInTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.sourceDatabaseId'
+    name: sourceDatabaseId
+    fullName: sourceDatabaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d1dc4-126">연결 된 원본 데이터베이스의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-126">The resource identifier of the source database associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'sourceDatabaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.status'
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d1dc4-127">데이터베이스의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-127">Status of the database.</span></span> <span data-ttu-id="d1dc4-128">가능한 값은 다음과 같습니다. ''온라인'', ''오프 라인'', ''종료'', ''만들기'', ''액세스할 수 없는'', ''업데이트'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d1dc4-128">Possible values include: ''Online'', ''Offline'', ''Shutdown'', ''Creating'', ''Inaccessible'', ''Updating'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'status?: ManagedDatabaseStatus'
+      return:
+        type:
+          - '@azure/arm-sql.ManagedDatabaseStatus'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.storageContainerSasToken'
+    name: storageContainerSasToken
+    fullName: storageContainerSasToken
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d1dc4-129">조건부입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-129">Conditional.</span></span> <span data-ttu-id="d1dc4-130">CreateMode RestoreExternalBackup 인 경우이 값이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-130">If createMode is RestoreExternalBackup, this value is required.</span></span> <span data-ttu-id="d1dc4-131">저장소 컨테이너 sas 토큰을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-131">Specifies the storage container sas token.</span></span>'
+    optional: true
+    syntax:
+      content: 'storageContainerSasToken?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.storageContainerUri'
+    name: storageContainerUri
+    fullName: storageContainerUri
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d1dc4-132">조건부입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-132">Conditional.</span></span> <span data-ttu-id="d1dc4-133">CreateMode RestoreExternalBackup 인 경우이 값이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-133">If createMode is RestoreExternalBackup, this value is required.</span></span> <span data-ttu-id="d1dc4-134">이 복원에 대 한 백업을 저장 된 저장소 컨테이너의 uri를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-134">Specifies the uri of the storage container where backups for this restore are stored.</span></span>'
+    optional: true
+    syntax:
+      content: 'storageContainerUri?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ManagedDatabaseUpdate.tags'
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d1dc4-135">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="d1dc4-135">Resource tags.</span></span>
+    optional: true
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        type:
+          - 'undefined | [key: string]: string'
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.CatalogCollationType'
+    name: CatalogCollationType
+    spec.typeScript:
+      - name: CatalogCollationType
+        fullName: CatalogCollationType
+        uid: '@azure/arm-sql.CatalogCollationType'
+  - uid: '@azure/arm-sql.ManagedDatabaseCreateMode'
+    name: ManagedDatabaseCreateMode
+    spec.typeScript:
+      - name: ManagedDatabaseCreateMode
+        fullName: ManagedDatabaseCreateMode
+        uid: '@azure/arm-sql.ManagedDatabaseCreateMode'
+  - uid: '@azure/arm-sql.ManagedDatabaseStatus'
+    name: ManagedDatabaseStatus
+    spec.typeScript:
+      - name: ManagedDatabaseStatus
+        fullName: ManagedDatabaseStatus
+        uid: '@azure/arm-sql.ManagedDatabaseStatus'
