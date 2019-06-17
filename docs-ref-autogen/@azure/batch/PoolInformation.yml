@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.PoolInformation'
+    name: PoolInformation
+    fullName: PoolInformation
+    children:
+      - '@azure/batch.PoolInformation.autoPoolSpecification'
+      - '@azure/batch.PoolInformation.poolId'
+    langs:
+      - typeScript
+    type: interface
+    summary: PoolInformation 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolInformation.autoPoolSpecification'
+    name: autoPoolSpecification
+    fullName: autoPoolSpecification
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      임시 '자동 ' 풀에 대 한 특성입니다. Batch 서비스는 작업이 제출 될 때 자동 풀이 만들어집니다. 자동 풀 만들기에 실패 하면 Batch 서비스는 작업 완료 된 상태로 이동 하 고 풀 만들기 오류 작업의 일정 오류 속성에 설정 됩니다.
+      Batch 서비스의 수명을 관리 (모두 생성 및 keepAlive를 지정 하지 않으면 삭제) 자동 풀의 합니다. 작업이 활성 상태일 때 자동 풀의 수명에 영향을 주는 모든 사용자 동작 예기치 않은 동작이 발생 합니다. 풀 ID 또는 자동 풀 사양 중 하나만 지정 해야 합니다.
+    optional: true
+    syntax:
+      content: 'autoPoolSpecification?: AutoPoolSpecification'
+      return:
+        type:
+          - '@azure/batch.AutoPoolSpecification'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolInformation.poolId'
+    name: poolId
+    fullName: poolId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 기존 풀의 ID입니다. 작업의 모든 작업은 지정된 된 풀에서 실행 됩니다. 이 속성에서 참조 하는 풀에 존재 하는지 확인 해야 합니다. 풀을 Batch 서비스에서 작업을 예약 하려고 시점에 없으면 해당 id를 사용 하 여 풀을 만들 때까지 작업에 대 한 작업이 실행 됩니다. 일괄 처리 서비스는 작업 요청을 거부 하지 참고 단순히 실행 되지 않습니다 작업 풀 생길 때까지 합니다. 풀 ID 또는 자동 풀 사양 중 하나만 지정 해야 합니다.
+    optional: true
+    syntax:
+      content: 'poolId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.AutoPoolSpecification'
+    name: AutoPoolSpecification
+    spec.typeScript:
+      - name: AutoPoolSpecification
+        fullName: AutoPoolSpecification
+        uid: '@azure/batch.AutoPoolSpecification'
