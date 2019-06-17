@@ -1,0 +1,837 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-streamanalytics.Functions'
+    name: Functions
+    fullName: Functions
+    children:
+      - '@azure/arm-streamanalytics.Functions.beginTest'
+      - '@azure/arm-streamanalytics.Functions.createOrReplace_2'
+      - '@azure/arm-streamanalytics.Functions.createOrReplace'
+      - '@azure/arm-streamanalytics.Functions.createOrReplace_1'
+      - '@azure/arm-streamanalytics.Functions.deleteMethod'
+      - '@azure/arm-streamanalytics.Functions.deleteMethod_2'
+      - '@azure/arm-streamanalytics.Functions.deleteMethod_1'
+      - '@azure/arm-streamanalytics.Functions.constructor'
+      - '@azure/arm-streamanalytics.Functions.get'
+      - '@azure/arm-streamanalytics.Functions.get_2'
+      - '@azure/arm-streamanalytics.Functions.get_1'
+      - '@azure/arm-streamanalytics.Functions.listByStreamingJob_2'
+      - '@azure/arm-streamanalytics.Functions.listByStreamingJob'
+      - '@azure/arm-streamanalytics.Functions.listByStreamingJob_1'
+      - '@azure/arm-streamanalytics.Functions.listByStreamingJobNext'
+      - '@azure/arm-streamanalytics.Functions.listByStreamingJobNext_2'
+      - '@azure/arm-streamanalytics.Functions.listByStreamingJobNext_1'
+      - '@azure/arm-streamanalytics.Functions.retrieveDefaultDefinition_2'
+      - '@azure/arm-streamanalytics.Functions.retrieveDefaultDefinition'
+      - '@azure/arm-streamanalytics.Functions.retrieveDefaultDefinition_1'
+      - '@azure/arm-streamanalytics.Functions.test'
+      - '@azure/arm-streamanalytics.Functions.update_2'
+      - '@azure/arm-streamanalytics.Functions.update'
+      - '@azure/arm-streamanalytics.Functions.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: 함수를 나타내는 클래스입니다.
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.beginTest'
+    name: 'beginTest(string, string, string, Models.FunctionsBeginTestOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 테스트 함수에 대해 제공 된 정보는 유효 합니다. 함수 뒤의 기본 웹 서비스에 대 한 연결을 테스트 하거나 제공 하는 함수 코드 구문이 정확한 지를 지정할 수 있습니다.
+    syntax:
+      content: 'function beginTest(resourceGroupName: string, jobName: string, functionName: string, options?: Models.FunctionsBeginTestOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - Models.FunctionsBeginTestOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.createOrReplace_2'
+    name: 'createOrReplace(FunctionModel, string, string, string, FunctionsCreateOrReplaceOptionalParams, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrReplace(functionParameter: FunctionModel, resourceGroupName: string, jobName: string, functionName: string, options: FunctionsCreateOrReplaceOptionalParams, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: functionParameter
+          type:
+            - '@azure/arm-streamanalytics.FunctionModel'
+          description: 새 함수를 만들거나 기존 스트리밍 작업에서 대체 하는 데 사용할 함수 정의입니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.FunctionsCreateOrReplaceOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsCreateOrReplaceResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.createOrReplace'
+    name: 'createOrReplace(FunctionModel, string, string, string, Models.FunctionsCreateOrReplaceOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 함수를 만들거나 기존 스트리밍 작업에서 기존 함수를 대체 합니다.
+    syntax:
+      content: 'function createOrReplace(functionParameter: FunctionModel, resourceGroupName: string, jobName: string, functionName: string, options?: Models.FunctionsCreateOrReplaceOptionalParams)'
+      parameters:
+        - id: functionParameter
+          type:
+            - '@azure/arm-streamanalytics.FunctionModel'
+          description: 새 함수를 만들거나 기존 스트리밍 작업에서 대체 하는 데 사용할 함수 정의입니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - Models.FunctionsCreateOrReplaceOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsCreateOrReplaceResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.createOrReplace_1'
+    name: 'createOrReplace(FunctionModel, string, string, string, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrReplace(functionParameter: FunctionModel, resourceGroupName: string, jobName: string, functionName: string, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: functionParameter
+          type:
+            - '@azure/arm-streamanalytics.FunctionModel'
+          description: 새 함수를 만들거나 기존 스트리밍 작업에서 대체 하는 데 사용할 함수 정의입니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsCreateOrReplaceResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업에서 함수를 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, jobName: string, functionName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.deleteMethod_2'
+    name: 'deleteMethod(string, string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, jobName: string, functionName: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.deleteMethod_1'
+    name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, jobName: string, functionName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.constructor'
+    name: Functions(StreamAnalyticsManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 함수를 만듭니다.
+    syntax:
+      content: 'new Functions(client: StreamAnalyticsManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 함수에 대 한 세부 정보를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, functionName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsGetResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, functionName: string, options: RequestOptionsBase, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsGetResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.get_1'
+    name: 'get(string, string, string, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, functionName: string, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsGetResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.listByStreamingJob_2'
+    name: 'listByStreamingJob(string, string, FunctionsListByStreamingJobOptionalParams, ServiceCallback<FunctionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStreamingJob(resourceGroupName: string, jobName: string, options: FunctionsListByStreamingJobOptionalParams, callback: ServiceCallback<FunctionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.FunctionsListByStreamingJobOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsListByStreamingJobResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.listByStreamingJob'
+    name: 'listByStreamingJob(string, string, Models.FunctionsListByStreamingJobOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 스트리밍 작업에서 함수의 모든를 나열합니다.
+    syntax:
+      content: 'function listByStreamingJob(resourceGroupName: string, jobName: string, options?: Models.FunctionsListByStreamingJobOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.FunctionsListByStreamingJobOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsListByStreamingJobResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.listByStreamingJob_1'
+    name: 'listByStreamingJob(string, string, ServiceCallback<FunctionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStreamingJob(resourceGroupName: string, jobName: string, callback: ServiceCallback<FunctionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsListByStreamingJobResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.listByStreamingJobNext'
+    name: 'listByStreamingJobNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 스트리밍 작업에서 함수의 모든를 나열합니다.
+    syntax:
+      content: 'function listByStreamingJobNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsListByStreamingJobNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.listByStreamingJobNext_2'
+    name: 'listByStreamingJobNext(string, RequestOptionsBase, ServiceCallback<FunctionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStreamingJobNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<FunctionListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsListByStreamingJobNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.listByStreamingJobNext_1'
+    name: 'listByStreamingJobNext(string, ServiceCallback<FunctionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByStreamingJobNext(nextPageLink: string, callback: ServiceCallback<FunctionListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsListByStreamingJobNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.retrieveDefaultDefinition_2'
+    name: 'retrieveDefaultDefinition(string, string, string, FunctionsRetrieveDefaultDefinitionOptionalParams, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function retrieveDefaultDefinition(resourceGroupName: string, jobName: string, functionName: string, options: FunctionsRetrieveDefaultDefinitionOptionalParams, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.FunctionsRetrieveDefaultDefinitionOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsRetrieveDefaultDefinitionResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.retrieveDefaultDefinition'
+    name: 'retrieveDefaultDefinition(string, string, string, Models.FunctionsRetrieveDefaultDefinitionOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 매개 변수에 따라 함수의 기본 정의 검색 합니다.
+    syntax:
+      content: 'function retrieveDefaultDefinition(resourceGroupName: string, jobName: string, functionName: string, options?: Models.FunctionsRetrieveDefaultDefinitionOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - Models.FunctionsRetrieveDefaultDefinitionOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsRetrieveDefaultDefinitionResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.retrieveDefaultDefinition_1'
+    name: 'retrieveDefaultDefinition(string, string, string, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function retrieveDefaultDefinition(resourceGroupName: string, jobName: string, functionName: string, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsRetrieveDefaultDefinitionResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.test'
+    name: 'test(string, string, string, Models.FunctionsTestOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 테스트 함수에 대해 제공 된 정보는 유효 합니다. 함수 뒤의 기본 웹 서비스에 대 한 연결을 테스트 하거나 제공 하는 함수 코드 구문이 정확한 지를 지정할 수 있습니다.
+    syntax:
+      content: 'function test(resourceGroupName: string, jobName: string, functionName: string, options?: Models.FunctionsTestOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - Models.FunctionsTestOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsTestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.update_2'
+    name: 'update(FunctionModel, string, string, string, FunctionsUpdateOptionalParams, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(functionParameter: FunctionModel, resourceGroupName: string, jobName: string, functionName: string, options: FunctionsUpdateOptionalParams, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: functionParameter
+          type:
+            - '@azure/arm-streamanalytics.FunctionModel'
+          description: 함수 개체입니다. 여기에 지정 된 속성 (즉 기존 함수에서 해당 속성을 덮어쓸 이러한 속성을 업데이트할). 기존 함수에서 해당 속성은 동일 하 게 유지 하 고이 패치 작업의 결과로 변경 되지 여기 null로 설정 된 속성 의미 합니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.FunctionsUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsUpdateResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.update'
+    name: 'update(FunctionModel, string, string, string, Models.FunctionsUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 스트리밍 작업에서 기존 함수를 업데이트합니다. 이 부분적으로 (즉 업데이트를 사용할 수 있습니다. 하나 또는 두 개의 속성 업데이트)는 rest 작업 또는 함수 정의 영향을 주지 않고 함수입니다.
+    syntax:
+      content: 'function update(functionParameter: FunctionModel, resourceGroupName: string, jobName: string, functionName: string, options?: Models.FunctionsUpdateOptionalParams)'
+      parameters:
+        - id: functionParameter
+          type:
+            - '@azure/arm-streamanalytics.FunctionModel'
+          description: 함수 개체입니다. 여기에 지정 된 속성 (즉 기존 함수에서 해당 속성을 덮어쓸 이러한 속성을 업데이트할). 기존 함수에서 해당 속성은 동일 하 게 유지 하 고이 패치 작업의 결과로 변경 되지 여기 null로 설정 된 속성 의미 합니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: options
+          type:
+            - Models.FunctionsUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FunctionsUpdateResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.Functions.update_1'
+    name: 'update(FunctionModel, string, string, string, ServiceCallback<FunctionModel>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(functionParameter: FunctionModel, resourceGroupName: string, jobName: string, functionName: string, callback: ServiceCallback<FunctionModel>)'
+      parameters:
+        - id: functionParameter
+          type:
+            - '@azure/arm-streamanalytics.FunctionModel'
+          description: 함수 개체입니다. 여기에 지정 된 속성 (즉 기존 함수에서 해당 속성을 덮어쓸 이러한 속성을 업데이트할). 기존 함수에서 해당 속성은 동일 하 게 유지 하 고이 패치 작업의 결과로 변경 되지 여기 null로 설정 된 속성 의미 합니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: functionName
+          type:
+            - string
+          description: 함수의 이름.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FunctionsUpdateResponse>
+    package: '@azure/arm-streamanalytics'
+references:
+  - uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext'
+    name: StreamAnalyticsManagementClientContext
+    spec.typeScript:
+      - name: StreamAnalyticsManagementClientContext
+        fullName: StreamAnalyticsManagementClientContext
+        uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext'
+  - uid: '@azure/arm-streamanalytics.FunctionModel'
+    name: FunctionModel
+    spec.typeScript:
+      - name: FunctionModel
+        fullName: FunctionModel
+        uid: '@azure/arm-streamanalytics.FunctionModel'
+  - uid: ServiceCallback<@azure/arm-streamanalytics.FunctionModel>
+    name: FunctionModel>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FunctionModel
+        fullName: FunctionModel
+        uid: '@azure/arm-streamanalytics.FunctionModel'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-streamanalytics.FunctionsCreateOrReplaceOptionalParams'
+    name: FunctionsCreateOrReplaceOptionalParams
+    spec.typeScript:
+      - name: FunctionsCreateOrReplaceOptionalParams
+        fullName: FunctionsCreateOrReplaceOptionalParams
+        uid: '@azure/arm-streamanalytics.FunctionsCreateOrReplaceOptionalParams'
+  - uid: ServiceCallback<@azure/arm-streamanalytics.FunctionListResult>
+    name: FunctionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FunctionListResult
+        fullName: FunctionListResult
+        uid: '@azure/arm-streamanalytics.FunctionListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-streamanalytics.FunctionsListByStreamingJobOptionalParams'
+    name: FunctionsListByStreamingJobOptionalParams
+    spec.typeScript:
+      - name: FunctionsListByStreamingJobOptionalParams
+        fullName: FunctionsListByStreamingJobOptionalParams
+        uid: '@azure/arm-streamanalytics.FunctionsListByStreamingJobOptionalParams'
+  - uid: '@azure/arm-streamanalytics.FunctionsRetrieveDefaultDefinitionOptionalParams'
+    name: FunctionsRetrieveDefaultDefinitionOptionalParams
+    spec.typeScript:
+      - name: FunctionsRetrieveDefaultDefinitionOptionalParams
+        fullName: FunctionsRetrieveDefaultDefinitionOptionalParams
+        uid: '@azure/arm-streamanalytics.FunctionsRetrieveDefaultDefinitionOptionalParams'
+  - uid: '@azure/arm-streamanalytics.FunctionsUpdateOptionalParams'
+    name: FunctionsUpdateOptionalParams
+    spec.typeScript:
+      - name: FunctionsUpdateOptionalParams
+        fullName: FunctionsUpdateOptionalParams
+        uid: '@azure/arm-streamanalytics.FunctionsUpdateOptionalParams'

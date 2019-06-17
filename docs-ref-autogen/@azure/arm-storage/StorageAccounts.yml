@@ -1,0 +1,1213 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-storage.StorageAccounts'
+    name: StorageAccounts
+    fullName: StorageAccounts
+    children:
+      - '@azure/arm-storage.StorageAccounts.beginCreate'
+      - '@azure/arm-storage.StorageAccounts.beginFailover'
+      - '@azure/arm-storage.StorageAccounts.checkNameAvailability'
+      - '@azure/arm-storage.StorageAccounts.checkNameAvailability_2'
+      - '@azure/arm-storage.StorageAccounts.checkNameAvailability_1'
+      - '@azure/arm-storage.StorageAccounts.create'
+      - '@azure/arm-storage.StorageAccounts.deleteMethod'
+      - '@azure/arm-storage.StorageAccounts.deleteMethod_2'
+      - '@azure/arm-storage.StorageAccounts.deleteMethod_1'
+      - '@azure/arm-storage.StorageAccounts.failover'
+      - '@azure/arm-storage.StorageAccounts.getProperties'
+      - '@azure/arm-storage.StorageAccounts.getProperties_1'
+      - '@azure/arm-storage.StorageAccounts.getProperties_2'
+      - '@azure/arm-storage.StorageAccounts.list'
+      - '@azure/arm-storage.StorageAccounts.list_2'
+      - '@azure/arm-storage.StorageAccounts.list_1'
+      - '@azure/arm-storage.StorageAccounts.listAccountSAS'
+      - '@azure/arm-storage.StorageAccounts.listAccountSAS_2'
+      - '@azure/arm-storage.StorageAccounts.listAccountSAS_1'
+      - '@azure/arm-storage.StorageAccounts.listByResourceGroup'
+      - '@azure/arm-storage.StorageAccounts.listByResourceGroup_2'
+      - '@azure/arm-storage.StorageAccounts.listByResourceGroup_1'
+      - '@azure/arm-storage.StorageAccounts.listKeys'
+      - '@azure/arm-storage.StorageAccounts.listKeys_2'
+      - '@azure/arm-storage.StorageAccounts.listKeys_1'
+      - '@azure/arm-storage.StorageAccounts.listServiceSAS'
+      - '@azure/arm-storage.StorageAccounts.listServiceSAS_2'
+      - '@azure/arm-storage.StorageAccounts.listServiceSAS_1'
+      - '@azure/arm-storage.StorageAccounts.regenerateKey'
+      - '@azure/arm-storage.StorageAccounts.regenerateKey_2'
+      - '@azure/arm-storage.StorageAccounts.regenerateKey_1'
+      - '@azure/arm-storage.StorageAccounts.revokeUserDelegationKeys'
+      - '@azure/arm-storage.StorageAccounts.revokeUserDelegationKeys_2'
+      - '@azure/arm-storage.StorageAccounts.revokeUserDelegationKeys_1'
+      - '@azure/arm-storage.StorageAccounts.constructor'
+      - '@azure/arm-storage.StorageAccounts.update'
+      - '@azure/arm-storage.StorageAccounts.update_2'
+      - '@azure/arm-storage.StorageAccounts.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: StorageAccounts를 나타내는 클래스입니다.
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.beginCreate'
+    name: 'beginCreate(string, string, StorageAccountCreateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 매개 변수를 사용 하 여 새 저장소 계정을 비동기식으로 만듭니다. 계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.StorageAccountCreateParameters'
+          description: 만든된 계정에 대해 제공 하는 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.beginFailover'
+    name: 'beginFailover(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 가용성 문제가 발생 한 경우 저장소 계정에 대 한 장애 조치 요청을 트리거할 수 있습니다. 장애 조치 RA-GRS 계정의 보조 클러스터에 저장소 계정의 기본 클러스터에서 발생합니다. 보조 클러스터 장애 조치 후 주 됩니다.
+    syntax:
+      content: 'function beginFailover(resourceGroupName: string, accountName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.checkNameAvailability'
+    name: 'checkNameAvailability(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 저장소 계정 이름이 유효 하지 않은 사용에서 확인 합니다.
+    syntax:
+      content: 'function checkNameAvailability(name: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: 저장소 계정 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsCheckNameAvailabilityResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.checkNameAvailability_2'
+    name: 'checkNameAvailability(string, RequestOptionsBase, ServiceCallback<CheckNameAvailabilityResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(name: string, options: RequestOptionsBase, callback: ServiceCallback<CheckNameAvailabilityResult>)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: 저장소 계정 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.CheckNameAvailabilityResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsCheckNameAvailabilityResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.checkNameAvailability_1'
+    name: 'checkNameAvailability(string, ServiceCallback<CheckNameAvailabilityResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(name: string, callback: ServiceCallback<CheckNameAvailabilityResult>)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: 저장소 계정 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.CheckNameAvailabilityResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsCheckNameAvailabilityResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.create'
+    name: 'create(string, string, StorageAccountCreateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 매개 변수를 사용 하 여 새 저장소 계정을 비동기식으로 만듭니다. 계정을 이미 만든 경우 서로 다른 속성을 사용 하 여 후속 만들기 요청이 실행 되는 계정 속성 업데이트 됩니다. 계정이 이미 생성 하 고 속성의 정확히 동일한 집합을 사용 하 여 후속 만들기 또는 업데이트 요청을 발생 하는 경우 요청이 성공할 수 있습니다.
+    syntax:
+      content: 'function create(resourceGroupName: string, accountName: string, parameters: StorageAccountCreateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.StorageAccountCreateParameters'
+          description: 만든된 계정에 대해 제공 하는 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsCreateResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Microsoft Azure에서 저장소 계정을 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, accountName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.deleteMethod_2'
+    name: 'deleteMethod(string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, accountName: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.deleteMethod_1'
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, accountName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.failover'
+    name: 'failover(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 가용성 문제가 발생 한 경우 저장소 계정에 대 한 장애 조치 요청을 트리거할 수 있습니다. 장애 조치 RA-GRS 계정의 보조 클러스터에 저장소 계정의 기본 클러스터에서 발생합니다. 보조 클러스터 장애 조치 후 주 됩니다.
+    syntax:
+      content: 'function failover(resourceGroupName: string, accountName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.getProperties'
+    name: 'getProperties(string, string, Models.StorageAccountsGetPropertiesOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정된 된 저장소 계정 이름, SKU 이름, 위치 및 계정 상태에 제한 되지 않음 포함에 대 한 속성을 반환 합니다. ListKeys 작업 저장소 키를 검색 하는 것 같습니다.'
+    syntax:
+      content: 'function getProperties(resourceGroupName: string, accountName: string, options?: Models.StorageAccountsGetPropertiesOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - Models.StorageAccountsGetPropertiesOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsGetPropertiesResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.getProperties_1'
+    name: 'getProperties(string, string, ServiceCallback<StorageAccount>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getProperties(resourceGroupName: string, accountName: string, callback: ServiceCallback<StorageAccount>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccount>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsGetPropertiesResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.getProperties_2'
+    name: 'getProperties(string, string, StorageAccountsGetPropertiesOptionalParams, ServiceCallback<StorageAccount>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getProperties(resourceGroupName: string, accountName: string, options: StorageAccountsGetPropertiesOptionalParams, callback: ServiceCallback<StorageAccount>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - '@azure/arm-storage.StorageAccountsGetPropertiesOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccount>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsGetPropertiesResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.list'
+    name: list(msRest.RequestOptionsBase)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 구독에서 사용 가능한 모든 저장소 계정을 나열합니다. 이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
+    syntax:
+      content: 'function list(options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsListResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.list_2'
+    name: 'list(RequestOptionsBase, ServiceCallback<StorageAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: RequestOptionsBase, callback: ServiceCallback<StorageAccountListResult>)'
+      parameters:
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.list_1'
+    name: list(ServiceCallback<StorageAccountListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<StorageAccountListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listAccountSAS'
+    name: 'listAccountSAS(string, string, AccountSasParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 저장소 계정의 SAS 자격 증명을 나열 합니다.
+    syntax:
+      content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.AccountSasParameters'
+          description: 저장소 계정에 대 한 목록 SAS 자격 증명을 제공 하는 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsListAccountSASResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listAccountSAS_2'
+    name: 'listAccountSAS(string, string, AccountSasParameters, RequestOptionsBase, ServiceCallback<ListAccountSasResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, options: RequestOptionsBase, callback: ServiceCallback<ListAccountSasResponse>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.AccountSasParameters'
+          description: 저장소 계정에 대 한 목록 SAS 자격 증명을 제공 하는 매개 변수입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.ListAccountSasResponse>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListAccountSASResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listAccountSAS_1'
+    name: 'listAccountSAS(string, string, AccountSasParameters, ServiceCallback<ListAccountSasResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listAccountSAS(resourceGroupName: string, accountName: string, parameters: AccountSasParameters, callback: ServiceCallback<ListAccountSasResponse>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.AccountSasParameters'
+          description: 저장소 계정에 대 한 목록 SAS 자격 증명을 제공 하는 매개 변수입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.ListAccountSasResponse>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListAccountSASResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listByResourceGroup'
+    name: 'listByResourceGroup(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 리소스 그룹에서 사용 가능한 모든 저장소 계정을 나열합니다. 이때 저장소 키는 반환 되지 않습니다. 이 대 한 ListKeys 작업을 사용 합니다.
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsListByResourceGroupResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, RequestOptionsBase, ServiceCallback<StorageAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: RequestOptionsBase, callback: ServiceCallback<StorageAccountListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListByResourceGroupResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<StorageAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<StorageAccountListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListByResourceGroupResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listKeys'
+    name: 'listKeys(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 저장소 계정에 대 한 액세스 키를 나열합니다.
+    syntax:
+      content: 'function listKeys(resourceGroupName: string, accountName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsListKeysResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listKeys_2'
+    name: 'listKeys(string, string, RequestOptionsBase, ServiceCallback<StorageAccountListKeysResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listKeys(resourceGroupName: string, accountName: string, options: RequestOptionsBase, callback: ServiceCallback<StorageAccountListKeysResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListKeysResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListKeysResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listKeys_1'
+    name: 'listKeys(string, string, ServiceCallback<StorageAccountListKeysResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listKeys(resourceGroupName: string, accountName: string, callback: ServiceCallback<StorageAccountListKeysResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListKeysResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListKeysResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listServiceSAS'
+    name: 'listServiceSAS(string, string, ServiceSasParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 특정 리소스의 서비스 SAS 자격 증명을 나열 합니다.
+    syntax:
+      content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.ServiceSasParameters'
+          description: 매개 변수를 목록 서비스 SAS 자격 증명을 제공 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsListServiceSASResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listServiceSAS_2'
+    name: 'listServiceSAS(string, string, ServiceSasParameters, RequestOptionsBase, ServiceCallback<ListServiceSasResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, options: RequestOptionsBase, callback: ServiceCallback<ListServiceSasResponse>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.ServiceSasParameters'
+          description: 매개 변수를 목록 서비스 SAS 자격 증명을 제공 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.ListServiceSasResponse>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListServiceSASResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.listServiceSAS_1'
+    name: 'listServiceSAS(string, string, ServiceSasParameters, ServiceCallback<ListServiceSasResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listServiceSAS(resourceGroupName: string, accountName: string, parameters: ServiceSasParameters, callback: ServiceCallback<ListServiceSasResponse>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.ServiceSasParameters'
+          description: 매개 변수를 목록 서비스 SAS 자격 증명을 제공 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.ListServiceSasResponse>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsListServiceSASResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.regenerateKey'
+    name: 'regenerateKey(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 저장소 계정에 대 한 액세스 키 중 하나를 다시 생성합니다.
+    syntax:
+      content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: keyName
+          type:
+            - string
+          description: '가능한 값이 다시 생성된 하려면 저장소 키의 이름을 (key1, key2 됩니다.'
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsRegenerateKeyResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.regenerateKey_2'
+    name: 'regenerateKey(string, string, string, RequestOptionsBase, ServiceCallback<StorageAccountListKeysResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, options: RequestOptionsBase, callback: ServiceCallback<StorageAccountListKeysResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: keyName
+          type:
+            - string
+          description: '가능한 값이 다시 생성된 하려면 저장소 키의 이름을 (key1, key2 됩니다.'
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListKeysResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsRegenerateKeyResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.regenerateKey_1'
+    name: 'regenerateKey(string, string, string, ServiceCallback<StorageAccountListKeysResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function regenerateKey(resourceGroupName: string, accountName: string, keyName: string, callback: ServiceCallback<StorageAccountListKeysResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: keyName
+          type:
+            - string
+          description: '가능한 값이 다시 생성된 하려면 저장소 키의 이름을 (key1, key2 됩니다.'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccountListKeysResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsRegenerateKeyResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.revokeUserDelegationKeys'
+    name: 'revokeUserDelegationKeys(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 사용자 위임 키를 취소 합니다.
+    syntax:
+      content: 'function revokeUserDelegationKeys(resourceGroupName: string, accountName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.revokeUserDelegationKeys_2'
+    name: 'revokeUserDelegationKeys(string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function revokeUserDelegationKeys(resourceGroupName: string, accountName: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.revokeUserDelegationKeys_1'
+    name: 'revokeUserDelegationKeys(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function revokeUserDelegationKeys(resourceGroupName: string, accountName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.constructor'
+    name: StorageAccounts(StorageManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: StorageAccounts를 만듭니다.
+    syntax:
+      content: 'new StorageAccounts(client: StorageManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-storage.StorageManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.update'
+    name: 'update(string, string, StorageAccountUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'SKU, 암호화, 액세스 계층 또는 저장소 계정에 대 한 태그를 업데이트 하려면 업데이트 작업을 사용할 수 있습니다. 사용자 지정 도메인을 계정에 매핑할 데도 수 있습니다. 저장소 계정 당 하나의 사용자 지정 도메인만 지원 됩니다. 사용자 지정 도메인의 대체/변경이 지원 되지 않습니다. 이전 사용자 지정 도메인을 바꾸기 위해 이전 값 수 있어야 선택 취소 하 고 등록을 새 값을 설정할 수 있습니다. 여러 속성의 업데이트를 사용할 수 있습니다. 이 호출은 계정의 저장소 키를 변경 하지 않습니다. 저장소 계정 키를 변경 하려는 경우 작업을 다시 생성 키를 사용 합니다. 저장소 계정의 이름과 위치를 만든 후 변경할 수 없습니다.'
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.StorageAccountUpdateParameters'
+          description: 업데이트 된 계정에 대해 제공 하는 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StorageAccountsUpdateResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.update_2'
+    name: 'update(string, string, StorageAccountUpdateParameters, RequestOptionsBase, ServiceCallback<StorageAccount>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, options: RequestOptionsBase, callback: ServiceCallback<StorageAccount>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.StorageAccountUpdateParameters'
+          description: 업데이트 된 계정에 대해 제공 하는 매개 변수입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccount>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsUpdateResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccounts.update_1'
+    name: 'update(string, string, StorageAccountUpdateParameters, ServiceCallback<StorageAccount>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, accountName: string, parameters: StorageAccountUpdateParameters, callback: ServiceCallback<StorageAccount>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 사용자 구독 내의 리소스 그룹의 이름입니다. 이름은 대/소문자 구분입니다.
+        - id: accountName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다. Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.
+        - id: parameters
+          type:
+            - '@azure/arm-storage.StorageAccountUpdateParameters'
+          description: 업데이트 된 계정에 대해 제공 하는 매개 변수입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.StorageAccount>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StorageAccountsUpdateResponse>
+    package: '@azure/arm-storage'
+references:
+  - uid: '@azure/arm-storage.StorageManagementClientContext'
+    name: StorageManagementClientContext
+    spec.typeScript:
+      - name: StorageManagementClientContext
+        fullName: StorageManagementClientContext
+        uid: '@azure/arm-storage.StorageManagementClientContext'
+  - uid: '@azure/arm-storage.StorageAccountCreateParameters'
+    name: StorageAccountCreateParameters
+    spec.typeScript:
+      - name: StorageAccountCreateParameters
+        fullName: StorageAccountCreateParameters
+        uid: '@azure/arm-storage.StorageAccountCreateParameters'
+  - uid: ServiceCallback<@azure/arm-storage.CheckNameAvailabilityResult>
+    name: CheckNameAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: '@azure/arm-storage.CheckNameAvailabilityResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-storage.StorageAccount>
+    name: StorageAccount>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: StorageAccount
+        fullName: StorageAccount
+        uid: '@azure/arm-storage.StorageAccount'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-storage.StorageAccountsGetPropertiesOptionalParams'
+    name: StorageAccountsGetPropertiesOptionalParams
+    spec.typeScript:
+      - name: StorageAccountsGetPropertiesOptionalParams
+        fullName: StorageAccountsGetPropertiesOptionalParams
+        uid: '@azure/arm-storage.StorageAccountsGetPropertiesOptionalParams'
+  - uid: ServiceCallback<@azure/arm-storage.StorageAccountListResult>
+    name: StorageAccountListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: StorageAccountListResult
+        fullName: StorageAccountListResult
+        uid: '@azure/arm-storage.StorageAccountListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-storage.AccountSasParameters'
+    name: AccountSasParameters
+    spec.typeScript:
+      - name: AccountSasParameters
+        fullName: AccountSasParameters
+        uid: '@azure/arm-storage.AccountSasParameters'
+  - uid: ServiceCallback<@azure/arm-storage.ListAccountSasResponse>
+    name: ListAccountSasResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListAccountSasResponse
+        fullName: ListAccountSasResponse
+        uid: '@azure/arm-storage.ListAccountSasResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-storage.StorageAccountListKeysResult>
+    name: StorageAccountListKeysResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: StorageAccountListKeysResult
+        fullName: StorageAccountListKeysResult
+        uid: '@azure/arm-storage.StorageAccountListKeysResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-storage.ServiceSasParameters'
+    name: ServiceSasParameters
+    spec.typeScript:
+      - name: ServiceSasParameters
+        fullName: ServiceSasParameters
+        uid: '@azure/arm-storage.ServiceSasParameters'
+  - uid: ServiceCallback<@azure/arm-storage.ListServiceSasResponse>
+    name: ListServiceSasResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListServiceSasResponse
+        fullName: ListServiceSasResponse
+        uid: '@azure/arm-storage.ListServiceSasResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-storage.StorageAccountUpdateParameters'
+    name: StorageAccountUpdateParameters
+    spec.typeScript:
+      - name: StorageAccountUpdateParameters
+        fullName: StorageAccountUpdateParameters
+        uid: '@azure/arm-storage.StorageAccountUpdateParameters'

@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ServiceFabricClientContext'
+    name: ServiceFabricClientContext
+    fullName: ServiceFabricClientContext
+    children:
+      - '@azure/servicefabric.ServiceFabricClientContext.sendOperationRequest'
+      - '@azure/servicefabric.ServiceFabricClientContext.sendRequest'
+      - '@azure/servicefabric.ServiceFabricClientContext.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: ServiceClient
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClientContext.sendOperationRequest'
+    name: 'sendOperationRequest(OperationArguments, OperationSpec, ServiceCallback<any>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 제공 된 OperationSpec를 사용 하 여 채워지는 HTTP 요청을 보냅니다.
+    syntax:
+      content: 'function sendOperationRequest(operationArguments: OperationArguments, operationSpec: OperationSpec, callback?: ServiceCallback<any>)'
+      parameters:
+        - id: operationArguments
+          type:
+            - OperationArguments
+          description: HTTP 요청의 템플릿 값에서 채워집니다는 인수입니다.
+        - id: operationSpec
+          type:
+            - OperationSpec
+          description: Http 요청을 채우는 데 사용할 OperationSpec 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<any>
+          description: |
+            응답을 받을 때 호출할 콜백.
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClientContext.sendRequest'
+    name: sendRequest(RequestPrepareOptions | WebResource)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 제공 된 http 요청을 보냅니다.
+    syntax:
+      content: 'function sendRequest(options: RequestPrepareOptions | WebResource)'
+      parameters:
+        - id: options
+          type:
+            - RequestPrepareOptions | WebResource
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClientContext.constructor'
+    name: ServiceFabricClientContext(Models.ServiceFabricClientOptions)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ServiceFabricClientContext 클래스의 새 인스턴스를 초기화합니다.
+    syntax:
+      content: 'new ServiceFabricClientContext(options?: Models.ServiceFabricClientOptions)'
+      parameters:
+        - id: options
+          type:
+            - Models.ServiceFabricClientOptions
+          description: ''
+          optional: true
+    package: '@azure/servicefabric'
