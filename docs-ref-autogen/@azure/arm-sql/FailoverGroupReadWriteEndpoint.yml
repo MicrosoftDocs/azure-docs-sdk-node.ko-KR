@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.FailoverGroupReadWriteEndpoint'
+    name: FailoverGroupReadWriteEndpoint
+    fullName: FailoverGroupReadWriteEndpoint
+    children:
+      - '@azure/arm-sql.FailoverGroupReadWriteEndpoint.failoverPolicy'
+      - '@azure/arm-sql.FailoverGroupReadWriteEndpoint.failoverWithDataLossGracePeriodMinutes'
+    langs:
+      - typeScript
+    type: interface
+    summary: 장애 조치 그룹 인스턴스의 읽기 / 쓰기 끝점입니다.
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroupReadWriteEndpoint.failoverPolicy'
+    name: failoverPolicy
+    fullName: failoverPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '장애 조치 그룹에 대 한 읽기 / 쓰기 끝점의 장애 조치 정책입니다. FailoverPolicy 자동 이면 failoverWithDataLossGracePeriodMinutes가 필요 합니다. 가능한 값은 다음과 같습니다. '' 수동 '', ''자동'''
+    syntax:
+      content: 'failoverPolicy: ReadWriteEndpointFailoverPolicy'
+      return:
+        type:
+          - '@azure/arm-sql.ReadWriteEndpointFailoverPolicy'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroupReadWriteEndpoint.failoverWithDataLossGracePeriodMinutes'
+    name: failoverWithDataLossGracePeriodMinutes
+    fullName: failoverWithDataLossGracePeriodMinutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 읽기 전용 끝점에 대 한 데이터 손실 장애 조치를 시도 하기 전에 유예 기간입니다. FailoverPolicy 자동 이면 failoverWithDataLossGracePeriodMinutes가 필요 합니다.
+    optional: true
+    syntax:
+      content: 'failoverWithDataLossGracePeriodMinutes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.ReadWriteEndpointFailoverPolicy'
+    name: ReadWriteEndpointFailoverPolicy
+    spec.typeScript:
+      - name: ReadWriteEndpointFailoverPolicy
+        fullName: ReadWriteEndpointFailoverPolicy
+        uid: '@azure/arm-sql.ReadWriteEndpointFailoverPolicy'
