@@ -1,0 +1,1483 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.Databases'
+    name: Databases
+    fullName: Databases
+    children:
+      - '@azure/arm-sql.Databases.beginCreateImportOperation'
+      - '@azure/arm-sql.Databases.beginCreateOrUpdate'
+      - '@azure/arm-sql.Databases.beginDeleteMethod'
+      - '@azure/arm-sql.Databases.beginExportMethod'
+      - '@azure/arm-sql.Databases.beginImportMethod'
+      - '@azure/arm-sql.Databases.beginPause'
+      - '@azure/arm-sql.Databases.beginResume'
+      - '@azure/arm-sql.Databases.beginUpdate'
+      - '@azure/arm-sql.Databases.beginUpgradeDataWarehouse'
+      - '@azure/arm-sql.Databases.createImportOperation'
+      - '@azure/arm-sql.Databases.createOrUpdate'
+      - '@azure/arm-sql.Databases.constructor'
+      - '@azure/arm-sql.Databases.deleteMethod'
+      - '@azure/arm-sql.Databases.exportMethod'
+      - '@azure/arm-sql.Databases.get'
+      - '@azure/arm-sql.Databases.get_2'
+      - '@azure/arm-sql.Databases.get_1'
+      - '@azure/arm-sql.Databases.importMethod'
+      - '@azure/arm-sql.Databases.listByElasticPool'
+      - '@azure/arm-sql.Databases.listByElasticPool_2'
+      - '@azure/arm-sql.Databases.listByElasticPool_1'
+      - '@azure/arm-sql.Databases.listByElasticPoolNext'
+      - '@azure/arm-sql.Databases.listByElasticPoolNext_2'
+      - '@azure/arm-sql.Databases.listByElasticPoolNext_1'
+      - '@azure/arm-sql.Databases.listByServer'
+      - '@azure/arm-sql.Databases.listByServer_2'
+      - '@azure/arm-sql.Databases.listByServer_1'
+      - '@azure/arm-sql.Databases.listByServerNext'
+      - '@azure/arm-sql.Databases.listByServerNext_2'
+      - '@azure/arm-sql.Databases.listByServerNext_1'
+      - '@azure/arm-sql.Databases.listMetricDefinitions'
+      - '@azure/arm-sql.Databases.listMetricDefinitions_2'
+      - '@azure/arm-sql.Databases.listMetricDefinitions_1'
+      - '@azure/arm-sql.Databases.listMetrics'
+      - '@azure/arm-sql.Databases.listMetrics_2'
+      - '@azure/arm-sql.Databases.listMetrics_1'
+      - '@azure/arm-sql.Databases.pause'
+      - '@azure/arm-sql.Databases.rename'
+      - '@azure/arm-sql.Databases.rename_2'
+      - '@azure/arm-sql.Databases.rename_1'
+      - '@azure/arm-sql.Databases.resume'
+      - '@azure/arm-sql.Databases.update'
+      - '@azure/arm-sql.Databases.upgradeDataWarehouse'
+    langs:
+      - typeScript
+    type: class
+    summary: 데이터베이스를 나타내는 클래스입니다.
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginCreateImportOperation'
+    name: 'beginCreateImportOperation(string, string, string, ImportExtensionRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 데이터베이스로 bacpac를 가져오는 가져오기 작업을 만듭니다. 기존 데이터베이스는 비어 있어야 합니다.
+    syntax:
+      content: 'function beginCreateImportOperation(resourceGroupName: string, serverName: string, databaseName: string, parameters: ImportExtensionRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 가져올 데이터베이스의 이름
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportExtensionRequest'
+          description: 데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, string, Database, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 새 데이터베이스를 만들거나 기존 데이터베이스를 업데이트합니다.
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, serverName: string, databaseName: string, parameters: Database, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.Database'
+          description: 요청 된 데이터베이스 리소스 상태입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 삭제합니다.
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginExportMethod'
+    name: 'beginExportMethod(string, string, string, ExportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 bacpac로 내보냅니다.
+    syntax:
+      content: 'function beginExportMethod(resourceGroupName: string, serverName: string, databaseName: string, parameters: ExportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 내보낼 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ExportRequest'
+          description: 데이터베이스 내보내기에 대 한 필수 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginImportMethod'
+    name: 'beginImportMethod(string, string, ImportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 새 데이터베이스로 bacpac를 가져옵니다.
+    syntax:
+      content: 'function beginImportMethod(resourceGroupName: string, serverName: string, parameters: ImportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportRequest'
+          description: 데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginPause'
+    name: 'beginPause(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 일시 중지합니다.
+    syntax:
+      content: 'function beginPause(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 일시 중지 하려면 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginResume'
+    name: 'beginResume(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 다시 시작합니다.
+    syntax:
+      content: 'function beginResume(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 다시 시작 될 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginUpdate'
+    name: 'beginUpdate(string, string, string, DatabaseUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 데이터베이스를 업데이트합니다.
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, serverName: string, databaseName: string, parameters: DatabaseUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.DatabaseUpdate'
+          description: 요청 된 데이터베이스 리소스 상태입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginUpgradeDataWarehouse'
+    name: 'beginUpgradeDataWarehouse(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터 웨어하우스를 업그레이드합니다.
+    syntax:
+      content: 'function beginUpgradeDataWarehouse(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 업그레이드할 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.createImportOperation'
+    name: 'createImportOperation(string, string, string, ImportExtensionRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 데이터베이스로 bacpac를 가져오는 가져오기 작업을 만듭니다. 기존 데이터베이스는 비어 있어야 합니다.
+    syntax:
+      content: 'function createImportOperation(resourceGroupName: string, serverName: string, databaseName: string, parameters: ImportExtensionRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 가져올 데이터베이스의 이름
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportExtensionRequest'
+          description: 데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesCreateImportOperationResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, Database, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 새 데이터베이스를 만들거나 기존 데이터베이스를 업데이트합니다.
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serverName: string, databaseName: string, parameters: Database, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.Database'
+          description: 요청 된 데이터베이스 리소스 상태입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesCreateOrUpdateResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.constructor'
+    name: Databases(SqlManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 데이터베이스를 만듭니다.
+    syntax:
+      content: 'new Databases(client: SqlManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-sql.SqlManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.exportMethod'
+    name: 'exportMethod(string, string, string, ExportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 bacpac로 내보냅니다.
+    syntax:
+      content: 'function exportMethod(resourceGroupName: string, serverName: string, databaseName: string, parameters: ExportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 내보낼 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ExportRequest'
+          description: 데이터베이스 내보내기에 대 한 필수 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesExportMethodResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<Database>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, options: RequestOptionsBase, callback: ServiceCallback<Database>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.Database>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.get_1'
+    name: 'get(string, string, string, ServiceCallback<Database>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, callback: ServiceCallback<Database>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.Database>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.importMethod'
+    name: 'importMethod(string, string, ImportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 새 데이터베이스로 bacpac를 가져옵니다.
+    syntax:
+      content: 'function importMethod(resourceGroupName: string, serverName: string, parameters: ImportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportRequest'
+          description: 데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesImportMethodResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPool'
+    name: 'listByElasticPool(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 탄력적 풀에 데이터베이스의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByElasticPool(resourceGroupName: string, serverName: string, elasticPoolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: elasticPoolName
+          type:
+            - string
+          description: 탄력적 풀의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPool_2'
+    name: 'listByElasticPool(string, string, string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPool(resourceGroupName: string, serverName: string, elasticPoolName: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: elasticPoolName
+          type:
+            - string
+          description: 탄력적 풀의 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPool_1'
+    name: 'listByElasticPool(string, string, string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPool(resourceGroupName: string, serverName: string, elasticPoolName: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: elasticPoolName
+          type:
+            - string
+          description: 탄력적 풀의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPoolNext'
+    name: 'listByElasticPoolNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 탄력적 풀에 데이터베이스의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByElasticPoolNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPoolNext_2'
+    name: 'listByElasticPoolNext(string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPoolNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPoolNext_1'
+    name: 'listByElasticPoolNext(string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPoolNext(nextPageLink: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServer'
+    name: 'listByServer(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServer_2'
+    name: 'listByServer(string, string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServer_1'
+    name: 'listByServer(string, string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServerNext'
+    name: 'listByServerNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServerNext_2'
+    name: 'listByServerNext(string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServerNext_1'
+    name: 'listByServerNext(string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetricDefinitions'
+    name: 'listMetricDefinitions(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스 메트릭 정의 반환 합니다.
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricDefinitionsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetricDefinitions_2'
+    name: 'listMetricDefinitions(string, string, string, RequestOptionsBase, ServiceCallback<MetricDefinitionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, serverName: string, databaseName: string, options: RequestOptionsBase, callback: ServiceCallback<MetricDefinitionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricDefinitionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricDefinitionsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetricDefinitions_1'
+    name: 'listMetricDefinitions(string, string, string, ServiceCallback<MetricDefinitionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, serverName: string, databaseName: string, callback: ServiceCallback<MetricDefinitionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricDefinitionListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricDefinitionsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetrics'
+    name: 'listMetrics(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 메트릭을 데이터베이스를 반환 합니다.
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, serverName: string, databaseName: string, filter: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: filter
+          type:
+            - string
+          description: 반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetrics_2'
+    name: 'listMetrics(string, string, string, string, RequestOptionsBase, ServiceCallback<MetricListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, serverName: string, databaseName: string, filter: string, options: RequestOptionsBase, callback: ServiceCallback<MetricListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: filter
+          type:
+            - string
+          description: 반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetrics_1'
+    name: 'listMetrics(string, string, string, string, ServiceCallback<MetricListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, serverName: string, databaseName: string, filter: string, callback: ServiceCallback<MetricListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: filter
+          type:
+            - string
+          description: 반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.pause'
+    name: 'pause(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 일시 중지합니다.
+    syntax:
+      content: 'function pause(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 일시 중지 하려면 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesPauseResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.rename'
+    name: 'rename(string, string, string, ResourceMoveDefinition, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 이름을 바꿉니다.
+    syntax:
+      content: 'function rename(resourceGroupName: string, serverName: string, databaseName: string, parameters: ResourceMoveDefinition, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 이름을 바꿀 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ResourceMoveDefinition'
+          description: 리소스는이 데이터베이스 이름 바꾸기에 대 한 정의 이동 합니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.rename_2'
+    name: 'rename(string, string, string, ResourceMoveDefinition, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function rename(resourceGroupName: string, serverName: string, databaseName: string, parameters: ResourceMoveDefinition, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 이름을 바꿀 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ResourceMoveDefinition'
+          description: 리소스는이 데이터베이스 이름 바꾸기에 대 한 정의 이동 합니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.rename_1'
+    name: 'rename(string, string, string, ResourceMoveDefinition, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function rename(resourceGroupName: string, serverName: string, databaseName: string, parameters: ResourceMoveDefinition, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 이름을 바꿀 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ResourceMoveDefinition'
+          description: 리소스는이 데이터베이스 이름 바꾸기에 대 한 정의 이동 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.resume'
+    name: 'resume(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터베이스를 다시 시작합니다.
+    syntax:
+      content: 'function resume(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 다시 시작 될 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesResumeResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.update'
+    name: 'update(string, string, string, DatabaseUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 데이터베이스를 업데이트합니다.
+    syntax:
+      content: 'function update(resourceGroupName: string, serverName: string, databaseName: string, parameters: DatabaseUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 데이터베이스의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-sql.DatabaseUpdate'
+          description: 요청 된 데이터베이스 리소스 상태입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesUpdateResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.upgradeDataWarehouse'
+    name: 'upgradeDataWarehouse(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 데이터 웨어하우스를 업그레이드합니다.
+    syntax:
+      content: 'function upgradeDataWarehouse(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: serverName
+          type:
+            - string
+          description: 서버의 이름입니다.
+        - id: databaseName
+          type:
+            - string
+          description: 업그레이드할 데이터베이스의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.SqlManagementClientContext'
+    name: SqlManagementClientContext
+    spec.typeScript:
+      - name: SqlManagementClientContext
+        fullName: SqlManagementClientContext
+        uid: '@azure/arm-sql.SqlManagementClientContext'
+  - uid: '@azure/arm-sql.ImportExtensionRequest'
+    name: ImportExtensionRequest
+    spec.typeScript:
+      - name: ImportExtensionRequest
+        fullName: ImportExtensionRequest
+        uid: '@azure/arm-sql.ImportExtensionRequest'
+  - uid: '@azure/arm-sql.Database'
+    name: Database
+    spec.typeScript:
+      - name: Database
+        fullName: Database
+        uid: '@azure/arm-sql.Database'
+  - uid: '@azure/arm-sql.ExportRequest'
+    name: ExportRequest
+    spec.typeScript:
+      - name: ExportRequest
+        fullName: ExportRequest
+        uid: '@azure/arm-sql.ExportRequest'
+  - uid: '@azure/arm-sql.ImportRequest'
+    name: ImportRequest
+    spec.typeScript:
+      - name: ImportRequest
+        fullName: ImportRequest
+        uid: '@azure/arm-sql.ImportRequest'
+  - uid: '@azure/arm-sql.DatabaseUpdate'
+    name: DatabaseUpdate
+    spec.typeScript:
+      - name: DatabaseUpdate
+        fullName: DatabaseUpdate
+        uid: '@azure/arm-sql.DatabaseUpdate'
+  - uid: ServiceCallback<@azure/arm-sql.Database>
+    name: Database>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Database
+        fullName: Database
+        uid: '@azure/arm-sql.Database'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.DatabaseListResult>
+    name: DatabaseListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DatabaseListResult
+        fullName: DatabaseListResult
+        uid: '@azure/arm-sql.DatabaseListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.MetricDefinitionListResult>
+    name: MetricDefinitionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: MetricDefinitionListResult
+        fullName: MetricDefinitionListResult
+        uid: '@azure/arm-sql.MetricDefinitionListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.MetricListResult>
+    name: MetricListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: MetricListResult
+        fullName: MetricListResult
+        uid: '@azure/arm-sql.MetricListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-sql.ResourceMoveDefinition'
+    name: ResourceMoveDefinition
+    spec.typeScript:
+      - name: ResourceMoveDefinition
+        fullName: ResourceMoveDefinition
+        uid: '@azure/arm-sql.ResourceMoveDefinition'
