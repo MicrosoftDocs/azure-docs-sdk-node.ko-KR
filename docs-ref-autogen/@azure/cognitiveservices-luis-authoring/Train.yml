@@ -1,0 +1,233 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-luis-authoring.Train'
+    name: Train
+    fullName: Train
+    children:
+      - '@azure/cognitiveservices-luis-authoring.Train.getStatus'
+      - '@azure/cognitiveservices-luis-authoring.Train.getStatus_2'
+      - '@azure/cognitiveservices-luis-authoring.Train.getStatus_1'
+      - '@azure/cognitiveservices-luis-authoring.Train.constructor'
+      - '@azure/cognitiveservices-luis-authoring.Train.trainVersion'
+      - '@azure/cognitiveservices-luis-authoring.Train.trainVersion_2'
+      - '@azure/cognitiveservices-luis-authoring.Train.trainVersion_1'
+    langs:
+      - typeScript
+    type: class
+    summary: 학습을 나타내는 클래스입니다.
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.getStatus'
+    name: 'getStatus(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      지정 된 LUIS 앱에 대 한 모든 모델 (의도 및 엔터티)의 교육 상태를 가져옵니다. 교육 상태를 가져오려면이 API를 호출 하기 전에 LUIS 앱을 학습 하는 학습 API를 호출 해야 합니다.
+      "appID를" LUIS 앱 ID를 지정합니다. "versionId" LUIS 앱의 버전 번호를 지정합니다. 예를 들어, "0.1"입니다.
+    syntax:
+      content: 'function getStatus(appId: string, versionId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: appId
+          type:
+            - string
+          description: 응용 프로그램 ID입니다.
+        - id: versionId
+          type:
+            - string
+          description: 버전 ID
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TrainGetStatusResponse>
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.getStatus_2'
+    name: 'getStatus(string, string, RequestOptionsBase, ServiceCallback<ModelTrainingInfo[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getStatus(appId: string, versionId: string, options: RequestOptionsBase, callback: ServiceCallback<ModelTrainingInfo[]>)'
+      parameters:
+        - id: appId
+          type:
+            - string
+          description: 응용 프로그램 ID입니다.
+        - id: versionId
+          type:
+            - string
+          description: 버전 ID
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-luis-authoring.ModelTrainingInfo[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.TrainGetStatusResponse>
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.getStatus_1'
+    name: 'getStatus(string, string, ServiceCallback<ModelTrainingInfo[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getStatus(appId: string, versionId: string, callback: ServiceCallback<ModelTrainingInfo[]>)'
+      parameters:
+        - id: appId
+          type:
+            - string
+          description: 응용 프로그램 ID입니다.
+        - id: versionId
+          type:
+            - string
+          description: 버전 ID
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-luis-authoring.ModelTrainingInfo[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.TrainGetStatusResponse>
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.constructor'
+    name: Train(LUISAuthoringClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 학습을 만듭니다.
+    syntax:
+      content: 'new Train(client: LUISAuthoringClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/cognitiveservices-luis-authoring.LUISAuthoringClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.trainVersion'
+    name: 'trainVersion(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정 된 LUIS 앱의 버전에 대 한 교육 요청을 보냅니다. 이 POST 요청을 요청을 비동기적으로 시작합니다. 교육 요청은 성공 여부를 확인 하려면 교육 상태를 가져오려면 GET 요청을 제출 합니다. 참고: 응용 프로그램 버전을 성공적으로 학습 됩니다 되는 모든 모델 (의도 및 엔터티) 아니면 최신임 완벽 하 게 학습 하지 합니다. 교육 성공을 확인 하려면 학습 완료 된 후 교육 상태를 한 번 이상 가져옵니다.'
+    syntax:
+      content: 'function trainVersion(appId: string, versionId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: appId
+          type:
+            - string
+          description: 응용 프로그램 ID입니다.
+        - id: versionId
+          type:
+            - string
+          description: 버전 ID
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TrainTrainVersionResponse>
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.trainVersion_2'
+    name: 'trainVersion(string, string, RequestOptionsBase, ServiceCallback<EnqueueTrainingResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function trainVersion(appId: string, versionId: string, options: RequestOptionsBase, callback: ServiceCallback<EnqueueTrainingResponse>)'
+      parameters:
+        - id: appId
+          type:
+            - string
+          description: 응용 프로그램 ID입니다.
+        - id: versionId
+          type:
+            - string
+          description: 버전 ID
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-luis-authoring.EnqueueTrainingResponse>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.TrainTrainVersionResponse>
+    package: '@azure/cognitiveservices-luis-authoring'
+  - uid: '@azure/cognitiveservices-luis-authoring.Train.trainVersion_1'
+    name: 'trainVersion(string, string, ServiceCallback<EnqueueTrainingResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function trainVersion(appId: string, versionId: string, callback: ServiceCallback<EnqueueTrainingResponse>)'
+      parameters:
+        - id: appId
+          type:
+            - string
+          description: 응용 프로그램 ID입니다.
+        - id: versionId
+          type:
+            - string
+          description: 버전 ID
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-luis-authoring.EnqueueTrainingResponse>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.TrainTrainVersionResponse>
+    package: '@azure/cognitiveservices-luis-authoring'
+references:
+  - uid: '@azure/cognitiveservices-luis-authoring.LUISAuthoringClientContext'
+    name: LUISAuthoringClientContext
+    spec.typeScript:
+      - name: LUISAuthoringClientContext
+        fullName: LUISAuthoringClientContext
+        uid: '@azure/cognitiveservices-luis-authoring.LUISAuthoringClientContext'
+  - uid: 'ServiceCallback<@azure/cognitiveservices-luis-authoring.ModelTrainingInfo[]>'
+    name: 'ModelTrainingInfo[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ModelTrainingInfo
+        fullName: ModelTrainingInfo
+        uid: '@azure/cognitiveservices-luis-authoring.ModelTrainingInfo'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: ServiceCallback<@azure/cognitiveservices-luis-authoring.EnqueueTrainingResponse>
+    name: EnqueueTrainingResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EnqueueTrainingResponse
+        fullName: EnqueueTrainingResponse
+        uid: '@azure/cognitiveservices-luis-authoring.EnqueueTrainingResponse'
+      - name: '>'
+        fullName: '>'

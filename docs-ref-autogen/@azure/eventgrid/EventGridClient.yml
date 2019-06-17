@@ -1,0 +1,342 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/eventgrid.EventGridClient'
+    name: EventGridClient
+    fullName: EventGridClient
+    children:
+      - '@azure/eventgrid.EventGridClient.acceptLanguage'
+      - '@azure/eventgrid.EventGridClient.apiVersion'
+      - '@azure/eventgrid.EventGridClient.beginLongRunningRequest'
+      - '@azure/eventgrid.EventGridClient.credentials'
+      - '@azure/eventgrid.EventGridClient.constructor'
+      - '@azure/eventgrid.EventGridClient.longRunningOperationRetryTimeout'
+      - '@azure/eventgrid.EventGridClient.publishEvents'
+      - '@azure/eventgrid.EventGridClient.publishEvents_2'
+      - '@azure/eventgrid.EventGridClient.publishEvents_1'
+      - '@azure/eventgrid.EventGridClient.restoreLROPoller'
+      - '@azure/eventgrid.EventGridClient.sendLongRunningRequest'
+      - '@azure/eventgrid.EventGridClient.sendLRORequest'
+      - '@azure/eventgrid.EventGridClient.sendOperationRequest'
+      - '@azure/eventgrid.EventGridClient.sendRequest'
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: '@azure/eventgrid.EventGridClientContext'
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.acceptLanguage'
+    name: acceptLanguage
+    fullName: acceptLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'acceptLanguage: string'
+      return:
+        type:
+          - string
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.apiVersion'
+    name: apiVersion
+    fullName: apiVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'apiVersion?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.beginLongRunningRequest'
+    name: 'beginLongRunningRequest(RequestPrepareOptions | WebResource, RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: (장기 실행 작업)는 LRO의 초기 요청을 보내고 메서드는 LRO 폴링 및는 LRO 완료 된 경우 검사를 제공 하는 HttpLongRunningOperationResponse 돌아갑니다.
+    syntax:
+      content: 'function beginLongRunningRequest(request: RequestPrepareOptions | WebResource, options?: RequestOptionsBase)'
+      parameters:
+        - id: request
+          type:
+            - RequestPrepareOptions | WebResource
+          description: 요청 개체
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.credentials'
+    name: credentials
+    fullName: credentials
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        type:
+          - ServiceClientCredentials
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.constructor'
+    name: 'EventGridClient(ServiceClientCredentials, msRestAzure.AzureServiceClientOptions)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: EventGridClient 클래스의 새 인스턴스를 초기화합니다.
+    syntax:
+      content: 'new EventGridClient(credentials: ServiceClientCredentials, options?: msRestAzure.AzureServiceClientOptions)'
+      parameters:
+        - id: credentials
+          type:
+            - ServiceClientCredentials
+          description: Azure에 연결 하는 클라이언트에 필요한 자격 증명입니다.
+        - id: options
+          type:
+            - msRestAzure.AzureServiceClientOptions
+          description: ''
+          optional: true
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.longRunningOperationRetryTimeout'
+    name: longRunningOperationRetryTimeout
+    fullName: longRunningOperationRetryTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 장기 실행 작업에 대 한 시간 (초) 다시 시도 제한 시간입니다. 기본값은 30입니다.
+    optional: true
+    syntax:
+      content: 'longRunningOperationRetryTimeout?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.publishEvents'
+    name: 'publishEvents(string, EventGridEvent[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Azure Event Grid 토픽에 이벤트의 일괄 처리를 게시합니다.
+    syntax:
+      content: 'function publishEvents(topicHostname: string, events: EventGridEvent[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: topicHostname
+          type:
+            - string
+          description: 예를 들어 topic1.westus2 1.eventgrid.azure.net 항목의 호스트 이름
+        - id: events
+          type:
+            - '@azure/eventgrid.EventGridEvent[]'
+          description: 이벤트를 Event Grid에 게시의 배열입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.publishEvents_2'
+    name: 'publishEvents(string, EventGridEvent[], RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function publishEvents(topicHostname: string, events: EventGridEvent[], options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: topicHostname
+          type:
+            - string
+          description: 예를 들어 topic1.westus2 1.eventgrid.azure.net 항목의 호스트 이름
+        - id: events
+          type:
+            - '@azure/eventgrid.EventGridEvent[]'
+          description: 이벤트를 Event Grid에 게시의 배열입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.publishEvents_1'
+    name: 'publishEvents(string, EventGridEvent[], ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function publishEvents(topicHostname: string, events: EventGridEvent[], callback: ServiceCallback<void>)'
+      parameters:
+        - id: topicHostname
+          type:
+            - string
+          description: 예를 들어 topic1.westus2 1.eventgrid.azure.net 항목의 호스트 이름
+        - id: events
+          type:
+            - '@azure/eventgrid.EventGridEvent[]'
+          description: 이벤트를 Event Grid에 게시의 배열입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.restoreLROPoller'
+    name: restoreLROPoller(LROPollState)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 제공 된 LROPollState에서는 LROPoller를 복원 합니다. 이 메서드는 LROPoller 다른 프로세스 또는 컴퓨터에 다시 사용할 수 있습니다.
+    syntax:
+      content: 'function restoreLROPoller(lroPollState: LROPollState)'
+      parameters:
+        - id: lroPollState
+          type:
+            - LROPollState
+          description: ''
+      return:
+        type:
+          - LROPoller
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.sendLongRunningRequest'
+    name: 'sendLongRunningRequest(RequestPrepareOptions | WebResource, RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 폴링 되며 최종 결과 제공 하는 요청을 수행 하는 메커니즘을 제공 합니다.
+    syntax:
+      content: 'function sendLongRunningRequest(request: RequestPrepareOptions | WebResource, options?: RequestOptionsBase)'
+      parameters:
+        - id: request
+          type:
+            - RequestPrepareOptions | WebResource
+          description: 요청 개체
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.sendLRORequest'
+    name: 'sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: (장기 실행 작업)는 LRO의 초기 요청을 보내고 메서드는 LRO 폴링 및는 LRO 완료 된 경우 검사를 제공 하는 LROPoller 돌아갑니다.
+    syntax:
+      content: 'function sendLRORequest(operationArguments: OperationArguments, operationSpec: OperationSpec, options?: RequestOptionsBase)'
+      parameters:
+        - id: operationArguments
+          type:
+            - OperationArguments
+          description: 작업에 대 한 인수입니다.
+        - id: operationSpec
+          type:
+            - OperationSpec
+          description: 작업에 대 한 사양입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 요청을 수행 하는 동안 보낼 추가 옵션입니다.
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.sendOperationRequest'
+    name: 'sendOperationRequest(OperationArguments, OperationSpec, ServiceCallback<any>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 제공 된 OperationSpec를 사용 하 여 채워지는 HTTP 요청을 보냅니다.
+    syntax:
+      content: 'function sendOperationRequest(operationArguments: OperationArguments, operationSpec: OperationSpec, callback?: ServiceCallback<any>)'
+      parameters:
+        - id: operationArguments
+          type:
+            - OperationArguments
+          description: HTTP 요청의 템플릿 값에서 채워집니다는 인수입니다.
+        - id: operationSpec
+          type:
+            - OperationSpec
+          description: Http 요청을 채우는 데 사용할 OperationSpec 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<any>
+          description: |
+            응답을 받을 때 호출할 콜백.
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/eventgrid'
+  - uid: '@azure/eventgrid.EventGridClient.sendRequest'
+    name: sendRequest(RequestPrepareOptions | WebResource)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 제공 된 http 요청을 보냅니다.
+    syntax:
+      content: 'function sendRequest(options: RequestPrepareOptions | WebResource)'
+      parameters:
+        - id: options
+          type:
+            - RequestPrepareOptions | WebResource
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse>
+    package: '@azure/eventgrid'
+references:
+  - uid: '@azure/eventgrid.EventGridClientContext'
+    name: EventGridClientContext
+    spec.typeScript:
+      - name: EventGridClientContext
+        fullName: EventGridClientContext
+        uid: '@azure/eventgrid.EventGridClientContext'
+  - uid: '@azure/eventgrid.EventGridEvent[]'
+    name: 'EventGridEvent[]'
+    spec.typeScript:
+      - name: EventGridEvent
+        fullName: EventGridEvent
+        uid: '@azure/eventgrid.EventGridEvent'
+      - name: '[]'
+        fullName: '[]'

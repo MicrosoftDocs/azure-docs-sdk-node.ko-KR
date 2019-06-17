@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.AutoPoolSpecification'
+    name: AutoPoolSpecification
+    fullName: AutoPoolSpecification
+    children:
+      - '@azure/batch.AutoPoolSpecification.autoPoolIdPrefix'
+      - '@azure/batch.AutoPoolSpecification.keepAlive'
+      - '@azure/batch.AutoPoolSpecification.pool'
+      - '@azure/batch.AutoPoolSpecification.poolLifetimeOption'
+    langs:
+      - typeScript
+    type: interface
+    summary: AutoPoolSpecification을 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.AutoPoolSpecification.autoPoolIdPrefix'
+    name: autoPoolIdPrefix
+    fullName: autoPoolIdPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 풀을 자동으로 만들어질 때 고유 식별자에 추가할 접두사입니다. Batch 서비스는 각 자동 풀 생성 시 고유 식별자를 할당합니다. 다양 한 용도로 만든 풀을 구분 하기 위해 할당 된 id 접두사를 추가 하려면이 요소를 지정할 수 있습니다. 접두사는 최대 20 자를 수 있습니다.
+    optional: true
+    syntax:
+      content: 'autoPoolIdPrefix?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.AutoPoolSpecification.keepAlive'
+    name: keepAlive
+    fullName: keepAlive
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '수명이 만료 된 후 자동 풀을 활성 상태로 유지할지 여부를 나타냅니다. False 인 경우, Batch 서비스 (poollifetimeoption이 설정에 따라 결정 됨)으로 수명이 만료 되 면 해당 풀을 삭제 하는 즉, 작업 또는 작업 예약 하는 경우 완료 된 합니다. True 인 경우 Batch 서비스는 풀을 삭제 하지 자동으로 합니다. 이 옵션을 사용 하 여 만든 자동 풀을 삭제 하려면 사용자가 합니다.'
+    optional: true
+    syntax:
+      content: 'keepAlive?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/batch'
+  - uid: '@azure/batch.AutoPoolSpecification.pool'
+    name: pool
+    fullName: pool
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 자동 풀에 대 한 풀 사양입니다.
+    optional: true
+    syntax:
+      content: 'pool?: PoolSpecification'
+      return:
+        type:
+          - '@azure/batch.PoolSpecification'
+    package: '@azure/batch'
+  - uid: '@azure/batch.AutoPoolSpecification.poolLifetimeOption'
+    name: poolLifetimeOption
+    fullName: poolLifetimeOption
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '생성된 된 자동 풀 및 풀에 할당 된 일정에 따라 여러 작업의 최소 수명입니다. 가능한 값: ''jobSchedule'', ''작업'''
+    syntax:
+      content: 'poolLifetimeOption: PoolLifetimeOption'
+      return:
+        type:
+          - '@azure/batch.PoolLifetimeOption'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.PoolSpecification'
+    name: PoolSpecification
+    spec.typeScript:
+      - name: PoolSpecification
+        fullName: PoolSpecification
+        uid: '@azure/batch.PoolSpecification'
+  - uid: '@azure/batch.PoolLifetimeOption'
+    name: PoolLifetimeOption
+    spec.typeScript:
+      - name: PoolLifetimeOption
+        fullName: PoolLifetimeOption
+        uid: '@azure/batch.PoolLifetimeOption'
