@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.PoolResizeParameter'
+    name: PoolResizeParameter
+    fullName: PoolResizeParameter
+    children:
+      - '@azure/batch.PoolResizeParameter.nodeDeallocationOption'
+      - '@azure/batch.PoolResizeParameter.resizeTimeout'
+      - '@azure/batch.PoolResizeParameter.targetDedicatedNodes'
+      - '@azure/batch.PoolResizeParameter.targetLowPriorityNodes'
+    langs:
+      - typeScript
+    type: interface
+    summary: PoolResizeParameter 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.nodeDeallocationOption'
+    name: nodeDeallocationOption
+    fullName: nodeDeallocationOption
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '풀 크기가 감소 하는 경우 노드 및 해당 실행 중인 작업을 사용 하 여 수행할 작업을 결정 합니다. 기본값은 requeue입니다. 가능한 값: ''requeue'', ''terminate'', ''taskCompletion'', ''retainedData'''
+    optional: true
+    syntax:
+      content: 'nodeDeallocationOption?: ComputeNodeDeallocationOption'
+      return:
+        type:
+          - '@azure/batch.ComputeNodeDeallocationOption'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.resizeTimeout'
+    name: resizeTimeout
+    fullName: resizeTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계산 노드 풀에 할당 또는 계산 노드 풀에서 제거에 대 한 제한 시간입니다. 기본값은 15 분입니다. 최소값은 5 분입니다. 5 분 보다 작은 값을 지정할 일괄 처리 서비스 오류를 반환 합니다. HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.
+    optional: true
+    syntax:
+      content: 'resizeTimeout?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.targetDedicatedNodes'
+    name: targetDedicatedNodes
+    fullName: targetDedicatedNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 원하는 수의 전용 풀의 노드를 계산합니다.
+    optional: true
+    syntax:
+      content: 'targetDedicatedNodes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolResizeParameter.targetLowPriorityNodes'
+    name: targetLowPriorityNodes
+    fullName: targetLowPriorityNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 우선 순위가 낮은 계산 노드 풀에서 원하는 수입니다.
+    optional: true
+    syntax:
+      content: 'targetLowPriorityNodes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.ComputeNodeDeallocationOption'
+    name: ComputeNodeDeallocationOption
+    spec.typeScript:
+      - name: ComputeNodeDeallocationOption
+        fullName: ComputeNodeDeallocationOption
+        uid: '@azure/batch.ComputeNodeDeallocationOption'

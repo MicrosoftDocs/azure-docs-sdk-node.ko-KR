@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.ComputeNodeUser'
+    name: ComputeNodeUser
+    fullName: ComputeNodeUser
+    children:
+      - '@azure/batch.ComputeNodeUser.expiryTime'
+      - '@azure/batch.ComputeNodeUser.isAdmin'
+      - '@azure/batch.ComputeNodeUser.name'
+      - '@azure/batch.ComputeNodeUser.password'
+      - '@azure/batch.ComputeNodeUser.sshPublicKey'
+    langs:
+      - typeScript
+    type: interface
+    summary: ComputeNodeUser 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeUser.expiryTime'
+    name: expiryTime
+    fullName: expiryTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계정이 만료 되어야 하는 시간입니다. 생략 하면 기본값은 현재 시간에서 1 일입니다. Linux 계산 노드는 expiryTime 하루 최대 전체 자릿수를 있습니다.
+    optional: true
+    syntax:
+      content: 'expiryTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeUser.isAdmin'
+    name: isAdmin
+    fullName: isAdmin
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 여부 계정은 계산 노드에서 관리자 여야 합니다. 기본값은 False입니다.
+    optional: true
+    syntax:
+      content: 'isAdmin?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeUser.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계정의 사용자 이름입니다.
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeUser.password'
+    name: password
+    fullName: password
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계정의 암호입니다. 암호는 Windows 노드 (해당 되는 'cloudServiceConfiguration'를 사용 하 여 만든 또는 Windows 이미지 참조를 사용 하 여 'virtualMachineConfiguration'를 사용 하 여 만든)에 대 한 필수입니다. Linux 계산 노드에 대 한 sshPublicKey 속성과 함께 암호를 선택적으로 지정할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'password?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeUser.sshPublicKey'
+    name: sshPublicKey
+    fullName: sshPublicKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계산 노드에 원격 로그인을 위해 사용할 수 있는 SSH 공개 키입니다. 공개 키 OpenSSH 인코딩을 사용 하 여 호환 되 고 base 64 인코딩되어야 합니다. Linux 노드에 대해서만이 속성을 지정할 수 있습니다. 이 Windows 노드을 지정 하는 경우 다음 Batch 서비스는 요청을 거부; HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.
+    optional: true
+    syntax:
+      content: 'sshPublicKey?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'

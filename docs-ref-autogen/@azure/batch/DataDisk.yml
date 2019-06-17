@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.DataDisk'
+    name: DataDisk
+    fullName: DataDisk
+    children:
+      - '@azure/batch.DataDisk.caching'
+      - '@azure/batch.DataDisk.diskSizeGB'
+      - '@azure/batch.DataDisk.lun'
+      - '@azure/batch.DataDisk.storageAccountType'
+    langs:
+      - typeScript
+    type: interface
+    summary: DataDisk 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.DataDisk.caching'
+    name: caching
+    fullName: caching
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      데이터 디스크를 사용 하도록 설정 하려면 캐시의 형식입니다. 캐시에 대 한 기본값은 readwrite입니다. 캐싱 옵션에 대 한 정보를 참조 하세요.: https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/27/exploring-windows-azure-drives-disks-and-images/합니다.
+      가능한 값: 'none', 'readOnly', 'readWrite'
+    optional: true
+    syntax:
+      content: 'caching?: CachingType'
+      return:
+        type:
+          - '@azure/batch.CachingType'
+    package: '@azure/batch'
+  - uid: '@azure/batch.DataDisk.diskSizeGB'
+    name: diskSizeGB
+    fullName: diskSizeGB
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 초기 디스크 크기 (기가바이트)입니다.
+    syntax:
+      content: 'diskSizeGB: number'
+      return:
+        type:
+          - number
+    package: '@azure/batch'
+  - uid: '@azure/batch.DataDisk.lun'
+    name: lun
+    fullName: lun
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 논리 단위 수입니다. Lun은 고유 하 게 각 데이터 디스크를 식별 하는 데 사용 됩니다. 여러 디스크를 연결 하는 경우 각 개별 lun이 있어야 합니다.
+    syntax:
+      content: 'lun: number'
+      return:
+        type:
+          - number
+    package: '@azure/batch'
+  - uid: '@azure/batch.DataDisk.storageAccountType'
+    name: storageAccountType
+    fullName: storageAccountType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '데이터 디스크에 사용 되는 저장소 계정 유형입니다. 생략 하면 기본값은 "standard_lrs". 가능한 값은 다음과 같습니다. ''StandardLRS'', ''PremiumLRS'''
+    optional: true
+    syntax:
+      content: 'storageAccountType?: StorageAccountType'
+      return:
+        type:
+          - '@azure/batch.StorageAccountType'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.CachingType'
+    name: CachingType
+    spec.typeScript:
+      - name: CachingType
+        fullName: CachingType
+        uid: '@azure/batch.CachingType'
+  - uid: '@azure/batch.StorageAccountType'
+    name: StorageAccountType
+    spec.typeScript:
+      - name: StorageAccountType
+        fullName: StorageAccountType
+        uid: '@azure/batch.StorageAccountType'
