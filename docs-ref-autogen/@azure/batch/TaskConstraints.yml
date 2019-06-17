@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.TaskConstraints'
+    name: TaskConstraints
+    fullName: TaskConstraints
+    children:
+      - '@azure/batch.TaskConstraints.maxTaskRetryCount'
+      - '@azure/batch.TaskConstraints.maxWallClockTime'
+      - '@azure/batch.TaskConstraints.retentionTime'
+    langs:
+      - typeScript
+    type: interface
+    summary: TaskConstraints 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskConstraints.maxTaskRetryCount'
+    name: maxTaskRetryCount
+    fullName: maxTaskRetryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '태스크를 다시 시도할 수 있는 최대 횟수입니다. 종료 코드가 0이 아니면 Batch 서비스가 태스크를 다시 시도합니다. 이 값을 0이 아닌 종료 코드로 인해 실행 태스크에 대 한 재시도 횟수를 구체적으로 제어 하는 note 합니다. Batch 서비스는 태스크를 한 번 시도한 후 이 한도까지 다시 시도할 수 있습니다. 예를 들어 최대 재시도 횟수가 3 인 경우 일괄 처리 시도 태스크를 4 번 (초기 시도 1와 재시도 3 회). 최대 재시도 횟수가 0 인 경우에 Batch 서비스는 첫 번째 시도 후 작업을 재시도 하지 않습니다. 경우는 최대 재시도 횟수는-1, 일괄 처리 서비스 다시 시도 작업을 제한 없이 합니다.'
+    optional: true
+    syntax:
+      content: 'maxTaskRetryCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskConstraints.maxWallClockTime'
+    name: maxWallClockTime
+    fullName: maxWallClockTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업 시작 시간부터 작업이 실행 될 수 있는 최대 경과 시간 측정 합니다. 작업 시간 제한 내에 완료 되지 않으면, Batch 서비스는 것을 종료 합니다. 이 작업은 지정 하지 않으면 제한은 없습니다 시간 기간 작업이 실행 될 수 있습니다.'
+    optional: true
+    syntax:
+      content: 'maxWallClockTime?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskConstraints.retentionTime'
+    name: retentionTime
+    fullName: retentionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '실행 한 실행을 완료 하는 시간에서 계산 노드의 태스크 디렉터리를 유지 하는 최소 시간입니다. 이 시간이 지난 후 Batch 서비스는 작업 디렉터리 및 모든 해당 콘텐츠를 삭제할 수 있습니다. 기본값은 7 일, 즉, 작업 디렉터리는 보존 7 일 계산 노드가 제거 작업을 삭제 하는 경우가 아니면 합니다.'
+    optional: true
+    syntax:
+      content: 'retentionTime?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'

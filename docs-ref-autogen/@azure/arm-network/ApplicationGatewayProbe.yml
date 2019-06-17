@@ -13,6 +13,7 @@ items:
       - '@azure/arm-network.ApplicationGatewayProbe.name'
       - '@azure/arm-network.ApplicationGatewayProbe.path'
       - '@azure/arm-network.ApplicationGatewayProbe.pickHostNameFromBackendHttpSettings'
+      - '@azure/arm-network.ApplicationGatewayProbe.port'
       - '@azure/arm-network.ApplicationGatewayProbe.protocol'
       - '@azure/arm-network.ApplicationGatewayProbe.provisioningState'
       - '@azure/arm-network.ApplicationGatewayProbe.timeout'
@@ -139,7 +140,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '프로브의 상대 경로입니다. 유효한 경로에서 시작 되 고 ''/''. 프로브에 보내지는 <Protocol>://<host>:<port><path>'
+    summary: '프로브의 상대 경로입니다. 유효한 경로에서 시작 되 고 ''/''. 프로브에 보내지는 <Protocol>://<host>:<port><path>합니다.'
     optional: true
     syntax:
       content: 'path?: undefined | string'
@@ -161,6 +162,21 @@ items:
       return:
         type:
           - undefined | false | true
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.ApplicationGatewayProbe.port'
+    name: port
+    fullName: port
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '백 엔드 서버를 검색에 사용 되는 사용자 지정 포트입니다. 유효한 값의 범위 1에서 65535입니다. 설정 하지 않습니다, http에서 포트의 경우에서 설정이 사용 됩니다. 이 속성 Standard_v2 WAF_v2에만 유효합니다.'
+    optional: true
+    syntax:
+      content: 'port?: undefined | number'
+      return:
+        type:
+          - undefined | number
     package: '@azure/arm-network'
   - uid: '@azure/arm-network.ApplicationGatewayProbe.protocol'
     name: protocol

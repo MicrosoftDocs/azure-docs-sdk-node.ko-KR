@@ -1,0 +1,131 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-locks.ManagementLockObject'
+    name: ManagementLockObject
+    fullName: ManagementLockObject
+    children:
+      - '@azure/arm-locks.ManagementLockObject.id'
+      - '@azure/arm-locks.ManagementLockObject.level'
+      - '@azure/arm-locks.ManagementLockObject.name'
+      - '@azure/arm-locks.ManagementLockObject.notes'
+      - '@azure/arm-locks.ManagementLockObject.owners'
+      - '@azure/arm-locks.ManagementLockObject.type'
+    langs:
+      - typeScript
+    type: interface
+    summary: 잠금 정보입니다.
+    extends:
+      name: BaseResource
+    package: '@azure/arm-locks'
+  - uid: '@azure/arm-locks.ManagementLockObject.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      잠금의 리소스 ID입니다.
+      **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**
+    optional: true
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-locks'
+  - uid: '@azure/arm-locks.ManagementLockObject.level'
+    name: level
+    fullName: level
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      잠금 수준입니다. 가능한 값은 다음과 같습니다. NotSpecified CanNotDelete, 읽기 전용입니다. CanNotDelete 의미 권한이 있는 사용자는 읽기 및 리소스를 수정 하지만 삭제 하지 못했습니다. 읽기 전용 권한이 있는 사용자는 리소스에서만 읽을 수 있지만 수정 하거나 삭제할 수는 없습니다 의미 합니다.
+      가능한 값은 다음과 같습니다. 'NotSpecified', 'CanNotDelete', 'ReadOnly'
+    syntax:
+      content: 'level: LockLevel'
+      return:
+        type:
+          - '@azure/arm-locks.LockLevel'
+    package: '@azure/arm-locks'
+  - uid: '@azure/arm-locks.ManagementLockObject.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      잠금 이름입니다.
+      **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**
+    optional: true
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-locks'
+  - uid: '@azure/arm-locks.ManagementLockObject.notes'
+    name: notes
+    fullName: notes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 잠금에 대 한 정보입니다. 최대 512 자로 지정 합니다.
+    optional: true
+    syntax:
+      content: 'notes?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-locks'
+  - uid: '@azure/arm-locks.ManagementLockObject.owners'
+    name: owners
+    fullName: owners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 잠금의 소유자입니다.
+    optional: true
+    syntax:
+      content: 'owners?: ManagementLockOwner[]'
+      return:
+        type:
+          - '@azure/arm-locks.ManagementLockOwner[]'
+    package: '@azure/arm-locks'
+  - uid: '@azure/arm-locks.ManagementLockObject.type'
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      잠금-Microsoft.Authorization/locks 리소스 형식입니다.
+      **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**
+    optional: true
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-locks'
+references:
+  - uid: '@azure/arm-locks.LockLevel'
+    name: LockLevel
+    spec.typeScript:
+      - name: LockLevel
+        fullName: LockLevel
+        uid: '@azure/arm-locks.LockLevel'
+  - uid: '@azure/arm-locks.ManagementLockOwner[]'
+    name: 'ManagementLockOwner[]'
+    spec.typeScript:
+      - name: ManagementLockOwner
+        fullName: ManagementLockOwner
+        uid: '@azure/arm-locks.ManagementLockOwner'
+      - name: '[]'
+        fullName: '[]'
