@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest'
+    name: FindSimilarRequest
+    fullName: FindSimilarRequest
+    children:
+      - '@azure/cognitiveservices-face.FindSimilarRequest.faceId'
+      - '@azure/cognitiveservices-face.FindSimilarRequest.faceIds'
+      - '@azure/cognitiveservices-face.FindSimilarRequest.faceListId'
+      - '@azure/cognitiveservices-face.FindSimilarRequest.largeFaceListId'
+      - '@azure/cognitiveservices-face.FindSimilarRequest.maxNumOfCandidatesReturned'
+      - '@azure/cognitiveservices-face.FindSimilarRequest.mode'
+    langs:
+      - typeScript
+    type: interface
+    summary: 찾기 유사한 작업에 대 한 본문을 요청 합니다.
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest.faceId'
+    name: faceId
+    fullName: faceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 쿼리 얼굴의 FaceId를 제공 합니다. 사용자는 얼굴 호출-가장 먼저 경험해 유효한 faceId를 검색 해야 합니다. 이 faceId는 영구 저장소가 아니며 24 시간 검색 호출 후에 만료 되는
+    syntax:
+      content: 'faceId: string'
+      return:
+        type:
+          - string
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest.faceIds'
+    name: faceIds
+    fullName: faceIds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '배열 후보 faceIds입니다. 얼굴에서 만들어진 모든-감지 하 고는 faceIds 검색 호출 후 24 시간에 만료 됩니다. FaceIds 수가 1000으로 제한 됩니다. 매개 변수 faceListId, largeFaceListId 및 faceIds 동시에 제공 되어야 합니다.'
+    optional: true
+    syntax:
+      content: 'faceIds?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest.faceListId'
+    name: faceListId
+    fullName: faceListId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      얼굴 목록-에서 만든 기존 고유 후보 사용자가 지정한 얼굴 목록에는 얼굴 목록을 만듭니다. 얼굴 목록에 유지 되 고 만료 되지 것입니다 persistedFaceIds 집합이 포함 됩니다.
+      매개 변수 faceListId, largeFaceListId 및 faceIds 동시에 제공 되어야 합니다.
+    optional: true
+    syntax:
+      content: 'faceListId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest.largeFaceListId'
+    name: largeFaceListId
+    fullName: largeFaceListId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '기존 사용자 지정 고유 후보 큰 얼굴 목록 LargeFaceList에서 만든-만듭니다. 큰 얼굴 목록에 유지 되 고 만료 되지 것입니다 persistedFaceIds 집합이 포함 됩니다. 매개 변수 faceListId, largeFaceListId 및 faceIds 동시에 제공 되어야 합니다.'
+    optional: true
+    syntax:
+      content: 'largeFaceListId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest.maxNumOfCandidatesReturned'
+    name: maxNumOfCandidatesReturned
+    fullName: maxNumOfCandidatesReturned
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '상위 유사한 얼굴 수가 반환 됩니다. 유효한 범위는 [1, 1000]. 기본값: 20.'
+    optional: true
+    syntax:
+      content: 'maxNumOfCandidatesReturned?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.FindSimilarRequest.mode'
+    name: mode
+    fullName: mode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '유사 얼굴 검색 모드입니다. "MatchPerson" 또는 "matchFace" 수 있습니다. 가능한 값: ''matchPerson'', ''matchFace''. 기본값: ''matchPerson''.'
+    optional: true
+    syntax:
+      content: 'mode?: FindSimilarMatchMode'
+      return:
+        type:
+          - '@azure/cognitiveservices-face.FindSimilarMatchMode'
+    package: '@azure/cognitiveservices-face'
+references:
+  - uid: '@azure/cognitiveservices-face.FindSimilarMatchMode'
+    name: FindSimilarMatchMode
+    spec.typeScript:
+      - name: FindSimilarMatchMode
+        fullName: FindSimilarMatchMode
+        uid: '@azure/cognitiveservices-face.FindSimilarMatchMode'
