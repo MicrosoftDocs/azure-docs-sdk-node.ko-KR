@@ -1,0 +1,1483 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.Databases'
+    name: Databases
+    fullName: Databases
+    children:
+      - '@azure/arm-sql.Databases.beginCreateImportOperation'
+      - '@azure/arm-sql.Databases.beginCreateOrUpdate'
+      - '@azure/arm-sql.Databases.beginDeleteMethod'
+      - '@azure/arm-sql.Databases.beginExportMethod'
+      - '@azure/arm-sql.Databases.beginImportMethod'
+      - '@azure/arm-sql.Databases.beginPause'
+      - '@azure/arm-sql.Databases.beginResume'
+      - '@azure/arm-sql.Databases.beginUpdate'
+      - '@azure/arm-sql.Databases.beginUpgradeDataWarehouse'
+      - '@azure/arm-sql.Databases.createImportOperation'
+      - '@azure/arm-sql.Databases.createOrUpdate'
+      - '@azure/arm-sql.Databases.constructor'
+      - '@azure/arm-sql.Databases.deleteMethod'
+      - '@azure/arm-sql.Databases.exportMethod'
+      - '@azure/arm-sql.Databases.get'
+      - '@azure/arm-sql.Databases.get_2'
+      - '@azure/arm-sql.Databases.get_1'
+      - '@azure/arm-sql.Databases.importMethod'
+      - '@azure/arm-sql.Databases.listByElasticPool'
+      - '@azure/arm-sql.Databases.listByElasticPool_2'
+      - '@azure/arm-sql.Databases.listByElasticPool_1'
+      - '@azure/arm-sql.Databases.listByElasticPoolNext'
+      - '@azure/arm-sql.Databases.listByElasticPoolNext_2'
+      - '@azure/arm-sql.Databases.listByElasticPoolNext_1'
+      - '@azure/arm-sql.Databases.listByServer'
+      - '@azure/arm-sql.Databases.listByServer_2'
+      - '@azure/arm-sql.Databases.listByServer_1'
+      - '@azure/arm-sql.Databases.listByServerNext'
+      - '@azure/arm-sql.Databases.listByServerNext_2'
+      - '@azure/arm-sql.Databases.listByServerNext_1'
+      - '@azure/arm-sql.Databases.listMetricDefinitions'
+      - '@azure/arm-sql.Databases.listMetricDefinitions_2'
+      - '@azure/arm-sql.Databases.listMetricDefinitions_1'
+      - '@azure/arm-sql.Databases.listMetrics'
+      - '@azure/arm-sql.Databases.listMetrics_2'
+      - '@azure/arm-sql.Databases.listMetrics_1'
+      - '@azure/arm-sql.Databases.pause'
+      - '@azure/arm-sql.Databases.rename'
+      - '@azure/arm-sql.Databases.rename_2'
+      - '@azure/arm-sql.Databases.rename_1'
+      - '@azure/arm-sql.Databases.resume'
+      - '@azure/arm-sql.Databases.update'
+      - '@azure/arm-sql.Databases.upgradeDataWarehouse'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="3aaf2-101">데이터베이스를 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-101">Class representing a Databases.</span></span>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginCreateImportOperation'
+    name: 'beginCreateImportOperation(string, string, string, ImportExtensionRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-102">기존 데이터베이스로 bacpac를 가져오는 가져오기 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-102">Creates an import operation that imports a bacpac into an existing database.</span></span> <span data-ttu-id="3aaf2-103">기존 데이터베이스는 비어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-103">The existing database must be empty.</span></span>
+    syntax:
+      content: 'function beginCreateImportOperation(resourceGroupName: string, serverName: string, databaseName: string, parameters: ImportExtensionRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-104">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-104">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-105">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-105">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-106">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-106">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-107">가져올 데이터베이스의 이름</span><span class="sxs-lookup"><span data-stu-id="3aaf2-107">The name of the database to import into</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportExtensionRequest'
+          description: <span data-ttu-id="3aaf2-108">데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-108">The required parameters for importing a Bacpac into a database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, string, Database, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-109">새 데이터베이스를 만들거나 기존 데이터베이스를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-109">Creates a new database or updates an existing database.</span></span>
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, serverName: string, databaseName: string, parameters: Database, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-110">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-110">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-111">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-111">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-112">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-112">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-113">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-113">The name of the database.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.Database'
+          description: <span data-ttu-id="3aaf2-114">요청 된 데이터베이스 리소스 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-114">The requested database resource state.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-115">데이터베이스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-115">Deletes the database.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-116">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-116">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-117">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-117">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-118">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-118">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-119">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-119">The name of the database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginExportMethod'
+    name: 'beginExportMethod(string, string, string, ExportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-120">데이터베이스를 bacpac로 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-120">Exports a database to a bacpac.</span></span>
+    syntax:
+      content: 'function beginExportMethod(resourceGroupName: string, serverName: string, databaseName: string, parameters: ExportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-121">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-121">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-122">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-122">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-123">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-123">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-124">내보낼 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-124">The name of the database to be exported.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ExportRequest'
+          description: <span data-ttu-id="3aaf2-125">데이터베이스 내보내기에 대 한 필수 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-125">The required parameters for exporting a database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginImportMethod'
+    name: 'beginImportMethod(string, string, ImportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-126">새 데이터베이스로 bacpac를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-126">Imports a bacpac into a new database.</span></span>
+    syntax:
+      content: 'function beginImportMethod(resourceGroupName: string, serverName: string, parameters: ImportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-127">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-127">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-128">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-128">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-129">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-129">The name of the server.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportRequest'
+          description: <span data-ttu-id="3aaf2-130">데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-130">The required parameters for importing a Bacpac into a database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginPause'
+    name: 'beginPause(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-131">데이터베이스를 일시 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-131">Pauses a database.</span></span>
+    syntax:
+      content: 'function beginPause(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-132">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-132">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-133">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-133">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-134">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-134">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-135">일시 중지 하려면 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-135">The name of the database to be paused.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginResume'
+    name: 'beginResume(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-136">데이터베이스를 다시 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-136">Resumes a database.</span></span>
+    syntax:
+      content: 'function beginResume(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-137">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-137">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-138">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-138">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-139">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-139">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-140">다시 시작 될 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-140">The name of the database to be resumed.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginUpdate'
+    name: 'beginUpdate(string, string, string, DatabaseUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-141">기존 데이터베이스를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-141">Updates an existing database.</span></span>
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, serverName: string, databaseName: string, parameters: DatabaseUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-142">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-142">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-143">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-143">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-144">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-144">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-145">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-145">The name of the database.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.DatabaseUpdate'
+          description: <span data-ttu-id="3aaf2-146">요청 된 데이터베이스 리소스 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-146">The requested database resource state.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.beginUpgradeDataWarehouse'
+    name: 'beginUpgradeDataWarehouse(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-147">데이터 웨어하우스를 업그레이드합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-147">Upgrades a data warehouse.</span></span>
+    syntax:
+      content: 'function beginUpgradeDataWarehouse(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-148">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-148">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-149">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-149">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-150">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-150">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-151">업그레이드할 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-151">The name of the database to be upgraded.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.createImportOperation'
+    name: 'createImportOperation(string, string, string, ImportExtensionRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-152">기존 데이터베이스로 bacpac를 가져오는 가져오기 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-152">Creates an import operation that imports a bacpac into an existing database.</span></span> <span data-ttu-id="3aaf2-153">기존 데이터베이스는 비어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-153">The existing database must be empty.</span></span>
+    syntax:
+      content: 'function createImportOperation(resourceGroupName: string, serverName: string, databaseName: string, parameters: ImportExtensionRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-154">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-154">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-155">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-155">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-156">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-156">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-157">가져올 데이터베이스의 이름</span><span class="sxs-lookup"><span data-stu-id="3aaf2-157">The name of the database to import into</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportExtensionRequest'
+          description: <span data-ttu-id="3aaf2-158">데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-158">The required parameters for importing a Bacpac into a database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesCreateImportOperationResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, Database, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-159">새 데이터베이스를 만들거나 기존 데이터베이스를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-159">Creates a new database or updates an existing database.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serverName: string, databaseName: string, parameters: Database, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-160">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-160">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-161">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-161">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-162">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-162">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-163">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-163">The name of the database.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.Database'
+          description: <span data-ttu-id="3aaf2-164">요청 된 데이터베이스 리소스 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-164">The requested database resource state.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesCreateOrUpdateResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.constructor'
+    name: Databases(SqlManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-165">데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-165">Create a Databases.</span></span>
+    syntax:
+      content: 'new Databases(client: SqlManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-sql.SqlManagementClientContext'
+          description: |
+            <span data-ttu-id="3aaf2-166">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-166">Reference to the service client.</span></span>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-167">데이터베이스를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-167">Deletes the database.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-168">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-168">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-169">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-169">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-170">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-170">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-171">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-171">The name of the database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.exportMethod'
+    name: 'exportMethod(string, string, string, ExportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-172">데이터베이스를 bacpac로 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-172">Exports a database to a bacpac.</span></span>
+    syntax:
+      content: 'function exportMethod(resourceGroupName: string, serverName: string, databaseName: string, parameters: ExportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-173">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-173">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-174">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-174">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-175">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-175">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-176">내보낼 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-176">The name of the database to be exported.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ExportRequest'
+          description: <span data-ttu-id="3aaf2-177">데이터베이스 내보내기에 대 한 필수 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-177">The required parameters for exporting a database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesExportMethodResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-178">데이터베이스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-178">Gets a database.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-179">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-179">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-180">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-180">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-181">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-181">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-182">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-182">The name of the database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<Database>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, options: RequestOptionsBase, callback: ServiceCallback<Database>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-183">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-183">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-184">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-184">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-185">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-185">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-186">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-186">The name of the database.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-187">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-187">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.Database>
+          description: |
+            <span data-ttu-id="3aaf2-188">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-188">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.get_1'
+    name: 'get(string, string, string, ServiceCallback<Database>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, callback: ServiceCallback<Database>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-189">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-189">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-190">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-190">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-191">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-191">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-192">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-192">The name of the database.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.Database>
+          description: |
+            <span data-ttu-id="3aaf2-193">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-193">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.importMethod'
+    name: 'importMethod(string, string, ImportRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-194">새 데이터베이스로 bacpac를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-194">Imports a bacpac into a new database.</span></span>
+    syntax:
+      content: 'function importMethod(resourceGroupName: string, serverName: string, parameters: ImportRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-195">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-195">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-196">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-196">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-197">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-197">The name of the server.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ImportRequest'
+          description: <span data-ttu-id="3aaf2-198">데이터베이스로 Bacpac를 가져오는 데 필요한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-198">The required parameters for importing a Bacpac into a database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesImportMethodResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPool'
+    name: 'listByElasticPool(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-199">탄력적 풀에 데이터베이스의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-199">Gets a list of databases in an elastic pool.</span></span>
+    syntax:
+      content: 'function listByElasticPool(resourceGroupName: string, serverName: string, elasticPoolName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-200">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-200">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-201">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-201">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-202">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-202">The name of the server.</span></span>
+        - id: elasticPoolName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-203">탄력적 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-203">The name of the elastic pool.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPool_2'
+    name: 'listByElasticPool(string, string, string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPool(resourceGroupName: string, serverName: string, elasticPoolName: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-204">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-204">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-205">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-205">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-206">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-206">The name of the server.</span></span>
+        - id: elasticPoolName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-207">탄력적 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-207">The name of the elastic pool.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-208">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-208">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-209">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-209">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPool_1'
+    name: 'listByElasticPool(string, string, string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPool(resourceGroupName: string, serverName: string, elasticPoolName: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-210">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-210">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-211">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-211">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-212">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-212">The name of the server.</span></span>
+        - id: elasticPoolName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-213">탄력적 풀의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-213">The name of the elastic pool.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-214">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-214">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPoolNext'
+    name: 'listByElasticPoolNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-215">탄력적 풀에 데이터베이스의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-215">Gets a list of databases in an elastic pool.</span></span>
+    syntax:
+      content: 'function listByElasticPoolNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-216">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-216">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPoolNext_2'
+    name: 'listByElasticPoolNext(string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPoolNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-217">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-217">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-218">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-218">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-219">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-219">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByElasticPoolNext_1'
+    name: 'listByElasticPoolNext(string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByElasticPoolNext(nextPageLink: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-220">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-220">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-221">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-221">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByElasticPoolNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServer'
+    name: 'listByServer(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-222">데이터베이스의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-222">Gets a list of databases.</span></span>
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-223">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-223">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-224">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-224">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-225">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-225">The name of the server.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServer_2'
+    name: 'listByServer(string, string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-226">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-226">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-227">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-227">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-228">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-228">The name of the server.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-229">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-229">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-230">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-230">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServer_1'
+    name: 'listByServer(string, string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-231">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-231">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-232">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-232">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-233">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-233">The name of the server.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-234">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-234">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServerNext'
+    name: 'listByServerNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-235">데이터베이스의 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-235">Gets a list of databases.</span></span>
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-236">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-236">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServerNext_2'
+    name: 'listByServerNext(string, RequestOptionsBase, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-237">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-237">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-238">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-238">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-239">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-239">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listByServerNext_1'
+    name: 'listByServerNext(string, ServiceCallback<DatabaseListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, callback: ServiceCallback<DatabaseListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-240">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-240">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.DatabaseListResult>
+          description: |
+            <span data-ttu-id="3aaf2-241">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-241">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetricDefinitions'
+    name: 'listMetricDefinitions(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-242">데이터베이스 메트릭 정의 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-242">Returns database metric definitions.</span></span>
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-243">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-243">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-244">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-244">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-245">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-245">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-246">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-246">The name of the database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricDefinitionsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetricDefinitions_2'
+    name: 'listMetricDefinitions(string, string, string, RequestOptionsBase, ServiceCallback<MetricDefinitionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, serverName: string, databaseName: string, options: RequestOptionsBase, callback: ServiceCallback<MetricDefinitionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-247">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-247">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-248">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-248">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-249">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-249">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-250">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-250">The name of the database.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-251">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-251">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricDefinitionListResult>
+          description: |
+            <span data-ttu-id="3aaf2-252">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-252">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricDefinitionsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetricDefinitions_1'
+    name: 'listMetricDefinitions(string, string, string, ServiceCallback<MetricDefinitionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetricDefinitions(resourceGroupName: string, serverName: string, databaseName: string, callback: ServiceCallback<MetricDefinitionListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-253">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-253">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-254">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-254">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-255">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-255">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-256">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-256">The name of the database.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricDefinitionListResult>
+          description: |
+            <span data-ttu-id="3aaf2-257">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-257">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricDefinitionsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetrics'
+    name: 'listMetrics(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-258">메트릭을 데이터베이스를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-258">Returns database metrics.</span></span>
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, serverName: string, databaseName: string, filter: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-259">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-259">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-260">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-260">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-261">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-261">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-262">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-262">The name of the database.</span></span>
+        - id: filter
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-263">반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-263">An OData filter expression that describes a subset of metrics to return.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetrics_2'
+    name: 'listMetrics(string, string, string, string, RequestOptionsBase, ServiceCallback<MetricListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, serverName: string, databaseName: string, filter: string, options: RequestOptionsBase, callback: ServiceCallback<MetricListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-264">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-264">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-265">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-265">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-266">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-266">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-267">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-267">The name of the database.</span></span>
+        - id: filter
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-268">반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-268">An OData filter expression that describes a subset of metrics to return.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-269">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-269">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricListResult>
+          description: |
+            <span data-ttu-id="3aaf2-270">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-270">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.listMetrics_1'
+    name: 'listMetrics(string, string, string, string, ServiceCallback<MetricListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listMetrics(resourceGroupName: string, serverName: string, databaseName: string, filter: string, callback: ServiceCallback<MetricListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-271">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-271">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-272">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-272">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-273">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-273">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-274">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-274">The name of the database.</span></span>
+        - id: filter
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-275">반환할 메트릭의 하위 집합을 설명 하는 OData 필터 식입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-275">An OData filter expression that describes a subset of metrics to return.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.MetricListResult>
+          description: |
+            <span data-ttu-id="3aaf2-276">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-276">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.DatabasesListMetricsResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.pause'
+    name: 'pause(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-277">데이터베이스를 일시 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-277">Pauses a database.</span></span>
+    syntax:
+      content: 'function pause(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-278">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-278">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-279">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-279">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-280">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-280">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-281">일시 중지 하려면 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-281">The name of the database to be paused.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesPauseResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.rename'
+    name: 'rename(string, string, string, ResourceMoveDefinition, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-282">데이터베이스를 이름을 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-282">Renames a database.</span></span>
+    syntax:
+      content: 'function rename(resourceGroupName: string, serverName: string, databaseName: string, parameters: ResourceMoveDefinition, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-283">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-283">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-284">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-284">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-285">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-285">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-286">이름을 바꿀 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-286">The name of the database to rename.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ResourceMoveDefinition'
+          description: <span data-ttu-id="3aaf2-287">리소스는이 데이터베이스 이름 바꾸기에 대 한 정의 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-287">The resource move definition for renaming this database.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.rename_2'
+    name: 'rename(string, string, string, ResourceMoveDefinition, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function rename(resourceGroupName: string, serverName: string, databaseName: string, parameters: ResourceMoveDefinition, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-288">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-288">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-289">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-289">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-290">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-290">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-291">이름을 바꿀 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-291">The name of the database to rename.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ResourceMoveDefinition'
+          description: <span data-ttu-id="3aaf2-292">리소스는이 데이터베이스 이름 바꾸기에 대 한 정의 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-292">The resource move definition for renaming this database.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="3aaf2-293">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3aaf2-293">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="3aaf2-294">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-294">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.rename_1'
+    name: 'rename(string, string, string, ResourceMoveDefinition, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function rename(resourceGroupName: string, serverName: string, databaseName: string, parameters: ResourceMoveDefinition, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-295">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-295">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-296">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-296">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-297">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-297">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-298">이름을 바꿀 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-298">The name of the database to rename.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.ResourceMoveDefinition'
+          description: <span data-ttu-id="3aaf2-299">리소스는이 데이터베이스 이름 바꾸기에 대 한 정의 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-299">The resource move definition for renaming this database.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="3aaf2-300">콜백</span><span class="sxs-lookup"><span data-stu-id="3aaf2-300">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.resume'
+    name: 'resume(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-301">데이터베이스를 다시 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-301">Resumes a database.</span></span>
+    syntax:
+      content: 'function resume(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-302">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-302">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-303">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-303">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-304">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-304">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-305">다시 시작 될 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-305">The name of the database to be resumed.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesResumeResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.update'
+    name: 'update(string, string, string, DatabaseUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-306">기존 데이터베이스를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-306">Updates an existing database.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, serverName: string, databaseName: string, parameters: DatabaseUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-307">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-307">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-308">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-308">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-309">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-309">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-310">데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-310">The name of the database.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.DatabaseUpdate'
+          description: <span data-ttu-id="3aaf2-311">요청 된 데이터베이스 리소스 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-311">The requested database resource state.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.DatabasesUpdateResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Databases.upgradeDataWarehouse'
+    name: 'upgradeDataWarehouse(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="3aaf2-312">데이터 웨어하우스를 업그레이드합니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-312">Upgrades a data warehouse.</span></span>
+    syntax:
+      content: 'function upgradeDataWarehouse(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-313">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-313">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="3aaf2-314">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-314">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-315">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-315">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="3aaf2-316">업그레이드할 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3aaf2-316">The name of the database to be upgraded.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.SqlManagementClientContext'
+    name: SqlManagementClientContext
+    spec.typeScript:
+      - name: SqlManagementClientContext
+        fullName: SqlManagementClientContext
+        uid: '@azure/arm-sql.SqlManagementClientContext'
+  - uid: '@azure/arm-sql.ImportExtensionRequest'
+    name: ImportExtensionRequest
+    spec.typeScript:
+      - name: ImportExtensionRequest
+        fullName: ImportExtensionRequest
+        uid: '@azure/arm-sql.ImportExtensionRequest'
+  - uid: '@azure/arm-sql.Database'
+    name: Database
+    spec.typeScript:
+      - name: Database
+        fullName: Database
+        uid: '@azure/arm-sql.Database'
+  - uid: '@azure/arm-sql.ExportRequest'
+    name: ExportRequest
+    spec.typeScript:
+      - name: ExportRequest
+        fullName: ExportRequest
+        uid: '@azure/arm-sql.ExportRequest'
+  - uid: '@azure/arm-sql.ImportRequest'
+    name: ImportRequest
+    spec.typeScript:
+      - name: ImportRequest
+        fullName: ImportRequest
+        uid: '@azure/arm-sql.ImportRequest'
+  - uid: '@azure/arm-sql.DatabaseUpdate'
+    name: DatabaseUpdate
+    spec.typeScript:
+      - name: DatabaseUpdate
+        fullName: DatabaseUpdate
+        uid: '@azure/arm-sql.DatabaseUpdate'
+  - uid: ServiceCallback<@azure/arm-sql.Database>
+    name: Database>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Database
+        fullName: Database
+        uid: '@azure/arm-sql.Database'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.DatabaseListResult>
+    name: DatabaseListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DatabaseListResult
+        fullName: DatabaseListResult
+        uid: '@azure/arm-sql.DatabaseListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.MetricDefinitionListResult>
+    name: MetricDefinitionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: MetricDefinitionListResult
+        fullName: MetricDefinitionListResult
+        uid: '@azure/arm-sql.MetricDefinitionListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.MetricListResult>
+    name: MetricListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: MetricListResult
+        fullName: MetricListResult
+        uid: '@azure/arm-sql.MetricListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-sql.ResourceMoveDefinition'
+    name: ResourceMoveDefinition
+    spec.typeScript:
+      - name: ResourceMoveDefinition
+        fullName: ResourceMoveDefinition
+        uid: '@azure/arm-sql.ResourceMoveDefinition'

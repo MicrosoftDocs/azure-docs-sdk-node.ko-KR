@@ -1,0 +1,737 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/storage-datalake.PathOperations'
+    name: PathOperations
+    fullName: PathOperations
+    children:
+      - '@azure/storage-datalake.PathOperations.create'
+      - '@azure/storage-datalake.PathOperations.create_2'
+      - '@azure/storage-datalake.PathOperations.create_1'
+      - '@azure/storage-datalake.PathOperations.deleteMethod'
+      - '@azure/storage-datalake.PathOperations.deleteMethod_2'
+      - '@azure/storage-datalake.PathOperations.deleteMethod_1'
+      - '@azure/storage-datalake.PathOperations.getProperties'
+      - '@azure/storage-datalake.PathOperations.getProperties_2'
+      - '@azure/storage-datalake.PathOperations.getProperties_1'
+      - '@azure/storage-datalake.PathOperations.lease'
+      - '@azure/storage-datalake.PathOperations.lease_2'
+      - '@azure/storage-datalake.PathOperations.lease_1'
+      - '@azure/storage-datalake.PathOperations.list'
+      - '@azure/storage-datalake.PathOperations.list_2'
+      - '@azure/storage-datalake.PathOperations.list_1'
+      - '@azure/storage-datalake.PathOperations.constructor'
+      - '@azure/storage-datalake.PathOperations.read'
+      - '@azure/storage-datalake.PathOperations.read_2'
+      - '@azure/storage-datalake.PathOperations.read_1'
+      - '@azure/storage-datalake.PathOperations.update'
+      - '@azure/storage-datalake.PathOperations.update_2'
+      - '@azure/storage-datalake.PathOperations.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="9e6b4-101">PathOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-101">Class representing a PathOperations.</span></span>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.create'
+    name: 'create(string, string, Models.PathCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="9e6b4-102">페이지를 만들거나 파일 또는 디렉터리의 이름을 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-102">Create or rename a file or directory.</span></span>    <span data-ttu-id="9e6b4-103">기본적으로 대상은 덮어쓰여지 며 대상에서 이미 존재 하 고 임대의 임대가 중단 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-103">By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.</span></span>  <span data-ttu-id="9e6b4-104">이 작업은 조건부 HTTP 요청을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-104">This operation supports conditional HTTP requests.</span></span>  <span data-ttu-id="9e6b4-105">자세한 내용은 [Blob 서비스 작업의 조건부 헤더 지정](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-105">For more information, see [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations).</span></span>
+      <span data-ttu-id="9e6b4-106">대상이 이미 있으면 실패 경우-없음-일치를 사용 하 여 조건부 요청을 사용 합니다. "\*"입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-106">To fail if the destination already exists, use a conditional request with If-None-Match: "\*".</span></span>
+    syntax:
+      content: 'function create(filesystem: string, path: string, options?: Models.PathCreateOptionalParams)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-107">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-107">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-108">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-108">The file or directory path.</span></span>
+        - id: options
+          type:
+            - Models.PathCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathCreateResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.create_2'
+    name: 'create(string, string, PathCreateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(filesystem: string, path: string, options: PathCreateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-109">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-109">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-110">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-110">The file or directory path.</span></span>
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathCreateOptionalParams'
+          description: <span data-ttu-id="9e6b4-111">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-111">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-112">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-112">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathCreateResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.create_1'
+    name: 'create(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(filesystem: string, path: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-113">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-113">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-114">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-114">The file or directory path.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-115">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-115">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathCreateResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.deleteMethod'
+    name: 'deleteMethod(string, string, Models.PathDeleteMethodOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="9e6b4-116">파일 또는 디렉터리를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-116">Delete the file or directory.</span></span> <span data-ttu-id="9e6b4-117">이 작업은 조건부 HTTP 요청을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-117">This operation supports conditional HTTP requests.</span></span>  <span data-ttu-id="9e6b4-118">자세한 내용은 [Blob 서비스 작업의 조건부 헤더 지정](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-118">For more information, see [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations).</span></span>'
+    syntax:
+      content: 'function deleteMethod(filesystem: string, path: string, options?: Models.PathDeleteMethodOptionalParams)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-119">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-119">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-120">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-120">The file or directory path.</span></span>
+        - id: options
+          type:
+            - Models.PathDeleteMethodOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathDeleteResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.deleteMethod_2'
+    name: 'deleteMethod(string, string, PathDeleteMethodOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(filesystem: string, path: string, options: PathDeleteMethodOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-121">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-121">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-122">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-122">The file or directory path.</span></span>
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathDeleteMethodOptionalParams'
+          description: <span data-ttu-id="9e6b4-123">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-123">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-124">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-124">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathDeleteResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.deleteMethod_1'
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(filesystem: string, path: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-125">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-125">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-126">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-126">The file or directory path.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-127">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-127">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathDeleteResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.getProperties'
+    name: 'getProperties(string, string, Models.PathGetPropertiesOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="9e6b4-128">파일 또는 디렉터리에 대 한 속성을 얻고 필요에 따라 액세스 제어 목록을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-128">Get the properties for a file or directory, and optionally include the access control list.</span></span>
+      <span data-ttu-id="9e6b4-129">이 작업은 조건부 HTTP 요청을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-129">This operation supports conditional HTTP requests.</span></span>  <span data-ttu-id="9e6b4-130">자세한 내용은 [Blob 서비스 작업의 조건부 헤더 지정](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-130">For more information, see [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations).</span></span>
+    syntax:
+      content: 'function getProperties(filesystem: string, path: string, options?: Models.PathGetPropertiesOptionalParams)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-131">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-131">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-132">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-132">The file or directory path.</span></span>
+        - id: options
+          type:
+            - Models.PathGetPropertiesOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathGetPropertiesResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.getProperties_2'
+    name: 'getProperties(string, string, PathGetPropertiesOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getProperties(filesystem: string, path: string, options: PathGetPropertiesOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-133">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-133">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-134">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-134">The file or directory path.</span></span>
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathGetPropertiesOptionalParams'
+          description: <span data-ttu-id="9e6b4-135">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-135">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-136">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-136">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathGetPropertiesResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.getProperties_1'
+    name: 'getProperties(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getProperties(filesystem: string, path: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-137">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-137">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-138">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-138">The file or directory path.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-139">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-139">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathGetPropertiesResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.lease'
+    name: 'lease(Models.PathLeaseAction, string, string, Models.PathLeaseOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="9e6b4-140">쓰기를 제한 하 고 경로에 대 한 액세스를 삭제 하는 임대를 만들고 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-140">Create and manage a lease to restrict write and delete access to the path.</span></span> <span data-ttu-id="9e6b4-141">이 작업은 조건부 HTTP 요청을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-141">This operation supports conditional HTTP requests.</span></span>  <span data-ttu-id="9e6b4-142">자세한 내용은 [Blob 서비스 작업의 조건부 헤더 지정](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-142">For more information, see [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations).</span></span>'
+    syntax:
+      content: 'function lease(xMsLeaseAction: Models.PathLeaseAction, filesystem: string, path: string, options?: Models.PathLeaseOptionalParams)'
+      parameters:
+        - id: xMsLeaseAction
+          type:
+            - Models.PathLeaseAction
+          description: |-
+            <span data-ttu-id="9e6b4-143">작업을 임대 5 가지: "acquire", "중단", "변경", "갱신" 및 "릴리스"입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-143">There are five lease actions: "acquire", "break", "change", "renew", and "release".</span></span> <span data-ttu-id="9e6b4-144">"Acquire"를 사용 하 고 "x-ms-제안-임대-id" 및 "x-ms-임대-기간" 새 임대를 획득 하를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-144">Use "acquire" and specify the "x-ms-proposed-lease-id" and "x-ms-lease-duration" to acquire a new lease.</span></span> <span data-ttu-id="9e6b4-145">기존 임대를 중단 하려면 "중단"를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-145">Use "break" to break an existing lease.</span></span> <span data-ttu-id="9e6b4-146">임대가 중단 되 면 임대 중단 기간이 임대가 중단 되,이 시간 동안 중단 및 릴리스를 제외한 임대 작업도 파일에 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-146">When a lease is broken, the lease break period is allowed to elapse, during which time no lease operation except break and release can be performed on the file.</span></span> <span data-ttu-id="9e6b4-147">임대가 성공적으로 중단 되 면 응답 새로운 임대를 획득 될 때까지 시간 (초) 간격을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-147">When a lease is successfully broken, the response indicates the interval in seconds until a new lease can be acquired.</span></span> <span data-ttu-id="9e6b4-148">사용 하 여 "변경" 및 "x-ms-임대-id"에서 현재 임대 ID를 및 "x-ms-제안-임대-id"에서 새 임대 ID를 활성 임대의 임대 ID를 변경 하려면 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-148">Use "change" and specify the current lease ID in "x-ms-lease-id" and the new lease ID in "x-ms-proposed-lease-id" to change the lease ID of an active lease.</span></span> <span data-ttu-id="9e6b4-149">"갱신"를 사용 하 고 "x-ms-임대-id" 기존 임대를 갱신 하려면를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-149">Use "renew" and specify the "x-ms-lease-id" to renew an existing lease.</span></span>
+            <span data-ttu-id="9e6b4-150">"릴리스"를 사용 하 고 "x-ms-임대-id"를 임대 해제를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-150">Use "release" and specify the "x-ms-lease-id" to release a lease.</span></span> <span data-ttu-id="9e6b4-151">가능한 값: '획득', '중단', '변경', '갱신', '릴리스'</span><span class="sxs-lookup"><span data-stu-id="9e6b4-151">Possible values include: 'acquire', 'break', 'change', 'renew', 'release'</span></span>
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-152">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-152">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-153">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-153">The file or directory path.</span></span>
+        - id: options
+          type:
+            - Models.PathLeaseOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathLeaseResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.lease_2'
+    name: 'lease(Models.PathLeaseAction, string, string, PathLeaseOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function lease(xMsLeaseAction: Models.PathLeaseAction, filesystem: string, path: string, options: PathLeaseOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: xMsLeaseAction
+          type:
+            - Models.PathLeaseAction
+          description: |-
+            <span data-ttu-id="9e6b4-154">작업을 임대 5 가지: "acquire", "중단", "변경", "갱신" 및 "릴리스"입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-154">There are five lease actions: "acquire", "break", "change", "renew", and "release".</span></span> <span data-ttu-id="9e6b4-155">"Acquire"를 사용 하 고 "x-ms-제안-임대-id" 및 "x-ms-임대-기간" 새 임대를 획득 하를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-155">Use "acquire" and specify the "x-ms-proposed-lease-id" and "x-ms-lease-duration" to acquire a new lease.</span></span> <span data-ttu-id="9e6b4-156">기존 임대를 중단 하려면 "중단"를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-156">Use "break" to break an existing lease.</span></span> <span data-ttu-id="9e6b4-157">임대가 중단 되 면 임대 중단 기간이 임대가 중단 되,이 시간 동안 중단 및 릴리스를 제외한 임대 작업도 파일에 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-157">When a lease is broken, the lease break period is allowed to elapse, during which time no lease operation except break and release can be performed on the file.</span></span> <span data-ttu-id="9e6b4-158">임대가 성공적으로 중단 되 면 응답 새로운 임대를 획득 될 때까지 시간 (초) 간격을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-158">When a lease is successfully broken, the response indicates the interval in seconds until a new lease can be acquired.</span></span> <span data-ttu-id="9e6b4-159">사용 하 여 "변경" 및 "x-ms-임대-id"에서 현재 임대 ID를 및 "x-ms-제안-임대-id"에서 새 임대 ID를 활성 임대의 임대 ID를 변경 하려면 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-159">Use "change" and specify the current lease ID in "x-ms-lease-id" and the new lease ID in "x-ms-proposed-lease-id" to change the lease ID of an active lease.</span></span> <span data-ttu-id="9e6b4-160">"갱신"를 사용 하 고 "x-ms-임대-id" 기존 임대를 갱신 하려면를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-160">Use "renew" and specify the "x-ms-lease-id" to renew an existing lease.</span></span>
+            <span data-ttu-id="9e6b4-161">"릴리스"를 사용 하 고 "x-ms-임대-id"를 임대 해제를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-161">Use "release" and specify the "x-ms-lease-id" to release a lease.</span></span> <span data-ttu-id="9e6b4-162">가능한 값: '획득', '중단', '변경', '갱신', '릴리스'</span><span class="sxs-lookup"><span data-stu-id="9e6b4-162">Possible values include: 'acquire', 'break', 'change', 'renew', 'release'</span></span>
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-163">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-163">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-164">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-164">The file or directory path.</span></span>
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathLeaseOptionalParams'
+          description: <span data-ttu-id="9e6b4-165">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-165">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-166">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-166">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathLeaseResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.lease_1'
+    name: 'lease(Models.PathLeaseAction, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function lease(xMsLeaseAction: Models.PathLeaseAction, filesystem: string, path: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: xMsLeaseAction
+          type:
+            - Models.PathLeaseAction
+          description: |-
+            <span data-ttu-id="9e6b4-167">작업을 임대 5 가지: "acquire", "중단", "변경", "갱신" 및 "릴리스"입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-167">There are five lease actions: "acquire", "break", "change", "renew", and "release".</span></span> <span data-ttu-id="9e6b4-168">"Acquire"를 사용 하 고 "x-ms-제안-임대-id" 및 "x-ms-임대-기간" 새 임대를 획득 하를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-168">Use "acquire" and specify the "x-ms-proposed-lease-id" and "x-ms-lease-duration" to acquire a new lease.</span></span> <span data-ttu-id="9e6b4-169">기존 임대를 중단 하려면 "중단"를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-169">Use "break" to break an existing lease.</span></span> <span data-ttu-id="9e6b4-170">임대가 중단 되 면 임대 중단 기간이 임대가 중단 되,이 시간 동안 중단 및 릴리스를 제외한 임대 작업도 파일에 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-170">When a lease is broken, the lease break period is allowed to elapse, during which time no lease operation except break and release can be performed on the file.</span></span> <span data-ttu-id="9e6b4-171">임대가 성공적으로 중단 되 면 응답 새로운 임대를 획득 될 때까지 시간 (초) 간격을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-171">When a lease is successfully broken, the response indicates the interval in seconds until a new lease can be acquired.</span></span> <span data-ttu-id="9e6b4-172">사용 하 여 "변경" 및 "x-ms-임대-id"에서 현재 임대 ID를 및 "x-ms-제안-임대-id"에서 새 임대 ID를 활성 임대의 임대 ID를 변경 하려면 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-172">Use "change" and specify the current lease ID in "x-ms-lease-id" and the new lease ID in "x-ms-proposed-lease-id" to change the lease ID of an active lease.</span></span> <span data-ttu-id="9e6b4-173">"갱신"를 사용 하 고 "x-ms-임대-id" 기존 임대를 갱신 하려면를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-173">Use "renew" and specify the "x-ms-lease-id" to renew an existing lease.</span></span>
+            <span data-ttu-id="9e6b4-174">"릴리스"를 사용 하 고 "x-ms-임대-id"를 임대 해제를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-174">Use "release" and specify the "x-ms-lease-id" to release a lease.</span></span> <span data-ttu-id="9e6b4-175">가능한 값: '획득', '중단', '변경', '갱신', '릴리스'</span><span class="sxs-lookup"><span data-stu-id="9e6b4-175">Possible values include: 'acquire', 'break', 'change', 'renew', 'release'</span></span>
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-176">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-176">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-177">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-177">The file or directory path.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-178">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-178">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathLeaseResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.list'
+    name: 'list(boolean, string, Models.PathListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="9e6b4-179">파일 시스템 경로 및 해당 속성을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-179">List filesystem paths and their properties.</span></span>
+    syntax:
+      content: 'function list(recursive: boolean, filesystem: string, options?: Models.PathListOptionalParams)'
+      parameters:
+        - id: recursive
+          type:
+            - boolean
+          description: '<span data-ttu-id="9e6b4-180">"True" 일 경우 모든 경로가 나열 됩니다. 그렇지 않은 경우 파일 시스템의 루트에 대 한 경로만 나열 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-180">If "true", all paths are listed; otherwise, only paths at the root of the filesystem are listed.</span></span>  <span data-ttu-id="9e6b4-181">"디렉터리"를 지정 하는 경우 목록에는 동일한 루트를 공유 하는 경로가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-181">If "directory" is specified, the list will only include paths that share the same root.</span></span>'
+        - id: filesystem
+          type:
+            - string
+          description: '<span data-ttu-id="9e6b4-182">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-182">The filesystem identifier.</span></span>  <span data-ttu-id="9e6b4-183">값을 시작 하 고 끝나야 번호 및 문자, 숫자 및 대시 (-) 문자만 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-183">The value must start and end with a letter or number and must contain only letters, numbers, and the dash (-) character.</span></span>  <span data-ttu-id="9e6b4-184">연속 대시는 허용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-184">Consecutive dashes are not permitted.</span></span>  <span data-ttu-id="9e6b4-185">모든 문자는 소문자 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-185">All letters must be lowercase.</span></span>  <span data-ttu-id="9e6b4-186">값 3 ~ 63 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-186">The value must have between 3 and 63 characters.</span></span>'
+        - id: options
+          type:
+            - Models.PathListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathListResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.list_2'
+    name: 'list(boolean, string, PathListOptionalParams, ServiceCallback<PathList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(recursive: boolean, filesystem: string, options: PathListOptionalParams, callback: ServiceCallback<PathList>)'
+      parameters:
+        - id: recursive
+          type:
+            - boolean
+          description: '<span data-ttu-id="9e6b4-187">"True" 일 경우 모든 경로가 나열 됩니다. 그렇지 않은 경우 파일 시스템의 루트에 대 한 경로만 나열 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-187">If "true", all paths are listed; otherwise, only paths at the root of the filesystem are listed.</span></span>  <span data-ttu-id="9e6b4-188">"디렉터리"를 지정 하는 경우 목록에는 동일한 루트를 공유 하는 경로가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-188">If "directory" is specified, the list will only include paths that share the same root.</span></span>'
+        - id: filesystem
+          type:
+            - string
+          description: '<span data-ttu-id="9e6b4-189">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-189">The filesystem identifier.</span></span>  <span data-ttu-id="9e6b4-190">값을 시작 하 고 끝나야 번호 및 문자, 숫자 및 대시 (-) 문자만 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-190">The value must start and end with a letter or number and must contain only letters, numbers, and the dash (-) character.</span></span>  <span data-ttu-id="9e6b4-191">연속 대시는 허용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-191">Consecutive dashes are not permitted.</span></span>  <span data-ttu-id="9e6b4-192">모든 문자는 소문자 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-192">All letters must be lowercase.</span></span>  <span data-ttu-id="9e6b4-193">값 3 ~ 63 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-193">The value must have between 3 and 63 characters.</span></span>'
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathListOptionalParams'
+          description: <span data-ttu-id="9e6b4-194">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-194">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/storage-datalake.PathList>
+          description: |
+            <span data-ttu-id="9e6b4-195">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-195">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathListResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.list_1'
+    name: 'list(boolean, string, ServiceCallback<PathList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(recursive: boolean, filesystem: string, callback: ServiceCallback<PathList>)'
+      parameters:
+        - id: recursive
+          type:
+            - boolean
+          description: '<span data-ttu-id="9e6b4-196">"True" 일 경우 모든 경로가 나열 됩니다. 그렇지 않은 경우 파일 시스템의 루트에 대 한 경로만 나열 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-196">If "true", all paths are listed; otherwise, only paths at the root of the filesystem are listed.</span></span>  <span data-ttu-id="9e6b4-197">"디렉터리"를 지정 하는 경우 목록에는 동일한 루트를 공유 하는 경로가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-197">If "directory" is specified, the list will only include paths that share the same root.</span></span>'
+        - id: filesystem
+          type:
+            - string
+          description: '<span data-ttu-id="9e6b4-198">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-198">The filesystem identifier.</span></span>  <span data-ttu-id="9e6b4-199">값을 시작 하 고 끝나야 번호 및 문자, 숫자 및 대시 (-) 문자만 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-199">The value must start and end with a letter or number and must contain only letters, numbers, and the dash (-) character.</span></span>  <span data-ttu-id="9e6b4-200">연속 대시는 허용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-200">Consecutive dashes are not permitted.</span></span>  <span data-ttu-id="9e6b4-201">모든 문자는 소문자 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-201">All letters must be lowercase.</span></span>  <span data-ttu-id="9e6b4-202">값 3 ~ 63 자 사이 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-202">The value must have between 3 and 63 characters.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/storage-datalake.PathList>
+          description: |
+            <span data-ttu-id="9e6b4-203">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-203">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathListResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.constructor'
+    name: PathOperations(DataLakeStorageClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="9e6b4-204">PathOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-204">Create a PathOperations.</span></span>
+    syntax:
+      content: 'new PathOperations(client: DataLakeStorageClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/storage-datalake.DataLakeStorageClientContext'
+          description: |
+            <span data-ttu-id="9e6b4-205">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-205">Reference to the service client.</span></span>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.read'
+    name: 'read(string, string, Models.PathReadOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="9e6b4-206">파일의 내용을 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-206">Read the contents of a file.</span></span>  <span data-ttu-id="9e6b4-207">읽기 작업에 대해 범위 요청은 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-207">For read operations, range requests are supported.</span></span> <span data-ttu-id="9e6b4-208">이 작업은 조건부 HTTP 요청을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-208">This operation supports conditional HTTP requests.</span></span>  <span data-ttu-id="9e6b4-209">자세한 내용은 [Blob 서비스 작업의 조건부 헤더 지정](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-209">For more information, see [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations).</span></span>'
+    syntax:
+      content: 'function read(filesystem: string, path: string, options?: Models.PathReadOptionalParams)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-210">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-210">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-211">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-211">The file or directory path.</span></span>
+        - id: options
+          type:
+            - Models.PathReadOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathReadResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.read_2'
+    name: 'read(string, string, PathReadOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function read(filesystem: string, path: string, options: PathReadOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-212">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-212">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-213">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-213">The file or directory path.</span></span>
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathReadOptionalParams'
+          description: <span data-ttu-id="9e6b4-214">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-214">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-215">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-215">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathReadResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.read_1'
+    name: 'read(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function read(filesystem: string, path: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-216">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-216">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-217">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-217">The file or directory path.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-218">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-218">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathReadResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.update'
+    name: 'update(Models.PathUpdateAction, string, string, Models.PathUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="9e6b4-219">파일에 추가할 데이터 업로드, 파일 (쓰기) 이전에 업로드 된 데이터를 플러시합니다, 그리고 파일 또는 디렉터리에 대 한 속성을 설정 하거나 파일 또는 디렉터리에 대 한 액세스 제어를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-219">Uploads data to be appended to a file, flushes (writes) previously uploaded data to a file, sets properties for a file or directory, or sets access control for a file or directory.</span></span> <span data-ttu-id="9e6b4-220">데이터 파일에만 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-220">Data can only be appended to a file.</span></span> <span data-ttu-id="9e6b4-221">이 작업은 조건부 HTTP 요청을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-221">This operation supports conditional HTTP requests.</span></span> <span data-ttu-id="9e6b4-222">자세한 내용은 [Blob 서비스 작업의 조건부 헤더 지정](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-222">For more information, see [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations).</span></span>'
+    syntax:
+      content: 'function update(action: Models.PathUpdateAction, filesystem: string, path: string, options?: Models.PathUpdateOptionalParams)'
+      parameters:
+        - id: action
+          type:
+            - Models.PathUpdateAction
+          description: '<span data-ttu-id="9e6b4-223">작업에 추가할 파일을 "플러시" "setProperties" 파일의 속성을 설정 하려면 파일을 이전에 업로드 된 데이터를 플러시하지 데이터 업로드에 "추가" 이거나 디렉터리 또는 소유자를 설정 하려면 "가집니다" 그룹 사용 권한 또는 액세스 제어 목록에 대 한 파일 또는 디렉터리입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-223">The action must be "append" to upload data to be appended to a file, "flush" to flush previously uploaded data to a file, "setProperties" to set the properties of a file or directory, or "setAccessControl" to set the owner, group, permissions, or access control list for a file or directory.</span></span>  <span data-ttu-id="9e6b4-224">참고 액세스 제어를 사용 하기 위해 계층적 Namespace 계정에 대해 사용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-224">Note that Hierarchical Namespace must be enabled for the account in order to use access control.</span></span>  <span data-ttu-id="9e6b4-225">액세스 제어 목록 (ACL) 소유자, 소유 그룹에 대 한 권한을 포함 하 고 x-ms-사용 권한 및 x-ms-acl에 대 한 요청 헤더 하므로 다른 상호 배타적인 note도 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-225">Also note that the Access Control List (ACL) includes permissions for the owner, owning group, and others, so the x-ms-permissions and x-ms-acl request headers are mutually exclusive.</span></span> <span data-ttu-id="9e6b4-226">가능한 값: ''추가'', ''플러시'', ''setProperties'', ''가집니다''</span><span class="sxs-lookup"><span data-stu-id="9e6b4-226">Possible values include: ''append'', ''flush'', ''setProperties'', ''setAccessControl''</span></span>'
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-227">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-227">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-228">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-228">The file or directory path.</span></span>
+        - id: options
+          type:
+            - Models.PathUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.PathUpdateResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.update_2'
+    name: 'update(Models.PathUpdateAction, string, string, PathUpdateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(action: Models.PathUpdateAction, filesystem: string, path: string, options: PathUpdateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: action
+          type:
+            - Models.PathUpdateAction
+          description: '<span data-ttu-id="9e6b4-229">작업에 추가할 파일을 "플러시" "setProperties" 파일의 속성을 설정 하려면 파일을 이전에 업로드 된 데이터를 플러시하지 데이터 업로드에 "추가" 이거나 디렉터리 또는 소유자를 설정 하려면 "가집니다" 그룹 사용 권한 또는 액세스 제어 목록에 대 한 파일 또는 디렉터리입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-229">The action must be "append" to upload data to be appended to a file, "flush" to flush previously uploaded data to a file, "setProperties" to set the properties of a file or directory, or "setAccessControl" to set the owner, group, permissions, or access control list for a file or directory.</span></span>  <span data-ttu-id="9e6b4-230">참고 액세스 제어를 사용 하기 위해 계층적 Namespace 계정에 대해 사용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-230">Note that Hierarchical Namespace must be enabled for the account in order to use access control.</span></span>  <span data-ttu-id="9e6b4-231">액세스 제어 목록 (ACL) 소유자, 소유 그룹에 대 한 권한을 포함 하 고 x-ms-사용 권한 및 x-ms-acl에 대 한 요청 헤더 하므로 다른 상호 배타적인 note도 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-231">Also note that the Access Control List (ACL) includes permissions for the owner, owning group, and others, so the x-ms-permissions and x-ms-acl request headers are mutually exclusive.</span></span> <span data-ttu-id="9e6b4-232">가능한 값: ''추가'', ''플러시'', ''setProperties'', ''가집니다''</span><span class="sxs-lookup"><span data-stu-id="9e6b4-232">Possible values include: ''append'', ''flush'', ''setProperties'', ''setAccessControl''</span></span>'
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-233">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-233">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-234">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-234">The file or directory path.</span></span>
+        - id: options
+          type:
+            - '@azure/storage-datalake.PathUpdateOptionalParams'
+          description: <span data-ttu-id="9e6b4-235">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9e6b4-235">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-236">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-236">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathUpdateResponse>
+    package: '@azure/storage-datalake'
+  - uid: '@azure/storage-datalake.PathOperations.update_1'
+    name: 'update(Models.PathUpdateAction, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(action: Models.PathUpdateAction, filesystem: string, path: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: action
+          type:
+            - Models.PathUpdateAction
+          description: '<span data-ttu-id="9e6b4-237">작업에 추가할 파일을 "플러시" "setProperties" 파일의 속성을 설정 하려면 파일을 이전에 업로드 된 데이터를 플러시하지 데이터 업로드에 "추가" 이거나 디렉터리 또는 소유자를 설정 하려면 "가집니다" 그룹 사용 권한 또는 액세스 제어 목록에 대 한 파일 또는 디렉터리입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-237">The action must be "append" to upload data to be appended to a file, "flush" to flush previously uploaded data to a file, "setProperties" to set the properties of a file or directory, or "setAccessControl" to set the owner, group, permissions, or access control list for a file or directory.</span></span>  <span data-ttu-id="9e6b4-238">참고 액세스 제어를 사용 하기 위해 계층적 Namespace 계정에 대해 사용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-238">Note that Hierarchical Namespace must be enabled for the account in order to use access control.</span></span>  <span data-ttu-id="9e6b4-239">액세스 제어 목록 (ACL) 소유자, 소유 그룹에 대 한 권한을 포함 하 고 x-ms-사용 권한 및 x-ms-acl에 대 한 요청 헤더 하므로 다른 상호 배타적인 note도 합니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-239">Also note that the Access Control List (ACL) includes permissions for the owner, owning group, and others, so the x-ms-permissions and x-ms-acl request headers are mutually exclusive.</span></span> <span data-ttu-id="9e6b4-240">가능한 값: ''추가'', ''플러시'', ''setProperties'', ''가집니다''</span><span class="sxs-lookup"><span data-stu-id="9e6b4-240">Possible values include: ''append'', ''flush'', ''setProperties'', ''setAccessControl''</span></span>'
+        - id: filesystem
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-241">파일 시스템 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-241">The filesystem identifier.</span></span>
+        - id: path
+          type:
+            - string
+          description: <span data-ttu-id="9e6b4-242">파일 또는 디렉터리 경로입니다.</span><span class="sxs-lookup"><span data-stu-id="9e6b4-242">The file or directory path.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="9e6b4-243">콜백</span><span class="sxs-lookup"><span data-stu-id="9e6b4-243">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.PathUpdateResponse>
+    package: '@azure/storage-datalake'
+references:
+  - uid: '@azure/storage-datalake.DataLakeStorageClientContext'
+    name: DataLakeStorageClientContext
+    spec.typeScript:
+      - name: DataLakeStorageClientContext
+        fullName: DataLakeStorageClientContext
+        uid: '@azure/storage-datalake.DataLakeStorageClientContext'
+  - uid: '@azure/storage-datalake.PathCreateOptionalParams'
+    name: PathCreateOptionalParams
+    spec.typeScript:
+      - name: PathCreateOptionalParams
+        fullName: PathCreateOptionalParams
+        uid: '@azure/storage-datalake.PathCreateOptionalParams'
+  - uid: '@azure/storage-datalake.PathDeleteMethodOptionalParams'
+    name: PathDeleteMethodOptionalParams
+    spec.typeScript:
+      - name: PathDeleteMethodOptionalParams
+        fullName: PathDeleteMethodOptionalParams
+        uid: '@azure/storage-datalake.PathDeleteMethodOptionalParams'
+  - uid: '@azure/storage-datalake.PathGetPropertiesOptionalParams'
+    name: PathGetPropertiesOptionalParams
+    spec.typeScript:
+      - name: PathGetPropertiesOptionalParams
+        fullName: PathGetPropertiesOptionalParams
+        uid: '@azure/storage-datalake.PathGetPropertiesOptionalParams'
+  - uid: '@azure/storage-datalake.PathLeaseOptionalParams'
+    name: PathLeaseOptionalParams
+    spec.typeScript:
+      - name: PathLeaseOptionalParams
+        fullName: PathLeaseOptionalParams
+        uid: '@azure/storage-datalake.PathLeaseOptionalParams'
+  - uid: ServiceCallback<@azure/storage-datalake.PathList>
+    name: PathList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PathList
+        fullName: PathList
+        uid: '@azure/storage-datalake.PathList'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/storage-datalake.PathListOptionalParams'
+    name: PathListOptionalParams
+    spec.typeScript:
+      - name: PathListOptionalParams
+        fullName: PathListOptionalParams
+        uid: '@azure/storage-datalake.PathListOptionalParams'
+  - uid: '@azure/storage-datalake.PathReadOptionalParams'
+    name: PathReadOptionalParams
+    spec.typeScript:
+      - name: PathReadOptionalParams
+        fullName: PathReadOptionalParams
+        uid: '@azure/storage-datalake.PathReadOptionalParams'
+  - uid: '@azure/storage-datalake.PathUpdateOptionalParams'
+    name: PathUpdateOptionalParams
+    spec.typeScript:
+      - name: PathUpdateOptionalParams
+        fullName: PathUpdateOptionalParams
+        uid: '@azure/storage-datalake.PathUpdateOptionalParams'
