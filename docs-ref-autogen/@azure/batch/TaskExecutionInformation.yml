@@ -1,0 +1,188 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.TaskExecutionInformation'
+    name: TaskExecutionInformation
+    fullName: TaskExecutionInformation
+    children:
+      - '@azure/batch.TaskExecutionInformation.containerInfo'
+      - '@azure/batch.TaskExecutionInformation.endTime'
+      - '@azure/batch.TaskExecutionInformation.exitCode'
+      - '@azure/batch.TaskExecutionInformation.failureInfo'
+      - '@azure/batch.TaskExecutionInformation.lastRequeueTime'
+      - '@azure/batch.TaskExecutionInformation.lastRetryTime'
+      - '@azure/batch.TaskExecutionInformation.requeueCount'
+      - '@azure/batch.TaskExecutionInformation.result'
+      - '@azure/batch.TaskExecutionInformation.retryCount'
+      - '@azure/batch.TaskExecutionInformation.startTime'
+    langs:
+      - typeScript
+    type: interface
+    summary: TaskExecutionInformation 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.containerInfo'
+    name: containerInfo
+    fullName: containerInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크를 실행 중인 컨테이너에 대 한 정보를 제공 합니다. 이 속성은 컨테이너 컨텍스트에서 작업을 실행 하는 경우에 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'containerInfo?: TaskContainerExecutionInformation'
+      return:
+        type:
+          - '@azure/batch.TaskContainerExecutionInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.endTime'
+    name: endTime
+    fullName: endTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크가 완료된 시간입니다. 이 속성은 작업 완료 상태에 있을 경우에 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.exitCode'
+    name: exitCode
+    fullName: exitCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크 명령줄에 지정 된 프로그램의 종료 코드입니다. 이 속성에는 작업은 완료 상태인 경우에 설정 됩니다. 일반적으로 프로세스 종료 코드를 해당 프로세스에 대 한 응용 프로그램 개발자가 구현한 특정 규칙을 반영 합니다. 종료 코드 값을 사용 하 여 코드에서 결정을 내릴 수 하는 경우 응용 프로그램 프로세스에서 사용 하는 종료 코드 규칙을 알고 있다고 해야 합니다. 그러나 일괄 처리 서비스 (시간 제한 또는 API 통해 사용자 종료)으로 인해 태스크를 종료 하는 경우 운영 체제 정의 된 종료 코드를 표시 될 수 있습니다.
+    optional: true
+    syntax:
+      content: 'exitCode?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.failureInfo'
+    name: failureInfo
+    fullName: failureInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 있는 경우 작업 실패를 설명 하는 정보입니다. 이 속성 작업은 완료 상태인 경우에 설정 되어 있으며 오류가 발생 했습니다.
+    optional: true
+    syntax:
+      content: 'failureInfo?: TaskFailureInformation'
+      return:
+        type:
+          - '@azure/batch.TaskFailureInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.lastRequeueTime'
+    name: lastRequeueTime
+    fullName: lastRequeueTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이때 작업 대기열에 다시 추가한 Batch 서비스에서 사용자 요청의 결과로 가장 최근 시간입니다. RequeueCount가 0이 아닌 경우에이 속성이 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'lastRequeueTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.lastRetryTime'
+    name: lastRetryTime
+    fullName: lastRetryTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업을 다시 시도는 실행을 시작한 가장 최근의 시간입니다. 이 요소는 작업을 시도한 경우에 제공 (즉, retryCount가 0이 아닌). 일반적으로 startTime, 동일 하지만 작업 재시도; 이외의 이유로 다시 시작 하는 경우에 다를 수 있습니다이 있는 경우 예를 들어, 계산 노드 다시 시도 하는 동안 다시 부팅 된 경우 다음 startTime 업데이트 되지만 lastRetryTime 아닙니다.'
+    optional: true
+    syntax:
+      content: 'lastRetryTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.requeueCount'
+    name: requeueCount
+    fullName: requeueCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '사용자 요청으로 인해 Batch 서비스에서 태스크를 대기열에 다시 추가한 횟수입니다. 노드에서 실행 중인 태스크 (풀 크기 조정/축소) 하 여 풀 또는 작업 비활성화 될 경우, 사용자 수에서 사용자 제거 노드를 지정 하는 경우 실행을 위해 다시 큐 대기가 가능 합니다. 이 개수는 태스크가 이러한 이유로 대기열에 다시 추가된 횟수를 추적합니다.'
+    syntax:
+      content: 'requeueCount: number'
+      return:
+        type:
+          - number
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.result'
+    name: result
+    fullName: result
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '태스크 실행의 결과입니다. 값은 ''실패 하는 경우 failureInfo 속성에는 실패의 세부 정보를 찾을 수 있습니다. 가능한 값: ''성공'', ''실패'''
+    optional: true
+    syntax:
+      content: 'result?: TaskExecutionResult'
+      return:
+        type:
+          - '@azure/batch.TaskExecutionResult'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.retryCount'
+    name: retryCount
+    fullName: retryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Batch 서비스에서 태스크를 다시 시도한 횟수입니다. 태스크 응용 프로그램 실패 (0이 아닌 종료 코드) 다시 시도 됩니다. 사전 (작업을 실행할 수 있습니다.) 오류를 처리 하 고 파일 업로드 오류 다시 시도 하지 않습니다. Batch 서비스에는 제약 조건에 의해 지정 된 제한까지 태스크 다시 시도 합니다.
+    syntax:
+      content: 'retryCount: number'
+      return:
+        type:
+          - number
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskExecutionInformation.startTime'
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크가 실행되기 시작한 시간입니다. '실행'에 해당 하는 실행 중 상태인 태스크 리소스 파일 또는 응용 프로그램 패키지를 다음 시작 시간을 지정 하는 경우 다운로드 또는 배포 작업이 시작 된 시간을 반영 하므로 합니다. 태스크가 다시 시작되거나 다시 시도된 경우 이는 태스크가 실행을 시작한 가장 최근의 시간을 나타냅니다. 이 속성은 실행 중이거나 완료 된 상태에 있는 작업을 위해서만 존재 합니다.
+    optional: true
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskContainerExecutionInformation'
+    name: TaskContainerExecutionInformation
+    spec.typeScript:
+      - name: TaskContainerExecutionInformation
+        fullName: TaskContainerExecutionInformation
+        uid: '@azure/batch.TaskContainerExecutionInformation'
+  - uid: '@azure/batch.TaskFailureInformation'
+    name: TaskFailureInformation
+    spec.typeScript:
+      - name: TaskFailureInformation
+        fullName: TaskFailureInformation
+        uid: '@azure/batch.TaskFailureInformation'
+  - uid: '@azure/batch.TaskExecutionResult'
+    name: TaskExecutionResult
+    spec.typeScript:
+      - name: TaskExecutionResult
+        fullName: TaskExecutionResult
+        uid: '@azure/batch.TaskExecutionResult'
