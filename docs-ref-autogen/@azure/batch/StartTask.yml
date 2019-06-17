@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.StartTask'
+    name: StartTask
+    fullName: StartTask
+    children:
+      - '@azure/batch.StartTask.commandLine'
+      - '@azure/batch.StartTask.containerSettings'
+      - '@azure/batch.StartTask.environmentSettings'
+      - '@azure/batch.StartTask.maxTaskRetryCount'
+      - '@azure/batch.StartTask.resourceFiles'
+      - '@azure/batch.StartTask.userIdentity'
+      - '@azure/batch.StartTask.waitForSuccess'
+    langs:
+      - typeScript
+    type: interface
+    summary: '<span data-ttu-id="9a9f0-101">Batch 계산 노드에서 복구 작업이 트리거될 때 작업을 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-101">Batch will retry tasks when a recovery operation is triggered on a compute node.</span></span> <span data-ttu-id="9a9f0-102">포함 (하지만에 제한 되지 않습니다)의 복구 작업이 경우 비정상 계산 노드를 다시 부팅 또는 계산 노드 호스트 오류로 인해 표시 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-102">Examples of recovery operations include (but are not limited to) when an unhealthy compute node is rebooted or a compute node disappeared due to host failure.</span></span> <span data-ttu-id="9a9f0-103">복구 작업은 독립적 이며 된 maxTaskRetryCount에 대해 계산 되지 않습니다 인해 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-103">Retries due to recovery operations are independent of and are not counted against the maxTaskRetryCount.</span></span> <span data-ttu-id="9a9f0-104">된 maxTaskRetryCount 0 인 경우에 내부는 재시도 복구 작업으로 인해 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-104">Even if the maxTaskRetryCount is 0, an internal retry due to a recovery operation may occur.</span></span> <span data-ttu-id="9a9f0-105">이 인해 모든 작업이 멱 등 원 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-105">Because of this, all tasks should be idempotent.</span></span> <span data-ttu-id="9a9f0-106">즉, 작업을 중단 되 고 중복 된 데이터 나 손상 없이 다시 시작을 허용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-106">This means tasks need to tolerate being interrupted and restarted without causing any corruption or duplicate data.</span></span> <span data-ttu-id="9a9f0-107">최상의 일종의 검사점을 사용 하는 장기 실행 작업에 대 한 연습입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-107">The best practice for long running tasks is to use some form of checkpointing.</span></span> <span data-ttu-id="9a9f0-108">일부 경우에 노드 다시 부팅 되지 않았습니다 하는 경우에 시작 태스크가 다시 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-108">In some cases the start task may be re-run even though the node was not rebooted.</span></span> <span data-ttu-id="9a9f0-109">이 일괄 처리 다시 시작 태스크를 실행할 수 없도록 차단 하는 대로 breakaway 프로세스를 만들거나 설치/시작 서비스는 시작 태스크 작업 디렉터리에서 시작 작업을 방지 하려면 특별히 주의 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-109">Special care should be taken to avoid start tasks which create breakaway process or install/launch services from the start task working directory, as this will block Batch from being able to re-run the start task.</span></span>'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.commandLine'
+    name: commandLine
+    fullName: commandLine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9a9f0-110">시작 태스크의 명령줄입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-110">The command line of the start task.</span></span> <span data-ttu-id="9a9f0-111">명령줄 셸에서 실행 되지 않으며 따라서 환경 변수 확장과 같은 셸 기능을 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-111">The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment variable expansion.</span></span> <span data-ttu-id="9a9f0-112">이러한 기능을 활용 하려는 경우를 호출 해야 명령줄에서 셸을 예를 들어 "cmd /c MyCommand"를 사용 하 여 Windows에서 또는 "/ bin/sh-c MyCommand" Linux에서.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-112">If you want to take advantage of such features, you should invoke the shell in the command line, for example using "cmd /c MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.</span></span> <span data-ttu-id="9a9f0-113">명령줄 파일 경로 가리키는 경우 (태스크 작업 디렉터리의 상대), 상대 경로 사용 하 또는 일괄 처리 제공 된 환경 변수를 사용 해야 합니다 (https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables)합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-113">If the command line refers to file paths, it should use a relative path (relative to the task working directory), or use the Batch provided environment variable (https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables).</span></span>'
+    syntax:
+      content: 'commandLine: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.containerSettings'
+    name: containerSettings
+    fullName: containerSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9a9f0-114">시작 작업을 실행 중인 컨테이너에 대 한 설정입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-114">The settings for the container under which the start task runs.</span></span> <span data-ttu-id="9a9f0-115">이 옵션을 지정 하는 경우 AZ_BATCH_NODE_ROOT_DIR (노드에서 Azure Batch 디렉터리의 루트) 아래의 모든 디렉터리가 재귀적으로 컨테이너에 매핑되고, 모든 작업 환경 변수가 컨테이너에 매핑되고 및 태스크 명령줄은 컨테이너에서 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-115">When this is specified, all directories recursively below the AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the node) are mapped into the container, all task environment variables are mapped into the container, and the task command line is executed in the container.</span></span>'
+    optional: true
+    syntax:
+      content: 'containerSettings?: TaskContainerSettings'
+      return:
+        type:
+          - '@azure/batch.TaskContainerSettings'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.environmentSettings'
+    name: environmentSettings
+    fullName: environmentSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9a9f0-116">시작 태스크에 대 한 환경 변수 설정의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-116">A list of environment variable settings for the start task.</span></span>
+    optional: true
+    syntax:
+      content: 'environmentSettings?: EnvironmentSetting[]'
+      return:
+        type:
+          - '@azure/batch.EnvironmentSetting[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.maxTaskRetryCount'
+    name: maxTaskRetryCount
+    fullName: maxTaskRetryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9a9f0-117">태스크를 다시 시도할 수 있는 최대 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-117">The maximum number of times the task may be retried.</span></span> <span data-ttu-id="9a9f0-118">종료 코드가 0이 아니면 Batch 서비스가 태스크를 다시 시도합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-118">The Batch service retries a task if its exit code is nonzero.</span></span> <span data-ttu-id="9a9f0-119">이 값은 구체적으로 재시도 횟수를 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-119">Note that this value specifically controls the number of retries.</span></span> <span data-ttu-id="9a9f0-120">Batch 서비스는 태스크를 한 번 시도한 후 이 한도까지 다시 시도할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-120">The Batch service will try the task once, and may then retry up to this limit.</span></span> <span data-ttu-id="9a9f0-121">예를 들어 최대 재시도 횟수가 3 인 경우 일괄 처리 시도 태스크를 4 번 (초기 시도 1와 재시도 3 회).</span><span class="sxs-lookup"><span data-stu-id="9a9f0-121">For example, if the maximum retry count is 3, Batch tries the task up to 4 times (one initial try and 3 retries).</span></span>
+      <span data-ttu-id="9a9f0-122">최대 재시도 횟수가 0 일 경우 Batch 서비스 작업을 재시도 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-122">If the maximum retry count is 0, the Batch service does not retry the task.</span></span> <span data-ttu-id="9a9f0-123">경우는 최대 재시도 횟수는-1, 일괄 처리 서비스 다시 시도 작업을 제한 없이 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-123">If the maximum retry count is -1, the Batch service retries the task without limit.</span></span>
+    optional: true
+    syntax:
+      content: 'maxTaskRetryCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.resourceFiles'
+    name: resourceFiles
+    fullName: resourceFiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9a9f0-124">Batch 서비스는 명령줄을 실행 하기 전에 계산 노드에 다운로드 하는 파일의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-124">A list of files that the Batch service will download to the compute node before running the command line.</span></span>  <span data-ttu-id="9a9f0-125">리소스 파일의 목록에 대 한 최대 크기가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-125">There is a maximum size for the list of resource files.</span></span> <span data-ttu-id="9a9f0-126">최대 크기를 초과 하면 요청이 실패 하 고 응답 오류 코드는 RequestEntityTooLarge 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-126">When the max size is exceeded, the request will fail and the response error code will be RequestEntityTooLarge.</span></span> <span data-ttu-id="9a9f0-127">이런 경우의 ResourceFiles 컬렉션 크기가 줄여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-127">If this occurs, the collection of ResourceFiles must be reduced in size.</span></span> <span data-ttu-id="9a9f0-128">.Zip 파일, 응용 프로그램 패키지 또는 Docker 컨테이너를 사용 하 여 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-128">This can be achieved using .zip files, Application Packages, or Docker Containers.</span></span> <span data-ttu-id="9a9f0-129">이 요소 아래에 나열 된 파일 작업의 작업 디렉터리에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-129">Files listed under this element are located in the task''s working directory.</span></span>'
+    optional: true
+    syntax:
+      content: 'resourceFiles?: ResourceFile[]'
+      return:
+        type:
+          - '@azure/batch.ResourceFile[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.userIdentity'
+    name: userIdentity
+    fullName: userIdentity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9a9f0-130">시작 작업이 실행 되는 사용자 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-130">The user identity under which the start task runs.</span></span> <span data-ttu-id="9a9f0-131">생략 하면 태스크에 작업이 고유 관리자가 아닌 사용자로 실행 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-131">If omitted, the task runs as a non-administrative user unique to the task.</span></span>'
+    optional: true
+    syntax:
+      content: 'userIdentity?: UserIdentity'
+      return:
+        type:
+          - '@azure/batch.UserIdentity'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.waitForSuccess'
+    name: waitForSuccess
+    fullName: waitForSuccess
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9a9f0-132">Batch 서비스 시작 작업이 성공적으로 완료 되기를 대기 해야 하는지 여부 (즉, 종료 코드 0 사용 하 여 종료) 계산 노드에서 작업을 예약 하기 전에 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-132">Whether the Batch service should wait for the start task to complete successfully (that is, to exit with exit code 0) before scheduling any tasks on the compute node.</span></span> <span data-ttu-id="9a9f0-133">True이 고 시작 태스크가 실패 하면 계산 노드에서 해당 최대 재시도 횟수 (maxTaskRetryCount) 최대 시작 태스크는 Batch 서비스에 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-133">If true and the start task fails on a compute node, the Batch service retries the start task up to its maximum retry count (maxTaskRetryCount).</span></span> <span data-ttu-id="9a9f0-134">작업이 있으면 여전히 not 계산 노드를 사용할 수 없는 모든 재시도 후 일괄 처리 서비스 표시 성공적으로 완료 되었고 작업을 예약 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-134">If the task has still not completed successfully after all retries, then the Batch service marks the compute node unusable, and will not schedule tasks to it.</span></span>
+      <span data-ttu-id="9a9f0-135">노드 상태 및 오류 정보 세부 정보를 통해이 문제를 검색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-135">This condition can be detected via the node state and failure info details.</span></span> <span data-ttu-id="9a9f0-136">False 인 경우, Batch 서비스 시작 작업을 완료 하려면 대기 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-136">If false, the Batch service will not wait for the start task to complete.</span></span> <span data-ttu-id="9a9f0-137">이 경우 다른 작업 시작 태스크 실행; 중 계산 노드에서 실행 시작 수 있습니다. 및 노드에서 예약 될 새 작업 시작 태스크에 실패 한 경우에 계속 합니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-137">In this case, other tasks can start executing on the compute node while the start task is still running; and even if the start task fails, new tasks will continue to be scheduled on the node.</span></span> <span data-ttu-id="9a9f0-138">기본값은 false입니다.</span><span class="sxs-lookup"><span data-stu-id="9a9f0-138">The default is false.</span></span>
+    optional: true
+    syntax:
+      content: 'waitForSuccess?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskContainerSettings'
+    name: TaskContainerSettings
+    spec.typeScript:
+      - name: TaskContainerSettings
+        fullName: TaskContainerSettings
+        uid: '@azure/batch.TaskContainerSettings'
+  - uid: '@azure/batch.EnvironmentSetting[]'
+    name: 'EnvironmentSetting[]'
+    spec.typeScript:
+      - name: EnvironmentSetting
+        fullName: EnvironmentSetting
+        uid: '@azure/batch.EnvironmentSetting'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.ResourceFile[]'
+    name: 'ResourceFile[]'
+    spec.typeScript:
+      - name: ResourceFile
+        fullName: ResourceFile
+        uid: '@azure/batch.ResourceFile'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.UserIdentity'
+    name: UserIdentity
+    spec.typeScript:
+      - name: UserIdentity
+        fullName: UserIdentity
+        uid: '@azure/batch.UserIdentity'
