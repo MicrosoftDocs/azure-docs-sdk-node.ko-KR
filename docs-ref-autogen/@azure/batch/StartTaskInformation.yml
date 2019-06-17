@@ -1,0 +1,179 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.StartTaskInformation'
+    name: StartTaskInformation
+    fullName: StartTaskInformation
+    children:
+      - '@azure/batch.StartTaskInformation.containerInfo'
+      - '@azure/batch.StartTaskInformation.endTime'
+      - '@azure/batch.StartTaskInformation.exitCode'
+      - '@azure/batch.StartTaskInformation.failureInfo'
+      - '@azure/batch.StartTaskInformation.lastRetryTime'
+      - '@azure/batch.StartTaskInformation.result'
+      - '@azure/batch.StartTaskInformation.retryCount'
+      - '@azure/batch.StartTaskInformation.startTime'
+      - '@azure/batch.StartTaskInformation.state'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="62398-101">StartTaskInformation 나타내는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-101">An interface representing StartTaskInformation.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.containerInfo'
+    name: containerInfo
+    fullName: containerInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="62398-102">태스크를 실행 중인 컨테이너에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="62398-102">Information about the container under which the task is executing.</span></span> <span data-ttu-id="62398-103">이 속성은 컨테이너 컨텍스트에서 작업을 실행 하는 경우에 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="62398-103">This property is set only if the task runs in a container context.</span></span>
+    optional: true
+    syntax:
+      content: 'containerInfo?: TaskContainerExecutionInformation'
+      return:
+        type:
+          - '@azure/batch.TaskContainerExecutionInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.endTime'
+    name: endTime
+    fullName: endTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="62398-104">시작 태스크는 실행이 중지 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-104">The time at which the start task stopped running.</span></span> <span data-ttu-id="62398-105">이 최신의 종료 시간 실행할 시작 태스크 (경우에 실패 한를 실행 하 고 다시 시도 보류 중입니다.)를 실행 하는 완료 하는 경우입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-105">This is the end time of the most recent run of the start task, if that run has completed (even if that run failed and a retry is pending).</span></span>
+      <span data-ttu-id="62398-106">이 요소는 시작 태스크가 현재 실행 중인 경우에 나타나지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="62398-106">This element is not present if the start task is currently running.</span></span>
+    optional: true
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.exitCode'
+    name: exitCode
+    fullName: exitCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-107">시작 작업 명령줄에 지정 된 프로그램의 종료 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-107">The exit code of the program specified on the start task command line.</span></span> <span data-ttu-id="62398-108">이 속성은 시작 태스크는 완료 상태인 경우에 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="62398-108">This property is set only if the start task is in the completed state.</span></span> <span data-ttu-id="62398-109">일반적으로 프로세스 종료 코드를 해당 프로세스에 대 한 응용 프로그램 개발자가 구현한 특정 규칙을 반영 합니다.</span><span class="sxs-lookup"><span data-stu-id="62398-109">In general, the exit code for a process reflects the specific convention implemented by the application developer for that process.</span></span> <span data-ttu-id="62398-110">종료 코드 값을 사용 하 여 코드에서 결정을 내릴 수 하는 경우 응용 프로그램 프로세스에서 사용 하는 종료 코드 규칙을 알고 있다고 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="62398-110">If you use the exit code value to make decisions in your code, be sure that you know the exit code convention used by the application process.</span></span> <span data-ttu-id="62398-111">그러나 일괄 처리 서비스 (시간 제한 또는 API 통해 사용자 종료)로 인해 시작 태스크를 종료 하는 경우 운영 체제 정의 된 종료 코드를 표시 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62398-111">However, if the Batch service terminates the start task (due to timeout, or user termination via the API) you may see an operating system-defined exit code.</span></span>'
+    optional: true
+    syntax:
+      content: 'exitCode?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.failureInfo'
+    name: failureInfo
+    fullName: failureInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-112">있는 경우 작업 실패를 설명 하는 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-112">Information describing the task failure, if any.</span></span> <span data-ttu-id="62398-113">이 속성 작업은 완료 상태인 경우에 설정 되어 있으며 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="62398-113">This property is set only if the task is in the completed state and encountered a failure.</span></span>'
+    optional: true
+    syntax:
+      content: 'failureInfo?: TaskFailureInformation'
+      return:
+        type:
+          - '@azure/batch.TaskFailureInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.lastRetryTime'
+    name: lastRetryTime
+    fullName: lastRetryTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-114">작업을 다시 시도는 실행을 시작한 가장 최근의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-114">The most recent time at which a retry of the task started running.</span></span> <span data-ttu-id="62398-115">이 요소는 작업을 시도한 경우에 제공 (즉, retryCount가 0이 아닌).</span><span class="sxs-lookup"><span data-stu-id="62398-115">This element is present only if the task was retried (i.e. retryCount is nonzero).</span></span> <span data-ttu-id="62398-116">일반적으로 startTime, 동일 하지만 작업 재시도; 이외의 이유로 다시 시작 하는 경우에 다를 수 있습니다이 있는 경우 예를 들어, 계산 노드 다시 시도 하는 동안 다시 부팅 된 경우 다음 startTime 업데이트 되지만 lastRetryTime 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="62398-116">If present, this is typically the same as startTime, but may be different if the task has been restarted for reasons other than retry; for example, if the compute node was rebooted during a retry, then the startTime is updated but the lastRetryTime is not.</span></span>'
+    optional: true
+    syntax:
+      content: 'lastRetryTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.result'
+    name: result
+    fullName: result
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-117">태스크 실행의 결과입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-117">The result of the task execution.</span></span> <span data-ttu-id="62398-118">값은 ''실패 하는 경우 failureInfo 속성에는 실패의 세부 정보를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62398-118">If the value is ''failed'', then the details of the failure can be found in the failureInfo property.</span></span> <span data-ttu-id="62398-119">가능한 값: ''성공'', ''실패''</span><span class="sxs-lookup"><span data-stu-id="62398-119">Possible values include: ''success'', ''failure''</span></span>'
+    optional: true
+    syntax:
+      content: 'result?: TaskExecutionResult'
+      return:
+        type:
+          - '@azure/batch.TaskExecutionResult'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.retryCount'
+    name: retryCount
+    fullName: retryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-120">Batch 서비스에서 태스크를 다시 시도한 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-120">The number of times the task has been retried by the Batch service.</span></span> <span data-ttu-id="62398-121">태스크 응용 프로그램 실패 (0이 아닌 종료 코드) 다시 시도 됩니다. 사전 (작업을 실행할 수 있습니다.) 오류를 처리 하 고 파일 업로드 오류 다시 시도 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="62398-121">Task application failures (non-zero exit code) are retried, pre-processing errors (the task could not be run) and file upload errors are not retried.</span></span> <span data-ttu-id="62398-122">Batch 서비스에는 제약 조건에 의해 지정 된 제한까지 태스크 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="62398-122">The Batch service will retry the task up to the limit specified by the constraints.</span></span>'
+    syntax:
+      content: 'retryCount: number'
+      return:
+        type:
+          - number
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.startTime'
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-123">시작 태스크는 실행을 시작한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-123">The time at which the start task started running.</span></span> <span data-ttu-id="62398-124">태스크를 다시 시작 하거나 다시 시도할 때마다이 값이 다시 설정 (즉,이 가장 최근 시간 시작 태스크는 실행이 시작)입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-124">This value is reset every time the task is restarted or retried (that is, this is the most recent time at which the start task started running).</span></span>'
+    syntax:
+      content: 'startTime: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTaskInformation.state'
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="62398-125">계산 노드 시작 태스크의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="62398-125">The state of the start task on the compute node.</span></span> <span data-ttu-id="62398-126">가능한 값: ''실행 중'', ''완료''</span><span class="sxs-lookup"><span data-stu-id="62398-126">Possible values include: ''running'', ''completed''</span></span>'
+    syntax:
+      content: 'state: StartTaskState'
+      return:
+        type:
+          - '@azure/batch.StartTaskState'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskContainerExecutionInformation'
+    name: TaskContainerExecutionInformation
+    spec.typeScript:
+      - name: TaskContainerExecutionInformation
+        fullName: TaskContainerExecutionInformation
+        uid: '@azure/batch.TaskContainerExecutionInformation'
+  - uid: '@azure/batch.TaskFailureInformation'
+    name: TaskFailureInformation
+    spec.typeScript:
+      - name: TaskFailureInformation
+        fullName: TaskFailureInformation
+        uid: '@azure/batch.TaskFailureInformation'
+  - uid: '@azure/batch.TaskExecutionResult'
+    name: TaskExecutionResult
+    spec.typeScript:
+      - name: TaskExecutionResult
+        fullName: TaskExecutionResult
+        uid: '@azure/batch.TaskExecutionResult'
+  - uid: '@azure/batch.StartTaskState'
+    name: StartTaskState
+    spec.typeScript:
+      - name: StartTaskState
+        fullName: StartTaskState
+        uid: '@azure/batch.StartTaskState'
