@@ -1,0 +1,628 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations'
+    name: LargePersonGroupOperations
+    fullName: LargePersonGroupOperations
+    children:
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.create_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.create'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.create_1'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.deleteMethod'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.deleteMethod_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.deleteMethod_1'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.get_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.get'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.get_1'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.getTrainingStatus'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.getTrainingStatus_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.getTrainingStatus_1'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.constructor'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.list_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.list'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.list_1'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.train'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.train_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.train_1'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.update_2'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.update'
+      - '@azure/cognitiveservices-face.LargePersonGroupOperations.update_1'
+    langs:
+      - typeScript
+    type: class
+    summary: LargePersonGroupOperations 나타내는 클래스입니다.
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.create_2'
+    name: 'create(string, LargePersonGroupCreateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(largePersonGroupId: string, options: LargePersonGroupCreateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.LargePersonGroupCreateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.create'
+    name: 'create(string, Models.LargePersonGroupCreateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      사용자가 지정한 largePersonGroupId 사용 하 여 새 대규모 사용자 그룹, 이름, 선택적 userData 및 recognitionModel를 만듭니다.
+      <br /> 대규모 사용자 그룹은 최대 1,000,000 사람 얼굴 이미지 및 얼굴 인식 기능을 포함 하 여 업로드 된 사용자 데이터의 컨테이너.
+      <br /> 를 만든 후 사용 하 여 [LargePersonGroup 사람-만듭니다](/docs/services/563879b61984550e40cbbe8d/operations/599adcba3a7b9412a4d53f40) 호출 및 그룹에 사용자를 추가할 [LargePersonGroup-학습](/docs/services/563879b61984550e40cbbe8d/operations/599ae2d16ac60f11b48b5aa4) 이 그룹에 대 한 준비 [얼굴-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.
+      <br /> 사람 얼굴, 이미지 및 사용자 데이터를 저장할 때까지 서버의 [LargePersonGroup 사람-삭제](/docs/services/563879b61984550e40cbbe8d/operations/599ade5c6ac60f11b48b5aa2) 하거나 [LargePersonGroup-삭제](/docs/services/563879b61984550e40cbbe8d/operations/599adc216ac60f11b48b5a9f) 라고 합니다.
+      <br />
+      * 무료 계층 구독 할당량: 1,000 대규모 사용자 그룹입니다.
+      * S0 계층 구독 할당량: 1,000,000 대규모 사용자 그룹입니다.
+      <br />
+      이 대규모 사용자 그룹을 사용 하 여 연결할 'recognitionModel'를 지정 해야 합니다. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 기존 대규모 사용자 그룹에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.
+      대규모 사용자 그룹의 기존 기능에 얼굴 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.
+    syntax:
+      content: 'function create(largePersonGroupId: string, options?: Models.LargePersonGroupCreateOptionalParams)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - Models.LargePersonGroupCreateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.create_1'
+    name: 'create(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function create(largePersonGroupId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.deleteMethod'
+    name: 'deleteMethod(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 대규모 사용자 그룹을 삭제 합니다. 대규모 사용자 그룹의 모든 사용자의 기능 또한 삭제할 얼굴을 유지 됩니다.
+    syntax:
+      content: 'function deleteMethod(largePersonGroupId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.deleteMethod_2'
+    name: 'deleteMethod(string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(largePersonGroupId: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.deleteMethod_1'
+    name: 'deleteMethod(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(largePersonGroupId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.get_2'
+    name: 'get(string, LargePersonGroupGetOptionalParams, ServiceCallback<LargePersonGroup>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(largePersonGroupId: string, options: LargePersonGroupGetOptionalParams, callback: ServiceCallback<LargePersonGroup>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.LargePersonGroupGetOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.LargePersonGroup>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.LargePersonGroupGetResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.get'
+    name: 'get(string, Models.LargePersonGroupGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '대규모 사용자 그룹 이름, userData recognitionModel 등의 정보를 검색 합니다. 이 API 반환 대규모 사용자 그룹 정보를 사용 [LargePersonGroup 사람-목록](/docs/services/563879b61984550e40cbbe8d/operations/599adda06ac60f11b48b5aa1) 대신 대규모 사용자 그룹에서 사용자 정보를 검색 합니다.'
+    syntax:
+      content: 'function get(largePersonGroupId: string, options?: Models.LargePersonGroupGetOptionalParams)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - Models.LargePersonGroupGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.LargePersonGroupGetResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.get_1'
+    name: 'get(string, ServiceCallback<LargePersonGroup>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(largePersonGroupId: string, callback: ServiceCallback<LargePersonGroup>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.LargePersonGroup>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.LargePersonGroupGetResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.getTrainingStatus'
+    name: 'getTrainingStatus(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 대규모 사용자 그룹 (완료 됨 또는 진행 중)의 교육 상태를 검색 합니다.
+    syntax:
+      content: 'function getTrainingStatus(largePersonGroupId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.LargePersonGroupGetTrainingStatusResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.getTrainingStatus_2'
+    name: 'getTrainingStatus(string, RequestOptionsBase, ServiceCallback<TrainingStatus>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTrainingStatus(largePersonGroupId: string, options: RequestOptionsBase, callback: ServiceCallback<TrainingStatus>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.TrainingStatus>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.LargePersonGroupGetTrainingStatusResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.getTrainingStatus_1'
+    name: 'getTrainingStatus(string, ServiceCallback<TrainingStatus>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTrainingStatus(largePersonGroupId: string, callback: ServiceCallback<TrainingStatus>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.TrainingStatus>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.LargePersonGroupGetTrainingStatusResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.constructor'
+    name: LargePersonGroupOperations(FaceClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: LargePersonGroupOperations를 만듭니다.
+    syntax:
+      content: 'new LargePersonGroupOperations(client: FaceClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/cognitiveservices-face.FaceClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.list_2'
+    name: 'list(LargePersonGroupListOptionalParams, ServiceCallback<LargePersonGroup[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: LargePersonGroupListOptionalParams, callback: ServiceCallback<LargePersonGroup[]>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.LargePersonGroupListOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.LargePersonGroup[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.LargePersonGroupListResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.list'
+    name: list(Models.LargePersonGroupListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      기존의 모든 대규모 사용자 그룹 largePersonGroupId, 이름, 사용자 데이터 및 recognitionModel를 나열 합니다.<br />
+      * 대규모 사용자 그룹 largePersonGroupId의 알파벳 순서로 저장 됩니다.
+      * "start" 매개 변수 (문자열, 선택 사항)에 항목 문자열 비교 하 여 더 큰 id가 반환 되는 사용자가 제공한 largePersonGroupId 값입니다. "start"를 첫 번째 항목에서 반환을 나타내는 빈로 설정 합니다.
+      * "top" 매개 변수 (int, 선택 사항) 반환할 항목 수를 지정 합니다. 항목이 1000 최대 한 번의 호출에서 반환할 수 있습니다. 더를 페치 하려면 현재 호출의 마지막 반환 된 항목의 Id를 사용 하 여 "start"를 지정할 수 있습니다.
+      <br />
+      예를 들어 5 개의 대규모 사용자 그룹을 총: 하면 "group1",..., "그룹 5".
+      <br /> "시작 = & 상위 =" 모든 5 개 그룹을 반환 합니다.
+      <br /> "시작 = & 상위 2 =" "group1", "group2"를 반환 합니다.
+      <br /> "시작 group2 위쪽 = 3 =" "그룹 3", "그룹 4", "그룹 5를" 반환 합니다.
+    syntax:
+      content: 'function list(options?: Models.LargePersonGroupListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.LargePersonGroupListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.LargePersonGroupListResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.list_1'
+    name: 'list(ServiceCallback<LargePersonGroup[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<LargePersonGroup[]>)'
+      parameters:
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.LargePersonGroup[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.LargePersonGroupListResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.train'
+    name: 'train(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 대규모 사용자 그룹 교육 작업을 큐의 경우 학습 태스크를 즉시 시작할 수 있습니다.
+    syntax:
+      content: 'function train(largePersonGroupId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.train_2'
+    name: 'train(string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function train(largePersonGroupId: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.train_1'
+    name: 'train(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function train(largePersonGroupId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.update_2'
+    name: 'update(string, LargePersonGroupUpdateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(largePersonGroupId: string, options: LargePersonGroupUpdateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.LargePersonGroupUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.update'
+    name: 'update(string, Models.LargePersonGroupUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 대규모 사용자 그룹의 표시 이름 및 사용자 데이터를 업데이트 합니다. 요청 본문에 나타나지 않으면 속성 업데이트 되지 않습니다.
+    syntax:
+      content: 'function update(largePersonGroupId: string, options?: Models.LargePersonGroupUpdateOptionalParams)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: options
+          type:
+            - Models.LargePersonGroupUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupOperations.update_1'
+    name: 'update(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(largePersonGroupId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: largePersonGroupId
+          type:
+            - string
+          description: 특정 대규모 사용자 그룹을 참조 하는 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+references:
+  - uid: '@azure/cognitiveservices-face.FaceClientContext'
+    name: FaceClientContext
+    spec.typeScript:
+      - name: FaceClientContext
+        fullName: FaceClientContext
+        uid: '@azure/cognitiveservices-face.FaceClientContext'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupCreateOptionalParams'
+    name: LargePersonGroupCreateOptionalParams
+    spec.typeScript:
+      - name: LargePersonGroupCreateOptionalParams
+        fullName: LargePersonGroupCreateOptionalParams
+        uid: '@azure/cognitiveservices-face.LargePersonGroupCreateOptionalParams'
+  - uid: ServiceCallback<@azure/cognitiveservices-face.LargePersonGroup>
+    name: LargePersonGroup>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LargePersonGroup
+        fullName: LargePersonGroup
+        uid: '@azure/cognitiveservices-face.LargePersonGroup'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupGetOptionalParams'
+    name: LargePersonGroupGetOptionalParams
+    spec.typeScript:
+      - name: LargePersonGroupGetOptionalParams
+        fullName: LargePersonGroupGetOptionalParams
+        uid: '@azure/cognitiveservices-face.LargePersonGroupGetOptionalParams'
+  - uid: ServiceCallback<@azure/cognitiveservices-face.TrainingStatus>
+    name: TrainingStatus>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: TrainingStatus
+        fullName: TrainingStatus
+        uid: '@azure/cognitiveservices-face.TrainingStatus'
+      - name: '>'
+        fullName: '>'
+  - uid: 'ServiceCallback<@azure/cognitiveservices-face.LargePersonGroup[]>'
+    name: 'LargePersonGroup[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LargePersonGroup
+        fullName: LargePersonGroup
+        uid: '@azure/cognitiveservices-face.LargePersonGroup'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupListOptionalParams'
+    name: LargePersonGroupListOptionalParams
+    spec.typeScript:
+      - name: LargePersonGroupListOptionalParams
+        fullName: LargePersonGroupListOptionalParams
+        uid: '@azure/cognitiveservices-face.LargePersonGroupListOptionalParams'
+  - uid: '@azure/cognitiveservices-face.LargePersonGroupUpdateOptionalParams'
+    name: LargePersonGroupUpdateOptionalParams
+    spec.typeScript:
+      - name: LargePersonGroupUpdateOptionalParams
+        fullName: LargePersonGroupUpdateOptionalParams
+        uid: '@azure/cognitiveservices-face.LargePersonGroupUpdateOptionalParams'
