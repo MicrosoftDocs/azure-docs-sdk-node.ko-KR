@@ -4,8 +4,12 @@ items:
     name: HanaInstances
     fullName: HanaInstances
     children:
+      - '@azure/arm-hanaonazure.HanaInstances.beginCreate'
+      - '@azure/arm-hanaonazure.HanaInstances.beginDeleteMethod'
       - '@azure/arm-hanaonazure.HanaInstances.beginEnableMonitoring'
       - '@azure/arm-hanaonazure.HanaInstances.beginRestart'
+      - '@azure/arm-hanaonazure.HanaInstances.create'
+      - '@azure/arm-hanaonazure.HanaInstances.deleteMethod'
       - '@azure/arm-hanaonazure.HanaInstances.enableMonitoring'
       - '@azure/arm-hanaonazure.HanaInstances.get'
       - '@azure/arm-hanaonazure.HanaInstances.get_2'
@@ -31,6 +35,64 @@ items:
       - typeScript
     type: class
     summary: HanaInstances 나타내는 클래스입니다.
+    package: '@azure/arm-hanaonazure'
+  - uid: '@azure/arm-hanaonazure.HanaInstances.beginCreate'
+    name: 'beginCreate(string, string, HanaInstance, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정 된 구독, 리소스 그룹 및 인스턴스 이름에 대 한 SAP HANA 인스턴스를 만듭니다.'
+    syntax:
+      content: 'function beginCreate(resourceGroupName: string, hanaInstanceName: string, hanaInstanceParameter: HanaInstance, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름입니다.
+        - id: hanaInstanceName
+          type:
+            - string
+          description: Azure 인스턴스에서 SAP HANA의 이름입니다.
+        - id: hanaInstanceParameter
+          type:
+            - '@azure/arm-hanaonazure.HanaInstance'
+          description: 요청 본문을 HanaInstance 나타내는
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-hanaonazure'
+  - uid: '@azure/arm-hanaonazure.HanaInstances.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정 된 구독, 리소스 그룹 및 인스턴스 이름을 사용 하는 SAP HANA 인스턴스를 삭제합니다.'
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, hanaInstanceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름입니다.
+        - id: hanaInstanceName
+          type:
+            - string
+          description: Azure 인스턴스에서 SAP HANA의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
     package: '@azure/arm-hanaonazure'
   - uid: '@azure/arm-hanaonazure.HanaInstances.beginEnableMonitoring'
     name: 'beginEnableMonitoring(string, string, MonitoringDetails, msRest.RequestOptionsBase)'
@@ -89,6 +151,64 @@ items:
       return:
         type:
           - Promise<LROPoller>
+    package: '@azure/arm-hanaonazure'
+  - uid: '@azure/arm-hanaonazure.HanaInstances.create'
+    name: 'create(string, string, HanaInstance, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정 된 구독, 리소스 그룹 및 인스턴스 이름에 대 한 SAP HANA 인스턴스를 만듭니다.'
+    syntax:
+      content: 'function create(resourceGroupName: string, hanaInstanceName: string, hanaInstanceParameter: HanaInstance, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름입니다.
+        - id: hanaInstanceName
+          type:
+            - string
+          description: Azure 인스턴스에서 SAP HANA의 이름입니다.
+        - id: hanaInstanceParameter
+          type:
+            - '@azure/arm-hanaonazure.HanaInstance'
+          description: 요청 본문을 HanaInstance 나타내는
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.HanaInstancesCreateResponse>
+    package: '@azure/arm-hanaonazure'
+  - uid: '@azure/arm-hanaonazure.HanaInstances.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정 된 구독, 리소스 그룹 및 인스턴스 이름을 사용 하는 SAP HANA 인스턴스를 삭제합니다.'
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, hanaInstanceName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스 그룹의 이름입니다.
+        - id: hanaInstanceName
+          type:
+            - string
+          description: Azure 인스턴스에서 SAP HANA의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
     package: '@azure/arm-hanaonazure'
   - uid: '@azure/arm-hanaonazure.HanaInstances.enableMonitoring'
     name: 'enableMonitoring(string, string, MonitoringDetails, msRest.RequestOptionsBase)'
@@ -633,6 +753,12 @@ references:
       - name: HanaManagementClientContext
         fullName: HanaManagementClientContext
         uid: '@azure/arm-hanaonazure.HanaManagementClientContext'
+  - uid: '@azure/arm-hanaonazure.HanaInstance'
+    name: HanaInstance
+    spec.typeScript:
+      - name: HanaInstance
+        fullName: HanaInstance
+        uid: '@azure/arm-hanaonazure.HanaInstance'
   - uid: '@azure/arm-hanaonazure.MonitoringDetails'
     name: MonitoringDetails
     spec.typeScript:

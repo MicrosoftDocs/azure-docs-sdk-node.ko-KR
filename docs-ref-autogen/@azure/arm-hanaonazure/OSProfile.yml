@@ -6,6 +6,7 @@ items:
     children:
       - '@azure/arm-hanaonazure.OSProfile.computerName'
       - '@azure/arm-hanaonazure.OSProfile.osType'
+      - '@azure/arm-hanaonazure.OSProfile.sshPublicKey'
       - '@azure/arm-hanaonazure.OSProfile.version'
     langs:
       - typeScript
@@ -42,6 +43,23 @@ items:
     optional: true
     syntax:
       content: 'osType?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-hanaonazure'
+  - uid: '@azure/arm-hanaonazure.OSProfile.sshPublicKey'
+    name: sshPublicKey
+    fullName: sshPublicKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      운영 체제를 액세스 하는 데 SSH 공개 키를 지정 합니다.
+      **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**
+    optional: true
+    syntax:
+      content: 'sshPublicKey?: undefined | string'
       return:
         type:
           - undefined | string
