@@ -1,0 +1,599 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses'
+    name: AvailabilityStatuses
+    fullName: AvailabilityStatuses
+    children:
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.constructor'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.getByResource_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.getByResource'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.getByResource_1'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.list_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.list'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.list_1'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroup_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroup'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroup_1'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroupNext'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroupNext_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroupNext_1'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionId_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionId'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionId_1'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionIdNext'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionIdNext_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionIdNext_1'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listNext'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listNext_2'
+      - '@azure/arm-resourcehealth.AvailabilityStatuses.listNext_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="13c72-101">AvailabilityStatuses 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-101">Class representing a AvailabilityStatuses.</span></span>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.constructor'
+    name: AvailabilityStatuses(MicrosoftResourceHealthContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-102">AvailabilityStatuses를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-102">Create a AvailabilityStatuses.</span></span>
+    syntax:
+      content: 'new AvailabilityStatuses(client: MicrosoftResourceHealthContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-resourcehealth.MicrosoftResourceHealthContext'
+          description: |
+            <span data-ttu-id="13c72-103">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-103">Reference to the service client.</span></span>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.getByResource_2'
+    name: 'getByResource(string, AvailabilityStatusesGetByResourceOptionalParams, ServiceCallback<AvailabilityStatus>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getByResource(resourceUri: string, options: AvailabilityStatusesGetByResourceOptionalParams, callback: ServiceCallback<AvailabilityStatus>)'
+      parameters:
+        - id: resourceUri
+          type:
+            - string
+          description: '<span data-ttu-id="13c72-104">리소스 이름 및 리소스 종류를 포함 하 여 리소스의 정규화 된 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-104">The fully qualified ID of the resource, including the resource name and resource type.</span></span> <span data-ttu-id="13c72-105">현재 중첩 되지 않은 API 지원 개와 중첩 수준 리소스 종류: subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name /} / {및 subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {0} 리소스 공급자 이름} / {parentResourceType} / {parentResourceName} / {resourceType} / {resourceName}</span><span class="sxs-lookup"><span data-stu-id="13c72-105">Currently the API support not nested and one nesting level resource types : /subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name} and /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resource-provider-name}/{parentResourceType}/{parentResourceName}/{resourceType}/{resourceName}</span></span>'
+        - id: options
+          type:
+            - '@azure/arm-resourcehealth.AvailabilityStatusesGetByResourceOptionalParams'
+          description: <span data-ttu-id="13c72-106">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-106">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatus>
+          description: |
+            <span data-ttu-id="13c72-107">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-107">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesGetByResourceResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.getByResource'
+    name: 'getByResource(string, Models.AvailabilityStatusesGetByResourceOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-108">단일 리소스에 대 한 현재 가용성 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-108">Gets current availability status for a single resource</span></span>
+    syntax:
+      content: 'function getByResource(resourceUri: string, options?: Models.AvailabilityStatusesGetByResourceOptionalParams)'
+      parameters:
+        - id: resourceUri
+          type:
+            - string
+          description: '<span data-ttu-id="13c72-109">리소스 이름 및 리소스 종류를 포함 하 여 리소스의 정규화 된 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-109">The fully qualified ID of the resource, including the resource name and resource type.</span></span> <span data-ttu-id="13c72-110">현재 중첩 되지 않은 API 지원 개와 중첩 수준 리소스 종류: subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name /} / {및 subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {0} 리소스 공급자 이름} / {parentResourceType} / {parentResourceName} / {resourceType} / {resourceName}</span><span class="sxs-lookup"><span data-stu-id="13c72-110">Currently the API support not nested and one nesting level resource types : /subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name} and /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resource-provider-name}/{parentResourceType}/{parentResourceName}/{resourceType}/{resourceName}</span></span>'
+        - id: options
+          type:
+            - Models.AvailabilityStatusesGetByResourceOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesGetByResourceResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.getByResource_1'
+    name: 'getByResource(string, ServiceCallback<AvailabilityStatus>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getByResource(resourceUri: string, callback: ServiceCallback<AvailabilityStatus>)'
+      parameters:
+        - id: resourceUri
+          type:
+            - string
+          description: '<span data-ttu-id="13c72-111">리소스 이름 및 리소스 종류를 포함 하 여 리소스의 정규화 된 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-111">The fully qualified ID of the resource, including the resource name and resource type.</span></span> <span data-ttu-id="13c72-112">현재 중첩 되지 않은 API 지원 개와 중첩 수준 리소스 종류: subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name /} / {및 subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {0} 리소스 공급자 이름} / {parentResourceType} / {parentResourceName} / {resourceType} / {resourceName}</span><span class="sxs-lookup"><span data-stu-id="13c72-112">Currently the API support not nested and one nesting level resource types : /subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name} and /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resource-provider-name}/{parentResourceType}/{parentResourceName}/{resourceType}/{resourceName}</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatus>
+          description: |
+            <span data-ttu-id="13c72-113">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-113">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesGetByResourceResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.list_2'
+    name: 'list(string, AvailabilityStatusesListOptionalParams, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(resourceUri: string, options: AvailabilityStatusesListOptionalParams, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: resourceUri
+          type:
+            - string
+          description: '<span data-ttu-id="13c72-114">리소스 이름 및 리소스 종류를 포함 하 여 리소스의 정규화 된 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-114">The fully qualified ID of the resource, including the resource name and resource type.</span></span> <span data-ttu-id="13c72-115">현재 중첩 되지 않은 API 지원 개와 중첩 수준 리소스 종류: subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name /} / {및 subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {0} 리소스 공급자 이름} / {parentResourceType} / {parentResourceName} / {resourceType} / {resourceName}</span><span class="sxs-lookup"><span data-stu-id="13c72-115">Currently the API support not nested and one nesting level resource types : /subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name} and /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resource-provider-name}/{parentResourceType}/{parentResourceName}/{resourceType}/{resourceName}</span></span>'
+        - id: options
+          type:
+            - '@azure/arm-resourcehealth.AvailabilityStatusesListOptionalParams'
+          description: <span data-ttu-id="13c72-116">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-116">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-117">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-117">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.list'
+    name: 'list(string, Models.AvailabilityStatusesListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-118">모든 가용성 기록을 전환 및 단일 리소스에 대 한 영향을 주는 이벤트를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-118">Lists all historical availability transitions and impacting events for a single resource.</span></span> <span data-ttu-id="13c72-119">응답에 nextLink 속성을 사용 하 여 다음 페이지의 가용성 상태 가져오기</span><span class="sxs-lookup"><span data-stu-id="13c72-119">Use the nextLink property in the response to get the next page of availability status</span></span>
+    syntax:
+      content: 'function list(resourceUri: string, options?: Models.AvailabilityStatusesListOptionalParams)'
+      parameters:
+        - id: resourceUri
+          type:
+            - string
+          description: '<span data-ttu-id="13c72-120">리소스 이름 및 리소스 종류를 포함 하 여 리소스의 정규화 된 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-120">The fully qualified ID of the resource, including the resource name and resource type.</span></span> <span data-ttu-id="13c72-121">현재 중첩 되지 않은 API 지원 개와 중첩 수준 리소스 종류: subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name /} / {및 subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {0} 리소스 공급자 이름} / {parentResourceType} / {parentResourceName} / {resourceType} / {resourceName}</span><span class="sxs-lookup"><span data-stu-id="13c72-121">Currently the API support not nested and one nesting level resource types : /subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name} and /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resource-provider-name}/{parentResourceType}/{parentResourceName}/{resourceType}/{resourceName}</span></span>'
+        - id: options
+          type:
+            - Models.AvailabilityStatusesListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.list_1'
+    name: 'list(string, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(resourceUri: string, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: resourceUri
+          type:
+            - string
+          description: '<span data-ttu-id="13c72-122">리소스 이름 및 리소스 종류를 포함 하 여 리소스의 정규화 된 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-122">The fully qualified ID of the resource, including the resource name and resource type.</span></span> <span data-ttu-id="13c72-123">현재 중첩 되지 않은 API 지원 개와 중첩 수준 리소스 종류: subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name /} / {및 subscriptionId} {resourceGroupName} /resourceGroups/ /providers/ {0} 리소스 공급자 이름} / {parentResourceType} / {parentResourceName} / {resourceType} / {resourceName}</span><span class="sxs-lookup"><span data-stu-id="13c72-123">Currently the API support not nested and one nesting level resource types : /subscriptions/{subscriptionId}/resourceGroups/{resource-group-name}/providers/{resource-provider-name}/{resource-type}/{resource-name} and /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resource-provider-name}/{parentResourceType}/{parentResourceName}/{resourceType}/{resourceName}</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-124">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-124">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, AvailabilityStatusesListByResourceGroupOptionalParams, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: AvailabilityStatusesListByResourceGroupOptionalParams, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="13c72-125">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="13c72-125">The name of the resource group.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-resourcehealth.AvailabilityStatusesListByResourceGroupOptionalParams'
+          description: <span data-ttu-id="13c72-126">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-126">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-127">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-127">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListByResourceGroupResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.AvailabilityStatusesListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-128">리소스 그룹에 있는 모든 리소스에 대 한 현재 가용성 상태를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-128">Lists the current availability status for all the resources in the resource group.</span></span> <span data-ttu-id="13c72-129">응답 nextLink 속성을 사용 하 여 다음 페이지의 가용성 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-129">Use the nextLink property in the response to get the next page of availability statuses.</span></span>
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.AvailabilityStatusesListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="13c72-130">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="13c72-130">The name of the resource group.</span></span>
+        - id: options
+          type:
+            - Models.AvailabilityStatusesListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListByResourceGroupResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="13c72-131">리소스 그룹의 이름.</span><span class="sxs-lookup"><span data-stu-id="13c72-131">The name of the resource group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-132">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-132">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListByResourceGroupResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-133">리소스 그룹에 있는 모든 리소스에 대 한 현재 가용성 상태를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-133">Lists the current availability status for all the resources in the resource group.</span></span> <span data-ttu-id="13c72-134">응답 nextLink 속성을 사용 하 여 다음 페이지의 가용성 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-134">Use the nextLink property in the response to get the next page of availability statuses.</span></span>
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-135">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-135">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListByResourceGroupNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-136">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-136">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="13c72-137">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-137">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-138">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-138">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListByResourceGroupNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-139">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-139">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-140">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-140">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListByResourceGroupNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionId_2'
+    name: 'listBySubscriptionId(AvailabilityStatusesListBySubscriptionIdOptionalParams, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionId(options: AvailabilityStatusesListBySubscriptionIdOptionalParams, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-resourcehealth.AvailabilityStatusesListBySubscriptionIdOptionalParams'
+          description: <span data-ttu-id="13c72-141">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-141">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-142">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-142">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListBySubscriptionIdResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionId'
+    name: listBySubscriptionId(Models.AvailabilityStatusesListBySubscriptionIdOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-143">구독에 있는 모든 리소스에 대 한 현재 가용성 상태를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-143">Lists the current availability status for all the resources in the subscription.</span></span> <span data-ttu-id="13c72-144">응답 nextLink 속성을 사용 하 여 다음 페이지의 가용성 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-144">Use the nextLink property in the response to get the next page of availability statuses.</span></span>
+    syntax:
+      content: 'function listBySubscriptionId(options?: Models.AvailabilityStatusesListBySubscriptionIdOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.AvailabilityStatusesListBySubscriptionIdOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListBySubscriptionIdResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionId_1'
+    name: listBySubscriptionId(ServiceCallback<AvailabilityStatusListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionId(callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-145">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-145">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListBySubscriptionIdResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionIdNext'
+    name: 'listBySubscriptionIdNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-146">구독에 있는 모든 리소스에 대 한 현재 가용성 상태를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-146">Lists the current availability status for all the resources in the subscription.</span></span> <span data-ttu-id="13c72-147">응답 nextLink 속성을 사용 하 여 다음 페이지의 가용성 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-147">Use the nextLink property in the response to get the next page of availability statuses.</span></span>
+    syntax:
+      content: 'function listBySubscriptionIdNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-148">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-148">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListBySubscriptionIdNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionIdNext_2'
+    name: 'listBySubscriptionIdNext(string, RequestOptionsBase, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionIdNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-149">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-149">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="13c72-150">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-150">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-151">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-151">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListBySubscriptionIdNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listBySubscriptionIdNext_1'
+    name: 'listBySubscriptionIdNext(string, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionIdNext(nextPageLink: string, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-152">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-152">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-153">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-153">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListBySubscriptionIdNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="13c72-154">모든 가용성 기록을 전환 및 단일 리소스에 대 한 영향을 주는 이벤트를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-154">Lists all historical availability transitions and impacting events for a single resource.</span></span> <span data-ttu-id="13c72-155">응답에 nextLink 속성을 사용 하 여 다음 페이지의 가용성 상태 가져오기</span><span class="sxs-lookup"><span data-stu-id="13c72-155">Use the nextLink property in the response to get the next page of availability status</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-156">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-156">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-157">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-157">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="13c72-158">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="13c72-158">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-159">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-159">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListNextResponse>
+    package: '@azure/arm-resourcehealth'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatuses.listNext_1'
+    name: 'listNext(string, ServiceCallback<AvailabilityStatusListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<AvailabilityStatusListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="13c72-160">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="13c72-160">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+          description: |
+            <span data-ttu-id="13c72-161">콜백</span><span class="sxs-lookup"><span data-stu-id="13c72-161">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.AvailabilityStatusesListNextResponse>
+    package: '@azure/arm-resourcehealth'
+references:
+  - uid: '@azure/arm-resourcehealth.MicrosoftResourceHealthContext'
+    name: MicrosoftResourceHealthContext
+    spec.typeScript:
+      - name: MicrosoftResourceHealthContext
+        fullName: MicrosoftResourceHealthContext
+        uid: '@azure/arm-resourcehealth.MicrosoftResourceHealthContext'
+  - uid: ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatus>
+    name: AvailabilityStatus>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AvailabilityStatus
+        fullName: AvailabilityStatus
+        uid: '@azure/arm-resourcehealth.AvailabilityStatus'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatusesGetByResourceOptionalParams'
+    name: AvailabilityStatusesGetByResourceOptionalParams
+    spec.typeScript:
+      - name: AvailabilityStatusesGetByResourceOptionalParams
+        fullName: AvailabilityStatusesGetByResourceOptionalParams
+        uid: '@azure/arm-resourcehealth.AvailabilityStatusesGetByResourceOptionalParams'
+  - uid: ServiceCallback<@azure/arm-resourcehealth.AvailabilityStatusListResult>
+    name: AvailabilityStatusListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AvailabilityStatusListResult
+        fullName: AvailabilityStatusListResult
+        uid: '@azure/arm-resourcehealth.AvailabilityStatusListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatusesListOptionalParams'
+    name: AvailabilityStatusesListOptionalParams
+    spec.typeScript:
+      - name: AvailabilityStatusesListOptionalParams
+        fullName: AvailabilityStatusesListOptionalParams
+        uid: '@azure/arm-resourcehealth.AvailabilityStatusesListOptionalParams'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatusesListByResourceGroupOptionalParams'
+    name: AvailabilityStatusesListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: AvailabilityStatusesListByResourceGroupOptionalParams
+        fullName: AvailabilityStatusesListByResourceGroupOptionalParams
+        uid: '@azure/arm-resourcehealth.AvailabilityStatusesListByResourceGroupOptionalParams'
+  - uid: '@azure/arm-resourcehealth.AvailabilityStatusesListBySubscriptionIdOptionalParams'
+    name: AvailabilityStatusesListBySubscriptionIdOptionalParams
+    spec.typeScript:
+      - name: AvailabilityStatusesListBySubscriptionIdOptionalParams
+        fullName: AvailabilityStatusesListBySubscriptionIdOptionalParams
+        uid: '@azure/arm-resourcehealth.AvailabilityStatusesListBySubscriptionIdOptionalParams'

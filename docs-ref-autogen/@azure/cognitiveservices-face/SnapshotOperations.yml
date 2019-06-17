@@ -1,0 +1,666 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations'
+    name: SnapshotOperations
+    fullName: SnapshotOperations
+    children:
+      - '@azure/cognitiveservices-face.SnapshotOperations.apply'
+      - '@azure/cognitiveservices-face.SnapshotOperations.apply_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.apply_2'
+      - '@azure/cognitiveservices-face.SnapshotOperations.deleteMethod'
+      - '@azure/cognitiveservices-face.SnapshotOperations.deleteMethod_2'
+      - '@azure/cognitiveservices-face.SnapshotOperations.deleteMethod_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.get'
+      - '@azure/cognitiveservices-face.SnapshotOperations.get_2'
+      - '@azure/cognitiveservices-face.SnapshotOperations.get_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.getOperationStatus'
+      - '@azure/cognitiveservices-face.SnapshotOperations.getOperationStatus_2'
+      - '@azure/cognitiveservices-face.SnapshotOperations.getOperationStatus_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.list'
+      - '@azure/cognitiveservices-face.SnapshotOperations.list_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.list_2'
+      - '@azure/cognitiveservices-face.SnapshotOperations.constructor'
+      - '@azure/cognitiveservices-face.SnapshotOperations.take'
+      - '@azure/cognitiveservices-face.SnapshotOperations.take_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.take_2'
+      - '@azure/cognitiveservices-face.SnapshotOperations.update'
+      - '@azure/cognitiveservices-face.SnapshotOperations.update_1'
+      - '@azure/cognitiveservices-face.SnapshotOperations.update_2'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="ffc1c-101">SnapshotOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-101">Class representing a SnapshotOperations.</span></span>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.apply'
+    name: 'apply(string, string, Models.SnapshotApplyOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="ffc1c-102">현재 구독에 스냅숏을 적용 하기 위해 작업을 제출 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-102">Submit an operation to apply a snapshot to current subscription.</span></span> <span data-ttu-id="ffc1c-103">각 스냅숏의 경우 스냅숏의-applyScope에 포함 된 구독에만 수행 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-103">For each snapshot, only subscriptions included in the applyScope of Snapshot - Take can apply it.</span></span><br />
+      <span data-ttu-id="ffc1c-104">스냅숏 인터페이스는 백업 및 동일한 지역 내에 있거나 여러 지역 간에 글꼴 데이터 한 면 구독에서 복원 하는 사용자입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-104">The snapshot interfaces are for users to backup and restore their face data from one face subscription to another, inside same region or across regions.</span></span> <span data-ttu-id="ffc1c-105">두 단계로 호출 스냅숏 스냅숏-소스 개체의 복사본을 만들고 스냅숏으로 저장 하는 데 걸리는 사용자 첫 번째 호출을 포함 하는 워크플로입니다-붙여넣을 대상 구독에 스냅숏을 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-105">The workflow contains two phases, user first calls Snapshot - Take to create a copy of the source object and store it as a snapshot, then calls Snapshot - Apply to paste the snapshot to target subscription.</span></span> <span data-ttu-id="ffc1c-106">계정 및 지역 간 적용할 수 있도록 스냅숏은 (인스턴스당 Azure)를 중앙 집중화 된 위치에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-106">The snapshots are stored in a centralized location (per Azure instance), so that they can be applied cross accounts and regions.</span></span><br />
+      <span data-ttu-id="ffc1c-107">스냅숏 적용은 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-107">Applying snapshot is an asynchronous operation.</span></span> <span data-ttu-id="ffc1c-108">OperationStatus-스냅숏 적용의 진행률을 추적 하는 것에 대 한 가져오기에에서 사용할 응답 헤더에 "작업-Location" 필드에서 작업 id는 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-108">An operation id can be obtained from the "Operation-Location" field in response header, to be used in OperationStatus - Get for tracking the progress of applying the snapshot.</span></span> <span data-ttu-id="ffc1c-109">대상 개체 id OperationStatus-가져오기 응답의 작업 상태는 "성공"에서 "resourceLocation" 필드에 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-109">The target object id will be included in the "resourceLocation" field in OperationStatus - Get response when the operation status is "succeeded".</span></span><br />
+      <span data-ttu-id="ffc1c-110">스냅숏 적용 시간 스냅숏 개체에 있는 사람 및 얼굴 항목의 수에 따라 달라 집니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-110">Snapshot applying time depends on the number of person and face entries in the snapshot object.</span></span>
+      <span data-ttu-id="ffc1c-111">여러 명의 얼굴이 사용 하 여 1,000,000 개인에 대 한 1 시간으로 설정 또는 초 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-111">It could be in seconds, or up to 1 hour for 1,000,000 persons with multiple faces.</span></span><br />
+      <span data-ttu-id="ffc1c-112">스냅숏은 자동으로 만료 되며 스냅숏이 만들어진 후 48 시간 동안의 정리</span><span class="sxs-lookup"><span data-stu-id="ffc1c-112">Snapshots will be automatically expired and cleaned in 48 hours after it is created by Snapshot</span></span>
+      - <span data-ttu-id="ffc1c-113">수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-113">Take.</span></span> <span data-ttu-id="ffc1c-114">따라서 대상 구독 스냅숏을 만든 후 48 시간 내에 적용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-114">So the target subscription is required to apply the snapshot in 48 hours since its creation.</span></span><br />
+      <span data-ttu-id="ffc1c-115">하지만 스냅숏을 적용 차단 하지 대상에 대해 다른 모든 작업 개체, 권장 되지 않습니다 스냅숏을 적용 하는 동안 정확성을 보장할 수 없습니다 때문에 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-115">Applying a snapshot will not block any other operations against the target object, however it is not recommended because the correctness cannot be guaranteed during snapshot applying.</span></span> <span data-ttu-id="ffc1c-116">스냅숏 적용이 완료 되 면 대상 개체에 대해 모든 작업이 정상적으로 작업할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-116">After snapshot applying is completed, all operations towards the target object can work as normal.</span></span>
+      <span data-ttu-id="ffc1c-117">스냅숏 않습니다 하지 해야 다시 학습 대상 개체 식별/FindSimilar를 호출 하기 전에 적용할 스냅숏을 대상 구독을 의미 하는 원본 개체의 학습 결과를도 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-117">Snapshot also includes the training results of the source object, which means target subscription the snapshot applied to does not need re-train the target object before calling Identify/FindSimilar.</span></span><br />
+      <span data-ttu-id="ffc1c-118">하나의 스냅숏만 적용할 수 있습니다 여러 번 병렬로 현재 CreateNew 적용 모드 지원 되지만, 즉, 대상 구독에 이미 동일한 형식과 동일한의 objectId를 사용 하 여 개체를 포함 하는 경우 적용 작업이 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-118">One snapshot can be applied multiple times in parallel, while currently only CreateNew apply mode is supported, which means the apply operation will fail if target subscription already contains an object of same type and using the same objectId.</span></span> <span data-ttu-id="ffc1c-119">사용자는 이러한 충돌을 피하기 위해 요청 본문에 "objectId"을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-119">Users can specify the "objectId" in request body to avoid such conflicts.</span></span><br />
+      * <span data-ttu-id="ffc1c-120">무료 계층 구독 할당량: 100 매월 작업을 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-120">Free-tier subscription quota: 100 apply operations per month.</span></span>
+      * <span data-ttu-id="ffc1c-121">S0 계층 구독 할당량: 100 하루 작업을 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-121">S0-tier subscription quota: 100 apply operations per day.</span></span>
+    syntax:
+      content: 'function apply(snapshotId: string, objectId: string, options?: Models.SnapshotApplyOptionalParams)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-122">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-122">Id referencing a particular snapshot.</span></span>
+        - id: objectId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-123">스냅숏에서 만들려는 사용자 지정 된 대상 개체 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-123">User specified target object id to be created from the snapshot.</span></span>
+        - id: options
+          type:
+            - Models.SnapshotApplyOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotApplyResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.apply_1'
+    name: 'apply(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function apply(snapshotId: string, objectId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-124">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-124">Id referencing a particular snapshot.</span></span>
+        - id: objectId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-125">스냅숏에서 만들려는 사용자 지정 된 대상 개체 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-125">User specified target object id to be created from the snapshot.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-126">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-126">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotApplyResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.apply_2'
+    name: 'apply(string, string, SnapshotApplyOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function apply(snapshotId: string, objectId: string, options: SnapshotApplyOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-127">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-127">Id referencing a particular snapshot.</span></span>
+        - id: objectId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-128">스냅숏에서 만들려는 사용자 지정 된 대상 개체 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-128">User specified target object id to be created from the snapshot.</span></span>
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.SnapshotApplyOptionalParams'
+          description: <span data-ttu-id="ffc1c-129">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-129">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-130">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-130">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotApplyResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.deleteMethod'
+    name: 'deleteMethod(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="ffc1c-131">snapshotId에 따라 기존 스냅숏을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-131">Delete an existing snapshot according to the snapshotId.</span></span> <span data-ttu-id="ffc1c-132">스냅숏의 모든 정보와 개체 데이터도 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-132">All object data and information in the snapshot will also be deleted.</span></span> <span data-ttu-id="ffc1c-133">스냅숏을 수행한 원본 구독만 스냅숏을 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-133">Only the source subscription who took the snapshot can delete the snapshot.</span></span> <span data-ttu-id="ffc1c-134">사용자는이 API 사용 하 여 스냅숏을 삭제 되지 않습니다, 경우 스냅숏이 여전히 자동으로 삭제를 만든 후 48 시간 동안의 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-134">If the user does not delete a snapshot with this API, the snapshot will still be automatically deleted in 48 hours after creation.</span></span>'
+    syntax:
+      content: 'function deleteMethod(snapshotId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-135">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-135">Id referencing a particular snapshot.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.deleteMethod_2'
+    name: 'deleteMethod(string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(snapshotId: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-136">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-136">Id referencing a particular snapshot.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="ffc1c-137">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-137">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-138">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-138">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.deleteMethod_1'
+    name: 'deleteMethod(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(snapshotId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-139">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-139">Id referencing a particular snapshot.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-140">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-140">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.get'
+    name: 'get(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="ffc1c-141">스냅숏 정보를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-141">Retrieve information about a snapshot.</span></span> <span data-ttu-id="ffc1c-142">스냅숏 후 수행한 원본 구독에 액세스할 수 있는 전용 이며에서 applyScope에 포함 된 대상 구독-스냅샷 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-142">Snapshot is only accessible to the source subscription who took it, and target subscriptions included in the applyScope in Snapshot - Take.</span></span>'
+    syntax:
+      content: 'function get(snapshotId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-143">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-143">Id referencing a particular snapshot.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotGetResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.get_2'
+    name: 'get(string, RequestOptionsBase, ServiceCallback<Snapshot>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(snapshotId: string, options: RequestOptionsBase, callback: ServiceCallback<Snapshot>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-144">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-144">Id referencing a particular snapshot.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="ffc1c-145">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-145">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.Snapshot>
+          description: |
+            <span data-ttu-id="ffc1c-146">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-146">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotGetResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.get_1'
+    name: 'get(string, ServiceCallback<Snapshot>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(snapshotId: string, callback: ServiceCallback<Snapshot>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-147">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-147">Id referencing a particular snapshot.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.Snapshot>
+          description: |
+            <span data-ttu-id="ffc1c-148">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-148">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotGetResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.getOperationStatus'
+    name: 'getOperationStatus(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="ffc1c-149">사용/적용 스냅숏 작업의 상태를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-149">Retrieve the status of a take/apply snapshot operation.</span></span>
+    syntax:
+      content: 'function getOperationStatus(operationId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: operationId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-150">특정 사용/적용 스냅숏 작업을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-150">Id referencing a particular take/apply snapshot operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotGetOperationStatusResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.getOperationStatus_2'
+    name: 'getOperationStatus(string, RequestOptionsBase, ServiceCallback<OperationStatus>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOperationStatus(operationId: string, options: RequestOptionsBase, callback: ServiceCallback<OperationStatus>)'
+      parameters:
+        - id: operationId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-151">특정 사용/적용 스냅숏 작업을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-151">Id referencing a particular take/apply snapshot operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="ffc1c-152">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-152">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.OperationStatus>
+          description: |
+            <span data-ttu-id="ffc1c-153">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-153">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotGetOperationStatusResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.getOperationStatus_1'
+    name: 'getOperationStatus(string, ServiceCallback<OperationStatus>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getOperationStatus(operationId: string, callback: ServiceCallback<OperationStatus>)'
+      parameters:
+        - id: operationId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-154">특정 사용/적용 스냅숏 작업을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-154">Id referencing a particular take/apply snapshot operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.OperationStatus>
+          description: |
+            <span data-ttu-id="ffc1c-155">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-155">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotGetOperationStatusResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.list'
+    name: list(Models.SnapshotListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="ffc1c-156">사용자에 의해 수행 된 스냅숏 또는 사용자에 게 적용할 스냅숏 등의 관련된 정보를 사용 하 여 액세스할 수 있는 모든 스냅숏을 나열 (스냅숏의 applyScope에 포함 된 구독 id-수행).</span><span class="sxs-lookup"><span data-stu-id="ffc1c-156">List all accessible snapshots with related information, including snapshots that were taken by the user, or snapshots to be applied to the user (subscription id was included in the applyScope in Snapshot - Take).</span></span>'
+    syntax:
+      content: 'function list(options?: Models.SnapshotListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.SnapshotListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotListResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.list_1'
+    name: 'list(ServiceCallback<Snapshot[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<Snapshot[]>)'
+      parameters:
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.Snapshot[]>'
+          description: |
+            <span data-ttu-id="ffc1c-157">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-157">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotListResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.list_2'
+    name: 'list(SnapshotListOptionalParams, ServiceCallback<Snapshot[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: SnapshotListOptionalParams, callback: ServiceCallback<Snapshot[]>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.SnapshotListOptionalParams'
+          description: <span data-ttu-id="ffc1c-158">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-158">The optional parameters</span></span>
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.Snapshot[]>'
+          description: |
+            <span data-ttu-id="ffc1c-159">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-159">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotListResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.constructor'
+    name: SnapshotOperations(FaceClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="ffc1c-160">SnapshotOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-160">Create a SnapshotOperations.</span></span>
+    syntax:
+      content: 'new SnapshotOperations(client: FaceClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/cognitiveservices-face.FaceClientContext'
+          description: |
+            <span data-ttu-id="ffc1c-161">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-161">Reference to the service client.</span></span>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.take'
+    name: 'take(Models.SnapshotObjectType, string, string[], Models.SnapshotTakeOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="ffc1c-162">사용자가 지정한 스냅숏 유형, 원본 개체 id 사용 하 여 얼굴 목록, 큰 얼굴 목록, 사용자 그룹 또는 큰 사용자 그룹의 스냅숏을, 범위 및 선택적 사용자 데이터를 적용 하는 작업을 제출 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-162">Submit an operation to take a snapshot of face list, large face list, person group or large person group, with user-specified snapshot type, source object id, apply scope and an optional user data.</span></span><br />
+      <span data-ttu-id="ffc1c-163">스냅숏 인터페이스는 백업 및 동일한 지역 내에 있거나 여러 지역 간에 글꼴 데이터 한 면 구독에서 복원 하는 사용자입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-163">The snapshot interfaces are for users to backup and restore their face data from one face subscription to another, inside same region or across regions.</span></span> <span data-ttu-id="ffc1c-164">두 단계로 호출 스냅숏 스냅숏-소스 개체의 복사본을 만들고 스냅숏으로 저장 하는 데 걸리는 사용자 첫 번째 호출을 포함 하는 워크플로입니다-붙여넣을 대상 구독에 스냅숏을 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-164">The workflow contains two phases, user first calls Snapshot - Take to create a copy of the source object and store it as a snapshot, then calls Snapshot - Apply to paste the snapshot to target subscription.</span></span> <span data-ttu-id="ffc1c-165">계정 및 지역 간 적용할 수 있도록 스냅숏은 (인스턴스당 Azure)를 중앙 집중화 된 위치에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-165">The snapshots are stored in a centralized location (per Azure instance), so that they can be applied cross accounts and regions.</span></span><br />
+      <span data-ttu-id="ffc1c-166">스냅숏을 만드는 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-166">Taking snapshot is an asynchronous operation.</span></span> <span data-ttu-id="ffc1c-167">OperationStatus-스냅숏을 만들기 진행률을 추적 하는 것에 대 한 가져오기에에서 사용할 응답 헤더에 "작업-Location" 필드에서 작업 id는 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-167">An operation id can be obtained from the "Operation-Location" field in response header, to be used in OperationStatus - Get for tracking the progress of creating the snapshot.</span></span> <span data-ttu-id="ffc1c-168">스냅숏 id OperationStatus-가져오기 응답의 작업 상태는 "성공"에서 "resourceLocation" 필드에 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-168">The snapshot id will be included in the "resourceLocation" field in OperationStatus - Get response when the operation status is "succeeded".</span></span><br />
+      <span data-ttu-id="ffc1c-169">스냅숏 시간이 원본 개체에 있는 사람 및 얼굴 항목의 수에 따라 달라 집니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-169">Snapshot taking time depends on the number of person and face entries in the source object.</span></span> <span data-ttu-id="ffc1c-170">초 또는 몇 시간 동안 여러 명의 얼굴이 사용 하 여 1,000,000 개인에 대 한 최대 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-170">It could be in seconds, or up to several hours for 1,000,000 persons with multiple faces.</span></span><br />
+      <span data-ttu-id="ffc1c-171">스냅숏은 자동으로 만료 되며 스냅숏이 만들어진 후 48 시간 동안의 정리</span><span class="sxs-lookup"><span data-stu-id="ffc1c-171">Snapshots will be automatically expired and cleaned in 48 hours after it is created by Snapshot</span></span>
+      - <span data-ttu-id="ffc1c-172">수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-172">Take.</span></span> <span data-ttu-id="ffc1c-173">사용자는 스냅숏-만료 전에 언제 든 지 직접 삭제를 사용 하 여 스냅숏을 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-173">User can delete the snapshot using Snapshot - Delete by themselves any time before expiration.</span></span><br />
+      <span data-ttu-id="ffc1c-174">특정 개체에 대 한 스냅숏을 개체에 대 한 다른 작업 차단 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-174">Taking snapshot for a certain object will not block any other operations against the object.</span></span> <span data-ttu-id="ffc1c-175">모든 읽기 전용 작업 (Get/목록 및 식별/FindSimilar/확인)를 정상적으로 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-175">All read-only operations (Get/List and Identify/FindSimilar/Verify) can be conducted as usual.</span></span> <span data-ttu-id="ffc1c-176">추가/업데이트/삭제는 소스 개체 또는 사람/얼굴 및 학습을 비롯 한 모든 쓰기 작업에는 차단 되지 있지만 쓰기 가능한 업데이트가 반영 되지 않을 스냅숏에서 해당 수행 하는 동안 하므로 권장 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-176">For all writable operations, including Add/Update/Delete the source object or its persons/faces and Train, they are not blocked but not recommended because writable updates may not be reflected on the snapshot during its taking.</span></span> <span data-ttu-id="ffc1c-177">스냅숏 수행이 완료 되 면 모든 읽기 및 쓰기 가능한 작업이 정상적으로 작업할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-177">After snapshot taking is completed, all readable and writable operations can work as normal.</span></span> <span data-ttu-id="ffc1c-178">스냅숏 않습니다 하지 해야 다시 학습 대상 개체 식별/FindSimilar를 호출 하기 전에 적용할 스냅숏을 대상 구독을 의미 하는 원본 개체의 학습 결과 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-178">Snapshot will also include the training results of the source object, which means target subscription the snapshot applied to does not need re-train the target object before calling Identify/FindSimilar.</span></span><br />
+      * <span data-ttu-id="ffc1c-179">무료 계층 구독 할당량: 100 매월 작업을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-179">Free-tier subscription quota: 100 take operations per month.</span></span>
+      * <span data-ttu-id="ffc1c-180">S0 계층 구독 할당량: 하루 100 take 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-180">S0-tier subscription quota: 100 take operations per day.</span></span>
+    syntax:
+      content: 'function take(type: Models.SnapshotObjectType, objectId: string, applyScope: string[], options?: Models.SnapshotTakeOptionalParams)'
+      parameters:
+        - id: type
+          type:
+            - Models.SnapshotObjectType
+          description: '<span data-ttu-id="ffc1c-181">사용자 지정에서 스냅숏을 만드는 원본 개체에 대 한 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-181">User specified type for the source object to take snapshot from.</span></span> <span data-ttu-id="ffc1c-182">현재 FaceList "," PersonGroup "," LargeFaceList "및" LargePersonGroup 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-182">Currently FaceList, PersonGroup, LargeFaceList and LargePersonGroup are supported.</span></span> <span data-ttu-id="ffc1c-183">가능한 값은 다음과 같습니다. ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'', ''PersonGroup''</span><span class="sxs-lookup"><span data-stu-id="ffc1c-183">Possible values include: ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'', ''PersonGroup''</span></span>'
+        - id: objectId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-184">사용자 지정에서 스냅숏을 만드는 원본 개체 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-184">User specified source object id to take snapshot from.</span></span>
+        - id: applyScope
+          type:
+            - 'string[]'
+          description: '<span data-ttu-id="ffc1c-185">사용자 지정 스냅숏에 대 한 대상 얼굴 구독 id의 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-185">User specified array of target Face subscription ids for the snapshot.</span></span> <span data-ttu-id="ffc1c-186">각 스냅숏의 경우 스냅숏의-applyScope에 포함 된 구독에만 수행 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-186">For each snapshot, only subscriptions included in the applyScope of Snapshot - Take can apply it.</span></span>'
+        - id: options
+          type:
+            - Models.SnapshotTakeOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.SnapshotTakeResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.take_1'
+    name: 'take(Models.SnapshotObjectType, string, string[], ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function take(type: Models.SnapshotObjectType, objectId: string, applyScope: string[], callback: ServiceCallback<void>)'
+      parameters:
+        - id: type
+          type:
+            - Models.SnapshotObjectType
+          description: '<span data-ttu-id="ffc1c-187">사용자 지정에서 스냅숏을 만드는 원본 개체에 대 한 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-187">User specified type for the source object to take snapshot from.</span></span> <span data-ttu-id="ffc1c-188">현재 FaceList "," PersonGroup "," LargeFaceList "및" LargePersonGroup 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-188">Currently FaceList, PersonGroup, LargeFaceList and LargePersonGroup are supported.</span></span> <span data-ttu-id="ffc1c-189">가능한 값은 다음과 같습니다. ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'', ''PersonGroup''</span><span class="sxs-lookup"><span data-stu-id="ffc1c-189">Possible values include: ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'', ''PersonGroup''</span></span>'
+        - id: objectId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-190">사용자 지정에서 스냅숏을 만드는 원본 개체 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-190">User specified source object id to take snapshot from.</span></span>
+        - id: applyScope
+          type:
+            - 'string[]'
+          description: '<span data-ttu-id="ffc1c-191">사용자 지정 스냅숏에 대 한 대상 얼굴 구독 id의 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-191">User specified array of target Face subscription ids for the snapshot.</span></span> <span data-ttu-id="ffc1c-192">각 스냅숏의 경우 스냅숏의-applyScope에 포함 된 구독에만 수행 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-192">For each snapshot, only subscriptions included in the applyScope of Snapshot - Take can apply it.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-193">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-193">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotTakeResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.take_2'
+    name: 'take(Models.SnapshotObjectType, string, string[], SnapshotTakeOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function take(type: Models.SnapshotObjectType, objectId: string, applyScope: string[], options: SnapshotTakeOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: type
+          type:
+            - Models.SnapshotObjectType
+          description: '<span data-ttu-id="ffc1c-194">사용자 지정에서 스냅숏을 만드는 원본 개체에 대 한 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-194">User specified type for the source object to take snapshot from.</span></span> <span data-ttu-id="ffc1c-195">현재 FaceList "," PersonGroup "," LargeFaceList "및" LargePersonGroup 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-195">Currently FaceList, PersonGroup, LargeFaceList and LargePersonGroup are supported.</span></span> <span data-ttu-id="ffc1c-196">가능한 값은 다음과 같습니다. ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'', ''PersonGroup''</span><span class="sxs-lookup"><span data-stu-id="ffc1c-196">Possible values include: ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'', ''PersonGroup''</span></span>'
+        - id: objectId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-197">사용자 지정에서 스냅숏을 만드는 원본 개체 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-197">User specified source object id to take snapshot from.</span></span>
+        - id: applyScope
+          type:
+            - 'string[]'
+          description: '<span data-ttu-id="ffc1c-198">사용자 지정 스냅숏에 대 한 대상 얼굴 구독 id의 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-198">User specified array of target Face subscription ids for the snapshot.</span></span> <span data-ttu-id="ffc1c-199">각 스냅숏의 경우 스냅숏의-applyScope에 포함 된 구독에만 수행 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-199">For each snapshot, only subscriptions included in the applyScope of Snapshot - Take can apply it.</span></span>'
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.SnapshotTakeOptionalParams'
+          description: <span data-ttu-id="ffc1c-200">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-200">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-201">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-201">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.SnapshotTakeResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.update'
+    name: 'update(string, Models.SnapshotUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="ffc1c-202">스냅숏 정보를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-202">Update the information of a snapshot.</span></span> <span data-ttu-id="ffc1c-203">스냅숏을 수행한 원본 구독만 스냅숏을 업데이트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-203">Only the source subscription who took the snapshot can update the snapshot.</span></span>
+    syntax:
+      content: 'function update(snapshotId: string, options?: Models.SnapshotUpdateOptionalParams)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-204">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-204">Id referencing a particular snapshot.</span></span>
+        - id: options
+          type:
+            - Models.SnapshotUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.update_1'
+    name: 'update(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(snapshotId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-205">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-205">Id referencing a particular snapshot.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-206">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-206">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.SnapshotOperations.update_2'
+    name: 'update(string, SnapshotUpdateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(snapshotId: string, options: SnapshotUpdateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: snapshotId
+          type:
+            - string
+          description: <span data-ttu-id="ffc1c-207">특정 스냅숏을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="ffc1c-207">Id referencing a particular snapshot.</span></span>
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.SnapshotUpdateOptionalParams'
+          description: <span data-ttu-id="ffc1c-208">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="ffc1c-208">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="ffc1c-209">콜백</span><span class="sxs-lookup"><span data-stu-id="ffc1c-209">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-face'
+references:
+  - uid: '@azure/cognitiveservices-face.FaceClientContext'
+    name: FaceClientContext
+    spec.typeScript:
+      - name: FaceClientContext
+        fullName: FaceClientContext
+        uid: '@azure/cognitiveservices-face.FaceClientContext'
+  - uid: '@azure/cognitiveservices-face.SnapshotApplyOptionalParams'
+    name: SnapshotApplyOptionalParams
+    spec.typeScript:
+      - name: SnapshotApplyOptionalParams
+        fullName: SnapshotApplyOptionalParams
+        uid: '@azure/cognitiveservices-face.SnapshotApplyOptionalParams'
+  - uid: ServiceCallback<@azure/cognitiveservices-face.Snapshot>
+    name: Snapshot>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Snapshot
+        fullName: Snapshot
+        uid: '@azure/cognitiveservices-face.Snapshot'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/cognitiveservices-face.OperationStatus>
+    name: OperationStatus>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatus
+        fullName: OperationStatus
+        uid: '@azure/cognitiveservices-face.OperationStatus'
+      - name: '>'
+        fullName: '>'
+  - uid: 'ServiceCallback<@azure/cognitiveservices-face.Snapshot[]>'
+    name: 'Snapshot[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Snapshot
+        fullName: Snapshot
+        uid: '@azure/cognitiveservices-face.Snapshot'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams'
+    name: SnapshotListOptionalParams
+    spec.typeScript:
+      - name: SnapshotListOptionalParams
+        fullName: SnapshotListOptionalParams
+        uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams'
+  - uid: '@azure/cognitiveservices-face.SnapshotTakeOptionalParams'
+    name: SnapshotTakeOptionalParams
+    spec.typeScript:
+      - name: SnapshotTakeOptionalParams
+        fullName: SnapshotTakeOptionalParams
+        uid: '@azure/cognitiveservices-face.SnapshotTakeOptionalParams'
+  - uid: '@azure/cognitiveservices-face.SnapshotUpdateOptionalParams'
+    name: SnapshotUpdateOptionalParams
+    spec.typeScript:
+      - name: SnapshotUpdateOptionalParams
+        fullName: SnapshotUpdateOptionalParams
+        uid: '@azure/cognitiveservices-face.SnapshotUpdateOptionalParams'
