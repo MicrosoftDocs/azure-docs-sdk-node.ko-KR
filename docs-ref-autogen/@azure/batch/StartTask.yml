@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.StartTask'
+    name: StartTask
+    fullName: StartTask
+    children:
+      - '@azure/batch.StartTask.commandLine'
+      - '@azure/batch.StartTask.containerSettings'
+      - '@azure/batch.StartTask.environmentSettings'
+      - '@azure/batch.StartTask.maxTaskRetryCount'
+      - '@azure/batch.StartTask.resourceFiles'
+      - '@azure/batch.StartTask.userIdentity'
+      - '@azure/batch.StartTask.waitForSuccess'
+    langs:
+      - typeScript
+    type: interface
+    summary: 'Batch 계산 노드에서 복구 작업이 트리거될 때 작업을 다시 시도 합니다. 포함 (하지만에 제한 되지 않습니다)의 복구 작업이 경우 비정상 계산 노드를 다시 부팅 또는 계산 노드 호스트 오류로 인해 표시 되지 않습니다. 복구 작업은 독립적 이며 된 maxTaskRetryCount에 대해 계산 되지 않습니다 인해 다시 시도 합니다. 된 maxTaskRetryCount 0 인 경우에 내부는 재시도 복구 작업으로 인해 발생할 수 있습니다. 이 인해 모든 작업이 멱 등 원 이어야 합니다. 즉, 작업을 중단 되 고 중복 된 데이터 나 손상 없이 다시 시작을 허용 해야 합니다. 최상의 일종의 검사점을 사용 하는 장기 실행 작업에 대 한 연습입니다. 일부 경우에 노드 다시 부팅 되지 않았습니다 하는 경우에 시작 태스크가 다시 실행 합니다. 이 일괄 처리 다시 시작 태스크를 실행할 수 없도록 차단 하는 대로 breakaway 프로세스를 만들거나 설치/시작 서비스는 시작 태스크 작업 디렉터리에서 시작 작업을 방지 하려면 특별히 주의 해야 합니다.'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.commandLine'
+    name: commandLine
+    fullName: commandLine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '시작 태스크의 명령줄입니다. 명령줄 셸에서 실행 되지 않으며 따라서 환경 변수 확장과 같은 셸 기능을 사용할 수 없습니다. 이러한 기능을 활용 하려는 경우를 호출 해야 명령줄에서 셸을 예를 들어 "cmd /c MyCommand"를 사용 하 여 Windows에서 또는 "/ bin/sh-c MyCommand" Linux에서. 명령줄 파일 경로 가리키는 경우 (태스크 작업 디렉터리의 상대), 상대 경로 사용 하 또는 일괄 처리 제공 된 환경 변수를 사용 해야 합니다 (https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables)합니다.'
+    syntax:
+      content: 'commandLine: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.containerSettings'
+    name: containerSettings
+    fullName: containerSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '시작 작업을 실행 중인 컨테이너에 대 한 설정입니다. 이 옵션을 지정 하는 경우 AZ_BATCH_NODE_ROOT_DIR (노드에서 Azure Batch 디렉터리의 루트) 아래의 모든 디렉터리가 재귀적으로 컨테이너에 매핑되고, 모든 작업 환경 변수가 컨테이너에 매핑되고 및 태스크 명령줄은 컨테이너에서 실행 합니다.'
+    optional: true
+    syntax:
+      content: 'containerSettings?: TaskContainerSettings'
+      return:
+        type:
+          - '@azure/batch.TaskContainerSettings'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.environmentSettings'
+    name: environmentSettings
+    fullName: environmentSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 시작 태스크에 대 한 환경 변수 설정의 목록입니다.
+    optional: true
+    syntax:
+      content: 'environmentSettings?: EnvironmentSetting[]'
+      return:
+        type:
+          - '@azure/batch.EnvironmentSetting[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.maxTaskRetryCount'
+    name: maxTaskRetryCount
+    fullName: maxTaskRetryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      태스크를 다시 시도할 수 있는 최대 횟수입니다. 종료 코드가 0이 아니면 Batch 서비스가 태스크를 다시 시도합니다. 이 값은 구체적으로 재시도 횟수를 제어합니다. Batch 서비스는 태스크를 한 번 시도한 후 이 한도까지 다시 시도할 수 있습니다. 예를 들어 최대 재시도 횟수가 3 인 경우 일괄 처리 시도 태스크를 4 번 (초기 시도 1와 재시도 3 회).
+      최대 재시도 횟수가 0 일 경우 Batch 서비스 작업을 재시도 하지 않습니다. 경우는 최대 재시도 횟수는-1, 일괄 처리 서비스 다시 시도 작업을 제한 없이 합니다.
+    optional: true
+    syntax:
+      content: 'maxTaskRetryCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.resourceFiles'
+    name: resourceFiles
+    fullName: resourceFiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Batch 서비스는 명령줄을 실행 하기 전에 계산 노드에 다운로드 하는 파일의 목록입니다.  리소스 파일의 목록에 대 한 최대 크기가 있습니다. 최대 크기를 초과 하면 요청이 실패 하 고 응답 오류 코드는 RequestEntityTooLarge 됩니다. 이런 경우의 ResourceFiles 컬렉션 크기가 줄여야 합니다. .Zip 파일, 응용 프로그램 패키지 또는 Docker 컨테이너를 사용 하 여 수행할 수 있습니다. 이 요소 아래에 나열 된 파일 작업의 작업 디렉터리에 있습니다.'
+    optional: true
+    syntax:
+      content: 'resourceFiles?: ResourceFile[]'
+      return:
+        type:
+          - '@azure/batch.ResourceFile[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.userIdentity'
+    name: userIdentity
+    fullName: userIdentity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 시작 작업이 실행 되는 사용자 id입니다. 생략 하면 태스크에 작업이 고유 관리자가 아닌 사용자로 실행 됩니다.
+    optional: true
+    syntax:
+      content: 'userIdentity?: UserIdentity'
+      return:
+        type:
+          - '@azure/batch.UserIdentity'
+    package: '@azure/batch'
+  - uid: '@azure/batch.StartTask.waitForSuccess'
+    name: waitForSuccess
+    fullName: waitForSuccess
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      Batch 서비스 시작 작업이 성공적으로 완료 되기를 대기 해야 하는지 여부 (즉, 종료 코드 0 사용 하 여 종료) 계산 노드에서 작업을 예약 하기 전에 합니다. True이 고 시작 태스크가 실패 하면 계산 노드에서 해당 최대 재시도 횟수 (maxTaskRetryCount) 최대 시작 태스크는 Batch 서비스에 다시 시도 합니다. 작업이 있으면 여전히 not 계산 노드를 사용할 수 없는 모든 재시도 후 일괄 처리 서비스 표시 성공적으로 완료 되었고 작업을 예약 하지 않습니다.
+      노드 상태 및 오류 정보 세부 정보를 통해이 문제를 검색할 수 있습니다. False 인 경우, Batch 서비스 시작 작업을 완료 하려면 대기 하지 않습니다. 이 경우 다른 작업 시작 태스크 실행; 중 계산 노드에서 실행 시작 수 있습니다. 및 노드에서 예약 될 새 작업 시작 태스크에 실패 한 경우에 계속 합니다. 기본값은 false입니다.
+    optional: true
+    syntax:
+      content: 'waitForSuccess?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskContainerSettings'
+    name: TaskContainerSettings
+    spec.typeScript:
+      - name: TaskContainerSettings
+        fullName: TaskContainerSettings
+        uid: '@azure/batch.TaskContainerSettings'
+  - uid: '@azure/batch.EnvironmentSetting[]'
+    name: 'EnvironmentSetting[]'
+    spec.typeScript:
+      - name: EnvironmentSetting
+        fullName: EnvironmentSetting
+        uid: '@azure/batch.EnvironmentSetting'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.ResourceFile[]'
+    name: 'ResourceFile[]'
+    spec.typeScript:
+      - name: ResourceFile
+        fullName: ResourceFile
+        uid: '@azure/batch.ResourceFile'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.UserIdentity'
+    name: UserIdentity
+    spec.typeScript:
+      - name: UserIdentity
+        fullName: UserIdentity
+        uid: '@azure/batch.UserIdentity'
