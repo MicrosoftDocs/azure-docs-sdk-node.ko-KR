@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-storage.Encryption'
+    name: Encryption
+    fullName: Encryption
+    children:
+      - '@azure/arm-storage.Encryption.keySource'
+      - '@azure/arm-storage.Encryption.keyVaultProperties'
+      - '@azure/arm-storage.Encryption.services'
+    langs:
+      - typeScript
+    type: interface
+    summary: 저장소 계정에 암호화 설정입니다.
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.Encryption.keySource'
+    name: keySource
+    fullName: keySource
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      암호화 keySource (공급자)입니다. 가능한 값 (대/소문자 구분):  Microsoft.Storage, Microsoft.Keyvault. 가능한 값은 다음과 같습니다. 'Microsoft.Storage', 'Microsoft.Keyvault'.
+      기본값: 'Microsoft.Storage'.
+    syntax:
+      content: 'keySource: KeySource'
+      return:
+        type:
+          - '@azure/arm-storage.KeySource'
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.Encryption.keyVaultProperties'
+    name: keyVaultProperties
+    fullName: keyVaultProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 키 자격 증명 모음에서 제공 하는 속성입니다.
+    optional: true
+    syntax:
+      content: 'keyVaultProperties?: KeyVaultProperties'
+      return:
+        type:
+          - '@azure/arm-storage.KeyVaultProperties'
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.Encryption.services'
+    name: services
+    fullName: services
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 암호화를 지원 하는 서비스의 목록입니다.
+    optional: true
+    syntax:
+      content: 'services?: EncryptionServices'
+      return:
+        type:
+          - '@azure/arm-storage.EncryptionServices'
+    package: '@azure/arm-storage'
+references:
+  - uid: '@azure/arm-storage.KeySource'
+    name: KeySource
+    spec.typeScript:
+      - name: KeySource
+        fullName: KeySource
+        uid: '@azure/arm-storage.KeySource'
+  - uid: '@azure/arm-storage.KeyVaultProperties'
+    name: KeyVaultProperties
+    spec.typeScript:
+      - name: KeyVaultProperties
+        fullName: KeyVaultProperties
+        uid: '@azure/arm-storage.KeyVaultProperties'
+  - uid: '@azure/arm-storage.EncryptionServices'
+    name: EncryptionServices
+    spec.typeScript:
+      - name: EncryptionServices
+        fullName: EncryptionServices
+        uid: '@azure/arm-storage.EncryptionServices'

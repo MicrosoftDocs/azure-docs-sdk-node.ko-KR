@@ -1,0 +1,330 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.TaskAddParameter'
+    name: TaskAddParameter
+    fullName: TaskAddParameter
+    children:
+      - '@azure/batch.TaskAddParameter.affinityInfo'
+      - '@azure/batch.TaskAddParameter.applicationPackageReferences'
+      - '@azure/batch.TaskAddParameter.authenticationTokenSettings'
+      - '@azure/batch.TaskAddParameter.commandLine'
+      - '@azure/batch.TaskAddParameter.constraints'
+      - '@azure/batch.TaskAddParameter.containerSettings'
+      - '@azure/batch.TaskAddParameter.dependsOn'
+      - '@azure/batch.TaskAddParameter.displayName'
+      - '@azure/batch.TaskAddParameter.environmentSettings'
+      - '@azure/batch.TaskAddParameter.exitConditions'
+      - '@azure/batch.TaskAddParameter.id'
+      - '@azure/batch.TaskAddParameter.multiInstanceSettings'
+      - '@azure/batch.TaskAddParameter.outputFiles'
+      - '@azure/batch.TaskAddParameter.resourceFiles'
+      - '@azure/batch.TaskAddParameter.userIdentity'
+    langs:
+      - typeScript
+    type: interface
+    summary: 'Batch 계산 노드에서 복구 작업이 트리거될 때 작업을 다시 시도 합니다. 포함 (하지만에 제한 되지 않습니다)의 복구 작업이 경우 비정상 계산 노드를 다시 부팅 또는 계산 노드 호스트 오류로 인해 표시 되지 않습니다. 복구 작업은 독립적 이며 된 maxTaskRetryCount에 대해 계산 되지 않습니다 인해 다시 시도 합니다. 된 maxTaskRetryCount 0 인 경우에 내부는 재시도 복구 작업으로 인해 발생할 수 있습니다. 이 인해 모든 작업이 멱 등 원 이어야 합니다. 즉, 작업을 중단 되 고 중복 된 데이터 나 손상 없이 다시 시작을 허용 해야 합니다. 최상의 일종의 검사점을 사용 하는 장기 실행 작업에 대 한 연습입니다.'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.affinityInfo'
+    name: affinityInfo
+    fullName: affinityInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 새 작업을 시작 하는 계산 노드를 선택 하 여 Batch 서비스에서 사용할 수 있는 위치 힌트입니다.
+    optional: true
+    syntax:
+      content: 'affinityInfo?: AffinityInformation'
+      return:
+        type:
+          - '@azure/batch.AffinityInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.applicationPackageReferences'
+    name: applicationPackageReferences
+    fullName: applicationPackageReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '명령줄을 실행 하기 전에 계산 노드에 Batch 서비스를 배포할 응용 프로그램 패키지의 목록입니다. 응용 프로그램 패키지는 다운로드 되 고 작업 디렉터리는 작업이 아닌 공유 디렉터리에 배포 합니다. 따라서 참조 된 패키지가 계산 노드에서 이미 최신 상태를 하지 다시 다운로드 됩니다. 계산 노드에서 기존 복사본이 사용 됩니다. 참조 된 응용 프로그램 패키지를 설치할 수 없거나, 예를 들어 패키지 삭제 되었거나 다운로드 실패 한 작업이 실패 하기 때문에 있습니다.'
+    optional: true
+    syntax:
+      content: 'applicationPackageReferences?: ApplicationPackageReference[]'
+      return:
+        type:
+          - '@azure/batch.ApplicationPackageReference[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.authenticationTokenSettings'
+    name: authenticationTokenSettings
+    fullName: authenticationTokenSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업 일괄 처리 서비스 작업을 수행 하는 데 사용할 수 있는 인증 토큰에 대 한 설정입니다. 이 속성을 설정 하는 경우 Batch 서비스 계정 액세스 키를 요구 하지 않고 일괄 처리 서비스 작업을 인증에 사용할 수 있는 인증 토큰을 사용 하 여 작업을 제공 합니다. 토큰은 AZ_BATCH_AUTHENTICATION_TOKEN 환경 변수를 통해 제공 됩니다. 토큰을 사용 하 여 작업을 수행할 수 있는 작업의 설정에 따라 달라 집니다. 예를 들어, 태스크를 작업에 다른 작업을 추가 하거나 작업에서 다른 태스크 또는 작업의 상태를 확인 하기 위해 작업 권한을 요청할 수 있습니다.'
+    optional: true
+    syntax:
+      content: 'authenticationTokenSettings?: AuthenticationTokenSettings'
+      return:
+        type:
+          - '@azure/batch.AuthenticationTokenSettings'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.commandLine'
+    name: commandLine
+    fullName: commandLine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '태스크의 명령줄입니다. 다중 인스턴스 작업에 대 한 명령줄 주 작업 및 모든 하위 작업 조합 명령줄 실행이 완료 한 후에 주 작업으로 실행 됩니다. 명령줄 셸에서 실행 되지 않으며 따라서 환경 변수 확장과 같은 셸 기능을 사용할 수 없습니다. 이러한 기능을 활용 하려는 경우를 호출 해야 명령줄에서 셸을 예를 들어 "cmd /c MyCommand"를 사용 하 여 Windows에서 또는 "/ bin/sh-c MyCommand" Linux에서. 명령줄 파일 경로 가리키는 경우 (태스크 작업 디렉터리의 상대), 상대 경로 사용 하 또는 일괄 처리 제공 된 환경 변수를 사용 해야 합니다 (https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables)합니다.'
+    syntax:
+      content: 'commandLine: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.constraints'
+    name: constraints
+    fullName: constraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 태스크에 적용되는 실행 제약 조건입니다. 제약 조건을 지정 하지 않으면 된 maxTaskRetryCount는 작업에 대해 지정 된 maxTaskRetryCount는 maxWallClockTime 한정 되지 않습니다. 및는 retentionTime 7 일입니다.
+    optional: true
+    syntax:
+      content: 'constraints?: TaskConstraints'
+      return:
+        type:
+          - '@azure/batch.TaskConstraints'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.containerSettings'
+    name: containerSettings
+    fullName: containerSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업을 실행 중인 컨테이너에 대 한 설정입니다. 이 작업을 실행 하는 풀에 containerconfiguration 집합이 설정 하는 경우이 설정 해야 합니다도 합니다. 이 작업을 실행 하는 풀에 containerconfiguration 집합이 설정 없으면이 되지 설정 되어야 합니다. 이 옵션을 지정 하는 경우 AZ_BATCH_NODE_ROOT_DIR (노드에서 Azure Batch 디렉터리의 루트) 아래의 모든 디렉터리가 재귀적으로 컨테이너에 매핑되고, 모든 작업 환경 변수가 컨테이너에 매핑되고 및 태스크 명령줄은 컨테이너에서 실행 합니다.'
+    optional: true
+    syntax:
+      content: 'containerSettings?: TaskContainerSettings'
+      return:
+        type:
+          - '@azure/batch.TaskContainerSettings'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.dependsOn'
+    name: dependsOn
+    fullName: dependsOn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '이 작업에 의존 하는 작업입니다. 종속 된 모든 작업이 성공적으로 완료 될 때까지이 작업을 예약할 수 됩니다. 실패 하 고 해당 재시도 횟수를 소진 시켜 서 이러한 작업의 경우이 작업은 예약 되지 않습니다. 작업이 없는 경우 usesTaskDependencies를 true로 설정에 있고이 요소를 사용할 수 있는지, 요청이 TaskDependenciesNotSpecifiedOnJob 오류 코드로 실패 합니다.'
+    optional: true
+    syntax:
+      content: 'dependsOn?: TaskDependencies'
+      return:
+        type:
+          - '@azure/batch.TaskDependencies'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.displayName'
+    name: displayName
+    fullName: displayName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업에 대 한 표시 이름입니다. 표시 이름은 고유할 필요가 및 최대 길이는 1024 자 유니코드 문자를 포함할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'displayName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.environmentSettings'
+    name: environmentSettings
+    fullName: environmentSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 목록 작업에 대 한 환경 변수 설정입니다.
+    optional: true
+    syntax:
+      content: 'environmentSettings?: EnvironmentSetting[]'
+      return:
+        type:
+          - '@azure/batch.EnvironmentSetting[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.exitConditions'
+    name: exitConditions
+    fullName: exitConditions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 어떻게 Batch 서비스는 작업이 완료 될 때 응답 해야 합니다.
+    optional: true
+    syntax:
+      content: 'exitConditions?: ExitConditions'
+      return:
+        type:
+          - '@azure/batch.ExitConditions'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업 내의 태스크를 고유 하 게 식별 하는 문자열입니다. ID는 하이픈 및 밑줄만 포함 하는 영숫자 문자 조합을 포함할 수 있습니다 및 64 개 이상의 문자를 포함할 수 없습니다. ID는 대소 문자가 구분 및 대/소문자 (즉, 없을 경우 대/소문자만 다른 작업 내에서 두 개의 Id)입니다.'
+    syntax:
+      content: 'id: string'
+      return:
+        type:
+          - string
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.multiInstanceSettings'
+    name: multiInstanceSettings
+    fullName: multiInstanceSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 나타내고 작업 다중 인스턴스 작업에서는 다중 인스턴스 작업을 실행 하는 방법에 대 한 정보를 포함 하는 개체입니다.
+    optional: true
+    syntax:
+      content: 'multiInstanceSettings?: MultiInstanceSettings'
+      return:
+        type:
+          - '@azure/batch.MultiInstanceSettings'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.outputFiles'
+    name: outputFiles
+    fullName: outputFiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Batch 서비스는 명령줄을 실행 한 후에 계산 노드에서 업로드할 파일의 목록입니다. 다중 인스턴스 작업에 대 한 파일 주 작업 실행 되는 계산 노드에서 업로드만 됩니다.
+    optional: true
+    syntax:
+      content: 'outputFiles?: OutputFile[]'
+      return:
+        type:
+          - '@azure/batch.OutputFile[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.resourceFiles'
+    name: resourceFiles
+    fullName: resourceFiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Batch 서비스는 명령줄을 실행 하기 전에 계산 노드에 다운로드 하는 파일의 목록입니다. 다중 인스턴스 작업에 대 한 리소스 파일을 주 작업 실행 되는 계산 노드에 다운로드만 됩니다. 리소스 파일의 목록에 대 한 최대 크기가 있습니다.  최대 크기를 초과 하면 요청이 실패 하 고 응답 오류 코드는 RequestEntityTooLarge 됩니다. 이런 경우의 ResourceFiles 컬렉션 크기가 줄여야 합니다. .Zip 파일, 응용 프로그램 패키지 또는 Docker 컨테이너를 사용 하 여 수행할 수 있습니다.'
+    optional: true
+    syntax:
+      content: 'resourceFiles?: ResourceFile[]'
+      return:
+        type:
+          - '@azure/batch.ResourceFile[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskAddParameter.userIdentity'
+    name: userIdentity
+    fullName: userIdentity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업이 실행 되는 사용자 id입니다. 생략 하면 태스크에 작업이 고유 관리자가 아닌 사용자로 실행 됩니다.
+    optional: true
+    syntax:
+      content: 'userIdentity?: UserIdentity'
+      return:
+        type:
+          - '@azure/batch.UserIdentity'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.AffinityInformation'
+    name: AffinityInformation
+    spec.typeScript:
+      - name: AffinityInformation
+        fullName: AffinityInformation
+        uid: '@azure/batch.AffinityInformation'
+  - uid: '@azure/batch.ApplicationPackageReference[]'
+    name: 'ApplicationPackageReference[]'
+    spec.typeScript:
+      - name: ApplicationPackageReference
+        fullName: ApplicationPackageReference
+        uid: '@azure/batch.ApplicationPackageReference'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.AuthenticationTokenSettings'
+    name: AuthenticationTokenSettings
+    spec.typeScript:
+      - name: AuthenticationTokenSettings
+        fullName: AuthenticationTokenSettings
+        uid: '@azure/batch.AuthenticationTokenSettings'
+  - uid: '@azure/batch.TaskConstraints'
+    name: TaskConstraints
+    spec.typeScript:
+      - name: TaskConstraints
+        fullName: TaskConstraints
+        uid: '@azure/batch.TaskConstraints'
+  - uid: '@azure/batch.TaskContainerSettings'
+    name: TaskContainerSettings
+    spec.typeScript:
+      - name: TaskContainerSettings
+        fullName: TaskContainerSettings
+        uid: '@azure/batch.TaskContainerSettings'
+  - uid: '@azure/batch.TaskDependencies'
+    name: TaskDependencies
+    spec.typeScript:
+      - name: TaskDependencies
+        fullName: TaskDependencies
+        uid: '@azure/batch.TaskDependencies'
+  - uid: '@azure/batch.EnvironmentSetting[]'
+    name: 'EnvironmentSetting[]'
+    spec.typeScript:
+      - name: EnvironmentSetting
+        fullName: EnvironmentSetting
+        uid: '@azure/batch.EnvironmentSetting'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.ExitConditions'
+    name: ExitConditions
+    spec.typeScript:
+      - name: ExitConditions
+        fullName: ExitConditions
+        uid: '@azure/batch.ExitConditions'
+  - uid: '@azure/batch.MultiInstanceSettings'
+    name: MultiInstanceSettings
+    spec.typeScript:
+      - name: MultiInstanceSettings
+        fullName: MultiInstanceSettings
+        uid: '@azure/batch.MultiInstanceSettings'
+  - uid: '@azure/batch.OutputFile[]'
+    name: 'OutputFile[]'
+    spec.typeScript:
+      - name: OutputFile
+        fullName: OutputFile
+        uid: '@azure/batch.OutputFile'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.ResourceFile[]'
+    name: 'ResourceFile[]'
+    spec.typeScript:
+      - name: ResourceFile
+        fullName: ResourceFile
+        uid: '@azure/batch.ResourceFile'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.UserIdentity'
+    name: UserIdentity
+    spec.typeScript:
+      - name: UserIdentity
+        fullName: UserIdentity
+        uid: '@azure/batch.UserIdentity'
