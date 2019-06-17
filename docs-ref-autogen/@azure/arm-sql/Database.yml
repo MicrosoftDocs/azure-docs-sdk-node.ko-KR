@@ -1,0 +1,650 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.Database'
+    name: Database
+    fullName: Database
+    children:
+      - '@azure/arm-sql.Database.catalogCollation'
+      - '@azure/arm-sql.Database.collation'
+      - '@azure/arm-sql.Database.createMode'
+      - '@azure/arm-sql.Database.creationDate'
+      - '@azure/arm-sql.Database.currentServiceObjectiveName'
+      - '@azure/arm-sql.Database.currentSku'
+      - '@azure/arm-sql.Database.databaseId'
+      - '@azure/arm-sql.Database.defaultSecondaryLocation'
+      - '@azure/arm-sql.Database.earliestRestoreDate'
+      - '@azure/arm-sql.Database.elasticPoolId'
+      - '@azure/arm-sql.Database.failoverGroupId'
+      - '@azure/arm-sql.Database.id'
+      - '@azure/arm-sql.Database.kind'
+      - '@azure/arm-sql.Database.licenseType'
+      - '@azure/arm-sql.Database.location'
+      - '@azure/arm-sql.Database.longTermRetentionBackupResourceId'
+      - '@azure/arm-sql.Database.managedBy'
+      - '@azure/arm-sql.Database.maxLogSizeBytes'
+      - '@azure/arm-sql.Database.maxSizeBytes'
+      - '@azure/arm-sql.Database.name'
+      - '@azure/arm-sql.Database.readScale'
+      - '@azure/arm-sql.Database.recoverableDatabaseId'
+      - '@azure/arm-sql.Database.recoveryServicesRecoveryPointId'
+      - '@azure/arm-sql.Database.requestedServiceObjectiveName'
+      - '@azure/arm-sql.Database.restorableDroppedDatabaseId'
+      - '@azure/arm-sql.Database.restorePointInTime'
+      - '@azure/arm-sql.Database.sampleName'
+      - '@azure/arm-sql.Database.sku'
+      - '@azure/arm-sql.Database.sourceDatabaseDeletionDate'
+      - '@azure/arm-sql.Database.sourceDatabaseId'
+      - '@azure/arm-sql.Database.status'
+      - '@azure/arm-sql.Database.tags'
+      - '@azure/arm-sql.Database.type'
+      - '@azure/arm-sql.Database.zoneRedundant'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="9cb0b-101">데이터베이스 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-101">A database resource.</span></span>
+    extends:
+      name: '@azure/arm-sql.TrackedResource'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.catalogCollation'
+    name: catalogCollation
+    fullName: catalogCollation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9cb0b-102">메타 데이터 카탈로그의 데이터 정렬입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-102">Collation of the metadata catalog.</span></span> <span data-ttu-id="9cb0b-103">가능한 값은 다음과 같습니다. ''DATABASE_DEFAULT'', ''SQL_Latin1_General_CP1_CI_AS''</span><span class="sxs-lookup"><span data-stu-id="9cb0b-103">Possible values include: ''DATABASE_DEFAULT'', ''SQL_Latin1_General_CP1_CI_AS''</span></span>'
+    optional: true
+    syntax:
+      content: 'catalogCollation?: CatalogCollationType'
+      return:
+        type:
+          - '@azure/arm-sql.CatalogCollationType'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.collation'
+    name: collation
+    fullName: collation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-104">데이터베이스의 데이터 정렬입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-104">The collation of the database.</span></span>
+    optional: true
+    syntax:
+      content: 'collation?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.createMode'
+    name: createMode
+    fullName: createMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="9cb0b-105">데이터베이스 만들기 모드를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-105">Specifies the mode of database creation.</span></span>
+      <span data-ttu-id="9cb0b-106">기본값: 일반 데이터베이스 만들기입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-106">Default: regular database creation.</span></span>
+
+      <span data-ttu-id="9cb0b-107">복사본: 기존 데이터베이스의 복사본으로 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-107">Copy: creates a database as a copy of an existing database.</span></span> <span data-ttu-id="9cb0b-108">sourceDatabaseId 원본 데이터베이스의 리소스 ID로 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-108">sourceDatabaseId must be specified as the resource ID of the source database.</span></span>
+
+      <span data-ttu-id="9cb0b-109">: 보조 데이터베이스를 기존 데이터베이스의 보조 복제본으로 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-109">Secondary: creates a database as a secondary replica of an existing database.</span></span> <span data-ttu-id="9cb0b-110">sourceDatabaseId 기존 주 데이터베이스의 리소스 ID로 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-110">sourceDatabaseId must be specified as the resource ID of the existing primary database.</span></span>
+
+      <span data-ttu-id="9cb0b-111">PointInTimeRestore: 기존 데이터베이스의 지정 된 지정 시간 백업 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-111">PointInTimeRestore: Creates a database by restoring a point in time backup of an existing database.</span></span> <span data-ttu-id="9cb0b-112">sourceDatabaseId 기존 데이터베이스의 리소스 ID로 지정 해야 하 고 restorePointInTime 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-112">sourceDatabaseId must be specified as the resource ID of the existing database, and restorePointInTime must be specified.</span></span>
+
+      <span data-ttu-id="9cb0b-113">복구: 지역에서 복제 된 백업을 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-113">Recovery: Creates a database by restoring a geo-replicated backup.</span></span> <span data-ttu-id="9cb0b-114">sourceDatabaseId 복원 복구 가능한 데이터베이스 리소스 ID로 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-114">sourceDatabaseId must be specified as the recoverable database resource ID to restore.</span></span>
+
+      <span data-ttu-id="9cb0b-115">복원: 삭제 된 데이터베이스의 백업을 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-115">Restore: Creates a database by restoring a backup of a deleted database.</span></span> <span data-ttu-id="9cb0b-116">sourceDatabaseId 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-116">sourceDatabaseId must be specified.</span></span> <span data-ttu-id="9cb0b-117">SourceDatabaseId 데이터베이스의 원래 리소스 ID 인 경우 sourceDatabaseDeletionDate 지정 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-117">If sourceDatabaseId is the database's original resource ID, then sourceDatabaseDeletionDate must be specified.</span></span> <span data-ttu-id="9cb0b-118">그렇지 않으면 sourceDatabaseId 복원 가능한 삭제 된 데이터베이스 리소스 ID는 이어야 합니다 하 고 sourceDatabaseDeletionDate 무시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-118">Otherwise sourceDatabaseId must be the restorable dropped database resource ID and sourceDatabaseDeletionDate is ignored.</span></span>
+      <span data-ttu-id="9cb0b-119">이전 시점으로에서 복원할 수 restorePointInTime는 지정할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-119">restorePointInTime may also be specified to restore from an earlier point in time.</span></span>
+
+      <span data-ttu-id="9cb0b-120">RestoreLongTermRetentionBackup: 장기 보존 자격 증명 모음에서 복원 하 여 데이터베이스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-120">RestoreLongTermRetentionBackup: Creates a database by restoring from a long term retention vault.</span></span> <span data-ttu-id="9cb0b-121">recoveryServicesRecoveryPointResourceId는 리소스 id입니다. 복구 지점으로 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-121">recoveryServicesRecoveryPointResourceId must be specified as the recovery point resource ID.</span></span>
+
+      <span data-ttu-id="9cb0b-122">Copy, 보조 및 RestoreLongTermRetentionBackup DataWarehouse 버전에 대 한 지원 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-122">Copy, Secondary, and RestoreLongTermRetentionBackup are not supported for DataWarehouse edition.</span></span> <span data-ttu-id="9cb0b-123">가능한 값은 다음과 같습니다. 'Default', 'Copy', 'Secondary', 'PointInTimeRestore', 'Restore', 'Recovery', 'RestoreExternalBackup', 'RestoreExternalBackupSecondary', 'RestoreLongTermRetentionBackup', 'OnlineSecondary'</span><span class="sxs-lookup"><span data-stu-id="9cb0b-123">Possible values include: 'Default', 'Copy', 'Secondary', 'PointInTimeRestore', 'Restore', 'Recovery', 'RestoreExternalBackup', 'RestoreExternalBackupSecondary', 'RestoreLongTermRetentionBackup', 'OnlineSecondary'</span></span>
+    optional: true
+    syntax:
+      content: 'createMode?: CreateMode'
+      return:
+        type:
+          - '@azure/arm-sql.CreateMode'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.creationDate'
+    name: creationDate
+    fullName: creationDate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-124">데이터베이스 (ISO8601 형식)의 생성 날짜입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-124">The creation date of the database (ISO8601 format).</span></span>
+      <span data-ttu-id="9cb0b-125">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-125">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'creationDate?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.currentServiceObjectiveName'
+    name: currentServiceObjectiveName
+    fullName: currentServiceObjectiveName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-126">현재 서비스 수준 목표 이름 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-126">The current service level objective name of the database.</span></span>
+      <span data-ttu-id="9cb0b-127">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-127">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'currentServiceObjectiveName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.currentSku'
+    name: currentSku
+    fullName: currentSku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-128">이름 및 sku 계층입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-128">The name and tier of the SKU.</span></span>
+      <span data-ttu-id="9cb0b-129">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-129">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'currentSku?: Sku'
+      return:
+        type:
+          - '@azure/arm-sql.Sku'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.databaseId'
+    name: databaseId
+    fullName: databaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-130">데이터베이스의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-130">The ID of the database.</span></span>
+      <span data-ttu-id="9cb0b-131">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-131">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'databaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.defaultSecondaryLocation'
+    name: defaultSecondaryLocation
+    fullName: defaultSecondaryLocation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-132">이 데이터베이스에 대 한 기본 보조 영역입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-132">The default secondary region for this database.</span></span>
+      <span data-ttu-id="9cb0b-133">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-133">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'defaultSecondaryLocation?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.earliestRestoreDate'
+    name: earliestRestoreDate
+    fullName: earliestRestoreDate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-134">복원 하는이 레코드는 빠른 시작 날짜와 시간 (ISO8601 형식)이이 데이터베이스에 대 한 제품은입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-134">This records the earliest start date and time that restore is available for this database (ISO8601 format).</span></span>
+      <span data-ttu-id="9cb0b-135">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-135">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'earliestRestoreDate?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.elasticPoolId'
+    name: elasticPoolId
+    fullName: elasticPoolId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-136">이 데이터베이스를 포함 하는 탄력적 풀의 리소스 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-136">The resource identifier of the elastic pool containing this database.</span></span>
+    optional: true
+    syntax:
+      content: 'elasticPoolId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.failoverGroupId'
+    name: failoverGroupId
+    fullName: failoverGroupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-137">이 데이터베이스에 속하는 장애 조치 그룹 리소스 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-137">Failover Group resource identifier that this database belongs to.</span></span>
+      <span data-ttu-id="9cb0b-138">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-138">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'failoverGroupId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-139">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-139">Resource ID.</span></span>
+      <span data-ttu-id="9cb0b-140">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-140">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.kind'
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-141">데이터베이스의 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-141">Kind of database.</span></span> <span data-ttu-id="9cb0b-142">Azure portal 환경을 사용 하는 메타 데이터입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-142">This is metadata used for the Azure portal experience.</span></span>
+      <span data-ttu-id="9cb0b-143">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-143">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'kind?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.licenseType'
+    name: licenseType
+    fullName: licenseType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9cb0b-144">이 데이터베이스에 적용할 라이선스 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-144">The license type to apply for this database.</span></span> <span data-ttu-id="9cb0b-145">가능한 값은 다음과 같습니다. ''LicenseIncluded'', ''BasePrice''</span><span class="sxs-lookup"><span data-stu-id="9cb0b-145">Possible values include: ''LicenseIncluded'', ''BasePrice''</span></span>'
+    optional: true
+    syntax:
+      content: 'licenseType?: DatabaseLicenseType'
+      return:
+        type:
+          - '@azure/arm-sql.DatabaseLicenseType'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.location'
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-146">리소스 위치.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-146">Resource location.</span></span>
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.longTermRetentionBackupResourceId'
+    name: longTermRetentionBackupResourceId
+    fullName: longTermRetentionBackupResourceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-147">장기 보존 백업을 사용 하 여 연결의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-147">The resource identifier of the long term retention backup associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'longTermRetentionBackupResourceId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.managedBy'
+    name: managedBy
+    fullName: managedBy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-148">데이터베이스를 관리 하는 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-148">Resource that manages the database.</span></span>
+      <span data-ttu-id="9cb0b-149">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-149">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'managedBy?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.maxLogSizeBytes'
+    name: maxLogSizeBytes
+    fullName: maxLogSizeBytes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-150">이 데이터베이스의 최대 로그 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-150">The max log size for this database.</span></span>
+      <span data-ttu-id="9cb0b-151">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-151">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'maxLogSizeBytes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.maxSizeBytes'
+    name: maxSizeBytes
+    fullName: maxSizeBytes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-152">바이트 단위로 표시 하는 데이터베이스의 최대 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-152">The max size of the database expressed in bytes.</span></span>
+    optional: true
+    syntax:
+      content: 'maxSizeBytes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-153">리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-153">Resource name.</span></span>
+      <span data-ttu-id="9cb0b-154">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-154">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.readScale'
+    name: readScale
+    fullName: readScale
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9cb0b-155">읽기 전용 라우팅의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-155">The state of read-only routing.</span></span> <span data-ttu-id="9cb0b-156">사용 하도록 설정 하는 경우 해당 연결 문자열의 경우 readonly로 설정 하는 응용 프로그램 의도 연결을 동일한 지역에 읽기 전용 보조 복제본으로 라우팅될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-156">If enabled, connections that have application intent set to readonly in their connection string may be routed to a readonly secondary replica in the same region.</span></span> <span data-ttu-id="9cb0b-157">가능한 값은 다음과 같습니다. '' Enabled'', ''Disabled''</span><span class="sxs-lookup"><span data-stu-id="9cb0b-157">Possible values include: ''Enabled'', ''Disabled''</span></span>'
+    optional: true
+    syntax:
+      content: 'readScale?: DatabaseReadScale'
+      return:
+        type:
+          - '@azure/arm-sql.DatabaseReadScale'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.recoverableDatabaseId'
+    name: recoverableDatabaseId
+    fullName: recoverableDatabaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-158">연결 된 복구 가능한 데이터베이스의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-158">The resource identifier of the recoverable database associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'recoverableDatabaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.recoveryServicesRecoveryPointId'
+    name: recoveryServicesRecoveryPointId
+    fullName: recoveryServicesRecoveryPointId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-159">관련 된 복구 지점의의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-159">The resource identifier of the recovery point associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'recoveryServicesRecoveryPointId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.requestedServiceObjectiveName'
+    name: requestedServiceObjectiveName
+    fullName: requestedServiceObjectiveName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-160">요청 된 서비스 수준 목표 이름 데이터베이스의 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-160">The requested service level objective name of the database.</span></span>
+      <span data-ttu-id="9cb0b-161">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-161">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'requestedServiceObjectiveName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.restorableDroppedDatabaseId'
+    name: restorableDroppedDatabaseId
+    fullName: restorableDroppedDatabaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-162">관련 된 복원 가능 삭제 데이터베이스의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-162">The resource identifier of the restorable dropped database associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'restorableDroppedDatabaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.restorePointInTime'
+    name: restorePointInTime
+    fullName: restorePointInTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-163">새 데이터베이스를 만들려면 복원 될 원본 데이터베이스의 시간 (ISO8601 형식)에서 점을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-163">Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database.</span></span>
+    optional: true
+    syntax:
+      content: 'restorePointInTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.sampleName'
+    name: sampleName
+    fullName: sampleName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9cb0b-164">이 데이터베이스를 만들 때 적용할 샘플 스키마의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-164">The name of the sample schema to apply when creating this database.</span></span> <span data-ttu-id="9cb0b-165">가능한 값은 다음과 같습니다. ''AdventureWorksLT'', ''WideWorldImportersStd'', ''WideWorldImportersFull''</span><span class="sxs-lookup"><span data-stu-id="9cb0b-165">Possible values include: ''AdventureWorksLT'', ''WideWorldImportersStd'', ''WideWorldImportersFull''</span></span>'
+    optional: true
+    syntax:
+      content: 'sampleName?: SampleName'
+      return:
+        type:
+          - '@azure/arm-sql.SampleName'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.sku'
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-166">이름 및 sku 계층입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-166">The name and tier of the SKU.</span></span>
+    optional: true
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        type:
+          - '@azure/arm-sql.Sku'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.sourceDatabaseDeletionDate'
+    name: sourceDatabaseDeletionDate
+    fullName: sourceDatabaseDeletionDate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-167">데이터베이스 삭제 된 시간을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-167">Specifies the time that the database was deleted.</span></span>
+    optional: true
+    syntax:
+      content: 'sourceDatabaseDeletionDate?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.sourceDatabaseId'
+    name: sourceDatabaseId
+    fullName: sourceDatabaseId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-168">연결 된 원본 데이터베이스의 리소스 식별자는이 데이터베이스의 작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-168">The resource identifier of the source database associated with create operation of this database.</span></span>
+    optional: true
+    syntax:
+      content: 'sourceDatabaseId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.status'
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9cb0b-169">데이터베이스의 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-169">The status of the database.</span></span> <span data-ttu-id="9cb0b-170">가능한 값은 다음과 같습니다. ''온라인'', ''복원'', ''RecoveryPending'', ''복구'', ''의심 스러운'', ''오프 라인'', ''대기'', ''종료'', ''EmergencyMode'', ''자동으로 닫힘'', ''복사'', ''만들기'', ''액세스할 수 없는'', ''OfflineSecondary'', ''일시 중지'', ''일시 중지'' ''다시 시작'', ''크기 조정'' **참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-170">Possible values include: ''Online'', ''Restoring'', ''RecoveryPending'', ''Recovering'', ''Suspect'', ''Offline'', ''Standby'', ''Shutdown'', ''EmergencyMode'', ''AutoClosed'', ''Copying'', ''Creating'', ''Inaccessible'', ''OfflineSecondary'', ''Pausing'', ''Paused'', ''Resuming'', ''Scaling'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'status?: DatabaseStatus'
+      return:
+        type:
+          - '@azure/arm-sql.DatabaseStatus'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.tags'
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="9cb0b-171">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-171">Resource tags.</span></span>
+    optional: true
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        type:
+          - 'undefined | [key: string]: string'
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.type'
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="9cb0b-172">리소스 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-172">Resource type.</span></span>
+      <span data-ttu-id="9cb0b-173">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="9cb0b-173">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.Database.zoneRedundant'
+    name: zoneRedundant
+    fullName: zoneRedundant
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="9cb0b-174">이 데이터베이스 영역 중복, 즉,이 데이터베이스의 복제본 인지 여부는 여러 가용성 영역에 걸쳐 분산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9cb0b-174">Whether or not this database is zone redundant, which means the replicas of this database will be spread across multiple availability zones.</span></span>'
+    optional: true
+    syntax:
+      content: 'zoneRedundant?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.TrackedResource'
+    name: TrackedResource
+    spec.typeScript:
+      - name: TrackedResource
+        fullName: TrackedResource
+        uid: '@azure/arm-sql.TrackedResource'
+  - uid: '@azure/arm-sql.CatalogCollationType'
+    name: CatalogCollationType
+    spec.typeScript:
+      - name: CatalogCollationType
+        fullName: CatalogCollationType
+        uid: '@azure/arm-sql.CatalogCollationType'
+  - uid: '@azure/arm-sql.CreateMode'
+    name: CreateMode
+    spec.typeScript:
+      - name: CreateMode
+        fullName: CreateMode
+        uid: '@azure/arm-sql.CreateMode'
+  - uid: '@azure/arm-sql.Sku'
+    name: Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: '@azure/arm-sql.Sku'
+  - uid: '@azure/arm-sql.DatabaseLicenseType'
+    name: DatabaseLicenseType
+    spec.typeScript:
+      - name: DatabaseLicenseType
+        fullName: DatabaseLicenseType
+        uid: '@azure/arm-sql.DatabaseLicenseType'
+  - uid: '@azure/arm-sql.DatabaseReadScale'
+    name: DatabaseReadScale
+    spec.typeScript:
+      - name: DatabaseReadScale
+        fullName: DatabaseReadScale
+        uid: '@azure/arm-sql.DatabaseReadScale'
+  - uid: '@azure/arm-sql.SampleName'
+    name: SampleName
+    spec.typeScript:
+      - name: SampleName
+        fullName: SampleName
+        uid: '@azure/arm-sql.SampleName'
+  - uid: '@azure/arm-sql.DatabaseStatus'
+    name: DatabaseStatus
+    spec.typeScript:
+      - name: DatabaseStatus
+        fullName: DatabaseStatus
+        uid: '@azure/arm-sql.DatabaseStatus'

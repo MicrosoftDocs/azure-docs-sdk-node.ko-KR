@@ -1,0 +1,639 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-servicebus.Rules'
+    name: Rules
+    fullName: Rules
+    children:
+      - '@azure/arm-servicebus.Rules.createOrUpdate'
+      - '@azure/arm-servicebus.Rules.createOrUpdate_2'
+      - '@azure/arm-servicebus.Rules.createOrUpdate_1'
+      - '@azure/arm-servicebus.Rules.deleteMethod'
+      - '@azure/arm-servicebus.Rules.deleteMethod_2'
+      - '@azure/arm-servicebus.Rules.deleteMethod_1'
+      - '@azure/arm-servicebus.Rules.get'
+      - '@azure/arm-servicebus.Rules.get_2'
+      - '@azure/arm-servicebus.Rules.get_1'
+      - '@azure/arm-servicebus.Rules.listBySubscriptions'
+      - '@azure/arm-servicebus.Rules.listBySubscriptions_2'
+      - '@azure/arm-servicebus.Rules.listBySubscriptions_1'
+      - '@azure/arm-servicebus.Rules.listBySubscriptionsNext'
+      - '@azure/arm-servicebus.Rules.listBySubscriptionsNext_2'
+      - '@azure/arm-servicebus.Rules.listBySubscriptionsNext_1'
+      - '@azure/arm-servicebus.Rules.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="c7048-101">규칙을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-101">Class representing a Rules.</span></span>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, string, string, Rule, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c7048-102">새 규칙을 만들고 기존 규칙을 업데이트</span><span class="sxs-lookup"><span data-stu-id="c7048-102">Creates a new rule and updates an existing rule</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, parameters: Rule, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-103">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-103">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-104">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-104">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-105">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-105">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-106">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-106">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-107">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-107">The rule name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-servicebus.Rule'
+          description: <span data-ttu-id="c7048-108">규칙 만들기에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-108">Parameters supplied to create a rule.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RulesCreateOrUpdateResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.createOrUpdate_2'
+    name: 'createOrUpdate(string, string, string, string, string, Rule, RequestOptionsBase, ServiceCallback<Rule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, parameters: Rule, options: RequestOptionsBase, callback: ServiceCallback<Rule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-109">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-109">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-110">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-110">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-111">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-111">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-112">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-112">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-113">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-113">The rule name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-servicebus.Rule'
+          description: <span data-ttu-id="c7048-114">규칙 만들기에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-114">Parameters supplied to create a rule.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c7048-115">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c7048-115">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.Rule>
+          description: |
+            <span data-ttu-id="c7048-116">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-116">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesCreateOrUpdateResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.createOrUpdate_1'
+    name: 'createOrUpdate(string, string, string, string, string, Rule, ServiceCallback<Rule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, parameters: Rule, callback: ServiceCallback<Rule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-117">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-117">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-118">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-118">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-119">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-119">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-120">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-120">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-121">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-121">The rule name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-servicebus.Rule'
+          description: <span data-ttu-id="c7048-122">규칙 만들기에 제공 된 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-122">Parameters supplied to create a rule.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.Rule>
+          description: |
+            <span data-ttu-id="c7048-123">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-123">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesCreateOrUpdateResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.deleteMethod'
+    name: 'deleteMethod(string, string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c7048-124">기존 규칙을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-124">Deletes an existing rule.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-125">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-125">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-126">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-126">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-127">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-127">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-128">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-128">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-129">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-129">The rule name.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.deleteMethod_2'
+    name: 'deleteMethod(string, string, string, string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-130">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-130">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-131">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-131">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-132">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-132">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-133">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-133">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-134">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-134">The rule name.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c7048-135">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c7048-135">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="c7048-136">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-136">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.deleteMethod_1'
+    name: 'deleteMethod(string, string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-137">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-137">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-138">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-138">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-139">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-139">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-140">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-140">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-141">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-141">The rule name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="c7048-142">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-142">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.get'
+    name: 'get(string, string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c7048-143">지정된 된 규칙에 대 한 설명을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-143">Retrieves the description for the specified rule.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-144">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-144">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-145">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-145">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-146">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-146">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-147">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-147">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-148">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-148">The rule name.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RulesGetResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.get_2'
+    name: 'get(string, string, string, string, string, RequestOptionsBase, ServiceCallback<Rule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, options: RequestOptionsBase, callback: ServiceCallback<Rule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-149">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-149">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-150">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-150">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-151">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-151">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-152">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-152">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-153">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-153">The rule name.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c7048-154">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c7048-154">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.Rule>
+          description: |
+            <span data-ttu-id="c7048-155">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-155">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesGetResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.get_1'
+    name: 'get(string, string, string, string, string, ServiceCallback<Rule>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, ruleName: string, callback: ServiceCallback<Rule>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-156">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-156">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-157">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-157">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-158">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-158">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-159">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-159">The subscription name.</span></span>
+        - id: ruleName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-160">규칙 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-160">The rule name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.Rule>
+          description: |
+            <span data-ttu-id="c7048-161">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-161">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesGetResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.listBySubscriptions'
+    name: 'listBySubscriptions(string, string, string, string, Models.RulesListBySubscriptionsOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c7048-162">목록 내에서 모든 규칙이 지정 된 항목 구독</span><span class="sxs-lookup"><span data-stu-id="c7048-162">List all the rules within given topic-subscription</span></span>
+    syntax:
+      content: 'function listBySubscriptions(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, options?: Models.RulesListBySubscriptionsOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-163">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-163">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-164">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-164">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-165">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-165">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-166">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-166">The subscription name.</span></span>
+        - id: options
+          type:
+            - Models.RulesListBySubscriptionsOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RulesListBySubscriptionsResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.listBySubscriptions_2'
+    name: 'listBySubscriptions(string, string, string, string, RulesListBySubscriptionsOptionalParams, ServiceCallback<RuleListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptions(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, options: RulesListBySubscriptionsOptionalParams, callback: ServiceCallback<RuleListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-167">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-167">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-168">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-168">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-169">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-169">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-170">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-170">The subscription name.</span></span>
+        - id: options
+          type:
+            - '@azure/arm-servicebus.RulesListBySubscriptionsOptionalParams'
+          description: <span data-ttu-id="c7048-171">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c7048-171">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.RuleListResult>
+          description: |
+            <span data-ttu-id="c7048-172">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-172">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesListBySubscriptionsResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.listBySubscriptions_1'
+    name: 'listBySubscriptions(string, string, string, string, ServiceCallback<RuleListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptions(resourceGroupName: string, namespaceName: string, topicName: string, subscriptionName: string, callback: ServiceCallback<RuleListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-173">Azure 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-173">Name of the Resource group within the Azure subscription.</span></span>
+        - id: namespaceName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-174">네임 스페이스 이름</span><span class="sxs-lookup"><span data-stu-id="c7048-174">The namespace name</span></span>
+        - id: topicName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-175">항목 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-175">The topic name.</span></span>
+        - id: subscriptionName
+          type:
+            - string
+          description: <span data-ttu-id="c7048-176">구독 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-176">The subscription name.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.RuleListResult>
+          description: |
+            <span data-ttu-id="c7048-177">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-177">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesListBySubscriptionsResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.listBySubscriptionsNext'
+    name: 'listBySubscriptionsNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c7048-178">목록 내에서 모든 규칙이 지정 된 항목 구독</span><span class="sxs-lookup"><span data-stu-id="c7048-178">List all the rules within given topic-subscription</span></span>
+    syntax:
+      content: 'function listBySubscriptionsNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c7048-179">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-179">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.RulesListBySubscriptionsNextResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.listBySubscriptionsNext_2'
+    name: 'listBySubscriptionsNext(string, RequestOptionsBase, ServiceCallback<RuleListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionsNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<RuleListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c7048-180">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-180">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c7048-181">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c7048-181">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.RuleListResult>
+          description: |
+            <span data-ttu-id="c7048-182">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesListBySubscriptionsNextResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.listBySubscriptionsNext_1'
+    name: 'listBySubscriptionsNext(string, ServiceCallback<RuleListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listBySubscriptionsNext(nextPageLink: string, callback: ServiceCallback<RuleListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c7048-183">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-183">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-servicebus.RuleListResult>
+          description: |
+            <span data-ttu-id="c7048-184">콜백</span><span class="sxs-lookup"><span data-stu-id="c7048-184">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.RulesListBySubscriptionsNextResponse>
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.Rules.constructor'
+    name: Rules(ServiceBusManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c7048-185">규칙을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-185">Create a Rules.</span></span>
+    syntax:
+      content: 'new Rules(client: ServiceBusManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-servicebus.ServiceBusManagementClientContext'
+          description: |
+            <span data-ttu-id="c7048-186">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="c7048-186">Reference to the service client.</span></span>
+    package: '@azure/arm-servicebus'
+references:
+  - uid: '@azure/arm-servicebus.ServiceBusManagementClientContext'
+    name: ServiceBusManagementClientContext
+    spec.typeScript:
+      - name: ServiceBusManagementClientContext
+        fullName: ServiceBusManagementClientContext
+        uid: '@azure/arm-servicebus.ServiceBusManagementClientContext'
+  - uid: '@azure/arm-servicebus.Rule'
+    name: Rule
+    spec.typeScript:
+      - name: Rule
+        fullName: Rule
+        uid: '@azure/arm-servicebus.Rule'
+  - uid: ServiceCallback<@azure/arm-servicebus.Rule>
+    name: Rule>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Rule
+        fullName: Rule
+        uid: '@azure/arm-servicebus.Rule'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-servicebus.RuleListResult>
+    name: RuleListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RuleListResult
+        fullName: RuleListResult
+        uid: '@azure/arm-servicebus.RuleListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-servicebus.RulesListBySubscriptionsOptionalParams'
+    name: RulesListBySubscriptionsOptionalParams
+    spec.typeScript:
+      - name: RulesListBySubscriptionsOptionalParams
+        fullName: RulesListBySubscriptionsOptionalParams
+        uid: '@azure/arm-servicebus.RulesListBySubscriptionsOptionalParams'

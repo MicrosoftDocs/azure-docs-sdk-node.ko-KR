@@ -6,6 +6,7 @@ items:
     children:
       - '@azure/arm-network.RouteFilter.etag'
       - '@azure/arm-network.RouteFilter.id'
+      - '@azure/arm-network.RouteFilter.ipv6Peerings'
       - '@azure/arm-network.RouteFilter.location'
       - '@azure/arm-network.RouteFilter.name'
       - '@azure/arm-network.RouteFilter.peerings'
@@ -16,7 +17,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: <span data-ttu-id="5853a-101">경로 필터 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-101">Route Filter Resource.</span></span>
+    summary: <span data-ttu-id="5f806-101">경로 필터 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-101">Route Filter Resource.</span></span>
     extends:
       name: '@azure/arm-network.Resource'
     package: '@azure/arm-network'
@@ -28,8 +29,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="5853a-102">리소스 업데이트 될 때마다를 변경 하는 고유한 읽기 전용 문자열을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-102">Gets a unique read-only string that changes whenever the resource is updated.</span></span>
-      <span data-ttu-id="5853a-103">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5853a-103">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="5f806-102">리소스 업데이트 될 때마다를 변경 하는 고유한 읽기 전용 문자열을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-102">Gets a unique read-only string that changes whenever the resource is updated.</span></span>
+      <span data-ttu-id="5f806-103">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5f806-103">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'etag?: undefined | string'
@@ -44,13 +45,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="5853a-104">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-104">Resource ID.</span></span>
+    summary: <span data-ttu-id="5f806-104">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-104">Resource ID.</span></span>
     optional: true
     syntax:
       content: 'id?: undefined | string'
       return:
         type:
           - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.RouteFilter.ipv6Peerings'
+    name: ipv6Peerings
+    fullName: ipv6Peerings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="5f806-105">Express 경로 회로 ipv6 피어 링에 대 한 참조의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-105">A collection of references to express route circuit ipv6 peerings.</span></span>
+    optional: true
+    syntax:
+      content: 'ipv6Peerings?: ExpressRouteCircuitPeering[]'
+      return:
+        type:
+          - '@azure/arm-network.ExpressRouteCircuitPeering[]'
     package: '@azure/arm-network'
   - uid: '@azure/arm-network.RouteFilter.location'
     name: location
@@ -59,7 +75,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="5853a-105">리소스 위치.</span><span class="sxs-lookup"><span data-stu-id="5853a-105">Resource location.</span></span>
+    summary: <span data-ttu-id="5f806-106">리소스 위치.</span><span class="sxs-lookup"><span data-stu-id="5f806-106">Resource location.</span></span>
     optional: true
     syntax:
       content: 'location?: undefined | string'
@@ -75,8 +91,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="5853a-106">리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-106">Resource name.</span></span>
-      <span data-ttu-id="5853a-107">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5853a-107">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="5f806-107">리소스 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-107">Resource name.</span></span>
+      <span data-ttu-id="5f806-108">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5f806-108">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'name?: undefined | string'
@@ -91,7 +107,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="5853a-108">Express 경로 회로 피어 링에 대 한 참조의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-108">A collection of references to express route circuit peerings.</span></span>
+    summary: <span data-ttu-id="5f806-109">Express 경로 회로 피어 링에 대 한 참조의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-109">A collection of references to express route circuit peerings.</span></span>
     optional: true
     syntax:
       content: 'peerings?: ExpressRouteCircuitPeering[]'
@@ -107,8 +123,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="5853a-109">리소스의 프로 비전 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-109">The provisioning state of the resource.</span></span> <span data-ttu-id="5853a-110">가능한 값은 다음과 같습니다. '업데이트', '삭제', '성공'이 고 '실패'입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-110">Possible values are: 'Updating', 'Deleting', 'Succeeded' and 'Failed'.</span></span>
-      <span data-ttu-id="5853a-111">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5853a-111">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="5f806-110">리소스의 프로 비전 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-110">The provisioning state of the resource.</span></span> <span data-ttu-id="5f806-111">가능한 값은 다음과 같습니다. '업데이트', '삭제', '성공'이 고 '실패'입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-111">Possible values are: 'Updating', 'Deleting', 'Succeeded' and 'Failed'.</span></span>
+      <span data-ttu-id="5f806-112">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5f806-112">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'provisioningState?: undefined | string'
@@ -123,7 +139,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="5853a-112">경로 필터 내에 포함 된 RouteFilterRules의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-112">Collection of RouteFilterRules contained within a route filter.</span></span>
+    summary: <span data-ttu-id="5f806-113">경로 필터 내에 포함 된 RouteFilterRules의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-113">Collection of RouteFilterRules contained within a route filter.</span></span>
     optional: true
     syntax:
       content: 'rules?: RouteFilterRule[]'
@@ -138,7 +154,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="5853a-113">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-113">Resource tags.</span></span>
+    summary: <span data-ttu-id="5f806-114">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-114">Resource tags.</span></span>
     optional: true
     syntax:
       content: 'tags?: undefined | [key: string]: string'
@@ -154,8 +170,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="5853a-114">리소스 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="5853a-114">Resource type.</span></span>
-      <span data-ttu-id="5853a-115">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5853a-115">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="5f806-115">리소스 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="5f806-115">Resource type.</span></span>
+      <span data-ttu-id="5f806-116">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="5f806-116">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'type?: undefined | string'

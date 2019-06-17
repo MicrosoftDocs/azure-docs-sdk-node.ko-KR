@@ -4,18 +4,36 @@ items:
     name: ServiceAssociationLink
     fullName: ServiceAssociationLink
     children:
+      - '@azure/arm-network.ServiceAssociationLink.allowDelete'
       - '@azure/arm-network.ServiceAssociationLink.etag'
       - '@azure/arm-network.ServiceAssociationLink.id'
       - '@azure/arm-network.ServiceAssociationLink.link'
       - '@azure/arm-network.ServiceAssociationLink.linkedResourceType'
+      - '@azure/arm-network.ServiceAssociationLink.locations'
       - '@azure/arm-network.ServiceAssociationLink.name'
       - '@azure/arm-network.ServiceAssociationLink.provisioningState'
+      - '@azure/arm-network.ServiceAssociationLink.type'
     langs:
       - typeScript
     type: interface
-    summary: <span data-ttu-id="25096-101">ServiceAssociationLink 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="25096-101">ServiceAssociationLink resource.</span></span>
+    summary: <span data-ttu-id="cd99e-101">ServiceAssociationLink 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-101">ServiceAssociationLink resource.</span></span>
     extends:
       name: '@azure/arm-network.SubResource'
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.ServiceAssociationLink.allowDelete'
+    name: allowDelete
+    fullName: allowDelete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="cd99e-102">True 인 경우에 리소스를 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-102">If true, the resource can be deleted.</span></span>'
+    optional: true
+    syntax:
+      content: 'allowDelete?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
     package: '@azure/arm-network'
   - uid: '@azure/arm-network.ServiceAssociationLink.etag'
     name: etag
@@ -25,8 +43,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="25096-102">고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.</span><span class="sxs-lookup"><span data-stu-id="25096-102">A unique read-only string that changes whenever the resource is updated.</span></span>
-      <span data-ttu-id="25096-103">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="25096-103">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="cd99e-103">고유한 읽기 전용 문자열 리소스 업데이트 될 때마다 변경 합니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-103">A unique read-only string that changes whenever the resource is updated.</span></span>
+      <span data-ttu-id="cd99e-104">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="cd99e-104">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'etag?: undefined | string'
@@ -41,7 +59,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="25096-104">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="25096-104">Resource ID.</span></span>
+    summary: <span data-ttu-id="cd99e-105">리소스 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-105">Resource ID.</span></span>
     optional: true
     syntax:
       content: 'id?: undefined | string'
@@ -56,7 +74,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="25096-105">외부 리소스에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="25096-105">Link to the external resource.</span></span>
+    summary: <span data-ttu-id="cd99e-106">외부 리소스에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-106">Link to the external resource.</span></span>
     optional: true
     syntax:
       content: 'link?: undefined | string'
@@ -71,13 +89,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="25096-106">연결된 된 리소스의 리소스 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="25096-106">Resource type of the linked resource.</span></span>
+    summary: <span data-ttu-id="cd99e-107">연결된 된 리소스의 리소스 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-107">Resource type of the linked resource.</span></span>
     optional: true
     syntax:
       content: 'linkedResourceType?: undefined | string'
       return:
         type:
           - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.ServiceAssociationLink.locations'
+    name: locations
+    fullName: locations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="cd99e-108">목록 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-108">A list of locations.</span></span>
+    optional: true
+    syntax:
+      content: 'locations?: string[]'
+      return:
+        type:
+          - 'string[]'
     package: '@azure/arm-network'
   - uid: '@azure/arm-network.ServiceAssociationLink.name'
     name: name
@@ -86,7 +119,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="25096-107">리소스 그룹 내에서 고유한 리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="25096-107">Name of the resource that is unique within a resource group.</span></span> <span data-ttu-id="25096-108">이 이름은 리소스에 액세스할 때 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="25096-108">This name can be used to access the resource.</span></span>
+    summary: <span data-ttu-id="cd99e-109">리소스 그룹 내에서 고유한 리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-109">Name of the resource that is unique within a resource group.</span></span> <span data-ttu-id="cd99e-110">이 이름은 리소스에 액세스할 때 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-110">This name can be used to access the resource.</span></span>
     optional: true
     syntax:
       content: 'name?: undefined | string'
@@ -102,11 +135,26 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="25096-109">ServiceAssociationLink 리소스의 프로 비전 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="25096-109">Provisioning state of the ServiceAssociationLink resource.</span></span>
-      <span data-ttu-id="25096-110">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="25096-110">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="cd99e-111">ServiceAssociationLink 리소스의 프로 비전 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-111">Provisioning state of the ServiceAssociationLink resource.</span></span>
+      <span data-ttu-id="cd99e-112">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="cd99e-112">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'provisioningState?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-network'
+  - uid: '@azure/arm-network.ServiceAssociationLink.type'
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="cd99e-113">리소스 종류입니다.</span><span class="sxs-lookup"><span data-stu-id="cd99e-113">Resource type.</span></span>
+    optional: true
+    syntax:
+      content: 'type?: undefined | string'
       return:
         type:
           - undefined | string
