@@ -1,0 +1,523 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.ReplicationLinks'
+    name: ReplicationLinks
+    fullName: ReplicationLinks
+    children:
+      - '@azure/arm-sql.ReplicationLinks.beginFailover'
+      - '@azure/arm-sql.ReplicationLinks.beginFailoverAllowDataLoss'
+      - '@azure/arm-sql.ReplicationLinks.deleteMethod'
+      - '@azure/arm-sql.ReplicationLinks.deleteMethod_2'
+      - '@azure/arm-sql.ReplicationLinks.deleteMethod_1'
+      - '@azure/arm-sql.ReplicationLinks.failover'
+      - '@azure/arm-sql.ReplicationLinks.failoverAllowDataLoss'
+      - '@azure/arm-sql.ReplicationLinks.get'
+      - '@azure/arm-sql.ReplicationLinks.get_2'
+      - '@azure/arm-sql.ReplicationLinks.get_1'
+      - '@azure/arm-sql.ReplicationLinks.listByDatabase'
+      - '@azure/arm-sql.ReplicationLinks.listByDatabase_2'
+      - '@azure/arm-sql.ReplicationLinks.listByDatabase_1'
+      - '@azure/arm-sql.ReplicationLinks.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="170d0-101">ReplicationLinks 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-101">Class representing a ReplicationLinks.</span></span>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.beginFailover'
+    name: 'beginFailover(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-102">현재 주 복제본 데이터베이스에서 장애 조치(failover)를 통해 주 복제본 데이터베이스로 사용할 데이터베이스를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-102">Sets which replica database is primary by failing over from the current primary replica database.</span></span>
+    syntax:
+      content: 'function beginFailover(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-103">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-103">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-104">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-104">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-105">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-105">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-106">장애 조치 해야하는 복제 링크에 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-106">The name of the database that has the replication link to be failed over.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-107">장애 조치 해야하는 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-107">The ID of the replication link to be failed over.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.beginFailoverAllowDataLoss'
+    name: 'beginFailoverAllowDataLoss(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-108">현재 주 복제본 데이터베이스에서 장애 조치(failover)를 통해 주 복제본 데이터베이스로 사용할 데이터베이스를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-108">Sets which replica database is primary by failing over from the current primary replica database.</span></span> <span data-ttu-id="170d0-109">이 작업으로 인해 데이터가 손실될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-109">This operation might result in data loss.</span></span>
+    syntax:
+      content: 'function beginFailoverAllowDataLoss(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-110">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-110">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-111">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-111">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-112">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-112">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-113">장애 조치 해야하는 복제 링크에 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-113">The name of the database that has the replication link to be failed over.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-114">장애 조치 해야하는 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-114">The ID of the replication link to be failed over.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.deleteMethod'
+    name: 'deleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-115">데이터베이스 복제 링크를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-115">Deletes a database replication link.</span></span> <span data-ttu-id="170d0-116">장애 조치(failover) 중에 수행할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-116">Cannot be done during failover.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-117">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-117">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-118">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-118">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-119">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-119">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-120">복제 링크를 삭제할 수 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-120">The name of the database that has the replication link to be dropped.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-121">삭제할 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-121">The ID of the replication link to be deleted.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.deleteMethod_2'
+    name: 'deleteMethod(string, string, string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-122">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-122">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-123">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-123">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-124">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-124">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-125">복제 링크를 삭제할 수 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-125">The name of the database that has the replication link to be dropped.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-126">삭제할 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-126">The ID of the replication link to be deleted.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="170d0-127">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="170d0-127">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="170d0-128">콜백</span><span class="sxs-lookup"><span data-stu-id="170d0-128">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.deleteMethod_1'
+    name: 'deleteMethod(string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-129">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-129">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-130">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-130">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-131">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-131">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-132">복제 링크를 삭제할 수 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-132">The name of the database that has the replication link to be dropped.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-133">삭제할 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-133">The ID of the replication link to be deleted.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="170d0-134">콜백</span><span class="sxs-lookup"><span data-stu-id="170d0-134">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.failover'
+    name: 'failover(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-135">현재 주 복제본 데이터베이스에서 장애 조치(failover)를 통해 주 복제본 데이터베이스로 사용할 데이터베이스를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-135">Sets which replica database is primary by failing over from the current primary replica database.</span></span>
+    syntax:
+      content: 'function failover(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-136">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-136">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-137">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-137">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-138">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-138">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-139">장애 조치 해야하는 복제 링크에 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-139">The name of the database that has the replication link to be failed over.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-140">장애 조치 해야하는 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-140">The ID of the replication link to be failed over.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.failoverAllowDataLoss'
+    name: 'failoverAllowDataLoss(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-141">현재 주 복제본 데이터베이스에서 장애 조치(failover)를 통해 주 복제본 데이터베이스로 사용할 데이터베이스를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-141">Sets which replica database is primary by failing over from the current primary replica database.</span></span> <span data-ttu-id="170d0-142">이 작업으로 인해 데이터가 손실될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-142">This operation might result in data loss.</span></span>
+    syntax:
+      content: 'function failoverAllowDataLoss(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-143">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-143">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-144">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-144">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-145">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-145">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-146">장애 조치 해야하는 복제 링크에 있는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-146">The name of the database that has the replication link to be failed over.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-147">장애 조치 해야하는 복제 링크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-147">The ID of the replication link to be failed over.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.get'
+    name: 'get(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-148">데이터베이스 복제 링크를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-148">Gets a database replication link.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-149">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-149">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-150">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-150">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-151">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-151">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-152">에 대 한 링크를 가져오는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-152">The name of the database to get the link for.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-153">복제 링크를 검색할 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-153">The replication link ID to be retrieved.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReplicationLinksGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.get_2'
+    name: 'get(string, string, string, string, RequestOptionsBase, ServiceCallback<ReplicationLink>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, options: RequestOptionsBase, callback: ServiceCallback<ReplicationLink>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-154">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-154">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-155">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-155">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-156">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-156">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-157">에 대 한 링크를 가져오는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-157">The name of the database to get the link for.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-158">복제 링크를 검색할 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-158">The replication link ID to be retrieved.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="170d0-159">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="170d0-159">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.ReplicationLink>
+          description: |
+            <span data-ttu-id="170d0-160">콜백</span><span class="sxs-lookup"><span data-stu-id="170d0-160">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReplicationLinksGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<ReplicationLink>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, databaseName: string, linkId: string, callback: ServiceCallback<ReplicationLink>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-161">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-161">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-162">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-162">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-163">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-163">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-164">에 대 한 링크를 가져오는 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-164">The name of the database to get the link for.</span></span>
+        - id: linkId
+          type:
+            - string
+          description: <span data-ttu-id="170d0-165">복제 링크를 검색할 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-165">The replication link ID to be retrieved.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.ReplicationLink>
+          description: |
+            <span data-ttu-id="170d0-166">콜백</span><span class="sxs-lookup"><span data-stu-id="170d0-166">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReplicationLinksGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.listByDatabase'
+    name: 'listByDatabase(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-167">데이터베이스의 복제 링크를 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-167">Lists a database's replication links.</span></span>
+    syntax:
+      content: 'function listByDatabase(resourceGroupName: string, serverName: string, databaseName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-168">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-168">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-169">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-169">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-170">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-170">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-171">에 대 한 링크를 검색할 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-171">The name of the database to retrieve links for.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReplicationLinksListByDatabaseResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.listByDatabase_2'
+    name: 'listByDatabase(string, string, string, RequestOptionsBase, ServiceCallback<ReplicationLinkListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByDatabase(resourceGroupName: string, serverName: string, databaseName: string, options: RequestOptionsBase, callback: ServiceCallback<ReplicationLinkListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-172">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-172">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-173">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-173">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-174">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-174">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-175">에 대 한 링크를 검색할 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-175">The name of the database to retrieve links for.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="170d0-176">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="170d0-176">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.ReplicationLinkListResult>
+          description: |
+            <span data-ttu-id="170d0-177">콜백</span><span class="sxs-lookup"><span data-stu-id="170d0-177">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReplicationLinksListByDatabaseResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.listByDatabase_1'
+    name: 'listByDatabase(string, string, string, ServiceCallback<ReplicationLinkListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByDatabase(resourceGroupName: string, serverName: string, databaseName: string, callback: ServiceCallback<ReplicationLinkListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-178">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-178">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="170d0-179">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-179">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-180">서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-180">The name of the server.</span></span>
+        - id: databaseName
+          type:
+            - string
+          description: <span data-ttu-id="170d0-181">에 대 한 링크를 검색할 데이터베이스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-181">The name of the database to retrieve links for.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.ReplicationLinkListResult>
+          description: |
+            <span data-ttu-id="170d0-182">콜백</span><span class="sxs-lookup"><span data-stu-id="170d0-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReplicationLinksListByDatabaseResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.ReplicationLinks.constructor'
+    name: ReplicationLinks(SqlManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="170d0-183">ReplicationLinks를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-183">Create a ReplicationLinks.</span></span>
+    syntax:
+      content: 'new ReplicationLinks(client: SqlManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-sql.SqlManagementClientContext'
+          description: |
+            <span data-ttu-id="170d0-184">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="170d0-184">Reference to the service client.</span></span>
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.SqlManagementClientContext'
+    name: SqlManagementClientContext
+    spec.typeScript:
+      - name: SqlManagementClientContext
+        fullName: SqlManagementClientContext
+        uid: '@azure/arm-sql.SqlManagementClientContext'
+  - uid: ServiceCallback<@azure/arm-sql.ReplicationLink>
+    name: ReplicationLink>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ReplicationLink
+        fullName: ReplicationLink
+        uid: '@azure/arm-sql.ReplicationLink'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.ReplicationLinkListResult>
+    name: ReplicationLinkListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ReplicationLinkListResult
+        fullName: ReplicationLinkListResult
+        uid: '@azure/arm-sql.ReplicationLinkListResult'
+      - name: '>'
+        fullName: '>'
