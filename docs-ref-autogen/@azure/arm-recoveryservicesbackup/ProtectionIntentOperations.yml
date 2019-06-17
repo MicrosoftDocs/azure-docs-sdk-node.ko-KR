@@ -1,0 +1,503 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations'
+    name: ProtectionIntentOperations
+    fullName: ProtectionIntentOperations
+    children:
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.createOrUpdate'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.createOrUpdate_2'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.createOrUpdate_1'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.deleteMethod'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.deleteMethod_2'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.deleteMethod_1'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.get'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.get_2'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.get_1'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.constructor'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.validate'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.validate_2'
+      - '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.validate_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="21ecc-101">ProtectionIntentOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-101">Class representing a ProtectionIntentOperations.</span></span>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, string, ProtectionIntentResource, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="21ecc-102">항목의 사용 하도록 설정 하면 백업에 대 한 의도 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-102">Create Intent for Enabling backup of an item.</span></span> <span data-ttu-id="21ecc-103">동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-103">This is a synchronous operation.</span></span>
+    syntax:
+      content: 'function createOrUpdate(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, parameters: ProtectionIntentResource, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-104">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-104">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-105">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-105">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-106">백업 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-106">Fabric name associated with the backup item.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-107">내재 된 개체 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-107">Intent object name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-recoveryservicesbackup.ProtectionIntentResource'
+          description: <span data-ttu-id="21ecc-108">항목을 백업 하는 리소스</span><span class="sxs-lookup"><span data-stu-id="21ecc-108">resource backed up item</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProtectionIntentCreateOrUpdateResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.createOrUpdate_2'
+    name: 'createOrUpdate(string, string, string, string, ProtectionIntentResource, RequestOptionsBase, ServiceCallback<ProtectionIntentResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, parameters: ProtectionIntentResource, options: RequestOptionsBase, callback: ServiceCallback<ProtectionIntentResource>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-109">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-109">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-110">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-110">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-111">백업 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-111">Fabric name associated with the backup item.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-112">내재 된 개체 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-112">Intent object name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-recoveryservicesbackup.ProtectionIntentResource'
+          description: <span data-ttu-id="21ecc-113">항목을 백업 하는 리소스</span><span class="sxs-lookup"><span data-stu-id="21ecc-113">resource backed up item</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="21ecc-114">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="21ecc-114">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-recoveryservicesbackup.ProtectionIntentResource>
+          description: |
+            <span data-ttu-id="21ecc-115">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-115">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProtectionIntentCreateOrUpdateResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.createOrUpdate_1'
+    name: 'createOrUpdate(string, string, string, string, ProtectionIntentResource, ServiceCallback<ProtectionIntentResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createOrUpdate(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, parameters: ProtectionIntentResource, callback: ServiceCallback<ProtectionIntentResource>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-116">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-116">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-117">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-117">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-118">백업 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-118">Fabric name associated with the backup item.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-119">내재 된 개체 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-119">Intent object name.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-recoveryservicesbackup.ProtectionIntentResource'
+          description: <span data-ttu-id="21ecc-120">항목을 백업 하는 리소스</span><span class="sxs-lookup"><span data-stu-id="21ecc-120">resource backed up item</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-recoveryservicesbackup.ProtectionIntentResource>
+          description: |
+            <span data-ttu-id="21ecc-121">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-121">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProtectionIntentCreateOrUpdateResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.deleteMethod'
+    name: 'deleteMethod(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="21ecc-122">항목에서 의도 제거 하는 데 사용</span><span class="sxs-lookup"><span data-stu-id="21ecc-122">Used to remove intent from an item</span></span>
+    syntax:
+      content: 'function deleteMethod(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-123">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-123">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-124">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-124">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-125">연결 의도 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-125">Fabric name associated with the intent.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-126">삭제 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-126">Intent to be deleted.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.deleteMethod_2'
+    name: 'deleteMethod(string, string, string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-127">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-127">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-128">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-128">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-129">연결 의도 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-129">Fabric name associated with the intent.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-130">삭제 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-130">Intent to be deleted.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="21ecc-131">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="21ecc-131">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="21ecc-132">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-132">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.deleteMethod_1'
+    name: 'deleteMethod(string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-133">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-133">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-134">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-134">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-135">연결 의도 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-135">Fabric name associated with the intent.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-136">삭제 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-136">Intent to be deleted.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="21ecc-137">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-137">The callback</span></span>
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.get'
+    name: 'get(string, string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="21ecc-138">항목 보호 의도의 세부 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-138">Provides the details of the protection intent up item.</span></span> <span data-ttu-id="21ecc-139">이 작업은 비동기 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-139">This is an asynchronous operation.</span></span> <span data-ttu-id="21ecc-140">작업의 상태를 알아야 GetItemOperationResult API를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-140">To know the status of the operation, call the GetItemOperationResult API.</span></span>'
+    syntax:
+      content: 'function get(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-141">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-141">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-142">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-142">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-143">백업된 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-143">Fabric name associated with the backed up item.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-144">항목 이름을 가져와야 하는 세부 정보를 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-144">Backed up item name whose details are to be fetched.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProtectionIntentGetResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.get_2'
+    name: 'get(string, string, string, string, RequestOptionsBase, ServiceCallback<ProtectionIntentResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, options: RequestOptionsBase, callback: ServiceCallback<ProtectionIntentResource>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-145">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-145">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-146">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-146">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-147">백업된 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-147">Fabric name associated with the backed up item.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-148">항목 이름을 가져와야 하는 세부 정보를 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-148">Backed up item name whose details are to be fetched.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="21ecc-149">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="21ecc-149">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-recoveryservicesbackup.ProtectionIntentResource>
+          description: |
+            <span data-ttu-id="21ecc-150">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-150">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProtectionIntentGetResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.get_1'
+    name: 'get(string, string, string, string, ServiceCallback<ProtectionIntentResource>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(vaultName: string, resourceGroupName: string, fabricName: string, intentObjectName: string, callback: ServiceCallback<ProtectionIntentResource>)'
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-151">Recovery services 자격 증명의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-151">The name of the recovery services vault.</span></span>
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-152">여기서는 recovery services 자격 증명 모음 리소스 그룹의 이름이 있는 경우</span><span class="sxs-lookup"><span data-stu-id="21ecc-152">The name of the resource group where the recovery services vault is present.</span></span>
+        - id: fabricName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-153">백업된 항목에 연결 된 패브릭 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-153">Fabric name associated with the backed up item.</span></span>
+        - id: intentObjectName
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-154">항목 이름을 가져와야 하는 세부 정보를 백업 합니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-154">Backed up item name whose details are to be fetched.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-recoveryservicesbackup.ProtectionIntentResource>
+          description: |
+            <span data-ttu-id="21ecc-155">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-155">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProtectionIntentGetResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.constructor'
+    name: ProtectionIntentOperations(RecoveryServicesBackupClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="21ecc-156">ProtectionIntentOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-156">Create a ProtectionIntentOperations.</span></span>
+    syntax:
+      content: 'new ProtectionIntentOperations(client: RecoveryServicesBackupClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-recoveryservicesbackup.RecoveryServicesBackupClientContext'
+          description: |
+            <span data-ttu-id="21ecc-157">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="21ecc-157">Reference to the service client.</span></span>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.validate'
+    name: 'validate(string, PreValidateEnableBackupRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function validate(azureRegion: string, parameters: PreValidateEnableBackupRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: azureRegion
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-158">Api을 적중 하는 azure 지역</span><span class="sxs-lookup"><span data-stu-id="21ecc-158">Azure region to hit Api</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-recoveryservicesbackup.PreValidateEnableBackupRequest'
+          description: <span data-ttu-id="21ecc-159">가상 머신에서 백업 유효성 검사 요청을 사용 하도록 설정</span><span class="sxs-lookup"><span data-stu-id="21ecc-159">Enable backup validation request on Virtual Machine</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ProtectionIntentValidateResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.validate_2'
+    name: 'validate(string, PreValidateEnableBackupRequest, RequestOptionsBase, ServiceCallback<PreValidateEnableBackupResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function validate(azureRegion: string, parameters: PreValidateEnableBackupRequest, options: RequestOptionsBase, callback: ServiceCallback<PreValidateEnableBackupResponse>)'
+      parameters:
+        - id: azureRegion
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-160">Api을 적중 하는 azure 지역</span><span class="sxs-lookup"><span data-stu-id="21ecc-160">Azure region to hit Api</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-recoveryservicesbackup.PreValidateEnableBackupRequest'
+          description: <span data-ttu-id="21ecc-161">가상 머신에서 백업 유효성 검사 요청을 사용 하도록 설정</span><span class="sxs-lookup"><span data-stu-id="21ecc-161">Enable backup validation request on Virtual Machine</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="21ecc-162">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="21ecc-162">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-recoveryservicesbackup.PreValidateEnableBackupResponse>
+          description: |
+            <span data-ttu-id="21ecc-163">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-163">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProtectionIntentValidateResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentOperations.validate_1'
+    name: 'validate(string, PreValidateEnableBackupRequest, ServiceCallback<PreValidateEnableBackupResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function validate(azureRegion: string, parameters: PreValidateEnableBackupRequest, callback: ServiceCallback<PreValidateEnableBackupResponse>)'
+      parameters:
+        - id: azureRegion
+          type:
+            - string
+          description: <span data-ttu-id="21ecc-164">Api을 적중 하는 azure 지역</span><span class="sxs-lookup"><span data-stu-id="21ecc-164">Azure region to hit Api</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-recoveryservicesbackup.PreValidateEnableBackupRequest'
+          description: <span data-ttu-id="21ecc-165">가상 머신에서 백업 유효성 검사 요청을 사용 하도록 설정</span><span class="sxs-lookup"><span data-stu-id="21ecc-165">Enable backup validation request on Virtual Machine</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-recoveryservicesbackup.PreValidateEnableBackupResponse>
+          description: |
+            <span data-ttu-id="21ecc-166">콜백</span><span class="sxs-lookup"><span data-stu-id="21ecc-166">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ProtectionIntentValidateResponse>
+    package: '@azure/arm-recoveryservicesbackup'
+references:
+  - uid: '@azure/arm-recoveryservicesbackup.RecoveryServicesBackupClientContext'
+    name: RecoveryServicesBackupClientContext
+    spec.typeScript:
+      - name: RecoveryServicesBackupClientContext
+        fullName: RecoveryServicesBackupClientContext
+        uid: '@azure/arm-recoveryservicesbackup.RecoveryServicesBackupClientContext'
+  - uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentResource'
+    name: ProtectionIntentResource
+    spec.typeScript:
+      - name: ProtectionIntentResource
+        fullName: ProtectionIntentResource
+        uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentResource'
+  - uid: ServiceCallback<@azure/arm-recoveryservicesbackup.ProtectionIntentResource>
+    name: ProtectionIntentResource>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ProtectionIntentResource
+        fullName: ProtectionIntentResource
+        uid: '@azure/arm-recoveryservicesbackup.ProtectionIntentResource'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-recoveryservicesbackup.PreValidateEnableBackupRequest'
+    name: PreValidateEnableBackupRequest
+    spec.typeScript:
+      - name: PreValidateEnableBackupRequest
+        fullName: PreValidateEnableBackupRequest
+        uid: '@azure/arm-recoveryservicesbackup.PreValidateEnableBackupRequest'
+  - uid: ServiceCallback<@azure/arm-recoveryservicesbackup.PreValidateEnableBackupResponse>
+    name: PreValidateEnableBackupResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PreValidateEnableBackupResponse
+        fullName: PreValidateEnableBackupResponse
+        uid: '@azure/arm-recoveryservicesbackup.PreValidateEnableBackupResponse'
+      - name: '>'
+        fullName: '>'

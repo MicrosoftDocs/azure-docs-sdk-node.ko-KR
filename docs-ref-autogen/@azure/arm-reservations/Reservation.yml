@@ -1,0 +1,653 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-reservations.Reservation'
+    name: Reservation
+    fullName: Reservation
+    children:
+      - '@azure/arm-reservations.Reservation.beginMerge'
+      - '@azure/arm-reservations.Reservation.beginSplit'
+      - '@azure/arm-reservations.Reservation.beginUpdate'
+      - '@azure/arm-reservations.Reservation.get'
+      - '@azure/arm-reservations.Reservation.get_2'
+      - '@azure/arm-reservations.Reservation.get_1'
+      - '@azure/arm-reservations.Reservation.list'
+      - '@azure/arm-reservations.Reservation.list_2'
+      - '@azure/arm-reservations.Reservation.list_1'
+      - '@azure/arm-reservations.Reservation.listNext'
+      - '@azure/arm-reservations.Reservation.listNext_2'
+      - '@azure/arm-reservations.Reservation.listNext_1'
+      - '@azure/arm-reservations.Reservation.listRevisions'
+      - '@azure/arm-reservations.Reservation.listRevisions_2'
+      - '@azure/arm-reservations.Reservation.listRevisions_1'
+      - '@azure/arm-reservations.Reservation.listRevisionsNext'
+      - '@azure/arm-reservations.Reservation.listRevisionsNext_2'
+      - '@azure/arm-reservations.Reservation.listRevisionsNext_1'
+      - '@azure/arm-reservations.Reservation.merge'
+      - '@azure/arm-reservations.Reservation.constructor'
+      - '@azure/arm-reservations.Reservation.split'
+      - '@azure/arm-reservations.Reservation.update'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="c5806-101">예약을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-101">Class representing a Reservation.</span></span>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.beginMerge'
+    name: 'beginMerge(string, MergeRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-102">지정 된 병합 `Reservation`새 s `Reservation`입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-102">Merge the specified `Reservation`s into a new `Reservation`.</span></span> <span data-ttu-id="c5806-103">두 `Reservation`병합 s에 동일한 속성이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-103">The two `Reservation`s being merged must have same properties.</span></span>
+    syntax:
+      content: 'function beginMerge(reservationOrderId: string, body: MergeRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-104">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-104">Order Id of the reservation</span></span>
+        - id: body
+          type:
+            - '@azure/arm-reservations.MergeRequest'
+          description: <span data-ttu-id="c5806-105">예약에 대 한 상용 요청 하는 데 필요한 정보</span><span class="sxs-lookup"><span data-stu-id="c5806-105">Information needed for commercial request for a reservation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.beginSplit'
+    name: 'beginSplit(string, SplitRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-106">분할을 `Reservation` 을 두 개로 `Reservation`수량 지정 된 배포를 사용 하 여 s입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-106">Split a `Reservation` into two `Reservation`s with specified quantity distribution.</span></span>
+    syntax:
+      content: 'function beginSplit(reservationOrderId: string, body: SplitRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-107">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-107">Order Id of the reservation</span></span>
+        - id: body
+          type:
+            - '@azure/arm-reservations.SplitRequest'
+          description: <span data-ttu-id="c5806-108">예약 항목을 분할 하는 데 필요한 정보</span><span class="sxs-lookup"><span data-stu-id="c5806-108">Information needed to Split a reservation item</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.beginUpdate'
+    name: 'beginUpdate(string, string, Patch, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-109">업데이트의 적용된 범위는 `Reservation`합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-109">Updates the applied scopes of the `Reservation`.</span></span>
+    syntax:
+      content: 'function beginUpdate(reservationOrderId: string, reservationId: string, parameters: Patch, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-110">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-110">Order Id of the reservation</span></span>
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-111">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-111">Id of the Reservation Item</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-reservations.Patch'
+          description: <span data-ttu-id="c5806-112">예약 항목을 패치 하는 데 필요한 정보</span><span class="sxs-lookup"><span data-stu-id="c5806-112">Information needed to patch a reservation item</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.get'
+    name: 'get(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-113">관련 된 `Reservation` 세부 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-113">Get specific `Reservation` details.</span></span>
+    syntax:
+      content: 'function get(reservationId: string, reservationOrderId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-114">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-114">Id of the Reservation Item</span></span>
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-115">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-115">Order Id of the reservation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationGetResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.get_2'
+    name: 'get(string, string, RequestOptionsBase, ServiceCallback<ReservationResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(reservationId: string, reservationOrderId: string, options: RequestOptionsBase, callback: ServiceCallback<ReservationResponse>)'
+      parameters:
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-116">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-116">Id of the Reservation Item</span></span>
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-117">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-117">Order Id of the reservation</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c5806-118">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c5806-118">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationResponse>
+          description: |
+            <span data-ttu-id="c5806-119">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-119">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationGetResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.get_1'
+    name: 'get(string, string, ServiceCallback<ReservationResponse>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(reservationId: string, reservationOrderId: string, callback: ServiceCallback<ReservationResponse>)'
+      parameters:
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-120">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-120">Id of the Reservation Item</span></span>
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-121">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-121">Order Id of the reservation</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationResponse>
+          description: |
+            <span data-ttu-id="c5806-122">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-122">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationGetResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.list'
+    name: 'list(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-123">목록 `Reservation`단일 내에서 `ReservationOrder`합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-123">List `Reservation`s within a single `ReservationOrder`.</span></span>
+    syntax:
+      content: 'function list(reservationOrderId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-124">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-124">Order Id of the reservation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationListResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.list_2'
+    name: 'list(string, RequestOptionsBase, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(reservationOrderId: string, options: RequestOptionsBase, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-125">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-125">Order Id of the reservation</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c5806-126">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c5806-126">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-127">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-127">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.list_1'
+    name: 'list(string, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(reservationOrderId: string, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-128">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-128">Order Id of the reservation</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-129">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-129">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-130">목록 `Reservation`단일 내에서 `ReservationOrder`합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-130">List `Reservation`s within a single `ReservationOrder`.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c5806-131">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-131">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationListNextResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c5806-132">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-132">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c5806-133">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c5806-133">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-134">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-134">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListNextResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listNext_1'
+    name: 'listNext(string, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c5806-135">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-135">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-136">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-136">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListNextResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listRevisions'
+    name: 'listRevisions(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-137">목록에 대 한 모든 수정 된 `Reservation`합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-137">List of all the revisions for the `Reservation`.</span></span>
+    syntax:
+      content: 'function listRevisions(reservationId: string, reservationOrderId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-138">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-138">Id of the Reservation Item</span></span>
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-139">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-139">Order Id of the reservation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationListRevisionsResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listRevisions_2'
+    name: 'listRevisions(string, string, RequestOptionsBase, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRevisions(reservationId: string, reservationOrderId: string, options: RequestOptionsBase, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-140">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-140">Id of the Reservation Item</span></span>
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-141">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-141">Order Id of the reservation</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c5806-142">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c5806-142">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-143">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-143">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListRevisionsResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listRevisions_1'
+    name: 'listRevisions(string, string, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRevisions(reservationId: string, reservationOrderId: string, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-144">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-144">Id of the Reservation Item</span></span>
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-145">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-145">Order Id of the reservation</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-146">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-146">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListRevisionsResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listRevisionsNext'
+    name: 'listRevisionsNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-147">목록에 대 한 모든 수정 된 `Reservation`합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-147">List of all the revisions for the `Reservation`.</span></span>
+    syntax:
+      content: 'function listRevisionsNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c5806-148">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-148">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationListRevisionsNextResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listRevisionsNext_2'
+    name: 'listRevisionsNext(string, RequestOptionsBase, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRevisionsNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c5806-149">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-149">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="c5806-150">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="c5806-150">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-151">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-151">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListRevisionsNextResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.listRevisionsNext_1'
+    name: 'listRevisionsNext(string, ServiceCallback<ReservationList>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listRevisionsNext(nextPageLink: string, callback: ServiceCallback<ReservationList>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="c5806-152">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-152">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-reservations.ReservationList>
+          description: |
+            <span data-ttu-id="c5806-153">콜백</span><span class="sxs-lookup"><span data-stu-id="c5806-153">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ReservationListRevisionsNextResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.merge'
+    name: 'merge(string, MergeRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-154">지정 된 병합 `Reservation`새 s `Reservation`입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-154">Merge the specified `Reservation`s into a new `Reservation`.</span></span> <span data-ttu-id="c5806-155">두 `Reservation`병합 s에 동일한 속성이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-155">The two `Reservation`s being merged must have same properties.</span></span>
+    syntax:
+      content: 'function merge(reservationOrderId: string, body: MergeRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-156">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-156">Order Id of the reservation</span></span>
+        - id: body
+          type:
+            - '@azure/arm-reservations.MergeRequest'
+          description: <span data-ttu-id="c5806-157">예약에 대 한 상용 요청 하는 데 필요한 정보</span><span class="sxs-lookup"><span data-stu-id="c5806-157">Information needed for commercial request for a reservation</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationMergeResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.constructor'
+    name: Reservation(AzureReservationAPIContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-158">예약을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-158">Create a Reservation.</span></span>
+    syntax:
+      content: 'new Reservation(client: AzureReservationAPIContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-reservations.AzureReservationAPIContext'
+          description: |
+            <span data-ttu-id="c5806-159">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-159">Reference to the service client.</span></span>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.split'
+    name: 'split(string, SplitRequest, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-160">분할을 `Reservation` 을 두 개로 `Reservation`수량 지정 된 배포를 사용 하 여 s입니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-160">Split a `Reservation` into two `Reservation`s with specified quantity distribution.</span></span>
+    syntax:
+      content: 'function split(reservationOrderId: string, body: SplitRequest, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-161">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-161">Order Id of the reservation</span></span>
+        - id: body
+          type:
+            - '@azure/arm-reservations.SplitRequest'
+          description: <span data-ttu-id="c5806-162">예약 항목을 분할 하는 데 필요한 정보</span><span class="sxs-lookup"><span data-stu-id="c5806-162">Information needed to Split a reservation item</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationSplitResponse>
+    package: '@azure/arm-reservations'
+  - uid: '@azure/arm-reservations.Reservation.update'
+    name: 'update(string, string, Patch, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="c5806-163">업데이트의 적용된 범위는 `Reservation`합니다.</span><span class="sxs-lookup"><span data-stu-id="c5806-163">Updates the applied scopes of the `Reservation`.</span></span>
+    syntax:
+      content: 'function update(reservationOrderId: string, reservationId: string, parameters: Patch, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: reservationOrderId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-164">예약 주문 Id</span><span class="sxs-lookup"><span data-stu-id="c5806-164">Order Id of the reservation</span></span>
+        - id: reservationId
+          type:
+            - string
+          description: <span data-ttu-id="c5806-165">예약 항목의 id</span><span class="sxs-lookup"><span data-stu-id="c5806-165">Id of the Reservation Item</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-reservations.Patch'
+          description: <span data-ttu-id="c5806-166">예약 항목을 패치 하는 데 필요한 정보</span><span class="sxs-lookup"><span data-stu-id="c5806-166">Information needed to patch a reservation item</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReservationUpdateResponse>
+    package: '@azure/arm-reservations'
+references:
+  - uid: '@azure/arm-reservations.AzureReservationAPIContext'
+    name: AzureReservationAPIContext
+    spec.typeScript:
+      - name: AzureReservationAPIContext
+        fullName: AzureReservationAPIContext
+        uid: '@azure/arm-reservations.AzureReservationAPIContext'
+  - uid: '@azure/arm-reservations.MergeRequest'
+    name: MergeRequest
+    spec.typeScript:
+      - name: MergeRequest
+        fullName: MergeRequest
+        uid: '@azure/arm-reservations.MergeRequest'
+  - uid: '@azure/arm-reservations.SplitRequest'
+    name: SplitRequest
+    spec.typeScript:
+      - name: SplitRequest
+        fullName: SplitRequest
+        uid: '@azure/arm-reservations.SplitRequest'
+  - uid: '@azure/arm-reservations.Patch'
+    name: Patch
+    spec.typeScript:
+      - name: Patch
+        fullName: Patch
+        uid: '@azure/arm-reservations.Patch'
+  - uid: ServiceCallback<@azure/arm-reservations.ReservationResponse>
+    name: ReservationResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ReservationResponse
+        fullName: ReservationResponse
+        uid: '@azure/arm-reservations.ReservationResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-reservations.ReservationList>
+    name: ReservationList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ReservationList
+        fullName: ReservationList
+        uid: '@azure/arm-reservations.ReservationList'
+      - name: '>'
+        fullName: '>'
