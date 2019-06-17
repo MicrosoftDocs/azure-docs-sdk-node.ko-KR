@@ -1,0 +1,667 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-sql.FailoverGroups'
+    name: FailoverGroups
+    fullName: FailoverGroups
+    children:
+      - '@azure/arm-sql.FailoverGroups.beginCreateOrUpdate'
+      - '@azure/arm-sql.FailoverGroups.beginDeleteMethod'
+      - '@azure/arm-sql.FailoverGroups.beginFailover'
+      - '@azure/arm-sql.FailoverGroups.beginForceFailoverAllowDataLoss'
+      - '@azure/arm-sql.FailoverGroups.beginUpdate'
+      - '@azure/arm-sql.FailoverGroups.createOrUpdate'
+      - '@azure/arm-sql.FailoverGroups.deleteMethod'
+      - '@azure/arm-sql.FailoverGroups.failover'
+      - '@azure/arm-sql.FailoverGroups.constructor'
+      - '@azure/arm-sql.FailoverGroups.forceFailoverAllowDataLoss'
+      - '@azure/arm-sql.FailoverGroups.get'
+      - '@azure/arm-sql.FailoverGroups.get_2'
+      - '@azure/arm-sql.FailoverGroups.get_1'
+      - '@azure/arm-sql.FailoverGroups.listByServer'
+      - '@azure/arm-sql.FailoverGroups.listByServer_2'
+      - '@azure/arm-sql.FailoverGroups.listByServer_1'
+      - '@azure/arm-sql.FailoverGroups.listByServerNext'
+      - '@azure/arm-sql.FailoverGroups.listByServerNext_2'
+      - '@azure/arm-sql.FailoverGroups.listByServerNext_1'
+      - '@azure/arm-sql.FailoverGroups.update'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="d1992-101">FailoverGroups 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-101">Class representing a FailoverGroups.</span></span>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, string, FailoverGroup, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-102">장애 조치 그룹을 만들거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-102">Creates or updates a failover group.</span></span>
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, serverName: string, failoverGroupName: string, parameters: FailoverGroup, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-103">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-103">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-104">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-104">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-105">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-105">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-106">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-106">The name of the failover group.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.FailoverGroup'
+          description: <span data-ttu-id="d1992-107">장애 조치 그룹 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-107">The failover group parameters.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-108">장애 조치 그룹을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-108">Deletes a failover group.</span></span>
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-109">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-109">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-110">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-110">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-111">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-111">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-112">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-112">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.beginFailover'
+    name: 'beginFailover(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-113">현재 주 서버에서 이 서버로 장애 조치(failover)합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-113">Fails over from the current primary server to this server.</span></span>
+    syntax:
+      content: 'function beginFailover(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-114">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-114">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-115">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-115">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-116">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-116">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-117">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-117">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.beginForceFailoverAllowDataLoss'
+    name: 'beginForceFailoverAllowDataLoss(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-118">현재 주 서버에서 이 서버로 장애 조치(failover)합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-118">Fails over from the current primary server to this server.</span></span> <span data-ttu-id="d1992-119">이 작업으로 인해 데이터가 손실될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-119">This operation might result in data loss.</span></span>
+    syntax:
+      content: 'function beginForceFailoverAllowDataLoss(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-120">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-120">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-121">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-121">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-122">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-122">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-123">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-123">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.beginUpdate'
+    name: 'beginUpdate(string, string, string, FailoverGroupUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-124">장애 조치(failover) 그룹을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-124">Updates a failover group.</span></span>
+    syntax:
+      content: 'function beginUpdate(resourceGroupName: string, serverName: string, failoverGroupName: string, parameters: FailoverGroupUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-125">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-125">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-126">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-126">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-127">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-127">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-128">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-128">The name of the failover group.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.FailoverGroupUpdate'
+          description: <span data-ttu-id="d1992-129">장애 조치 그룹 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-129">The failover group parameters.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.createOrUpdate'
+    name: 'createOrUpdate(string, string, string, FailoverGroup, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-130">장애 조치 그룹을 만들거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-130">Creates or updates a failover group.</span></span>
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, serverName: string, failoverGroupName: string, parameters: FailoverGroup, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-131">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-131">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-132">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-132">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-133">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-133">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-134">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-134">The name of the failover group.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.FailoverGroup'
+          description: <span data-ttu-id="d1992-135">장애 조치 그룹 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-135">The failover group parameters.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsCreateOrUpdateResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.deleteMethod'
+    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-136">장애 조치 그룹을 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-136">Deletes a failover group.</span></span>
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-137">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-137">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-138">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-138">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-139">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-139">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-140">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-140">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.failover'
+    name: 'failover(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-141">현재 주 서버에서 이 서버로 장애 조치(failover)합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-141">Fails over from the current primary server to this server.</span></span>
+    syntax:
+      content: 'function failover(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-142">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-142">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-143">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-143">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-144">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-144">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-145">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-145">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsFailoverResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.constructor'
+    name: FailoverGroups(SqlManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-146">FailoverGroups를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-146">Create a FailoverGroups.</span></span>
+    syntax:
+      content: 'new FailoverGroups(client: SqlManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-sql.SqlManagementClientContext'
+          description: |
+            <span data-ttu-id="d1992-147">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-147">Reference to the service client.</span></span>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.forceFailoverAllowDataLoss'
+    name: 'forceFailoverAllowDataLoss(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-148">현재 주 서버에서 이 서버로 장애 조치(failover)합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-148">Fails over from the current primary server to this server.</span></span> <span data-ttu-id="d1992-149">이 작업으로 인해 데이터가 손실될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-149">This operation might result in data loss.</span></span>
+    syntax:
+      content: 'function forceFailoverAllowDataLoss(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-150">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-150">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-151">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-151">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-152">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-152">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-153">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-153">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsForceFailoverAllowDataLossResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.get'
+    name: 'get(string, string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-154">장애 조치(failover) 그룹을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-154">Gets a failover group.</span></span>
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, failoverGroupName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-155">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-155">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-156">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-156">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-157">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-157">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-158">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-158">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.get_2'
+    name: 'get(string, string, string, RequestOptionsBase, ServiceCallback<FailoverGroup>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, failoverGroupName: string, options: RequestOptionsBase, callback: ServiceCallback<FailoverGroup>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-159">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-159">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-160">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-160">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-161">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-161">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-162">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-162">The name of the failover group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="d1992-163">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="d1992-163">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.FailoverGroup>
+          description: |
+            <span data-ttu-id="d1992-164">콜백</span><span class="sxs-lookup"><span data-stu-id="d1992-164">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.FailoverGroupsGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.get_1'
+    name: 'get(string, string, string, ServiceCallback<FailoverGroup>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, serverName: string, failoverGroupName: string, callback: ServiceCallback<FailoverGroup>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-165">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-165">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-166">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-166">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-167">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-167">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-168">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-168">The name of the failover group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.FailoverGroup>
+          description: |
+            <span data-ttu-id="d1992-169">콜백</span><span class="sxs-lookup"><span data-stu-id="d1992-169">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.FailoverGroupsGetResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.listByServer'
+    name: 'listByServer(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-170">서버에 있는 장애 조치(failover) 그룹을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-170">Lists the failover groups in a server.</span></span>
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-171">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-171">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-172">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-172">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-173">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-173">The name of the server containing the failover group.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.listByServer_2'
+    name: 'listByServer(string, string, RequestOptionsBase, ServiceCallback<FailoverGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, options: RequestOptionsBase, callback: ServiceCallback<FailoverGroupListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-174">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-174">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-175">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-175">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-176">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-176">The name of the server containing the failover group.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="d1992-177">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="d1992-177">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.FailoverGroupListResult>
+          description: |
+            <span data-ttu-id="d1992-178">콜백</span><span class="sxs-lookup"><span data-stu-id="d1992-178">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.FailoverGroupsListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.listByServer_1'
+    name: 'listByServer(string, string, ServiceCallback<FailoverGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServer(resourceGroupName: string, serverName: string, callback: ServiceCallback<FailoverGroupListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-179">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-179">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-180">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-180">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-181">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-181">The name of the server containing the failover group.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.FailoverGroupListResult>
+          description: |
+            <span data-ttu-id="d1992-182">콜백</span><span class="sxs-lookup"><span data-stu-id="d1992-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.FailoverGroupsListByServerResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.listByServerNext'
+    name: 'listByServerNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-183">서버에 있는 장애 조치(failover) 그룹을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-183">Lists the failover groups in a server.</span></span>
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="d1992-184">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-184">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.listByServerNext_2'
+    name: 'listByServerNext(string, RequestOptionsBase, ServiceCallback<FailoverGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<FailoverGroupListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="d1992-185">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-185">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="d1992-186">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="d1992-186">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.FailoverGroupListResult>
+          description: |
+            <span data-ttu-id="d1992-187">콜백</span><span class="sxs-lookup"><span data-stu-id="d1992-187">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.FailoverGroupsListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.listByServerNext_1'
+    name: 'listByServerNext(string, ServiceCallback<FailoverGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByServerNext(nextPageLink: string, callback: ServiceCallback<FailoverGroupListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="d1992-188">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-188">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-sql.FailoverGroupListResult>
+          description: |
+            <span data-ttu-id="d1992-189">콜백</span><span class="sxs-lookup"><span data-stu-id="d1992-189">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.FailoverGroupsListByServerNextResponse>
+    package: '@azure/arm-sql'
+  - uid: '@azure/arm-sql.FailoverGroups.update'
+    name: 'update(string, string, string, FailoverGroupUpdate, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="d1992-190">장애 조치(failover) 그룹을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-190">Updates a failover group.</span></span>
+    syntax:
+      content: 'function update(resourceGroupName: string, serverName: string, failoverGroupName: string, parameters: FailoverGroupUpdate, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-191">리소스를 포함하는 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-191">The name of the resource group that contains the resource.</span></span> <span data-ttu-id="d1992-192">Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-192">You can obtain this value from the Azure Resource Manager API or the portal.</span></span>
+        - id: serverName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-193">장애 조치 그룹을 포함 하는 서버의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-193">The name of the server containing the failover group.</span></span>
+        - id: failoverGroupName
+          type:
+            - string
+          description: <span data-ttu-id="d1992-194">장애 조치 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-194">The name of the failover group.</span></span>
+        - id: parameters
+          type:
+            - '@azure/arm-sql.FailoverGroupUpdate'
+          description: <span data-ttu-id="d1992-195">장애 조치 그룹 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="d1992-195">The failover group parameters.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FailoverGroupsUpdateResponse>
+    package: '@azure/arm-sql'
+references:
+  - uid: '@azure/arm-sql.SqlManagementClientContext'
+    name: SqlManagementClientContext
+    spec.typeScript:
+      - name: SqlManagementClientContext
+        fullName: SqlManagementClientContext
+        uid: '@azure/arm-sql.SqlManagementClientContext'
+  - uid: '@azure/arm-sql.FailoverGroup'
+    name: FailoverGroup
+    spec.typeScript:
+      - name: FailoverGroup
+        fullName: FailoverGroup
+        uid: '@azure/arm-sql.FailoverGroup'
+  - uid: '@azure/arm-sql.FailoverGroupUpdate'
+    name: FailoverGroupUpdate
+    spec.typeScript:
+      - name: FailoverGroupUpdate
+        fullName: FailoverGroupUpdate
+        uid: '@azure/arm-sql.FailoverGroupUpdate'
+  - uid: ServiceCallback<@azure/arm-sql.FailoverGroup>
+    name: FailoverGroup>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FailoverGroup
+        fullName: FailoverGroup
+        uid: '@azure/arm-sql.FailoverGroup'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/arm-sql.FailoverGroupListResult>
+    name: FailoverGroupListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FailoverGroupListResult
+        fullName: FailoverGroupListResult
+        uid: '@azure/arm-sql.FailoverGroupListResult'
+      - name: '>'
+        fullName: '>'

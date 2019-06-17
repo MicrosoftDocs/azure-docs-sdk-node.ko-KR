@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.NetworkConfiguration'
+    name: NetworkConfiguration
+    fullName: NetworkConfiguration
+    children:
+      - '@azure/batch.NetworkConfiguration.dynamicVNetAssignmentScope'
+      - '@azure/batch.NetworkConfiguration.endpointConfiguration'
+      - '@azure/batch.NetworkConfiguration.subnetId'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="cdc08-101">풀에 대 한 네트워크 구성입니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-101">The network configuration for a pool.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.NetworkConfiguration.dynamicVNetAssignmentScope'
+    name: dynamicVNetAssignmentScope
+    fullName: dynamicVNetAssignmentScope
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="cdc08-102">동적 vnet 할당의 범위입니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-102">The scope of dynamic vnet assignment.</span></span> <span data-ttu-id="cdc08-103">가능한 값: ''none'', ''작업''</span><span class="sxs-lookup"><span data-stu-id="cdc08-103">Possible values include: ''none'', ''job''</span></span>'
+    optional: true
+    syntax:
+      content: 'dynamicVNetAssignmentScope?: DynamicVNetAssignmentScope'
+      return:
+        type:
+          - '@azure/batch.DynamicVNetAssignmentScope'
+    package: '@azure/batch'
+  - uid: '@azure/batch.NetworkConfiguration.endpointConfiguration'
+    name: endpointConfiguration
+    fullName: endpointConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="cdc08-104">구성에서 끝점에 대 한 Batch 풀에서 노드를 계산 합니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-104">The configuration for endpoints on compute nodes in the Batch pool.</span></span> <span data-ttu-id="cdc08-105">풀 끝점 구성은 virtualMachineConfiguration 속성이 있는 풀 에서만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-105">Pool endpoint configuration is only supported on pools with the virtualMachineConfiguration property.</span></span>
+    optional: true
+    syntax:
+      content: 'endpointConfiguration?: PoolEndpointConfiguration'
+      return:
+        type:
+          - '@azure/batch.PoolEndpointConfiguration'
+    package: '@azure/batch'
+  - uid: '@azure/batch.NetworkConfiguration.subnetId'
+    name: subnetId
+    fullName: subnetId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="cdc08-106">풀의 계산 노드에 가입할 가상 네트워크 서브넷의 ARM 리소스 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-106">The ARM resource identifier of the virtual network subnet which the compute nodes of the pool will join.</span></span> <span data-ttu-id="cdc08-107">이 폼 /subscriptions/ {subscription} {그룹} /resourceGroups/ /providers/ {provider} {network} /virtualNetworks/ /subnets/ {서브넷}입니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-107">This is of the form /subscriptions/{subscription}/resourceGroups/{group}/providers/{provider}/virtualNetworks/{network}/subnets/{subnet}.</span></span>
+      <span data-ttu-id="cdc08-108">가상 네트워크는 동일한 지역 및 Azure Batch 계정으로 구독에 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-108">The virtual network must be in the same region and subscription as the Azure Batch account.</span></span>
+      <span data-ttu-id="cdc08-109">지정된 된 서브넷에 충분 한 사용 가능한 IP 주소 풀의 노드 수를 수용 하기에 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-109">The specified subnet should have enough free IP addresses to accommodate the number of nodes in the pool.</span></span> <span data-ttu-id="cdc08-110">서브넷 충분 한 여유 ip가 없는 경우 풀에서 계산 노드를 할당할 부분적으로 및 크기 조정 오류가 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-110">If the subnet doesn't have enough free IP addresses, the pool will partially allocate compute nodes, and a resize error will occur.</span></span> <span data-ttu-id="cdc08-111">VirtualMachineConfiguration을 사용 하 여 만든 풀에 대 한 ARM 가상 네트워크만 (' microsoft.network/virtualnetworks')는 지원 되지만 cloudServiceConfiguration을 사용 하 여 만든 풀에 대 한 ARM 및 클래식 가상 네트워크는 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="cdc08-111">For pools created with virtualMachineConfiguration only ARM virtual networks ('Microsoft.Network/virtualNetworks') are supported, but for pools created with cloudServiceConfiguration both ARM and classic virtual networks are supported.</span></span> <span data-ttu-id="cdc08-112">자세한 내용은 다음을 참조 하세요. https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration</span><span class="sxs-lookup"><span data-stu-id="cdc08-112">For more details, see: https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration</span></span>
+    optional: true
+    syntax:
+      content: 'subnetId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.DynamicVNetAssignmentScope'
+    name: DynamicVNetAssignmentScope
+    spec.typeScript:
+      - name: DynamicVNetAssignmentScope
+        fullName: DynamicVNetAssignmentScope
+        uid: '@azure/batch.DynamicVNetAssignmentScope'
+  - uid: '@azure/batch.PoolEndpointConfiguration'
+    name: PoolEndpointConfiguration
+    spec.typeScript:
+      - name: PoolEndpointConfiguration
+        fullName: PoolEndpointConfiguration
+        uid: '@azure/batch.PoolEndpointConfiguration'
