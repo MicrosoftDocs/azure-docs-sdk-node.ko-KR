@@ -1,0 +1,1353 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.ComputeNodeOperations'
+    name: ComputeNodeOperations
+    fullName: ComputeNodeOperations
+    children:
+      - '@azure/batch.ComputeNodeOperations.addUser_2'
+      - '@azure/batch.ComputeNodeOperations.addUser'
+      - '@azure/batch.ComputeNodeOperations.addUser_1'
+      - '@azure/batch.ComputeNodeOperations.constructor'
+      - '@azure/batch.ComputeNodeOperations.deleteUser_2'
+      - '@azure/batch.ComputeNodeOperations.deleteUser'
+      - '@azure/batch.ComputeNodeOperations.deleteUser_1'
+      - '@azure/batch.ComputeNodeOperations.disableScheduling_2'
+      - '@azure/batch.ComputeNodeOperations.disableScheduling'
+      - '@azure/batch.ComputeNodeOperations.disableScheduling_1'
+      - '@azure/batch.ComputeNodeOperations.enableScheduling_2'
+      - '@azure/batch.ComputeNodeOperations.enableScheduling'
+      - '@azure/batch.ComputeNodeOperations.enableScheduling_1'
+      - '@azure/batch.ComputeNodeOperations.get_2'
+      - '@azure/batch.ComputeNodeOperations.get'
+      - '@azure/batch.ComputeNodeOperations.get_1'
+      - '@azure/batch.ComputeNodeOperations.getRemoteDesktop_2'
+      - '@azure/batch.ComputeNodeOperations.getRemoteDesktop'
+      - '@azure/batch.ComputeNodeOperations.getRemoteDesktop_1'
+      - '@azure/batch.ComputeNodeOperations.getRemoteLoginSettings_2'
+      - '@azure/batch.ComputeNodeOperations.getRemoteLoginSettings'
+      - '@azure/batch.ComputeNodeOperations.getRemoteLoginSettings_1'
+      - '@azure/batch.ComputeNodeOperations.list_2'
+      - '@azure/batch.ComputeNodeOperations.list'
+      - '@azure/batch.ComputeNodeOperations.list_1'
+      - '@azure/batch.ComputeNodeOperations.listNext_2'
+      - '@azure/batch.ComputeNodeOperations.listNext'
+      - '@azure/batch.ComputeNodeOperations.listNext_1'
+      - '@azure/batch.ComputeNodeOperations.reboot_2'
+      - '@azure/batch.ComputeNodeOperations.reboot'
+      - '@azure/batch.ComputeNodeOperations.reboot_1'
+      - '@azure/batch.ComputeNodeOperations.reimage_2'
+      - '@azure/batch.ComputeNodeOperations.reimage'
+      - '@azure/batch.ComputeNodeOperations.reimage_1'
+      - '@azure/batch.ComputeNodeOperations.updateUser_2'
+      - '@azure/batch.ComputeNodeOperations.updateUser'
+      - '@azure/batch.ComputeNodeOperations.updateUser_1'
+      - '@azure/batch.ComputeNodeOperations.uploadBatchServiceLogs_2'
+      - '@azure/batch.ComputeNodeOperations.uploadBatchServiceLogs'
+      - '@azure/batch.ComputeNodeOperations.uploadBatchServiceLogs_1'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="73f00-101">ComputeNodeOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-101">Class representing a ComputeNodeOperations.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.addUser_2'
+    name: 'addUser(string, string, ComputeNodeUser, ComputeNodeAddUserOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addUser(poolId: string, nodeId: string, user: ComputeNodeUser, options: ComputeNodeAddUserOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-102">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-102">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-103">사용자 계정을 만들려면 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-103">The ID of the machine on which you want to create a user account.</span></span>
+        - id: user
+          type:
+            - '@azure/batch.ComputeNodeUser'
+          description: <span data-ttu-id="73f00-104">만들려는 사용자 계정입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-104">The user account to be created.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeAddUserOptionalParams'
+          description: <span data-ttu-id="73f00-105">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-105">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-106">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-106">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeAddUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.addUser'
+    name: 'addUser(string, string, ComputeNodeUser, Models.ComputeNodeAddUserOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-107">유휴 상태 또는 실행 중인 상태의 경우에 노드에 사용자 계정을 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-107">You can add a user account to a node only when it is in the idle or running state.</span></span>
+    syntax:
+      content: 'function addUser(poolId: string, nodeId: string, user: ComputeNodeUser, options?: Models.ComputeNodeAddUserOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-108">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-108">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-109">사용자 계정을 만들려면 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-109">The ID of the machine on which you want to create a user account.</span></span>
+        - id: user
+          type:
+            - '@azure/batch.ComputeNodeUser'
+          description: <span data-ttu-id="73f00-110">만들려는 사용자 계정입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-110">The user account to be created.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeAddUserOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeAddUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.addUser_1'
+    name: 'addUser(string, string, ComputeNodeUser, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addUser(poolId: string, nodeId: string, user: ComputeNodeUser, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-111">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-111">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-112">사용자 계정을 만들려면 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-112">The ID of the machine on which you want to create a user account.</span></span>
+        - id: user
+          type:
+            - '@azure/batch.ComputeNodeUser'
+          description: <span data-ttu-id="73f00-113">만들려는 사용자 계정입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-113">The user account to be created.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-114">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-114">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeAddUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.constructor'
+    name: ComputeNodeOperations(BatchServiceClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-115">ComputeNodeOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-115">Create a ComputeNodeOperations.</span></span>
+    syntax:
+      content: 'new ComputeNodeOperations(client: BatchServiceClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/batch.BatchServiceClientContext'
+          description: |
+            <span data-ttu-id="73f00-116">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-116">Reference to the service client.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.deleteUser_2'
+    name: 'deleteUser(string, string, string, ComputeNodeDeleteUserOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteUser(poolId: string, nodeId: string, userName: string, options: ComputeNodeDeleteUserOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-117">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-117">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-118">사용자 계정 삭제 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-118">The ID of the machine on which you want to delete a user account.</span></span>
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="73f00-119">삭제 하려면 사용자 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-119">The name of the user account to delete.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeDeleteUserOptionalParams'
+          description: <span data-ttu-id="73f00-120">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-120">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-121">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-121">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeDeleteUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.deleteUser'
+    name: 'deleteUser(string, string, string, Models.ComputeNodeDeleteUserOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-122">유휴 상태 또는 실행 중인 상태의 경우에 노드에 사용자 계정을 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-122">You can delete a user account to a node only when it is in the idle or running state.</span></span>
+    syntax:
+      content: 'function deleteUser(poolId: string, nodeId: string, userName: string, options?: Models.ComputeNodeDeleteUserOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-123">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-123">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-124">사용자 계정 삭제 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-124">The ID of the machine on which you want to delete a user account.</span></span>
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="73f00-125">삭제 하려면 사용자 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-125">The name of the user account to delete.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeDeleteUserOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeDeleteUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.deleteUser_1'
+    name: 'deleteUser(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteUser(poolId: string, nodeId: string, userName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-126">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-126">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-127">사용자 계정 삭제 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-127">The ID of the machine on which you want to delete a user account.</span></span>
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="73f00-128">삭제 하려면 사용자 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-128">The name of the user account to delete.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-129">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-129">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeDeleteUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.disableScheduling_2'
+    name: 'disableScheduling(string, string, ComputeNodeDisableSchedulingOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function disableScheduling(poolId: string, nodeId: string, options: ComputeNodeDisableSchedulingOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-130">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-130">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-131">작업 일정을 사용 하지 않도록 설정 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-131">The ID of the compute node on which you want to disable task scheduling.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeDisableSchedulingOptionalParams'
+          description: <span data-ttu-id="73f00-132">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-132">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-133">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-133">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeDisableSchedulingResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.disableScheduling'
+    name: 'disableScheduling(string, string, Models.ComputeNodeDisableSchedulingOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-134">작업 일정의 현재 상태는 사용 하도록 설정 하는 경우에 노드에서 예약을 해제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-134">You can disable task scheduling on a node only if its current scheduling state is enabled.</span></span>
+    syntax:
+      content: 'function disableScheduling(poolId: string, nodeId: string, options?: Models.ComputeNodeDisableSchedulingOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-135">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-135">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-136">작업 일정을 사용 하지 않도록 설정 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-136">The ID of the compute node on which you want to disable task scheduling.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeDisableSchedulingOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeDisableSchedulingResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.disableScheduling_1'
+    name: 'disableScheduling(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function disableScheduling(poolId: string, nodeId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-137">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-137">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-138">작업 일정을 사용 하지 않도록 설정 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-138">The ID of the compute node on which you want to disable task scheduling.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-139">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-139">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeDisableSchedulingResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.enableScheduling_2'
+    name: 'enableScheduling(string, string, ComputeNodeEnableSchedulingOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function enableScheduling(poolId: string, nodeId: string, options: ComputeNodeEnableSchedulingOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-140">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-140">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-141">작업 일정을 사용 하도록 설정 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-141">The ID of the compute node on which you want to enable task scheduling.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeEnableSchedulingOptionalParams'
+          description: <span data-ttu-id="73f00-142">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-142">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-143">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-143">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeEnableSchedulingResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.enableScheduling'
+    name: 'enableScheduling(string, string, Models.ComputeNodeEnableSchedulingOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-144">작업 일정의 현재 상태를 사용 하지 않도록 설정 하는 경우에 노드에서 예약을 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-144">You can enable task scheduling on a node only if its current scheduling state is disabled</span></span>
+    syntax:
+      content: 'function enableScheduling(poolId: string, nodeId: string, options?: Models.ComputeNodeEnableSchedulingOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-145">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-145">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-146">작업 일정을 사용 하도록 설정 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-146">The ID of the compute node on which you want to enable task scheduling.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeEnableSchedulingOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeEnableSchedulingResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.enableScheduling_1'
+    name: 'enableScheduling(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function enableScheduling(poolId: string, nodeId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-147">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-147">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-148">작업 일정을 사용 하도록 설정 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-148">The ID of the compute node on which you want to enable task scheduling.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-149">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-149">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeEnableSchedulingResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.get_2'
+    name: 'get(string, string, ComputeNodeGetOptionalParams, ServiceCallback<ComputeNode>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(poolId: string, nodeId: string, options: ComputeNodeGetOptionalParams, callback: ServiceCallback<ComputeNode>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-150">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-150">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-151">에 대 한 정보를 얻고자 하는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-151">The ID of the compute node that you want to get information about.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeGetOptionalParams'
+          description: <span data-ttu-id="73f00-152">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-152">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNode>
+          description: |
+            <span data-ttu-id="73f00-153">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-153">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.get'
+    name: 'get(string, string, Models.ComputeNodeGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(poolId: string, nodeId: string, options?: Models.ComputeNodeGetOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-154">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-154">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-155">에 대 한 정보를 얻고자 하는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-155">The ID of the compute node that you want to get information about.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.get_1'
+    name: 'get(string, string, ServiceCallback<ComputeNode>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(poolId: string, nodeId: string, callback: ServiceCallback<ComputeNode>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-156">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-156">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-157">에 대 한 정보를 얻고자 하는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-157">The ID of the compute node that you want to get information about.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNode>
+          description: |
+            <span data-ttu-id="73f00-158">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.getRemoteDesktop_2'
+    name: 'getRemoteDesktop(string, string, ComputeNodeGetRemoteDesktopOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getRemoteDesktop(poolId: string, nodeId: string, options: ComputeNodeGetRemoteDesktopOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-159">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-159">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-160">원격 데스크톱 프로토콜 파일을 가져오려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-160">The ID of the compute node for which you want to get the Remote Desktop Protocol file.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeGetRemoteDesktopOptionalParams'
+          description: <span data-ttu-id="73f00-161">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-161">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-162">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetRemoteDesktopResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.getRemoteDesktop'
+    name: 'getRemoteDesktop(string, string, Models.ComputeNodeGetRemoteDesktopOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      <span data-ttu-id="73f00-163">RDP 파일을 사용 하 여 노드를 액세스할 수 있습니다, 전에 노드에 사용자 계정을 만들어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-163">Before you can access a node by using the RDP file, you must create a user account on the node.</span></span>
+      <span data-ttu-id="73f00-164">이 API는 클라우드 서비스 구성을 사용 하 여 만든 풀에만 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-164">This API can only be invoked on pools created with a cloud service configuration.</span></span> <span data-ttu-id="73f00-165">가상 머신 구성을 사용 하 여 만든 풀 GetRemoteLoginSettings API를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="73f00-165">For pools created with a virtual machine configuration, see the GetRemoteLoginSettings API.</span></span>
+    syntax:
+      content: 'function getRemoteDesktop(poolId: string, nodeId: string, options?: Models.ComputeNodeGetRemoteDesktopOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-166">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-166">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-167">원격 데스크톱 프로토콜 파일을 가져오려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-167">The ID of the compute node for which you want to get the Remote Desktop Protocol file.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeGetRemoteDesktopOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetRemoteDesktopResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.getRemoteDesktop_1'
+    name: 'getRemoteDesktop(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getRemoteDesktop(poolId: string, nodeId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-168">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-168">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-169">원격 데스크톱 프로토콜 파일을 가져오려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-169">The ID of the compute node for which you want to get the Remote Desktop Protocol file.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-170">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-170">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetRemoteDesktopResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.getRemoteLoginSettings_2'
+    name: 'getRemoteLoginSettings(string, string, ComputeNodeGetRemoteLoginSettingsOptionalParams, ServiceCallback<ComputeNodeGetRemoteLoginSettingsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getRemoteLoginSettings(poolId: string, nodeId: string, options: ComputeNodeGetRemoteLoginSettingsOptionalParams, callback: ServiceCallback<ComputeNodeGetRemoteLoginSettingsResult>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-171">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-171">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-172">원격 로그인 설정을 가져올 수 있는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-172">The ID of the compute node for which to obtain the remote login settings.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeGetRemoteLoginSettingsOptionalParams'
+          description: <span data-ttu-id="73f00-173">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-173">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNodeGetRemoteLoginSettingsResult>
+          description: |
+            <span data-ttu-id="73f00-174">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-174">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetRemoteLoginSettingsResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.getRemoteLoginSettings'
+    name: 'getRemoteLoginSettings(string, string, Models.ComputeNodeGetRemoteLoginSettingsOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="73f00-175">원격으로 먼저 로그인 원격 로그인 설정을 사용 하 여 노드 노드에 사용자 계정을 만들어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-175">Before you can remotely login to a node using the remote login settings, you must create a user account on the node.</span></span> <span data-ttu-id="73f00-176">가상 머신 구성 속성을 사용 하 여 만든 풀에만이 API는 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-176">This API can be invoked only on pools created with the virtual machine configuration property.</span></span> <span data-ttu-id="73f00-177">클라우드 서비스 구성을 사용 하 여 만든 풀 GetRemoteDesktop API를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="73f00-177">For pools created with a cloud service configuration, see the GetRemoteDesktop API.</span></span>'
+    syntax:
+      content: 'function getRemoteLoginSettings(poolId: string, nodeId: string, options?: Models.ComputeNodeGetRemoteLoginSettingsOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-178">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-178">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-179">원격 로그인 설정을 가져올 수 있는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-179">The ID of the compute node for which to obtain the remote login settings.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeGetRemoteLoginSettingsOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetRemoteLoginSettingsResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.getRemoteLoginSettings_1'
+    name: 'getRemoteLoginSettings(string, string, ServiceCallback<ComputeNodeGetRemoteLoginSettingsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getRemoteLoginSettings(poolId: string, nodeId: string, callback: ServiceCallback<ComputeNodeGetRemoteLoginSettingsResult>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-180">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-180">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-181">원격 로그인 설정을 가져올 수 있는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-181">The ID of the compute node for which to obtain the remote login settings.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNodeGetRemoteLoginSettingsResult>
+          description: |
+            <span data-ttu-id="73f00-182">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-182">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeGetRemoteLoginSettingsResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.list_2'
+    name: 'list(string, ComputeNodeListOptionalParams, ServiceCallback<ComputeNodeListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(poolId: string, options: ComputeNodeListOptionalParams, callback: ServiceCallback<ComputeNodeListResult>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-183">노드를 나열 하기 원하는 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-183">The ID of the pool from which you want to list nodes.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeListOptionalParams'
+          description: <span data-ttu-id="73f00-184">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-184">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNodeListResult>
+          description: |
+            <span data-ttu-id="73f00-185">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-185">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.list'
+    name: 'list(string, Models.ComputeNodeListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(poolId: string, options?: Models.ComputeNodeListOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-186">노드를 나열 하기 원하는 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-186">The ID of the pool from which you want to list nodes.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.list_1'
+    name: 'list(string, ServiceCallback<ComputeNodeListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(poolId: string, callback: ServiceCallback<ComputeNodeListResult>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-187">노드를 나열 하기 원하는 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-187">The ID of the pool from which you want to list nodes.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNodeListResult>
+          description: |
+            <span data-ttu-id="73f00-188">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-188">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.listNext_2'
+    name: 'listNext(string, ComputeNodeListNextOptionalParams, ServiceCallback<ComputeNodeListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: ComputeNodeListNextOptionalParams, callback: ServiceCallback<ComputeNodeListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="73f00-189">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-189">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeListNextOptionalParams'
+          description: <span data-ttu-id="73f00-190">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-190">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNodeListResult>
+          description: |
+            <span data-ttu-id="73f00-191">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-191">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.listNext'
+    name: 'listNext(string, Models.ComputeNodeListNextOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Models.ComputeNodeListNextOptionalParams)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="73f00-192">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-192">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeListNextOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.listNext_1'
+    name: 'listNext(string, ServiceCallback<ComputeNodeListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ComputeNodeListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="73f00-193">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-193">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.ComputeNodeListResult>
+          description: |
+            <span data-ttu-id="73f00-194">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-194">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.reboot_2'
+    name: 'reboot(string, string, ComputeNodeRebootOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reboot(poolId: string, nodeId: string, options: ComputeNodeRebootOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-195">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-195">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-196">다시 시작 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-196">The ID of the compute node that you want to restart.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeRebootOptionalParams'
+          description: <span data-ttu-id="73f00-197">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-197">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-198">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-198">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeRebootResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.reboot'
+    name: 'reboot(string, string, Models.ComputeNodeRebootOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-199">유휴 상태 또는 실행 중인 상태인 경우에 노드를 다시 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-199">You can restart a node only if it is in an idle or running state.</span></span>
+    syntax:
+      content: 'function reboot(poolId: string, nodeId: string, options?: Models.ComputeNodeRebootOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-200">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-200">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-201">다시 시작 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-201">The ID of the compute node that you want to restart.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeRebootOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeRebootResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.reboot_1'
+    name: 'reboot(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reboot(poolId: string, nodeId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-202">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-202">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-203">다시 시작 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-203">The ID of the compute node that you want to restart.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-204">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-204">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeRebootResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.reimage_2'
+    name: 'reimage(string, string, ComputeNodeReimageOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reimage(poolId: string, nodeId: string, options: ComputeNodeReimageOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-205">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-205">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-206">다시 시작 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-206">The ID of the compute node that you want to restart.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeReimageOptionalParams'
+          description: <span data-ttu-id="73f00-207">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-207">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-208">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-208">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeReimageResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.reimage'
+    name: 'reimage(string, string, Models.ComputeNodeReimageOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-209">유휴 상태 또는 실행 중인 상태인 경우에 노드에서 운영 체제를 다시 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-209">You can reinstall the operating system on a node only if it is in an idle or running state.</span></span> <span data-ttu-id="73f00-210">이 API는 클라우드 서비스 구성 속성을 사용 하 여 만든 풀 에서만 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-210">This API can be invoked only on pools created with the cloud service configuration property.</span></span>
+    syntax:
+      content: 'function reimage(poolId: string, nodeId: string, options?: Models.ComputeNodeReimageOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-211">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-211">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-212">다시 시작 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-212">The ID of the compute node that you want to restart.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeReimageOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeReimageResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.reimage_1'
+    name: 'reimage(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reimage(poolId: string, nodeId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-213">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-213">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-214">다시 시작 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-214">The ID of the compute node that you want to restart.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-215">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-215">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeReimageResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.updateUser_2'
+    name: 'updateUser(string, string, string, NodeUpdateUserParameter, ComputeNodeUpdateUserOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function updateUser(poolId: string, nodeId: string, userName: string, nodeUpdateUserParameter: NodeUpdateUserParameter, options: ComputeNodeUpdateUserOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-216">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-216">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-217">사용자 계정 업데이트 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-217">The ID of the machine on which you want to update a user account.</span></span>
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="73f00-218">업데이트할 사용자 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-218">The name of the user account to update.</span></span>
+        - id: nodeUpdateUserParameter
+          type:
+            - '@azure/batch.NodeUpdateUserParameter'
+          description: <span data-ttu-id="73f00-219">요청에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-219">The parameters for the request.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeUpdateUserOptionalParams'
+          description: <span data-ttu-id="73f00-220">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-220">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-221">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-221">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeUpdateUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.updateUser'
+    name: 'updateUser(string, string, string, NodeUpdateUserParameter, Models.ComputeNodeUpdateUserOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="73f00-222">이 작업은 계정의 업데이트 가능한 모든 속성의 대체합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-222">This operation replaces of all the updatable properties of the account.</span></span> <span data-ttu-id="73f00-223">예를 들어 expiryTime 요소를 지정 하지 않으면 현재 값을 왼쪽 하지 수정 되지 않은 기본값을 사용 하 여 바뀝니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-223">For example, if the expiryTime element is not specified, the current value is replaced with the default value, not left unmodified.</span></span> <span data-ttu-id="73f00-224">유휴 상태 또는 실행 중인 상태의 경우에 노드에 사용자 계정을 업데이트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-224">You can update a user account on a node only when it is in the idle or running state.</span></span>'
+    syntax:
+      content: 'function updateUser(poolId: string, nodeId: string, userName: string, nodeUpdateUserParameter: NodeUpdateUserParameter, options?: Models.ComputeNodeUpdateUserOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-225">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-225">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-226">사용자 계정 업데이트 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-226">The ID of the machine on which you want to update a user account.</span></span>
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="73f00-227">업데이트할 사용자 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-227">The name of the user account to update.</span></span>
+        - id: nodeUpdateUserParameter
+          type:
+            - '@azure/batch.NodeUpdateUserParameter'
+          description: <span data-ttu-id="73f00-228">요청에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-228">The parameters for the request.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeUpdateUserOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeUpdateUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.updateUser_1'
+    name: 'updateUser(string, string, string, NodeUpdateUserParameter, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function updateUser(poolId: string, nodeId: string, userName: string, nodeUpdateUserParameter: NodeUpdateUserParameter, callback: ServiceCallback<void>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-229">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-229">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-230">사용자 계정 업데이트 하려는 컴퓨터의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-230">The ID of the machine on which you want to update a user account.</span></span>
+        - id: userName
+          type:
+            - string
+          description: <span data-ttu-id="73f00-231">업데이트할 사용자 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-231">The name of the user account to update.</span></span>
+        - id: nodeUpdateUserParameter
+          type:
+            - '@azure/batch.NodeUpdateUserParameter'
+          description: <span data-ttu-id="73f00-232">요청에 대 한 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-232">The parameters for the request.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="73f00-233">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-233">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeUpdateUserResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.uploadBatchServiceLogs_2'
+    name: 'uploadBatchServiceLogs(string, string, UploadBatchServiceLogsConfiguration, ComputeNodeUploadBatchServiceLogsOptionalParams, ServiceCallback<UploadBatchServiceLogsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function uploadBatchServiceLogs(poolId: string, nodeId: string, uploadBatchServiceLogsConfiguration: UploadBatchServiceLogsConfiguration, options: ComputeNodeUploadBatchServiceLogsOptionalParams, callback: ServiceCallback<UploadBatchServiceLogsResult>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-234">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-234">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-235">Azure Batch 서비스 로그 파일을 업로드 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-235">The ID of the compute node from which you want to upload the Azure Batch service log files.</span></span>
+        - id: uploadBatchServiceLogsConfiguration
+          type:
+            - '@azure/batch.UploadBatchServiceLogsConfiguration'
+          description: <span data-ttu-id="73f00-236">Azure Batch 서비스 로그 파일 업로드 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-236">The Azure Batch service log files upload configuration.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.ComputeNodeUploadBatchServiceLogsOptionalParams'
+          description: <span data-ttu-id="73f00-237">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="73f00-237">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.UploadBatchServiceLogsResult>
+          description: |
+            <span data-ttu-id="73f00-238">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-238">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeUploadBatchServiceLogsResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.uploadBatchServiceLogs'
+    name: 'uploadBatchServiceLogs(string, string, UploadBatchServiceLogsConfiguration, Models.ComputeNodeUploadBatchServiceLogsOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="73f00-239">오류가 발생 하는 경우 Azure 지원에 에스컬레이션 하는 방법을 노드에서 자동화 된 방식으로 Azure Batch 서비스 로그 파일 수집입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-239">This is for gathering Azure Batch service log files in an automated fashion from nodes if you are experiencing an error and wish to escalate to Azure support.</span></span> <span data-ttu-id="73f00-240">Batch 서비스를 사용 하 여 문제를 디버깅 지원 하기 위해 Azure 지원을 통해 Azure Batch 서비스 로그 파일을 공유 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-240">The Azure Batch service log files should be shared with Azure support to aid in debugging issues with the Batch service.</span></span>
+    syntax:
+      content: 'function uploadBatchServiceLogs(poolId: string, nodeId: string, uploadBatchServiceLogsConfiguration: UploadBatchServiceLogsConfiguration, options?: Models.ComputeNodeUploadBatchServiceLogsOptionalParams)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-241">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-241">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-242">Azure Batch 서비스 로그 파일을 업로드 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-242">The ID of the compute node from which you want to upload the Azure Batch service log files.</span></span>
+        - id: uploadBatchServiceLogsConfiguration
+          type:
+            - '@azure/batch.UploadBatchServiceLogsConfiguration'
+          description: <span data-ttu-id="73f00-243">Azure Batch 서비스 로그 파일 업로드 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-243">The Azure Batch service log files upload configuration.</span></span>
+        - id: options
+          type:
+            - Models.ComputeNodeUploadBatchServiceLogsOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ComputeNodeUploadBatchServiceLogsResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.ComputeNodeOperations.uploadBatchServiceLogs_1'
+    name: 'uploadBatchServiceLogs(string, string, UploadBatchServiceLogsConfiguration, ServiceCallback<UploadBatchServiceLogsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function uploadBatchServiceLogs(poolId: string, nodeId: string, uploadBatchServiceLogsConfiguration: UploadBatchServiceLogsConfiguration, callback: ServiceCallback<UploadBatchServiceLogsResult>)'
+      parameters:
+        - id: poolId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-244">계산 노드가 포함 된 풀의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-244">The ID of the pool that contains the compute node.</span></span>
+        - id: nodeId
+          type:
+            - string
+          description: <span data-ttu-id="73f00-245">Azure Batch 서비스 로그 파일을 업로드 하려는 계산 노드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-245">The ID of the compute node from which you want to upload the Azure Batch service log files.</span></span>
+        - id: uploadBatchServiceLogsConfiguration
+          type:
+            - '@azure/batch.UploadBatchServiceLogsConfiguration'
+          description: <span data-ttu-id="73f00-246">Azure Batch 서비스 로그 파일 업로드 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="73f00-246">The Azure Batch service log files upload configuration.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.UploadBatchServiceLogsResult>
+          description: |
+            <span data-ttu-id="73f00-247">콜백</span><span class="sxs-lookup"><span data-stu-id="73f00-247">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.ComputeNodeUploadBatchServiceLogsResponse>
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.BatchServiceClientContext'
+    name: BatchServiceClientContext
+    spec.typeScript:
+      - name: BatchServiceClientContext
+        fullName: BatchServiceClientContext
+        uid: '@azure/batch.BatchServiceClientContext'
+  - uid: '@azure/batch.ComputeNodeUser'
+    name: ComputeNodeUser
+    spec.typeScript:
+      - name: ComputeNodeUser
+        fullName: ComputeNodeUser
+        uid: '@azure/batch.ComputeNodeUser'
+  - uid: '@azure/batch.ComputeNodeAddUserOptionalParams'
+    name: ComputeNodeAddUserOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeAddUserOptionalParams
+        fullName: ComputeNodeAddUserOptionalParams
+        uid: '@azure/batch.ComputeNodeAddUserOptionalParams'
+  - uid: '@azure/batch.ComputeNodeDeleteUserOptionalParams'
+    name: ComputeNodeDeleteUserOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeDeleteUserOptionalParams
+        fullName: ComputeNodeDeleteUserOptionalParams
+        uid: '@azure/batch.ComputeNodeDeleteUserOptionalParams'
+  - uid: '@azure/batch.ComputeNodeDisableSchedulingOptionalParams'
+    name: ComputeNodeDisableSchedulingOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeDisableSchedulingOptionalParams
+        fullName: ComputeNodeDisableSchedulingOptionalParams
+        uid: '@azure/batch.ComputeNodeDisableSchedulingOptionalParams'
+  - uid: '@azure/batch.ComputeNodeEnableSchedulingOptionalParams'
+    name: ComputeNodeEnableSchedulingOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeEnableSchedulingOptionalParams
+        fullName: ComputeNodeEnableSchedulingOptionalParams
+        uid: '@azure/batch.ComputeNodeEnableSchedulingOptionalParams'
+  - uid: ServiceCallback<@azure/batch.ComputeNode>
+    name: ComputeNode>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ComputeNode
+        fullName: ComputeNode
+        uid: '@azure/batch.ComputeNode'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.ComputeNodeGetOptionalParams'
+    name: ComputeNodeGetOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeGetOptionalParams
+        fullName: ComputeNodeGetOptionalParams
+        uid: '@azure/batch.ComputeNodeGetOptionalParams'
+  - uid: '@azure/batch.ComputeNodeGetRemoteDesktopOptionalParams'
+    name: ComputeNodeGetRemoteDesktopOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeGetRemoteDesktopOptionalParams
+        fullName: ComputeNodeGetRemoteDesktopOptionalParams
+        uid: '@azure/batch.ComputeNodeGetRemoteDesktopOptionalParams'
+  - uid: ServiceCallback<@azure/batch.ComputeNodeGetRemoteLoginSettingsResult>
+    name: ComputeNodeGetRemoteLoginSettingsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ComputeNodeGetRemoteLoginSettingsResult
+        fullName: ComputeNodeGetRemoteLoginSettingsResult
+        uid: '@azure/batch.ComputeNodeGetRemoteLoginSettingsResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.ComputeNodeGetRemoteLoginSettingsOptionalParams'
+    name: ComputeNodeGetRemoteLoginSettingsOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeGetRemoteLoginSettingsOptionalParams
+        fullName: ComputeNodeGetRemoteLoginSettingsOptionalParams
+        uid: '@azure/batch.ComputeNodeGetRemoteLoginSettingsOptionalParams'
+  - uid: ServiceCallback<@azure/batch.ComputeNodeListResult>
+    name: ComputeNodeListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ComputeNodeListResult
+        fullName: ComputeNodeListResult
+        uid: '@azure/batch.ComputeNodeListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.ComputeNodeListOptionalParams'
+    name: ComputeNodeListOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeListOptionalParams
+        fullName: ComputeNodeListOptionalParams
+        uid: '@azure/batch.ComputeNodeListOptionalParams'
+  - uid: '@azure/batch.ComputeNodeListNextOptionalParams'
+    name: ComputeNodeListNextOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeListNextOptionalParams
+        fullName: ComputeNodeListNextOptionalParams
+        uid: '@azure/batch.ComputeNodeListNextOptionalParams'
+  - uid: '@azure/batch.ComputeNodeRebootOptionalParams'
+    name: ComputeNodeRebootOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeRebootOptionalParams
+        fullName: ComputeNodeRebootOptionalParams
+        uid: '@azure/batch.ComputeNodeRebootOptionalParams'
+  - uid: '@azure/batch.ComputeNodeReimageOptionalParams'
+    name: ComputeNodeReimageOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeReimageOptionalParams
+        fullName: ComputeNodeReimageOptionalParams
+        uid: '@azure/batch.ComputeNodeReimageOptionalParams'
+  - uid: '@azure/batch.NodeUpdateUserParameter'
+    name: NodeUpdateUserParameter
+    spec.typeScript:
+      - name: NodeUpdateUserParameter
+        fullName: NodeUpdateUserParameter
+        uid: '@azure/batch.NodeUpdateUserParameter'
+  - uid: '@azure/batch.ComputeNodeUpdateUserOptionalParams'
+    name: ComputeNodeUpdateUserOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeUpdateUserOptionalParams
+        fullName: ComputeNodeUpdateUserOptionalParams
+        uid: '@azure/batch.ComputeNodeUpdateUserOptionalParams'
+  - uid: '@azure/batch.UploadBatchServiceLogsConfiguration'
+    name: UploadBatchServiceLogsConfiguration
+    spec.typeScript:
+      - name: UploadBatchServiceLogsConfiguration
+        fullName: UploadBatchServiceLogsConfiguration
+        uid: '@azure/batch.UploadBatchServiceLogsConfiguration'
+  - uid: ServiceCallback<@azure/batch.UploadBatchServiceLogsResult>
+    name: UploadBatchServiceLogsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UploadBatchServiceLogsResult
+        fullName: UploadBatchServiceLogsResult
+        uid: '@azure/batch.UploadBatchServiceLogsResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.ComputeNodeUploadBatchServiceLogsOptionalParams'
+    name: ComputeNodeUploadBatchServiceLogsOptionalParams
+    spec.typeScript:
+      - name: ComputeNodeUploadBatchServiceLogsOptionalParams
+        fullName: ComputeNodeUploadBatchServiceLogsOptionalParams
+        uid: '@azure/batch.ComputeNodeUploadBatchServiceLogsOptionalParams'
