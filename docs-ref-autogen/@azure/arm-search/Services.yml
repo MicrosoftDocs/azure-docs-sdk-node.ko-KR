@@ -1,0 +1,593 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-search.Services'
+    name: Services
+    fullName: Services
+    children:
+      - '@azure/arm-search.Services.beginCreateOrUpdate'
+      - '@azure/arm-search.Services.checkNameAvailability'
+      - '@azure/arm-search.Services.checkNameAvailability_1'
+      - '@azure/arm-search.Services.checkNameAvailability_2'
+      - '@azure/arm-search.Services.createOrUpdate'
+      - '@azure/arm-search.Services.deleteMethod'
+      - '@azure/arm-search.Services.deleteMethod_1'
+      - '@azure/arm-search.Services.deleteMethod_2'
+      - '@azure/arm-search.Services.get'
+      - '@azure/arm-search.Services.get_1'
+      - '@azure/arm-search.Services.get_2'
+      - '@azure/arm-search.Services.listByResourceGroup'
+      - '@azure/arm-search.Services.listByResourceGroup_1'
+      - '@azure/arm-search.Services.listByResourceGroup_2'
+      - '@azure/arm-search.Services.constructor'
+      - '@azure/arm-search.Services.update'
+      - '@azure/arm-search.Services.update_1'
+      - '@azure/arm-search.Services.update_2'
+    langs:
+      - typeScript
+    type: class
+    summary: 서비스를 나타내는 클래스입니다.
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.beginCreateOrUpdate'
+    name: 'beginCreateOrUpdate(string, string, SearchService, Models.ServicesBeginCreateOrUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
+    syntax:
+      content: 'function beginCreateOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Models.ServicesBeginCreateOrUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 'Azure Search 서비스 만들기 또는 업데이트의 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다. 서비스 URI의 일부 이므로 검색 서비스 이름은 전역적으로 고유 해야 (https://<name>. search.windows.net). 서비스를 만든 후 서비스 이름을 변경할 수 없습니다.'
+        - id: service
+          type:
+            - '@azure/arm-search.SearchService'
+          description: 검색 서비스 만들기 또는 업데이트를 정의 합니다.
+        - id: options
+          type:
+            - Models.ServicesBeginCreateOrUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.checkNameAvailability'
+    name: 'checkNameAvailability(string, Models.ServicesCheckNameAvailabilityOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '지정 된 검색 서비스 이름을 사용할 수 있는지 여부를 확인 합니다. 서비스 URI의 일부 이므로 검색 서비스 이름은 전역적으로 고유 해야 (https://<name>. search.windows.net).'
+    syntax:
+      content: 'function checkNameAvailability(name: string, options?: Models.ServicesCheckNameAvailabilityOptionalParams)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: '유효성을 검사 하려면 검색 서비스 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다.'
+        - id: options
+          type:
+            - Models.ServicesCheckNameAvailabilityOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ServicesCheckNameAvailabilityResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.checkNameAvailability_1'
+    name: 'checkNameAvailability(string, ServiceCallback<CheckNameAvailabilityOutput>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(name: string, callback: ServiceCallback<CheckNameAvailabilityOutput>)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: '유효성을 검사 하려면 검색 서비스 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다.'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.CheckNameAvailabilityOutput>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesCheckNameAvailabilityResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.checkNameAvailability_2'
+    name: 'checkNameAvailability(string, ServicesCheckNameAvailabilityOptionalParams, ServiceCallback<CheckNameAvailabilityOutput>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function checkNameAvailability(name: string, options: ServicesCheckNameAvailabilityOptionalParams, callback: ServiceCallback<CheckNameAvailabilityOutput>)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: '유효성을 검사 하려면 검색 서비스 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다.'
+        - id: options
+          type:
+            - '@azure/arm-search.ServicesCheckNameAvailabilityOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.CheckNameAvailabilityOutput>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesCheckNameAvailabilityResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.createOrUpdate'
+    name: 'createOrUpdate(string, string, SearchService, Models.ServicesCreateOrUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 페이지를 만들거나 지정된 된 리소스 그룹에 있는 검색 서비스를 업데이트 합니다. 검색 서비스가 이미 있는 경우 모든 속성 지정된 값으로 업데이트 됩니다.
+    syntax:
+      content: 'function createOrUpdate(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Models.ServicesCreateOrUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 'Azure Search 서비스 만들기 또는 업데이트의 이름입니다. 검색 서비스 이름 소문자, 숫자 또는 대시만 포함 해야, 처음 두 문자나 마지막 한 문자로 대시를 사용할 수 없으며, 연속 대시를 포함할 수 없습니다 및 2 ~ 60 자 사이 여야 합니다. 서비스 URI의 일부 이므로 검색 서비스 이름은 전역적으로 고유 해야 (https://<name>. search.windows.net). 서비스를 만든 후 서비스 이름을 변경할 수 없습니다.'
+        - id: service
+          type:
+            - '@azure/arm-search.SearchService'
+          description: 검색 서비스 만들기 또는 업데이트를 정의 합니다.
+        - id: options
+          type:
+            - Models.ServicesCreateOrUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ServicesCreateOrUpdateResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.deleteMethod'
+    name: 'deleteMethod(string, string, Models.ServicesDeleteMethodOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 연결된 된 리소스와 함께 지정 된 리소스 그룹에서 검색 서비스를 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, options?: Models.ServicesDeleteMethodOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
+        - id: options
+          type:
+            - Models.ServicesDeleteMethodOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.deleteMethod_1'
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.deleteMethod_2'
+    name: 'deleteMethod(string, string, ServicesDeleteMethodOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, searchServiceName: string, options: ServicesDeleteMethodOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-search.ServicesDeleteMethodOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.get'
+    name: 'get(string, string, Models.ServicesGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 리소스 그룹에 지정 된 이름을 사용 하 여 검색 서비스를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, searchServiceName: string, options?: Models.ServicesGetOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
+        - id: options
+          type:
+            - Models.ServicesGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ServicesGetResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.get_1'
+    name: 'get(string, string, ServiceCallback<SearchService>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, searchServiceName: string, callback: ServiceCallback<SearchService>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.SearchService>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesGetResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.get_2'
+    name: 'get(string, string, ServicesGetOptionalParams, ServiceCallback<SearchService>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, searchServiceName: string, options: ServicesGetOptionalParams, callback: ServiceCallback<SearchService>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: 지정된 된 리소스 그룹을 사용 하 여 연결 된 Azure Search 서비스의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-search.ServicesGetOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.SearchService>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesGetResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.ServicesListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 리소스 그룹에서 모든 Search 서비스의 목록을 가져옵니다.
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.ServicesListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: options
+          type:
+            - Models.ServicesListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ServicesListByResourceGroupResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<SearchServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<SearchServiceListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.SearchServiceListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesListByResourceGroupResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, ServicesListByResourceGroupOptionalParams, ServiceCallback<SearchServiceListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: ServicesListByResourceGroupOptionalParams, callback: ServiceCallback<SearchServiceListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: options
+          type:
+            - '@azure/arm-search.ServicesListByResourceGroupOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.SearchServiceListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesListByResourceGroupResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.constructor'
+    name: Services(SearchManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 서비스를 만듭니다.
+    syntax:
+      content: 'new Services(client: SearchManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-search.SearchManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.update'
+    name: 'update(string, string, SearchService, Models.ServicesUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 리소스 그룹에서 기존 검색 서비스를 업데이트합니다.
+    syntax:
+      content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, options?: Models.ServicesUpdateOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: Azure Search 서비스 업데이트의 이름입니다.
+        - id: service
+          type:
+            - '@azure/arm-search.SearchService'
+          description: 정의 업데이트를 검색 서비스입니다.
+        - id: options
+          type:
+            - Models.ServicesUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ServicesUpdateResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.update_1'
+    name: 'update(string, string, SearchService, ServiceCallback<SearchService>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, callback: ServiceCallback<SearchService>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: Azure Search 서비스 업데이트의 이름입니다.
+        - id: service
+          type:
+            - '@azure/arm-search.SearchService'
+          description: 정의 업데이트를 검색 서비스입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.SearchService>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesUpdateResponse>
+    package: '@azure/arm-search'
+  - uid: '@azure/arm-search.Services.update_2'
+    name: 'update(string, string, SearchService, ServicesUpdateOptionalParams, ServiceCallback<SearchService>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(resourceGroupName: string, searchServiceName: string, service: SearchService, options: ServicesUpdateOptionalParams, callback: ServiceCallback<SearchService>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 현재 구독 내의 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: searchServiceName
+          type:
+            - string
+          description: Azure Search 서비스 업데이트의 이름입니다.
+        - id: service
+          type:
+            - '@azure/arm-search.SearchService'
+          description: 정의 업데이트를 검색 서비스입니다.
+        - id: options
+          type:
+            - '@azure/arm-search.ServicesUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-search.SearchService>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ServicesUpdateResponse>
+    package: '@azure/arm-search'
+references:
+  - uid: '@azure/arm-search.SearchManagementClientContext'
+    name: SearchManagementClientContext
+    spec.typeScript:
+      - name: SearchManagementClientContext
+        fullName: SearchManagementClientContext
+        uid: '@azure/arm-search.SearchManagementClientContext'
+  - uid: '@azure/arm-search.SearchService'
+    name: SearchService
+    spec.typeScript:
+      - name: SearchService
+        fullName: SearchService
+        uid: '@azure/arm-search.SearchService'
+  - uid: ServiceCallback<@azure/arm-search.CheckNameAvailabilityOutput>
+    name: CheckNameAvailabilityOutput>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CheckNameAvailabilityOutput
+        fullName: CheckNameAvailabilityOutput
+        uid: '@azure/arm-search.CheckNameAvailabilityOutput'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-search.ServicesCheckNameAvailabilityOptionalParams'
+    name: ServicesCheckNameAvailabilityOptionalParams
+    spec.typeScript:
+      - name: ServicesCheckNameAvailabilityOptionalParams
+        fullName: ServicesCheckNameAvailabilityOptionalParams
+        uid: '@azure/arm-search.ServicesCheckNameAvailabilityOptionalParams'
+  - uid: '@azure/arm-search.ServicesDeleteMethodOptionalParams'
+    name: ServicesDeleteMethodOptionalParams
+    spec.typeScript:
+      - name: ServicesDeleteMethodOptionalParams
+        fullName: ServicesDeleteMethodOptionalParams
+        uid: '@azure/arm-search.ServicesDeleteMethodOptionalParams'
+  - uid: ServiceCallback<@azure/arm-search.SearchService>
+    name: SearchService>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SearchService
+        fullName: SearchService
+        uid: '@azure/arm-search.SearchService'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-search.ServicesGetOptionalParams'
+    name: ServicesGetOptionalParams
+    spec.typeScript:
+      - name: ServicesGetOptionalParams
+        fullName: ServicesGetOptionalParams
+        uid: '@azure/arm-search.ServicesGetOptionalParams'
+  - uid: ServiceCallback<@azure/arm-search.SearchServiceListResult>
+    name: SearchServiceListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SearchServiceListResult
+        fullName: SearchServiceListResult
+        uid: '@azure/arm-search.SearchServiceListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-search.ServicesListByResourceGroupOptionalParams'
+    name: ServicesListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: ServicesListByResourceGroupOptionalParams
+        fullName: ServicesListByResourceGroupOptionalParams
+        uid: '@azure/arm-search.ServicesListByResourceGroupOptionalParams'
+  - uid: '@azure/arm-search.ServicesUpdateOptionalParams'
+    name: ServicesUpdateOptionalParams
+    spec.typeScript:
+      - name: ServicesUpdateOptionalParams
+        fullName: ServicesUpdateOptionalParams
+        uid: '@azure/arm-search.ServicesUpdateOptionalParams'

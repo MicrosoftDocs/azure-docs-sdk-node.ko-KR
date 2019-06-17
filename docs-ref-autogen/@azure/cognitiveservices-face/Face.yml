@@ -1,0 +1,706 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-face.Face'
+    name: Face
+    fullName: Face
+    children:
+      - '@azure/cognitiveservices-face.Face.detectWithStream_2'
+      - '@azure/cognitiveservices-face.Face.detectWithStream'
+      - '@azure/cognitiveservices-face.Face.detectWithStream_1'
+      - '@azure/cognitiveservices-face.Face.detectWithUrl_2'
+      - '@azure/cognitiveservices-face.Face.detectWithUrl'
+      - '@azure/cognitiveservices-face.Face.detectWithUrl_1'
+      - '@azure/cognitiveservices-face.Face.constructor'
+      - '@azure/cognitiveservices-face.Face.findSimilar_2'
+      - '@azure/cognitiveservices-face.Face.findSimilar'
+      - '@azure/cognitiveservices-face.Face.findSimilar_1'
+      - '@azure/cognitiveservices-face.Face.group'
+      - '@azure/cognitiveservices-face.Face.group_2'
+      - '@azure/cognitiveservices-face.Face.group_1'
+      - '@azure/cognitiveservices-face.Face.identify_2'
+      - '@azure/cognitiveservices-face.Face.identify'
+      - '@azure/cognitiveservices-face.Face.identify_1'
+      - '@azure/cognitiveservices-face.Face.verifyFaceToFace'
+      - '@azure/cognitiveservices-face.Face.verifyFaceToFace_2'
+      - '@azure/cognitiveservices-face.Face.verifyFaceToFace_1'
+      - '@azure/cognitiveservices-face.Face.verifyFaceToPerson_2'
+      - '@azure/cognitiveservices-face.Face.verifyFaceToPerson'
+      - '@azure/cognitiveservices-face.Face.verifyFaceToPerson_1'
+    langs:
+      - typeScript
+    type: class
+    summary: 얼굴을 나타내는 클래스입니다.
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.detectWithStream_2'
+    name: 'detectWithStream(msRest.HttpRequestBody, FaceDetectWithStreamOptionalParams, ServiceCallback<DetectedFace[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function detectWithStream(image: msRest.HttpRequestBody, options: FaceDetectWithStreamOptionalParams, callback: ServiceCallback<DetectedFace[]>)'
+      parameters:
+        - id: image
+          type:
+            - msRest.HttpRequestBody
+          description: 이미지 스트림입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.FaceDetectWithStreamOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.DetectedFace[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceDetectWithStreamResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.detectWithStream'
+    name: 'detectWithStream(msRest.HttpRequestBody, Models.FaceDetectWithStreamOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '이미지 및 반환 얼굴 위치 및 필요에 따라 faceIds, 랜드마크, 및 특성을 사용 하 여 사람 얼굴을 감지 합니다.'
+    syntax:
+      content: 'function detectWithStream(image: msRest.HttpRequestBody, options?: Models.FaceDetectWithStreamOptionalParams)'
+      parameters:
+        - id: image
+          type:
+            - msRest.HttpRequestBody
+          description: 이미지 스트림입니다.
+        - id: options
+          type:
+            - Models.FaceDetectWithStreamOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceDetectWithStreamResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.detectWithStream_1'
+    name: 'detectWithStream(msRest.HttpRequestBody, ServiceCallback<DetectedFace[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function detectWithStream(image: msRest.HttpRequestBody, callback: ServiceCallback<DetectedFace[]>)'
+      parameters:
+        - id: image
+          type:
+            - msRest.HttpRequestBody
+          description: 이미지 스트림입니다.
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.DetectedFace[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceDetectWithStreamResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.detectWithUrl_2'
+    name: 'detectWithUrl(string, FaceDetectWithUrlOptionalParams, ServiceCallback<DetectedFace[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function detectWithUrl(url: string, options: FaceDetectWithUrlOptionalParams, callback: ServiceCallback<DetectedFace[]>)'
+      parameters:
+        - id: url
+          type:
+            - string
+          description: 이미지의 공개적으로 도달 가능한 URL
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.FaceDetectWithUrlOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.DetectedFace[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceDetectWithUrlResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.detectWithUrl'
+    name: 'detectWithUrl(string, Models.FaceDetectWithUrlOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      반환 얼굴 사각형, 이미지 및 필요에 따라 faceIds, 랜드마크, 및 특성을 사용 하 여 사람 얼굴을 감지 합니다.<br />
+      * FaceId, 랜드마크, 특성 등 선택적 매개 변수입니다. 특성 연령, 성별, headPose, 웃는 얼굴 보내기, facialHair, 안경, emotion, 십자선, 구성, 폐색, accessories, 흐림 효과, 노출 및 노이즈를 포함합니다.
+      * 실제 이미지 대신 추출 된 얼굴 기능을 서버에 저장 됩니다. faceId 얼굴 기능 식별자 및에서 사용할 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)를 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a), 및 [얼굴
+      - Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)를 찾습니다. 검색 호출 후 24 시간 후 만료 됩니다.
+      * 얼굴 이미지 품질이 향상 탐지 및 인식 정밀도 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      * 해당 크기는 36 x 36를 4096x4096 픽셀 하는 경우 얼굴을 검색할 수 있습니다. 하는 경우 입력된 이미지를 확대 하려면 보세요 매우 작지만 지우기 얼굴을 감지 해야 합니다.
+      * 이미지는 최대 64 개의 면을 반환할 수 있습니다. 얼굴 작은 큰에서 얼굴 사각형 크기에 따라 순위가 지정 됩니다.
+      * 얼굴 탐지기 정면 및 정면에 가까운 얼굴을 선호 합니다. 얼굴 감지, 예: 매우 큰 얼굴 각도 (머리 포즈) 또는 폐색 되 고 잘못 된 이미지 방향 수 있는 경우가 있습니다.
+      * 특성 (연령, 성별, headPose, 웃는 얼굴 보내기, facialHair, 안경, emotion, 십자선, 구성, 폐색, accessories, 흐림 효과, 노출 및 노이즈)는 완벽 하 게 정확 하지 않을 수 있습니다. 피치 값 HeadPose의 예약 된 필드 이며 항상 0을 반환 합니다.
+      * 다른 'recognitionModel' 값을 제공 합니다. 식별을 확인 하는 것과 같은 후속 작업 하는 경우 비슷한 찾이 필요 'recognitionModel' 매개 변수를 사용 하 여 인식 모델을 지정 하십시오. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 지정 되 면 검색 된 faceIds 지정된 인식 모델을 사용 하 여 연결 됩니다. 자세한 내용은를 참조 하십시오 [인식 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-recognition-model)
+    syntax:
+      content: 'function detectWithUrl(url: string, options?: Models.FaceDetectWithUrlOptionalParams)'
+      parameters:
+        - id: url
+          type:
+            - string
+          description: 이미지의 공개적으로 도달 가능한 URL
+        - id: options
+          type:
+            - Models.FaceDetectWithUrlOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceDetectWithUrlResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.detectWithUrl_1'
+    name: 'detectWithUrl(string, ServiceCallback<DetectedFace[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function detectWithUrl(url: string, callback: ServiceCallback<DetectedFace[]>)'
+      parameters:
+        - id: url
+          type:
+            - string
+          description: 이미지의 공개적으로 도달 가능한 URL
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.DetectedFace[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceDetectWithUrlResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.constructor'
+    name: Face(FaceClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 얼굴을 만듭니다.
+    syntax:
+      content: 'new Face(client: FaceClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/cognitiveservices-face.FaceClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.findSimilar_2'
+    name: 'findSimilar(string, FaceFindSimilarOptionalParams, ServiceCallback<SimilarFace[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function findSimilar(faceId: string, options: FaceFindSimilarOptionalParams, callback: ServiceCallback<SimilarFace[]>)'
+      parameters:
+        - id: faceId
+          type:
+            - string
+          description: 쿼리 얼굴의 FaceId를 제공 합니다. 사용자는 얼굴 호출-가장 먼저 경험해 유효한 faceId를 검색 해야 합니다. 이 faceId는 영구 저장소가 아니며 24 시간 검색 호출 후에 만료 되는
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.FaceFindSimilarOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.SimilarFace[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceFindSimilarResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.findSimilar'
+    name: 'findSimilar(string, Models.FaceFindSimilarOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      얼굴 목록 또는 큰 얼굴 faceId 배열에서 비슷해 보이는 얼굴을 검색할 쿼리 얼굴 faceId를 지정 합니다. faceId 배열에서 생성 한 얼굴을 포함 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)는 만든 후 24 시간에 만료 됩니다. "FaceListId" 만들어집니다 [FaceList-만들기](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b) 만료 되지 것입니다는 persistedFaceIds를 포함 합니다. "LargeFaceListId" 하 여 만들어지고 [LargeFaceList-만들기](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) 도 만료 되지 것입니다는 persistedFaceIds 포함 합니다. 입력에 따라 반환된 된 유사한 얼굴 목록 faceIds 또는 persistedFaceIds 유사성을 기준으로 순위를 포함 합니다.
+      <br/>유사한 찾기 "matchFace"와 "matchPerson"를 사용 하는, 두 가지 작업 모드에 있습니다. "matchPerson"에 내부 같은 사람 임계값을 사용 하 여 최대한 같은 사람의 얼굴을 찾으려고 시도 하는 기본 모드입니다. 사용자의 사진을 다른 알려진을 찾을 수는 것이 유용 합니다. 얼굴이 없음을 내부 임계값을 전달 하는 경우 빈 목록이 반환 되는 참고 합니다. 동일한 사람 임계값 및 유사한 얼굴을 그래도 순위 반환 "matchFace" 모드를 무시, 유사성도 부족 합니다. 유명인 보이는 얼굴을 검색 하는 다음과 같은 경우 사용할 수 있습니다.
+      <br/>쿼리 얼굴의 faceId와 사용 하 여 연결 된 'recognitionModel' 대상 faceId 배열, 얼굴 목록 또는 큰 얼굴 목록 별로 사용 되는 'recognitionModel'와 동일 해야 합니다.
+    syntax:
+      content: 'function findSimilar(faceId: string, options?: Models.FaceFindSimilarOptionalParams)'
+      parameters:
+        - id: faceId
+          type:
+            - string
+          description: 쿼리 얼굴의 FaceId를 제공 합니다. 사용자는 얼굴 호출-가장 먼저 경험해 유효한 faceId를 검색 해야 합니다. 이 faceId는 영구 저장소가 아니며 24 시간 검색 호출 후에 만료 되는
+        - id: options
+          type:
+            - Models.FaceFindSimilarOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceFindSimilarResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.findSimilar_1'
+    name: 'findSimilar(string, ServiceCallback<SimilarFace[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function findSimilar(faceId: string, callback: ServiceCallback<SimilarFace[]>)'
+      parameters:
+        - id: faceId
+          type:
+            - string
+          description: 쿼리 얼굴의 FaceId를 제공 합니다. 사용자는 얼굴 호출-가장 먼저 경험해 유효한 faceId를 검색 해야 합니다. 이 faceId는 영구 저장소가 아니며 24 시간 검색 호출 후에 만료 되는
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.SimilarFace[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceFindSimilarResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.group'
+    name: 'group(string[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      후보 얼굴을 얼굴 유사성에 따라 그룹으로 나눕니다.<br />
+      * 출력에는 하나 이상의 연결 되지 않은 얼굴 그룹과 messyGroup 됩니다. 얼굴 그룹은 비슷한를 찾고 종종 같은 사람의 얼굴을 포함 합니다. 얼굴 그룹 여 얼굴 수 즉, 그룹 크기에 따라 순위가 지정 됩니다. 동일한 사람에 게 속한 얼굴 결과에 여러 그룹으로 분할 하는 알 수 있습니다.
+      * MessyGroup은 원래 면에서 모든 유사한 누구 얼굴을 찾을 수 없다는 얼굴을 포함 하는 특별 한 얼굴 그룹입니다. 모든 얼굴 대응 있으면 결과 messyGroup 나타나지 않습니다.
+      * 그룹 API 최대 2 개 이상의 후보 얼굴 및 1000 필요합니다. 하려는 것이 좋습니다 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a) 만 있는 경우 2 후보 얼굴입니다.
+      * 쿼리 얼굴 faceIds 연관 'recognitionModel' 동일 해야 합니다.
+    syntax:
+      content: 'function group(faceIds: string[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: faceIds
+          type:
+            - 'string[]'
+          description: 후보 faceId 배열을 얼굴 만든-검색 합니다. 최대값은 1000 개 얼굴
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceGroupResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.group_2'
+    name: 'group(string[], RequestOptionsBase, ServiceCallback<GroupResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function group(faceIds: string[], options: RequestOptionsBase, callback: ServiceCallback<GroupResult>)'
+      parameters:
+        - id: faceIds
+          type:
+            - 'string[]'
+          description: 후보 faceId 배열을 얼굴 만든-검색 합니다. 최대값은 1000 개 얼굴
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.GroupResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceGroupResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.group_1'
+    name: 'group(string[], ServiceCallback<GroupResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function group(faceIds: string[], callback: ServiceCallback<GroupResult>)'
+      parameters:
+        - id: faceIds
+          type:
+            - 'string[]'
+          description: 후보 faceId 배열을 얼굴 만든-검색 합니다. 최대값은 1000 개 얼굴
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.GroupResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceGroupResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.identify_2'
+    name: 'identify(string[], FaceIdentifyOptionalParams, ServiceCallback<IdentifyResult[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function identify(faceIds: string[], options: FaceIdentifyOptionalParams, callback: ServiceCallback<IdentifyResult[]>)'
+      parameters:
+        - id: faceIds
+          type:
+            - 'string[]'
+          description: '배열 쿼리 얼굴 faceIds, 얼굴 만든-검색 합니다. 각 얼굴 식별 됩니다 하지 독립적으로. 유효한 faceIds 수 간에 [1, 10]입니다.'
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.FaceIdentifyOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.IdentifyResult[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceIdentifyResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.identify'
+    name: 'identify(string[], Models.FaceIdentifyOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      사용자 그룹 또는 큰 사용자 그룹에서 특정 쿼리 사용자 글꼴의 가장 가까운 일치 항목을 찾으려고 1 대 다 id입니다.
+      <br/> FaceIds 배열에 있는 각 얼굴을 얼굴 식별 됩니다 계산 쿼리 얼굴 및 (personGroupId로 지정)의 사용자 그룹의 모든 얼굴에 대 한 유사성 또는 큰 사용자 (largePersonGroupId 하 여 지정), 그룹화 및 순위를 지정 하는 얼굴에 대 한 후보 첵을 반환 합니다. 유사성 신뢰도입니다. 사용자 그룹/대규모 사용자 그룹 id에 대 한 준비 확인 하도록 교육을 받아야 합니다. 에 대해 자세히 알아보기 [PersonGroup-학습](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395249) 하 고 [LargePersonGroup-학습](/docs/services/563879b61984550e40cbbe8d/operations/599ae2d16ac60f11b48b5aa4)합니다.
+      <br/>
+      설명:<br />
+      * 알고리즘 같은 요청에서 독립적으로 식별할 수 있도록 둘 이상의 얼굴 수가 10 개 얼굴 허용 합니다.
+      * 사용자 그룹/대규모 사용자 그룹의 각 사용자는 둘 이상의 면 있지만 개 이하의 248 얼굴 있을 수 있습니다.
+      * 얼굴 이미지 품질이 향상 식별 정밀도 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * 반환 된 후보의 개수입니다 maxNumOfCandidatesReturned confidenceThreshold로 제한 됩니다. 없는 사용자를 식별 하는 경우 반환 된 후보 빈 배열 됩니다.
+      * 시도 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237) 유사한 얼굴을 얼굴 목록/대용량 얼굴 대신 목록에서 person 그룹/대규모 사용자 그룹을 찾아야 합니다.
+      * 쿼리 얼굴 faceIds 연관 'recognitionModel' 대상 사용자 그룹 또는 큰 사용자 그룹에 의해 사용 되는 'recognitionModel'와 동일 해야 합니다.
+    syntax:
+      content: 'function identify(faceIds: string[], options?: Models.FaceIdentifyOptionalParams)'
+      parameters:
+        - id: faceIds
+          type:
+            - 'string[]'
+          description: '배열 쿼리 얼굴 faceIds, 얼굴 만든-검색 합니다. 각 얼굴 식별 됩니다 하지 독립적으로. 유효한 faceIds 수 간에 [1, 10]입니다.'
+        - id: options
+          type:
+            - Models.FaceIdentifyOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceIdentifyResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.identify_1'
+    name: 'identify(string[], ServiceCallback<IdentifyResult[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function identify(faceIds: string[], callback: ServiceCallback<IdentifyResult[]>)'
+      parameters:
+        - id: faceIds
+          type:
+            - 'string[]'
+          description: '배열 쿼리 얼굴 faceIds, 얼굴 만든-검색 합니다. 각 얼굴 식별 됩니다 하지 독립적으로. 유효한 faceIds 수 간에 [1, 10]입니다.'
+        - id: callback
+          type:
+            - 'ServiceCallback<@azure/cognitiveservices-face.IdentifyResult[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceIdentifyResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.verifyFaceToFace'
+    name: 'verifyFaceToFace(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      여부 두 얼굴이 같은 사람의 또는 사람에 게 한 면이 속하는지 여부를 확인 합니다.
+      <br/>
+      설명:<br />
+      * 얼굴 이미지 품질이 향상 식별 정밀도 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * 정확도에 영향을 받는 시나리오에 대 한 고유한 판단을 확인 하세요.
+      * 쿼리 얼굴 faceIds 연관 'recognitionModel' 대상 face, person group 또는 큰 사용자 그룹에 의해 사용 되는 'recognitionModel'와 동일 해야 합니다.
+    syntax:
+      content: 'function verifyFaceToFace(faceId1: string, faceId2: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: faceId1
+          type:
+            - string
+          description: 얼굴에서 제공 되는 첫 번째 면의 faceId-검색
+        - id: faceId2
+          type:
+            - string
+          description: 얼굴에서 제공 되는 두 번째 면의 faceId-검색
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceVerifyFaceToFaceResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.verifyFaceToFace_2'
+    name: 'verifyFaceToFace(string, string, RequestOptionsBase, ServiceCallback<VerifyResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function verifyFaceToFace(faceId1: string, faceId2: string, options: RequestOptionsBase, callback: ServiceCallback<VerifyResult>)'
+      parameters:
+        - id: faceId1
+          type:
+            - string
+          description: 얼굴에서 제공 되는 첫 번째 면의 faceId-검색
+        - id: faceId2
+          type:
+            - string
+          description: 얼굴에서 제공 되는 두 번째 면의 faceId-검색
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.VerifyResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceVerifyFaceToFaceResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.verifyFaceToFace_1'
+    name: 'verifyFaceToFace(string, string, ServiceCallback<VerifyResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function verifyFaceToFace(faceId1: string, faceId2: string, callback: ServiceCallback<VerifyResult>)'
+      parameters:
+        - id: faceId1
+          type:
+            - string
+          description: 얼굴에서 제공 되는 첫 번째 면의 faceId-검색
+        - id: faceId2
+          type:
+            - string
+          description: 얼굴에서 제공 되는 두 번째 면의 faceId-검색
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.VerifyResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceVerifyFaceToFaceResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.verifyFaceToPerson_2'
+    name: 'verifyFaceToPerson(string, string, FaceVerifyFaceToPersonOptionalParams, ServiceCallback<VerifyResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function verifyFaceToPerson(faceId: string, personId: string, options: FaceVerifyFaceToPersonOptionalParams, callback: ServiceCallback<VerifyResult>)'
+      parameters:
+        - id: faceId
+          type:
+            - string
+          description: 얼굴에서 제공 되는 얼굴의 FaceId-검색
+        - id: personId
+          type:
+            - string
+          description: 사용자 그룹 또는 큰 사용자 그룹에 특정 사용자를 지정 합니다. personId PersonGroup 직접에서 만들어집니다-만들거나 LargePersonGroup 사람-만듭니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-face.FaceVerifyFaceToPersonOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.VerifyResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceVerifyFaceToPersonResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.verifyFaceToPerson'
+    name: 'verifyFaceToPerson(string, string, Models.FaceVerifyFaceToPersonOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 여부를 두 얼굴이 같은 사람의 확인 합니다. 얼굴 Id가 사용자 Id를 비교합니다.
+    syntax:
+      content: 'function verifyFaceToPerson(faceId: string, personId: string, options?: Models.FaceVerifyFaceToPersonOptionalParams)'
+      parameters:
+        - id: faceId
+          type:
+            - string
+          description: 얼굴에서 제공 되는 얼굴의 FaceId-검색
+        - id: personId
+          type:
+            - string
+          description: 사용자 그룹 또는 큰 사용자 그룹에 특정 사용자를 지정 합니다. personId PersonGroup 직접에서 만들어집니다-만들거나 LargePersonGroup 사람-만듭니다.
+        - id: options
+          type:
+            - Models.FaceVerifyFaceToPersonOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.FaceVerifyFaceToPersonResponse>
+    package: '@azure/cognitiveservices-face'
+  - uid: '@azure/cognitiveservices-face.Face.verifyFaceToPerson_1'
+    name: 'verifyFaceToPerson(string, string, ServiceCallback<VerifyResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function verifyFaceToPerson(faceId: string, personId: string, callback: ServiceCallback<VerifyResult>)'
+      parameters:
+        - id: faceId
+          type:
+            - string
+          description: 얼굴에서 제공 되는 얼굴의 FaceId-검색
+        - id: personId
+          type:
+            - string
+          description: 사용자 그룹 또는 큰 사용자 그룹에 특정 사용자를 지정 합니다. personId PersonGroup 직접에서 만들어집니다-만들거나 LargePersonGroup 사람-만듭니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-face.VerifyResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.FaceVerifyFaceToPersonResponse>
+    package: '@azure/cognitiveservices-face'
+references:
+  - uid: '@azure/cognitiveservices-face.FaceClientContext'
+    name: FaceClientContext
+    spec.typeScript:
+      - name: FaceClientContext
+        fullName: FaceClientContext
+        uid: '@azure/cognitiveservices-face.FaceClientContext'
+  - uid: 'ServiceCallback<@azure/cognitiveservices-face.DetectedFace[]>'
+    name: 'DetectedFace[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DetectedFace
+        fullName: DetectedFace
+        uid: '@azure/cognitiveservices-face.DetectedFace'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/cognitiveservices-face.FaceDetectWithStreamOptionalParams'
+    name: FaceDetectWithStreamOptionalParams
+    spec.typeScript:
+      - name: FaceDetectWithStreamOptionalParams
+        fullName: FaceDetectWithStreamOptionalParams
+        uid: '@azure/cognitiveservices-face.FaceDetectWithStreamOptionalParams'
+  - uid: '@azure/cognitiveservices-face.FaceDetectWithUrlOptionalParams'
+    name: FaceDetectWithUrlOptionalParams
+    spec.typeScript:
+      - name: FaceDetectWithUrlOptionalParams
+        fullName: FaceDetectWithUrlOptionalParams
+        uid: '@azure/cognitiveservices-face.FaceDetectWithUrlOptionalParams'
+  - uid: 'ServiceCallback<@azure/cognitiveservices-face.SimilarFace[]>'
+    name: 'SimilarFace[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SimilarFace
+        fullName: SimilarFace
+        uid: '@azure/cognitiveservices-face.SimilarFace'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/cognitiveservices-face.FaceFindSimilarOptionalParams'
+    name: FaceFindSimilarOptionalParams
+    spec.typeScript:
+      - name: FaceFindSimilarOptionalParams
+        fullName: FaceFindSimilarOptionalParams
+        uid: '@azure/cognitiveservices-face.FaceFindSimilarOptionalParams'
+  - uid: ServiceCallback<@azure/cognitiveservices-face.GroupResult>
+    name: GroupResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: GroupResult
+        fullName: GroupResult
+        uid: '@azure/cognitiveservices-face.GroupResult'
+      - name: '>'
+        fullName: '>'
+  - uid: 'ServiceCallback<@azure/cognitiveservices-face.IdentifyResult[]>'
+    name: 'IdentifyResult[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IdentifyResult
+        fullName: IdentifyResult
+        uid: '@azure/cognitiveservices-face.IdentifyResult'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/cognitiveservices-face.FaceIdentifyOptionalParams'
+    name: FaceIdentifyOptionalParams
+    spec.typeScript:
+      - name: FaceIdentifyOptionalParams
+        fullName: FaceIdentifyOptionalParams
+        uid: '@azure/cognitiveservices-face.FaceIdentifyOptionalParams'
+  - uid: ServiceCallback<@azure/cognitiveservices-face.VerifyResult>
+    name: VerifyResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VerifyResult
+        fullName: VerifyResult
+        uid: '@azure/cognitiveservices-face.VerifyResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/cognitiveservices-face.FaceVerifyFaceToPersonOptionalParams'
+    name: FaceVerifyFaceToPersonOptionalParams
+    spec.typeScript:
+      - name: FaceVerifyFaceToPersonOptionalParams
+        fullName: FaceVerifyFaceToPersonOptionalParams
+        uid: '@azure/cognitiveservices-face.FaceVerifyFaceToPersonOptionalParams'
