@@ -1,0 +1,1516 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews'
+    name: Reviews
+    fullName: Reviews
+    children:
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrame'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrame_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrame_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameStream'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameStream_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameStream_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameUrl'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameUrl_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameUrl_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscript'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscript_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscript_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscriptModerationResult'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscriptModerationResult_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscriptModerationResult_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createJob'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createJob_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createJob_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createReviews'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createReviews_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createReviews_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createVideoReviews'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createVideoReviews_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.createVideoReviews_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getJobDetails'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getJobDetails_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getJobDetails_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getReview'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getReview_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getReview_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getVideoFrames'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getVideoFrames_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.getVideoFrames_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.publishVideoReview'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.publishVideoReview_2'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.publishVideoReview_1'
+      - '@azure/cognitiveservices-contentmoderator.Reviews.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: 검토를 나타내는 클래스입니다.
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrame'
+    name: 'addVideoFrame(string, string, Models.ReviewsAddVideoFrameOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      만든 검토는 팀의 검토자에 대 한 표시 됩니다. 검토자는 검토를 완료 하는 대로 검토 결과 지정된 CallBackEndpoint에 (즉, HTTP POST) 게시 됩니다.
+      <h3>콜백 스키마 </h3>
+      <h4>검토 완료 CallBack 샘플</h4>
+      <p>
+      {<br/>
+      "ReviewId": "<Review Id>",<br/>
+      "ModifiedOn": "2016-10-11T22:36:32.9934851Z",<br/>
+      "ModifiedBy": "<Name of the Reviewer>",<br/>
+      "CallBackType": "Review"<br/>
+      "ContentId": "<The ContentId that was specified input>",<br/>
+      "Metadata": {<br/>
+      "adultscore": "0.xxx",<br/>
+      "a": "False"<br/>
+      "racyscore": "0.xxx",<br/>
+      "r": "True"<br/>
+      },<br/>
+      "ReviewerResultTags": {<br/>
+      "a": "False"<br/>
+      "r": "True"<br/>
+      }<br/>
+      }<br/>
+
+      </p>.
+    syntax:
+      content: 'function addVideoFrame(teamName: string, reviewId: string, options?: Models.ReviewsAddVideoFrameOptionalParams)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - Models.ReviewsAddVideoFrameOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrame_2'
+    name: 'addVideoFrame(string, string, ReviewsAddVideoFrameOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoFrame(teamName: string, reviewId: string, options: ReviewsAddVideoFrameOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrame_1'
+    name: 'addVideoFrame(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoFrame(teamName: string, reviewId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameStream'
+    name: 'addVideoFrameStream(string, string, string, msRest.HttpRequestBody, string, Models.ReviewsAddVideoFrameStreamOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '비디오 검토 프레임을 추가 하려면이 메서드를 사용 합니다. 시간 간격: 이 매개 변수는 시간 (밀리초)로 프레임의 타임 스탬프를 변환 하는 데 사용 되는 요소입니다. Azure Media Services 플랫폼의 Content Moderator 비디오 미디어 프로세서의 출력에 별로 제공 됩니다. 비디오 조정 출력의 날짜 표시줄은 틱/초입니다.'
+    syntax:
+      content: 'function addVideoFrameStream(contentType: string, teamName: string, reviewId: string, frameImageZip: msRest.HttpRequestBody, frameMetadata: string, options?: Models.ReviewsAddVideoFrameStreamOptionalParams)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: frameImageZip
+          type:
+            - msRest.HttpRequestBody
+          description: 프레임 이미지를 포함 하는 zip 파일입니다.
+        - id: frameMetadata
+          type:
+            - string
+          description: 프레임의 메타 데이터입니다.
+        - id: options
+          type:
+            - Models.ReviewsAddVideoFrameStreamOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameStream_2'
+    name: 'addVideoFrameStream(string, string, string, msRest.HttpRequestBody, string, ReviewsAddVideoFrameStreamOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoFrameStream(contentType: string, teamName: string, reviewId: string, frameImageZip: msRest.HttpRequestBody, frameMetadata: string, options: ReviewsAddVideoFrameStreamOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: frameImageZip
+          type:
+            - msRest.HttpRequestBody
+          description: 프레임 이미지를 포함 하는 zip 파일입니다.
+        - id: frameMetadata
+          type:
+            - string
+          description: 프레임의 메타 데이터입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameStreamOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameStream_1'
+    name: 'addVideoFrameStream(string, string, string, msRest.HttpRequestBody, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoFrameStream(contentType: string, teamName: string, reviewId: string, frameImageZip: msRest.HttpRequestBody, frameMetadata: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: frameImageZip
+          type:
+            - msRest.HttpRequestBody
+          description: 프레임 이미지를 포함 하는 zip 파일입니다.
+        - id: frameMetadata
+          type:
+            - string
+          description: 프레임의 메타 데이터입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameUrl'
+    name: 'addVideoFrameUrl(string, string, string, VideoFrameBodyItem[], Models.ReviewsAddVideoFrameUrlOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '비디오 검토 프레임을 추가 하려면이 메서드를 사용 합니다. 시간 간격: 이 매개 변수는 시간 (밀리초)로 프레임의 타임 스탬프를 변환 하는 데 사용 되는 요소입니다. Azure Media Services 플랫폼의 Content Moderator 비디오 미디어 프로세서의 출력에 별로 제공 됩니다. 비디오 조정 출력의 날짜 표시줄은 틱/초입니다.'
+    syntax:
+      content: 'function addVideoFrameUrl(contentType: string, teamName: string, reviewId: string, videoFrameBody: VideoFrameBodyItem[], options?: Models.ReviewsAddVideoFrameUrlOptionalParams)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: videoFrameBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.VideoFrameBodyItem[]'
+          description: 에 대 한 본문에는 비디오 프레임 API 추가
+        - id: options
+          type:
+            - Models.ReviewsAddVideoFrameUrlOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameUrl_2'
+    name: 'addVideoFrameUrl(string, string, string, VideoFrameBodyItem[], ReviewsAddVideoFrameUrlOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoFrameUrl(contentType: string, teamName: string, reviewId: string, videoFrameBody: VideoFrameBodyItem[], options: ReviewsAddVideoFrameUrlOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: videoFrameBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.VideoFrameBodyItem[]'
+          description: 에 대 한 본문에는 비디오 프레임 API 추가
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameUrlOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoFrameUrl_1'
+    name: 'addVideoFrameUrl(string, string, string, VideoFrameBodyItem[], ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoFrameUrl(contentType: string, teamName: string, reviewId: string, videoFrameBody: VideoFrameBodyItem[], callback: ServiceCallback<void>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: videoFrameBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.VideoFrameBodyItem[]'
+          description: 에 대 한 본문에는 비디오 프레임 API 추가
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscript'
+    name: 'addVideoTranscript(string, string, msRest.HttpRequestBody, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 이 API 검토를 비디오에 자막 파일 (비디오에서 음성 단어의 텍스트 버전)를 추가 합니다. 파일은 올바른 WebVTT 형식 이어야 합니다.
+    syntax:
+      content: 'function addVideoTranscript(teamName: string, reviewId: string, vTTfile: msRest.HttpRequestBody, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: vTTfile
+          type:
+            - msRest.HttpRequestBody
+          description: 비디오의 자막 파일입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscript_2'
+    name: 'addVideoTranscript(string, string, msRest.HttpRequestBody, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoTranscript(teamName: string, reviewId: string, vTTfile: msRest.HttpRequestBody, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: vTTfile
+          type:
+            - msRest.HttpRequestBody
+          description: 비디오의 자막 파일입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscript_1'
+    name: 'addVideoTranscript(string, string, msRest.HttpRequestBody, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoTranscript(teamName: string, reviewId: string, vTTfile: msRest.HttpRequestBody, callback: ServiceCallback<void>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: vTTfile
+          type:
+            - msRest.HttpRequestBody
+          description: 비디오의 자막 파일입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscriptModerationResult'
+    name: 'addVideoTranscriptModerationResult(string, string, string, TranscriptModerationBodyItem[], msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 이 API는 비디오 검토를 위해 기록 화면 텍스트 결과 파일을 추가합니다. 기록 화면 텍스트 결과 파일에는 화면 텍스트 API의 결과입니다. 기록 화면 텍스트 결과 파일을 생성 하기 위해 기록 파일 화면 텍스트 API를 사용 하 여 불경 한 보호할 해야 합니다.
+    syntax:
+      content: 'function addVideoTranscriptModerationResult(contentType: string, teamName: string, reviewId: string, transcriptModerationBody: TranscriptModerationBodyItem[], options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: transcriptModerationBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.TranscriptModerationBodyItem[]'
+          description: 본문에 대 한 비디오 대 본 조정 결과 API 추가
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscriptModerationResult_2'
+    name: 'addVideoTranscriptModerationResult(string, string, string, TranscriptModerationBodyItem[], RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoTranscriptModerationResult(contentType: string, teamName: string, reviewId: string, transcriptModerationBody: TranscriptModerationBodyItem[], options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: transcriptModerationBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.TranscriptModerationBodyItem[]'
+          description: 본문에 대 한 비디오 대 본 조정 결과 API 추가
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.addVideoTranscriptModerationResult_1'
+    name: 'addVideoTranscriptModerationResult(string, string, string, TranscriptModerationBodyItem[], ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addVideoTranscriptModerationResult(contentType: string, teamName: string, reviewId: string, transcriptModerationBody: TranscriptModerationBodyItem[], callback: ServiceCallback<void>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: transcriptModerationBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.TranscriptModerationBodyItem[]'
+          description: 본문에 대 한 비디오 대 본 조정 결과 API 추가
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createJob'
+    name: 'createJob(string, Models.ContentType, string, string, Models.JobContentType, Content, Models.ReviewsCreateJobOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      작업 Id는이 끝점에 게시 된 콘텐츠에 대 한 반환 됩니다.
+      내용에 대해 평가 되 면 워크플로 검토를 만들거나 무시 제공 식을 기반으로 워크플로.
+
+      <h3>콜백 스키마 </h3>
+
+      <p>
+      <h4>작업 완료 CallBack 샘플</h4><br/>
+
+      {<br/>
+      "JobId": "<Job Id>,<br/>
+      "ReviewId": "< 검토 Id, 작업 결과 검토를 만들 수 >",<br/>
+      "WorkFlowId": "default",<br/>
+      "Status": "< 됩니다 InProgress, 완료, 오류 중 >",<br/>
+      "ContentType": "이미지"<br/>
+      "ContentId": "<This is the ContentId that was specified on input>",<br/>
+      "CallBackType": "작업"<br/>
+      "Metadata": {<br/>
+      "adultscore": "0.xxx",<br/>
+      "a": "False"<br/>
+      "racyscore": "0.xxx",<br/>
+      "r": "True"<br/>
+      }<br/>
+      }<br/>
+
+      </p>
+      <p>
+      <h4>검토 완료 CallBack 샘플</h4><br/>
+
+      { "ReviewId": "<Review Id>",<br/>
+      "ModifiedOn": "2016-10-11T22:36:32.9934851Z",<br/>
+      "ModifiedBy": "<Name of the Reviewer>",<br/>
+      "CallBackType": "Review"<br/>
+      "ContentId": "<The ContentId that was specified input>",<br/>
+      "Metadata": {<br/>
+      "adultscore": "0.xxx", "a": "False"<br/>
+      "racyscore": "0.xxx",<br/>
+      "r": "True"<br/>
+      },<br/>
+      "ReviewerResultTags": {<br/>
+      "a": "False"<br/>
+      "r": "True"<br/>
+      }<br/>
+      }<br/>
+
+      </p>.
+    syntax:
+      content: 'function createJob(teamName: string, contentType: Models.ContentType, contentId: string, workflowName: string, jobContentType: Models.JobContentType, content: Content, options?: Models.ReviewsCreateJobOptionalParams)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: contentType
+          type:
+            - Models.ContentType
+          description: '이미지, 텍스트 또는 비디오를 제공 합니다. 가능한 값은 다음과 같습니다. '' Image'', ''Text'', ''비디오'''
+        - id: contentId
+          type:
+            - string
+          description: 전송 된 콘텐츠를 식별 하려면 id/이름입니다.
+        - id: workflowName
+          type:
+            - string
+          description: 워크플로 호출 하려는 이름입니다.
+        - id: jobContentType
+          type:
+            - Models.JobContentType
+          description: '콘텐츠 형식입니다. 가능한 값: '' application/json ''이 '' 이미지/jpeg '''
+        - id: content
+          type:
+            - '@azure/cognitiveservices-contentmoderator.Content'
+          description: 평가할 콘텐츠입니다.
+        - id: options
+          type:
+            - Models.ReviewsCreateJobOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReviewsCreateJobResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createJob_2'
+    name: 'createJob(string, Models.ContentType, string, string, Models.JobContentType, Content, ReviewsCreateJobOptionalParams, ServiceCallback<JobId>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createJob(teamName: string, contentType: Models.ContentType, contentId: string, workflowName: string, jobContentType: Models.JobContentType, content: Content, options: ReviewsCreateJobOptionalParams, callback: ServiceCallback<JobId>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: contentType
+          type:
+            - Models.ContentType
+          description: '이미지, 텍스트 또는 비디오를 제공 합니다. 가능한 값은 다음과 같습니다. '' Image'', ''Text'', ''비디오'''
+        - id: contentId
+          type:
+            - string
+          description: 전송 된 콘텐츠를 식별 하려면 id/이름입니다.
+        - id: workflowName
+          type:
+            - string
+          description: 워크플로 호출 하려는 이름입니다.
+        - id: jobContentType
+          type:
+            - Models.JobContentType
+          description: '콘텐츠 형식입니다. 가능한 값: '' application/json ''이 '' 이미지/jpeg '''
+        - id: content
+          type:
+            - '@azure/cognitiveservices-contentmoderator.Content'
+          description: 평가할 콘텐츠입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsCreateJobOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.JobId>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsCreateJobResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createJob_1'
+    name: 'createJob(string, Models.ContentType, string, string, Models.JobContentType, Content, ServiceCallback<JobId>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createJob(teamName: string, contentType: Models.ContentType, contentId: string, workflowName: string, jobContentType: Models.JobContentType, content: Content, callback: ServiceCallback<JobId>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: contentType
+          type:
+            - Models.ContentType
+          description: '이미지, 텍스트 또는 비디오를 제공 합니다. 가능한 값은 다음과 같습니다. '' Image'', ''Text'', ''비디오'''
+        - id: contentId
+          type:
+            - string
+          description: 전송 된 콘텐츠를 식별 하려면 id/이름입니다.
+        - id: workflowName
+          type:
+            - string
+          description: 워크플로 호출 하려는 이름입니다.
+        - id: jobContentType
+          type:
+            - Models.JobContentType
+          description: '콘텐츠 형식입니다. 가능한 값: '' application/json ''이 '' 이미지/jpeg '''
+        - id: content
+          type:
+            - '@azure/cognitiveservices-contentmoderator.Content'
+          description: 평가할 콘텐츠입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.JobId>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsCreateJobResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createReviews'
+    name: 'createReviews(string, string, CreateReviewBodyItem[], Models.ReviewsCreateReviewsOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      만든 검토는 팀의 검토자에 대 한 표시 됩니다. 검토자는 검토를 완료 하는 대로 검토 결과 지정된 CallBackEndpoint에 (즉, HTTP POST) 게시 됩니다.
+      <h3>콜백 스키마 </h3>
+      <h4>검토 완료 CallBack 샘플</h4>
+      <p>
+      {<br/>
+      "ReviewId": "<Review Id>",<br/>
+      "ModifiedOn": "2016-10-11T22:36:32.9934851Z",<br/>
+      "ModifiedBy": "<Name of the Reviewer>",<br/>
+      "CallBackType": "Review"<br/>
+      "ContentId": "<The ContentId that was specified input>",<br/>
+      "Metadata": {<br/>
+      "adultscore": "0.xxx",<br/>
+      "a": "False"<br/>
+      "racyscore": "0.xxx",<br/>
+      "r": "True"<br/>
+      },<br/>
+      "ReviewerResultTags": {<br/>
+      "a": "False"<br/>
+      "r": "True"<br/>
+      }<br/>
+      }<br/>
+
+      </p>.
+    syntax:
+      content: 'function createReviews(urlContentType: string, teamName: string, createReviewBody: CreateReviewBodyItem[], options?: Models.ReviewsCreateReviewsOptionalParams)'
+      parameters:
+        - id: urlContentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: createReviewBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem[]'
+          description: 만들기에 대 한 본문 API 검토
+        - id: options
+          type:
+            - Models.ReviewsCreateReviewsOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReviewsCreateReviewsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createReviews_2'
+    name: 'createReviews(string, string, CreateReviewBodyItem[], ReviewsCreateReviewsOptionalParams, ServiceCallback<string[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createReviews(urlContentType: string, teamName: string, createReviewBody: CreateReviewBodyItem[], options: ReviewsCreateReviewsOptionalParams, callback: ServiceCallback<string[]>)'
+      parameters:
+        - id: urlContentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: createReviewBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem[]'
+          description: 만들기에 대 한 본문 API 검토
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsCreateReviewsOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<string[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsCreateReviewsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createReviews_1'
+    name: 'createReviews(string, string, CreateReviewBodyItem[], ServiceCallback<string[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createReviews(urlContentType: string, teamName: string, createReviewBody: CreateReviewBodyItem[], callback: ServiceCallback<string[]>)'
+      parameters:
+        - id: urlContentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: createReviewBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem[]'
+          description: 만들기에 대 한 본문 API 검토
+        - id: callback
+          type:
+            - 'ServiceCallback<string[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsCreateReviewsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createVideoReviews'
+    name: 'createVideoReviews(string, string, CreateVideoReviewsBodyItem[], Models.ReviewsCreateVideoReviewsOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      만든 검토는 팀의 검토자에 대 한 표시 됩니다. 검토자는 검토를 완료 하는 대로 검토 결과 지정된 CallBackEndpoint에 (즉, HTTP POST) 게시 됩니다.
+      <h3>콜백 스키마 </h3>
+      <h4>검토 완료 CallBack 샘플</h4>
+      <p>
+      {<br/>
+      "ReviewId": "<Review Id>",<br/>
+      "ModifiedOn": "2016-10-11T22:36:32.9934851Z",<br/>
+      "ModifiedBy": "<Name of the Reviewer>",<br/>
+      "CallBackType": "Review"<br/>
+      "ContentId": "<The ContentId that was specified input>",<br/>
+      "Metadata": {<br/>
+      "adultscore": "0.xxx",<br/>
+      "a": "False"<br/>
+      "racyscore": "0.xxx",<br/>
+      "r": "True"<br/>
+      },<br/>
+      "ReviewerResultTags": {<br/>
+      "a": "False"<br/>
+      "r": "True"<br/>
+      }<br/>
+      }<br/>
+
+      </p>.
+    syntax:
+      content: 'function createVideoReviews(contentType: string, teamName: string, createVideoReviewsBody: CreateVideoReviewsBodyItem[], options?: Models.ReviewsCreateVideoReviewsOptionalParams)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: createVideoReviewsBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.CreateVideoReviewsBodyItem[]'
+          description: 만들기에 대 한 본문 API 검토
+        - id: options
+          type:
+            - Models.ReviewsCreateVideoReviewsOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReviewsCreateVideoReviewsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createVideoReviews_2'
+    name: 'createVideoReviews(string, string, CreateVideoReviewsBodyItem[], ReviewsCreateVideoReviewsOptionalParams, ServiceCallback<string[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createVideoReviews(contentType: string, teamName: string, createVideoReviewsBody: CreateVideoReviewsBodyItem[], options: ReviewsCreateVideoReviewsOptionalParams, callback: ServiceCallback<string[]>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: createVideoReviewsBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.CreateVideoReviewsBodyItem[]'
+          description: 만들기에 대 한 본문 API 검토
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsCreateVideoReviewsOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - 'ServiceCallback<string[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsCreateVideoReviewsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.createVideoReviews_1'
+    name: 'createVideoReviews(string, string, CreateVideoReviewsBodyItem[], ServiceCallback<string[]>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createVideoReviews(contentType: string, teamName: string, createVideoReviewsBody: CreateVideoReviewsBodyItem[], callback: ServiceCallback<string[]>)'
+      parameters:
+        - id: contentType
+          type:
+            - string
+          description: 콘텐츠 형식입니다.
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: createVideoReviewsBody
+          type:
+            - '@azure/cognitiveservices-contentmoderator.CreateVideoReviewsBodyItem[]'
+          description: 만들기에 대 한 본문 API 검토
+        - id: callback
+          type:
+            - 'ServiceCallback<string[]>'
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsCreateVideoReviewsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getJobDetails'
+    name: 'getJobDetails(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 작업 id에 대 한 작업 세부 정보 가져오기
+    syntax:
+      content: 'function getJobDetails(teamName: string, jobId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: jobId
+          type:
+            - string
+          description: 작업의 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReviewsGetJobDetailsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getJobDetails_2'
+    name: 'getJobDetails(string, string, RequestOptionsBase, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getJobDetails(teamName: string, jobId: string, options: RequestOptionsBase, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: jobId
+          type:
+            - string
+          description: 작업의 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.Job>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsGetJobDetailsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getJobDetails_1'
+    name: 'getJobDetails(string, string, ServiceCallback<Job>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getJobDetails(teamName: string, jobId: string, callback: ServiceCallback<Job>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: jobId
+          type:
+            - string
+          description: 작업의 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.Job>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsGetJobDetailsResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getReview'
+    name: 'getReview(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 반환 전달 하는 Id 검토에 대 한 세부 정보를 검토 합니다.
+    syntax:
+      content: 'function getReview(teamName: string, reviewId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReviewsGetReviewResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getReview_2'
+    name: 'getReview(string, string, RequestOptionsBase, ServiceCallback<Review>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getReview(teamName: string, reviewId: string, options: RequestOptionsBase, callback: ServiceCallback<Review>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.Review>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsGetReviewResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getReview_1'
+    name: 'getReview(string, string, ServiceCallback<Review>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getReview(teamName: string, reviewId: string, callback: ServiceCallback<Review>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.Review>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsGetReviewResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getVideoFrames'
+    name: 'getVideoFrames(string, string, Models.ReviewsGetVideoFramesOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      만든 검토는 팀의 검토자에 대 한 표시 됩니다. 검토자는 검토를 완료 하는 대로 검토 결과 지정된 CallBackEndpoint에 (즉, HTTP POST) 게시 됩니다.
+      <h3>콜백 스키마 </h3>
+      <h4>검토 완료 CallBack 샘플</h4>
+      <p>
+      {<br/>
+      "ReviewId": "<Review Id>",<br/>
+      "ModifiedOn": "2016-10-11T22:36:32.9934851Z",<br/>
+      "ModifiedBy": "<Name of the Reviewer>",<br/>
+      "CallBackType": "Review"<br/>
+      "ContentId": "<The ContentId that was specified input>",<br/>
+      "Metadata": {<br/>
+      "adultscore": "0.xxx",<br/>
+      "a": "False"<br/>
+      "racyscore": "0.xxx",<br/>
+      "r": "True"<br/>
+      },<br/>
+      "ReviewerResultTags": {<br/>
+      "a": "False"<br/>
+      "r": "True"<br/>
+      }<br/>
+      }<br/>
+
+      </p>.
+    syntax:
+      content: 'function getVideoFrames(teamName: string, reviewId: string, options?: Models.ReviewsGetVideoFramesOptionalParams)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - Models.ReviewsGetVideoFramesOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.ReviewsGetVideoFramesResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getVideoFrames_2'
+    name: 'getVideoFrames(string, string, ReviewsGetVideoFramesOptionalParams, ServiceCallback<Frames>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getVideoFrames(teamName: string, reviewId: string, options: ReviewsGetVideoFramesOptionalParams, callback: ServiceCallback<Frames>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ReviewsGetVideoFramesOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.Frames>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsGetVideoFramesResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.getVideoFrames_1'
+    name: 'getVideoFrames(string, string, ServiceCallback<Frames>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getVideoFrames(teamName: string, reviewId: string, callback: ServiceCallback<Frames>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/cognitiveservices-contentmoderator.Frames>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.ReviewsGetVideoFramesResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.publishVideoReview'
+    name: 'publishVideoReview(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 검토를 위해 사용할 수 있도록 비디오 검토를 게시 합니다.
+    syntax:
+      content: 'function publishVideoReview(teamName: string, reviewId: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.publishVideoReview_2'
+    name: 'publishVideoReview(string, string, RequestOptionsBase, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function publishVideoReview(teamName: string, reviewId: string, options: RequestOptionsBase, callback: ServiceCallback<void>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.publishVideoReview_1'
+    name: 'publishVideoReview(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function publishVideoReview(teamName: string, reviewId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: teamName
+          type:
+            - string
+          description: 팀 이름입니다.
+        - id: reviewId
+          type:
+            - string
+          description: 검토 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/cognitiveservices-contentmoderator'
+  - uid: '@azure/cognitiveservices-contentmoderator.Reviews.constructor'
+    name: Reviews(ContentModeratorClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 검토를 만듭니다.
+    syntax:
+      content: 'new Reviews(client: ContentModeratorClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/cognitiveservices-contentmoderator.ContentModeratorClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/cognitiveservices-contentmoderator'
+references:
+  - uid: '@azure/cognitiveservices-contentmoderator.ContentModeratorClientContext'
+    name: ContentModeratorClientContext
+    spec.typeScript:
+      - name: ContentModeratorClientContext
+        fullName: ContentModeratorClientContext
+        uid: '@azure/cognitiveservices-contentmoderator.ContentModeratorClientContext'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams'
+    name: ReviewsAddVideoFrameOptionalParams
+    spec.typeScript:
+      - name: ReviewsAddVideoFrameOptionalParams
+        fullName: ReviewsAddVideoFrameOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameStreamOptionalParams'
+    name: ReviewsAddVideoFrameStreamOptionalParams
+    spec.typeScript:
+      - name: ReviewsAddVideoFrameStreamOptionalParams
+        fullName: ReviewsAddVideoFrameStreamOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameStreamOptionalParams'
+  - uid: '@azure/cognitiveservices-contentmoderator.VideoFrameBodyItem[]'
+    name: 'VideoFrameBodyItem[]'
+    spec.typeScript:
+      - name: VideoFrameBodyItem
+        fullName: VideoFrameBodyItem
+        uid: '@azure/cognitiveservices-contentmoderator.VideoFrameBodyItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameUrlOptionalParams'
+    name: ReviewsAddVideoFrameUrlOptionalParams
+    spec.typeScript:
+      - name: ReviewsAddVideoFrameUrlOptionalParams
+        fullName: ReviewsAddVideoFrameUrlOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameUrlOptionalParams'
+  - uid: '@azure/cognitiveservices-contentmoderator.TranscriptModerationBodyItem[]'
+    name: 'TranscriptModerationBodyItem[]'
+    spec.typeScript:
+      - name: TranscriptModerationBodyItem
+        fullName: TranscriptModerationBodyItem
+        uid: '@azure/cognitiveservices-contentmoderator.TranscriptModerationBodyItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/cognitiveservices-contentmoderator.Content'
+    name: Content
+    spec.typeScript:
+      - name: Content
+        fullName: Content
+        uid: '@azure/cognitiveservices-contentmoderator.Content'
+  - uid: ServiceCallback<@azure/cognitiveservices-contentmoderator.JobId>
+    name: JobId>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobId
+        fullName: JobId
+        uid: '@azure/cognitiveservices-contentmoderator.JobId'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsCreateJobOptionalParams'
+    name: ReviewsCreateJobOptionalParams
+    spec.typeScript:
+      - name: ReviewsCreateJobOptionalParams
+        fullName: ReviewsCreateJobOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsCreateJobOptionalParams'
+  - uid: '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem[]'
+    name: 'CreateReviewBodyItem[]'
+    spec.typeScript:
+      - name: CreateReviewBodyItem
+        fullName: CreateReviewBodyItem
+        uid: '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsCreateReviewsOptionalParams'
+    name: ReviewsCreateReviewsOptionalParams
+    spec.typeScript:
+      - name: ReviewsCreateReviewsOptionalParams
+        fullName: ReviewsCreateReviewsOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsCreateReviewsOptionalParams'
+  - uid: '@azure/cognitiveservices-contentmoderator.CreateVideoReviewsBodyItem[]'
+    name: 'CreateVideoReviewsBodyItem[]'
+    spec.typeScript:
+      - name: CreateVideoReviewsBodyItem
+        fullName: CreateVideoReviewsBodyItem
+        uid: '@azure/cognitiveservices-contentmoderator.CreateVideoReviewsBodyItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsCreateVideoReviewsOptionalParams'
+    name: ReviewsCreateVideoReviewsOptionalParams
+    spec.typeScript:
+      - name: ReviewsCreateVideoReviewsOptionalParams
+        fullName: ReviewsCreateVideoReviewsOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsCreateVideoReviewsOptionalParams'
+  - uid: ServiceCallback<@azure/cognitiveservices-contentmoderator.Job>
+    name: Job>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Job
+        fullName: Job
+        uid: '@azure/cognitiveservices-contentmoderator.Job'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/cognitiveservices-contentmoderator.Review>
+    name: Review>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Review
+        fullName: Review
+        uid: '@azure/cognitiveservices-contentmoderator.Review'
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<@azure/cognitiveservices-contentmoderator.Frames>
+    name: Frames>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Frames
+        fullName: Frames
+        uid: '@azure/cognitiveservices-contentmoderator.Frames'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/cognitiveservices-contentmoderator.ReviewsGetVideoFramesOptionalParams'
+    name: ReviewsGetVideoFramesOptionalParams
+    spec.typeScript:
+      - name: ReviewsGetVideoFramesOptionalParams
+        fullName: ReviewsGetVideoFramesOptionalParams
+        uid: '@azure/cognitiveservices-contentmoderator.ReviewsGetVideoFramesOptionalParams'

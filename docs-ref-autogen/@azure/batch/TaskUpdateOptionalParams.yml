@@ -1,0 +1,140 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.TaskUpdateOptionalParams'
+    name: TaskUpdateOptionalParams
+    fullName: TaskUpdateOptionalParams
+    children:
+      - '@azure/batch.TaskUpdateOptionalParams.abortSignal'
+      - '@azure/batch.TaskUpdateOptionalParams.constraints'
+      - '@azure/batch.TaskUpdateOptionalParams.customHeaders'
+      - '@azure/batch.TaskUpdateOptionalParams.onDownloadProgress'
+      - '@azure/batch.TaskUpdateOptionalParams.onUploadProgress'
+      - '@azure/batch.TaskUpdateOptionalParams.taskUpdateOptions'
+      - '@azure/batch.TaskUpdateOptionalParams.timeout'
+    langs:
+      - typeScript
+    type: interface
+    summary: 선택적 매개 변수입니다.
+    extends:
+      name: RequestOptionsBase
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.abortSignal'
+    name: abortSignal
+    fullName: abortSignal
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 중단 요청에 사용할 수 있는 신호입니다.
+    optional: true
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        type:
+          - AbortSignalLike
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.constraints'
+    name: constraints
+    fullName: constraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      이 작업에 적용 되는 제약 조건입니다. 생략 하면 기본 제약 조건 작업에 지정 됩니다.
+      다중 인스턴스 작업에 대 한 보존 기간을 업데이트 하 고 주 작업에만 적용 됩니다 및 하위 작업 하지 않습니다.
+    optional: true
+    syntax:
+      content: 'constraints?: TaskConstraints'
+      return:
+        type:
+          - '@azure/batch.TaskConstraints'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.customHeaders'
+    name: customHeaders
+    fullName: customHeaders
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{object} [customHeaders] 사용자 요청을 보내기 전에 적용 되는 사용자 지정 요청 헤더를 정의 합니다.'
+    optional: true
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        type:
+          - 'undefined | [key: string]: string'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.onDownloadProgress'
+    name: onDownloadProgress
+    fullName: onDownloadProgress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다운로드 진행률 시 발생 하는 콜백.
+    optional: true
+    syntax:
+      content: 'onDownloadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        type:
+          - 'undefined | (progress: TransferProgressEvent) => void'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.onUploadProgress'
+    name: onUploadProgress
+    fullName: onUploadProgress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 업로드 진행 상태 시 발생 하는 콜백.
+    optional: true
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        type:
+          - 'undefined | (progress: TransferProgressEvent) => void'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.taskUpdateOptions'
+    name: taskUpdateOptions
+    fullName: taskUpdateOptions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업에 대 한 추가 매개 변수
+    optional: true
+    syntax:
+      content: 'taskUpdateOptions?: TaskUpdateOptions'
+      return:
+        type:
+          - '@azure/batch.TaskUpdateOptions'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskUpdateOptionalParams.timeout'
+    name: timeout
+    fullName: timeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 요청 시간을 밀리초로 자동으로 종료 하기 전까지 걸릴 수 있습니다.
+    optional: true
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskConstraints'
+    name: TaskConstraints
+    spec.typeScript:
+      - name: TaskConstraints
+        fullName: TaskConstraints
+        uid: '@azure/batch.TaskConstraints'
+  - uid: '@azure/batch.TaskUpdateOptions'
+    name: TaskUpdateOptions
+    spec.typeScript:
+      - name: TaskUpdateOptions
+        fullName: TaskUpdateOptions
+        uid: '@azure/batch.TaskUpdateOptions'

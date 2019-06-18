@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.JobExecutionInformation'
+    name: JobExecutionInformation
+    fullName: JobExecutionInformation
+    children:
+      - '@azure/batch.JobExecutionInformation.endTime'
+      - '@azure/batch.JobExecutionInformation.poolId'
+      - '@azure/batch.JobExecutionInformation.schedulingError'
+      - '@azure/batch.JobExecutionInformation.startTime'
+      - '@azure/batch.JobExecutionInformation.terminateReason'
+    langs:
+      - typeScript
+    type: interface
+    summary: JobExecutionInformation 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobExecutionInformation.endTime'
+    name: endTime
+    fullName: endTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업의 완료 시간입니다. 이 속성은 작업이 완료 된 상태에 있을 경우에 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobExecutionInformation.poolId'
+    name: poolId
+    fullName: poolId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      이 작업이 할당 된 풀의 ID입니다. 이 요소에는 할당 되어 있는 실제 풀을 포함 합니다. 서비스에서 작업 세부 정보를 가져올 때 또한 작업이 추가 되거나 업데이트 된 경우 풀 구성 데이터를 포함 하는 poolInfo 요소를 포함 합니다.
+      해당 poolInfo 요소 poolId 요소를 포함할 수도 있습니다. 이 경우 두 Id 동일 합니다.
+      그렇지 않은 경우, 자동 풀에서 실행 된 작업 및 해당 자동 풀의 ID를 포함 하는이 속성 의미 합니다.
+    optional: true
+    syntax:
+      content: 'poolId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobExecutionInformation.schedulingError'
+    name: schedulingError
+    fullName: schedulingError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 시작 작업에서 발생 한 오류 세부 정보입니다. 작업을 시작 하는 오류가 없는 경우에이 속성이 설정 되지 않았습니다.
+    optional: true
+    syntax:
+      content: 'schedulingError?: JobSchedulingError'
+      return:
+        type:
+          - '@azure/batch.JobSchedulingError'
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobExecutionInformation.startTime'
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업의 시작 시간입니다. 이 작업을 만든 시간입니다.
+    syntax:
+      content: 'startTime: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobExecutionInformation.terminateReason'
+    name: terminateReason
+    fullName: terminateReason
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      작업 이유를 설명 하는 문자열 종료 되었습니다. 이 속성은 작업이 완료 된 상태에 있을 경우에 설정 됩니다. Batch 서비스 작업으로 종료 되 면 이유 다음과 같이 설정 합니다. JMComplete-작업 관리자 태스크가 완료 되 고 killJobOnCompletion 설정한 true로 합니다.
+      MaxWallClockTimeExpiry-작업이 해당 maxWallClockTime 제약 조건에 도달 합니다. TerminateJobSchedule
+      - 일정의 일부로 실행 된 작업 및 일정을 종료 합니다. AllTasksComplete-작업의 onAllTasksComplete 특성이 terminatejob로 설정 된 작업의 모든 작업이 완료 되 고
+      TaskFailed-작업의 onTaskFailure 특성 performExitOptionsJobAction, 및 terminatejob의 jobAction 지정 종료 조건을 사용 하 여 실패 한 작업을 태스크로 설정 됩니다. 모든 다른 문자열은 '작업을 종료 합니다.' 작업에 대 한 호출에 지정 된 된 사용자가 정의한 이유입니다.
+    optional: true
+    syntax:
+      content: 'terminateReason?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.JobSchedulingError'
+    name: JobSchedulingError
+    spec.typeScript:
+      - name: JobSchedulingError
+        fullName: JobSchedulingError
+        uid: '@azure/batch.JobSchedulingError'

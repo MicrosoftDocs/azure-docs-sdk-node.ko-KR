@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.Schedule'
+    name: Schedule
+    fullName: Schedule
+    children:
+      - '@azure/batch.Schedule.doNotRunAfter'
+      - '@azure/batch.Schedule.doNotRunUntil'
+      - '@azure/batch.Schedule.recurrenceInterval'
+      - '@azure/batch.Schedule.startWindow'
+    langs:
+      - typeScript
+    type: interface
+    summary: 일정을 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.Schedule.doNotRunAfter'
+    name: doNotRunAfter
+    fullName: doNotRunAfter
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 한 번 지나면 작업이이 작업 일정에 따라 생성 됩니다. 일정이 기한이이 경과 되 고이 작업 일정에 따라 활성 작업이 즉시 완료 된 상태로 이동 합니다. DoNotRunAfter 시간을 지정 하지 않으면 작업 일정 되풀이 만드는 경우 명시적으로 종료할 때까지 작업 일정은 활성 상태로 유지 됩니다.
+    optional: true
+    syntax:
+      content: 'doNotRunAfter?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.Schedule.doNotRunUntil'
+    name: doNotRunUntil
+    fullName: doNotRunUntil
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 가장 이른 시간에 모든 작업이 작업 일정에서 만들어진 수 있습니다. DoNotRunUntil 시간을 지정 하지 않으면 일정 작업을 즉시 만들 준비가 됩니다.
+    optional: true
+    syntax:
+      content: 'doNotRunUntil?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.Schedule.recurrenceInterval'
+    name: recurrenceInterval
+    fullName: recurrenceInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업 일정에서 두 연속 작업의 시작 시간 사이의 시간 간격입니다. 작업 일정을 지정된 된 시간에 최대 하나의 활성 작업을 가질 수 있습니다. 작업 일정을를 가질 수 있으므로 최대 하나의 활성 작업을 지정된 된 시간에 작업 일정에서 새 작업을 만들 차례 인데 이전 작업은 계속 실행 하는 경우 이전 작업이 완료 될 때까지 일괄 처리 서비스에서 새 작업을 만들지 않습니다. 이전 작업이 새 recurrenceInterval startWindow 내에 완료 되지 않으면, 새 작업이 해당 간격에 대해 예약 됩니다. 되풀이 작업에 대해서는 jobSpecification에는 jobManagerTask을 일반적으로 지정 해야 합니다. JobManagerTask를 사용 하지 않는 경우, 작업을 만들 때를 모니터링 하 고, 작업에 작업을 추가 하 고, 다음 되풀이 대 한 준비 작업을 종료 하는 외부 프로세스를 해야 합니다. 기본값은 일정을 다시 발생 하지 않습니다: 한 번에 하나의 doNotRunUntil 시간 이후에 startWindow 내에서 만들어지고 해당 작업이 완료 되는 즉시 일정은 완료 합니다. 최소값은 1 분입니다. Batch 서비스 거부 오류가;를 사용 하 여 일정을 낮은 값을 지정 하는 경우 HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.'
+    optional: true
+    syntax:
+      content: 'recurrenceInterval?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.Schedule.startWindow'
+    name: startWindow
+    fullName: startWindow
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 시간 간격을 일정 시점의 작업을 나타내는 시간에서 시작을 만들어야 내는 작업을 만들어야 합니다. 작업 startWindow 간격 내에 만들어지지 다음 '기회' 손실 됩니다. 일정의 다음 되풀이까지 작업이 만들어질 수 있습니다. 일정 되풀이 startWindow를 되풀이 간격 보다 긴 경우 다음이 이므로 해당 하는 무한 startWindow은 하나의 recurrenceInterval ' 기한' 작업은 다음 되풀이 간격으로 앞으로 지연 되지 않습니다. 기본값은 한정 되지 않습니다. 최소값은 1 분입니다. Batch 서비스 거부 오류가;를 사용 하 여 일정을 낮은 값을 지정 하는 경우 HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.
+    optional: true
+    syntax:
+      content: 'startWindow?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'

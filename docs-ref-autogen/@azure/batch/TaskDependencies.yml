@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.TaskDependencies'
+    name: TaskDependencies
+    fullName: TaskDependencies
+    children:
+      - '@azure/batch.TaskDependencies.taskIdRanges'
+      - '@azure/batch.TaskDependencies.taskIds'
+    langs:
+      - typeScript
+    type: interface
+    summary: TaskDependencies 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskDependencies.taskIdRanges'
+    name: taskIdRanges
+    fullName: taskIdRanges
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 작업에 종속 된 태스크 ID 범위 목록입니다. 종속 작업을 예약 하려면 모든 범위에서 모든 작업이 성공적으로 완료 해야 합니다.
+    optional: true
+    syntax:
+      content: 'taskIdRanges?: TaskIdRange[]'
+      return:
+        type:
+          - '@azure/batch.TaskIdRange[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.TaskDependencies.taskIds'
+    name: taskIds
+    fullName: taskIds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '이 작업에 의존 하는 Id 작업의 목록입니다. 종속 작업을 예약 하려면이 목록의 모든 작업이 성공적으로 완료 해야 합니다. TaskIds 컬렉션이 자로 제한 64000 총 (즉, 모든 태스크 Id의 결합 된 길이)입니다. TaskIds 컬렉션의 최대 길이 초과 하면 추가 작업 요청 TaskDependencyListTooLong 오류 코드로 실패 합니다. 이 경우 태스크 ID 범위를 대신 사용 하는 것이 좋습니다.'
+    optional: true
+    syntax:
+      content: 'taskIds?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskIdRange[]'
+    name: 'TaskIdRange[]'
+    spec.typeScript:
+      - name: TaskIdRange
+        fullName: TaskIdRange
+        uid: '@azure/batch.TaskIdRange'
+      - name: '[]'
+        fullName: '[]'

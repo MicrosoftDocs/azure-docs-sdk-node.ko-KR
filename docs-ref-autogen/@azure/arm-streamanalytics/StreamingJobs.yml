@@ -1,0 +1,803 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-streamanalytics.StreamingJobs'
+    name: StreamingJobs
+    fullName: StreamingJobs
+    children:
+      - '@azure/arm-streamanalytics.StreamingJobs.beginCreateOrReplace'
+      - '@azure/arm-streamanalytics.StreamingJobs.beginDeleteMethod'
+      - '@azure/arm-streamanalytics.StreamingJobs.beginStart'
+      - '@azure/arm-streamanalytics.StreamingJobs.beginStop'
+      - '@azure/arm-streamanalytics.StreamingJobs.createOrReplace'
+      - '@azure/arm-streamanalytics.StreamingJobs.deleteMethod'
+      - '@azure/arm-streamanalytics.StreamingJobs.get'
+      - '@azure/arm-streamanalytics.StreamingJobs.get_1'
+      - '@azure/arm-streamanalytics.StreamingJobs.get_2'
+      - '@azure/arm-streamanalytics.StreamingJobs.list'
+      - '@azure/arm-streamanalytics.StreamingJobs.list_1'
+      - '@azure/arm-streamanalytics.StreamingJobs.list_2'
+      - '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroup'
+      - '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroup_1'
+      - '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroup_2'
+      - '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroupNext'
+      - '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroupNext_2'
+      - '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroupNext_1'
+      - '@azure/arm-streamanalytics.StreamingJobs.listNext'
+      - '@azure/arm-streamanalytics.StreamingJobs.listNext_2'
+      - '@azure/arm-streamanalytics.StreamingJobs.listNext_1'
+      - '@azure/arm-streamanalytics.StreamingJobs.start'
+      - '@azure/arm-streamanalytics.StreamingJobs.stop'
+      - '@azure/arm-streamanalytics.StreamingJobs.constructor'
+      - '@azure/arm-streamanalytics.StreamingJobs.update'
+      - '@azure/arm-streamanalytics.StreamingJobs.update_1'
+      - '@azure/arm-streamanalytics.StreamingJobs.update_2'
+    langs:
+      - typeScript
+    type: class
+    summary: StreamingJobs를 나타내는 클래스입니다.
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.beginCreateOrReplace'
+    name: 'beginCreateOrReplace(StreamingJob, string, string, Models.StreamingJobsBeginCreateOrReplaceOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업을 만들거나 기존 스트리밍 작업을 바꿉니다.
+    syntax:
+      content: 'function beginCreateOrReplace(streamingJob: StreamingJob, resourceGroupName: string, jobName: string, options?: Models.StreamingJobsBeginCreateOrReplaceOptionalParams)'
+      parameters:
+        - id: streamingJob
+          type:
+            - '@azure/arm-streamanalytics.StreamingJob'
+          description: 새 스트리밍 작업을 만들거나 기존를 대체 하는 데 사용할 스트리밍 작업의 정의입니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.StreamingJobsBeginCreateOrReplaceOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.beginDeleteMethod'
+    name: 'beginDeleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업을 삭제합니다.
+    syntax:
+      content: 'function beginDeleteMethod(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.beginStart'
+    name: 'beginStart(string, string, Models.StreamingJobsBeginStartOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업을 시작합니다. 작업이 시작 되 면 입력된 이벤트 처리를 시작 하 고 출력을 생성 합니다.
+    syntax:
+      content: 'function beginStart(resourceGroupName: string, jobName: string, options?: Models.StreamingJobsBeginStartOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.StreamingJobsBeginStartOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.beginStop'
+    name: 'beginStop(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업의 실행을 중지합니다. 이렇게 하면 입력된 이벤트를 처리 하 고 출력을 생성 하 고 중지 하려면 스트리밍 작업을 실행 합니다.
+    syntax:
+      content: 'function beginStop(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LROPoller>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.createOrReplace'
+    name: 'createOrReplace(StreamingJob, string, string, Models.StreamingJobsCreateOrReplaceOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업을 만들거나 기존 스트리밍 작업을 바꿉니다.
+    syntax:
+      content: 'function createOrReplace(streamingJob: StreamingJob, resourceGroupName: string, jobName: string, options?: Models.StreamingJobsCreateOrReplaceOptionalParams)'
+      parameters:
+        - id: streamingJob
+          type:
+            - '@azure/arm-streamanalytics.StreamingJob'
+          description: 새 스트리밍 작업을 만들거나 기존를 대체 하는 데 사용할 스트리밍 작업의 정의입니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.StreamingJobsCreateOrReplaceOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsCreateOrReplaceResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.deleteMethod'
+    name: 'deleteMethod(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업을 삭제합니다.
+    syntax:
+      content: 'function deleteMethod(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.get'
+    name: 'get(string, string, Models.StreamingJobsGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 스트리밍 작업에 대 한 세부 정보를 가져옵니다.
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, options?: Models.StreamingJobsGetOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.StreamingJobsGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsGetResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.get_1'
+    name: 'get(string, string, ServiceCallback<StreamingJob>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, callback: ServiceCallback<StreamingJob>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJob>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsGetResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.get_2'
+    name: 'get(string, string, StreamingJobsGetOptionalParams, ServiceCallback<StreamingJob>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(resourceGroupName: string, jobName: string, options: StreamingJobsGetOptionalParams, callback: ServiceCallback<StreamingJob>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.StreamingJobsGetOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJob>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsGetResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.list'
+    name: list(Models.StreamingJobsListOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 구독에서 스트리밍 작업의 모든를 나열합니다.
+    syntax:
+      content: 'function list(options?: Models.StreamingJobsListOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.StreamingJobsListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsListResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.list_1'
+    name: list(ServiceCallback<StreamingJobListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.list_2'
+    name: 'list(StreamingJobsListOptionalParams, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(options: StreamingJobsListOptionalParams, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.StreamingJobsListOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroup'
+    name: 'listByResourceGroup(string, Models.StreamingJobsListByResourceGroupOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 리소스 그룹에서 스트리밍 작업의 모든를 나열합니다.
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options?: Models.StreamingJobsListByResourceGroupOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: options
+          type:
+            - Models.StreamingJobsListByResourceGroupOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsListByResourceGroupResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroup_1'
+    name: 'listByResourceGroup(string, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListByResourceGroupResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroup_2'
+    name: 'listByResourceGroup(string, StreamingJobsListByResourceGroupOptionalParams, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroup(resourceGroupName: string, options: StreamingJobsListByResourceGroupOptionalParams, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.StreamingJobsListByResourceGroupOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListByResourceGroupResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroupNext'
+    name: 'listByResourceGroupNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 리소스 그룹에서 스트리밍 작업의 모든를 나열합니다.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsListByResourceGroupNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroupNext_2'
+    name: 'listByResourceGroupNext(string, RequestOptionsBase, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListByResourceGroupNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listByResourceGroupNext_1'
+    name: 'listByResourceGroupNext(string, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListByResourceGroupNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 구독에서 스트리밍 작업의 모든를 나열합니다.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsListNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.listNext_1'
+    name: 'listNext(string, ServiceCallback<StreamingJobListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<StreamingJobListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: 목록 작업에 성공적으로 이전 호출의 NextLink입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsListNextResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.start'
+    name: 'start(string, string, Models.StreamingJobsStartOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업을 시작합니다. 작업이 시작 되 면 입력된 이벤트 처리를 시작 하 고 출력을 생성 합니다.
+    syntax:
+      content: 'function start(resourceGroupName: string, jobName: string, options?: Models.StreamingJobsStartOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.StreamingJobsStartOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.stop'
+    name: 'stop(string, string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 스트리밍 작업의 실행을 중지합니다. 이렇게 하면 입력된 이벤트를 처리 하 고 출력을 생성 하 고 중지 하려면 스트리밍 작업을 실행 합니다.
+    syntax:
+      content: 'function stop(resourceGroupName: string, jobName: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.constructor'
+    name: StreamingJobs(StreamAnalyticsManagementClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: StreamingJobs를 만듭니다.
+    syntax:
+      content: 'new StreamingJobs(client: StreamAnalyticsManagementClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.update'
+    name: 'update(StreamingJob, string, string, Models.StreamingJobsUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 기존 스트리밍 작업을 업데이트합니다. 이 부분적으로 (즉 업데이트를 사용할 수 있습니다. 하나 또는 두 개의 속성 업데이트)는 rest 작업 정의 영향을 주지 않고 스트리밍 작업을 합니다.
+    syntax:
+      content: 'function update(streamingJob: StreamingJob, resourceGroupName: string, jobName: string, options?: Models.StreamingJobsUpdateOptionalParams)'
+      parameters:
+        - id: streamingJob
+          type:
+            - '@azure/arm-streamanalytics.StreamingJob'
+          description: |-
+            스트리밍 작업 개체입니다. 여기에 지정 된 속성 (즉 기존 스트리밍 작업에서 해당 속성을 덮어쓸 이러한 속성을 업데이트할).
+            기존 입력의 해당 속성을 동일 하 게 유지 되며이 패치 작업의 결과로 변경 하지는 여기서 null로 설정 된 속성 의미 합니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - Models.StreamingJobsUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.StreamingJobsUpdateResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.update_1'
+    name: 'update(StreamingJob, string, string, ServiceCallback<StreamingJob>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(streamingJob: StreamingJob, resourceGroupName: string, jobName: string, callback: ServiceCallback<StreamingJob>)'
+      parameters:
+        - id: streamingJob
+          type:
+            - '@azure/arm-streamanalytics.StreamingJob'
+          description: |-
+            스트리밍 작업 개체입니다. 여기에 지정 된 속성 (즉 기존 스트리밍 작업에서 해당 속성을 덮어쓸 이러한 속성을 업데이트할).
+            기존 입력의 해당 속성을 동일 하 게 유지 되며이 패치 작업의 결과로 변경 하지는 여기서 null로 설정 된 속성 의미 합니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJob>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsUpdateResponse>
+    package: '@azure/arm-streamanalytics'
+  - uid: '@azure/arm-streamanalytics.StreamingJobs.update_2'
+    name: 'update(StreamingJob, string, string, StreamingJobsUpdateOptionalParams, ServiceCallback<StreamingJob>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(streamingJob: StreamingJob, resourceGroupName: string, jobName: string, options: StreamingJobsUpdateOptionalParams, callback: ServiceCallback<StreamingJob>)'
+      parameters:
+        - id: streamingJob
+          type:
+            - '@azure/arm-streamanalytics.StreamingJob'
+          description: |-
+            스트리밍 작업 개체입니다. 여기에 지정 된 속성 (즉 기존 스트리밍 작업에서 해당 속성을 덮어쓸 이러한 속성을 업데이트할).
+            기존 입력의 해당 속성을 동일 하 게 유지 되며이 패치 작업의 결과로 변경 하지는 여기서 null로 설정 된 속성 의미 합니다.
+        - id: resourceGroupName
+          type:
+            - string
+          description: 리소스를 포함하는 리소스 그룹의 이름입니다. Azure Resource Manager API 또는 포털에서이 값을 가져올 수 있습니다.
+        - id: jobName
+          type:
+            - string
+          description: 스트리밍 작업의 이름입니다.
+        - id: options
+          type:
+            - '@azure/arm-streamanalytics.StreamingJobsUpdateOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-streamanalytics.StreamingJob>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.StreamingJobsUpdateResponse>
+    package: '@azure/arm-streamanalytics'
+references:
+  - uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext'
+    name: StreamAnalyticsManagementClientContext
+    spec.typeScript:
+      - name: StreamAnalyticsManagementClientContext
+        fullName: StreamAnalyticsManagementClientContext
+        uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext'
+  - uid: '@azure/arm-streamanalytics.StreamingJob'
+    name: StreamingJob
+    spec.typeScript:
+      - name: StreamingJob
+        fullName: StreamingJob
+        uid: '@azure/arm-streamanalytics.StreamingJob'
+  - uid: ServiceCallback<@azure/arm-streamanalytics.StreamingJob>
+    name: StreamingJob>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: StreamingJob
+        fullName: StreamingJob
+        uid: '@azure/arm-streamanalytics.StreamingJob'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-streamanalytics.StreamingJobsGetOptionalParams'
+    name: StreamingJobsGetOptionalParams
+    spec.typeScript:
+      - name: StreamingJobsGetOptionalParams
+        fullName: StreamingJobsGetOptionalParams
+        uid: '@azure/arm-streamanalytics.StreamingJobsGetOptionalParams'
+  - uid: ServiceCallback<@azure/arm-streamanalytics.StreamingJobListResult>
+    name: StreamingJobListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: StreamingJobListResult
+        fullName: StreamingJobListResult
+        uid: '@azure/arm-streamanalytics.StreamingJobListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/arm-streamanalytics.StreamingJobsListOptionalParams'
+    name: StreamingJobsListOptionalParams
+    spec.typeScript:
+      - name: StreamingJobsListOptionalParams
+        fullName: StreamingJobsListOptionalParams
+        uid: '@azure/arm-streamanalytics.StreamingJobsListOptionalParams'
+  - uid: '@azure/arm-streamanalytics.StreamingJobsListByResourceGroupOptionalParams'
+    name: StreamingJobsListByResourceGroupOptionalParams
+    spec.typeScript:
+      - name: StreamingJobsListByResourceGroupOptionalParams
+        fullName: StreamingJobsListByResourceGroupOptionalParams
+        uid: '@azure/arm-streamanalytics.StreamingJobsListByResourceGroupOptionalParams'
+  - uid: '@azure/arm-streamanalytics.StreamingJobsUpdateOptionalParams'
+    name: StreamingJobsUpdateOptionalParams
+    spec.typeScript:
+      - name: StreamingJobsUpdateOptionalParams
+        fullName: StreamingJobsUpdateOptionalParams
+        uid: '@azure/arm-streamanalytics.StreamingJobsUpdateOptionalParams'
