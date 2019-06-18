@@ -1,0 +1,1005 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.Task'
+    name: Task
+    fullName: Task
+    children:
+      - '@azure/batch.Task.add'
+      - '@azure/batch.Task.add_1'
+      - '@azure/batch.Task.add_2'
+      - '@azure/batch.Task.addCollection'
+      - '@azure/batch.Task.addCollection_1'
+      - '@azure/batch.Task.addCollection_2'
+      - '@azure/batch.Task.deleteMethod'
+      - '@azure/batch.Task.deleteMethod_1'
+      - '@azure/batch.Task.deleteMethod_2'
+      - '@azure/batch.Task.get'
+      - '@azure/batch.Task.get_1'
+      - '@azure/batch.Task.get_2'
+      - '@azure/batch.Task.list'
+      - '@azure/batch.Task.list_1'
+      - '@azure/batch.Task.list_2'
+      - '@azure/batch.Task.listNext'
+      - '@azure/batch.Task.listNext_1'
+      - '@azure/batch.Task.listNext_2'
+      - '@azure/batch.Task.listSubtasks'
+      - '@azure/batch.Task.listSubtasks_1'
+      - '@azure/batch.Task.listSubtasks_2'
+      - '@azure/batch.Task.reactivate'
+      - '@azure/batch.Task.reactivate_1'
+      - '@azure/batch.Task.reactivate_2'
+      - '@azure/batch.Task.constructor'
+      - '@azure/batch.Task.terminate'
+      - '@azure/batch.Task.terminate_1'
+      - '@azure/batch.Task.terminate_2'
+      - '@azure/batch.Task.update'
+      - '@azure/batch.Task.update_1'
+      - '@azure/batch.Task.update_2'
+    langs:
+      - typeScript
+    type: class
+    summary: <span data-ttu-id="661f4-101">작업을 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-101">Class representing a Task.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.add'
+    name: 'add(string, TaskAddParameter, Models.TaskAddOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="661f4-102">완료 될 때까지 추가 작업의 최대 수명은 180 일입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-102">The maximum lifetime of a task from addition to completion is 180 days.</span></span> <span data-ttu-id="661f4-103">왼쪽 고 Batch 서비스에서 종료 됩니다 추가 되 고 180 일 이내에 작업을 완료 되지 않은 경우 모든 상태의 시점의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-103">If a task has not completed within 180 days of being added it will be terminated by the Batch service and left in whatever state it was in at that time.</span></span>
+    syntax:
+      content: 'function add(jobId: string, task: TaskAddParameter, options?: Models.TaskAddOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-104">태스크가 추가 되는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-104">The ID of the job to which the task is to be added.</span></span>
+        - id: task
+          type:
+            - '@azure/batch.TaskAddParameter'
+          description: <span data-ttu-id="661f4-105">추가할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-105">The task to be added.</span></span>
+        - id: options
+          type:
+            - Models.TaskAddOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskAddResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.add_1'
+    name: 'add(string, TaskAddParameter, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function add(jobId: string, task: TaskAddParameter, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-106">태스크가 추가 되는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-106">The ID of the job to which the task is to be added.</span></span>
+        - id: task
+          type:
+            - '@azure/batch.TaskAddParameter'
+          description: <span data-ttu-id="661f4-107">추가할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-107">The task to be added.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-108">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-108">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskAddResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.add_2'
+    name: 'add(string, TaskAddParameter, TaskAddOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function add(jobId: string, task: TaskAddParameter, options: TaskAddOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-109">태스크가 추가 되는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-109">The ID of the job to which the task is to be added.</span></span>
+        - id: task
+          type:
+            - '@azure/batch.TaskAddParameter'
+          description: <span data-ttu-id="661f4-110">추가할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-110">The task to be added.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskAddOptionalParams'
+          description: <span data-ttu-id="661f4-111">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-111">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-112">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-112">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskAddResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.addCollection'
+    name: 'addCollection(string, TaskAddParameter[], Models.TaskAddCollectionOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-113">각 작업 조건은 고유 ID를 갖도록 참고</span><span class="sxs-lookup"><span data-stu-id="661f4-113">Note that each task must have a unique ID.</span></span> <span data-ttu-id="661f4-114">Batch 서비스 작업을이 요청에서 전송 된 동일한 순서로 각 태스크에 대 한 결과 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-114">The Batch service may not return the results for each task in the same order the tasks were submitted in this request.</span></span> <span data-ttu-id="661f4-115">서버 시간 초과 또는 요청 하는 동안 연결이 닫힌 경우에 부분적으로 또는 완전히 처리 되거나 전혀 사용 하지 않을 요청 된 것 같습니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-115">If the server times out or the connection is closed during the request, the request may have been partially or fully processed, or not at all.</span></span> <span data-ttu-id="661f4-116">이러한 경우 사용자 요청을 다시 실행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-116">In such cases, the user should re-issue the request.</span></span> <span data-ttu-id="661f4-117">사용자 요청을 다시 실행 하는 경우 올바르게 오류를 처리 하는 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-117">Note that it is up to the user to correctly handle failures when re-issuing a request.</span></span> <span data-ttu-id="661f4-118">예를 들어, 이전 작업이 성공한 경우 다시 시도 만들지 추가 태스크 예기치 않게 있도록 다시 시도 하는 동안 동일한 태스크 Id을 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-118">For example, you should use the same task IDs during a retry so that if the prior operation succeeded, the retry will not create extra tasks unexpectedly.</span></span> <span data-ttu-id="661f4-119">응답에 추가 하지 못한 모든 작업을 하는 경우 클라이언트 요청을 다시 시도 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-119">If the response contains any tasks which failed to add, a client can retry the request.</span></span> <span data-ttu-id="661f4-120">이 다시 시도 추가할 하 고 첫 번째 시도에서 성공적으로 추가 된 태스크를 생략 하려면 실패 한 태스크만 다시 전송할 가장 효율적입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-120">In a retry, it is most efficient to resubmit only tasks that failed to add, and to omit tasks that were successfully added on the first attempt.</span></span> <span data-ttu-id="661f4-121">완료 될 때까지 추가 작업의 최대 수명은 180 일입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-121">The maximum lifetime of a task from addition to completion is 180 days.</span></span> <span data-ttu-id="661f4-122">왼쪽 고 Batch 서비스에서 종료 됩니다 추가 되 고 180 일 이내에 작업을 완료 되지 않은 경우 모든 상태의 시점의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-122">If a task has not completed within 180 days of being added it will be terminated by the Batch service and left in whatever state it was in at that time.</span></span>'
+    syntax:
+      content: 'function addCollection(jobId: string, value: TaskAddParameter[], options?: Models.TaskAddCollectionOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-123">작업 컬렉션을 추가 해야 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-123">The ID of the job to which the task collection is to be added.</span></span>
+        - id: value
+          type:
+            - '@azure/batch.TaskAddParameter[]'
+          description: '<span data-ttu-id="661f4-124">추가할 작업의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-124">The collection of tasks to add.</span></span> <span data-ttu-id="661f4-125">작업의 최대 수는 100입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-125">The maximum count of tasks is 100.</span></span> <span data-ttu-id="661f4-126">이 컬렉션의 직렬화 된 총 크기는 1MB 미만 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-126">The total serialized size of this collection must be less than 1MB.</span></span> <span data-ttu-id="661f4-127">(예를 들어 각 작업에 리소스 파일 또는 환경 변수 100) 1MB 보다 큰 경우 요청 ''RequestBodyTooLarge'' 코드로 실패 하 고 더 적은 작업을 사용 하 여 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-127">If it is greater than 1MB (for example if each task has 100''s of resource files or environment variables), the request will fail with code ''RequestBodyTooLarge'' and should be retried again with fewer tasks.</span></span>'
+        - id: options
+          type:
+            - Models.TaskAddCollectionOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskAddCollectionResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.addCollection_1'
+    name: 'addCollection(string, TaskAddParameter[], ServiceCallback<TaskAddCollectionResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addCollection(jobId: string, value: TaskAddParameter[], callback: ServiceCallback<TaskAddCollectionResult>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-128">작업 컬렉션을 추가 해야 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-128">The ID of the job to which the task collection is to be added.</span></span>
+        - id: value
+          type:
+            - '@azure/batch.TaskAddParameter[]'
+          description: '<span data-ttu-id="661f4-129">추가할 작업의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-129">The collection of tasks to add.</span></span> <span data-ttu-id="661f4-130">작업의 최대 수는 100입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-130">The maximum count of tasks is 100.</span></span> <span data-ttu-id="661f4-131">이 컬렉션의 직렬화 된 총 크기는 1MB 미만 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-131">The total serialized size of this collection must be less than 1MB.</span></span> <span data-ttu-id="661f4-132">(예를 들어 각 작업에 리소스 파일 또는 환경 변수 100) 1MB 보다 큰 경우 요청 ''RequestBodyTooLarge'' 코드로 실패 하 고 더 적은 작업을 사용 하 여 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-132">If it is greater than 1MB (for example if each task has 100''s of resource files or environment variables), the request will fail with code ''RequestBodyTooLarge'' and should be retried again with fewer tasks.</span></span>'
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.TaskAddCollectionResult>
+          description: |
+            <span data-ttu-id="661f4-133">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-133">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskAddCollectionResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.addCollection_2'
+    name: 'addCollection(string, TaskAddParameter[], TaskAddCollectionOptionalParams, ServiceCallback<TaskAddCollectionResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addCollection(jobId: string, value: TaskAddParameter[], options: TaskAddCollectionOptionalParams, callback: ServiceCallback<TaskAddCollectionResult>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-134">작업 컬렉션을 추가 해야 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-134">The ID of the job to which the task collection is to be added.</span></span>
+        - id: value
+          type:
+            - '@azure/batch.TaskAddParameter[]'
+          description: '<span data-ttu-id="661f4-135">추가할 작업의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-135">The collection of tasks to add.</span></span> <span data-ttu-id="661f4-136">작업의 최대 수는 100입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-136">The maximum count of tasks is 100.</span></span> <span data-ttu-id="661f4-137">이 컬렉션의 직렬화 된 총 크기는 1MB 미만 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-137">The total serialized size of this collection must be less than 1MB.</span></span> <span data-ttu-id="661f4-138">(예를 들어 각 작업에 리소스 파일 또는 환경 변수 100) 1MB 보다 큰 경우 요청 ''RequestBodyTooLarge'' 코드로 실패 하 고 더 적은 작업을 사용 하 여 다시 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-138">If it is greater than 1MB (for example if each task has 100''s of resource files or environment variables), the request will fail with code ''RequestBodyTooLarge'' and should be retried again with fewer tasks.</span></span>'
+        - id: options
+          type:
+            - '@azure/batch.TaskAddCollectionOptionalParams'
+          description: <span data-ttu-id="661f4-139">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-139">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.TaskAddCollectionResult>
+          description: |
+            <span data-ttu-id="661f4-140">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-140">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskAddCollectionResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.deleteMethod'
+    name: 'deleteMethod(string, string, Models.TaskDeleteMethodOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-141">작업 삭제 되 면 (보존 기간)에 관계 없이 삭제 됩니다 파일의 디렉터리에 계산 노드에서 실행 되는 모든.</span><span class="sxs-lookup"><span data-stu-id="661f4-141">When a task is deleted, all of the files in its directory on the compute node where it ran are also deleted (regardless of the retention time).</span></span> <span data-ttu-id="661f4-142">다중 인스턴스 작업에 대 한 삭제 작업 동기적으로 작업에 적용 되는 기본; 하위 작업 및 파일 백그라운드에서 비동기적으로 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-142">For multi-instance tasks, the delete task operation applies synchronously to the primary task; subtasks and their files are then deleted asynchronously in the background.</span></span>'
+    syntax:
+      content: 'function deleteMethod(jobId: string, taskId: string, options?: Models.TaskDeleteMethodOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-143">작업을 삭제 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-143">The ID of the job from which to delete the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-144">삭제 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-144">The ID of the task to delete.</span></span>
+        - id: options
+          type:
+            - Models.TaskDeleteMethodOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskDeleteResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.deleteMethod_1'
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(jobId: string, taskId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-145">작업을 삭제 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-145">The ID of the job from which to delete the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-146">삭제 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-146">The ID of the task to delete.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-147">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-147">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskDeleteResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.deleteMethod_2'
+    name: 'deleteMethod(string, string, TaskDeleteMethodOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function deleteMethod(jobId: string, taskId: string, options: TaskDeleteMethodOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-148">작업을 삭제 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-148">The ID of the job from which to delete the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-149">삭제 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-149">The ID of the task to delete.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskDeleteMethodOptionalParams'
+          description: <span data-ttu-id="661f4-150">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-150">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-151">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-151">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskDeleteResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.get'
+    name: 'get(string, string, Models.TaskGetOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-152">다중 인스턴스 태스크 affinityid가와 같은 정보에 대 한 executionInfo 및 nodeInfo 주 작업을 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="661f4-152">For multi-instance tasks, information such as affinityId, executionInfo and nodeInfo refer to the primary task.</span></span> <span data-ttu-id="661f4-153">하위 작업에 대 한 정보를 검색 하는 목록 하위 작업 API를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-153">Use the list subtasks API to retrieve information about subtasks.</span></span>'
+    syntax:
+      content: 'function get(jobId: string, taskId: string, options?: Models.TaskGetOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-154">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-154">The ID of the job that contains the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-155">에 대 한 정보를 가져올 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-155">The ID of the task to get information about.</span></span>
+        - id: options
+          type:
+            - Models.TaskGetOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskGetResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.get_1'
+    name: 'get(string, string, ServiceCallback<CloudTask>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(jobId: string, taskId: string, callback: ServiceCallback<CloudTask>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-156">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-156">The ID of the job that contains the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-157">에 대 한 정보를 가져올 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-157">The ID of the task to get information about.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTask>
+          description: |
+            <span data-ttu-id="661f4-158">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-158">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskGetResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.get_2'
+    name: 'get(string, string, TaskGetOptionalParams, ServiceCallback<CloudTask>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function get(jobId: string, taskId: string, options: TaskGetOptionalParams, callback: ServiceCallback<CloudTask>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-159">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-159">The ID of the job that contains the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-160">에 대 한 정보를 가져올 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-160">The ID of the task to get information about.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskGetOptionalParams'
+          description: <span data-ttu-id="661f4-161">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-161">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTask>
+          description: |
+            <span data-ttu-id="661f4-162">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-162">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskGetResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.list'
+    name: 'list(string, Models.TaskListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-163">다중 인스턴스 태스크 affinityid가와 같은 정보에 대 한 executionInfo 및 nodeInfo 주 작업을 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="661f4-163">For multi-instance tasks, information such as affinityId, executionInfo and nodeInfo refer to the primary task.</span></span> <span data-ttu-id="661f4-164">하위 작업에 대 한 정보를 검색 하는 목록 하위 작업 API를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-164">Use the list subtasks API to retrieve information about subtasks.</span></span>'
+    syntax:
+      content: 'function list(jobId: string, options?: Models.TaskListOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-165">작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-165">The ID of the job.</span></span>
+        - id: options
+          type:
+            - Models.TaskListOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.list_1'
+    name: 'list(string, ServiceCallback<CloudTaskListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(jobId: string, callback: ServiceCallback<CloudTaskListResult>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-166">작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-166">The ID of the job.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTaskListResult>
+          description: |
+            <span data-ttu-id="661f4-167">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-167">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.list_2'
+    name: 'list(string, TaskListOptionalParams, ServiceCallback<CloudTaskListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function list(jobId: string, options: TaskListOptionalParams, callback: ServiceCallback<CloudTaskListResult>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-168">작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-168">The ID of the job.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskListOptionalParams'
+          description: <span data-ttu-id="661f4-169">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-169">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTaskListResult>
+          description: |
+            <span data-ttu-id="661f4-170">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-170">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.listNext'
+    name: 'listNext(string, Models.TaskListNextOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-171">다중 인스턴스 태스크 affinityid가와 같은 정보에 대 한 executionInfo 및 nodeInfo 주 작업을 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="661f4-171">For multi-instance tasks, information such as affinityId, executionInfo and nodeInfo refer to the primary task.</span></span> <span data-ttu-id="661f4-172">하위 작업에 대 한 정보를 검색 하는 목록 하위 작업 API를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-172">Use the list subtasks API to retrieve information about subtasks.</span></span>'
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Models.TaskListNextOptionalParams)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="661f4-173">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-173">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - Models.TaskListNextOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.listNext_1'
+    name: 'listNext(string, ServiceCallback<CloudTaskListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<CloudTaskListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="661f4-174">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-174">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTaskListResult>
+          description: |
+            <span data-ttu-id="661f4-175">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-175">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.listNext_2'
+    name: 'listNext(string, TaskListNextOptionalParams, ServiceCallback<CloudTaskListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: TaskListNextOptionalParams, callback: ServiceCallback<CloudTaskListResult>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="661f4-176">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-176">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskListNextOptionalParams'
+          description: <span data-ttu-id="661f4-177">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-177">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTaskListResult>
+          description: |
+            <span data-ttu-id="661f4-178">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-178">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskListResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.listSubtasks'
+    name: 'listSubtasks(string, string, Models.TaskListSubtasksOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="661f4-179">작업이 다중 인스턴스 작업 없으면 빈 컬렉션을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-179">If the task is not a multi-instance task then this returns an empty collection.</span></span>
+    syntax:
+      content: 'function listSubtasks(jobId: string, taskId: string, options?: Models.TaskListSubtasksOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-180">작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-180">The ID of the job.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-181">태스크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-181">The ID of the task.</span></span>
+        - id: options
+          type:
+            - Models.TaskListSubtasksOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskListSubtasksResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.listSubtasks_1'
+    name: 'listSubtasks(string, string, ServiceCallback<CloudTaskListSubtasksResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listSubtasks(jobId: string, taskId: string, callback: ServiceCallback<CloudTaskListSubtasksResult>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-182">작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-182">The ID of the job.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-183">태스크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-183">The ID of the task.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTaskListSubtasksResult>
+          description: |
+            <span data-ttu-id="661f4-184">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-184">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskListSubtasksResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.listSubtasks_2'
+    name: 'listSubtasks(string, string, TaskListSubtasksOptionalParams, ServiceCallback<CloudTaskListSubtasksResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listSubtasks(jobId: string, taskId: string, options: TaskListSubtasksOptionalParams, callback: ServiceCallback<CloudTaskListSubtasksResult>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-185">작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-185">The ID of the job.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-186">태스크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-186">The ID of the task.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskListSubtasksOptionalParams'
+          description: <span data-ttu-id="661f4-187">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-187">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/batch.CloudTaskListSubtasksResult>
+          description: |
+            <span data-ttu-id="661f4-188">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-188">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskListSubtasksResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.reactivate'
+    name: 'reactivate(string, string, Models.TaskReactivateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-189">다시 활성화를 사용 하면 작업을 해당 최대 재시도 횟수까지 다시 시도 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-189">Reactivation makes a task eligible to be retried again up to its maximum retry count.</span></span> <span data-ttu-id="661f4-190">작업의 상태가 활성으로 변경 됩니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-190">The task''s state is changed to active.</span></span> <span data-ttu-id="661f4-191">작업이 완료 된 상태에서 더 이상 이므로 이전 종료 코드 또는 오류 정보 더 이상 사용할 수 후 다시 활성화 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-191">As the task is no longer in the completed state, any previous exit code or failure information is no longer available after reactivation.</span></span> <span data-ttu-id="661f4-192">작업을 다시 활성화 될 때마다 해당 재시도 횟수는 0으로 다시 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-192">Each time a task is reactivated, its retry count is reset to 0.</span></span> <span data-ttu-id="661f4-193">다시 활성화 하는 완료 되지 않았거나 이전에 성공적으로 (종료 코드로 0) 완료 하는 작업에 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-193">Reactivation will fail for tasks that are not completed or that previously completed successfully (with an exit code of 0).</span></span> <span data-ttu-id="661f4-194">또한 작업 완료 (또는 종료 되었거나 삭제) 하는 경우 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-194">Additionally, it will fail if the job has completed (or is terminating or deleting).</span></span>'
+    syntax:
+      content: 'function reactivate(jobId: string, taskId: string, options?: Models.TaskReactivateOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-195">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-195">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-196">다시 활성화 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-196">The ID of the task to reactivate.</span></span>
+        - id: options
+          type:
+            - Models.TaskReactivateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskReactivateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.reactivate_1'
+    name: 'reactivate(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reactivate(jobId: string, taskId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-197">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-197">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-198">다시 활성화 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-198">The ID of the task to reactivate.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-199">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-199">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskReactivateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.reactivate_2'
+    name: 'reactivate(string, string, TaskReactivateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reactivate(jobId: string, taskId: string, options: TaskReactivateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-200">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-200">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-201">다시 활성화 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-201">The ID of the task to reactivate.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskReactivateOptionalParams'
+          description: <span data-ttu-id="661f4-202">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-202">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-203">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-203">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskReactivateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.constructor'
+    name: Task(BatchServiceClientContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="661f4-204">작업을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-204">Create a Task.</span></span>
+    syntax:
+      content: 'new Task(client: BatchServiceClientContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/batch.BatchServiceClientContext'
+          description: |
+            <span data-ttu-id="661f4-205">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-205">Reference to the service client.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.terminate'
+    name: 'terminate(string, string, Models.TaskTerminateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: '<span data-ttu-id="661f4-206">작업이 종료 된 경우 완료 된 상태로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-206">When the task has been terminated, it moves to the completed state.</span></span> <span data-ttu-id="661f4-207">다중 인스턴스 작업에 대 한 종료 작업 동기적으로 작업에 적용 되는 기본; 하위 작업 후 백그라운드에서 비동기적으로 종료 됩니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-207">For multi-instance tasks, the terminate task operation applies synchronously to the primary task; subtasks are then terminated asynchronously in the background.</span></span>'
+    syntax:
+      content: 'function terminate(jobId: string, taskId: string, options?: Models.TaskTerminateOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-208">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-208">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-209">종료 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-209">The ID of the task to terminate.</span></span>
+        - id: options
+          type:
+            - Models.TaskTerminateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskTerminateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.terminate_1'
+    name: 'terminate(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function terminate(jobId: string, taskId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-210">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-210">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-211">종료 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-211">The ID of the task to terminate.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-212">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-212">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskTerminateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.terminate_2'
+    name: 'terminate(string, string, TaskTerminateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function terminate(jobId: string, taskId: string, options: TaskTerminateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-213">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-213">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-214">종료 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-214">The ID of the task to terminate.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskTerminateOptionalParams'
+          description: <span data-ttu-id="661f4-215">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-215">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-216">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-216">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskTerminateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.update'
+    name: 'update(string, string, Models.TaskUpdateOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="661f4-217">지정 된 태스크의 속성을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-217">Updates the properties of the specified task.</span></span>
+    syntax:
+      content: 'function update(jobId: string, taskId: string, options?: Models.TaskUpdateOptionalParams)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-218">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-218">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-219">업데이트 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-219">The ID of the task to update.</span></span>
+        - id: options
+          type:
+            - Models.TaskUpdateOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.TaskUpdateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.update_1'
+    name: 'update(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(jobId: string, taskId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-220">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-220">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-221">업데이트 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-221">The ID of the task to update.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-222">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-222">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskUpdateResponse>
+    package: '@azure/batch'
+  - uid: '@azure/batch.Task.update_2'
+    name: 'update(string, string, TaskUpdateOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function update(jobId: string, taskId: string, options: TaskUpdateOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: jobId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-223">태스크를 포함 하는 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-223">The ID of the job containing the task.</span></span>
+        - id: taskId
+          type:
+            - string
+          description: <span data-ttu-id="661f4-224">업데이트 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="661f4-224">The ID of the task to update.</span></span>
+        - id: options
+          type:
+            - '@azure/batch.TaskUpdateOptionalParams'
+          description: <span data-ttu-id="661f4-225">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="661f4-225">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            <span data-ttu-id="661f4-226">콜백</span><span class="sxs-lookup"><span data-stu-id="661f4-226">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.TaskUpdateResponse>
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.BatchServiceClientContext'
+    name: BatchServiceClientContext
+    spec.typeScript:
+      - name: BatchServiceClientContext
+        fullName: BatchServiceClientContext
+        uid: '@azure/batch.BatchServiceClientContext'
+  - uid: '@azure/batch.TaskAddParameter'
+    name: TaskAddParameter
+    spec.typeScript:
+      - name: TaskAddParameter
+        fullName: TaskAddParameter
+        uid: '@azure/batch.TaskAddParameter'
+  - uid: '@azure/batch.TaskAddOptionalParams'
+    name: TaskAddOptionalParams
+    spec.typeScript:
+      - name: TaskAddOptionalParams
+        fullName: TaskAddOptionalParams
+        uid: '@azure/batch.TaskAddOptionalParams'
+  - uid: '@azure/batch.TaskAddParameter[]'
+    name: 'TaskAddParameter[]'
+    spec.typeScript:
+      - name: TaskAddParameter
+        fullName: TaskAddParameter
+        uid: '@azure/batch.TaskAddParameter'
+      - name: '[]'
+        fullName: '[]'
+  - uid: ServiceCallback<@azure/batch.TaskAddCollectionResult>
+    name: TaskAddCollectionResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: TaskAddCollectionResult
+        fullName: TaskAddCollectionResult
+        uid: '@azure/batch.TaskAddCollectionResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.TaskAddCollectionOptionalParams'
+    name: TaskAddCollectionOptionalParams
+    spec.typeScript:
+      - name: TaskAddCollectionOptionalParams
+        fullName: TaskAddCollectionOptionalParams
+        uid: '@azure/batch.TaskAddCollectionOptionalParams'
+  - uid: '@azure/batch.TaskDeleteMethodOptionalParams'
+    name: TaskDeleteMethodOptionalParams
+    spec.typeScript:
+      - name: TaskDeleteMethodOptionalParams
+        fullName: TaskDeleteMethodOptionalParams
+        uid: '@azure/batch.TaskDeleteMethodOptionalParams'
+  - uid: ServiceCallback<@azure/batch.CloudTask>
+    name: CloudTask>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CloudTask
+        fullName: CloudTask
+        uid: '@azure/batch.CloudTask'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.TaskGetOptionalParams'
+    name: TaskGetOptionalParams
+    spec.typeScript:
+      - name: TaskGetOptionalParams
+        fullName: TaskGetOptionalParams
+        uid: '@azure/batch.TaskGetOptionalParams'
+  - uid: ServiceCallback<@azure/batch.CloudTaskListResult>
+    name: CloudTaskListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CloudTaskListResult
+        fullName: CloudTaskListResult
+        uid: '@azure/batch.CloudTaskListResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.TaskListOptionalParams'
+    name: TaskListOptionalParams
+    spec.typeScript:
+      - name: TaskListOptionalParams
+        fullName: TaskListOptionalParams
+        uid: '@azure/batch.TaskListOptionalParams'
+  - uid: '@azure/batch.TaskListNextOptionalParams'
+    name: TaskListNextOptionalParams
+    spec.typeScript:
+      - name: TaskListNextOptionalParams
+        fullName: TaskListNextOptionalParams
+        uid: '@azure/batch.TaskListNextOptionalParams'
+  - uid: ServiceCallback<@azure/batch.CloudTaskListSubtasksResult>
+    name: CloudTaskListSubtasksResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CloudTaskListSubtasksResult
+        fullName: CloudTaskListSubtasksResult
+        uid: '@azure/batch.CloudTaskListSubtasksResult'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/batch.TaskListSubtasksOptionalParams'
+    name: TaskListSubtasksOptionalParams
+    spec.typeScript:
+      - name: TaskListSubtasksOptionalParams
+        fullName: TaskListSubtasksOptionalParams
+        uid: '@azure/batch.TaskListSubtasksOptionalParams'
+  - uid: '@azure/batch.TaskReactivateOptionalParams'
+    name: TaskReactivateOptionalParams
+    spec.typeScript:
+      - name: TaskReactivateOptionalParams
+        fullName: TaskReactivateOptionalParams
+        uid: '@azure/batch.TaskReactivateOptionalParams'
+  - uid: '@azure/batch.TaskTerminateOptionalParams'
+    name: TaskTerminateOptionalParams
+    spec.typeScript:
+      - name: TaskTerminateOptionalParams
+        fullName: TaskTerminateOptionalParams
+        uid: '@azure/batch.TaskTerminateOptionalParams'
+  - uid: '@azure/batch.TaskUpdateOptionalParams'
+    name: TaskUpdateOptionalParams
+    spec.typeScript:
+      - name: TaskUpdateOptionalParams
+        fullName: TaskUpdateOptionalParams
+        uid: '@azure/batch.TaskUpdateOptionalParams'

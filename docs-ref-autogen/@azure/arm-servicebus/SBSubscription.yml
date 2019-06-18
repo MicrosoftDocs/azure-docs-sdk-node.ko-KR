@@ -1,0 +1,360 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-servicebus.SBSubscription'
+    name: SBSubscription
+    fullName: SBSubscription
+    children:
+      - '@azure/arm-servicebus.SBSubscription.accessedAt'
+      - '@azure/arm-servicebus.SBSubscription.autoDeleteOnIdle'
+      - '@azure/arm-servicebus.SBSubscription.countDetails'
+      - '@azure/arm-servicebus.SBSubscription.createdAt'
+      - '@azure/arm-servicebus.SBSubscription.deadLetteringOnFilterEvaluationExceptions'
+      - '@azure/arm-servicebus.SBSubscription.deadLetteringOnMessageExpiration'
+      - '@azure/arm-servicebus.SBSubscription.defaultMessageTimeToLive'
+      - '@azure/arm-servicebus.SBSubscription.duplicateDetectionHistoryTimeWindow'
+      - '@azure/arm-servicebus.SBSubscription.enableBatchedOperations'
+      - '@azure/arm-servicebus.SBSubscription.forwardDeadLetteredMessagesTo'
+      - '@azure/arm-servicebus.SBSubscription.forwardTo'
+      - '@azure/arm-servicebus.SBSubscription.id'
+      - '@azure/arm-servicebus.SBSubscription.lockDuration'
+      - '@azure/arm-servicebus.SBSubscription.maxDeliveryCount'
+      - '@azure/arm-servicebus.SBSubscription.messageCount'
+      - '@azure/arm-servicebus.SBSubscription.name'
+      - '@azure/arm-servicebus.SBSubscription.requiresSession'
+      - '@azure/arm-servicebus.SBSubscription.status'
+      - '@azure/arm-servicebus.SBSubscription.type'
+      - '@azure/arm-servicebus.SBSubscription.updatedAt'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="f0710-101">구독 리소스의 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-101">Description of subscription resource.</span></span>
+    extends:
+      name: '@azure/arm-servicebus.Resource'
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.accessedAt'
+    name: accessedAt
+    fullName: accessedAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="f0710-102">마지막으로이 구독에 수신 요청이 했습니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-102">Last time there was a receive request to this subscription.</span></span>
+      <span data-ttu-id="f0710-103">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-103">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'accessedAt?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.autoDeleteOnIdle'
+    name: autoDeleteOnIdle
+    fullName: autoDeleteOnIdle
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-104">항목을 자동으로 삭제 하는 timeSpan 유휴 간격을 ISO 8061입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-104">ISO 8061 timeSpan idle interval after which the topic is automatically deleted.</span></span> <span data-ttu-id="f0710-105">최소 기간은 5분입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-105">The minimum duration is 5 minutes.</span></span>
+    optional: true
+    syntax:
+      content: 'autoDeleteOnIdle?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.countDetails'
+    name: countDetails
+    fullName: countDetails
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f0710-106">메시지 개수 세부 정보 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-106">Message count details **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'countDetails?: MessageCountDetails'
+      return:
+        type:
+          - '@azure/arm-servicebus.MessageCountDetails'
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.createdAt'
+    name: createdAt
+    fullName: createdAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="f0710-107">메시지를 만든 정확한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-107">Exact time the message was created.</span></span>
+      <span data-ttu-id="f0710-108">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-108">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'createdAt?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.deadLetteringOnFilterEvaluationExceptions'
+    name: deadLetteringOnFilterEvaluationExceptions
+    fullName: deadLetteringOnFilterEvaluationExceptions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-109">구독 필터 평가 예외 시 지원 데드 문자에 있는지 여부를 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-109">Value that indicates whether a subscription has dead letter support on filter evaluation exceptions.</span></span>
+    optional: true
+    syntax:
+      content: 'deadLetteringOnFilterEvaluationExceptions?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.deadLetteringOnMessageExpiration'
+    name: deadLetteringOnMessageExpiration
+    fullName: deadLetteringOnMessageExpiration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-110">구독 메시지 만료 시 배달 못 한 편지 지원에 있는지 여부를 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-110">Value that indicates whether a subscription has dead letter support when a message expires.</span></span>
+    optional: true
+    syntax:
+      content: 'deadLetteringOnMessageExpiration?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.defaultMessageTimeToLive'
+    name: defaultMessageTimeToLive
+    fullName: defaultMessageTimeToLive
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f0710-111">ISO 8061 기본 메시지 범위를 라이브 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-111">ISO 8061 Default message timespan to live value.</span></span> <span data-ttu-id="f0710-112">이 기간은 메시지가 만료 되는, Service Bus에 메시지를 보내면 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-112">This is the duration after which the message expires, starting from when the message is sent to Service Bus.</span></span> <span data-ttu-id="f0710-113">이것이 TimeToLive 메시지 자체에 설정 하지 않은 경우 사용 된 기본값입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-113">This is the default value used when TimeToLive is not set on a message itself.</span></span>'
+    optional: true
+    syntax:
+      content: 'defaultMessageTimeToLive?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.duplicateDetectionHistoryTimeWindow'
+    name: duplicateDetectionHistoryTimeWindow
+    fullName: duplicateDetectionHistoryTimeWindow
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-114">중복 검색 기록 기간을 정의 하는 ISO 8601 timeSpan 구조체입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-114">ISO 8601 timeSpan structure that defines the duration of the duplicate detection history.</span></span> <span data-ttu-id="f0710-115">기본값은 10 분입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-115">The default value is 10 minutes.</span></span>
+    optional: true
+    syntax:
+      content: 'duplicateDetectionHistoryTimeWindow?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.enableBatchedOperations'
+    name: enableBatchedOperations
+    fullName: enableBatchedOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-116">서버 쪽 일괄 처리 작업 사용 되는지 여부를 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-116">Value that indicates whether server-side batched operations are enabled.</span></span>
+    optional: true
+    syntax:
+      content: 'enableBatchedOperations?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.forwardDeadLetteredMessagesTo'
+    name: forwardDeadLetteredMessagesTo
+    fullName: forwardDeadLetteredMessagesTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-117">배달 못 한 편지 메시지를 전달할 큐/항목 이름</span><span class="sxs-lookup"><span data-stu-id="f0710-117">Queue/Topic name to forward the Dead Letter message</span></span>
+    optional: true
+    syntax:
+      content: 'forwardDeadLetteredMessagesTo?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.forwardTo'
+    name: forwardTo
+    fullName: forwardTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-118">메시지를 큐/항목 이름</span><span class="sxs-lookup"><span data-stu-id="f0710-118">Queue/Topic name to forward the messages</span></span>
+    optional: true
+    syntax:
+      content: 'forwardTo?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f0710-119">리소스 Id **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-119">Resource Id **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.lockDuration'
+    name: lockDuration
+    fullName: lockDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-120">구독에 대 한 ISO 8061 잠금 기간 timespan입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-120">ISO 8061 lock duration timespan for the subscription.</span></span> <span data-ttu-id="f0710-121">기본값은 1분입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-121">The default value is 1 minute.</span></span>
+    optional: true
+    syntax:
+      content: 'lockDuration?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.maxDeliveryCount'
+    name: maxDeliveryCount
+    fullName: maxDeliveryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-122">최대 배달 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-122">Number of maximum deliveries.</span></span>
+    optional: true
+    syntax:
+      content: 'maxDeliveryCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.messageCount'
+    name: messageCount
+    fullName: messageCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="f0710-123">메시지 개수입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-123">Number of messages.</span></span>
+      <span data-ttu-id="f0710-124">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-124">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'messageCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f0710-125">리소스 이름 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-125">Resource name **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.requiresSession'
+    name: requiresSession
+    fullName: requiresSession
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="f0710-126">구독에서 세션의 개념을 지원 하는지 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-126">Value indicating if a subscription supports the concept of sessions.</span></span>
+    optional: true
+    syntax:
+      content: 'requiresSession?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.status'
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f0710-127">메시징 엔터티의 상태에 대 한 값을 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-127">Enumerates the possible values for the status of a messaging entity.</span></span> <span data-ttu-id="f0710-128">가능한 값은 다음과 같습니다. ''Active'', ''Disabled'', ''Restoring'', ''SendDisabled'', ''ReceiveDisabled'', ''Creating'', ''Deleting'', ''Renaming'', ''Unknown''</span><span class="sxs-lookup"><span data-stu-id="f0710-128">Possible values include: ''Active'', ''Disabled'', ''Restoring'', ''SendDisabled'', ''ReceiveDisabled'', ''Creating'', ''Deleting'', ''Renaming'', ''Unknown''</span></span>'
+    optional: true
+    syntax:
+      content: 'status?: EntityStatus'
+      return:
+        type:
+          - '@azure/arm-servicebus.EntityStatus'
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.type'
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="f0710-129">리소스 종류 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-129">Resource type **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-servicebus'
+  - uid: '@azure/arm-servicebus.SBSubscription.updatedAt'
+    name: updatedAt
+    fullName: updatedAt
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="f0710-130">정확한 시간 메시지 업데이트 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="f0710-130">The exact time the message was updated.</span></span>
+      <span data-ttu-id="f0710-131">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="f0710-131">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'updatedAt?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-servicebus'
+references:
+  - uid: '@azure/arm-servicebus.Resource'
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: '@azure/arm-servicebus.Resource'
+  - uid: '@azure/arm-servicebus.MessageCountDetails'
+    name: MessageCountDetails
+    spec.typeScript:
+      - name: MessageCountDetails
+        fullName: MessageCountDetails
+        uid: '@azure/arm-servicebus.MessageCountDetails'
+  - uid: '@azure/arm-servicebus.EntityStatus'
+    name: EntityStatus
+    spec.typeScript:
+      - name: EntityStatus
+        fullName: EntityStatus
+        uid: '@azure/arm-servicebus.EntityStatus'

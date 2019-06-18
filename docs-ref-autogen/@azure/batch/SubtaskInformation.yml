@@ -1,0 +1,234 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.SubtaskInformation'
+    name: SubtaskInformation
+    fullName: SubtaskInformation
+    children:
+      - '@azure/batch.SubtaskInformation.containerInfo'
+      - '@azure/batch.SubtaskInformation.endTime'
+      - '@azure/batch.SubtaskInformation.exitCode'
+      - '@azure/batch.SubtaskInformation.failureInfo'
+      - '@azure/batch.SubtaskInformation.id'
+      - '@azure/batch.SubtaskInformation.nodeInfo'
+      - '@azure/batch.SubtaskInformation.previousState'
+      - '@azure/batch.SubtaskInformation.previousStateTransitionTime'
+      - '@azure/batch.SubtaskInformation.result'
+      - '@azure/batch.SubtaskInformation.startTime'
+      - '@azure/batch.SubtaskInformation.state'
+      - '@azure/batch.SubtaskInformation.stateTransitionTime'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="14b3a-101">SubtaskInformation 나타내는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-101">An interface representing SubtaskInformation.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.containerInfo'
+    name: containerInfo
+    fullName: containerInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="14b3a-102">태스크를 실행 중인 컨테이너에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-102">Information about the container under which the task is executing.</span></span> <span data-ttu-id="14b3a-103">이 속성은 컨테이너 컨텍스트에서 작업을 실행 하는 경우에 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-103">This property is set only if the task runs in a container context.</span></span>
+    optional: true
+    syntax:
+      content: 'containerInfo?: TaskContainerExecutionInformation'
+      return:
+        type:
+          - '@azure/batch.TaskContainerExecutionInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.endTime'
+    name: endTime
+    fullName: endTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="14b3a-104">하위 태스크 완료 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-104">The time at which the subtask completed.</span></span> <span data-ttu-id="14b3a-105">이 속성은 경우에 하위 태스크 완료 됨 상태로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-105">This property is set only if the subtask is in the Completed state.</span></span>
+    optional: true
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.exitCode'
+    name: exitCode
+    fullName: exitCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="14b3a-106">하위 태스크 명령줄에 지정 된 프로그램의 종료 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-106">The exit code of the program specified on the subtask command line.</span></span> <span data-ttu-id="14b3a-107">이 속성은 하위 작업은 완료 상태인 경우에 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-107">This property is set only if the subtask is in the completed state.</span></span> <span data-ttu-id="14b3a-108">일반적으로 프로세스 종료 코드를 해당 프로세스에 대 한 응용 프로그램 개발자가 구현한 특정 규칙을 반영 합니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-108">In general, the exit code for a process reflects the specific convention implemented by the application developer for that process.</span></span> <span data-ttu-id="14b3a-109">종료 코드 값을 사용 하 여 코드에서 결정을 내릴 수 하는 경우 응용 프로그램 프로세스에서 사용 하는 종료 코드 규칙을 알고 있다고 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-109">If you use the exit code value to make decisions in your code, be sure that you know the exit code convention used by the application process.</span></span> <span data-ttu-id="14b3a-110">그러나 일괄 처리 서비스 (시간 제한 또는 API 통해 사용자 종료)로 인해 하위 태스크를 종료 하는 경우 운영 체제 정의 된 종료 코드를 표시 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-110">However, if the Batch service terminates the subtask (due to timeout, or user termination via the API) you may see an operating system-defined exit code.</span></span>'
+    optional: true
+    syntax:
+      content: 'exitCode?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.failureInfo'
+    name: failureInfo
+    fullName: failureInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="14b3a-111">있는 경우 작업 실패를 설명 하는 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-111">Information describing the task failure, if any.</span></span> <span data-ttu-id="14b3a-112">이 속성 작업은 완료 상태인 경우에 설정 되어 있으며 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-112">This property is set only if the task is in the completed state and encountered a failure.</span></span>'
+    optional: true
+    syntax:
+      content: 'failureInfo?: TaskFailureInformation'
+      return:
+        type:
+          - '@azure/batch.TaskFailureInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.id'
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="14b3a-113">하위 태스크의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-113">The ID of the subtask.</span></span>
+    optional: true
+    syntax:
+      content: 'id?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.nodeInfo'
+    name: nodeInfo
+    fullName: nodeInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="14b3a-114">하위 태스크 실행 된 계산 노드에 대 한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-114">Information about the compute node on which the subtask ran.</span></span>
+    optional: true
+    syntax:
+      content: 'nodeInfo?: ComputeNodeInformation'
+      return:
+        type:
+          - '@azure/batch.ComputeNodeInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.previousState'
+    name: previousState
+    fullName: previousState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="14b3a-115">하위 태스크의 이전 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-115">The previous state of the subtask.</span></span> <span data-ttu-id="14b3a-116">하위 태스크의 초기 실행 중 상태인 경우에이 속성이 설정 되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-116">This property is not set if the subtask is in its initial running state.</span></span> <span data-ttu-id="14b3a-117">가능한 값: ''준비'', ''실행 중'', ''완료''</span><span class="sxs-lookup"><span data-stu-id="14b3a-117">Possible values include: ''preparing'', ''running'', ''completed''</span></span>'
+    optional: true
+    syntax:
+      content: 'previousState?: SubtaskState'
+      return:
+        type:
+          - '@azure/batch.SubtaskState'
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.previousStateTransitionTime'
+    name: previousStateTransitionTime
+    fullName: previousStateTransitionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="14b3a-118">하위 태스크는 이전 상태를 입력 한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-118">The time at which the subtask entered its previous state.</span></span> <span data-ttu-id="14b3a-119">하위 태스크의 초기 실행 중 상태인 경우에이 속성이 설정 되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-119">This property is not set if the subtask is in its initial running state.</span></span>
+    optional: true
+    syntax:
+      content: 'previousStateTransitionTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.result'
+    name: result
+    fullName: result
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="14b3a-120">태스크 실행의 결과입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-120">The result of the task execution.</span></span> <span data-ttu-id="14b3a-121">값은 ''실패 하는 경우 failureInfo 속성에는 실패의 세부 정보를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-121">If the value is ''failed'', then the details of the failure can be found in the failureInfo property.</span></span> <span data-ttu-id="14b3a-122">가능한 값: ''성공'', ''실패''</span><span class="sxs-lookup"><span data-stu-id="14b3a-122">Possible values include: ''success'', ''failure''</span></span>'
+    optional: true
+    syntax:
+      content: 'result?: TaskExecutionResult'
+      return:
+        type:
+          - '@azure/batch.TaskExecutionResult'
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.startTime'
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="14b3a-123">하위 태스크는 실행을 시작한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-123">The time at which the subtask started running.</span></span> <span data-ttu-id="14b3a-124">하위 태스크를 다시 시작 되었거나 다시 시도 하는 경우 하위 태스크 실행 시작 된 가장 최근 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-124">If the subtask has been restarted or retried, this is the most recent time at which the subtask started running.</span></span>'
+    optional: true
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.state'
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="14b3a-125">하위 태스크의 현재 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-125">The current state of the subtask.</span></span> <span data-ttu-id="14b3a-126">가능한 값: ''준비'', ''실행 중'', ''완료''</span><span class="sxs-lookup"><span data-stu-id="14b3a-126">Possible values include: ''preparing'', ''running'', ''completed''</span></span>'
+    optional: true
+    syntax:
+      content: 'state?: SubtaskState'
+      return:
+        type:
+          - '@azure/batch.SubtaskState'
+    package: '@azure/batch'
+  - uid: '@azure/batch.SubtaskInformation.stateTransitionTime'
+    name: stateTransitionTime
+    fullName: stateTransitionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="14b3a-127">하위 태스크는 현재 상태를 입력 한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="14b3a-127">The time at which the subtask entered its current state.</span></span>
+    optional: true
+    syntax:
+      content: 'stateTransitionTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskContainerExecutionInformation'
+    name: TaskContainerExecutionInformation
+    spec.typeScript:
+      - name: TaskContainerExecutionInformation
+        fullName: TaskContainerExecutionInformation
+        uid: '@azure/batch.TaskContainerExecutionInformation'
+  - uid: '@azure/batch.TaskFailureInformation'
+    name: TaskFailureInformation
+    spec.typeScript:
+      - name: TaskFailureInformation
+        fullName: TaskFailureInformation
+        uid: '@azure/batch.TaskFailureInformation'
+  - uid: '@azure/batch.ComputeNodeInformation'
+    name: ComputeNodeInformation
+    spec.typeScript:
+      - name: ComputeNodeInformation
+        fullName: ComputeNodeInformation
+        uid: '@azure/batch.ComputeNodeInformation'
+  - uid: '@azure/batch.SubtaskState'
+    name: SubtaskState
+    spec.typeScript:
+      - name: SubtaskState
+        fullName: SubtaskState
+        uid: '@azure/batch.SubtaskState'
+  - uid: '@azure/batch.TaskExecutionResult'
+    name: TaskExecutionResult
+    spec.typeScript:
+      - name: TaskExecutionResult
+        fullName: TaskExecutionResult
+        uid: '@azure/batch.TaskExecutionResult'

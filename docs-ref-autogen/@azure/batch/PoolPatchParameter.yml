@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.PoolPatchParameter'
+    name: PoolPatchParameter
+    fullName: PoolPatchParameter
+    children:
+      - '@azure/batch.PoolPatchParameter.applicationPackageReferences'
+      - '@azure/batch.PoolPatchParameter.certificateReferences'
+      - '@azure/batch.PoolPatchParameter.metadata'
+      - '@azure/batch.PoolPatchParameter.startTask'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="e82ec-101">PoolPatchParameter 나타내는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-101">An interface representing PoolPatchParameter.</span></span>
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolPatchParameter.applicationPackageReferences'
+    name: applicationPackageReferences
+    fullName: applicationPackageReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="e82ec-102">풀의 각 계산 노드에 설치할 응용 프로그램 패키지의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-102">The list of application packages to be installed on each compute node in the pool.</span></span> <span data-ttu-id="e82ec-103">풀에 대 한 기존 응용 프로그램 패키지 참조를 대체합니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-103">The list replaces any existing application package references on the pool.</span></span> <span data-ttu-id="e82ec-104">응용 프로그램 패키지 참조 변경 내용 풀에 조인 하는 모든 새 계산 노드에 영향을 있지만 다시 부팅 되거나 이미지로 다시 설치 될 때까지 풀에 이미 있는 계산 노드는 영향을 주지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-104">Changes to application package references affect all new compute nodes joining the pool, but do not affect compute nodes that are already in the pool until they are rebooted or reimaged.</span></span> <span data-ttu-id="e82ec-105">지정된 된 풀에서 10 개의 응용 프로그램 패키지 참조의 최대가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-105">There is a maximum of 10 application package references on any given pool.</span></span> <span data-ttu-id="e82ec-106">생략 하면 기존 응용 프로그램 패키지 참조 되지 변경 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-106">If omitted, any existing application package references are left unchanged.</span></span>'
+    optional: true
+    syntax:
+      content: 'applicationPackageReferences?: ApplicationPackageReference[]'
+      return:
+        type:
+          - '@azure/batch.ApplicationPackageReference[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolPatchParameter.certificateReferences'
+    name: certificateReferences
+    fullName: certificateReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="e82ec-107">풀의 각 계산 노드에 설치할 인증서의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-107">A list of certificates to be installed on each compute node in the pool.</span></span> <span data-ttu-id="e82ec-108">이 요소가 있을 경우 풀에 구성 된 모든 기존 인증서 참조를 대체 합니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-108">If this element is present, it replaces any existing certificate references configured on the pool.</span></span> <span data-ttu-id="e82ec-109">생략 하면 참조 되지 모든 기존 인증서 변경 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-109">If omitted, any existing certificate references are left unchanged.</span></span> <span data-ttu-id="e82ec-110">Windows 계산 노드, Batch 서비스 위치 지정 된 인증서 저장소에 인증서를 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-110">For Windows compute nodes, the Batch service installs the certificates to the specified certificate store and location.</span></span> <span data-ttu-id="e82ec-111">Linux 계산 노드에 대 한 인증서는 태스크 작업 디렉터리 및 변수 AZ_BATCH_CERTIFICATES_DIR이이 위치에 대해 쿼리 하는 작업에 제공 되는 환경 내에 디렉터리에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-111">For Linux compute nodes, the certificates are stored in a directory inside the task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the task to query for this location.</span></span> <span data-ttu-id="e82ec-112">''원격 사용자''의 표시 여부를 사용 하 여 인증서에 대 한 ''인증서'' 디렉터리 사용자의 홈 디렉터리에 만들어집니다 (예를 들어 /home/ {사용자 이름} / 인증서) 인증서는 해당 디렉터리에 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-112">For certificates with visibility of ''remoteUser'', a ''certs'' directory is created in the user''s home directory (e.g., /home/{user-name}/certs) and certificates are placed in that directory.</span></span>'
+    optional: true
+    syntax:
+      content: 'certificateReferences?: CertificateReference[]'
+      return:
+        type:
+          - '@azure/batch.CertificateReference[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolPatchParameter.metadata'
+    name: metadata
+    fullName: metadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="e82ec-113">목록 메타 데이터로 풀과 연결 된 이름-값 쌍입니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-113">A list of name-value pairs associated with the pool as metadata.</span></span> <span data-ttu-id="e82ec-114">이 요소가 있을 경우 풀에 구성 된 기존 메타 데이터를 대체 합니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-114">If this element is present, it replaces any existing metadata configured on the pool.</span></span> <span data-ttu-id="e82ec-115">빈 컬렉션을 지정 하면 모든 메타 데이터를 풀에서 제거 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-115">If you specify an empty collection, any metadata is removed from the pool.</span></span> <span data-ttu-id="e82ec-116">기존 메타 데이터를 그대로 생략 하는 경우 변경 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-116">If omitted, any existing metadata is left unchanged.</span></span>'
+    optional: true
+    syntax:
+      content: 'metadata?: MetadataItem[]'
+      return:
+        type:
+          - '@azure/batch.MetadataItem[]'
+    package: '@azure/batch'
+  - uid: '@azure/batch.PoolPatchParameter.startTask'
+    name: startTask
+    fullName: startTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="e82ec-117">하므로 각 계산 노드에서 실행 되도록 작업을 풀에 조인 합니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-117">A task to run on each compute node as it joins the pool.</span></span> <span data-ttu-id="e82ec-118">노드는 노드를 다시 시작할 때 또는 풀에 추가 되 면 작업을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-118">The task runs when the node is added to the pool or when the node is restarted.</span></span> <span data-ttu-id="e82ec-119">이 요소가 있을 경우 모든 기존 시작 태스크를 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-119">If this element is present, it overwrites any existing start task.</span></span> <span data-ttu-id="e82ec-120">모든 기존 시작 태스크를 생략 하면 그대로 변경 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e82ec-120">If omitted, any existing start task is left unchanged.</span></span>'
+    optional: true
+    syntax:
+      content: 'startTask?: StartTask'
+      return:
+        type:
+          - '@azure/batch.StartTask'
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.ApplicationPackageReference[]'
+    name: 'ApplicationPackageReference[]'
+    spec.typeScript:
+      - name: ApplicationPackageReference
+        fullName: ApplicationPackageReference
+        uid: '@azure/batch.ApplicationPackageReference'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.CertificateReference[]'
+    name: 'CertificateReference[]'
+    spec.typeScript:
+      - name: CertificateReference
+        fullName: CertificateReference
+        uid: '@azure/batch.CertificateReference'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.MetadataItem[]'
+    name: 'MetadataItem[]'
+    spec.typeScript:
+      - name: MetadataItem
+        fullName: MetadataItem
+        uid: '@azure/batch.MetadataItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/batch.StartTask'
+    name: StartTask
+    spec.typeScript:
+      - name: StartTask
+        fullName: StartTask
+        uid: '@azure/batch.StartTask'
