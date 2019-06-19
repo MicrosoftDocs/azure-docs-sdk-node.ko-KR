@@ -1,0 +1,178 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation'
+    name: JobReleaseTaskExecutionInformation
+    fullName: JobReleaseTaskExecutionInformation
+    children:
+      - '@azure/batch.JobReleaseTaskExecutionInformation.containerInfo'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.endTime'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.exitCode'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.failureInfo'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.result'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.startTime'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.state'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.taskRootDirectory'
+      - '@azure/batch.JobReleaseTaskExecutionInformation.taskRootDirectoryUrl'
+    langs:
+      - typeScript
+    type: interface
+    summary: JobReleaseTaskExecutionInformation 나타내는 인터페이스입니다.
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.containerInfo'
+    name: containerInfo
+    fullName: containerInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크를 실행 중인 컨테이너에 대 한 정보를 제공 합니다. 이 속성은 컨테이너 컨텍스트에서 작업을 실행 하는 경우에 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'containerInfo?: TaskContainerExecutionInformation'
+      return:
+        type:
+          - '@azure/batch.TaskContainerExecutionInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.endTime'
+    name: endTime
+    fullName: endTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업 해제 태스크가 완료 된 시간입니다. 이 속성은 작업 완료 상태에 있을 경우에 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.exitCode'
+    name: exitCode
+    fullName: exitCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크 명령줄에 지정 된 프로그램의 종료 코드입니다. 이 매개 변수는 작업은 완료 상태인 경우에 반환 됩니다. 프로세스 종료 코드를 해당 프로세스에 대 한 응용 프로그램 개발자가 구현한 특정 규칙을 반영 합니다. 종료 코드 값을 사용 하 여 코드에서 결정을 내릴 수 하는 경우 응용 프로그램 프로세스에서 사용 하는 종료 코드 규칙을 알고 있다고 해야 합니다. 참고 종료 코드를 사용 하는 프로세스를 강제로 종료할 때와 같은 계산 노드의 운영 체제에서 생성 될 수도 있습니다.
+    optional: true
+    syntax:
+      content: 'exitCode?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.failureInfo'
+    name: failureInfo
+    fullName: failureInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 있는 경우 작업 실패를 설명 하는 정보입니다. 이 속성 작업은 완료 상태인 경우에 설정 되어 있으며 오류가 발생 했습니다.
+    optional: true
+    syntax:
+      content: 'failureInfo?: TaskFailureInformation'
+      return:
+        type:
+          - '@azure/batch.TaskFailureInformation'
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.result'
+    name: result
+    fullName: result
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '태스크 실행의 결과입니다. 값은 ''실패 하는 경우 failureInfo 속성에는 실패의 세부 정보를 찾을 수 있습니다. 가능한 값: ''성공'', ''실패'''
+    optional: true
+    syntax:
+      content: 'result?: TaskExecutionResult'
+      return:
+        type:
+          - '@azure/batch.TaskExecutionResult'
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.startTime'
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 태스크가 실행되기 시작한 시간입니다. 태스크가 다시 시작되거나 다시 시도된 경우 이는 태스크가 실행을 시작한 가장 최근의 시간을 나타냅니다.
+    syntax:
+      content: 'startTime: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.state'
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '계산 노드에서 작업 릴리스 태스크의 현재 상태입니다. 가능한 값: ''실행 중'', ''완료'''
+    syntax:
+      content: 'state: JobReleaseTaskState'
+      return:
+        type:
+          - '@azure/batch.JobReleaseTaskState'
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.taskRootDirectory'
+    name: taskRootDirectory
+    fullName: taskRootDirectory
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계산 노드에서 작업 릴리스 태스크의 루트 디렉터리입니다. 로그 파일과 같은 태스크에 의해 생성 된 파일을 검색 하려면이 경로 사용할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'taskRootDirectory?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+  - uid: '@azure/batch.JobReleaseTaskExecutionInformation.taskRootDirectoryUrl'
+    name: taskRootDirectoryUrl
+    fullName: taskRootDirectoryUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 계산 노드에서 작업 릴리스 태스크의 루트 디렉터리 URL입니다.
+    optional: true
+    syntax:
+      content: 'taskRootDirectoryUrl?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/batch'
+references:
+  - uid: '@azure/batch.TaskContainerExecutionInformation'
+    name: TaskContainerExecutionInformation
+    spec.typeScript:
+      - name: TaskContainerExecutionInformation
+        fullName: TaskContainerExecutionInformation
+        uid: '@azure/batch.TaskContainerExecutionInformation'
+  - uid: '@azure/batch.TaskFailureInformation'
+    name: TaskFailureInformation
+    spec.typeScript:
+      - name: TaskFailureInformation
+        fullName: TaskFailureInformation
+        uid: '@azure/batch.TaskFailureInformation'
+  - uid: '@azure/batch.TaskExecutionResult'
+    name: TaskExecutionResult
+    spec.typeScript:
+      - name: TaskExecutionResult
+        fullName: TaskExecutionResult
+        uid: '@azure/batch.TaskExecutionResult'
+  - uid: '@azure/batch.JobReleaseTaskState'
+    name: JobReleaseTaskState
+    spec.typeScript:
+      - name: JobReleaseTaskState
+        fullName: JobReleaseTaskState
+        uid: '@azure/batch.JobReleaseTaskState'
