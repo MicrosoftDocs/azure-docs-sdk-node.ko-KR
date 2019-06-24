@@ -5,9 +5,9 @@ items:
     fullName: StorageAccount
     children:
       - '@azure/arm-storage.StorageAccount.accessTier'
+      - '@azure/arm-storage.StorageAccount.azureFilesIdentityBasedAuthentication'
       - '@azure/arm-storage.StorageAccount.creationTime'
       - '@azure/arm-storage.StorageAccount.customDomain'
-      - '@azure/arm-storage.StorageAccount.enableAzureFilesAadIntegration'
       - '@azure/arm-storage.StorageAccount.enableHttpsTrafficOnly'
       - '@azure/arm-storage.StorageAccount.encryption'
       - '@azure/arm-storage.StorageAccount.failoverInProgress'
@@ -33,7 +33,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: <span data-ttu-id="93f7d-101">저장소 계정입니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-101">The storage account.</span></span>
+    summary: <span data-ttu-id="d6442-101">저장소 계정입니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-101">The storage account.</span></span>
     extends:
       name: '@azure/arm-storage.TrackedResource'
     package: '@azure/arm-storage'
@@ -45,14 +45,29 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-102">저장소 계정 위치 종류에 필요한 =는 blob Storage입니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-102">Required for storage accounts where kind = BlobStorage.</span></span> <span data-ttu-id="93f7d-103">청구에 사용 되는 액세스 계층.</span><span class="sxs-lookup"><span data-stu-id="93f7d-103">The access tier used for billing.</span></span>
-      <span data-ttu-id="93f7d-104">가능한 값은 다음과 같습니다. '핫', '쿨' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-104">Possible values include: 'Hot', 'Cool' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-102">저장소 계정 위치 종류에 필요한 =는 blob Storage입니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-102">Required for storage accounts where kind = BlobStorage.</span></span> <span data-ttu-id="d6442-103">청구에 사용 되는 액세스 계층.</span><span class="sxs-lookup"><span data-stu-id="d6442-103">The access tier used for billing.</span></span>
+      <span data-ttu-id="d6442-104">가능한 값은 다음과 같습니다. '핫', '쿨' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-104">Possible values include: 'Hot', 'Cool' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'accessTier?: AccessTier'
       return:
         type:
           - '@azure/arm-storage.AccessTier'
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccount.azureFilesIdentityBasedAuthentication'
+    name: azureFilesIdentityBasedAuthentication
+    fullName: azureFilesIdentityBasedAuthentication
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d6442-105">Azure Files에 대 한 id 기반 인증 설정을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-105">Provides the identity based authentication settings for Azure Files.</span></span>
+    optional: true
+    syntax:
+      content: 'azureFilesIdentityBasedAuthentication?: AzureFilesIdentityBasedAuthentication'
+      return:
+        type:
+          - '@azure/arm-storage.AzureFilesIdentityBasedAuthentication'
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.StorageAccount.creationTime'
     name: creationTime
@@ -62,8 +77,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-105">Utc에서를 만든 날짜 및 저장소 계정의 시간을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-105">Gets the creation date and time of the storage account in UTC.</span></span>
-      <span data-ttu-id="93f7d-106">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-106">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-106">Utc에서를 만든 날짜 및 저장소 계정의 시간을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-106">Gets the creation date and time of the storage account in UTC.</span></span>
+      <span data-ttu-id="d6442-107">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-107">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'creationTime?: Date'
@@ -79,29 +94,14 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-107">사용자를이 저장소 계정에 할당 된 사용자 지정 도메인을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-107">Gets the custom domain the user assigned to this storage account.</span></span>
-      <span data-ttu-id="93f7d-108">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-108">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-108">사용자를이 저장소 계정에 할당 된 사용자 지정 도메인을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-108">Gets the custom domain the user assigned to this storage account.</span></span>
+      <span data-ttu-id="d6442-109">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-109">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'customDomain?: CustomDomain'
       return:
         type:
           - '@azure/arm-storage.CustomDomain'
-    package: '@azure/arm-storage'
-  - uid: '@azure/arm-storage.StorageAccount.enableAzureFilesAadIntegration'
-    name: enableAzureFilesAadIntegration
-    fullName: enableAzureFilesAadIntegration
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: <span data-ttu-id="93f7d-109">경우 SMB에 대 한 Azure 파일 AAD 통합을 사용 하도록 설정을 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-109">Enables Azure Files AAD Integration for SMB if sets to true.</span></span>
-    optional: true
-    syntax:
-      content: 'enableAzureFilesAadIntegration?: undefined | false | true'
-      return:
-        type:
-          - undefined | false | true
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.StorageAccount.enableHttpsTrafficOnly'
     name: enableHttpsTrafficOnly
@@ -110,7 +110,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="93f7d-110">경우에 저장소 서비스에만 https 트래픽을 사용 하면 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-110">Allows https traffic only to storage service if sets to true.</span></span>
+    summary: <span data-ttu-id="d6442-110">경우에 저장소 서비스에만 https 트래픽을 사용 하면 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-110">Allows https traffic only to storage service if sets to true.</span></span>
     optional: true
     syntax:
       content: 'enableHttpsTrafficOnly?: undefined | false | true'
@@ -126,8 +126,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-111">계정에서 암호화 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-111">Gets the encryption settings on the account.</span></span> <span data-ttu-id="93f7d-112">지정 하지 않으면 계정 암호화있지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-112">If unspecified, the account is unencrypted.</span></span>
-      <span data-ttu-id="93f7d-113">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-113">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-111">계정에서 암호화 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-111">Gets the encryption settings on the account.</span></span> <span data-ttu-id="d6442-112">지정 하지 않으면 계정 암호화있지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-112">If unspecified, the account is unencrypted.</span></span>
+      <span data-ttu-id="d6442-113">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-113">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'encryption?: Encryption'
@@ -143,8 +143,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-114">장애 조치 진행에서 중이면 값 true가 됩니다, 그리고 그렇지 않으면 null이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-114">If the failover is in progress, the value will be true, otherwise, it will be null.</span></span>
-      <span data-ttu-id="93f7d-115">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-115">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-114">장애 조치 진행에서 중이면 값 true가 됩니다, 그리고 그렇지 않으면 null이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-114">If the failover is in progress, the value will be true, otherwise, it will be null.</span></span>
+      <span data-ttu-id="d6442-115">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-115">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'failoverInProgress?: undefined | false | true'
@@ -159,7 +159,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-116">지역에서 복제 통계 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-116">Geo Replication Stats **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-116">지역에서 복제 통계 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-116">Geo Replication Stats **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'geoReplicationStats?: GeoReplicationStats'
@@ -174,7 +174,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-117">리소스에 대 한 정규화 된 리소스 Id입니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-117">Fully qualified resource Id for the resource.</span></span> <span data-ttu-id="93f7d-118">Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} **NOTE: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-118">Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-117">리소스에 대 한 정규화 된 리소스 Id입니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-117">Fully qualified resource Id for the resource.</span></span> <span data-ttu-id="d6442-118">Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} **NOTE: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-118">Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'id?: undefined | string'
@@ -189,7 +189,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="93f7d-119">리소스의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-119">The identity of the resource.</span></span>
+    summary: <span data-ttu-id="d6442-119">리소스의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-119">The identity of the resource.</span></span>
     optional: true
     syntax:
       content: 'identity?: Identity'
@@ -204,7 +204,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="93f7d-120">경우에 사용할 계정 HierarchicalNamespace을 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-120">Account HierarchicalNamespace enabled if sets to true.</span></span>
+    summary: <span data-ttu-id="d6442-120">경우에 사용할 계정 HierarchicalNamespace을 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-120">Account HierarchicalNamespace enabled if sets to true.</span></span>
     optional: true
     syntax:
       content: 'isHnsEnabled?: undefined | false | true'
@@ -219,7 +219,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-121">종류를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-121">Gets the Kind.</span></span> <span data-ttu-id="93f7d-122">가능한 값은 다음과 같습니다. ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage'' **NOTE: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-122">Possible values include: ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-121">종류를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-121">Gets the Kind.</span></span> <span data-ttu-id="d6442-122">가능한 값은 다음과 같습니다. ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage'' **NOTE: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-122">Possible values include: ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'kind?: Kind'
@@ -235,8 +235,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-123">가장 최근의 인스턴스의 보조 위치로 장애 조치의 타임 스탬프를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-123">Gets the timestamp of the most recent instance of a failover to the secondary location.</span></span> <span data-ttu-id="93f7d-124">가장 최근 타임 스탬프만 유지 됩니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-124">Only the most recent timestamp is retained.</span></span> <span data-ttu-id="93f7d-125">없 었 인스턴스를 장애 조치 하는 경우에이 요소가 반환 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-125">This element is not returned if there has never been a failover instance.</span></span> <span data-ttu-id="93f7d-126">AccountType Standard_GRS 인지 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-126">Only available if the accountType is Standard_GRS or Standard_RAGRS.</span></span>
-      <span data-ttu-id="93f7d-127">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-127">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-123">가장 최근의 인스턴스의 보조 위치로 장애 조치의 타임 스탬프를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-123">Gets the timestamp of the most recent instance of a failover to the secondary location.</span></span> <span data-ttu-id="d6442-124">가장 최근 타임 스탬프만 유지 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-124">Only the most recent timestamp is retained.</span></span> <span data-ttu-id="d6442-125">없 었 인스턴스를 장애 조치 하는 경우에이 요소가 반환 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-125">This element is not returned if there has never been a failover instance.</span></span> <span data-ttu-id="d6442-126">AccountType Standard_GRS 인지 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-126">Only available if the accountType is Standard_GRS or Standard_RAGRS.</span></span>
+      <span data-ttu-id="d6442-127">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-127">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'lastGeoFailoverTime?: Date'
@@ -251,7 +251,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="93f7d-128">리소스의 현재 위치는 지리적 위치</span><span class="sxs-lookup"><span data-stu-id="93f7d-128">The geo-location where the resource lives</span></span>
+    summary: <span data-ttu-id="d6442-128">리소스의 현재 위치는 지리적 위치</span><span class="sxs-lookup"><span data-stu-id="d6442-128">The geo-location where the resource lives</span></span>
     syntax:
       content: 'location: string'
       return:
@@ -265,7 +265,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-129">리소스의 이름을 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-129">The name of the resource **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-129">리소스의 이름을 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-129">The name of the resource **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'name?: undefined | string'
@@ -280,7 +280,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-130">규칙 집합을 네트워크 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-130">Network rule set **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-130">규칙 집합을 네트워크 **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-130">Network rule set **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'networkRuleSet?: NetworkRuleSet'
@@ -296,9 +296,9 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-131">공용 blob, 큐 또는 테이블 개체를 검색 하는 데 사용 되는 Url을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-131">Gets the URLs that are used to perform a retrieval of a public blob, queue, or table object.</span></span>
-      <span data-ttu-id="93f7d-132">Standard_ZRS 및 Premium_LRS 계정에만 blob 끝점을 반환 하는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-132">Note that Standard_ZRS and Premium_LRS accounts only return the blob endpoint.</span></span>
-      <span data-ttu-id="93f7d-133">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-133">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-131">공용 blob, 큐 또는 테이블 개체를 검색 하는 데 사용 되는 Url을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-131">Gets the URLs that are used to perform a retrieval of a public blob, queue, or table object.</span></span>
+      <span data-ttu-id="d6442-132">Standard_ZRS 및 Premium_LRS 계정에만 blob 끝점을 반환 하는 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-132">Note that Standard_ZRS and Premium_LRS accounts only return the blob endpoint.</span></span>
+      <span data-ttu-id="d6442-133">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-133">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'primaryEndpoints?: Endpoints'
@@ -314,8 +314,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-134">저장소 계정에 대 한 기본 데이터 센터의 위치를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-134">Gets the location of the primary data center for the storage account.</span></span>
-      <span data-ttu-id="93f7d-135">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-135">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-134">저장소 계정에 대 한 기본 데이터 센터의 위치를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-134">Gets the location of the primary data center for the storage account.</span></span>
+      <span data-ttu-id="d6442-135">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-135">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'primaryLocation?: undefined | string'
@@ -330,7 +330,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-136">작업이 호출 되었을 때 저장소 계정의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-136">Gets the status of the storage account at the time the operation was called.</span></span> <span data-ttu-id="93f7d-137">가능한 값은 다음과 같습니다. ''만들기'', ''ResolvingDNS'', ''성공'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-137">Possible values include: ''Creating'', ''ResolvingDNS'', ''Succeeded'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-136">작업이 호출 되었을 때 저장소 계정의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-136">Gets the status of the storage account at the time the operation was called.</span></span> <span data-ttu-id="d6442-137">가능한 값은 다음과 같습니다. ''만들기'', ''ResolvingDNS'', ''성공'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-137">Possible values include: ''Creating'', ''ResolvingDNS'', ''Succeeded'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'provisioningState?: ProvisioningState'
@@ -346,8 +346,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-138">저장소 계정의 보조 위치에서 공용 blob, 큐 또는 테이블 개체의 검색을 수행 하는 데 사용 되는 Url을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-138">Gets the URLs that are used to perform a retrieval of a public blob, queue, or table object from the secondary location of the storage account.</span></span> <span data-ttu-id="93f7d-139">SKU 이름은 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-139">Only available if the SKU name is Standard_RAGRS.</span></span>
-      <span data-ttu-id="93f7d-140">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-140">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-138">저장소 계정의 보조 위치에서 공용 blob, 큐 또는 테이블 개체의 검색을 수행 하는 데 사용 되는 Url을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-138">Gets the URLs that are used to perform a retrieval of a public blob, queue, or table object from the secondary location of the storage account.</span></span> <span data-ttu-id="d6442-139">SKU 이름은 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-139">Only available if the SKU name is Standard_RAGRS.</span></span>
+      <span data-ttu-id="d6442-140">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-140">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'secondaryEndpoints?: Endpoints'
@@ -363,8 +363,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-141">저장소 계정에 대 한 지리적 복제 보조 데이터베이스의 위치를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-141">Gets the location of the geo-replicated secondary for the storage account.</span></span> <span data-ttu-id="93f7d-142">AccountType Standard_GRS 인지 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-142">Only available if the accountType is Standard_GRS or Standard_RAGRS.</span></span>
-      <span data-ttu-id="93f7d-143">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-143">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-141">저장소 계정에 대 한 지리적 복제 보조 데이터베이스의 위치를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-141">Gets the location of the geo-replicated secondary for the storage account.</span></span> <span data-ttu-id="d6442-142">AccountType Standard_GRS 인지 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-142">Only available if the accountType is Standard_GRS or Standard_RAGRS.</span></span>
+      <span data-ttu-id="d6442-143">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-143">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'secondaryLocation?: undefined | string'
@@ -380,8 +380,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-144">SKU를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-144">Gets the SKU.</span></span>
-      <span data-ttu-id="93f7d-145">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-145">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-144">SKU를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-144">Gets the SKU.</span></span>
+      <span data-ttu-id="d6442-145">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-145">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'sku?: Sku'
@@ -396,7 +396,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-146">저장소 계정의 기본 위치 인지 사용 가능 여부를 나타내는 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-146">Gets the status indicating whether the primary location of the storage account is available or unavailable.</span></span> <span data-ttu-id="93f7d-147">가능한 값: ''사용 가능'', ''사용할 수 없음'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-147">Possible values include: ''available'', ''unavailable'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-146">저장소 계정의 기본 위치 인지 사용 가능 여부를 나타내는 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-146">Gets the status indicating whether the primary location of the storage account is available or unavailable.</span></span> <span data-ttu-id="d6442-147">가능한 값: ''사용 가능'', ''사용할 수 없음'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-147">Possible values include: ''available'', ''unavailable'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'statusOfPrimary?: AccountStatus'
@@ -411,7 +411,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="93f7d-148">저장소 계정의 보조 위치 인지 사용 가능 여부를 나타내는 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-148">Gets the status indicating whether the secondary location of the storage account is available or unavailable.</span></span> <span data-ttu-id="93f7d-149">SKU 이름이 Standard_GRS 또는 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-149">Only available if the SKU name is Standard_GRS or Standard_RAGRS.</span></span> <span data-ttu-id="93f7d-150">가능한 값: ''사용 가능'', ''사용할 수 없음'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-150">Possible values include: ''available'', ''unavailable'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    summary: '<span data-ttu-id="d6442-148">저장소 계정의 보조 위치 인지 사용 가능 여부를 나타내는 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-148">Gets the status indicating whether the secondary location of the storage account is available or unavailable.</span></span> <span data-ttu-id="d6442-149">SKU 이름이 Standard_GRS 또는 Standard_RAGRS 하는 경우에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-149">Only available if the SKU name is Standard_GRS or Standard_RAGRS.</span></span> <span data-ttu-id="d6442-150">가능한 값: ''사용 가능'', ''사용할 수 없음'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-150">Possible values include: ''available'', ''unavailable'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
     optional: true
     syntax:
       content: 'statusOfSecondary?: AccountStatus'
@@ -426,7 +426,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="93f7d-151">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-151">Resource tags.</span></span>
+    summary: <span data-ttu-id="d6442-151">리소스 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-151">Resource tags.</span></span>
     optional: true
     syntax:
       content: 'tags?: undefined | [key: string]: string'
@@ -442,8 +442,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="93f7d-152">리소스의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-152">The type of the resource.</span></span> <span data-ttu-id="93f7d-153">예:-microsoft.compute/virtualmachines 또는 microsoft.storage/storageaccounts 합니다.</span><span class="sxs-lookup"><span data-stu-id="93f7d-153">Ex- Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts.</span></span>
-      <span data-ttu-id="93f7d-154">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="93f7d-154">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="d6442-152">리소스의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-152">The type of the resource.</span></span> <span data-ttu-id="d6442-153">예:-microsoft.compute/virtualmachines 또는 microsoft.storage/storageaccounts 합니다.</span><span class="sxs-lookup"><span data-stu-id="d6442-153">Ex- Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts.</span></span>
+      <span data-ttu-id="d6442-154">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="d6442-154">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'type?: undefined | string'
@@ -464,6 +464,12 @@ references:
       - name: AccessTier
         fullName: AccessTier
         uid: '@azure/arm-storage.AccessTier'
+  - uid: '@azure/arm-storage.AzureFilesIdentityBasedAuthentication'
+    name: AzureFilesIdentityBasedAuthentication
+    spec.typeScript:
+      - name: AzureFilesIdentityBasedAuthentication
+        fullName: AzureFilesIdentityBasedAuthentication
+        uid: '@azure/arm-storage.AzureFilesIdentityBasedAuthentication'
   - uid: '@azure/arm-storage.CustomDomain'
     name: CustomDomain
     spec.typeScript:

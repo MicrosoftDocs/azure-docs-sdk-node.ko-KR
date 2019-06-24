@@ -24,11 +24,12 @@ items:
       - '@azure/arm-containerregistry.Run.startTime'
       - '@azure/arm-containerregistry.Run.status'
       - '@azure/arm-containerregistry.Run.task'
+      - '@azure/arm-containerregistry.Run.timerTrigger'
       - '@azure/arm-containerregistry.Run.type'
     langs:
       - typeScript
     type: interface
-    summary: <span data-ttu-id="a90ab-101">실행 리소스 속성</span><span class="sxs-lookup"><span data-stu-id="a90ab-101">Run resource properties</span></span>
+    summary: <span data-ttu-id="863d4-101">실행 리소스 속성</span><span class="sxs-lookup"><span data-stu-id="863d4-101">Run resource properties</span></span>
     extends:
       name: '@azure/arm-containerregistry.ProxyResource'
     package: '@azure/arm-containerregistry'
@@ -39,7 +40,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-102">실행 에이전트 컴퓨터 구성입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-102">The machine configuration of the run agent.</span></span>
+    summary: <span data-ttu-id="863d4-102">실행 에이전트 컴퓨터 구성입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-102">The machine configuration of the run agent.</span></span>
     optional: true
     syntax:
       content: 'agentConfiguration?: AgentProperties'
@@ -54,7 +55,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-103">실행 예약 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-103">The time the run was scheduled.</span></span>
+    summary: <span data-ttu-id="863d4-103">실행 예약 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-103">The time the run was scheduled.</span></span>
     optional: true
     syntax:
       content: 'createTime?: Date'
@@ -69,7 +70,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-104">이 실행 중에 기록 된 사용자 지정 레지스트리의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-104">The list of custom registries that were logged in during this run.</span></span>
+    summary: <span data-ttu-id="863d4-104">이 실행 중에 기록 된 사용자 지정 레지스트리의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-104">The list of custom registries that were logged in during this run.</span></span>
     optional: true
     syntax:
       content: 'customRegistries?: string[]'
@@ -84,7 +85,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-105">실행 완료 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-105">The time the run finished.</span></span>
+    summary: <span data-ttu-id="863d4-105">실행 완료 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-105">The time the run finished.</span></span>
     optional: true
     syntax:
       content: 'finishTime?: Date'
@@ -100,8 +101,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="a90ab-106">리소스 id입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-106">The resource ID.</span></span>
-      <span data-ttu-id="a90ab-107">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="a90ab-107">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="863d4-106">리소스 id입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-106">The resource ID.</span></span>
+      <span data-ttu-id="863d4-107">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="863d4-107">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'id?: undefined | string'
@@ -116,7 +117,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-108">실행을 발생 시킨 이미지 업데이트 트리거입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-108">The image update trigger that caused the run.</span></span> <span data-ttu-id="a90ab-109">이 작업에 구성 된 기본 이미지 트리거 경우 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-109">This is applicable if the task has base image trigger configured.</span></span>
+    summary: <span data-ttu-id="863d4-108">실행을 발생 시킨 이미지 업데이트 트리거입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-108">The image update trigger that caused the run.</span></span> <span data-ttu-id="863d4-109">이 작업에 구성 된 기본 이미지 트리거 경우 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-109">This is applicable if the task has base image trigger configured.</span></span>
     optional: true
     syntax:
       content: 'imageUpdateTrigger?: ImageUpdateTrigger'
@@ -131,7 +132,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="a90ab-110">보관을 사용할지 여부를 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-110">The value that indicates whether archiving is enabled or not.</span></span> <span data-ttu-id="a90ab-111">기본값: false.</span><span class="sxs-lookup"><span data-stu-id="a90ab-111">Default value: false.</span></span>'
+    summary: '<span data-ttu-id="863d4-110">보관을 사용할지 여부를 나타내는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-110">The value that indicates whether archiving is enabled or not.</span></span> <span data-ttu-id="863d4-111">기본값: false.</span><span class="sxs-lookup"><span data-stu-id="863d4-111">Default value: false.</span></span>'
     optional: true
     syntax:
       content: 'isArchiveEnabled?: undefined | false | true'
@@ -146,7 +147,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-112">마지막으로 업데이트 실행에 대 한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-112">The last updated time for the run.</span></span>
+    summary: <span data-ttu-id="863d4-112">마지막으로 업데이트 실행에 대 한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-112">The last updated time for the run.</span></span>
     optional: true
     syntax:
       content: 'lastUpdatedTime?: Date'
@@ -162,8 +163,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="a90ab-113">리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-113">The name of the resource.</span></span>
-      <span data-ttu-id="a90ab-114">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="a90ab-114">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="863d4-113">리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-113">The name of the resource.</span></span>
+      <span data-ttu-id="863d4-114">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="863d4-114">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'name?: undefined | string'
@@ -178,7 +179,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-115">실행에서 생성 된 모든 이미지의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-115">The list of all images that were generated from the run.</span></span> <span data-ttu-id="a90ab-116">기본 이미지 종속성을 생성 하는 실행 하는 경우에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-116">This is applicable if the run generates base image dependencies.</span></span>
+    summary: <span data-ttu-id="863d4-115">실행에서 생성 된 모든 이미지의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-115">The list of all images that were generated from the run.</span></span> <span data-ttu-id="863d4-116">기본 이미지 종속성을 생성 하는 실행 하는 경우에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-116">This is applicable if the run generates base image dependencies.</span></span>
     optional: true
     syntax:
       content: 'outputImages?: ImageDescriptor[]'
@@ -193,7 +194,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-117">실행 발생 기준이 플랫폼 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-117">The platform properties against which the run will happen.</span></span>
+    summary: <span data-ttu-id="863d4-117">실행 발생 기준이 플랫폼 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-117">The platform properties against which the run will happen.</span></span>
     optional: true
     syntax:
       content: 'platform?: PlatformProperties'
@@ -208,7 +209,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="a90ab-118">실행의 프로비저닝 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-118">The provisioning state of a run.</span></span> <span data-ttu-id="a90ab-119">가능한 값은 다음과 같습니다. ''만들기'', ''업데이트'', ''삭제'', '' 성공 '', ''실패'', ''취소''</span><span class="sxs-lookup"><span data-stu-id="a90ab-119">Possible values include: ''Creating'', ''Updating'', ''Deleting'', ''Succeeded'', ''Failed'', ''Canceled''</span></span>'
+    summary: '<span data-ttu-id="863d4-118">실행의 프로비저닝 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-118">The provisioning state of a run.</span></span> <span data-ttu-id="863d4-119">가능한 값은 다음과 같습니다. ''만들기'', ''업데이트'', ''삭제'', '' 성공 '', ''실패'', ''취소''</span><span class="sxs-lookup"><span data-stu-id="863d4-119">Possible values include: ''Creating'', ''Updating'', ''Deleting'', ''Succeeded'', ''Failed'', ''Canceled''</span></span>'
     optional: true
     syntax:
       content: 'provisioningState?: ProvisioningState'
@@ -224,8 +225,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="a90ab-120">실행은 예약 된 백 엔드 시스템에서 받은 오류 메시지입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-120">The error message received from backend systems after the run is scheduled.</span></span>
-      <span data-ttu-id="a90ab-121">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="a90ab-121">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="863d4-120">실행은 예약 된 백 엔드 시스템에서 받은 오류 메시지입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-120">The error message received from backend systems after the run is scheduled.</span></span>
+      <span data-ttu-id="863d4-121">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="863d4-121">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'runErrorMessage?: undefined | string'
@@ -240,7 +241,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-122">실행에 대 한 고유 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-122">The unique identifier for the run.</span></span>
+    summary: <span data-ttu-id="863d4-122">실행에 대 한 고유 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-122">The unique identifier for the run.</span></span>
     optional: true
     syntax:
       content: 'runId?: undefined | string'
@@ -255,7 +256,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="a90ab-123">실행의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-123">The type of run.</span></span> <span data-ttu-id="a90ab-124">가능한 값은 다음과 같습니다. ''QuickBuild'', ''QuickRun'', ''AutoBuild'', ''AutoRun''</span><span class="sxs-lookup"><span data-stu-id="a90ab-124">Possible values include: ''QuickBuild'', ''QuickRun'', ''AutoBuild'', ''AutoRun''</span></span>'
+    summary: '<span data-ttu-id="863d4-123">실행의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-123">The type of run.</span></span> <span data-ttu-id="863d4-124">가능한 값은 다음과 같습니다. ''QuickBuild'', ''QuickRun'', ''AutoBuild'', ''AutoRun''</span><span class="sxs-lookup"><span data-stu-id="863d4-124">Possible values include: ''QuickBuild'', ''QuickRun'', ''AutoBuild'', ''AutoRun''</span></span>'
     optional: true
     syntax:
       content: 'runType?: RunType'
@@ -270,7 +271,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-125">사용 된 자격 증명의 범위를이 실행 하는 동안 원본 레지스트리에 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-125">The scope of the credentials that were used to login to the source registry during this run.</span></span>
+    summary: <span data-ttu-id="863d4-125">사용 된 자격 증명의 범위를이 실행 하는 동안 원본 레지스트리에 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-125">The scope of the credentials that were used to login to the source registry during this run.</span></span>
     optional: true
     syntax:
       content: 'sourceRegistryAuth?: undefined | string'
@@ -285,7 +286,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-126">실행을 발생 시킨 소스 트리거입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-126">The source trigger that caused the run.</span></span>
+    summary: <span data-ttu-id="863d4-126">실행을 발생 시킨 소스 트리거입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-126">The source trigger that caused the run.</span></span>
     optional: true
     syntax:
       content: 'sourceTrigger?: SourceTriggerDescriptor'
@@ -300,7 +301,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-127">실행 시작 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-127">The time the run started.</span></span>
+    summary: <span data-ttu-id="863d4-127">실행 시작 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-127">The time the run started.</span></span>
     optional: true
     syntax:
       content: 'startTime?: Date'
@@ -315,7 +316,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="a90ab-128">실행의 현재 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-128">The current status of the run.</span></span> <span data-ttu-id="a90ab-129">가능한 값은 다음과 같습니다. ''Queued'', ''Started'', ''Running'', ''Succeeded'', ''Failed'', ''Canceled'', ''Error'', ''Timeout''</span><span class="sxs-lookup"><span data-stu-id="a90ab-129">Possible values include: ''Queued'', ''Started'', ''Running'', ''Succeeded'', ''Failed'', ''Canceled'', ''Error'', ''Timeout''</span></span>'
+    summary: '<span data-ttu-id="863d4-128">실행의 현재 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-128">The current status of the run.</span></span> <span data-ttu-id="863d4-129">가능한 값은 다음과 같습니다. ''Queued'', ''Started'', ''Running'', ''Succeeded'', ''Failed'', ''Canceled'', ''Error'', ''Timeout''</span><span class="sxs-lookup"><span data-stu-id="863d4-129">Possible values include: ''Queued'', ''Started'', ''Running'', ''Succeeded'', ''Failed'', ''Canceled'', ''Error'', ''Timeout''</span></span>'
     optional: true
     syntax:
       content: 'status?: RunStatus'
@@ -330,13 +331,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="a90ab-130">실행 되도록 예약 된 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-130">The task against which run was scheduled.</span></span>
+    summary: <span data-ttu-id="863d4-130">실행 되도록 예약 된 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-130">The task against which run was scheduled.</span></span>
     optional: true
     syntax:
       content: 'task?: undefined | string'
       return:
         type:
           - undefined | string
+    package: '@azure/arm-containerregistry'
+  - uid: '@azure/arm-containerregistry.Run.timerTrigger'
+    name: timerTrigger
+    fullName: timerTrigger
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="863d4-131">실행을 발생 시킨 타이머 트리거입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-131">The timer trigger that caused the run.</span></span>
+    optional: true
+    syntax:
+      content: 'timerTrigger?: TimerTriggerDescriptor'
+      return:
+        type:
+          - '@azure/arm-containerregistry.TimerTriggerDescriptor'
     package: '@azure/arm-containerregistry'
   - uid: '@azure/arm-containerregistry.Run.type'
     name: type
@@ -346,8 +362,8 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="a90ab-131">리소스의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a90ab-131">The type of the resource.</span></span>
-      <span data-ttu-id="a90ab-132">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="a90ab-132">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+      <span data-ttu-id="863d4-132">리소스의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="863d4-132">The type of the resource.</span></span>
+      <span data-ttu-id="863d4-133">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="863d4-133">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
     optional: true
     syntax:
       content: 'type?: undefined | string'
@@ -412,3 +428,9 @@ references:
       - name: RunStatus
         fullName: RunStatus
         uid: '@azure/arm-containerregistry.RunStatus'
+  - uid: '@azure/arm-containerregistry.TimerTriggerDescriptor'
+    name: TimerTriggerDescriptor
+    spec.typeScript:
+      - name: TimerTriggerDescriptor
+        fullName: TimerTriggerDescriptor
+        uid: '@azure/arm-containerregistry.TimerTriggerDescriptor'

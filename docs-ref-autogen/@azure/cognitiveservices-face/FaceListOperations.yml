@@ -32,7 +32,7 @@ items:
     langs:
       - typeScript
     type: class
-    summary: <span data-ttu-id="9c33d-101">FaceListOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-101">Class representing a FaceListOperations.</span></span>
+    summary: <span data-ttu-id="3c7f3-101">FaceListOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-101">Class representing a FaceListOperations.</span></span>
     package: '@azure/cognitiveservices-face'
   - uid: '@azure/cognitiveservices-face.FaceListOperations.addFaceFromStream_2'
     name: 'addFaceFromStream(string, msRest.HttpRequestBody, FaceListAddFaceFromStreamOptionalParams, ServiceCallback<PersistedFace>)'
@@ -47,20 +47,20 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-102">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-102">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-102">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-102">Id referencing a particular face list.</span></span>
         - id: image
           type:
             - msRest.HttpRequestBody
-          description: <span data-ttu-id="9c33d-103">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-103">An image stream.</span></span>
+          description: <span data-ttu-id="3c7f3-103">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-103">An image stream.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.FaceListAddFaceFromStreamOptionalParams'
-          description: <span data-ttu-id="9c33d-104">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-104">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-104">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-104">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="9c33d-105">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-105">The callback</span></span>
+            <span data-ttu-id="3c7f3-105">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-105">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListAddFaceFromStreamResponse>
@@ -72,19 +72,32 @@ items:
     langs:
       - typeScript
     summary: |-
-      <span data-ttu-id="9c33d-106">얼굴을 얼굴 목록에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-106">Add a face to a face list.</span></span> <span data-ttu-id="9c33d-107">입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-107">The input face is specified as an image with a targetFace rectangle.</span></span>
-      <span data-ttu-id="9c33d-108">추가 얼굴을 나타내는 persistedFaceId를 반환 하 고 persistedFaceId 만료 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-108">It returns a persistedFaceId representing the added face, and persistedFaceId will not expire.</span></span>
+      <span data-ttu-id="3c7f3-106">얼굴을 얼굴 1,000까지 지정 된 글꼴 목록에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-106">Add a face to a specified face list, up to 1,000 faces.</span></span>
+      <br /> <span data-ttu-id="3c7f3-107">이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-107">To deal with an image contains multiple faces, input face can be specified as an image with a targetFace rectangle.</span></span> <span data-ttu-id="3c7f3-108">추가 글꼴을 나타내는 persistedFaceId를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-108">It returns a persistedFaceId representing the added face.</span></span> <span data-ttu-id="3c7f3-109">이미지가 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-109">No image will be stored.</span></span> <span data-ttu-id="3c7f3-110">추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [FaceList-삭제 Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395251) 또는 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-110">Only the extracted face feature will be stored on server until [FaceList - Delete Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395251) or [FaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) is called.</span></span>
+      <br /> <span data-ttu-id="3c7f3-111">생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-111">Note persistedFaceId is different from faceId generated by [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).</span></span>
+      * <span data-ttu-id="3c7f3-112">얼굴 이미지 품질이 향상 탐지 및 인식 정밀도 의미합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-112">Higher face image quality means better detection and recognition precision.</span></span> <span data-ttu-id="3c7f3-113">고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-113">Please consider high-quality faces: frontal, clear, and face size is 200x200 pixels (100 pixels between eyes) or bigger.</span></span>
+      * <span data-ttu-id="3c7f3-114">JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-114">JPEG, PNG, GIF (the first frame), and BMP format are supported.</span></span> <span data-ttu-id="3c7f3-115">허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-115">The allowed image file size is from 1KB to 6MB.</span></span>
+      * <span data-ttu-id="3c7f3-116">"targetFace" 사각형 한 면을 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-116">"targetFace" rectangle should contain one face.</span></span> <span data-ttu-id="3c7f3-117">0 개 이상의 얼굴 오류로 간주 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-117">Zero or multiple faces will be regarded as an error.</span></span> <span data-ttu-id="3c7f3-118">제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-118">If the provided "targetFace" rectangle is not returned from [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), there’s no guarantee to detect and add the face successfully.</span></span>
+      * <span data-ttu-id="3c7f3-119">검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-119">Out of detectable face size (36x36 - 4096x4096 pixels), large head-pose, or large occlusions will cause failures.</span></span>
+      * <span data-ttu-id="3c7f3-120">동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-120">Adding/deleting faces to/from a same face list are processed sequentially and to/from different face lists are in parallel.</span></span>
+      * <span data-ttu-id="3c7f3-121">최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-121">The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels.</span></span>
+      <span data-ttu-id="3c7f3-122">1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-122">Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.</span></span>
+      * <span data-ttu-id="3c7f3-123">다른 'detectionModel' 값을 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-123">Different 'detectionModel' values can be provided.</span></span> <span data-ttu-id="3c7f3-124">사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span><span class="sxs-lookup"><span data-stu-id="3c7f3-124">To use and compare different detection models, please refer to [How to specify a detection model](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span></span>
+      | <span data-ttu-id="3c7f3-125">모델</span><span class="sxs-lookup"><span data-stu-id="3c7f3-125">Model</span></span> | <span data-ttu-id="3c7f3-126">권장 사용법-case(s)</span><span class="sxs-lookup"><span data-stu-id="3c7f3-126">Recommended use-case(s)</span></span> |
+      | ---------- | -------- |
+      | <span data-ttu-id="3c7f3-127">'detection_01':</span><span class="sxs-lookup"><span data-stu-id="3c7f3-127">'detection_01':</span></span> | <span data-ttu-id="3c7f3-128">에 대 한 기본 검색 모델 [FaceList-추가</span><span class="sxs-lookup"><span data-stu-id="3c7f3-128">The default detection model for [FaceList - Add</span></span>
+      <span data-ttu-id="3c7f3-129">Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250).</span><span class="sxs-lookup"><span data-stu-id="3c7f3-129">Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250).</span></span> <span data-ttu-id="3c7f3-130">거의 정면 얼굴 감지에 대 한 권장 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-130">Recommend for near frontal face detection.</span></span> <span data-ttu-id="3c7f3-131">매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-131">For scenarios with exceptionally large angle (head-pose) faces, occluded faces or wrong image orientation, the faces in such cases may not be detected.</span></span> <span data-ttu-id="3c7f3-132">| | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-132">| | 'detection_02': | Detection model released in 2019 May with improved accuracy especially on small, side and blurry faces.</span></span> |
     syntax:
       content: 'function addFaceFromStream(faceListId: string, image: msRest.HttpRequestBody, options?: Models.FaceListAddFaceFromStreamOptionalParams)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-109">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-109">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-133">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-133">Id referencing a particular face list.</span></span>
         - id: image
           type:
             - msRest.HttpRequestBody
-          description: <span data-ttu-id="9c33d-110">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-110">An image stream.</span></span>
+          description: <span data-ttu-id="3c7f3-134">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-134">An image stream.</span></span>
         - id: options
           type:
             - Models.FaceListAddFaceFromStreamOptionalParams
@@ -107,16 +120,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-111">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-111">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-135">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-135">Id referencing a particular face list.</span></span>
         - id: image
           type:
             - msRest.HttpRequestBody
-          description: <span data-ttu-id="9c33d-112">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-112">An image stream.</span></span>
+          description: <span data-ttu-id="3c7f3-136">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-136">An image stream.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="9c33d-113">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-113">The callback</span></span>
+            <span data-ttu-id="3c7f3-137">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-137">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListAddFaceFromStreamResponse>
@@ -134,20 +147,20 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-114">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-114">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-138">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-138">Id referencing a particular face list.</span></span>
         - id: url
           type:
             - string
-          description: <span data-ttu-id="9c33d-115">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="9c33d-115">Publicly reachable URL of an image</span></span>
+          description: <span data-ttu-id="3c7f3-139">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="3c7f3-139">Publicly reachable URL of an image</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.FaceListAddFaceFromUrlOptionalParams'
-          description: <span data-ttu-id="9c33d-116">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-116">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-140">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-140">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="9c33d-117">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-117">The callback</span></span>
+            <span data-ttu-id="3c7f3-141">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-141">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListAddFaceFromUrlResponse>
@@ -159,19 +172,32 @@ items:
     langs:
       - typeScript
     summary: |-
-      <span data-ttu-id="9c33d-118">얼굴을 얼굴 목록에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-118">Add a face to a face list.</span></span> <span data-ttu-id="9c33d-119">입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-119">The input face is specified as an image with a targetFace rectangle.</span></span>
-      <span data-ttu-id="9c33d-120">추가 얼굴을 나타내는 persistedFaceId를 반환 하 고 persistedFaceId 만료 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-120">It returns a persistedFaceId representing the added face, and persistedFaceId will not expire.</span></span>
+      <span data-ttu-id="3c7f3-142">얼굴을 얼굴 1,000까지 지정 된 글꼴 목록에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-142">Add a face to a specified face list, up to 1,000 faces.</span></span>
+      <br /> <span data-ttu-id="3c7f3-143">이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-143">To deal with an image contains multiple faces, input face can be specified as an image with a targetFace rectangle.</span></span> <span data-ttu-id="3c7f3-144">추가 글꼴을 나타내는 persistedFaceId를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-144">It returns a persistedFaceId representing the added face.</span></span> <span data-ttu-id="3c7f3-145">이미지가 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-145">No image will be stored.</span></span> <span data-ttu-id="3c7f3-146">추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [FaceList-삭제 Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395251) 또는 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-146">Only the extracted face feature will be stored on server until [FaceList - Delete Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395251) or [FaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) is called.</span></span>
+      <br /> <span data-ttu-id="3c7f3-147">생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-147">Note persistedFaceId is different from faceId generated by [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).</span></span>
+      * <span data-ttu-id="3c7f3-148">얼굴 이미지 품질이 향상 탐지 및 인식 정밀도 의미합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-148">Higher face image quality means better detection and recognition precision.</span></span> <span data-ttu-id="3c7f3-149">고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-149">Please consider high-quality faces: frontal, clear, and face size is 200x200 pixels (100 pixels between eyes) or bigger.</span></span>
+      * <span data-ttu-id="3c7f3-150">JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-150">JPEG, PNG, GIF (the first frame), and BMP format are supported.</span></span> <span data-ttu-id="3c7f3-151">허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-151">The allowed image file size is from 1KB to 6MB.</span></span>
+      * <span data-ttu-id="3c7f3-152">"targetFace" 사각형 한 면을 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-152">"targetFace" rectangle should contain one face.</span></span> <span data-ttu-id="3c7f3-153">0 개 이상의 얼굴 오류로 간주 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-153">Zero or multiple faces will be regarded as an error.</span></span> <span data-ttu-id="3c7f3-154">제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-154">If the provided "targetFace" rectangle is not returned from [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), there’s no guarantee to detect and add the face successfully.</span></span>
+      * <span data-ttu-id="3c7f3-155">검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-155">Out of detectable face size (36x36 - 4096x4096 pixels), large head-pose, or large occlusions will cause failures.</span></span>
+      * <span data-ttu-id="3c7f3-156">동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-156">Adding/deleting faces to/from a same face list are processed sequentially and to/from different face lists are in parallel.</span></span>
+      * <span data-ttu-id="3c7f3-157">최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-157">The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels.</span></span>
+      <span data-ttu-id="3c7f3-158">1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-158">Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.</span></span>
+      * <span data-ttu-id="3c7f3-159">다른 'detectionModel' 값을 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-159">Different 'detectionModel' values can be provided.</span></span> <span data-ttu-id="3c7f3-160">사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span><span class="sxs-lookup"><span data-stu-id="3c7f3-160">To use and compare different detection models, please refer to [How to specify a detection model](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span></span>
+      | <span data-ttu-id="3c7f3-161">모델</span><span class="sxs-lookup"><span data-stu-id="3c7f3-161">Model</span></span> | <span data-ttu-id="3c7f3-162">권장 사용법-case(s)</span><span class="sxs-lookup"><span data-stu-id="3c7f3-162">Recommended use-case(s)</span></span> |
+      | ---------- | -------- |
+      | <span data-ttu-id="3c7f3-163">'detection_01':</span><span class="sxs-lookup"><span data-stu-id="3c7f3-163">'detection_01':</span></span> | <span data-ttu-id="3c7f3-164">에 대 한 기본 검색 모델 [FaceList-추가</span><span class="sxs-lookup"><span data-stu-id="3c7f3-164">The default detection model for [FaceList - Add</span></span>
+      <span data-ttu-id="3c7f3-165">Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250).</span><span class="sxs-lookup"><span data-stu-id="3c7f3-165">Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250).</span></span> <span data-ttu-id="3c7f3-166">거의 정면 얼굴 감지에 대 한 권장 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-166">Recommend for near frontal face detection.</span></span> <span data-ttu-id="3c7f3-167">매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-167">For scenarios with exceptionally large angle (head-pose) faces, occluded faces or wrong image orientation, the faces in such cases may not be detected.</span></span> <span data-ttu-id="3c7f3-168">| | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-168">| | 'detection_02': | Detection model released in 2019 May with improved accuracy especially on small, side and blurry faces.</span></span> |
     syntax:
       content: 'function addFaceFromUrl(faceListId: string, url: string, options?: Models.FaceListAddFaceFromUrlOptionalParams)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-121">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-121">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-169">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-169">Id referencing a particular face list.</span></span>
         - id: url
           type:
             - string
-          description: <span data-ttu-id="9c33d-122">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="9c33d-122">Publicly reachable URL of an image</span></span>
+          description: <span data-ttu-id="3c7f3-170">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="3c7f3-170">Publicly reachable URL of an image</span></span>
         - id: options
           type:
             - Models.FaceListAddFaceFromUrlOptionalParams
@@ -194,16 +220,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-123">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-123">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-171">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-171">Id referencing a particular face list.</span></span>
         - id: url
           type:
             - string
-          description: <span data-ttu-id="9c33d-124">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="9c33d-124">Publicly reachable URL of an image</span></span>
+          description: <span data-ttu-id="3c7f3-172">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="3c7f3-172">Publicly reachable URL of an image</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="9c33d-125">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-125">The callback</span></span>
+            <span data-ttu-id="3c7f3-173">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-173">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListAddFaceFromUrlResponse>
@@ -221,16 +247,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-126">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-126">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-174">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-174">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.FaceListCreateOptionalParams'
-          description: <span data-ttu-id="9c33d-127">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-127">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-175">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-175">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-128">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-128">The callback</span></span>
+            <span data-ttu-id="3c7f3-176">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-176">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -241,21 +267,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: |-
-      <span data-ttu-id="9c33d-129">사용자 지정 faceListId, 이름, 선택적 userData 및 recognitionModel 빈 얼굴 목록을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-129">Create an empty face list with user-specified faceListId, name, an optional userData and recognitionModel.</span></span> <span data-ttu-id="9c33d-130">최대 64 얼굴 목록은 하나의 구독에 허용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-130">Up to 64 face lists are allowed in one subscription.</span></span>
-      <br /> <span data-ttu-id="9c33d-131">얼굴 목록 얼굴, 최대 1,000 개의 얼굴은 및에서 사용 하는 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-131">Face list is a list of faces, up to 1,000 faces, and used by [Face - Find Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).</span></span>
-      <br /> <span data-ttu-id="9c33d-132">를 만든 후 사용자가 사용 해야 [FaceList-추가 얼굴](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250) 얼굴을 가져오려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-132">After creation, user should use [FaceList - Add Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250) to import the faces.</span></span> <span data-ttu-id="9c33d-133">될 때까지 서버에 저장 된 얼굴 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-133">Faces are stored on server until [FaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) is called.</span></span>
-      <br /> <span data-ttu-id="9c33d-134">마찬가지로 유명인 유사한 얼굴을 필터링 하는 유사한 얼굴 찾기 같은 시나리오에 사용 됩니다 찾거나 식별 조명으로 방식으로 직면 하 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-134">Find Similar is used for scenario like finding celebrity-like faces, similar face filtering, or as a light way face identification.</span></span> <span data-ttu-id="9c33d-135">사용자를 식별 하는 실제 사용 하 여가 있는 경우 사용 하 여 하지만 [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /
-      [LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) 하 고 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-135">But if the actual use is to identify person, please use [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /
-      [LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) and [Face - Identify](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239).</span></span>
-      <br /> <span data-ttu-id="9c33d-136">보세요 [LargeFaceList](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) 얼굴 번호 큰 경우.</span><span class="sxs-lookup"><span data-stu-id="9c33d-136">Please consider [LargeFaceList](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) when the face number is large.</span></span> <span data-ttu-id="9c33d-137">최대 1,000,000 얼굴 지원할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-137">It can support up to 1,000,000 faces.</span></span> <span data-ttu-id="9c33d-138">'recognitionModel' 얼굴 목록을 사용 하 여 연결을 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-138">'recognitionModel' should be specified to associate with this face list.</span></span> <span data-ttu-id="9c33d-139">'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-139">The default value for 'recognitionModel' is 'recognition_01', if the latest model needed, please explicitly specify the model you need in this parameter.</span></span> <span data-ttu-id="9c33d-140">기존 얼굴 목록에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-140">New faces that are added to an existing face list will use the recognition model that's already associated with the collection.</span></span> <span data-ttu-id="9c33d-141">얼굴 목록에서 기존 얼굴 기능 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-141">Existing face features in a face list can't be updated to features extracted by another version of recognition model.</span></span>
+    summary: "<span data-ttu-id=\"3c7f3-177\">사용자 지정 faceListId, 이름, 선택적 userData 및 recognitionModel 빈 얼굴 목록을 만듭니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-177\">Create an empty face list with user-specified faceListId, name, an optional userData and recognitionModel.</span></span> <span data-ttu-id=\"3c7f3-178\">최대 64 얼굴 목록은 하나의 구독에 허용 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-178\">Up to 64 face lists are allowed in one subscription.</span></span>\n<br /> <span data-ttu-id=\"3c7f3-179\">얼굴 목록 얼굴, 최대 1,000 개의 얼굴은 및에서 사용 하는 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-179\">Face list is a list of faces, up to 1,000 faces, and used by [Face - Find Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).</span></span>\n<br /> <span data-ttu-id=\"3c7f3-180\">를 만든 후 사용자가 사용 해야 [FaceList-추가 얼굴](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250) 얼굴을 가져오려고 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-180\">After creation, user should use [FaceList - Add Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250) to import the faces.</span></span> <span data-ttu-id=\"3c7f3-181\">이미지가 저장 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-181\">No image will be stored.</span></span> <span data-ttu-id=\"3c7f3-182\">추출 된 얼굴 기능만 될 때까지 서버에 저장 된 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-182\">Only the extracted face features are stored on server until [FaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) is called.</span></span>\n<br /> <span data-ttu-id=\"3c7f3-183\">마찬가지로 유명인 유사한 얼굴을 필터링 하는 유사한 얼굴 찾기 같은 시나리오에 사용 됩니다 찾거나 식별 조명으로 방식으로 직면 하 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-183\">Find Similar is used for scenario like finding celebrity-like faces, similar face filtering, or as a light way face identification.</span></span> <span data-ttu-id=\"3c7f3-184\">사용자를 식별 하는 실제 사용 하 여가 있는 경우 사용 하 여 하지만 [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /\n[LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) 하 고 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-184\">But if the actual use is to identify person, please use [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /\n[LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) and [Face - Identify](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239).</span></span>\n<br /> <span data-ttu-id=\"3c7f3-185\">보세요 [LargeFaceList](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) 얼굴 번호 큰 경우.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-185\">Please consider [LargeFaceList](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) when the face number is large.</span></span> <span data-ttu-id=\"3c7f3-186\">최대 1,000,000 얼굴 지원할 수 있습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-186\">It can support up to 1,000,000 faces.</span></span>\n<br /><span data-ttu-id=\"3c7f3-187\">'recognitionModel' 얼굴 목록을 사용 하 여 연결을 지정 해야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-187\">'recognitionModel' should be specified to associate with this face list.</span></span> <span data-ttu-id=\"3c7f3-188\">'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-188\">The default value for 'recognitionModel' is 'recognition_01', if the latest model needed, please explicitly specify the model you need in this parameter.</span></span> <span data-ttu-id=\"3c7f3-189\">기존 얼굴 목록에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-189\">New faces that are added to an existing face list will use the recognition model that's already associated with the collection.</span></span> <span data-ttu-id=\"3c7f3-190\">얼굴 목록에서 기존 얼굴 기능 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-190\">Existing face features in a face list can't be updated to features extracted by another version of recognition model.</span></span>\n* <span data-ttu-id=\"3c7f3-191\">'recognition_01': 에 대 한 기본 인식 모델 [FaceList-만들기](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-191\">'recognition_01': The default recognition model for [FaceList- Create](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b).</span></span> <span data-ttu-id=\"3c7f3-192\">이러한 모든 얼굴 목록은 2019 년 3 월 이전에 만든이 인식 모델을 사용 하 여 결합 된입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-192\">All those face lists created before 2019 March are bonded with this recognition model.</span></span>\n* <span data-ttu-id=\"3c7f3-193\">'recognition_02': 2019 년 3 월에 릴리스된 인식 모델입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-193\">'recognition_02': Recognition model released in 2019 March.</span></span> <span data-ttu-id=\"3c7f3-194\">전체 정확도 'recognition_01'에 비해 향상 되어 있으므로 'recognition_02' 것이 좋습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c7f3-194\">'recognition_02' is recommended since its\_overall accuracy is improved compared with 'recognition_01'.</span></span>"
     syntax:
       content: 'function create(faceListId: string, options?: Models.FaceListCreateOptionalParams)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-142">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-142">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-195">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-195">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - Models.FaceListCreateOptionalParams
@@ -278,12 +297,12 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-143">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-143">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-196">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-196">Id referencing a particular face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-144">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-144">The callback</span></span>
+            <span data-ttu-id="3c7f3-197">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-197">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -295,19 +314,19 @@ items:
     langs:
       - typeScript
     summary: |-
-      <span data-ttu-id="9c33d-145">기존 얼굴을 얼굴 목록 (한 persistedFaceId 및는 faceListId로 지정)에서 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-145">Delete an existing face from a face list (given by a persistedFaceId and a faceListId).</span></span>
-      <span data-ttu-id="9c33d-146">지속형된 이미지 면에 관련 된도 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-146">Persisted image related to the face will also be deleted.</span></span>
+      <span data-ttu-id="3c7f3-198">지정한 faceListId persistedFaceId로 얼굴 목록에서 얼굴을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-198">Delete a face from a face list by specified faceListId and persistedFaceId.</span></span>
+      <br /> <span data-ttu-id="3c7f3-199">동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-199">Adding/deleting faces to/from a same face list are processed sequentially and to/from different face lists are in parallel.</span></span>
     syntax:
       content: 'function deleteFace(faceListId: string, persistedFaceId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-147">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-147">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-200">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-200">Id referencing a particular face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="9c33d-148">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-148">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="3c7f3-201">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-201">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -330,20 +349,20 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-149">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-149">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-202">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-202">Id referencing a particular face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="9c33d-150">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-150">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="3c7f3-203">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-203">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="9c33d-151">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-151">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-204">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-204">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-152">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-152">The callback</span></span>
+            <span data-ttu-id="3c7f3-205">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-205">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -361,16 +380,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-153">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-153">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-206">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-206">Id referencing a particular face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="9c33d-154">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-154">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="3c7f3-207">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-207">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-155">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-155">The callback</span></span>
+            <span data-ttu-id="3c7f3-208">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-208">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -381,14 +400,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="9c33d-156">FaceListId에 따라 기존 얼굴 목록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-156">Delete an existing face list according to faceListId.</span></span> <span data-ttu-id="9c33d-157">얼굴을 얼굴 목록의 이미지도 삭제 됩니다 유지 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-157">Persisted face images in the face list will also be deleted.</span></span>
+    summary: <span data-ttu-id="3c7f3-209">지정 된 글꼴 목록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-209">Delete a specified face list.</span></span>
     syntax:
       content: 'function deleteMethod(faceListId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-158">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-158">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-210">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-210">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -411,16 +430,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-159">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-159">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-211">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-211">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="9c33d-160">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-160">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-212">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-212">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-161">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-161">The callback</span></span>
+            <span data-ttu-id="3c7f3-213">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-213">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -438,12 +457,12 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-162">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-162">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-214">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-214">Id referencing a particular face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-163">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-163">The callback</span></span>
+            <span data-ttu-id="3c7f3-215">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-215">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -454,7 +473,7 @@ items:
     type: constructor
     langs:
       - typeScript
-    summary: <span data-ttu-id="9c33d-164">FaceListOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-164">Create a FaceListOperations.</span></span>
+    summary: <span data-ttu-id="3c7f3-216">FaceListOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-216">Create a FaceListOperations.</span></span>
     syntax:
       content: 'new FaceListOperations(client: FaceClientContext)'
       parameters:
@@ -462,7 +481,7 @@ items:
           type:
             - '@azure/cognitiveservices-face.FaceClientContext'
           description: |
-            <span data-ttu-id="9c33d-165">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-165">Reference to the service client.</span></span>
+            <span data-ttu-id="3c7f3-217">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-217">Reference to the service client.</span></span>
     package: '@azure/cognitiveservices-face'
   - uid: '@azure/cognitiveservices-face.FaceListOperations.get_2'
     name: 'get(string, FaceListGetOptionalParams, ServiceCallback<FaceList>)'
@@ -477,16 +496,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-166">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-166">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-218">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-218">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.FaceListGetOptionalParams'
-          description: <span data-ttu-id="9c33d-167">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-167">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-219">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-219">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.FaceList>
           description: |
-            <span data-ttu-id="9c33d-168">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-168">The callback</span></span>
+            <span data-ttu-id="3c7f3-220">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-220">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListGetResponse>
@@ -497,14 +516,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="9c33d-169">얼굴 목록을 faceListId, 이름, userData, recognitionModel 및 얼굴 목록에서 얼굴을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-169">Retrieve a face list’s faceListId, name, userData, recognitionModel and faces in the face list.</span></span>'
+    summary: '<span data-ttu-id="3c7f3-221">얼굴 목록을 faceListId, 이름, userData, recognitionModel 및 얼굴 목록에서 얼굴을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-221">Retrieve a face list’s faceListId, name, userData, recognitionModel and faces in the face list.</span></span>'
     syntax:
       content: 'function get(faceListId: string, options?: Models.FaceListGetOptionalParams)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-170">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-170">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-222">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-222">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - Models.FaceListGetOptionalParams
@@ -527,12 +546,12 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-171">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-171">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-223">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-223">Id referencing a particular face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.FaceList>
           description: |
-            <span data-ttu-id="9c33d-172">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-172">The callback</span></span>
+            <span data-ttu-id="3c7f3-224">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-224">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListGetResponse>
@@ -550,12 +569,12 @@ items:
         - id: options
           type:
             - '@azure/cognitiveservices-face.FaceListListOptionalParams'
-          description: <span data-ttu-id="9c33d-173">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-173">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-225">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-225">The optional parameters</span></span>
         - id: callback
           type:
             - 'ServiceCallback<@azure/cognitiveservices-face.FaceList[]>'
           description: |
-            <span data-ttu-id="9c33d-174">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-174">The callback</span></span>
+            <span data-ttu-id="3c7f3-226">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-226">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListListResponse>
@@ -567,8 +586,8 @@ items:
     langs:
       - typeScript
     summary: |-
-      <span data-ttu-id="9c33d-175">얼굴 목록 faceListId, 이름, 사용자 데이터 및 recognitionModel를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-175">List face lists’ faceListId, name, userData and recognitionModel.</span></span> <br />
-      <span data-ttu-id="9c33d-176">FaceList 사용 하 여 내에서 얼굴 정보를 가져오려면 [FaceList-Get](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524c)</span><span class="sxs-lookup"><span data-stu-id="9c33d-176">To get face information inside faceList use [FaceList - Get](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524c)</span></span>
+      <span data-ttu-id="3c7f3-227">얼굴 목록 faceListId, 이름, 사용자 데이터 및 recognitionModel를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-227">List face lists’ faceListId, name, userData and recognitionModel.</span></span> <br />
+      <span data-ttu-id="3c7f3-228">FaceList 사용 하 여 내에서 얼굴 정보를 가져오려면 [FaceList-Get](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524c)</span><span class="sxs-lookup"><span data-stu-id="3c7f3-228">To get face information inside faceList use [FaceList - Get](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524c)</span></span>
     syntax:
       content: 'function list(options?: Models.FaceListListOptionalParams)'
       parameters:
@@ -595,7 +614,7 @@ items:
           type:
             - 'ServiceCallback<@azure/cognitiveservices-face.FaceList[]>'
           description: |
-            <span data-ttu-id="9c33d-177">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-177">The callback</span></span>
+            <span data-ttu-id="3c7f3-229">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-229">The callback</span></span>
       return:
         type:
           - Promise<Models.FaceListListResponse>
@@ -613,16 +632,16 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-178">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-178">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-230">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-230">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.FaceListUpdateOptionalParams'
-          description: <span data-ttu-id="9c33d-179">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c33d-179">The optional parameters</span></span>
+          description: <span data-ttu-id="3c7f3-231">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="3c7f3-231">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-180">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-180">The callback</span></span>
+            <span data-ttu-id="3c7f3-232">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-232">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -633,14 +652,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="9c33d-181">얼굴 목록의 정보를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-181">Update information of a face list.</span></span>
+    summary: <span data-ttu-id="3c7f3-233">얼굴 목록의 정보를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-233">Update information of a face list.</span></span>
     syntax:
       content: 'function update(faceListId: string, options?: Models.FaceListUpdateOptionalParams)'
       parameters:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-182">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-182">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-234">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-234">Id referencing a particular face list.</span></span>
         - id: options
           type:
             - Models.FaceListUpdateOptionalParams
@@ -663,12 +682,12 @@ items:
         - id: faceListId
           type:
             - string
-          description: <span data-ttu-id="9c33d-183">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="9c33d-183">Id referencing a particular face list.</span></span>
+          description: <span data-ttu-id="3c7f3-235">특정 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="3c7f3-235">Id referencing a particular face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="9c33d-184">콜백</span><span class="sxs-lookup"><span data-stu-id="9c33d-184">The callback</span></span>
+            <span data-ttu-id="3c7f3-236">콜백</span><span class="sxs-lookup"><span data-stu-id="3c7f3-236">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>

@@ -32,9 +32,12 @@ items:
       - '@azure/arm-storage.BlobContainers.lease_2'
       - '@azure/arm-storage.BlobContainers.lease'
       - '@azure/arm-storage.BlobContainers.lease_1'
-      - '@azure/arm-storage.BlobContainers.list'
       - '@azure/arm-storage.BlobContainers.list_2'
+      - '@azure/arm-storage.BlobContainers.list'
       - '@azure/arm-storage.BlobContainers.list_1'
+      - '@azure/arm-storage.BlobContainers.listNext'
+      - '@azure/arm-storage.BlobContainers.listNext_2'
+      - '@azure/arm-storage.BlobContainers.listNext_1'
       - '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy'
       - '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy_2'
       - '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy_1'
@@ -47,7 +50,7 @@ items:
     langs:
       - typeScript
     type: class
-    summary: <span data-ttu-id="f4790-101">BlobContainers 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-101">Class representing a BlobContainers.</span></span>
+    summary: <span data-ttu-id="84f9c-101">BlobContainers 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-101">Class representing a BlobContainers.</span></span>
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.BlobContainers.constructor'
     name: BlobContainers(StorageManagementClientContext)
@@ -55,7 +58,7 @@ items:
     type: constructor
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-102">BlobContainers를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-102">Create a BlobContainers.</span></span>
+    summary: <span data-ttu-id="84f9c-102">BlobContainers를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-102">Create a BlobContainers.</span></span>
     syntax:
       content: 'new BlobContainers(client: StorageManagementClientContext)'
       parameters:
@@ -63,7 +66,7 @@ items:
           type:
             - '@azure/arm-storage.StorageManagementClientContext'
           description: |
-            <span data-ttu-id="f4790-103">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-103">Reference to the service client.</span></span>
+            <span data-ttu-id="84f9c-103">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-103">Reference to the service client.</span></span>
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.BlobContainers.clearLegalHold'
     name: 'clearLegalHold(string, string, string, string[], msRest.RequestOptionsBase)'
@@ -71,26 +74,26 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-104">태그를 보유 하는 법적 지웁니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-104">Clears legal hold tags.</span></span> <span data-ttu-id="f4790-105">동일 하거나 존재 하지 않는 태그를 지우면 멱 등 원 작업에서 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-105">Clearing the same or non-existent tag results in an idempotent operation.</span></span> <span data-ttu-id="f4790-106">ClearLegalHold만 요청에 지정 된 태그를 지웁니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-106">ClearLegalHold clears out only the specified tags in the request.</span></span>
+    summary: <span data-ttu-id="84f9c-104">태그를 보유 하는 법적 지웁니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-104">Clears legal hold tags.</span></span> <span data-ttu-id="84f9c-105">동일 하거나 존재 하지 않는 태그를 지우면 멱 등 원 작업에서 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-105">Clearing the same or non-existent tag results in an idempotent operation.</span></span> <span data-ttu-id="84f9c-106">ClearLegalHold만 요청에 지정 된 태그를 지웁니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-106">ClearLegalHold clears out only the specified tags in the request.</span></span>
     syntax:
       content: 'function clearLegalHold(resourceGroupName: string, accountName: string, containerName: string, tags: string[], options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-107">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-107">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-108">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-108">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-107">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-107">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-108">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-108">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-109">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-109">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-110">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-110">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-109">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-109">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-110">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-110">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-111">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-111">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-112">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-112">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-113">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-113">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-111">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-111">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-112">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-112">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-113">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-113">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: tags
           type:
             - 'string[]'
-          description: <span data-ttu-id="f4790-114">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-114">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
+          description: <span data-ttu-id="84f9c-114">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-114">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -113,28 +116,28 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-115">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-115">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-116">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-116">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-115">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-115">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-116">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-116">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-117">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-117">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-118">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-118">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-117">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-117">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-118">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-118">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-119">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-119">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-120">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-120">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-121">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-121">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-119">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-119">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-120">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-120">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-121">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-121">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: tags
           type:
             - 'string[]'
-          description: <span data-ttu-id="f4790-122">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-122">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
+          description: <span data-ttu-id="84f9c-122">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-122">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-123">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-123">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-123">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-123">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.LegalHold>
           description: |
-            <span data-ttu-id="f4790-124">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-124">The callback</span></span>
+            <span data-ttu-id="84f9c-124">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-124">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersClearLegalHoldResponse>
@@ -152,24 +155,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-125">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-125">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-126">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-126">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-125">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-125">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-126">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-126">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-127">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-127">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-128">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-128">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-127">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-127">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-128">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-128">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-129">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-129">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-130">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-130">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-131">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-131">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-129">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-129">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-130">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-130">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-131">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-131">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: tags
           type:
             - 'string[]'
-          description: <span data-ttu-id="f4790-132">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-132">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
+          description: <span data-ttu-id="84f9c-132">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-132">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.LegalHold>
           description: |
-            <span data-ttu-id="f4790-133">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-133">The callback</span></span>
+            <span data-ttu-id="84f9c-133">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-133">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersClearLegalHoldResponse>
@@ -187,24 +190,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-134">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-134">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-135">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-135">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-134">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-134">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-135">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-135">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-136">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-136">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-137">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-137">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-136">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-136">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-137">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-137">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-138">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-138">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-139">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-139">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-140">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-140">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-138">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-138">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-139">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-139">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-140">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-140">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - '@azure/arm-storage.BlobContainersCreateOptionalParams'
-          description: <span data-ttu-id="f4790-141">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-141">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-141">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-141">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.BlobContainer>
           description: |
-            <span data-ttu-id="f4790-142">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-142">The callback</span></span>
+            <span data-ttu-id="84f9c-142">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-142">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersCreateResponse>
@@ -215,22 +218,22 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-143">요청 본문에 설명 된 대로 지정 된 계정의 새 컨테이너를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-143">Creates a new container under the specified account as described by request body.</span></span> <span data-ttu-id="f4790-144">컨테이너 리소스 메타 데이터 및 해당 컨테이너에 대 한 속성을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-144">The container resource includes metadata and properties for that container.</span></span> <span data-ttu-id="f4790-145">컨테이너에 포함 된 blob 목록을 포함 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-145">It does not include a list of the blobs contained by the container.</span></span>
+    summary: <span data-ttu-id="84f9c-143">요청 본문에 설명 된 대로 지정 된 계정의 새 컨테이너를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-143">Creates a new container under the specified account as described by request body.</span></span> <span data-ttu-id="84f9c-144">컨테이너 리소스 메타 데이터 및 해당 컨테이너에 대 한 속성을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-144">The container resource includes metadata and properties for that container.</span></span> <span data-ttu-id="84f9c-145">컨테이너에 포함 된 blob 목록을 포함 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-145">It does not include a list of the blobs contained by the container.</span></span>
     syntax:
       content: 'function create(resourceGroupName: string, accountName: string, containerName: string, options?: Models.BlobContainersCreateOptionalParams)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-146">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-146">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-147">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-147">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-146">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-146">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-147">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-147">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-148">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-148">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-149">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-149">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-148">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-148">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-149">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-149">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-150">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-150">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-151">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-151">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-152">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-152">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-150">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-150">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-151">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-151">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-152">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-152">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - Models.BlobContainersCreateOptionalParams
@@ -253,20 +256,20 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-153">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-153">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-154">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-154">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-153">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-153">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-154">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-154">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-155">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-155">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-156">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-156">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-155">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-155">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-156">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-156">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-157">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-157">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-158">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-158">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-159">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-159">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-157">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-157">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-158">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-158">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-159">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-159">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.BlobContainer>
           description: |
-            <span data-ttu-id="f4790-160">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-160">The callback</span></span>
+            <span data-ttu-id="84f9c-160">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-160">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersCreateResponse>
@@ -284,28 +287,28 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-161">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-161">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-162">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-162">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-161">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-161">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-162">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-162">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-163">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-163">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-164">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-164">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-163">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-163">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-164">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-164">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-165">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-165">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-166">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-166">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-167">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-167">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-165">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-165">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-166">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-166">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-167">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-167">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: immutabilityPeriodSinceCreationInDays
           type:
             - number
-          description: '<span data-ttu-id="f4790-168">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-168">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
+          description: '<span data-ttu-id="84f9c-168">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-168">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
         - id: options
           type:
             - '@azure/arm-storage.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams'
-          description: <span data-ttu-id="f4790-169">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-169">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-169">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-169">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-170">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-170">The callback</span></span>
+            <span data-ttu-id="84f9c-170">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-170">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersCreateOrUpdateImmutabilityPolicyResponse>
@@ -316,26 +319,26 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-171">만들거나를 잠금 해제 된 불변성 정책 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-171">Creates or updates an unlocked immutability policy.</span></span> <span data-ttu-id="f4790-172">If-match ETag는 지정 되어 있지만이 작업에 필요 하지 하는 경우에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-172">ETag in If-Match is honored if given but not required for this operation.</span></span>
+    summary: <span data-ttu-id="84f9c-171">만들거나를 잠금 해제 된 불변성 정책 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-171">Creates or updates an unlocked immutability policy.</span></span> <span data-ttu-id="84f9c-172">If-match ETag는 지정 되어 있지만이 작업에 필요 하지 하는 경우에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-172">ETag in If-Match is honored if given but not required for this operation.</span></span>
     syntax:
       content: 'function createOrUpdateImmutabilityPolicy(resourceGroupName: string, accountName: string, containerName: string, immutabilityPeriodSinceCreationInDays: number, options?: Models.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-173">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-173">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-174">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-174">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-173">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-173">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-174">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-174">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-175">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-175">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-176">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-176">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-175">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-175">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-176">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-176">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-177">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-177">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-178">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-178">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-179">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-179">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-177">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-177">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-178">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-178">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-179">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-179">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: immutabilityPeriodSinceCreationInDays
           type:
             - number
-          description: '<span data-ttu-id="f4790-180">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-180">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
+          description: '<span data-ttu-id="84f9c-180">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-180">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
         - id: options
           type:
             - Models.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams
@@ -358,24 +361,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-181">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-181">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-182">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-182">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-181">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-181">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-182">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-182">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-183">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-183">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-184">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-184">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-183">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-183">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-184">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-184">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-185">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-185">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-186">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-186">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-187">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-187">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-185">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-185">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-186">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-186">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-187">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-187">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: immutabilityPeriodSinceCreationInDays
           type:
             - number
-          description: '<span data-ttu-id="f4790-188">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-188">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
+          description: '<span data-ttu-id="84f9c-188">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-188">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-189">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-189">The callback</span></span>
+            <span data-ttu-id="84f9c-189">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-189">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersCreateOrUpdateImmutabilityPolicyResponse>
@@ -387,27 +390,27 @@ items:
     langs:
       - typeScript
     summary: |-
-      <span data-ttu-id="f4790-190">잠금이 해제 된 불변성 정책을 중단합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-190">Aborts an unlocked immutability policy.</span></span> <span data-ttu-id="f4790-191">삭제의 응답에 immutabilityPeriodSinceCreationInDays 0으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-191">The response of delete has immutabilityPeriodSinceCreationInDays set to 0.</span></span> <span data-ttu-id="f4790-192">If-match ETag가이 작업에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-192">ETag in If-Match is required for this operation.</span></span>
-      <span data-ttu-id="f4790-193">잠긴된 불변성 정책 삭제에 허용 되지 않습니다는 유일한 방법은 컨테이너 내에서 모든 blob을 삭제 한 후 컨테이너를 삭제 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-193">Deleting a locked immutability policy is not allowed, only way is to delete the container after deleting all blobs inside the container.</span></span>
+      <span data-ttu-id="84f9c-190">잠금이 해제 된 불변성 정책을 중단합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-190">Aborts an unlocked immutability policy.</span></span> <span data-ttu-id="84f9c-191">삭제의 응답에 immutabilityPeriodSinceCreationInDays 0으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-191">The response of delete has immutabilityPeriodSinceCreationInDays set to 0.</span></span> <span data-ttu-id="84f9c-192">If-match ETag가이 작업에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-192">ETag in If-Match is required for this operation.</span></span>
+      <span data-ttu-id="84f9c-193">잠긴된 불변성 정책 삭제에 허용 되지 않습니다는 유일한 방법은 컨테이너 내에서 모든 blob을 삭제 한 후 컨테이너를 삭제 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-193">Deleting a locked immutability policy is not allowed, only way is to delete the container after deleting all blobs inside the container.</span></span>
     syntax:
       content: 'function deleteImmutabilityPolicy(resourceGroupName: string, accountName: string, containerName: string, ifMatch: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-194">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-194">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-195">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-195">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-194">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-194">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-195">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-195">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-196">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-196">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-197">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-197">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-196">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-196">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-197">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-197">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-198">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-198">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-199">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-199">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-200">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-200">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-198">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-198">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-199">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-199">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-200">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-200">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-201">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-201">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-202">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-202">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-203">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-203">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-201">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-201">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-202">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-202">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-203">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-203">If omitted, this operation will always be applied.</span></span>'
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -430,28 +433,28 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-204">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-204">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-205">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-205">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-204">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-204">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-205">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-205">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-206">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-206">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-207">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-207">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-206">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-206">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-207">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-207">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-208">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-208">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-209">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-209">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-210">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-210">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-208">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-208">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-209">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-209">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-210">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-210">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-211">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-211">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-212">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-212">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-213">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-213">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-211">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-211">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-212">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-212">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-213">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-213">If omitted, this operation will always be applied.</span></span>'
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-214">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-214">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-214">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-214">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-215">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-215">The callback</span></span>
+            <span data-ttu-id="84f9c-215">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-215">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersDeleteImmutabilityPolicyResponse>
@@ -469,24 +472,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-216">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-216">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-217">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-217">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-216">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-216">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-217">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-217">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-218">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-218">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-219">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-219">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-218">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-218">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-219">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-219">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-220">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-220">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-221">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-221">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-222">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-222">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-220">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-220">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-221">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-221">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-222">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-222">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-223">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-223">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-224">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-224">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-225">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-225">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-223">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-223">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-224">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-224">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-225">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-225">If omitted, this operation will always be applied.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-226">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-226">The callback</span></span>
+            <span data-ttu-id="84f9c-226">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-226">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersDeleteImmutabilityPolicyResponse>
@@ -497,22 +500,22 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-227">지정 된 해당 계정에서 컨테이너를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-227">Deletes specified container under its account.</span></span>
+    summary: <span data-ttu-id="84f9c-227">지정 된 해당 계정에서 컨테이너를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-227">Deletes specified container under its account.</span></span>
     syntax:
       content: 'function deleteMethod(resourceGroupName: string, accountName: string, containerName: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-228">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-228">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-229">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-229">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-228">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-228">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-229">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-229">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-230">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-230">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-231">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-231">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-230">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-230">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-231">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-231">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-232">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-232">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-233">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-233">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-234">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-234">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-232">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-232">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-233">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-233">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-234">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-234">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -535,24 +538,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-235">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-235">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-236">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-236">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-235">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-235">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-236">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-236">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-237">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-237">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-238">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-238">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-237">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-237">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-238">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-238">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-239">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-239">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-240">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-240">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-241">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-241">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-239">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-239">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-240">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-240">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-241">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-241">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-242">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-242">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-242">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-242">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4790-243">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-243">The callback</span></span>
+            <span data-ttu-id="84f9c-243">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-243">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -570,20 +573,20 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-244">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-244">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-245">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-245">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-244">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-244">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-245">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-245">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-246">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-246">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-247">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-247">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-246">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-246">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-247">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-247">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-248">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-248">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-249">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-249">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-250">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-250">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-248">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-248">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-249">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-249">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-250">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-250">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4790-251">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-251">The callback</span></span>
+            <span data-ttu-id="84f9c-251">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-251">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -594,30 +597,30 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-252">잠긴된 immutabilityPolicy의 immutabilityPeriodSinceCreationInDays를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-252">Extends the immutabilityPeriodSinceCreationInDays of a locked immutabilityPolicy.</span></span> <span data-ttu-id="f4790-253">잠금 정책에서 허용 되는 유일한 작업은이 작업이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-253">The only action allowed on a Locked policy will be this action.</span></span> <span data-ttu-id="f4790-254">If-match ETag가이 작업에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-254">ETag in If-Match is required for this operation.</span></span>
+    summary: <span data-ttu-id="84f9c-252">잠긴된 immutabilityPolicy의 immutabilityPeriodSinceCreationInDays를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-252">Extends the immutabilityPeriodSinceCreationInDays of a locked immutabilityPolicy.</span></span> <span data-ttu-id="84f9c-253">잠금 정책에서 허용 되는 유일한 작업은이 작업이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-253">The only action allowed on a Locked policy will be this action.</span></span> <span data-ttu-id="84f9c-254">If-match ETag가이 작업에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-254">ETag in If-Match is required for this operation.</span></span>
     syntax:
       content: 'function extendImmutabilityPolicy(resourceGroupName: string, accountName: string, containerName: string, ifMatch: string, immutabilityPeriodSinceCreationInDays: number, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-255">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-255">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-256">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-256">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-255">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-255">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-256">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-256">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-257">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-257">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-258">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-258">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-257">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-257">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-258">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-258">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-259">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-259">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-260">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-260">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-261">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-261">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-259">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-259">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-260">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-260">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-261">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-261">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-262">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-262">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-263">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-263">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-264">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-264">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-262">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-262">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-263">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-263">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-264">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-264">If omitted, this operation will always be applied.</span></span>'
         - id: immutabilityPeriodSinceCreationInDays
           type:
             - number
-          description: '<span data-ttu-id="f4790-265">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-265">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
+          description: '<span data-ttu-id="84f9c-265">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-265">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -640,32 +643,32 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-266">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-266">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-267">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-267">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-266">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-266">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-267">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-267">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-268">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-268">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-269">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-269">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-268">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-268">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-269">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-269">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-270">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-270">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-271">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-271">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-272">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-272">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-270">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-270">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-271">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-271">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-272">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-272">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-273">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-273">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-274">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-274">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-275">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-275">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-273">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-273">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-274">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-274">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-275">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-275">If omitted, this operation will always be applied.</span></span>'
         - id: immutabilityPeriodSinceCreationInDays
           type:
             - number
-          description: '<span data-ttu-id="f4790-276">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-276">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
+          description: '<span data-ttu-id="84f9c-276">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-276">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-277">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-277">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-277">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-277">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-278">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-278">The callback</span></span>
+            <span data-ttu-id="84f9c-278">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-278">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersExtendImmutabilityPolicyResponse>
@@ -683,28 +686,28 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-279">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-279">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-280">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-280">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-279">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-279">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-280">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-280">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-281">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-281">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-282">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-282">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-281">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-281">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-282">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-282">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-283">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-283">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-284">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-284">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-285">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-285">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-283">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-283">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-284">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-284">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-285">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-285">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-286">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-286">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-287">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-287">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-288">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-288">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-286">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-286">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-287">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-287">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-288">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-288">If omitted, this operation will always be applied.</span></span>'
         - id: immutabilityPeriodSinceCreationInDays
           type:
             - number
-          description: '<span data-ttu-id="f4790-289">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-289">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
+          description: '<span data-ttu-id="84f9c-289">불변성 정책 생성 (일)에서 이후 컨테이너의 blob에 대 한 기간입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-289">The immutability period for the blobs in the container since the policy creation, in days.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-290">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-290">The callback</span></span>
+            <span data-ttu-id="84f9c-290">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-290">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersExtendImmutabilityPolicyResponse>
@@ -715,22 +718,22 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-291">지정된 된 컨테이너의 속성을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-291">Gets properties of a specified container.</span></span>
+    summary: <span data-ttu-id="84f9c-291">지정된 된 컨테이너의 속성을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-291">Gets properties of a specified container.</span></span>
     syntax:
       content: 'function get(resourceGroupName: string, accountName: string, containerName: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-292">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-292">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-293">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-293">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-292">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-292">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-293">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-293">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-294">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-294">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-295">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-295">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-294">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-294">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-295">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-295">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-296">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-296">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-297">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-297">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-298">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-298">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-296">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-296">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-297">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-297">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-298">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-298">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -753,24 +756,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-299">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-299">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-300">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-300">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-299">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-299">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-300">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-300">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-301">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-301">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-302">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-302">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-301">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-301">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-302">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-302">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-303">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-303">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-304">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-304">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-305">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-305">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-303">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-303">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-304">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-304">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-305">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-305">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-306">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-306">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-306">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-306">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.BlobContainer>
           description: |
-            <span data-ttu-id="f4790-307">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-307">The callback</span></span>
+            <span data-ttu-id="84f9c-307">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-307">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersGetResponse>
@@ -788,20 +791,20 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-308">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-308">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-309">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-309">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-308">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-308">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-309">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-309">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-310">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-310">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-311">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-311">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-310">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-310">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-311">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-311">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-312">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-312">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-313">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-313">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-314">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-314">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-312">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-312">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-313">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-313">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-314">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-314">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.BlobContainer>
           description: |
-            <span data-ttu-id="f4790-315">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-315">The callback</span></span>
+            <span data-ttu-id="84f9c-315">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-315">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersGetResponse>
@@ -819,24 +822,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-316">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-316">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-317">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-317">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-316">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-316">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-317">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-317">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-318">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-318">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-319">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-319">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-318">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-318">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-319">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-319">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-320">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-320">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-321">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-321">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-322">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-322">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-320">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-320">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-321">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-321">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-322">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-322">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - '@azure/arm-storage.BlobContainersGetImmutabilityPolicyOptionalParams'
-          description: <span data-ttu-id="f4790-323">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-323">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-323">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-323">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-324">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-324">The callback</span></span>
+            <span data-ttu-id="84f9c-324">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-324">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersGetImmutabilityPolicyResponse>
@@ -847,22 +850,22 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-325">해당 ETag 응답 헤더 및 본문와 함께 기존 불변성 정책을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-325">Gets the existing immutability policy along with the corresponding ETag in response headers and body.</span></span>
+    summary: <span data-ttu-id="84f9c-325">해당 ETag 응답 헤더 및 본문와 함께 기존 불변성 정책을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-325">Gets the existing immutability policy along with the corresponding ETag in response headers and body.</span></span>
     syntax:
       content: 'function getImmutabilityPolicy(resourceGroupName: string, accountName: string, containerName: string, options?: Models.BlobContainersGetImmutabilityPolicyOptionalParams)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-326">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-326">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-327">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-327">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-326">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-326">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-327">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-327">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-328">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-328">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-329">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-329">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-328">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-328">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-329">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-329">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-330">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-330">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-331">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-331">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-332">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-332">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-330">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-330">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-331">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-331">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-332">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-332">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - Models.BlobContainersGetImmutabilityPolicyOptionalParams
@@ -885,20 +888,20 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-333">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-333">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-334">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-334">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-333">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-333">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-334">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-334">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-335">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-335">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-336">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-336">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-335">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-335">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-336">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-336">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-337">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-337">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-338">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-338">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-339">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-339">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-337">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-337">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-338">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-338">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-339">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-339">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-340">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-340">The callback</span></span>
+            <span data-ttu-id="84f9c-340">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-340">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersGetImmutabilityPolicyResponse>
@@ -916,24 +919,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-341">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-341">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-342">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-342">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-341">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-341">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-342">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-342">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-343">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-343">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-344">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-344">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-343">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-343">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-344">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-344">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-345">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-345">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-346">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-346">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-347">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-347">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-345">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-345">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-346">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-346">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-347">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-347">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - '@azure/arm-storage.BlobContainersLeaseOptionalParams'
-          description: <span data-ttu-id="f4790-348">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-348">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-348">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-348">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.LeaseContainerResponse>
           description: |
-            <span data-ttu-id="f4790-349">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-349">The callback</span></span>
+            <span data-ttu-id="84f9c-349">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-349">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersLeaseResponse>
@@ -944,22 +947,22 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="f4790-350">컨테이너 임대 작업을 설정 하 고 삭제 작업에 대 한 컨테이너에 대 한 잠금을 관리 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-350">The Lease Container operation establishes and manages a lock on a container for delete operations.</span></span> <span data-ttu-id="f4790-351">잠금 기간은 15~60초 또는 무한할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-351">The lock duration can be 15 to 60 seconds, or can be infinite.</span></span>'
+    summary: '<span data-ttu-id="84f9c-350">컨테이너 임대 작업을 설정 하 고 삭제 작업에 대 한 컨테이너에 대 한 잠금을 관리 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-350">The Lease Container operation establishes and manages a lock on a container for delete operations.</span></span> <span data-ttu-id="84f9c-351">잠금 기간은 15~60초 또는 무한할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-351">The lock duration can be 15 to 60 seconds, or can be infinite.</span></span>'
     syntax:
       content: 'function lease(resourceGroupName: string, accountName: string, containerName: string, options?: Models.BlobContainersLeaseOptionalParams)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-352">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-352">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-353">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-353">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-352">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-352">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-353">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-353">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-354">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-354">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-355">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-355">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-354">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-354">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-355">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-355">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-356">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-356">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-357">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-357">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-358">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-358">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-356">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-356">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-357">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-357">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-358">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-358">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - Models.BlobContainersLeaseOptionalParams
@@ -982,78 +985,78 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-359">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-359">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-360">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-360">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-359">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-359">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-360">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-360">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-361">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-361">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-362">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-362">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-361">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-361">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-362">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-362">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-363">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-363">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-364">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-364">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-365">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-365">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-363">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-363">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-364">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-364">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-365">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-365">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.LeaseContainerResponse>
           description: |
-            <span data-ttu-id="f4790-366">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-366">The callback</span></span>
+            <span data-ttu-id="84f9c-366">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-366">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersLeaseResponse>
     package: '@azure/arm-storage'
-  - uid: '@azure/arm-storage.BlobContainers.list'
-    name: 'list(string, string, msRest.RequestOptionsBase)'
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: <span data-ttu-id="f4790-367">모든 컨테이너를 나열 하 고 데이터 평면 같은 접두사를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-367">Lists all containers and does not support a prefix like data plane.</span></span> <span data-ttu-id="f4790-368">또한 SRP 지금 반환 하지 않는 연속 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-368">Also SRP today does not return continuation token.</span></span>
-    syntax:
-      content: 'function list(resourceGroupName: string, accountName: string, options?: msRest.RequestOptionsBase)'
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: <span data-ttu-id="f4790-369">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-369">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-370">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-370">The name is case insensitive.</span></span>
-        - id: accountName
-          type:
-            - string
-          description: <span data-ttu-id="f4790-371">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-371">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-372">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-372">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
-        - id: options
-          type:
-            - msRest.RequestOptionsBase
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<Models.BlobContainersListResponse>
-    package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.BlobContainers.list_2'
-    name: 'list(string, string, RequestOptionsBase, ServiceCallback<ListContainerItems>)'
+    name: 'list(string, string, BlobContainersListOptionalParams, ServiceCallback<ListContainerItems>)'
     children: []
     type: method
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function list(resourceGroupName: string, accountName: string, options: RequestOptionsBase, callback: ServiceCallback<ListContainerItems>)'
+      content: 'function list(resourceGroupName: string, accountName: string, options: BlobContainersListOptionalParams, callback: ServiceCallback<ListContainerItems>)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-373">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-373">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-374">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-374">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-367">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-367">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-368">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-368">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-375">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-375">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-376">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-376">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-369">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-369">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-370">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-370">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: options
           type:
-            - RequestOptionsBase
-          description: <span data-ttu-id="f4790-377">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-377">The optional parameters</span></span>
+            - '@azure/arm-storage.BlobContainersListOptionalParams'
+          description: <span data-ttu-id="84f9c-371">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-371">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ListContainerItems>
           description: |
-            <span data-ttu-id="f4790-378">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-378">The callback</span></span>
+            <span data-ttu-id="84f9c-372">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-372">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BlobContainersListResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.BlobContainers.list'
+    name: 'list(string, string, Models.BlobContainersListOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84f9c-373">모든 컨테이너를 나열 하 고 데이터 평면 같은 접두사를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-373">Lists all containers and does not support a prefix like data plane.</span></span> <span data-ttu-id="84f9c-374">또한 SRP 지금 반환 하지 않는 연속 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-374">Also SRP today does not return continuation token.</span></span>
+    syntax:
+      content: 'function list(resourceGroupName: string, accountName: string, options?: Models.BlobContainersListOptionalParams)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: <span data-ttu-id="84f9c-375">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-375">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-376">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-376">The name is case insensitive.</span></span>
+        - id: accountName
+          type:
+            - string
+          description: <span data-ttu-id="84f9c-377">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-377">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-378">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-378">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+        - id: options
+          type:
+            - Models.BlobContainersListOptionalParams
+          description: ''
+          optional: true
       return:
         type:
           - Promise<Models.BlobContainersListResponse>
@@ -1071,19 +1074,92 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-379">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-379">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-380">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-380">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-379">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-379">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-380">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-380">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-381">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-381">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-382">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-382">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-381">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-381">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-382">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-382">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ListContainerItems>
           description: |
-            <span data-ttu-id="f4790-383">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-383">The callback</span></span>
+            <span data-ttu-id="84f9c-383">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-383">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersListResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.BlobContainers.listNext'
+    name: 'listNext(string, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: <span data-ttu-id="84f9c-384">모든 컨테이너를 나열 하 고 데이터 평면 같은 접두사를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-384">Lists all containers and does not support a prefix like data plane.</span></span> <span data-ttu-id="84f9c-385">또한 SRP 지금 반환 하지 않는 연속 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-385">Also SRP today does not return continuation token.</span></span>
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84f9c-386">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-386">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.BlobContainersListNextResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.BlobContainers.listNext_2'
+    name: 'listNext(string, RequestOptionsBase, ServiceCallback<ListContainerItems>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, options: RequestOptionsBase, callback: ServiceCallback<ListContainerItems>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84f9c-387">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-387">The NextLink from the previous successful call to List operation.</span></span>
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: <span data-ttu-id="84f9c-388">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-388">The optional parameters</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.ListContainerItems>
+          description: |
+            <span data-ttu-id="84f9c-389">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-389">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BlobContainersListNextResponse>
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.BlobContainers.listNext_1'
+    name: 'listNext(string, ServiceCallback<ListContainerItems>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNext(nextPageLink: string, callback: ServiceCallback<ListContainerItems>)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: <span data-ttu-id="84f9c-390">목록 작업에 성공적으로 이전 호출의 NextLink입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-390">The NextLink from the previous successful call to List operation.</span></span>
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-storage.ListContainerItems>
+          description: |
+            <span data-ttu-id="84f9c-391">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-391">The callback</span></span>
+      return:
+        type:
+          - Promise<Models.BlobContainersListNextResponse>
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy'
     name: 'lockImmutabilityPolicy(string, string, string, string, msRest.RequestOptionsBase)'
@@ -1091,26 +1167,26 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-384">ImmutabilityPolicy 잠금 상태로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-384">Sets the ImmutabilityPolicy to Locked state.</span></span> <span data-ttu-id="f4790-385">잠금 정책에서 허용 되는 유일한 동작은 ExtendImmutabilityPolicy 동작이입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-385">The only action allowed on a Locked policy is ExtendImmutabilityPolicy action.</span></span> <span data-ttu-id="f4790-386">If-match ETag가이 작업에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-386">ETag in If-Match is required for this operation.</span></span>
+    summary: <span data-ttu-id="84f9c-392">ImmutabilityPolicy 잠금 상태로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-392">Sets the ImmutabilityPolicy to Locked state.</span></span> <span data-ttu-id="84f9c-393">잠금 정책에서 허용 되는 유일한 동작은 ExtendImmutabilityPolicy 동작이입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-393">The only action allowed on a Locked policy is ExtendImmutabilityPolicy action.</span></span> <span data-ttu-id="84f9c-394">If-match ETag가이 작업에 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-394">ETag in If-Match is required for this operation.</span></span>
     syntax:
       content: 'function lockImmutabilityPolicy(resourceGroupName: string, accountName: string, containerName: string, ifMatch: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-387">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-387">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-388">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-388">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-395">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-395">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-396">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-396">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-389">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-389">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-390">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-390">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-397">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-397">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-398">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-398">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-391">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-391">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-392">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-392">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-393">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-393">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-399">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-399">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-400">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-400">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-401">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-401">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-394">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-394">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-395">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-395">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-396">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-396">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-402">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-402">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-403">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-403">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-404">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-404">If omitted, this operation will always be applied.</span></span>'
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -1133,28 +1209,28 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-397">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-397">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-398">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-398">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-405">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-405">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-406">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-406">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-399">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-399">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-400">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-400">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-407">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-407">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-408">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-408">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-401">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-401">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-402">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-402">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-403">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-403">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-409">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-409">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-410">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-410">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-411">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-411">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-404">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-404">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-405">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-405">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-406">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-406">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-412">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-412">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-413">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-413">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-414">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-414">If omitted, this operation will always be applied.</span></span>'
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-407">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-407">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-415">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-415">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-408">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-408">The callback</span></span>
+            <span data-ttu-id="84f9c-416">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-416">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersLockImmutabilityPolicyResponse>
@@ -1172,24 +1248,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-409">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-409">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-410">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-410">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-417">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-417">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-418">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-418">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-411">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-411">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-412">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-412">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-419">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-419">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-420">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-420">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-413">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-413">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-414">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-414">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-415">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-415">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-421">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-421">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-422">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-422">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-423">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-423">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: ifMatch
           type:
             - string
-          description: '<span data-ttu-id="f4790-416">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-416">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="f4790-417">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-417">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="f4790-418">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-418">If omitted, this operation will always be applied.</span></span>'
+          description: '<span data-ttu-id="84f9c-424">엔터티 상태 (ETag) 버전 업데이트 불변성 정책입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-424">The entity state (ETag) version of the immutability policy to update.</span></span> <span data-ttu-id="84f9c-425">값 "\*" 불변성 정책이 이미 존재 하는 경우에 작업을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-425">A value of "\*" can be used to apply the operation only if the immutability policy already exists.</span></span> <span data-ttu-id="84f9c-426">생략 하면이 작업이 항상 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-426">If omitted, this operation will always be applied.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.ImmutabilityPolicy>
           description: |
-            <span data-ttu-id="f4790-419">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-419">The callback</span></span>
+            <span data-ttu-id="84f9c-427">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-427">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersLockImmutabilityPolicyResponse>
@@ -1200,26 +1276,26 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-420">법적 집합 태그를 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-420">Sets legal hold tags.</span></span> <span data-ttu-id="f4790-421">멱 등 원 작업에서 동일한 태그 결과 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-421">Setting the same tag results in an idempotent operation.</span></span> <span data-ttu-id="f4790-422">SetLegalHold 추가 패턴을 따르고 요청에 지정 되지 않은 기존 태그를 지우기 축소 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-422">SetLegalHold follows an append pattern and does not clear out the existing tags that are not specified in the request.</span></span>
+    summary: <span data-ttu-id="84f9c-428">법적 집합 태그를 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-428">Sets legal hold tags.</span></span> <span data-ttu-id="84f9c-429">멱 등 원 작업에서 동일한 태그 결과 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-429">Setting the same tag results in an idempotent operation.</span></span> <span data-ttu-id="84f9c-430">SetLegalHold 추가 패턴을 따르고 요청에 지정 되지 않은 기존 태그를 지우기 축소 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-430">SetLegalHold follows an append pattern and does not clear out the existing tags that are not specified in the request.</span></span>
     syntax:
       content: 'function setLegalHold(resourceGroupName: string, accountName: string, containerName: string, tags: string[], options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-423">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-423">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-424">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-424">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-431">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-431">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-432">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-432">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-425">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-425">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-426">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-426">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-433">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-433">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-434">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-434">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-427">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-427">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-428">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-428">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-429">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-429">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-435">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-435">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-436">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-436">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-437">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-437">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: tags
           type:
             - 'string[]'
-          description: <span data-ttu-id="f4790-430">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-430">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
+          description: <span data-ttu-id="84f9c-438">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-438">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -1242,28 +1318,28 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-431">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-431">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-432">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-432">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-439">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-439">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-440">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-440">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-433">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-433">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-434">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-434">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-441">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-441">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-442">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-442">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-435">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-435">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-436">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-436">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-437">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-437">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-443">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-443">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-444">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-444">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-445">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-445">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: tags
           type:
             - 'string[]'
-          description: <span data-ttu-id="f4790-438">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-438">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
+          description: <span data-ttu-id="84f9c-446">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-446">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4790-439">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-439">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-447">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-447">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.LegalHold>
           description: |
-            <span data-ttu-id="f4790-440">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-440">The callback</span></span>
+            <span data-ttu-id="84f9c-448">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-448">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersSetLegalHoldResponse>
@@ -1281,24 +1357,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-441">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-441">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-442">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-442">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-449">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-449">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-450">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-450">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-443">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-443">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-444">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-444">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-451">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-451">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-452">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-452">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-445">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-445">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-446">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-446">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-447">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-447">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-453">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-453">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-454">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-454">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-455">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-455">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: tags
           type:
             - 'string[]'
-          description: <span data-ttu-id="f4790-448">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-448">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
+          description: <span data-ttu-id="84f9c-456">각 태그 영숫자 3 ~ 23이 고 SRP에서 소문자로 정규화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-456">Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.LegalHold>
           description: |
-            <span data-ttu-id="f4790-449">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-449">The callback</span></span>
+            <span data-ttu-id="84f9c-457">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-457">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersSetLegalHoldResponse>
@@ -1316,24 +1392,24 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-450">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-450">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-451">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-451">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-458">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-458">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-459">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-459">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-452">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-452">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-453">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-453">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-460">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-460">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-461">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-461">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-454">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-454">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-455">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-455">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-456">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-456">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-462">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-462">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-463">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-463">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-464">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-464">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - '@azure/arm-storage.BlobContainersUpdateOptionalParams'
-          description: <span data-ttu-id="f4790-457">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4790-457">The optional parameters</span></span>
+          description: <span data-ttu-id="84f9c-465">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f9c-465">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.BlobContainer>
           description: |
-            <span data-ttu-id="f4790-458">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-458">The callback</span></span>
+            <span data-ttu-id="84f9c-466">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-466">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersUpdateResponse>
@@ -1344,22 +1420,22 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4790-459">요청 본문에 지정 된 대로 컨테이너 속성을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-459">Updates container properties as specified in request body.</span></span> <span data-ttu-id="f4790-460">요청에 언급 되지 않은 속성은 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-460">Properties not mentioned in the request will be unchanged.</span></span> <span data-ttu-id="f4790-461">업데이트가 지정된 된 컨테이너 존재 하지 않는 경우 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-461">Update fails if the specified container doesn't already exist.</span></span>
+    summary: <span data-ttu-id="84f9c-467">요청 본문에 지정 된 대로 컨테이너 속성을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-467">Updates container properties as specified in request body.</span></span> <span data-ttu-id="84f9c-468">요청에 언급 되지 않은 속성은 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-468">Properties not mentioned in the request will be unchanged.</span></span> <span data-ttu-id="84f9c-469">업데이트가 지정된 된 컨테이너 존재 하지 않는 경우 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-469">Update fails if the specified container doesn't already exist.</span></span>
     syntax:
       content: 'function update(resourceGroupName: string, accountName: string, containerName: string, options?: Models.BlobContainersUpdateOptionalParams)'
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-462">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-462">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-463">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-463">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-470">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-470">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-471">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-471">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-464">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-464">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-465">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-465">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-472">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-472">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-473">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-473">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-466">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-466">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-467">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-467">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-468">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-468">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-474">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-474">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-475">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-475">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-476">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-476">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: options
           type:
             - Models.BlobContainersUpdateOptionalParams
@@ -1382,20 +1458,20 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: <span data-ttu-id="f4790-469">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-469">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="f4790-470">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-470">The name is case insensitive.</span></span>
+          description: <span data-ttu-id="84f9c-477">사용자 구독 내의 리소스 그룹의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-477">The name of the resource group within the user's subscription.</span></span> <span data-ttu-id="84f9c-478">이름은 대/소문자 구분입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-478">The name is case insensitive.</span></span>
         - id: accountName
           type:
             - string
-          description: <span data-ttu-id="f4790-471">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-471">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="f4790-472">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-472">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
+          description: <span data-ttu-id="84f9c-479">지정된 된 리소스 그룹 내에서 저장소 계정의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-479">The name of the storage account within the specified resource group.</span></span> <span data-ttu-id="84f9c-480">Storage 계정 이름은 3자에서 24자 사이여야 하고 숫자 및 소문자만 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-480">Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</span></span>
         - id: containerName
           type:
             - string
-          description: '<span data-ttu-id="f4790-473">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-473">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="f4790-474">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-474">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="f4790-475">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4790-475">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
+          description: '<span data-ttu-id="84f9c-481">지정된 된 저장소 계정 내의 blob 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-481">The name of the blob container within the specified storage account.</span></span> <span data-ttu-id="84f9c-482">Blob 컨테이너 이름은 길이가 3 ~ 63 자 사이 여야 하 고 숫자, 소문자 및 대시 (-)만 사용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-482">Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only.</span></span> <span data-ttu-id="84f9c-483">모든 대시 (-) 문자 바로 앞에 하 고 뒤에 문자 또는 숫자로 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="84f9c-483">Every dash (-) character must be immediately preceded and followed by a letter or number.</span></span>'
         - id: callback
           type:
             - ServiceCallback<@azure/arm-storage.BlobContainer>
           description: |
-            <span data-ttu-id="f4790-476">콜백</span><span class="sxs-lookup"><span data-stu-id="f4790-476">The callback</span></span>
+            <span data-ttu-id="84f9c-484">콜백</span><span class="sxs-lookup"><span data-stu-id="84f9c-484">The callback</span></span>
       return:
         type:
           - Promise<Models.BlobContainersUpdateResponse>
@@ -1481,6 +1557,12 @@ references:
         uid: '@azure/arm-storage.ListContainerItems'
       - name: '>'
         fullName: '>'
+  - uid: '@azure/arm-storage.BlobContainersListOptionalParams'
+    name: BlobContainersListOptionalParams
+    spec.typeScript:
+      - name: BlobContainersListOptionalParams
+        fullName: BlobContainersListOptionalParams
+        uid: '@azure/arm-storage.BlobContainersListOptionalParams'
   - uid: '@azure/arm-storage.BlobContainersUpdateOptionalParams'
     name: BlobContainersUpdateOptionalParams
     spec.typeScript:

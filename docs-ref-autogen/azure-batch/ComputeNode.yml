@@ -1,0 +1,398 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.ComputeNode
+    name: ComputeNode
+    fullName: ComputeNode
+    children:
+      - azure-batch.ComputeNode.affinityId
+      - azure-batch.ComputeNode.allocationTime
+      - azure-batch.ComputeNode.certificateReferences
+      - azure-batch.ComputeNode.endpointConfiguration
+      - azure-batch.ComputeNode.errors
+      - azure-batch.ComputeNode.id
+      - azure-batch.ComputeNode.ipAddress
+      - azure-batch.ComputeNode.isDedicated
+      - azure-batch.ComputeNode.lastBootTime
+      - azure-batch.ComputeNode.nodeAgentInfo
+      - azure-batch.ComputeNode.recentTasks
+      - azure-batch.ComputeNode.runningTasksCount
+      - azure-batch.ComputeNode.schedulingState
+      - azure-batch.ComputeNode.startTask
+      - azure-batch.ComputeNode.startTaskInfo
+      - azure-batch.ComputeNode.state
+      - azure-batch.ComputeNode.stateTransitionTime
+      - azure-batch.ComputeNode.totalTasksRun
+      - azure-batch.ComputeNode.totalTasksSucceeded
+      - azure-batch.ComputeNode.url
+      - azure-batch.ComputeNode.vmSize
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.affinityId
+    name: affinityId
+    fullName: affinityId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="69af4-101">이 소프트 선호도 방금 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-101">Note that this is just a soft affinity.</span></span> <span data-ttu-id="69af4-102">대상 계산 노드 사용량이 시간에 사용할 수 없는 작업이 예약 됩니다, 경우 다음 작업이 예약 됩니다 다른 곳에서.</span><span class="sxs-lookup"><span data-stu-id="69af4-102">If the target Compute Node is busy or unavailable at the time the Task is scheduled, then the Task will be scheduled elsewhere.</span></span>'
+    optional: true
+    syntax:
+      content: 'affinityId?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.allocationTime
+    name: allocationTime
+    fullName: allocationTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="69af4-103">이 시간이 Compute 노드 초기에 할당 되 고 설정한 후 변경 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-103">This is the time when the Compute Node was initially allocated and doesn't change once set.</span></span> <span data-ttu-id="69af4-104">Compute 노드는 서비스를 복구 하거나 선점 하는 경우에 업데이트 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-104">It is not updated when the Compute Node is service healed or preempted.</span></span>
+    optional: true
+    syntax:
+      content: 'allocationTime?: Date'
+      return:
+        type:
+          - Date
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.certificateReferences
+    name: certificateReferences
+    fullName: certificateReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="69af4-105">Windows 노드에 대 한 Batch 서비스는 위치와 지정 된 인증서 저장소에 인증서를 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-105">For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location.</span></span> <span data-ttu-id="69af4-106">Linux 계산 노드에 대 한 인증서 작업 디렉터리 및 AZ_BATCH_CERTIFICATES_DIR이이 위치에 대 한 쿼리 작업에 제공 되는 환경 변수를 태스크 내에서 디렉터리에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-106">For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.</span></span> <span data-ttu-id="69af4-107">''원격 사용자''의 표시 여부를 사용 하 여 인증서에 대 한 ''인증서'' 디렉터리 사용자의 홈 디렉터리에 만들어집니다 (예를 들어 /home/ {사용자 이름} / 인증서) 인증서는 해당 디렉터리에 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-107">For Certificates with visibility of ''remoteUser'', a ''certs'' directory is created in the user''s home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.</span></span>'
+    optional: true
+    syntax:
+      content: 'certificateReferences?: CertificateReference[]'
+      return:
+        type:
+          - 'azure-batch.CertificateReference[]'
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.endpointConfiguration
+    name: endpointConfiguration
+    fullName: endpointConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'endpointConfiguration?: ComputeNodeEndpointConfiguration'
+      return:
+        type:
+          - azure-batch.ComputeNodeEndpointConfiguration
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.errors
+    name: errors
+    fullName: errors
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'errors?: ComputeNodeError[]'
+      return:
+        type:
+          - 'azure-batch.ComputeNodeError[]'
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="69af4-108">풀에 추가 되는 모든 계산 노드에 고유 ID가 할당 됩니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-108">Every Compute Node that is added to a Pool is assigned a unique ID.</span></span> <span data-ttu-id="69af4-109">계산 노드 풀에서 제거 되 면 때마다 모든 로컬 파일 삭제 되 고 ID를 회수 하 고 새 계산 노드에 대 한 다시 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-109">Whenever a Compute Node is removed from a Pool, all of its local files are deleted, and the ID is reclaimed and could be reused for new Compute Nodes.</span></span>'
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.ipAddress
+    name: ipAddress
+    fullName: ipAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="69af4-110">풀에 추가 되는 모든 계산 노드는 고유한 IP 주소가 할당 됩니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-110">Every Compute Node that is added to a Pool is assigned a unique IP address.</span></span>
+      <span data-ttu-id="69af4-111">계산 노드 풀에서 제거 되 면 때마다 모든 로컬 파일 삭제 되 고 IP 주소를 회수 하 고 새 계산 노드에 대 한 다시 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-111">Whenever a Compute Node is removed from a Pool, all of its local files are deleted, and the IP address is reclaimed and could be reused for new Compute Nodes.</span></span>
+    optional: true
+    syntax:
+      content: 'ipAddress?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.isDedicated
+    name: isDedicated
+    fullName: isDedicated
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'isDedicated?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.lastBootTime
+    name: lastBootTime
+    fullName: lastBootTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="69af4-112">이 속성의 계산 노드 상태를 사용할 수 없는 경우 표시 하지 못할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-112">This property may not be present if the Compute Node state is unusable.</span></span>
+    optional: true
+    syntax:
+      content: 'lastBootTime?: Date'
+      return:
+        type:
+          - Date
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.nodeAgentInfo
+    name: nodeAgentInfo
+    fullName: nodeAgentInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'nodeAgentInfo?: NodeAgentInformation'
+      return:
+        type:
+          - azure-batch.NodeAgentInformation
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.recentTasks
+    name: recentTasks
+    fullName: recentTasks
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="69af4-113">이 속성은 풀에 할당 된 계산 노드에서이 적어도 하나 이상의 태스크가 실행 된 경우에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-113">This property is present only if at least one Task has run on this Compute Node since it was assigned to the Pool.</span></span>
+    optional: true
+    syntax:
+      content: 'recentTasks?: TaskInformation[]'
+      return:
+        type:
+          - 'azure-batch.TaskInformation[]'
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.runningTasksCount
+    name: runningTasksCount
+    fullName: runningTasksCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'runningTasksCount?: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.schedulingState
+    name: schedulingState
+    fullName: schedulingState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="69af4-114">가능한 값: ''enabled'', ''disabled''</span><span class="sxs-lookup"><span data-stu-id="69af4-114">Possible values include: ''enabled'', ''disabled''</span></span>'
+    optional: true
+    syntax:
+      content: 'schedulingState?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.startTask
+    name: startTask
+    fullName: startTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'startTask?: StartTask'
+      return:
+        type:
+          - azure-batch.StartTask
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.startTaskInfo
+    name: startTaskInfo
+    fullName: startTaskInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'startTaskInfo?: StartTaskInformation'
+      return:
+        type:
+          - azure-batch.StartTaskInformation
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.state
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="69af4-115">우선 순위가 낮은 계산 노드는 선취 했습니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-115">The low-priority Compute Node has been preempted.</span></span> <span data-ttu-id="69af4-116">다른 계산 노드로 사용 가능 해지면 우선 되었을 때 계산 노드에서 실행 되 던 작업에 일정이 변경 됩니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-116">Tasks which were running on the Compute Node when it was preempted will be rescheduled when another Compute Node becomes available.</span></span> <span data-ttu-id="69af4-117">가능한 값: ''유휴'', ''다시 부팅''에서 ''이미지로 다시 설치'', ''실행 중'', ''사용할 수 없는'', ''만들기'', ''시작'', ''waitingForStartTask'', ''startTaskFailed'', ''알 수 없는'', ''leavingPool'', ''오프 라인'', ''선점''</span><span class="sxs-lookup"><span data-stu-id="69af4-117">Possible values include: ''idle'', ''rebooting'', ''reimaging'', ''running'', ''unusable'', ''creating'', ''starting'', ''waitingForStartTask'', ''startTaskFailed'', ''unknown'', ''leavingPool'', ''offline'', ''preempted''</span></span>'
+    optional: true
+    syntax:
+      content: 'state?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.stateTransitionTime
+    name: stateTransitionTime
+    fullName: stateTransitionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'stateTransitionTime?: Date'
+      return:
+        type:
+          - Date
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.totalTasksRun
+    name: totalTasksRun
+    fullName: totalTasksRun
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'totalTasksRun?: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.totalTasksSucceeded
+    name: totalTasksSucceeded
+    fullName: totalTasksSucceeded
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'totalTasksSucceeded?: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.url
+    name: url
+    fullName: url
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'url?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNode.vmSize
+    name: vmSize
+    fullName: vmSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="69af4-118">풀에서 가상 머신의 사용 가능한 크기에 대 한 정보를 Azure Batch 풀의 계산 노드에 대 한 VM 크기 선택 참조 (https://docs.microsoft.com/azure/batch/batch-pool-vm-sizes)합니다.</span><span class="sxs-lookup"><span data-stu-id="69af4-118">For information about available sizes of virtual machines in Pools, see Choose a VM size for Compute Nodes in an Azure Batch Pool (https://docs.microsoft.com/azure/batch/batch-pool-vm-sizes).</span></span>'
+    optional: true
+    syntax:
+      content: 'vmSize?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+references:
+  - uid: 'azure-batch.CertificateReference[]'
+    name: 'CertificateReference[]'
+    spec.typeScript:
+      - name: CertificateReference
+        fullName: CertificateReference
+        uid: azure-batch.CertificateReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.ComputeNodeEndpointConfiguration
+    name: ComputeNodeEndpointConfiguration
+    spec.typeScript:
+      - name: ComputeNodeEndpointConfiguration
+        fullName: ComputeNodeEndpointConfiguration
+        uid: azure-batch.ComputeNodeEndpointConfiguration
+  - uid: 'azure-batch.ComputeNodeError[]'
+    name: 'ComputeNodeError[]'
+    spec.typeScript:
+      - name: ComputeNodeError
+        fullName: ComputeNodeError
+        uid: azure-batch.ComputeNodeError
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.NodeAgentInformation
+    name: NodeAgentInformation
+    spec.typeScript:
+      - name: NodeAgentInformation
+        fullName: NodeAgentInformation
+        uid: azure-batch.NodeAgentInformation
+  - uid: 'azure-batch.TaskInformation[]'
+    name: 'TaskInformation[]'
+    spec.typeScript:
+      - name: TaskInformation
+        fullName: TaskInformation
+        uid: azure-batch.TaskInformation
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.StartTask
+    name: StartTask
+    spec.typeScript:
+      - name: StartTask
+        fullName: StartTask
+        uid: azure-batch.StartTask
+  - uid: azure-batch.StartTaskInformation
+    name: StartTaskInformation
+    spec.typeScript:
+      - name: StartTaskInformation
+        fullName: StartTaskInformation
+        uid: azure-batch.StartTaskInformation

@@ -5,8 +5,8 @@ items:
     fullName: StorageAccountUpdateParameters
     children:
       - '@azure/arm-storage.StorageAccountUpdateParameters.accessTier'
+      - '@azure/arm-storage.StorageAccountUpdateParameters.azureFilesIdentityBasedAuthentication'
       - '@azure/arm-storage.StorageAccountUpdateParameters.customDomain'
-      - '@azure/arm-storage.StorageAccountUpdateParameters.enableAzureFilesAadIntegration'
       - '@azure/arm-storage.StorageAccountUpdateParameters.enableHttpsTrafficOnly'
       - '@azure/arm-storage.StorageAccountUpdateParameters.encryption'
       - '@azure/arm-storage.StorageAccountUpdateParameters.identity'
@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: <span data-ttu-id="f2f3d-101">저장소 계정 속성을 업데이트 하는 경우 제공 될 수 있는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-101">The parameters that can be provided when updating the storage account properties.</span></span>
+    summary: <span data-ttu-id="fa6ee-101">저장소 계정 속성을 업데이트 하는 경우 제공 될 수 있는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-101">The parameters that can be provided when updating the storage account properties.</span></span>
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.StorageAccountUpdateParameters.accessTier'
     name: accessTier
@@ -27,14 +27,29 @@ items:
       - typeScript
     type: property
     summary: |-
-      <span data-ttu-id="f2f3d-102">저장소 계정 위치 종류에 필요한 =는 blob Storage입니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-102">Required for storage accounts where kind = BlobStorage.</span></span> <span data-ttu-id="f2f3d-103">청구에 사용 되는 액세스 계층.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-103">The access tier used for billing.</span></span>
-      <span data-ttu-id="f2f3d-104">가능한 값은 다음과 같습니다. 'Hot', 'Cool'</span><span class="sxs-lookup"><span data-stu-id="f2f3d-104">Possible values include: 'Hot', 'Cool'</span></span>
+      <span data-ttu-id="fa6ee-102">저장소 계정 위치 종류에 필요한 =는 blob Storage입니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-102">Required for storage accounts where kind = BlobStorage.</span></span> <span data-ttu-id="fa6ee-103">청구에 사용 되는 액세스 계층.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-103">The access tier used for billing.</span></span>
+      <span data-ttu-id="fa6ee-104">가능한 값은 다음과 같습니다. 'Hot', 'Cool'</span><span class="sxs-lookup"><span data-stu-id="fa6ee-104">Possible values include: 'Hot', 'Cool'</span></span>
     optional: true
     syntax:
       content: 'accessTier?: AccessTier'
       return:
         type:
           - '@azure/arm-storage.AccessTier'
+    package: '@azure/arm-storage'
+  - uid: '@azure/arm-storage.StorageAccountUpdateParameters.azureFilesIdentityBasedAuthentication'
+    name: azureFilesIdentityBasedAuthentication
+    fullName: azureFilesIdentityBasedAuthentication
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="fa6ee-105">Azure Files에 대 한 id 기반 인증 설정을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-105">Provides the identity based authentication settings for Azure Files.</span></span>
+    optional: true
+    syntax:
+      content: 'azureFilesIdentityBasedAuthentication?: AzureFilesIdentityBasedAuthentication'
+      return:
+        type:
+          - '@azure/arm-storage.AzureFilesIdentityBasedAuthentication'
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.StorageAccountUpdateParameters.customDomain'
     name: customDomain
@@ -43,28 +58,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="f2f3d-105">사용자 지정 도메인을 사용자가 저장소 계정에 할당 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-105">Custom domain assigned to the storage account by the user.</span></span> <span data-ttu-id="f2f3d-106">이름에 CNAME 소스입니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-106">Name is the CNAME source.</span></span> <span data-ttu-id="f2f3d-107">이 이번 저장소 계정당 하나의 사용자 지정 도메인만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-107">Only one custom domain is supported per storage account at this time.</span></span> <span data-ttu-id="f2f3d-108">기존 사용자 지정 도메인을 취소 하려면 사용자 지정 도메인 이름 속성에 대해 빈 문자열을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-108">To clear the existing custom domain, use an empty string for the custom domain name property.</span></span>'
+    summary: '<span data-ttu-id="fa6ee-106">사용자 지정 도메인을 사용자가 저장소 계정에 할당 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-106">Custom domain assigned to the storage account by the user.</span></span> <span data-ttu-id="fa6ee-107">이름에 CNAME 소스입니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-107">Name is the CNAME source.</span></span> <span data-ttu-id="fa6ee-108">이 이번 저장소 계정당 하나의 사용자 지정 도메인만 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-108">Only one custom domain is supported per storage account at this time.</span></span> <span data-ttu-id="fa6ee-109">기존 사용자 지정 도메인을 취소 하려면 사용자 지정 도메인 이름 속성에 대해 빈 문자열을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-109">To clear the existing custom domain, use an empty string for the custom domain name property.</span></span>'
     optional: true
     syntax:
       content: 'customDomain?: CustomDomain'
       return:
         type:
           - '@azure/arm-storage.CustomDomain'
-    package: '@azure/arm-storage'
-  - uid: '@azure/arm-storage.StorageAccountUpdateParameters.enableAzureFilesAadIntegration'
-    name: enableAzureFilesAadIntegration
-    fullName: enableAzureFilesAadIntegration
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: <span data-ttu-id="f2f3d-109">경우 SMB에 대 한 Azure 파일 AAD 통합을 사용 하도록 설정을 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-109">Enables Azure Files AAD Integration for SMB if sets to true.</span></span>
-    optional: true
-    syntax:
-      content: 'enableAzureFilesAadIntegration?: undefined | false | true'
-      return:
-        type:
-          - undefined | false | true
     package: '@azure/arm-storage'
   - uid: '@azure/arm-storage.StorageAccountUpdateParameters.enableHttpsTrafficOnly'
     name: enableHttpsTrafficOnly
@@ -73,7 +73,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="f2f3d-110">경우에 저장소 서비스에만 https 트래픽을 사용 하면 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-110">Allows https traffic only to storage service if sets to true.</span></span>
+    summary: <span data-ttu-id="fa6ee-110">경우에 저장소 서비스에만 https 트래픽을 사용 하면 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-110">Allows https traffic only to storage service if sets to true.</span></span>
     optional: true
     syntax:
       content: 'enableHttpsTrafficOnly?: undefined | false | true'
@@ -88,7 +88,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="f2f3d-111">계정에서 암호화 설정을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-111">Provides the encryption settings on the account.</span></span> <span data-ttu-id="f2f3d-112">기본 설정은 암호화 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-112">The default setting is unencrypted.</span></span>
+    summary: <span data-ttu-id="fa6ee-111">계정에서 암호화 설정을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-111">Provides the encryption settings on the account.</span></span> <span data-ttu-id="fa6ee-112">기본 설정은 암호화 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-112">The default setting is unencrypted.</span></span>
     optional: true
     syntax:
       content: 'encryption?: Encryption'
@@ -103,7 +103,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="f2f3d-113">리소스의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-113">The identity of the resource.</span></span>
+    summary: <span data-ttu-id="fa6ee-113">리소스의 id입니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-113">The identity of the resource.</span></span>
     optional: true
     syntax:
       content: 'identity?: Identity'
@@ -118,7 +118,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="f2f3d-114">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-114">Optional.</span></span> <span data-ttu-id="f2f3d-115">저장소 계정 유형을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-115">Indicates the type of storage account.</span></span> <span data-ttu-id="f2f3d-116">현재 StorageV2 값만 서버에서 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-116">Currently only StorageV2 value supported by server.</span></span> <span data-ttu-id="f2f3d-117">가능한 값은 다음과 같습니다. ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage''</span><span class="sxs-lookup"><span data-stu-id="f2f3d-117">Possible values include: ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage''</span></span>'
+    summary: '<span data-ttu-id="fa6ee-114">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-114">Optional.</span></span> <span data-ttu-id="fa6ee-115">저장소 계정 유형을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-115">Indicates the type of storage account.</span></span> <span data-ttu-id="fa6ee-116">현재 StorageV2 값만 서버에서 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-116">Currently only StorageV2 value supported by server.</span></span> <span data-ttu-id="fa6ee-117">가능한 값은 다음과 같습니다. ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage''</span><span class="sxs-lookup"><span data-stu-id="fa6ee-117">Possible values include: ''Storage'', ''StorageV2'', ''BlobStorage'', ''FileStorage'', ''BlockBlobStorage''</span></span>'
     optional: true
     syntax:
       content: 'kind?: Kind'
@@ -133,7 +133,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="f2f3d-118">네트워크 규칙 집합</span><span class="sxs-lookup"><span data-stu-id="f2f3d-118">Network rule set</span></span>
+    summary: <span data-ttu-id="fa6ee-118">네트워크 규칙 집합</span><span class="sxs-lookup"><span data-stu-id="fa6ee-118">Network rule set</span></span>
     optional: true
     syntax:
       content: 'networkRuleSet?: NetworkRuleSet'
@@ -148,7 +148,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="f2f3d-119">SKU 이름을 설정 하거나 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-119">Gets or sets the SKU name.</span></span> <span data-ttu-id="f2f3d-120">Standard_ZRS, Premium_LRS 또는 Premium_ZRS, SKU 이름을 업데이트할 수 없습니다 나 다른 값으로 해당 SKU 이름의 계정을 업데이트할 수는 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-120">Note that the SKU name cannot be updated to Standard_ZRS, Premium_LRS or Premium_ZRS, nor can accounts of those SKU names be updated to any other value.</span></span>'
+    summary: '<span data-ttu-id="fa6ee-119">SKU 이름을 설정 하거나 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-119">Gets or sets the SKU name.</span></span> <span data-ttu-id="fa6ee-120">Standard_ZRS, Premium_LRS 또는 Premium_ZRS, SKU 이름을 업데이트할 수 없습니다 나 다른 값으로 해당 SKU 이름의 계정을 업데이트할 수는 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-120">Note that the SKU name cannot be updated to Standard_ZRS, Premium_LRS or Premium_ZRS, nor can accounts of those SKU names be updated to any other value.</span></span>'
     optional: true
     syntax:
       content: 'sku?: Sku'
@@ -163,7 +163,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="f2f3d-121">리소스를 설명 하는 키 값 쌍의 목록을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-121">Gets or sets a list of key value pairs that describe the resource.</span></span> <span data-ttu-id="f2f3d-122">이러한 태그 보기 및 (여러 리소스 그룹)이이 리소스를 그룹화에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-122">These tags can be used in viewing and grouping this resource (across resource groups).</span></span> <span data-ttu-id="f2f3d-123">리소스에 대 한 최대 15 개의 태그를 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-123">A maximum of 15 tags can be provided for a resource.</span></span> <span data-ttu-id="f2f3d-124">각 태그는 길이가 128 자 길이 256 자 보다 크지 않은 값 보다 크지 않은 키를 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f2f3d-124">Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters.</span></span>
+    summary: <span data-ttu-id="fa6ee-121">리소스를 설명 하는 키 값 쌍의 목록을 가져오거나 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-121">Gets or sets a list of key value pairs that describe the resource.</span></span> <span data-ttu-id="fa6ee-122">이러한 태그 보기 및 (여러 리소스 그룹)이이 리소스를 그룹화에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-122">These tags can be used in viewing and grouping this resource (across resource groups).</span></span> <span data-ttu-id="fa6ee-123">리소스에 대 한 최대 15 개의 태그를 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-123">A maximum of 15 tags can be provided for a resource.</span></span> <span data-ttu-id="fa6ee-124">각 태그는 길이가 128 자 길이 256 자 보다 크지 않은 값 보다 크지 않은 키를 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa6ee-124">Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters.</span></span>
     optional: true
     syntax:
       content: 'tags?: undefined | [key: string]: string'
@@ -178,6 +178,12 @@ references:
       - name: AccessTier
         fullName: AccessTier
         uid: '@azure/arm-storage.AccessTier'
+  - uid: '@azure/arm-storage.AzureFilesIdentityBasedAuthentication'
+    name: AzureFilesIdentityBasedAuthentication
+    spec.typeScript:
+      - name: AzureFilesIdentityBasedAuthentication
+        fullName: AzureFilesIdentityBasedAuthentication
+        uid: '@azure/arm-storage.AzureFilesIdentityBasedAuthentication'
   - uid: '@azure/arm-storage.CustomDomain'
     name: CustomDomain
     spec.typeScript:

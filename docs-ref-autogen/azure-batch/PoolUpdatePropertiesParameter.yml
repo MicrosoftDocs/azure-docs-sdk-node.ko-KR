@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.PoolUpdatePropertiesParameter
+    name: PoolUpdatePropertiesParameter
+    fullName: PoolUpdatePropertiesParameter
+    children:
+      - azure-batch.PoolUpdatePropertiesParameter.applicationPackageReferences
+      - azure-batch.PoolUpdatePropertiesParameter.certificateReferences
+      - azure-batch.PoolUpdatePropertiesParameter.metadata
+      - azure-batch.PoolUpdatePropertiesParameter.startTask
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.applicationPackageReferences
+    name: applicationPackageReferences
+    fullName: applicationPackageReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="84e74-101">풀에 대 한 기존 응용 프로그램 패키지 참조를 대체합니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-101">The list replaces any existing Application Package references on the Pool.</span></span>
+      <span data-ttu-id="84e74-102">응용 프로그램 패키지 참조에 대 한 변경 내용은 모든 새 계산 노드 풀을 조인에 영향 되지만 계산 계산 노드를 다시 부팅 되거나 이미지로 다시 설치 될 때까지 풀에 이미 있는 영향을 주지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-102">Changes to Application Package references affect all new Compute Nodes joining the Pool, but do not affect Compute Compute Nodes that are already in the Pool until they are rebooted or reimaged.</span></span> <span data-ttu-id="84e74-103">지정된 된 풀에서 10 개의 응용 프로그램 패키지 참조의 최대가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-103">There is a maximum of 10 Application Package references on any given Pool.</span></span> <span data-ttu-id="84e74-104">생략 하거나 빈 컬렉션을 지정 하는 경우 풀에서 서버에 대 한 기존 응용 프로그램 패키지 참조가 제거 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-104">If omitted, or if you specify an empty collection, any existing Application Packages references are removed from the Pool.</span></span> <span data-ttu-id="84e74-105">지정된 된 풀에서 최대 10 개의 참조를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-105">A maximum of 10 references may be specified on a given Pool.</span></span>
+    syntax:
+      content: 'applicationPackageReferences: ApplicationPackageReference[]'
+      return:
+        type:
+          - 'azure-batch.ApplicationPackageReference[]'
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.certificateReferences
+    name: certificateReferences
+    fullName: certificateReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="84e74-106">이 목록에는 풀에 구성 된 모든 기존 인증서 참조를 대체 합니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-106">This list replaces any existing Certificate references configured on the Pool.</span></span> <span data-ttu-id="84e74-107">빈 컬렉션을 지정 하는 경우 모든 기존 인증서 참조 풀에서 제거 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-107">If you specify an empty collection, any existing Certificate references are removed from the Pool.</span></span> <span data-ttu-id="84e74-108">Windows 노드에 대 한 Batch 서비스는 위치와 지정 된 인증서 저장소에 인증서를 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-108">For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location.</span></span> <span data-ttu-id="84e74-109">Linux 계산 노드에 대 한 인증서 작업 디렉터리 및 AZ_BATCH_CERTIFICATES_DIR이이 위치에 대 한 쿼리 작업에 제공 되는 환경 변수를 태스크 내에서 디렉터리에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-109">For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.</span></span> <span data-ttu-id="84e74-110">''원격 사용자''의 표시 여부를 사용 하 여 인증서에 대 한 ''인증서'' 디렉터리 사용자의 홈 디렉터리에 만들어집니다 (예를 들어 /home/ {사용자 이름} / 인증서) 인증서는 해당 디렉터리에 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-110">For Certificates with visibility of ''remoteUser'', a ''certs'' directory is created in the user''s home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.</span></span>'
+    syntax:
+      content: 'certificateReferences: CertificateReference[]'
+      return:
+        type:
+          - 'azure-batch.CertificateReference[]'
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.metadata
+    name: metadata
+    fullName: metadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="84e74-111">이 목록에서 풀에 구성 된 기존 메타 데이터를 대체 합니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-111">This list replaces any existing metadata configured on the Pool.</span></span> <span data-ttu-id="84e74-112">생략 하면 또는 빈 컬렉션을 지정 하는 경우 기존 메타 데이터는 풀에서 제거 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-112">If omitted, or if you specify an empty collection, any existing metadata is removed from the Pool.</span></span>'
+    syntax:
+      content: 'metadata: MetadataItem[]'
+      return:
+        type:
+          - 'azure-batch.MetadataItem[]'
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.startTask
+    name: startTask
+    fullName: startTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="84e74-113">이 요소가 있을 경우 모든 기존 시작 태스크 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-113">If this element is present, it overwrites any existing start Task.</span></span> <span data-ttu-id="84e74-114">생략 하면 모든 기존 시작 태스크는 풀에서 제거 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84e74-114">If omitted, any existing start Task is removed from the Pool.</span></span>'
+    optional: true
+    syntax:
+      content: 'startTask?: StartTask'
+      return:
+        type:
+          - azure-batch.StartTask
+    package: azure-batch
+references:
+  - uid: 'azure-batch.ApplicationPackageReference[]'
+    name: 'ApplicationPackageReference[]'
+    spec.typeScript:
+      - name: ApplicationPackageReference
+        fullName: ApplicationPackageReference
+        uid: azure-batch.ApplicationPackageReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-batch.CertificateReference[]'
+    name: 'CertificateReference[]'
+    spec.typeScript:
+      - name: CertificateReference
+        fullName: CertificateReference
+        uid: azure-batch.CertificateReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-batch.MetadataItem[]'
+    name: 'MetadataItem[]'
+    spec.typeScript:
+      - name: MetadataItem
+        fullName: MetadataItem
+        uid: azure-batch.MetadataItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.StartTask
+    name: StartTask
+    spec.typeScript:
+      - name: StartTask
+        fullName: StartTask
+        uid: azure-batch.StartTask

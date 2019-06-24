@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.PoolInformation
+    name: PoolInformation
+    fullName: PoolInformation
+    children:
+      - azure-batch.PoolInformation.autoPoolSpecification
+      - azure-batch.PoolInformation.poolId
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.PoolInformation.autoPoolSpecification
+    name: autoPoolSpecification
+    fullName: autoPoolSpecification
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="dc96a-101">자동 풀 만들기에 실패 하면 Batch 서비스는 작업 완료 된 상태로 이동 하 고 풀 만들기 오류 작업의 일정 오류 속성에 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-101">If auto Pool creation fails, the Batch service moves the Job to a completed state, and the Pool creation error is set in the Job''s scheduling error property.</span></span> <span data-ttu-id="dc96a-102">Batch 서비스의 수명을 관리 (모두 생성 및 keepAlive를 지정 하지 않으면 삭제) 자동 풀 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-102">The Batch service manages the lifetime (both creation and, unless keepAlive is specified, deletion) of the auto Pool.</span></span> <span data-ttu-id="dc96a-103">작업이 활성 상태일 때 자동 풀 수명에 영향을 주는 모든 사용자 동작 예기치 않은 동작이 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-103">Any user actions that affect the lifetime of the auto Pool while the Job is active will result in unexpected behavior.</span></span> <span data-ttu-id="dc96a-104">풀 ID 또는 자동 풀 사양 중 하나만 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-104">You must specify either the Pool ID or the auto Pool specification, but not both.</span></span>'
+    optional: true
+    syntax:
+      content: 'autoPoolSpecification?: AutoPoolSpecification'
+      return:
+        type:
+          - azure-batch.AutoPoolSpecification
+    package: azure-batch
+  - uid: azure-batch.PoolInformation.poolId
+    name: poolId
+    fullName: poolId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="dc96a-105">이 속성에서 참조 하는 풀에 존재 하는지 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-105">You must ensure that the Pool referenced by this property exists.</span></span> <span data-ttu-id="dc96a-106">풀을 Batch 서비스에서 작업을 예약 하려고 시점에 없으면 해당 id를 사용 하 여 풀을 만들 때까지 작업에 대 한 작업이 실행 됩니다. 일괄 처리 서비스는 작업 요청을 거부 하지 참고 단순히 실행 되지 않습니다 작업 풀 생길 때까지 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-106">If the Pool does not exist at the time the Batch service tries to schedule a Job, no Tasks for the Job will run until you create a Pool with that id. Note that the Batch service will not reject the Job request; it will simply not run Tasks until the Pool exists.</span></span> <span data-ttu-id="dc96a-107">풀 ID 또는 자동 풀 사양 중 하나만 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc96a-107">You must specify either the Pool ID or the auto Pool specification, but not both.</span></span>'
+    optional: true
+    syntax:
+      content: 'poolId?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+references:
+  - uid: azure-batch.AutoPoolSpecification
+    name: AutoPoolSpecification
+    spec.typeScript:
+      - name: AutoPoolSpecification
+        fullName: AutoPoolSpecification
+        uid: azure-batch.AutoPoolSpecification

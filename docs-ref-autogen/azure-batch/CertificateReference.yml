@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.CertificateReference
+    name: CertificateReference
+    fullName: CertificateReference
+    children:
+      - azure-batch.CertificateReference.storeLocation
+      - azure-batch.CertificateReference.storeName
+      - azure-batch.CertificateReference.thumbprint
+      - azure-batch.CertificateReference.thumbprintAlgorithm
+      - azure-batch.CertificateReference.visibility
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.CertificateReference.storeLocation
+    name: storeLocation
+    fullName: storeLocation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d47fb-101">기본값은 currentuser입니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-101">The default value is currentuser.</span></span> <span data-ttu-id="d47fb-102">이 속성은 Windows 계산 노드 (만든, Windows 이미지 참조를 사용 하 여 virtualMachineConfiguration 또는 cloudServiceConfiguration을 사용 하 여)를 사용 하 여 구성 된 풀에만 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-102">This property is applicable only for Pools configured with Windows Compute Nodes (that is, created with cloudServiceConfiguration, or with virtualMachineConfiguration using a Windows Image reference).</span></span> <span data-ttu-id="d47fb-103">Linux 계산 노드에 대 한 인증서 작업 디렉터리 및 AZ_BATCH_CERTIFICATES_DIR이이 위치에 대 한 쿼리 작업에 제공 되는 환경 변수를 태스크 내에서 디렉터리에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-103">For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.</span></span> <span data-ttu-id="d47fb-104">''원격 사용자''의 표시 여부를 사용 하 여 인증서에 대 한 ''인증서'' 디렉터리 사용자의 홈 디렉터리에 만들어집니다 (예를 들어 /home/ {사용자 이름} / 인증서) 인증서는 해당 디렉터리에 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-104">For Certificates with visibility of ''remoteUser'', a ''certs'' directory is created in the user''s home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.</span></span> <span data-ttu-id="d47fb-105">가능한 값: ''currentUser'', ''localMachine''</span><span class="sxs-lookup"><span data-stu-id="d47fb-105">Possible values include: ''currentUser'', ''localMachine''</span></span>'
+    optional: true
+    syntax:
+      content: 'storeLocation?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.CertificateReference.storeName
+    name: storeName
+    fullName: storeName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="d47fb-106">이 속성은 Windows 계산 노드 (만든, Windows 이미지 참조를 사용 하 여 virtualMachineConfiguration 또는 cloudServiceConfiguration을 사용 하 여)를 사용 하 여 구성 된 풀에만 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-106">This property is applicable only for Pools configured with Windows Compute Nodes (that is, created with cloudServiceConfiguration, or with virtualMachineConfiguration using a Windows Image reference).</span></span> <span data-ttu-id="d47fb-107">일반 저장소 이름은 다음과 같습니다. My 루트, CA, 트러스트, 허용 안 함, TrustedPeople, TrustedPublisher, AuthRoot, 주소록, 하지만 모든 사용자 지정 저장소 이름을 사용할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-107">Common store names include: My, Root, CA, Trust, Disallowed, TrustedPeople, TrustedPublisher, AuthRoot, AddressBook, but any custom store name can also be used.</span></span> <span data-ttu-id="d47fb-108">기본값은 My입니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-108">The default value is My.</span></span>'
+    optional: true
+    syntax:
+      content: 'storeName?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.CertificateReference.thumbprint
+    name: thumbprint
+    fullName: thumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'thumbprint: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.CertificateReference.thumbprintAlgorithm
+    name: thumbprintAlgorithm
+    fullName: thumbprintAlgorithm
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'thumbprintAlgorithm: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.CertificateReference.visibility
+    name: visibility
+    fullName: visibility
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="d47fb-109">이 컬렉션에 있는 둘 이상의 표시 여부를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d47fb-109">You can specify more than one visibility in this collection.</span></span> <span data-ttu-id="d47fb-110">기본값은 모든 계정.</span><span class="sxs-lookup"><span data-stu-id="d47fb-110">The default is all Accounts.</span></span>
+    optional: true
+    syntax:
+      content: 'visibility?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-batch

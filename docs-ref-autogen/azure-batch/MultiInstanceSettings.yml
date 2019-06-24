@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.MultiInstanceSettings
+    name: MultiInstanceSettings
+    fullName: MultiInstanceSettings
+    children:
+      - azure-batch.MultiInstanceSettings.commonResourceFiles
+      - azure-batch.MultiInstanceSettings.coordinationCommandLine
+      - azure-batch.MultiInstanceSettings.numberOfInstances
+    langs:
+      - typeScript
+    type: interface
+    summary: '<span data-ttu-id="6e86c-101">다중 인스턴스 작업은 MPI 작업을 지원 하기 위해 자주 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-101">Multi-instance Tasks are commonly used to support MPI Tasks.</span></span> <span data-ttu-id="6e86c-102">MPI 경우에서 (예를 들어 0이 아닌 종료 코드로 종료) 인해 하위 작업 중 하나라도 실패할 경우 전체 다중 인스턴스 태스크가 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-102">In the MPI case, if any of the subtasks fail (for example due to exiting with a non-zero exit code) the entire multi-instance Task fails.</span></span> <span data-ttu-id="6e86c-103">그런 다음 다중 인스턴스 작업 종료 하 고 해당 재시도 한계까지 재시도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-103">The multi-instance Task is then terminated and retried, up to its retry limit.</span></span>'
+    package: azure-batch
+  - uid: azure-batch.MultiInstanceSettings.commonResourceFiles
+    name: commonResourceFiles
+    fullName: commonResourceFiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="6e86c-104">일반 리소스 파일과 태스크 리소스 파일 차이점은 기본에 대해서만 태스크 리소스 파일은 다운로드 하는 반면 기본을 포함 하는 모든 하위 작업에 대 한 공용 리소스 파일 다운로드 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-104">The difference between common resource files and Task resource files is that common resource files are downloaded for all subtasks including the primary, whereas Task resource files are downloaded only for the primary.</span></span> <span data-ttu-id="6e86c-105">또한 이때 이러한 리소스 파일 작업 작업 디렉터리로 다운로드 되지 않습니다 하지만 대신 태스크 루트 디렉터리 (작업 디렉터리 위의 디렉터리)에 다운로드 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-105">Also note that these resource files are not downloaded to the Task working directory, but instead are downloaded to the Task root directory (one directory above the working directory).</span></span>  <span data-ttu-id="6e86c-106">리소스 파일의 목록에 대 한 최대 크기가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-106">There is a maximum size for the list of resource files.</span></span>  <span data-ttu-id="6e86c-107">최대 크기를 초과 하면 요청이 실패 하 고 응답 오류 코드는 RequestEntityTooLarge 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-107">When the max size is exceeded, the request will fail and the response error code will be RequestEntityTooLarge.</span></span> <span data-ttu-id="6e86c-108">이런 경우의 ResourceFiles 컬렉션 크기가 줄여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-108">If this occurs, the collection of ResourceFiles must be reduced in size.</span></span> <span data-ttu-id="6e86c-109">.Zip 파일, 응용 프로그램 패키지 또는 Docker 컨테이너를 사용 하 여 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-109">This can be achieved using .zip files, Application Packages, or Docker Containers.</span></span>'
+    optional: true
+    syntax:
+      content: 'commonResourceFiles?: ResourceFile[]'
+      return:
+        type:
+          - 'azure-batch.ResourceFile[]'
+    package: azure-batch
+  - uid: azure-batch.MultiInstanceSettings.coordinationCommandLine
+    name: coordinationCommandLine
+    fullName: coordinationCommandLine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="6e86c-110">일반적인 조합 명령줄 백그라운드 서비스를 시작 하 고 서비스 노드 간 메시지를 처리할 준비가 되었는지 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-110">A typical coordination command line launches a background service and verifies that the service is ready to process inter-node messages.</span></span>
+    syntax:
+      content: 'coordinationCommandLine: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.MultiInstanceSettings.numberOfInstances
+    name: numberOfInstances
+    fullName: numberOfInstances
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="6e86c-111">생략 하면 기본값은 1입니다.</span><span class="sxs-lookup"><span data-stu-id="6e86c-111">If omitted, the default is 1.</span></span>'
+    optional: true
+    syntax:
+      content: 'numberOfInstances?: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+references:
+  - uid: 'azure-batch.ResourceFile[]'
+    name: 'ResourceFile[]'
+    spec.typeScript:
+      - name: ResourceFile
+        fullName: ResourceFile
+        uid: azure-batch.ResourceFile
+      - name: '[]'
+        fullName: '[]'

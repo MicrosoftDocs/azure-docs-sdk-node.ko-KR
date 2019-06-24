@@ -47,7 +47,7 @@ items:
     langs:
       - typeScript
     type: class
-    summary: <span data-ttu-id="f4055-101">LargeFaceListOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-101">Class representing a LargeFaceListOperations.</span></span>
+    summary: <span data-ttu-id="98b7a-101">LargeFaceListOperations 나타내는 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-101">Class representing a LargeFaceListOperations.</span></span>
     package: '@azure/cognitiveservices-face'
   - uid: '@azure/cognitiveservices-face.LargeFaceListOperations.addFaceFromStream_2'
     name: 'addFaceFromStream(string, msRest.HttpRequestBody, LargeFaceListAddFaceFromStreamOptionalParams, ServiceCallback<PersistedFace>)'
@@ -62,20 +62,20 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-102">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-102">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-102">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-102">Id referencing a particular large face list.</span></span>
         - id: image
           type:
             - msRest.HttpRequestBody
-          description: <span data-ttu-id="f4055-103">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-103">An image stream.</span></span>
+          description: <span data-ttu-id="98b7a-103">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-103">An image stream.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListAddFaceFromStreamOptionalParams'
-          description: <span data-ttu-id="f4055-104">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-104">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-104">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-104">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="f4055-105">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-105">The callback</span></span>
+            <span data-ttu-id="98b7a-105">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-105">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListAddFaceFromStreamResponse>
@@ -86,18 +86,35 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="f4055-106">얼굴을 큰 얼굴 목록에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-106">Add a face to a large face list.</span></span> <span data-ttu-id="f4055-107">입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-107">The input face is specified as an image with a targetFace rectangle.</span></span> <span data-ttu-id="f4055-108">추가 얼굴을 나타내는 persistedFaceId를 반환 하 고 persistedFaceId 만료 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-108">It returns a persistedFaceId representing the added face, and persistedFaceId will not expire.</span></span>'
+    summary: |-
+      <span data-ttu-id="98b7a-106">지정 된 큰 얼굴 목록에 최대 1,000,000 얼굴을 얼굴을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-106">Add a face to a specified large face list, up to 1,000,000 faces.</span></span>
+      <br /> <span data-ttu-id="98b7a-107">이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-107">To deal with an image contains multiple faces, input face can be specified as an image with a targetFace rectangle.</span></span> <span data-ttu-id="98b7a-108">추가 글꼴을 나타내는 persistedFaceId를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-108">It returns a persistedFaceId representing the added face.</span></span> <span data-ttu-id="98b7a-109">이미지가 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-109">No image will be stored.</span></span> <span data-ttu-id="98b7a-110">추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [LargeFaceList 얼굴-삭제](/docs/services/563879b61984550e40cbbe8d/operations/5a158c8ad2de3616c086f2d4) 하거나 [LargeFaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-110">Only the extracted face feature will be stored on server until [LargeFaceList Face - Delete](/docs/services/563879b61984550e40cbbe8d/operations/5a158c8ad2de3616c086f2d4) or [LargeFaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) is called.</span></span>
+      <br /> <span data-ttu-id="98b7a-111">생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-111">Note persistedFaceId is different from faceId generated by [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).</span></span>
+      * <span data-ttu-id="98b7a-112">고품질 얼굴 이미지 인식 정밀도 향상 시키려면을 의미합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-112">Higher face image quality means better recognition precision.</span></span> <span data-ttu-id="98b7a-113">고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-113">Please consider high-quality faces: frontal, clear, and face size is 200x200 pixels (100 pixels between eyes) or bigger.</span></span>
+      * <span data-ttu-id="98b7a-114">JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-114">JPEG, PNG, GIF (the first frame), and BMP format are supported.</span></span> <span data-ttu-id="98b7a-115">허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-115">The allowed image file size is from 1KB to 6MB.</span></span>
+      * <span data-ttu-id="98b7a-116">"targetFace" 사각형 한 면을 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-116">"targetFace" rectangle should contain one face.</span></span> <span data-ttu-id="98b7a-117">0 개 이상의 얼굴 오류로 간주 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-117">Zero or multiple faces will be regarded as an error.</span></span> <span data-ttu-id="98b7a-118">제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-118">If the provided "targetFace" rectangle is not returned from [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), there’s no guarantee to detect and add the face successfully.</span></span>
+      * <span data-ttu-id="98b7a-119">검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-119">Out of detectable face size (36x36 - 4096x4096 pixels), large head-pose, or large occlusions will cause failures.</span></span>
+      * <span data-ttu-id="98b7a-120">동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-120">Adding/deleting faces to/from a same face list are processed sequentially and to/from different face lists are in parallel.</span></span>
+      * <span data-ttu-id="98b7a-121">최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-121">The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels.</span></span>
+      <span data-ttu-id="98b7a-122">1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-122">Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.</span></span>
+      * <span data-ttu-id="98b7a-123">다른 'detectionModel' 값을 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-123">Different 'detectionModel' values can be provided.</span></span> <span data-ttu-id="98b7a-124">사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span><span class="sxs-lookup"><span data-stu-id="98b7a-124">To use and compare different detection models, please refer to [How to specify a detection model](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span></span>
+      | <span data-ttu-id="98b7a-125">모델</span><span class="sxs-lookup"><span data-stu-id="98b7a-125">Model</span></span> | <span data-ttu-id="98b7a-126">권장 사용법-case(s)</span><span class="sxs-lookup"><span data-stu-id="98b7a-126">Recommended use-case(s)</span></span> |
+      | ---------- | -------- |
+      | <span data-ttu-id="98b7a-127">'detection_01':</span><span class="sxs-lookup"><span data-stu-id="98b7a-127">'detection_01':</span></span> | <span data-ttu-id="98b7a-128">에 대 한 기본 검색 모델 [LargeFaceList-추가</span><span class="sxs-lookup"><span data-stu-id="98b7a-128">The default detection model for [LargeFaceList - Add</span></span>
+      <span data-ttu-id="98b7a-129">Face](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3).</span><span class="sxs-lookup"><span data-stu-id="98b7a-129">Face](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3).</span></span> <span data-ttu-id="98b7a-130">거의 정면 얼굴 감지에 대 한 권장 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-130">Recommend for near frontal face detection.</span></span> <span data-ttu-id="98b7a-131">매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-131">For scenarios with exceptionally large angle (head-pose) faces, occluded faces or wrong image orientation, the faces in such cases may not be detected.</span></span> <span data-ttu-id="98b7a-132">| | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-132">| | 'detection_02': | Detection model released in 2019 May with improved accuracy especially on small, side and blurry faces.</span></span> <span data-ttu-id="98b7a-133">| 할당량:</span><span class="sxs-lookup"><span data-stu-id="98b7a-133">| Quota:</span></span>
+      * <span data-ttu-id="98b7a-134">무료 계층 구독 할당량: 1,000 큰 얼굴 목록 별로 직면합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-134">Free-tier subscription quota: 1,000 faces per large face list.</span></span>
+      * <span data-ttu-id="98b7a-135">S0 계층 구독 할당량: 1,000,000 큰 얼굴 목록 별로 직면합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-135">S0-tier subscription quota: 1,000,000 faces per large face list.</span></span>
     syntax:
       content: 'function addFaceFromStream(largeFaceListId: string, image: msRest.HttpRequestBody, options?: Models.LargeFaceListAddFaceFromStreamOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-109">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-109">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-136">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-136">Id referencing a particular large face list.</span></span>
         - id: image
           type:
             - msRest.HttpRequestBody
-          description: <span data-ttu-id="f4055-110">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-110">An image stream.</span></span>
+          description: <span data-ttu-id="98b7a-137">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-137">An image stream.</span></span>
         - id: options
           type:
             - Models.LargeFaceListAddFaceFromStreamOptionalParams
@@ -120,16 +137,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-111">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-111">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-138">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-138">Id referencing a particular large face list.</span></span>
         - id: image
           type:
             - msRest.HttpRequestBody
-          description: <span data-ttu-id="f4055-112">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-112">An image stream.</span></span>
+          description: <span data-ttu-id="98b7a-139">이미지 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-139">An image stream.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="f4055-113">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-113">The callback</span></span>
+            <span data-ttu-id="98b7a-140">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-140">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListAddFaceFromStreamResponse>
@@ -147,20 +164,20 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-114">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-114">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-141">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-141">Id referencing a particular large face list.</span></span>
         - id: url
           type:
             - string
-          description: <span data-ttu-id="f4055-115">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="f4055-115">Publicly reachable URL of an image</span></span>
+          description: <span data-ttu-id="98b7a-142">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="98b7a-142">Publicly reachable URL of an image</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListAddFaceFromUrlOptionalParams'
-          description: <span data-ttu-id="f4055-116">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-116">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-143">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-143">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="f4055-117">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-117">The callback</span></span>
+            <span data-ttu-id="98b7a-144">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-144">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListAddFaceFromUrlResponse>
@@ -171,18 +188,35 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="f4055-118">얼굴을 큰 얼굴 목록에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-118">Add a face to a large face list.</span></span> <span data-ttu-id="f4055-119">입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-119">The input face is specified as an image with a targetFace rectangle.</span></span> <span data-ttu-id="f4055-120">추가 얼굴을 나타내는 persistedFaceId를 반환 하 고 persistedFaceId 만료 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-120">It returns a persistedFaceId representing the added face, and persistedFaceId will not expire.</span></span>'
+    summary: |-
+      <span data-ttu-id="98b7a-145">지정 된 큰 얼굴 목록에 최대 1,000,000 얼굴을 얼굴을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-145">Add a face to a specified large face list, up to 1,000,000 faces.</span></span>
+      <br /> <span data-ttu-id="98b7a-146">이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-146">To deal with an image contains multiple faces, input face can be specified as an image with a targetFace rectangle.</span></span> <span data-ttu-id="98b7a-147">추가 글꼴을 나타내는 persistedFaceId를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-147">It returns a persistedFaceId representing the added face.</span></span> <span data-ttu-id="98b7a-148">이미지가 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-148">No image will be stored.</span></span> <span data-ttu-id="98b7a-149">추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [LargeFaceList 얼굴-삭제](/docs/services/563879b61984550e40cbbe8d/operations/5a158c8ad2de3616c086f2d4) 하거나 [LargeFaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-149">Only the extracted face feature will be stored on server until [LargeFaceList Face - Delete](/docs/services/563879b61984550e40cbbe8d/operations/5a158c8ad2de3616c086f2d4) or [LargeFaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) is called.</span></span>
+      <br /> <span data-ttu-id="98b7a-150">생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-150">Note persistedFaceId is different from faceId generated by [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).</span></span>
+      * <span data-ttu-id="98b7a-151">고품질 얼굴 이미지 인식 정밀도 향상 시키려면을 의미합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-151">Higher face image quality means better recognition precision.</span></span> <span data-ttu-id="98b7a-152">고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-152">Please consider high-quality faces: frontal, clear, and face size is 200x200 pixels (100 pixels between eyes) or bigger.</span></span>
+      * <span data-ttu-id="98b7a-153">JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-153">JPEG, PNG, GIF (the first frame), and BMP format are supported.</span></span> <span data-ttu-id="98b7a-154">허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-154">The allowed image file size is from 1KB to 6MB.</span></span>
+      * <span data-ttu-id="98b7a-155">"targetFace" 사각형 한 면을 포함 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-155">"targetFace" rectangle should contain one face.</span></span> <span data-ttu-id="98b7a-156">0 개 이상의 얼굴 오류로 간주 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-156">Zero or multiple faces will be regarded as an error.</span></span> <span data-ttu-id="98b7a-157">제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-157">If the provided "targetFace" rectangle is not returned from [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), there’s no guarantee to detect and add the face successfully.</span></span>
+      * <span data-ttu-id="98b7a-158">검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-158">Out of detectable face size (36x36 - 4096x4096 pixels), large head-pose, or large occlusions will cause failures.</span></span>
+      * <span data-ttu-id="98b7a-159">동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-159">Adding/deleting faces to/from a same face list are processed sequentially and to/from different face lists are in parallel.</span></span>
+      * <span data-ttu-id="98b7a-160">최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-160">The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels.</span></span>
+      <span data-ttu-id="98b7a-161">1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-161">Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.</span></span>
+      * <span data-ttu-id="98b7a-162">다른 'detectionModel' 값을 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-162">Different 'detectionModel' values can be provided.</span></span> <span data-ttu-id="98b7a-163">사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span><span class="sxs-lookup"><span data-stu-id="98b7a-163">To use and compare different detection models, please refer to [How to specify a detection model](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)</span></span>
+      | <span data-ttu-id="98b7a-164">모델</span><span class="sxs-lookup"><span data-stu-id="98b7a-164">Model</span></span> | <span data-ttu-id="98b7a-165">권장 사용법-case(s)</span><span class="sxs-lookup"><span data-stu-id="98b7a-165">Recommended use-case(s)</span></span> |
+      | ---------- | -------- |
+      | <span data-ttu-id="98b7a-166">'detection_01':</span><span class="sxs-lookup"><span data-stu-id="98b7a-166">'detection_01':</span></span> | <span data-ttu-id="98b7a-167">에 대 한 기본 검색 모델 [LargeFaceList-추가</span><span class="sxs-lookup"><span data-stu-id="98b7a-167">The default detection model for [LargeFaceList - Add</span></span>
+      <span data-ttu-id="98b7a-168">Face](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3).</span><span class="sxs-lookup"><span data-stu-id="98b7a-168">Face](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3).</span></span> <span data-ttu-id="98b7a-169">거의 정면 얼굴 감지에 대 한 권장 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-169">Recommend for near frontal face detection.</span></span> <span data-ttu-id="98b7a-170">매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-170">For scenarios with exceptionally large angle (head-pose) faces, occluded faces or wrong image orientation, the faces in such cases may not be detected.</span></span> <span data-ttu-id="98b7a-171">| | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-171">| | 'detection_02': | Detection model released in 2019 May with improved accuracy especially on small, side and blurry faces.</span></span> <span data-ttu-id="98b7a-172">| 할당량:</span><span class="sxs-lookup"><span data-stu-id="98b7a-172">| Quota:</span></span>
+      * <span data-ttu-id="98b7a-173">무료 계층 구독 할당량: 1,000 큰 얼굴 목록 별로 직면합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-173">Free-tier subscription quota: 1,000 faces per large face list.</span></span>
+      * <span data-ttu-id="98b7a-174">S0 계층 구독 할당량: 1,000,000 큰 얼굴 목록 별로 직면합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-174">S0-tier subscription quota: 1,000,000 faces per large face list.</span></span>
     syntax:
       content: 'function addFaceFromUrl(largeFaceListId: string, url: string, options?: Models.LargeFaceListAddFaceFromUrlOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-121">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-121">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-175">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-175">Id referencing a particular large face list.</span></span>
         - id: url
           type:
             - string
-          description: <span data-ttu-id="f4055-122">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="f4055-122">Publicly reachable URL of an image</span></span>
+          description: <span data-ttu-id="98b7a-176">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="98b7a-176">Publicly reachable URL of an image</span></span>
         - id: options
           type:
             - Models.LargeFaceListAddFaceFromUrlOptionalParams
@@ -205,16 +239,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-123">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-123">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-177">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-177">Id referencing a particular large face list.</span></span>
         - id: url
           type:
             - string
-          description: <span data-ttu-id="f4055-124">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="f4055-124">Publicly reachable URL of an image</span></span>
+          description: <span data-ttu-id="98b7a-178">이미지의 공개적으로 도달 가능한 URL</span><span class="sxs-lookup"><span data-stu-id="98b7a-178">Publicly reachable URL of an image</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="f4055-125">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-125">The callback</span></span>
+            <span data-ttu-id="98b7a-179">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-179">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListAddFaceFromUrlResponse>
@@ -232,16 +266,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-126">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-126">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-180">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-180">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListCreateOptionalParams'
-          description: <span data-ttu-id="f4055-127">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-127">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-181">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-181">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-128">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-128">The callback</span></span>
+            <span data-ttu-id="98b7a-182">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-182">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -252,25 +286,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: |-
-      <span data-ttu-id="f4055-129">사용자 지정 largeFaceListId, 이름, 선택적 userData 및 recognitionModel 큰 얼굴 빈 목록을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-129">Create an empty large face list with user-specified largeFaceListId, name, an optional userData and recognitionModel.</span></span>
-      <br /> <span data-ttu-id="f4055-130">큰 얼굴 목록 목록이 아니라 최대 1,000,000 얼굴을 얼굴 및 사용한 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-130">Large face list is a list of faces, up to 1,000,000 faces, and used by [Face - Find Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).</span></span>
-      <br /> <span data-ttu-id="f4055-131">를 만든 후 사용자가 사용 해야 [LargeFaceList 얼굴-추가](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3) 얼굴을 가져오려는 및 [LargeFaceList-학습](/docs/services/563879b61984550e40cbbe8d/operations/5a158422d2de3616c086f2d1) 준비가 되도록 [얼굴-FindSimilar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-131">After creation, user should use [LargeFaceList Face - Add](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3) to import the faces and [LargeFaceList - Train](/docs/services/563879b61984550e40cbbe8d/operations/5a158422d2de3616c086f2d1) to make it ready for [Face - FindSimilar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).</span></span> <span data-ttu-id="f4055-132">될 때까지 서버에 저장 된 얼굴 [LargeFaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-132">Faces are stored on server until [LargeFaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) is called.</span></span>
-      <br /> <span data-ttu-id="f4055-133">마찬가지로 유명인 유사한 얼굴을 필터링 하는 유사한 얼굴 찾기 같은 시나리오에 사용 됩니다 찾거나 식별 조명으로 방식으로 직면 하 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-133">Find Similar is used for scenario like finding celebrity-like faces, similar face filtering, or as a light way face identification.</span></span> <span data-ttu-id="f4055-134">사용자를 식별 하는 실제 사용 하 여가 있는 경우 사용 하 여 하지만 [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /
-      [LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) 하 고 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-134">But if the actual use is to identify person, please use [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /
-      [LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) and [Face - Identify](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239).</span></span>
-      <br />
-      * <span data-ttu-id="f4055-135">무료 계층 구독 할당량: 64 많은 얼굴을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-135">Free-tier subscription quota: 64 large face lists.</span></span>
-      * <span data-ttu-id="f4055-136">S0 계층 구독 할당량: 1,000,000 큰 얼굴 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-136">S0-tier subscription quota: 1,000,000 large face lists.</span></span>
-      <br />
-      <span data-ttu-id="f4055-137">'recognitionModel' 큰 얼굴 목록을 사용 하 여 연결을 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-137">'recognitionModel' should be specified to associate with this large face list.</span></span> <span data-ttu-id="f4055-138">'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-138">The default value for 'recognitionModel' is 'recognition_01', if the latest model needed, please explicitly specify the model you need in this parameter.</span></span> <span data-ttu-id="f4055-139">기존 큰 얼굴 목록에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-139">New faces that are added to an existing large face list will use the recognition model that's already associated with the collection.</span></span> <span data-ttu-id="f4055-140">인식 모델의 다른 버전으로 추출 하는 기능에 큰 얼굴 목록에서 기존 얼굴 기능을 업데이트할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-140">Existing face features in a large face list can't be updated to features extracted by another version of recognition model.</span></span>
+    summary: "<span data-ttu-id=\"98b7a-183\">사용자 지정 largeFaceListId, 이름, 선택적 userData 및 recognitionModel 큰 얼굴 빈 목록을 만듭니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-183\">Create an empty large face list with user-specified largeFaceListId, name, an optional userData and recognitionModel.</span></span>\n<br /> <span data-ttu-id=\"98b7a-184\">큰 얼굴 목록 목록이 아니라 최대 1,000,000 얼굴을 얼굴 및 사용한 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-184\">Large face list is a list of faces, up to 1,000,000 faces, and used by [Face - Find Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).</span></span>\n<br /> <span data-ttu-id=\"98b7a-185\">를 만든 후 사용자가 사용 해야 [LargeFaceList 얼굴-추가](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3) 얼굴을 가져오려는 및 [LargeFaceList-학습](/docs/services/563879b61984550e40cbbe8d/operations/5a158422d2de3616c086f2d1) 준비가 되도록 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-185\">After creation, user should use [LargeFaceList Face - Add](/docs/services/563879b61984550e40cbbe8d/operations/5a158c10d2de3616c086f2d3) to import the faces and [LargeFaceList - Train](/docs/services/563879b61984550e40cbbe8d/operations/5a158422d2de3616c086f2d1) to make it ready for [Face - Find Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).</span></span> <span data-ttu-id=\"98b7a-186\">이미지가 저장 됩니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-186\">No image will be stored.</span></span> <span data-ttu-id=\"98b7a-187\">추출 된 얼굴 기능만 될 때까지 서버에 저장 된 [LargeFaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) 라고 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-187\">Only the extracted face features are stored on server until [LargeFaceList - Delete](/docs/services/563879b61984550e40cbbe8d/operations/5a1580d5d2de3616c086f2cd) is called.</span></span>\n<br /> <span data-ttu-id=\"98b7a-188\">마찬가지로 유명인 유사한 얼굴을 필터링 하는 유사한 얼굴 찾기 같은 시나리오에 사용 됩니다 찾거나 식별 조명으로 방식으로 직면 하 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-188\">Find Similar is used for scenario like finding celebrity-like faces, similar face filtering, or as a light way face identification.</span></span> <span data-ttu-id=\"98b7a-189\">사용자를 식별 하는 실제 사용 하 여가 있는 경우 사용 하 여 하지만 [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /\n[LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) 하 고 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-189\">But if the actual use is to identify person, please use [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /\n[LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) and [Face - Identify](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239).</span></span>\n<br/><span data-ttu-id=\"98b7a-190\">'recognitionModel' 큰 얼굴 목록을 사용 하 여 연결을 지정 해야 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-190\">'recognitionModel' should be specified to associate with this large face list.</span></span> <span data-ttu-id=\"98b7a-191\">'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-191\">The default value for 'recognitionModel' is 'recognition_01', if the latest model needed, please explicitly specify the model you need in this parameter.</span></span> <span data-ttu-id=\"98b7a-192\">기존 큰 얼굴 목록에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-192\">New faces that are added to an existing large face list will use the recognition model that's already associated with the collection.</span></span> <span data-ttu-id=\"98b7a-193\">인식 모델의 다른 버전으로 추출 하는 기능에 큰 얼굴 목록에서 기존 얼굴 기능을 업데이트할 수 없습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-193\">Existing face features in a large face list can't be updated to features extracted by another version of recognition model.</span></span>\n* <span data-ttu-id=\"98b7a-194\">'recognition_01': 에 대 한 기본 인식 모델 [LargeFaceList-만들기](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc)합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-194\">'recognition_01': The default recognition model for [LargeFaceList- Create](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc).</span></span> <span data-ttu-id=\"98b7a-195\">이러한 모든 큰 얼굴 목록은 2019 년 3 월 이전에 만든이 인식 모델을 사용 하 여 결합 된입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-195\">All those large face lists created before 2019 March are bonded with this recognition model.</span></span>\n* <span data-ttu-id=\"98b7a-196\">'recognition_02': 2019 년 3 월에 릴리스된 인식 모델입니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-196\">'recognition_02': Recognition model released in 2019 March.</span></span> <span data-ttu-id=\"98b7a-197\">전체 정확도 'recognition_01'에 비해 향상 되어 있으므로 'recognition_02' 것이 좋습니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-197\">'recognition_02' is recommended since its\_overall accuracy is improved compared with 'recognition_01'.</span></span>\n<span data-ttu-id=\"98b7a-198\">큰 얼굴 목록 할당량:</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-198\">Large face list quota:</span></span>\n* <span data-ttu-id=\"98b7a-199\">무료 계층 구독 할당량: 64 많은 얼굴을 나열 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-199\">Free-tier subscription quota: 64 large face lists.</span></span>\n* <span data-ttu-id=\"98b7a-200\">S0 계층 구독 할당량: 1,000,000 큰 얼굴 나열 합니다.</span><span class=\"sxs-lookup\"><span data-stu-id=\"98b7a-200\">S0-tier subscription quota: 1,000,000 large face lists.</span></span>"
     syntax:
       content: 'function create(largeFaceListId: string, options?: Models.LargeFaceListCreateOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-141">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-141">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-201">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-201">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - Models.LargeFaceListCreateOptionalParams
@@ -293,12 +316,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-142">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-142">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-202">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-202">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-143">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-143">The callback</span></span>
+            <span data-ttu-id="98b7a-203">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-203">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -309,18 +332,20 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-144">기존 얼굴 큰 얼굴 목록 (한 persistedFaceId 및는 largeFaceListId로 지정)에서 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-144">Delete an existing face from a large face list (given by a persistedFaceId and a largeFaceListId).</span></span> <span data-ttu-id="f4055-145">지속형된 이미지 면에 관련 된도 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-145">Persisted image related to the face will also be deleted.</span></span>
+    summary: |-
+      <span data-ttu-id="98b7a-204">지정한 largeFaceListId persistedFaceId로 큰 얼굴 목록에서 얼굴을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-204">Delete a face from a large face list by specified largeFaceListId and persistedFaceId.</span></span>
+      <br /> <span data-ttu-id="98b7a-205">동일한 큰 얼굴 목록에서 추가/삭제 얼굴 목록을 동시에 서로 다른 큰 얼굴에서 순차적으로 처리 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-205">Adding/deleting faces to/from a same large face list are processed sequentially and to/from different large face lists are in parallel.</span></span>
     syntax:
       content: 'function deleteFace(largeFaceListId: string, persistedFaceId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-146">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-146">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-206">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-206">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-147">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-147">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-207">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-207">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -343,20 +368,20 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-148">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-148">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-208">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-208">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-149">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-149">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-209">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-209">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4055-150">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-150">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-210">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-210">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-151">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-151">The callback</span></span>
+            <span data-ttu-id="98b7a-211">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-211">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -374,16 +399,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-152">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-152">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-212">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-212">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-153">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-153">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-213">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-213">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-154">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-154">The callback</span></span>
+            <span data-ttu-id="98b7a-214">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-214">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -394,14 +419,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-155">FaceListId에 따라 기존 큰 얼굴 목록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-155">Delete an existing large face list according to faceListId.</span></span> <span data-ttu-id="f4055-156">유지 얼굴 큰 얼굴 목록의 이미지도 삭제 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-156">Persisted face images in the large face list will also be deleted.</span></span>
+    summary: <span data-ttu-id="98b7a-215">지정 된 큰 얼굴 목록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-215">Delete a specified large face list.</span></span>
     syntax:
       content: 'function deleteMethod(largeFaceListId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-157">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-157">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-216">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-216">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -424,16 +449,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-158">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-158">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-217">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-217">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4055-159">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-159">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-218">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-218">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-160">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-160">The callback</span></span>
+            <span data-ttu-id="98b7a-219">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-219">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -451,12 +476,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-161">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-161">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-220">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-220">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-162">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-162">The callback</span></span>
+            <span data-ttu-id="98b7a-221">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-221">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -474,16 +499,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-163">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-163">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-222">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-222">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListGetOptionalParams'
-          description: <span data-ttu-id="f4055-164">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-164">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-223">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-223">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.LargeFaceList>
           description: |
-            <span data-ttu-id="f4055-165">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-165">The callback</span></span>
+            <span data-ttu-id="98b7a-224">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-224">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListGetResponse>
@@ -494,14 +519,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="f4055-166">큰 얼굴 목록을 largeFaceListId, 이름, 사용자 데이터 및 recognitionModel를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-166">Retrieve a large face list’s largeFaceListId, name, userData and recognitionModel.</span></span>'
+    summary: '<span data-ttu-id="98b7a-225">큰 얼굴 목록을 largeFaceListId, 이름, 사용자 데이터 및 recognitionModel를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-225">Retrieve a large face list’s largeFaceListId, name, userData and recognitionModel.</span></span>'
     syntax:
       content: 'function get(largeFaceListId: string, options?: Models.LargeFaceListGetOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-167">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-167">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-226">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-226">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - Models.LargeFaceListGetOptionalParams
@@ -524,12 +549,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-168">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-168">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-227">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-227">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.LargeFaceList>
           description: |
-            <span data-ttu-id="f4055-169">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-169">The callback</span></span>
+            <span data-ttu-id="98b7a-228">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-228">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListGetResponse>
@@ -540,18 +565,18 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-170">(해당 속하는 largeFaceListId persistedFaceId로 지정 됨) 지속 된 얼굴에 대 한 정보를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-170">Retrieve information about a persisted face (specified by persistedFaceId and its belonging largeFaceListId).</span></span>
+    summary: <span data-ttu-id="98b7a-229">(해당 속하는 largeFaceListId persistedFaceId로 지정 됨) 지속 된 얼굴에 대 한 정보를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-229">Retrieve information about a persisted face (specified by persistedFaceId and its belonging largeFaceListId).</span></span>
     syntax:
       content: 'function getFace(largeFaceListId: string, persistedFaceId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-171">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-171">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-230">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-230">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-172">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-172">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-231">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-231">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -574,20 +599,20 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-173">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-173">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-232">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-232">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-174">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-174">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-233">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-233">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4055-175">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-175">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-234">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-234">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="f4055-176">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-176">The callback</span></span>
+            <span data-ttu-id="98b7a-235">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-235">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListGetFaceResponse>
@@ -605,16 +630,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-177">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-177">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-236">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-236">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-178">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-178">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-237">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-237">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.PersistedFace>
           description: |
-            <span data-ttu-id="f4055-179">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-179">The callback</span></span>
+            <span data-ttu-id="98b7a-238">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-238">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListGetFaceResponse>
@@ -625,14 +650,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-180">큰 얼굴 목록 (완료 됨 또는 진행 중)의 교육 상태를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-180">Retrieve the training status of a large face list (completed or ongoing).</span></span>
+    summary: <span data-ttu-id="98b7a-239">큰 얼굴 목록 (완료 됨 또는 진행 중)의 교육 상태를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-239">Retrieve the training status of a large face list (completed or ongoing).</span></span>
     syntax:
       content: 'function getTrainingStatus(largeFaceListId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-181">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-181">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-240">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-240">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -655,16 +680,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-182">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-182">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-241">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-241">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4055-183">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-183">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-242">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-242">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.TrainingStatus>
           description: |
-            <span data-ttu-id="f4055-184">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-184">The callback</span></span>
+            <span data-ttu-id="98b7a-243">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-243">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListGetTrainingStatusResponse>
@@ -682,12 +707,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-185">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-185">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-244">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-244">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<@azure/cognitiveservices-face.TrainingStatus>
           description: |
-            <span data-ttu-id="f4055-186">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-186">The callback</span></span>
+            <span data-ttu-id="98b7a-245">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-245">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListGetTrainingStatusResponse>
@@ -698,7 +723,7 @@ items:
     type: constructor
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-187">LargeFaceListOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-187">Create a LargeFaceListOperations.</span></span>
+    summary: <span data-ttu-id="98b7a-246">LargeFaceListOperations를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-246">Create a LargeFaceListOperations.</span></span>
     syntax:
       content: 'new LargeFaceListOperations(client: FaceClientContext)'
       parameters:
@@ -706,7 +731,7 @@ items:
           type:
             - '@azure/cognitiveservices-face.FaceClientContext'
           description: |
-            <span data-ttu-id="f4055-188">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-188">Reference to the service client.</span></span>
+            <span data-ttu-id="98b7a-247">서비스 클라이언트에 대 한 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-247">Reference to the service client.</span></span>
     package: '@azure/cognitiveservices-face'
   - uid: '@azure/cognitiveservices-face.LargeFaceListOperations.list_2'
     name: 'list(LargeFaceListListOptionalParams, ServiceCallback<LargeFaceList[]>)'
@@ -721,12 +746,12 @@ items:
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListListOptionalParams'
-          description: <span data-ttu-id="f4055-189">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-189">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-248">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-248">The optional parameters</span></span>
         - id: callback
           type:
             - 'ServiceCallback<@azure/cognitiveservices-face.LargeFaceList[]>'
           description: |
-            <span data-ttu-id="f4055-190">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-190">The callback</span></span>
+            <span data-ttu-id="98b7a-249">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-249">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListListResponse>
@@ -738,17 +763,17 @@ items:
     langs:
       - typeScript
     summary: |-
-      <span data-ttu-id="f4055-191">LargeFaceListId "," 이름 "," userData "및" recognitionModel 큰 얼굴 목록 정보를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-191">List large face lists’ information of largeFaceListId, name, userData and recognitionModel.</span></span> <br
+      <span data-ttu-id="98b7a-250">LargeFaceListId "," 이름 "," userData "및" recognitionModel 큰 얼굴 목록 정보를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-250">List large face lists’ information of largeFaceListId, name, userData and recognitionModel.</span></span> <br
       />
-      <span data-ttu-id="f4055-192">LargeFaceList 사용 하 여 내에서 얼굴 정보를 가져오려면 [LargeFaceList 얼굴-가져오기](/docs/services/563879b61984550e40cbbe8d/operations/5a158cf2d2de3616c086f2d5)</span><span class="sxs-lookup"><span data-stu-id="f4055-192">To get face information inside largeFaceList use [LargeFaceList Face - Get](/docs/services/563879b61984550e40cbbe8d/operations/5a158cf2d2de3616c086f2d5)</span></span><br />
-      * <span data-ttu-id="f4055-193">큰 얼굴 목록 largeFaceListId의 알파벳 순서로 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-193">Large face lists are stored in alphabetical order of largeFaceListId.</span></span>
-      * <span data-ttu-id="f4055-194">"start" 매개 변수 (문자열, 선택 사항)에 항목 문자열 비교 하 여 더 큰 id가 반환 되는 사용자가 제공한 largeFaceListId 값입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-194">"start" parameter (string, optional) is a user-provided largeFaceListId value that returned entries have larger ids by string comparison.</span></span> <span data-ttu-id="f4055-195">"start"를 첫 번째 항목에서 반환을 나타내는 빈로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-195">"start" set to empty to indicate return from the first item.</span></span>
-      * <span data-ttu-id="f4055-196">"top" 매개 변수 (int, 선택 사항) 반환할 항목 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-196">"top" parameter (int, optional) specifies the number of entries to return.</span></span> <span data-ttu-id="f4055-197">항목이 1000 최대 한 번의 호출에서 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-197">A maximal of 1000 entries can be returned in one call.</span></span> <span data-ttu-id="f4055-198">더를 페치 하려면 현재 호출의 마지막 반환 된 항목의 Id를 사용 하 여 "start"를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-198">To fetch more, you can specify "start" with the last returned entry’s Id of the current call.</span></span>
+      <span data-ttu-id="98b7a-251">LargeFaceList 사용 하 여 내에서 얼굴 정보를 가져오려면 [LargeFaceList 얼굴-가져오기](/docs/services/563879b61984550e40cbbe8d/operations/5a158cf2d2de3616c086f2d5)</span><span class="sxs-lookup"><span data-stu-id="98b7a-251">To get face information inside largeFaceList use [LargeFaceList Face - Get](/docs/services/563879b61984550e40cbbe8d/operations/5a158cf2d2de3616c086f2d5)</span></span><br />
+      * <span data-ttu-id="98b7a-252">큰 얼굴 목록 largeFaceListId의 알파벳 순서로 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-252">Large face lists are stored in alphabetical order of largeFaceListId.</span></span>
+      * <span data-ttu-id="98b7a-253">"start" 매개 변수 (문자열, 선택 사항)에 항목 문자열 비교 하 여 더 큰 id가 반환 되는 사용자가 제공한 largeFaceListId 값입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-253">"start" parameter (string, optional) is a user-provided largeFaceListId value that returned entries have larger ids by string comparison.</span></span> <span data-ttu-id="98b7a-254">"start"를 첫 번째 항목에서 반환을 나타내는 빈로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-254">"start" set to empty to indicate return from the first item.</span></span>
+      * <span data-ttu-id="98b7a-255">"top" 매개 변수 (int, 선택 사항) 반환할 항목 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-255">"top" parameter (int, optional) specifies the number of entries to return.</span></span> <span data-ttu-id="98b7a-256">항목이 1000 최대 한 번의 호출에서 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-256">A maximal of 1000 entries can be returned in one call.</span></span> <span data-ttu-id="98b7a-257">더를 페치 하려면 현재 호출의 마지막 반환 된 항목의 Id를 사용 하 여 "start"를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-257">To fetch more, you can specify "start" with the last returned entry’s Id of the current call.</span></span>
       <br />
-      <span data-ttu-id="f4055-199">예를 들어 5 개의 대형 사람 목록 총: "list1",..., "list5"입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-199">For example, total 5 large person lists: "list1", ..., "list5".</span></span>
-      <br /> <span data-ttu-id="f4055-200">"시작 = & 상위 =" 모든 5 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-200">"start=&top=" will return all 5 lists.</span></span>
-      <br /> <span data-ttu-id="f4055-201">"시작 = & 상위 2 =" "list1", "목록형 2"를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-201">"start=&top=2" will return "list1", "list2".</span></span>
-      <br /> <span data-ttu-id="f4055-202">"시작 위쪽 목록형 2 = 3 =" "list3", "list4", "list5"를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-202">"start=list2&top=3" will return "list3", "list4", "list5".</span></span>
+      <span data-ttu-id="98b7a-258">예를 들어 5 개의 대형 사람 목록 총: "list1",..., "list5"입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-258">For example, total 5 large person lists: "list1", ..., "list5".</span></span>
+      <br /> <span data-ttu-id="98b7a-259">"시작 = & 상위 =" 모든 5 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-259">"start=&top=" will return all 5 lists.</span></span>
+      <br /> <span data-ttu-id="98b7a-260">"시작 = & 상위 2 =" "list1", "목록형 2"를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-260">"start=&top=2" will return "list1", "list2".</span></span>
+      <br /> <span data-ttu-id="98b7a-261">"시작 위쪽 목록형 2 = 3 =" "list3", "list4", "list5"를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-261">"start=list2&top=3" will return "list3", "list4", "list5".</span></span>
     syntax:
       content: 'function list(options?: Models.LargeFaceListListOptionalParams)'
       parameters:
@@ -775,7 +800,7 @@ items:
           type:
             - 'ServiceCallback<@azure/cognitiveservices-face.LargeFaceList[]>'
           description: |
-            <span data-ttu-id="f4055-203">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-203">The callback</span></span>
+            <span data-ttu-id="98b7a-262">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-262">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListListResponse>
@@ -793,16 +818,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-204">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-204">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-263">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-263">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListListFacesOptionalParams'
-          description: <span data-ttu-id="f4055-205">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-205">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-264">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-264">The optional parameters</span></span>
         - id: callback
           type:
             - 'ServiceCallback<@azure/cognitiveservices-face.PersistedFace[]>'
           description: |
-            <span data-ttu-id="f4055-206">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-206">The callback</span></span>
+            <span data-ttu-id="98b7a-265">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-265">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListListFacesResponse>
@@ -813,14 +838,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="f4055-207">글꼴 정보 (userData 및 글꼴의 등록 된 얼굴 persistedFaceIds 포함)를 검색 및 많은 얼굴 목록에서 모든 얼굴을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-207">List all faces in a large face list, and retrieve face information (including userData and persistedFaceIds of registered faces of the face).</span></span>'
+    summary: '<span data-ttu-id="98b7a-266">글꼴 정보 (userData 및 글꼴의 등록 된 얼굴 persistedFaceIds 포함)를 검색 및 많은 얼굴 목록에서 모든 얼굴을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-266">List all faces in a large face list, and retrieve face information (including userData and persistedFaceIds of registered faces of the face).</span></span>'
     syntax:
       content: 'function listFaces(largeFaceListId: string, options?: Models.LargeFaceListListFacesOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-208">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-208">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-267">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-267">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - Models.LargeFaceListListFacesOptionalParams
@@ -843,12 +868,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-209">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-209">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-268">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-268">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - 'ServiceCallback<@azure/cognitiveservices-face.PersistedFace[]>'
           description: |
-            <span data-ttu-id="f4055-210">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-210">The callback</span></span>
+            <span data-ttu-id="98b7a-269">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-269">The callback</span></span>
       return:
         type:
           - Promise<Models.LargeFaceListListFacesResponse>
@@ -859,14 +884,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '<span data-ttu-id="f4055-211">큰 얼굴 목록 교육 작업을 큐의 경우 학습 태스크를 즉시 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-211">Queue a large face list training task, the training task may not be started immediately.</span></span>'
+    summary: '<span data-ttu-id="98b7a-270">큰 얼굴 목록 교육 작업을 큐의 경우 학습 태스크를 즉시 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-270">Queue a large face list training task, the training task may not be started immediately.</span></span>'
     syntax:
       content: 'function train(largeFaceListId: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-212">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-212">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-271">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-271">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -889,16 +914,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-213">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-213">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-272">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-272">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - RequestOptionsBase
-          description: <span data-ttu-id="f4055-214">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-214">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-273">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-273">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-215">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-215">The callback</span></span>
+            <span data-ttu-id="98b7a-274">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-274">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -916,12 +941,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-216">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-216">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-275">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-275">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-217">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-217">The callback</span></span>
+            <span data-ttu-id="98b7a-276">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-276">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -939,16 +964,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-218">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-218">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-277">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-277">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListUpdateOptionalParams'
-          description: <span data-ttu-id="f4055-219">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-219">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-278">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-278">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-220">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-220">The callback</span></span>
+            <span data-ttu-id="98b7a-279">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-279">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -959,14 +984,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-221">큰 얼굴 목록의 정보를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-221">Update information of a large face list.</span></span>
+    summary: <span data-ttu-id="98b7a-280">큰 얼굴 목록의 정보를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-280">Update information of a large face list.</span></span>
     syntax:
       content: 'function update(largeFaceListId: string, options?: Models.LargeFaceListUpdateOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-222">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-222">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-281">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-281">Id referencing a particular large face list.</span></span>
         - id: options
           type:
             - Models.LargeFaceListUpdateOptionalParams
@@ -989,12 +1014,12 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-223">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-223">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-282">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-282">Id referencing a particular large face list.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-224">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-224">The callback</span></span>
+            <span data-ttu-id="98b7a-283">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-283">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -1012,20 +1037,20 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-225">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-225">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-284">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-284">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-226">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-226">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-285">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-285">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - '@azure/cognitiveservices-face.LargeFaceListUpdateFaceOptionalParams'
-          description: <span data-ttu-id="f4055-227">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f4055-227">The optional parameters</span></span>
+          description: <span data-ttu-id="98b7a-286">선택적 매개 변수</span><span class="sxs-lookup"><span data-stu-id="98b7a-286">The optional parameters</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-228">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-228">The callback</span></span>
+            <span data-ttu-id="98b7a-287">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-287">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>
@@ -1036,18 +1061,18 @@ items:
     type: method
     langs:
       - typeScript
-    summary: <span data-ttu-id="f4055-229">지속형된 얼굴을 userData 필드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-229">Update a persisted face's userData field.</span></span>
+    summary: <span data-ttu-id="98b7a-288">지속형된 얼굴을 userData 필드를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-288">Update a persisted face's userData field.</span></span>
     syntax:
       content: 'function updateFace(largeFaceListId: string, persistedFaceId: string, options?: Models.LargeFaceListUpdateFaceOptionalParams)'
       parameters:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-230">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-230">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-289">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-289">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-231">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-231">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-290">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-290">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: options
           type:
             - Models.LargeFaceListUpdateFaceOptionalParams
@@ -1070,16 +1095,16 @@ items:
         - id: largeFaceListId
           type:
             - string
-          description: <span data-ttu-id="f4055-232">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-232">Id referencing a particular large face list.</span></span>
+          description: <span data-ttu-id="98b7a-291">특정 큰 얼굴 목록을 참조 하는 id입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-291">Id referencing a particular large face list.</span></span>
         - id: persistedFaceId
           type:
             - string
-          description: <span data-ttu-id="f4055-233">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="f4055-233">Id referencing a particular persistedFaceId of an existing face.</span></span>
+          description: <span data-ttu-id="98b7a-292">Id를 기존 얼굴의 특정 persistedFaceId 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="98b7a-292">Id referencing a particular persistedFaceId of an existing face.</span></span>
         - id: callback
           type:
             - ServiceCallback<void>
           description: |
-            <span data-ttu-id="f4055-234">콜백</span><span class="sxs-lookup"><span data-stu-id="f4055-234">The callback</span></span>
+            <span data-ttu-id="98b7a-293">콜백</span><span class="sxs-lookup"><span data-stu-id="98b7a-293">The callback</span></span>
       return:
         type:
           - Promise<RestResponse>

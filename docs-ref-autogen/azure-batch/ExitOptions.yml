@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.ExitOptions
+    name: ExitOptions
+    fullName: ExitOptions
+    children:
+      - azure-batch.ExitOptions.dependencyAction
+      - azure-batch.ExitOptions.jobAction
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.ExitOptions.dependencyAction
+    name: dependencyAction
+    fullName: dependencyAction
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="1e7da-101">종료 코드 0 및 ''block'' 기타 모든 종료 조건에 대 한 기본값은 ''충족''.</span><span class="sxs-lookup"><span data-stu-id="1e7da-101">The default is ''satisfy'' for exit code 0, and ''block'' for all other exit conditions.</span></span> <span data-ttu-id="1e7da-102">작업의 usesTaskDependencies 속성을 다음 dependencyAction 속성 오류를 반환 하 고 잘못 된 속성 값 오류가;를 사용 하 여 추가 작업 요청은 실패를 지정 하는 false로 설정 된 경우 HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.</span><span class="sxs-lookup"><span data-stu-id="1e7da-102">If the Job''s usesTaskDependencies property is set to false, then specifying the dependencyAction property returns an error and the add Task request fails with an invalid property value error; if you are calling the REST API directly, the HTTP status code is 400 (Bad Request).</span></span> <span data-ttu-id="1e7da-103">가능한 값: ''충족'', ''차단''</span><span class="sxs-lookup"><span data-stu-id="1e7da-103">Possible values include: ''satisfy'', ''block''</span></span>'
+    optional: true
+    syntax:
+      content: 'dependencyAction?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ExitOptions.jobAction
+    name: jobAction
+    fullName: jobAction
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="1e7da-104">기본값은 없음 종료 코드 0 및 다른 모든 종료 조건에 대 한 종료.</span><span class="sxs-lookup"><span data-stu-id="1e7da-104">The default is none for exit code 0 and terminate for all other exit conditions.</span></span>
+      <span data-ttu-id="1e7da-105">그런 다음이 속성을 지정 하면 오류가 반환 및 잘못 된 속성 값 오류가;를 사용 하 여 추가 작업 요청이 실패 작업의 onTaskFailed 속성이 noaction 인 경우 HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.</span><span class="sxs-lookup"><span data-stu-id="1e7da-105">If the Job's onTaskFailed property is noaction, then specifying this property returns an error and the add Task request fails with an invalid property value error; if you are calling the REST API directly, the HTTP status code is 400 (Bad Request).</span></span> <span data-ttu-id="1e7da-106">가능한 값: 'none', 'disable', 'terminate'</span><span class="sxs-lookup"><span data-stu-id="1e7da-106">Possible values include: 'none', 'disable', 'terminate'</span></span>
+    optional: true
+    syntax:
+      content: 'jobAction?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
