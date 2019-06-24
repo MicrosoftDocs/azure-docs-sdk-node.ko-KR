@@ -1,0 +1,273 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.JobSpecification
+    name: JobSpecification
+    fullName: JobSpecification
+    children:
+      - azure-batch.JobSpecification.commonEnvironmentSettings
+      - azure-batch.JobSpecification.constraints
+      - azure-batch.JobSpecification.displayName
+      - azure-batch.JobSpecification.jobManagerTask
+      - azure-batch.JobSpecification.jobPreparationTask
+      - azure-batch.JobSpecification.jobReleaseTask
+      - azure-batch.JobSpecification.metadata
+      - azure-batch.JobSpecification.networkConfiguration
+      - azure-batch.JobSpecification.onAllTasksComplete
+      - azure-batch.JobSpecification.onTaskFailure
+      - azure-batch.JobSpecification.poolInfo
+      - azure-batch.JobSpecification.priority
+      - azure-batch.JobSpecification.usesTaskDependencies
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.commonEnvironmentSettings
+    name: commonEnvironmentSettings
+    fullName: commonEnvironmentSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 개별 작업에는 다른 값으로 동일한 설정 이름을 지정 하 여 여기에 지정 된 환경 설정을 재정의할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'commonEnvironmentSettings?: EnvironmentSetting[]'
+      return:
+        type:
+          - 'azure-batch.EnvironmentSetting[]'
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.constraints
+    name: constraints
+    fullName: constraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'constraints?: JobConstraints'
+      return:
+        type:
+          - azure-batch.JobConstraints
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.displayName
+    name: displayName
+    fullName: displayName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이름은 고유할 필요가 하며 최대 길이는 1024 자 유니코드 문자를 포함할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'displayName?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.jobManagerTask
+    name: jobManagerTask
+    fullName: jobManagerTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업에서 작업 관리자 태스크를 지정 하지 않으면, 사용자 작업 API를 사용 하 여 작업에 태스크를 명시적으로 추가 해야 합니다. 작업에서 작업 관리자 태스크를 지정 하는 경우 Batch 서비스는 작업을 만들고 작업의 다른 태스크를 예약 하기 전에 작업 관리자 태스크를 예약 하려고 하는 경우 작업 관리자 태스크를 만듭니다.'
+    optional: true
+    syntax:
+      content: 'jobManagerTask?: JobManagerTask'
+      return:
+        type:
+          - azure-batch.JobManagerTask
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.jobPreparationTask
+    name: jobPreparationTask
+    fullName: jobPreparationTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업에 작업 준비 태스크를 하는 경우 Batch 서비스는 해당 계산 노드에서 작업의 태스크를 시작 하기 전에 작업 준비 태스크를 노드에서 실행 됩니다.
+    optional: true
+    syntax:
+      content: 'jobPreparationTask?: JobPreparationTask'
+      return:
+        type:
+          - azure-batch.JobPreparationTask
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.jobReleaseTask
+    name: jobReleaseTask
+    fullName: jobReleaseTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업 릴리스 태스크의 주요 목적은 노드에 작업 준비 태스크에서 수행한 변경 내용을 취소 하는 경우 예제 작업에는 로컬 파일을 삭제 하거나 작업 준비의 일부로 시작 된 서비스를 종료 포함 됩니다. 또한 작업에 대 한 작업 준비 태스크를 지정 하지 않고 작업 릴리스 태스크를 지정할 수 없습니다. Batch 서비스는 작업 준비 태스크를 실행 하는 계산 노드에서 작업 릴리스 태스크를 실행 합니다.
+    optional: true
+    syntax:
+      content: 'jobReleaseTask?: JobReleaseTask'
+      return:
+        type:
+          - azure-batch.JobReleaseTask
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.metadata
+    name: metadata
+    fullName: metadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Batch 서비스 메타 데이터를 의미를 할당 하지 않습니다. 이 사용자 코드를 사용 합니다.
+    optional: true
+    syntax:
+      content: 'metadata?: MetadataItem[]'
+      return:
+        type:
+          - 'azure-batch.MetadataItem[]'
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.networkConfiguration
+    name: networkConfiguration
+    fullName: networkConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'networkConfiguration?: JobNetworkConfiguration'
+      return:
+        type:
+          - azure-batch.JobNetworkConfiguration
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.onAllTasksComplete
+    name: onAllTasksComplete
+    fullName: onAllTasksComplete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      참고 작업을 작업이 있으면 모든 태스크는 완료로 간주 됩니다.
+      이 옵션은 작업 관리자 태스크를 사용 하 여 가장 많이 사용 하므로 자동 작업 종료 작업 관리자 없이 사용 하려는 경우 해야 처음 onAllTasksComplete noaction로 설정 하 고 추가 작업을 완료 했으면 terminatejob onAllTasksComplete로 작업 속성을 업데이트 합니다. 기본값은 noaction 합니다. 가능한 값: 'noAction', 'terminateJob'
+    optional: true
+    syntax:
+      content: 'onAllTasksComplete?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.onTaskFailure
+    name: onTaskFailure
+    fullName: onTaskFailure
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '기본값은 noaction 합니다. 가능한 값: ''noAction'', ''performExitOptionsJobAction'''
+    optional: true
+    syntax:
+      content: 'onTaskFailure?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.poolInfo
+    name: poolInfo
+    fullName: poolInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'poolInfo: PoolInformation'
+      return:
+        type:
+          - azure-batch.PoolInformation
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 우선 순위 값의 범위는-1000에서 1000에서 1000이 가장 높은 우선 순위 및-1000이 가장 낮은 우선 순위. 기본값은 0입니다. 이 우선 순위는 작업 일정에서 모든 작업에 대 한 기본값으로 사용 됩니다. 업데이트 작업 API를 사용 하 여 생성 된 후 작업의 우선 순위를 업데이트할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'priority?: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+  - uid: azure-batch.JobSpecification.usesTaskDependencies
+    name: usesTaskDependencies
+    fullName: usesTaskDependencies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'usesTaskDependencies?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-batch
+references:
+  - uid: 'azure-batch.EnvironmentSetting[]'
+    name: 'EnvironmentSetting[]'
+    spec.typeScript:
+      - name: EnvironmentSetting
+        fullName: EnvironmentSetting
+        uid: azure-batch.EnvironmentSetting
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.JobConstraints
+    name: JobConstraints
+    spec.typeScript:
+      - name: JobConstraints
+        fullName: JobConstraints
+        uid: azure-batch.JobConstraints
+  - uid: azure-batch.JobManagerTask
+    name: JobManagerTask
+    spec.typeScript:
+      - name: JobManagerTask
+        fullName: JobManagerTask
+        uid: azure-batch.JobManagerTask
+  - uid: azure-batch.JobPreparationTask
+    name: JobPreparationTask
+    spec.typeScript:
+      - name: JobPreparationTask
+        fullName: JobPreparationTask
+        uid: azure-batch.JobPreparationTask
+  - uid: azure-batch.JobReleaseTask
+    name: JobReleaseTask
+    spec.typeScript:
+      - name: JobReleaseTask
+        fullName: JobReleaseTask
+        uid: azure-batch.JobReleaseTask
+  - uid: 'azure-batch.MetadataItem[]'
+    name: 'MetadataItem[]'
+    spec.typeScript:
+      - name: MetadataItem
+        fullName: MetadataItem
+        uid: azure-batch.MetadataItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.JobNetworkConfiguration
+    name: JobNetworkConfiguration
+    spec.typeScript:
+      - name: JobNetworkConfiguration
+        fullName: JobNetworkConfiguration
+        uid: azure-batch.JobNetworkConfiguration
+  - uid: azure-batch.PoolInformation
+    name: PoolInformation
+    spec.typeScript:
+      - name: PoolInformation
+        fullName: PoolInformation
+        uid: azure-batch.PoolInformation

@@ -66,15 +66,16 @@ items:
       - typeScript
     summary: |-
       사용자가 지정한 largePersonGroupId 사용 하 여 새 대규모 사용자 그룹, 이름, 선택적 userData 및 recognitionModel를 만듭니다.
-      <br /> 대규모 사용자 그룹은 최대 1,000,000 사람 얼굴 이미지 및 얼굴 인식 기능을 포함 하 여 업로드 된 사용자 데이터의 컨테이너.
+      <br /> 대규모 사용자 그룹은 최대 1,000,000 사람 얼굴 인식 기능을 포함 하 여 업로드 된 사용자 데이터의 컨테이너.
       <br /> 를 만든 후 사용 하 여 [LargePersonGroup 사람-만듭니다](/docs/services/563879b61984550e40cbbe8d/operations/599adcba3a7b9412a4d53f40) 호출 및 그룹에 사용자를 추가할 [LargePersonGroup-학습](/docs/services/563879b61984550e40cbbe8d/operations/599ae2d16ac60f11b48b5aa4) 이 그룹에 대 한 준비 [얼굴-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.
-      <br /> 사람 얼굴, 이미지 및 사용자 데이터를 저장할 때까지 서버의 [LargePersonGroup 사람-삭제](/docs/services/563879b61984550e40cbbe8d/operations/599ade5c6ac60f11b48b5aa2) 하거나 [LargePersonGroup-삭제](/docs/services/563879b61984550e40cbbe8d/operations/599adc216ac60f11b48b5a9f) 라고 합니다.
-      <br />
+      <br /> 이미지가 저장 됩니다. 사용자의 얼굴 기능을 추출 하 고 될 때까지 서버에서 사용자 데이터를 저장할 [LargePersonGroup 사람-삭제](/docs/services/563879b61984550e40cbbe8d/operations/599ade5c6ac60f11b48b5aa2) 또는 [LargePersonGroup-삭제](/docs/services/563879b61984550e40cbbe8d/operations/599adc216ac60f11b48b5a9f) 라고 합니다.
+      <br/>이 대규모 사용자 그룹을 사용 하 여 연결할 'recognitionModel'를 지정 해야 합니다. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 기존 대규모 사용자 그룹에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.
+      대규모 사용자 그룹의 기존 기능에 얼굴 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.
+      * 'recognition_01': 에 대 한 기본 인식 모델 [LargePersonGroup-만들기](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d)합니다. 이러한 모든 대규모 사용자 그룹 2019 년 3 월 이전에 만든이 인식 모델을 사용 하 여 결합 된입니다.
+      * 'recognition_02': 2019 년 3 월에 릴리스된 인식 모델입니다. 전체 정확도 'recognition_01'에 비해 향상 되어 있으므로 'recognition_02' 것이 좋습니다.
+      대규모 사용자 그룹 할당량:
       * 무료 계층 구독 할당량: 1,000 대규모 사용자 그룹입니다.
       * S0 계층 구독 할당량: 1,000,000 대규모 사용자 그룹입니다.
-      <br />
-      이 대규모 사용자 그룹을 사용 하 여 연결할 'recognitionModel'를 지정 해야 합니다. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 기존 대규모 사용자 그룹에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다.
-      대규모 사용자 그룹의 기존 기능에 얼굴 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.
     syntax:
       content: 'function create(largePersonGroupId: string, options?: Models.LargePersonGroupCreateOptionalParams)'
       parameters:

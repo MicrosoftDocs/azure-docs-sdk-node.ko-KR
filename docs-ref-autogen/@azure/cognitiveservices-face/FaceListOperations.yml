@@ -72,8 +72,21 @@ items:
     langs:
       - typeScript
     summary: |-
-      얼굴을 얼굴 목록에 추가 합니다. 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.
-      추가 얼굴을 나타내는 persistedFaceId를 반환 하 고 persistedFaceId 만료 되지 않습니다.
+      얼굴을 얼굴 1,000까지 지정 된 글꼴 목록에 추가 합니다.
+      <br /> 이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다. 추가 글꼴을 나타내는 persistedFaceId를 반환 합니다. 이미지가 저장 됩니다. 추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [FaceList-삭제 Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395251) 또는 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.
+      <br /> 생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.
+      * 얼굴 이미지 품질이 향상 탐지 및 인식 정밀도 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      * "targetFace" 사각형 한 면을 포함 해야 합니다. 0 개 이상의 얼굴 오류로 간주 됩니다. 제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.
+      * 검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.
+      * 동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.
+      * 최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.
+      1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.
+      * 다른 'detectionModel' 값을 제공할 수 있습니다. 사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'detection_01': | 에 대 한 기본 검색 모델 [FaceList-추가
+      Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250). 거의 정면 얼굴 감지에 대 한 권장 합니다. 매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다. | | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다. |
     syntax:
       content: 'function addFaceFromStream(faceListId: string, image: msRest.HttpRequestBody, options?: Models.FaceListAddFaceFromStreamOptionalParams)'
       parameters:
@@ -159,8 +172,21 @@ items:
     langs:
       - typeScript
     summary: |-
-      얼굴을 얼굴 목록에 추가 합니다. 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.
-      추가 얼굴을 나타내는 persistedFaceId를 반환 하 고 persistedFaceId 만료 되지 않습니다.
+      얼굴을 얼굴 1,000까지 지정 된 글꼴 목록에 추가 합니다.
+      <br /> 이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다. 추가 글꼴을 나타내는 persistedFaceId를 반환 합니다. 이미지가 저장 됩니다. 추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [FaceList-삭제 Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395251) 또는 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.
+      <br /> 생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.
+      * 얼굴 이미지 품질이 향상 탐지 및 인식 정밀도 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      * "targetFace" 사각형 한 면을 포함 해야 합니다. 0 개 이상의 얼굴 오류로 간주 됩니다. 제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.
+      * 검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.
+      * 동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.
+      * 최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.
+      1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.
+      * 다른 'detectionModel' 값을 제공할 수 있습니다. 사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'detection_01': | 에 대 한 기본 검색 모델 [FaceList-추가
+      Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250). 거의 정면 얼굴 감지에 대 한 권장 합니다. 매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다. | | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다. |
     syntax:
       content: 'function addFaceFromUrl(faceListId: string, url: string, options?: Models.FaceListAddFaceFromUrlOptionalParams)'
       parameters:
@@ -244,10 +270,13 @@ items:
     summary: |-
       사용자 지정 faceListId, 이름, 선택적 userData 및 recognitionModel 빈 얼굴 목록을 만듭니다. 최대 64 얼굴 목록은 하나의 구독에 허용 됩니다.
       <br /> 얼굴 목록 얼굴, 최대 1,000 개의 얼굴은 및에서 사용 하는 [얼굴-비슷한 찾을](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)합니다.
-      <br /> 를 만든 후 사용자가 사용 해야 [FaceList-추가 얼굴](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250) 얼굴을 가져오려고 합니다. 될 때까지 서버에 저장 된 얼굴 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.
+      <br /> 를 만든 후 사용자가 사용 해야 [FaceList-추가 얼굴](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395250) 얼굴을 가져오려고 합니다. 이미지가 저장 됩니다. 추출 된 얼굴 기능만 될 때까지 서버에 저장 된 [FaceList-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524f) 라고 합니다.
       <br /> 마찬가지로 유명인 유사한 얼굴을 필터링 하는 유사한 얼굴 찾기 같은 시나리오에 사용 됩니다 찾거나 식별 조명으로 방식으로 직면 하 합니다. 사용자를 식별 하는 실제 사용 하 여가 있는 경우 사용 하 여 하지만 [PersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244) /
       [LargePersonGroup](/docs/services/563879b61984550e40cbbe8d/operations/599acdee6ac60f11b48b5a9d) 하 고 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)합니다.
-      <br /> 보세요 [LargeFaceList](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) 얼굴 번호 큰 경우. 최대 1,000,000 얼굴 지원할 수 있습니다. 'recognitionModel' 얼굴 목록을 사용 하 여 연결을 지정 해야 합니다. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 기존 얼굴 목록에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다. 얼굴 목록에서 기존 얼굴 기능 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.
+      <br /> 보세요 [LargeFaceList](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) 얼굴 번호 큰 경우. 최대 1,000,000 얼굴 지원할 수 있습니다.
+      <br />'recognitionModel' 얼굴 목록을 사용 하 여 연결을 지정 해야 합니다. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 기존 얼굴 목록에 추가 된 새 얼굴 인식 모델에 이미 연결 된 컬렉션을 사용 합니다. 얼굴 목록에서 기존 얼굴 기능 인식 모델의 다른 버전으로 추출 하는 기능을 업데이트할 수 없습니다.
+      * 'recognition_01': 에 대 한 기본 인식 모델 [FaceList-만들기](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b)합니다. 이러한 모든 얼굴 목록은 2019 년 3 월 이전에 만든이 인식 모델을 사용 하 여 결합 된입니다.
+      * 'recognition_02': 2019 년 3 월에 릴리스된 인식 모델입니다. 전체 정확도 'recognition_01'에 비해 향상 되어 있으므로 'recognition_02' 것이 좋습니다.
     syntax:
       content: 'function create(faceListId: string, options?: Models.FaceListCreateOptionalParams)'
       parameters:
@@ -294,8 +323,8 @@ items:
     langs:
       - typeScript
     summary: |-
-      기존 얼굴을 얼굴 목록 (한 persistedFaceId 및는 faceListId로 지정)에서 삭제 합니다.
-      지속형된 이미지 면에 관련 된도 삭제 됩니다.
+      지정한 faceListId persistedFaceId로 얼굴 목록에서 얼굴을 삭제 합니다.
+      <br /> 동일한 얼굴 목록에서 추가/삭제 얼굴 순차적으로 처리 됩니다 있으며 다양 한 표면에서 목록이 병렬로 됩니다.
     syntax:
       content: 'function deleteFace(faceListId: string, persistedFaceId: string, options?: msRest.RequestOptionsBase)'
       parameters:
@@ -380,7 +409,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: FaceListId에 따라 기존 얼굴 목록을 삭제 합니다. 얼굴을 얼굴 목록의 이미지도 삭제 됩니다 유지 됩니다.
+    summary: 지정 된 글꼴 목록을 삭제 합니다.
     syntax:
       content: 'function deleteMethod(faceListId: string, options?: msRest.RequestOptionsBase)'
       parameters:

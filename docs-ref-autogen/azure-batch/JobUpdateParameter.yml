@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.JobUpdateParameter
+    name: JobUpdateParameter
+    fullName: JobUpdateParameter
+    children:
+      - azure-batch.JobUpdateParameter.constraints
+      - azure-batch.JobUpdateParameter.metadata
+      - azure-batch.JobUpdateParameter.onAllTasksComplete
+      - azure-batch.JobUpdateParameter.poolInfo
+      - azure-batch.JobUpdateParameter.priority
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.JobUpdateParameter.constraints
+    name: constraints
+    fullName: constraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 생략 하면 제약 조건은 지워집니다.
+    optional: true
+    syntax:
+      content: 'constraints?: JobConstraints'
+      return:
+        type:
+          - azure-batch.JobConstraints
+    package: azure-batch
+  - uid: azure-batch.JobUpdateParameter.metadata
+    name: metadata
+    fullName: metadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 빈 목록;의 기본 값을 생략 하면 걸리는 실제로 모든 기존 메타 데이터가 삭제 됩니다.
+    optional: true
+    syntax:
+      content: 'metadata?: MetadataItem[]'
+      return:
+        type:
+          - 'azure-batch.MetadataItem[]'
+    package: azure-batch
+  - uid: azure-batch.JobUpdateParameter.onAllTasksComplete
+    name: onAllTasksComplete
+    fullName: onAllTasksComplete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      생략 하면 완성 동작을 noaction으로 설정 됩니다. Terminatejob 현재 값을 사용 하는 경우이 작업의 완료 동작 변경할 수 없습니다 terminatejob에서 noaction에 없으므로 오류입니다. Noaction를 terminatejob에서는 값을 변경 하지 있습니다-즉, 자동 작업 종료를 참여 한 후 해제할 수는 없습니다 것 다시 합니다. 이 작업을 수행 하려고 하면 요청이 실패 하 고 일괄 처리 반환 상태 코드 400 (잘못 된 요청) 및 '잘못 된 속성 값' 오류 응답입니다. PUT 요청에서이 요소를 지정 하지 않으면 경우 같습니다 noaction 전달 합니다. 현재 값이 terminatejob 하는 경우이 오류가 발생 합니다.
+      가능한 값: 'noAction', 'terminateJob'
+    optional: true
+    syntax:
+      content: 'onAllTasksComplete?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.JobUpdateParameter.poolInfo
+    name: poolInfo
+    fullName: poolInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 작업은 사용 하지 않도록 설정 하는 경우에 작업에 대 한 풀을 변경할 수 있습니다. 업데이트 작업 호출 poolInfo 요소를 포함 하 고 작업을 비활성화 되지 않습니다 못합니다. KeepAlive 속성만 업데이트할 수 있는 autoPoolSpecification 사양은 poolInfo에서을 지정 하면 다음 자동 풀을 사용 하면 작업의 poollifetimeoption 하는 경우에 합니다.
+    syntax:
+      content: 'poolInfo: PoolInformation'
+      return:
+        type:
+          - azure-batch.PoolInformation
+    package: azure-batch
+  - uid: azure-batch.JobUpdateParameter.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 우선 순위 값의 범위는-1000에서 1000에서 1000이 가장 높은 우선 순위 및-1000이 가장 낮은 우선 순위. 생략 하면 기본 값 0으로 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'priority?: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+references:
+  - uid: azure-batch.JobConstraints
+    name: JobConstraints
+    spec.typeScript:
+      - name: JobConstraints
+        fullName: JobConstraints
+        uid: azure-batch.JobConstraints
+  - uid: 'azure-batch.MetadataItem[]'
+    name: 'MetadataItem[]'
+    spec.typeScript:
+      - name: MetadataItem
+        fullName: MetadataItem
+        uid: azure-batch.MetadataItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.PoolInformation
+    name: PoolInformation
+    spec.typeScript:
+      - name: PoolInformation
+        fullName: PoolInformation
+        uid: azure-batch.PoolInformation

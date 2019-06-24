@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.JobNetworkConfiguration
+    name: JobNetworkConfiguration
+    fullName: JobNetworkConfiguration
+    children:
+      - azure-batch.JobNetworkConfiguration.subnetId
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.JobNetworkConfiguration.subnetId
+    name: subnetId
+    fullName: subnetId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      가상 네트워크는 동일한 지역 및 Azure Batch 계정으로 구독에 있어야 합니다. 지정된 된 서브넷이 작업에서 작업을 실행 하는 계산 노드의 수를 수용 하기 위해 사용 가능한 IP 주소가 충분히 있어야 합니다. 이 풀의 계산 노드 수에 도달할 수 있습니다. Azure Batch 서비스는 노드에서 태스크를 예약할 수 있도록 'MicrosoftAzureBatch' 서비스 주체는 지정 된 VNet에 대 한 ' 클래식 Virtual Machine 참가자 ' 역할 기반 Access Control (RBAC) 역할을 있어야 합니다. 지정 된 VNet에 있는 경우 모든 연결 된 네트워크 보안 그룹 (NSG)을 확인 하 여이 확인할 수 있습니다. 노드에 지정된 된 서브넷에 대 한 통신이 NSG에서 거부 되 면 Batch 서비스를 사용할 수 없는 계산 노드의 상태를 설정 됩니다. 이 폼 /subscriptions/ {subscription} {그룹} /resourceGroups/ /providers/ {provider} {network} /virtualNetworks/ /subnets/ {서브넷}입니다.
+      지정 된 VNet은 모든 연결 된 네트워크 보안 그룹 (NSG)에 있는 경우 Azure Batch 서비스에서 인바운드 통신을 위해 몇 개의 예약 된 시스템 포트를 활성화 되어야 합니다. 가상 머신 구성을 사용 하 여 만든 풀의 경우 포트 29876 및 29877을 사용 하도록 설정 뿐만 아니라 Windows에 대 한 Linux 및 포트 3389에 대 한 포트 22입니다. Azure Storage에 대 한 통신에 대 한 아웃 바운드 연결에 대해 열려야 하 443 포트도 필요 합니다. 자세한 내용은 다음을 참조 하세요. https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
+    syntax:
+      content: 'subnetId: string'
+      return:
+        type:
+          - string
+    package: azure-batch

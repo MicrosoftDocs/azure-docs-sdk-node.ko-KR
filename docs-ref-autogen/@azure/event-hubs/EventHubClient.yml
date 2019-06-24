@@ -1,0 +1,455 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/event-hubs.EventHubClient'
+    name: EventHubClient
+    fullName: EventHubClient
+    children:
+      - '@azure/event-hubs.EventHubClient.close'
+      - '@azure/event-hubs.EventHubClient.connectionId'
+      - '@azure/event-hubs.EventHubClient.createFromAadTokenCredentials'
+      - '@azure/event-hubs.EventHubClient.createFromConnectionString'
+      - '@azure/event-hubs.EventHubClient.createFromIotHubConnectionString'
+      - '@azure/event-hubs.EventHubClient.createFromTokenProvider'
+      - '@azure/event-hubs.EventHubClient.constructor'
+      - '@azure/event-hubs.EventHubClient.eventhubName'
+      - '@azure/event-hubs.EventHubClient.getHubRuntimeInformation'
+      - '@azure/event-hubs.EventHubClient.getPartitionIds'
+      - '@azure/event-hubs.EventHubClient.getPartitionInformation'
+      - '@azure/event-hubs.EventHubClient.receive'
+      - '@azure/event-hubs.EventHubClient.receiveBatch'
+      - '@azure/event-hubs.EventHubClient.send'
+      - '@azure/event-hubs.EventHubClient.sendBatch'
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.close'
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 연결 끊기 완료 되 면 확인 되는 약속을 반환 하는이 클라이언트에 대 한 이벤트 허브로의 AMQP 연결을 닫습니다.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.connectionId'
+    name: connectionId
+    fullName: connectionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} [connectionId] 연결 된 프로세스 내에서 고유 하 게 식별 하는 amqp 연결 id입니다.'
+    optional: true
+    syntax:
+      content: 'connectionId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.createFromAadTokenCredentials'
+    name: 'createFromAadTokenCredentials(string, string, ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, ClientOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: AADTokenCredentials에서 EventHub 클라이언트를 만듭니다.
+    syntax:
+      content: 'static function createFromAadTokenCredentials(host: string, entityPath: string, credentials: ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials, options?: ClientOptionsBase)'
+      parameters:
+        - id: host
+          type:
+            - string
+          description: Event Hubs에 대 한 정규화 된 도메인 이름입니다. 가장 가능성이 높은 <yournamespace>. servicebus.windows.net
+        - id: entityPath
+          type:
+            - string
+          description: ''' 내-이벤트-허브-name'' 형식의 EventHub 경로'
+        - id: credentials
+          type:
+            - ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials
+          description: AAD 토큰 자격 증명입니다. 다음 중 하나일 수 있습니다. ApplicationTokenCredentials | UserTokenCredentials | DeviceTokenCredentials | MSITokenCredentials 합니다.
+        - id: options
+          type:
+            - '@azure/event-hubs.ClientOptionsBase'
+          description: 클라이언트를 만드는 동안 제공할 수 있는 옵션입니다.
+          optional: true
+      return:
+        type:
+          - '@azure/event-hubs.EventHubClient'
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.createFromConnectionString'
+    name: 'createFromConnectionString(string, undefined | string, ClientOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 연결 문자열에서 EventHub 클라이언트를 만듭니다.
+    syntax:
+      content: 'static function createFromConnectionString(connectionString: string, path?: undefined | string, options?: ClientOptions)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: '폼의 연결 문자열 '' Endpoint=sb://my-servicebus-namespace.servicebus.windows.net/; SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='''
+        - id: path
+          type:
+            - undefined | string
+          description: ''
+          optional: true
+        - id: options
+          type:
+            - '@azure/event-hubs.ClientOptions'
+          description: ''
+          optional: true
+      return:
+        type:
+          - '@azure/event-hubs.EventHubClient'
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.createFromIotHubConnectionString'
+    name: 'createFromIotHubConnectionString(string, ClientOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 연결 문자열에서 EventHub 클라이언트를 만듭니다.
+    syntax:
+      content: 'static function createFromIotHubConnectionString(iothubConnectionString: string, options?: ClientOptions)'
+      parameters:
+        - id: iothubConnectionString
+          type:
+            - string
+          description: 폼의 연결 문자열 ' HostName = iot-호스트 이름입니다. SharedAccessKeyName = 내-SA-이름입니다. SharedAccessKey 내 SA 키 ='
+        - id: options
+          type:
+            - '@azure/event-hubs.ClientOptions'
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure/event-hubs.EventHubClient>
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.createFromTokenProvider'
+    name: 'createFromTokenProvider(string, string, TokenProvider, ClientOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 일반 토큰 공급자에서 EventHub 클라이언트를 만듭니다.
+    syntax:
+      content: 'static function createFromTokenProvider(host: string, entityPath: string, tokenProvider: TokenProvider, options?: ClientOptionsBase)'
+      parameters:
+        - id: host
+          type:
+            - string
+          description: Event Hubs에 대 한 정규화 된 도메인 이름입니다. 가장 가능성이 높은 <yournamespace>. servicebus.windows.net
+        - id: entityPath
+          type:
+            - string
+          description: ''' 내-이벤트-허브-name'' 형식의 EventHub 경로'
+        - id: tokenProvider
+          type:
+            - TokenProvider
+          description: TokenProvider 인터페이스를 구현 하 여 토큰 공급자입니다.
+        - id: options
+          type:
+            - '@azure/event-hubs.ClientOptionsBase'
+          description: 클라이언트를 만드는 동안 제공할 수 있는 옵션입니다.
+          optional: true
+      return:
+        type:
+          - '@azure/event-hubs.EventHubClient'
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.constructor'
+    name: 'EventHubClient(EventHubConnectionConfig, ClientOptions)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 이 구성에서 지정 된 이벤트 허브를 가리키는 클라이언트를 인스턴스화합니다.
+    syntax:
+      content: 'new EventHubClient(config: EventHubConnectionConfig, options?: ClientOptions)'
+      parameters:
+        - id: config
+          type:
+            - EventHubConnectionConfig
+          description: EventHub 클라이언트를 만드는 연결 구성입니다.
+        - id: options
+          type:
+            - '@azure/event-hubs.ClientOptions'
+          description: |
+            EventHub 클라이언트 생성자에 제공 될 수 있는 선택적 매개 변수입니다.
+          optional: true
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.eventhubName'
+    name: eventhubName
+    fullName: eventhubName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{문자열} eventhubName은 이벤트 허브의 이름입니다.'
+    syntax:
+      content: 'eventhubName: string'
+      return:
+        type:
+          - string
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.getHubRuntimeInformation'
+    name: getHubRuntimeInformation()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Eventhub의 런타임 기능에 대해 설명합니다.
+    syntax:
+      content: function getHubRuntimeInformation()
+      parameters: []
+      return:
+        type:
+          - Promise<@azure/event-hubs.EventHubRuntimeInformation>
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.getPartitionIds'
+    name: getPartitionIds()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Partitionid 배열을 제공합니다.
+    syntax:
+      content: function getPartitionIds()
+      parameters: []
+      return:
+        type:
+          - Promise<Array<string>>
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.getPartitionInformation'
+    name: getPartitionInformation(string | number)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 파티션에 관한 정보를 제공 합니다.
+    syntax:
+      content: 'function getPartitionInformation(partitionId: string | number)'
+      parameters:
+        - id: partitionId
+          type:
+            - string | number
+          description: 파티션 ID는 파티션에 대 한 정보가 필요 합니다.
+      return:
+        type:
+          - Promise<@azure/event-hubs.EventHubPartitionRuntimeInformation>
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.receive'
+    name: 'receive(string | number, OnMessage, OnError, ReceiveOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 세션에서 AMQP 세션 및 AMQP 수신자가 링크를 설정 하 여 수신기를 시작 합니다. 제공 된 onMessage 처리기에 전달할 메시지 및 오류 제공된 onError 처리기에 전달 됩니다.
+    syntax:
+      content: 'function receive(partitionId: string | number, onMessage: OnMessage, onError: OnError, options?: ReceiveOptions)'
+      parameters:
+        - id: partitionId
+          type:
+            - string | number
+          description: 수신 하는 파티션 ID입니다.
+        - id: onMessage
+          type:
+            - '@azure/event-hubs.OnMessage'
+          description: 이벤트 데이터 개체를 받을 메시지 처리기입니다.
+        - id: onError
+          type:
+            - '@azure/event-hubs.OnError'
+          description: 오류 처리기 수신 메시지를 수신 하는 동안 발생 하는 오류입니다.
+        - id: options
+          type:
+            - '@azure/event-hubs.ReceiveOptions'
+          description: ''
+          optional: true
+      return:
+        type:
+          - '@azure/event-hubs.ReceiveHandler'
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.receiveBatch'
+    name: 'receiveBatch(string | number, number, undefined | number, ReceiveOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 수와 지정 된 최대 대기 시간 (초)에 대 한 이벤트 허브 파티션에서 EventData 개체의 일괄 처리를 수신 중 먼저 발생 합니다. 이 메서드는 수신자 개체를 만든 후 직접 사용할 수 있습니다 하 고 **안** 와 함께 사용할 수는 `start()` 메서드.
+    syntax:
+      content: 'function receiveBatch(partitionId: string | number, maxMessageCount: number, maxWaitTimeInSeconds?: undefined | number, options?: ReceiveOptions)'
+      parameters:
+        - id: partitionId
+          type:
+            - string | number
+          description: 수신 하는 파티션 ID입니다.
+        - id: maxMessageCount
+          type:
+            - number
+          description: 최대 메시지 수입니다. 0 보다 큰 값을 이어야 합니다.
+        - id: maxWaitTimeInSeconds
+          type:
+            - undefined | number
+          description: ''
+          optional: true
+        - id: options
+          type:
+            - '@azure/event-hubs.ReceiveOptions'
+          description: ''
+          optional: true
+      return:
+        type:
+          - 'Promise<@azure/event-hubs.EventData[]>'
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.send'
+    name: 'send(EventData, string | number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정된 된 메시지를 보냅니다.
+    syntax:
+      content: 'function send(data: EventData, partitionId?: string | number)'
+      parameters:
+        - id: data
+          type:
+            - '@azure/event-hubs.EventData'
+          description: 보낼 메시지입니다.  UTF8로 인코딩된 JSON 문자열로 전송 됩니다.
+        - id: partitionId
+          type:
+            - string | number
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Delivery>
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.EventHubClient.sendBatch'
+    name: 'sendBatch(EventData[], string | number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'EventHub를 EventData 일괄 처리를 보냅니다. "Message_annotations", "application_properties" 및 "properties" 첫 번째 메시지의 봉투 (envelope) (일괄 처리 메시지)으로 설정 됩니다.'
+    syntax:
+      content: 'function sendBatch(datas: EventData[], partitionId?: string | number)'
+      parameters:
+        - id: datas
+          type:
+            - '@azure/event-hubs.EventData[]'
+          description: 일괄 처리 메시지를 보낼 EventData 개체의 배열입니다.
+        - id: partitionId
+          type:
+            - string | number
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Delivery>
+    package: '@azure/event-hubs'
+references:
+  - uid: '@azure/event-hubs.ClientOptions'
+    name: ClientOptions
+    spec.typeScript:
+      - name: ClientOptions
+        fullName: ClientOptions
+        uid: '@azure/event-hubs.ClientOptions'
+  - uid: Promise<@azure/event-hubs.EventHubRuntimeInformation>
+    name: EventHubRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubRuntimeInformation
+        fullName: EventHubRuntimeInformation
+        uid: '@azure/event-hubs.EventHubRuntimeInformation'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/event-hubs.EventHubPartitionRuntimeInformation>
+    name: EventHubPartitionRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubPartitionRuntimeInformation
+        fullName: EventHubPartitionRuntimeInformation
+        uid: '@azure/event-hubs.EventHubPartitionRuntimeInformation'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/event-hubs.OnMessage'
+    name: OnMessage
+    spec.typeScript:
+      - name: OnMessage
+        fullName: OnMessage
+        uid: '@azure/event-hubs.OnMessage'
+  - uid: '@azure/event-hubs.OnError'
+    name: OnError
+    spec.typeScript:
+      - name: OnError
+        fullName: OnError
+        uid: '@azure/event-hubs.OnError'
+  - uid: '@azure/event-hubs.ReceiveOptions'
+    name: ReceiveOptions
+    spec.typeScript:
+      - name: ReceiveOptions
+        fullName: ReceiveOptions
+        uid: '@azure/event-hubs.ReceiveOptions'
+  - uid: '@azure/event-hubs.ReceiveHandler'
+    name: ReceiveHandler
+    spec.typeScript:
+      - name: ReceiveHandler
+        fullName: ReceiveHandler
+        uid: '@azure/event-hubs.ReceiveHandler'
+  - uid: 'Promise<@azure/event-hubs.EventData[]>'
+    name: 'EventData[]>'
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventData
+        fullName: EventData
+        uid: '@azure/event-hubs.EventData'
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: '@azure/event-hubs.EventData'
+    name: EventData
+    spec.typeScript:
+      - name: EventData
+        fullName: EventData
+        uid: '@azure/event-hubs.EventData'
+  - uid: '@azure/event-hubs.EventData[]'
+    name: 'EventData[]'
+    spec.typeScript:
+      - name: EventData
+        fullName: EventData
+        uid: '@azure/event-hubs.EventData'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/event-hubs.ClientOptionsBase'
+    name: ClientOptionsBase
+    spec.typeScript:
+      - name: ClientOptionsBase
+        fullName: ClientOptionsBase
+        uid: '@azure/event-hubs.ClientOptionsBase'
+  - uid: '@azure/event-hubs.EventHubClient'
+    name: EventHubClient
+    spec.typeScript:
+      - name: EventHubClient
+        fullName: EventHubClient
+        uid: '@azure/event-hubs.EventHubClient'
+  - uid: Promise<@azure/event-hubs.EventHubClient>
+    name: EventHubClient>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubClient
+        fullName: EventHubClient
+        uid: '@azure/event-hubs.EventHubClient'
+      - name: '>'
+        fullName: '>'

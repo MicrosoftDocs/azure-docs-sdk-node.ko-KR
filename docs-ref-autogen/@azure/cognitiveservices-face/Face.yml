@@ -64,7 +64,28 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '이미지 및 반환 얼굴 위치 및 필요에 따라 faceIds, 랜드마크, 및 특성을 사용 하 여 사람 얼굴을 감지 합니다.'
+    summary: |-
+      반환 얼굴 사각형, 이미지 및 필요에 따라 faceIds, 랜드마크, 및 특성을 사용 하 여 사람 얼굴을 감지 합니다.<br />
+      * 이미지가 저장 됩니다. 추출 된 얼굴 기능만 서버에서 저장 됩니다. faceId 얼굴 기능 식별자 및에서 사용할 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)를 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a), 및 [얼굴
+      - Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)를 찾습니다.
+      저장 된 얼굴 기능 만료 되 고 원래 검색 호출 후 24 시간 동안 삭제할 수 있습니다.
+      * 선택적 매개 변수는 faceId, 랜드마크, 및 특성을 포함 합니다. 특성 연령, 성별, headPose, 웃는 얼굴 보내기, facialHair, 안경, emotion, 십자선, 구성, 폐색, accessories, 흐림 효과, 노출 및 노이즈를 포함합니다. 특정 특성에 대 한 반환 된 결과의 일부는 항상 정확 하지 않을 수도 있습니다.
+      * JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      * 이미지에 대 한 100 얼굴까지 반환할 수 있습니다. 얼굴 작은 큰에서 얼굴 사각형 크기에 따라 순위가 지정 됩니다.
+      * 최적의 결과 쿼리할 때 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)를 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a), 및 [얼굴
+      - ('ReturnFaceId'은 true 임) Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237) 찾기, 된 얼굴을 사용 하십시오: 정면의 선택을 취소 하 고 최소 크기는 200x200 픽셀 (눈 사이의 100 픽셀)를 사용 하 여 합니다.
+      * 최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.
+      1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.
+      * 다른 'detectionModel' 값을 제공할 수 있습니다. 사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'detection_01': | [얼굴-에 대 한 기본 검색 모델
+      Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). 거의 정면 얼굴 감지에 대 한 권장 합니다. 매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다. | | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다. |
+      * 다른 'recognitionModel' 값을 제공 합니다. 식별을 확인 하는 것과 같은 후속 작업 하는 경우 비슷한 찾이 필요 'recognitionModel' 매개 변수를 사용 하 여 인식 모델을 지정 하십시오. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 지정 되 면 검색 된 faceIds 지정된 인식 모델을 사용 하 여 연결 됩니다. 자세한 내용은를 참조 하십시오 [인식 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-recognition-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'recognition_01': | [얼굴-에 대 한 기본 인식 모델
+      Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). 2019 년 3 월 이전에 만들어진 이러한 모든 faceIds이 인식 모델을 사용 하 여 결합 됩니다. | | 'recognition_02': | 2019 년 3 월에 릴리스된 인식 모델입니다. 전체 정확도 'recognition_01'에 비해 향상 되어 있으므로 'recognition_02' 것이 좋습니다. |
     syntax:
       content: 'function detectWithStream(image: msRest.HttpRequestBody, options?: Models.FaceDetectWithStreamOptionalParams)'
       parameters:
@@ -139,16 +160,26 @@ items:
       - typeScript
     summary: |-
       반환 얼굴 사각형, 이미지 및 필요에 따라 faceIds, 랜드마크, 및 특성을 사용 하 여 사람 얼굴을 감지 합니다.<br />
-      * FaceId, 랜드마크, 특성 등 선택적 매개 변수입니다. 특성 연령, 성별, headPose, 웃는 얼굴 보내기, facialHair, 안경, emotion, 십자선, 구성, 폐색, accessories, 흐림 효과, 노출 및 노이즈를 포함합니다.
-      * 실제 이미지 대신 추출 된 얼굴 기능을 서버에 저장 됩니다. faceId 얼굴 기능 식별자 및에서 사용할 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)를 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a), 및 [얼굴
-      - Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)를 찾습니다. 검색 호출 후 24 시간 후 만료 됩니다.
-      * 얼굴 이미지 품질이 향상 탐지 및 인식 정밀도 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * 이미지가 저장 됩니다. 추출 된 얼굴 기능만 서버에서 저장 됩니다. faceId 얼굴 기능 식별자 및에서 사용할 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)를 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a), 및 [얼굴
+      - Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)를 찾습니다.
+      저장 된 얼굴 기능 만료 되 고 원래 검색 호출 후 24 시간 동안 삭제할 수 있습니다.
+      * 선택적 매개 변수는 faceId, 랜드마크, 및 특성을 포함 합니다. 특성 연령, 성별, headPose, 웃는 얼굴 보내기, facialHair, 안경, emotion, 십자선, 구성, 폐색, accessories, 흐림 효과, 노출 및 노이즈를 포함합니다. 특정 특성에 대 한 반환 된 결과의 일부는 항상 정확 하지 않을 수도 있습니다.
       * JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
-      * 해당 크기는 36 x 36를 4096x4096 픽셀 하는 경우 얼굴을 검색할 수 있습니다. 하는 경우 입력된 이미지를 확대 하려면 보세요 매우 작지만 지우기 얼굴을 감지 해야 합니다.
-      * 이미지는 최대 64 개의 면을 반환할 수 있습니다. 얼굴 작은 큰에서 얼굴 사각형 크기에 따라 순위가 지정 됩니다.
-      * 얼굴 탐지기 정면 및 정면에 가까운 얼굴을 선호 합니다. 얼굴 감지, 예: 매우 큰 얼굴 각도 (머리 포즈) 또는 폐색 되 고 잘못 된 이미지 방향 수 있는 경우가 있습니다.
-      * 특성 (연령, 성별, headPose, 웃는 얼굴 보내기, facialHair, 안경, emotion, 십자선, 구성, 폐색, accessories, 흐림 효과, 노출 및 노이즈)는 완벽 하 게 정확 하지 않을 수 있습니다. 피치 값 HeadPose의 예약 된 필드 이며 항상 0을 반환 합니다.
+      * 이미지에 대 한 100 얼굴까지 반환할 수 있습니다. 얼굴 작은 큰에서 얼굴 사각형 크기에 따라 순위가 지정 됩니다.
+      * 최적의 결과 쿼리할 때 [직면-식별](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)를 [직면-확인](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a), 및 [얼굴
+      - ('ReturnFaceId'은 true 임) Similar](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237) 찾기, 된 얼굴을 사용 하십시오: 정면의 선택을 취소 하 고 최소 크기는 200x200 픽셀 (눈 사이의 100 픽셀)를 사용 하 여 합니다.
+      * 최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.
+      1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.
+      * 다른 'detectionModel' 값을 제공할 수 있습니다. 사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'detection_01': | [얼굴-에 대 한 기본 검색 모델
+      Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). 거의 정면 얼굴 감지에 대 한 권장 합니다. 매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다. | | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다. |
       * 다른 'recognitionModel' 값을 제공 합니다. 식별을 확인 하는 것과 같은 후속 작업 하는 경우 비슷한 찾이 필요 'recognitionModel' 매개 변수를 사용 하 여 인식 모델을 지정 하십시오. 'RecognitionModel'에 대 한 기본값 'recognition_01' 경우 최신 모델로 해야 모델이 매개이 변수에서 명시적으로 지정 하세요 필요 합니다. 지정 되 면 검색 된 faceIds 지정된 인식 모델을 사용 하 여 연결 됩니다. 자세한 내용은를 참조 하십시오 [인식 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-recognition-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'recognition_01': | [얼굴-에 대 한 기본 인식 모델
+      Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). 2019 년 3 월 이전에 만들어진 이러한 모든 faceIds이 인식 모델을 사용 하 여 결합 됩니다. | | 'recognition_02': | 2019 년 3 월에 릴리스된 인식 모델입니다. 전체 정확도 'recognition_01'에 비해 향상 되어 있으므로 'recognition_02' 것이 좋습니다. |
     syntax:
       content: 'function detectWithUrl(url: string, options?: Models.FaceDetectWithUrlOptionalParams)'
       parameters:

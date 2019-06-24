@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.PoolUpdatePropertiesParameter
+    name: PoolUpdatePropertiesParameter
+    fullName: PoolUpdatePropertiesParameter
+    children:
+      - azure-batch.PoolUpdatePropertiesParameter.applicationPackageReferences
+      - azure-batch.PoolUpdatePropertiesParameter.certificateReferences
+      - azure-batch.PoolUpdatePropertiesParameter.metadata
+      - azure-batch.PoolUpdatePropertiesParameter.startTask
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.applicationPackageReferences
+    name: applicationPackageReferences
+    fullName: applicationPackageReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      풀에 대 한 기존 응용 프로그램 패키지 참조를 대체합니다.
+      응용 프로그램 패키지 참조에 대 한 변경 내용은 모든 새 계산 노드 풀을 조인에 영향 되지만 계산 계산 노드를 다시 부팅 되거나 이미지로 다시 설치 될 때까지 풀에 이미 있는 영향을 주지 않습니다. 지정된 된 풀에서 10 개의 응용 프로그램 패키지 참조의 최대가 있습니다. 생략 하거나 빈 컬렉션을 지정 하는 경우 풀에서 서버에 대 한 기존 응용 프로그램 패키지 참조가 제거 됩니다. 지정된 된 풀에서 최대 10 개의 참조를 지정할 수 있습니다.
+    syntax:
+      content: 'applicationPackageReferences: ApplicationPackageReference[]'
+      return:
+        type:
+          - 'azure-batch.ApplicationPackageReference[]'
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.certificateReferences
+    name: certificateReferences
+    fullName: certificateReferences
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '이 목록에는 풀에 구성 된 모든 기존 인증서 참조를 대체 합니다. 빈 컬렉션을 지정 하는 경우 모든 기존 인증서 참조 풀에서 제거 됩니다. Windows 노드에 대 한 Batch 서비스는 위치와 지정 된 인증서 저장소에 인증서를 설치합니다. Linux 계산 노드에 대 한 인증서 작업 디렉터리 및 AZ_BATCH_CERTIFICATES_DIR이이 위치에 대 한 쿼리 작업에 제공 되는 환경 변수를 태스크 내에서 디렉터리에 저장 됩니다. ''원격 사용자''의 표시 여부를 사용 하 여 인증서에 대 한 ''인증서'' 디렉터리 사용자의 홈 디렉터리에 만들어집니다 (예를 들어 /home/ {사용자 이름} / 인증서) 인증서는 해당 디렉터리에 배치 됩니다.'
+    syntax:
+      content: 'certificateReferences: CertificateReference[]'
+      return:
+        type:
+          - 'azure-batch.CertificateReference[]'
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.metadata
+    name: metadata
+    fullName: metadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 목록에서 풀에 구성 된 기존 메타 데이터를 대체 합니다. 생략 하면 또는 빈 컬렉션을 지정 하는 경우 기존 메타 데이터는 풀에서 제거 됩니다.
+    syntax:
+      content: 'metadata: MetadataItem[]'
+      return:
+        type:
+          - 'azure-batch.MetadataItem[]'
+    package: azure-batch
+  - uid: azure-batch.PoolUpdatePropertiesParameter.startTask
+    name: startTask
+    fullName: startTask
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 요소가 있을 경우 모든 기존 시작 태스크 덮어씁니다. 생략 하면 모든 기존 시작 태스크는 풀에서 제거 됩니다.
+    optional: true
+    syntax:
+      content: 'startTask?: StartTask'
+      return:
+        type:
+          - azure-batch.StartTask
+    package: azure-batch
+references:
+  - uid: 'azure-batch.ApplicationPackageReference[]'
+    name: 'ApplicationPackageReference[]'
+    spec.typeScript:
+      - name: ApplicationPackageReference
+        fullName: ApplicationPackageReference
+        uid: azure-batch.ApplicationPackageReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-batch.CertificateReference[]'
+    name: 'CertificateReference[]'
+    spec.typeScript:
+      - name: CertificateReference
+        fullName: CertificateReference
+        uid: azure-batch.CertificateReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-batch.MetadataItem[]'
+    name: 'MetadataItem[]'
+    spec.typeScript:
+      - name: MetadataItem
+        fullName: MetadataItem
+        uid: azure-batch.MetadataItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.StartTask
+    name: StartTask
+    spec.typeScript:
+      - name: StartTask
+        fullName: StartTask
+        uid: azure-batch.StartTask

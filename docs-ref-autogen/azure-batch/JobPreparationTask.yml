@@ -1,0 +1,191 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.JobPreparationTask
+    name: JobPreparationTask
+    fullName: JobPreparationTask
+    children:
+      - azure-batch.JobPreparationTask.commandLine
+      - azure-batch.JobPreparationTask.constraints
+      - azure-batch.JobPreparationTask.containerSettings
+      - azure-batch.JobPreparationTask.environmentSettings
+      - azure-batch.JobPreparationTask.id
+      - azure-batch.JobPreparationTask.rerunOnNodeRebootAfterSuccess
+      - azure-batch.JobPreparationTask.resourceFiles
+      - azure-batch.JobPreparationTask.userIdentity
+      - azure-batch.JobPreparationTask.waitForSuccess
+    langs:
+      - typeScript
+    type: interface
+    summary: '작업에 대 한 작업을 실행 하는 노드 준비 작업 준비를 사용할 수 있습니다. 작업 준비에서 일반적으로 수행 하는 활동이 포함 됩니다. 작업의 모든 태스크에서 사용 하는 공용 리소스 파일을 다운로드 합니다. 작업 준비 태스크는 노드에서 공유 위치로 이러한 공용 리소스 파일을 다운로드할 수 있습니다. (AZ_BATCH_NODE_ROOT_DIR\shared) 또는 해당 작업의 모든 태스크에서 통신할 수 있도록 노드에서 로컬 서비스를 시작 합니다. 노드에서이 작업의 작업을 실행 되지 않습니다 (즉, exhausts 종료 코드 0으로 종료 하기 전에 해당 재시도 횟수), 작업 준비 태스크 실패에 일괄 처리 하는 경우. Compute 노드를 이미지로 다시 설치 될 때까지이 작업의 작업을 실행 하려면 부적격 남아 있습니다. Compute 노드는 활성 상태로 유지 되며 다른 작업에 사용할 수 있습니다. 작업 준비 태스크가 동일한 노드에서 여러 번 실행 수 있습니다. 따라서 작업 준비 태스크가 다시 실행을 처리 하도록 작성 해야 합니다. 노드 다시 부팅 하는 경우 작업 준비 태스크가 다시 실행 됩니다 계산 노드에서 작업 준비 태스크 이전에 완료 되지 않은 경우 또는 rerunOnNodeRebootAfterSuccess 참인 경우 작업의 다른 작업을 예약 하기 전에. 노드, 이미지로 다시 설치 하는 경우에 작업 준비 태스크 작업의 모든 작업을 예약 하기 전에 다시 실행 됩니다. 일괄 처리 노드에서 복구 작업이 트리거될 때 작업을 다시 시도 합니다. 포함 (하지만에 제한 되지 않습니다)의 복구 작업이 경우에서 비정상 노드를 다시 부팅 하거나 계산 노드 호스트 오류로 인해 표시 되지 않습니다. 복구 작업은 독립적 이며 된 maxTaskRetryCount에 대해 계산 되지 않습니다 인해 다시 시도 합니다. 된 maxTaskRetryCount 0 인 경우에 내부는 재시도 복구 작업으로 인해 발생할 수 있습니다. 이 인해 모든 작업이 멱 등 원 이어야 합니다. 즉, 작업을 중단 되 고 중복 된 데이터 나 손상 없이 다시 시작을 허용 해야 합니다. 최상의 일종의 검사점을 사용 하는 장기 실행 작업에 대 한 연습입니다.'
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.commandLine
+    name: commandLine
+    fullName: commandLine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '명령줄 셸에서 실행 되지 않으며 따라서 환경 변수 확장과 같은 셸 기능을 사용할 수 없습니다. 이러한 기능을 활용 하려는 경우를 호출 해야 명령줄에서 셸을 예를 들어 "cmd /c MyCommand"를 사용 하 여 Windows에서 또는 "/ bin/sh-c MyCommand" Linux에서. 명령줄 파일 경로 가리키는 경우 (태스크 작업 디렉터리의 상대), 상대 경로 사용 하 또는 일괄 처리 제공 된 환경 변수를 사용 해야 합니다 (https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables)합니다.'
+    syntax:
+      content: 'commandLine: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.constraints
+    name: constraints
+    fullName: constraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'constraints?: TaskConstraints'
+      return:
+        type:
+          - azure-batch.TaskConstraints
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.containerSettings
+    name: containerSettings
+    fullName: containerSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '이 옵션을 지정 하는 경우 AZ_BATCH_NODE_ROOT_DIR (노드에서 Azure Batch 디렉터리의 루트) 아래의 모든 디렉터리가 재귀적으로 컨테이너에 매핑되고, 모든 작업 환경 변수가 컨테이너에 매핑되고 및 태스크 명령줄은 컨테이너에서 실행 합니다. AZ_BATCH_NODE_ROOT_DIR 외부 컨테이너에서 생성 된 파일 배치 파일 Api는 해당 파일에 액세스할 수 없습니다 즉 호스트 디스크에 반영 되지 않을 수 있습니다.'
+    optional: true
+    syntax:
+      content: 'containerSettings?: TaskContainerSettings'
+      return:
+        type:
+          - azure-batch.TaskContainerSettings
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.environmentSettings
+    name: environmentSettings
+    fullName: environmentSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'environmentSettings?: EnvironmentSetting[]'
+      return:
+        type:
+          - 'azure-batch.EnvironmentSetting[]'
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ID는 하이픈 및 밑줄만 포함 하는 영숫자 문자 조합을 포함할 수 있습니다 및 64 개 이상의 문자를 포함할 수 없습니다. 이 속성을 지정 하지 않는 경우 기본값은 'jobpreparation' Batch 서비스에 할당 합니다. 작업에서 다른 작업이 동일한 ID로 작업 준비 태스크가 있습니다. Batch 서비스에서 동일한 id 사용 하 여 작업을 제출 하면 TaskIdSameAsJobPreparationTask; 오류 코드로 요청을 거부 REST API를 직접 호출 된 경우 HTTP 상태 코드 409 (충돌) 됩니다.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.rerunOnNodeRebootAfterSuccess
+    name: rerunOnNodeRebootAfterSuccess
+    fullName: rerunOnNodeRebootAfterSuccess
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '작업 준비 태스크는 계산 노드, 이미지로 다시 설치 하는 경우 또는 작업 준비 태스크가 완료 되지 않은 경우 항상 다시 실행 됩니다 (예: 다시 부팅 작업을 실행 하는 동안 발생). 따라서 작업 준비 태스크 idempotent를 여러 번 실행 하는 경우 올바르게 동작 하려면 항상 작성 해야 합니다. 기본값은 true입니다.'
+    optional: true
+    syntax:
+      content: 'rerunOnNodeRebootAfterSuccess?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.resourceFiles
+    name: resourceFiles
+    fullName: resourceFiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      이 요소 아래에 나열 된 파일 작업의 작업 디렉터리에 있습니다.
+      리소스 파일의 목록에 대 한 최대 크기가 있습니다.  최대 크기를 초과 하면 요청이 실패 하 고 응답 오류 코드는 RequestEntityTooLarge 됩니다. 이런 경우의 ResourceFiles 컬렉션 크기가 줄여야 합니다. .Zip 파일, 응용 프로그램 패키지 또는 Docker 컨테이너를 사용 하 여 수행할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'resourceFiles?: ResourceFile[]'
+      return:
+        type:
+          - 'azure-batch.ResourceFile[]'
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.userIdentity
+    name: userIdentity
+    fullName: userIdentity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 생략 하면 작업이 Windows 계산 노드를 작업에 고유한 비관리자 사용자 또는 Linux 계산 노드의 풀에 고유한 관리자가 아닌 사용자로 실행 됩니다.
+    optional: true
+    syntax:
+      content: 'userIdentity?: UserIdentity'
+      return:
+        type:
+          - azure-batch.UserIdentity
+    package: azure-batch
+  - uid: azure-batch.JobPreparationTask.waitForSuccess
+    name: waitForSuccess
+    fullName: waitForSuccess
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '경우 true이 고 노드에서 작업 준비 태스크 실패, 작업 준비 태스크는 최대 다시 시도 최대 일괄 처리 서비스 재시도 계산 (제약 조건 요소에 지정 된). 작업이 아직 완료 되지 않은 경우 성공적으로 모든 재시도 후 다음 Batch 서비스는 노드 작업의 작업을 예약 하지 않습니다. 노드는 활성 및 적격 다른 작업의 작업을 실행 하려면 유지 됩니다. False 인 경우, Batch 서비스 작업 준비 태스크가 완료를 기다리지 않습니다. 이 경우 작업 준비 태스크 실행; 중 계산 노드에서 실행 작업의 다른 작업을 시작 수 있습니다. 및 작업 준비 태스크에 실패 한 경우에 새 작업 계속 계산 노드에서 예약 됩니다. 기본값은 true입니다.'
+    optional: true
+    syntax:
+      content: 'waitForSuccess?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-batch
+references:
+  - uid: azure-batch.TaskConstraints
+    name: TaskConstraints
+    spec.typeScript:
+      - name: TaskConstraints
+        fullName: TaskConstraints
+        uid: azure-batch.TaskConstraints
+  - uid: azure-batch.TaskContainerSettings
+    name: TaskContainerSettings
+    spec.typeScript:
+      - name: TaskContainerSettings
+        fullName: TaskContainerSettings
+        uid: azure-batch.TaskContainerSettings
+  - uid: 'azure-batch.EnvironmentSetting[]'
+    name: 'EnvironmentSetting[]'
+    spec.typeScript:
+      - name: EnvironmentSetting
+        fullName: EnvironmentSetting
+        uid: azure-batch.EnvironmentSetting
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-batch.ResourceFile[]'
+    name: 'ResourceFile[]'
+    spec.typeScript:
+      - name: ResourceFile
+        fullName: ResourceFile
+        uid: azure-batch.ResourceFile
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-batch.UserIdentity
+    name: UserIdentity
+    spec.typeScript:
+      - name: UserIdentity
+        fullName: UserIdentity
+        uid: azure-batch.UserIdentity

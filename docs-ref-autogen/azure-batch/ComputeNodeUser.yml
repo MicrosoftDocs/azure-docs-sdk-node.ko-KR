@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.ComputeNodeUser
+    name: ComputeNodeUser
+    fullName: ComputeNodeUser
+    children:
+      - azure-batch.ComputeNodeUser.expiryTime
+      - azure-batch.ComputeNodeUser.isAdmin
+      - azure-batch.ComputeNodeUser.name
+      - azure-batch.ComputeNodeUser.password
+      - azure-batch.ComputeNodeUser.sshPublicKey
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.ComputeNodeUser.expiryTime
+    name: expiryTime
+    fullName: expiryTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 생략 하면 기본값은 현재 시간에서 1 일입니다. Linux 계산 노드는 expiryTime 하루 최대 전체 자릿수를 있습니다.
+    optional: true
+    syntax:
+      content: 'expiryTime?: Date'
+      return:
+        type:
+          - Date
+    package: azure-batch
+  - uid: azure-batch.ComputeNodeUser.isAdmin
+    name: isAdmin
+    fullName: isAdmin
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 기본값은 False입니다.
+    optional: true
+    syntax:
+      content: 'isAdmin?: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-batch
+  - uid: azure-batch.ComputeNodeUser.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNodeUser.password
+    name: password
+    fullName: password
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 암호는 Windows 계산 노드 (해당 되는 'cloudServiceConfiguration'를 사용 하 여 만든 또는 Windows 이미지 참조를 사용 하 여 'virtualMachineConfiguration'를 사용 하 여 만든)에 대 한 필수입니다. Linux 계산 노드에 대 한 sshPublicKey 속성과 함께 암호를 선택적으로 지정할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'password?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ComputeNodeUser.sshPublicKey
+    name: sshPublicKey
+    fullName: sshPublicKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 공개 키 OpenSSH 인코딩을 사용 하 여 호환 되 고 base 64 인코딩되어야 합니다. Linux 계산 노드에 대해서만이 속성을 지정할 수 있습니다. 이 Windows 계산 노드에 대 한 변수를 지정 하는 경우 다음 Batch 서비스 요청을 거부 합니다. HTTP 상태 코드를 호출 하는 REST API를 직접 경우 400 (잘못 된 요청)입니다.
+    optional: true
+    syntax:
+      content: 'sshPublicKey?: string'
+      return:
+        type:
+          - string
+    package: azure-batch

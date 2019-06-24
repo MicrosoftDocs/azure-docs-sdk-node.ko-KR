@@ -46,7 +46,23 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 대표 face id에 대 한 사람에 게 추가 합니다. 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.
+    summary: |-
+      얼굴 인식 또는 확인에 대 한 사용자 그룹에 사람 얼굴을 추가 합니다. 이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다. 추가 글꼴을 나타내는 persistedFaceId를 반환 합니다. 이미지가 저장 됩니다.
+      추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [PersonGroup PersonFace-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523e), [PersonGroup 사람-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523d) 하거나 [PersonGroup-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395245) 라고 합니다.
+      <br /> 생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.
+      *   고품질 얼굴 이미지 인식 정밀도 향상 시키려면을 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      *   각 사용자 항목 최대 248 얼굴을 포함할 수 있습니다.
+      *   JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      *   "targetFace" 사각형 한 면을 포함 해야 합니다. 0 개 이상의 얼굴 오류로 간주 됩니다. 제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.
+      *   검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.
+      *   순차적으로를 같은 사람의 얼굴을 추가/삭제를 처리 합니다. 다른 사람 얼굴 추가/삭제는 병렬로 처리 됩니다.
+      * 최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.
+      1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.
+      * 다른 'detectionModel' 값을 제공할 수 있습니다. 사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'detection_01': | 에 대 한 기본 검색 모델 [PersonGroup 사람-추가
+      Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523b). 거의 정면 얼굴 감지에 대 한 권장 합니다. 매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다. | | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다. |
     syntax:
       content: 'function addFaceFromStream(personGroupId: string, personId: string, image: msRest.HttpRequestBody, options?: Models.PersonGroupPersonAddFaceFromStreamOptionalParams)'
       parameters:
@@ -143,7 +159,23 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 대표 face id에 대 한 사람에 게 추가 합니다. 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정 됩니다.
+    summary: |-
+      얼굴 인식 또는 확인에 대 한 사용자 그룹에 사람 얼굴을 추가 합니다. 이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다. 추가 글꼴을 나타내는 persistedFaceId를 반환 합니다. 이미지가 저장 됩니다.
+      추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [PersonGroup PersonFace-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523e), [PersonGroup 사람-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523d) 하거나 [PersonGroup-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395245) 라고 합니다.
+      <br /> 생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.
+      *   고품질 얼굴 이미지 인식 정밀도 향상 시키려면을 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      *   각 사용자 항목 최대 248 얼굴을 포함할 수 있습니다.
+      *   JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      *   "targetFace" 사각형 한 면을 포함 해야 합니다. 0 개 이상의 얼굴 오류로 간주 됩니다. 제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.
+      *   검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.
+      *   순차적으로를 같은 사람의 얼굴을 추가/삭제를 처리 합니다. 다른 사람 얼굴 추가/삭제는 병렬로 처리 됩니다.
+      * 최소 검색 가능한 얼굴 크기 36 x 36 1920x1080 픽셀 이하의 이미지 픽셀입니다.
+      1920x1080 픽셀 보다 큰 치수를 사용 하 여 이미지 크기를 비례적으로 더 큰 최소 글꼴 크기를 해야 합니다.
+      * 다른 'detectionModel' 값을 제공할 수 있습니다. 사용 하 고 다른 검색 모델을 비교 하려면을 참조 하십시오 [감지 모델을 지정 하는 방법](https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model)
+      | 모델 | 권장 사용법-case(s) |
+      | ---------- | -------- |
+      | 'detection_01': | 에 대 한 기본 검색 모델 [PersonGroup 사람-추가
+      Face](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523b). 거의 정면 얼굴 감지에 대 한 권장 합니다. 매우 큰 각도 (머리 포즈) 얼굴을 얼굴 폐색 또는 잘못 된 이미지 방향 시나리오의 경우 이러한 경우 얼굴 검색 되지 않을 수 있습니다. | | 'detection_02': | 감지 모델 2019에 릴리스된 작고 쪽 흐리게 얼굴에 특히 향상 된 정확도 사용 하 여 될 수 있습니다. |
     syntax:
       content: 'function addFaceFromUrl(personGroupId: string, personId: string, url: string, options?: Models.PersonGroupPersonAddFaceFromUrlOptionalParams)'
       parameters:
@@ -313,7 +345,10 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 개인의 얼굴을 삭제 합니다. 지속 된 얼굴에 대 한 상대적 기능도 삭제 됩니다.
+    summary: |-
+      지정한 personGroupId 고 personId persistedFaceId 하 여 사용자 그룹의 사용자에서 얼굴을 삭제 합니다.
+      <br /> 순차적으로를 같은 사람의 얼굴을 추가/삭제를 처리 합니다.
+      다른 사람 얼굴 추가/삭제는 병렬로 처리 됩니다.
     syntax:
       content: 'function deleteFace(personGroupId: string, personId: string, persistedFaceId: string, options?: msRest.RequestOptionsBase)'
       parameters:
@@ -410,7 +445,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 사용자 그룹에서 기존 사용자를 삭제 합니다. 모든 사용자 데이터를 저장 하 고 얼굴 기능 사용자 항목에서 삭제 됩니다.
+    summary: '사용자 그룹에서 기존 사용자를 삭제 합니다. PersistedFaceId, userData, 사용자 항목에서 사용자 이름 및 얼굴 기능을 모두 삭제 됩니다.'
     syntax:
       content: 'function deleteMethod(personGroupId: string, personId: string, options?: msRest.RequestOptionsBase)'
       parameters:
@@ -851,7 +886,16 @@ items:
     type: method
     langs:
       - typeScript
-    summary: 사용자 업데이트 얼굴의 userData 필드를 유지 합니다.
+    summary: |-
+      얼굴 인식 또는 확인에 대 한 사용자 그룹에 사람 얼굴을 추가 합니다. 이미지를 사용 하 여 처리 하기 위해 여러 명의 얼굴이 포함, 입력된 얼굴 targetFace 사각형이 이미지 형식으로 지정할 수 있습니다. 추가 글꼴을 나타내는 persistedFaceId를 반환 합니다. 이미지가 저장 됩니다.
+      추출 된 얼굴 기능만 될 때까지 서버에 저장 됩니다 [PersonGroup PersonFace-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523e), [PersonGroup 사람-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523d) 하거나 [PersonGroup-삭제](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395245) 라고 합니다.
+      <br /> 생성 된 faceId 참고 persistedFaceId 다릅니다 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)합니다.
+      * 고품질 얼굴 이미지 인식 정밀도 향상 시키려면을 의미합니다. 고품질 얼굴을 고려 하십시오: 정면, clear, 및 얼굴 크기는 200 또는 큰 x 200 픽셀 (눈 사이의 100 픽셀)입니다.
+      * 각 사용자 항목 최대 248 얼굴을 포함할 수 있습니다.
+      * JPEG, PNG, GIF (첫 번째 프레임) 및 BMP 형식이 지원 됩니다. 허용 된 이미지 파일 크기가 1KB에서 6mb 합니다.
+      * "targetFace" 사각형 한 면을 포함 해야 합니다. 0 개 이상의 얼굴 오류로 간주 됩니다. 제공 된 "targetFace" 사각형에서 반환 되지 않으면 [얼굴 감지-](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), 보장이 감지 하 여 얼굴을 성공적으로 추가 합니다.
+      * 검색 가능한 얼굴 크기 (36 4096 x 4096 픽셀 x 36)에서 큰 머리 포즈 또는 대규모 occlusions 오류를 발생 합니다.
+      * 순차적으로를 같은 사람의 얼굴을 추가/삭제를 처리 합니다. 다른 사람 얼굴 추가/삭제는 병렬로 처리 됩니다.
     syntax:
       content: 'function updateFace(personGroupId: string, personId: string, persistedFaceId: string, options?: Models.PersonGroupPersonUpdateFaceOptionalParams)'
       parameters:

@@ -7,6 +7,8 @@ items:
       - '@azure/event-hubs.ClientOptions.dataTransformer'
       - '@azure/event-hubs.ClientOptions.tokenProvider'
       - '@azure/event-hubs.ClientOptions.userAgent'
+      - '@azure/event-hubs.ClientOptions.webSocket'
+      - '@azure/event-hubs.ClientOptions.webSocketConstructorOptions'
     langs:
       - typeScript
     type: interface
@@ -56,10 +58,45 @@ items:
     summary: '{문자열} [userAgent] 기본 제공된 사용자에 게 추가 되어야 하는 사용자 에이전트 에이전트 문자열입니다.'
     optional: true
     syntax:
-      content: 'userAgent?: string'
+      content: 'userAgent?: undefined | string'
       return:
         type:
-          - string
+          - undefined | string
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.ClientOptions.webSocket'
+    name: webSocket
+    fullName: webSocket
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      WebSocket을 통한 AMQP 연결을 만드는 데 WebSocket 생성자입니다.
+      이 옵션을 제공 하는 아래 시나리오
+      - Event Hubs에 대 한 AMQP 연결에서 사용 되는 것은 TCP 포트 5671 환경에서 차단 됩니다.
+      - 응용 프로그램 프록시 서버 뒤 실행 해야 합니다.
+      - 응용 프로그램이 브라우저에서 실행 해야 하 고 여러분이 Websocket 구현 대신 기본 제공 브라우저에 WebSocket 제공 하려면.
+    optional: true
+    syntax:
+      content: 'webSocket?: WebSocketImpl'
+      return:
+        type:
+          - WebSocketImpl
+    package: '@azure/event-hubs'
+  - uid: '@azure/event-hubs.ClientOptions.webSocketConstructorOptions'
+    name: webSocketConstructorOptions
+    fullName: webSocketConstructorOptions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{webSocketConstructorOptions}-WebSocket 생성자에 전달할 옵션'
+    optional: true
+    syntax:
+      content: 'webSocketConstructorOptions?: any'
+      return:
+        type:
+          - any
     package: '@azure/event-hubs'
 references:
   - uid: '@azure/event-hubs.ClientOptionsBase'

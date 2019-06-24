@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.ImageReference
+    name: ImageReference
+    fullName: ImageReference
+    children:
+      - azure-batch.ImageReference.offer
+      - azure-batch.ImageReference.publisher
+      - azure-batch.ImageReference.sku
+      - azure-batch.ImageReference.version
+      - azure-batch.ImageReference.virtualMachineImageId
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.ImageReference.offer
+    name: offer
+    fullName: offer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 예를 들어 UbuntuServer 또는 windows Server입니다.
+    optional: true
+    syntax:
+      content: 'offer?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ImageReference.publisher
+    name: publisher
+    fullName: publisher
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Canonical, MicrosoftWindowsServer 등입니다.'
+    optional: true
+    syntax:
+      content: 'publisher?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ImageReference.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 예를 들어 14.04.0-LTS 또는 2012-R2-Datacenter입니다.
+    optional: true
+    syntax:
+      content: 'sku?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ImageReference.version
+    name: version
+    fullName: version
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이미지의 최신 버전을 선택 하려면 '최신' 값을 지정할 수 있습니다. 생략 하면 기본값은 'latest'.
+    optional: true
+    syntax:
+      content: 'version?: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.ImageReference.virtualMachineImageId
+    name: virtualMachineImageId
+    fullName: virtualMachineImageId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      이 속성은 다른 ImageReference 속성을 사용 하 여 함께 사용할 수 없습니다. 가상 머신 이미지는 동일한 지역 및 Azure Batch 계정으로 구독에 있어야 합니다.
+      방화벽에 대 한 정보에 대 한 Batch 서비스와 통신 하도록 Batch 계산 노드 에이전트에 대 한 설정을 참조 https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration합니다.
+    optional: true
+    syntax:
+      content: 'virtualMachineImageId?: string'
+      return:
+        type:
+          - string
+    package: azure-batch

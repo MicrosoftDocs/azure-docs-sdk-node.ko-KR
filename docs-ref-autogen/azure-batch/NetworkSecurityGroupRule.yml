@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batch.NetworkSecurityGroupRule
+    name: NetworkSecurityGroupRule
+    fullName: NetworkSecurityGroupRule
+    children:
+      - azure-batch.NetworkSecurityGroupRule.access
+      - azure-batch.NetworkSecurityGroupRule.priority
+      - azure-batch.NetworkSecurityGroupRule.sourceAddressPrefix
+      - azure-batch.NetworkSecurityGroupRule.sourcePortRanges
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-batch
+  - uid: azure-batch.NetworkSecurityGroupRule.access
+    name: access
+    fullName: access
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '가능한 값: ''허용'', ''거부'''
+    syntax:
+      content: 'access: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.NetworkSecurityGroupRule.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      우선 순위는 풀 내에서 고유 해야 하며 우선 순위에 따라에서 평가 됩니다.
+      번호가 낮을수록 우선순위가 높습니다. 예를 들어, 150, 250 및 350의 순서 번호로 규칙을 지정할 수 있습니다. 150의 순서 번호로 규칙 250 순서를 가진 규칙 보다 우선 합니다. 허용 된 우선 순위는 150를 3500입니다. 경우 예약 되거나 중복 된 값을 요청은 실패 하며 HTTP 상태 코드 400 제공 됩니다.
+    syntax:
+      content: 'priority: number'
+      return:
+        type:
+          - number
+    package: azure-batch
+  - uid: azure-batch.NetworkSecurityGroupRule.sourceAddressPrefix
+    name: sourceAddressPrefix
+    fullName: sourceAddressPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '유효한 값은 단일 IP 주소 (예: 10.10.10.10), IP 서브넷 (예: 192.168.1.0/24), 기본 태그 또는 * (모든 주소의 경우)에 대 한 합니다.  다른 값에는 요청은 실패 하며 HTTP 상태 코드 400 메시지가 제공 됩니다.'
+    syntax:
+      content: 'sourceAddressPrefix: string'
+      return:
+        type:
+          - string
+    package: azure-batch
+  - uid: azure-batch.NetworkSecurityGroupRule.sourcePortRanges
+    name: sourcePortRanges
+    fullName: sourcePortRanges
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '유효한 값은 ''*'' (모든 포트 0-65535), 특정 포트 (예: 22) 또는 포트 범위 (예: 100-200). 포트 0에서 65535 까지의 범위에 있어야 합니다. 이 컬렉션의 각 항목에 다른 항목 (범위 또는 개별 포트) 겹치지 않아야 합니다. 다른 값에는 요청은 실패 하며 HTTP 상태 코드 400 메시지가 제공 됩니다. 기본값은 ''*''.'
+    optional: true
+    syntax:
+      content: 'sourcePortRanges?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-batch
