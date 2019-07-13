@@ -14,7 +14,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: 선택적 매개 변수입니다.
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -55,7 +55,18 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |
+      상태에 따라 반환된 HealthEvent 개체의 컬렉션을 필터링할 수 있습니다.
+      이 매개 변수에 사용할 수 있는 값은 다음 상태 중 하나의 정수 값을 포함합니다.
+      필터와 일치하는 이벤트만 반환됩니다. 모든 이벤트는 집계된 상태를 평가하는 데 사용됩니다.
+      지정하지 않으면 모든 항목이 반환됩니다. 상태 값은 플래그 기반 열거형이므로 값은 비트 OR 연산자를 사용하여 구한 값의 조합일 수 있습니다.
+      예를 들어 제공된 값이 6이면 HealthState 값이 OK(2) 및 Warning(4)인 모든 이벤트가 반환됩니다.
+      - Default-기본값. 모든 HealthState와 일치합니다. 값은 0입니다.
+      - None-모든 HealthState 값과 일치 하지 않는 필터입니다. 주어진 상태 컬렉션에 대해 결과를 반환하지 않기 위해 사용됩니다. 값은 1입니다.
+      - 확인-는 일치 Ok 인 입력과 필터 HealthState 값이 있습니다. 값은 2입니다.
+      - 경고-필터 값 Warning를 HealthState 인 입력과 일치 하는입니다. 값은 4입니다.
+      - Error-HealthState 값이 error 인 입력과 일치 하는 필터입니다. 값은 8입니다.
+      - All-모든 HealthState 값의 입력과 일치 하는 필터입니다. 값은 65535입니다. 기본값: 0.
     optional: true
     syntax:
       content: 'eventsHealthStateFilter?: undefined | number'
@@ -115,7 +126,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '시간 (초)에서 작업을 수행 하는 것에 대 한 서버 제한 시간입니다. 이 시간 제한은 클라이언트는 요청한 작업을 완료할 때까지 기다릴 수 있는 기간을 지정 합니다. 이 매개 변수의 기본값은 60 초입니다. 기본값: 60.'
     optional: true
     syntax:
       content: 'timeoutParameter?: undefined | number'

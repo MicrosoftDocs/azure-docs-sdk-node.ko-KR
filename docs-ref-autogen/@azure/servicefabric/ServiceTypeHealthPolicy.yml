@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy'
+    name: ServiceTypeHealthPolicy
+    fullName: ServiceTypeHealthPolicy
+    children:
+      - '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyPartitionsPerService'
+      - '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyReplicasPerPartition'
+      - '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyServices'
+    langs:
+      - typeScript
+    type: interface
+    summary: 서비스 유형에 속한 서비스의 상태를 평가하는 데 사용되는 상태 정책을 나타냅니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyPartitionsPerService'
+    name: maxPercentUnhealthyPartitionsPerService
+    fullName: maxPercentUnhealthyPartitionsPerService
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      최대 서비스 당 비정상 파티션 비율입니다. 허용 되는 값은 바이트 값 100 백분율 허용 되는 최대값을 나타내는 0에서 오류를 서비스 하기 전에 비정상이 될 수 있는 파티션의 비율 간주 됩니다.
+      켜지 이지만 하나 이상의 비정상 파티션, 하는 경우 상태 경고로 평가 됩니다.
+      백분율 비정상 파티션 수가 서비스에서 파티션의 총 수로 나눠 계산 됩니다.
+      적은 수의 파티션에 대 한 오류를 허용 하는 계산 반올림 됩니다. 기본 비율은 0입니다. 기본값: 0.
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyPartitionsPerService?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyReplicasPerPartition'
+    name: maxPercentUnhealthyReplicasPerPartition
+    fullName: maxPercentUnhealthyReplicasPerPartition
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      최대 파티션당 비정상 복제본 비율입니다. 허용 되는 값은 0부터 100 바이트 값입니다.
+      복제본이 될 수 있는 정상 파티션을 오류로 간주 되기 전에 최대 허용된 비율을 나타냅니다.
+      백분율 켜지 나 비정상 복제본이 하나 이상 있는지를 하는 경우 상태 경고로 평가 됩니다.
+      백분율 비정상 복제본 수가 파티션에서 복제본의 총 수로 나눠 계산 됩니다.
+      적은 수의 복제본에서 실패를 허용할 수는 계산 반올림 됩니다. 기본 비율은 0입니다. 기본값: 0.
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyReplicasPerPartition?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyServices'
+    name: maxPercentUnhealthyServices
+    fullName: maxPercentUnhealthyServices
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      최대 비정상 서비스 비율입니다. 허용 되는 값은 0부터 100 바이트 값입니다.
+      비정상이 될 수는 응용 프로그램 오류로 간주 되기 전에 서비스의 최대 허용된 비율을 나타냅니다.
+      켜지 이지만 하나 이상의 비정상 서비스에 상태를 경고로 평가 됩니다.
+      이 특정 서비스 유형의 비정상 서비스 수가 특정 서비스 유형의 서비스의 총 수로 나눠 계산 됩니다.
+      적은 수의 서비스에서 실패를 허용할 수는 계산 반올림 됩니다. 기본 비율은 0입니다. 기본값: 0.
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyServices?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'

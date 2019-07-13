@@ -14,7 +14,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: 선택적 매개 변수입니다.
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -55,7 +55,15 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |-
+      보고서를 즉시 보낼지 여부를 나타내는 플래그입니다.
+      상태 보고서는 Health 스토어에 전달하는 Service Fabric 게이트웨이 애플리케이션에 전송됩니다.
+      Immediate가 true로 설정된 경우 보고서는 HTTP 게이트웨이 애플리케이션이 사용 중인 패브릭 클라이언트 설정에 관계 없이 HTTP 게이트웨이에서 Health 스토어로 즉시 전송됩니다.
+      이는 가능한 한 빨리 보내야 하는 중요한 보고서에 유용합니다.
+      타이밍 및 기타 조건에 따라 보고서 전송이 여전히 실패할 수 있습니다. 예를 들어, HTTP 게이트웨이가 닫혀 있거나 메시지가 게이트웨이에 도달하지 않는 경우입니다.
+      Immediate가 false로 설정된 경우 보고서는 HTTP 게이트웨이의 상태 클라이언트 설정에 따라 전송됩니다. 따라서 HealthReportSendInterval 구성에 따라 일괄처리됩니다.
+      상태 클라이언트가 상태 보고서 처리뿐만 아니라 Health 스토어로 메시지를 보고하는 상태를 최적화하도록 허용하므로 이는 권장 설정입니다.
+      기본적으로 보고서는 즉시 전송되지 않습니다. 기본값: false.
     optional: true
     syntax:
       content: 'immediate?: undefined | false | true'
@@ -115,7 +123,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '시간 (초)에서 작업을 수행 하는 것에 대 한 서버 제한 시간입니다. 이 시간 제한은 클라이언트는 요청한 작업을 완료할 때까지 기다릴 수 있는 기간을 지정 합니다. 이 매개 변수의 기본값은 60 초입니다. 기본값: 60.'
     optional: true
     syntax:
       content: 'timeoutParameter?: undefined | number'

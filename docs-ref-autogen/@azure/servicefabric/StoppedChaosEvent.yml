@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.StoppedChaosEvent'
+    name: StoppedChaosEvent
+    fullName: StoppedChaosEvent
+    children:
+      - '@azure/servicefabric.StoppedChaosEvent.kind'
+      - '@azure/servicefabric.StoppedChaosEvent.reason'
+      - '@azure/servicefabric.StoppedChaosEvent.timeStampUtc'
+    langs:
+      - typeScript
+    type: interface
+    summary: Chaos 사용자 발급을 중지 하거나 실행 시간이 이었다 때문에 중지 될 때 생성 되는 비정상 상황 이벤트를 설명 합니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StoppedChaosEvent.kind'
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: "Stopped"'
+      return:
+        type:
+          - '"Stopped"'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StoppedChaosEvent.reason'
+    name: reason
+    fullName: reason
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 비정상 상황을 멈춘 이유를 설명 합니다. StopChaos API 호출으로 인해 비정상 상황을 중지할 수 있습니다 또는 ChaosParameters 나오는 timeToRun 끝났습니다.
+    optional: true
+    syntax:
+      content: 'reason?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StoppedChaosEvent.timeStampUtc'
+    name: timeStampUtc
+    fullName: timeStampUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: UTC 타임 스탬프가 비정상 상황 이벤트가 생성 된 경우.
+    syntax:
+      content: 'timeStampUtc: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/servicefabric'

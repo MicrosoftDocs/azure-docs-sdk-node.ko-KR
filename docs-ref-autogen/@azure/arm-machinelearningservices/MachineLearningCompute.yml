@@ -6,7 +6,7 @@ items:
     children:
       - '@azure/arm-machinelearningservices.MachineLearningCompute.beginCreateOrUpdate'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.beginDeleteMethod'
-      - '@azure/arm-machinelearningservices.MachineLearningCompute.beginSystemUpdate'
+      - '@azure/arm-machinelearningservices.MachineLearningCompute.beginUpdate'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.createOrUpdate'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.deleteMethod'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.get'
@@ -21,8 +21,11 @@ items:
       - '@azure/arm-machinelearningservices.MachineLearningCompute.listKeys'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.listKeys_2'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.listKeys_1'
+      - '@azure/arm-machinelearningservices.MachineLearningCompute.listNodes'
+      - '@azure/arm-machinelearningservices.MachineLearningCompute.listNodes_2'
+      - '@azure/arm-machinelearningservices.MachineLearningCompute.listNodes_1'
       - '@azure/arm-machinelearningservices.MachineLearningCompute.constructor'
-      - '@azure/arm-machinelearningservices.MachineLearningCompute.systemUpdate'
+      - '@azure/arm-machinelearningservices.MachineLearningCompute.update'
     langs:
       - typeScript
     type: class
@@ -64,14 +67,14 @@ items:
           - Promise<LROPoller>
     package: '@azure/arm-machinelearningservices'
   - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.beginDeleteMethod'
-    name: 'beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    name: 'beginDeleteMethod(string, string, string, Models.UnderlyingResourceAction, msRest.RequestOptionsBase)'
     children: []
     type: method
     langs:
       - typeScript
     summary: 지정 된 Machine Learning 계산을 삭제 합니다.
     syntax:
-      content: 'function beginDeleteMethod(resourceGroupName: string, workspaceName: string, computeName: string, options?: msRest.RequestOptionsBase)'
+      content: 'function beginDeleteMethod(resourceGroupName: string, workspaceName: string, computeName: string, underlyingResourceAction: Models.UnderlyingResourceAction, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
@@ -85,6 +88,10 @@ items:
           type:
             - string
           description: Azure Machine Learning 계산의 이름입니다.
+        - id: underlyingResourceAction
+          type:
+            - Models.UnderlyingResourceAction
+          description: '삭제 하는 경우 계산 기본 ''Delete'' 또는 경우 작업 영역에서 기본 계산을 분리 ''분리''. 가능한 값은 다음과 같습니다. ''Delete'', ''Detach'''
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -94,15 +101,15 @@ items:
         type:
           - Promise<LROPoller>
     package: '@azure/arm-machinelearningservices'
-  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.beginSystemUpdate'
-    name: 'beginSystemUpdate(string, string, string, msRest.RequestOptionsBase)'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.beginUpdate'
+    name: 'beginUpdate(string, string, string, ClusterUpdateParameters, msRest.RequestOptionsBase)'
     children: []
     type: method
     langs:
       - typeScript
-    summary: 시스템 업데이트에 Machine Learning 계산 합니다.
+    summary: 계산 속성을 업데이트 합니다. 이 호출이 있는 경우 계산을 덮어쓰게 됩니다. 복구할 수 없는 작업입니다.
     syntax:
-      content: 'function beginSystemUpdate(resourceGroupName: string, workspaceName: string, computeName: string, options?: msRest.RequestOptionsBase)'
+      content: 'function beginUpdate(resourceGroupName: string, workspaceName: string, computeName: string, parameters: ClusterUpdateParameters, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
@@ -116,6 +123,10 @@ items:
           type:
             - string
           description: Azure Machine Learning 계산의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-machinelearningservices.ClusterUpdateParameters'
+          description: 클러스터 업데이트에 대 한 추가 매개 변수입니다.
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -161,14 +172,14 @@ items:
           - Promise<Models.MachineLearningComputeCreateOrUpdateResponse>
     package: '@azure/arm-machinelearningservices'
   - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.deleteMethod'
-    name: 'deleteMethod(string, string, string, msRest.RequestOptionsBase)'
+    name: 'deleteMethod(string, string, string, Models.UnderlyingResourceAction, msRest.RequestOptionsBase)'
     children: []
     type: method
     langs:
       - typeScript
     summary: 지정 된 Machine Learning 계산을 삭제 합니다.
     syntax:
-      content: 'function deleteMethod(resourceGroupName: string, workspaceName: string, computeName: string, options?: msRest.RequestOptionsBase)'
+      content: 'function deleteMethod(resourceGroupName: string, workspaceName: string, computeName: string, underlyingResourceAction: Models.UnderlyingResourceAction, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
@@ -182,6 +193,10 @@ items:
           type:
             - string
           description: Azure Machine Learning 계산의 이름입니다.
+        - id: underlyingResourceAction
+          type:
+            - Models.UnderlyingResourceAction
+          description: '삭제 하는 경우 계산 기본 ''Delete'' 또는 경우 작업 영역에서 기본 계산을 분리 ''분리''. 가능한 값은 다음과 같습니다. ''Delete'', ''Detach'''
         - id: options
           type:
             - msRest.RequestOptionsBase
@@ -543,31 +558,15 @@ items:
         type:
           - Promise<Models.MachineLearningComputeListKeysResponse>
     package: '@azure/arm-machinelearningservices'
-  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.constructor'
-    name: MachineLearningCompute(AzureMachineLearningWorkspacesContext)
-    children: []
-    type: constructor
-    langs:
-      - typeScript
-    summary: MachineLearningCompute를 만듭니다.
-    syntax:
-      content: 'new MachineLearningCompute(client: AzureMachineLearningWorkspacesContext)'
-      parameters:
-        - id: client
-          type:
-            - '@azure/arm-machinelearningservices.AzureMachineLearningWorkspacesContext'
-          description: |
-            서비스 클라이언트에 대 한 참조입니다.
-    package: '@azure/arm-machinelearningservices'
-  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.systemUpdate'
-    name: 'systemUpdate(string, string, string, msRest.RequestOptionsBase)'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.listNodes'
+    name: 'listNodes(string, string, string, msRest.RequestOptionsBase)'
     children: []
     type: method
     langs:
       - typeScript
-    summary: 시스템 업데이트에 Machine Learning 계산 합니다.
+    summary: '계산의 모든 계산 노드 세부 정보를 (예: IP 주소, 포트 등)를 가져옵니다.'
     syntax:
-      content: 'function systemUpdate(resourceGroupName: string, workspaceName: string, computeName: string, options?: msRest.RequestOptionsBase)'
+      content: 'function listNodes(resourceGroupName: string, workspaceName: string, computeName: string, options?: msRest.RequestOptionsBase)'
       parameters:
         - id: resourceGroupName
           type:
@@ -588,7 +587,124 @@ items:
           optional: true
       return:
         type:
-          - Promise<Models.MachineLearningComputeSystemUpdateResponse>
+          - Promise<Models.MachineLearningComputeListNodesResponse>
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.listNodes_2'
+    name: 'listNodes(string, string, string, RequestOptionsBase, ServiceCallback<AmlComputeNodesInformation>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNodes(resourceGroupName: string, workspaceName: string, computeName: string, options: RequestOptionsBase, callback: ServiceCallback<AmlComputeNodesInformation>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 위치한 작업 영역에서 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: Azure Machine Learning 작업 영역 이름입니다.
+        - id: computeName
+          type:
+            - string
+          description: Azure Machine Learning 계산의 이름입니다.
+        - id: options
+          type:
+            - RequestOptionsBase
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-machinelearningservices.AmlComputeNodesInformation>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.MachineLearningComputeListNodesResponse>
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.listNodes_1'
+    name: 'listNodes(string, string, string, ServiceCallback<AmlComputeNodesInformation>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function listNodes(resourceGroupName: string, workspaceName: string, computeName: string, callback: ServiceCallback<AmlComputeNodesInformation>)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 위치한 작업 영역에서 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: Azure Machine Learning 작업 영역 이름입니다.
+        - id: computeName
+          type:
+            - string
+          description: Azure Machine Learning 계산의 이름입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/arm-machinelearningservices.AmlComputeNodesInformation>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.MachineLearningComputeListNodesResponse>
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.constructor'
+    name: MachineLearningCompute(AzureMachineLearningWorkspacesContext)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: MachineLearningCompute를 만듭니다.
+    syntax:
+      content: 'new MachineLearningCompute(client: AzureMachineLearningWorkspacesContext)'
+      parameters:
+        - id: client
+          type:
+            - '@azure/arm-machinelearningservices.AzureMachineLearningWorkspacesContext'
+          description: |
+            서비스 클라이언트에 대 한 참조입니다.
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningCompute.update'
+    name: 'update(string, string, string, ClusterUpdateParameters, msRest.RequestOptionsBase)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 계산 속성을 업데이트 합니다. 이 호출이 있는 경우 계산을 덮어쓰게 됩니다. 복구할 수 없는 작업입니다.
+    syntax:
+      content: 'function update(resourceGroupName: string, workspaceName: string, computeName: string, parameters: ClusterUpdateParameters, options?: msRest.RequestOptionsBase)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: 위치한 작업 영역에서 리소스 그룹의 이름입니다.
+        - id: workspaceName
+          type:
+            - string
+          description: Azure Machine Learning 작업 영역 이름입니다.
+        - id: computeName
+          type:
+            - string
+          description: Azure Machine Learning 계산의 이름입니다.
+        - id: parameters
+          type:
+            - '@azure/arm-machinelearningservices.ClusterUpdateParameters'
+          description: 클러스터 업데이트에 대 한 추가 매개 변수입니다.
+        - id: options
+          type:
+            - msRest.RequestOptionsBase
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.MachineLearningComputeUpdateResponse>
     package: '@azure/arm-machinelearningservices'
 references:
   - uid: '@azure/arm-machinelearningservices.AzureMachineLearningWorkspacesContext'
@@ -603,6 +719,12 @@ references:
       - name: ComputeResource
         fullName: ComputeResource
         uid: '@azure/arm-machinelearningservices.ComputeResource'
+  - uid: '@azure/arm-machinelearningservices.ClusterUpdateParameters'
+    name: ClusterUpdateParameters
+    spec.typeScript:
+      - name: ClusterUpdateParameters
+        fullName: ClusterUpdateParameters
+        uid: '@azure/arm-machinelearningservices.ClusterUpdateParameters'
   - uid: ServiceCallback<@azure/arm-machinelearningservices.ComputeResource>
     name: ComputeResource>
     spec.typeScript:
@@ -629,3 +751,13 @@ references:
       - name: MachineLearningComputeListByWorkspaceOptionalParams
         fullName: MachineLearningComputeListByWorkspaceOptionalParams
         uid: '@azure/arm-machinelearningservices.MachineLearningComputeListByWorkspaceOptionalParams'
+  - uid: ServiceCallback<@azure/arm-machinelearningservices.AmlComputeNodesInformation>
+    name: AmlComputeNodesInformation>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AmlComputeNodesInformation
+        fullName: AmlComputeNodesInformation
+        uid: '@azure/arm-machinelearningservices.AmlComputeNodesInformation'
+      - name: '>'
+        fullName: '>'

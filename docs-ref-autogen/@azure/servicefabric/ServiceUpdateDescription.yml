@@ -1,0 +1,194 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ServiceUpdateDescription'
+    name: ServiceUpdateDescription
+    fullName: ServiceUpdateDescription
+    children:
+      - '@azure/servicefabric.ServiceUpdateDescription.correlationScheme'
+      - '@azure/servicefabric.ServiceUpdateDescription.defaultMoveCost'
+      - '@azure/servicefabric.ServiceUpdateDescription.flags'
+      - '@azure/servicefabric.ServiceUpdateDescription.loadMetrics'
+      - '@azure/servicefabric.ServiceUpdateDescription.placementConstraints'
+      - '@azure/servicefabric.ServiceUpdateDescription.scalingPolicies'
+      - '@azure/servicefabric.ServiceUpdateDescription.serviceKind'
+      - '@azure/servicefabric.ServiceUpdateDescription.servicePlacementPolicies'
+    langs:
+      - typeScript
+    type: interface
+    summary: ServiceUpdateDescription 모든 서비스를 업데이트 하는 데 필요한 정보를 포함 합니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.correlationScheme'
+    name: correlationScheme
+    fullName: correlationScheme
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 상관 관계 구성표입니다.
+    optional: true
+    syntax:
+      content: 'correlationScheme?: ServiceCorrelationDescription[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceCorrelationDescription[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.defaultMoveCost'
+    name: defaultMoveCost
+    fullName: defaultMoveCost
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스 이동 비용입니다. 가능한 값은 다음과 같습니다. ''Zero'', ''Low'', ''Medium'', ''High'''
+    optional: true
+    syntax:
+      content: 'defaultMoveCost?: MoveCost'
+      return:
+        type:
+          - '@azure/servicefabric.MoveCost'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.flags'
+    name: flags
+    fullName: flags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      다른 속성이 설정 되어 있는지 여부를 나타내는 플래그입니다. 각 연결 된 속성에 해당, 아래에 지정 된 플래그를 있는 경우 설정, 속성이 지정 되어 있음을 나타냅니다.
+      이 속성에 비트 'OR' 연산자를 사용 하 여 얻은 해당 플래그의 조합일 수 있습니다.
+      예를 들어 제공 된 값이 6의 ReplicaRestartWaitDuration (2) 및 (4)의 QuorumLossWaitDuration 플래그 설정 됩니다.
+      - None-를 나타내지 않습니다 다른 속성이 설정 되어 있습니다. 값은 0입니다.
+      - TargetReplicaSetSize/InstanceCount-의 TargetReplicaSetSize 속성 (상태 저장 서비스) 또는 InstanceCount 속성 (상태 비저장 서비스)에 대 한 설정 되었는지 여부를 나타냅니다. 값은 1입니다.
+      - ReplicaRestartWaitDuration-속성의 ReplicaRestartWaitDuration를 나타냅니다. 값은 2입니다.
+      - QuorumLossWaitDuration-속성의 QuorumLossWaitDuration를 나타냅니다. 값은
+      4.
+      - StandByReplicaKeepDuration-의 StandByReplicaKeepDuration 속성을 나타냅니다. 값은 8입니다.
+      - MinReplicaSetSize-속성이 MinReplicaSetSize를 나타냅니다. 값은 16입니다.
+      - PlacementConstraints-속성의 PlacementConstraints를 나타냅니다. 값은 32입니다.
+      - PlacementPolicyList-속성이 ServicePlacementPolicies를 나타냅니다. 값은
+      64.
+      - 상관 관계-속성이 CorrelationScheme를 나타냅니다. 값은 128입니다.
+      - 메트릭-속성이 ServiceLoadMetrics를 나타냅니다. 값은 256입니다.
+      - DefaultMoveCost-속성이 DefaultMoveCost를 나타냅니다. 값은 512입니다.
+      - ScalingPolicy-속성이 ScalingPolicies를 나타냅니다. 값은 1024입니다.
+    optional: true
+    syntax:
+      content: 'flags?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.loadMetrics'
+    name: loadMetrics
+    fullName: loadMetrics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 부하 메트릭입니다.
+    optional: true
+    syntax:
+      content: 'loadMetrics?: ServiceLoadMetricDescription[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceLoadMetricDescription[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.placementConstraints'
+    name: placementConstraints
+    fullName: placementConstraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '문자열 형태의 배치 제약 조건입니다. 배치 제약 조건은 노드 속성에 대한 부울 식이며 서비스 요구 사항을 기반으로 특정 노드에 대한 서비스 제한을 허용합니다. 예를 들어, 배치 NodeType이 파란색 인 노드에 서비스를 다음을 지정 합니다. "NodeColor == blue)"입니다.'
+    optional: true
+    syntax:
+      content: 'placementConstraints?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.scalingPolicies'
+    name: scalingPolicies
+    fullName: scalingPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 서비스에 대 한 크기 조정 정책입니다.
+    optional: true
+    syntax:
+      content: 'scalingPolicies?: ScalingPolicyDescription[]'
+      return:
+        type:
+          - '@azure/servicefabric.ScalingPolicyDescription[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.serviceKind'
+    name: serviceKind
+    fullName: serviceKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'serviceKind: "ServiceUpdateDescription"'
+      return:
+        type:
+          - '"ServiceUpdateDescription"'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceUpdateDescription.servicePlacementPolicies'
+    name: servicePlacementPolicies
+    fullName: servicePlacementPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 배치 정책입니다.
+    optional: true
+    syntax:
+      content: 'servicePlacementPolicies?: ServicePlacementPolicyDescriptionUnion[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServicePlacementPolicyDescriptionUnion[]'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ServiceCorrelationDescription[]'
+    name: 'ServiceCorrelationDescription[]'
+    spec.typeScript:
+      - name: ServiceCorrelationDescription
+        fullName: ServiceCorrelationDescription
+        uid: '@azure/servicefabric.ServiceCorrelationDescription'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.MoveCost'
+    name: MoveCost
+    spec.typeScript:
+      - name: MoveCost
+        fullName: MoveCost
+        uid: '@azure/servicefabric.MoveCost'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription[]'
+    name: 'ServiceLoadMetricDescription[]'
+    spec.typeScript:
+      - name: ServiceLoadMetricDescription
+        fullName: ServiceLoadMetricDescription
+        uid: '@azure/servicefabric.ServiceLoadMetricDescription'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.ScalingPolicyDescription[]'
+    name: 'ScalingPolicyDescription[]'
+    spec.typeScript:
+      - name: ScalingPolicyDescription
+        fullName: ScalingPolicyDescription
+        uid: '@azure/servicefabric.ScalingPolicyDescription'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.ServicePlacementPolicyDescriptionUnion[]'
+    name: 'ServicePlacementPolicyDescriptionUnion[]'
+    spec.typeScript:
+      - name: ServicePlacementPolicyDescriptionUnion
+        fullName: ServicePlacementPolicyDescriptionUnion
+        uid: '@azure/servicefabric.ServicePlacementPolicyDescriptionUnion'
+      - name: '[]'
+        fullName: '[]'

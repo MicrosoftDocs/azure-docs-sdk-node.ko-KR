@@ -181,6 +181,9 @@ items:
       - '@azure/servicefabric.ServiceFabricClient.getClusterHealthUsingPolicy'
       - '@azure/servicefabric.ServiceFabricClient.getClusterHealthUsingPolicy_1'
       - '@azure/servicefabric.ServiceFabricClient.getClusterHealthUsingPolicy_2'
+      - '@azure/servicefabric.ServiceFabricClient.getClusterLoad'
+      - '@azure/servicefabric.ServiceFabricClient.getClusterLoad_1'
+      - '@azure/servicefabric.ServiceFabricClient.getClusterLoad_2'
       - '@azure/servicefabric.ServiceFabricClient.getClusterManifest'
       - '@azure/servicefabric.ServiceFabricClient.getClusterManifest_1'
       - '@azure/servicefabric.ServiceFabricClient.getClusterManifest_2'
@@ -259,9 +262,15 @@ items:
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreContent'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreContent_1'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreContent_2'
+      - '@azure/servicefabric.ServiceFabricClient.getImageStoreFolderSize'
+      - '@azure/servicefabric.ServiceFabricClient.getImageStoreFolderSize_1'
+      - '@azure/servicefabric.ServiceFabricClient.getImageStoreFolderSize_2'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreRootContent'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreRootContent_1'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreRootContent_2'
+      - '@azure/servicefabric.ServiceFabricClient.getImageStoreRootFolderSize'
+      - '@azure/servicefabric.ServiceFabricClient.getImageStoreRootFolderSize_1'
+      - '@azure/servicefabric.ServiceFabricClient.getImageStoreRootFolderSize_2'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreUploadSessionById'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreUploadSessionById_1'
       - '@azure/servicefabric.ServiceFabricClient.getImageStoreUploadSessionById_2'
@@ -409,6 +418,9 @@ items:
       - '@azure/servicefabric.ServiceFabricClient.getSubNameInfoList'
       - '@azure/servicefabric.ServiceFabricClient.getSubNameInfoList_1'
       - '@azure/servicefabric.ServiceFabricClient.getSubNameInfoList_2'
+      - '@azure/servicefabric.ServiceFabricClient.getUnplacedReplicaInformation'
+      - '@azure/servicefabric.ServiceFabricClient.getUnplacedReplicaInformation_1'
+      - '@azure/servicefabric.ServiceFabricClient.getUnplacedReplicaInformation_2'
       - '@azure/servicefabric.ServiceFabricClient.getUpgradeOrchestrationServiceState'
       - '@azure/servicefabric.ServiceFabricClient.getUpgradeOrchestrationServiceState_1'
       - '@azure/servicefabric.ServiceFabricClient.getUpgradeOrchestrationServiceState_2'
@@ -430,6 +442,12 @@ items:
       - '@azure/servicefabric.ServiceFabricClient.meshService'
       - '@azure/servicefabric.ServiceFabricClient.meshServiceReplica'
       - '@azure/servicefabric.ServiceFabricClient.meshVolume'
+      - '@azure/servicefabric.ServiceFabricClient.movePrimaryReplica'
+      - '@azure/servicefabric.ServiceFabricClient.movePrimaryReplica_1'
+      - '@azure/servicefabric.ServiceFabricClient.movePrimaryReplica_2'
+      - '@azure/servicefabric.ServiceFabricClient.moveSecondaryReplica'
+      - '@azure/servicefabric.ServiceFabricClient.moveSecondaryReplica_1'
+      - '@azure/servicefabric.ServiceFabricClient.moveSecondaryReplica_2'
       - '@azure/servicefabric.ServiceFabricClient.postChaosSchedule'
       - '@azure/servicefabric.ServiceFabricClient.postChaosSchedule_1'
       - '@azure/servicefabric.ServiceFabricClient.postChaosSchedule_2'
@@ -577,6 +595,9 @@ items:
       - '@azure/servicefabric.ServiceFabricClient.suspendServiceBackup'
       - '@azure/servicefabric.ServiceFabricClient.suspendServiceBackup_1'
       - '@azure/servicefabric.ServiceFabricClient.suspendServiceBackup_2'
+      - '@azure/servicefabric.ServiceFabricClient.toggleVerboseServicePlacementHealthReporting'
+      - '@azure/servicefabric.ServiceFabricClient.toggleVerboseServicePlacementHealthReporting_1'
+      - '@azure/servicefabric.ServiceFabricClient.toggleVerboseServicePlacementHealthReporting_2'
       - '@azure/servicefabric.ServiceFabricClient.unprovisionApplicationType'
       - '@azure/servicefabric.ServiceFabricClient.unprovisionApplicationType_1'
       - '@azure/servicefabric.ServiceFabricClient.unprovisionApplicationType_2'
@@ -2193,7 +2214,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: deployServicePackageToNodeDescription
           type:
             - '@azure/servicefabric.DeployServicePackageToNodeDescription'
@@ -2220,7 +2241,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: deployServicePackageToNodeDescription
           type:
             - '@azure/servicefabric.DeployServicePackageToNodeDescription'
@@ -2247,7 +2268,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: deployServicePackageToNodeDescription
           type:
             - '@azure/servicefabric.DeployServicePackageToNodeDescription'
@@ -2360,7 +2381,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: deactivationIntentDescription
           type:
             - '@azure/servicefabric.DeactivationIntentDescription'
@@ -2387,7 +2408,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: deactivationIntentDescription
           type:
             - '@azure/servicefabric.DeactivationIntentDescription'
@@ -2414,7 +2435,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: deactivationIntentDescription
           type:
             - '@azure/servicefabric.DeactivationIntentDescription'
@@ -2700,7 +2721,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientEnableNodeOptionalParams
@@ -2723,7 +2744,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<void>
@@ -2746,7 +2767,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientEnableNodeOptionalParams'
@@ -5152,6 +5173,67 @@ items:
         type:
           - Promise<Models.GetClusterHealthUsingPolicyResponse>
     package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getClusterLoad'
+    name: getClusterLoad(Models.ServiceFabricClientGetClusterLoadOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 로드 또는 용량이 정의 되어 있는 모든 메트릭에 대 한 Service Fabric 클러스터의 부하 정보를 검색 합니다.
+    syntax:
+      content: 'function getClusterLoad(options?: Models.ServiceFabricClientGetClusterLoadOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.ServiceFabricClientGetClusterLoadOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GetClusterLoadResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getClusterLoad_1'
+    name: getClusterLoad(ServiceCallback<ClusterLoadInfo>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getClusterLoad(callback: ServiceCallback<ClusterLoadInfo>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.ClusterLoadInfo>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetClusterLoadResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getClusterLoad_2'
+    name: 'getClusterLoad(ServiceFabricClientGetClusterLoadOptionalParams, ServiceCallback<ClusterLoadInfo>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getClusterLoad(options: ServiceFabricClientGetClusterLoadOptionalParams, callback: ServiceCallback<ClusterLoadInfo>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientGetClusterLoadOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.ClusterLoadInfo>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetClusterLoadResponse>
+    package: '@azure/servicefabric'
   - uid: '@azure/servicefabric.ServiceFabricClient.getClusterManifest'
     name: getClusterManifest(Models.ServiceFabricClientGetClusterManifestOptionalParams)
     children: []
@@ -5558,7 +5640,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -5596,7 +5678,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -5634,7 +5716,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -5940,7 +6022,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -5970,7 +6052,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6000,7 +6082,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6034,7 +6116,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6064,7 +6146,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6094,7 +6176,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6128,7 +6210,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6158,7 +6240,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6188,7 +6270,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6222,7 +6304,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientGetDeployedApplicationInfoListOptionalParams
@@ -6245,7 +6327,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<@azure/servicefabric.PagedDeployedApplicationInfoList>
@@ -6268,7 +6350,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientGetDeployedApplicationInfoListOptionalParams'
@@ -6295,7 +6377,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6325,7 +6407,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6355,7 +6437,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6389,7 +6471,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6423,7 +6505,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6457,7 +6539,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6495,7 +6577,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6529,7 +6611,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6563,7 +6645,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6601,7 +6683,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6631,7 +6713,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6661,7 +6743,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6695,7 +6777,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6729,7 +6811,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6763,7 +6845,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -6801,7 +6883,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -6832,7 +6914,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -6863,7 +6945,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -6898,7 +6980,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -6925,7 +7007,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -6952,7 +7034,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -6983,7 +7065,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7013,7 +7095,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7043,7 +7125,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7077,7 +7159,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7111,7 +7193,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7145,7 +7227,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7183,7 +7265,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7213,7 +7295,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7243,7 +7325,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -7470,6 +7552,79 @@ items:
         type:
           - Promise<Models.GetImageStoreContentResponse>
     package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreFolderSize'
+    name: 'getImageStoreFolderSize(string, Models.ServiceFabricClientGetImageStoreFolderSizeOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 지정 된 contentPath를 이미지 저장소 폴더 아래에 있는 파일의 총 크기를 가져옵니다. contentPath는 이미지 저장소의 루트를 기준으로 합니다.
+    syntax:
+      content: 'function getImageStoreFolderSize(contentPath: string, options?: Models.ServiceFabricClientGetImageStoreFolderSizeOptionalParams)'
+      parameters:
+        - id: contentPath
+          type:
+            - string
+          description: 루트에서 이미지 저장소의 파일 또는 폴더에 대한 상대 경로입니다.
+        - id: options
+          type:
+            - Models.ServiceFabricClientGetImageStoreFolderSizeOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GetImageStoreFolderSizeResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreFolderSize_1'
+    name: 'getImageStoreFolderSize(string, ServiceCallback<FolderSizeInfo>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getImageStoreFolderSize(contentPath: string, callback: ServiceCallback<FolderSizeInfo>)'
+      parameters:
+        - id: contentPath
+          type:
+            - string
+          description: 루트에서 이미지 저장소의 파일 또는 폴더에 대한 상대 경로입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.FolderSizeInfo>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetImageStoreFolderSizeResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreFolderSize_2'
+    name: 'getImageStoreFolderSize(string, ServiceFabricClientGetImageStoreFolderSizeOptionalParams, ServiceCallback<FolderSizeInfo>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getImageStoreFolderSize(contentPath: string, options: ServiceFabricClientGetImageStoreFolderSizeOptionalParams, callback: ServiceCallback<FolderSizeInfo>)'
+      parameters:
+        - id: contentPath
+          type:
+            - string
+          description: 루트에서 이미지 저장소의 파일 또는 폴더에 대한 상대 경로입니다.
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientGetImageStoreFolderSizeOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.FolderSizeInfo>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetImageStoreFolderSizeResponse>
+    package: '@azure/servicefabric'
   - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreRootContent'
     name: getImageStoreRootContent(Models.ServiceFabricClientGetImageStoreRootContentOptionalParams)
     children: []
@@ -7530,6 +7685,67 @@ items:
       return:
         type:
           - Promise<Models.GetImageStoreRootContentResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreRootFolderSize'
+    name: getImageStoreRootFolderSize(Models.ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 이미지 저장소의 루트 및 하위 항목에 있는 파일의 총 크기 폴더를 반환 합니다.
+    syntax:
+      content: 'function getImageStoreRootFolderSize(options?: Models.ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams)'
+      parameters:
+        - id: options
+          type:
+            - Models.ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GetImageStoreRootFolderSizeResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreRootFolderSize_1'
+    name: getImageStoreRootFolderSize(ServiceCallback<FolderSizeInfo>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getImageStoreRootFolderSize(callback: ServiceCallback<FolderSizeInfo>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.FolderSizeInfo>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetImageStoreRootFolderSizeResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreRootFolderSize_2'
+    name: 'getImageStoreRootFolderSize(ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams, ServiceCallback<FolderSizeInfo>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getImageStoreRootFolderSize(options: ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams, callback: ServiceCallback<FolderSizeInfo>)'
+      parameters:
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.FolderSizeInfo>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetImageStoreRootFolderSizeResponse>
     package: '@azure/servicefabric'
   - uid: '@azure/servicefabric.ServiceFabricClient.getImageStoreUploadSessionById'
     name: 'getImageStoreUploadSessionById(string, Models.ServiceFabricClientGetImageStoreUploadSessionByIdOptionalParams)'
@@ -7763,7 +7979,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: startTimeUtc
           type:
             - string
@@ -7794,7 +8010,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: startTimeUtc
           type:
             - string
@@ -7825,7 +8041,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: startTimeUtc
           type:
             - string
@@ -7860,7 +8076,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientGetNodeHealthOptionalParams
@@ -7883,7 +8099,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<@azure/servicefabric.NodeHealth>
@@ -7906,7 +8122,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientGetNodeHealthOptionalParams'
@@ -7933,7 +8149,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientGetNodeHealthUsingPolicyOptionalParams
@@ -7956,7 +8172,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<@azure/servicefabric.NodeHealth>
@@ -7979,7 +8195,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientGetNodeHealthUsingPolicyOptionalParams'
@@ -8006,7 +8222,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientGetNodeInfoOptionalParams
@@ -8029,7 +8245,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<@azure/servicefabric.NodeInfo>
@@ -8052,7 +8268,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientGetNodeInfoOptionalParams'
@@ -8140,7 +8356,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientGetNodeLoadInfoOptionalParams
@@ -8163,7 +8379,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<@azure/servicefabric.NodeLoadInfo>
@@ -8186,7 +8402,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientGetNodeLoadInfoOptionalParams'
@@ -8298,7 +8514,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: operationId
           type:
             - string
@@ -8325,7 +8541,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: operationId
           type:
             - string
@@ -8352,7 +8568,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: operationId
           type:
             - string
@@ -11549,6 +11765,92 @@ items:
         type:
           - Promise<Models.GetSubNameInfoListResponse>
     package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getUnplacedReplicaInformation'
+    name: 'getUnplacedReplicaInformation(string, Models.ServiceFabricClientGetUnplacedReplicaInformationOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      서비스의 위치가 지정 되지 않은 복제본에 대 한 정보를 반환합니다.
+      PartitionId가 지정 하는 경우 결과 해당 파티션에 대 한 위치가 지정 되지 않은 복제본에 대 한 정보만 포함 됩니다.
+      PartitionId를 지정 하지 않은 경우 결과 해당 서비스의 모든 파티션에 대 한 위치가 지정 되지 않은 복제본에 대 한 정보가 포함 됩니다.
+      결과는 주 복제본에 대 한 정보만 포함 됩니다 OnlyQueryPrimaries true로 설정 된 경우 위치가 지정 되지 않은 보조 복제본을 무시 합니다.
+    syntax:
+      content: 'function getUnplacedReplicaInformation(serviceId: string, options?: Models.ServiceFabricClientGetUnplacedReplicaInformationOptionalParams)'
+      parameters:
+        - id: serviceId
+          type:
+            - string
+          description: |-
+            서비스 id입니다. 이 ID가 없는 서비스의 전체 이름 일반적으로 ' fabric:' URI 구성표가 없는 애플리케이션의 전체 이름입니다.
+            버전 6.0에서 시작하며, 계층적 이름이 "~" 문자로 구분됩니다.
+            예를 들어 서비스 이름이 "fabric: / myapp/app1/svc1", 서비스 id는 것 "myapp ~ app1 ~ svc1" 6.0 이상에서는 "myapp/app1/svc1" 이전 버전에서입니다.
+        - id: options
+          type:
+            - Models.ServiceFabricClientGetUnplacedReplicaInformationOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Models.GetUnplacedReplicaInformationResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getUnplacedReplicaInformation_1'
+    name: 'getUnplacedReplicaInformation(string, ServiceCallback<UnplacedReplicaInformation>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getUnplacedReplicaInformation(serviceId: string, callback: ServiceCallback<UnplacedReplicaInformation>)'
+      parameters:
+        - id: serviceId
+          type:
+            - string
+          description: |-
+            서비스 id입니다. 이 ID가 없는 서비스의 전체 이름 일반적으로 ' fabric:' URI 구성표가 없는 애플리케이션의 전체 이름입니다.
+            버전 6.0에서 시작하며, 계층적 이름이 "~" 문자로 구분됩니다.
+            예를 들어 서비스 이름이 "fabric: / myapp/app1/svc1", 서비스 id는 것 "myapp ~ app1 ~ svc1" 6.0 이상에서는 "myapp/app1/svc1" 이전 버전에서입니다.
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.UnplacedReplicaInformation>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetUnplacedReplicaInformationResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.getUnplacedReplicaInformation_2'
+    name: 'getUnplacedReplicaInformation(string, ServiceFabricClientGetUnplacedReplicaInformationOptionalParams, ServiceCallback<UnplacedReplicaInformation>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getUnplacedReplicaInformation(serviceId: string, options: ServiceFabricClientGetUnplacedReplicaInformationOptionalParams, callback: ServiceCallback<UnplacedReplicaInformation>)'
+      parameters:
+        - id: serviceId
+          type:
+            - string
+          description: |-
+            서비스 id입니다. 이 ID가 없는 서비스의 전체 이름 일반적으로 ' fabric:' URI 구성표가 없는 애플리케이션의 전체 이름입니다.
+            버전 6.0에서 시작하며, 계층적 이름이 "~" 문자로 구분됩니다.
+            예를 들어 서비스 이름이 "fabric: / myapp/app1/svc1", 서비스 id는 것 "myapp ~ app1 ~ svc1" 6.0 이상에서는 "myapp/app1/svc1" 이전 버전에서입니다.
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientGetUnplacedReplicaInformationOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<@azure/servicefabric.UnplacedReplicaInformation>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<Models.GetUnplacedReplicaInformationResponse>
+    package: '@azure/servicefabric'
   - uid: '@azure/servicefabric.ServiceFabricClient.getUpgradeOrchestrationServiceState'
     name: getUpgradeOrchestrationServiceState(Models.ServiceFabricClientGetUpgradeOrchestrationServiceStateOptionalParams)
     children: []
@@ -11623,7 +11925,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -11669,7 +11971,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -11715,7 +12017,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -12031,6 +12333,172 @@ items:
       return:
         type:
           - '@azure/servicefabric.MeshVolume'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.movePrimaryReplica'
+    name: 'movePrimaryReplica(string, Models.ServiceFabricClientMovePrimaryReplicaOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      이 명령은 모든 제약 조건을 적용, 상태 저장 서비스 파티션의 주 복제본을 이동 합니다.
+      NodeName 매개 변수는 기본을 지정 하는 경우 (제약 조건에서 허용) 하는 경우 지정한 노드로 이동 됩니다.
+      NodeName 매개 변수를 지정 하지 않으면 주 복제본을 클러스터의 임의 노드에 옮겨집니다.
+      IgnoreConstraints 매개 변수가 지정 되 고 주를 true로 설정 하는 경우 제약 조건에 관계 없이 이동 됩니다.
+    syntax:
+      content: 'function movePrimaryReplica(partitionId: string, options?: Models.ServiceFabricClientMovePrimaryReplicaOptionalParams)'
+      parameters:
+        - id: partitionId
+          type:
+            - string
+          description: 파티션의 id입니다.
+        - id: options
+          type:
+            - Models.ServiceFabricClientMovePrimaryReplicaOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.movePrimaryReplica_1'
+    name: 'movePrimaryReplica(string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function movePrimaryReplica(partitionId: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: partitionId
+          type:
+            - string
+          description: 파티션의 id입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.movePrimaryReplica_2'
+    name: 'movePrimaryReplica(string, ServiceFabricClientMovePrimaryReplicaOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function movePrimaryReplica(partitionId: string, options: ServiceFabricClientMovePrimaryReplicaOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: partitionId
+          type:
+            - string
+          description: 파티션의 id입니다.
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientMovePrimaryReplicaOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.moveSecondaryReplica'
+    name: 'moveSecondaryReplica(string, string, Models.ServiceFabricClientMoveSecondaryReplicaOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      이 명령은 모든 제약 조건을 적용 상태 저장 서비스의 파티션 보조 복제본을 이동 합니다.
+      CurrentNodeName 매개 변수는 복제본 이동 하는 데 지정 되어야 합니다.
+      소스 노드 이름을 지정 해야 하지만 새로운 노드 이름 수 생략 하 고 복제는 임의 노드로 이동 하는 경우.
+      IgnoreConstraints 매개 변수가 지정 되 고 보조를 true로 설정 하는 경우 제약 조건에 관계 없이 이동 됩니다.
+    syntax:
+      content: 'function moveSecondaryReplica(partitionId: string, currentNodeName: string, options?: Models.ServiceFabricClientMoveSecondaryReplicaOptionalParams)'
+      parameters:
+        - id: partitionId
+          type:
+            - string
+          description: 파티션의 id입니다.
+        - id: currentNodeName
+          type:
+            - string
+          description: 보조 복제본에 대 한 소스 노드의 이름을 이동 합니다.
+        - id: options
+          type:
+            - Models.ServiceFabricClientMoveSecondaryReplicaOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.moveSecondaryReplica_1'
+    name: 'moveSecondaryReplica(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function moveSecondaryReplica(partitionId: string, currentNodeName: string, callback: ServiceCallback<void>)'
+      parameters:
+        - id: partitionId
+          type:
+            - string
+          description: 파티션의 id입니다.
+        - id: currentNodeName
+          type:
+            - string
+          description: 보조 복제본에 대 한 소스 노드의 이름을 이동 합니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.moveSecondaryReplica_2'
+    name: 'moveSecondaryReplica(string, string, ServiceFabricClientMoveSecondaryReplicaOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function moveSecondaryReplica(partitionId: string, currentNodeName: string, options: ServiceFabricClientMoveSecondaryReplicaOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: partitionId
+          type:
+            - string
+          description: 파티션의 id입니다.
+        - id: currentNodeName
+          type:
+            - string
+          description: 보조 복제본에 대 한 소스 노드의 이름을 이동 합니다.
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientMoveSecondaryReplicaOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
     package: '@azure/servicefabric'
   - uid: '@azure/servicefabric.ServiceFabricClient.postChaosSchedule'
     name: 'postChaosSchedule(ChaosScheduleDescription, Models.ServiceFabricClientPostChaosScheduleOptionalParams)'
@@ -12699,14 +13167,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: '해당 노드의 지속된 상태를 복구할 수 없다는 것을 의미합니다. 일반적으로 하드 디스크가 초기화 정리되거나 하드 디스크의 작동이 중단하는 경우에 발생합니다. 이 작업을 성공시키려면 노드는 중단되어야 합니다. 이 작업을 사용하면 Service Fabric에서 해당 노드의 복제본이 더 이상 존재하지 않으며, Service Fabric에서 해당 복제본이 다시 작동하기를 기다리는 것을 중지해야 함을 알 수 있습니다. 노드의 상태가 제거되지 않고 노드가 해당 상태 그대로 다시 작동할 수 있는 경우 이 cmdlet을 실행하지 마십시오.'
+    summary: '해당 노드의 지속된 상태를 복구할 수 없다는 것을 의미합니다. 일반적으로 하드 디스크가 초기화 정리되거나 하드 디스크의 작동이 중단하는 경우에 발생합니다. 이 작업을 성공시키려면 노드는 중단되어야 합니다. 이 작업을 사용하면 Service Fabric에서 해당 노드의 복제본이 더 이상 존재하지 않으며, Service Fabric에서 해당 복제본이 다시 작동하기를 기다리는 것을 중지해야 함을 알 수 있습니다. 노드의 상태가 제거되지 않고 노드가 해당 상태 그대로 다시 작동할 수 있는 경우 이 cmdlet을 실행하지 마십시오. 시드 노드의 경우이 API를 사용 하려면 서비스 패브릭 6.5에서 시작 일반 (비-시드) 노드로 시드 노드를 변경 하십시오 하 고 노드 상태를 제거 하려면이 API를 호출 합니다. 시드 노드가 다운 되 면 클러스터를 Azure에서 실행을 하는 경우 Service Fabric 비-시드 노드로 자동으로 변경 하려고 합니다. 이렇게 확인 있는지 주 노드 형식에서 비-시드 노드의 수를 시드 노드 아래로 개수 보다 작아서는 안 됩니다. 필요한 경우이 달성 하기 위해 주 노드 형식에 더 많은 노드를 추가 합니다. 독립 실행형 클러스터에 대 한 상태 그대로 돌아와서 아래쪽 시드 노드가 필요 하지 않습니다, 경우 클러스터에서 노드를 제거 하세요 참조 https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes'
     syntax:
       content: 'function removeNodeState(nodeName: string, options?: Models.ServiceFabricClientRemoveNodeStateOptionalParams)'
       parameters:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - Models.ServiceFabricClientRemoveNodeStateOptionalParams
@@ -12729,7 +13197,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: callback
           type:
             - ServiceCallback<void>
@@ -12752,7 +13220,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientRemoveNodeStateOptionalParams'
@@ -12779,7 +13247,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -12810,7 +13278,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -12841,7 +13309,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -13058,7 +13526,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13092,7 +13560,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13126,7 +13594,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13169,7 +13637,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13207,7 +13675,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13245,7 +13713,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13292,7 +13760,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: healthInformation
           type:
             - '@azure/servicefabric.HealthInformation'
@@ -13319,7 +13787,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: healthInformation
           type:
             - '@azure/servicefabric.HealthInformation'
@@ -13346,7 +13814,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: healthInformation
           type:
             - '@azure/servicefabric.HealthInformation'
@@ -13467,7 +13935,7 @@ items:
       예를 들어 Health 스토어는 부실 시퀀스 번호와 같은 잘못된 매개 변수로 인해 보고서를 거부할 수도 있습니다.
       보고서를 health 스토어에 적용 했는지, GetReplicaHealth 실행을 보려면 보고서 HealthEvents 섹션에 표시 되는지 확인 합니다.
     syntax:
-      content: 'function reportReplicaHealth(partitionId: string, replicaId: string, replicaHealthReportServiceKind: Models.ReplicaHealthReportServiceKind, healthInformation: HealthInformation, options?: Models.ServiceFabricClientReportReplicaHealthOptionalParams)'
+      content: 'function reportReplicaHealth(partitionId: string, replicaId: string, serviceKind: Models.ReplicaHealthReportServiceKind, healthInformation: HealthInformation, options?: Models.ServiceFabricClientReportReplicaHealthOptionalParams)'
       parameters:
         - id: partitionId
           type:
@@ -13477,7 +13945,7 @@ items:
           type:
             - string
           description: 복제본의 식별자입니다.
-        - id: replicaHealthReportServiceKind
+        - id: serviceKind
           type:
             - Models.ReplicaHealthReportServiceKind
           description: '상태 보고 되는 서비스 복제본 (상태 비저장 또는 상태 저장)의 종류입니다. 다음은 가능한 값입니다. 가능한 값은 다음과 같습니다. ''상태 비저장'', ''상태 저장'''
@@ -13502,7 +13970,7 @@ items:
       - typeScript
     summary: ''
     syntax:
-      content: 'function reportReplicaHealth(partitionId: string, replicaId: string, replicaHealthReportServiceKind: Models.ReplicaHealthReportServiceKind, healthInformation: HealthInformation, callback: ServiceCallback<void>)'
+      content: 'function reportReplicaHealth(partitionId: string, replicaId: string, serviceKind: Models.ReplicaHealthReportServiceKind, healthInformation: HealthInformation, callback: ServiceCallback<void>)'
       parameters:
         - id: partitionId
           type:
@@ -13512,7 +13980,7 @@ items:
           type:
             - string
           description: 복제본의 식별자입니다.
-        - id: replicaHealthReportServiceKind
+        - id: serviceKind
           type:
             - Models.ReplicaHealthReportServiceKind
           description: '상태 보고 되는 서비스 복제본 (상태 비저장 또는 상태 저장)의 종류입니다. 다음은 가능한 값입니다. 가능한 값은 다음과 같습니다. ''상태 비저장'', ''상태 저장'''
@@ -13537,7 +14005,7 @@ items:
       - typeScript
     summary: ''
     syntax:
-      content: 'function reportReplicaHealth(partitionId: string, replicaId: string, replicaHealthReportServiceKind: Models.ReplicaHealthReportServiceKind, healthInformation: HealthInformation, options: ServiceFabricClientReportReplicaHealthOptionalParams, callback: ServiceCallback<void>)'
+      content: 'function reportReplicaHealth(partitionId: string, replicaId: string, serviceKind: Models.ReplicaHealthReportServiceKind, healthInformation: HealthInformation, options: ServiceFabricClientReportReplicaHealthOptionalParams, callback: ServiceCallback<void>)'
       parameters:
         - id: partitionId
           type:
@@ -13547,7 +14015,7 @@ items:
           type:
             - string
           description: 복제본의 식별자입니다.
-        - id: replicaHealthReportServiceKind
+        - id: serviceKind
           type:
             - Models.ReplicaHealthReportServiceKind
           description: '상태 보고 되는 서비스 복제본 (상태 비저장 또는 상태 저장)의 종류입니다. 다음은 가능한 값입니다. 가능한 값은 다음과 같습니다. ''상태 비저장'', ''상태 저장'''
@@ -13835,7 +14303,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13869,7 +14337,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13903,7 +14371,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: applicationId
           type:
             - string
@@ -13941,7 +14409,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: restartNodeDescription
           type:
             - '@azure/servicefabric.RestartNodeDescription'
@@ -13968,7 +14436,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: restartNodeDescription
           type:
             - '@azure/servicefabric.RestartNodeDescription'
@@ -13995,7 +14463,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: restartNodeDescription
           type:
             - '@azure/servicefabric.RestartNodeDescription'
@@ -14026,7 +14494,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -14057,7 +14525,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -14088,7 +14556,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: partitionId
           type:
             - string
@@ -15427,7 +15895,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: operationId
           type:
             - string
@@ -15466,7 +15934,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: operationId
           type:
             - string
@@ -15505,7 +15973,7 @@ items:
         - id: nodeName
           type:
             - string
-          description: 노드의 이름입니다.
+          description: 노드 이름입니다.
         - id: operationId
           type:
             - string
@@ -16241,6 +16709,81 @@ items:
         - id: options
           type:
             - '@azure/servicefabric.ServiceFabricClientSuspendServiceBackupOptionalParams'
+          description: 선택적 매개 변수
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.toggleVerboseServicePlacementHealthReporting'
+    name: 'toggleVerboseServicePlacementHealthReporting(boolean, Models.ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      True 이면 자세한 상태 보고서의 자세한 정도 설정 된 경우 복제본을 배치 하거나 삭제할 수 없는 경우 생성 됩니다.
+      복제본을 배치 하거나 삭제할 수 없는 경우 상태 보고서를 생성한 다음의 자세한 정도를 false로 설정 된 경우
+    syntax:
+      content: 'function toggleVerboseServicePlacementHealthReporting(enabled: boolean, options?: Models.ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams)'
+      parameters:
+        - id: enabled
+          type:
+            - boolean
+          description: 서비스 배치 상태 보고의 자세한 정도입니다.
+        - id: options
+          type:
+            - Models.ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.toggleVerboseServicePlacementHealthReporting_1'
+    name: 'toggleVerboseServicePlacementHealthReporting(boolean, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function toggleVerboseServicePlacementHealthReporting(enabled: boolean, callback: ServiceCallback<void>)'
+      parameters:
+        - id: enabled
+          type:
+            - boolean
+          description: 서비스 배치 상태 보고의 자세한 정도입니다.
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: |
+            콜백
+      return:
+        type:
+          - Promise<RestResponse>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceFabricClient.toggleVerboseServicePlacementHealthReporting_2'
+    name: 'toggleVerboseServicePlacementHealthReporting(boolean, ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function toggleVerboseServicePlacementHealthReporting(enabled: boolean, options: ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams, callback: ServiceCallback<void>)'
+      parameters:
+        - id: enabled
+          type:
+            - boolean
+          description: 서비스 배치 상태 보고의 자세한 정도입니다.
+        - id: options
+          type:
+            - '@azure/servicefabric.ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams'
           description: 선택적 매개 변수
         - id: callback
           type:
@@ -17770,6 +18313,22 @@ references:
       - name: ServiceFabricClientGetClusterHealthUsingPolicyOptionalParams
         fullName: ServiceFabricClientGetClusterHealthUsingPolicyOptionalParams
         uid: '@azure/servicefabric.ServiceFabricClientGetClusterHealthUsingPolicyOptionalParams'
+  - uid: ServiceCallback<@azure/servicefabric.ClusterLoadInfo>
+    name: ClusterLoadInfo>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ClusterLoadInfo
+        fullName: ClusterLoadInfo
+        uid: '@azure/servicefabric.ClusterLoadInfo'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/servicefabric.ServiceFabricClientGetClusterLoadOptionalParams'
+    name: ServiceFabricClientGetClusterLoadOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientGetClusterLoadOptionalParams
+        fullName: ServiceFabricClientGetClusterLoadOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientGetClusterLoadOptionalParams'
   - uid: ServiceCallback<@azure/servicefabric.ClusterManifest>
     name: ClusterManifest>
     spec.typeScript:
@@ -18106,12 +18665,34 @@ references:
       - name: ServiceFabricClientGetImageStoreContentOptionalParams
         fullName: ServiceFabricClientGetImageStoreContentOptionalParams
         uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreContentOptionalParams'
+  - uid: ServiceCallback<@azure/servicefabric.FolderSizeInfo>
+    name: FolderSizeInfo>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FolderSizeInfo
+        fullName: FolderSizeInfo
+        uid: '@azure/servicefabric.FolderSizeInfo'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreFolderSizeOptionalParams'
+    name: ServiceFabricClientGetImageStoreFolderSizeOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientGetImageStoreFolderSizeOptionalParams
+        fullName: ServiceFabricClientGetImageStoreFolderSizeOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreFolderSizeOptionalParams'
   - uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreRootContentOptionalParams'
     name: ServiceFabricClientGetImageStoreRootContentOptionalParams
     spec.typeScript:
       - name: ServiceFabricClientGetImageStoreRootContentOptionalParams
         fullName: ServiceFabricClientGetImageStoreRootContentOptionalParams
         uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreRootContentOptionalParams'
+  - uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams'
+    name: ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams
+        fullName: ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientGetImageStoreRootFolderSizeOptionalParams'
   - uid: ServiceCallback<@azure/servicefabric.UploadSession>
     name: UploadSession>
     spec.typeScript:
@@ -18676,6 +19257,22 @@ references:
       - name: ServiceFabricClientGetSubNameInfoListOptionalParams
         fullName: ServiceFabricClientGetSubNameInfoListOptionalParams
         uid: '@azure/servicefabric.ServiceFabricClientGetSubNameInfoListOptionalParams'
+  - uid: ServiceCallback<@azure/servicefabric.UnplacedReplicaInformation>
+    name: UnplacedReplicaInformation>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UnplacedReplicaInformation
+        fullName: UnplacedReplicaInformation
+        uid: '@azure/servicefabric.UnplacedReplicaInformation'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/servicefabric.ServiceFabricClientGetUnplacedReplicaInformationOptionalParams'
+    name: ServiceFabricClientGetUnplacedReplicaInformationOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientGetUnplacedReplicaInformationOptionalParams
+        fullName: ServiceFabricClientGetUnplacedReplicaInformationOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientGetUnplacedReplicaInformationOptionalParams'
   - uid: ServiceCallback<@azure/servicefabric.UpgradeOrchestrationServiceState>
     name: UpgradeOrchestrationServiceState>
     spec.typeScript:
@@ -18726,6 +19323,18 @@ references:
       - name: ServiceFabricClientInvokeInfrastructureQueryOptionalParams
         fullName: ServiceFabricClientInvokeInfrastructureQueryOptionalParams
         uid: '@azure/servicefabric.ServiceFabricClientInvokeInfrastructureQueryOptionalParams'
+  - uid: '@azure/servicefabric.ServiceFabricClientMovePrimaryReplicaOptionalParams'
+    name: ServiceFabricClientMovePrimaryReplicaOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientMovePrimaryReplicaOptionalParams
+        fullName: ServiceFabricClientMovePrimaryReplicaOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientMovePrimaryReplicaOptionalParams'
+  - uid: '@azure/servicefabric.ServiceFabricClientMoveSecondaryReplicaOptionalParams'
+    name: ServiceFabricClientMoveSecondaryReplicaOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientMoveSecondaryReplicaOptionalParams
+        fullName: ServiceFabricClientMoveSecondaryReplicaOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientMoveSecondaryReplicaOptionalParams'
   - uid: '@azure/servicefabric.ChaosScheduleDescription'
     name: ChaosScheduleDescription
     spec.typeScript:
@@ -19130,6 +19739,12 @@ references:
       - name: ServiceFabricClientSuspendServiceBackupOptionalParams
         fullName: ServiceFabricClientSuspendServiceBackupOptionalParams
         uid: '@azure/servicefabric.ServiceFabricClientSuspendServiceBackupOptionalParams'
+  - uid: '@azure/servicefabric.ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams'
+    name: ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams
+    spec.typeScript:
+      - name: ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams
+        fullName: ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams
+        uid: '@azure/servicefabric.ServiceFabricClientToggleVerboseServicePlacementHealthReportingOptionalParams'
   - uid: '@azure/servicefabric.UnprovisionApplicationTypeDescriptionInfo'
     name: UnprovisionApplicationTypeDescriptionInfo
     spec.typeScript:

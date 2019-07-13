@@ -1,0 +1,254 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject'
+    name: ClusterUpgradeDescriptionObject
+    fullName: ClusterUpgradeDescriptionObject
+    children:
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.applicationHealthPolicyMap'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.clusterHealthPolicy'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.clusterUpgradeHealthPolicy'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.codeVersion'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.configVersion'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.enableDeltaHealthEvaluation'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.forceRestart'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.monitoringPolicy'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.rollingUpgradeMode'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.sortOrder'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.upgradeKind'
+      - '@azure/servicefabric.ClusterUpgradeDescriptionObject.upgradeReplicaSetCheckTimeoutInSeconds'
+    langs:
+      - typeScript
+    type: interface
+    summary: Service Fabric 클러스터 업그레이드를 나타냅니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.applicationHealthPolicyMap'
+    name: applicationHealthPolicyMap
+    fullName: applicationHealthPolicyMap
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      다른 응용 프로그램에 대 한 특정 응용 프로그램 상태 정책을 포함 하는 맵을 정의 합니다.
+      각 항목에는 응용 프로그램 상태를 평가 하는 데는 ApplicationHealthPolicy 값 뿐만 아니라 응용 프로그램 이름 키로 지정 합니다.
+      응용 프로그램은 맵의 지정 하지 않으면 응용 프로그램 상태 평가 (상태 정책이 정의 되지 않은 매니페스트에서) 하는 경우 해당 응용 프로그램 매니페스트 또는 기본 응용 프로그램 상태 정책에서 찾은 ApplicationHealthPolicy를 사용 합니다.
+      맵은 기본적으로 비어 있습니다.
+    optional: true
+    syntax:
+      content: 'applicationHealthPolicyMap?: ApplicationHealthPolicyMapItem[]'
+      return:
+        type:
+          - '@azure/servicefabric.ApplicationHealthPolicyMapItem[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.clusterHealthPolicy'
+    name: clusterHealthPolicy
+    fullName: clusterHealthPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클러스터 노드 또는 클러스터의 상태를 평가 하는 데 사용 되는 상태 정책을 정의 합니다.
+    optional: true
+    syntax:
+      content: 'clusterHealthPolicy?: ClusterHealthPolicy'
+      return:
+        type:
+          - '@azure/servicefabric.ClusterHealthPolicy'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.clusterUpgradeHealthPolicy'
+    name: clusterUpgradeHealthPolicy
+    fullName: clusterUpgradeHealthPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클러스터 업그레이드를 사용 하는 동안 클러스터의 상태를 평가 하는 데 사용 되는 상태 정책을 정의 합니다.
+    optional: true
+    syntax:
+      content: 'clusterUpgradeHealthPolicy?: ClusterUpgradeHealthPolicyObject'
+      return:
+        type:
+          - '@azure/servicefabric.ClusterUpgradeHealthPolicyObject'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.codeVersion'
+    name: codeVersion
+    fullName: codeVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클러스터의 ServiceFabric 코드 버전입니다.
+    optional: true
+    syntax:
+      content: 'codeVersion?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.configVersion'
+    name: configVersion
+    fullName: configVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클러스터 구성 버전 (클러스터 매니페스트에 지정 됨).
+    optional: true
+    syntax:
+      content: 'configVersion?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.enableDeltaHealthEvaluation'
+    name: enableDeltaHealthEvaluation
+    fullName: enableDeltaHealthEvaluation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: True 인 경우에 각 업그레이드 도메인 완료 후 절대 상태 평가가 아닌 델타 상태 평가 사용 하도록 설정 합니다.
+    optional: true
+    syntax:
+      content: 'enableDeltaHealthEvaluation?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.forceRestart'
+    name: forceRestart
+    fullName: forceRestart
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: True 이면 프로세스는 강제로 다시 업그레이드 중 (변경 된 내용만 업그레이드 구성 또는 데이터)에 코드 버전이 변경 되지 않은 경우에 합니다.
+    optional: true
+    syntax:
+      content: 'forceRestart?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.monitoringPolicy'
+    name: monitoringPolicy
+    fullName: monitoringPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 업그레이드 모니터링 모드에서 모니터링 하는 것에 대 한 매개 변수를 설명 합니다.
+    optional: true
+    syntax:
+      content: 'monitoringPolicy?: MonitoringPolicyDescription'
+      return:
+        type:
+          - '@azure/servicefabric.MonitoringPolicyDescription'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.rollingUpgradeMode'
+    name: rollingUpgradeMode
+    fullName: rollingUpgradeMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '롤링 업그레이드 동안 상태를 모니터링하는 데 사용되는 모드입니다. 값은 UnmonitoredAuto, UnmonitoredManual, 및 모니터링 합니다. 가능한 값은 다음과 같습니다. '' Invalid'', ''UnmonitoredAuto'', ''UnmonitoredManual'', ''모니터링''. 기본값: ''UnmonitoredAuto''.'
+    optional: true
+    syntax:
+      content: 'rollingUpgradeMode?: UpgradeMode'
+      return:
+        type:
+          - '@azure/servicefabric.UpgradeMode'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.sortOrder'
+    name: sortOrder
+    fullName: sortOrder
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '클러스터를 통해 업그레이드 진행 하는 순서를 정의 합니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''기본'', ''숫자'', ''사전순 으로'', ''ReverseNumeric'', ''ReverseLexicographical''. 기본값: '' Default ''입니다.'
+    optional: true
+    syntax:
+      content: 'sortOrder?: UpgradeSortOrder'
+      return:
+        type:
+          - '@azure/servicefabric.UpgradeSortOrder'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.upgradeKind'
+    name: upgradeKind
+    fullName: upgradeKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '가능한 값은 업그레이드의 종류입니다. 가능한 값은 다음과 같습니다. '' Invalid'', ''배포'' 합니다. 기본값: '' 배포 '' 합니다.'
+    optional: true
+    syntax:
+      content: 'upgradeKind?: UpgradeKind'
+      return:
+        type:
+          - '@azure/servicefabric.UpgradeKind'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ClusterUpgradeDescriptionObject.upgradeReplicaSetCheckTimeoutInSeconds'
+    name: upgradeReplicaSetCheckTimeoutInSeconds
+    fullName: upgradeReplicaSetCheckTimeoutInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      예기치 않은 문제가 있을 때 업그레이드 도메인의 처리를 차단하고 가용성의 손실을 방지하는 최대 시간입니다. 이 시간 제한이 만료되면 가용성 손실 문제와 상관없이 업그레이드 도메인 처리가 진행됩니다. 시간 제한은 각 업그레이드 도메인의 시작 시 다시 설정됩니다. 유효한 값은 0과 42949672925(포함) 사이입니다.
+      (부호 없는 32 비트 정수)입니다.
+    optional: true
+    syntax:
+      content: 'upgradeReplicaSetCheckTimeoutInSeconds?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ApplicationHealthPolicyMapItem[]'
+    name: 'ApplicationHealthPolicyMapItem[]'
+    spec.typeScript:
+      - name: ApplicationHealthPolicyMapItem
+        fullName: ApplicationHealthPolicyMapItem
+        uid: '@azure/servicefabric.ApplicationHealthPolicyMapItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.ClusterHealthPolicy'
+    name: ClusterHealthPolicy
+    spec.typeScript:
+      - name: ClusterHealthPolicy
+        fullName: ClusterHealthPolicy
+        uid: '@azure/servicefabric.ClusterHealthPolicy'
+  - uid: '@azure/servicefabric.ClusterUpgradeHealthPolicyObject'
+    name: ClusterUpgradeHealthPolicyObject
+    spec.typeScript:
+      - name: ClusterUpgradeHealthPolicyObject
+        fullName: ClusterUpgradeHealthPolicyObject
+        uid: '@azure/servicefabric.ClusterUpgradeHealthPolicyObject'
+  - uid: '@azure/servicefabric.MonitoringPolicyDescription'
+    name: MonitoringPolicyDescription
+    spec.typeScript:
+      - name: MonitoringPolicyDescription
+        fullName: MonitoringPolicyDescription
+        uid: '@azure/servicefabric.MonitoringPolicyDescription'
+  - uid: '@azure/servicefabric.UpgradeMode'
+    name: UpgradeMode
+    spec.typeScript:
+      - name: UpgradeMode
+        fullName: UpgradeMode
+        uid: '@azure/servicefabric.UpgradeMode'
+  - uid: '@azure/servicefabric.UpgradeSortOrder'
+    name: UpgradeSortOrder
+    spec.typeScript:
+      - name: UpgradeSortOrder
+        fullName: UpgradeSortOrder
+        uid: '@azure/servicefabric.UpgradeSortOrder'
+  - uid: '@azure/servicefabric.UpgradeKind'
+    name: UpgradeKind
+    spec.typeScript:
+      - name: UpgradeKind
+        fullName: UpgradeKind
+        uid: '@azure/servicefabric.UpgradeKind'
