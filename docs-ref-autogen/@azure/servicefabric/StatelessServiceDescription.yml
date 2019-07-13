@@ -1,0 +1,313 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.StatelessServiceDescription'
+    name: StatelessServiceDescription
+    fullName: StatelessServiceDescription
+    children:
+      - '@azure/servicefabric.StatelessServiceDescription.applicationName'
+      - '@azure/servicefabric.StatelessServiceDescription.correlationScheme'
+      - '@azure/servicefabric.StatelessServiceDescription.defaultMoveCost'
+      - '@azure/servicefabric.StatelessServiceDescription.initializationData'
+      - '@azure/servicefabric.StatelessServiceDescription.instanceCount'
+      - '@azure/servicefabric.StatelessServiceDescription.isDefaultMoveCostSpecified'
+      - '@azure/servicefabric.StatelessServiceDescription.partitionDescription'
+      - '@azure/servicefabric.StatelessServiceDescription.placementConstraints'
+      - '@azure/servicefabric.StatelessServiceDescription.scalingPolicies'
+      - '@azure/servicefabric.StatelessServiceDescription.serviceDnsName'
+      - '@azure/servicefabric.StatelessServiceDescription.serviceKind'
+      - '@azure/servicefabric.StatelessServiceDescription.serviceLoadMetrics'
+      - '@azure/servicefabric.StatelessServiceDescription.serviceName'
+      - '@azure/servicefabric.StatelessServiceDescription.servicePackageActivationMode'
+      - '@azure/servicefabric.StatelessServiceDescription.servicePlacementPolicies'
+      - '@azure/servicefabric.StatelessServiceDescription.serviceTypeName'
+    langs:
+      - typeScript
+    type: interface
+    summary: 상태 비저장 서비스를 설명합니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.applicationName'
+    name: applicationName
+    fullName: applicationName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '응용 프로그램의 이름을 포함 하는 '' fabric:'' URI 구성표가 없는 애플리케이션의 전체 이름입니다.'
+    optional: true
+    syntax:
+      content: 'applicationName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.correlationScheme'
+    name: correlationScheme
+    fullName: correlationScheme
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 상관 관계 구성표입니다.
+    optional: true
+    syntax:
+      content: 'correlationScheme?: ServiceCorrelationDescription[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceCorrelationDescription[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.defaultMoveCost'
+    name: defaultMoveCost
+    fullName: defaultMoveCost
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스 이동 비용입니다. 가능한 값은 다음과 같습니다. ''Zero'', ''Low'', ''Medium'', ''High'''
+    optional: true
+    syntax:
+      content: 'defaultMoveCost?: MoveCost'
+      return:
+        type:
+          - '@azure/servicefabric.MoveCost'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.initializationData'
+    name: initializationData
+    fullName: initializationData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 바이트 배열로 초기화 데이터입니다. 초기화 데이터는 생성 될 때 서비스 인스턴스 또는 복제본에 전달 됩니다.
+    optional: true
+    syntax:
+      content: 'initializationData?: number[]'
+      return:
+        type:
+          - 'number[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.instanceCount'
+    name: instanceCount
+    fullName: instanceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 인스턴스 수입니다.
+    syntax:
+      content: 'instanceCount: number'
+      return:
+        type:
+          - number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.isDefaultMoveCostSpecified'
+    name: isDefaultMoveCostSpecified
+    fullName: isDefaultMoveCostSpecified
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 해당 DefaultMoveCost 속성이 지정 된 경우를 나타냅니다.
+    optional: true
+    syntax:
+      content: 'isDefaultMoveCostSpecified?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.partitionDescription'
+    name: partitionDescription
+    fullName: partitionDescription
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 개체와 파티션 설명입니다.
+    syntax:
+      content: 'partitionDescription: PartitionSchemeDescriptionUnion'
+      return:
+        type:
+          - '@azure/servicefabric.PartitionSchemeDescriptionUnion'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.placementConstraints'
+    name: placementConstraints
+    fullName: placementConstraints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '문자열 형태의 배치 제약 조건입니다. 배치 제약 조건은 노드 속성에 대한 부울 식이며 서비스 요구 사항을 기반으로 특정 노드에 대한 서비스 제한을 허용합니다. 예를 들어, 배치 NodeType이 파란색 인 노드에 서비스를 다음을 지정 합니다. "NodeColor == blue)"입니다.'
+    optional: true
+    syntax:
+      content: 'placementConstraints?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.scalingPolicies'
+    name: scalingPolicies
+    fullName: scalingPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 서비스에 대 한 크기 조정 정책입니다.
+    optional: true
+    syntax:
+      content: 'scalingPolicies?: ScalingPolicyDescription[]'
+      return:
+        type:
+          - '@azure/servicefabric.ScalingPolicyDescription[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.serviceDnsName'
+    name: serviceDnsName
+    fullName: serviceDnsName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스의 DNS 이름입니다. DNS 시스템 서비스가 Service Fabric 클러스터에서 사용 하도록 설정 해야 합니다.
+    optional: true
+    syntax:
+      content: 'serviceDnsName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.serviceKind'
+    name: serviceKind
+    fullName: serviceKind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'serviceKind: "Stateless"'
+      return:
+        type:
+          - '"Stateless"'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.serviceLoadMetrics'
+    name: serviceLoadMetrics
+    fullName: serviceLoadMetrics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 부하 메트릭입니다.
+    optional: true
+    syntax:
+      content: 'serviceLoadMetrics?: ServiceLoadMetricDescription[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceLoadMetricDescription[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.serviceName'
+    name: serviceName
+    fullName: serviceName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스의 전체 이름 '' fabric:'' URI 구성표가 없는 애플리케이션의 전체 이름입니다.'
+    syntax:
+      content: 'serviceName: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.servicePackageActivationMode'
+    name: servicePackageActivationMode
+    fullName: servicePackageActivationMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '서비스에 사용 되는 서비스 패키지의 활성화 모드입니다. 가능한 값은 다음과 같습니다. ''SharedProcess'', ''ExclusiveProcess'''
+    optional: true
+    syntax:
+      content: 'servicePackageActivationMode?: ServicePackageActivationMode'
+      return:
+        type:
+          - '@azure/servicefabric.ServicePackageActivationMode'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.servicePlacementPolicies'
+    name: servicePlacementPolicies
+    fullName: servicePlacementPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 배치 정책입니다.
+    optional: true
+    syntax:
+      content: 'servicePlacementPolicies?: ServicePlacementPolicyDescriptionUnion[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServicePlacementPolicyDescriptionUnion[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.StatelessServiceDescription.serviceTypeName'
+    name: serviceTypeName
+    fullName: serviceTypeName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 매니페스트에 지정 된 대로 서비스 형식의 이름입니다.
+    syntax:
+      content: 'serviceTypeName: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ServiceCorrelationDescription[]'
+    name: 'ServiceCorrelationDescription[]'
+    spec.typeScript:
+      - name: ServiceCorrelationDescription
+        fullName: ServiceCorrelationDescription
+        uid: '@azure/servicefabric.ServiceCorrelationDescription'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.MoveCost'
+    name: MoveCost
+    spec.typeScript:
+      - name: MoveCost
+        fullName: MoveCost
+        uid: '@azure/servicefabric.MoveCost'
+  - uid: '@azure/servicefabric.PartitionSchemeDescriptionUnion'
+    name: PartitionSchemeDescriptionUnion
+    spec.typeScript:
+      - name: PartitionSchemeDescriptionUnion
+        fullName: PartitionSchemeDescriptionUnion
+        uid: '@azure/servicefabric.PartitionSchemeDescriptionUnion'
+  - uid: '@azure/servicefabric.ScalingPolicyDescription[]'
+    name: 'ScalingPolicyDescription[]'
+    spec.typeScript:
+      - name: ScalingPolicyDescription
+        fullName: ScalingPolicyDescription
+        uid: '@azure/servicefabric.ScalingPolicyDescription'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription[]'
+    name: 'ServiceLoadMetricDescription[]'
+    spec.typeScript:
+      - name: ServiceLoadMetricDescription
+        fullName: ServiceLoadMetricDescription
+        uid: '@azure/servicefabric.ServiceLoadMetricDescription'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.ServicePackageActivationMode'
+    name: ServicePackageActivationMode
+    spec.typeScript:
+      - name: ServicePackageActivationMode
+        fullName: ServicePackageActivationMode
+        uid: '@azure/servicefabric.ServicePackageActivationMode'
+  - uid: '@azure/servicefabric.ServicePlacementPolicyDescriptionUnion[]'
+    name: 'ServicePlacementPolicyDescriptionUnion[]'
+    spec.typeScript:
+      - name: ServicePlacementPolicyDescriptionUnion
+        fullName: ServicePlacementPolicyDescriptionUnion
+        uid: '@azure/servicefabric.ServicePlacementPolicyDescriptionUnion'
+      - name: '[]'
+        fullName: '[]'

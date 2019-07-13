@@ -1,0 +1,135 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus'
+    name: SecondaryIdleReplicatorStatus
+    fullName: SecondaryIdleReplicatorStatus
+    children:
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.copyQueueStatus'
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.isInBuild'
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.kind'
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.lastAcknowledgementSentTimeUtc'
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.lastCopyOperationReceivedTimeUtc'
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.lastReplicationOperationReceivedTimeUtc'
+      - '@azure/servicefabric.SecondaryIdleReplicatorStatus.replicationQueueStatus'
+    langs:
+      - typeScript
+    type: interface
+    summary: 보조 복제자 유휴 모드에 있고 주 복제본에 의해 빌드되는 경우의 상태입니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.copyQueueStatus'
+    name: copyQueueStatus
+    fullName: copyQueueStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 보조 복제자에서 복사 큐에 대 한 세부 정보입니다.
+    optional: true
+    syntax:
+      content: 'copyQueueStatus?: ReplicatorQueueStatus'
+      return:
+        type:
+          - '@azure/servicefabric.ReplicatorQueueStatus'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.isInBuild'
+    name: isInBuild
+    fullName: isInBuild
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복제본을 현재 작성 중인 여부를 나타내는 값입니다.
+    optional: true
+    syntax:
+      content: 'isInBuild?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.kind'
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: "IdleSecondary"'
+      return:
+        type:
+          - '"IdleSecondary"'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.lastAcknowledgementSentTimeUtc'
+    name: lastAcknowledgementSentTimeUtc
+    fullName: lastAcknowledgementSentTimeUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      마지막 타임 스탬프 (UTC)는 주 복제 자가에 승인을 보냈습니다.
+      UTC 0 승인 메시지를 전달 되지 않는다는 나타내는 잘못 된 값을 나타냅니다.
+    optional: true
+    syntax:
+      content: 'lastAcknowledgementSentTimeUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.lastCopyOperationReceivedTimeUtc'
+    name: lastCopyOperationReceivedTimeUtc
+    fullName: lastCopyOperationReceivedTimeUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      마지막 타임 스탬프 (UTC)는 주 데이터베이스에서 복사 작업을 받았습니다.
+      UTC 0 나타내는 잘못 된 값을 복사 작업 메시지를 받지 못했습니다.
+    optional: true
+    syntax:
+      content: 'lastCopyOperationReceivedTimeUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.lastReplicationOperationReceivedTimeUtc'
+    name: lastReplicationOperationReceivedTimeUtc
+    fullName: lastReplicationOperationReceivedTimeUtc
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      마지막 타임 스탬프 (UTC)는 주 데이터베이스에서 복제 작업을 받았습니다.
+      UTC 0 나타내는 잘못 된 값 복제 작업 메시지를 받지 못했습니다.
+    optional: true
+    syntax:
+      content: 'lastReplicationOperationReceivedTimeUtc?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.SecondaryIdleReplicatorStatus.replicationQueueStatus'
+    name: replicationQueueStatus
+    fullName: replicationQueueStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 보조 복제자에서 복제 큐에 대 한 세부 정보입니다.
+    optional: true
+    syntax:
+      content: 'replicationQueueStatus?: ReplicatorQueueStatus'
+      return:
+        type:
+          - '@azure/servicefabric.ReplicatorQueueStatus'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ReplicatorQueueStatus'
+    name: ReplicatorQueueStatus
+    spec.typeScript:
+      - name: ReplicatorQueueStatus
+        fullName: ReplicatorQueueStatus
+        uid: '@azure/servicefabric.ReplicatorQueueStatus'
