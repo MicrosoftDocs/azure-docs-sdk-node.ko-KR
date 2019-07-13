@@ -14,7 +14,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: 선택적 매개 변수입니다.
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -40,7 +40,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |-
+      클러스터 상태 및 반환 되는 클러스터 엔터티를 선택 하려면 필터를 평가 하는 데 사용 하는 클러스터 및 응용 프로그램 상태 정책을 설명 합니다.
+      클러스터 상태 정책이 있는 경우 클러스터 이벤트와 클러스터 노드를 평가에 사용 됩니다. 없는 경우, 클러스터 매니페스트 또는 기본 클러스터 상태 정책에 정의 된 클러스터 상태 정책 상태 평가 사용 합니다.
+      기본적으로 각 응용 프로그램 매니페스트에서 정의 된 정책이 없습니다 응용 프로그램 매니페스트 또는 기본 상태 정책에 정의 된 해당 특정 응용 프로그램 상태 정책을 사용 하 여 평가 됩니다.
+      응용 프로그램 상태 정책 맵이 지정 되어 있고 응용 프로그램에 대 한 항목이 있는, 지정 된 응용 프로그램 상태 정책 응용 프로그램 상태 평가에 사용 됩니다.
+      사용자 응답에 포함할 클러스터 엔터티를 선택 하려면 유연 하 게 필터를 지정할 수 있습니다. 선택한은 엔터티 상태에 따라 수행 하 고 계층에 따라 수 있습니다.
+      쿼리는 여러 수준의 자식의 지정한 필터를 기반으로 엔터티를 반환할 수 있습니다. 예를 들어,이 응용 프로그램에 대 한 지정 된 이름의 한 응용 프로그램을 반환, 오류 또는 경고 및 모든 파티션 및 이러한 서비스 중 하나에 대 한 복제본에 있는 서비스만 반환할 수 있습니다.
     optional: true
     syntax:
       content: 'clusterHealthChunkQueryDescription?: ClusterHealthChunkQueryDescription'
@@ -115,7 +121,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '시간 (초)에서 작업을 수행 하는 것에 대 한 서버 제한 시간입니다. 이 시간 제한은 클라이언트는 요청한 작업을 완료할 때까지 기다릴 수 있는 기간을 지정 합니다. 이 매개 변수의 기본값은 60 초입니다. 기본값: 60.'
     optional: true
     syntax:
       content: 'timeoutParameter?: undefined | number'
