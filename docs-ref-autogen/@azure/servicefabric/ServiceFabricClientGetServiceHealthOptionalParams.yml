@@ -16,7 +16,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: <span data-ttu-id="70b20-101">선택적 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-101">Optional Parameters.</span></span>
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="3a33f-101">중단 요청에 사용할 수 있는 신호입니다.</span><span class="sxs-lookup"><span data-stu-id="3a33f-101">The signal which can be used to abort requests.</span></span>
+    summary: <span data-ttu-id="70b20-102">중단 요청에 사용할 수 있는 신호입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-102">The signal which can be used to abort requests.</span></span>
     optional: true
     syntax:
       content: 'abortSignal?: AbortSignalLike'
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="3a33f-102">{object} [customHeaders] 사용자 요청을 보내기 전에 적용 되는 사용자 지정 요청 헤더를 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="3a33f-102">{object} [customHeaders] User defined custom request headers that will be applied before the request is sent.</span></span>'
+    summary: '<span data-ttu-id="70b20-103">{object} [customHeaders] 사용자 요청을 보내기 전에 적용 되는 사용자 지정 요청 헤더를 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-103">{object} [customHeaders] User defined custom request headers that will be applied before the request is sent.</span></span>'
     optional: true
     syntax:
       content: 'customHeaders?: undefined | [key: string]: string'
@@ -57,7 +57,18 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |
+      <span data-ttu-id="70b20-104">상태에 따라 반환된 HealthEvent 개체의 컬렉션을 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-104">Allows filtering the collection of HealthEvent objects returned based on health state.</span></span>
+      <span data-ttu-id="70b20-105">이 매개 변수에 사용할 수 있는 값은 다음 상태 중 하나의 정수 값을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-105">The possible values for this parameter include integer value of one of the following health states.</span></span>
+      <span data-ttu-id="70b20-106">필터와 일치하는 이벤트만 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-106">Only events that match the filter are returned.</span></span> <span data-ttu-id="70b20-107">모든 이벤트는 집계된 상태를 평가하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-107">All events are used to evaluate the aggregated health state.</span></span>
+      <span data-ttu-id="70b20-108">지정하지 않으면 모든 항목이 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-108">If not specified, all entries are returned.</span></span> <span data-ttu-id="70b20-109">상태 값은 플래그 기반 열거형이므로 값은 비트 OR 연산자를 사용하여 구한 값의 조합일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-109">The state values are flag-based enumeration, so the value could be a combination of these values, obtained using the bitwise 'OR' operator.</span></span>
+      <span data-ttu-id="70b20-110">예를 들어 제공된 값이 6이면 HealthState 값이 OK(2) 및 Warning(4)인 모든 이벤트가 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-110">For example, If the provided value is 6 then all of the events with HealthState value of OK (2) and Warning (4) are returned.</span></span>
+      - <span data-ttu-id="70b20-111">Default-기본값.</span><span class="sxs-lookup"><span data-stu-id="70b20-111">Default - Default value.</span></span> <span data-ttu-id="70b20-112">모든 HealthState와 일치합니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-112">Matches any HealthState.</span></span> <span data-ttu-id="70b20-113">값은 0입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-113">The value is zero.</span></span>
+      - <span data-ttu-id="70b20-114">None-모든 HealthState 값과 일치 하지 않는 필터입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-114">None - Filter that doesn't match any HealthState value.</span></span> <span data-ttu-id="70b20-115">주어진 상태 컬렉션에 대해 결과를 반환하지 않기 위해 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-115">Used in order to return no results on a given collection of states.</span></span> <span data-ttu-id="70b20-116">값은 1입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-116">The value is 1.</span></span>
+      - <span data-ttu-id="70b20-117">확인-는 일치 Ok 인 입력과 필터 HealthState 값이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-117">Ok - Filter that matches input with HealthState value Ok.</span></span> <span data-ttu-id="70b20-118">값은 2입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-118">The value is 2.</span></span>
+      - <span data-ttu-id="70b20-119">경고-필터 값 Warning를 HealthState 인 입력과 일치 하는입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-119">Warning - Filter that matches input with HealthState value Warning.</span></span> <span data-ttu-id="70b20-120">값은 4입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-120">The value is 4.</span></span>
+      - <span data-ttu-id="70b20-121">Error-HealthState 값이 error 인 입력과 일치 하는 필터입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-121">Error - Filter that matches input with HealthState value Error.</span></span> <span data-ttu-id="70b20-122">값은 8입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-122">The value is 8.</span></span>
+      - <span data-ttu-id="70b20-123">All-모든 HealthState 값의 입력과 일치 하는 필터입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-123">All - Filter that matches input with any HealthState value.</span></span> <span data-ttu-id="70b20-124">값은 65535입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-124">The value is 65535.</span></span> <span data-ttu-id="70b20-125">기본값: 0.</span><span class="sxs-lookup"><span data-stu-id="70b20-125">Default value: 0.</span></span>
     optional: true
     syntax:
       content: 'eventsHealthStateFilter?: undefined | number'
@@ -72,7 +83,10 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |-
+      <span data-ttu-id="70b20-126">상태 통계가 쿼리 결과의 일부로 반환되어야 하는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-126">Indicates whether the health statistics should be returned as part of the query result.</span></span> <span data-ttu-id="70b20-127">False(기본값).</span><span class="sxs-lookup"><span data-stu-id="70b20-127">False by default.</span></span>
+      <span data-ttu-id="70b20-128">통계는 Ok, Warning 및 Error 상태의 자식 엔터티 수를 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-128">The statistics show the number of children entities in health state Ok, Warning, and Error.</span></span>
+      <span data-ttu-id="70b20-129">기본값: false.</span><span class="sxs-lookup"><span data-stu-id="70b20-129">Default value: false.</span></span>
     optional: true
     syntax:
       content: 'excludeHealthStatistics?: undefined | false | true'
@@ -87,7 +101,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="3a33f-103">다운로드 진행률 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="3a33f-103">Callback which fires upon download progress.</span></span>
+    summary: <span data-ttu-id="70b20-130">다운로드 진행률 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="70b20-130">Callback which fires upon download progress.</span></span>
     optional: true
     syntax:
       content: 'onDownloadProgress?: undefined | (progress: TransferProgressEvent) => void'
@@ -102,7 +116,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="3a33f-104">업로드 진행 상태 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="3a33f-104">Callback which fires upon upload progress.</span></span>
+    summary: <span data-ttu-id="70b20-131">업로드 진행 상태 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="70b20-131">Callback which fires upon upload progress.</span></span>
     optional: true
     syntax:
       content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
@@ -117,7 +131,17 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |
+      <span data-ttu-id="70b20-132">상태에 따라 서비스 상태 쿼리의 결과로 반환된 파티션 상태 개체를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-132">Allows filtering of the partitions health state objects returned in the result of service health query based on their health state.</span></span>
+      <span data-ttu-id="70b20-133">이 매개 변수에 사용할 수 있는 값은 다음 상태 중 하나의 정수 값을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-133">The possible values for this parameter include integer value of one of the following health states.</span></span>
+      <span data-ttu-id="70b20-134">필터와 일치하는 파티션만 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-134">Only partitions that match the filter are returned.</span></span> <span data-ttu-id="70b20-135">모든 파티션은 집계된 상태를 평가하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-135">All partitions are used to evaluate the aggregated health state.</span></span>
+      <span data-ttu-id="70b20-136">지정하지 않으면 모든 항목이 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-136">If not specified, all entries are returned.</span></span> <span data-ttu-id="70b20-137">상태 값은 플래그 기반 열거형이므로 값은 비트 OR 연산자를 사용하여 구한 값의 조합일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-137">The state values are flag-based enumeration, so the value could be a combination of these value obtained using bitwise 'OR' operator.</span></span> <span data-ttu-id="70b20-138">예를 들어 제공된 값이 6이면 HealthState 값이 OK(2) 및 Warning(4)인 파티션의 상태가 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-138">For example, if the provided value is 6 then health state of partitions with HealthState value of OK (2) and Warning (4) will be returned.</span></span>
+      - <span data-ttu-id="70b20-139">Default-기본값.</span><span class="sxs-lookup"><span data-stu-id="70b20-139">Default - Default value.</span></span> <span data-ttu-id="70b20-140">모든 HealthState와 일치합니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-140">Matches any HealthState.</span></span> <span data-ttu-id="70b20-141">값은 0입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-141">The value is zero.</span></span>
+      - <span data-ttu-id="70b20-142">None-모든 HealthState 값과 일치 하지 않는 필터입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-142">None - Filter that doesn't match any HealthState value.</span></span> <span data-ttu-id="70b20-143">주어진 상태 컬렉션에 대해 결과를 반환하지 않기 위해 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-143">Used in order to return no results on a given collection of states.</span></span> <span data-ttu-id="70b20-144">값은 1입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-144">The value is 1.</span></span>
+      - <span data-ttu-id="70b20-145">확인-는 일치 Ok 인 입력과 필터 HealthState 값이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-145">Ok - Filter that matches input with HealthState value Ok.</span></span> <span data-ttu-id="70b20-146">값은 2입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-146">The value is 2.</span></span>
+      - <span data-ttu-id="70b20-147">경고-필터 값 Warning를 HealthState 인 입력과 일치 하는입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-147">Warning - Filter that matches input with HealthState value Warning.</span></span> <span data-ttu-id="70b20-148">값은 4입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-148">The value is 4.</span></span>
+      - <span data-ttu-id="70b20-149">Error-HealthState 값이 error 인 입력과 일치 하는 필터입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-149">Error - Filter that matches input with HealthState value Error.</span></span> <span data-ttu-id="70b20-150">값은 8입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-150">The value is 8.</span></span>
+      - <span data-ttu-id="70b20-151">All-모든 HealthState 값의 입력과 일치 하는 필터입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-151">All - Filter that matches input with any HealthState value.</span></span> <span data-ttu-id="70b20-152">값은 65535입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-152">The value is 65535.</span></span> <span data-ttu-id="70b20-153">기본값: 0.</span><span class="sxs-lookup"><span data-stu-id="70b20-153">Default value: 0.</span></span>
     optional: true
     syntax:
       content: 'partitionsHealthStateFilter?: undefined | number'
@@ -132,7 +156,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="3a33f-105">요청 시간을 밀리초로 자동으로 종료 하기 전까지 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3a33f-105">The number of milliseconds a request can take before automatically being terminated.</span></span>
+    summary: <span data-ttu-id="70b20-154">요청 시간을 밀리초로 자동으로 종료 하기 전까지 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-154">The number of milliseconds a request can take before automatically being terminated.</span></span>
     optional: true
     syntax:
       content: 'timeout?: undefined | number'
@@ -147,7 +171,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '<span data-ttu-id="70b20-155">시간 (초)에서 작업을 수행 하는 것에 대 한 서버 제한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-155">The server timeout for performing the operation in seconds.</span></span> <span data-ttu-id="70b20-156">이 시간 제한은 클라이언트는 요청한 작업을 완료할 때까지 기다릴 수 있는 기간을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-156">This timeout specifies the time duration that the client is willing to wait for the requested operation to complete.</span></span> <span data-ttu-id="70b20-157">이 매개 변수의 기본값은 60 초입니다.</span><span class="sxs-lookup"><span data-stu-id="70b20-157">The default value for this parameter is 60 seconds.</span></span> <span data-ttu-id="70b20-158">기본값: 60.</span><span class="sxs-lookup"><span data-stu-id="70b20-158">Default value: 60.</span></span>'
     optional: true
     syntax:
       content: 'timeoutParameter?: undefined | number'

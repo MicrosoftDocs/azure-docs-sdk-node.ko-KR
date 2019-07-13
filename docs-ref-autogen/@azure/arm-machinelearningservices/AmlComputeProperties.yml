@@ -1,0 +1,242 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties'
+    name: AmlComputeProperties
+    fullName: AmlComputeProperties
+    children:
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.allocationState'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.allocationStateTransitionTime'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.currentNodeCount'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.errors'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.nodeStateCounts'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.scaleSettings'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.subnet'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.targetNodeCount'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.userAccountCredentials'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.vmPriority'
+      - '@azure/arm-machinelearningservices.AmlComputeProperties.vmSize'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="84391-101">AML 계산 속성</span><span class="sxs-lookup"><span data-stu-id="84391-101">AML Compute properties</span></span>
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.allocationState'
+    name: allocationState
+    fullName: allocationState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="84391-102">할당 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-102">Allocation state.</span></span> <span data-ttu-id="84391-103">계산의 할당 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-103">Allocation state of the compute.</span></span> <span data-ttu-id="84391-104">가능한 값은: steady-나타냅니다 계산이 크기 조정 합니다.</span><span class="sxs-lookup"><span data-stu-id="84391-104">Possible values are: steady - Indicates that the compute is not resizing.</span></span> <span data-ttu-id="84391-105">진행 중인 계산의 계산 노드 수를 변경 하지 않고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="84391-105">There are no changes to the number of compute nodes in the compute in progress.</span></span> <span data-ttu-id="84391-106">계산 및 계산 노드 수를 변경 하려면 계산에서 수행 중인 작업이 없는 경우 만들어질 때이 상태로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="84391-106">A compute enters this state when it is created and when no operations are being performed on the compute to change the number of compute nodes.</span></span> <span data-ttu-id="84391-107">계산 크기는; 나타냅니다-크기 조정 즉, 노드는 계산을 추가 하거나 계산에서 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="84391-107">resizing - Indicates that the compute is resizing; that is, compute nodes are being added to or removed from the compute.</span></span> <span data-ttu-id="84391-108">가능한 값은 다음과 같습니다. ''정상'', ''크기 조정'' **참고 합니다. 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="84391-108">Possible values include: ''Steady'', ''Resizing'' **NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>'
+    optional: true
+    syntax:
+      content: 'allocationState?: AllocationState'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.AllocationState'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.allocationStateTransitionTime'
+    name: allocationStateTransitionTime
+    fullName: allocationStateTransitionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="84391-109">할당 상태 전환 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-109">Allocation state transition time.</span></span> <span data-ttu-id="84391-110">계산 현재 상태로 할당 된 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-110">The time at which the compute entered its current allocation state.</span></span>
+      <span data-ttu-id="84391-111">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="84391-111">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'allocationStateTransitionTime?: Date'
+      return:
+        type:
+          - Date
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.currentNodeCount'
+    name: currentNodeCount
+    fullName: currentNodeCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="84391-112">현재 노드 수입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-112">Current node count.</span></span> <span data-ttu-id="84391-113">계산에 현재 할당 된 계산 노드의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-113">The number of compute nodes currently assigned to the compute.</span></span>
+      <span data-ttu-id="84391-114">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="84391-114">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'currentNodeCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.errors'
+    name: errors
+    fullName: errors
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="84391-115">오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="84391-115">Errors.</span></span> <span data-ttu-id="84391-116">노드 설치 중 다양 한 계산 노드에서 발생 한 오류의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-116">Collection of errors encountered by various compute nodes during node setup.</span></span>
+      <span data-ttu-id="84391-117">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="84391-117">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'errors?: MachineLearningServiceError[]'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.MachineLearningServiceError[]'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.nodeStateCounts'
+    name: nodeStateCounts
+    fullName: nodeStateCounts
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="84391-118">노드 상태를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="84391-118">Node state counts.</span></span> <span data-ttu-id="84391-119">Compute 노드 상태별 개수입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-119">Counts of various node states on the compute.</span></span>
+      <span data-ttu-id="84391-120">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="84391-120">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'nodeStateCounts?: NodeStateCounts'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.NodeStateCounts'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.scaleSettings'
+    name: scaleSettings
+    fullName: scaleSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="84391-121">AML 계산 크기 조정 설정</span><span class="sxs-lookup"><span data-stu-id="84391-121">Scale settings for AML Compute</span></span>
+    optional: true
+    syntax:
+      content: 'scaleSettings?: ScaleSettings'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.ScaleSettings'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.subnet'
+    name: subnet
+    fullName: subnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="84391-122">서브넷입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-122">Subnet.</span></span> <span data-ttu-id="84391-123">가상 네트워크 서브넷 리소스 ID에 계산 노드에 속합니다.</span><span class="sxs-lookup"><span data-stu-id="84391-123">Virtual network subnet resource ID the compute nodes belong to.</span></span>
+    optional: true
+    syntax:
+      content: 'subnet?: ResourceId'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.ResourceId'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.targetNodeCount'
+    name: targetNodeCount
+    fullName: targetNodeCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="84391-124">대상 노드 수입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-124">Target node count.</span></span> <span data-ttu-id="84391-125">계산에 대 한 계산 노드의 대상 수입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-125">The target number of compute nodes for the compute.</span></span> <span data-ttu-id="84391-126">AllocationState 크기를 조정 하는 경우이 속성에 진행 중인 크기 조정 작업에 대 한 대상 노드 수를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="84391-126">If the allocationState is resizing, this property denotes the target node count for the ongoing resize operation.</span></span> <span data-ttu-id="84391-127">AllocationState 안정적 이면이 속성에 이전 크기 조정 작업에 대 한 대상 노드 수를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="84391-127">If the allocationState is steady, this property denotes the target node count for the previous resize operation.</span></span>
+      <span data-ttu-id="84391-128">**참고: 이 속성이 serialize 되지 않습니다. 또한 서버에서 채울 수만 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="84391-128">**NOTE: This property will not be serialized. It can only be populated by the server.**</span></span>
+    optional: true
+    syntax:
+      content: 'targetNodeCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.userAccountCredentials'
+    name: userAccountCredentials
+    fullName: userAccountCredentials
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="84391-129">사용자 계정 자격 증명입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-129">User account credentials.</span></span> <span data-ttu-id="84391-130">각 계산 노드에서 생성 되는 관리자 사용자 계정에 대 한 자격 증명입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-130">Credentials for an administrator user account that will be created on each compute node.</span></span>
+    optional: true
+    syntax:
+      content: 'userAccountCredentials?: UserAccountCredentials'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.UserAccountCredentials'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.vmPriority'
+    name: vmPriority
+    fullName: vmPriority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="84391-131">가상 컴퓨터 우선 순위입니다.</span><span class="sxs-lookup"><span data-stu-id="84391-131">Virtual Machine priority.</span></span> <span data-ttu-id="84391-132">가능한 값은 다음과 같습니다. ''Dedicated'', ''LowPriority''</span><span class="sxs-lookup"><span data-stu-id="84391-132">Possible values include: ''Dedicated'', ''LowPriority''</span></span>'
+    optional: true
+    syntax:
+      content: 'vmPriority?: VmPriority'
+      return:
+        type:
+          - '@azure/arm-machinelearningservices.VmPriority'
+    package: '@azure/arm-machinelearningservices'
+  - uid: '@azure/arm-machinelearningservices.AmlComputeProperties.vmSize'
+    name: vmSize
+    fullName: vmSize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="84391-133">Virtual Machine 크기</span><span class="sxs-lookup"><span data-stu-id="84391-133">Virtual Machine Size</span></span>
+    optional: true
+    syntax:
+      content: 'vmSize?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/arm-machinelearningservices'
+references:
+  - uid: '@azure/arm-machinelearningservices.AllocationState'
+    name: AllocationState
+    spec.typeScript:
+      - name: AllocationState
+        fullName: AllocationState
+        uid: '@azure/arm-machinelearningservices.AllocationState'
+  - uid: '@azure/arm-machinelearningservices.MachineLearningServiceError[]'
+    name: 'MachineLearningServiceError[]'
+    spec.typeScript:
+      - name: MachineLearningServiceError
+        fullName: MachineLearningServiceError
+        uid: '@azure/arm-machinelearningservices.MachineLearningServiceError'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/arm-machinelearningservices.NodeStateCounts'
+    name: NodeStateCounts
+    spec.typeScript:
+      - name: NodeStateCounts
+        fullName: NodeStateCounts
+        uid: '@azure/arm-machinelearningservices.NodeStateCounts'
+  - uid: '@azure/arm-machinelearningservices.ScaleSettings'
+    name: ScaleSettings
+    spec.typeScript:
+      - name: ScaleSettings
+        fullName: ScaleSettings
+        uid: '@azure/arm-machinelearningservices.ScaleSettings'
+  - uid: '@azure/arm-machinelearningservices.ResourceId'
+    name: ResourceId
+    spec.typeScript:
+      - name: ResourceId
+        fullName: ResourceId
+        uid: '@azure/arm-machinelearningservices.ResourceId'
+  - uid: '@azure/arm-machinelearningservices.UserAccountCredentials'
+    name: UserAccountCredentials
+    spec.typeScript:
+      - name: UserAccountCredentials
+        fullName: UserAccountCredentials
+        uid: '@azure/arm-machinelearningservices.UserAccountCredentials'
+  - uid: '@azure/arm-machinelearningservices.VmPriority'
+    name: VmPriority
+    spec.typeScript:
+      - name: VmPriority
+        fullName: VmPriority
+        uid: '@azure/arm-machinelearningservices.VmPriority'

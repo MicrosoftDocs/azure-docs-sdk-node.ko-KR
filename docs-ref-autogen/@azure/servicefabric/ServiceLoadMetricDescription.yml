@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription'
+    name: ServiceLoadMetricDescription
+    fullName: ServiceLoadMetricDescription
+    children:
+      - '@azure/servicefabric.ServiceLoadMetricDescription.defaultLoad'
+      - '@azure/servicefabric.ServiceLoadMetricDescription.name'
+      - '@azure/servicefabric.ServiceLoadMetricDescription.primaryDefaultLoad'
+      - '@azure/servicefabric.ServiceLoadMetricDescription.secondaryDefaultLoad'
+      - '@azure/servicefabric.ServiceLoadMetricDescription.weight'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="0636d-101">런타임 시 부하를 분산 하는 메트릭을 서비스를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-101">Specifies a metric to load balance a service during runtime.</span></span>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription.defaultLoad'
+    name: defaultLoad
+    fullName: defaultLoad
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="0636d-102">상태 비저장 서비스에만 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-102">Used only for Stateless services.</span></span> <span data-ttu-id="0636d-103">이 서비스가이 메트릭에 대해 생성 하는 숫자로 부하의 기본 양입니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-103">The default amount of load, as a number, that this service creates for this metric.</span></span>'
+    optional: true
+    syntax:
+      content: 'defaultLoad?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="0636d-104">메트릭의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-104">The name of the metric.</span></span> <span data-ttu-id="0636d-105">서비스는 런타임 시 부하를 보고 선택 하면 부하 메트릭 이름이 정확히 이름에 지정 된 이름이 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-105">If the service chooses to report load during runtime, the load metric name should match the name that is specified in Name exactly.</span></span> <span data-ttu-id="0636d-106">메트릭 이름은 대/소문자를 참고 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-106">Note that metric names are case-sensitive.</span></span>'
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription.primaryDefaultLoad'
+    name: primaryDefaultLoad
+    fullName: primaryDefaultLoad
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="0636d-107">상태 저장 서비스에만 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-107">Used only for Stateful services.</span></span> <span data-ttu-id="0636d-108">주 복제본 될 때이 메트릭에 대해 생성 되는이 서비스는 숫자로 부하의 기본 양입니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-108">The default amount of load, as a number, that this service creates for this metric when it is a Primary replica.</span></span>'
+    optional: true
+    syntax:
+      content: 'primaryDefaultLoad?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription.secondaryDefaultLoad'
+    name: secondaryDefaultLoad
+    fullName: secondaryDefaultLoad
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="0636d-109">상태 저장 서비스에만 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-109">Used only for Stateful services.</span></span> <span data-ttu-id="0636d-110">보조 복제본을 상태일 때이 메트릭에 대해 생성 되는이 서비스는 숫자로 부하의 기본 양입니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-110">The default amount of load, as a number, that this service creates for this metric when it is a Secondary replica.</span></span>'
+    optional: true
+    syntax:
+      content: 'secondaryDefaultLoad?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceLoadMetricDescription.weight'
+    name: weight
+    fullName: weight
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="0636d-111">서비스 부하 메트릭 상대 가중치를 숫자로이 서비스에 대해 구성 된 다른 메트릭과 비교 합니다.</span><span class="sxs-lookup"><span data-stu-id="0636d-111">The service load metric relative weight, compared to other metrics configured for this service, as a number.</span></span> <span data-ttu-id="0636d-112">가능한 값은 다음과 같습니다. ''Zero'', ''Low'', ''Medium'', ''High''</span><span class="sxs-lookup"><span data-stu-id="0636d-112">Possible values include: ''Zero'', ''Low'', ''Medium'', ''High''</span></span>'
+    optional: true
+    syntax:
+      content: 'weight?: ServiceLoadMetricWeight'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceLoadMetricWeight'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ServiceLoadMetricWeight'
+    name: ServiceLoadMetricWeight
+    spec.typeScript:
+      - name: ServiceLoadMetricWeight
+        fullName: ServiceLoadMetricWeight
+        uid: '@azure/servicefabric.ServiceLoadMetricWeight'

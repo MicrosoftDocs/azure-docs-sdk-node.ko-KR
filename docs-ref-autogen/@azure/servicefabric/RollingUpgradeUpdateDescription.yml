@@ -1,0 +1,174 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription'
+    name: RollingUpgradeUpdateDescription
+    fullName: RollingUpgradeUpdateDescription
+    children:
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.failureAction'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.forceRestart'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.healthCheckRetryTimeoutInMilliseconds'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.healthCheckStableDurationInMilliseconds'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.healthCheckWaitDurationInMilliseconds'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.replicaSetCheckTimeoutInMilliseconds'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.rollingUpgradeMode'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.upgradeDomainTimeoutInMilliseconds'
+      - '@azure/servicefabric.RollingUpgradeUpdateDescription.upgradeTimeoutInMilliseconds'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="610cb-101">응용 프로그램 또는 클러스터의 롤링 업그레이드를 업데이트 하는 것에 대 한 매개 변수를 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-101">Describes the parameters for updating a rolling upgrade of application or cluster.</span></span>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.failureAction'
+    name: failureAction
+    fullName: failureAction
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="610cb-102">보정 작업 모니터링 된 업그레이드가 모니터링 정책 또는 상태 정책 위반을 발견할 때 수행할입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-102">The compensating action to perform when a Monitored upgrade encounters monitoring policy or health policy violations.</span></span>
+      <span data-ttu-id="610cb-103">잘못 된 실패 동작이 잘못 되었음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-103">Invalid indicates the failure action is invalid.</span></span> <span data-ttu-id="610cb-104">롤백은 업그레이드 롤백 자동으로 시작 되는 것을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-104">Rollback specifies that the upgrade will start rolling back automatically.</span></span>
+      <span data-ttu-id="610cb-105">수동은 업그레이드 UnmonitoredManual 업그레이드 모드로 전환 됩니다 함을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-105">Manual indicates that the upgrade will switch to UnmonitoredManual upgrade mode.</span></span> <span data-ttu-id="610cb-106">가능한 값은 다음과 같습니다. ' Invalid', 'Rollback', 'Manual'</span><span class="sxs-lookup"><span data-stu-id="610cb-106">Possible values include: 'Invalid', 'Rollback', 'Manual'</span></span>
+    optional: true
+    syntax:
+      content: 'failureAction?: FailureAction'
+      return:
+        type:
+          - '@azure/servicefabric.FailureAction'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.forceRestart'
+    name: forceRestart
+    fullName: forceRestart
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="610cb-107">True 이면 프로세스는 강제로 다시 업그레이드 중 (변경 된 내용만 업그레이드 구성 또는 데이터)에 코드 버전이 변경 되지 않은 경우에 합니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-107">If true, then processes are forcefully restarted during upgrade even when the code version has not changed (the upgrade only changes configuration or data).</span></span>'
+    optional: true
+    syntax:
+      content: 'forceRestart?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.healthCheckRetryTimeoutInMilliseconds'
+    name: healthCheckRetryTimeoutInMilliseconds
+    fullName: healthCheckRetryTimeoutInMilliseconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="610cb-108">응용 프로그램 또는 클러스터가 정상 상태가 아닌 경우 FailureAction이 실행 되기 전에 상태 평가 다시 시도 하는 시간의 양입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-108">The amount of time to retry health evaluation when the application or cluster is unhealthy before FailureAction is executed.</span></span> <span data-ttu-id="610cb-109">먼저 ISO 8601 기간을 나타내는 문자열로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-109">It is first interpreted as a string representing an ISO 8601 duration.</span></span> <span data-ttu-id="610cb-110">실패하는 경우 총 시간(밀리초)을 나타내는 숫자로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-110">If that fails, then it is interpreted as a number representing the total number of milliseconds.</span></span>'
+    optional: true
+    syntax:
+      content: 'healthCheckRetryTimeoutInMilliseconds?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.healthCheckStableDurationInMilliseconds'
+    name: healthCheckStableDurationInMilliseconds
+    fullName: healthCheckStableDurationInMilliseconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="610cb-111">업그레이드가 다음 업그레이드 도메인으로 진행되기 전에 애플리케이션 또는 클러스터가 정상 상태로 유지되어야 하는 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-111">The amount of time that the application or cluster must remain healthy before the upgrade proceeds to the next upgrade domain.</span></span> <span data-ttu-id="610cb-112">먼저 ISO 8601 기간을 나타내는 문자열로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-112">It is first interpreted as a string representing an ISO 8601 duration.</span></span> <span data-ttu-id="610cb-113">실패하는 경우 총 시간(밀리초)을 나타내는 숫자로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-113">If that fails, then it is interpreted as a number representing the total number of milliseconds.</span></span>'
+    optional: true
+    syntax:
+      content: 'healthCheckStableDurationInMilliseconds?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.healthCheckWaitDurationInMilliseconds'
+    name: healthCheckWaitDurationInMilliseconds
+    fullName: healthCheckWaitDurationInMilliseconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="610cb-114">업그레이드 도메인을 완료한 후 상태 정책을 적용하기 전에 대기하는 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-114">The amount of time to wait after completing an upgrade domain before applying health policies.</span></span>
+      <span data-ttu-id="610cb-115">먼저 ISO 8601 기간을 나타내는 문자열로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-115">It is first interpreted as a string representing an ISO 8601 duration.</span></span> <span data-ttu-id="610cb-116">실패하는 경우 총 시간(밀리초)을 나타내는 숫자로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-116">If that fails, then it is interpreted as a number representing the total number of milliseconds.</span></span>
+    optional: true
+    syntax:
+      content: 'healthCheckWaitDurationInMilliseconds?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.replicaSetCheckTimeoutInMilliseconds'
+    name: replicaSetCheckTimeoutInMilliseconds
+    fullName: replicaSetCheckTimeoutInMilliseconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="610cb-117">예기치 않은 문제가 있을 때 업그레이드 도메인의 처리를 차단하고 가용성의 손실을 방지하는 최대 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-117">The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues.</span></span> <span data-ttu-id="610cb-118">이 시간 제한이 만료되면 가용성 손실 문제와 상관없이 업그레이드 도메인 처리가 진행됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-118">When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues.</span></span> <span data-ttu-id="610cb-119">시간 제한은 각 업그레이드 도메인의 시작 시 다시 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-119">The timeout is reset at the start of each upgrade domain.</span></span> <span data-ttu-id="610cb-120">유효한 값은 0과 42949672925(포함) 사이입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-120">Valid values are between 0 and 42949672925 inclusive.</span></span>
+      <span data-ttu-id="610cb-121">(부호 없는 32 비트 정수)입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-121">(unsigned 32-bit integer).</span></span>
+    optional: true
+    syntax:
+      content: 'replicaSetCheckTimeoutInMilliseconds?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.rollingUpgradeMode'
+    name: rollingUpgradeMode
+    fullName: rollingUpgradeMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="610cb-122">롤링 업그레이드 동안 상태를 모니터링하는 데 사용되는 모드입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-122">The mode used to monitor health during a rolling upgrade.</span></span> <span data-ttu-id="610cb-123">값은 UnmonitoredAuto, UnmonitoredManual, 및 모니터링 합니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-123">The values are UnmonitoredAuto, UnmonitoredManual, and Monitored.</span></span> <span data-ttu-id="610cb-124">가능한 값은 다음과 같습니다. '' Invalid'', ''UnmonitoredAuto'', ''UnmonitoredManual'', ''모니터링''.</span><span class="sxs-lookup"><span data-stu-id="610cb-124">Possible values include: ''Invalid'', ''UnmonitoredAuto'', ''UnmonitoredManual'', ''Monitored''.</span></span> <span data-ttu-id="610cb-125">기본값: ''UnmonitoredAuto''.</span><span class="sxs-lookup"><span data-stu-id="610cb-125">Default value: ''UnmonitoredAuto''.</span></span>'
+    syntax:
+      content: 'rollingUpgradeMode: UpgradeMode'
+      return:
+        type:
+          - '@azure/servicefabric.UpgradeMode'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.upgradeDomainTimeoutInMilliseconds'
+    name: upgradeDomainTimeoutInMilliseconds
+    fullName: upgradeDomainTimeoutInMilliseconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="610cb-126">FailureAction이 실행되기 전에 각 업그레이드 도메인이 완료해야 하는 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-126">The amount of time each upgrade domain has to complete before FailureAction is executed.</span></span> <span data-ttu-id="610cb-127">먼저 ISO 8601 기간을 나타내는 문자열로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-127">It is first interpreted as a string representing an ISO 8601 duration.</span></span> <span data-ttu-id="610cb-128">실패하는 경우 총 시간(밀리초)을 나타내는 숫자로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-128">If that fails, then it is interpreted as a number representing the total number of milliseconds.</span></span>'
+    optional: true
+    syntax:
+      content: 'upgradeDomainTimeoutInMilliseconds?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RollingUpgradeUpdateDescription.upgradeTimeoutInMilliseconds'
+    name: upgradeTimeoutInMilliseconds
+    fullName: upgradeTimeoutInMilliseconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '<span data-ttu-id="610cb-129">FailureAction이 실행되기 전에 전체 업그레이드를 완료해야 하는 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-129">The amount of time the overall upgrade has to complete before FailureAction is executed.</span></span> <span data-ttu-id="610cb-130">먼저 ISO 8601 기간을 나타내는 문자열로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-130">It is first interpreted as a string representing an ISO 8601 duration.</span></span> <span data-ttu-id="610cb-131">실패하는 경우 총 시간(밀리초)을 나타내는 숫자로 해석됩니다.</span><span class="sxs-lookup"><span data-stu-id="610cb-131">If that fails, then it is interpreted as a number representing the total number of milliseconds.</span></span>'
+    optional: true
+    syntax:
+      content: 'upgradeTimeoutInMilliseconds?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.FailureAction'
+    name: FailureAction
+    spec.typeScript:
+      - name: FailureAction
+        fullName: FailureAction
+        uid: '@azure/servicefabric.FailureAction'
+  - uid: '@azure/servicefabric.UpgradeMode'
+    name: UpgradeMode
+    spec.typeScript:
+      - name: UpgradeMode
+        fullName: UpgradeMode
+        uid: '@azure/servicefabric.UpgradeMode'

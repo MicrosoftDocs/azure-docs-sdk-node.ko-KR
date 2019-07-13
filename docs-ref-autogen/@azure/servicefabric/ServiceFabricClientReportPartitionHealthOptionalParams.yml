@@ -14,7 +14,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: <span data-ttu-id="58c9e-101">선택적 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-101">Optional Parameters.</span></span>
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -25,7 +25,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="d2835-101">중단 요청에 사용할 수 있는 신호입니다.</span><span class="sxs-lookup"><span data-stu-id="d2835-101">The signal which can be used to abort requests.</span></span>
+    summary: <span data-ttu-id="58c9e-102">중단 요청에 사용할 수 있는 신호입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-102">The signal which can be used to abort requests.</span></span>
     optional: true
     syntax:
       content: 'abortSignal?: AbortSignalLike'
@@ -40,7 +40,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: '<span data-ttu-id="d2835-102">{object} [customHeaders] 사용자 요청을 보내기 전에 적용 되는 사용자 지정 요청 헤더를 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="d2835-102">{object} [customHeaders] User defined custom request headers that will be applied before the request is sent.</span></span>'
+    summary: '<span data-ttu-id="58c9e-103">{object} [customHeaders] 사용자 요청을 보내기 전에 적용 되는 사용자 지정 요청 헤더를 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-103">{object} [customHeaders] User defined custom request headers that will be applied before the request is sent.</span></span>'
     optional: true
     syntax:
       content: 'customHeaders?: undefined | [key: string]: string'
@@ -55,7 +55,15 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |-
+      <span data-ttu-id="58c9e-104">보고서를 즉시 보낼지 여부를 나타내는 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-104">A flag that indicates whether the report should be sent immediately.</span></span>
+      <span data-ttu-id="58c9e-105">상태 보고서는 Health 스토어에 전달하는 Service Fabric 게이트웨이 애플리케이션에 전송됩니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-105">A health report is sent to a Service Fabric gateway Application, which forwards to the health store.</span></span>
+      <span data-ttu-id="58c9e-106">Immediate가 true로 설정된 경우 보고서는 HTTP 게이트웨이 애플리케이션이 사용 중인 패브릭 클라이언트 설정에 관계 없이 HTTP 게이트웨이에서 Health 스토어로 즉시 전송됩니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-106">If Immediate is set to true, the report is sent immediately from HTTP Gateway to the health store, regardless of the fabric client settings that the HTTP Gateway Application is using.</span></span>
+      <span data-ttu-id="58c9e-107">이는 가능한 한 빨리 보내야 하는 중요한 보고서에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-107">This is useful for critical reports that should be sent as soon as possible.</span></span>
+      <span data-ttu-id="58c9e-108">타이밍 및 기타 조건에 따라 보고서 전송이 여전히 실패할 수 있습니다. 예를 들어, HTTP 게이트웨이가 닫혀 있거나 메시지가 게이트웨이에 도달하지 않는 경우입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-108">Depending on timing and other conditions, sending the report may still fail, for example if the HTTP Gateway is closed or the message doesn't reach the Gateway.</span></span>
+      <span data-ttu-id="58c9e-109">Immediate가 false로 설정된 경우 보고서는 HTTP 게이트웨이의 상태 클라이언트 설정에 따라 전송됩니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-109">If Immediate is set to false, the report is sent based on the health client settings from the HTTP Gateway.</span></span> <span data-ttu-id="58c9e-110">따라서 HealthReportSendInterval 구성에 따라 일괄처리됩니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-110">Therefore, it will be batched according to the HealthReportSendInterval configuration.</span></span>
+      <span data-ttu-id="58c9e-111">상태 클라이언트가 상태 보고서 처리뿐만 아니라 Health 스토어로 메시지를 보고하는 상태를 최적화하도록 허용하므로 이는 권장 설정입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-111">This is the recommended setting because it allows the health client to optimize health reporting messages to health store as well as health report processing.</span></span>
+      <span data-ttu-id="58c9e-112">기본적으로 보고서는 즉시 전송되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-112">By default, reports are not sent immediately.</span></span> <span data-ttu-id="58c9e-113">기본값: false.</span><span class="sxs-lookup"><span data-stu-id="58c9e-113">Default value: false.</span></span>
     optional: true
     syntax:
       content: 'immediate?: undefined | false | true'
@@ -70,7 +78,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="d2835-103">다운로드 진행률 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="d2835-103">Callback which fires upon download progress.</span></span>
+    summary: <span data-ttu-id="58c9e-114">다운로드 진행률 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="58c9e-114">Callback which fires upon download progress.</span></span>
     optional: true
     syntax:
       content: 'onDownloadProgress?: undefined | (progress: TransferProgressEvent) => void'
@@ -85,7 +93,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="d2835-104">업로드 진행 상태 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="d2835-104">Callback which fires upon upload progress.</span></span>
+    summary: <span data-ttu-id="58c9e-115">업로드 진행 상태 시 발생 하는 콜백.</span><span class="sxs-lookup"><span data-stu-id="58c9e-115">Callback which fires upon upload progress.</span></span>
     optional: true
     syntax:
       content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
@@ -100,7 +108,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: <span data-ttu-id="d2835-105">요청 시간을 밀리초로 자동으로 종료 하기 전까지 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d2835-105">The number of milliseconds a request can take before automatically being terminated.</span></span>
+    summary: <span data-ttu-id="58c9e-116">요청 시간을 밀리초로 자동으로 종료 하기 전까지 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-116">The number of milliseconds a request can take before automatically being terminated.</span></span>
     optional: true
     syntax:
       content: 'timeout?: undefined | number'
@@ -115,7 +123,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '<span data-ttu-id="58c9e-117">시간 (초)에서 작업을 수행 하는 것에 대 한 서버 제한 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-117">The server timeout for performing the operation in seconds.</span></span> <span data-ttu-id="58c9e-118">이 시간 제한은 클라이언트는 요청한 작업을 완료할 때까지 기다릴 수 있는 기간을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-118">This timeout specifies the time duration that the client is willing to wait for the requested operation to complete.</span></span> <span data-ttu-id="58c9e-119">이 매개 변수의 기본값은 60 초입니다.</span><span class="sxs-lookup"><span data-stu-id="58c9e-119">The default value for this parameter is 60 seconds.</span></span> <span data-ttu-id="58c9e-120">기본값: 60.</span><span class="sxs-lookup"><span data-stu-id="58c9e-120">Default value: 60.</span></span>'
     optional: true
     syntax:
       content: 'timeoutParameter?: undefined | number'

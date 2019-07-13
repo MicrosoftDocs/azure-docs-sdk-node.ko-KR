@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy'
+    name: ServiceTypeHealthPolicy
+    fullName: ServiceTypeHealthPolicy
+    children:
+      - '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyPartitionsPerService'
+      - '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyReplicasPerPartition'
+      - '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyServices'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="edbb2-101">서비스 유형에 속한 서비스의 상태를 평가하는 데 사용되는 상태 정책을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-101">Represents the health policy used to evaluate the health of services belonging to a service type.</span></span>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyPartitionsPerService'
+    name: maxPercentUnhealthyPartitionsPerService
+    fullName: maxPercentUnhealthyPartitionsPerService
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="edbb2-102">최대 서비스 당 비정상 파티션 비율입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-102">The maximum allowed percentage of unhealthy partitions per service.</span></span> <span data-ttu-id="edbb2-103">허용 되는 값은 바이트 값 100 백분율 허용 되는 최대값을 나타내는 0에서 오류를 서비스 하기 전에 비정상이 될 수 있는 파티션의 비율 간주 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-103">Allowed values are Byte values from zero to 100 The percentage represents the maximum tolerated percentage of partitions that can be unhealthy before the service is considered in error.</span></span>
+      <span data-ttu-id="edbb2-104">켜지 이지만 하나 이상의 비정상 파티션, 하는 경우 상태 경고로 평가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-104">If the percentage is respected but there is at least one unhealthy partition, the health is evaluated as Warning.</span></span>
+      <span data-ttu-id="edbb2-105">백분율 비정상 파티션 수가 서비스에서 파티션의 총 수로 나눠 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-105">The percentage is calculated by dividing the number of unhealthy partitions over the total number of partitions in the service.</span></span>
+      <span data-ttu-id="edbb2-106">적은 수의 파티션에 대 한 오류를 허용 하는 계산 반올림 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-106">The computation rounds up to tolerate one failure on small numbers of partitions.</span></span> <span data-ttu-id="edbb2-107">기본 비율은 0입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-107">Default percentage is zero.</span></span> <span data-ttu-id="edbb2-108">기본값: 0.</span><span class="sxs-lookup"><span data-stu-id="edbb2-108">Default value: 0.</span></span>
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyPartitionsPerService?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyReplicasPerPartition'
+    name: maxPercentUnhealthyReplicasPerPartition
+    fullName: maxPercentUnhealthyReplicasPerPartition
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="edbb2-109">최대 파티션당 비정상 복제본 비율입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-109">The maximum allowed percentage of unhealthy replicas per partition.</span></span> <span data-ttu-id="edbb2-110">허용 되는 값은 0부터 100 바이트 값입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-110">Allowed values are Byte values from zero to 100.</span></span>
+      <span data-ttu-id="edbb2-111">복제본이 될 수 있는 정상 파티션을 오류로 간주 되기 전에 최대 허용된 비율을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-111">The percentage represents the maximum tolerated percentage of replicas that can be unhealthy before the partition is considered in error.</span></span>
+      <span data-ttu-id="edbb2-112">백분율 켜지 나 비정상 복제본이 하나 이상 있는지를 하는 경우 상태 경고로 평가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-112">If the percentage is respected but there is at least one unhealthy replica, the health is evaluated as Warning.</span></span>
+      <span data-ttu-id="edbb2-113">백분율 비정상 복제본 수가 파티션에서 복제본의 총 수로 나눠 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-113">The percentage is calculated by dividing the number of unhealthy replicas over the total number of replicas in the partition.</span></span>
+      <span data-ttu-id="edbb2-114">적은 수의 복제본에서 실패를 허용할 수는 계산 반올림 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-114">The computation rounds up to tolerate one failure on small numbers of replicas.</span></span> <span data-ttu-id="edbb2-115">기본 비율은 0입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-115">Default percentage is zero.</span></span> <span data-ttu-id="edbb2-116">기본값: 0.</span><span class="sxs-lookup"><span data-stu-id="edbb2-116">Default value: 0.</span></span>
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyReplicasPerPartition?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy.maxPercentUnhealthyServices'
+    name: maxPercentUnhealthyServices
+    fullName: maxPercentUnhealthyServices
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      <span data-ttu-id="edbb2-117">최대 비정상 서비스 비율입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-117">The maximum allowed percentage of unhealthy services.</span></span> <span data-ttu-id="edbb2-118">허용 되는 값은 0부터 100 바이트 값입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-118">Allowed values are Byte values from zero to 100.</span></span>
+      <span data-ttu-id="edbb2-119">비정상이 될 수는 응용 프로그램 오류로 간주 되기 전에 서비스의 최대 허용된 비율을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-119">The percentage represents the maximum tolerated percentage of services that can be unhealthy before the application is considered in error.</span></span>
+      <span data-ttu-id="edbb2-120">켜지 이지만 하나 이상의 비정상 서비스에 상태를 경고로 평가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-120">If the percentage is respected but there is at least one unhealthy service, the health is evaluated as Warning.</span></span>
+      <span data-ttu-id="edbb2-121">이 특정 서비스 유형의 비정상 서비스 수가 특정 서비스 유형의 서비스의 총 수로 나눠 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-121">This is calculated by dividing the number of unhealthy services of the specific service type over the total number of services of the specific service type.</span></span>
+      <span data-ttu-id="edbb2-122">적은 수의 서비스에서 실패를 허용할 수는 계산 반올림 됩니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-122">The computation rounds up to tolerate one failure on small numbers of services.</span></span> <span data-ttu-id="edbb2-123">기본 비율은 0입니다.</span><span class="sxs-lookup"><span data-stu-id="edbb2-123">Default percentage is zero.</span></span> <span data-ttu-id="edbb2-124">기본값: 0.</span><span class="sxs-lookup"><span data-stu-id="edbb2-124">Default value: 0.</span></span>
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyServices?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
