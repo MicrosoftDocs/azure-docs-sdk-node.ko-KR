@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ApplicationHealthPolicy'
+    name: ApplicationHealthPolicy
+    fullName: ApplicationHealthPolicy
+    children:
+      - '@azure/servicefabric.ApplicationHealthPolicy.considerWarningAsError'
+      - '@azure/servicefabric.ApplicationHealthPolicy.defaultServiceTypeHealthPolicy'
+      - '@azure/servicefabric.ApplicationHealthPolicy.maxPercentUnhealthyDeployedApplications'
+      - '@azure/servicefabric.ApplicationHealthPolicy.serviceTypeHealthPolicyMap'
+    langs:
+      - typeScript
+    type: interface
+    summary: 응용 프로그램 또는 해당 자식 엔터티 상태를 평가 하는 데 사용 되는 상태 정책을 정의 합니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ApplicationHealthPolicy.considerWarningAsError'
+    name: considerWarningAsError
+    fullName: considerWarningAsError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '경고가 오류와 동일한 심각도로 처리되는지 여부를 나타냅니다. 기본값: false.'
+    optional: true
+    syntax:
+      content: 'considerWarningAsError?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ApplicationHealthPolicy.defaultServiceTypeHealthPolicy'
+    name: defaultServiceTypeHealthPolicy
+    fullName: defaultServiceTypeHealthPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 기본적으로 서비스 유형 상태 평가에 사용 되는 상태 정책입니다.
+    optional: true
+    syntax:
+      content: 'defaultServiceTypeHealthPolicy?: ServiceTypeHealthPolicy'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceTypeHealthPolicy'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ApplicationHealthPolicy.maxPercentUnhealthyDeployedApplications'
+    name: maxPercentUnhealthyDeployedApplications
+    fullName: maxPercentUnhealthyDeployedApplications
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      비정상적인 배포 애플리케이션의 최대 허용치입니다. 허용 되는 값은 0부터 100 바이트 값입니다.
+      비정상이 될 수는 응용 프로그램 오류로 간주 되기 전에 배포 된 응용 프로그램의 최대 허용된 비율을 나타냅니다.
+      이 응용 프로그램은 현재 배포 위치에 클러스터의 노드 수가 비정상적인 배포 응용 프로그램의 수로 나눠 계산 됩니다.
+      계산값은 적은 수의 노드에서 오류 하나를 허용할 수 있도록 반올림됩니다. 기본 비율은 0입니다. 기본값: 0.
+    optional: true
+    syntax:
+      content: 'maxPercentUnhealthyDeployedApplications?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ApplicationHealthPolicy.serviceTypeHealthPolicyMap'
+    name: serviceTypeHealthPolicyMap
+    fullName: serviceTypeHealthPolicyMap
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 형식 이름 단위 서비스 형식 상태 정책으로 맵. 맵은 기본적으로 비어 있습니다.
+    optional: true
+    syntax:
+      content: 'serviceTypeHealthPolicyMap?: ServiceTypeHealthPolicyMapItem[]'
+      return:
+        type:
+          - '@azure/servicefabric.ServiceTypeHealthPolicyMapItem[]'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicy'
+    name: ServiceTypeHealthPolicy
+    spec.typeScript:
+      - name: ServiceTypeHealthPolicy
+        fullName: ServiceTypeHealthPolicy
+        uid: '@azure/servicefabric.ServiceTypeHealthPolicy'
+  - uid: '@azure/servicefabric.ServiceTypeHealthPolicyMapItem[]'
+    name: 'ServiceTypeHealthPolicyMapItem[]'
+    spec.typeScript:
+      - name: ServiceTypeHealthPolicyMapItem
+        fullName: ServiceTypeHealthPolicyMapItem
+        uid: '@azure/servicefabric.ServiceTypeHealthPolicyMapItem'
+      - name: '[]'
+        fullName: '[]'

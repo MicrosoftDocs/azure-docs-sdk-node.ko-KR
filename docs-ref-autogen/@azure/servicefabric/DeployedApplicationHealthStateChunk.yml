@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.DeployedApplicationHealthStateChunk'
+    name: DeployedApplicationHealthStateChunk
+    fullName: DeployedApplicationHealthStateChunk
+    children:
+      - '@azure/servicefabric.DeployedApplicationHealthStateChunk.deployedServicePackageHealthStateChunks'
+      - '@azure/servicefabric.DeployedApplicationHealthStateChunk.healthState'
+      - '@azure/servicefabric.DeployedApplicationHealthStateChunk.nodeName'
+    langs:
+      - typeScript
+    type: interface
+    summary: '응용 프로그램이 배포 되는 노드를 포함 하는 배포 된 응용 프로그램의 상태 청크를, 집계 된 성능 상태 및 청크 쿼리 설명 필터를 준수 하는 모든 배포 된 서비스 패키지를 나타냅니다.'
+    extends:
+      name: '@azure/servicefabric.EntityHealthStateChunk'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealthStateChunk.deployedServicePackageHealthStateChunks'
+    name: deployedServicePackageHealthStateChunks
+    fullName: deployedServicePackageHealthStateChunks
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 배포 된 서비스 패키지 상태 청크 배포 된 응용 프로그램에 속하는 클러스터 상태에 있는 필터를 준수 하는 목록을 청크 쿼리 설명 합니다.
+    optional: true
+    syntax:
+      content: 'deployedServicePackageHealthStateChunks?: DeployedServicePackageHealthStateChunkList'
+      return:
+        type:
+          - '@azure/servicefabric.DeployedServicePackageHealthStateChunkList'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealthStateChunk.healthState'
+    name: healthState
+    fullName: healthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는'''
+    optional: true
+    syntax:
+      content: 'healthState?: HealthState'
+      return:
+        type:
+          - '@azure/servicefabric.HealthState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealthStateChunk.nodeName'
+    name: nodeName
+    fullName: nodeName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 응용 프로그램이 배포 되는 노드의 이름입니다.
+    optional: true
+    syntax:
+      content: 'nodeName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.EntityHealthStateChunk'
+    name: EntityHealthStateChunk
+    spec.typeScript:
+      - name: EntityHealthStateChunk
+        fullName: EntityHealthStateChunk
+        uid: '@azure/servicefabric.EntityHealthStateChunk'
+  - uid: '@azure/servicefabric.DeployedServicePackageHealthStateChunkList'
+    name: DeployedServicePackageHealthStateChunkList
+    spec.typeScript:
+      - name: DeployedServicePackageHealthStateChunkList
+        fullName: DeployedServicePackageHealthStateChunkList
+        uid: '@azure/servicefabric.DeployedServicePackageHealthStateChunkList'
+  - uid: '@azure/servicefabric.HealthState'
+    name: HealthState
+    spec.typeScript:
+      - name: HealthState
+        fullName: HealthState
+        uid: '@azure/servicefabric.HealthState'

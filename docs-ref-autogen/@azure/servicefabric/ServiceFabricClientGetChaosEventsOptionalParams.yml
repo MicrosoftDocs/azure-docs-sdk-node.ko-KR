@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: 선택적 매개 변수입니다.
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -43,7 +43,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 연속 토큰 매개 변수는 다음 결과 집합을 얻는 데 사용됩니다. 공백 값이 아닌 연속 토큰은 시스템의 결과가 단일 응답에 맞지 않는 경우 API의 응답에 포함됩니다. 이 값이 다음 API 호출에 전달되면 API는 다음 결과 집합을 반환합니다. 결과가 더 이상 없으면 연속 토큰에 값이 포함되지 않습니다. 이 매개 변수의 값은 URL 인코딩이 되지 말아야 합니다.
     optional: true
     syntax:
       content: 'continuationToken?: undefined | string'
@@ -73,7 +73,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'Chaos 보고서가 생성될 시간 범위의 종료 시간을 나타내는 Windows 파일 시간입니다. 자세한 내용은 [DateTime.ToFileTimeUtc 메서드](https://msdn.microsoft.com/library/system.datetime.tofiletimeutc(v=vs.110).aspx)를 참조하세요.'
     optional: true
     syntax:
       content: 'endTimeUtc?: undefined | string'
@@ -88,7 +88,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '페이징된 쿼리의 일부로 반환될 결과의 최대 수입니다. 이 매개 변수는 반환되는 결과 수에 상한값을 정의합니다. 반환되는 결과는 구성에 정의된 최대 메시지 크기 제한에 따라 메시지에 맞지 않는 경우 지정된 최대의 결과보다 작을 수 있습니다. 이 매개 변수가 0이거나 지정되지 않은 경우 페이징된 쿼리는 반환 메시지에 맞는 가능한 많은 결과를 포함합니다. 기본값: 0.'
     optional: true
     syntax:
       content: 'maxResults?: undefined | number'
@@ -133,7 +133,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'Chaos 보고서가 생성될 시간 범위의 시작 시간을 나타내는 Windows 파일 시간입니다. 자세한 내용은 [DateTime.ToFileTimeUtc 메서드](https://msdn.microsoft.com/library/system.datetime.tofiletimeutc(v=vs.110).aspx)를 참조하세요.'
     optional: true
     syntax:
       content: 'startTimeUtc?: undefined | string'
@@ -163,7 +163,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: '시간 (초)에서 작업을 수행 하는 것에 대 한 서버 제한 시간입니다. 이 시간 제한은 클라이언트는 요청한 작업을 완료할 때까지 기다릴 수 있는 기간을 지정 합니다. 이 매개 변수의 기본값은 60 초입니다. 기본값: 60.'
     optional: true
     syntax:
       content: 'timeoutParameter?: undefined | number'

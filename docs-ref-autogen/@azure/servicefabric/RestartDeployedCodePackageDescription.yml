@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.RestartDeployedCodePackageDescription'
+    name: RestartDeployedCodePackageDescription
+    fullName: RestartDeployedCodePackageDescription
+    children:
+      - '@azure/servicefabric.RestartDeployedCodePackageDescription.codePackageInstanceId'
+      - '@azure/servicefabric.RestartDeployedCodePackageDescription.codePackageName'
+      - '@azure/servicefabric.RestartDeployedCodePackageDescription.serviceManifestName'
+      - '@azure/servicefabric.RestartDeployedCodePackageDescription.servicePackageActivationId'
+    langs:
+      - typeScript
+    type: interface
+    summary: Service Fabric 노드에서 배포 된 코드 패키지를 다시 시작 하는 것에 대 한 설명을 정의 합니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RestartDeployedCodePackageDescription.codePackageInstanceId'
+    name: codePackageInstanceId
+    fullName: codePackageInstanceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      현재 진입점을 실행 하는 것에 대 한 인스턴스 ID입니다. 지점을 지정 하는 경우 코드 패키지 설치 항목에 대 한 첫 번째 실행 하 고 진입점을 시작한 주 완료 된 후.
+      해당 인스턴스 ID는 변경, 각 시간 진입점 실행 파일을 실행 됩니다. 0은 코드 패키지 인스턴스 ID와 전달 되 면 API를 현재 실행 중인 모든 인스턴스 ID 사용 하 여 코드 패키지 다시 시작 됩니다.
+      API는 현재 인스턴스 ID를 전달 된 인스턴스 id입니다. 일치 하는 경우에 코드 패키지 다시 시작에 0을 전달 하는 것 보다 인스턴스는 다른 ID, 하는 경우
+      참고, 정확한 인스턴스 ID를 전달 (0 아님) API에서 더 안전 합니다 때문에 경우 코드 패키지의 최대 한 번 다시 시작 되도록 합니다.
+    syntax:
+      content: 'codePackageInstanceId: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RestartDeployedCodePackageDescription.codePackageName'
+    name: codePackageName
+    fullName: codePackageName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 서비스 매니페스트에 정의 된 코드 패키지의 이름입니다.
+    syntax:
+      content: 'codePackageName: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RestartDeployedCodePackageDescription.serviceManifestName'
+    name: serviceManifestName
+    fullName: serviceManifestName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 코드 패키지를 지정 하는 서비스 매니페스트의 이름입니다.
+    syntax:
+      content: 'serviceManifestName: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RestartDeployedCodePackageDescription.servicePackageActivationId'
+    name: servicePackageActivationId
+    fullName: servicePackageActivationId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '배포 된 서비스 패키지의 ActivationId 합니다. 서비스를 만들 때 지정한 ServicePackageActivationMode ''SharedProcess'' (또는 지정 되지 않은 경우 기본적으로 ''SharedProcess''), 값 ServicePackageActivationId의 경우 항상 빈 문자열입니다.'
+    optional: true
+    syntax:
+      content: 'servicePackageActivationId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'

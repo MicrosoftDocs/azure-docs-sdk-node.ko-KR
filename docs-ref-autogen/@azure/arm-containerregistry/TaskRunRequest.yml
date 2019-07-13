@@ -5,9 +5,9 @@ items:
     fullName: TaskRunRequest
     children:
       - '@azure/arm-containerregistry.TaskRunRequest.isArchiveEnabled'
-      - '@azure/arm-containerregistry.TaskRunRequest.taskName'
+      - '@azure/arm-containerregistry.TaskRunRequest.overrideTaskStepProperties'
+      - '@azure/arm-containerregistry.TaskRunRequest.taskId'
       - '@azure/arm-containerregistry.TaskRunRequest.type'
-      - '@azure/arm-containerregistry.TaskRunRequest.values'
     langs:
       - typeScript
     type: interface
@@ -28,16 +28,31 @@ items:
         type:
           - undefined | false | true
     package: '@azure/arm-containerregistry'
-  - uid: '@azure/arm-containerregistry.TaskRunRequest.taskName'
-    name: taskName
-    fullName: taskName
+  - uid: '@azure/arm-containerregistry.TaskRunRequest.overrideTaskStepProperties'
+    name: overrideTaskStepProperties
+    fullName: overrideTaskStepProperties
     children: []
     langs:
       - typeScript
     type: property
-    summary: 지연 되어야 하는 실행 하는 작업의 이름입니다.
+    summary: 집합 작업을 실행할 때 전달 될 수 있는 재정의 가능한 매개 변수입니다.
+    optional: true
     syntax:
-      content: 'taskName: string'
+      content: 'overrideTaskStepProperties?: OverrideTaskStepProperties'
+      return:
+        type:
+          - '@azure/arm-containerregistry.OverrideTaskStepProperties'
+    package: '@azure/arm-containerregistry'
+  - uid: '@azure/arm-containerregistry.TaskRunRequest.taskId'
+    name: taskId
+    fullName: taskId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 큐에서 대기 하는 실행에 대 한 작업의 리소스 ID가 있습니다.
+    syntax:
+      content: 'taskId: string'
       return:
         type:
           - string
@@ -56,27 +71,10 @@ items:
         type:
           - '"TaskRunRequest"'
     package: '@azure/arm-containerregistry'
-  - uid: '@azure/arm-containerregistry.TaskRunRequest.values'
-    name: values
-    fullName: values
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: 작업을 실행할 때 전달 될 수 있는 재정의 가능한 값의 컬렉션입니다.
-    optional: true
-    syntax:
-      content: 'values?: SetValue[]'
-      return:
-        type:
-          - '@azure/arm-containerregistry.SetValue[]'
-    package: '@azure/arm-containerregistry'
 references:
-  - uid: '@azure/arm-containerregistry.SetValue[]'
-    name: 'SetValue[]'
+  - uid: '@azure/arm-containerregistry.OverrideTaskStepProperties'
+    name: OverrideTaskStepProperties
     spec.typeScript:
-      - name: SetValue
-        fullName: SetValue
-        uid: '@azure/arm-containerregistry.SetValue'
-      - name: '[]'
-        fullName: '[]'
+      - name: OverrideTaskStepProperties
+        fullName: OverrideTaskStepProperties
+        uid: '@azure/arm-containerregistry.OverrideTaskStepProperties'

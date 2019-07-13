@@ -1,0 +1,357 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.RepairTask'
+    name: RepairTask
+    fullName: RepairTask
+    children:
+      - '@azure/servicefabric.RepairTask.action'
+      - '@azure/servicefabric.RepairTask.description'
+      - '@azure/servicefabric.RepairTask.executor'
+      - '@azure/servicefabric.RepairTask.executorData'
+      - '@azure/servicefabric.RepairTask.flags'
+      - '@azure/servicefabric.RepairTask.history'
+      - '@azure/servicefabric.RepairTask.impact'
+      - '@azure/servicefabric.RepairTask.performPreparingHealthCheck'
+      - '@azure/servicefabric.RepairTask.performRestoringHealthCheck'
+      - '@azure/servicefabric.RepairTask.preparingHealthCheckState'
+      - '@azure/servicefabric.RepairTask.restoringHealthCheckState'
+      - '@azure/servicefabric.RepairTask.resultCode'
+      - '@azure/servicefabric.RepairTask.resultDetails'
+      - '@azure/servicefabric.RepairTask.resultStatus'
+      - '@azure/servicefabric.RepairTask.state'
+      - '@azure/servicefabric.RepairTask.target'
+      - '@azure/servicefabric.RepairTask.taskId'
+      - '@azure/servicefabric.RepairTask.version'
+    langs:
+      - typeScript
+    type: interface
+    summary: |
+      어떤 유형의 복구 요청한, 진행률 새로운 기능 및 해당 최종 결과 던에 대 한 정보를 포함 하는 복구 작업을 나타냅니다.
+      이 유형은 Service Fabric 플랫폼; 지원 코드에서 직접 사용할 아닙니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.action'
+    name: action
+    fullName: action
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 요청 된 복구 작업입니다. 복구 작업을 만들면 하 고 변경할 수 없는 한 번 설정 된 경우 지정 되어야 합니다.
+    syntax:
+      content: 'action: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.description'
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      설명의 목적 복구 작업 또는 기타 정보 제공 용 이므로 세부 정보입니다.
+      설정할 수 있습니다 복구 작업을 만들고 변경할 수 없는 경우 한 번 설정 합니다.
+    optional: true
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.executor'
+    name: executor
+    fullName: executor
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복구 실행 기의 이름입니다. 요청 됨 및 최신 상태를 지정 해야 하며 변경할 수 없는 한 번 설정 합니다.
+    optional: true
+    syntax:
+      content: 'executor?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.executorData'
+    name: executorData
+    fullName: executorData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복구 실행 기의 내부 상태를 저장 하는 데 사용할 수 있는 데이터 문자열입니다.
+    optional: true
+    syntax:
+      content: 'executorData?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.flags'
+    name: flags
+    fullName: flags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      비트 OR 복구 작업의 상태에 대 한 추가 세부 정보를 제공 하는 다음 값 중입니다.
+      - 1-복구의 취소가 요청 되었는지
+      - 2-중단 복구의 요청 했습니다.
+      - 4-복구의 승인 된 클라이언트 요청을 통해 강제 적용
+    optional: true
+    syntax:
+      content: 'flags?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.history'
+    name: history
+    fullName: history
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      복구 작업의 상태 전환의 타임 스탬프를 포함 하는 개체입니다.
+      이러한 타임 스탬프 시스템에 의해 업데이트 되 고 직접 수정할 수 없습니다.
+    optional: true
+    syntax:
+      content: 'history?: RepairTaskHistory'
+      return:
+        type:
+          - '@azure/servicefabric.RepairTaskHistory'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.impact'
+    name: impact
+    fullName: impact
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      영향을 줄 개체 시스템은 복구의 실행을 승인 하기 전에 복구의 영향에 대 한 준비를 수행할 작업을 결정 합니다.
+      영향을 준비 상태로 전환 될 때 복구 실행 자가 지정 해야 하 고 변경할 수 없는 한 번 설정 됩니다.
+    optional: true
+    syntax:
+      content: 'impact?: RepairImpactDescriptionBaseUnion'
+      return:
+        type:
+          - '@azure/servicefabric.RepairImpactDescriptionBaseUnion'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.performPreparingHealthCheck'
+    name: performPreparingHealthCheck
+    fullName: performPreparingHealthCheck
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복구 작업은 준비 상태가 될 때 상태 검사를 수행 하는 경우를 결정 하는 값입니다.
+    optional: true
+    syntax:
+      content: 'performPreparingHealthCheck?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.performRestoringHealthCheck'
+    name: performRestoringHealthCheck
+    fullName: performRestoringHealthCheck
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복구 작업은 Restoring 상태가 될 때 상태 검사를 수행 하는 경우를 결정 하는 값입니다.
+    optional: true
+    syntax:
+      content: 'performRestoringHealthCheck?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.preparingHealthCheckState'
+    name: preparingHealthCheckState
+    fullName: preparingHealthCheckState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      복구 작업은 준비 상태인 경우 상태 검사의 워크플로 상태입니다.
+      가능한 값은 다음과 같습니다. 'NotStarted', 'InProgress', 'Succeeded', 'Skipped', 'TimedOut'
+    optional: true
+    syntax:
+      content: 'preparingHealthCheckState?: RepairTaskHealthCheckState'
+      return:
+        type:
+          - '@azure/servicefabric.RepairTaskHealthCheckState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.restoringHealthCheckState'
+    name: restoringHealthCheckState
+    fullName: restoringHealthCheckState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      복구 작업은 Restoring 상태에 있으면 상태 검사의 워크플로 상태입니다.
+      가능한 값은 다음과 같습니다. 'NotStarted', 'InProgress', 'Succeeded', 'Skipped', 'TimedOut'
+    optional: true
+    syntax:
+      content: 'restoringHealthCheckState?: RepairTaskHealthCheckState'
+      return:
+        type:
+          - '@azure/servicefabric.RepairTaskHealthCheckState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.resultCode'
+    name: resultCode
+    fullName: resultCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      복구 작업 실행의 결과 대 한 추가 세부 정보를 제공 하는 숫자 값입니다.
+      복원 및 이후 상태에 지정할 수 있으며 변경할 수 없는 한 번 설정 합니다.
+    optional: true
+    syntax:
+      content: 'resultCode?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.resultDetails'
+    name: resultDetails
+    fullName: resultDetails
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      복구 작업 실행의 결과 대 한 추가 정보를 제공 하는 문자열입니다.
+      복원 및 이후 상태에 지정할 수 있으며 변경할 수 없는 한 번 설정 합니다.
+    optional: true
+    syntax:
+      content: 'resultDetails?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.resultStatus'
+    name: resultStatus
+    fullName: resultStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '복구 작업 실행의 전체 결과 설명 하는 값입니다. 뒷부분에 나오는 상태를 확인 하 고 복원 중에 지정 해야 하며 변경할 수 없는 한 번 설정 합니다. 가능한 값은 다음과 같습니다. ''Invalid'', '' 성공 '', ''취소'', ''중단'', ''실패'', ''보류 중'''
+    optional: true
+    syntax:
+      content: 'resultStatus?: ResultStatus'
+      return:
+        type:
+          - '@azure/servicefabric.ResultStatus'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.state'
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '복구 작업의 워크플로 상태입니다. 유효한 초기 상태는 Created, 요청 됨, 준비 중입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''생성''을 ''요청 된'', ''준비'', '' 승인 된 '', ''실행'', ''복원'', ''완료'''
+    syntax:
+      content: 'state: State'
+      return:
+        type:
+          - '@azure/servicefabric.State'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.target'
+    name: target
+    fullName: target
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      대상 개체는 시스템은 복구의 실행을 승인 하기 전에 복구의 영향에 대 한 준비를 수행할 작업을 결정 합니다.
+      설정할 수 있습니다 복구 작업을 만들고 변경할 수 없는 경우 한 번 설정 합니다.
+    optional: true
+    syntax:
+      content: 'target?: RepairTargetDescriptionBaseUnion'
+      return:
+        type:
+          - '@azure/servicefabric.RepairTargetDescriptionBaseUnion'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.taskId'
+    name: taskId
+    fullName: taskId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 복구 작업의 ID입니다.
+    syntax:
+      content: 'taskId: string'
+      return:
+        type:
+          - string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.RepairTask.version'
+    name: version
+    fullName: version
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      복구 작업의 버전입니다.
+      새 복구 작업을 만들 때 버전을 0으로 설정 되어야 합니다.  복구 작업을 업데이트할 때 버전 낙관적 동시성 검사에 사용 됩니다.  버전은 0으로 설정 하는 경우 쓰기 충돌에 대 한 업데이트를 확인 하지 않습니다.  복구 작업의 실제 현재 버전과이 값과 일치 하는 경우에 업데이트가 성공한 다음 버전 0이 아닌 값으로 설정 된 경우
+    optional: true
+    syntax:
+      content: 'version?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.RepairTaskHistory'
+    name: RepairTaskHistory
+    spec.typeScript:
+      - name: RepairTaskHistory
+        fullName: RepairTaskHistory
+        uid: '@azure/servicefabric.RepairTaskHistory'
+  - uid: '@azure/servicefabric.RepairImpactDescriptionBaseUnion'
+    name: RepairImpactDescriptionBaseUnion
+    spec.typeScript:
+      - name: RepairImpactDescriptionBaseUnion
+        fullName: RepairImpactDescriptionBaseUnion
+        uid: '@azure/servicefabric.RepairImpactDescriptionBaseUnion'
+  - uid: '@azure/servicefabric.RepairTaskHealthCheckState'
+    name: RepairTaskHealthCheckState
+    spec.typeScript:
+      - name: RepairTaskHealthCheckState
+        fullName: RepairTaskHealthCheckState
+        uid: '@azure/servicefabric.RepairTaskHealthCheckState'
+  - uid: '@azure/servicefabric.ResultStatus'
+    name: ResultStatus
+    spec.typeScript:
+      - name: ResultStatus
+        fullName: ResultStatus
+        uid: '@azure/servicefabric.ResultStatus'
+  - uid: '@azure/servicefabric.State'
+    name: State
+    spec.typeScript:
+      - name: State
+        fullName: State
+        uid: '@azure/servicefabric.State'
+  - uid: '@azure/servicefabric.RepairTargetDescriptionBaseUnion'
+    name: RepairTargetDescriptionBaseUnion
+    spec.typeScript:
+      - name: RepairTargetDescriptionBaseUnion
+        fullName: RepairTargetDescriptionBaseUnion
+        uid: '@azure/servicefabric.RepairTargetDescriptionBaseUnion'

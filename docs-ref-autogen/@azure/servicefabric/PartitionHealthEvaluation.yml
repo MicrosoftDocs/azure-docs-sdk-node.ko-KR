@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.PartitionHealthEvaluation'
+    name: PartitionHealthEvaluation
+    fullName: PartitionHealthEvaluation
+    children:
+      - '@azure/servicefabric.PartitionHealthEvaluation.aggregatedHealthState'
+      - '@azure/servicefabric.PartitionHealthEvaluation.description'
+      - '@azure/servicefabric.PartitionHealthEvaluation.kind'
+      - '@azure/servicefabric.PartitionHealthEvaluation.partitionId'
+      - '@azure/servicefabric.PartitionHealthEvaluation.unhealthyEvaluations'
+    langs:
+      - typeScript
+    type: interface
+    summary: 데이터 및 상태 저장소에서 상태 평가에 사용 된 알고리즘에 대 한 정보를 포함 하는 파티션에 대 한 상태 평가 나타냅니다. 평가 집계 된 상태를 오류 또는 경고 인 경우에 반환 됩니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthEvaluation.aggregatedHealthState'
+    name: aggregatedHealthState
+    fullName: aggregatedHealthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는'''
+    optional: true
+    syntax:
+      content: 'aggregatedHealthState?: HealthState'
+      return:
+        type:
+          - '@azure/servicefabric.HealthState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthEvaluation.description'
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 평가 과정의 요약을 나타내는 상태 평가 대 한 설명입니다.
+    optional: true
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthEvaluation.kind'
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: "Partition"'
+      return:
+        type:
+          - '"Partition"'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthEvaluation.partitionId'
+    name: partitionId
+    fullName: partitionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 개체에 의해 설명 된 상태 평가 파티션의 id입니다.
+    optional: true
+    syntax:
+      content: 'partitionId?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthEvaluation.unhealthyEvaluations'
+    name: unhealthyEvaluations
+    fullName: unhealthyEvaluations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 파티션의 현재 집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다. 비정상 평가 유형의 ReplicasHealthEvaluation 또는 EventHealthEvaluation 수 있습니다.
+    optional: true
+    syntax:
+      content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+      return:
+        type:
+          - '@azure/servicefabric.HealthEvaluationWrapper[]'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.HealthState'
+    name: HealthState
+    spec.typeScript:
+      - name: HealthState
+        fullName: HealthState
+        uid: '@azure/servicefabric.HealthState'
+  - uid: '@azure/servicefabric.HealthEvaluationWrapper[]'
+    name: 'HealthEvaluationWrapper[]'
+    spec.typeScript:
+      - name: HealthEvaluationWrapper
+        fullName: HealthEvaluationWrapper
+        uid: '@azure/servicefabric.HealthEvaluationWrapper'
+      - name: '[]'
+        fullName: '[]'

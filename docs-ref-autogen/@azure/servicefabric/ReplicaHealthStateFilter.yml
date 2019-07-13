@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ReplicaHealthStateFilter'
+    name: ReplicaHealthStateFilter
+    fullName: ReplicaHealthStateFilter
+    children:
+      - '@azure/servicefabric.ReplicaHealthStateFilter.healthStateFilter'
+      - '@azure/servicefabric.ReplicaHealthStateFilter.replicaOrInstanceIdFilter'
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      복제본 클러스터 상태 청크에서 파티션의 자식으로 포함 해야 하는지 여부를 결정 하기 위한 일치 하는 조건을 정의 합니다.
+      복제본은 부모 엔터티 클러스터 상태 청크 쿼리 설명에 지정 된 필터와 일치 하는 경우에 반환 됩니다. 부모 파티션, 서비스 및 응용 프로그램은 클러스터 상태 청크에 포함 되어야 합니다.
+      필터 중 하나의 0 매칭 해당 속성에 따라 하나 이상의 복제본입니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ReplicaHealthStateFilter.healthStateFilter'
+    name: healthStateFilter
+    fullName: healthStateFilter
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      복제본의 상태에 대 한 필터입니다. 원하는 상태를 일치 하는 경우 복제본을 선택 수 있습니다.
+      가능한 값은 다음 상태 중 하나의 정수 값입니다. 필터와 일치 하는 복제본만 반환 됩니다. 모든 복제본은 부모 파티션 집계 상태를 평가 하는 데 사용 됩니다.
+      지정 하지 않으면 기본값은 None, 복제본 ID를 지정 하지 않으면입니다. 필터에는 기본값이 복제본 ID가 지정 하는 경우 일치 하는 복제본이 반환 됩니다.
+      상태 값은 플래그 기반 열거형이므로 값은 비트 OR 연산자를 사용하여 구한 값의 조합일 수 있습니다.
+      예를 들어 제공 된 값이 6 이면 HealthState 값 확인 (2) 및 (4) 경고를 사용 하 여 복제본과 일치 합니다.
+      - Default-기본값. 모든 HealthState와 일치합니다. 값은 0입니다.
+      - None-모든 HealthState 값과 일치 하지 않는 필터입니다. 주어진 상태 컬렉션에 대해 결과를 반환하지 않기 위해 사용됩니다. 값은 1입니다.
+      - 확인-는 일치 Ok 인 입력과 필터 HealthState 값이 있습니다. 값은 2입니다.
+      - 경고-필터 값 Warning를 HealthState 인 입력과 일치 하는입니다. 값은 4입니다.
+      - Error-HealthState 값이 error 인 입력과 일치 하는 필터입니다. 값은 8입니다.
+      - All-모든 HealthState 값의 입력과 일치 하는 필터입니다. 값은 65535입니다. 기본값: 0.
+    optional: true
+    syntax:
+      content: 'healthStateFilter?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ReplicaHealthStateFilter.replicaOrInstanceIdFilter'
+    name: replicaOrInstanceIdFilter
+    fullName: replicaOrInstanceIdFilter
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      상태 저장 서비스 복제본 또는 필터와 일치 하는 상태 비저장 서비스 인스턴스 id입니다. 필터는 존재 하는 경우 지정된 된 복제본에만 적용 됩니다.
+      복제본이 없는 경우이 필터를 기반으로 하는 클러스터 상태 청크에서 복제본이 없는 반환 됩니다.
+      복제본이 있는 경우 다른 필터 속성을 반영 하기는 클러스터 상태 청크에서 포함 됩니다.
+      지정 하지 않으면 (있는 경우) 부모 필터와 일치 하는 모든 복제본 고려 되 고 상태 상태 필터와 같은 다른 필터 멤버와 일치 시킵니다.
+    optional: true
+    syntax:
+      content: 'replicaOrInstanceIdFilter?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'

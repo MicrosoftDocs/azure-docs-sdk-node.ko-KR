@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.PartitionHealthStateFilter'
+    name: PartitionHealthStateFilter
+    fullName: PartitionHealthStateFilter
+    children:
+      - '@azure/servicefabric.PartitionHealthStateFilter.healthStateFilter'
+      - '@azure/servicefabric.PartitionHealthStateFilter.partitionIdFilter'
+      - '@azure/servicefabric.PartitionHealthStateFilter.replicaFilters'
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      파티션을 클러스터 상태 청크에서 서비스의 자식으로 포함 해야 하는지 여부를 결정 하기 위한 일치 하는 조건을 정의 합니다.
+      부모 엔터티 클러스터 상태 청크 쿼리 설명에 지정 된 필터와 일치 하는 경우에 파티션은 반환 됩니다. 부모 서비스 및 응용 프로그램은 클러스터 상태 청크에 포함 되어야 합니다.
+      필터 중 하나의 0 매칭 해당 속성에 따라 하나 이상의 파티션 합니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthStateFilter.healthStateFilter'
+    name: healthStateFilter
+    fullName: healthStateFilter
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |
+      파티션의 상태에 대 한 필터입니다. 원하는 상태를 일치 하는 경우 파티션을 선택 수 있습니다.
+      가능한 값은 다음 상태 중 하나의 정수 값입니다. 필터와 일치하는 파티션만 반환됩니다. 모든 파티션은 집계 하는 클러스터 상태를 평가 하는 데 사용 됩니다.
+      지정 하지 않으면 기본값은 None, 파티션 ID를 지정 하지 않으면입니다. 필터에는 기본값이 하 고 파티션 ID를 지정 하면 일치 하는 파티션을 반환 됩니다.
+      상태 값은 플래그 기반 열거형이므로 값은 비트 OR 연산자를 사용하여 구한 값의 조합일 수 있습니다.
+      예를 들어 제공 된 값이 6 이면 HealthState 값 확인 (2) 및 (4) 경고를 사용 하 여 파티션을 일치 합니다.
+      - Default-기본값. 모든 HealthState와 일치합니다. 값은 0입니다.
+      - None-모든 HealthState 값과 일치 하지 않는 필터입니다. 주어진 상태 컬렉션에 대해 결과를 반환하지 않기 위해 사용됩니다. 값은 1입니다.
+      - 확인-는 일치 Ok 인 입력과 필터 HealthState 값이 있습니다. 값은 2입니다.
+      - 경고-필터 값 Warning를 HealthState 인 입력과 일치 하는입니다. 값은 4입니다.
+      - Error-HealthState 값이 error 인 입력과 일치 하는 필터입니다. 값은 8입니다.
+      - All-모든 HealthState 값의 입력과 일치 하는 필터입니다. 값은 65535입니다. 기본값: 0.
+    optional: true
+    syntax:
+      content: 'healthStateFilter?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthStateFilter.partitionIdFilter'
+    name: partitionIdFilter
+    fullName: partitionIdFilter
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      필터와 일치 하는 파티션의 ID입니다. 필터는 존재 하는 경우 지정된 된 파티션을에 적용 됩니다.
+      파티션이 존재 하지 않는 경우이 필터를 기반으로 하는 클러스터 상태 청크에서 파티션 없이 반환 됩니다.
+      파티션이 존재 하는 경우 다른 필터 속성을 반영 하기는 클러스터 상태 청크에서 포함 됩니다.
+      지정 하지 않으면 (있는 경우) 부모 필터와 일치 하는 모든 파티션에서 고려 되며 상태 상태 필터와 같은 다른 필터 멤버와 일치 시킵니다.
+    optional: true
+    syntax:
+      content: 'partitionIdFilter?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.PartitionHealthStateFilter.replicaFilters'
+    name: replicaFilters
+    fullName: replicaFilters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      반환 된 클러스터 상태에 포함 되어야 하는 복제본 청크 부모 파티션에의 자식으로 지정 하는 필터의 목록을 정의 합니다. 복제본에는 부모 파티션에 필터와 일치 하는 경우에 반환 됩니다.
+      목록이 비어 있으면 복제본이 없는 반환 됩니다. 모든 복제본은 입력된 필터에 관계 없이 부모 파티션 집계 성능 상태를 평가 하는 데 사용 됩니다.
+      파티션 필터는 여러 복제본 필터를 지정할 수 있습니다.
+      예를 들어, 항상 해당 복제본 id로 식별 된 복제본을 포함 하는 다른 필터 및 상태 오류를 사용 하 여 모든 복제본을 반환 하는 필터를 지정할 수 있습니다.
+    optional: true
+    syntax:
+      content: 'replicaFilters?: ReplicaHealthStateFilter[]'
+      return:
+        type:
+          - '@azure/servicefabric.ReplicaHealthStateFilter[]'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.ReplicaHealthStateFilter[]'
+    name: 'ReplicaHealthStateFilter[]'
+    spec.typeScript:
+      - name: ReplicaHealthStateFilter
+        fullName: ReplicaHealthStateFilter
+        uid: '@azure/servicefabric.ReplicaHealthStateFilter'
+      - name: '[]'
+        fullName: '[]'

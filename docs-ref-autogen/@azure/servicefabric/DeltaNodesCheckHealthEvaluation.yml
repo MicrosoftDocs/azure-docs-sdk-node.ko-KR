@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation'
+    name: DeltaNodesCheckHealthEvaluation
+    fullName: DeltaNodesCheckHealthEvaluation
+    children:
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.aggregatedHealthState'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.baselineErrorCount'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.baselineTotalCount'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.description'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.kind'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.maxPercentDeltaUnhealthyNodes'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.totalCount'
+      - '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.unhealthyEvaluations'
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      델타 노드를 현재 집계 된 상태에 영향을 받는 각 비정상 노드에 대 한 상태 평가 포함 하에 대 한 상태 평가 나타냅니다.
+      클러스터의 집계 된 상태를 경고 하는 경우 클러스터 업그레이드 또는 오류 시 반환할 수 있습니다.
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.aggregatedHealthState'
+    name: aggregatedHealthState
+    fullName: aggregatedHealthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는'''
+    optional: true
+    syntax:
+      content: 'aggregatedHealthState?: HealthState'
+      return:
+        type:
+          - '@azure/servicefabric.HealthState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.baselineErrorCount'
+    name: baselineErrorCount
+    fullName: baselineErrorCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클러스터 업그레이드 상태 집계 된 상태부터 health store에서 다음 오류를 사용 하 여 노드 수입니다.
+    optional: true
+    syntax:
+      content: 'baselineErrorCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.baselineTotalCount'
+    name: baselineTotalCount
+    fullName: baselineTotalCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 클러스터 업그레이드 시작 부분에 health 스토어에 있는 노드의 총 수입니다.
+    optional: true
+    syntax:
+      content: 'baselineTotalCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.description'
+    name: description
+    fullName: description
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 평가 과정의 요약을 나타내는 상태 평가 대 한 설명입니다.
+    optional: true
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.kind'
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 다형 판별자
+    syntax:
+      content: 'kind: "DeltaNodesCheck"'
+      return:
+        type:
+          - '"DeltaNodesCheck"'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.maxPercentDeltaUnhealthyNodes'
+    name: maxPercentDeltaUnhealthyNodes
+    fullName: maxPercentDeltaUnhealthyNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 최대 허용치 델타 비정상 노드는 ClusterUpgradeHealthPolicy에서.
+    optional: true
+    syntax:
+      content: 'maxPercentDeltaUnhealthyNodes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.totalCount'
+    name: totalCount
+    fullName: totalCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Health 스토어에 있는 노드의 총 수입니다.
+    optional: true
+    syntax:
+      content: 'totalCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeltaNodesCheckHealthEvaluation.unhealthyEvaluations'
+    name: unhealthyEvaluations
+    fullName: unhealthyEvaluations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      집계 된 성능 상태를 발생 시킨 비정상 평가의 목록입니다.
+      집계 된 상태에 영향을 미친 모든 비정상 NodeHealthEvaluation을 포함 되어 있습니다.
+    optional: true
+    syntax:
+      content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+      return:
+        type:
+          - '@azure/servicefabric.HealthEvaluationWrapper[]'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.HealthState'
+    name: HealthState
+    spec.typeScript:
+      - name: HealthState
+        fullName: HealthState
+        uid: '@azure/servicefabric.HealthState'
+  - uid: '@azure/servicefabric.HealthEvaluationWrapper[]'
+    name: 'HealthEvaluationWrapper[]'
+    spec.typeScript:
+      - name: HealthEvaluationWrapper
+        fullName: HealthEvaluationWrapper
+        uid: '@azure/servicefabric.HealthEvaluationWrapper'
+      - name: '[]'
+        fullName: '[]'

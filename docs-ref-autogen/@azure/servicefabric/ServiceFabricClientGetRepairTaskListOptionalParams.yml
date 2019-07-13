@@ -15,7 +15,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: 선택적 매개 변수입니다.
     extends:
       name: RequestOptionsBase
     package: '@azure/servicefabric'
@@ -56,7 +56,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 클레임된 작업이 목록에 포함되어야 하는 복구 실행기의 이름입니다.
     optional: true
     syntax:
       content: 'executorFilter?: undefined | string'
@@ -101,7 +101,15 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |
+      결과 목록에 포함되어야 하는 작업 상태를 지정하는 다음 값의 비트 OR입니다.
+      - 1 - 생성됨
+      - 2-요청
+      - 4-준비
+      - 8-승인
+      - 16-실행
+      - 32-복원
+      - 64 - 완료됨
     optional: true
     syntax:
       content: 'stateFilter?: undefined | number'
@@ -116,7 +124,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 일치 시킬 복구 작업 ID 접두사입니다.
     optional: true
     syntax:
       content: 'taskIdFilter?: undefined | string'

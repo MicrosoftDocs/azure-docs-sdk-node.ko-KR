@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ServiceHealthState'
+    name: ServiceHealthState
+    fullName: ServiceHealthState
+    children:
+      - '@azure/servicefabric.ServiceHealthState.aggregatedHealthState'
+      - '@azure/servicefabric.ServiceHealthState.serviceName'
+    langs:
+      - typeScript
+    type: interface
+    summary: 서비스 id 및 해당 집계 된 상태를 포함 하는 서비스의 상태를 나타냅니다.
+    extends:
+      name: '@azure/servicefabric.EntityHealthState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceHealthState.aggregatedHealthState'
+    name: aggregatedHealthState
+    fullName: aggregatedHealthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Service Fabric 엔터티를 같은 클러스터, 노드, 응용 프로그램, 서비스, 파티션, 복제본 등의 상태입니다. 가능한 값은 다음과 같습니다. ''Invalid'', ''확인'', ''Warning'', ''Error'', ''알 수 없는'''
+    optional: true
+    syntax:
+      content: 'aggregatedHealthState?: HealthState'
+      return:
+        type:
+          - '@azure/servicefabric.HealthState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ServiceHealthState.serviceName'
+    name: serviceName
+    fullName: serviceName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 이 개체에서 해당 상태 상태가 표시 되는 서비스의 이름입니다.
+    optional: true
+    syntax:
+      content: 'serviceName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.EntityHealthState'
+    name: EntityHealthState
+    spec.typeScript:
+      - name: EntityHealthState
+        fullName: EntityHealthState
+        uid: '@azure/servicefabric.EntityHealthState'
+  - uid: '@azure/servicefabric.HealthState'
+    name: HealthState
+    spec.typeScript:
+      - name: HealthState
+        fullName: HealthState
+        uid: '@azure/servicefabric.HealthState'
