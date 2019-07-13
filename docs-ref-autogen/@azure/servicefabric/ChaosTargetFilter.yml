@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.ChaosTargetFilter'
+    name: ChaosTargetFilter
+    fullName: ChaosTargetFilter
+    children:
+      - '@azure/servicefabric.ChaosTargetFilter.applicationInclusionList'
+      - '@azure/servicefabric.ChaosTargetFilter.nodeTypeInclusionList'
+    langs:
+      - typeScript
+    type: interface
+    summary: |-
+      <span data-ttu-id="91e5b-101">특정 노드 유형 에서만 오류나 특정 응용 프로그램만 오류 대상으로 지정 된 Chaos 오류에 예를 들어,에 대 한 모든 필터를 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-101">Defines all filters for targeted Chaos faults, for example, faulting only certain node types or faulting only certain applications.</span></span>
+      <span data-ttu-id="91e5b-102">ChaosTargetFilter를 사용하지 않으면 비정상 상황으로 인해 모든 클러스터 엔터티에 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-102">If ChaosTargetFilter is not used, Chaos faults all cluster entities.</span></span> <span data-ttu-id="91e5b-103">ChaosTargetFilter를 사용하면 비정상 상황으로 인해 Chaos ChaosTargetFilter 사양을 충족하는 엔터티에만 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-103">If ChaosTargetFilter is used, Chaos faults only the entities that meet the ChaosTargetFilter specification.</span></span> <span data-ttu-id="91e5b-104">NodeTypeInclusionList 및 ApplicationInclusionList는 합집합 의미 체계만 허용합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-104">NodeTypeInclusionList and ApplicationInclusionList allow a union semantics only.</span></span>
+      <span data-ttu-id="91e5b-105">NodeTypeInclusionList 및 ApplicationInclusionList의 교집합은 지정할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-105">It is not possible to specify an intersection of NodeTypeInclusionList and ApplicationInclusionList.</span></span> <span data-ttu-id="91e5b-106">예를 들어, "해당 노드 유형에 해당할 경우에만 이 애플리케이션에 오류가 있다"고 지정할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-106">For example, it is not possible to specify "fault this application only when it is on that node type."</span></span>
+      <span data-ttu-id="91e5b-107">엔터티가 NodeTypeInclusionList 또는 ApplicationInclusionList 중 하나에 포함되면 해당 엔터티는 ChaosTargetFilter를 사용하여 제외할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-107">Once an entity is included in either NodeTypeInclusionList or ApplicationInclusionList, that entity cannot be excluded using ChaosTargetFilter.</span></span> <span data-ttu-id="91e5b-108">applicationX가 ApplicationInclusionList에 표시되지 않더라도 일부 비정상 상황 반복에서 applicationX가 NodeTypeInclusionList에 포함된 nodeTypeY 노드에 있을 수 있으므로 오류가 있는 것으로 지정될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-108">Even if applicationX does not appear in ApplicationInclusionList, in some Chaos iteration applicationX can be faulted because it happens to be on a node of nodeTypeY that is included in NodeTypeInclusionList.</span></span> <span data-ttu-id="91e5b-109">NodeTypeInclusionList 및 ApplicationInclusionList 둘 다 null이거나 비어 있으면 ArgumentException이 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-109">If both NodeTypeInclusionList and ApplicationInclusionList are null or empty, an ArgumentException is thrown.</span></span>
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ChaosTargetFilter.applicationInclusionList'
+    name: applicationInclusionList
+    fullName: applicationInclusionList
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="91e5b-110">비정상 상황 오류에 포함할 애플리케이션 URI의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-110">A list of application URIs to include in Chaos faults.</span></span>
+      <span data-ttu-id="91e5b-111">이러한 애플리케이션의 서비스에 속하는 모든 복제본은 비정상 상황에 의해 복제본 오류(복제본 다시 시작, 복제본 제거, 주 복제본 이동 및 보조 복제본 이동)로 수정될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-111">All replicas belonging to services of these applications are amenable to replica faults (restart replica, remove replica, move primary, and move secondary) by Chaos.</span></span>
+      <span data-ttu-id="91e5b-112">비정상 상황은 코드 패키지가 이러한 애플리케이션의 복제본만 호스트하는 경우에만 코드 패키지를 다시 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-112">Chaos may restart a code package only if the code package hosts replicas of these applications only.</span></span>
+      <span data-ttu-id="91e5b-113">애플리케이션이 이 목록에 나타나지 않을 경우, 애플리케이션이 NodeTypeInclusionList에 포함된 노드 유형의 노드에 배치되면 일부 Chaos 반복에서 여전히 오류가 있는 것으로 지정될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-113">If an application does not appear in this list, it can still be faulted in some Chaos iteration if the application ends up on a node of a node type that is included in NodeTypeInclusionList.</span></span>
+      <span data-ttu-id="91e5b-114">그러나 applicationX가 연결 하는 경우 배치 제약 조건 및 applicationX 통해 nodeTypeY 없는 ApplicationInclusionList 및 nodeTypeY 없는 nodetypeinclusionlist에 다음 applicationX는 되지 faulted가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-114">However, if applicationX is tied to nodeTypeY through placement constraints and applicationX is absent from ApplicationInclusionList and nodeTypeY is absent from NodeTypeInclusionList, then applicationX will never be faulted.</span></span>
+      <span data-ttu-id="91e5b-115">최대 1,000개의 애플리케이션 이름을 이 목록에 포함할 수 있으며, 이 수를 늘리려면 MaxNumberOfApplicationsInChaosEntityFilter 구성에 대해 구성 업그레이드가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-115">At most 1000 application names can be included in this list, to increase this number, a config upgrade is required for MaxNumberOfApplicationsInChaosEntityFilter configuration.</span></span>
+    optional: true
+    syntax:
+      content: 'applicationInclusionList?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.ChaosTargetFilter.nodeTypeInclusionList'
+    name: nodeTypeInclusionList
+    fullName: nodeTypeInclusionList
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="91e5b-116">비정상 상황 오류에 포함할 노드 유형의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-116">A list of node types to include in Chaos faults.</span></span>
+      <span data-ttu-id="91e5b-117">모든 유형의 오류(노드 다시 시작, 코드 패키지 다시 시작, 복제본 제거, 복제본 다시 시작, 주 복제본 이동 및 보조 복제본 이동)가 이러한 노드 유형의 노드에 대해 사용 가능으로 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-117">All types of faults (restart node, restart code package, remove replica, restart replica, move primary, and move secondary) are enabled for the nodes of these node types.</span></span>
+      <span data-ttu-id="91e5b-118">노드 유형 (nodetypex)에 나타나지 않으면 NodeTypeInclusionList에 그런 다음, NodeTypeX의 노드에 대해 노드 수준 오류 (예: NodeRestart) 사용 하지는 않지만 코드 패키지 및 복제본 오류 수 여전히 사용 될 NodeTypeX에 대해 응용 프로그램에서 하는 경우는 ApplicationInclusionList입니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-118">If a node type (say NodeTypeX) does not appear in the NodeTypeInclusionList, then node level faults (like NodeRestart) will never be enabled for the nodes of NodeTypeX, but code package and replica faults can still be enabled for NodeTypeX if an application in the ApplicationInclusionList.</span></span>
+      <span data-ttu-id="91e5b-119">NodeTypeX의 노드에 상주 하는 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-119">happens to reside on a node of NodeTypeX.</span></span>
+      <span data-ttu-id="91e5b-120">최대 100개의 노드 유형 이름을 이 목록에 포함할 수 있으며, 이 수를 늘리려면 MaxNumberOfNodeTypesInChaosEntityFilter 구성에 대해 구성 업그레이드가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="91e5b-120">At most 100 node type names can be included in this list, to increase this number, a config upgrade is required for MaxNumberOfNodeTypesInChaosEntityFilter configuration.</span></span>
+    optional: true
+    syntax:
+      content: 'nodeTypeInclusionList?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: '@azure/servicefabric'

@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/servicefabric.DeployedApplicationHealth'
+    name: DeployedApplicationHealth
+    fullName: DeployedApplicationHealth
+    children:
+      - '@azure/servicefabric.DeployedApplicationHealth.aggregatedHealthState'
+      - '@azure/servicefabric.DeployedApplicationHealth.deployedServicePackageHealthStates'
+      - '@azure/servicefabric.DeployedApplicationHealth.healthEvents'
+      - '@azure/servicefabric.DeployedApplicationHealth.healthStatistics'
+      - '@azure/servicefabric.DeployedApplicationHealth.name'
+      - '@azure/servicefabric.DeployedApplicationHealth.nodeName'
+      - '@azure/servicefabric.DeployedApplicationHealth.unhealthyEvaluations'
+    langs:
+      - typeScript
+    type: interface
+    summary: <span data-ttu-id="a3676-101">Service Fabric 노드에 배포 된 응용 프로그램의 상태에 대 한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-101">Information about the health of an application deployed on a Service Fabric node.</span></span>
+    extends:
+      name: '@azure/servicefabric.EntityHealth'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.aggregatedHealthState'
+    name: aggregatedHealthState
+    fullName: aggregatedHealthState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      <span data-ttu-id="a3676-102">상태 관리자에 의해 계산 된 엔터티의 집계 된 상태를 나타내는 HealthState 합니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-102">The HealthState representing the aggregated health state of the entity computed by Health Manager.</span></span>
+      <span data-ttu-id="a3676-103">엔터티 상태 평가 엔터티 및 해당 자식 (있는 경우)에 보고 된 모든 이벤트를 반영 합니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-103">The health evaluation of the entity reflects all events reported on the entity and its children (if any).</span></span>
+      <span data-ttu-id="a3676-104">집계 된 원하는 상태 정책을 적용 하 여 수행 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-104">The aggregation is done by applying the desired health policy.</span></span> <span data-ttu-id="a3676-105">가능한 값은 다음과 같습니다. 'Invalid', '확인', 'Warning', 'Error', '알 수 없는'</span><span class="sxs-lookup"><span data-stu-id="a3676-105">Possible values include: 'Invalid', 'Ok', 'Warning', 'Error', 'Unknown'</span></span>
+    optional: true
+    syntax:
+      content: 'aggregatedHealthState?: HealthState'
+      return:
+        type:
+          - '@azure/servicefabric.HealthState'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.deployedServicePackageHealthStates'
+    name: deployedServicePackageHealthStates
+    fullName: deployedServicePackageHealthStates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="a3676-106">현재 배포 된 응용 프로그램에 있는 health store에서 서비스 패키지 상태 배포.</span><span class="sxs-lookup"><span data-stu-id="a3676-106">Deployed service package health states for the current deployed application as found in the health store.</span></span>
+    optional: true
+    syntax:
+      content: 'deployedServicePackageHealthStates?: DeployedServicePackageHealthState[]'
+      return:
+        type:
+          - '@azure/servicefabric.DeployedServicePackageHealthState[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.healthEvents'
+    name: healthEvents
+    fullName: healthEvents
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="a3676-107">엔터티에 대해 보고 된 상태 이벤트의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-107">The list of health events reported on the entity.</span></span>
+    optional: true
+    syntax:
+      content: 'healthEvents?: HealthEvent[]'
+      return:
+        type:
+          - '@azure/servicefabric.HealthEvent[]'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.healthStatistics'
+    name: healthStatistics
+    fullName: healthStatistics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="a3676-108">쿼리할 엔터티의 모든 자식 유형에 대 한 상태 통계를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-108">Shows the health statistics for all children types of the queried entity.</span></span>
+    optional: true
+    syntax:
+      content: 'healthStatistics?: HealthStatistics'
+      return:
+        type:
+          - '@azure/servicefabric.HealthStatistics'
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="a3676-109">이 개체에서 해당 상태 정보가 설명 되어 노드에 배포 된 응용 프로그램의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-109">Name of the application deployed on the node whose health information is described by this object.</span></span>
+    optional: true
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.nodeName'
+    name: nodeName
+    fullName: nodeName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="a3676-110">이 응용 프로그램 배포 되는 위치 노드의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-110">Name of the node where this application is deployed.</span></span>
+    optional: true
+    syntax:
+      content: 'nodeName?: undefined | string'
+      return:
+        type:
+          - undefined | string
+    package: '@azure/servicefabric'
+  - uid: '@azure/servicefabric.DeployedApplicationHealth.unhealthyEvaluations'
+    name: unhealthyEvaluations
+    fullName: unhealthyEvaluations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: <span data-ttu-id="a3676-111">현재 상태를 집계 하는 이유를 보여 주는 비정상 평가 상태 관리자가 반환 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="a3676-111">The unhealthy evaluations that show why the current aggregated health state was returned by Health Manager.</span></span>
+    optional: true
+    syntax:
+      content: 'unhealthyEvaluations?: HealthEvaluationWrapper[]'
+      return:
+        type:
+          - '@azure/servicefabric.HealthEvaluationWrapper[]'
+    package: '@azure/servicefabric'
+references:
+  - uid: '@azure/servicefabric.EntityHealth'
+    name: EntityHealth
+    spec.typeScript:
+      - name: EntityHealth
+        fullName: EntityHealth
+        uid: '@azure/servicefabric.EntityHealth'
+  - uid: '@azure/servicefabric.HealthState'
+    name: HealthState
+    spec.typeScript:
+      - name: HealthState
+        fullName: HealthState
+        uid: '@azure/servicefabric.HealthState'
+  - uid: '@azure/servicefabric.DeployedServicePackageHealthState[]'
+    name: 'DeployedServicePackageHealthState[]'
+    spec.typeScript:
+      - name: DeployedServicePackageHealthState
+        fullName: DeployedServicePackageHealthState
+        uid: '@azure/servicefabric.DeployedServicePackageHealthState'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.HealthEvent[]'
+    name: 'HealthEvent[]'
+    spec.typeScript:
+      - name: HealthEvent
+        fullName: HealthEvent
+        uid: '@azure/servicefabric.HealthEvent'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/servicefabric.HealthStatistics'
+    name: HealthStatistics
+    spec.typeScript:
+      - name: HealthStatistics
+        fullName: HealthStatistics
+        uid: '@azure/servicefabric.HealthStatistics'
+  - uid: '@azure/servicefabric.HealthEvaluationWrapper[]'
+    name: 'HealthEvaluationWrapper[]'
+    spec.typeScript:
+      - name: HealthEvaluationWrapper
+        fullName: HealthEvaluationWrapper
+        uid: '@azure/servicefabric.HealthEvaluationWrapper'
+      - name: '[]'
+        fullName: '[]'
